@@ -21,12 +21,12 @@ Repo: `mhvnsnt/cn-gigaleak-space-ghost` (private, study only)
 | Path | Contents |
 |---|---|
 | `Space Ghost C2C/Space Ghost C2C/SPACE GHOST C2C CHARACTER SHEETS/` | `SGSpaceGhostCC.eps`, `SGBrakCC.eps`, `SGMoltarCC.eps`, `SGZorakCC.eps` |
-| `SPACE GHOST C2C BACKGROUNDS/` | Background art (inventory pending) |
-| `SPACE GHOST C2C PRODUCTION ART/` | Production art (inventory pending) |
-| `SPACE GHOST C2C LOG LINES/` | Log lines (inventory pending) |
-| `SPACE GHOST C2C LOGOS/` | Logos (inventory pending) |
-| `SPACE GHOST C2C SG/` | (inventory pending) |
-| `SPACE GHOST C2C (OLD)/` | (inventory pending) |
+| `SPACE GHOST C2C BACKGROUNDS/` | `SG BKG VECTOR.EPS` (362KB), `SGC2CBG01.EPS` (4.5MB) — vector background art |
+| `SPACE GHOST C2C PRODUCTION ART/SPACE GHOST SETS/` | (sub-inventory pending) |
+| `SPACE GHOST C2C LOG LINES/` | `'94-'99EpisodeList(11-3-00).DOC` (101KB) — '94–'99 episode list |
+| `SPACE GHOST C2C LOGOS/` | `SG_LOGO4C_.EPS`, `SG_LOGOPN_.EPS` (99KB each) — logo art |
+| `SPACE GHOST C2C SG/` | `SGC2C.PDF` (3.1MB), `DESIGN ELEMENTS/` (pending) |
+| `SPACE GHOST C2C (OLD)/` | `SPACE GHOST ICON` (143KB), `SPACE GHOST PMS CHART` (207KB, Pantone chart), `SPACE GHOST C2C CHARACTER ART/` + `SPACE GHOST C2C SG/` (pending) |
 | Local: `workspace/terabox-staging/cn-gigaleak/space-ghost/` | EMPTY (staging dir, nothing pulled yet) |
 
 ## 3. Johnny Bravo show bible — HAVE (starter kit; repo pending)
