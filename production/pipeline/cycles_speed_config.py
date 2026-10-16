@@ -64,6 +64,11 @@ def apply_optimized(scene=None, preset="animation"):
         # --- Persistent data: no per-frame re-upload ---
         sc.render.use_persistent_data = True
 
+        # --- Scrambling distance: automatic (free GPU speedup, Blender 4.x) ---
+        # Reduces correlation between pixels, faster GPU convergence
+        if hasattr(c, "scrambling_distance"):
+            c.scrambling_distance = 'AUTOMATIC'
+
     elif preset == "preview":
         c.samples = 8
         c.use_adaptive_sampling = True
