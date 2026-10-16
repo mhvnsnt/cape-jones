@@ -17,9 +17,14 @@ The script format (JSON):
 TTS engine priority (first available wins):
   1. Dia2      (nari-labs/Dia)      — multi-speaker dialogue, [S1]/[S2] tags, emotion
   2. Chatterbox (already in tools/) — voice cloning + emotion, 23 languages
-  3. Kokoro    (tools/kokoro-venv)  — CPU-fast, 82M params
-  4. Bark      (suno-ai/bark)       — non-verbal sounds (laughs, sighs)
-  5. espeak-ng (system fallback)    — always works, robotic temp track
+  3. F5-TTS    (SWivid/F5-TTS, MIT) — fast zero-shot TTS, bulk ADR/dubbing
+  4. CosyVoice3 (FunAudioLLM, Apache-2.0) — cross-lingual clone (EN<->JA),
+                                       instruction emotion ("say it angry")
+  5. Kokoro    (tools/kokoro-venv)  — CPU-fast, 82M params
+  6. Bark      (suno-ai/bark)       — non-verbal sounds (laughs, sighs)
+  7. espeak-ng (system fallback)    — always works, robotic temp track
+
+Owner law: Chatterbox stays the character-voice default; F5-TTS/CosyVoice3 complement it.
 
 Lip sync handoff:
   - writes per-line timing JSON compatible with tools/lipsync/
@@ -47,6 +52,8 @@ def engine_available(name):
     checks = {
         "dia2": os.path.isdir(os.path.join(TOOLS, "Dia")),
         "chatterbox": os.path.isdir(os.path.join(TOOLS, "chatterbox")),
+        "f5tts": _has_module("f5_tts"),          # pip install f5-tts (MIT)
+        "cosyvoice": _has_module("cosyvoice"),   # FunAudioLLM/CosyVoice (Apache-2.0)
         "kokoro": os.path.isdir(os.path.join(TOOLS, "kokoro-venv")),
         "bark": os.path.isdir(os.path.join(TOOLS, "bark")),
         "espeak": shutil.which("espeak-ng") is not None,
@@ -54,15 +61,23 @@ def engine_available(name):
     return checks.get(name, False)
 
 
+def _has_module(mod):
+    import importlib.util
+    return importlib.util.find_spec(mod) is not None
+
+
+ENGINES = ["dia2", "chatterbox", "f5tts", "cosyvoice", "kokoro", "bark", "espeak"]
+
+
 def list_engines():
     print("TTS engines (availability on this machine):")
-    for e in ["dia2", "chatterbox", "kokoro", "bark", "espeak"]:
+    for e in ENGINES:
         mark = "OK " if engine_available(e) else " -- "
         print(f"  [{mark}] {e}")
 
 
 def pick_engine(preferred):
-    order = ["dia2", "chatterbox", "kokoro", "bark", "espeak"]
+    order = ENGINES
     if preferred != "auto":
         if not engine_available(preferred):
             sys.exit(f"ERROR: engine '{preferred}' not available. "
@@ -94,7 +109,7 @@ def main():
     ap.add_argument("script", nargs="?", help="dialogue JSON file")
     ap.add_argument("out_dir", nargs="?", help="output directory for wavs + timing")
     ap.add_argument("--engine", default="auto",
-                    choices=["auto", "dia2", "chatterbox", "kokoro", "bark", "espeak"],
+                    choices=["auto"] + ENGINES,
                     help="TTS engine (default: auto = best available)")
     ap.add_argument("--list-engines", action="store_true")
     ns = ap.parse_args()
@@ -133,6 +148,12 @@ def main():
         elif engine == "bark":
             print(f"  [{i}] bark: {line['line'][:40]}", file=sys.stderr)
             synth_bark(line, wav)
+        elif engine == "f5tts":
+            print(f"  [{i}] f5tts: {line['line'][:40]}", file=sys.stderr)
+            synth_f5tts(line, wav)
+        elif engine == "cosyvoice":
+            print(f"  [{i}] cosyvoice: {line['line'][:40]}", file=sys.stderr)
+            synth_cosyvoice(line, wav)
 
         dur = get_duration(wav)
         timing.append({
@@ -219,6 +240,59 @@ def synth_bark(line, out_wav):
                        cwd=os.path.join(TOOLS, "bark"))
     if r.returncode != 0:
         sys.exit(f"ERROR: bark failed:\n{r.stderr[-800:]}")
+
+
+def synth_f5tts(line, out_wav):
+    """F5-TTS zero-shot (SWivid, MIT). Fast — best for bulk ADR/dubbing.
+
+    Needs a reference clip: line["ref_audio"] + line["ref_text"].
+    Model F5TTS_v1_Base downloads from HF on first use.
+    """
+    ref_audio = line.get("ref_audio")
+    ref_text = line.get("ref_text", "")
+    if not ref_audio:
+        sys.exit("ERROR: f5tts needs line['ref_audio'] (+ line['ref_text']) "
+                 "for zero-shot cloning")
+    code = (
+        "from f5_tts.api import F5TTS; "
+        "f5 = F5TTS(); "
+        f"f5.infer(ref_file={ref_audio!r}, ref_text={ref_text!r}, "
+        f"gen_text={line['line']!r}, file_wave={out_wav!r})"
+    )
+    r = subprocess.run([sys.executable, "-c", code],
+                       capture_output=True, text=True)
+    if r.returncode != 0:
+        sys.exit(f"ERROR: f5tts failed:\n{r.stderr[-800:]}")
+
+
+def synth_cosyvoice(line, out_wav):
+    """CosyVoice3 zero-shot / instruct (FunAudioLLM, Apache-2.0).
+
+    line["ref_audio"] + line["ref_text"]: zero-shot clone (cross-lingual OK).
+    line["instruct"]: natural-language direction, e.g. "say it angry, fast"
+        (uses inference_instruct2). Model dir: FunAudioLLM/Fun-CosyVoice3-0.5B-2512
+        (download once from HF/ModelScope to pretrained_models/).
+    """
+    import soundfile as sf
+    from cosyvoice.cli.cosyvoice import CosyVoice3
+    model_dir = os.environ.get("COSYVOICE3_MODEL",
+                               "pretrained_models/Fun-CosyVoice3-0.5B-2512")
+    if not os.path.isdir(model_dir):
+        sys.exit(f"ERROR: CosyVoice3 model not found at {model_dir}. "
+                 "Download FunAudioLLM/Fun-CosyVoice3-0.5B-2512 first "
+                 "(or set COSYVOICE3_MODEL).")
+    cv = CosyVoice3(model_dir, load_jit=False, load_trt=False, fp16=True)
+    ref_audio = line.get("ref_audio")
+    ref_text = line.get("ref_text", "")
+    instruct = line.get("instruct")
+    if instruct and ref_audio:
+        out = cv.inference_instruct2(line["line"], instruct, ref_audio, stream=False)
+    elif ref_audio:
+        out = cv.inference_zero_shot(line["line"], ref_text, ref_audio, stream=False)
+    else:
+        sys.exit("ERROR: cosyvoice needs line['ref_audio'] (+ line['ref_text'])")
+    audio = out["tts_speech"].numpy().flatten()
+    sf.write(out_wav, audio, cv.sample_rate)
 
 
 if __name__ == "__main__":
