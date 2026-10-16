@@ -201,6 +201,111 @@ def push_job(job):
     return True, full_slug
 
 
+def ensure_save_dataset(slug):
+    """Create the bulletproof-save dataset from the VM if missing.
+
+    The in-kernel saver versions this dataset after EVERY checkpoint, so it
+    must exist before the kernel runs (the kernel can also create it as a
+    fallback, but pre-creating here is deterministic). Returns True/False."""
+    if "/" not in slug:
+        log(f"ensure_save_dataset: bad slug {slug!r}")
+        return False
+    user, name = slug.split("/", 1)
+    rc, out, err = kaggle(["datasets", "list", "--user", user])
+    if rc == 0 and name in out:
+        log(f"save dataset exists: {slug}")
+        return True
+    tmp = tempfile.mkdtemp(prefix="save-ds-")
+    try:
+        meta = {"title": name, "id": slug, "licenses": [{"name": "CC0-1.0"}]}
+        with open(os.path.join(tmp, "dataset-metadata.json"), "w") as f:
+            json.dump(meta, f, indent=2)
+        with open(os.path.join(tmp, "README.md"), "w") as f:
+            f.write(f"# {name}\n\nBulletproof save dataset for Kaggle GPU renders.\n"
+                    "Populated automatically by save_outputs.py checkpoints.\n")
+        rc, out, err = kaggle(["datasets", "create", "-p", tmp], timeout=300)
+        if rc == 0:
+            log(f"save dataset created: {slug}")
+            return True
+        log(f"save dataset create FAILED: {(err or out)[:300]}")
+        return False
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def publish_second_copies(job):
+    """Belt-and-suspenders: after a job's outputs land on the VM, push second
+    copies to GitHub releases and/or TeraBox (creds live on the VM, never in
+    the kernel). Returns (ok, msg). Never raises."""
+    try:
+        return _publish_second_copies_inner(job)
+    except Exception as e:  # noqa: BLE001
+        return False, f"second-copy publish raised: {e}"
+
+
+def _publish_second_copies_inner(job):
+    outdir = os.path.expanduser(job.get("output_dir") or
+                                f"~/workspace/kaggle-queue-output/{job['id']}")
+    if not os.path.isdir(outdir):
+        return True, "no output dir — nothing to publish"
+    files = [os.path.join(outdir, f) for f in sorted(os.listdir(outdir))
+             if os.path.isfile(os.path.join(outdir, f))]
+    if not files:
+        return True, "no files — nothing to publish"
+    notes = []
+    # --- GitHub release ---
+    gh_repo = job.get("gh_repo")
+    gh_tag = job.get("gh_release_tag")
+    if gh_repo and gh_tag:
+        p = subprocess.run(
+            ["gh", "release", "view", gh_tag, "--repo", gh_repo],
+            capture_output=True, text=True, timeout=60)
+        if p.returncode != 0:
+            p = subprocess.run(
+                ["gh", "release", "create", gh_tag, "--repo", gh_repo,
+                 "--title", gh_tag,
+                 "--notes", f"Render outputs for {job['title']}"],
+                capture_output=True, text=True, timeout=120)
+            if p.returncode != 0:
+                notes.append(f"gh release create FAILED: {p.stderr[:200]}")
+            else:
+                notes.append(f"gh release {gh_tag} created")
+        p = subprocess.run(
+            ["gh", "release", "upload", gh_tag, "--repo", gh_repo,
+             "--clobber"] + files,
+            capture_output=True, text=True, timeout=900)
+        if p.returncode != 0:
+            notes.append(f"gh release upload FAILED: {p.stderr[:200]}")
+        else:
+            notes.append(f"gh release upload OK: {len(files)} file(s) -> "
+                         f"{gh_repo}@{gh_tag}")
+    # --- TeraBox ---
+    tb_dir = job.get("terabox_dir")
+    if tb_dir:
+        tbu = os.path.expanduser("~/workspace/tools/terabox-uploader/tbupload.py")
+        creds = os.path.expanduser(
+            "~/workspace/tools/terabox-uploader/.creds.json")
+        if not os.path.exists(creds):
+            notes.append("terabox skipped: no .creds.json (run setup_creds.py)")
+        elif not os.path.exists(tbu):
+            notes.append("terabox skipped: tbupload.py missing")
+        else:
+            for fp in files:
+                p = subprocess.run(
+                    ["python3", tbu, "upload", fp, tb_dir],
+                    capture_output=True, text=True, timeout=1200)
+                if p.returncode != 0:
+                    notes.append(f"terabox upload FAILED "
+                                 f"{os.path.basename(fp)}: {p.stderr[:200]}")
+                    break
+            else:
+                notes.append(f"terabox upload OK: {len(files)} file(s) -> {tb_dir}")
+    if not notes:
+        return True, "no second-copy destinations configured"
+    ok = not any("FAILED" in n for n in notes)
+    return ok, "; ".join(notes)
+
+
 def download_outputs(job):
     """Download kernel outputs to job's output_dir. Returns (ok, msg)."""
     slug = job.get("kernel_slug")
@@ -245,6 +350,14 @@ def tick():
             state, raw = kernel_status(job["kernel_slug"])
             if state == "complete":
                 ok, msg = download_outputs(job)
+                pub_msg = ""
+                if ok:
+                    # Belt-and-suspenders second copies (GitHub/TeraBox)
+                    pub_ok, pub_msg = publish_second_copies(job)
+                    msg = f"{msg} | second-copies: {pub_msg}"
+                    if not pub_ok:
+                        notify(f"Second-copy publish issue: {job['title']}",
+                               pub_msg, priority="default")
                 job["status"] = "done" if ok else "error"
                 job["finished_at"] = datetime.now(timezone.utc).isoformat()
                 job["result"] = msg
@@ -257,6 +370,22 @@ def tick():
                            f"Kernel completed but outputs missing: {msg}")
                 changed = True
             elif state == "error":
+                # BULLETPROOF: one automatic resume-retry for save_dataset jobs.
+                # The notebook restores checkpoints from the save dataset input,
+                # so the retry continues where the dead kernel left off.
+                if job.get("save_dataset") and not job.get("auto_retried"):
+                    job["status"] = "pending"
+                    job["auto_retried"] = True
+                    job.pop("kernel_slug", None)
+                    job.pop("result", None)
+                    log(f"job {job['id']} AUTO-RETRY once (resume from "
+                        f"{job['save_dataset']})")
+                    notify(f"Auto-retrying (resume): {job['title']}",
+                           f"Kernel died; requeued once to resume from save "
+                           f"dataset {job['save_dataset']}. Original error: "
+                           f"{raw[:200]}")
+                    changed = True
+                    continue
                 job["status"] = "error"
                 job["finished_at"] = datetime.now(timezone.utc).isoformat()
                 job["result"] = raw[:500]
@@ -310,6 +439,9 @@ def cmd_status(args):
         return
     for j in jobs:
         print(f"[{j['status']:8s}] {j['id']}: {j['title']}")
+        if j.get("save_dataset"):
+            print(f"           bulletproof: {j['save_dataset']}"
+                  f"{' (auto-retried)' if j.get('auto_retried') else ''}")
         if j.get("kernel_slug"):
             print(f"           kernel: {j['kernel_slug']}")
         if j.get("result"):
@@ -345,6 +477,30 @@ def cmd_add(args):
     if args.pre_cell_file:
         with open(args.pre_cell_file) as f:
             job["pre_cells"].append(f.read())
+    # BULLETPROOF SAVE: pre-create the dataset, attach it as an input (for
+    # resume), and inject KAGGLE_SAVE_DATASET so the in-kernel saver publishes
+    # a dataset version after EVERY checkpoint.
+    if args.save_dataset:
+        slug = args.save_dataset.strip()
+        if ensure_save_dataset(slug):
+            job["save_dataset"] = slug
+            if slug not in job["datasets"]:
+                job["datasets"].append(slug)
+            job["pre_cells"].append(
+                "import os\n"
+                f'os.environ["KAGGLE_SAVE_DATASET"] = "{slug}"\n'
+                f'print("bulletproof save dataset: {slug}")\n'
+            )
+        else:
+            print(f"WARNING: could not ensure save dataset {slug}; "
+                  "job queued WITHOUT bulletproof saving")
+            log(f"WARNING: save dataset {slug} not ensured for {job_id}")
+    if args.gh_repo:
+        job["gh_repo"] = args.gh_repo
+    if args.gh_release_tag:
+        job["gh_release_tag"] = args.gh_release_tag
+    if args.terabox_dir:
+        job["terabox_dir"] = args.terabox_dir
     q["jobs"].append(job)
     save_queue(q)
     print(f"added {job_id}: {args.title}")
@@ -410,6 +566,17 @@ def main():
                    help="comma-separated expected output paths (relative to output dir)")
     a.add_argument("--output-dir", default="")
     a.add_argument("--no-gpu", action="store_true")
+    a.add_argument("--save-dataset", default="",
+                   help="Kaggle dataset slug for bulletproof per-checkpoint "
+                        "saves, e.g. marsfmmg/pantera-v4-outputs")
+    a.add_argument("--gh-repo", default="",
+                   help="GitHub repo for second-copy release, e.g. "
+                        "mhvnsnt/western-heart")
+    a.add_argument("--gh-release-tag", default="",
+                   help="GitHub release tag for second-copy upload")
+    a.add_argument("--terabox-dir", default="",
+                   help="TeraBox remote dir for second-copy upload, e.g. "
+                        "/renders/pantera")
 
     r = sub.add_parser("retry", help="requeue a failed/done job")
     r.add_argument("job_id")
