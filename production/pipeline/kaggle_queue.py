@@ -41,6 +41,50 @@ def log(msg):
         f.write(line + "\n")
 
 
+# --- FAILURE NOTIFICATIONS (NO-SILENT-FAILURE LAW) ---
+# When a job fails, we NEVER stay silent. Notifications go to:
+# 1. ~/workspace/agent-ops/failure-alerts.log (always)
+# 2. ntfy.sh topic (if configured — owner gets phone push)
+# 3. The overnight handoff (for the owner to see on return)
+
+ALERT_LOG = os.path.expanduser("~/workspace/agent-ops/failure-alerts.log")
+NTFY_TOPIC_FILE = os.path.expanduser("~/workspace/agent-ops/ntfy-topic.txt")
+
+
+def notify(title, body, priority="high"):
+    """Send a failure/completion alert. Never silent."""
+    ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    alert = f"[{ts}] {priority.upper()}: {title} — {body}"
+    # 1. Always log locally
+    os.makedirs(os.path.dirname(ALERT_LOG), exist_ok=True)
+    with open(ALERT_LOG, "a") as f:
+        f.write(alert + "\n")
+    log(f"ALERT: {title} — {body[:100]}")
+    # 2. Try ntfy.sh push (owner's phone)
+    try:
+        if os.path.exists(NTFY_TOPIC_FILE):
+            with open(NTFY_TOPIC_FILE) as f:
+                topic = f.read().strip()
+            if topic:
+                subprocess.run(
+                    ["curl", "-s", "-H", f"Priority: {priority}",
+                     "-H", f"Title: {title[:60]}",
+                     "--data-binary", body[:500],
+                     f"https://ntfy.sh/{topic}"],
+                    timeout=15, capture_output=True)
+                log(f"ntfy push sent to {topic}")
+    except Exception as e:
+        log(f"ntfy push failed (non-fatal): {e}")
+    # 3. Append to overnight handoff blockers section
+    try:
+        handoff = os.path.expanduser("~/workspace/agent-ops/overnight-handoff.md")
+        if os.path.exists(handoff):
+            with open(handoff, "a") as f:
+                f.write(f"\n- **ALERT {ts}**: {title} — {body[:200]}\n")
+    except Exception:
+        pass
+
+
 def load_queue():
     if not os.path.exists(QUEUE_FILE):
         return {"jobs": []}
@@ -192,12 +236,20 @@ def tick():
                 job["finished_at"] = datetime.now(timezone.utc).isoformat()
                 job["result"] = msg
                 log(f"job {job['id']} COMPLETE: {msg}")
+                if ok:
+                    notify(f"Render done: {job['title']}",
+                           f"Outputs: {msg}", priority="default")
+                else:
+                    notify(f"FAILED output verify: {job['title']}",
+                           f"Kernel completed but outputs missing: {msg}")
                 changed = True
             elif state == "error":
                 job["status"] = "error"
                 job["finished_at"] = datetime.now(timezone.utc).isoformat()
                 job["result"] = raw[:500]
                 log(f"job {job['id']} FAILED: {raw[:200]}")
+                notify(f"FAILED: {job['title']}",
+                       f"Kernel error: {raw[:300]}")
                 changed = True
             else:
                 any_running = True
