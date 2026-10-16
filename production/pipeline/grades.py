@@ -249,6 +249,111 @@ LED_EMBER = (
 
 
 # ---------------------------------------------------------------------------
+# REAL-LIGHTING GRADES (from REAL-LIGHTING-RESEARCH.md)
+# Replicating actual physical light sources in 2D. Unlike signature grades,
+# these are ALLOWED to tint the suit — the tint IS the effect.
+# ---------------------------------------------------------------------------
+
+PURPLE_STREETLIGHT = (
+    # Defective LED streetlight: phosphor delamination exposes raw blue LED.
+    # Deep blue-violet wash, warm tones crushed, brightness kept high.
+    # From distance it reads purple; the spectrum is blue-violet.
+    "colorchannelmixer="
+    "rr=0.70:rg=0.0:rb=0.30:"
+    "gr=0.0:gg=0.75:gb=0.25:"
+    "br=0.25:bg=0.05:bb=1.35,"
+    "eq=saturation=1.30:contrast=1.18:brightness=0.0,"
+    # Crush reds/yellows (nothing warm survives under this light)
+    "curves=r='0/0.0 0.5/0.35 1/0.85':"
+    "g='0/0.0 0.5/0.42 1/0.90':"
+    "b='0/0.02 0.5/0.58 1/1.0',"
+    "unsharp=5:5:0.4"
+)
+
+BLACKLIGHT_PURPLE = (
+    # UV blacklight room: near-dark ambient, violet haze, whites bloom blue.
+    # Crush overall brightness; lift blues/violets; max out neon colors.
+    "colorchannelmixer="
+    "rr=0.55:rg=0.0:rb=0.35:"
+    "gr=0.0:gg=0.60:gb=0.30:"
+    "br=0.30:bg=0.10:bb=1.40,"
+    "eq=saturation=1.70:contrast=1.35:brightness=-0.12,"
+    "curves=all='0/0.0 0.2/0.08 0.5/0.35 0.8/0.70 1/0.95',"
+    "unsharp=5:5:0.5"
+)
+
+BULB_ORANGE = (
+    # Orange LED party bulb (~2000K). Warm amber wash, blues die.
+    "colorchannelmixer="
+    "rr=1.35:rg=0.15:rb=0.0:"
+    "gr=0.10:gg=0.90:gb=0.0:"
+    "br=0.0:bg=0.0:bb=0.70,"
+    "eq=saturation=1.30:contrast=1.10:brightness=0.0,"
+    "curves=b='0/0.0 0.5/0.30 1/0.65',"
+    "unsharp=5:5:0.4"
+)
+
+BULB_YELLOW = (
+    # Yellow bug/vintage bulb. Warm golden, gentler than orange.
+    "colorchannelmixer="
+    "rr=1.20:rg=0.15:rb=0.0:"
+    "gr=0.08:gg=1.05:gb=0.0:"
+    "br=0.0:bg=0.05:bb=0.75,"
+    "eq=saturation=1.25:contrast=1.08:brightness=0.01,"
+    "curves=b='0/0.0 0.5/0.35 1/0.70',"
+    "unsharp=5:5:0.4"
+)
+
+BULB_RED = (
+    # Red sleep/darkroom bulb. Everything is red or black.
+    "colorchannelmixer="
+    "rr=1.40:rg=0.10:rb=0.05:"
+    "gr=0.05:gg=0.55:gb=0.0:"
+    "br=0.05:bg=0.0:bb=0.55,"
+    "eq=saturation=1.20:contrast=1.15:brightness=-0.02,"
+    "curves=g='0/0.0 0.5/0.30 1/0.55':"
+    "b='0/0.0 0.5/0.28 1/0.50',"
+    "unsharp=5:5:0.4"
+)
+
+BULB_PURPLE = (
+    # Purple LED bulb. Violet wash, warm colors go muddy.
+    "colorchannelmixer="
+    "rr=1.10:rg=0.0:rb=0.25:"
+    "gr=0.0:gg=0.70:gb=0.15:"
+    "br=0.20:bg=0.05:bb=1.30,"
+    "eq=saturation=1.40:contrast=1.12:brightness=-0.01,"
+    "curves=all='0/0.01 0.5/0.45 1/0.96',"
+    "unsharp=5:5:0.4"
+)
+
+BULB_GREEN = (
+    # Green LED bulb. Sickly/toxic, skin goes olive.
+    "colorchannelmixer="
+    "rr=0.65:rg=0.10:rb=0.0:"
+    "gr=0.10:gg=1.25:gb=0.10:"
+    "br=0.0:bg=0.10:bb=0.75,"
+    "eq=saturation=1.30:contrast=1.12:brightness=0.0,"
+    "curves=r='0/0.0 0.5/0.32 1/0.60':"
+    "b='0/0.0 0.5/0.35 1/0.65',"
+    "unsharp=5:5:0.4"
+)
+
+DISCO_PARTY = (
+    # Base grade for disco/party light scenes. Dark room, ready for the
+    # rotating dot overlay (applied separately in Natron or as overlay pass).
+    # Low brightness, slightly desaturated — the dots provide the color.
+    "colorchannelmixer="
+    "rr=0.85:rg=0.05:rb=0.10:"
+    "gr=0.05:gg=0.85:gb=0.10:"
+    "br=0.10:bg=0.05:bb=0.95,"
+    "eq=saturation=0.90:contrast=1.20:brightness=-0.08,"
+    "curves=all='0/0.0 0.3/0.18 0.7/0.60 1/0.90',"
+    "unsharp=5:5:0.4"
+)
+
+
+# ---------------------------------------------------------------------------
 # REGISTRY
 # ---------------------------------------------------------------------------
 GRADES = {
@@ -280,6 +385,16 @@ GRADES = {
     "led-party":       LED_PARTY,
     "led-ghost-teal":  LED_GHOST_TEAL,
     "led-ember":       LED_EMBER,
+    # Real-lighting grades (from REAL-LIGHTING-RESEARCH.md)
+    # NOTE: these intentionally tint the suit — the tint IS the effect.
+    "purple-streetlight": PURPLE_STREETLIGHT,
+    "blacklight-purple":  BLACKLIGHT_PURPLE,
+    "bulb-orange":  BULB_ORANGE,
+    "bulb-yellow":  BULB_YELLOW,
+    "bulb-red":     BULB_RED,
+    "bulb-purple":  BULB_PURPLE,
+    "bulb-green":   BULB_GREEN,
+    "disco-party":  DISCO_PARTY,
     # Bypass
     "none": "",
 }
@@ -306,6 +421,14 @@ GRADE_INFO = {
     "led-party": ("LED: Party", "Static reference for the party-strobe LED preset.", "LED reference"),
     "led-ghost-teal": ("LED: Ghost Teal", "Static reference for the ghost-mode LED preset.", "LED reference"),
     "led-ember": ("LED: Ember", "Static reference for the ember-glow LED preset.", "LED reference"),
+    "purple-streetlight": ("Purple Streetlight", "Defective LED streetlight — phosphor delamination. Blue-violet wash, warms crushed. Tints suit (intentional).", "exterior night"),
+    "blacklight-purple": ("Blacklight", "UV blacklight room. Near-dark, violet haze, whites bloom blue. Suit GLOWS.", "blacklight party"),
+    "bulb-orange": ("Bulb: Orange", "Orange LED party bulb. Warm amber wash, blues die.", "interior"),
+    "bulb-yellow": ("Bulb: Yellow", "Yellow bug/vintage bulb. Warm golden.", "interior"),
+    "bulb-red": ("Bulb: Red", "Red sleep/darkroom bulb. Everything red or black.", "interior"),
+    "bulb-purple": ("Bulb: Purple", "Purple LED bulb. Violet wash, warms go muddy.", "interior"),
+    "bulb-green": ("Bulb: Green", "Green LED bulb. Sickly/toxic, skin goes olive.", "interior"),
+    "disco-party": ("Disco Base", "Dark room base for disco overlay. Dots applied separately.", "party"),
 }
 
 
