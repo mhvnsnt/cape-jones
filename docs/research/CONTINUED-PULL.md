@@ -98,3 +98,8 @@ Storyboarder / storyboard/ → boards
 
 ## Disk Impact
 Custom scripts: <50KB. Clones: ~42MB. Total pull: <45MB.
+
+## Retry Status (2026-10-16 ~04:00 EDT)
+- `three-anime-style/`: Still failing — network disconnects during clone. Retry when network stable.
+- `video-gif-studio/`: Still failing — empty dir on clone. Retry when network stable.
+- `hyperframes-effects-gallery/`: URL was wrong (repo not found). Needs correct URL research.
