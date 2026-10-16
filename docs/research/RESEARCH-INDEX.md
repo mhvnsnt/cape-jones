@@ -27,9 +27,9 @@ Every research document in `docs/research/`, what it covered, what got pulled, w
 | GEMINI-FULL-PULL.md | HunyuanVideo, Mochi, Krita AI Diffusion | hunyuanvideo/, mochi/, krita-ai-diffusion | — | Heavy weights on Kaggle |
 | STUDIO-GRADE-PULL.md | One-to-All Animation (pose transfer), ToonComposer | one-to-all-animation/, tooncomposer/ | — | Kaggle T4 runbooks |
 | 2026-STUDIO-DEEP-DIVE.md | ToonComposer 81-frame math, studio pipelines | tooncomposer/, OpenTimelineIO, AudioCraft | — | — |
-| CONTINUED-PULL.md | html-animation, storyboard, explainroo, TheAnimeScripter | 7 tools + 4 scripts | Pipeline order documented | 3 failed clones (network) |
+| CONTINUED-PULL.md | html-animation, storyboard, explainroo, TheAnimeScripter | 7 tools + 4 scripts | Pipeline order documented | All 4 failed pulls resolved 2026-10-16 (three-anime-style, video-gif-studio PR #34, AnimeEffects, hyperframes-effects-gallery URL resolved) |
 | EXPANSION-3.md | MMAudio, ChibiRigKit, Dia, OpenVoice, parler-tts, bark | 7 tools + 3 scripts | dialogue_pipeline.py, comp_glow.py, thumbnail_gen.py | TangoFlux (Kaggle-side) |
-| EXPANSION-4.md | LayerInbetween, LTX-2.5, OmniColor, EverAnimate, OPEN-TOON | 6 tools + krita-batch-exporter | ffmpeg-animation-filters.sh | 4 failed pulls (network) |
+| EXPANSION-4.md | LayerInbetween, LTX-2.5, OmniColor, EverAnimate, OPEN-TOON | 6 tools + krita-batch-exporter | ffmpeg-animation-filters.sh | All 4 failed pulls resolved 2026-10-16 (InstanceAnimator, SCAIL-2, LDF-VFI, coa_tools2 — PR #33 + this run) |
 | EXPANSION-5.md | Kandinsky 6.0, LuxTTS, lvsfunc, frei0r, SPAN | 4+9 pulls + 4 scripts | fx-particles.py, palette-enforce.py, cartoon-fx.sh | frei0r cmake build; SPAN weights (browser) |
 | MEGA-PULL.md | Master synthesis of Tracks A–F | 19 pipeline scripts | All in production/pipeline/ | See track docs below |
 
