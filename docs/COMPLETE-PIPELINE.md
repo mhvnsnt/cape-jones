@@ -3,27 +3,54 @@
 **One command. FlipaClip drawings in. Finished animation out.**
 
 ```bash
-~/workspace/tools/post-pipeline/cape_jones_pipeline.sh input.mp4 output.mp4 [options]
+production/pipeline/cape_jones_pipeline.sh input.mp4 output.mp4 [options]
 ```
 
 ---
 
-## Pipeline Stages
+## Full Pipeline Flow
+
+```
+Storyboarder → animatic_builder.py → timed animatic
+  → [keyframes] → ToonComposer / ToonCrafter (Kaggle GPU) → animation
+  → scene_aware_interp.py → black-frame-safe interpolation
+  → TheAnimeScripter → anime upscale/restore (optional)
+  → anime_fx.py → speed lines / impact frames / screen shake
+  → retro_fx.py → VHS/CRT retro look (optional)
+  → energy_blast.py → wrist blaster VFX
+  → stroke_reveal.py → neon write-on effects
+  → led_scene_assembler.py → LED remote scenes (3 frames → full scene)
+  → finish.py → QC + color grade + LED preset + audio mix + encode
+  → social_export.sh → TikTok / Shorts / Instagram delivery
+```
+
+**Batch mode:** `batch_process.sh <input_dir> <output_dir> [grade] [led_preset]` — runs the full pipeline on every video in a folder.
+
+---
+
+## Pipeline Stages (detail)
 
 | Stage | Tool | What it does |
 |-------|------|--------------|
+| 0. Animatic | `animatic_builder.py` | Storyboard images + timing CSV → timed 1080p MP4 with temp audio |
 | 1. Denoise | ffmpeg hqdn3d + deflicker | Removes phone camera noise, stabilizes flicker |
 | 2. Line cleanup | `cleanup_lines.py` (OpenCV) | Smooths noise, crisps lines, preserves fills |
-| 3. Interpolation | RIFE / ToonCrafter / ffmpeg | 12fps → 24fps AI inbetweening |
+| 3. Interpolation | RIFE / ToonCrafter / ToonComposer | 12fps → 24fps AI inbetweening (see below) |
+| 3b. Scene-aware | `scene_aware_interp.py` | Strips black separator frames BEFORE interpolation |
 | 4. De-ghost | `deghost.py` | Removes interpolation ghosting on flat colors |
 | 5. Upscale | Lanczos / ESPCN / RealESRGAN-anime | 2x resolution boost |
 | 6. Sharpen | ffmpeg unsharp + color punch | Final detail enhancement |
-| 7a. Energy blast | `energy_blast.py` | Wrist blaster VFX (beam/rings/freeze/burst) |
-| 7b. LED lighting | `led_controller.py` | 8 animated LED presets |
+| 7a. Anime FX | `anime_fx.py` | Speed lines, impact flash, screen shake |
+| 7b. Retro FX | `retro_fx.py` | VHS tracking, CRT scanlines, chromatic aberration |
+| 7c. Energy blast | `energy_blast.py` | Wrist blaster VFX (beam/rings/freeze/burst) |
+| 7d. Stroke reveal | `stroke_reveal.py` | Neon write-on (scary face gag, chalkboard) |
+| 7e. LED scene | `led_scene_assembler.py` | 3 frames → full LED remote scene |
+| 7f. LED lighting | `led_controller.py` | 15 animated LED presets |
 | 8. QC | `finish.py` | Automated quality checks |
-| 9. Color grade | `grades.py` (24 grades) | Signature Cape Jones look |
+| 9. Color grade | `grades.py` (32 grades) | Signature Cape Jones look |
 | 10. Audio mix | `finish.py` | Music + SFX mixing |
 | 11. Encode | `finish.py` | Web/broadcast/master presets |
+| 12. Social | `social_export.sh` | TikTok 9:16, IG 1:1, IG 4:5 |
 
 ---
 
@@ -32,14 +59,31 @@
 | Method | Speed | Quality | When to use |
 |--------|-------|---------|-------------|
 | **RIFE** (default) | ~26s/pair CPU, 1.3min/216 pairs GPU | Good, some ghosting on flat colors | General use |
-| **ToonCrafter** | 2-3hr/105 pairs GPU | Best for cartoons, generative | Hero shots, important scenes |
+| **ToonCrafter** | 2-3hr/105 pairs GPU (tuned: 30-45min) | Best for cartoons, generative | Hero shots, important scenes |
+| **ToonComposer** | ~5min/81 frames GPU | Keyframe → full shot, 3.4s per 2 keyframes | Draw 2 frames, get a shot |
 | **Fast** (ffmpeg) | Seconds | Preview quality | Quick checks |
 
 **GPU rule:** Heavy lifting goes to Kaggle T4 (30 hrs/week). Never say "no GPU."
 
+**Black frame rule:** ALWAYS strip black separator frames before interpolation (`scene_aware_interp.py` or manually). Feeding black frames to an interpolator produces flashing/ghosting.
+
 ---
 
-## Color Grades (24)
+## ToonComposer — Keyframe Workflow
+
+ToonComposer generates 81 frames (3.4s @ 24fps) from 2+ keyframes. You draw the moments, AI draws the movement.
+
+**Controls:**
+1. **Frame count** — how long the shot is (24=short, 48=medium, 81=max)
+2. **Keyframe placement** — which frame number each drawing lands on
+3. **Text prompt** — describe the action ("face shifts from tired to surprised")
+4. **CFG scale** — how strongly to follow the prompt
+
+**Episode math:** 5 min = 7,200 frames. At ~3.4s per 2 keyframes, ~88 shots (~176 keyframes) = a full episode. You're not drawing 7,200 frames.
+
+---
+
+## Color Grades (32)
 
 **Signature** (whites protected per model-sheet law):
 - `cj-day` — Default. Punchy cartoon, violet cowl pop.
@@ -58,11 +102,17 @@
 **Outside/creative:**
 - `outside-noir`, `outside-acid`, `outside-dusk`, `outside-storm`
 
-**LED references:** `led-chill-blue`, `led-deep-purple`, `led-ember`, + 3 more
+**Real lighting** (from owner's 2026-10-16 research):
+- `purple-streetlight` — the defective phosphor-delamination streetlight look
+- `blacklight-purple` — UV blacklight, white suit glows blue-white
+- `bulb-orange`, `bulb-yellow`, `bulb-red`, `bulb-purple`, `bulb-green` — colored LED bulbs
+- `disco-party` — spinning disco ball light
+
+**LED references:** `led-chill-blue`, `led-deep-purple`, `led-ember`, `led-ghost-teal`, `led-party`, `led-sunset`, + more
 
 ---
 
-## LED Presets (8 animated)
+## LED Presets (15 animated)
 
 Like a real RGB strip controller. Time-varying color washes.
 
@@ -76,39 +126,81 @@ Like a real RGB strip controller. Time-varying color washes.
 | `ocean-calm` | Gentle blue wave | Beach house |
 | `ember-glow` | Fireplace flicker | Cozy/intimate |
 | `rainbow-smooth` | Full spectrum cycle | Maximum chaos |
+| `strobe-white` | White flash strobe | Impact moments |
+| `jump3-rgb` | RGB jump (real remote mode) | — |
+| `jump7-color` | 7-color jump (real remote mode) | — |
+| `fade3-rgb` | RGB fade (real remote mode) | — |
+| `auto-cycle` | Auto mode (real 44-key remote) | — |
+| `blacklight-flicker` | UV flicker | Blacklight scenes |
+| `streetlight-hum` | Defective purple streetlight | Outside night |
 
 **Canon:** Ghost cave LED is locked to `ghost-mode`. He never changes it.
 **The remote** is a story prop — he hits a button, room changes, acts like nothing happened.
+**`--speed`** multiplier on all presets.
 
 ---
 
 ## Effects
 
-### Energy Blast (`energy_blast.py`)
-For Cape Jones wrist blasters. Canon colors: white core, yellow/cyan corona.
-
+### Anime FX (`anime_fx.py`)
 ```bash
-# Standalone
-python3 energy_blast.py --type beam --duration 2.0 --output blast.mp4
-
-# Composite onto video at position
-python3 energy_blast.py --type beam --base input.mp4 \
-    --x 540 --y 960 --angle 0 --output out.mp4
+python3 anime_fx.py --speed-lines -o out.mp4              # radial manga speed lines
+python3 anime_fx.py --impact --frames 5 -o out.mp4        # impact flash + starburst
+python3 anime_fx.py --shake-input in.mp4 -o out.mp4       # screen shake for hits
+python3 anime_fx.py --speed-overlay in.mp4 -o out.mp4     # speed lines over video
 ```
 
+### Retro FX (`retro_fx.py`)
+```bash
+python3 retro_fx.py --vhs -o out.mp4 in.mp4               # VHS tracking + noise
+python3 retro_fx.py --crt -o out.mp4 in.mp4               # scanlines + phosphor glow
+python3 retro_fx.py --vhs --crt --intensity 0.7 -o out.mp4 in.mp4
+```
+
+### Energy Blast (`energy_blast.py`)
+For Cape Jones wrist blasters. Canon colors: white core, yellow/cyan corona.
+```bash
+python3 energy_blast.py --type beam --duration 2.0 --output blast.mp4
+python3 energy_blast.py --type beam --base input.mp4 --x 540 --y 960 --output out.mp4
+```
 Types: `beam` (force beam), `rings` (stun rings), `freeze` (ice ray), `burst` (radial)
 
 ### Stroke Reveal (`stroke_reveal.py`)
 Neon write-on animation. For scary face/mask gag, chalkboard effects.
-
 ```bash
-python3 stroke_reveal.py drawing.png output.mp4 \
-    --strokes strokes.json --glow-color cyan --duration 3.0
+python3 stroke_reveal.py drawing.png output.mp4 --strokes strokes.json --glow-color cyan --duration 3.0
+```
+
+### LED Scene Assembler (`led_scene_assembler.py`)
+3 frames → full LED remote scene. Color changes sync on thumb press.
+```bash
+python3 led_scene_assembler.py sit.png press.png release.png \
+  --sequence purple-pulse chill-blue ember-glow ghost-mode \
+  --party rainbow-smooth --duration 2 --party-duration 15 \
+  --output led_scene.mp4
 ```
 
 ### Chowder Patterns
-`~/workspace/cape-jones-build/chowder-fx/` — Greenblatt's fixed-pattern technique.
-Character has holes, moves over static pattern. Authentic Chowder look.
+Greenblatt's fixed-pattern technique. Character has holes, moves over static pattern. Authentic Chowder look.
+
+---
+
+## AI Body Replacement
+
+**Viggle-Animate** (open-source, Kaggle T4): `production/ai-body-replace/`
+- Upload driving video (you doing motion) + character image
+- Get character performing your exact motion
+- Free, unlimited, no paywalls
+
+**Other tools:** `~/workspace/tools/body-replace/` — motion-mirror, mimicmotion, musepose, dwpose (CPU)
+
+---
+
+## Lip Sync
+
+- **LatentSync** (ByteDance) — AI lip sync on animated characters, Kaggle GPU
+- **OpenFaceFX** (CPU) — audio + transcript → viseme curves → OpenToonz/Tahoma2D
+- **MuseTalk** — backup option
 
 ---
 
@@ -127,13 +219,10 @@ Character has holes, moves over static pattern. Authentic Chowder look.
 
 ## Character Building
 
-**Vector parts:** `~/workspace/cape-jones-build/vector-workflow/raster_to_vector.py`
-- vtracer: raster → SVG conversion
+**Vector parts:** raster → SVG via vtracer
 - For puzzle-piece assembly from Space Ghost EPS sheets
 
 **Model sheet cutting:** rembg + Inkscape pipeline
-- `~/workspace/tools/rembg-venv/` — AI background removal
-- `~/workspace/tools/inkscape-1.4.4/` — vector editing
 
 **Rigs:** Tahoma2D (cutout), Blender Grease Pencil (2D in 3D space)
 
@@ -143,18 +232,19 @@ Character has holes, moves over static pattern. Authentic Chowder look.
 
 ---
 
-## Rotoscoping / AI Body Replacement
+## 3D Segments
 
-**Pose extraction:** `~/workspace/tools/mocap/mediapipe_pose.py`
-**Body replacement:** `~/workspace/tools/body-replace/` (various tools)
+**Living room scene:** `~/workspace/cape-jones-build/3d-assets/living_room.blend`
+- Full room, furniture, LED strips (color-animated), LED remote on coffee table
+- 15s LED cycle: purple → blue → red → green → party → purple
 
-Owner films himself → pose extracted → Cape Jones mapped onto motion.
+**Rig script:** `rig_cape_jones.py` — imports Tripo3D GLB, builds 17-bone armature, sitting pose
 
 ---
 
 ## Environments
 
-**House design:** `docs/environments/HOUSE-DESIGN.md` (in cape-jones repo)
+**House design:** `docs/environments/HOUSE-DESIGN.md`
 - ATHF-vibe boring exterior, living room with LEDs, ghost cave behind bookshelf
 
 **Mixed media:** `docs/environments/MIXED-MEDIA-GUIDE.md`
@@ -172,47 +262,49 @@ Owner films himself → pose extracted → Cape Jones mapped onto motion.
 | `broadcast` | 18 | High quality, episodes |
 | `master` | 12 | Archive, further editing |
 
+**Social export** (`social_export.sh`):
+```bash
+bash social_export.sh finished.mp4 out/                    # all presets
+bash social_export.sh finished.mp4 out/ tiktok            # just TikTok
+bash social_export.sh finished.mp4 out/ tiktok --focus-top # bias crop up
+```
+
 ---
 
 ## Quick Reference
 
 ```bash
 # List everything
-cape_jones_pipeline.sh --list-grades
-cape_jones_pipeline.sh --list-led
+python3 finish.py --list-grades
+python3 led_controller.py --list
 
 # Basic finished segment
-cape_jones_pipeline.sh in.mp4 out.mp4 \
-    --grade cj-royal --audio music.mp3
+bash cape_jones_pipeline.sh in.mp4 out.mp4 --grade cj-royal --audio music.mp3
 
-# Full production with effects
-cape_jones_pipeline.sh in.mp4 out.mp4 \
-    --grade cj-trippy --led party-strobe \
-    --blast beam --blast-x 540 --blast-y 960 \
-    --audio nebulas.mp3 --preset broadcast
+# LED scene from 3 frames
+python3 led_scene_assembler.py sit.png press.png release.png \
+  --sequence purple-pulse chill-blue ember-glow --party rainbow-smooth \
+  --output led_scene.mp4
 
-# Vibe segment (LED loop, no one is animated but the lights)
-cape_jones_pipeline.sh in.mp4 out.mp4 \
-    --grade cj-night --led purple-pulse --led-speed 0.5 \
-    --audio nosferatu.mp3 --preset web
+# Batch process a folder
+bash batch_process.sh input_dir/ output_dir/ cj-night purple-pulse
+
+# Social delivery
+bash social_export.sh finished.mp4 social_out/
 ```
 
 ---
 
 ## Tool Locations
 
-| Category | Path |
-|----------|------|
-| Pipeline scripts | `~/workspace/tools/post-pipeline/` |
-| Interpolation | `~/workspace/tools/rife-v46/`, `~/workspace/tools/tooncrafter/` |
-| Color/lighting | `~/workspace/tools/post-pipeline/grades.py`, `led_controller.py` |
-| Effects | `~/workspace/tools/post-pipeline/energy_blast.py`, `stroke_reveal.py` |
-| Audio | `~/workspace/tools/sfx/`, `~/workspace/cape-jones-build/music/` |
-| Character | `~/workspace/cape-jones-build/vector-workflow/` |
-| Body replace | `~/workspace/tools/body-replace/` |
-| Mocap | `~/workspace/tools/mocap/` |
-| Upscale models | `~/workspace/tools/upscale-models/` |
-| Kaggle notebooks | `~/workspace/cape-jones-build/kaggle-rife/`, `kaggle-tooncrafter/` |
+| Category | Repo path | Local path |
+|----------|-----------|------------|
+| Pipeline scripts | `production/pipeline/` | `~/workspace/tools/post-pipeline/` |
+| Kaggle notebooks | `production/kaggle/` | `~/workspace/cape-jones-build/kaggle-*/` |
+| AI body replace | `production/ai-body-replace/` | `~/workspace/cape-jones-build/kaggle-viggle/` |
+| Tripo pull tool | `production/tools/tripo-pull/` | `~/workspace/tools/tripo-pull/` |
+| Color/lighting | `production/pipeline/grades.py`, `led_controller.py` | same |
+| Docs | `docs/` | `~/workspace/cape-jones-build/` |
 
 ---
 
@@ -223,3 +315,4 @@ cape_jones_pipeline.sh in.mp4 out.mp4 \
 - **CHECK-HIS-COMPUTE-FIRST** — Kaggle GPU for heavy lifting, never say "no GPU"
 - **ARCHIVE LAW** — Archive originals stay byte-identical; edits on copies only
 - **THINK-BIG** — Production-grade, never prototype when he asked for production
+- **BLACK-FRAME RULE** — Strip black separators before interpolation, always
