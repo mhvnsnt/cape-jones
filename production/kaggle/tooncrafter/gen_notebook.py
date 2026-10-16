@@ -87,8 +87,16 @@ else:
 # Kaggle ships torch+torchvision; install the rest (skip torch to save time)
 print("Installing deps...")
 subprocess.run([sys.executable, "-m", "pip", "install", "-q",
-                "decord==0.6.0", "einops==0.3.0", "omegaconf==2.1.1",
-                "pytorch_lightning==1.9.3", "transformers==4.25.1",
+                # NOTE (2026-10-16): decord REMOVED — no cp313 wheels (abandoned
+                # since 2022), and it's only used in training/eval scripts,
+                # never in inference. transformers bumped 4.25.1 -> 4.48.3
+                # because 4.25.1 pins tokenizers<0.14 which has no cp313 wheels
+                # (build from source fails). 4.48.3 needs tokenizers>=0.21
+                # which ships cp39-abi3 wheels (work on 3.13). Verified:
+                # CLIPTokenizer/CLIPTextModel/T5Tokenizer/T5EncoderModel all
+                # import fine on 4.48.3.
+                "einops==0.3.0", "omegaconf==2.1.1",
+                "pytorch_lightning==1.9.3", "transformers==4.48.3",
                 "open_clip_torch==2.22.0", "xformers", "timm",
                 "kornia", "av", "moviepy"],
                check=True)
@@ -269,7 +277,7 @@ nb = {
     "cells": cells,
 }
 
-out_path = "/home/hatch/workspace/cape-jones-build/kaggle-tooncrafter/cape_jones_tooncrafter_kaggle.ipynb"
+out_path = "/home/hatch/workspace/cape-jones/production/kaggle/tooncrafter/cape_jones_tooncrafter_kaggle.ipynb"
 with open(out_path, "w") as f:
     json.dump(nb, f, indent=1)
 print(f"Wrote {out_path} ({len(cells)} cells)")
