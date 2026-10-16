@@ -15,7 +15,7 @@ Owner: "keep pulling more stuff in that would be relevant." Aggressive gap-fill 
 | Title cards / kinetic typography / bumpers | ❌ Missing | ✅ Cloned html-animation |
 | Browser-based storyboard w/ audio timing | Partial (Storyboarder) | ✅ Cloned choxos/storyboard |
 | Script → narrated video (auto animatic) | ❌ Missing | ✅ Cloned explainroo |
-| Anime-style 3D rendering (cel shader) | ❌ Missing | ⚠️ three-anime-style (network fail, retry) |
+| Anime-style 3D rendering (cel shader) | ✅ Pulled | three-anime-style in production/tools/ (MIT, pulled 2026-10-16) |
 
 ## Custom-Built Pipeline Scripts
 
@@ -87,11 +87,11 @@ Storyboarder / storyboard/ → boards
   → delivery
 ```
 
-## Still To Pull (network blocked, retry later)
-- `three-anime-style/` (xymeow): Cel-shaded anime rendering for Three.js 3D segments
-- `video-gif-studio/` (miles990): Storyboard planning + music beat analysis
-- `AnimeEffects/` (AnimeEffectsDevs): 2D animation tool (GPL-3.0)
-- `hyperframes-effects-gallery/`: 255-effect catalog (transitions, captions)
+## Still To Pull (network blocked, retry later) — RESOLVED 2026-10-16
+- `three-anime-style/` (xymeow, MIT): Cel-shaded anime rendering for Three.js 3D segments — ✅ PULLED 2026-10-16 into `production/tools/three-anime-style/` (22MB). NOTE: unblock-browser-items.json claimed a sibling agent had pulled it, but it was NOT on main — verified against the repo and pulled fresh.
+- `video-gif-studio/` (miles990): Storyboard planning + music beat analysis — ✅ RECOVERED via PR #34 (126MB, on main).
+- `AnimeEffects/` (AnimeEffectsDevs): 2D animation tool (GPL-3.0) — ✅ cloned (17MB).
+- `hyperframes-effects-gallery/`: 255-effect catalog (transitions, captions) — ✅ correct URL found (genoooool/hyperframes-effects-gallery), PULLED 2026-10-16 into `production/tools/hyperframes-effects-gallery/` (427MB: 230MB previews, 1.5MB catalog JSON). License caveat: upstream effects keep original licenses per THIRD_PARTY_NOTICES.md.
 
 ### `AnimeEffects/` (AnimeEffectsDevs, ✅ cloned, 17MB)
 2D modular animation tool. GPL-3.0. Updated Dec 2025. C++ based.
@@ -99,7 +99,7 @@ Storyboarder / storyboard/ → boards
 ## Disk Impact
 Custom scripts: <50KB. Clones: ~42MB. Total pull: <45MB.
 
-## Retry Status (2026-10-16 ~04:00 EDT)
-- `three-anime-style/`: Still failing — network disconnects during clone. Retry when network stable.
-- `video-gif-studio/`: Still failing — empty dir on clone. Retry when network stable.
-- `hyperframes-effects-gallery/`: URL was wrong (repo not found). Needs correct URL research.
+## Retry Status (2026-10-16 ~04:00 EDT) — updated ~16:30 EDT
+- `three-anime-style/`: ✅ PULLED 2026-10-16 into production/tools/three-anime-style/ (MIT, 22MB).
+- `video-gif-studio/`: ✅ recovered via PR #34 (on main).
+- `hyperframes-effects-gallery/`: ✅ correct URL found (genoooool/hyperframes-effects-gallery). Status below.

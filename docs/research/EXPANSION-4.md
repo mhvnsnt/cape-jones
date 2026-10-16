@@ -69,10 +69,10 @@ Research completed via two parallel lanes. Full raw findings in `/tmp/track1-fin
 - **TalkingPose (WACV 2026):** Research-only license. Documented only.
 - **Wav2Lip:** Relicensed to non-commercial/research-only. Do NOT use.
 
-### Failed to pull (network issues — retry on stable connection)
-- InstanceAnimator (multi-instance sketch colorization) — https://github.com/YinHan-Zhang/InstanceAnimator
-- SCAIL-2 (skeleton-free animation) — https://github.com/zai-org/SCAIL-2
-- LDF-VFI (CVPR 2026 generative interpolation) — https://github.com/xypeng9903/LDF-VFI
+### Failed to pull (network issues — retry on stable connection) — RESOLVED 2026-10-16
+- InstanceAnimator (multi-instance sketch colorization) — https://github.com/YinHan-Zhang/InstanceAnimator — ✅ PULLED into `production/tools/InstanceAnimator/` (Apache-2.0, 4.1MB). NOTE: model weights are lost per author ("you need to retrain model"); code-only pull, train on Kaggle-side. Code was found staged in ~/workspace/tools/InstanceAnimator-main and moved into the repo.
+- SCAIL-2 (skeleton-free animation) — ✅ recovered via PR #33 into `production/tools/SCAIL-2/`.
+- LDF-VFI (CVPR 2026 generative interpolation) — ✅ recovered via PR #33 into `production/tools/LDF-VFI/`.
 
 ---
 
