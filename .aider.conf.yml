@@ -1,0 +1,23 @@
+# Aider configuration for Cape Jones / animation repos
+# Install: pip install aider-chat
+# Usage: cd <repo> && aider
+# Docs: https://aider.chat/docs
+
+# Use a free/low-cost model — set your preferred provider via env var
+# Options: OPENAI_API_KEY, ANTHROPIC_API_KEY, GEMINI_API_KEY, GROQ_API_KEY
+model: gemini/gemini-2.0-flash
+
+# Never auto-commit — we review everything before commit
+auto-commits: false
+
+# Watch files for AI edits
+watch-files: true
+
+# Dark mode colors for terminal
+dark-mode: true
+
+# Show diffs before applying
+show-diffs: true
+
+# Suggest shell commands but don't run them automatically
+suggest-shell-commands: true
