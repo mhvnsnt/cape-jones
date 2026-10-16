@@ -136,3 +136,54 @@ For the 4 missing Pantera chunks (owner: same quality, get it done):
 - Parallel GPU limit: https://github.com/rlaplaza-lab/famex/commit/416d3e04d9fc52571a1a0490a20bfec92f6d46b5
 - Blender 4.5 Cycles: https://developer.blender.org/docs/release_notes/4.5/cycles/
 - Free GPU comparison 2026: https://github.com/spinov001-art/free-gpu-machine-learning
+
+---
+
+## Appendix: Production Precedents & Additional Pitfalls (2026-10-16 deep research)
+
+### Dataset Publishing From Inside the Notebook — Production Standard
+
+Multiple 2026 production repos publish Kaggle datasets from inside running kernels as their primary output-preservation mechanism:
+
+- **CodeWithOz/umud-challenge:** "Kaggle-native gen notebooks publish datasets via `kaggle datasets version/create` from inside the prep kernel"
+- **alansencinas/lunarsite:** "Checkpoints dataset: trained model weights live in the private dataset. Update with `kaggle datasets version` to publish new versions"
+- **basyirin-dev/sigma-model:** Publishes metrics as dataset versions from inside notebooks. When multiple notebooks upload concurrently, adds `time.sleep(random.uniform(5, 30))` before the version call to avoid version conflicts.
+
+Our `production/pipeline/save_outputs.py` implements this exact pattern.
+
+### Papermill IOPub Timeout
+
+Kaggle uses papermill to execute notebooks. Papermill kills the kernel if no output is produced for ~4 seconds.
+
+**Fix:** Ensure regular output during long operations with `flush=True`:
+```python
+for i, batch in enumerate(dataloader):
+    train_step(batch)
+    if i % 10 == 0:
+        print(f"Step {i}/{len(dataloader)}", flush=True)
+```
+
+**Source:** 14790897/my-skills kaggle-kernel-runner SKILL.md
+
+### Dataset Auto-Extraction Quirk
+
+Kaggle automatically extracts `.zip`, `.tar.gz`, `.tar`, `.7z` when uploaded as datasets. If you publish a zip as a dataset version then attach it to another kernel, files arrive extracted — `glob('*.zip')` finds nothing.
+
+**Fix:** When restoring, search by filename recursively and re-zip if needed. Our `save_outputs.py` `restore_from_input()` handles this.
+
+### API-Triggered Runs Lose GPU Flags
+
+`save_notebook` with `SaveAndRunAll` via the Kaggle API executes on **CPU** even when the notebook is configured for GPU. Only browser "Save Version → Save & Run All" provisions GPU.
+
+**Source:** manojdadi56/kaggle AGENTS.md (re-confirmed 2026)
+
+**Implication:** `kaggle kernels push` via CLI *does* trigger a run with saved settings (including GPU). But programmatic `save_notebook` API calls do not preserve GPU. For GPU work pushed via API, verify the run actually got GPU.
+
+### Additional Sources
+
+- https://github.com/codewithoz/umud-challenge/blob/HEAD/AGENTS.md
+- https://github.com/alansencinas/lunarsite/blob/HEAD/CLAUDE.md
+- https://github.com/basyirin-dev/sigma-model/blob/HEAD/archive/docs/research/kaggle-experiment-architecture.md
+- https://github.com/14790897/my-skills/blob/HEAD/skills/kaggle-kernel-runner/SKILL.md
+- https://github.com/manojdadi56/kaggle/blob/HEAD/AGENTS.md
+- https://github.com/arnavlifelesscoder/ag-ar-gud-stuff/blob/HEAD/KAGGLE_RUNBOOK.md
