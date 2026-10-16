@@ -111,11 +111,9 @@ Place at `~/workspace/tools/upscale-models/spanx2_ch48.pth`
 python3 render_half_interp.py frames_15fps/ output_30fps.mp4 --fps 30
 ```
 
-**Faster RIFE (pulled):** `~/workspace/tools/comfyui-rife-tensorrt/`
-- TensorRT-accelerated RIFE (FP16) — significantly faster than PyTorch RIFE on NVIDIA
-- Models: rife47 (fastest), rife48 (balanced), rife49 (latest/most accurate)
-- For Kaggle T4: build the TensorRT engine once, then it's blazing fast
-- Also pulled: RIFE v2 ONNX models are ~17-23% faster than v1
+**Faster RIFE (evaluated, REJECTED):** `comfyui-rife-tensorrt` (TensorRT FP16 RIFE)
+was pulled and then **deleted** — it's CC-BY-NC-SA-4.0 (non-commercial),
+unsafe for monetized shows. Use PyTorch RIFE 4.25 instead (MIT).
 
 ---
 
@@ -148,7 +146,7 @@ ToonCrafter is slow (~2-3 hours for 105 pairs). Faster options:
 | Tool | Speed | Quality | Status |
 |------|-------|---------|--------|
 | **RIFE 4.25** (PyTorch) | 1.3 min / 216 pairs on T4 | Good for 3D, risky for flat cartoons | Have it (`rife425/`) |
-| **RIFE TensorRT** (FP16) | 3-5x faster than PyTorch RIFE | Same as RIFE | Pulled (`comfyui-rife-tensorrt/`) |
+| **RIFE TensorRT** (FP16) | 3-5x faster than PyTorch RIFE | Same as RIFE | REJECTED — CC-BY-NC-SA-4.0 |
 | **RIFE v2 ONNX** | 17-23% faster than v1 | Same | Documented |
 | **ToonCrafter** (tuned) | 30-45 min (was 2-3h) | Best for cartoons | Tuned (PR #8) |
 | **LayerInbetween** (SIGGRAPH 2026) | TBD | Stroke-native, better than pixel | Pulled (Expansion-4) |
@@ -187,7 +185,7 @@ cycles_speed_config.apply_optimized(preset="animation")
 | `render_half_interp.py` | `post-pipeline/` | 15fps → RIFE → 30fps |
 | `upscale_span.py` | `post-pipeline/` | SPAN AI upscaling |
 | `span-official/` | `~/workspace/tools/` | SPAN source (Apache 2.0) |
-| `comfyui-rife-tensorrt/` | `~/workspace/tools/` | TensorRT RIFE node |
+| `comfyui-rife-tensorrt/` | `~/workspace/tools/` | TensorRT RIFE node (DELETED — non-commercial license) |
 
 ## SOURCES
 
