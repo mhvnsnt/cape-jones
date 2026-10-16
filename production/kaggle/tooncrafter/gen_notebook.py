@@ -9,9 +9,12 @@ Unlike RIFE (trained on real video), ToonCrafter (SIGGRAPH Asia 2024) is
 specifically trained on cartoons — handles exaggerated non-linear motion and
 dis-occlusion that flow-based methods ghost on.
 
-Strategy: 105 adjacent frame pairs -> each generates 16 frames via ToonCrafter
-interp mode -> take middle frame (idx 8) from each -> interleave with originals:
+Strategy: 105 adjacent frame pairs -> each generates 8 frames via ToonCrafter
+interp mode -> take middle frame (idx 4) from each -> interleave with originals:
   [orig_0, mid_0, orig_1, mid_1, ...] = 211 frames @ 24fps
+
+TUNED FOR SPEED (v2): ddim_steps=12 (was 25), video_length=8 (was 16).
+Estimated ~4x faster than v1 with minimal quality loss — see TUNING.md.
 
 Portrait handling: input is 1080x1920. ToonCrafter's 512 model was trained at
 512x320 (landscape) but the UNet is fully convolutional — we run at
@@ -59,7 +62,7 @@ Pipeline in this notebook:
 3. Download model.ckpt from HuggingFace (~5GB, be patient)
 4. Download input video from GitHub (SHA-256 verified)
 5. Extract 106 frames, resize to 320x512 portrait, build 105 keyframe pairs
-6. ToonCrafter inference on CUDA (105 pairs x 16 frames, take middle frame)
+6. ToonCrafter inference on CUDA (105 pairs x 8 frames, take middle frame idx 4)
 7. Interleave originals + middles -> 211 frames @ 24fps MP4 -> `/kaggle/working/`
 """),
 
@@ -120,7 +123,7 @@ print("Video verified OK.")
 '''),
 
 code('''# === Extract frames + build 105 keyframe pairs ===
-# ToonCrafter interp mode: each sample = 2 keyframes -> generates 16 frames.
+# ToonCrafter interp mode: each sample = 2 keyframes -> generates 8 frames (tuned).
 # We need 105 pairs from 106 frames. Portrait: resize to 320x512.
 import subprocess, os, shutil
 
@@ -159,8 +162,9 @@ print(f"105 pairs built in {prompt_dir}")
 '''),
 
 code('''# === ToonCrafter inference on CUDA ===
-# 105 pairs -> 16 frames each. We take the middle frame (idx 8) from each.
-# ddim_steps=25 for speed (50 = slower, marginally better). bs=1 for VRAM safety.
+# 105 pairs -> 8 frames each (TUNED: was 16). We take the middle frame (idx 4).
+# ddim_steps=12 (TUNED: was 25). bs=1 for VRAM safety.
+# See TUNING.md for speed/quality tradeoff analysis.
 import subprocess, time, os
 
 t0 = time.time()
@@ -175,11 +179,11 @@ cmd = [
     "--height", "512",
     "--width", "320",
     "--unconditional_guidance_scale", "7.5",
-    "--ddim_steps", "25",
+    "--ddim_steps", "12",
     "--ddim_eta", "1.0",
     "--prompt_dir", "/kaggle/working/tc_input/prompts/cape_jones",
     "--text_input",
-    "--video_length", "16",
+    "--video_length", "8",
     "--frame_stride", "10",
     "--timestep_spacing", "uniform_trailing",
     "--guidance_rescale", "0.7",
@@ -196,7 +200,7 @@ print("Inference complete.")
 '''),
 
 code('''# === Extract middle frames + interleave + assemble 24fps MP4 ===
-# From each 16-frame ToonCrafter output, take frame idx 8 (the true middle).
+# From each 8-frame ToonCrafter output, take frame idx 4 (the true middle).
 # Output sequence: [orig_0, mid_0, orig_1, mid_1, ...] = 211 frames @ 24fps.
 import os, glob, shutil, subprocess
 from PIL import Image
@@ -223,8 +227,8 @@ for i, sdir in enumerate(sample_dirs):
     out_idx += 1
     # ToonCrafter middle frame (320x512) -> upscale to 1080x1920 to match
     tc_frames = sorted(glob.glob(os.path.join(sdir, "*.png")))
-    assert len(tc_frames) == 16, f"Sample {i}: expected 16 frames, got {len(tc_frames)}"
-    mid = Image.open(tc_frames[8]).convert("RGB").resize((1080, 1920), Image.LANCZOS)
+    assert len(tc_frames) == 8, f"Sample {i}: expected 8 frames, got {len(tc_frames)}"
+    mid = Image.open(tc_frames[4]).convert("RGB").resize((1080, 1920), Image.LANCZOS)
     mid.save(os.path.join(out_dir, f"out_{out_idx:05d}.png"))
     out_idx += 1
 
