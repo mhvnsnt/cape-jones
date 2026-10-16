@@ -6,9 +6,11 @@ Cape Jones has RGB LED strip lights in his house — the real kind, like Govee o
 
 This isn't just a visual trick. It's a **story device**. The LED controller is a physical object in his house. He picks up the remote, hits a button, the room changes. The audience sees him do it.
 
+His remote is the standard **44-key IR remote** (the kind that comes with RGB 5050 strips). The presets below map 1:1 to its real modes.
+
 ## The Presets
 
-Eight presets, modeled on real LED strip modes (FADE, JUMP, PULSE, STATIC):
+### Original 8 (LED strip classics)
 
 | Preset | Real LED Mode | Vibe | When to Use |
 |--------|--------------|------|-------------|
@@ -20,6 +22,36 @@ Eight presets, modeled on real LED strip modes (FADE, JUMP, PULSE, STATIC):
 | `ocean-calm` | FADE | Blue-teal water waves | Daytime chilling, beach house feel |
 | `ember-glow` | FLICKER | Fireplace warm flicker | Cozy night scenes |
 | `rainbow-smooth` | FADE (full) | Full spectrum cycle | Montages, demo mode energy |
+
+### New: 44-Key Remote Modes (exact matches)
+
+| Preset | Remote Button | What It Does | When to Use |
+|--------|--------------|--------------|-------------|
+| `strobe-white` | FLASH | White strobe on/off | Alarm, shock, "what the fuck" moments |
+| `jump3-rgb` | JUMP3 | Red → Green → Blue, hard cuts | Abrasive, attention-grabbing |
+| `jump7-color` | JUMP7 | 7 colors, hard cuts | Party chaos |
+| `fade3-rgb` | FADE3 | Red → Green → Blue, smooth | Gentler than jump |
+| `auto-cycle` | AUTO | Drifts through all dynamic modes | Set-and-forget background vibe |
+
+### New: Real-World Light Sources (animated)
+
+| Preset | Source | What It Does | When to Use |
+|--------|--------|--------------|-------------|
+| `blacklight-flicker` | UV blacklight | Violet haze + faint mains flicker | Blacklight party scenes |
+| `streetlight-hum` | Purple streetlight | Constant wrong-color blue-violet, barely-perceptible hum | Exterior night scenes |
+
+### Static Grades (single-frame, for thumbnails/reference)
+
+These live in `grades.py` — use with `finish.py --grade`:
+
+| Grade | Source |
+|-------|--------|
+| `purple-streetlight` | Defective LED streetlight (phosphor delamination) |
+| `blacklight-purple` | UV blacklight room |
+| `bulb-orange` / `bulb-yellow` / `bulb-red` / `bulb-purple` / `bulb-green` | Colored LED bulbs |
+| `disco-party` | Dark base for disco overlay (dots composited separately) |
+
+Full research: [REAL-LIGHTING-RESEARCH.md](REAL-LIGHTING-RESEARCH.md)
 
 ## Usage
 

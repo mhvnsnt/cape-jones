@@ -100,13 +100,15 @@ def _preset_party_strobe(speed=1.0):
     # Uses step function via floor() for abrupt changes.
     period = 2.0 / speed
     # floor creates discrete jumps: 0,1,2,3 -> mapped to hue offsets
+    # NOTE: comma in mod() must be escaped as \, or ffmpeg splits filters
     hue_expr = (
-        f"0+90*floor(mod(t,{period})/({period}/4))"
+        f"0+90*floor(mod(t\\,{period})/({period}/4))"
     )
     return _cycle_filter(
         get_grade("led-party"),
         hue_expr,
-        bright_expr=f"0.04*pow(sin(2*PI*t/{period*0.5}),2)",
+        # NOTE: comma in pow() must be escaped as \,
+        bright_expr=f"0.04*pow(sin(2*PI*t/{period*0.5})\\,2)",
     )
 
 
@@ -162,6 +164,105 @@ def _preset_rainbow_smooth(speed=1.0):
     )
 
 
+# ---------------------------------------------------------------------------
+# REAL-LIGHTING ANIMATED PRESETS (from REAL-LIGHTING-RESEARCH.md)
+# Matching the 44-key remote modes exactly + blacklight + streetlight life.
+# ---------------------------------------------------------------------------
+
+def _preset_strobe_white(speed=1.0):
+    # FLASH mode: white strobe. Hard on/off brightness square wave.
+    # Period: 1s at 1.0x. Use sparingly — seizure warning for real use.
+    # gte() returns 1/0 — valid ffmpeg expression function for square wave.
+    period = 1.0 / speed
+    bright_expr = f"0.5*gte(sin(2*PI*t/{period})\\,0)-0.05"
+    return _cycle_filter(
+        get_grade("cj-day"),
+        "0",
+        bright_expr=bright_expr,
+    )
+
+
+def _preset_jump3_rgb(speed=1.0):
+    # JUMP3: Red -> Green -> Blue, hard cuts. Period: 3s at 1.0x.
+    period = 3.0 / speed
+    # floor(mod(t,period)/(period/3)) gives 0,1,2 -> map to hue 0,120,240
+    # NOTE: comma in mod() must be escaped as \, or ffmpeg splits filters
+    hue_expr = f"120*floor(mod(t\\,{period})/({period}/3))"
+    return _cycle_filter(
+        get_grade("led-party"),
+        hue_expr,
+    )
+
+
+def _preset_jump7_color(speed=1.0):
+    # JUMP7: 7 colors, hard cuts. Period: 3.5s at 1.0x.
+    period = 3.5 / speed
+    # NOTE: comma in mod() must be escaped as \, or ffmpeg splits filters
+    hue_expr = f"(360.0/7)*floor(mod(t\\,{period})/({period}/7))"
+    return _cycle_filter(
+        get_grade("led-party"),
+        hue_expr,
+        sat_expr="1.6",
+    )
+
+
+def _preset_fade3_rgb(speed=1.0):
+    # FADE3: Red -> Green -> Blue, smooth crossfade. Period: 12s at 1.0x.
+    period = 12.0 / speed
+    hue_expr = f"120+120*sin(2*PI*t/{period})"
+    return _cycle_filter(
+        get_grade("led-party"),
+        hue_expr,
+        sat_expr="1.5",
+    )
+
+
+def _preset_auto_cycle(speed=1.0):
+    # AUTO: cycles through dynamic modes. Switches preset every 8s.
+    # Implemented as a slow full-spectrum fade (the average AUTO experience).
+    # For true mode-switching, chain presets in the edit.
+    period = 56.0 / speed  # 7 modes x 8s each
+    hue_expr = f"180+180*sin(2*PI*t/{period})"
+    sat_expr = f"1.4+0.3*sin(2*PI*t/{period/2})"
+    bright_expr = f"0.02*sin(2*PI*t/{period/4})"
+    return _cycle_filter(
+        get_grade("led-party"),
+        hue_expr,
+        sat_expr=sat_expr,
+        bright_expr=bright_expr,
+    )
+
+
+def _preset_blacklight_flicker(speed=1.0):
+    # UV blacklight mains flicker: subtle, irregular brightness oscillation.
+    # Blacklights have a faint 60Hz flicker; we exaggerate slightly for feel.
+    # Period: 5s at 1.0x with layered irregularity.
+    p1 = 5.0 / speed
+    p2 = 1.7 / speed
+    bright_expr = (
+        f"-0.02+0.015*sin(2*PI*t/{p1})+0.008*sin(2*PI*t/{p2}+1)"
+    )
+    hue_expr = f"270+8*sin(2*PI*t/{p1})"
+    return _cycle_filter(
+        get_grade("blacklight-purple"),
+        hue_expr,
+        bright_expr=bright_expr,
+    )
+
+
+def _preset_streetlight_hum(speed=1.0):
+    # Purple streetlight: steady with a barely-perceptible electrical hum
+    # flicker. The defect doesn't flicker much — it's a constant wrong color.
+    # Period: 30s, very subtle.
+    period = 30.0 / speed
+    bright_expr = f"0.004*sin(2*PI*t/{period})"
+    return _cycle_filter(
+        get_grade("purple-streetlight"),
+        "0",
+        bright_expr=bright_expr,
+    )
+
+
 PRESETS = {
     "chill-blue": (
         "Chill Blue Fade",
@@ -210,6 +311,49 @@ PRESETS = {
         "Full spectrum slow cycle. LED strip demo mode. "
         "Party scenes, montages.",
         _preset_rainbow_smooth,
+    ),
+    # --- Real-lighting animated presets (44-key remote + physical sources) ---
+    "strobe-white": (
+        "Strobe White (FLASH)",
+        "White strobe flash — hard on/off. Remote FLASH mode. "
+        "Use sparingly.",
+        _preset_strobe_white,
+    ),
+    "jump3-rgb": (
+        "Jump3 RGB (JUMP3)",
+        "Red > Green > Blue hard cuts. Remote JUMP3 mode. "
+        "Abrasive, attention-grabbing.",
+        _preset_jump3_rgb,
+    ),
+    "jump7-color": (
+        "Jump7 Color (JUMP7)",
+        "7 colors, hard cuts. Remote JUMP7 mode. "
+        "Party chaos.",
+        _preset_jump7_color,
+    ),
+    "fade3-rgb": (
+        "Fade3 RGB (FADE3)",
+        "Red > Green > Blue smooth crossfade. Remote FADE3 mode. "
+        "Gentler than jump.",
+        _preset_fade3_rgb,
+    ),
+    "auto-cycle": (
+        "Auto Cycle (AUTO)",
+        "Remote AUTO mode — drifts through all dynamic modes. "
+        "Set-and-forget background vibe.",
+        _preset_auto_cycle,
+    ),
+    "blacklight-flicker": (
+        "Blacklight Flicker",
+        "UV blacklight with faint mains flicker. "
+        "Blacklight party scenes.",
+        _preset_blacklight_flicker,
+    ),
+    "streetlight-hum": (
+        "Streetlight Hum",
+        "Purple streetlight — constant wrong color, barely-perceptible hum. "
+        "Exterior night scenes.",
+        _preset_streetlight_hum,
     ),
 }
 
