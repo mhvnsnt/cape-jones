@@ -25,6 +25,16 @@ Source analysis: [SMARTEN-UP.md](sandbox://workspace/tools/SMARTEN-UP.md)
 3. Appended to overnight handoff blockers section
 **Law:** NO-SILENT-FAILURE — after any unattended run, VERIFY outputs exist. Report failures immediately.
 **Status:** Wired into `tick()`. To enable phone pushes, create `~/workspace/agent-ops/ntfy-topic.txt` with a topic name and install the ntfy app.
+**⚠️ Known limitation (2026-10-16):** ntfy.sh is BLOCKED from this VM by the egress proxy (403). Publishes must route via browser lane or another unblocked host. See `~/workspace/tools/AGENT-UX-RESEARCH.md` section 3 for workarounds. The notify() function fails gracefully (logs the failure, doesn't crash).
+
+## Pattern 8: Slow Responses → RESPOND-FAST LAW + Industry Validation
+
+**Research finding (2026-10-16):** The "acknowledge fast, work async" pattern is now the industry standard across OpenCode, Claude Code, Cline, Google ADK, and LangGraph. Two metrics: TTFT (time to first token — makes it *feel* alive) and time-to-useful-result (the actual deliverable). Our RESPOND-FAST LAW matches the industry consensus.
+**Additional tools found:**
+- **ntfy.sh** (Apache 2.0): phone push on job completion — `curl -d "Render done" ntfy.sh/<topic>`
+- **Apprise** (BSD-3): fan-out to 100+ services from one call — belt-and-suspenders notifications
+- **Agent J**: E2E-encrypted phone remote for agent approvals — highest relevance for phone-only owner
+- Full research: `~/workspace/tools/AGENT-UX-RESEARCH.md`
 
 ## Pattern 3: Browser Tasks Going Idle → Watchdog + Resume Discipline
 
