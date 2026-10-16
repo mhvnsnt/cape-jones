@@ -25,7 +25,7 @@ The current inline render script has several reliability risks to resolve before
 - The render command pipes Blender output through `tail`; without `set -o pipefail`, the shell may report success even if Blender fails. Capture and check Blender's exit code before attempting to inspect/download the MP4.
 - Confirm the actual scene loads in the selected Blender version and that the requested denoiser/device are available in the chosen Colab runtime.
 
-These are static-review findings only; none has been confirmed by executing Blender against the scene.
+These are static-review findings only; none has been confirmed by executing Blender against the scene. A separate proposed fix in PR #26 adds setup guards, isolated render datablocks, non-overlapping keyframes, reliable process status handling, and fail-fast output verification; it still needs a real Colab run.
 
 ## Source-of-truth and integration rules
 
@@ -56,4 +56,4 @@ These are static-review findings only; none has been confirmed by executing Blen
 
 ## Remaining blockers
 
-The real Blender render has not been executed or inspected here, and the original shot-by-shot gag notes have not been located. Next concrete step is to harden the notebook's preset/keyframe/error handling, then run a short Colab preview against the checked-in scene before declaring the reel ready.
+The real Blender render has not been executed or inspected here, and the original shot-by-shot gag notes have not been located. Next concrete step is to run the proposed notebook hardening from PR #26 on Colab, inspect a short preview against the checked-in scene, and verify the MP4 metadata before declaring the reel ready.
