@@ -60,7 +60,20 @@ def notify(title, body, priority="high"):
     with open(ALERT_LOG, "a") as f:
         f.write(alert + "\n")
     log(f"ALERT: {title} — {body[:100]}")
-    # 2. Try ntfy.sh push (owner's phone)
+    # 2. Try apprise (system-wide, fans out to 100+ services)
+    try:
+        apprise_urls = os.path.expanduser("~/workspace/agent-ops/apprise-urls.txt")
+        if os.path.exists(apprise_urls):
+            with open(apprise_urls) as f:
+                urls = [u.strip() for u in f if u.strip() and not u.startswith("#")]
+            if urls:
+                subprocess.run(
+                    ["apprise", "-t", title[:60], "-b", body[:500]] + urls,
+                    timeout=30, capture_output=True)
+                log(f"apprise notification sent via {len(urls)} service(s)")
+    except Exception as e:
+        log(f"apprise failed (non-fatal): {e}")
+    # 3. Try ntfy.sh push (owner's phone) — note: blocked from this VM by egress proxy
     try:
         if os.path.exists(NTFY_TOPIC_FILE):
             with open(NTFY_TOPIC_FILE) as f:
@@ -75,7 +88,7 @@ def notify(title, body, priority="high"):
                 log(f"ntfy push sent to {topic}")
     except Exception as e:
         log(f"ntfy push failed (non-fatal): {e}")
-    # 3. Append to overnight handoff blockers section
+    # 4. Append to overnight handoff blockers section
     try:
         handoff = os.path.expanduser("~/workspace/agent-ops/overnight-handoff.md")
         if os.path.exists(handoff):

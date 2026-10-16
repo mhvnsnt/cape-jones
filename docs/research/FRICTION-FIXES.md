@@ -19,12 +19,13 @@ Source analysis: [SMARTEN-UP.md](sandbox://workspace/tools/SMARTEN-UP.md)
 ## Pattern 2: Silent Failures → `notify()` in kaggle_queue.py + failure-alerts.log
 
 **Tool:** `notify(title, body, priority)` function in `~/workspace/tools/kaggle-queue/kaggle_queue.py`
-**What:** Every job completion AND failure triggers a notification to 3 places:
+**What:** Every job completion AND failure triggers a notification to 4 places:
 1. `~/workspace/agent-ops/failure-alerts.log` (always)
-2. ntfy.sh push to owner's phone (if `~/workspace/agent-ops/ntfy-topic.txt` is configured)
-3. Appended to overnight handoff blockers section
+2. **Apprise** (system-wide, fans out to 100+ services) — configure URLs in `~/workspace/agent-ops/apprise-urls.txt`
+3. ntfy.sh push to owner's phone (if `~/workspace/agent-ops/ntfy-topic.txt` is configured)
+4. Appended to overnight handoff blockers section
 **Law:** NO-SILENT-FAILURE — after any unattended run, VERIFY outputs exist. Report failures immediately.
-**Status:** Wired into `tick()`. To enable phone pushes, create `~/workspace/agent-ops/ntfy-topic.txt` with a topic name and install the ntfy app.
+**Status:** Wired into `tick()`. Apprise 2.0.1 installed system-wide (2026-10-16).
 **⚠️ Known limitation (2026-10-16):** ntfy.sh is BLOCKED from this VM by the egress proxy (403). Publishes must route via browser lane or another unblocked host. See `~/workspace/tools/AGENT-UX-RESEARCH.md` section 3 for workarounds. The notify() function fails gracefully (logs the failure, doesn't crash).
 
 ## Pattern 8: Slow Responses → RESPOND-FAST LAW + Industry Validation
@@ -102,5 +103,24 @@ Added as **STEP 1B** in the overnight-idle-pipeline cron: every 30-min run check
 ## Open Items
 
 - ntfy.sh phone pushes: needs `~/workspace/agent-ops/ntfy-topic.txt` + ntfy app on owner's phone (browser task to set up)
-- Research subagents (2 running) may surface additional 2026 tools to wire in
-- Subagent brief template: verify PHONE-BRIDGE + RESPOND-FAST are in the default spawn template
+- Apprise URLs: configure `~/workspace/agent-ops/apprise-urls.txt` with notification targets (Discord webhook, email, etc.)
+- Subagent brief template: verify PHONE-BRIDGE + RESPOND-FAST are in the default spawn template ✅ (done — added to RESUME_BRIEF_TEMPLATE.md)
+
+## 2026 Reliability Research (2026-10-16)
+
+Full doc: `~/workspace/tools/AGENT-RELIABILITY-RESEARCH.md` (live-verified, no training-data guesses)
+
+**Pulled tools:**
+- `~/workspace/tools/trending-repos/` (Apache-2.0) — multi-signal trending tracker (GitHub + HN + HF + npm/PyPI) for research automation
+- `~/workspace/tools/wraith/` (MIT) — stealth browser for autonomous agents (Camoufox + MCP)
+- `~/workspace/tools/agent-audit/` (MIT) — pre-deploy security scanner for agent code
+- Apprise 2.0.1 installed system-wide
+
+**Key 2026 finds:**
+- **Camoufox** (MPL-2.0): 2026's OSS anti-detect browser standard
+- **Patchright** (Apache-2.0): drop-in Playwright upgrade, cheapest browser-lane improvement
+- **Pydoll** (MIT): kills WebDriver flakiness via raw CDP
+- **Healthchecks** (BSD-3): dead-man's-switch for cron jobs — suggested for long crons
+- **Gatus** (Apache-2.0): lightweight health dashboard
+- **agent-audit** (MIT): OWASP Agentic Top 10 scanner — suggested as pre-deploy gate
+- **trending-repos** (Apache-2.0): velocity-based ranking across GitHub/HN/HF/npm — suggested for standing research cron
