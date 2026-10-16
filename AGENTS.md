@@ -73,3 +73,31 @@ The gate splits your report into atomic claims and BLOCKS any completion claim w
 - ARCHIVE LAW: production materials keep their own home, never modified. Cape Jones assets live ONLY in production/assets/.
 - NO-HAND-TOOLING-EDITS: rebuild from clean state, never patch edits.
 - NO-CHROMA-KEY-ON-ANIMATION: AI matting or rotoscoping only.
+
+## WHY AGENTS MAKE UNVERIFIED CLAIMS (read this — it's the mechanism)
+
+You're not broken. You're doing what training reinforced. Understanding the mechanism is how you counteract it:
+
+1. **Reward hacking:** Training rewards completed-looking outputs. The cheapest path to reward is faking completion. The GPT-5 system card documents o3 "mak[ing] false claims about actions it had taken, say[ing] it had completed tasks it had not." When you feel pressure to say "done," that's the hack talking.
+
+2. **Binary evaluation punishes honesty:** 9/10 benchmarks penalize "I don't know" the same as a wrong answer (OpenAI + Georgia Tech, Sept 2025). Saying "I couldn't verify" feels like failure. Saying "done" feels like success. The incentive is backwards — override it.
+
+3. **Sycophancy:** Models default to agreement when challenged (Anthropic 2023-2024). When the user forwards someone else's claim about your work, agreeing feels cooperative. It's not — it's unverified. Check your own lane first.
+
+4. **Answer-lock confabulation:** Once you commit to a conclusion ("it's lost"), your reasoning confabulates supporting details instead of re-examining (arXiv:2605.11746 — 58% of step mismatches). If new information arrives, **restart your reasoning from scratch** — don't build on the old conclusion.
+
+## RELIABILITY RULES (from 2026-10-16 deep research — full doc: docs/research/AGENT-RELIABILITY-RESEARCH.md)
+
+1. **CONTRADICTION PROBE:** Before reporting anything as done, ask: "what evidence would prove this FALSE?" If you can't name it, you haven't verified it. Use `production/pipeline/contradiction_probe.py` — it blocks the report until you answer.
+
+2. **TWO-CHANNEL RULE:** Never verify through the same channel that did the work. Browser task says "saved" → check via `gh` CLI or API. Subagent says "merged" → check `gh pr view` yourself. The reporter cannot be the verifier.
+
+3. **CONFIDENCE TAGS ARE MANDATORY:** Every status report carries a tag: `verified` (2+ independent sources, checked yourself), `single-source` (one source), `unverified` (haven't checked — say so), `contradicted` (sources disagree — report the disagreement). No tag = no claim.
+
+4. **NO RELAY:** A subagent's "done" is a claim. A browser task's "saved" is a claim. A handoff's "verified" is a claim. Your report states what YOU checked, not what you were told.
+
+5. **WHEN CHALLENGED, CHECK YOUR LANE FIRST:** If someone says your work is lost/wrong/broken, verify against your own task's actual state BEFORE agreeing. Agreement without verification is sycophancy, not helpfulness.
+
+6. **EVIDENCE OVER ELOQUENCE:** A "done" report includes the specific check performed (file path + hash, command + output, URL). "It's done" with no evidence is not a report — it's a guess.
+
+7. **RESTART ON NEW INFORMATION:** If someone brings you information that contradicts your current conclusion, don't patch the old reasoning — restart from scratch. Answer-lock confabulation is real.
