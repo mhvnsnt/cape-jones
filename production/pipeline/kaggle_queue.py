@@ -268,11 +268,12 @@ def tick():
                 any_running = True
                 log(f"job {job['id']} still running")
 
-    # 2. Start next pending job if nothing running and not on hold
-    if not any_running and not q.get("hold"):
+    # 2. Start pending jobs up to max_parallel (default 1 = sequential, backward compatible)
+    max_par = q.get("max_parallel", 1)
+    running_count = sum(1 for j in jobs if j["status"] == "running")
+    if running_count < max_par and not q.get("hold"):
         pending = [j for j in jobs if j["status"] == "pending"]
-        if pending:
-            job = pending[0]
+        for job in pending[: max_par - running_count]:
             # sanity: notebook file must exist
             if not os.path.exists(job["notebook_path"]):
                 job["status"] = "error"
@@ -286,13 +287,14 @@ def tick():
                     job["started_at"] = datetime.now(timezone.utc).isoformat()
                     log(f"job {job['id']} STARTED: {result}")
                 elif result == "GPU_QUOTA":
-                    log(f"GPU quota/cap hit — will retry next tick")
+                    log("GPU quota/cap hit — will retry next tick")
+                    break  # don't try more jobs if quota is hit
                 else:
                     job["status"] = "error"
                     job["result"] = result
                     log(f"job {job['id']} PUSH FAILED: {result}")
             changed = True
-        else:
+        if not pending and not any_running:
             log("queue idle: nothing running, nothing pending")
 
     if changed:
