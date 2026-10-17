@@ -128,3 +128,4 @@ without the cape or repair cape-bleed with afk-rig `weights` rules; MIA's
 | 2026-10-17 | Puppeteer | pulled code-only (`puppeteer/`, wiring doc) | queued after UniRig — brings video-guided animation |
 | 2026-10-17 | Make-It-Animatable | pulled code-only (`make-it-animatable/`, wiring doc) | queue after UniRig — brings <1s any-pose→rest-pose inference + Blender armature builder; try v2 |
 | 2026-10-17 | HumanRig | own-eyes check: repo is a stub, no public code | NOT runnable — paper + HF dataset reference only |
+| 2026-10-17 | MagicArticulate | weight bake-off evaluation (builder lane) | **LOSES (structural)** — public repo is skeleton-generation ONLY, no skinning inference code (verified: local tree + GitHub API recursive tree + web). Cannot produce weights → cannot enter the 7-pose test. Role stays: fast skeleton-proposer; the family's weight contender is Puppeteer (already queued). Full verdict: `docs/research/MAGICARTICULATE-WEIGHT-VERDICT-2026.md` |

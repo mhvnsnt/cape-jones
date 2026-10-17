@@ -249,6 +249,7 @@ Score key: ✅ clean · ⚠️ minor artifacts, usable · ❌ fails acceptance �
 | W7 mesh-deform cage | ✅* | — | — | — | — | — | — | **FAIL** — 11-vert cage → paddle limbs |
 | W7b dense cage | — (cage tracks ✅) | — | — | — | — | — | — | **FAIL** — 731-vert cage: arms melted (9.7% arm verts), full-mesh eval OOMs 8GB VM; fitted cage needed |
 | W8 Pinocchio | ✅ | ❌ | ⚠️ | ⚠️ | ❌ | — | ⚠️ | **MIXED-FAIL** — great skeleton (18/18), weights web on big motions |
+| MA MagicArticulate | — | — | — | — | — | — | — | **n/a — LOSES (structural)** — public repo ships no skinning inference (skeleton-only release); cannot produce weights. See `docs/research/MAGICARTICULATE-WEIGHT-VERDICT-2026.md` |
 
 **Winner: W5r (Surface Heat Diffuse + Preserve Volume/Dual-Quaternion + Corrective
 Smooth).** It is the only entry that weights the full 991k-vert mesh at all AND
