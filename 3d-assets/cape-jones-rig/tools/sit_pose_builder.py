@@ -229,9 +229,9 @@ def build_sit_recline():
     # arms: hands behind head (elbows out to sides, forearms up-in)
     head_p = phead('head')
     for side, sgn in [('L', 1), ('R', -1)]:
-        aim_bone(f'upperarm_fk_{side}', (sgn*0.85, 0.15, 0.30)); upd()
+        aim_bone(f'upperarm_fk_{side}', (sgn*0.90, 0.20, 0.15)); upd()
         elbow = ptail(f'upperarm_fk_{side}')
-        hand_t = head_p + Vector((sgn*0.02, 0.095, 0.02))
+        hand_t = head_p + Vector((0, 0.11, 0.02))
         aim_bone(f'forearm_fk_{side}', (hand_t - elbow).normalized()); upd()
         keep_orientation(f'hand_fk_{side}')
     upd()
