@@ -10,7 +10,7 @@ the local VM**, so they run on the owner's Kaggle GPU via the repo's
 | Tool | License (commercial?) | What it does | Run path |
 |---|---|---|---|
 | **UniRig** (Tsinghua + Tripo, SIGGRAPH 2025) | **MIT ✅** | Autoregressive skeleton + bone-point cross-attention skinning. Handles humans, animals, objects. | `kaggle_unirig_capejones.ipynb` (queued) |
-| **Puppeteer** (NTU + ByteDance Seed, NeurIPS 2025 Spotlight) | **Apache-2.0 ✅** | Auto-rig + video-guided animation; FBX export. Successor of MagicArticulate. | runbook below (not yet queued) |
+| **Puppeteer** (NTU + ByteDance Seed, NeurIPS 2025 Spotlight) | **Apache-2.0 ✅** | Auto-rig + video-guided animation; FBX export. Successor of MagicArticulate. | ✅ **PULLED 2026-10-17** — `puppeteer/` code-only vendored; wiring doc: `puppeteer/CAPE-JONES-WIRING.md`. Runbook below (queue after UniRig) |
 | **MagicArticulate** (NTU + ByteDance Seed, CVPR 2025) | **Apache-2.0 ✅** | Skeleton generation + functional-diffusion skinning; 1–2s inference, 4.6GB VRAM. NOTE: **not Meta** — earlier notes saying "Meta's MagicArticulate" are wrong. | runbook below (not yet queued) |
 | **HumanRig** (Alibaba Amap, CVPR 2025) | **MIT ✅** | Humanoid-only; 2D-prior skeleton estimator + point-transformer skinning; strong on AI-generated meshes. | runbook below (not yet queued) |
 | ~~RigAnything~~ (UCSD + Adobe, SIGGRAPH 2025) | ❌ **Adobe Research License — non-commercial only** | Template-free, ~2s on A100, exports rigged GLB via bpy. | **REJECTED for repo use** (license). Researchers may still run it privately; not wired in. |
@@ -82,3 +82,4 @@ CUDA GPU. Humanoid characters only (uniform skeleton topology).
 |---|---|---|---|
 | 2026-10-17 | UniRig | queued (pending GPU) | — |
 | 2026-10-17 | Pinocchio (CPU lane) | `../pinocchio/proof/` | see main research doc |
+| 2026-10-17 | Puppeteer | pulled code-only (`puppeteer/`, wiring doc) | queued after UniRig — brings video-guided animation |

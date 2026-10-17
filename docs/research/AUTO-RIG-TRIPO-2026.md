@@ -19,7 +19,7 @@ this space; Meta's relevant work here is nil.
 |---|---|---|---|
 | **Pinocchio** (Baran & Popović 2007) | LGPL-2.1 lib / MIT demo ✅ | Local CPU, headless ✅ | ✅ **PULLED** (`production/tools/pinocchio/`) — proven on CJ below |
 | **UniRig** (Tsinghua + Tripo, SIGGRAPH 2025) | MIT ✅ | GPU ≥8GB (Kaggle/Colab) | ✅ **WIRED** (`production/tools/ml-autorig/`) — Kaggle proof queued |
-| **Puppeteer** (NTU + ByteDance, NeurIPS 2025 Spotlight) | Apache-2.0 ✅ | GPU (Kaggle/Colab) | 📝 runbook wired (`ml-autorig/README.md`); queue after UniRig |
+| **Puppeteer** (NTU + ByteDance, NeurIPS 2025 Spotlight) | Apache-2.0 ✅ | GPU (Kaggle/Colab) | ✅ **PULLED 2026-10-17** — license verified own-eyes on the repo page (Apache-2.0). Code-only, 4.7MB, 38/38 py compile at `production/tools/ml-autorig/puppeteer/` (upstream commit 1c0f9fc; weights stay off disk per law, HF Seed3D/Puppeteer on the GPU machine). Wiring: `production/tools/ml-autorig/puppeteer/CAPE-JONES-WIRING.md`. Only pulled rigger with VIDEO-GUIDED ANIMATION (differentiable-optimization anim from a guide video) + FBX export — second ML opinion vs TokenRig/UniRig in the weight bake-off; queue after UniRig |
 | **MagicArticulate** (NTU + ByteDance, CVPR 2025) | Apache-2.0 ✅ | GPU 4.6GB (Kaggle/Colab) | 📝 runbook wired; skeleton+skinning, superseded by Puppeteer |
 | **HumanRig** (Alibaba Amap, CVPR 2025) | MIT ✅ | GPU (Kaggle/Colab) | 📝 runbook wired; humanoid-only |
 | **RigNet** (Xu et al., SIGGRAPH 2020) | GPL-3.0 ✅ | GPU | 📝 documented only — outclassed by UniRig/Puppeteer, orientation-restricted |
