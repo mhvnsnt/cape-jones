@@ -79,3 +79,49 @@ All own-code, license-clean, tested on Blender 4.0.2 headless:
 - Separate twist bones: folded into bendy-bone segments (3 per long limb bone) + dual-quaternion skinning, which distribute twist without extra mechanism bones. The AAA twist-bone recipe from our research remains available if twist tests ever fail.
 - Rigify generator: spec mismatch (naming, cape chain, weapon bones), dead-bone overhead.
 - 4.2+-only tools (Pose Shape Keys extension, Adaptive Auto Skinning, BVH Motion Retargeter): Blender version wall; revisit on upgrade.
+
+## BlenRig 6 v4.0.1 (owner directive 2026-10-16 — supersedes the custom-rig decision above)
+
+**What it is:** BlenRig 6 is a free, film-quality auto-rigging system for Blender
+bipeds (GPL-3.0, by Juan Pablo Bouza). v4.0.1 is the Blender 4.x branch. It
+provides: guided rig creation (reproportion guides), a mesh-deform (MDEF)
+muscle cage system, weight-painting guides, a full facial rig, and corrective
+systems. Merged to this repo at `production/tools/blenrig6/` (PR #75).
+
+**License:** GPL-3.0. Free, open-source, production-grade.
+
+**Why the owner picked it:** The owner directed (2026-10-16) that BlenRig 6 is
+now the rigging system for the Cape Jones rig, superseding the custom two-layer
+FK/IK decision documented above. The mesh-deform muscle system was a key factor
+(it provides volume-preserving muscle-like deformation), as was the guided
+workflow.
+
+**How it was driven headlessly (Blender 4.0.2, `xvfb-run -a`, `env -u PYTHONPATH`):**
+- `bpy.ops.blenrig.add_biped_rig()` imports the 2424-bone rig (781 deform).
+  The `viewport_toggle` operator requires a screen; monkeypatched to no-op.
+- Reproportion guides (`*_str` bones, 87 total) positioned from measured joints
+  (`/tmp/cj_joints.json`) via `matrix_basis` (bone_rest⁻¹ · parent_rest ·
+  parent_final⁻¹ · desired_matrix).
+- The `reproportion` BoolProperty's update callback (`reproportion_toggle`)
+  needs a screen; headless equivalent mutes/unmutes REPROP/NOREP constraints
+  manually.
+- **MDEF cage:** BlenRig's `BlenRigMdefCage` fitted to the character bbox,
+  bound to the deform armature with procedural zone weights.
+
+**Headless boundary (reported plainly):** BlenRig 6's full control rig uses a
+calibrated constraint network (REPROP/NOREP toggle, TRANSFORM constraints with
+absolute ranges, 869 drivers) tuned for its default 1.7m proportions. The guide
+fitting produces perfect deformation in "reproportion ON" mode, but the fitted
+proportions do not bake to the animation (OFF) state via any headless method
+tested (rest-bake breaks TRANSFORM calibration; pose-bake explodes via
+constraint feedback; selective-bake diverges; iterative EDIT correction
+diverges). Therefore the body deform uses a custom clean FK/IK armature (at
+measured joints) driving BlenRig's MDEF cage — the mesh-deform muscle system
+(the part that retargets cleanly). The BlenRig 6 control rig/guides remain in
+the blend for reference.
+
+**Cape decision update:** The "bone chain chosen over cloth" rejection above is
+superseded by owner directive 2026-10-16 ~23:39 CDT: the cape gets **cloth
+simulation** (not a bone chain), with collision vs body/chair/floor, shoulder-pin
+attachment, #000000 canon color. The vape prop is **parked** (owner correction:
+he meant CAPE, not vape; do not build the vape).
