@@ -150,6 +150,7 @@ def build_sit_normal():
     seat_and_ground(3.02, 0.42)
 
 def build_sit_leg_folded():
+    """Figure-4: right ankle rests on left knee. His casual reference pose."""
     spine_base()
     aim_bone('spine_1', (0, -0.06, 1)); upd()
     aim_bone('spine_2', (0, -0.03, 1)); upd()
@@ -157,32 +158,31 @@ def build_sit_leg_folded():
     aim_bone('neck_1', (0, -0.08, 1)); upd()
     aim_bone('neck_2', (0, -0.08, 1)); upd()
     aim_bone('head', (0, -0.10, 1)); upd()
-    # left leg normal
+    # left leg normal (it becomes the footstool)
     aim_bone('thigh_fk_L', (0.10, -0.50, -0.86)); upd()
     aim_bone('shin_fk_L', (0, 0, -1)); upd()
     keep_orientation('foot_fk_L'); upd()
-    # right thigh up-forward (folded); shin solved after placement
-    aim_bone('thigh_fk_R', (-0.10, -0.42, 0.90)); upd()
-    aim_bone('shin_fk_R', (0, -0.3, -0.95)); upd()
+    # right thigh out-down-forward (opens the figure-4)
+    aim_bone('thigh_fk_R', (-0.60, -0.35, -0.72)); upd()
+    aim_bone('shin_fk_R', (-0.3, -0.3, -0.9)); upd()
     keep_orientation('foot_fk_R'); upd()
-    # left arm hangs; right arm rests toward raised knee (refined after placement)
+    # left arm hangs
     aim_bone('upperarm_fk_L', (0.12, -0.08, -0.99)); upd()
     aim_bone('forearm_fk_L', (0.05, -0.18, -0.98)); upd()
     keep_orientation('hand_fk_L'); upd()
     L = seat_and_ground(3.02, 0.42)
-    # solve right shin: ankle flat on seat, EXACTLY shin-length (0.217) from knee.
-    knee_a = ptail('thigh_fk_R')
-    dz = knee_a.z - (SEAT_TOP + ANKLE_H)
-    assert abs(dz) < 0.217, f"knee too high for folded foot: dz={dz}"
-    h = math.sqrt(0.217**2 - dz**2)
-    to = Vector((2.88, 2.067, knee_a.z)) - knee_a
-    to.z = 0; to.normalize()
-    ankle_a = Vector((knee_a.x + to.x*h, knee_a.y + to.y*h, SEAT_TOP + ANKLE_H))
-    v = ankle_a - knee_a
-    print(f"[folded] knee {tuple(round(x,3) for x in knee_a)} ankle {tuple(round(x,3) for x in ankle_a)} shin_len {round(v.length,4)}", flush=True)
-    aim_bone('shin_fk_R', v.normalized()); upd()
+    # right ankle onto left knee: exact shin length from right knee
+    knee_L = ptail('thigh_fk_L')
+    ankle_target = knee_L + Vector((0, 0, 0.055))
+    knee_R = ptail('thigh_fk_R')
+    v = ankle_target - knee_R
+    print(f"[fig4] kneeL {tuple(round(x,3) for x in knee_L)} kneeR {tuple(round(x,3) for x in knee_R)} tgt {tuple(round(x,3) for x in ankle_target)} d={round(v.length,3)}", flush=True)
+    assert v.length <= 0.217 + 1e-6, f"fig4 shin unreachable: {v.length}"
+    # place ankle exactly at shin length along v (no overshoot)
+    ankle_a = knee_R + v.normalized() * 0.217
+    aim_bone('shin_fk_R', (ankle_a - knee_R).normalized()); upd()
     keep_orientation('foot_fk_R'); upd()
-    # right hand onto raised knee
+    # right hand rests on right knee
     shoulder = phead('upperarm_fk_R')
     knee = ptail('thigh_fk_R')
     aim_bone('upperarm_fk_R', (knee - shoulder).normalized()); upd()
@@ -266,7 +266,7 @@ def build_sit_arms_crossed():
 
 POSES = [
     ("sit_normal", "Normal relaxed sit", build_sit_normal),
-    ("sit_leg_folded", "One leg folded up (his reference)", build_sit_leg_folded),
+    ("sit_leg_folded", "Figure-4: right ankle on left knee (his reference)", build_sit_leg_folded),
     ("sit_lean_forward", "Lean-forward pensive/focused", build_sit_lean_forward),
     ("sit_recline", "Recline, hands behind head (Space Ghost energy)", build_sit_recline),
     ("sit_arms_crossed", "Arms crossed, leaning back (comedic annoyed)", build_sit_arms_crossed),
