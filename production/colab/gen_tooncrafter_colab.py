@@ -8,8 +8,9 @@ Colab serves as a backup/parallel GPU lane alongside Kaggle.
 Key differences from the Kaggle version:
 - /kaggle/working/ -> /content/ (Colab's working dir)
 - No Kaggle dataset cache -> model weights download from HuggingFace every run.
-  v3 uses Kijai's pruned FP16 (~2.5GB, 12GB VRAM) instead of full model.ckpt
-  (10.5GB, ~23GB VRAM — OOM on T4). Optional: mount Google Drive to cache.
+  v4 uses Kijai's pruned FP16 (3.18GB, ~12GB VRAM with fp16 execution) instead
+  of full model.ckpt (10.5GB, ~24-27GB VRAM — OOM on T4). Optional: mount
+  Google Drive to cache.
 - Colab-idiomatic `!` shell commands instead of subprocess.run
 - File download: output via Colab's files.download() widget
 - GPU: Runtime -> Change runtime type -> T4 GPU (free tier)
@@ -54,8 +55,8 @@ notebook (`production/kaggle/tooncrafter/`), adapted for Colab.
 
 Pipeline:
 1. GPU check (must be Tesla T4)
-2. Clone ToonCrafter + pip install deps
-3. Download FP16 model from HuggingFace (~2.5GB, 12GB VRAM — fits T4)
+2. Clone ToonCrafter + pip install deps (+ FP16 execution patch)
+3. Download FP16 model from HuggingFace (~3.2GB, ~12GB VRAM — fits T4)
 4. Download input video from GitHub (SHA-256 verified)
 5. Extract 106 frames, resize to 320x512 portrait, build 105 keyframe pairs
 6. ToonCrafter inference on CUDA (105 pairs x 8 frames, take middle frame idx 4)
@@ -77,8 +78,32 @@ code('''# === Cell 2: Clone ToonCrafter + install deps ===
 print("Deps installed.")
 '''),
 
-code('''# === Cell 3: ToonCrafter FP16 model weights (~2.5GB, 12GB VRAM) ===
-# v3 (2026-10-16): Kijai's pruned FP16 instead of full model.ckpt (10.5GB, ~23GB VRAM — OOM on T4).
+code('''# === Cell 2b: Patch ToonCrafter for FP16 execution (fits T4 VRAM) ===
+# v4 (2026-10-16): The official README's 12GB figure assumes fp16 execution
+# (the ComfyUI path runs the model in fp16/bf16). Stock inference.py loads the
+# weights into an fp32 model — load_state_dict casts fp16->fp32, so weights
+# alone would eat ~6.4GB and total VRAM could push past 16GB on a T4.
+# We patch run_inference() to half() the model right after checkpoint load.
+# Kijai's own ComfyUI wrapper does exactly this (nodes.py: model.to(precision)).
+p = "/content/ToonCrafter/scripts/evaluation/inference.py"
+src = open(p).read()
+old = "    model = load_model_checkpoint(model, args.ckpt_path)\\n    model.eval()"
+new = ("    model = load_model_checkpoint(model, args.ckpt_path)\\n"
+       "    model = model.half()  # v4: FP16 execution -> ~12GB VRAM on T4\\n"
+       "    model.eval()")
+assert "model = model.half()" not in src, "FP16 patch already applied"
+assert old in src, "PATCH ANCHOR NOT FOUND — upstream inference.py changed, fix me"
+open(p, "w").write(src.replace(old, new))
+print("FP16 execution patch applied to inference.py")
+'''),
+
+code('''# === Cell 3: ToonCrafter FP16 model weights (~3.2GB, ~12GB VRAM) ===
+# v4 (2026-10-16): Kijai's pruned FP16 instead of full model.ckpt
+# (10.5GB, ~24-27GB VRAM — OOM on T4).
+# CORRECT FILENAME (verified via HF API + Kijai's ComfyUI wrapper):
+#   tooncrafter_512_interp-pruned-fp16.safetensors  (3,175,466,358 bytes)
+# The official ToonCrafter README links tooncrafter_512_interp-fp16.safetensors
+# (underscore) — that link is STALE and 404s. Do NOT "fix" this back.
 # See docs/research/TOONCRAFTER-FULL-STACK.md for root-cause analysis.
 # Colab has no dataset cache like Kaggle. Options:
 #   A) Download + convert every run (~5 min) — simple, default below
@@ -96,8 +121,10 @@ os.makedirs(ckpt_dir, exist_ok=True)
 ckpt_path = os.path.join(ckpt_dir, "model.ckpt")  # inference.py expects this name
 
 def _ok(p):
-    # FP16 model is ~2.5GB; accept 2.0-3.0GB range
-    return os.path.exists(p) and 2_000_000_000 < os.path.getsize(p) < 3_000_000_000
+    # FP16 pruned model is 3,175,466,358 bytes on HF; torch.save adds a few %
+    # pickle overhead. Accept 2.8-3.8GB. (v3's 2.0-3.0GB range was wrong —
+    # it would have REJECTED the genuine file.)
+    return os.path.exists(p) and 2_800_000_000 < os.path.getsize(p) < 3_800_000_000
 
 if _ok(ckpt_path):
     print(f"FP16 model.ckpt already present ({os.path.getsize(ckpt_path)/1e9:.1f} GB)")
@@ -106,8 +133,8 @@ if _ok(ckpt_path):
 #     print("Copying from Drive cache...")
 #     shutil.copy(DRIVE_CKPT, ckpt_path)
 else:
-    print("Downloading Kijai FP16 safetensors (~2.5GB) from HuggingFace...")
-    !wget -q --show-progress https://huggingface.co/Kijai/DynamiCrafter_pruned/resolve/main/tooncrafter_512_interp-fp16.safetensors -O /content/tooncrafter_fp16.safetensors
+    print("Downloading Kijai FP16 safetensors (3.2GB) from HuggingFace...")
+    !wget -q --show-progress https://huggingface.co/Kijai/DynamiCrafter_pruned/resolve/main/tooncrafter_512_interp-pruned-fp16.safetensors -O /content/tooncrafter_fp16.safetensors
     print("Converting safetensors -> .ckpt...")
     from safetensors.torch import load_file
     import torch
@@ -166,6 +193,9 @@ print(f"105 pairs built in {prompt_dir}")
 code('''# === Cell 6: ToonCrafter inference on CUDA ===
 # 105 pairs -> 8 frames each (TUNED: was 16). Take middle frame (idx 4).
 # ddim_steps=12 (TUNED: was 25). bs=1 for VRAM safety.
+# --n_samples 1: n_samples = samples PER PROMPT in this script (default 1).
+# The prompt loop already iterates all 105 prompts; 105 here would generate
+# 105 samples x 105 prompts = 11,025 videos. Do NOT set to 105.
 import time
 t0 = time.time()
 !cd /content/ToonCrafter && python3 scripts/evaluation/inference.py \\
@@ -173,7 +203,7 @@ t0 = time.time()
     --ckpt_path checkpoints/tooncrafter_512_interp_v1/model.ckpt \\
     --config configs/inference_512_v1.0.yaml \\
     --savedir /content/tc_results \\
-    --n_samples 105 \\
+    --n_samples 1 \\
     --bs 1 \\
     --height 512 \\
     --width 320 \\
@@ -194,33 +224,41 @@ print("Inference complete.")
 '''),
 
 code('''# === Cell 7: Extract middle frames + interleave + assemble 24fps MP4 ===
-# From each 8-frame output, take frame idx 4 (true middle).
-# [orig_0, mid_0, orig_1, mid_1, ...] = 211 frames @ 24fps.
-import os, glob, shutil
+# v4 (2026-10-16): inference.py's save_results_seperate() writes ONE 8-frame
+# MP4 per prompt into <savedir>/samples_separate/ (the "samples" dir stays
+# empty — save_results() is commented out upstream). Files are named
+#   samples_separate/pair_{i:03d}_a_sample0.mp4   (8 frames @ fps=10)
+# We dump each MP4's 8 frames, take frame idx 4 (the true temporal middle),
+# and interleave: [orig_0, mid_0, orig_1, mid_1, ...] = 211 frames @ 24fps.
+import os, glob, shutil, subprocess, tempfile
 from PIL import Image
 
-results_base = "/content/tc_results"
-sample_dirs = sorted(glob.glob(os.path.join(results_base, "*", "samples", "*")))
-if not sample_dirs:
-    sample_dirs = sorted(glob.glob(os.path.join(results_base, "**", "sample_*"),
-                                   recursive=True))
-print(f"Found {len(sample_dirs)} sample outputs (expect 105)")
-assert len(sample_dirs) == 105, f"Expected 105 samples, got {len(sample_dirs)}"
+sep_dir = "/content/tc_results/samples_separate"
+mp4s = sorted(glob.glob(os.path.join(sep_dir, "*_sample0.mp4")))
+print(f"Found {len(mp4s)} sample MP4s (expect 105)")
+assert len(mp4s) == 105, f"Expected 105 samples, got {len(mp4s)}"
 
 out_dir = "/content/final_frames"
 os.makedirs(out_dir, exist_ok=True)
 frames_dir = "/content/tc_input/frames"
+tmpd = tempfile.mkdtemp(prefix="tc_mid_")
 
 out_idx = 0
-for i, sdir in enumerate(sample_dirs):
+for i, mp4 in enumerate(mp4s):
     orig = os.path.join(frames_dir, f"frame_{i+1:05d}.png")
     shutil.copy(orig, os.path.join(out_dir, f"out_{out_idx:05d}.png"))
     out_idx += 1
-    tc_frames = sorted(glob.glob(os.path.join(sdir, "*.png")))
-    assert len(tc_frames) == 8, f"Sample {i}: expected 8 frames, got {len(tc_frames)}"
-    mid = Image.open(tc_frames[4]).convert("RGB").resize((1080, 1920), Image.LANCZOS)
+    # dump the 8 frames of this sample MP4, take idx 4 (0-based), upscale
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", mp4,
+                    os.path.join(tmpd, f"s{i:03d}_%d.png")], check=True)
+    dumped = sorted(glob.glob(os.path.join(tmpd, f"s{i:03d}_*.png")))
+    assert len(dumped) == 8, f"Sample {i}: expected 8 frames, got {len(dumped)}"
+    mid = Image.open(dumped[4]).convert("RGB").resize((1080, 1920), Image.LANCZOS)
     mid.save(os.path.join(out_dir, f"out_{out_idx:05d}.png"))
     out_idx += 1
+    for f in dumped:
+        os.remove(f)
+shutil.rmtree(tmpd, ignore_errors=True)
 
 shutil.copy(os.path.join(frames_dir, "frame_00106.png"),
             os.path.join(out_dir, f"out_{out_idx:05d}.png"))
