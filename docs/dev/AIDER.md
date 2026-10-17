@@ -24,12 +24,31 @@ Alternatives from the same page: `python -m pip install aider-install && aider-i
 Free tier default in `.aider.conf.yml` is `gemini-exp`
 (Gemini 2.5 Pro Exp, free with usage limits — aider.chat/docs/llms/gemini.html).
 
+**Keys are live on the VM (2026-10-17).** Source the shared key file — never
+paste a value anywhere:
+
 ```bash
-export GEMINI_API_KEY=<key>     # never commit, never log
+set -a && . ~/.config/cape-jones/api-keys.env && set +a   # chmod 600, gitignored
+# provides: GEMINI_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY, HF_TOKEN
+# (GROQ_API_KEY pending — not in the file as of 2026-10-17)
 ```
 
 Get the key at https://aistudio.google.com — requires a Google sign-in in a
 browser (a subagent cannot do this; flag NEEDS-PARENT-BROWSER if you need one).
+
+**2026-10-17 correction:** the `gemini-exp` alias in `.aider.conf.yml` resolves
+to `gemini-2.5-pro-exp-03-25`, which Google RETIRED (404 on generateContent).
+Use an explicit live model instead — verified working on this VM:
+
+```bash
+aider --model gemini/gemini-3-flash-preview --message "..." --yes-always
+```
+
+Live-AI proof (2026-10-17, verbatim): aider created `proof.txt` containing the
+exact LLM-dictated line `AIDER-LIVE-OK 2026-10-17` via
+`gemini/gemini-3-flash-preview`. Free-tier quota is tight — the same key hit
+`quota exceeded` after a handful of calls, so keep runs small. OpenRouter
+(`OPENROUTER_API_KEY`) is the fallback for when Gemini quota is exhausted.
 The repo's stored Gemini connector (`custom.legacy-gemini`) is a surrogate-only
 credential for one-turn image edits — it is NOT retrievable as a raw API key
 and cannot feed aider. Paid higher-limit alternative: `aider --model gemini`.
