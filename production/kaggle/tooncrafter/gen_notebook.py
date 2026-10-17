@@ -74,6 +74,30 @@ print(r.stdout.strip() or "NO GPU VISIBLE -- enable Accelerator: GPU in Settings
 assert "Tesla T4" in r.stdout, "Expected a Tesla T4"
 '''),
 
+code('''# === Bulletproof saver setup (skip if queue already injected it) ===
+# save_outputs.py must sit next to this notebook (queue ships it automatically;
+# for manual browser runs, upload it alongside the .ipynb).
+import os, sys
+if "_saver" not in dir():
+    for _p in ("/kaggle/working", os.getcwd()):
+        if _p not in sys.path:
+            sys.path.insert(0, _p)
+    try:
+        from save_outputs import RenderSaver
+        _saver = RenderSaver(dataset_slug=os.environ.get("KAGGLE_SAVE_DATASET"))
+        if _saver.enabled:
+            _saver.start_watchdog()
+            print(f"bulletproof saver ACTIVE -> {_saver.dataset_slug}")
+        else:
+            print("bulletproof saver: KAGGLE_SAVE_DATASET not set — "
+                  "set it or outputs rely on Save & Run All only")
+    except Exception as e:
+        _saver = None
+        print(f"bulletproof saver UNAVAILABLE: {e}")
+else:
+    print("saver already active (queue-injected)")
+'''),
+
 code('''# === Clone ToonCrafter + install deps ===
 import subprocess, sys, os
 if not os.path.isdir("/kaggle/working/ToonCrafter"):
@@ -263,6 +287,25 @@ r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0",
                     "/kaggle/working/cape-jones-expressions-TOONCRAFTER-24fps.mp4"],
                    capture_output=True, text=True)
 print(r.stdout)
+'''),
+
+code('''# === Bulletproof final checkpoint ===
+# Publishes the finished MP4 as a Kaggle dataset version NOW — never rely on
+# Quick Save (it preserves zero output files). Skip if queue injected its own.
+_saver = globals().get("_saver")
+_out = "/kaggle/working/cape-jones-expressions-TOONCRAFTER-24fps.mp4"
+if _saver and getattr(_saver, "enabled", False):
+    import os
+    if os.path.exists(_out):
+        _saver.checkpoint("tooncrafter-final", [_out])
+        print(f"checkpointed {_out}")
+    else:
+        print(f"WARNING: expected output missing: {_out}")
+    _saver.stop_watchdog()
+elif "_saver" in dir() and _saver is None:
+    print("saver unavailable — output relies on Save & Run All")
+else:
+    print("queue-injected final checkpoint will handle saving")
 '''),
 ]
 

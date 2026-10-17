@@ -98,6 +98,30 @@ def notify(title, body, priority="high"):
         pass
 
 
+def claim_gate_check(report, evidence_args):
+    """Run claim_gate.py on a completion report before it goes out.
+
+    VERIFY-BEFORE-CLAIMING law: blocks "done" reports that lack evidence.
+    Returns (passed: bool, gate_output: str). Never raises.
+    """
+    if not os.path.exists(CLAIM_GATE):
+        log("claim_gate.py not found — skipping gate (degraded)")
+        return True, "gate unavailable"
+    cmd = [sys.executable, CLAIM_GATE, "--report", report]
+    for ev in evidence_args:
+        cmd += ["--evidence", ev]
+    try:
+        p = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+        passed = (p.returncode == 0)
+        out = (p.stdout + p.stderr).strip()[:500]
+        if not passed:
+            log(f"CLAIM GATE BLOCKED: {report[:100]} | {out[:200]}")
+        return passed, out
+    except Exception as e:
+        log(f"claim gate error (non-fatal): {e}")
+        return True, f"gate error: {e}"
+
+
 def load_queue():
     if not os.path.exists(QUEUE_FILE):
         return {"jobs": []}
@@ -118,6 +142,97 @@ def kaggle(args, **kwargs):
     p = subprocess.run(["kaggle"] + args, capture_output=True, text=True,
                        timeout=kwargs.get("timeout", 120))
     return p.returncode, p.stdout.strip(), p.stderr.strip()
+
+
+PIPELINE_DIR = os.path.dirname(os.path.abspath(__file__))
+SAVE_OUTPUTS_SRC = os.path.join(PIPELINE_DIR, "save_outputs.py")
+CLAIM_GATE = os.path.join(PIPELINE_DIR, "claim_gate.py")
+
+# Injected into EVERY pushed notebook: sets up the bulletproof RenderSaver
+# (from save_outputs.py, copied into the kernel dir) and starts its watchdog.
+# The saver publishes a Kaggle dataset version after EVERY checkpoint, so
+# outputs survive session death — Quick Save never preserves /kaggle/working.
+SAVER_SETUP_CELL = """\
+import os, sys
+# save_outputs.py is shipped alongside notebook.ipynb by the queue
+for _p in ("/kaggle/working", os.getcwd()):
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
+try:
+    from save_outputs import RenderSaver
+    _saver = RenderSaver(dataset_slug=os.environ.get("KAGGLE_SAVE_DATASET"))
+    if _saver.enabled:
+        _saver.start_watchdog()
+        print(f"bulletproof saver ACTIVE -> {_saver.dataset_slug}")
+    else:
+        print("bulletproof saver: KAGGLE_SAVE_DATASET not set — "
+              "outputs rely on Save & Run All only")
+except Exception as e:
+    _saver = None
+    print(f"bulletproof saver UNAVAILABLE: {e} — continuing without it")
+"""
+
+# Injected as the LAST cell of every pushed notebook: final checkpoint of
+# expected outputs. expected_outputs come from the job config; the cell
+# globs /kaggle/working for them so a missing file is loud, not silent.
+SAVER_FINAL_CELL_TMPL = """\
+# === QUEUE INJECTED FINAL CHECKPOINT ===
+import glob as _glob, os as _os
+_saver = globals().get("_saver")
+_expected = {expected!r}
+_found = []
+for _pat in _expected:
+    _found.extend(_glob.glob(_pat))
+    _found.extend(_glob.glob(_os.path.join("/kaggle/working", _pat)))
+if _saver and _saver.enabled:
+    _saver.checkpoint("final", sorted(set(_found)))
+    _saver.stop_watchdog()
+    print(f"final checkpoint: {{len(set(_found))}} files")
+elif _expected:
+    print(f"saver inactive; expected outputs present: {{sorted(set(_found))}}")
+else:
+    print("no expected outputs configured for final checkpoint")
+"""
+
+
+def validate_job(job):
+    """CHECK step (CHECK-RESEARCH-WIRE-DO law): validate a job config before
+    pushing. Returns a list of error strings (empty = valid).
+    """
+    errors = []
+    nb_path = job.get("notebook_path", "")
+    if not nb_path or not os.path.exists(nb_path):
+        errors.append(f"notebook not found: {nb_path}")
+    else:
+        try:
+            with open(nb_path) as f:
+                nb = json.load(f)
+            # compile-check every code cell before it ever reaches Kaggle
+            for i, c in enumerate(nb.get("cells", [])):
+                if c.get("cell_type") == "code":
+                    src = c.get("source", "")
+                    src = "".join(src) if isinstance(src, list) else src
+                    lines = [l for l in src.splitlines()
+                             if not l.strip().startswith(("%", "!"))]
+                    try:
+                        compile("\n".join(lines), f"<cell {i}>", "exec")
+                    except SyntaxError as e:
+                        errors.append(f"notebook cell {i} syntax error: {e}")
+        except (json.JSONDecodeError, OSError) as e:
+            errors.append(f"notebook unreadable: {e}")
+    # title must resolve to the kernel slug or Kaggle API 400s
+    title = job.get("title", "")
+    slug_base = "".join(c if c.isalnum() else "-" for c in title.lower())[:40].strip("-")
+    if not slug_base:
+        errors.append(f"title {title!r} produces empty slug")
+    # dataset_sources must exist or the kernel fails on /kaggle/input copy
+    for ds in job.get("datasets", []):
+        if "/" not in ds:
+            errors.append(f"bad dataset slug: {ds!r}")
+    if not job.get("expected_outputs"):
+        log(f"WARNING job {job.get('id')}: no expected_outputs — "
+            "completion cannot be verified automatically")
+    return errors
 
 
 def kernel_status(slug):
@@ -159,7 +274,18 @@ def inject_pre_cells(nb_path, pre_cells):
 
 def push_job(job):
     """Push a notebook as a new Kaggle kernel version (triggers batch run).
-    Returns (ok, slug_or_error)."""
+    Returns (ok, slug_or_error).
+
+    CHECK-RESEARCH-WIRE-DO: validates the job config first, injects the
+    bulletproof saver (save_outputs.py) into every notebook, and ensures the
+    title resolves to the kernel slug (Kaggle API 400s otherwise)."""
+    # CHECK: validate before anything touches Kaggle
+    errors = validate_job(job)
+    if errors:
+        msg = "; ".join(errors)
+        log(f"job {job['id']} VALIDATION FAILED: {msg}")
+        return False, f"validation: {msg}"
+
     slug_base = "".join(c if c.isalnum() else "-" for c in job["title"].lower())[:40].strip("-")
     ts = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
     slug = f"{slug_base}-{ts}"
@@ -169,13 +295,42 @@ def push_job(job):
     shutil.rmtree(kdir, ignore_errors=True)
     os.makedirs(kdir, exist_ok=True)
 
+    # WIRE: ship save_outputs.py alongside the notebook so the injected
+    # saver cells can import RenderSaver inside the kernel.
+    if os.path.exists(SAVE_OUTPUTS_SRC):
+        shutil.copy2(SAVE_OUTPUTS_SRC, os.path.join(kdir, "save_outputs.py"))
+    else:
+        log("WARNING: save_outputs.py not found — saver injection degraded")
+
     nb = inject_pre_cells(job["notebook_path"], job.get("pre_cells", []))
+
+    # WIRE: inject saver setup cell after leading markdown, final checkpoint
+    # as the last cell. Applies to EVERY notebook regardless of generator.
+    cells = nb["cells"]
+    idx = 0
+    while idx < len(cells) and cells[idx]["cell_type"] == "markdown":
+        idx += 1
+    saver_setup = {"cell_type": "code", "metadata": {},
+                   "execution_count": None, "outputs": [],
+                   "source": "# === QUEUE INJECTED: BULLETPROOF SAVER SETUP ===\n"
+                             + SAVER_SETUP_CELL}
+    expected = job.get("expected_outputs", [])
+    final_cell = {"cell_type": "code", "metadata": {},
+                  "execution_count": None, "outputs": [],
+                  "source": SAVER_FINAL_CELL_TMPL.format(expected=expected)}
+    nb["cells"] = cells[:idx] + [saver_setup] + cells[idx:] + [final_cell]
+    # validate injected cells compile
+    for c in (saver_setup, final_cell):
+        compile("".join(c["source"]), "<injected-saver>", "exec")
+
     with open(os.path.join(kdir, "notebook.ipynb"), "w") as f:
         json.dump(nb, f)
 
+    # Title MUST resolve to the slug or the Kaggle API returns 400
+    # "Your kernel title does not resolve to the specified id."
     metadata = {
         "id": full_slug,
-        "title": f"{job['title']} (queue {ts})",
+        "title": slug,
         "code_file": "notebook.ipynb",
         "language": "python",
         "kernel_type": "notebook",
@@ -358,13 +513,41 @@ def tick():
                     if not pub_ok:
                         notify(f"Second-copy publish issue: {job['title']}",
                                pub_msg, priority="default")
+                # VERIFY-BEFORE-CLAIMING: run the completion report through
+                # the claim gate before marking done. Evidence = downloaded
+                # output files. A blocked gate means "done" is unverified.
+                gate_passed, gate_out = True, ""
+                if ok:
+                    outdir = os.path.expanduser(job.get("output_dir") or
+                        f"~/workspace/kaggle-queue-output/{job['id']}")
+                    evidence = []
+                    if os.path.isdir(outdir):
+                        for fn in sorted(os.listdir(outdir)):
+                            fp = os.path.join(outdir, fn)
+                            if os.path.isfile(fp):
+                                evidence.append(
+                                    f"{job['title']} output {fn}:"
+                                    f"file:{fp}")
+                    report = (f"Job {job['title']} is done. "
+                              f"Outputs downloaded: {msg}")
+                    gate_passed, gate_out = claim_gate_check(report, evidence)
                 job["status"] = "done" if ok else "error"
+                if ok and not gate_passed:
+                    # Gate blocked: outputs exist but the "done" claim lacks
+                    # verifiable evidence. Flag it — do NOT silently pass.
+                    job["verification_warning"] = gate_out[:300]
+                    log(f"job {job['id']} done BUT CLAIM GATE BLOCKED: "
+                        f"{gate_out[:200]}")
                 job["finished_at"] = datetime.now(timezone.utc).isoformat()
                 job["result"] = msg
                 log(f"job {job['id']} COMPLETE: {msg}")
                 if ok:
+                    notify_body = f"Outputs: {msg}"
+                    if not gate_passed:
+                        notify_body += (f" | VERIFICATION WARNING: "
+                                        f"{gate_out[:200]}")
                     notify(f"Render done: {job['title']}",
-                           f"Outputs: {msg}", priority="default")
+                           notify_body, priority="default")
                 else:
                     notify(f"FAILED output verify: {job['title']}",
                            f"Kernel completed but outputs missing: {msg}")
