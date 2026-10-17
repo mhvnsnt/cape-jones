@@ -329,6 +329,8 @@ for key, label, builder in POSES:
     sc.render.filepath = os.path.join(OUT_PNG_DIR, f"{key}.png")
     bpy.ops.render.render(write_still=True)
     print(f"RENDERED {key}", flush=True)
+    bpy.ops.wm.save_as_mainfile(filepath=OUT_BLEND)
+    print(f"CHECKPOINT-SAVED {key}", flush=True)
 
 rig.animation_data.action = None
 bpy.ops.wm.save_as_mainfile(filepath=OUT_BLEND)
