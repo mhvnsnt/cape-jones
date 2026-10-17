@@ -18,9 +18,16 @@ argv = sys.argv[sys.argv.index("--") + 1:]
 mesh_path, skel_path, wbin_path, outdir = [os.path.abspath(a) for a in argv[:4]]
 os.makedirs(outdir, exist_ok=True)
 
+# Delete the default Cube/Light/Camera FIRST: the 2m default Cube SWALLOWS
+# the 0.9m character (this caused every "blank" render in this lane).
+bpy.ops.object.select_all(action="SELECT")
+bpy.ops.object.delete(use_global=False)
+assert len(bpy.context.scene.objects) == 0, "default objects would hide the character"
+
 # ---------- load rig data ----------
-# The skeleton JSON is in OBJ space (Y-up, as Blender wrote it). The Blender
-# OBJ importer maps OBJ -> Blender as (x, y, z) -> (x, -z, y) (Y-up to Z-up).
+# The skeleton JSON is in OBJ space (Y-up, as Blender wrote it). Blender
+# 4.0.2's OBJ importer does NO axis conversion, so below we bake a +90deg X
+# rotation into the mesh data; JSON joint (x,y,z) then maps to (x,-z,y).
 skel = json.load(open(skel_path))
 joints = skel["joints"]
 for jt in joints:
@@ -50,6 +57,14 @@ mesh_obj.name = "CJ_Pinocchio"
 from mathutils import Matrix
 mesh_obj.data.transform(Matrix.Rotation(math.radians(90), 4, "X"))
 mesh_obj.data.update()
+# The OBJ carries custom split normals; the data transform leaves them stale
+# (wrong shading). Clear so Blender recomputes them.
+bpy.context.view_layer.objects.active = mesh_obj
+mesh_obj.select_set(True)
+bpy.ops.object.mode_set(mode="EDIT")
+bpy.ops.mesh.customdata_custom_splitnormals_clear()
+bpy.ops.object.mode_set(mode="OBJECT")
+mesh_obj.select_set(False)
 bpy.context.view_layer.update()
 print(f"[proof] mesh verts: {len(mesh_obj.data.vertices)} (weights file: {nv})")
 assert len(mesh_obj.data.vertices) == nv, "vertex count mismatch between mesh and weights!"
