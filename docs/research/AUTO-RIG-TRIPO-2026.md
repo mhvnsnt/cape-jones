@@ -34,7 +34,7 @@ this space; Meta's relevant work here is nil.
 | **DeepMotion Animate 3D** | free tier 60s/mo, personal non-commercial | Web/API | 📝 documented only — mocap, not a mesh auto-rigger; free tier non-commercial |
 | **Krikey AI** | freemium | Web | 📝 documented only |
 | ~~**RigAnything**~~ (UCSD + Adobe, SIGGRAPH 2025) | ❌ **Adobe Research License — NONCOMMERCIAL ONLY** | GPU | ❌ **REJECTED** — license forbids commercial use |
-| SkinTokens (Tripo/VAST) | unknown | — | ⏳ announced UniRig successor, no public code yet — re-evaluate on release |
+| SkinTokens/TokenRig (Tripo/VAST-AI-Research) | **MIT** ✅ | GPU (≥14GB VRAM; Kaggle/Colab lane) | ✅ **PULLED 2026-10-17** — public code confirmed (was "announced, no public code"): unified single-pass skeleton + skinning weights via learned SkinTokens; 98–133% skinning accuracy gain over UniRig per authors. Lives at `production/tools/skintokens-autorig/` (code only, weights fetched on GPU machine via `download.py`). Wiring: `production/tools/skintokens-autorig/CAPE-JONES-WIRING.md`. |
 | TARig / Drive | papers, no public code found | — | 📝 papers only, not runnable |
 
 ## PROOF: Pinocchio on Cape Jones (CPU lane, 2026-10-17) — VERIFIED

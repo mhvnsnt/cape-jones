@@ -50,3 +50,28 @@ doc picks the rigging tool for them to use.
 - https://www.tripo3d.ai/content/en/guide/the-best-ai-auto-rigger-tools-for-blender (2026 market analysis)
 - https://superhivemarket.com/products/blenrig (BlenRig 6 product page, free)
 - https://studio.blender.org/training/blenrig/56965fc3c379cf44546120e1/ (Blender Studio: GPL, public git repo)
+
+## Update 2026-10-17 — SkinTokens / TokenRig pulled (overnight idle pipeline)
+
+**Winner for "auto-rig Tripo models perfectly" (owner-directed task):**
+SkinTokens/TokenRig by VAST-AI-Research — the SAME team that makes Tripo. Unified
+autoregressive model: one mesh in → full skeleton + dense skinning weights out,
+single command. MIT license (license gate PASSED), 98–133% skinning accuracy
+improvement over UniRig per authors. Pulled 2026-10-17 to
+`production/tools/skintokens-autorig/` (code only, 15MB; `.git` stripped; all
+`.py` pass `py_compile`; MIT LICENSE verified on disk). Wiring:
+`production/tools/skintokens-autorig/CAPE-JONES-WIRING.md`.
+
+| Detail | Value |
+|---|---|
+| Repo | https://github.com/VAST-AI-Research/SkinTokens |
+| License | MIT ✅ commercial use allowed |
+| Needs GPU | Yes — NVIDIA ≥14 GB VRAM; run on Kaggle/Colab, not the VM |
+| Command | `python demo.py --input model.glb --output rigged.glb --use_transfer` |
+| Skin onto existing skeleton | `--use_skeleton` (BlenRig × TokenRig combo lane) |
+| Weights (download on GPU machine, never committed) | `articulation_xl_quantization_256_token_4`, `skin_vae_2_10_32768` via `python download.py --model` |
+| Known caveat | Single-pass; if weights bleed on the cape/edge zones, post-process or fall back to UniRig two-stage |
+
+**Runner-up documented, not pulled:** UniRig (https://github.com/VAST-AI-Research/UniRig,
+MIT) — predecessor two-stage pipeline (skeleton → skinning). Kept as the documented
+fallback if TokenRig's single pass underperforms on a mesh.
