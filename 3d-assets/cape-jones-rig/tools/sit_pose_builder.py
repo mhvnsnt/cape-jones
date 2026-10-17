@@ -226,14 +226,12 @@ def build_sit_recline():
     aim_bone('shin_fk_L', (0, -0.18, -0.98)); upd()
     aim_bone('shin_fk_R', (0, -0.18, -0.98)); upd()
     keep_orientation('foot_fk_L'); keep_orientation('foot_fk_R'); upd()
-    # arms: hands behind head
+    # arms: hands behind head (elbows out to sides, forearms up-in)
     head_p = phead('head')
     for side, sgn in [('L', 1), ('R', -1)]:
-        shoulder = phead(f'upperarm_fk_{side}')
-        elbow_t = shoulder + Vector((sgn*0.20, 0.10, 0.16))
-        aim_bone(f'upperarm_fk_{side}', (elbow_t - shoulder).normalized()); upd()
+        aim_bone(f'upperarm_fk_{side}', (sgn*0.85, 0.15, 0.30)); upd()
         elbow = ptail(f'upperarm_fk_{side}')
-        hand_t = head_p + Vector((sgn*0.04, 0.075, 0.01))
+        hand_t = head_p + Vector((sgn*0.02, 0.095, 0.02))
         aim_bone(f'forearm_fk_{side}', (hand_t - elbow).normalized()); upd()
         keep_orientation(f'hand_fk_{side}')
     upd()
