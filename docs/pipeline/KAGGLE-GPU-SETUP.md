@@ -44,8 +44,11 @@ kaggle datasets version -p ~/workspace/kaggle-setup/dataset -m "v2"  # updates
 
 > Why a dataset and not a raw GitHub URL: the scene `.blend` lives on the build
 > lane's branch (not `origin/main`), and raw URLs need auth for private repos.
-> The dataset attaches read-only at `/kaggle/input/<slug>/` — no secrets in the
-> kernel, no 404s.
+> **2026-10-16 correction:** the old `/kaggle/input/<slug>/` layout is GONE on
+> current Kaggle images — datasets now mount under `/kaggle/input/datasets/…`.
+> **Never hardcode the input path:** resolve `living_room.blend` / reference
+> PNGs with a filename search under `/kaggle/input` at kernel startup
+> (v4 pattern in `setup_kernel.py`).
 
 ## 3. Kernel layout (exact)
 
@@ -166,31 +169,56 @@ purpose. This lane's proof run: ~10 min (see results below).
 
 ## 9. Live-test results — 2026-10-16 proof run
 
-- **Kernel:** `marsfmmg/cape-jones-gpu-setup-20261016` (v1, private, T4×2,
+- **Kernel:** `marsfmmg/cape-jones-gpu-setup-20261016` (private, T4×2,
   internet on), input dataset `marsfmmg/cj-living-room-setup`
   (`living_room.blend` 3,070,324 bytes from
   `build/living-room-relayout-20261016` @ 470887b7 + `dvd_stack_ref.png`).
-- **GPU proof:** <!-- filled after run --> `nvidia-smi` → Tesla T4; Cycles
-  device list → OPTIX entries present.
-- **Render test:** <!-- filled after run --> `frame_0001.png` (frame 1,
-  64 samples, OptiX) — non-empty PNG, render timed at __ s.
-- **AI prop test:** <!-- filled after run --> TripoSR on T4 →
-  `dvd_stack_raw.glb` (__ faces) → canon recolor → `dvd-case-stack.glb`,
-  hex verification ALL_PASS (coral/blue/amber bands), independent
-  re-import check ALL_PASS.
-- **Prop shipped:** `3d-assets/living-room/props/dvd-case-stack.glb` +
-  `3d-assets/living-room/props/NOTE-TO-BUILD-LANE.md` (this branch).
-- **Quota used:** ~__ GPU-minutes of the 30 GPU-h/week pool.
+- **GPU proof (v2 log, verbatim):** `nvidia-smi` → **2× Tesla T4, 15360 MiB
+  each**; Cycles device list → `OPTIX | Tesla T4` ×2, `OPTIX_AVAILABLE: True`
+  (the `HIPEW initialization failed` warning is harmless — no AMD GPU present).
+- **Blender install (v2 log, verbatim):** `blender-5.2.2-linux-x64.tar.xz`
+  downloaded, sha256 `84098912…06a168` matched, `ldd` → ALL SHARED LIBS
+  PRESENT, `--version` → Blender 5.2.2 LTS — **27.3 s** wall time.
+- **Render test:** ⚠️ BLOCKED — see below. Not yet run.
+- **AI prop test:** ⚠️ BLOCKED — see below. Not yet run.
+- **Prop shipped:** pending live test (`3d-assets/living-room/props/` holds
+  `NOTE-TO-BUILD-LANE.md`; the GLB lands after a successful run).
+- **Quota used:** ~6 GPU-minutes across v1–v4 (all short proof/debug runs).
+- **BLOCKED 2026-10-17 ~01:45 UTC:** kernel v4 was **cancelled by an external
+  party** (`KernelWorkerStatus.CANCEL_ACKNOWLEDGED`) ~1 min after push — right
+  after input resolution succeeded, before the render. This lane did not cancel
+  it; no other kernel was running at the time. Re-push is **awaiting parent
+  go-ahead** — do not re-push blindly (coordination, NEVER-KILL-IN-PROGRESS).
+  Everything below is proven and the v4 kernel is push-ready the moment the
+  parent clears it: `kaggle kernels push -p ~/workspace/kaggle-setup/kernel`.
 - **Failures hit during setup (no silent failures):**
   1. `kaggle kernels push` with `code_file: setup_kernel.py` fails on CLI
      2.2.4 — it `json.loads()` the file for `kernel_type: notebook`.
      Fix: push a real `.ipynb` (built from the `.py` via nbformat).
      Recipe §3 documents this permanently.
-  2. AI Horde text2img for the reference photo: first job returned
+  2. AI Horde text2img for the reference photo: two jobs returned
      `done=true` with zero generations (silent worker fault); kudos not
-     charged. Pollinations.ai returned a watermarked, wrong-geometry image.
-     Fix: deterministic PIL-drawn reference (`/tmp/make_dvd_ref_pil.py`
-     pattern) — clean silhouette, no watermark, reproducible.
+     charged (balance stayed 25). Pollinations.ai returned a watermarked,
+     wrong-geometry image (3 white cubes, not DVD cases).
+     Fix: deterministic PIL-drawn reference — clean silhouette, no
+     watermark, reproducible.
   3. Local Blender 4.0.2 unusable on this VM (missing libEGL.so.1, apt
      broken) — reference rendering moved to PIL; all Blender work happens
      in the Kaggle kernel (5.2.2).
+  4. v1 kernel ERROR after ~3 min with **no retrievable log** (notebook cell
+     outputs aren't fetchable via API; `/kaggle/working` held 1.4 GB of
+     Blender install junk). Fix (v2): tee all stdout/stderr to
+     `/kaggle/working/kernel_stdout.log`, install Blender to `/tmp/ksetup`,
+     pure-Python sha256 verify. Bonus discovery: `kaggle kernels output`
+     also downloads the server-side kernel log
+     (`<slug>.log`) — the real diagnostic channel.
+  5. v1+v2 ERROR root cause: `missing input blend:
+     /kaggle/input/cj-living-room-setup/living_room.blend` — the dataset
+     itself is fine (`ready`, both files listed). v3's mount diagnostic
+     revealed the cause: **current Kaggle images mount datasets under
+     `/kaggle/input/datasets/<user>/<slug>/`, not `/kaggle/input/<slug>/`**
+     (the research doc's path is outdated; v4 log verbatim:
+     `/kaggle/input/datasets/marsfmmg/cj-living-room-setup/living_room.blend`).
+     Fix (v4): resolve input files by filename search under `/kaggle/input`
+     at startup; fail loudly with the resolved paths printed. Verified
+     working in v4's 1-minute run before cancellation.
