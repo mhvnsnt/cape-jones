@@ -16,15 +16,16 @@ NOTEBOOK = ROOT / "production" / "colab" / "cape_jones_lighting_reel_colab.ipynb
 
 REQUIRED_SNIPPETS = {
     "material lookup": "bpy.data.materials.get",
-    "material failure diagnostic": "LEDStripMat",
-    "scene light lookup": "RoomLight",
+    "material failure diagnostic": "Lighting reel setup failed",
+    "scene light lookup": "bpy.data.objects.get",
     "segment boundary protection": "SEG - 1",
-    "render process status check": "returncode",
-    "output existence check": "os.path.exists",
+    "shell pipeline failure propagation": "pipefail",
+    "output existence and size verification": "os.path.getsize(output) == 0",
+    "metadata probe failure propagation": "check=True",
 }
 
 FORBIDDEN_SNIPPETS = {
-    "account identifier should not be embedded": "drive.google.com/drive/u/",
+    "account-specific Drive URL should not be embedded": "drive.google.com/drive/u/",
 }
 
 
@@ -47,8 +48,10 @@ def main() -> int:
     source_parts = []
     for cell in cells:
         if cell.get("cell_type") == "code":
-            source = cell.get("source", [])
-            source_parts.append("".join(source) if isinstance(source, list) else str(source))
+            cell_source = cell.get("source", [])
+            source_parts.append(
+                "".join(cell_source) if isinstance(cell_source, list) else str(cell_source)
+            )
     source = "\n".join(source_parts)
 
     failures = []
