@@ -120,7 +120,7 @@ cc.collision_quality = 4
 cc.distance_min = 0.004
 cc.use_collision = True
 cc.use_self_collision = True
-cc.self_collision_distance = 0.004
+cc.self_distance_min = 0.004
 print("cloth configured", flush=True)
 
 # ---- 5. bake ----
