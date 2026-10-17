@@ -170,11 +170,16 @@ def build_sit_leg_folded():
     aim_bone('forearm_fk_L', (0.05, -0.18, -0.98)); upd()
     keep_orientation('hand_fk_L'); upd()
     L = seat_and_ground(3.02, 0.42)
-    # solve right shin: ankle flat on seat. rig object at identity so world == armature-object space.
-    ankle_a = Vector((2.90, 2.02, SEAT_TOP + ANKLE_H))
+    # solve right shin: ankle flat on seat, EXACTLY shin-length (0.217) from knee.
     knee_a = ptail('thigh_fk_R')
+    dz = knee_a.z - (SEAT_TOP + ANKLE_H)
+    assert abs(dz) < 0.217, f"knee too high for folded foot: dz={dz}"
+    h = math.sqrt(0.217**2 - dz**2)
+    to = Vector((2.88, 2.067, knee_a.z)) - knee_a
+    to.z = 0; to.normalize()
+    ankle_a = Vector((knee_a.x + to.x*h, knee_a.y + to.y*h, SEAT_TOP + ANKLE_H))
     v = ankle_a - knee_a
-    assert v.length <= 0.217 + 1e-6, f"folded shin unreachable: {v.length}"
+    print(f"[folded] knee {tuple(round(x,3) for x in knee_a)} ankle {tuple(round(x,3) for x in ankle_a)} shin_len {round(v.length,4)}", flush=True)
     aim_bone('shin_fk_R', v.normalized()); upd()
     keep_orientation('foot_fk_R'); upd()
     # right hand onto raised knee
