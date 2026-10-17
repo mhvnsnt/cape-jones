@@ -7,7 +7,9 @@ Full report: `docs/research/WEIGHT-BAKEOFF-2026.md`.
 
 | Path | What | License | Status |
 |---|---|---|---|
-| `cj_bakeoff/bakeoff.py` | Bake-off driver: canonical CJ-TEST skeleton, 7 weight entries (W1–W7), 7-pose test suite, Cycles proof renders | GPL-3.0 (repo) | Ran 2026-10-17 — see research doc for scores |
+| `cj_bakeoff/bakeoff.py` | Bake-off driver: canonical CJ-TEST skeleton, 9 weight entries (W1–W8), 7-pose test suite, Cycles proof renders | GPL-3.0 (repo) | Ran 2026-10-17 — see research doc for scores (winner: W5r) |
+| `cj_bakeoff/render_w7b.py` | Render-only pass: reopens a saved weight blend, applies poses, renders proof PNGs (used when a run's weighting succeeded but its renders died) | GPL-3.0 (repo) | Wired 2026-10-17 |
+| `cj_bakeoff/render_w7b_cage.py` | Cage-level pose verification for mesh-deform entries: hides the heavy mesh, renders the deformed cage + numeric bend check | GPL-3.0 (repo) | Wired 2026-10-17 |
 | `surface-heat-diffuse/` | Surface Heat Diffuse Skinning v3.4.2 — open-source "never fails" alternative to Blender Bone Heat | MIT | Pulled 2026-10-17; Linux solver compiled from `src/` via `build_linux.sh` |
 
 ## Entries tested (all on the same CJ-TEST skeleton, same 7 poses)
@@ -20,6 +22,11 @@ Full report: `docs/research/WEIGHT-BAKEOFF-2026.md`.
 - **W6** W1 + twist bones (Copy Rotation Y @ 0.5, weights redistributed) — bannon-video-pipe technique
 - **W7** BlenRig-6-style mesh-deform cage skinning — technique entry (full guide-fitted
   BlenRig bind belongs to the rig lane; this is its core skinning method)
+- **W7b** W7 with denser relaxed cage (decimate 0.15 + smooth×3 + 1.06) — **FAIL**:
+  arms melt into torso (9.7% arm verts), full-mesh deform eval OOMs 8 GB VM;
+  fitted cage needed, not denser hulls
+- **W8** Pinocchio auto-rig (skeleton generator) — MIXED-FAIL on weights, 18/18
+  skeleton placement verified excellent
 
 ## Running the bake-off
 
