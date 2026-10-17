@@ -75,3 +75,30 @@ repeat either method — `kaggle datasets version -p` (CLI) or a new dataset
 version (kernel) replaces the file. The notebook's `_ok()` guard rejects
 anything outside 2.8–3.8 GB, so a bad upload fails loudly at runtime instead
 of silently OOMing.
+
+## Operational lessons (2026-10-16/17 seed run)
+
+Learned the hard way while seeding from the agent VM:
+
+- **Egress proxy throttles hard.** Single-connection downloads run ~200KB/s;
+  6–16 parallel HTTP range requests aggregate ~600KB/s–1MB/s. Use a parallel
+  ranged downloader with resume, not plain `wget`, for the 3.18GB pull.
+- **The proxy rate-limits aggressive parallelism.** 16 workers trigger
+  `Connection refused`; 3–6 workers with exponential backoff sail through.
+- **`/tmp` is a 512MB tmpfs.** `pip` unpacks wheels there — set `TMPDIR` to a
+  directory on `/home/hatch` before `pip install torch`, or the install dies
+  with `No space left on device`.
+- **The disk guardian deletes unmarked bulk.** While disk is >85%, the
+  10-minute `disk-space-guardian` cron sweeps large staging files. Drop a
+  `.DO_NOT_DELETE-<lane>` marker file in the work dir describing the in-flight
+  work — the guardian honors it (and the NO-SWEEP-INFLIGHT LAW).
+- **Kaggle CLI resumable-upload state vs the proxy.** The CLI stores resume
+  state in `/tmp/.kaggle/uploads/`. Resuming requires a `Content-Length: 0`
+  status query which this proxy rejects (HTTP 411), so a killed upload can
+  NOT resume — delete the state file and start fresh. The fresh single-PUT
+  upload works (slowly); expect the tqdm bar to over-count past 100% on
+  retries — that's re-sent bytes, not extra data.
+- **`torch.save` layout changed in torch 2.14.** The archive prefix is now
+  `model/` instead of `archive/`. `torch.load` resolves it transparently via
+  `get_record()`, so Kaggle-side loads work fine — but don't be alarmed when
+  inspecting the zip.
