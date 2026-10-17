@@ -1,23 +1,36 @@
-# Aider configuration for Cape Jones / animation repos
-# Install: pip install aider-chat
-# Usage: cd <repo> && aider
-# Docs: https://aider.chat/docs
+# Aider configuration for cape-jones — repo-level defaults (aider.chat/docs/config.html)
+# Loaded automatically when aider runs from the repo root. Never put API keys here.
+# Lane guide: docs/dev/AIDER.md. Conventions: docs/dev/AIDER-CONVENTIONS.md
 
-# Use a free/low-cost model — set your preferred provider via env var
-# Options: OPENAI_API_KEY, ANTHROPIC_API_KEY, GEMINI_API_KEY, GROQ_API_KEY
-model: gemini/gemini-2.0-flash
+# ---- model: FREE tier by default ----
+# gemini-exp = Gemini 2.5 Pro Exp, free with usage limits (aider.chat/docs/llms/gemini.html).
+# Needs GEMINI_API_KEY in the environment (export, or --api-key gemini=<key>).
+# Get a key at https://aistudio.google.com (Google sign-in required — needs browser).
+# Paid higher-limit run: aider --model gemini   (was: gemini/gemini-2.0-flash, stale)
+model: gemini-exp
+editor-model: gemini-exp
+weak-model: gemini-exp
 
-# Never auto-commit — we review everything before commit
+# ---- git: aider NEVER commits on its own ----
+# Lanes commit deliberately: branch -> PR -> verify green/mergeable -> merge.
 auto-commits: false
+dirty-commits: false
+attribute-co-authored-by: false
+git: true
+gitignore: true
+aiderignore: .aiderignore
 
-# Watch files for AI edits
-watch-files: true
+# ---- behavior ----
+watch-files: true        # pick up edits made outside aider
+show-diffs: true         # show diffs before applying
+dark-mode: false         # irrelevant in non-interactive lane runs
+pretty: true
+stream: true
 
-# Dark mode colors for terminal
-dark-mode: true
+# ---- unattended lanes: pass --yes-always on the command line when non-interactive ----
+yes-always: false
+suggest-shell-commands: false
 
-# Show diffs before applying
-show-diffs: true
-
-# Suggest shell commands but don't run them automatically
-suggest-shell-commands: true
+# ---- privacy / quietness ----
+analytics-disable: true
+check-update: false      # no upgrade prompts mid-lane
