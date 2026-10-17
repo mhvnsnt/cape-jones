@@ -193,9 +193,9 @@ def build_sit_lean_forward():
     aim_bone('spine_1', (0, -0.25, 1)); upd()
     aim_bone('spine_2', (0, -0.25, 1)); upd()
     aim_bone('chest', (0, -0.15, 1)); upd()
-    aim_bone('neck_1', (0, -0.40, 1)); upd()
-    aim_bone('neck_2', (0, -0.30, 1)); upd()
-    aim_bone('head', (0, -0.75, 1)); upd()
+    aim_bone('neck_1', (0, -0.55, 0.84)); upd()
+    aim_bone('neck_2', (0, -0.65, 0.76)); upd()
+    aim_bone('head', (0, -0.85, 0.53)); upd()
     legs_normal(spread=0.12, fwd=0.55, down=0.83)
     # arms: elbows on knees, hands clasped hanging between knees
     for side, sgn in [('L', 1), ('R', -1)]:
