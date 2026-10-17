@@ -96,10 +96,12 @@ def main() -> int:
         )
         if blender_script is None:
             raise ValueError("embedded Blender render script or PRESETS list not found")
-        # The first line is the Jupyter %%writefile cell magic, not Python syntax.
-        script_lines = blender_script.splitlines()
-        if script_lines and script_lines[0].startswith("%%writefile"):
-            script_lines = script_lines[1:]
+        # Remove Jupyter cell magic wherever it appears; explanatory comments
+        # may precede it in the notebook cell.
+        script_lines = [
+            line for line in blender_script.splitlines()
+            if not line.lstrip().startswith("%%writefile")
+        ]
         script_tree = ast.parse("\n".join(script_lines))
         subset_node = assigned_value(script_tree, "PRESETS")
         if not isinstance(subset_node, ast.List):
