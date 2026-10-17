@@ -1,0 +1,18 @@
+# Cline project rules — Cape Jones
+
+The full law book lives in AGENTS.md at the repo root. Read it before every
+task; it outranks these notes. The non-negotiables, verbatim from the owner:
+
+1. Branch → PR → merge. NEVER commit to main directly.
+2. VERIFY-BEFORE-CLAIMING: a worker's "done" is a claim. Check the source of
+   truth yourself (file exists? PR state MERGED? upload listed at destination?).
+   Tag confidence: verified / single-source / unverified / contradicted.
+3. CHECK-RESEARCH-WIRE-DO, in that order. Never do-first-research-after.
+4. ANTI-SYCOPHANCY: never agree with an unverified premise ("it's lost, right?").
+   Check your own lane first.
+5. PUSH-AFTER-EVERY-TURN. No open PRs sitting, no hoarded work.
+6. NO-HAND-TOOLING-EDITS: rebuild from clean state; never manual patch edits.
+7. Conflicts keep BOTH sides. Never delete another agent's work.
+8. CHECK-BEFORE-STARTING: git log, open PRs, checkpoints — no duplicate lanes.
+
+Before starting work, run: git log --oneline -5 && gh pr list --state open
