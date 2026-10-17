@@ -104,3 +104,8 @@ This is a running visual gag. The room can completely change mood mid-conversati
 3. **Ghost cave is always ghost-mode.** He doesn't touch that one.
 4. **Outside = creative grades**, not LED presets. Different system entirely.
 5. **The joke**: the lights change dramatically and he acts like nothing happened.
+
+## Rim + blaster lighting tie-in (owner 2026-10-17)
+
+- In LED scenes, the LED lighting itself creates the rim light (rim is situational — see `docs/lighting/DYNAMIC-RIM-BLASTER-LIGHTING.md`).
+- While a blaster fires, the blast's color becomes the scene lighting and overrides the LED rim — same rules in 2D and 3D.
