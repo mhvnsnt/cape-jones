@@ -6,11 +6,11 @@ builds ONE clean quad sheet in the exact same space:
 Pin group 'cape_pin' for z > 0.68. Black #000000 material.
 Old fragments -> hidden collection 'CapeFragments_OLD' (provenance, not deleted).
 Saves to cape_jones_rigged_w5r_idle_cape_STEP1.blend (original untouched)."""
-import bpy
+import bpy, os
 from mathutils import Vector
 
 BLEND = 'cape_jones_rigged_w5r_idle.blend'
-OUT = 'cape_jones_rigged_w5r_idle_cape_STEP1.blend'
+OUT = os.path.join(os.getcwd(), 'cape_jones_rigged_w5r_idle_cape_STEP1.blend')
 
 old = bpy.data.objects['CapeJones_Cape']
 me = old.data
