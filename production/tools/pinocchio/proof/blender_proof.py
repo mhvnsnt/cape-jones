@@ -48,24 +48,18 @@ new = [o for o in bpy.context.scene.objects if o not in before and o.type == "ME
 assert new, "OBJ import produced no mesh object"
 mesh_obj = new[0]
 mesh_obj.name = "CJ_Pinocchio"
-# Blender 4.0.2's OBJ importer does NO Y-up -> Z-up conversion (unlike the
-# glTF importer), so the mesh arrives Y-up. Bake a +90deg X rotation into the
-# MESH DATA (keeps vertex order -> weights still align by index) to make it
-# Z-up; then JSON joint (x,y,z) maps to Blender (x,-z,y) (already applied
-# above), and the character faces -Y. Object rotation stays identity so the
-# armature modifier sees matching spaces.
+# Blender 4.0.2's OBJ importer DOES Y-up -> Z-up conversion, via the OBJECT's
+# rotation matrix (matrix_world = R_x(+90); vertex data stays in file frame).
+# That puts the mesh Z-up in world space, exactly matching the armature frame
+# below (JSON joint (x,y,z) -> (x,-z,y), character faces -Y).
+# DO NOT bake any extra rotation into the mesh data: a +90deg X data bake
+# DOUBLE-applies the conversion and flips the mesh head-down while the bones
+# stay head-up -- every pose then mangles (this was the "blob" bug).
+# Object rotation stays as the importer set it; the armature modifier
+# resolves object transforms correctly, and vertex groups are index-based.
 from mathutils import Matrix
-mesh_obj.data.transform(Matrix.Rotation(math.radians(90), 4, "X"))
-mesh_obj.data.update()
-# The OBJ carries custom split normals; the data transform leaves them stale
-# (wrong shading). Clear so Blender recomputes them.
-bpy.context.view_layer.objects.active = mesh_obj
-mesh_obj.select_set(True)
-bpy.ops.object.mode_set(mode="EDIT")
-bpy.ops.mesh.customdata_custom_splitnormals_clear()
-bpy.ops.object.mode_set(mode="OBJECT")
-mesh_obj.select_set(False)
 bpy.context.view_layer.update()
+print(f"[proof] mesh object rotation: {[round(v,3) for v in mesh_obj.rotation_euler]} (importer Y-up->Z-up, kept)")
 print(f"[proof] mesh verts: {len(mesh_obj.data.vertices)} (weights file: {nv})")
 assert len(mesh_obj.data.vertices) == nv, "vertex count mismatch between mesh and weights!"
 
@@ -132,12 +126,22 @@ def rot(name, axis, deg):
         e["XYZ".index(axis)] = math.radians(deg)
         b.rotation_euler = e
 
-# elbows/knees bend, shoulders lift sideways, head turns
+# elbows/knees bend, head turns -- MODEST angles only.
 # (Blender space: Z-up, character faces -Y)
-rot("lelbow", "X", -70); rot("relbow", "X", -70)
-rot("lknee", "X", 55);   rot("rknee", "X", 55)
-rot("lshoulder", "Y", 25); rot("rshoulder", "Y", -25)
-rot("head", "Z", 18)
+# Bone local axes are MEASURED (edit-bone matrix_local), not guessed:
+#  - elbow bones: local Z ~= up -> bend forearms forward with Z
+#    (mirrored signs: left +45, right -45). Verified clean at 90.
+#  - knee bones: local X ~= left-right axis -> shins swing back with X.
+#  - head bone: local Y ~= up (along head) -> turn with Y.
+# Kept modest on purpose: Pinocchio's PDE weights are very smooth/diffuse
+# and web on big combined poses (bake-off W8 MIXED-FAIL) -- this proof
+# demonstrates clean articulation, not extreme motion.
+# (The old axes -- shoulder Y = twist about the arm's own long axis,
+# head Z = tilt -- folded the rig into a blob; shoulders are omitted
+# from this proof until their raise axis is verified empirically.)
+rot("lelbow", "Z", 45);    rot("relbow", "Z", -45)
+rot("lknee", "X", 30);     rot("rknee", "X", 30)
+rot("head", "Y", 10)
 bpy.ops.object.mode_set(mode="OBJECT")
 bpy.context.view_layer.update()
 
@@ -164,14 +168,21 @@ sun = bpy.data.lights.new("Sun", "SUN"); sun.energy = 1.5
 so = bpy.data.objects.new("Sun", sun); scene.collection.objects.link(so)
 so.rotation_euler = (math.radians(50), 0, math.radians(30))
 
-# camera: frame the 0.925m character (Z-up; faces -Y). Aim with track-quat
-# (guaranteed) and keep world +Z as up so the character is upright in frame.
-from mathutils import Vector
+# camera: frame the 0.925m character (Z-up; faces -Y). Aim with an explicit
+# look-at basis (guaranteed correct up vector). NOTE: Vector.to_track_quat
+# was tried first but rolls the camera 90deg for the side view
+# (measured: up=[0,1,0] instead of +Z), so we build the basis manually.
+from mathutils import Vector, Matrix
 def aim_cam(loc, target=(0, 0, 0.05)):
     bpy.ops.object.camera_add(location=loc)
     c = bpy.context.active_object
-    d = Vector(target) - Vector(loc)
-    c.rotation_euler = d.to_track_quat("-Z", "Z").to_euler()
+    fwd = (Vector(target) - Vector(loc)).normalized()
+    right = fwd.cross(Vector((0, 0, 1))).normalized()
+    up = right.cross(fwd).normalized()
+    # camera looks down -Z: matrix columns = [right, up, -fwd]
+    m = Matrix((right, up, -fwd)).transposed().to_4x4()
+    m.translation = Vector(loc)
+    c.matrix_world = m
     return c
 cam = aim_cam((0, -1.7, 0.25))
 scene.camera = cam
@@ -186,9 +197,15 @@ def render(path):
 
 render(os.path.join(outdir, "pinocchio_pose_front.png"))
 
-# side view
-cam.location = (1.7, 0, 0.25)
-cam.rotation_euler = (Vector((0, 0, 0.05)) - Vector(cam.location)).to_track_quat("-Z", "Z").to_euler()
+# side view (rebuild basis manually; do not use to_track_quat -- see note above)
+from mathutils import Vector as _V, Matrix as _M
+_loc = (1.7, 0, 0.25)
+_fwd = (_V((0, 0, 0.05)) - _V(_loc)).normalized()
+_right = _fwd.cross(_V((0, 0, 1))).normalized()
+_up = _right.cross(_fwd).normalized()
+_m = _M((_right, _up, -_fwd)).transposed().to_4x4()
+_m.translation = _V(_loc)
+cam.matrix_world = _m
 render(os.path.join(outdir, "pinocchio_pose_side.png"))
 
 # rest pose for comparison
@@ -197,6 +214,12 @@ bpy.ops.object.mode_set(mode="POSE")
 for b in pb: b.rotation_euler = (0, 0, 0)
 bpy.ops.object.mode_set(mode="OBJECT")
 cam.location = (0, -1.7, 0.25)
-cam.rotation_euler = (Vector((0, 0, 0.05)) - Vector(cam.location)).to_track_quat("-Z", "Z").to_euler()
+_loc = (0, -1.7, 0.25)
+_fwd = (_V((0, 0, 0.05)) - _V(_loc)).normalized()
+_right = _fwd.cross(_V((0, 0, 1))).normalized()
+_up = _right.cross(_fwd).normalized()
+_m = _M((_right, _up, -_fwd)).transposed().to_4x4()
+_m.translation = _V(_loc)
+cam.matrix_world = _m
 render(os.path.join(outdir, "pinocchio_rest_front.png"))
 print("[proof] ALL DONE")
