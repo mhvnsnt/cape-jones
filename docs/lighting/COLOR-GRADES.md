@@ -8,6 +8,8 @@ All grades built from the 14 model sheets. Tuned for the locked palette:
 
 Model-sheet law: environment color applies to rim lights only, never tints the suit (signature grades). LED presets intentionally tint everything — that's what real RGB strips do.
 
+**New canon (owner 2026-10-17):** rim light is SITUATIONAL — blue/cyan in space, LED color in LED scenes, blast color while a blaster fires; blaster light becomes the scene lighting while it fires. Full spec: `docs/lighting/DYNAMIC-RIM-BLASTER-LIGHTING.md`.
+
 ## Signature Grades
 
 | Grade | Name | Description | Use When |

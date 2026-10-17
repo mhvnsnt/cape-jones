@@ -3,6 +3,30 @@
 **Proprietary rename** (owner 2026-10-14): Space Ghost → **CAPE JONES**. Logged in `workspace/RENAME-MAP.md` ("Hero/cartoon sources → proprietary", status assigned). Supersedes the 2026-10-13 Mystery Coast: Ghosted assignment for this character.
 
 Design sheet: `characters/design-sheet.png` (full-body, white void, full arm reach with margin — own-eyes verified).
+**NOTE (owner 2026-10-17):** `design-sheet.png` shows the **yellow-cape/red-bands colorway — an ALTERNATE, NOT current.** See "Alternate colorways" below.
+
+## Locked palette — CURRENT (owner 2026-10-17, from sheet 03: `characters/sheets/03-color-lighting-vfx-key.jpg`)
+
+The 10 sheets in `characters/sheets/` are the LOCKED build specs. Palette is locked — zero changes without the owner:
+
+- **Suit base:** pure white **#FFFFFF** — stays blown out, NO gradients or dirt passes, hard vector shapes, no multiply
+- **Cowl & logo:** deep violet **#3E1473**
+- **Skin tone:** warm mid-tone **#E5B28C**
+- **Cape & shadows:** absolute black **#000000**
+- **Rim light:** 2–4px; separates silhouette from void; environment bleed on rim ONLY. **SITUATIONAL** — motivated by the scene (space = blue/cyan; LED scenes = the LED color; blaster firing = the blast's color). 3D = real environment-driven rim/fill rig; 2D = drawn/composited rim. Same job: black cape stays visible in the dark.
+- **Blaster FX:** core blast pure white **#FFFFFF**, outer glow **#FFB300** (color dodge/add); energy & sparks overlap black line art. These are EXAMPLES for when he's firing that color — every blaster type/color gets its own lighting personality that takes over the scene while it fires (see "Blaster lighting" in `docs/SHOW-BIBLE.md`).
+- **Environment color bleed:** suit stays white — tint goes strictly to outer rim + energy glow.
+
+## Alternate colorways (design history — NOT current)
+
+Logged per owner 2026-10-17: alternates stay in the repo labeled as alternates; we may log more, but we do NOT use them until he says so. Story logic: people think his look is a superhero costume, but these are just his CLOTHES — one day he might change clothes (same outfit, different colorway). The 3D outfit is built as a recolorable system (material slots per colorway).
+
+| Colorway | Colors | Source | Status |
+|---|---|---|---|
+| Yellow-cape / red-bands | Yellow cape, red bands, white suit | `characters/design-sheet.png` | **Alternate — NOT current** |
+| Navy / crimson / gold | Navy cape + crimson lining, gold power bands, black domino mask, glowing yellow eyes | likeness anchors below (v1 of this doc) | **Alternate — NOT current** |
+
+(The "Likeness anchors" below were written against the navy/crimson/gold colorway — they describe the ALTERNATE look, kept for design history.)
 
 ## Source lineage (what he is made of)
 

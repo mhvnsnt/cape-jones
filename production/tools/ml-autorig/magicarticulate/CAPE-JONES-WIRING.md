@@ -17,6 +17,19 @@ as a fast skeleton-proposer: run MagicArticulate for the joint layout,
 cross-check against UniRig/Puppeteer joints, then pick the best skeleton
 and re-skin with the winner.
 
+## Weight bake-off verdict (2026-10-17)
+
+Evaluated against the W5r baseline — **LOSES, structural**: the public
+MagicArticulate release ships no skinning-weight inference (skeleton generation
+only; verified against the local tree, the upstream GitHub file tree, and the
+paper's code release). It cannot produce per-vertex weights, so it cannot enter
+the 7-pose weight test. **Do NOT queue a GPU weight-test job for MagicArticulate**
+— it would burn GPU hours on a run that cannot produce weights. Its role stays
+exactly as documented above: fast skeleton-proposer for joint-layout cross-check.
+The neural weight contender from this family is Puppeteer (has `skinning/`),
+already queued after UniRig. Full verdict:
+`docs/research/MAGICARTICULATE-WEIGHT-VERDICT-2026.md`.
+
 **Verified this lane (2026-10-17, own-eyes):**
 - All 18 `.py` files pass `python3 -m py_compile`.
 - `LICENSE` is **Apache-2.0** (read the file directly) — license gate PASSED.
