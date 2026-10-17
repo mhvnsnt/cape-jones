@@ -13,8 +13,9 @@ All free tier. No card details. Ever.
 | **Antigravity CLI** (`agy`) | 1.4.0 | Closed-source (Google) | Free Individual tier | Multi-agent coding tasks, subagents, repo-wide refactors |
 | **OpenCode** (`opencode`) | 1.19.3 | MIT | Free (bring your own API key) | Terminal coding agent, 189k stars, plugin ecosystem |
 | **Aider** (`aider`) | 0.86.2 | Apache-2.0 | Free (bring your own API key) | Precise pair-programming edits, diff review |
+| **Cline** (`cline`) | 3.0.72 CLI / 4.1.25 ext | Apache-2.0 | Free (bring your own API key) | Autonomous multi-file tasks, Plan/Act modes, MCP, headless CI |
 
-All three read the repo's `AGENTS.md` — the laws apply to them automatically.
+All four read the repo's `AGENTS.md` — the laws apply to them automatically.
 
 ---
 
@@ -115,6 +116,84 @@ cd ~/workspace/cape-jones
 
 ---
 
+## 4. Cline — Autonomous Coding Agent (CLI + VS Code/code-server extension)
+
+**Owner-requested (2026-10-16):** "get in that... Klein C L I N E... hook up... get that on the work also."
+
+Apache 2.0, ~66k GitHub stars, 8M+ installs. Autonomous agent: reads the whole project, plans multi-file changes, runs terminal commands, iterates — with human-in-the-loop approval gates. Supports 15+ providers (Anthropic, OpenAI, OpenRouter, **Google Gemini**, **Groq**, AWS Bedrock, Cerebras, Ollama local) — bring your own free-tier key.
+
+**Two installs (both verified working 2026-10-16):**
+
+CLI (headless — scripts, CI, terminal):
+```bash
+npm i -g cline        # → 3.0.72 at /usr/bin/cline (Bun binary)
+cline --version
+```
+
+VS Code extension (inside code-server — browser/phone IDE):
+```bash
+# Extension ID is still the original marketplace slug:
+code-server --install-extension saoudrizwan.claude-dev   # → v4.1.25
+```
+Then in code-server's Cline sidebar: pick provider (Gemini or Groq), paste the free-tier key, choose model. The owner can drive Cline from his phone through code-server.
+
+**Auth (pick one):**
+```bash
+# One-time interactive (persists to ~/.cline):
+cline auth gemini        # paste Gemini key when prompted
+
+# Or per-run, no persistence (good for scripts):
+cline -P gemini -k "$GEMINI_API_KEY" -m "gemini-2.5-flash" "your task here"
+cline -P groq   -k "$GROQ_API_KEY"   -m "llama-3.3-70b-versatile" "your task here"
+```
+
+**Why it's different from the other three:**
+- **Plan/Act dual mode**: `-p` drafts a strategy before touching code. Best of the four for big refactors you want to review first.
+- **Checkpoints**: every edit is undoable. Safer than `agy --mode accept-edits`.
+- **`--worktree`**: auto-creates a detached git worktree per task — matches our branch-per-task law natively. The agent works isolated; you merge via PR.
+- **MCP + Skills marketplace**: install MCP servers / Skills from inside Cline (DBs, APIs, CI).
+- **Kanban**: `cline --kanban` tracks agent tasks across a session.
+- **ACP mode** (`--acp`): editor-integration protocol.
+
+**Usage:**
+```bash
+cd ~/workspace/cape-jones
+
+# Plan first (review before it touches anything)
+cline -p "design the One-to-All body-replacement pipeline wiring"
+
+# Act (auto-approve on — use for sandboxed/trusted runs only)
+cline "wire the One-to-All notebook outputs into finish.py"
+
+# Isolated worktree (no clobber risk — separate checkout)
+cline --worktree "add retry logic to kaggle_queue.py"
+
+# JSON output for scripting
+cline --json "list all TODO comments in production/pipeline/"
+```
+
+**Key flags:**
+| Flag | What |
+|------|------|
+| `-p` / `--plan` | Plan mode — propose, don't execute |
+| `-y` / `--yolo` | Auto-approve limited toolset (benchmarks/CI only — DANGEROUS, sandboxed envs only) |
+| `--auto-approve <bool>` | Tool auto-approval (default true on CLI — set false for review) |
+| `-P` / `--provider` | Provider id (`gemini`, `groq`, `openrouter`, `anthropic`, ...) |
+| `-k` / `--key` | API key for this run (also saved as provider's key) |
+| `-m` / `--model` | Model id |
+| `-c` / `--cwd` | Working directory |
+| `--worktree` | Detached git worktree per task |
+| `--json` | JSON output for scripting |
+| `-i` / `--tui` | Interactive terminal UI |
+
+**GPU note (same as the others):** coding agent, not compute. Writes pipeline code; Kaggle/Colab run the GPUs.
+
+**Safety note:** CLI defaults `--auto-approve` to **true**. For repo work under our laws, prefer `cline -p` (plan) or `--auto-approve false` so every file edit goes through review before landing — matches VERIFY-BEFORE-CLAIMING.
+
+**Laws wiring:** Cline reads `.clinerules` at the repo root (committed in this PR) — it points at `AGENTS.md` as the law book and restates the non-negotiables (branch → PR → merge, verify-before-claiming, check-before-starting). One contract, all agents.
+
+---
+
 ## Team Workflow — How Agents Work Together Without Clobbering
 
 ### The Iron Rules (from repo AGENTS.md — all agents follow these)
@@ -155,6 +234,7 @@ This is the **CHECK-BEFORE-STARTING LAW**. No duplicate sessions. If something's
 | Multi-file refactor, research + code | `agy` (subagents work in parallel) |
 | Quick terminal edit with plugin support | `opencode` |
 | Surgical single-file edit with diff review | `aider` |
+| Autonomous multi-file task, plan-then-act, isolated worktree | `cline` (Plan mode for review, `--worktree` for isolation) |
 | GPU render / interpolation / body replacement | Kaggle queue or Colab (NOT coding agents) |
 | Verifying a claim | `production/pipeline/verify_claim.py` (not an agent's word) |
 
@@ -165,6 +245,7 @@ This is the **CHECK-BEFORE-STARTING LAW**. No duplicate sessions. If something's
 - ❌ Agent agrees "it's lost" without checking its own lane → ANTI-SYCOPHANCY RULE.
 - ❌ Pushing directly to `main` → always branch → PR → merge.
 - ❌ Using a coding agent for GPU compute → they write pipeline code; Kaggle/Colab run it.
+- ❌ Running `cline` CLI with default auto-approve on repo work → use `-p` plan mode or `--auto-approve false`; every edit reviewed before it lands (VERIFY-BEFORE-CLAIMING).
 
 ---
 
@@ -175,6 +256,7 @@ This is the **CHECK-BEFORE-STARTING LAW**. No duplicate sessions. If something's
 | `agy` 1.4.0 | ✅ `~/.local/bin/agy` | ❌ Needs Google OAuth | **Browser task needed**: run `agy`, sign in with fmmg.mars@gmail.com |
 | `opencode` 1.19.3 | ✅ `~/.local/bin/opencode` | ⚠️ Needs API key | Set `GEMINI_API_KEY` or `GROQ_API_KEY` (free tiers, no browser needed) |
 | `aider` 0.86.2 | ✅ `~/workspace/tools/aider-venv/` | ⚠️ Needs API key | Same as opencode — `GEMINI_API_KEY` |
+| `cline` 3.0.72 / ext 4.1.25 | ✅ `/usr/bin/cline` + code-server ext | ⚠️ Needs API key | `cline auth gemini` once, or per-run `-P gemini -k "$GEMINI_API_KEY"` |
 
 ---
 
@@ -194,6 +276,11 @@ opencode run "add input validation to led_scene_assembler.py"
 export GEMINI_API_KEY=<redacted>
 ~/workspace/tools/aider-venv/bin/aider
 # > fix the off-by-one in grades.py
+
+# cline: plan first, then act
+export GEMINI_API_KEY=<redacted>
+cline -p "design the LED scene assembler refactor"   # review the plan
+cline "implement the approved refactor"              # act (review each edit)
 ```
 
-All three respect the repo's branch → PR → merge flow. All three read AGENTS.md.
+All four respect the repo's branch → PR → merge flow. All four read AGENTS.md.
