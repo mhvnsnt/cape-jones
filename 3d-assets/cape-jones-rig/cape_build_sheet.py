@@ -63,38 +63,54 @@ def back_y(z):
             return y0 + t * (y1 - y0)
     return BACK[-1][1]
 
-# ---- 2. sheet grid ----
-Z_TOP, Z_BOT = 0.78, 0.10
+# ---- 2. sheet grid (rows follow sloped top edge; width from W(z)) ----
+# Body-back x-extent measured 2026-10-17: z0.68:+-0.192, z0.72:+-0.201,
+# z0.74-0.76:+-0.204, z0.78:+-0.150, z0.80:+-0.135
 NZ, NX = 48, 36
-SHOULDER_HALF = 0.24
-CLEAR = 0.018  # cloth clearance behind back
+X_TOP_HALF = 0.205
+BOT_W = prof_at(0.146)  # hold full fragment width at bottom (ignore debris taper)
 
-def prof_at(z):
-    for i in range(NB - 1):
-        if prof[i][0] <= z <= prof[i + 1][0]:
-            t = (z - prof[i][0]) / (prof[i + 1][0] - prof[i][0] + 1e-9)
-            _, xn0, xx0, _ = prof[i]; _, xn1, xx1, _ = prof[i + 1]
-            return (xn0 + t * (xn1 - xn0), xx0 + t * (xx1 - xx0))
-    return (prof[0][1], prof[0][2]) if z < prof[0][0] else (prof[-1][1], prof[-1][2])
+def width_at(z):
+    """Cape half-width at height z: fragment profile -> measured body back."""
+    if z <= 0.435:
+        if z < 0.14:
+            xn, xx = BOT_W
+        else:
+            xn, xx = prof_at(z)
+            xn -= 0.004; xx += 0.004
+        return (xx - xn) / 2.0
+    pts = [(0.435, 0.149), (0.60, 0.170), (0.68, 0.193), (0.72, 0.202),
+           (0.76, 0.205), (0.78, 0.151)]
+    if z >= pts[-1][0]:
+        return pts[-1][1]
+    for (z0, w0), (z1, w1) in zip(pts, pts[1:]):
+        if z0 <= z <= z1:
+            t = (z - z0) / (z1 - z0)
+            return w0 + t * (w1 - w0)
+    return pts[0][1]
+
+def z_top_at(x):
+    ax = abs(x)
+    if ax <= 0.15:
+        return 0.78
+    return 0.78 - ((ax - 0.15) / 0.055) * 0.045  # 0.78 -> 0.735 at |x|=0.205
 
 verts, faces = [], []
 for r in range(NZ):
-    z = Z_TOP - r / (NZ - 1) * (Z_TOP - Z_BOT)
-    if z <= 0.435:
-        xn, xx = prof_at(z)
-        pad = 0.004
-        xn -= pad; xx += pad
-    else:
-        t = (z - 0.435) / (Z_TOP - 0.435)  # 0 at frag top -> 1 at shoulders
-        fx0, fx1 = prof_at(0.433)
-        xn = fx0 + t * (-SHOULDER_HALF - fx0)
-        xx = fx1 + t * (SHOULDER_HALF - fx1)
-    if z < 0.16:
-        y = back_y(0.16) + CLEAR  # hang straight below buttocks curve
-    else:
-        y = back_y(z) + CLEAR
+    f = r / (NZ - 1)  # 0 top -> 1 bottom
     for c in range(NX):
-        x = xn + c / (NX - 1) * (xx - xn)
+        xf = c / (NX - 1)
+        x_top = -X_TOP_HALF + xf * 2 * X_TOP_HALF
+        zt = z_top_at(x_top)
+        z = zt * (1 - f) + 0.10 * f
+        W = width_at(z)
+        x = -W + xf * 2 * W
+        if z > 0.68:
+            y = back_y(z) + 0.008  # pinned: sits on the body
+        elif z < 0.16:
+            y = back_y(0.16) + 0.018  # hang straight below buttocks curve
+        else:
+            y = back_y(z) + 0.018
         verts.append((x, y, z))
 for r in range(NZ - 1):
     for c in range(NX - 1):

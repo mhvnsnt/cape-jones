@@ -16,8 +16,7 @@ sc.render.resolution_x = 480
 sc.render.resolution_y = 360
 sc.render.film_transparent = False
 sc.render.image_settings.file_format = 'PNG'
-sc.display.shading.light = 'FLAT'
-sc.display.shading.color_type = 'OBJECT'
+# NOTE: do not touch sc.display.shading — it blanks Workbench renders in 4.0 headless
 
 cage = bpy.data.objects.get('BlenRigMdefCage')
 if cage:
