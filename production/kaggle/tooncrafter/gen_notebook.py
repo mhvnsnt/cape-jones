@@ -16,9 +16,20 @@ interp mode -> take middle frame (idx 4) from each -> interleave with originals:
 TUNED FOR SPEED (v2): ddim_steps=12 (was 25), video_length=8 (was 16).
 Estimated ~4x faster than v1 with minimal quality loss — see TUNING.md.
 
-MODEL (v3): Kijai's pruned FP16 (~2.5GB, 12GB VRAM). The full model.ckpt
-(10.5GB) requires ~23GB VRAM — OOM on T4 (16GB). FP16 fits comfortably.
-See docs/research/TOONCRAFTER-FULL-STACK.md for root-cause analysis.
+MODEL (v4): Kijai's pruned FP16 (3.18GB, ~12GB VRAM with fp16 execution).
+The full model.ckpt (10.5GB) requires ~24-27GB VRAM — OOM on T4 (16GB).
+FP16 fits comfortably. See docs/research/TOONCRAFTER-FULL-STACK.md.
+
+v4 fixes (2026-10-16, verified against primary sources):
+- HF filename is tooncrafter_512_interp-pruned-fp16.safetensors (hyphen);
+  the official ToonCrafter README link (underscore variant) is STALE and 404s.
+- File is 3,175,466,358 bytes, not ~2.5GB — size guard updated.
+- --n_samples is samples PER PROMPT (not prompt count); was 105 -> 1.
+  105 would have generated 11,025 MP4s.
+- Inference writes <savedir>/samples_separate/*.mp4 (8-frame MP4s);
+  assembly reads those, not samples/*/ PNGs.
+- inference.py patched to model.half(): the README's 12GB figure assumes
+  fp16 execution; the stock script runs the model in fp32.
 
 Portrait handling: input is 1080x1920. ToonCrafter's 512 model was trained at
 512x320 (landscape) but the UNet is fully convolutional — we run at
@@ -62,8 +73,8 @@ non-linear motion and dis-occlusion in animation natively.
 
 Pipeline in this notebook:
 1. GPU check (must be Tesla T4)
-2. Clone ToonCrafter + pip install deps
-3. Download model.ckpt from HuggingFace (~5GB, be patient)
+2. Clone ToonCrafter + pip install deps (+ FP16 execution patch)
+3. Download FP16 model.ckpt from HuggingFace (~3.2GB, ~12GB VRAM — fits T4)
 4. Download input video from GitHub (SHA-256 verified)
 5. Extract 106 frames, resize to 320x512 portrait, build 105 keyframe pairs
 6. ToonCrafter inference on CUDA (105 pairs x 8 frames, take middle frame idx 4)
@@ -134,10 +145,34 @@ subprocess.run([sys.executable, "-m", "pip", "install", "-q",
 print("Deps installed.")
 '''),
 
-code('''# === ToonCrafter model weights: FP16 pruned (12GB VRAM, fits T4) ===
-# v3 (2026-10-16): Switched from full model.ckpt (10.5GB, ~23GB VRAM — OOM on T4)
-# to Kijai's pruned FP16 (~2.5GB, 12GB VRAM). See docs/research/TOONCRAFTER-FULL-STACK.md.
-# Source: https://huggingface.co/Kijai/DynamiCrafter_pruned/blob/main/tooncrafter_512_interp-fp16.safetensors
+code('''# === Patch ToonCrafter for FP16 execution (fits T4 VRAM) ===
+# v4 (2026-10-16): The official README's 12GB figure assumes fp16 execution
+# (the ComfyUI path runs the model in fp16/bf16). Stock inference.py loads the
+# weights into an fp32 model — load_state_dict casts fp16->fp32, so weights
+# alone would eat ~6.4GB and total VRAM could push past 16GB on a T4.
+# We patch run_inference() to half() the model right after checkpoint load.
+# Kijai's own ComfyUI wrapper does exactly this (nodes.py: model.to(precision)).
+import os
+p = "/kaggle/working/ToonCrafter/scripts/evaluation/inference.py"
+src = open(p).read()
+old = "    model = load_model_checkpoint(model, args.ckpt_path)\\n    model.eval()"
+new = ("    model = load_model_checkpoint(model, args.ckpt_path)\\n"
+       "    model = model.half()  # v4: FP16 execution -> ~12GB VRAM on T4\\n"
+       "    model.eval()")
+assert "model = model.half()" not in src, "FP16 patch already applied"
+assert old in src, "PATCH ANCHOR NOT FOUND — upstream inference.py changed, fix me"
+open(p, "w").write(src.replace(old, new))
+print("FP16 execution patch applied to inference.py")
+'''),
+
+code('''# === ToonCrafter model weights: FP16 pruned (~3.2GB, ~12GB VRAM, fits T4) ===
+# v4 (2026-10-16): Switched from full model.ckpt (10.5GB, ~24-27GB VRAM — OOM
+# on T4) to Kijai's pruned FP16 (3.18GB, ~12GB VRAM with fp16 execution).
+# See docs/research/TOONCRAFTER-FULL-STACK.md.
+# CORRECT FILENAME (verified via HF API siblings + Kijai's ComfyUI wrapper):
+#   tooncrafter_512_interp-pruned-fp16.safetensors
+# The official ToonCrafter README links tooncrafter_512_interp-fp16.safetensors
+# (underscore) — that link is STALE and 404s. Do NOT "fix" this back to it.
 # Converted via production/kaggle/tooncrafter/convert_safetensors_to_ckpt.py
 import subprocess, os, shutil
 ckpt_dir = "/kaggle/working/ToonCrafter/checkpoints/tooncrafter_512_interp_v1"
@@ -145,8 +180,10 @@ os.makedirs(ckpt_dir, exist_ok=True)
 ckpt_path = os.path.join(ckpt_dir, "model.ckpt")  # inference.py expects this name
 CACHED = "/kaggle/input/tooncrafter-weights-fp16/model.ckpt"
 def _ok(p):
-    # FP16 model is ~2.5GB; accept 2.0-3.0GB range
-    return os.path.exists(p) and 2_000_000_000 < os.path.getsize(p) < 3_000_000_000
+    # FP16 pruned model is 3,175,466,358 bytes on HF; torch.save adds a few %
+    # pickle overhead. Accept 2.8-3.8GB. (v3's 2.0-3.0GB range was wrong —
+    # it would have REJECTED the genuine file.)
+    return os.path.exists(p) and 2_800_000_000 < os.path.getsize(p) < 3_800_000_000
 if _ok(ckpt_path):
     print(f"FP16 model.ckpt already present ({os.path.getsize(ckpt_path)/1e9:.1f} GB)")
 elif os.path.exists(CACHED) and _ok(CACHED):
@@ -154,9 +191,9 @@ elif os.path.exists(CACHED) and _ok(CACHED):
     shutil.copy(CACHED, ckpt_path)
     print("Cached FP16 weights linked. VRAM required: ~12GB (fits T4)")
 else:
-    print("Dataset cache miss — downloading FP16 safetensors (~2.5GB) from HuggingFace...")
+    print("Dataset cache miss — downloading FP16 safetensors (3.2GB) from HuggingFace...")
     subprocess.run(["wget", "-q", "--show-progress",
-                    "https://huggingface.co/Kijai/DynamiCrafter_pruned/resolve/main/tooncrafter_512_interp-fp16.safetensors",
+                    "https://huggingface.co/Kijai/DynamiCrafter_pruned/resolve/main/tooncrafter_512_interp-pruned-fp16.safetensors",
                     "-O", "/kaggle/working/tooncrafter_fp16.safetensors"], check=True)
     print("Converting safetensors -> .ckpt...")
     from safetensors.torch import load_file
@@ -222,6 +259,9 @@ print(f"105 pairs built in {prompt_dir}")
 code('''# === ToonCrafter inference on CUDA ===
 # 105 pairs -> 8 frames each (TUNED: was 16). We take the middle frame (idx 4).
 # ddim_steps=12 (TUNED: was 25). bs=1 for VRAM safety.
+# --n_samples 1: n_samples = samples PER PROMPT in this script (default 1).
+# The prompt loop already iterates all 105 prompts; 105 here would generate
+# 105 samples x 105 prompts = 11,025 videos. Do NOT set to 105.
 # See TUNING.md for speed/quality tradeoff analysis.
 import subprocess, time, os
 
@@ -232,7 +272,7 @@ cmd = [
     "--ckpt_path", "checkpoints/tooncrafter_512_interp_v1/model.ckpt",
     "--config", "configs/inference_512_v1.0.yaml",
     "--savedir", "/kaggle/working/tc_results",
-    "--n_samples", "105",
+    "--n_samples", "1",
     "--bs", "1",
     "--height", "512",
     "--width", "320",
@@ -258,37 +298,42 @@ print("Inference complete.")
 '''),
 
 code('''# === Extract middle frames + interleave + assemble 24fps MP4 ===
-# From each 8-frame ToonCrafter output, take frame idx 4 (the true middle).
-# Output sequence: [orig_0, mid_0, orig_1, mid_1, ...] = 211 frames @ 24fps.
-import os, glob, shutil, subprocess
+# v4 (2026-10-16): inference.py's save_results_seperate() writes ONE 8-frame
+# MP4 per prompt into <savedir>/samples_separate/ (the "samples" dir stays
+# empty — save_results() is commented out upstream). Files are named
+#   samples_separate/pair_{i:03d}_a_sample0.mp4   (8 frames @ fps=10)
+# We dump each MP4's 8 frames, take frame idx 4 (the true temporal middle),
+# and interleave: [orig_0, mid_0, orig_1, mid_1, ...] = 211 frames @ 24fps.
+import os, glob, shutil, subprocess, tempfile
 from PIL import Image
 
-results_base = "/kaggle/working/tc_results"
-# find the sample dirs (tooncrafter_512_interp_seed123 / sample_*)
-sample_dirs = sorted(glob.glob(os.path.join(results_base, "*", "samples", "*")))
-if not sample_dirs:
-    # fallback: search recursively for per-sample frame dirs
-    sample_dirs = sorted(glob.glob(os.path.join(results_base, "**", "sample_*"),
-                                   recursive=True))
-print(f"Found {len(sample_dirs)} sample outputs (expect 105)")
-assert len(sample_dirs) == 105, f"Expected 105 samples, got {len(sample_dirs)}"
+sep_dir = "/kaggle/working/tc_results/samples_separate"
+mp4s = sorted(glob.glob(os.path.join(sep_dir, "*_sample0.mp4")))
+print(f"Found {len(mp4s)} sample MP4s (expect 105)")
+assert len(mp4s) == 105, f"Expected 105 samples, got {len(mp4s)}"
 
 out_dir = "/kaggle/working/final_frames"
 os.makedirs(out_dir, exist_ok=True)
 frames_dir = "/kaggle/working/tc_input/frames"
+tmpd = tempfile.mkdtemp(prefix="tc_mid_")
 
 out_idx = 0
-for i, sdir in enumerate(sample_dirs):
+for i, mp4 in enumerate(mp4s):
     # original frame i (full-res 1080x1920)
     orig = os.path.join(frames_dir, f"frame_{i+1:05d}.png")
     shutil.copy(orig, os.path.join(out_dir, f"out_{out_idx:05d}.png"))
     out_idx += 1
-    # ToonCrafter middle frame (320x512) -> upscale to 1080x1920 to match
-    tc_frames = sorted(glob.glob(os.path.join(sdir, "*.png")))
-    assert len(tc_frames) == 8, f"Sample {i}: expected 8 frames, got {len(tc_frames)}"
-    mid = Image.open(tc_frames[4]).convert("RGB").resize((1080, 1920), Image.LANCZOS)
+    # dump the 8 frames of this sample MP4, take idx 4 (0-based), upscale
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", mp4,
+                    os.path.join(tmpd, f"s{i:03d}_%d.png")], check=True)
+    dumped = sorted(glob.glob(os.path.join(tmpd, f"s{i:03d}_*.png")))
+    assert len(dumped) == 8, f"Sample {i}: expected 8 frames, got {len(dumped)}"
+    mid = Image.open(dumped[4]).convert("RGB").resize((1080, 1920), Image.LANCZOS)
     mid.save(os.path.join(out_dir, f"out_{out_idx:05d}.png"))
     out_idx += 1
+    for f in dumped:
+        os.remove(f)
+shutil.rmtree(tmpd, ignore_errors=True)
 
 # final original frame (frame 106)
 shutil.copy(os.path.join(frames_dir, "frame_00106.png"),

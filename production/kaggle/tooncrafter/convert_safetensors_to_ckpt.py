@@ -6,12 +6,14 @@ The official ToonCrafter inference.py uses torch.load() which cannot read
 
 Usage:
     python3 convert_safetensors_to_ckpt.py \
-        --input tooncrafter_512_interp-fp16.safetensors \
+        --input tooncrafter_512_interp-pruned-fp16.safetensors \
         --output tooncrafter_512_interp_fp16.ckpt
 
-Source: https://huggingface.co/Kijai/DynamiCrafter_pruned/blob/main/tooncrafter_512_interp-fp16.safetensors
+Source: https://huggingface.co/Kijai/DynamiCrafter_pruned/blob/main/tooncrafter_512_interp-pruned-fp16.safetensors
+(NOTE: the official ToonCrafter README links tooncrafter_512_interp-fp16.safetensors
+— that link is STALE and 404s. The hyphenated name above is verified correct.)
 License: Apache-2.0 (model weights)
-VRAM: 12GB (vs 23GB for full model.ckpt) — fits on Tesla T4
+VRAM: ~12GB with fp16 execution (vs ~24-27GB for full model.ckpt) — fits on Tesla T4
 """
 import argparse
 import os
