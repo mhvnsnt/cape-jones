@@ -23,18 +23,19 @@
       "z": 5.6
     },
     {
-      "anchor": "pink recliner angled toward the TV (rot +43.7deg faces TV center). STAYS EMPTY - character rig goes here later for the light-flicker gag",
+      "anchor": "REV2 (owner 2026-10-16): pink recliner moved to the RIGHT WINDOW WALL, back against the wall under the window, facing into the room. Accent seat now (exempt from TV/conversation checks). STAYS EMPTY - character rig goes here later for the light-flicker gag",
       "d": 0.67,
       "facing": [
-        -0.691,
-        0.723
+        -1,
+        0
       ],
       "kind": "seat",
       "name": "loungeChairRelax",
-      "rot_deg": 43.7,
+      "rot_deg": 90,
       "w": 0.49,
-      "x": 3.7,
-      "z": 4.45
+      "x": 6.64,
+      "z": 4.5,
+      "secondary": true
     },
     {
       "anchor": "center of conversation zone, between recliner and TV",
@@ -47,14 +48,14 @@
       "z": 3.4
     },
     {
-      "anchor": "round rug under coffee table; front legs of recliner on the rug",
+      "anchor": "REV2: round rug moved with the recliner to the window wall; chair front legs on the rug",
       "d": 1.47,
       "kind": "rug",
       "name": "rugRound",
       "rot_deg": 0,
       "w": 1.47,
-      "x": 3.4,
-      "z": 3.6
+      "x": 6.2,
+      "z": 4.5
     },
     {
       "anchor": "secondary blue sofa along the left wall, facing +x into the room (exempt from TV/conversation checks)",
@@ -96,10 +97,10 @@
       "kind": "side_table",
       "w": 0.35,
       "d": 0.35,
-      "x": 3.0,
-      "z": 4.6,
+      "x": 6.4,
+      "z": 3.95,
       "rot_deg": 0,
-      "anchor": "purple-blue ROUND side table left of the recliner (0.12 m gap, arm's reach), holds the mug"
+      "anchor": "REV2: side table moved with the recliner; left of the chair (arm's reach), holds the mug"
     }
   ],
   "props_needed": [
