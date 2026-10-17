@@ -1,0 +1,364 @@
+package server
+
+import (
+	"encoding/json"
+	"fmt"
+	"net/http"
+	"path/filepath"
+	"strings"
+
+	"anime-upscaling/internal/config"
+	"anime-upscaling/internal/files"
+	"anime-upscaling/internal/pipeline"
+	"anime-upscaling/internal/process"
+)
+
+// handlePipelines handles GET /api/pipelines (list) and POST /api/pipelines (create).
+func handlePipelines(ps *pipeline.Store) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		switch r.Method {
+		case http.MethodGet:
+			list := ps.List()
+			if list == nil {
+				list = []pipeline.Pipeline{}
+			}
+			writeJSON(w, http.StatusOK, list)
+
+		case http.MethodPost:
+			var req struct {
+				Name  string                  `json:"name"`
+				Steps []pipeline.PipelineStep `json:"steps"`
+			}
+			if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+				writeJSON(w, http.StatusBadRequest, map[string]string{"error": "invalid JSON body"})
+				return
+			}
+			if req.Name == "" {
+				writeJSON(w, http.StatusBadRequest, map[string]string{"error": "name is required"})
+				return
+			}
+			if len(req.Steps) == 0 {
+				writeJSON(w, http.StatusBadRequest, map[string]string{"error": "at least one step is required"})
+				return
+			}
+			if err := validateSteps(req.Steps); err != nil {
+				writeJSON(w, http.StatusBadRequest, map[string]string{"error": err.Error()})
+				return
+			}
+
+			p, err := ps.Create(req.Name, req.Steps)
+			if err != nil {
+				writeJSON(w, http.StatusInternalServerError, map[string]string{"error": err.Error()})
+				return
+			}
+			writeJSON(w, http.StatusCreated, p)
+
+		default:
+			http.Error(w, "method not allowed", http.StatusMethodNotAllowed)
+		}
+	}
+}
+
+// handlePipelineRoutes handles /api/pipelines/{id}, /api/pipelines/{id}/run.
+func handlePipelineRoutes(ps *pipeline.Store, jm *JobManager, cfg config.Config) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		path := strings.TrimPrefix(r.URL.Path, "/api/pipelines/")
+		parts := strings.SplitN(path, "/", 2)
+		id := parts[0]
+		sub := ""
+		if len(parts) > 1 {
+			sub = parts[1]
+		}
+
+		if id == "" {
+			http.Error(w, "missing pipeline id", http.StatusBadRequest)
+			return
+		}
+
+		switch sub {
+		case "":
+			switch r.Method {
+			case http.MethodGet:
+				p := ps.Get(id)
+				if p == nil {
+					writeJSON(w, http.StatusNotFound, map[string]string{"error": "pipeline not found"})
+					return
+				}
+				writeJSON(w, http.StatusOK, p)
+
+			case http.MethodPut:
+				var req struct {
+					Name  *string                 `json:"name"`
+					Steps []pipeline.PipelineStep `json:"steps"`
+				}
+				if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+					writeJSON(w, http.StatusBadRequest, map[string]string{"error": "invalid JSON body"})
+					return
+				}
+				if req.Steps != nil {
+					if len(req.Steps) == 0 {
+						writeJSON(w, http.StatusBadRequest, map[string]string{"error": "at least one step is required"})
+						return
+					}
+					if err := validateSteps(req.Steps); err != nil {
+						writeJSON(w, http.StatusBadRequest, map[string]string{"error": err.Error()})
+						return
+					}
+				}
+
+				p, err := ps.Update(id, req.Name, req.Steps)
+				if err != nil {
+					writeJSON(w, http.StatusInternalServerError, map[string]string{"error": err.Error()})
+					return
+				}
+				if p == nil {
+					writeJSON(w, http.StatusNotFound, map[string]string{"error": "pipeline not found"})
+					return
+				}
+				writeJSON(w, http.StatusOK, p)
+
+			case http.MethodDelete:
+				if !ps.Delete(id) {
+					writeJSON(w, http.StatusNotFound, map[string]string{"error": "pipeline not found"})
+					return
+				}
+				writeJSON(w, http.StatusOK, map[string]string{"status": "deleted"})
+
+			default:
+				http.Error(w, "method not allowed", http.StatusMethodNotAllowed)
+			}
+
+		case "run":
+			if r.Method != http.MethodPost {
+				http.Error(w, "method not allowed", http.StatusMethodNotAllowed)
+				return
+			}
+			handleRunPipeline(ps, jm, cfg, id, w, r)
+
+		default:
+			http.NotFound(w, r)
+		}
+	}
+}
+
+func handleRunPipeline(ps *pipeline.Store, jm *JobManager, cfg config.Config, id string, w http.ResponseWriter, r *http.Request) {
+	p := ps.Get(id)
+	if p == nil {
+		writeJSON(w, http.StatusNotFound, map[string]string{"error": "pipeline not found"})
+		return
+	}
+
+	var req struct {
+		Files  []string `json:"files"`
+		Source string   `json:"source"`
+		Path   string   `json:"path"`
+	}
+	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+		writeJSON(w, http.StatusBadRequest, map[string]string{"error": "invalid JSON body"})
+		return
+	}
+
+	if req.Source == "" {
+		req.Source = "input"
+	}
+	sourceDir, ok := resolveFolder(cfg, req.Source)
+	if !ok {
+		writeJSON(w, http.StatusBadRequest, map[string]string{"error": "invalid source (must be input, merged, output, interpolated, or optimized)"})
+		return
+	}
+	if !files.SafeRelDir(req.Path) {
+		writeJSON(w, http.StatusBadRequest, map[string]string{"error": "invalid path"})
+		return
+	}
+
+	// Picked files that are not in the source folder but sit mid-pipeline.
+	var stranded []process.FilePlan
+
+	// Resolve files recursively from sourceDir/path
+	if len(req.Files) == 0 {
+		all, err := files.WalkVideos(filepath.Join(sourceDir, req.Path), cfg.VideoExts)
+		if err != nil {
+			writeJSON(w, http.StatusInternalServerError, map[string]string{"error": "failed to list files"})
+			return
+		}
+		req.Files = make([]string, 0, len(all))
+		for rel := range all {
+			if req.Path != "" {
+				rel = filepath.ToSlash(filepath.Join(req.Path, rel))
+			}
+			req.Files = append(req.Files, rel)
+		}
+		files.SortNatural(req.Files)
+	} else {
+		inSource := make([]string, 0, len(req.Files))
+		for _, f := range req.Files {
+			if req.Path != "" && !strings.Contains(f, "/") {
+				f = filepath.ToSlash(filepath.Join(req.Path, f))
+			}
+			if !files.SafeVideoRelPath(f, cfg.VideoExts) {
+				writeJSON(w, http.StatusBadRequest, map[string]string{"error": fmt.Sprintf("invalid filename: %s", f)})
+				return
+			}
+			if files.FileExists(filepath.Join(sourceDir, f)) {
+				inSource = append(inSource, f)
+				continue
+			}
+			// Not in the source folder: the picker shows every stage, so this
+			// can be an episode an earlier run left mid-pipeline. Resume it.
+			plan, status := process.LocateStranded(cfg, p.Steps, f)
+			switch status {
+			case process.StrandedResumable:
+				stranded = append(stranded, plan)
+			case process.StrandedFinished:
+				writeJSON(w, http.StatusBadRequest, map[string]string{"error": fmt.Sprintf("already through this pipeline: %s", f)})
+				return
+			default:
+				writeJSON(w, http.StatusBadRequest, map[string]string{"error": fmt.Sprintf("file not found in %s/ or in any stage of this pipeline: %s", req.Source, f)})
+				return
+			}
+		}
+		req.Files = inSource
+	}
+
+	// Plan before rejecting an empty selection: a pipeline whose cleanup steps
+	// empty the source folder as it advances can legitimately have nothing left
+	// there while still owing work on files stranded in a later stage.
+	plans := process.WithStranded(process.PlanPipelineFiles(cfg, p.Steps, sourceDir, req.Path, req.Files), stranded)
+	if len(plans) == 0 {
+		label := req.Source
+		if req.Path != "" {
+			label = req.Source + "/" + req.Path
+		}
+		writeJSON(w, http.StatusBadRequest, map[string]string{"error": fmt.Sprintf("no video files found in %s/", label)})
+		return
+	}
+
+	// Two runs over the same episode would interpolate and encode it twice and
+	// race each other's os.Rename onto the same destination — and because each
+	// pipeline's cleanup steps empty the earlier stage folders as it advances,
+	// the overlap is easy to create by accident: a file another job is upscaling
+	// is gone from input/ and sitting in output/, which is exactly what this
+	// run's planner adopts. The plan, not the request, is what must be checked.
+	if conflicts := overlapping(plans, jm.ActiveFiles()); len(conflicts) > 0 {
+		writeJSON(w, http.StatusConflict, map[string]string{
+			"error": fmt.Sprintf("already being processed by another job: %s", summarizeNames(conflicts)),
+		})
+		return
+	}
+
+	job := jm.StartPipelineJob(p.Name, p.Steps, plans, sourceDir)
+
+	writeJSON(w, http.StatusCreated, map[string]interface{}{
+		"id":            job.ID,
+		"type":          job.Type,
+		"status":        job.Status,
+		"pipeline_name": p.Name,
+		"files":         job.Files,
+	})
+}
+
+// overlapping returns the planned file names that are already claimed by
+// another job, in plan order.
+func overlapping(plans []process.FilePlan, busy map[string]bool) []string {
+	if len(busy) == 0 {
+		return nil
+	}
+	var conflicts []string
+	for _, p := range plans {
+		if busy[p.Name] {
+			conflicts = append(conflicts, p.Name)
+		}
+	}
+	return conflicts
+}
+
+// summarizeNames renders a name list for an error message, naming the first few
+// and counting the rest so a whole-library collision stays readable.
+func summarizeNames(names []string) string {
+	const show = 3
+	if len(names) <= show {
+		return strings.Join(names, ", ")
+	}
+	return fmt.Sprintf("%s and %d more", strings.Join(names[:show], ", "), len(names)-show)
+}
+
+func validateSteps(steps []pipeline.PipelineStep) error {
+	for i, s := range steps {
+		if !pipeline.ValidOperations[s.Operation] {
+			return fmt.Errorf("step %d: invalid operation %q", i+1, s.Operation)
+		}
+
+		switch s.Operation {
+		case "upscale":
+			scale := s.Scale
+			if scale == 0 {
+				scale = 2
+			}
+			if err := pipeline.ValidateUpscale(s.Processor, s.Model, scale, s.NoiseLevel, s.TargetHeight); err != nil {
+				return fmt.Errorf("step %d: %w", i+1, err)
+			}
+		case "interpolate":
+			if s.Multiplier != 0 && s.Multiplier != 2 && s.Multiplier != 3 && s.Multiplier != 4 {
+				return fmt.Errorf("step %d: multiplier must be 2, 3, or 4", i+1)
+			}
+			if !pipeline.ValidRifeModels[s.RifeModel] {
+				return fmt.Errorf("step %d: invalid rife_model %q", i+1, s.RifeModel)
+			}
+			if s.SceneThresh < 0 || s.SceneThresh > 100 {
+				return fmt.Errorf("step %d: scene_thresh must be between 0 and 100", i+1)
+			}
+		case "optimize":
+			if s.Quality != "" {
+				if _, ok := pipeline.QualityToCRF[s.Quality]; !ok {
+					return fmt.Errorf("step %d: quality must be ultra, alta, media, or baixa", i+1)
+				}
+			}
+			if s.Resolution != 0 && s.Resolution != 1 && s.Resolution != 2 && s.Resolution != 4 {
+				return fmt.Errorf("step %d: resolution must be 1, 2, or 4", i+1)
+			}
+			if s.FrameRate != 0 && s.FrameRate != 1 && s.FrameRate != 2 && s.FrameRate != 4 {
+				return fmt.Errorf("step %d: frame_rate must be 1, 2, or 4", i+1)
+			}
+			if s.FrameRateMode != "" && s.FrameRateMode != "relative" && s.FrameRateMode != "absolute" {
+				return fmt.Errorf("step %d: frame_rate_mode must be \"relative\" or \"absolute\"", i+1)
+			}
+			if s.FrameRateMode == "absolute" && s.FrameRateAbsolute <= 0 {
+				return fmt.Errorf("step %d: frame_rate_absolute must be > 0 when frame_rate_mode is \"absolute\"", i+1)
+			}
+			if s.FrameRateAbsolute < 0 {
+				return fmt.Errorf("step %d: frame_rate_absolute must be >= 0", i+1)
+			}
+			if s.Threads < 0 {
+				return fmt.Errorf("step %d: threads must be >= 0", i+1)
+			}
+			if !pipeline.ValidCodecs[s.Codec] {
+				return fmt.Errorf("step %d: invalid codec %q", i+1, s.Codec)
+			}
+			if !pipeline.ValidPresets[s.Preset] {
+				return fmt.Errorf("step %d: invalid preset %q", i+1, s.Preset)
+			}
+			if !pipeline.ValidTunes[s.Tune] {
+				return fmt.Errorf("step %d: invalid tune %q", i+1, s.Tune)
+			}
+			if !pipeline.ValidPixFmts[s.PixFmt] {
+				return fmt.Errorf("step %d: invalid pix_fmt %q", i+1, s.PixFmt)
+			}
+			if !pipeline.ValidAudioCodecs[s.AudioCodec] {
+				return fmt.Errorf("step %d: invalid audio_codec %q", i+1, s.AudioCodec)
+			}
+			if s.UseGPU && (s.Codec == "copy" || s.Codec == "libvpx-vp9") {
+				return fmt.Errorf("step %d: use_gpu is incompatible with codec %q", i+1, s.Codec)
+			}
+		case "cleanup":
+			if len(s.CleanupFolders) == 0 {
+				return fmt.Errorf("step %d: cleanup requires at least one folder", i+1)
+			}
+			for _, folder := range s.CleanupFolders {
+				if !pipeline.ValidCleanupFolders[folder] {
+					return fmt.Errorf("step %d: invalid cleanup folder %q", i+1, folder)
+				}
+			}
+		}
+	}
+	return nil
+}
