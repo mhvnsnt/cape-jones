@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import ast
 import json
-import re
 import sys
 from pathlib import Path
 
@@ -101,7 +100,7 @@ def main() -> int:
         script_lines = blender_script.splitlines()
         if script_lines and script_lines[0].startswith("%%writefile"):
             script_lines = script_lines[1:]
-        script_tree = ast.parse("\\n".join(script_lines))
+        script_tree = ast.parse("\n".join(script_lines))
         subset_node = assigned_value(script_tree, "PRESETS")
         if not isinstance(subset_node, ast.List):
             raise ValueError("embedded render PRESETS must be a literal list")
