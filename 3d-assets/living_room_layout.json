@@ -26,16 +26,18 @@
       "anchor": "REV3 (owner 2026-10-16): pink recliner at the RIGHT WINDOW WALL, back toward the wall under the window, rotated -45deg (225 yaw) to face into the room toward the TV/conversation zone. Off the wall: bbox xmax 3.341 vs wall face 3.425 (8.4cm clear). Accent seat (exempt from TV/conversation checks). STAYS EMPTY - character rig goes here later for the light-flicker gag",
       "d": 0.67,
       "facing": [
-        -0.707,
-        0.707
+        -1.0,
+        0.0
       ],
       "kind": "seat",
       "name": "loungeChairRelax",
       "rot_deg": 225,
       "w": 0.49,
-      "x": 6.4805,
+      "x": 2.653,
       "z": 4.8875,
-      "secondary": true
+      "secondary": true,
+      "rot": 270,
+      "y": 2.312
     },
     {
       "anchor": "center of conversation zone, between recliner and TV",
