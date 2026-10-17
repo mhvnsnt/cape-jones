@@ -64,7 +64,13 @@ Formula (Johnny Bravo template): [Jones wants X] + [attempts Y] + [fails due to 
 7. Jones wants the rival's respect → challenges him to a hero-duel → loses theatrically → tag: the crowd loved the theater.
 8. Jones wants to retire → nobody notices for a week → tag: the cape kept working.
 
-## 7. Production
+## 7. Canon gags (owner-logged)
+
+- **LED remote gag (canon 2026-10-17):** Jones points his remote and the LED lighting changes — anywhere. Living room, outside, random places with no LEDs installed at all: he hits the button, the lighting changes anyway. Logic be damned — the remote works everywhere. (~30% of screen time.)
+- **Light-flicker couch gag:** the living-room couch setup where the lighting flickers/misfires around him while he sits and bullshits.
+- **Cape-got-there-first:** the cape is the most competent character; it billows in rooms with no wind and gets caught in doors.
+
+## 8. Production
 
 - Pose library required before animation (Johnny Bravo template §5). Source: Gumball S2 rigs + Space Ghost character sheets.
 - Physical-comedy timing guide: cape-first. The cape leads every gag; the body follows a beat late.
