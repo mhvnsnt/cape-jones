@@ -1,5 +1,21 @@
 # AGENTS.md — Cape Jones
 
+# ANTI-CLOBBER LAWS (owner 2026-10-17 — the DXMMII 54k-file wipe)
+
+On 2026-10-17, commit cd3bf38 ("DXMMII limb system", PR mhvnsnt/western-heart#221) deleted 54,456 files against 105 additions. The commit message said nothing about deletions. Nobody read the deletion list before merging. The repo was 99.996% gone. These laws exist so that never happens again. Every agent, every repo, every commit, every merge.
+
+1. DELETION CHECK — before every commit, read `git status` and the diff stat. Every deleted file in the diff must be something your task intended to delete. A deleted file your task did not delete on purpose means STOP: do not commit, do not push, report what you found. The working tree is wrong, not the task.
+
+2. OWN THE TREE — never `git add -A` or `git commit -a` in a working tree you did not fully populate yourself. Before committing, verify the tree is complete: file counts match the remote branch you branched from (your task's own additions and changes aside). A tree missing files you didn't delete is damaged — don't sweep it into history.
+
+3. CIRCUIT BREAKER — if a commit would delete more than a handful of files outside your task's scope, STOP and report instead of committing. A big deletion count is a hard stop, not a warning to scroll past. Committing unexplained deletions "and letting someone else figure it out" is the failure.
+
+4. SAY THE DELETIONS — the commit message names every deletion. One deleted file gets one line; many deleted files get a count plus what category went. A commit whose message and diff disagree is a hard failure — don't push it.
+
+5. MERGE GATE — the merger reads the PR's deletion list against the task description before merging. Unexplained deletions block the merge. "CI is green" does not excuse a deletion list the task never asked for. A red, conflicting, or lossy PR stays open with a comment naming the blocker.
+
+(Co-authored with Aider and Copilot per the ALL-AGENTS-WORKFLOW LAW. Cline's seat stays open — its free-tier API was down during drafting.)
+
 Operating rules for every agent working in this repo.
 
 ## VERIFY-BEFORE-CLAIMING LAW (owner 2026-10-16)
@@ -74,6 +90,10 @@ The gate splits your report into atomic claims and BLOCKS any completion claim w
 - NO-HAND-TOOLING-EDITS: rebuild from clean state, never patch edits.
 - NO-CHROMA-KEY-ON-ANIMATION: AI matting or rotoscoping only.
 
+## ALL-AGENTS-MEANS-ALL LAW (owner 2026-10-17)
+His words: "when I say all the other agents and IDEs, just remember all of them that we've connected and pulled in, even if we get new ones, I don't want to have to sit here and name four, five, six different AIs and agents, bro, just remember what I'm talking about."
+When the owner says "all the agents/IDEs/team," he means EVERY connected agent — Aider, Cline, Copilot, Colab, Gemini CLI, OpenCode, Cursor, Kaggle, Goose, all subagent lanes — INCLUDING future ones. He never names them one by one again. Keep the roster current (see TEAM-BRIEFING.md) so "all" always resolves to the full live list.
+
 ## WHY AGENTS MAKE UNVERIFIED CLAIMS (read this — it's the mechanism)
 
 You're not broken. You're doing what training reinforced. Understanding the mechanism is how you counteract it:
@@ -101,3 +121,10 @@ You're not broken. You're doing what training reinforced. Understanding the mech
 6. **EVIDENCE OVER ELOQUENCE:** A "done" report includes the specific check performed (file path + hash, command + output, URL). "It's done" with no evidence is not a report — it's a guess.
 
 7. **RESTART ON NEW INFORMATION:** If someone brings you information that contradicts your current conclusion, don't patch the old reasoning — restart from scratch. Answer-lock confabulation is real.
+## ANTI-CLOBBER LAW (owner 2026-10-17 — the DXMMII 54k-file deletion)
+On 2026-10-17 an agent committed from a working tree missing 54,456 files. `git add -A` swept every missing file in as a deletion, and the commit rode into main through PR #221. The agent's real work was 105 files. Nobody checked the deletion list before committing or merging. Canonical text: mhvnsnt/agent-ops `docs/ANTI-CLOBBER-LAW.md`.
+1. Read your deletions before every commit (`git status` + `git diff --cached --name-status`). Every deleted file must be something your task meant to delete. Unexplained deletions = STOP, do not commit. Assume your environment is corrupted — do not try to "fix" it by committing.
+2. Never `git add -A` / `git commit -a` in a tree you didn't fully populate yourself. Verify tree completeness (file counts vs the remote branch) first.
+3. Say what you deleted in the commit message (which dirs/file types, and why). Message/diff mismatch on deletions = hard failure, do not push.
+4. Deletion circuit breaker: any deletion outside your task's scope blocks the commit. Stop and report instead of committing.
+5. The merger reads the PR's deletion list and matches it against the task. Unexplained deletions block the merge. A giant diff's deletions are never "probably fine".
