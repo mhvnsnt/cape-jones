@@ -11,7 +11,7 @@ the local VM**, so they run on the owner's Kaggle GPU via the repo's
 |---|---|---|---|
 | **UniRig** (Tsinghua + Tripo, SIGGRAPH 2025) | **MIT ✅** | Autoregressive skeleton + bone-point cross-attention skinning. Handles humans, animals, objects. | `kaggle_unirig_capejones.ipynb` (queued) |
 | **Puppeteer** (NTU + ByteDance Seed, NeurIPS 2025 Spotlight) | **Apache-2.0 ✅** | Auto-rig + video-guided animation; FBX export. Successor of MagicArticulate. | ✅ **PULLED 2026-10-17** — `puppeteer/` code-only vendored; wiring doc: `puppeteer/CAPE-JONES-WIRING.md`. Runbook below (queue after UniRig) |
-| **MagicArticulate** (NTU + ByteDance Seed, CVPR 2025) | **Apache-2.0 ✅** | Skeleton generation + functional-diffusion skinning; 1–2s inference, 4.6GB VRAM. NOTE: **not Meta** — earlier notes saying "Meta's MagicArticulate" are wrong. | runbook below (not yet queued) |
+| **MagicArticulate** (NTU + ByteDance Seed, CVPR 2025) | **Apache-2.0 ✅** | Skeleton generation + functional-diffusion skinning; 1–2s inference, 4.6GB VRAM. NOTE: **not Meta** — earlier notes saying "Meta's MagicArticulate" are wrong. | ✅ **PULLED 2026-10-17** — `magicarticulate/` code-only vendored (~49MB, license read own-eyes, 18/18 py_compile OK, weights stay on HF Seed3D/MagicArticulate per law); wiring doc: `magicarticulate/CAPE-JONES-WIRING.md`. Queue after UniRig/Puppeteer; best role = fast skeleton-proposer for bake-off cross-check. |
 | ~~**HumanRig**~~ (Alibaba Amap, CVPR 2025) | repo MIT but **no public code** ❌ | Humanoid-only paper + HF dataset; repo is a stub (no inference code). Paper reference only, NOT runnable. |
 | **Make-It-Animatable** (Tencent, CVPR 2025 Highlight) | **MIT ✅** | Any-pose → rest-pose reset, <1s inference, fine-grained skeleton + extra bones, meshes AND Gaussian splats, Blender armature builder. | ✅ **PULLED 2026-10-17** — `make-it-animatable/` code-only; wiring doc: `make-it-animatable/CAPE-JONES-WIRING.md`. Queue after UniRig; try MIA v2 (`app_v2.py`) too. |
 | ~~RigAnything~~ (UCSD + Adobe, SIGGRAPH 2025) | ❌ **Adobe Research License — non-commercial only** | Template-free, ~2s on A100, exports rigged GLB via bpy. | **REJECTED for repo use** (license). Researchers may still run it privately; not wired in. |
@@ -64,11 +64,18 @@ python export.py --mesh cape_jones.glb --rig results/final_rigging/cape_jones.tx
 
 ## MagicArticulate runbook (Kaggle/Colab, Apache-2.0)
 
+**Repo (pulled 2026-10-17, own-eyes verified):**
+`production/tools/ml-autorig/magicarticulate/` — code-only vendored from
+`https://github.com/Seed3D/MagicArticulate` (depth-1 pull, 18/18 py_compile
+OK, license read directly as Apache-2.0). Weights stay on the GPU machine
+per law. Submodule `third_partys/Michelangelo` NOT vendored — clone upstream
+`--recursive` on the GPU machine if the full stack is needed.
+
 ```bash
-git clone https://github.com/Seed3D/MagicArticulate.git --recursive && cd MagicArticulate
+cd production/tools/ml-autorig/magicarticulate
 pip install torch==2.1.1 torchvision==0.16.1 --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
-python download.py        # skeleton-generation weights (HF)
+python download.py        # skeleton-generation weights (HF Seed3D/MagicArticulate)
 bash demo.sh              # set input_dir to your model dir first
 ```
 
