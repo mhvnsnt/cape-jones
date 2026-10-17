@@ -243,12 +243,12 @@ def build_sit_arms_crossed():
     aim_bone('neck_2', (0, -0.06, 1)); upd()
     aim_bone('head', (0, -0.18, 1)); upd()
     legs_normal()
-    # fixed crossing directions: forearms cross in front of chest, R over L
-    aim_bone('upperarm_fk_L', (0.15, -0.20, -0.96)); upd()
-    aim_bone('forearm_fk_L', (-0.85, -0.15, 0.45)); upd()
+    # elbows tucked in, hands meet in front of chest (arms-crossed read)
+    aim_bone('upperarm_fk_L', (-0.30, -0.25, -0.92)); upd()
+    aim_bone('forearm_fk_L', (-0.20, -0.30, 0.93)); upd()
     keep_orientation('hand_fk_L'); upd()
-    aim_bone('upperarm_fk_R', (-0.15, -0.20, -0.96)); upd()
-    aim_bone('forearm_fk_R', (0.85, -0.15, 0.55)); upd()
+    aim_bone('upperarm_fk_R', (0.30, -0.25, -0.92)); upd()
+    aim_bone('forearm_fk_R', (0.20, -0.30, 0.93)); upd()
     keep_orientation('hand_fk_R'); upd()
     seat_and_ground(3.02, 0.42)
 
