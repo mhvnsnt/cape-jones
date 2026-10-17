@@ -246,11 +246,11 @@ def build_sit_arms_crossed():
     chest_p = phead('chest')
     for side, sgn, lift in [('L', 1, 0.00), ('R', -1, 0.035)]:
         shoulder = phead(f'upperarm_fk_{side}')
-        elbow_t = shoulder + Vector((sgn*0.13, -0.06, -0.10))
+        elbow_t = shoulder + Vector((sgn*0.08, -0.10, -0.08))
         aim_bone(f'upperarm_fk_{side}', (elbow_t - shoulder).normalized()); upd()
         elbow = ptail(f'upperarm_fk_{side}')
-        # forearm crosses chest to opposite side; R passes over L (lift)
-        hand_t = chest_p + Vector((-sgn*0.13, -0.185, 0.02 + lift))
+        # forearm crosses chest to opposite side (X across, Y stays near chest); R over L
+        hand_t = chest_p + Vector((-sgn*0.14, -0.07, 0.03 + lift))
         aim_bone(f'forearm_fk_{side}', (hand_t - elbow).normalized()); upd()
         keep_orientation(f'hand_fk_{side}')
     upd()
