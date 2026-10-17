@@ -29,6 +29,12 @@ if cape: cape.hide_render = True
 if cage: cage.hide_render = True
 for mod in body.modifiers:
     mod.show_viewport = False
+# PROOF-RENDER PROXY: decimate 910k -> ~180k verts for Cycles memory (removed before save)
+bpy.context.view_layer.objects.active = body
+dec = body.modifiers.new('ProofDecimate', 'DECIMATE')
+dec.ratio = 0.2
+bpy.ops.object.modifier_move_to_index(modifier='ProofDecimate', index=1)
+bpy.context.view_layer.objects.active = rig
 
 bpy.context.view_layer.objects.active = rig
 rig.select_set(True)
@@ -301,10 +307,10 @@ bpy.context.scene.camera = cam
 sc = bpy.context.scene
 sc.render.engine = 'CYCLES'
 sc.cycles.device = 'CPU'
-sc.cycles.samples = 32
-sc.render.resolution_x, sc.render.resolution_y = 960, 540
+sc.cycles.samples = 24
+sc.render.resolution_x, sc.render.resolution_y = 768, 432
 sc.render.film_transparent = False
-# memory: CorrectiveSmooth off for proof renders
+# memory: CorrectiveSmooth off + decimate proxy for proof renders
 cs = body.modifiers.get('CorrectiveSmooth')
 if cs: cs.show_viewport = False; cs.show_render = False
 import os
@@ -336,5 +342,8 @@ for key, label, builder in POSES:
     print(f"CHECKPOINT-SAVED {key}", flush=True)
 
 rig.animation_data.action = None
+bpy.context.view_layer.objects.active = body
+body.modifiers.remove(body.modifiers.get('ProofDecimate'))
+bpy.context.view_layer.objects.active = rig
 bpy.ops.wm.save_as_mainfile(filepath=OUT_BLEND)
 print(f"SAVED {OUT_BLEND}", flush=True)
