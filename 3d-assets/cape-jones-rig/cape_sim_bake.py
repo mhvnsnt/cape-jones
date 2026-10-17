@@ -114,9 +114,7 @@ cs.compression_damping = 5.0
 cs.shear_damping = 5.0
 cs.bending_damping = 0.5
 cs.vertex_group_mass = 'cape_pin'
-cs.use_self_collision = True
-cs.self_collision_distance = 0.004
-cs.collision_quality = 4
+# (self-collision lives on collision_settings, set below)
 cc = cloth.collision_settings
 cc.collision_quality = 4
 cc.distance_min = 0.004
