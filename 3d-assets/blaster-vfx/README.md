@@ -34,6 +34,16 @@ Blender 4.0.2 notes: no torus primitive (rings are curve-circle → curve-to-mes
 3. Keyframe `charge` / `fire` / `recoil` on the driver empty per the state machine in the spec (§3): charge 24–36f, hold 12f, fire 3f snap, recoil 12f, settle 12f. Comedy timing: build it too long, hold the beat, BANG.
 4. The `fire` prop also crossfades the scene's rim rig to the blaster color (blaster lighting concept, 2026-10-17 ~10:36) — wire the shot's rim lights the same way in real scenes.
 
-## Scout pull-ins
+## Scout pull-ins (lane 4, 2026-10-17 — landed)
 
-None landed yet. When the scout's open-source beam / geo-nodes / VFX-pack systems land, wire compatible pieces in here without changing the sheet-canon look (spec §6).
+- **FXType socket** (`fx_type` prop): 0=energy_beam, 1=gauntlet_bolt (stretched burst),
+  2=wave_pulse (expanding torus), 3=arc_chain (rings + sparks). Implements the palette's
+  `type_personalities`; parts gate per-type, existing beam look untouched.
+- **Per-scene tint** (`tint_r/g/b` props → `CJ_Tint` attribute → `CJ_FX_GlowTint` material):
+  recolors glow/rings/sparks/pulse per scene; **core stays #FFFFFF** (canon).
+- **CJ_BlastLightRig** collection: blast point light + cyan rim + blast rim (fire-crossfade).
+  Append the collection + `CJ_BlasterDriver` into the shot; the blast light becomes the
+  scene lighting while firing (rim + spill), per the 2026-10-17 lighting concept.
+- **Impact flash + ring** at the beam terminus (sheet 04).
+- Open-source technique studied: `laishi/GeometryNodesByTutorials` Ch.31 lightning (MIT) —
+  studied only, nothing copied; our arcs were already per-vertex jitter (4.0 has no GN textures).

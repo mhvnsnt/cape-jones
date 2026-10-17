@@ -27,6 +27,7 @@ bpy.context.object.data.energy = 300
 
 def dup_hierarchy(empty):
     new_e = empty.copy()
+    new_e.parent = None  # copies retain the socket parent; we place in world space
     scene.collection.objects.link(new_e)
     if new_e.animation_data:
         new_e.animation_data_clear()
