@@ -90,6 +90,10 @@ The gate splits your report into atomic claims and BLOCKS any completion claim w
 - NO-HAND-TOOLING-EDITS: rebuild from clean state, never patch edits.
 - NO-CHROMA-KEY-ON-ANIMATION: AI matting or rotoscoping only.
 
+## ALL-AGENTS-MEANS-ALL LAW (owner 2026-10-17)
+His words: "when I say all the other agents and IDEs, just remember all of them that we've connected and pulled in, even if we get new ones, I don't want to have to sit here and name four, five, six different AIs and agents, bro, just remember what I'm talking about."
+When the owner says "all the agents/IDEs/team," he means EVERY connected agent — Aider, Cline, Copilot, Colab, Gemini CLI, OpenCode, Cursor, Kaggle, Goose, all subagent lanes — INCLUDING future ones. He never names them one by one again. Keep the roster current (see TEAM-BRIEFING.md) so "all" always resolves to the full live list.
+
 ## WHY AGENTS MAKE UNVERIFIED CLAIMS (read this — it's the mechanism)
 
 You're not broken. You're doing what training reinforced. Understanding the mechanism is how you counteract it:
