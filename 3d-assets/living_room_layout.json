@@ -23,18 +23,18 @@
       "z": 5.6
     },
     {
-      "anchor": "REV2 (owner 2026-10-16): pink recliner moved to the RIGHT WINDOW WALL, back against the wall under the window, facing into the room. Accent seat now (exempt from TV/conversation checks). STAYS EMPTY - character rig goes here later for the light-flicker gag",
+      "anchor": "REV3 (owner 2026-10-16): pink recliner at the RIGHT WINDOW WALL, back toward the wall under the window, rotated -45deg (225 yaw) to face into the room toward the TV/conversation zone. Off the wall: bbox xmax 3.341 vs wall face 3.425 (8.4cm clear). Accent seat (exempt from TV/conversation checks). STAYS EMPTY - character rig goes here later for the light-flicker gag",
       "d": 0.67,
       "facing": [
-        -1,
-        0
+        -0.707,
+        0.707
       ],
       "kind": "seat",
       "name": "loungeChairRelax",
-      "rot_deg": 90,
+      "rot_deg": 225,
       "w": 0.49,
-      "x": 6.64,
-      "z": 4.5,
+      "x": 6.4805,
+      "z": 4.8875,
       "secondary": true
     },
     {
@@ -48,14 +48,14 @@
       "z": 3.4
     },
     {
-      "anchor": "REV2: round rug moved with the recliner to the window wall; chair front legs on the rug",
+      "anchor": "REV3: round rug re-centered under the recliner, fully off the right wall (bbox xmax 3.286 vs wall face 3.425, 13.9cm clear); chair front legs on the rug",
       "d": 1.47,
       "kind": "rug",
       "name": "rugRound",
       "rot_deg": 0,
       "w": 1.47,
-      "x": 6.2,
-      "z": 4.5
+      "x": 6.05,
+      "z": 4.7
     },
     {
       "anchor": "secondary blue sofa along the left wall, facing +x into the room (exempt from TV/conversation checks)",
