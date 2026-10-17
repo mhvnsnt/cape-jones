@@ -87,6 +87,8 @@ def place_root(L, yaw_deg=-90.0):
     set_bone('root', Matrix.Translation(Vector(L)) @ q.to_matrix().to_4x4() @ pb.bone.matrix_local)
 
 def reset_pose():
+    bpy.context.view_layer.objects.active = rig
+    rig.select_set(True)
     for pb in rig.pose.bones:
         pb.rotation_mode = 'QUATERNION'
         pb.rotation_quaternion = (1, 0, 0, 0)
@@ -308,8 +310,9 @@ if cs: cs.show_viewport = False; cs.show_render = False
 import os
 os.makedirs(OUT_PNG_DIR, exist_ok=True)
 
-bpy.ops.object.mode_set(mode='POSE')
 bpy.context.view_layer.objects.active = rig
+rig.select_set(True)
+bpy.ops.object.mode_set(mode='POSE')
 
 for key, label, builder in POSES:
     print(f"===== POSE {key}: {label} =====", flush=True)
