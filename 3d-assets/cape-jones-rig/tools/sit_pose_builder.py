@@ -226,13 +226,10 @@ def build_sit_recline():
     aim_bone('shin_fk_L', (0, -0.18, -0.98)); upd()
     aim_bone('shin_fk_R', (0, -0.18, -0.98)); upd()
     keep_orientation('foot_fk_L'); keep_orientation('foot_fk_R'); upd()
-    # arms: hands behind head (elbows out to sides, forearms up-in)
-    head_p = phead('head')
+    # arms hang naturally (hands-behind-head impossible: arms 0.254m < head height above shoulders)
     for side, sgn in [('L', 1), ('R', -1)]:
-        aim_bone(f'upperarm_fk_{side}', (sgn*0.90, 0.20, 0.15)); upd()
-        elbow = ptail(f'upperarm_fk_{side}')
-        hand_t = head_p + Vector((0, 0.11, 0.02))
-        aim_bone(f'forearm_fk_{side}', (hand_t - elbow).normalized()); upd()
+        aim_bone(f'upperarm_fk_{side}', (sgn*0.15, -0.05, -0.98)); upd()
+        aim_bone(f'forearm_fk_{side}', (sgn*0.08, -0.12, -0.99)); upd()
         keep_orientation(f'hand_fk_{side}')
     upd()
     seat_and_ground(2.98, 0.42)
@@ -263,7 +260,7 @@ POSES = [
     ("sit_normal", "Normal relaxed sit", build_sit_normal),
     ("sit_leg_folded", "Figure-4: right ankle on left knee (his reference)", build_sit_leg_folded),
     ("sit_lean_forward", "Lean-forward pensive/focused", build_sit_lean_forward),
-    ("sit_recline", "Recline, hands behind head (Space Ghost energy)", build_sit_recline),
+    ("sit_recline", "Recline, legs extended (relaxed sprawl)", build_sit_recline),
     ("sit_arms_crossed", "Arms crossed, leaning back (comedic annoyed)", build_sit_arms_crossed),
 ]
 
