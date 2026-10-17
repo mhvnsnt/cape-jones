@@ -68,6 +68,16 @@ def back_y(z):
 # z0.74-0.76:+-0.204, z0.78:+-0.150, z0.80:+-0.135
 NZ, NX = 48, 36
 X_TOP_HALF = 0.205
+BOT_W = None  # set after prof_at defined
+
+def prof_at(z):
+    for i in range(NB - 1):
+        if prof[i][0] <= z <= prof[i + 1][0]:
+            t = (z - prof[i][0]) / (prof[i + 1][0] - prof[i][0] + 1e-9)
+            _, xn0, xx0, _ = prof[i]; _, xn1, xx1, _ = prof[i + 1]
+            return (xn0 + t * (xn1 - xn0), xx0 + t * (xx1 - xx0))
+    return (prof[0][1], prof[0][2]) if z < prof[0][0] else (prof[-1][1], prof[-1][2])
+
 BOT_W = prof_at(0.146)  # hold full fragment width at bottom (ignore debris taper)
 
 def width_at(z):
