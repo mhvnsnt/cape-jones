@@ -21,9 +21,9 @@ this space; Meta's relevant work here is nil.
 | **UniRig** (Tsinghua + Tripo, SIGGRAPH 2025) | MIT ✅ | GPU ≥8GB (Kaggle/Colab) | ✅ **WIRED** (`production/tools/ml-autorig/`) — Kaggle proof queued |
 | **Puppeteer** (NTU + ByteDance, NeurIPS 2025 Spotlight) | Apache-2.0 ✅ | GPU (Kaggle/Colab) | ✅ **PULLED 2026-10-17** — license verified own-eyes on the repo page (Apache-2.0). Code-only, 4.7MB, 38/38 py compile at `production/tools/ml-autorig/puppeteer/` (upstream commit 1c0f9fc; weights stay off disk per law, HF Seed3D/Puppeteer on the GPU machine). Wiring: `production/tools/ml-autorig/puppeteer/CAPE-JONES-WIRING.md`. Only pulled rigger with VIDEO-GUIDED ANIMATION (differentiable-optimization anim from a guide video) + FBX export — second ML opinion vs TokenRig/UniRig in the weight bake-off; queue after UniRig |
 | **MagicArticulate** (NTU + ByteDance, CVPR 2025) | Apache-2.0 ✅ | GPU 4.6GB (Kaggle/Colab) | 📝 runbook wired; skeleton+skinning, superseded by Puppeteer |
-| **HumanRig** (Alibaba Amap, CVPR 2025) | MIT ✅ | GPU (Kaggle/Colab) | 📝 runbook wired; humanoid-only |
+| ~~**HumanRig**~~ (Alibaba Amap, CVPR 2025) | repo MIT, **no public code** | — | ❌ **NOT RUNNABLE — 2026-10-17 own-eyes re-check:** `c8241998/HumanRig` (7 commits, 92 stars) is a stub: LICENSE + README + assets only, README body is "TODO — release dataset on Hugging Face". No inference code, no weights. Paper + HF dataset (`jellyczd/HumanRig`) only. Earlier "runbook wired" claim was wrong — corrected here. Keep as paper reference. |
 | **RigNet** (Xu et al., SIGGRAPH 2020) | GPL-3.0 ✅ | GPU | 📝 documented only — outclassed by UniRig/Puppeteer, orientation-restricted |
-| **Make-It-Animatable** (Tencent, CVPR 2025) | check repo | GPU | 📝 documented only — <1s inference but fixed skeleton topology |
+| **Make-It-Animatable** (Tencent, CVPR 2025 Highlight) | MIT ✅ | GPU (Kaggle/Colab) | ✅ **PULLED 2026-10-17** — license verified own-eyes (MIT, Copyright 2025 Zhiyang Guo). Code-only, 1.5MB, all .py compile at `production/tools/ml-autorig/make-it-animatable/` (upstream commit 8fb51382; weights stay off disk per law, HF jasongzy/Make-It-Animatable on the GPU machine). Wiring: `production/tools/ml-autorig/make-it-animatable/CAPE-JONES-WIRING.md`. Differentiators: <1s inference, ANY-pose input + rest-pose reset, fine-grained skeleton w/ extra body-structure bones, meshes AND Gaussian splats, built-in Blender armature builder (`app_blender.py`). MIA v2 branch: Hunyuan3D 2.1 backbone, `python app_v2.py`. |
 | **Mixamo** (Adobe) | Adobe terms, royalty-free incl. commercial ✅ | Web only | 📝 documented workflow — needs Adobe ID (parent browser lane) |
 | **AccuRIG 2.0** (Reallusion) | free, account required | Windows GUI only | 📝 documented only — no CLI/headless |
 | **Tripo one-click rigging** (Tripo Studio) | Tripo terms, credits | Web only | 📝 documented only — browser lane |
@@ -150,7 +150,7 @@ system for face + controls; the auto-riggers kill the tedious blocking stage.
 - Puppeteer repo (Apache-2.0, NeurIPS'25 Spotlight): https://github.com/Seed3D/Puppeteer
 - MagicArticulate repo (Apache-2.0, CVPR'25): https://github.com/Seed3D/MagicArticulate
 - UniRig repo (MIT, SIGGRAPH'25): https://github.com/VAST-AI-Research/UniRig
-- HumanRig repo (MIT): https://github.com/c8241998/HumanRig
+- ~~HumanRig repo (MIT, code promised but never shipped)~~: https://github.com/c8241998/HumanRig — own-eyes 2026-10-17: stub (LICENSE + README + assets), no code. Dataset only: https://huggingface.co/jellyczd/HumanRig
 - RigAnything HF (Adobe non-commercial license): https://huggingface.co/Isabellaliu/RigAnything
 - RigNet repo (GPL-3.0): https://github.com/zhan-xu/RigNet
 - Make-It-Animatable (CVPR'25): https://github.com/jasongzy/Make-It-Animatable
