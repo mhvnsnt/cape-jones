@@ -29,12 +29,6 @@ if cape: cape.hide_render = True
 if cage: cage.hide_render = True
 for mod in body.modifiers:
     mod.show_viewport = False
-# PROOF-RENDER PROXY: decimate 910k -> ~180k verts for Cycles memory (removed before save)
-bpy.context.view_layer.objects.active = body
-dec = body.modifiers.new('ProofDecimate', 'DECIMATE')
-dec.ratio = 0.2
-bpy.ops.object.modifier_move_to_index(modifier='ProofDecimate', index=1)
-bpy.context.view_layer.objects.active = rig
 
 bpy.context.view_layer.objects.active = rig
 rig.select_set(True)
