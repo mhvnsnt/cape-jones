@@ -367,6 +367,37 @@ Research: `docs/research/2026-SPEED-RESEARCH.md` (PR #46).
 
 ---
 
+## Studio Architecture — How Everything Connects
+
+The full map: GPU lanes, orchestration, reliability, research, and dev tools
+wired into one studio. **`docs/STUDIO-ARCHITECTURE.md`** is the canonical doc.
+
+- **GPU lanes:** Kaggle (primary, queue-automated) → Colab (backup/parallel,
+  `production/colab/`) → Lightning AI (tertiary). Same notebooks ported across
+  lanes — a failing Kaggle job falls back to Colab with no code changes.
+- **Orchestration:** `kaggle_queue.py` — validate → push (with bulletproof
+  saver injected) → monitor → download → claim-gate → second copies
+  (GitHub release / TeraBox).
+- **Reliability (always on):** `claim_gate.py` blocks unverified "done";
+  `verify_claim.py` checks files/PRs/releases; `contradiction_probe.py` asks
+  "what would prove this false?"; `checkpoint_audit.py` finds stale work;
+  `save_outputs.py` publishes dataset versions from inside every kernel.
+- **Research:** `research.py` (never guess from training data) →
+  `docs/research/` → pull in → wire up → PR. Master index:
+  `docs/research/RESEARCH-INDEX.md`.
+- **Dev tools:** Aider (terminal pair programmer, `.aider.conf.yml`),
+  code-server (browser VS Code, phone-accessible), OpenCode/Gemini CLI
+  (documented alternatives). Setup: `docs/research/DEVENV-SETUP.md`.
+- **Config:** everything in the repo (see STUDIO-ARCHITECTURE.md §6).
+  Queue *state* is the one VM-local exception (live operational state).
+- **Failure recovery:** every component has a documented recovery path
+  (STUDIO-ARCHITECTURE.md §7) — including Kaggle→Colab fallback and
+  resume-from-dataset-version after session death.
+
+**Order of operations (law):** CHECK → RESEARCH → WIRE → DO. Never reversed.
+
+---
+
 ## Laws That Govern This Pipeline
 
 - **NO-CHROMA-KEY-ON-ANIMATION** — AI matting only, never chroma key on characters
