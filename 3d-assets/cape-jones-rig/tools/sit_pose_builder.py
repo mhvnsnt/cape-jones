@@ -182,12 +182,9 @@ def build_sit_leg_folded():
     ankle_a = knee_R + v.normalized() * 0.217
     aim_bone('shin_fk_R', (ankle_a - knee_R).normalized()); upd()
     keep_orientation('foot_fk_R'); upd()
-    # right hand rests on right knee
-    shoulder = phead('upperarm_fk_R')
-    knee = ptail('thigh_fk_R')
-    aim_bone('upperarm_fk_R', (knee - shoulder).normalized()); upd()
-    elbow = ptail('upperarm_fk_R')
-    aim_bone('forearm_fk_R', (knee - elbow).normalized()); upd()
+    # right arm hangs naturally (knee too far for hand-on-knee)
+    aim_bone('upperarm_fk_R', (-0.12, -0.08, -0.99)); upd()
+    aim_bone('forearm_fk_R', (-0.05, -0.18, -0.98)); upd()
     keep_orientation('hand_fk_R'); upd()
 
 def build_sit_lean_forward():
