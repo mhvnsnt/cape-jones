@@ -75,3 +75,29 @@ improvement over UniRig per authors. Pulled 2026-10-17 to
 **Runner-up documented, not pulled:** UniRig (https://github.com/VAST-AI-Research/UniRig,
 MIT) — predecessor two-stage pipeline (skeleton → skinning). Kept as the documented
 fallback if TokenRig's single pass underperforms on a mesh.
+
+## Update 2026-10-17 — afk-rig 0.1.2 pulled (overnight idle pipeline)
+
+**New lane: deterministic local auto-rigger built FOR AI agents.**
+afk-rig (afk.ai) — CLI + MCP server (stdio) that auto-fits a skeleton to a
+GLB, then lets the agent inspect renders, correct joints (`set`/`move`/`aim`/
+`rotate`/`fit`, mirrored), apply surgical skin-weight rules, and export with
+animations. No GPU, no weights download, runs on the VM.
+
+| Detail | Value |
+|---|---|
+| Source | npm tarball (no public GitHub repo): https://registry.npmjs.org/afk-rig/-/afk-rig-0.1.2.tgz |
+| License | MIT (code, `LICENSE` on disk) ✅ + CC0 1.0 (assets, `assets/LICENSE-CC0.md` on disk) ✅ — rigs and rigged models cleared for commercial use |
+| Pulled to | `production/tools/afk-rig/` (vendored, 17MB, largest file 5.0MB — under 50MB rule; `node_modules/` removed before commit) |
+| Wiring | `production/tools/afk-rig/CAPE-JONES-WIRING.md` |
+| Verified | `npm install --omit=dev` → `--help` prints full command list; `skeletons` → 9 rigs (human: 66 bones incl. fingers); `animations human --search walk` → 10 walk clips; all run clean 2026-10-17 |
+| One-shot | `afk-rig auto model.glb --skeleton human --out rigged.glb --animations all` |
+| Agent loop | `start` → `render --joints all --labels` → `inspect --issues` → `set/aim/fit` → `weights --add` → `bind` → `export` |
+| MCP | `afk-rig mcp` — stdio server (Claude Code / Cursor / Windsurf / Claude Desktop) |
+| Cape Jones uses | (1) fast local pass for new Tripo models; (2) `weights` rules + `render --weights` + `slice`/`ray` to repair the W5r bake-off shoulder/feet defect zones; (3) 178 CC0 human clips as the EP01 animation-blocking library; (4) `--hands all-fingers`, cape mesh excluded from fitting (`meshes --exclude`) |
+
+**RigAnything re-verified 2026-10-17 (overnight idle pipeline):** license at
+https://github.com/Isabella98Liu/RigAnything is the **Adobe Research License —
+noncommercial research only** (copyright Adobe Inc.). The REJECTED row in
+`AUTO-RIG-TRIPO-2026.md` stands confirmed — not pulled, per the owner's license
+law.
