@@ -23,15 +23,15 @@
       "z": 5.6
     },
     {
-      "anchor": "pink recliner angled toward the TV like the drawing. STAYS EMPTY - character rig goes here later for the light-flicker gag (adjusted: pulled back for 0.44 m conversation gap)",
+      "anchor": "pink recliner angled toward the TV (rot +43.7deg faces TV center). STAYS EMPTY - character rig goes here later for the light-flicker gag",
       "d": 0.67,
       "facing": [
-        -0.646,
-        0.763
+        -0.691,
+        0.723
       ],
       "kind": "seat",
       "name": "loungeChairRelax",
-      "rot_deg": -40,
+      "rot_deg": 43.7,
       "w": 0.49,
       "x": 3.7,
       "z": 4.45
@@ -57,7 +57,7 @@
       "z": 3.6
     },
     {
-      "anchor": "secondary pink sofa along the left wall, angled into the room (exempt from TV/conversation checks)",
+      "anchor": "secondary blue sofa along the left wall, facing +x into the room (exempt from TV/conversation checks)",
       "d": 0.41,
       "facing": [
         1,
@@ -65,7 +65,7 @@
       ],
       "kind": "seat",
       "name": "loungeDesignSofa",
-      "rot_deg": 90,
+      "rot_deg": -90,
       "w": 1.12,
       "x": 0.6,
       "z": 2.4,
@@ -82,23 +82,27 @@
       "z": 5.5
     },
     {
-      "anchor": "bookcase in the front-left corner (kept clear of the doorway walkway + swing arc)",
-      "d": 0.35,
-      "dims_verify_in_blender": true,
+      "anchor": "bookcase in the front-left corner (kept clear of the doorway walkway + swing arc) (dims verified in Blender: 0.40x0.25x0.85)",
+      "d": 0.25,
       "kind": "prop",
       "name": "bookcaseClosed",
       "rot_deg": 0,
-      "w": 0.7,
+      "w": 0.4,
       "x": 0.55,
       "z": 1.2
+    },
+    {
+      "name": "side_table",
+      "kind": "side_table",
+      "w": 0.35,
+      "d": 0.35,
+      "x": 3.0,
+      "z": 4.6,
+      "rot_deg": 0,
+      "anchor": "purple-blue ROUND side table left of the recliner (0.12 m gap, arm's reach), holds the mug"
     }
   ],
   "props_needed": [
-    {
-      "anchor": "purple ROUND side table beside the recliner (left of it), holds the mug. Pull from Quaternius/Kenney/Poly Pizza.",
-      "kind": "table",
-      "name": "side_table"
-    },
     {
       "anchor": "WORLD'S OKAYEST HERO mug on the side table",
       "kind": "prop",

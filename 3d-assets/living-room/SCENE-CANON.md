@@ -48,26 +48,52 @@ Visual anchors:
 **The look in one line:** coral-pink furniture + warm oak wood on a dark floor, all soaked in violet
 LED glow (`#731AE5`). That's the canon. Protect it.
 
-## 2. Furniture inventory (positions = pre-rerelayout, recorded for reference)
+## 2. Furniture inventory (positions = post-relayout 2026-10-16, branch build/living-room-relayout)
 
 Room shell: floor 7.0 × 6.0 m; walls 3.0 m high (back wall at y=3.0, left/right at x=±3.5).
+Layout contract: `3d-assets/living_room_layout.json` (validated with
+`tools/layout-rules/validate_layout.py` — 8 items, all checks passed).
+Positions below are Blender coords (x right, y depth, z up).
 
 | Object | Type | Size W×D×H (m) | Position (x, y, z) | Material(s) |
 |---|---|---|---|---|
-| `loungeChairRelax(Clone)` | recliner chair | 0.49 × 0.675 × 0.63 | (-1.1, 0.4, 0) | metal, carpet, wood |
-| `loungeDesignSofa(Clone)` | sofa | 1.12 × 0.41 × 0.4 | (1.9, 0.4, 0) | carpetBlue, metal.001 |
-| `tableCoffee(Clone)` | coffee table | 0.661 × 0.4 × 0.23 | (0.4, 1.3, 0) | wood.001 |
-| `rugRound(Clone)` | round rug | 1.472 × 1.472 × 0.016 | (0.4, 0.9, 0.01) | carpet.001, carpetDarker |
-| `cabinetTelevision(Clone)` | TV cabinet | 0.8 × 0.25 × 0.31 | (0.4, 2.55, 0) | wood.002 |
-| `bookcaseClosed(Clone)` | bookcase | 0.4 × 0.25 × 0.85 | (-2.9, 2.5, 0) | wood.003 |
-| `lampRoundFloor(Clone)` | floor lamp | 0.152 × 0.176 × 0.86 | (2.9, 2.5, 0) | metal.002, lamp |
-| `lampSquareTable(Clone)` | table lamp | 0.12 × 0.12 × 0.29 | (0.9, 1.3, 0.42) | lamp.001, metal.003 |
-| `LEDRemote` | remote | 0.035 × 0.11 × 0.02 | (0.15, 1.15, 0.5) | RemoteMat |
-| `RemoteBtn_0..5` | 6 remote buttons | tiny | (0.155, 1.28, 0.51) | BtnMat_0..5 |
-| `LED_Back` | LED strip | 3.4 × 0.04 × 0.04 | (0, 2.9, 2.75) | LEDStripMat |
-| `LED_Left` | LED strip | 0.04 × 2.9 × 0.04 | (-3.4, 0, 2.75) | LEDStripMat |
-| `LED_Right` | LED strip | 0.04 × 2.9 × 0.04 | (3.4, 0, 2.75) | LEDStripMat |
-| `Floor` / `WallBack` / `WallLeft` / `WallRight` | room shell | — | — | FloorMat / WallMat |
+| `loungeChairRelax(Clone)` | recliner chair | 0.49 × 0.675 × 0.63 | (0.2, 1.45, 0), rot +43.7° facing TV | metal, carpet, wood |
+| `loungeDesignSofa(Clone)` | sofa | 1.12 × 0.41 × 0.4 | (-2.9, -0.6, 0), rot -90° facing +x | carpetBlue, metal.001 |
+| `tableCoffee(Clone)` | coffee table | 0.661 × 0.4 × 0.23 | (-0.2, 0.4, 0) | wood.001 |
+| `rugRound(Clone)` | round rug | 1.472 × 0.016 | (-0.1, 0.6, 0.01) | carpet.001, carpetDarker |
+| `cabinetTelevision(Clone)` | TV stand, open-shelf console (rebuilt 2026-10-16) | 0.8 × 0.3 × 0.75 | (-0.9, 2.6, 0) | wood.002 |
+| `crt_tv` + `crt_screen` + `antenna_0/1` | CRT TV, violet screen, rabbit ears | 0.62 × 0.42 × 0.52 | (-0.9, 2.6, 1.01) | RemoteMat, tvScreenMat, metal |
+| `vcr_dvd` | VCR/DVD player (middle shelf) | 0.42 × 0.24 × 0.09 | (-1.02, 2.6, 0.51) | RemoteMat |
+| `box_a` … `box_d` | storage boxes (shelves) | various | on stand shelves | wood.002 |
+| `monster_body` + eyes + feet | monster toy, canon-blue (bottom shelf) | ~0.14 tall | (-0.92, 2.58, 0.22) | carpetBlue, lamp |
+| `side_table` + 3 legs | round side table | r 0.175, h 0.55 | (-0.5, 1.6, 0) | carpetBlue |
+| `okayest_hero_mug` + handle + `mug_text` | WORLD'S OKAYEST HERO mug | r 0.045, h 0.1 | (-0.5, 1.6, 0.6175) | WallMat, RemoteMat |
+| `bookcaseClosed(Clone)` | bookcase | 0.4 × 0.25 × 0.85 | (-2.95, -1.8, 0) | wood.003 |
+| `lampRoundFloor(Clone)` | floor lamp | 0.152 × 0.176 × 0.86 | (3.0, 2.5, 0) | metal.002, lamp |
+| `lampSquareTable(Clone)` | table lamp (re-seated on coffee table) | 0.12³ | (-0.02, 0.4, 0.23) | lamp.001, metal.003 |
+| `LEDRemote` + `RemoteBtn_0..5` | LED remote (re-seated on coffee table) | tiny | (-0.32, 0.45, 0.245) | RemoteMat, BtnMat_* |
+| `door_jamb_L/R` + `door_lintel` | doorway frame, back wall | opening 0.9 × 2.1 | (-2.6, 3.0, ~1.05) | wood.002 |
+| `hallway` (floor / walls / end / door) | hallway stub behind doorway | 1.3 × 2.6 | (-2.6, 4.3, 0) | FloorMat, WallMat, RemoteMat |
+| `HallLight` | POINT light, energy 60, `#FFE996` | — | (-2.6, 4.4, 2.2) | — |
+| `window_unit` (jambs / head / sill / mullions) | window, right wall | opening 1.4 × 1.1 | (3.5, 1.5, 1.6) | wood.002 |
+| `exterior` (sky / sun / trees / baffles) | exterior diorama | — | x 4.4–5.4 | skyMat, lamp, FloorMat, canopyMat |
+| `wall_decor` → `poster_*` | FRY EM UP poster | 0.5 × 0.66 | (-1.7, 2.92, 1.9) | WallMat, wood.002, carpet |
+| `wall_decor` → `squid_*` | squid wall hanging | ~0.2 tall | (-0.9, 2.87, 2.02) | carpetBlue, lamp |
+| `wall_decor` → `ghost_*` | framed ghost picture | 0.5 × 0.6 | (0.5, 2.92, 1.9) | wood.002, lamp, carpet |
+| `LED_Back` / `LED_Left` / `LED_Right` | LED strips | — | unchanged | LEDStripMat |
+| `Floor` / `WallBack` / `WallLeft` / `WallRight` | room shell (door+window holes cut) | — | — | FloorMat / WallMat |
+
+Recliner stays EMPTY — no character placed (light-flicker gag rig lands later).
+
+### New materials (all reuse locked canon hexes — no new colors)
+- `tvScreenMat`: emission `#731AE5` strength 1.5 (same violet as the LED strips)
+- `skyMat`: base + emission `#5B84DD` strength 0.5 (same blue as the sofa)
+- `canopyMat`: base + emission `#F15E57` strength 0.45 (same coral as the chair)
+
+### Documented color substitutions (palette had no match — owner judges the render)
+- Side table: canon blue `#5B84DD` (no purple surface in palette; violet LED wash reads it purple)
+- Monster toy: canon blue `#5B84DD` (no green in palette)
+- Flowering-tree canopies: canon coral `#F15E57` (no green in palette)
 
 Mesh count: 22 meshes + 2 lights + `MainCam` + `Camera.001` (scene cameras) + `CamTarget`.
 
@@ -81,3 +107,10 @@ Mesh count: 22 meshes + 2 lights + `MainCam` + `Camera.001` (scene cameras) + `C
 - 2026-10-16: Canon locked from `living_room.blend` (PR: canon/living-room-colorway-20261016).
   Colors extracted headless from Principled BSDF nodes, owner-approved preview saved as
   `colorway-reference.png`, second angle saved as `scene-overview.png`. No scene geometry changed.
+- 2026-10-16: Full re-layout (branch build/living-room-relayout-20261016). Furniture placed per
+  `living_room_layout.json` (validated: 8 items, all layout-rules checks passed). Added: CRT TV +
+  rabbit ears, open-shelf TV console (rebuilt), VCR/DVD, boxes, blue monster toy, round side table,
+  WORLD'S OKAYEST HERO mug, doorway + hallway stub, window + exterior diorama (sky/sun/flowering
+  trees), wall decor (FRY EM UP poster, squid, ghost picture). Re-seated table lamp + LED remote on
+  coffee table. Zero color changes — 3 new materials reuse locked hexes only. Render:
+  `scene-relayout-v2.png` (960×540, 64 samples, verified by eye).
