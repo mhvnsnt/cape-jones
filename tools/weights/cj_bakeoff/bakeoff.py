@@ -14,6 +14,7 @@ Entries:
   W5 preservevol     W1 weights + Preserve Volume (DQ) + Corrective Smooth
   W6 twistbones      W1 weights + twist-bone chain (Copy Rotation Y, 0.5)
   W7 mdefcage        BlenRig-6-style mesh-deform cage skinning
+  W7b mdefcage-dense  W7 with denser relaxed cage (~hundreds of verts)
 
 Poses: P1 rest, P2 arms_raised, P3 elbow_90, P4 knee_deep, P5 shoulder_raise,
        P6 head_turn, P7 crouch
@@ -58,20 +59,20 @@ POSES = {
         'UpperArm.L': (1.50, 0, 0), 'UpperArm.R': (-1.50, 0, 0),
         'ForeArm.L': (0.20, 0, 0), 'ForeArm.R': (-0.20, 0, 0)},
     'P3_elbow_90': {
-        'ForeArm.L': (0, 0, -1.65), 'ForeArm.R': (0, 0, 1.65)},
+        'ForeArm.L': (0, 0, -1.65), 'ForeArm.R': (0, 0, -1.65)},
     'P4_knee_deep': {
-        'Thigh.L': (1.90, 0, 0), 'Thigh.R': (1.90, 0, 0),
-        'Shin.L': (-1.90, 0, 0), 'Shin.R': (-1.90, 0, 0),
+        'Thigh.L': (0, 0, -1.90), 'Thigh.R': (0, 0, -1.90),
+        'Shin.L': (0, 0, 0.50), 'Shin.R': (0, 0, 0.50),
         'root:loc': (0, 0, -0.18)},
     'P5_shoulder_raise': {
-        'UpperArm.L': (0, 0, -1.50), 'UpperArm.R': (0, 0, 1.50)},
+        'UpperArm.L': (0, 0, -1.50), 'UpperArm.R': (0, 0, -1.50)},
     'P6_head_turn': {
-        'Head': (0, 0, 1.00)},
+        'Head': (0, 1.00, 0)},
     'P7_crouch': {
         'root:loc': (0, 0, -0.22),
-        'Thigh.L': (1.20, 0, 0), 'Thigh.R': (1.20, 0, 0),
-        'Shin.L': (-1.30, 0, 0), 'Shin.R': (-1.30, 0, 0),
-        'Spine': (0.35, 0, 0)},
+        'Thigh.L': (0, 0, -1.20), 'Thigh.R': (0, 0, -1.20),
+        'Shin.L': (0, 0, 0.30), 'Shin.R': (0, 0, 0.30),
+        'Spine': (0, 0, -0.35)},
 }
 POSE_ORDER = ['P1_rest', 'P2_arms_raised', 'P3_elbow_90', 'P4_knee_deep',
               'P5_shoulder_raise', 'P6_head_turn', 'P7_crouch']
@@ -294,7 +295,7 @@ def add_twist_bones(mesh, rig):
     print('W6 twist bones added')
 
 
-def weights_mdef_cage(mesh, rig):
+def weights_mdef_cage(mesh, rig, decimate_ratio=0.002, tag='W7'):
     t = time.time()
     # cage = convex hull of mesh, decimated
     bpy.ops.object.select_all(action='DESELECT')
@@ -308,10 +309,17 @@ def weights_mdef_cage(mesh, rig):
     bpy.ops.mesh.convex_hull()
     bpy.ops.object.mode_set(mode='OBJECT')
     dec = cage.modifiers.new('Decimate', 'DECIMATE')
-    dec.ratio = 0.002
+    dec.ratio = decimate_ratio
     bpy.ops.object.modifier_apply(modifier=dec.name)
-    cage.scale = Vector((1.03, 1.03, 1.03))
-    print('W7 cage verts: %d (%.0fs)' % (len(cage.data.vertices), time.time() - t))
+    # relax the hull lightly so it hugs the body instead of bridging concavities
+    bpy.context.view_layer.objects.active = cage
+    bpy.ops.object.mode_set(mode='EDIT')
+    bpy.ops.mesh.select_all(action='SELECT')
+    bpy.ops.mesh.vertices_smooth(factor=0.5, repeat=3)
+    bpy.ops.object.mode_set(mode='OBJECT')
+    cage.scale = Vector((1.06, 1.06, 1.06))
+    bpy.context.view_layer.update()
+    print('%s cage verts: %d (%.0fs)' % (tag, len(cage.data.vertices), time.time() - t))
     # deform the CAGE with bone heat (fast, low poly)
     select_for_parent(cage, rig)
     bpy.ops.object.parent_set(type='ARMATURE_AUTO')
@@ -324,7 +332,7 @@ def weights_mdef_cage(mesh, rig):
     md.precision = 5
     t = time.time()
     bpy.ops.object.meshdeform_bind(modifier=md.name)
-    print('W7 meshdeform bind done in %.0fs, bound=%s' % (time.time() - t, md.is_bound))
+    print('%s meshdeform bind done in %.0fs, bound=%s' % (tag, time.time() - t, md.is_bound))
     cage.hide_render = True
 
 
@@ -375,7 +383,16 @@ def main():
     entry = a[a.index('--entry') + 1] if '--entry' in a else 'W1'
     poses_arg = a[a.index('--poses') + 1] if '--poses' in a else 'all'
     from_blend = a[a.index('--from-blend') + 1] if '--from-blend' in a else None
-    poses = POSE_ORDER if poses_arg == 'all' else poses_arg.split(',')
+    if poses_arg == 'all':
+        poses = POSE_ORDER
+    else:
+        poses = []
+        for token in poses_arg.split(','):
+            token = token.strip()
+            match = [p for p in POSE_ORDER if p == token or p.startswith(token + '_')]
+            if not match:
+                raise SystemExit('unknown pose ' + token)
+            poses.extend(match)
     os.makedirs(BLEND_DIR, exist_ok=True)
     os.makedirs(PNG_DIR, exist_ok=True)
 
@@ -388,6 +405,12 @@ def main():
         mesh = next(o for o in bpy.data.objects if o.type == 'MESH'
                     and 'Cage' not in o.name and len(o.data.vertices) > 100000)
         rig = next(o for o in bpy.data.objects if o.type == 'ARMATURE')
+        if entry == 'W5':
+            add_preserve_volume_and_smooth(mesh)
+            entry = 'W5r'
+        elif entry == 'W6':
+            add_twist_bones(mesh, rig)
+            entry = 'W6r'
     else:
         mesh = load_model()
         rig = build_skeleton()
@@ -408,6 +431,8 @@ def main():
             add_twist_bones(mesh, rig)
         elif entry == 'W7':
             weights_mdef_cage(mesh, rig)
+        elif entry == 'W7b':
+            weights_mdef_cage(mesh, rig, decimate_ratio=0.15, tag='W7b')
         else:
             raise SystemExit('unknown entry ' + entry)
         blend_path = os.path.join(BLEND_DIR, entry + '.blend')

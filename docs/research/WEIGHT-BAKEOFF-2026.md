@@ -153,7 +153,32 @@ W7b (denser relaxed cage) re-tests with a saner cage.
 
 ### W7b — mesh-deform cage, denser (decimate 0.15 + light smooth + 1.06 scale)
 
-*Result pending — run in flight (P2/P3/P5/P7 only).*
+**Run completed 2026-10-17 (overnight-idle-pipeline):** bind + weighting succeeded —
+`CJ_Cage` 731 verts, `meshdeform_bind` bound=True, bone-heat weights on the cage
+sensible (Head 260 / Foot.L 218 / Foot.R 211 / Shin.L 194 / UpperArm.L 155 verts…).
+Full-mesh Cycles pose renders **OOM-blocked on this 8 GB VM**: 2 attempts, both
+`Killed` (exit 137) at ~5.47 GB Blender peak during depsgraph sync of the
+991,082-vert mesh. A/B test with the MESH_DEFORM modifier disabled renders fine,
+and W7's 11-vert-cage blend renders fine — the 731-vert deform evaluation itself
+is what blows the RAM budget. Verdict therefore from cage-level evidence
+(`tools/weights/cj_bakeoff/render_w7b_cage.py`, proofs `W7b_cagefront_*.png`):
+
+- The cage **does** track the armature (P2: arm sections rise overhead; P5:
+  shoulder sections lift) — the mechanism works.
+- But the denser cage **does not fix W7's paddle problem**: decimate 0.15 +
+  smooth×3 melts the thin arm protrusions into the torso — only 71/731 verts
+  (9.7%) sit in the arm regions (|y|>0.35) while 206 verts (28%) bunch on the
+  head cap; leg tessellation is asymmetric (legL 69 vs legR 189). Bone-heat on
+  the cage also bleeds across center (UpperArm.L weights span y ∈ [-0.08, 0.46]
+  — the W3 directional-bias problem again, one level down).
+- Conclusion: a naive convex-hull auto-cage can't carry the limbs no matter the
+  density — the technique needs a **fitted** cage (rig lane's BlenRig guide
+  work), exactly as the W7 verdict said. Full-mesh pose proof deferred to a
+  bigger machine; the winner stays **W5r**.
+
+**Verdict: FAIL (structural, not just RAM)** — denser auto-cage confirmed
+insufficient. Do not pursue W7c+ with denser hulls; the next step for this
+technique is a fitted cage, owned by the rig lane.
 
 ### W8 — Pinocchio auto-rig (auto-rig lane's winner, Baran & Popović, LGPL-2.1/MIT)
 
@@ -222,6 +247,7 @@ Score key: ✅ clean · ⚠️ minor artifacts, usable · ❌ fails acceptance �
 | W5r W3+DQ+CorrSmooth | ✅ | ⚠️ | ✅ | ❌ | ❌ | ✅ | ❌ | **WINNER** — best on the suite; smoothing doesn't rescue P4/P5/P7 |
 | W6r W3+twist bones | =W3 | =W3 | =W3 | =W3 | =W3 | =W3 | =W3 | no measurable gain on hinge suite (twist not exercised) |
 | W7 mesh-deform cage | ✅* | — | — | — | — | — | — | **FAIL** — 11-vert cage → paddle limbs |
+| W7b dense cage | — (cage tracks ✅) | — | — | — | — | — | — | **FAIL** — 731-vert cage: arms melted (9.7% arm verts), full-mesh eval OOMs 8GB VM; fitted cage needed |
 | W8 Pinocchio | ✅ | ❌ | ⚠️ | ⚠️ | ❌ | — | ⚠️ | **MIXED-FAIL** — great skeleton (18/18), weights web on big motions |
 
 **Winner: W5r (Surface Heat Diffuse + Preserve Volume/Dual-Quaternion + Corrective
