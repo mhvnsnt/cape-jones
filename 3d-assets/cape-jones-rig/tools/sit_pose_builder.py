@@ -292,10 +292,10 @@ bg = bpy.context.scene.world.node_tree.nodes['Background']
 bg.inputs['Color'].default_value = (0.35, 0.35, 0.38, 1.0)
 bg.inputs['Strength'].default_value = 0.9
 
-bpy.ops.object.camera_add(location=(1.05, 3.0, 0.72))
+bpy.ops.object.camera_add(location=(0.85, 3.1, 0.95))
 cam = bpy.context.active_object
 cam.name = "ProofCam"
-d = Vector((2.95, 2.05, 0.35)) - cam.location
+d = Vector((2.95, 2.05, 0.42)) - cam.location
 cam.rotation_euler = d.to_track_quat('-Z', 'Y').to_euler()
 bpy.context.scene.camera = cam
 sc = bpy.context.scene
