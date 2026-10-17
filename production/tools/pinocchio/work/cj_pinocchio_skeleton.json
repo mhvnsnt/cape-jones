@@ -1,0 +1,26 @@
+{
+  "mesh": "work/cj_vox.obj",
+  "skeleton": "human",
+  "nverts": 111010,
+  "units": "original mesh units (model NOT rescaled)",
+  "joints": [
+    {"name": "shoulders", "parent": -1, "pos": [0.00334199, 0.300247, 0.0166128]},
+    {"name": "back", "parent": 0, "pos": [0.0158726, 0.214942, 0.0277534]},
+    {"name": "hips", "parent": 1, "pos": [0.0379593, 0.164575, 0.0379963]},
+    {"name": "head", "parent": 0, "pos": [0.0358257, 0.424026, -0.00317425]},
+    {"name": "lthigh", "parent": 2, "pos": [0.0185738, 0.174419, 0.0387802]},
+    {"name": "lknee", "parent": 4, "pos": [0.0491282, -0.0491509, -0.0569153]},
+    {"name": "lankle", "parent": 5, "pos": [0.0128414, -0.367876, -0.0843616]},
+    {"name": "lfoot", "parent": 6, "pos": [0.00670689, -0.408668, -0.05433]},
+    {"name": "rthigh", "parent": 2, "pos": [0.0709913, 0.135592, 0.053599]},
+    {"name": "rknee", "parent": 8, "pos": [0.01788, -0.118401, 0.048553]},
+    {"name": "rankle", "parent": 9, "pos": [0.0174326, -0.430181, 0.0782125]},
+    {"name": "rfoot", "parent": 10, "pos": [0.107937, -0.452504, 0.127578]},
+    {"name": "lshoulder", "parent": 0, "pos": [-0.0265859, 0.269589, 0.0348728]},
+    {"name": "lelbow", "parent": 12, "pos": [0.0440412, 0.0939618, 0.0249582]},
+    {"name": "lhand", "parent": 13, "pos": [0.0245605, -0.0565787, 0.0473506]},
+    {"name": "rshoulder", "parent": 0, "pos": [0.032488, 0.308831, 0.0167969]},
+    {"name": "relbow", "parent": 15, "pos": [0.0152902, 0.250897, 0.256029]},
+    {"name": "rhand", "parent": 16, "pos": [0.0852756, 0.240277, 0.442885]}
+  ]
+}
