@@ -7,8 +7,9 @@ Colab serves as a backup/parallel GPU lane alongside Kaggle.
 
 Key differences from the Kaggle version:
 - /kaggle/working/ -> /content/ (Colab's working dir)
-- No Kaggle dataset cache -> model weights download from HuggingFace every run
-  (10.5GB). Optional: mount Google Drive to cache weights across sessions.
+- No Kaggle dataset cache -> model weights download from HuggingFace every run.
+  v3 uses Kijai's pruned FP16 (~2.5GB, 12GB VRAM) instead of full model.ckpt
+  (10.5GB, ~23GB VRAM — OOM on T4). Optional: mount Google Drive to cache.
 - Colab-idiomatic `!` shell commands instead of subprocess.run
 - File download: output via Colab's files.download() widget
 - GPU: Runtime -> Change runtime type -> T4 GPU (free tier)
@@ -54,7 +55,7 @@ notebook (`production/kaggle/tooncrafter/`), adapted for Colab.
 Pipeline:
 1. GPU check (must be Tesla T4)
 2. Clone ToonCrafter + pip install deps
-3. Download model.ckpt from HuggingFace (~10.5GB, be patient)
+3. Download FP16 model from HuggingFace (~2.5GB, 12GB VRAM — fits T4)
 4. Download input video from GitHub (SHA-256 verified)
 5. Extract 106 frames, resize to 320x512 portrait, build 105 keyframe pairs
 6. ToonCrafter inference on CUDA (105 pairs x 8 frames, take middle frame idx 4)
@@ -72,41 +73,49 @@ code('''# === Cell 2: Clone ToonCrafter + install deps ===
 # because 4.25.1 pins tokenizers<0.14 with no cp313 wheels.
 !git clone --depth 1 https://github.com/Doubiiu/ToonCrafter.git /content/ToonCrafter 2>/dev/null || echo "ToonCrafter already cloned."
 %cd /content/ToonCrafter
-!pip install -q einops==0.3.0 omegaconf==2.1.1 pytorch_lightning==1.9.3 transformers==4.48.3 open_clip_torch==2.22.0 xformers timm kornia av moviepy
+!pip install -q einops==0.3.0 omegaconf==2.1.1 pytorch_lightning==1.9.3 transformers==4.48.3 open_clip_torch==2.22.0 xformers timm kornia av moviepy imageio==2.9.0 opencv-python Pillow==9.5.0 PyYAML==6.0 tqdm==4.65.0 safetensors
 print("Deps installed.")
 '''),
 
-code('''# === Cell 3: ToonCrafter model weights from HuggingFace (~10.5GB) ===
+code('''# === Cell 3: ToonCrafter FP16 model weights (~2.5GB, 12GB VRAM) ===
+# v3 (2026-10-16): Kijai's pruned FP16 instead of full model.ckpt (10.5GB, ~23GB VRAM — OOM on T4).
+# See docs/research/TOONCRAFTER-FULL-STACK.md for root-cause analysis.
 # Colab has no dataset cache like Kaggle. Options:
-#   A) Download every run (~10 min on Colab's bandwidth) — simple, default below
-#   B) Mount Google Drive and cache: uncomment the Drive lines to persist weights
+#   A) Download + convert every run (~5 min) — simple, default below
+#   B) Mount Google Drive and cache the converted .ckpt: uncomment Drive lines
 import os
 
 # --- Optional Drive cache (uncomment to use) ---
 # from google.colab import drive
 # drive.mount('/content/drive')
-# DRIVE_CKPT = "/content/drive/MyDrive/cape-jones-weights/tooncrafter_model.ckpt"
+# DRIVE_CKPT = "/content/drive/MyDrive/cape-jones-weights/tooncrafter_fp16.ckpt"
 # ---
 
 ckpt_dir = "/content/ToonCrafter/checkpoints/tooncrafter_512_interp_v1"
 os.makedirs(ckpt_dir, exist_ok=True)
-ckpt_path = os.path.join(ckpt_dir, "model.ckpt")
-EXPECTED = 10502492136  # bytes, verified 2026-10-16
+ckpt_path = os.path.join(ckpt_dir, "model.ckpt")  # inference.py expects this name
 
 def _ok(p):
-    return os.path.exists(p) and os.path.getsize(p) == EXPECTED
+    # FP16 model is ~2.5GB; accept 2.0-3.0GB range
+    return os.path.exists(p) and 2_000_000_000 < os.path.getsize(p) < 3_000_000_000
 
 if _ok(ckpt_path):
-    print(f"model.ckpt already present ({os.path.getsize(ckpt_path)/1e9:.1f} GB)")
+    print(f"FP16 model.ckpt already present ({os.path.getsize(ckpt_path)/1e9:.1f} GB)")
 # elif _ok(DRIVE_CKPT):  # Drive cache hit
 #     import shutil
 #     print("Copying from Drive cache...")
 #     shutil.copy(DRIVE_CKPT, ckpt_path)
 else:
-    print("Downloading model.ckpt (10.5GB) from HuggingFace...")
-    !wget -q --show-progress https://huggingface.co/Doubiiu/ToonCrafter/resolve/main/model.ckpt -O {ckpt_path}
-    assert _ok(ckpt_path), "downloaded model.ckpt size mismatch"
-    print(f"Downloaded ({os.path.getsize(ckpt_path)/1e9:.1f} GB)")
+    print("Downloading Kijai FP16 safetensors (~2.5GB) from HuggingFace...")
+    !wget -q --show-progress https://huggingface.co/Kijai/DynamiCrafter_pruned/resolve/main/tooncrafter_512_interp-fp16.safetensors -O /content/tooncrafter_fp16.safetensors
+    print("Converting safetensors -> .ckpt...")
+    from safetensors.torch import load_file
+    import torch
+    sd = load_file("/content/tooncrafter_fp16.safetensors", device="cpu")
+    torch.save({"state_dict": sd}, ckpt_path)
+    os.remove("/content/tooncrafter_fp16.safetensors")  # save disk
+    assert _ok(ckpt_path), "converted model.ckpt size mismatch"
+    print(f"Converted ({os.path.getsize(ckpt_path)/1e9:.1f} GB). VRAM: ~12GB (fits T4)")
     # To cache on Drive for next time, uncomment:
     # import shutil; shutil.copy(ckpt_path, DRIVE_CKPT)
 '''),
