@@ -1,0 +1,16 @@
+# .aiderignore — keep aider's repo map off binaries and media
+# Scene .blend files are binary: aider works on code/docs, never blends.
+*.blend
+*.blend1
+*.fbx
+*.glb
+*.gltf
+*.mp4
+*.mov
+*.mkv
+*.png
+*.jpg
+*.jpeg
+*.wav
+*.mp3
+node_modules/
