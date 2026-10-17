@@ -129,11 +129,40 @@ bpy.context.view_layer.objects.active = cape
 cape.select_set(True)
 bpy.context.view_layer.update()
 print("BAKE START (frames 1-48)", flush=True)
-with bpy.context.temp_override(object=cape, active_object=cape,
-                               selected_objects=[cape],
-                               selected_editable_objects=[cape]):
-    bpy.ops.ptcache.bake(bake=True)
-print("BAKE DONE", flush=True)
+try:
+    with bpy.context.temp_override(object=cape, active_object=cape,
+                                   selected_objects=[cape],
+                                   selected_editable_objects=[cape]):
+        bpy.ops.ptcache.bake_all(bake=True)
+    print("BAKE DONE via bake_all", flush=True)
+except Exception as e:
+    print(f"bake_all failed ({e}); falling back to manual shape-key bake", flush=True)
+    # Manual bake: step frames in order, capture evaluated positions as shape keys
+    if not cape.data.shape_keys:
+        cape.shape_key_add(name='Basis')
+    dg = bpy.context.evaluated_depsgraph_get()
+    for f in range(sc.frame_start, sc.frame_end + 1):
+        sc.frame_set(f)
+        dg.update()
+        eval_ob = dg.objects.get(cape.name)
+        eval_me = eval_ob.to_mesh()
+        sk = cape.shape_key_add(name=f'frame_{f:03d}')
+        for i, v in enumerate(eval_me.vertices):
+            sk.data[i].co = v.co
+        eval_ob.to_mesh_clear()
+        # animate the shape key: 1.0 only on its frame
+        sk.value = 0.0
+        sk.keyframe_insert('value', frame=f - 1)
+        sk.value = 1.0
+        sk.keyframe_insert('value', frame=f)
+        sk.value = 0.0
+        sk.keyframe_insert('value', frame=f + 1)
+        if f % 12 == 0:
+            print(f"  captured frame {f}", flush=True)
+    # mute cloth (shape keys now carry the bake); keep modifier for re-bake
+    cape.modifiers['Cloth'].show_viewport = False
+    cape.modifiers['Cloth'].show_render = False
+    print("MANUAL SHAPE-KEY BAKE DONE", flush=True)
 
 bpy.ops.wm.save_as_mainfile(filepath=FINAL)
 print(f"SAVED {FINAL}", flush=True)
