@@ -243,17 +243,13 @@ def build_sit_arms_crossed():
     aim_bone('neck_2', (0, -0.06, 1)); upd()
     aim_bone('head', (0, -0.18, 1)); upd()
     legs_normal()
-    chest_p = phead('chest')
-    for side, sgn, lift in [('L', 1, 0.00), ('R', -1, 0.035)]:
-        shoulder = phead(f'upperarm_fk_{side}')
-        elbow_t = shoulder + Vector((sgn*0.08, -0.10, -0.08))
-        aim_bone(f'upperarm_fk_{side}', (elbow_t - shoulder).normalized()); upd()
-        elbow = ptail(f'upperarm_fk_{side}')
-        # forearm crosses chest to opposite side (X across, Y stays near chest); R over L
-        hand_t = chest_p + Vector((-sgn*0.14, -0.07, 0.03 + lift))
-        aim_bone(f'forearm_fk_{side}', (hand_t - elbow).normalized()); upd()
-        keep_orientation(f'hand_fk_{side}')
-    upd()
+    # fixed crossing directions: forearms cross in front of chest, R over L
+    aim_bone('upperarm_fk_L', (0.15, -0.20, -0.96)); upd()
+    aim_bone('forearm_fk_L', (-0.85, -0.15, 0.45)); upd()
+    keep_orientation('hand_fk_L'); upd()
+    aim_bone('upperarm_fk_R', (-0.15, -0.20, -0.96)); upd()
+    aim_bone('forearm_fk_R', (0.85, -0.15, 0.55)); upd()
+    keep_orientation('hand_fk_R'); upd()
     seat_and_ground(3.02, 0.42)
 
 POSES = [
