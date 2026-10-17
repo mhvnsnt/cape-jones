@@ -1,0 +1,168 @@
+---
+license: other
+license_name: minimax-h3-community-license-agreement
+license_link: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
+base_model:
+  - Viggle/Viggle-Animate
+  - MiniMaxAI/MiniMax-H3
+base_model_relation: quantized
+library_name: comfyui
+tags:
+  - comfyui
+  - minimax-h3
+  - video-generation
+  - quantized
+  - int8
+  - viggle
+  - video-to-video
+pipeline_tag: image-to-video
+---
+
+# viggle-animate-workflow
+
+**[Viggle-Animate](https://huggingface.co/Viggle/Viggle-Animate)** in one ComfyUI node, on a quantized checkpoint, with automatic attention routing.
+Give it a driving clip and one still, and the character in the still does the clip.
+
+Source and issues: [github.com/aireet/viggle-animate-workflow](https://github.com/aireet/viggle-animate-workflow) · weights and model card: [this repository](https://huggingface.co/aireet/viggle-animate-workflow).
+
+## See it first
+
+| input: the driving clip | input: the reference still | output: the render |
+|---|---|---|
+| <img src="examples/dog-singer/driving-preview.gif" width="290"> | <img src="examples/dog-singer/reference.png" width="290"> | <img src="examples/dog-singer/result-preview.gif" width="290"> |
+
+The full files are in [`examples/dog-singer/`](examples/dog-singer): the driving clip, the still and
+the result as an mp4. Settings: 6 steps, 124 frames, flow shift 3/3, seed 833969396491604.
+
+And this is the whole graph — weights, inputs, the node, decode and save:
+
+<img src="docs/comfyui.jpg" width="1100">
+
+## Credits
+
+Built following the documentation of the **Viggle Animate** team —
+[huggingface.co/Viggle/Viggle-Animate](https://huggingface.co/Viggle/Viggle-Animate) — and the
+checkpoints and ComfyUI workflows published as the reference at
+[drbaph/Viggle-Animate-ComfyUI](https://huggingface.co/drbaph/Viggle-Animate-ComfyUI/tree/main).
+
+Their docs and that reference are what we followed for the method: how to quantize and prune the
+model, the conditioning order (driving footage first, the still nested on the clip's short edge),
+the rule that a reference should be a repainted frame of the same shot, and the sampling settings.
+Thanks to the Viggle Animate team and to the author of that reference.
+
+For the ComfyUI side we used the community node pack **ComfyUI-Viggle-Animate-H3** by *Saganaki22*
+(published in the [ComfyUI Registry](https://registry.comfy.org/nodes/comfyui-viggle-animate-h3); its
+GitHub repository is no longer public), which is not an official Viggle release — thanks to its
+author too.
+
+The base model is [MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3) (MiniMax H3 Community
+License); this checkpoint is the quantized Viggle-Animate, which is itself a finetune of MiniMax-H3.
+It runs on [ComfyUI](https://github.com/comfyanonymous/ComfyUI) with
+[Video Helper Suite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite) and the `comfy_kitchen`
+Sol-Attn kernels.
+
+What is ours: the conversion code in `slimdit/`, the attention router, the one-node wrapper and the
+packaging in this repository.
+
+## What is in the repository
+
+| Item | What it is |
+|---|---|
+| `minimax_h3_ref2va_slimdit_int8_convrot.safetensors` | the quantized checkpoint, 19.6 GiB; loads with the normal `Load Diffusion Model` node |
+| `comfyui/ComfyUI-SlimDiT/` | the ComfyUI node pack: `viggle-animate-h3` and the attention router |
+| `comfyui/workflows/viggle-animate-workflow.json` | the workflow from the screenshot, example already wired in |
+| `slimdit/`, `tools/`, `tests/` | the conversion code, the tools we used to check it, and the tests |
+| `examples/dog-singer/` | the driving clip, the still and the render shown above |
+
+## Attention routing
+
+Attention is the slowest part of a render. Which kernel is fastest depends on how long the clip is,
+so the node picks one for every call instead of hard-coding a single choice:
+
+* while the clip is short and free memory is enough for the extra copies, it uses **`sol_attn`** —
+  at six steps that is **33.2 s instead of 38.3 s** at 124 frames, and **103.0 s instead of 116.4 s**
+  at 243 frames (RTX 5090, 32 GiB);
+* when the clip is longer, it uses the **normal dense attention** — it needs no extra memory, and on
+  a 372-frame clip dense finished in **26.1 GiB and looked clean**, while the in-place quantized
+  kernel used **31.8 GiB and showed ghosting** from around frame 124.
+
+Short clips get the fast path and long clips get the safe one, without any switches. Only
+MiniMax-H3's attention is touched, so other models in the same ComfyUI keep working normally.
+
+## The example in detail
+
+| | |
+|---|---|
+| driving clip | `mixkit-51741-video-51741-hd-ready.mp4`, 1280x720, 241 frames (~10 s) |
+| reference still | a dachshund in a white hoodie with cat-ear headphones, pose and light matched to the clip, 1672x941 |
+| settings | 6 steps, 124 frames, flow shift 3/3, seed 833969396491604 |
+| result | `examples/dog-singer/result.mp4` |
+
+The reference still is the trick. Match its pose, framing and lighting to the driving shot and the
+result stays on-model for the whole 5.2 seconds.
+
+## Required custom nodes
+
+The workflow loads and saves video, so ComfyUI needs one more pack besides the one in this
+repository. The Viggle-Animate nodes our node calls are vendored here, so that pack is optional:
+
+| Pack | Why | Install |
+|---|---|---|
+| **ComfyUI-SlimDiT** | the `viggle-animate-h3` node and the attention router | copy it from this repo (step 2 below) |
+| *ComfyUI-Viggle-Animate-H3 (optional)* | the Viggle-Animate conditioning and the frozen-text loader | **not needed:** this repo ships those two nodes, vendored unchanged with thanks (Saganaki22, Apache-2.0 - see `licenses/`). Install the original from the [Registry](https://registry.comfy.org/nodes/comfyui-viggle-animate-h3) only if you want its other nodes |
+| **[ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)** | `Load Video` and `Video Combine` in the workflow | ComfyUI-Manager, or `git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite ComfyUI/custom_nodes/` |
+
+`comfy_kitchen` (the Sol-Attn kernels) ships with current ComfyUI; if it is missing the router falls
+back to dense attention by itself.
+
+## Where the files go (ComfyUI conventions)
+
+| File | Folder | Note |
+|---|---|---|
+| `minimax_h3_ref2va_slimdit_int8_convrot.safetensors` | `ComfyUI/models/diffusion_models/` | core folder; loaded by `Load Diffusion Model` |
+| `viggle_animate_dmd_lora.safetensors` | `ComfyUI/models/loras/` | core folder; loaded by `Load LoRA` |
+| `minimax_h3_video_vae_fp16.safetensors` | `ComfyUI/models/vae/` | core folder; loaded by `Load VAE` |
+| `fixed_embed_fwd_anyframe.safetensors` | `ComfyUI/models/text_cond/` | **folder defined by the Viggle-Animate pack**, not a core one; loaded by its text-conditioning node |
+| the example's `driving-clip.mp4` and `reference.png` | `ComfyUI/input/` | core input folder; the workflow refers to those file names |
+
+If you keep models outside `ComfyUI/models`, list the folders in `extra_model_paths.yaml` (see
+ComfyUI's own docs) or the loaders will show empty dropdowns.
+
+## Install and run the example
+
+```sh
+# 1. the checkpoint (19.6 GiB: needs git-lfs for the clone, or use `hf download` instead)
+git lfs install
+git clone https://huggingface.co/aireet/viggle-animate-workflow
+
+# 2. the node pack, and the `slimdit` package that it imports
+cp -r viggle-animate-workflow/comfyui/ComfyUI-SlimDiT ComfyUI/custom_nodes/
+cp -r viggle-animate-workflow/slimdit ComfyUI/custom_nodes/ComfyUI-SlimDiT/slimdit
+cp viggle-animate-workflow/minimax_h3_ref2va_slimdit_int8_convrot.safetensors ComfyUI/models/diffusion_models/
+
+# 3. the example inputs, into ComfyUI input folder (the workflow refers to these file names)
+cp viggle-animate-workflow/examples/dog-singer/driving-clip.mp4 \
+   viggle-animate-workflow/examples/dog-singer/reference.png ComfyUI/input/
+
+# 4. three dependencies we do not ship, from the upstream projects
+mkdir -p ComfyUI/models/loras ComfyUI/models/text_cond ComfyUI/models/vae
+curl -L -o ComfyUI/models/loras/viggle_animate_dmd_lora.safetensors \
+  https://huggingface.co/drbaph/Viggle-Animate-ComfyUI/resolve/main/loras/viggle_animate_dmd_lora.safetensors
+curl -L -o ComfyUI/models/text_cond/fixed_embed_fwd_anyframe.safetensors \
+  https://huggingface.co/drbaph/Viggle-Animate-ComfyUI/resolve/main/text_cond/fixed_embed_fwd_anyframe.safetensors
+curl -L -o ComfyUI/models/vae/minimax_h3_video_vae_fp16.safetensors \
+  https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_fp16.safetensors
+```
+
+Then load `comfyui/workflows/viggle-animate-workflow.json` in ComfyUI and press Run. The workflow
+ships with the example seed, so the first run reproduces `examples/dog-singer/result.mp4` (6 steps,
+124 frames); after that the seed randomises.
+
+Two things that tripped us up: the node pack needs the `slimdit` folder copied *inside*
+`custom_nodes/ComfyUI-SlimDiT/`, and if you use `extra_model_paths.yaml` you have to list the model
+folders there or ComfyUI will not see the checkpoint.
+
+## Licence
+
+* **Weights**: MiniMax H3 Community License, inherited from the base model, following Viggle-Animate.
+* **Code**: Apache-2.0.
