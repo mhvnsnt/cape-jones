@@ -164,12 +164,20 @@ sun = bpy.data.lights.new("Sun", "SUN"); sun.energy = 1.5
 so = bpy.data.objects.new("Sun", sun); scene.collection.objects.link(so)
 so.rotation_euler = (math.radians(50), 0, math.radians(30))
 
-# camera: frame the 0.925m character (Z-up; faces -Y)
-bpy.ops.object.camera_add(location=(0, -2.4, 0.05), rotation=(math.radians(90), 0, 0))
-cam = bpy.context.active_object
+# camera: frame the 0.925m character (Z-up; faces -Y). Aim with track-quat
+# (guaranteed) and keep world +Z as up so the character is upright in frame.
+from mathutils import Vector
+def aim_cam(loc, target=(0, 0, 0.05)):
+    bpy.ops.object.camera_add(location=loc)
+    c = bpy.context.active_object
+    d = Vector(target) - Vector(loc)
+    c.rotation_euler = d.to_track_quat("-Z", "Z").to_euler()
+    return c
+cam = aim_cam((0, -1.7, 0.25))
 scene.camera = cam
-for area in bpy.context.screen.areas if bpy.context.screen else []:
-    pass
+# show the armature through the mesh so the proof image displays bone placement
+arm.display_type = "WIRE"
+arm.show_in_front = True
 
 def render(path):
     scene.render.filepath = path
@@ -179,8 +187,8 @@ def render(path):
 render(os.path.join(outdir, "pinocchio_pose_front.png"))
 
 # side view
-cam.location = (2.4, 0, 0.05)
-cam.rotation_euler = (math.radians(90), 0, math.radians(90))
+cam.location = (1.7, 0, 0.25)
+cam.rotation_euler = (Vector((0, 0, 0.05)) - Vector(cam.location)).to_track_quat("-Z", "Z").to_euler()
 render(os.path.join(outdir, "pinocchio_pose_side.png"))
 
 # rest pose for comparison
@@ -188,6 +196,7 @@ bpy.context.view_layer.objects.active = arm
 bpy.ops.object.mode_set(mode="POSE")
 for b in pb: b.rotation_euler = (0, 0, 0)
 bpy.ops.object.mode_set(mode="OBJECT")
-cam.location = (0, -2.4, 0.05); cam.rotation_euler = (math.radians(90), 0, 0)
+cam.location = (0, -1.7, 0.25)
+cam.rotation_euler = (Vector((0, 0, 0.05)) - Vector(cam.location)).to_track_quat("-Z", "Z").to_euler()
 render(os.path.join(outdir, "pinocchio_rest_front.png"))
 print("[proof] ALL DONE")

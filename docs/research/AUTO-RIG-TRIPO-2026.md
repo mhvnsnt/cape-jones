@@ -54,7 +54,37 @@ Pinocchio LGPL library) on a voxel-remeshed single-shell CJ mesh:
   `proof/pinocchio_rest_front.png` — rendered with the repo lighting canon,
   read with own eyes (see "Reading the proof" below).
 
-**What the proof images show:** [to be filled after reading the renders]
+**What the proof shows** (read with own eyes 2026-10-17):
+- `proof/skeleton_placement.png` — all 18 bones land exactly on the mesh:
+  head/spine/hips chain, symmetric arms (shoulder→elbow→hand tracking the
+  T-pose), symmetric legs. Clean.
+- `proof/lbs_pose_big.png` — numerical LBS pose test (lelbow 90°,
+  rknee 60°, lshoulder 30°): forearm bends up smoothly at the elbow, shin
+  flexes at the knee, arm raises at the shoulder. No explosions, no NaN,
+  max vertex displacement 0.33 m for these angles. The skinning is clean
+  and articulable.
+- `proof/pinocchio_rest_front.png` / `pinocchio_pose_front.png` /
+  `pinocchio_pose_side.png` — Blender Cycles renders of the same rig
+  (repo lighting canon). The mesh + armature render correctly.
+
+**Orientation sensitivity (important):** the first Pinocchio run was on a
+mesh yawed 90° (an artifact of the OBJ round-trip). Pinocchio placed 17/18
+joints correctly but **missed the left arm** — the lshoulder→lelbow→lhand
+chain collapsed down the torso, and the −Z arm verts got diffuse mush
+weights (top joint only 0.187). Re-running on the mesh yawed to face +Z
+(`work/cj_vox_std.obj` → `work/cj_std_*`) gives a perfect 18/18 with
+dominant weights (lelbow 0.919, relbow 0.826 on the arms). **Lesson: yaw
+the character to face +Z before running Pinocchio.** This is documented in
+`production/tools/pinocchio/README.md`.
+
+**Blender gotchas hit during proof** (documented for the team):
+- Blender 4.0.2's `wm.obj_import` does **no** Y-up→Z-up conversion (unlike
+  the glTF importer). The mesh arrives Y-up; the proof bakes +90° X into
+  the mesh data.
+- `Mesh.transform()` leaves custom split normals stale → clear them
+  (`customdata_custom_splitnormals_clear`) or shading breaks.
+- The 2m default Cube **swallows** the 0.9m character — delete default
+  objects first (this caused every "blank" render in the lane).
 
 ### Tripo multi-shell finding (important for every tool)
 

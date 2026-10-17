@@ -33,9 +33,18 @@ cd ../pinocchio && g++ -O3 -w -I../pinocchio-src/Pinocchio rig.cpp \
 ```bash
 # mesh -> rigged skeleton + weights (model is NEVER rescaled;
 # joints are mapped back into the original mesh units)
-./rig work/cj_dec.obj work/cj_pinocchio --skel human
+./rig work/cj_vox.obj work/cj_pinocchio --skel human
 # outputs: work/cj_pinocchio_skeleton.json, work/cj_pinocchio_weights.bin
 ```
+
+**⚠️ ORIENTATION LAW (learned 2026-10-17): yaw the character to face +Z
+before running.** Pinocchio is orientation-sensitive: on a mesh yawed 90°
+(an OBJ round-trip artifact) it placed 17/18 joints but MISSED the left
+arm (the lshoulder→lelbow→lhand chain collapsed down the torso; the arm
+verts got diffuse mush weights). Yawing to face +Z
+(`work/cj_vox.obj` → `work/cj_vox_std.obj`) gives a perfect 18/18 with
+dominant arm weights (0.92/0.83). Always verify with
+`proof/skeleton_placement.png` before trusting a rig.
 
 `weights.bin` format: `int32 nverts, int32 njoints`, then
 `float32[nverts*njoints]` row-major (weight row *i* = input-mesh vertex *i*).
