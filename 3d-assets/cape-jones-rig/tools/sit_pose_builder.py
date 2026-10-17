@@ -320,7 +320,12 @@ bpy.context.view_layer.objects.active = rig
 rig.select_set(True)
 bpy.ops.object.mode_set(mode='POSE')
 
-for key, label, builder in POSES:
+import os as _os
+_pose_idx = int(_os.environ.get("POSE_IDX", "-1"))
+_todo = [POSES[_pose_idx]] if 0 <= _pose_idx < len(POSES) else POSES
+STAGE_DIR = "/home/hatch/workspace/cj-sitting-poses/3d-assets/cape-jones-rig/pose_stage"
+_os.makedirs(STAGE_DIR, exist_ok=True)
+for key, label, builder in _todo:
     print(f"===== POSE {key}: {label} =====", flush=True)
     reset_pose()
     builder()
@@ -338,12 +343,8 @@ for key, label, builder in POSES:
     sc.render.filepath = os.path.join(OUT_PNG_DIR, f"{key}.png")
     bpy.ops.render.render(write_still=True)
     print(f"RENDERED {key}", flush=True)
-    bpy.ops.wm.save_as_mainfile(filepath=OUT_BLEND)
-    print(f"CHECKPOINT-SAVED {key}", flush=True)
+    bpy.ops.wm.save_as_mainfile(filepath=os.path.join(STAGE_DIR, f"pose_{key}.blend"))
+    print(f"STAGE-SAVED {key}", flush=True)
 
 rig.animation_data.action = None
-bpy.context.view_layer.objects.active = body
-body.modifiers.remove(body.modifiers.get('ProofDecimate'))
-bpy.context.view_layer.objects.active = rig
-bpy.ops.wm.save_as_mainfile(filepath=OUT_BLEND)
-print(f"SAVED {OUT_BLEND}", flush=True)
+print("POSE DONE", flush=True)
