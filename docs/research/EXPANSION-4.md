@@ -1,14 +1,16 @@
 # EXPANSION-4: Continuous Research — 2026 Bleeding Edge + Established Tools
 
-Date: 2026-10-16
+Date: 2026-10-16 (path update 2026-10-17)
 Research completed via two parallel lanes. Full raw findings in `/tmp/track1-findings.md` and `/tmp/track2-findings.md`.
+
+**Path note (2026-10-17):** Tools that landed in the repo are now under `production/tools/`. Old `~/workspace/tools/` paths below are historical.
 
 ---
 
 ## TRACK 1: 2026 Bleeding Edge — PULLED
 
 ### 1. LayerInbetween (SIGGRAPH 2026) ⭐ TOP FIND
-- **Path:** `~/workspace/tools/layerinbetween/`
+- **Path:** `~/workspace/tools/layerinbetween/` (external; not yet in-repo)
 - **URL:** https://github.com/MarkMoHR/LayerInbetween
 - **What:** Automatic inbetweening from clean line drawings / rough sketches / multi-character line art. Vector-based stroke correspondence with OCCLUSION handling and automatic layering. Editable vector output. Multi-frame recursive prediction.
 - **Why:** Direct upgrade over pixel interpolators (ToonCrafter/RIFE) for hand-drawn frames. Stroke-native = no pixel artifacts, editable output. Occlusion + multi-character support is what breaks pixel methods.
@@ -17,7 +19,7 @@ Research completed via two parallel lanes. Full raw findings in `/tmp/track1-fin
 - **Status:** Pulled (9MB, code only). Weights download on Kaggle.
 
 ### 2. LTX-2.5 (Lightricks, Aug 2026) ⭐
-- **Path:** `~/workspace/tools/ltx-2/`
+- **Path:** `~/workspace/tools/ltx-2/` (external)
 - **URL:** https://github.com/Lightricks/LTX-2 / https://huggingface.co/Lightricks/LTX-2.5
 - **What:** 22B open-weights video DiT. Synchronized VIDEO+AUDIO in one pass. NATIVE MULTISHOT (multiple connected shots, same character/voice/lighting, single inference). Diffusion video decoder (sharper faces/text). Distilled 8-step Fast checkpoint. Day-one ComfyUI support.
 - **Why:** Direct upgrade from our LTX-Video. Multishot = whole scenes with cuts in one generation. Synced audio kills the separate SFX sync step for previz.
@@ -26,7 +28,7 @@ Research completed via two parallel lanes. Full raw findings in `/tmp/track1-fin
 - **Status:** Pulled code (6.4MB). Weights download on Kaggle (gated HF repo).
 
 ### 3. OmniColor (Mar 2026)
-- **Path:** `~/workspace/tools/omnicolor/`
+- **Path:** `~/workspace/tools/omnicolor/` (external)
 - **URL:** https://github.com/zhangxulu1996/OmniColor
 - **What:** Multi-modal (reference image + text + hints) line-art colorization.
 - **Why:** Colorize line-art keys from a single reference — cuts coloring labor dramatically.
@@ -34,7 +36,7 @@ Research completed via two parallel lanes. Full raw findings in `/tmp/track1-fin
 - **Status:** Pulled (6.2MB, code only).
 
 ### 4. EverAnimate (May 2026)
-- **Path:** `~/workspace/tools/everanimate/`
+- **Path:** `~/workspace/tools/everanimate/` (external)
 - **URL:** https://github.com/vita-epfl/EverAnimate / https://huggingface.co/epfl-vita/everanimate
 - **What:** Rank-32 LoRA on Wan2.2-Animate-14B → minute-scale animation with persistent latent propagation. Fully open: code, training/inference, LoRA checkpoints, demo data.
 - **Why:** PLUGS DIRECTLY INTO OUR WAN 2.2 STACK. Extends Wan2.2-Animate to minute-long coherent takes.
@@ -43,7 +45,7 @@ Research completed via two parallel lanes. Full raw findings in `/tmp/track1-fin
 - **Status:** Pulled (8.2MB, code only). LoRA downloads on Kaggle.
 
 ### 5. OPEN-TOON (Sept 2026, GPL-3.0)
-- **Path:** `~/workspace/tools/open-toon/`
+- **Path:** `~/workspace/tools/open-toon/` (external)
 - **URL:** https://github.com/mijim/OPEN-TOON
 - **What:** NEW open-source professional 2D animation desktop app. Drawing, rigging, compositing, production tools. Vector drawing + MyPaint brushes, timeline/X-sheet, onion skin, visual pose animation, editable motion curves, PNG sequence export.
 - **Why:** Potential open replacement/augmentation for Krita/OpenToonz in the hand-drawn lane.
@@ -52,7 +54,7 @@ Research completed via two parallel lanes. Full raw findings in `/tmp/track1-fin
 - **Status:** Pulled (16MB source). Experimental builds available.
 
 ### 6. ComfyUI_VideoFX_Suite (Sept 2026, MIT)
-- **Path:** `~/workspace/tools/comfyui-videofx-suite/`
+- **Path:** `~/workspace/tools/comfyui-videofx-suite/` (external; copy into ComfyUI custom_nodes)
 - **URL:** https://github.com/CoderMayne/ComfyUI_VideoFX_Suite
 - **What:** GPU-accelerated VFX, color grading, post-processing for video batches in ComfyUI. Cinematic/lens looks, retro/VHS-CRT, glitch, temporal/motion trails, stylized/thermal vision, atmosphere/film damage.
 - **Why:** Post/finishing pass inside existing ComfyUI pipeline.
@@ -70,16 +72,16 @@ Research completed via two parallel lanes. Full raw findings in `/tmp/track1-fin
 - **Wav2Lip:** Relicensed to non-commercial/research-only. Do NOT use.
 
 ### Failed to pull (network issues — retry on stable connection) — RESOLVED 2026-10-16
-- InstanceAnimator (multi-instance sketch colorization) — https://github.com/YinHan-Zhang/InstanceAnimator — ✅ PULLED into `production/tools/InstanceAnimator/` (Apache-2.0, 4.1MB). NOTE: model weights are lost per author ("you need to retrain model"); code-only pull, train on Kaggle-side. Code was found staged in ~/workspace/tools/InstanceAnimator-main and moved into the repo.
-- SCAIL-2 (skeleton-free animation) — ✅ recovered via PR #33 into `production/tools/SCAIL-2/`.
-- LDF-VFI (CVPR 2026 generative interpolation) — ✅ recovered via PR #33 into `production/tools/LDF-VFI/`.
+- InstanceAnimator (multi-instance sketch colorization) — https://github.com/YinHan-Zhang/InstanceAnimator — ✅ PULLED into **`production/tools/InstanceAnimator/`** (Apache-2.0, 4.1MB). NOTE: model weights are lost per author ("you need to retrain model"); code-only pull, train on Kaggle-side. Wrapper: `production/pipeline/instance_animator_wrapper.py`.
+- SCAIL-2 (skeleton-free animation) — ✅ recovered via PR #33 into **`production/tools/SCAIL-2/`**.
+- LDF-VFI (CVPR 2026 generative interpolation) — ✅ recovered via PR #33 into **`production/tools/LDF-VFI/`**. Wrapper: `production/pipeline/ldf_vfi_wrapper.py` (mirrors `quick_start/generate.sh`).
 
 ---
 
 ## TRACK 2: Established Tools — PULLED
 
 ### 7. GDQuest Krita Batch Exporter
-- **Path:** `~/workspace/tools/krita-batch-exporter/`
+- **Path:** `~/workspace/tools/krita-batch-exporter/` (external)
 - **URL:** https://github.com/GDQuest/krita-batch-exporter
 - **What:** Batch-exports Krita layers/groups to files with naming rules, trim options, per-layer sizing.
 - **Why:** Turns Krita into a proper asset factory for cutout rigs, sprite sheets, title cards.
@@ -87,7 +89,7 @@ Research completed via two parallel lanes. Full raw findings in `/tmp/track1-fin
 - **Status:** Pulled (680KB). Install as Krita plugin.
 
 ### 8. FFmpeg Animation Filters Cheat Sheet (BUILT)
-- **Path:** `~/workspace/tools/post-pipeline/ffmpeg-animation-filters.sh`
+- **Path:** `production/pipeline/ffmpeg-animation-filters.sh` (in-repo)
 - **What:** 20 animation-specific FFmpeg filter recipes: smooth60 interpolation, celshade posterize, deband, denoise (fast/best), sharpen, deflicker, deshake, grade-pop, grade-warm, vignette, film grain, motion trails, zoompan (Ken Burns), high-quality GIF export, retro dithering, timecode burn-in, frei0r cartoon/edgeglow.
 - **Why:** All filters already built into local FFmpeg. Zero downloads. Wired into pipeline.
 - **Status:** Built, tested, executable. Pushed to cape-jones repo.
@@ -120,12 +122,15 @@ Research completed via two parallel lanes. Full raw findings in `/tmp/track1-fin
 
 New script wired into `production/pipeline/`:
 - `ffmpeg-animation-filters.sh` — 20 animation filter recipes, all local, zero GPU
+- `instance_animator_wrapper.py` — calls `production/tools/InstanceAnimator/`
+- `ldf_vfi_wrapper.py` — calls `production/tools/LDF-VFI/generate.py`
 
 Kaggle setup needed for GPU tools:
 - LayerInbetween: PyTorch + diffvg + SAM2 env, download weights from repo
 - LTX-2.5: download distilled checkpoint from HF (gated), ~12GB VRAM
 - OmniColor: download weights from repo, DiT-class GPU
 - EverAnimate: download LoRA from HF (epfl-vita/everanimate), plugs into Wan2.2-Animate-14B
+- LDF-VFI: download from https://huggingface.co/onecat-ai/LDF-VFI (~20GB VRAM)
 
 ## Disk Impact
 
