@@ -170,10 +170,8 @@ def build_sit_leg_folded():
     aim_bone('forearm_fk_L', (0.05, -0.18, -0.98)); upd()
     keep_orientation('hand_fk_L'); upd()
     L = seat_and_ground(3.02, 0.42)
-    # solve right shin: ankle flat on seat at world (2.82, 2.00, SEAT_TOP+ANKLE_H)
-    ankle_w = Vector((2.82, 2.00, SEAT_TOP + ANKLE_H))
-    M_root = rig.pose.bones['root'].matrix.copy()
-    ankle_a = (M_root.inverted() @ ankle_w)
+    # solve right shin: ankle flat on seat. rig object at identity so world == armature-object space.
+    ankle_a = Vector((2.82, 2.00, SEAT_TOP + ANKLE_H))
     knee_a = ptail('thigh_fk_R')
     v = ankle_a - knee_a
     assert v.length <= 0.217 + 1e-6, f"folded shin unreachable: {v.length}"
