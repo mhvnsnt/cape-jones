@@ -8,7 +8,7 @@ RIG_BLEND = "/home/hatch/workspace/cj-sitting-poses/3d-assets/cape-jones-rig/cap
 STAGE_DIR = "/home/hatch/workspace/cj-sitting-poses/3d-assets/cape-jones-rig/pose_stage"
 OUT_BLEND = "/home/hatch/workspace/cj-sitting-poses/3d-assets/cape-jones-rig/sitting_pose_library.blend"
 
-KEYS = ["sit_normal", "sit_leg_folded", "sit_lean_forward", "sit_recline", "sit_arms_crossed"]
+KEYS = ["sit_normal", "sit_leg_folded", "sit_lean_forward", "sit_recline", "sit_shrug"]
 
 bpy.ops.wm.open_mainfile(filepath=RIG_BLEND)
 rig = bpy.data.objects['CapeJones_Rig']
