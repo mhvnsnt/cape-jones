@@ -108,3 +108,17 @@ environment is healthy.
 
 Test-poses directory contains the T-pose render that was successfully produced
 earlier.
+
+## W5r Weight Cleanup (2026-10-17)
+**File:** `cape_jones_rigged_w5r_clean.blend` (derived from `cape_jones_rigged_w5r.blend`)
+
+**Problem:** W5r (surface-heat-diffuse) fixed feet/legs and eliminated the slab artifact, but shoulders spiked when posed (P2 pinch mean 7.6/8.4, visible spike explosion at deltoids). Rest pose was perfect — posed-only issue. Diagnosis: too many influences per vert + solver noise on tiny weights, amplified by dual-quaternion skinning.
+
+**Cleanup steps:**
+1. Limited to 4 influences/vert, pruned weights < 0.01 (kills DQ spikes)
+2. Laplacian smooth (2 iters) on deltoid weights (upperarm_L/R, clavicle_L/R in shoulder region)
+3. Renormalized all deform groups
+
+**Headless posing note:** The deform bones' COPY_TRANSFORMS constraints are DRIVEN (24 drivers on FK/IK influence). Setting `constraint.influence=0` is overridden by drivers. Use `constraint.mute=True` to pose deform bones directly. World-space rotations convert to bone-local via `rest.inverted() @ R @ rest`.
+
+**7-pose verification:** BEFORE (procedural) vs AFTER (W5r) vs CLEAN metrics + rasterized images in `.scratch/`. Feet: 0.90/1.33 → 1.00-1.04 (fixed). Slab: eliminated. Shoulders: spikes reduced by influence limiting (verification pending).
