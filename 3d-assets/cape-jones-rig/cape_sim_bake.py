@@ -127,8 +127,12 @@ print("cloth configured", flush=True)
 bpy.ops.object.select_all(action='DESELECT')
 bpy.context.view_layer.objects.active = cape
 cape.select_set(True)
+bpy.context.view_layer.update()
 print("BAKE START (frames 1-48)", flush=True)
-bpy.ops.ptcache.bake(bake=True)
+with bpy.context.temp_override(object=cape, active_object=cape,
+                               selected_objects=[cape],
+                               selected_editable_objects=[cape]):
+    bpy.ops.ptcache.bake(bake=True)
 print("BAKE DONE", flush=True)
 
 bpy.ops.wm.save_as_mainfile(filepath=FINAL)
