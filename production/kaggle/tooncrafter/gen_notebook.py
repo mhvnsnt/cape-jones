@@ -16,6 +16,10 @@ interp mode -> take middle frame (idx 4) from each -> interleave with originals:
 TUNED FOR SPEED (v2): ddim_steps=12 (was 25), video_length=8 (was 16).
 Estimated ~4x faster than v1 with minimal quality loss — see TUNING.md.
 
+MODEL (v3): Kijai's pruned FP16 (~2.5GB, 12GB VRAM). The full model.ckpt
+(10.5GB) requires ~23GB VRAM — OOM on T4 (16GB). FP16 fits comfortably.
+See docs/research/TOONCRAFTER-FULL-STACK.md for root-cause analysis.
+
 Portrait handling: input is 1080x1920. ToonCrafter's 512 model was trained at
 512x320 (landscape) but the UNet is fully convolutional — we run at
 --height 512 --width 320 (portrait).
@@ -122,33 +126,46 @@ subprocess.run([sys.executable, "-m", "pip", "install", "-q",
                 "einops==0.3.0", "omegaconf==2.1.1",
                 "pytorch_lightning==1.9.3", "transformers==4.48.3",
                 "open_clip_torch==2.22.0", "xformers", "timm",
-                "kornia", "av", "moviepy"],
+                "kornia", "av", "moviepy",
+                # v3 (2026-10-16): added missing deps from official requirements.txt
+                "imageio==2.9.0", "opencv-python", "Pillow==9.5.0",
+                "PyYAML==6.0", "tqdm==4.65.0", "safetensors"],
                check=True)
 print("Deps installed.")
 '''),
 
-code('''# === ToonCrafter model weights: dataset cache first, HF fallback ===
+code('''# === ToonCrafter model weights: FP16 pruned (12GB VRAM, fits T4) ===
+# v3 (2026-10-16): Switched from full model.ckpt (10.5GB, ~23GB VRAM — OOM on T4)
+# to Kijai's pruned FP16 (~2.5GB, 12GB VRAM). See docs/research/TOONCRAFTER-FULL-STACK.md.
+# Source: https://huggingface.co/Kijai/DynamiCrafter_pruned/blob/main/tooncrafter_512_interp-fp16.safetensors
+# Converted via production/kaggle/tooncrafter/convert_safetensors_to_ckpt.py
 import subprocess, os, shutil
 ckpt_dir = "/kaggle/working/ToonCrafter/checkpoints/tooncrafter_512_interp_v1"
 os.makedirs(ckpt_dir, exist_ok=True)
-ckpt_path = os.path.join(ckpt_dir, "model.ckpt")
-EXPECTED = 10502492136  # bytes, verified 2026-10-16
-CACHED = "/kaggle/input/tooncrafter-weights/model.ckpt"
+ckpt_path = os.path.join(ckpt_dir, "model.ckpt")  # inference.py expects this name
+CACHED = "/kaggle/input/tooncrafter-weights-fp16/model.ckpt"
 def _ok(p):
-    return os.path.exists(p) and os.path.getsize(p) == EXPECTED
+    # FP16 model is ~2.5GB; accept 2.0-3.0GB range
+    return os.path.exists(p) and 2_000_000_000 < os.path.getsize(p) < 3_000_000_000
 if _ok(ckpt_path):
-    print(f"model.ckpt already present ({os.path.getsize(ckpt_path)/1e9:.1f} GB)")
-elif os.path.exists(CACHED) and os.path.getsize(CACHED) == EXPECTED:
-    print(f"Copying model.ckpt from dataset cache ({os.path.getsize(CACHED)/1e9:.1f} GB)...")
+    print(f"FP16 model.ckpt already present ({os.path.getsize(ckpt_path)/1e9:.1f} GB)")
+elif os.path.exists(CACHED) and _ok(CACHED):
+    print(f"Copying FP16 model.ckpt from dataset cache ({os.path.getsize(CACHED)/1e9:.1f} GB)...")
     shutil.copy(CACHED, ckpt_path)
-    print("Cached weights linked.")
+    print("Cached FP16 weights linked. VRAM required: ~12GB (fits T4)")
 else:
-    print("Dataset cache miss — downloading model.ckpt (10.5GB) from HuggingFace...")
+    print("Dataset cache miss — downloading FP16 safetensors (~2.5GB) from HuggingFace...")
     subprocess.run(["wget", "-q", "--show-progress",
-                    "https://huggingface.co/Doubiiu/ToonCrafter/resolve/main/model.ckpt",
-                    "-O", ckpt_path], check=True)
-    assert _ok(ckpt_path), "downloaded model.ckpt size mismatch"
-    print(f"Downloaded ({os.path.getsize(ckpt_path)/1e9:.1f} GB)")
+                    "https://huggingface.co/Kijai/DynamiCrafter_pruned/resolve/main/tooncrafter_512_interp-fp16.safetensors",
+                    "-O", "/kaggle/working/tooncrafter_fp16.safetensors"], check=True)
+    print("Converting safetensors -> .ckpt...")
+    from safetensors.torch import load_file
+    import torch
+    sd = load_file("/kaggle/working/tooncrafter_fp16.safetensors", device="cpu")
+    torch.save({"state_dict": sd}, ckpt_path)
+    os.remove("/kaggle/working/tooncrafter_fp16.safetensors")
+    assert _ok(ckpt_path), "converted model.ckpt size mismatch"
+    print(f"Converted ({os.path.getsize(ckpt_path)/1e9:.1f} GB). VRAM: ~12GB (fits T4)")
 '''),
 
 code(f'''# === Download input video from GitHub (SHA-256 verified) ===
