@@ -153,3 +153,21 @@ Mesh count: 22 meshes + 2 lights + `MainCam` + `Camera.001` (scene cameras) + `C
   trees), wall decor (FRY EM UP poster, squid, ghost picture). Re-seated table lamp + LED remote on
   coffee table. Zero color changes — 3 new materials reuse locked hexes only. Render:
   `scene-relayout-v2.png` (960×540, 64 samples, verified by eye).
+
+## DEFAULT LIGHTING & SETUP (owner-locked 2026-10-16 — this is the default look)
+
+Extracted headless from `living_room.blend` on main. This lighting is CANON — do not change
+it without owner approval.
+
+| Light | Type | Color | Energy | Location |
+|---|---|---|---|---|
+| RoomLight | Point | violet (0.45, 0.10, 0.90) ≈ #731AE5 | 300 | (0.0, 0.0, 2.4) |
+| Sun | Sun | white (1.0, 1.0, 1.0) | 1.5 | (2.0, -4.0, 5.0) |
+| HallLight | Point | warm (1.0, 0.914, 0.588) | 60 | (-2.6, 4.4, 2.2) — hallway stub |
+
+- LED strips (LED_Back / LED_Left / LED_Right): violet #731AE5 emission, strength 4.0 —
+  the signature purple wash soaking the room. Ceiling carries the strip treatment too.
+- World: dark background (0.051, 0.051, 0.051).
+- Render: Cycles, 960×540 @ 50%, 24 samples, film transparent OFF, frames 1–360.
+- The violet RoomLight + LED wash is what makes the pink furniture read the way it does —
+  changing light color or energy changes the whole colorway. Hands off.
