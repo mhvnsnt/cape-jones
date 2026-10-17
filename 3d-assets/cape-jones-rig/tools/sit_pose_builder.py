@@ -163,7 +163,7 @@ def build_sit_leg_folded():
     aim_bone('shin_fk_L', (0, 0, -1)); upd()
     keep_orientation('foot_fk_L'); upd()
     # right thigh out-down-forward (opens the figure-4)
-    aim_bone('thigh_fk_R', (-0.60, -0.35, -0.72)); upd()
+    aim_bone('thigh_fk_R', (-0.52, -0.38, -0.76)); upd()
     aim_bone('shin_fk_R', (-0.3, -0.3, -0.9)); upd()
     keep_orientation('foot_fk_R'); upd()
     # left arm hangs
