@@ -53,6 +53,13 @@ the same files burn quota and collide.
 - The stored `custom.legacy-gemini` connector credential is for one-turn image
   edits and is NOT an aider key — do not try to extract it.
 
+## 8. Session junk
+
+Aider drops `.aider.chat.history.md` and `.aider.tags.cache.v4/` in the repo root.
+Both are already in `.gitignore` (targeted entries — never the broad `.aider*`
+pattern, which would hide our tracked `.aider.conf.yml`/`.aiderignore`).
+Pass `--no-gitignore` in lane runs to stop aider from rewriting `.gitignore` itself.
+
 ## 7. Reporting
 
 Tag evidence per AGENTS.md: `verified` (2+ independent sources, checked yourself),

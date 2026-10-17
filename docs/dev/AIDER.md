@@ -85,3 +85,24 @@ Per-file overrides on the command line always win over the config file.
   (the applier scripts are the interface to scenes).
 - `watch-files: true` — aider notices edits you make outside it mid-session.
 - Never paste an API key into chat, logs, or repo files.
+
+## VM quirks (this machine)
+
+- **httpx/no_proxy crash:** aider's HTTP stack (httpx via litellm) crashes on this
+  VM's `no_proxy`/`NO_PROXY` values, which contain IPv6 literals (`::1`, `[::1]`):
+  `httpx.InvalidURL: Invalid port: ':1]'`. Strip them before running aider:
+  ```bash
+  for v in no_proxy NO_PROXY; do
+    export "$v=$(echo "${!v}" | tr ',' '\n' | grep -v '::' | paste -sd, -)"
+  done
+  ```
+- **Big-repo first scan:** the initial repo-map scan over ~12k files is very slow
+  here (10+ minutes). For targeted work, run aider from the subdirectory with
+  `--subtree-only` — the scan finishes in under a minute:
+  ```bash
+  cd tools/layout-rules && aider --subtree-only apply_layout_blend.py --read README.md --message "..."
+  ```
+- **Aider wants to edit `.gitignore`:** on first run it offers to add `.aider*`.
+  Answer no (or pass `--no-gitignore`) — `.aider.conf.yml` and `.aiderignore`
+  are tracked repo files; only the session junk (`.aider.chat.history.md`,
+  `.aider.tags.cache.v4/`) is ignored.
