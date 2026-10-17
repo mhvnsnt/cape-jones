@@ -57,17 +57,17 @@ Positions below are Blender coords (x right, y depth, z up).
 
 | Object | Type | Size W×D×H (m) | Position (x, y, z) | Material(s) |
 |---|---|---|---|---|
-| `loungeChairRelax(Clone)` | recliner chair | 0.49 × 0.675 × 0.63 | (0.2, 1.45, 0), rot +43.7° facing TV | metal, carpet, wood |
+| `loungeChairRelax(Clone)` | recliner chair | 0.49 × 0.675 × 0.63 | REV2: (3.14, 1.5, 0), rot 90° facing -x into room, back against window wall | metal, carpet, wood |
 | `loungeDesignSofa(Clone)` | sofa | 1.12 × 0.41 × 0.4 | (-2.9, -0.6, 0), rot -90° facing +x | carpetBlue, metal.001 |
 | `tableCoffee(Clone)` | coffee table | 0.661 × 0.4 × 0.23 | (-0.2, 0.4, 0) | wood.001 |
-| `rugRound(Clone)` | round rug | 1.472 × 0.016 | (-0.1, 0.6, 0.01) | carpet.001, carpetDarker |
+| `rugRound(Clone)` | round rug | 1.472 × 0.016 | REV2: (2.7, 1.5, 0.01), under recliner at window wall | carpet.001, carpetDarker |
 | `cabinetTelevision(Clone)` | TV stand, open-shelf console (rebuilt 2026-10-16) | 0.8 × 0.3 × 0.75 | (-0.9, 2.6, 0) | wood.002 |
 | `crt_tv` + `crt_screen` + `antenna_0/1` | CRT TV, violet screen, rabbit ears | 0.62 × 0.42 × 0.52 | (-0.9, 2.6, 1.01) | RemoteMat, tvScreenMat, metal |
 | `vcr_dvd` | VCR/DVD player (middle shelf) | 0.42 × 0.24 × 0.09 | (-1.02, 2.6, 0.51) | RemoteMat |
 | `box_a` … `box_d` | storage boxes (shelves) | various | on stand shelves | wood.002 |
 | `monster_body` + eyes + feet | monster toy, canon-blue (bottom shelf) | ~0.14 tall | (-0.92, 2.58, 0.22) | carpetBlue, lamp |
-| `side_table` + 3 legs | round side table | r 0.175, h 0.55 | (-0.5, 1.6, 0) | carpetBlue |
-| `okayest_hero_mug` + handle + `mug_text` | WORLD'S OKAYEST HERO mug | r 0.045, h 0.1 | (-0.5, 1.6, 0.6175) | WallMat, RemoteMat |
+| `side_table` + 3 legs | round side table | r 0.175, h 0.55 | REV2: (2.9, 0.95, 0.55), left of recliner at window wall | carpetBlue |
+| `okayest_hero_mug` + handle + `mug_text` | WORLD'S OKAYEST HERO mug | r 0.045, h 0.1 | REV2: world (2.9, 0.95, 0.618), centered + fully supported on tabletop (close-up verified) | WallMat, RemoteMat |
 | `bookcaseClosed(Clone)` | bookcase | 0.4 × 0.25 × 0.85 | (-2.95, -1.8, 0) | wood.003 |
 | `lampRoundFloor(Clone)` | floor lamp | 0.152 × 0.176 × 0.86 | (3.0, 2.5, 0) | metal.002, lamp |
 | `lampSquareTable(Clone)` | table lamp (re-seated on coffee table) | 0.12³ | (-0.02, 0.4, 0.23) | lamp.001, metal.003 |
@@ -82,6 +82,19 @@ Positions below are Blender coords (x right, y depth, z up).
 | `wall_decor` → `ghost_*` | framed ghost picture | 0.5 × 0.6 | (0.5, 2.92, 1.9) | wood.002, lamp, carpet |
 | `LED_Back` / `LED_Left` / `LED_Right` | LED strips | — | unchanged | LEDStripMat |
 | `Floor` / `WallBack` / `WallLeft` / `WallRight` | room shell (door+window holes cut) | — | — | FloorMat / WallMat |
+| `Ceiling` | roof/ceiling (REV2) | 7.0 × 6.0 plane at z=3.0, normal down | (0, 0, 3.0) | WallMat |
+| `CapeJones_ScaleCheck` | Cape Jones, STANDING (REV2, temporary scale check) | 0.925 tall | (-0.5, -1.0, 0.462), facing MainCam | tripo PBR (as-generated, NOT recolored) |
+
+### Cape Jones character canon (owner 2026-10-16)
+- Official 3D model: https://studio.tripo3d.ai/3d-model/67a6f309-0ac2-4c56-92b8-a4ea3e72bf46
+  (Tripo 3D, 17MB, full PBR textures). Local recovery: `~/workspace/tripo-recovery/cape_jones.glb`
+  (meshopt-compressed; Blender 4.0.2 can't read EXT_meshopt_compression — transcode to plain
+  GLB with gltf-transform before import).
+- Who he is: a Space Ghost/Batman-type fighter who does NOT want to fight or be a hero — he only
+  does it because everyone thinks he looks like a superhero and either wants his help or wants
+  to fight him. Hand cannons like Mega Man and Android 16. The model fits his bio/vibe/moveset.
+- Render direction for scale checks: standing in the room FACING THE CAMERA.
+- Native model height: 0.925 m (stylized). Do NOT rescale without owner sign-off.
 
 Recliner stays EMPTY — no character placed (light-flicker gag rig lands later).
 
@@ -104,6 +117,19 @@ Mesh count: 22 meshes + 2 lights + `MainCam` + `Camera.001` (scene cameras) + `C
 - Film transparent: OFF; color mode RGBA
 
 ## 4. Change log
+- 2026-10-16: Revision 2 (branch build/living-room-rev2-20261016, owner-directed). (1) Moved pink
+  recliner + round rug + side table + mug to the RIGHT WINDOW WALL — chair back against the wall
+  under the window, facing into the room; recliner now an accent seat (secondary: true in
+  living_room_layout.json; validator's side-table rule widened to measure against any seat).
+  Layout re-validated: 8 items, all checks passed. (2) Mug fix: mug was parented to the side
+  table with keep-transform — moving both double-moved the mug/legs. Reverted children to
+  original local coords; mug now verified centered and fully supported on the tabletop
+  (world z 0.568 = tabletop 0.567), close-up render-checked. (3) Added Ceiling: 7x6m plane at
+  z=3.0, WallMat, normal facing down. (4) Cape Jones scale check: imported cape_jones.glb
+  (Tripo3D project 67a6f309, owner's model; transcoded meshopt->plain via gltf-transform since
+  Blender 4.0.2 can't read EXT_meshopt_compression) as `CapeJones_ScaleCheck`, standing at
+  (-0.5, -1.0), feet on floor, facing MainCam. Native height 0.925m (stylized). STAYS STANDING —
+  chair sit comes later with the light-flicker gag. Zero color changes.
 - 2026-10-16: Canon locked from `living_room.blend` (PR: canon/living-room-colorway-20261016).
   Colors extracted headless from Principled BSDF nodes, owner-approved preview saved as
   `colorway-reference.png`, second angle saved as `scene-overview.png`. No scene geometry changed.

@@ -128,13 +128,14 @@ def main():
                     f"{seat['name']} <-> {tbl['name']}: gap {g:.2f} m "
                     f"outside conversation range [{cmin}, {cmax}] m")
 
-    # 4b. side tables: adjacent to a primary seat, within arm's reach
-    # (exempt from the coffee-table conversation gap by design)
+    # 4b. side tables: adjacent to ANY seat (primary or accent), within arm's
+    # reach (exempt from the coffee-table conversation gap by design).
+    # Rev2: accent seats (e.g. recliner moved to the window wall) still get
+    # side tables — measuring only against primary seats misfired.
     smax = rules.get("side_table", {}).get("max_edge_gap_to_seat_m", 0.45)
     for stbl in by_kind.get("side_table", []):
         best = None
-        for seat in [s for s in by_kind.get("seat", [])
-                     if not s.get("secondary")]:
+        for seat in by_kind.get("seat", []):
             g = edge_gap(boxes[stbl["name"]], boxes[seat["name"]])
             if best is None or g < best:
                 best = g
