@@ -370,3 +370,106 @@ limited", no units); Tripo Studio locked free exports behind paywalls (hence the
 existing `tripo-pull` workaround, which only helps for non-commercial reference);
 Blender is at 5.2 LTS (4.5 LTS still supported to Jul 2027) — pin the tarball version
 at setup time.
+
+---
+
+## EXPANSION 2 ADDITIONS (2026-10-17 — deeper 3D-tools hunt lane)
+
+Everything below was researched against real 2026 sources and, where marked ✅,
+**run headless by this lane** (Blender 4.5.12 LTS unless noted). Failures are
+marked plainly — nothing silently dropped. This section only *adds*; the
+research lane's findings above are untouched.
+
+### A. Blender MCP servers — beyond the pulled workflow
+
+The `ahujasid/blender-mcp` workflow (already pulled) was **wired deeper** this
+lane: `tools/blender-mcp/` now holds the install recipe, MCP client config, and
+safe-mode/telemetry notes. Real run: `pip install blender-mcp` → 2.0.0 /
+mcp-for-blender 2.1.9; MCP handshake + `tools/list` returned **9 tools**
+(`get_addon_status`, `disable_telemetry`, `get_scene_info`,
+`execute_blender_code`, `record_trajectory_feedback`, `look`, `generate_3d`,
+`search_assets`, `import_asset`).
+
+Alternatives (researched 2026-10-17, not run):
+
+| Server | What | Verdict |
+|---|---|---|
+| **Official Blender Lab MCP** (blender.org/lab/mcp-server) | Real. Docs lookup + scene analysis, natural-language bpy. Needs Blender 5.1+. Ships with a security warning (executes LLM code unguarded). | Document-only — weaker than community. Skip unless we move to 5.1+. |
+| **RFingAdam/mcp-blender** | 218 atomic tools: mesh editing (24), GeoNodes, vision refinement loop. | Evaluate if 9 tools prove limiting. Not pulled. |
+| **djeada/blender-mcp-server** | 27 tools, socket add-on, **async job queue for long scripts** — the interesting one for long Cycles renders. | Install is git-URL only (not on PyPI); this lane's install attempt timed out. Not verified — retry on the GPU lane if needed. |
+| **sandraschi/blender-mcp** | ~58 tools, headless + live bridge, VSE/splat support. | Reference only. |
+
+### B. Free Blender add-ons for interior/archviz — pulled and RUN
+
+| Add-on | License | Proof this lane ran |
+|---|---|---|
+| **Light It Up 4.0.0** (free edition) — 17 studio lighting presets, live intensity/temperature/key-fill/orbit controls, `Fit To Subject` | **GPL-3.0-or-later** (extensions.blender.org metadata) | ✅ Archive sha256 matches platform hash; installed headless on 4.5.12; **Butterfly preset built a real rig** (2 area lights, key 370.4/fill 246.9, `LIU_Butterfly` collection). Wired: `tools/lighting/`. |
+| **GScatter** (Graswald, via `romainguerif/gscatter-blender5-fix` — 0.12.0 patched for 4.2+/5.x) — geometry-nodes scattering | **GPL-3.0-or-later** | ✅ Registered headless; `gscatter.scatter(preset='system.default')` → FINISHED, created `Pebble : System` + `GScatterGeometryNodes` modifier + full node network. Wired: `tools/scatter/`. |
+| **fSpy-Blender importer** (via `jmossymoss/fspy-blender-4.5`, tracks official 1.0.3) — camera matching from the 2D reference | **GPL-3.0** | ✅ Installed headless on 4.0.2; imported a synthetic `.fspy` project: camera FOV exactly 1.2 rad, location exactly (0,0,2.5), resolution + background image set. Wired: `tools/camera-match/`. |
+
+Don't confuse Light It Up **free** (17 presets, above) with Light It Up **Pro**
+($49) — free only, owner law.
+
+### C. HDRI/texture sources — license-verified, fetch-tested
+
+| Source | License (checked on their own pages 2026-10-17) | Proof |
+|---|---|---|
+| **Poly Haven** | **CC0** — polyhaven.com/license: all assets CC0, commercial OK, no attribution, redistributable. (API has separate terms: use a UA, no bulk scraping.) | ✅ `kloppenheim_05_puresky_1k.hdr`: 1,086,297 bytes, md5 `fe0d85219b08932d0467c3752012b749` — byte-exact vs an independent 2026 source; Radiance HDR magic confirmed. |
+| **ambientCG** | **CC0** downloadable assets. | ✅ `Wood096_1K-JPG.zip` (5.36 MB): real zip, Color/NormalDX/NormalGL/Roughness/Displacement JPGs + `.blend` + `.usdc`. |
+| **KayKit** (Furniture Bits, 50+ models) | **CC0** per the author's own page (kaylousberg.com + itch.io listing). | ⚠️ License verified; the pack downloads via itch.io's click flow — **needs a browser lane**. Kenney (already pulled, CC0) covers the same ground meanwhile. |
+| **Blendkit** (formerly BlenderKit) | **Two licenses: Royalty-Free and CC0** (blendkit.com/docs/licenses). RF allows commercial use WITHOUT attribution but **bans re-selling the asset in the same form** — only ~3% of the library is CC0 (measured 2026-09). | ⚠️ Usable for renders (a video is a "higher-level derivative work," which RF permits), but check the per-asset badge every time; prefer CC0 sources. Not pulled as a dependency (needs account). |
+
+Wired: `tools/hdri-textures/` (`fetch_polyhaven_hdri.py`, `fetch_ambientcg.py`).
+
+### D. Texture/material generation free tiers
+
+| Tool | License | Proof |
+|---|---|---|
+| **procedural-pbr** (whappens/procedural-pbr) — numpy/PIL PBR sets (albedo/normal/ORM/displacement), water + clouds | **MIT** | ✅ Ran headless: 4 PNGs @1024² in ~15 s, real image bytes, albedo visually verified (seamless water). |
+| **Material Maker** (RodZill4/material-maker) — node-based PBR authoring, the free Substance Designer | **MIT** | ⚠️ Documented, not run here: headless export needs the desktop app under a GL context (`--export-material`, xvfb, `steam_appid.txt`). Recipe in `tools/textures-proc/` for the GPU lane. A 2026 MCP server exists (`graysonchalmers/Tool-MaterialMaker-MCP`, MIT). |
+| **Poly** (withpoly.com) | Free version exists; commercial terms unverified | ❌ Not depended on until a browser lane confirms free-tier commercial terms. |
+| **Meshy** textures | CC BY 4.0 (attribution) | Runner-up only (§2c above). |
+
+Wired: `tools/textures-proc/`.
+
+### E. Render denoise / upscale — free options
+
+| Tool | License | Proof |
+|---|---|---|
+| **Intel Open Image Denoise** (in Blender) | Apache-2.0 | ✅ Rendered Cycles still with `use_denoising=True, denoiser='OPENIMAGEDENOISE'` on 4.5.12 — done. Default for CPU/Colab lanes. |
+| **OptiX denoiser** | Free with NVIDIA drivers | Documented — use on the Kaggle T4 lane. |
+| **Blender compositor Scale node** | GPL (Blender) | ✅ Image→Scale(2x)→Composite ran headless. Quick preview bumps. |
+| **Upscayl** | **GPL-3.0**, Real-ESRGAN, batch, no watermark | ⚠️ **Needs Vulkan GPU** — cannot run on this CPU-only VM. Target: Kaggle T4 lane. |
+| **Real-ESRGAN** | BSD-3-Clause | ⚠️ CPU-ONNX path exists (`realesr-general-x4v3`); this lane's model fetch failed and the pip install fought `/tmp` space. Not run — GPU lane job. |
+| **nextgenUp** | FOSS, MIT/Apache-2.0 models | Documented 2026 alternative (CPU ONNX mode). Not run. |
+
+Wired: `tools/upscale-denoise/` (denoise recipe = done; AI upscale = GPU-lane job).
+
+### F. License verdicts summary (commercial-use for the show)
+
+**OK to ship:** Poly Haven (CC0), ambientCG (CC0), Kenney (CC0), Quaternius
+(owner-approved), KayKit free packs (CC0, fetch via browser), procedural-pbr
+(MIT), Material Maker outputs (MIT tool), GScatter/Light It Up/fSpy/blender-mcp
+(GPL tools — the tools are GPL, their *output in our renders* is ours),
+Upscayl/Real-ESRGAN outputs (model licenses BSD/GPL — outputs are ours),
+OIDN/OptiX (denoisers don't encumber renders).
+**Conditional:** Blendkit Royalty-Free (no resale of the raw asset; renders OK),
+Meshy free (CC BY 4.0 — attribution required), Poly Pizza/Sketchfab per-item
+(CC0 or CC-BY — check each).
+**Blocked:** Tripo Studio free (non-commercial), Hunyuan3D 2.1 (Tencent license
+excludes EU/UK/SK), Rodin free (commercial rights unstated), Layer/Scenario
+trials (terms hostile).
+
+### G. What failed (plainly)
+
+- **djeada/blender-mcp-server install** — not on PyPI; git-URL pip install timed
+  out (240 s). Not verified. Retry on a GPU lane if the async job queue matters.
+- **Real-ESRGAN CPU run** — onnxruntime installed, but the ONNX model direct
+  download 404'd and the `realesrgan` pip install hit `/tmp` exhaustion, then a
+  background session was lost before completing. Not run. Belongs on the Kaggle
+  T4 lane anyway (that's where the GPU is).
+- **KayKit pack fetch** — license CC0 verified twice; itch.io's download needs
+  its JS click flow (subagent has no live browser). Flagged for a parent browser
+  lane; not silently dropped.
+- **Material Maker headless render** — needs the desktop app + GL context;
+  documented with the exact recipe for the GPU lane, not run here.
