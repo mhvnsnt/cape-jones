@@ -117,6 +117,19 @@ Mesh count: 22 meshes + 2 lights + `MainCam` + `Camera.001` (scene cameras) + `C
 - Film transparent: OFF; color mode RGBA
 
 ## 4. Change log
+- 2026-10-16: Revision 3 (branch build/living-room-rev3-20261016, owner-directed fixes).
+  (1) Table lamp: moved away from the window, fully onto the coffee tabletop — lamp bbox
+  x -0.35–-0.23 vs tabletop x -0.661–0.0 (no overhang; was overhanging +x edge by 0.10m).
+  Close-up render-checked (`scene-rev3-lamp-closeup.png`). (2) Chair rotation: the recliner
+  was facing +x (INTO the wall) at 90deg yaw — CAUGHT the quaternion trap (rotation_mode was
+  QUATERNION, euler edits silently ignored), set rotation_mode='XYZ', rotated to 225deg
+  yaw (-45deg from straight-into-room) so it faces (-0.707, +0.707): into the room, angled
+  toward the TV/conversation zone, backrest toward the wall. (3) Wall clipping fixed with
+  real bounds math: chair bbox xmax 3.341 vs WallRight inner face 3.425 (8.4cm clear; was
+  3.63, THROUGH the wall); rug re-centered, bbox xmax 3.286 (13.9cm clear; was 4.172,
+  THROUGH the wall). Layout re-validated: 8 items, all checks passed. Verified by eye:
+  `scene-rev3-window-wall.png`. Zero color changes. Cape Jones model untouched (separate
+  rigging lane owns him; native 0.925m scale locked per owner).
 - 2026-10-16: Revision 2 (branch build/living-room-rev2-20261016, owner-directed). (1) Moved pink
   recliner + round rug + side table + mug to the RIGHT WINDOW WALL — chair back against the wall
   under the window, facing into the room; recliner now an accent seat (secondary: true in
