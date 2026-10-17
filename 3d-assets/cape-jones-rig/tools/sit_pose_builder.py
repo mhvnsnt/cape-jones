@@ -234,7 +234,7 @@ def build_sit_recline():
     upd()
     seat_and_ground(2.98, 0.42)
 
-def build_sit_arms_crossed():
+def build_sit_shrug():
     spine_base()
     aim_bone('spine_1', (0, 0.08, 1)); upd()
     aim_bone('spine_2', (0, 0.06, 1)); upd()
@@ -257,7 +257,7 @@ POSES = [
     ("sit_leg_folded", "Figure-4: right ankle on left knee (his reference)", build_sit_leg_folded),
     ("sit_lean_forward", "Lean-forward pensive/focused", build_sit_lean_forward),
     ("sit_recline", "Recline, legs extended (relaxed sprawl)", build_sit_recline),
-    ("sit_arms_crossed", "Arms crossed, leaning back (comedic annoyed)", build_sit_arms_crossed),
+    ("sit_shrug", "Comedic shrug, leaning back (Aqua Teen energy)", build_sit_shrug),
 ]
 
 # ---------------- lights / camera / render ----------------

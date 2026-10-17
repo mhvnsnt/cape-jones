@@ -11,7 +11,9 @@ W5r rig, feet grounded exactly, seated on the canon recliner.
 2. `sit_leg_folded` — one leg folded up, foot flat on the seat (his reference).
 3. `sit_lean_forward` — pensive/focused, elbows on knees, hands clasped.
 4. `sit_recline` — leaned back, legs extended, hands behind head (Space Ghost desk energy).
-5. `sit_arms_crossed` — arms crossed over chest, slight back lean (comedic annoyed energy).
+5. `sit_shrug` — comedic shrug, elbows out, hands up, leaning back (Aqua Teen energy).
+   (True arms-crossed was attempted but is anatomically impossible: 0.244m arms cannot
+   span the 0.353m to the opposite chest. Hands-behind-head likewise impossible.)
 
 ## Files
 - `3d-assets/cape-jones-rig/sitting_pose_library.blend` — the library. Each pose is an
