@@ -127,18 +127,27 @@ subprocess.run([sys.executable, "-m", "pip", "install", "-q",
 print("Deps installed.")
 '''),
 
-code('''# === Download ToonCrafter model weights from HuggingFace ===
-import subprocess, os
+code('''# === ToonCrafter model weights: dataset cache first, HF fallback ===
+import subprocess, os, shutil
 ckpt_dir = "/kaggle/working/ToonCrafter/checkpoints/tooncrafter_512_interp_v1"
 os.makedirs(ckpt_dir, exist_ok=True)
 ckpt_path = os.path.join(ckpt_dir, "model.ckpt")
-if os.path.exists(ckpt_path) and os.path.getsize(ckpt_path) > 4_000_000_000:
+EXPECTED = 10502492136  # bytes, verified 2026-10-16
+CACHED = "/kaggle/input/tooncrafter-weights/model.ckpt"
+def _ok(p):
+    return os.path.exists(p) and os.path.getsize(p) == EXPECTED
+if _ok(ckpt_path):
     print(f"model.ckpt already present ({os.path.getsize(ckpt_path)/1e9:.1f} GB)")
+elif os.path.exists(CACHED) and os.path.getsize(CACHED) == EXPECTED:
+    print(f"Copying model.ckpt from dataset cache ({os.path.getsize(CACHED)/1e9:.1f} GB)...")
+    shutil.copy(CACHED, ckpt_path)
+    print("Cached weights linked.")
 else:
-    print("Downloading model.ckpt (~5GB) from HuggingFace — this takes a few minutes...")
+    print("Dataset cache miss — downloading model.ckpt (10.5GB) from HuggingFace...")
     subprocess.run(["wget", "-q", "--show-progress",
                     "https://huggingface.co/Doubiiu/ToonCrafter/resolve/main/model.ckpt",
                     "-O", ckpt_path], check=True)
+    assert _ok(ckpt_path), "downloaded model.ckpt size mismatch"
     print(f"Downloaded ({os.path.getsize(ckpt_path)/1e9:.1f} GB)")
 '''),
 

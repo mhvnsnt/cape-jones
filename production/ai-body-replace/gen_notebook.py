@@ -138,27 +138,37 @@ for d in [DMODEL, LORA, TCOND, VAE]:
     os.makedirs(d, exist_ok=True)
 
 MODELS = [
-    # (filename, dest_dir, HF URL) — pruned INT8 = VRAM-friendly for T4
-    ("minimax_h3_ref2va_viggle_pruned_int8_convrot.safetensors", DMODEL,
+    # (filename, dest_dir, expected_bytes, HF URL) — pruned INT8 = VRAM-friendly for T4
+    # Sizes verified 2026-10-16 via X-Linked-Size. Dataset cache: /kaggle/input/viggle-animate-weights/
+    ("minimax_h3_ref2va_viggle_pruned_int8_convrot.safetensors", DMODEL, 21033720080,
      "https://huggingface.co/drbaph/Viggle-Animate-ComfyUI/resolve/main/diffusion_models/minimax_h3_ref2va_viggle_pruned_int8_convrot.safetensors"),
-    ("viggle_animate_dmd_lora_r64.safetensors", LORA,
+    ("viggle_animate_dmd_lora_r64.safetensors", LORA, 941893032,
      "https://huggingface.co/drbaph/Viggle-Animate-ComfyUI/resolve/main/loras/viggle_animate_dmd_lora_r64.safetensors"),
-    ("fixed_embed_fwd_anyframe.safetensors", TCOND,
+    ("fixed_embed_fwd_anyframe.safetensors", TCOND, 3713456,
      "https://huggingface.co/drbaph/Viggle-Animate-ComfyUI/resolve/main/text_cond/fixed_embed_fwd_anyframe.safetensors"),
-    ("minimax_h3_video_vae_int8_convrot.safetensors", VAE,
+    ("minimax_h3_video_vae_int8_convrot.safetensors", VAE, 3171670912,
      "https://huggingface.co/Kijai/MiniMax-H3-experimental/resolve/main/minimax_h3_video_vae_int8_convrot.safetensors"),
 ]
+CACHE_BASE = "/kaggle/input/viggle-animate-weights"
 
-for fname, ddir, url in MODELS:
+import shutil
+for fname, ddir, expected, url in MODELS:
     out = os.path.join(ddir, fname)
-    if os.path.exists(out) and os.path.getsize(out) > 100_000_000:
+    subdir = os.path.basename(ddir.rstrip("/"))
+    cached = os.path.join(CACHE_BASE, subdir, fname)
+    if os.path.exists(out) and os.path.getsize(out) == expected:
         print(f"✅ {fname} already present ({os.path.getsize(out)/1e9:.1f} GB)")
+    elif os.path.exists(cached) and os.path.getsize(cached) == expected:
+        print(f"📦 {fname} from dataset cache ({os.path.getsize(cached)/1e9:.1f} GB)...")
+        shutil.copy(cached, out)
+        print(f"✅ {fname} linked from cache")
     else:
-        print(f"⬇️  Downloading {fname}...")
+        print(f"⬇️  Downloading {fname} ({expected/1e9:.1f} GB)...")
         subprocess.run(["wget", "-q", "--show-progress", url, "-O", out], check=True)
+        assert os.path.getsize(out) == expected, f"size mismatch for {fname}"
         print(f"✅ {fname} done ({os.path.getsize(out)/1e9:.1f} GB)")
 
-print("\\n✅ All models downloaded. Your studio is ready.")
+print("\\n✅ All models ready. Your studio is ready.")
 '''),
 
 md("""## 👆 UPLOAD YOUR FILES HERE
@@ -329,8 +339,11 @@ for cell in nb_json["cells"]:
             src = src.replace("RAW_PLACEHOLDER", RAW)
             cell["source"] = src
 
-with open("/home/hatch/workspace/cape-jones-build/kaggle-viggle/cape_jones_viggle_kaggle.ipynb", "w") as f:
+import os as _os
+_out = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)),
+                     "cape_jones_viggle_kaggle.ipynb")
+with open(_out, "w") as f:
     json.dump(nb_json, f, indent=1)
 
-print("Generated: cape_jones_viggle_kaggle.ipynb")
+print(f"Generated: {_out}")
 print(f"Cells: {len(cells)}")
