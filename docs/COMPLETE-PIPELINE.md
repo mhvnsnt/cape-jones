@@ -306,6 +306,65 @@ bash social_export.sh finished.mp4 social_out/
 | Color/lighting | `production/pipeline/grades.py`, `led_controller.py` | same |
 | Docs | `docs/` | `~/workspace/cape-jones-build/` |
 
+## Kaggle GPU Queue — Bulletproof Render Pipeline
+
+**Never lose a render again.** `production/pipeline/kaggle_queue.py` manages all
+Kaggle GPU jobs with automatic bulletproof saving and claim verification.
+
+```bash
+# Add a job (bulletproof saving ON)
+python3 production/pipeline/kaggle_queue.py add \
+  --notebook production/kaggle/tooncrafter/cape_jones_tooncrafter_kaggle.ipynb \
+  --title "Cape Jones ToonCrafter expressions" \
+  --save-dataset marsfmmg/cape-jones-tooncrafter-outputs \
+  --outputs "cape-jones-expressions-TOONCRAFTER-24fps.mp4" \
+  --gh-repo mhvnsnt/cape-jones --gh-release-tag tooncrafter-v1
+
+# Queue commands
+python3 production/pipeline/kaggle_queue.py tick      # one pass (systemd timer runs every 15 min)
+python3 production/pipeline/kaggle_queue.py status    # show all jobs
+python3 production/pipeline/kaggle_queue.py hold "reason"  # pause new starts
+python3 production/pipeline/kaggle_queue.py release   # resume
+python3 production/pipeline/kaggle_queue.py retry <job-id>
+```
+
+**What the queue does automatically (CHECK-RESEARCH-WIRE-DO):**
+
+1. **CHECK** — `validate_job()` before every push: notebook exists, all code
+   cells compile, title resolves to the kernel slug (Kaggle API 400s otherwise),
+   dataset slugs are well-formed. Invalid jobs fail fast with a clear error —
+   never a wasted GPU run.
+
+2. **WIRE (bulletproof saver)** — Every pushed notebook gets:
+   - `save_outputs.py` shipped alongside it in the kernel
+   - A saver-setup cell injected after the leading markdown (imports
+     `RenderSaver`, starts the watchdog if `KAGGLE_SAVE_DATASET` is set)
+   - A final-checkpoint cell as the last cell (checkpoints expected outputs)
+   - `KAGGLE_SAVE_DATASET` env var set from `--save-dataset`
+
+   **Why:** Kaggle "Quick Save" does NOT preserve `/kaggle/working` files —
+   only "Save & Run All" (commit) does. The 2026-10-16 incident lost 4 render
+   chunks (16+ GPU hours) to this. The in-kernel saver publishes a Kaggle
+   dataset version after EVERY checkpoint via `kaggle datasets version`
+   (kernels are pre-authenticated as the notebook owner — no secrets needed).
+   Dataset versions survive session death. Quick Save doesn't.
+   Full research: `docs/research/KAGGLE-SAVE-RESEARCH.md`.
+
+3. **VERIFY** — When a job completes, the completion report runs through
+   `claim_gate.py` before the "done" notification goes out. Evidence = the
+   downloaded output files. A blocked gate flags the job with
+   `verification_warning` instead of silently reporting success.
+   Full research: `docs/research/AGENT-CONFABULATION-RESEARCH.md`.
+
+4. **Second copies** — After outputs download, they're pushed to GitHub
+   releases and/or TeraBox (`--gh-repo`, `--gh-release-tag`, `--terabox-dir`).
+   Credentials live on the VM, never in the kernel.
+
+**Faster interpolation (2026):** `production/tools/ldf-vfi/` — LDF-VFI
+(CVPR 2026, SOTA, Apache-2.0), pulled in as a ToonCrafter successor candidate.
+Needs T4 validation before replacing ToonCrafter in the queue.
+Research: `docs/research/2026-SPEED-RESEARCH.md` (PR #46).
+
 ---
 
 ## Laws That Govern This Pipeline
@@ -316,3 +375,6 @@ bash social_export.sh finished.mp4 social_out/
 - **ARCHIVE LAW** — Archive originals stay byte-identical; edits on copies only
 - **THINK-BIG** — Production-grade, never prototype when he asked for production
 - **BLACK-FRAME RULE** — Strip black separators before interpolation, always
+- **VERIFY-BEFORE-CLAIMING** — Check the source of truth yourself; tag confidence
+- **CHECK-RESEARCH-WIRE-DO** — Check first, research the gap, wire the fix, then do
+- **NEVER-QUICK-SAVE** — Quick Save preserves zero output files; bulletproof saver or Save & Run All only
