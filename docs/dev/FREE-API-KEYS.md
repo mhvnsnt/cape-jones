@@ -8,11 +8,15 @@ change — re-verify against the provider's own page before building on them.
 **Hard rules (owner laws, not suggestions):**
 - Free tiers ONLY. No spending, no credit cards. If a service asks for a card, STOP and report — do not pay.
 - Keys go through the **secure vault flow ONLY**. NEVER in chat, files, logs, code, or commits.
-- Env audit (this VM, 2026-10-16): **every key below is MISSING** — GEMINI_API_KEY,
-  OPENAI_API_KEY, ANTHROPIC_API_KEY, OPENROUTER_API_KEY, GROQ_API_KEY,
-  MISTRAL_API_KEY, HF_TOKEN/HUGGINGFACE_HUB_TOKEN, REPLICATE_API_TOKEN,
-  DEEPINFRA_API_TOKEN, CEREBRAS_API_KEY, COHERE_API_KEY, TOGETHER_API_KEY,
-  FIREWORKS_API_KEY all absent. (Values are never printed — presence only.)
+- Env audit (this VM): 2026-10-16 — **every key below was MISSING**. 2026-10-17 —
+  **four keys are now LIVE** in `~/.config/cape-jones/api-keys.env` (chmod 600,
+  gitignored, values never in repo/chat/logs): `GEMINI_API_KEY` ✅ (verified via
+  Gemini models list; hit free-tier `quota exceeded` after a few calls),
+  `MISTRAL_API_KEY` ✅ (200 on api.mistral.ai/v1/models),
+  `OPENROUTER_API_KEY` ✅ (200 on /v1/models; free `:free` models respond),
+  `HF_TOKEN` ✅ (whoami-v2: user Dmn52, token "Bannon agents"). **Still missing:
+  `GROQ_API_KEY`** — not in the file as of 2026-10-17; needs the key re-delivered.
+  (Presence only — values are never printed.)
 - The repo's stored `custom.legacy-gemini` connector is a **surrogate-only**
   credential for one-turn image edits — it is NOT retrievable as a raw API key
   and cannot feed aider/Cline (established in `docs/dev/AIDER.md`).
@@ -102,6 +106,14 @@ curl -s https://huggingface.co/api/whoami -H "Authorization: Bearer $HF_TOKEN" |
 
 ## Changelog
 
+- 2026-10-17 — Lane `docs/wireup-ai-agents-20261017`: keys live —
+  GEMINI/MISTRAL/OPENROUTER/HF wired into `~/.config/cape-jones/api-keys.env`;
+  aider LIVE (real edit via `gemini/gemini-3-flash-preview`; note `gemini-exp`
+  alias is dead — 404, use explicit model); Cline LIVE (real response via
+  OpenRouter `cohere/north-mini-code:free`); Copilot CLI 1.0.98 installed but
+  BLOCKED (prior PAT auth expired; stored gh PAT lacks Copilot Requests scope —
+  needs owner `copilot login` device flow). GROQ_API_KEY still missing from
+  the key file. Docs updated: AIDER.md, CLINE.md.
 - 2026-10-16 — Lane `setup/free-api-keys-20261016`: full env audit (all keys
   MISSING on this VM), 2026-source free-tier research for Gemini/Groq/OpenRouter/
   Mistral/HF/DeepInfra/Cerebras/Replicate/fal.ai, plus key request list for the

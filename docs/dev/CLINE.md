@@ -63,14 +63,41 @@ spends nothing):
 3. **BYOK in the extension** — open Cline settings → API Configuration →
    pick provider, paste key. VS Code secret storage holds it (never a file).
 
+**Keys are live on the VM (2026-10-17).** Source the shared key file first:
+
+```bash
+set -a && . ~/.config/cape-jones/api-keys.env && set +a   # chmod 600, gitignored
+# provides: GEMINI_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY, HF_TOKEN
+# (GROQ_API_KEY pending — not in the file as of 2026-10-17)
+```
+
+**Wired providers (2026-10-17, verified on this VM):**
+- `gemini` → `gemini-3-flash-preview` (key stored in `~/.cline`, chmod 600).
+  Note: free-tier quota is TIGHT — this key hit `quota exceeded` after a
+  handful of calls on 2026-10-17. Prefer OpenRouter for bulk work.
+- `openrouter` → `cohere/north-mini-code:free` (key stored in `~/.cline`).
+  Live-AI proof (2026-10-17, verbatim): `cline --json` returned
+  `"text":"CLINE-LIVE-OK 2026-10-17"` with `finishReason: completed`,
+  model `cohere/north-mini-code:free` via OpenRouter.
+
+Wire a provider headlessly (the key lands in `~/.cline/data/settings/`,
+never on the command line — `-k` exposes the key in `ps`):
+
+```bash
+timeout 60 cline auth -p openrouter -k "$OPENROUTER_API_KEY" -m "cohere/north-mini-code:free"
+```
+
+Headless one-shot shape (uses the stored provider — no key on the command line):
+
+```bash
+cline --json "your task here" </dev/null
+```
+
 Hard boundaries, established 2026-10-16:
 - The stored `custom.legacy-gemini` connector credential is surrogate-only
   and is NOT retrievable as a raw key. It cannot feed Cline. Do not try.
 - Getting a Gemini free-tier key needs a Google sign-in at
   https://aistudio.google.com → NEEDS-PARENT-BROWSER.
-- A separate lane is collecting keys through the secure vault flow. Until
-  a key lands, everything below is wired and waiting — nothing here takes
-  a key as an argument, logs one, or commits one.
 
 ## First-run smoke test (once a key lands)
 
