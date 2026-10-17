@@ -71,5 +71,14 @@ Formula (Johnny Bravo template): [Jones wants X] + [attempts Y] + [fails due to 
 - Design sheet law: every character render ships with a VOID WHITE version; full arm reach with margin at frame edges.
 - Asset gaps are tracked honestly in `docs/ASSET-INVENTORY.md` — nothing ships on fabricated sources.
 
+## 8. LED Remote Gag (canon — owner 2026-10-17, applies to 2D AND 3D)
+
+**The rule:** the LED remote works EVERYWHERE, logic be damned. No LED lights set up? Doesn't matter — he hits the remote and the world's lighting changes anyway. The remote prop + "remote changes the world lighting" rig must work in both the 2D and 3D pipelines (version-agnostic gags).
+
+**Canon scenes:**
+1. **THE CLUB:** he's sitting in the club, everybody's dancing, and he's just got the LED remote — changing the club's lights with it.
+2. **THE FOREST:** he's standing outside in the forest, broad daylight — takes out the remote, starts cycling through LED colors, and the actual daylight changes with it.
+3. **THE PARKING LOT** (owner's favorite): night, standing in a parking lot — takes out the remote without a word, hits it, and the whole night lighting shifts to that broken-streetlight purple (the messed-up sodium light color). He goes: "ah, that's better."
+
 ---
 *Show bible v1 — built from the owner's recipe, 2026-10-15. Tone/direction: set by owner; this is the production expansion.*
