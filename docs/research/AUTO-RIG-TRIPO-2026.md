@@ -29,7 +29,7 @@ this space; Meta's relevant work here is nil.
 | **Tripo one-click rigging** (Tripo Studio) | Tripo terms, credits | Web only | 📝 documented only — browser lane |
 | **Meshy rigging** (+ Rigging API) | CC BY 4.0 on free plan (attribution!) | Web/API | 📝 documented only — free plan license needs attribution; API is paid |
 | **Cinevva Auto Rigger** | freemium (1st rig free, then paid; $29 Blender addon) | Web / paid addon | 📝 documented only — paid path violates no-paid rule |
-| **Kinetiq Engine** (Thirdrez) | check terms | **100% in-browser, on-device** (no upload!) | 📝 documented only — new 2026 entry, worth a browser-lane test |
+| **Kinetiq Engine** (Thirdrez) | check terms | **100% in-browser, on-device** (no upload!) | ⚠️ **BROWSER-LANE TEST ATTEMPTED 2026-10-17 — BLOCKED AT SIGN-IN.** `thirdrez.com/kinetiq` loads; "Rig Your Mesh — Free" entry redirects to `app.thirdrez.com/login?next=/kinetiq` — account REQUIRED. Google sign-in as fmmg.mars@gmail.com reached the "Hi Mars" password challenge for the Thirdrez OAuth app; the credential service could not complete password entry (8 failed attempts, no lockout/CAPTCHA — it simply didn't fill, "the operation did not complete, and it changed nothing"). No paid plan or trial started. Auto-rig itself NOT yet tested. Marketing claims observed on the page (UNVERIFIED): 100% client-side (no upload, no GPU server), per-joint confidence scores, full Foot→Ball→Toe chains, live Influence Map heat per bone, finger detection; free plan = $0 (rig + preview free), animation export needs Starter+ ($4.99/mo). See "BROWSER-LANE TEST 2026-10-17" section below. Resume path: owner completes the Google sign-in (Secure Vault password entry or main-agent handoff), then the browser lane can upload `cape_jones_plain.glb` (54MB, granted in the browser task) and run the rig. Do NOT retry blind — every attempt stalls at the same password page. |
 | **ai3dmodel.app** | check terms | Web, free | 📝 documented only — browser lane |
 | **DeepMotion Animate 3D** | free tier 60s/mo, personal non-commercial | Web/API | 📝 documented only — mocap, not a mesh auto-rigger; free tier non-commercial |
 | **Krikey AI** | freemium | Web | 📝 documented only |
@@ -142,8 +142,47 @@ system for face + controls; the auto-riggers kill the tedious blocking stage.
   place chin/wrist/elbow/knee/groin markers → Download rigged FBX. Note:
   this uploads the model to Adobe's servers — fine for CJ (his character),
   documented in the workflow.
-- **Tripo one-click rigging / Meshy / Cinevva / Kinetiq / ai3dmodel.app:**
+- **Tripo one-click rigging / Meshy / Cinevva / ai3dmodel.app:**
   all web lanes, each needs its own account/clicks — none attempted here.
+- **Kinetiq Engine:** browser-lane test ATTEMPTED 2026-10-17 — see section below; blocked at sign-in, auto-rig itself untested.
+
+## BROWSER-LANE TEST 2026-10-17 — Kinetiq Engine (Thirdrez) — blocked at sign-in
+
+**What was attempted:** live browser task against `https://thirdrez.com/kinetiq`
+with `cape_jones_plain.glb` (54MB, granted to the browser) as the test mesh —
+the "worth a browser-lane test" entry in this doc's verdict table.
+
+**Facts observed (browser task, `thirdrez.com`):**
+- Marketing page loads; the "Rig Your Mesh — Free" Auto-Rig entry point
+  redirects to `https://app.thirdrez.com/login?next=/kinetiq` — an account is
+  required to use Kinetiq Auto-Rig.
+- Page claims (UNVERIFIED — never got past login): Auto-Rig is "100% in your
+  browser" / "No upload. No GPU server"; Kinetiq Vision detects every joint
+  with a measured confidence score; clean canonical skeleton down to a full
+  Foot → Ball → Toe chain; binds skin weights with "no bleed at the joints";
+  live Influence Map (weight-color heat map per bone with per-joint reach
+  slider that re-solves skin weights live); free rig + preview; animation
+  export requires Starter or higher ($4.99/mo; free plan $0, no credit card).
+- Sign-in flow: "Continue with Google" → Google account chooser (Mars FMMG /
+  fmmg.mars@gmail.com selected) → Google password challenge page at
+  `accounts.google.com/v3/signin/challenge/pwd` for the Thirdrez OAuth app.
+  The credential service (login.advance) failed 8 times across two login-agent
+  attempts ("The operation did not complete, and it changed nothing") — the
+  password field stayed empty. No rejection, lockout, or CAPTCHA from Google.
+- No paid plan or trial was started; nothing was uploaded; nothing was rigged.
+
+**Verdict:** AUTO-RIG UNTESTED — blocked at sign-in, not rejected on merit.
+Do NOT re-run blind: every attempt stalls at the same password page.
+
+**Resume path (owner/main-agent):**
+1. Owner completes the Thirdrez Google sign-in (he is phone-only, so either a
+   Secure Vault password entry for fmmg.mars@gmail.com or a manual takeover
+   in a live chat — NOT on a detached run).
+2. Re-run the browser lane: upload `cape_jones_plain.glb`, run Auto-Rig,
+   verify the 100%-client-side claim via devtools Network (does the mesh
+   leave the machine?), record joint count/confidence scores, skeleton
+   structure (Foot→Ball→Toe?), Influence Map quality, finger rigging, and
+   which export formats (FBX/GLB) are actually free.
 
 ## Sources
 
