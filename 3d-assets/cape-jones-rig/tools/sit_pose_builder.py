@@ -193,9 +193,9 @@ def build_sit_lean_forward():
     aim_bone('spine_1', (0, -0.25, 1)); upd()
     aim_bone('spine_2', (0, -0.25, 1)); upd()
     aim_bone('chest', (0, -0.15, 1)); upd()
-    aim_bone('neck_1', (0, -0.30, 1)); upd()
-    aim_bone('neck_2', (0, -0.20, 1)); upd()
-    aim_bone('head', (0, -0.50, 1)); upd()
+    aim_bone('neck_1', (0, -0.40, 1)); upd()
+    aim_bone('neck_2', (0, -0.30, 1)); upd()
+    aim_bone('head', (0, -0.75, 1)); upd()
     legs_normal(spread=0.12, fwd=0.55, down=0.83)
     # arms: elbows on knees, hands clasped hanging between knees
     for side, sgn in [('L', 1), ('R', -1)]:
@@ -205,7 +205,7 @@ def build_sit_lean_forward():
         aim_bone(f'upperarm_fk_{side}', (elbow_t - shoulder).normalized()); upd()
         elbow = ptail(f'upperarm_fk_{side}')
         knee_mid = (ptail('thigh_fk_L') + ptail('thigh_fk_R')) * 0.5
-        clasp = knee_mid + Vector((0, -0.05, -0.10))
+        clasp = knee_mid + Vector((0, -0.02, -0.13))
         aim_bone(f'forearm_fk_{side}', (clasp - elbow).normalized()); upd()
         keep_orientation(f'hand_fk_{side}')
     upd()
