@@ -26,12 +26,15 @@ def main():
     out = argv[2] if len(argv) > 2 else "/tmp/proof.png"
     samples = int(argv[3]) if len(argv) > 3 else 32
     env = int(argv[4]) if len(argv) > 4 else 0
+    vol_density = float(argv[5]) if len(argv) > 5 else None  # None = rig default
     assert preset in PRESET_COLORS
 
     rig = bpy.data.objects.get("LED_RemoteRig")
     assert rig, "LED_RemoteRig not found — run apply_lighting_rig.py first"
     rig["preset"] = preset
     rig["environment"] = env
+    if vol_density is not None:
+        rig["vol_density"] = vol_density
     color = PRESET_COLORS[preset]
     bpy.data.objects["RoomLight"].data.color = color
     led = bpy.data.materials["LEDStripMat"]
@@ -59,6 +62,9 @@ def main():
     except Exception:
         pass
 
+    # tag + frame_set so drivers re-evaluate headless before the render
+    rig.update_tag()
+    bpy.context.scene.frame_set(bpy.context.scene.frame_current)
     bpy.context.view_layer.update()
     r.filepath = out
     bpy.ops.render.render(write_still=True)

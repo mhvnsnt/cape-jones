@@ -49,6 +49,10 @@ def main():
         rim.data.color = rim_color
         rim_c = tuple(round(c, 3) for c in rim.data.color)
 
+    # tag + frame_set: ID-prop assignment doesn't tag the depsgraph headless,
+    # so drivers would otherwise keep stale values
+    rig.update_tag()
+    bpy.context.scene.frame_set(bpy.context.scene.frame_current)
     bpy.context.view_layer.update()
     rc = tuple(round(c, 3) for c in room.data.color)
     assert all(abs(a - b) < 1e-3 for a, b in zip(rc, color)), \

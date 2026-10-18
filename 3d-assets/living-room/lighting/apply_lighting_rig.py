@@ -178,11 +178,13 @@ def main():
     vbox = bpy.data.objects.get("VolumeBox_Room")
     if vbox is None:
         mesh = bpy.data.meshes.new("VolumeBox_Room_Mesh")
+        # NOTE: face winding is OUTWARD (right-hand rule). Inverted normals make
+        # Cycles treat the box interior as exterior and the volume won't scatter.
         mesh.from_pydata(
             [(-3.5, -3, 0), (3.5, -3, 0), (3.5, 3, 0), (-3.5, 3, 0),
              (-3.5, -3, 3), (3.5, -3, 3), (3.5, 3, 3), (-3.5, 3, 3)],
-            [], [(0, 1, 2, 3), (4, 7, 6, 5), (0, 4, 5, 1),
-                 (1, 5, 6, 2), (2, 6, 7, 3), (3, 7, 4, 0)])
+            [], [(0, 3, 2, 1), (4, 5, 6, 7), (0, 1, 5, 4),
+                 (2, 3, 7, 6), (1, 2, 6, 5), (0, 4, 7, 3)])
         mesh.update()
         vbox = bpy.data.objects.new("VolumeBox_Room", mesh)
         coll.objects.link(vbox)
@@ -206,10 +208,12 @@ def main():
             make_spot(rig_name, loc, (lamp.location.x, lamp.location.y, 0.0),
                       (1.0, 0.914, 0.588), energy, size)
 
-    # --- window god-ray shaft (cool spot just inside the window plane) ---
+    # --- window god-ray shaft (cool spot just inside the window plane, INSIDE the
+    # room volume so the wall never self-shadows the beam; reads as streaming
+    # from the window) ---
     if "WindowShaft" not in bpy.data.objects:
-        make_spot("WindowShaft", (3.80, 1.50, 2.00), (-1.20, -0.20, 0.0),
-                  (0.85, 0.92, 1.00), 120.0, 38.0, blend=0.55)
+        make_spot("WindowShaft", (3.30, 1.50, 2.00), (-1.20, -0.20, 0.0),
+                  (0.85, 0.92, 1.00), 160.0, 38.0, blend=0.55)
 
     # --- rim/fill on the recliner subject zone (color = env-driven) ---
     rim = bpy.data.objects.get("RimLight")
@@ -220,14 +224,28 @@ def main():
               extra_vars=(("env", '["environment"]'),))
     drive_float(rim.data, "energy", rig, "rim_energy")
 
-    # --- sanity: drivers must evaluate; preset 0 must reproduce canon exactly ---
-    bpy.context.view_layer.update()
+    # --- sanity: real driver round-trip (frame_set forces driver eval headless;
+    # update_tag() required — ID-prop assignment doesn't tag the depsgraph) ---
+    # preset 1 must drive RED through the driver alone (no direct color writes here)
+    rig["preset"] = 1
+    rig.update_tag()
+    scene.frame_set(scene.frame_current)
+    dg = bpy.context.evaluated_depsgraph_get()
+    dg.update()
+    rc = tuple(room.evaluated_get(dg).data.color)
+    assert all(abs(a - b) < 1e-3 for a, b in zip(rc, PRESETS[1][1])), \
+        f"driver round-trip FAILED: preset 1 evaluated to {tuple(round(c,3) for c in rc)}"
+    # back to preset 0 — must reproduce canon exactly
+    rig["preset"] = 0
+    rig.update_tag()
+    scene.frame_set(scene.frame_current)
     dg = bpy.context.evaluated_depsgraph_get()
     dg.update()
     rc = room.evaluated_get(dg).data.color
     assert all(abs(a - b) < 1e-4 for a, b in zip(rc, PRESETS[0][1])), \
         f"preset 0 drifted from canon: {tuple(rc)}"
-    print("apply_lighting_rig: OK — rig live, preset 0 == canon "
+    print("apply_lighting_rig: OK — drivers verified live (preset 1 -> RED via "
+          "driver, preset 0 == canon "
           f"RoomLight {tuple(round(c,3) for c in rc)}")
 
 main()
