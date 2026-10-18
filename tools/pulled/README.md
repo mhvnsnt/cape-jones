@@ -29,6 +29,21 @@ All licenses verified commercial-use OK. Weights/models stay OFF disk — code o
   scripts, tests, and example READMEs/manifests retained).
 - **License:** MIT — commercial OK.
 
+## GNM (google/GNM, Apache-2.0)
+- **What:** Google's parametric human head model (GNM Head, open-sourced July 2026):
+  template mesh + 253 identity params + 383 expression params (100/eye, 150 lower
+  face, 32 tongue, 1 iris) + 4-joint LBS, with semantic expression sampling
+  (20 named expressions -> param vectors). Code vendored in `GNM/` (code only;
+  model weights download on first use via the loader and were not pulled).
+- **Why:** study reference for the CJ parametric face rig
+  (`3d-assets/face-rig/cj_parametric_face.py`) — GNM-style grouped control vectors
+  driving OUR cartoon face, not GNM's realistic head. Full study:
+  `docs/research/GNM-HEAD.md`.
+- **License:** Apache-2.0 — commercial OK (copyright notice retained; our changes
+  documented in `GNM/PROVENANCE.md`).
+- **Skipped sibling:** Nathan Dickson's free "GNM Head Importer" Blender add-on
+  (Gumroad) — no stated license, requires checkout; documented, not vendored.
+
 ## Skipped (documented, not pulled)
 - **genoooool/hyperframes-effects-gallery** — 255-effect catalog, but the repo
   declares NO license. Per license rules (document and skip): do not vendor until
