@@ -1,0 +1,67 @@
+name: Ubuntu LTS
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+permissions:
+  contents: read
+jobs:
+  buildLinux:
+    runs-on: ubuntu-22.04
+    container:
+      image: ubuntu:jammy
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+      - name: Get Dependencies
+        run: |
+          apt update && apt upgrade -y
+          apt install -y software-properties-common g++ make cmake ninja-build wget rsync build-essential libglib2.0-0
+          apt install -y libgl1-mesa-dev file libvulkan-dev openssl python3 python3-pip libxcb-cursor0 libxrandr2
+      - name: Get Python and install qt dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install requests semantic_version patch py7zr texttable bs4 defusedxml aqtinstall
+      - name: Get Qt 6.9.*
+        uses: jurplel/install-qt-action@v3
+        with:
+          aqtversion: "==3.3.*"
+          version: '6.9.3'
+          host: 'linux'
+          target: 'desktop'
+          arch: 'linux_gcc_64'
+          modules: "qt5compat qtimageformats qtmultimedia qtwaylandcompositor"
+          install-deps: "nosudo"
+          setup-python: "false"
+          tools: "tools_cmake tools_ninja tools_opensslv3_src"
+      - name: Build AnimeEffects
+        shell: bash
+        run: |
+          echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+          cmake -S . -B build -G "Ninja Multi-Config"
+          cmake --build build --config Release
+          cd build/src/gui/Release
+          mkdir -p tools
+          wget -c -nv "https://github.com/AnimeEffectsDevs/ffmpeg-bin/releases/download/v7.1/ffmpeg-linux64"
+          mv ffmpeg-linux64 ffmpeg
+          chmod +x ffmpeg
+          mv ffmpeg tools
+          mkdir -p appdir
+          cp AnimeEffects appdir
+          cp -R ../data appdir/data
+          cp -R ../../../../dist appdir/dist
+          cp ../../../../dist/AnimeEffects.png appdir
+          cp -R tools appdir/tools
+          find appdir/
+          export APPIMAGE_EXTRACT_AND_RUN=1
+          wget -c -nv "https://github.com/p-yukusai/linuxdeployqt/releases/download/continuous/linuxdeployqt-continuous-x86_64.AppImage"
+          if [[ "$RELEASE_VERSION" != "" ]]; then export VERSION=$RELEASE_VERSION;fi
+          chmod a+x linuxdeployqt-continuous-x86_64.AppImage
+          ./linuxdeployqt-continuous-x86_64.AppImage appdir/dist/AnimeEffects.desktop -extra-plugins=imageformats,multimedia,core5compat -appimage -verbose=2
+          echo "artifactPath=$(realpath AnimeEffects-x86_64.AppImage)`"
+          echo "artifactPath=$(realpath AnimeEffects-x86_64.AppImage)`" >> $GITHUB_ENV
+      - name: Github Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: AnimeEffects-Linux
+          path: ${{ env.artifactPath }}

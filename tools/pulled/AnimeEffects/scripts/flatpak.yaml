@@ -1,0 +1,23 @@
+id: org.anie.AnimeEffects
+runtime: org.kde.Platform
+runtime-version: "6.6"
+sdk: org.kde.Sdk
+command: AnimeEffects
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --share=network
+  - --filesystem=host
+modules:
+  - name: AnimeEffects
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    sources:
+      - type: dir
+        path: "../../AnimeEffects"
+
+    post-install:
+      - "cp -r data ${FLATPAK_DEST}/bin"
