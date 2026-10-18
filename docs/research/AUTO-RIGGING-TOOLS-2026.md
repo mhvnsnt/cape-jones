@@ -118,29 +118,37 @@ the READY rows directly.
 
 | Tool | License | Verdict | Notes |
 |---|---|---|---|
-| Rokoko Studio Blender plugin | proprietary, free to use | ⚠️ fallback, not a pull | "Free Rokoko Blender retargeting plugin" (Blender Secrets via rokoko.com). Closed-source — doesn't fit the open-source pull convention. Check Rokoko ToS for commercial use before relying on it. |
+| Rokoko Studio Blender plugin | proprietary, free to use | ⚠️ fallback, not a pull | "Free Rokoko Blender retargeting plugin" (Blender Secrets via rokoko.com). Closed-source — doesn't fit the open-source pull convention. Own-eyes ToS re-check 2026-10-18: plugin is account-gated (sign-in required in-plugin), no open-source repo exists, and the public ToS (rokoko.com/terms) is a generic Shopify template with NO explicit grant of commercial rights for free-tier recordings. Vision free tier = 30s/month single-cam recordings — a bottleneck for a show pipeline. Pragmatic fallback only; confirm commercial terms with Rokoko before any production use. |
 | **CEB SAM 3D Body Loader** (cebstudios) | ❌ **commercial gate FAIL** | ❌ **REJECTED — do not pull** | Went 100% FREE 2026-10-17 (own-eyes read of patreon.com/cebstudios post, 2026-10-18). BUT the author's own page carries a Commercial Use Disclaimer: "the underlying models and AI inference projects … carry their own distinct licenses and terms of use (**some of which may be restricted to non-commercial research**)". Underlying: SAM 3D Body (Meta AI Research), GEM-X (NVIDIA NVlabs), Fast-SAM-3D-Body. Free ≠ commercial-safe — fails the owner's license law. Also Windows-only, Patreon-zip distribution (not a git repo). |
 | "Good Good" retargeting tool (Pro Constantinou) | unknown | ⏳ identified, unverified — do not pull | 80.lv 2026-06-17: hip-placement + limb-proportion matching technique to kill foot sliding / grounding issues. **2026-10-18 follow-up:** opened the 80.lv article own-eyes — still NO tool name, price, or license in the text (two YouTube embeds only: tutorial + demo). Verify via the tutorial video's description before any decision. |
 | MakeHuman MakeWalk | GPL | legacy, skip | BVH→MH-rig retargeter (2018-era docs). MPFB — its successor — is already pulled; no new value. |
 
 Net: **no open-source, commercial-safe mocap retargeting tool found this run**
-beyond what's covered. Rokoko's free plugin is the pragmatic fallback (verify
-ToS); the rig lane should use afk-rig's 178 CC0 motion clips + BlenRig 6 for
-retarget workflows until a clean open option appears.
+beyond what's covered. Rokoko's free plugin stays the pragmatic fallback (ToS
+checked 2026-10-18: account-gated, no explicit commercial grant on the free
+tier — confirm with Rokoko before production use); the rig lane should use
+afk-rig's 178 CC0 motion clips + BlenRig 6 for retarget workflows until a
+clean open option appears.
 
 ### Auto-scanning (photogrammetry → 3D mesh)
 
 | Tool | License | Verdict | Notes |
 |---|---|---|---|
 | **COLMAP** (colmap/colmap) | **new BSD ✅ commercial OK (own-eyes verified 2026-10-18)** | ✅ **PULLED 2026-10-18** (production/tools/colmap/, upstream @ f202e4e) | 12,978 stars / 3,127 commits / active (upstream @ f202e4e (pulled 2026-10-18, code-only, BSD-3 own-eyes on disk). README: "The COLMAP library is licensed under the new BSD license" — full BSD-3 text verified on the repo page (Copyright 2016 ETH Zurich and UNC Chapel Hill; 2016–2026 The COLMAP Contributors). GitHub shows NOASSERTION badge (no SPDX identifier) — same situation as rhubarb-lip-sync, resolved by the in-file text. SfM + MVS, GUI + CLI, `pip install pycolmap` (+ CUDA wheels `pycolmap-cuda12`), prebuilt binaries + Docker. GPU-lane tool (dense MVS wants CUDA); code-only pull, no weights. |
-| Meshroom / AliceVision | **MPL-2.0 ✅ commercial OK (own-eyes verified 2026-10-18)** | ✅ **READY TO PULL (when disk <85%)** | AliceVision's own IP wiki (own-eyes read 2026-10-18): "licensed under an open source license that allows **free personal and commercial use**", "**no additional restrictions for corporate use**"; models created with it are the user's own IP. MPL-2.0 is weak (file-level) copyleft — commercial use permitted, larger works can be proprietary. NVIDIA-CUDA heavy (dense meshing wants CUDA); node-graph GUI. GPU-lane tool; pull code/binaries only. |
+| Meshroom / AliceVision | **MPL-2.0 ✅ commercial OK (own-eyes verified 2026-10-18)** | ✅ **PULLED 2026-10-18** (`production/tools/meshroom/` @ 7c6f5c5, `production/tools/alicevision/` @ 3afba20) | AliceVision's own IP wiki (own-eyes read 2026-10-18): "licensed under an open source license that allows **free personal and commercial use**", "**no additional restrictions for corporate use**"; models created with it are the user's own IP. MPL-2.0 is weak (file-level) copyleft — commercial use permitted, larger works can be proprietary. License text own-eyes re-verified in-tree 2026-10-18 (`LICENSE-MPL2.md` both repos). NVIDIA-CUDA heavy (dense meshing wants CUDA); node-graph GUI. GPU-lane tool; code-only pull. |
 | Agisoft Metashape / RealityCapture / RealityScan | paid or proprietary | ❌ skipped | Out of scope per the no-paid law. Documented only. |
 
 Cape Jones use for auto-scanning: digitize real props, costumes, and reference
 maquettes into textured meshes for the show pipeline. COLMAP first (cleanest
 license), Meshroom second (MPL-2.0, commercial use explicitly permitted —
-verified 2026-10-18). **Nothing pulled this run — disk at 87%, over the 85%
-ceiling.** Next run with disk headroom can pull the Meshroom READY row directly.
+verified 2026-10-18). **Pulled 2026-10-18 (overnight idle pipeline, disk at
+84% — under the 85% gate):** `production/tools/meshroom/` (Python node-pipeline
+app, 4.9MB code-only, @ 7c6f5c5) + `production/tools/alicevision/` (C++ SfM/MVS
+engine, 65MB code-only, @ 3afba20). 317/317 Python files pass py_compile; all
+shell scripts pass bash -n; branding logos stripped; upstream agent guides
+renamed (MESHROOM-UPSTREAM-*.md). Wiring docs at
+`production/tools/{meshroom,alicevision}/CAPE-JONES-WIRING.md` (GPU-lane build
+path — Kaggle/Colab, dense MVS wants CUDA; no weights, classical CV).
 
 ### Sources
 
