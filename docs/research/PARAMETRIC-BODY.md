@@ -71,7 +71,7 @@ the local `~/workspace/Forge3D` clone **nor** on GitHub (`gh api repos/mhvnsnt/F
 | 1 | **MPFB2** | MakeHuman community | Code GPL-3.0, assets **CC0** | ✅ **PULLED + WIRED.** Body-morph equivalent of GNM per owner. |
 | 2 | **ANNY** | Naver Labs Europe (HUMANS) | **CC0** | ✅ **PROVEN locally** (numpy backend, auto-download). 13,718 verts, 163 bones, 11 semantic shape params + 256 local blendshapes. Best free drop-in body model. Paper: arXiv 2511.03589. |
 | 3 | **MHR** (Momentum Human Rig, ATLAS integrated) | Meta | **Apache-2.0** | ✅ **PULLED 2026-10-18** (`production/tools/mhr/`, upstream @ d96fafa, 9MB code+scripts+docs only; model assets runtime-downloaded via `mhr-download-assets`, Kaggle-side). 18,439 verts, 127 joints, 7 LODs, FBX rigs + `corrective_blendshapes_lodN.npz` per LOD, 45 identity / 204 pose / 72 FACS expression params, SAM 3D Body perception. The "different org's GNM" — Meta's answer. Wiring: `production/tools/mhr/CAPE-JONES-WIRING.md`. |
-| 4 | **SOMA-X** | NVIDIA | check upstream (NVlabs/SOMA-X) | Unifies 5 backends (SOMA-Shape, MHR, SMPL-X, Anny, GarmentMeasurements) under one 77-joint skeleton + **single MLP pose-correctives** model. Best corrective tech to study. |
+| 4 | **SOMA-X** | NVIDIA | **Apache-2.0** (own-eyes verified 2026-10-18: repo LICENSE + SPDX badge + README "licensed under Apache-2.0"; gh api `license: Apache-2.0`) | ✅ **LICENSE VERIFIED — CODE PULL QUEUED.** Unifies 5 backends (SOMA-Shape, MHR, SMPL-X, Anny, GarmentMeasurements) under one 77-joint skeleton + **single MLP pose-correctives** model. Best corrective tech to study. Upstream: NVlabs/SOMA-X @ 56a3d957 (main, 19 commits, 820 stars, ~21MB code-only; repo ships zero weights — identity assets auto-download from HF `nvidia/SOMA-X` at runtime, Kaggle/GPU-side only; SMPL-X + MANO backends need user-supplied licensed model files, NOT redistributed). Code pull queued for the first idle run under the 85% disk gate (disk 88% and climbing on this run 2026-10-18 — per NO-LOCAL-CLUTTER / keep-disk-under-85 laws). |
 | 5 | **ATLAS** | Meta + CMU (ICCV 2025) | via MHR (Apache-2.0) | Research integrated into MHR: decoupled skeleton/shape, sparse **non-linear** pose correctives (MLP per joint + geodesic sparsity), 76 skeletal params. |
 | 6 | **SMPL-X** | MPI | registration, **non-commercial** | Industry baseline. 10,475 verts, 54 joints, 207 pose corrective blendshapes B_P(θ). Code usable (Blender addon, `smplx` pip) but **model files need registration + are non-commercial** — document, don't ship. |
 | 7 | **SKEL** | MPI | registration | Biomechanical: anatomically-true joints, bone-interpenetration constraints. Study its joint definitions for our joint placement. |
@@ -125,10 +125,7 @@ lengths. The wave's "real flexible spine" = 5 segments minimum.
 4. **Anatomical joint placement (ATLAS/SKEL lesson).** Joints from the skeleton,
    not the skin: re-derive our joint centers from the MPFB skeleton's
    proportional landmarks instead of eyeballing.
-5. **Auto-skinning.** MPFB's precomputed weights as the prior; evaluate
-   **Adaptive Auto Skinning** (Sept 2026, Jessy Leite — voxel-based, GPU,
-   Mixamo/ARP-compatible; check license before pulling) against our W5r
-   surface-heat-diffuse on the 7-pose bakeoff.
+5. **Auto-skinning.** MPFB's precomputed weights as the prior; bakeoff = MPFB weights vs our W5r surface-heat-diffuse on the 7-pose test. ❌ **Adaptive Auto Skinning (Sept 2026, Jessy Leite) REJECTED 2026-10-18** — $35.00 USD paid product on SuperHive (own-eyes verified: JSON-LD `Product.offers` price 35.00 USD, "Free updates within the version you bought", 30-day refund), NOT free, no open-source repo — fails the free+commercial-use license law. Technique notes kept for reference only: adaptive voxel grid (coarse body, refines where surfaces near-touch; finger separation), GPU solver reading skeleton *geometry* not bone names (Mixamo/ARP/custom all bind the same), 80.9% dominant-bone match vs artist weights on a 202-character benchmark.
 6. **Muscle layer.** BlenRig 6's MDEF cage (already in repo) is our muscle
    system *today*; MPFB's muscle *targets* are the shape library that drives
    it. (Ziva-class FEM is $$$; Shirzad Bahrami's open FEM/XPBD tool is
@@ -158,5 +155,15 @@ lengths. The wave's "real flexible spine" = 5 segments minimum.
   `production/tools/mhr/CAPE-JONES-WIRING.md`).
 - ✅ **Proven:** ANNY (CC0) loads + forwards in the numpy backend.
 - ⏳ **Pending:** real Mixamo FBX retarget (needs Adobe account —
-  browser lane); Adaptive Auto Skinning license check + bakeoff; SOMA-X license
-  check.
+  browser lane); Adaptive Auto Skinning license check — ❌ **REJECTED 2026-10-18**
+  (paid $35 SuperHive product, not free, no OSS repo — fails the free+commercial
+  license law; bakeoff = MPFB precomputed weights vs our W5r surface-heat-diffuse
+  only; AAS technique notes kept in §5 for reference); SOMA-X license check — ✅
+  **VERIFIED 2026-10-18** (Apache-2.0, own-eyes: repo LICENSE + SPDX + README;
+  NVlabs/SOMA-X @ 56a3d957, 820★, ~21MB code-only, zero weights in repo —
+  runtime identity assets download from HF `nvidia/SOMA-X` at first use,
+  Kaggle/GPU-side only; SMPL-X/MANO backends need user-licensed files, NOT
+  redistributed) — code pull QUEUED for the first idle run under the 85% disk
+  gate (this run: disk 88% and climbing, live render lanes writing — deferred per
+  keep-disk-under-85 law, NOT per licensing); SOMA-X 7-pose bakeoff vs W5r + MPFB
+  weights once pulled.
