@@ -26,9 +26,12 @@ through BlenRig's MDEF cage (the mesh-deform muscle system — the part of
 BlenRig 6 that retargets cleanly). The BlenRig 6 control rig, guides, and face
 system remain in the blend for reference/future work.
 
-## Bone layout (CapeJones_Rig, 85 bones)
+## Bone layout (CapeJones_Rig, 94 bones)
 - `root` — master (all FK/IK switches live here as custom properties)
-- `pelvis` → `spine_1` → `spine_2` → `chest` → `neck_1` → `neck_2` → `head` → `jaw`
+- `pelvis` → `spine_1` → `spine_2` → `spine_3` → `spine_4` → `chest` → `neck_1` → `neck_2` → `head` → `jaw`
+- Spine controls (non-deforming): `spine_fk_1..4` + `chest_fk` (FK chain under
+  `pelvis`), `spine_twist` (twist master under `root`), `chest_ik` (IK target
+  under `root`)
 - Per side (`_L`/`_R`):
   - `clavicle_*` → `upperarm_*` → `forearm_*` → `hand_*` (deform chain)
   - `upperarm_fk_*` → `forearm_fk_*` → `hand_fk_*` (FK layer)
@@ -42,9 +45,42 @@ system remain in the blend for reference/future work.
     blasters; canon weapon hardpoint). Non-deforming; parented to `hand_*`.
 
 ### FK/IK switches
-Custom properties on `root`: `ik_arm_L`, `ik_arm_R`, `ik_leg_L`, `ik_leg_R`
-(0.0 = FK, 1.0 = IK, drivable). The deform chain blends via COPY_TRANSFORMS
-constraints driven by these properties.
+Custom properties on `root`: `ik_arm_L`, `ik_arm_R`, `ik_leg_L`, `ik_leg_R`,
+`ik_spine` (0.0 = FK, 1.0 = IK, drivable). The limb deform chains blend via
+COPY_TRANSFORMS constraints driven by these properties.
+
+### Spine system (flexible 5-joint spine, added 2026-10-17 — spine lane)
+Deform chain: `pelvis` → `spine_1` (lumbar 1) → `spine_2` (lumbar 2) →
+`spine_3` (thoracic 1) → `spine_4` (thoracic 2) → `chest`, with a slight
+natural kyphotic curve (2–10mm forward) so the IK solver has a bend plane.
+Five joints give smooth bend / arch / side-bend / hunch / lean with no
+kinking (verified: 5×12° FK input → exactly 12/24/36/48/60° cumulative).
+
+**FK mode (`ik_spine` = 0, default):** pose `spine_fk_1..4` + `chest_fk`
+directly. Each deform spine bone follows its FK control 1:1 via COPY_ROTATION
+(REPLACE, LOCAL/LOCAL) — the same deform←FK relationship the limbs use.
+
+**Twist:** rotate `spine_twist` about its local Y. Each deform spine bone
+adds 20% of that rotation via COPY_ROTATION (ADD, influence 0.2), so a 45°
+twist distributes as exactly 9/18/27/36/45° across the five joints — never
+concentrated at one. Works identically in FK and IK modes (deform bones are
+never solver-overwritten). Dual-quaternion skinning preserves volume: no
+candy-wrapper collapse (waist radius ≥96.9% under 45° twist, measured).
+
+**IK mode (`ik_spine` = 1):** an IK constraint on `chest_fk` (5-bone chain
+`chest_fk`…`spine_fk_1`, pelvis stays planted) drives the FK chain. Move
+`chest_ik` to position the torso, rotate `chest_fk` for chest orientation.
+IK stiffness is tuned (`spine_fk_2`: 0.5, `spine_fk_3`: 0.8, `spine_fk_4`:
+0.9) so the solve bends at the waist instead of cranking the mid-spine.
+Note: `chest_ik` points +Z, so its `.location` is in bone-local space —
+local (0,−0.06,+0.10) equals armature-space (0,−0.10,−0.06) (forward+down).
+
+**Re-skin:** torso weights remapped from {`spine_1`,`spine_2`,`chest`} onto
+{`spine_1`…`spine_4`,`chest`} by z-positional piecewise-linear blend between
+joint centers. All other groups untouched, per-vert totals preserved,
+≤4 influences + <0.01 prune enforced on remapped verts (repo standard).
+Rest pose is bit-stable vs pre-lane (max drift 1.07e-06m, measured on
+381k torso verts).
 
 ## Weight-zone map
 Procedural weights painted on the MDEF cage (max 4 influences/vert, production
@@ -80,6 +116,10 @@ it.** (He meant CAPE, not vape.)
 ## How to animate
 1. Select `CapeJones_Rig`. Pose the FK bones directly, or set `ik_arm_*` /
    `ik_leg_*` to 1.0 on `root` and use the IK controls + pole targets.
+2. Spine: rotate `spine_fk_1..4` + `chest_fk` for FK bends (forward/back/side/
+   hunch/lean); rotate `spine_twist` (local Y) for distributed twist; or set
+   `ik_spine` to 1.0 on `root` and drive the torso with `chest_ik` (position)
+   + `chest_fk` (chest orientation).
 2. Fingers: rotate `finger_*` bones. Jaw: rotate `jaw` for dialogue.
 3. Wrist blasters: the `blaster_*` bones follow the hands; parent prop meshes
    to them (Bone parent or Child Of).
