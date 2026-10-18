@@ -171,3 +171,31 @@ it without owner approval.
 - Render: Cycles, 960×540 @ 50%, 24 samples, film transparent OFF, frames 1–360.
 - The violet RoomLight + LED wash is what makes the pink furniture read the way it does —
   changing light color or energy changes the whole colorway. Hands off.
+
+## 5. Furniture positions (owner 2026-10-18 ~10:10 CDT)
+
+Two saved TV/shelf layouts. Both restorable via
+`3d-assets/living-room/apply_furniture_position.py`
+(transforms in `3d-assets/living-room/furniture_positions.json`).
+The chair NEVER moves (canon placement locked per sit-targets).
+
+- **POSITION 1 — backs against the wall (DEFAULT).** TV console un-rotated
+  (screen faces -Y/south into the room), back flush to WallBack.
+  Bookcase back flush to WallBack, west of the TV. Owner: "the back of the TV
+  and the back of the shelf was against the wall I liked that better."
+- **POSITION 2 — TV and shelf facing the chair (walkthrough video layout).**
+  TV console yaw 84.5 deg (screen faces +X/east toward the chair); bookcase
+  in the southwest at (-2.95, -1.8). Exact 2026-10-18 walkthrough video
+  layout. Usable alternate — "we can always go back to [it]."
+
+**TV-PARALLEL GAG (owner 2026-10-18):** the TV plays where WE (camera/audience)
+can see it, but he sits off to the side not really watching it — "TV parallel."
+He looks toward the TV/table direction of the room, but the TV is not facing
+him. That is the joke.
+
+**CHARACTER SITTING CORRECTION (owner 2026-10-18 ~10:11 CDT):** he caught the
+walkthrough video with the character STANDING IN T-POSE INSIDE the chair
+(clipped through geometry). He must be SITTING in the chair (on it, not inside
+it), facing toward the TV/table direction (not the camera), out of T-pose,
+breathing. Fixed via `3d-assets/living-room/render_sitting_preview.py`
+(sitting pose library + 48-frame breathing layered in NLA).
