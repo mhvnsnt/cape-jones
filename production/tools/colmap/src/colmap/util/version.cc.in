@@ -1,0 +1,54 @@
+// SPDX-License-Identifier: BSD-3-Clause
+
+#include "colmap/util/version.h"
+
+#include "colmap/util/logging.h"
+#include "colmap/util/string.h"
+
+namespace colmap {
+namespace {
+
+const char* COLMAP_VERSION = "${COLMAP_VERSION}";
+const char* COLMAP_COMMIT_ID = "${GIT_COMMIT_ID}";
+const char* COLMAP_COMMIT_DATE = "${GIT_COMMIT_DATE}";
+
+constexpr int kVersionMajor = ${COLMAP_VERSION_MAJOR};
+constexpr int kVersionMinor = ${COLMAP_VERSION_MINOR};
+constexpr int kVersionPatch = ${COLMAP_VERSION_PATCH};
+
+// Increment for database schema changes within a release.
+constexpr int kDatabaseSchemaRevision = 1;
+
+}  // namespace
+
+int MakeDatabaseVersionNumber(int major, int minor, int patch, int revision) {
+  THROW_CHECK_LT(minor, 100);
+  THROW_CHECK_LT(patch, 100);
+  THROW_CHECK_LT(revision, 100);
+  return major * 1000000 + minor * 10000 + patch * 100 + revision;
+}
+
+int GetDatabaseVersionNumber() {
+  return MakeDatabaseVersionNumber(
+      kVersionMajor, kVersionMinor, kVersionPatch, kDatabaseSchemaRevision);
+}
+
+std::string GetVersionInfo() {
+  return StringPrintf("COLMAP %s", COLMAP_VERSION);
+}
+
+std::string GetBuildInfo() {
+#if defined(COLMAP_CUDA_ENABLED)
+  const char* gpu_info = "with CUDA";
+#elif defined(COLMAP_HIP_ENABLED)
+  const char* gpu_info = "with HIP";
+#else
+  const char* gpu_info = "without GPU support";
+#endif
+  return StringPrintf("Commit %s on %s %s",
+                      COLMAP_COMMIT_ID,
+                      COLMAP_COMMIT_DATE,
+                      gpu_info);
+}
+
+}  // namespace colmap
