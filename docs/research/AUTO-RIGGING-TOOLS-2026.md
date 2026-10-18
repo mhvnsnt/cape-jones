@@ -120,7 +120,7 @@ the READY rows directly.
 |---|---|---|---|
 | Rokoko Studio Blender plugin | proprietary, free to use | ⚠️ fallback, not a pull | "Free Rokoko Blender retargeting plugin" (Blender Secrets via rokoko.com). Closed-source — doesn't fit the open-source pull convention. Check Rokoko ToS for commercial use before relying on it. |
 | **CEB SAM 3D Body Loader** (cebstudios) | ❌ **commercial gate FAIL** | ❌ **REJECTED — do not pull** | Went 100% FREE 2026-10-17 (own-eyes read of patreon.com/cebstudios post, 2026-10-18). BUT the author's own page carries a Commercial Use Disclaimer: "the underlying models and AI inference projects … carry their own distinct licenses and terms of use (**some of which may be restricted to non-commercial research**)". Underlying: SAM 3D Body (Meta AI Research), GEM-X (NVIDIA NVlabs), Fast-SAM-3D-Body. Free ≠ commercial-safe — fails the owner's license law. Also Windows-only, Patreon-zip distribution (not a git repo). |
-| "Good Good" retargeting tool (Pro Constantinou) | unknown | ⏳ identified, unverified | 80.lv 2026-06-17: hip-placement + limb-proportion matching technique to kill foot sliding / grounding issues. Name, price, and license not found in the article — needs follow-up before any decision. |
+| "Good Good" retargeting tool (Pro Constantinou) | unknown | ⏳ identified, unverified — do not pull | 80.lv 2026-06-17: hip-placement + limb-proportion matching technique to kill foot sliding / grounding issues. **2026-10-18 follow-up:** opened the 80.lv article own-eyes — still NO tool name, price, or license in the text (two YouTube embeds only: tutorial + demo). Verify via the tutorial video's description before any decision. |
 | MakeHuman MakeWalk | GPL | legacy, skip | BVH→MH-rig retargeter (2018-era docs). MPFB — its successor — is already pulled; no new value. |
 
 Net: **no open-source, commercial-safe mocap retargeting tool found this run**
@@ -133,12 +133,14 @@ retarget workflows until a clean open option appears.
 | Tool | License | Verdict | Notes |
 |---|---|---|---|
 | **COLMAP** (colmap/colmap) | **new BSD ✅ commercial OK (own-eyes verified 2026-10-18)** | ✅ **PULLED 2026-10-18** (production/tools/colmap/, upstream @ f202e4e) | 12,978 stars / 3,127 commits / active (upstream @ f202e4e (pulled 2026-10-18, code-only, BSD-3 own-eyes on disk). README: "The COLMAP library is licensed under the new BSD license" — full BSD-3 text verified on the repo page (Copyright 2016 ETH Zurich and UNC Chapel Hill; 2016–2026 The COLMAP Contributors). GitHub shows NOASSERTION badge (no SPDX identifier) — same situation as rhubarb-lip-sync, resolved by the in-file text. SfM + MVS, GUI + CLI, `pip install pycolmap` (+ CUDA wheels `pycolmap-cuda12`), prebuilt binaries + Docker. GPU-lane tool (dense MVS wants CUDA); code-only pull, no weights. |
-| Meshroom / AliceVision | open source; own-eyes verify at pull | ⏳ researched, license check pending | Free photogrammetry, "no commercial usage restrictions" per 2026 third-party comparisons — but verify AliceVision's actual LICENSE file before pulling. NVIDIA-CUDA heavy (AMD/iGPU hit roadblocks); node-graph GUI. GPU-lane only. |
+| Meshroom / AliceVision | **MPL-2.0 ✅ commercial OK (own-eyes verified 2026-10-18)** | ✅ **READY TO PULL (when disk <85%)** | AliceVision's own IP wiki (own-eyes read 2026-10-18): "licensed under an open source license that allows **free personal and commercial use**", "**no additional restrictions for corporate use**"; models created with it are the user's own IP. MPL-2.0 is weak (file-level) copyleft — commercial use permitted, larger works can be proprietary. NVIDIA-CUDA heavy (dense meshing wants CUDA); node-graph GUI. GPU-lane tool; pull code/binaries only. |
 | Agisoft Metashape / RealityCapture / RealityScan | paid or proprietary | ❌ skipped | Out of scope per the no-paid law. Documented only. |
 
 Cape Jones use for auto-scanning: digitize real props, costumes, and reference
 maquettes into textured meshes for the show pipeline. COLMAP first (cleanest
-license), Meshroom second (pending own-eyes license check).
+license), Meshroom second (MPL-2.0, commercial use explicitly permitted —
+verified 2026-10-18). **Nothing pulled this run — disk at 87%, over the 85%
+ceiling.** Next run with disk headroom can pull the Meshroom READY row directly.
 
 ### Sources
 
@@ -148,3 +150,4 @@ license), Meshroom second (pending own-eyes license check).
 - https://www.rokoko.com/insights/exploring-the-fusion-of-ragdoll-physics-and-mocap-animation-in-blender-with-blender-secrets
 - https://vagon.io/blog/free-vs-paid-photogrammetry-meshroom-or-agisoft-metashape
 - https://foro3d.com/en/2026/january/photogrammetry-software-comparison-meshroom-vs-agisoft-metashape-vs-realitycapture.html
+- https://github-wiki-see.page/m/alicevision/Meshroom/wiki/Intellectual-property (own-eyes 2026-10-18: MPL-2.0, "free personal and commercial use", "no additional restrictions for corporate use")
