@@ -23,6 +23,8 @@ doc picks the rigging tool for them to use.
 | Mixamo (Adobe) | Free (account) | Adobe terms — check before commercial use | ⚠️ optional, browser lane | Web auto-rigger + huge mocap library. Upload model, download rigged FBX. Good for rapid prototyping, not for the hero rig |
 | Cinevva Auto Rigger | Free browser tier / $29 Blender addon | check terms | ⚠️ optional | Browser: upload GLB/FBX/OBJ → rigged GLB back. Fast option if BlenRig stalls on the Tripo mesh |
 | Tripo one-click rigging | Free tier (Tripo platform) | check terms | ⚠️ optional | Tripo's 2026 guide lists one-click universal rigging in their suite — worth checking whether the already-pulled Tripo model has a rigged variant |
+| **COLMAP** (colmap/colmap) — auto-scanning | Free | **new BSD ✅ commercial OK (own-eyes verified 2026-10-18)** | ✅ **READY TO PULL (disk-gated)** | SfM + MVS photogrammetry, GUI + CLI, pycolmap pip bindings, CUDA wheels. 12,978 stars, active. See 2026-10-18 update below |
+| CEB SAM 3D Body Loader (cebstudios) — mocap + retargeting | Free to download | ❌ **commercial gate FAIL** | ❌ **REJECTED** | 100% free 2026-10-17, but author's own page warns underlying models (SAM 3D Body, GEM-X/NVlabs) carry licenses "restricted to non-commercial research". Free ≠ commercial-safe. Windows-only, not a git repo. See 2026-10-18 update below |
 
 ## Why BlenRig 6 for this task
 
@@ -101,3 +103,48 @@ https://github.com/Isabella98Liu/RigAnything is the **Adobe Research License —
 noncommercial research only** (copyright Adobe Inc.). The REJECTED row in
 `AUTO-RIG-TRIPO-2026.md` stands confirmed — not pulled, per the owner's license
 law.
+
+## Update 2026-10-18 — auto-retargeting + auto-scanning research (overnight idle pipeline)
+
+The AUTO-RIGGING PRIORITY law lists five axes: auto-rigging, auto-boning,
+auto-scanning, auto-skinning, auto-retargeting. The first two are now covered
+(Pinocchio / UniRig / TokenRig / afk-rig / BlenRig 6 / CloudRig pulled + wired).
+This run researched the two uncovered axes with live 2026 sources (browser
+search + own-eyes page reads). **Nothing pulled this run** — disk at the 85%
+ceiling — so this is research-only. The next run with disk headroom can pull
+the READY rows directly.
+
+### Auto-retargeting (mocap → character rig)
+
+| Tool | License | Verdict | Notes |
+|---|---|---|---|
+| Rokoko Studio Blender plugin | proprietary, free to use | ⚠️ fallback, not a pull | "Free Rokoko Blender retargeting plugin" (Blender Secrets via rokoko.com). Closed-source — doesn't fit the open-source pull convention. Check Rokoko ToS for commercial use before relying on it. |
+| **CEB SAM 3D Body Loader** (cebstudios) | ❌ **commercial gate FAIL** | ❌ **REJECTED — do not pull** | Went 100% FREE 2026-10-17 (own-eyes read of patreon.com/cebstudios post, 2026-10-18). BUT the author's own page carries a Commercial Use Disclaimer: "the underlying models and AI inference projects … carry their own distinct licenses and terms of use (**some of which may be restricted to non-commercial research**)". Underlying: SAM 3D Body (Meta AI Research), GEM-X (NVIDIA NVlabs), Fast-SAM-3D-Body. Free ≠ commercial-safe — fails the owner's license law. Also Windows-only, Patreon-zip distribution (not a git repo). |
+| "Good Good" retargeting tool (Pro Constantinou) | unknown | ⏳ identified, unverified | 80.lv 2026-06-17: hip-placement + limb-proportion matching technique to kill foot sliding / grounding issues. Name, price, and license not found in the article — needs follow-up before any decision. |
+| MakeHuman MakeWalk | GPL | legacy, skip | BVH→MH-rig retargeter (2018-era docs). MPFB — its successor — is already pulled; no new value. |
+
+Net: **no open-source, commercial-safe mocap retargeting tool found this run**
+beyond what's covered. Rokoko's free plugin is the pragmatic fallback (verify
+ToS); the rig lane should use afk-rig's 178 CC0 motion clips + BlenRig 6 for
+retarget workflows until a clean open option appears.
+
+### Auto-scanning (photogrammetry → 3D mesh)
+
+| Tool | License | Verdict | Notes |
+|---|---|---|---|
+| **COLMAP** (colmap/colmap) | **new BSD ✅ commercial OK (own-eyes verified 2026-10-18)** | ✅ **READY TO PULL (disk-gated)** | 12,978 stars / 3,127 commits / active (commit 149f6a79). README: "The COLMAP library is licensed under the new BSD license" — full BSD-3 text verified on the repo page (Copyright 2016 ETH Zurich and UNC Chapel Hill; 2016–2026 The COLMAP Contributors). GitHub shows NOASSERTION badge (no SPDX identifier) — same situation as rhubarb-lip-sync, resolved by the in-file text. SfM + MVS, GUI + CLI, `pip install pycolmap` (+ CUDA wheels `pycolmap-cuda12`), prebuilt binaries + Docker. GPU-lane tool (dense MVS wants CUDA); code-only pull, no weights. |
+| Meshroom / AliceVision | open source; own-eyes verify at pull | ⏳ researched, license check pending | Free photogrammetry, "no commercial usage restrictions" per 2026 third-party comparisons — but verify AliceVision's actual LICENSE file before pulling. NVIDIA-CUDA heavy (AMD/iGPU hit roadblocks); node-graph GUI. GPU-lane only. |
+| Agisoft Metashape / RealityCapture / RealityScan | paid or proprietary | ❌ skipped | Out of scope per the no-paid law. Documented only. |
+
+Cape Jones use for auto-scanning: digitize real props, costumes, and reference
+maquettes into textured meshes for the show pipeline. COLMAP first (cleanest
+license), Meshroom second (pending own-eyes license check).
+
+### Sources
+
+- https://github.com/colmap/colmap (README + LICENSE, own-eyes 2026-10-18)
+- https://www.patreon.com/cebstudios/posts/ceb-sam-3d-body-172610949 (own-eyes 2026-10-18)
+- https://80.lv/articles/try-this-new-mocap-retargeting-tool-for-blender (2026-06-17)
+- https://www.rokoko.com/insights/exploring-the-fusion-of-ragdoll-physics-and-mocap-animation-in-blender-with-blender-secrets
+- https://vagon.io/blog/free-vs-paid-photogrammetry-meshroom-or-agisoft-metashape
+- https://foro3d.com/en/2026/january/photogrammetry-software-comparison-meshroom-vs-agisoft-metashape-vs-realitycapture.html
