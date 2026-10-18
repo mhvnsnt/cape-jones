@@ -48,3 +48,28 @@ All licenses verified commercial-use OK. Weights/models stay OFF disk — code o
 - **genoooool/hyperframes-effects-gallery** — 255-effect catalog, but the repo
   declares NO license. Per license rules (document and skip): do not vendor until
   a license is declared. Revisit later.
+
+## Scene wave pull-ins (2026-10-17, lane scene/fullstack-research-20261017)
+
+### Light-Editor (riouxr/Light-Editor @ a4a08e9, GPL-3.0)
+- **What:** Robert Rioux's spreadsheet-style light manager v2.4.6 — toggle,
+  isolate, filter, and group every light in the scene; light linking manager.
+- **Why:** the living room's light count is growing; this is the VFX-studio way
+  to manage it.
+- **Use:** `tools/light-editor/` (README + `install_light_editor.py`).
+- **License:** GPL-3.0 — commercial OK.
+
+### Render-Manager (riouxr/Render-Manager @ e827295, GPL-3.0)
+- **What:** Robert Rioux's render-layer + render-pass manager v3.0.11 —
+  per-layer 16-bit color + 32-bit data passes incl. Cryptomatte, precomp export.
+- **Why:** the room is heading for compositing (god-ray glare, TV screen, LED
+  glow passes).
+- **Use:** `tools/render-manager/` (README + `install_render_manager.py`).
+- **License:** GPL-3.0 — commercial OK.
+
+### extra-lights (jlampel/extra-lights @ bb75dac, GPL-3.0)
+- **What:** Jonathan Lampel / CG Cookie's photometric light presets v1.3.0 —
+  21 `light.add_*` ops (lumens + Kelvin + IES profiles) in the Add menu.
+- **Why:** physical lighting for the living room fixtures without guessing.
+- **Use:** `tools/extra-lights/` (README + `install_extra_lights.py`).
+- **License:** GPL-3.0 — commercial OK.
