@@ -17,7 +17,12 @@ on 2026-10-17. Both are **CC0: commercial use OK, no attribution, redistributabl
 ## Fetch scripts
 
 - `fetch_polyhaven_hdri.py <slug> [1k|2k|4k] [outdir]` — downloads from
-  `dl.polyhaven.org`, asserts Radiance magic bytes, prints md5.
+  `dl.polyhaven.org`, asserts Radiance magic bytes. **2026-10-17 upgrade:**
+  resolves the free Poly Haven API (`api.polyhaven.com/files/{slug}`, no key)
+  for the authoritative download URL + published md5/size, asserts the bytes
+  match, skips re-download on md5 match. `--indoor` pulls the curated
+  indoor/studio set (`studio_small_03`, `studio_small_09`, `leburb`,
+  `brown_photostudio_02`) — the living-room window-daylight candidates.
 - `fetch_ambientcg.py <AssetId> [1K|2K] [JPG|PNG] [outdir]` — downloads the zip,
   asserts it contains image maps.
 
