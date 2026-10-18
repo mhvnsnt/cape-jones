@@ -162,3 +162,26 @@ earlier.
 **Headless posing note:** The deform bones' COPY_TRANSFORMS constraints are DRIVEN (24 drivers on FK/IK influence). Setting `constraint.influence=0` is overridden by drivers. Use `constraint.mute=True` to pose deform bones directly. World-space rotations convert to bone-local via `rest.inverted() @ R @ rest`.
 
 **7-pose verification:** BEFORE (procedural) vs AFTER (W5r) vs CLEAN metrics + rasterized images in `.scratch/`. Feet: 0.90/1.33 → 1.00-1.04 (fixed). Slab: eliminated. Shoulders: spikes reduced by influence limiting (verification pending).
+
+## Deformation Fix Wave (2026-10-18)
+**File:** `cape_jones_rigged_w5r.blend` — fixed version (127MB, 94-bone spine rig + 4 corrective keys) in GitHub Release `rig-deform-fix-20261018` (exceeds 100MB GitHub file limit; see Release assets). Repo holds the 93MB base; download the fixed blend from the Release.
+
+**Owner verdict:** "25 out of 100" — stretching/webbing at elbows, jaw, face, neck.
+
+**Defect zones found (numeric audit via depsgraph pose dumps):**
+- Inner elbow L/R: 36mm/23mm max displacement spikes on 130° flexion (webbing/crease collapse)
+- Jaw: 39mm spikes on 32° open; jaw weights bled to z=0.93 (forehead, max 0.58) dragging midface
+- Neck/head: 48mm spikes on 60° head turn (worst zone — visible membrane stretching)
+
+**Fixes applied:**
+1. **Corrective shape keys + drivers** (sculpted procedurally via laplacian-smooth delta, mapped to rest space via inverse blended bone rotations):
+   - `corr_elbow_L/R` — inner-elbow un-pinch + 1.2mm volume restore; driver: ROTATION_DIFF(upperarm, forearm), ramps 26°→115°
+   - `corr_jaw_open` — chin/mouth-corner smooth + 0.6mm push; driver: ROTATION_DIFF(head, jaw), ramps on angle DECREASE from 4.41 rad
+   - `corr_neck_head` — neck-head blend smooth + 0.4mm push; driver: ROTATION_DIFF(neck_2, head), ramps on angle INCREASE from 3.14 rad
+2. **Weight smoothing** at elbow hinges (laplacian, 3 iters, factor 0.5): 4-5k verts per side, max Δw 0.24
+3. **Jaw falloff remap**: jaw weights above z=0.845 fade to zero at z=0.885 (7,545 verts); removed weight → head. Fixes midface drag.
+4. Dual-quaternion + CorrectiveSmooth retained. No helper/twist bones needed (no twist artifacts found).
+
+**Visual proof:** before/after renders in `deform-proofs/` (elbow_topdown, elbow_crease, jaw_side, head_turn).
+
+**Scripts:** `dump_pose.py` (pose→npz), `analyze.py` (defect metrics + corrective builder), `build_correctives.py` (applies keys/weights/drivers), `render_single.py` (pose renders).
