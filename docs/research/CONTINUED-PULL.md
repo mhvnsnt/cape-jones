@@ -97,6 +97,9 @@ Storyboarder / storyboard/ → boards
 ### `AnimeEffects/` (AnimeEffectsDevs, ✅ cloned, 17MB)
 2D modular animation tool. GPL-3.0. Updated Dec 2025. C++ based.
 
+### `rhubarb-lip-sync/` (DanielSWolf, ✅ cloned, 147MB)
+Automatic lip-sync from audio: phoneme recognition (Pocketsphinx-based) → Preston Blair/Rhubarb mouth-shape timeline. The standard OSS lip-sync reference used by cartoon-studio's mouth catalog. MIT verified (LICENSE.md, full MIT text — GitHub API reports NOASSERTION but the license file is explicit; commercial use OK). Upstream active (updated 2026-10-17). Upstream `.github/` workflows stripped per convention. ✅ PULLED 2026-10-18 (run: overnight-idle-pipeline) into `production/tools/rhubarb-lip-sync/` (shallow depth-1, source-only). Candidate uses: dialogue → mouth-shape timelines for Ashes mouth-pack and cartoon-studio SVG rigs (replaces vowel-heuristic fallback), episode dialogue tracks.
+
 ### `pencil2d/` (pencil2d, ✅ cloned, 20MB)
 Hand-drawn 2D frame-by-frame animation app (Qt/C++). Bitmap + vector layers, onion skinning, camera layer, sound scrubbing. GPL-2.0 verified (LICENSE.TXT in-tree + GitHub API spdx_id=GPL-2.0, commercial use OK); upstream active (updated 2026-10-17). Upstream `.github/` workflows stripped per convention. ✅ PULLED 2026-10-18 (run: overnight-idle-pipeline) into `production/tools/pencil2d/` (610 files, shallow depth-1, no binaries >50MB). Candidate uses: hand-drawn 2D keyframes for Cape Jones shorts, EP01 gag-book sketches (fills the lightweight-frame-by-frame slot from FULL-PRODUCTION-STACK.md row 197).
 
