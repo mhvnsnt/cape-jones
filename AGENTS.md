@@ -48,6 +48,16 @@ Before reporting ANYTHING as done, complete, saved, uploaded, merged, or verifie
 
 **The 2026-10-16 incident:** An agent reported render chunks as saved. The owner asked questions. The agent flipped and agreed the work was lost — without checking its own lane. Both the original claim and the retraction were unverified. The work was actually fine. This law exists so that never happens again.
 
+## OWN-EYES-BEFORE-DELIVERY LAW (owner 2026-10-18)
+
+His words: "always look at what y'all do before y'all send it to me."
+
+1. **No render, video, image, model, or deliverable goes to him until YOU have viewed it with your own eyes** and confirmed it's what was asked for. Not "the script ran clean" — look at the pixels.
+2. **If you'd have caught it by looking, you should have caught it.** Orbiting a black blob instead of a sitting character, chameleon-tongue fingertips — both were visible in the frames. Looking is the job.
+3. **No guessing, no bullshitting.** Verify, don't assume. A render that "probably worked" is an unverified render.
+
+**What bit us (2026-10-18):** the sitting-pose turntable videos went to the owner showing him standing/floating with a detached cape spike — nobody viewed a frame before delivery. Same day, fingertip stretching ("chameleon tongue fingers") was caught by HIS eyes, not ours. Both would have been caught by a 5-second look. Never again.
+
 ## CHECK-RESEARCH-WIRE-DO LAW (owner 2026-10-16)
 
 The correct order of operations. Never reversed.
