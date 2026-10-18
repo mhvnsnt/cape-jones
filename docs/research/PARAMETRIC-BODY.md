@@ -71,7 +71,7 @@ the local `~/workspace/Forge3D` clone **nor** on GitHub (`gh api repos/mhvnsnt/F
 | 1 | **MPFB2** | MakeHuman community | Code GPL-3.0, assets **CC0** | ✅ **PULLED + WIRED.** Body-morph equivalent of GNM per owner. |
 | 2 | **ANNY** | Naver Labs Europe (HUMANS) | **CC0** | ✅ **PROVEN locally** (numpy backend, auto-download). 13,718 verts, 163 bones, 11 semantic shape params + 256 local blendshapes. Best free drop-in body model. Paper: arXiv 2511.03589. |
 | 3 | **MHR** (Momentum Human Rig, ATLAS integrated) | Meta | **Apache-2.0** | ✅ **PULLED 2026-10-18** (`production/tools/mhr/`, upstream @ d96fafa, 9MB code+scripts+docs only; model assets runtime-downloaded via `mhr-download-assets`, Kaggle-side). 18,439 verts, 127 joints, 7 LODs, FBX rigs + `corrective_blendshapes_lodN.npz` per LOD, 45 identity / 204 pose / 72 FACS expression params, SAM 3D Body perception. The "different org's GNM" — Meta's answer. Wiring: `production/tools/mhr/CAPE-JONES-WIRING.md`. |
-| 4 | **SOMA-X** | NVIDIA | **Apache-2.0** (own-eyes verified 2026-10-18: repo LICENSE + SPDX badge + README "licensed under Apache-2.0"; gh api `license: Apache-2.0`) | ✅ **LICENSE VERIFIED — CODE PULL QUEUED.** Unifies 5 backends (SOMA-Shape, MHR, SMPL-X, Anny, GarmentMeasurements) under one 77-joint skeleton + **single MLP pose-correctives** model. Best corrective tech to study. Upstream: NVlabs/SOMA-X @ 56a3d957 (main, 19 commits, 820 stars, ~21MB code-only; repo ships zero weights — identity assets auto-download from HF `nvidia/SOMA-X` at runtime, Kaggle/GPU-side only; SMPL-X + MANO backends need user-supplied licensed model files, NOT redistributed). Code pull queued for the first idle run under the 85% disk gate (disk 88% and climbing on this run 2026-10-18 — per NO-LOCAL-CLUTTER / keep-disk-under-85 laws). |
+| 4 | **SOMA-X** | NVIDIA | **Apache-2.0** (own-eyes verified 2026-10-18: repo LICENSE + SPDX badge + README "licensed under Apache-2.0"; gh api `license: Apache-2.0`) | ✅ **PULLED 2026-10-18** (`production/tools/soma-x/`, upstream @ 56a3d957 v0.3.4, 2.3MB code+scripts+docs, 124/124 py pass py_compile; `assets/` holds only Git-LFS pointer text — real identity assets runtime-download from HF `nvidia/SOMA-X` at first use, Kaggle/GPU-side only; SMPL-X + MANO backends need user-supplied licensed model files, NOT redistributed). Unifies 5 backends (SOMA-Shape, MHR, SMPL-X, Anny, GarmentMeasurements) under one 77-joint skeleton + **single MLP pose-correctives** model. Best corrective tech to study. Wiring: `production/tools/soma-x/CAPE-JONES-WIRING.md`. |
 | 5 | **ATLAS** | Meta + CMU (ICCV 2025) | via MHR (Apache-2.0) | Research integrated into MHR: decoupled skeleton/shape, sparse **non-linear** pose correctives (MLP per joint + geodesic sparsity), 76 skeletal params. |
 | 6 | **SMPL-X** | MPI | registration, **non-commercial** | Industry baseline. 10,475 verts, 54 joints, 207 pose corrective blendshapes B_P(θ). Code usable (Blender addon, `smplx` pip) but **model files need registration + are non-commercial** — document, don't ship. |
 | 7 | **SKEL** | MPI | registration | Biomechanical: anatomically-true joints, bone-interpenetration constraints. Study its joint definitions for our joint placement. |
@@ -163,7 +163,8 @@ lengths. The wave's "real flexible spine" = 5 segments minimum.
   NVlabs/SOMA-X @ 56a3d957, 820★, ~21MB code-only, zero weights in repo —
   runtime identity assets download from HF `nvidia/SOMA-X` at first use,
   Kaggle/GPU-side only; SMPL-X/MANO backends need user-licensed files, NOT
-  redistributed) — code pull QUEUED for the first idle run under the 85% disk
-  gate (this run: disk 88% and climbing, live render lanes writing — deferred per
-  keep-disk-under-85 law, NOT per licensing); SOMA-X 7-pose bakeoff vs W5r + MPFB
-  weights once pulled.
+  redistributed) — ✅ **PULLED 2026-10-18** (`production/tools/soma-x/`, upstream
+  @ 56a3d957 v0.3.4, 2.3MB code+scripts+docs, 124/124 py pass py_compile;
+  assets are LFS pointers only, weights download GPU-side; wiring in
+  `production/tools/soma-x/CAPE-JONES-WIRING.md`); SOMA-X 7-pose bakeoff vs W5r
+  + MPFB weights once pulled.
