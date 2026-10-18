@@ -1,0 +1,112 @@
+# SPDX-License-Identifier: BSD-3-Clause
+
+# Find package config for COLMAP library.
+#
+# The following variables are set by this config:
+#
+#   COLMAP_FOUND: TRUE if COLMAP is found.
+#   COLMAP_VERSION: COLMAP version.
+#
+# The colmap::colmap imported interface target is defined.
+
+@PACKAGE_INIT@
+
+set(COLMAP_FOUND FALSE)
+
+# Set hints for finding dependency packages.
+
+set(METIS_INCLUDE_DIR_HINTS @METIS_INCLUDE_DIR_HINTS@)
+set(METIS_LIBRARY_DIR_HINTS @METIS_LIBRARY_DIR_HINTS@)
+
+set(GLEW_INCLUDE_DIR_HINTS @GLEW_INCLUDE_DIR_HINTS@)
+set(GLEW_LIBRARY_DIR_HINTS @GLEW_LIBRARY_DIR_HINTS@)
+
+set(GLOG_INCLUDE_DIR_HINTS @GLOG_INCLUDE_DIR_HINTS@)
+set(GLOG_LIBRARY_DIR_HINTS @GLOG_LIBRARY_DIR_HINTS@)
+
+set(CryptoPP_INCLUDE_DIR_HINTS @CryptoPP_INCLUDE_DIR_HINTS@)
+set(CryptoPP_LIBRARY_DIR_HINTS @CryptoPP_LIBRARY_DIR_HINTS@)
+
+# Find dependency packages.
+
+set(TEMP_CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH})
+set(CMAKE_MODULE_PATH ${PACKAGE_PREFIX_DIR}/share/colmap/cmake)
+
+# Set the exported variables.
+
+set(COLMAP_FOUND TRUE)
+
+set(COLMAP_VERSION @COLMAP_VERSION@)
+
+set(OPENMP_ENABLED @OPENMP_ENABLED@)
+
+set(CUDA_ENABLED @CUDA_ENABLED@)
+set(CUDA_MIN_VERSION @CUDA_MIN_VERSION@)
+
+set(HIP_ENABLED @HIP_ENABLED@)
+if(HIP_ENABLED)
+    # Record the ROCm installation the library was built against, so that a
+    # consumer recreates the same hip:: and roc:: targets even when ROCm is not
+    # installed in the default location. A cache-level -DROCM_PATH still wins;
+    # the ROCM_PATH environment variable is only consulted when no cached
+    # value exists.
+    set(ROCM_PATH "@ROCM_PATH@" CACHE PATH "Path to ROCm installation")
+endif()
+
+set(ONNX_ENABLED @ONNX_ENABLED@)
+
+set(DOWNLOAD_ENABLED @DOWNLOAD_ENABLED@)
+
+set(GUI_ENABLED @GUI_ENABLED@)
+
+set(CGAL_ENABLED @CGAL_ENABLED@)
+
+set(MVS_ENABLED @MVS_ENABLED@)
+
+set(LSD_ENABLED @LSD_ENABLED@)
+
+# Whether the installed COLMAP was built with interprocedural optimization.
+# Consumers linking COLMAP's static libraries (e.g. pycolmap) must match this:
+# linking non-IPO archives into an IPO binary fails with GCC.
+set(COLMAP_INTERPROCEDURAL_OPTIMIZATION @COLMAP_INTERPROCEDURAL_OPTIMIZATION@)
+
+set(FETCH_POSELIB @FETCH_POSELIB@)
+
+set(FETCH_FAISS @FETCH_FAISS@)
+
+set(FETCH_BOOST @FETCH_BOOST@)
+
+# Where the installed COLMAP got Boost from. Pre-setting this makes
+# FindDependencies.cmake below follow the installed binaries: if COLMAP built a
+# pinned Boost, that copy was installed alongside COLMAP and the consumer is
+# pointed at it; if COLMAP used the system Boost, the consumer's Boost has to be
+# new enough too, and gets a configure-time error rather than a silently
+# different container layout.
+set(COLMAP_BOOST_FROM_SYSTEM @COLMAP_BOOST_FROM_SYSTEM@)
+if(NOT COLMAP_BOOST_FROM_SYSTEM)
+    # The vendored Boost installed its own package config into COLMAP's prefix.
+    set(COLMAP_BOOST_VENDORED_CONFIG_DIR
+        "${PACKAGE_PREFIX_DIR}/@COLMAP_BOOST_INSTALL_CMAKEDIR@")
+endif()
+
+set(FETCH_ONNX FALSE)
+if(@FETCH_ONNX@)
+    if(ONNX_ENABLED AND EXISTS ${PACKAGE_PREFIX_DIR}/share/onnxruntime/cmake)
+        set(onnxruntime_DIR ${PACKAGE_PREFIX_DIR}/share/onnxruntime/cmake)
+    endif()
+    set(onnxruntime_INCLUDE_DIR_HINTS ${PACKAGE_PREFIX_DIR}/include CACHE PATH "ONNX Runtime include directory hints")
+    set(onnxruntime_LIBRARY_DIR_HINTS ${PACKAGE_PREFIX_DIR}/@CMAKE_INSTALL_LIBDIR@ CACHE PATH "ONNX Runtime library directory hints")
+endif()
+
+# Dependencies first: a vendored Boost is exported from its own export set
+# rather than imported, so colmap-targets.cmake checks that those targets
+# already exist and fails the whole package if they do not. The dependency
+# configs run their own @PACKAGE_INIT@ and overwrite PACKAGE_PREFIX_DIR with
+# their prefix, so remember COLMAP's before including them.
+set(COLMAP_PACKAGE_PREFIX_DIR ${PACKAGE_PREFIX_DIR})
+include(${COLMAP_PACKAGE_PREFIX_DIR}/share/colmap/cmake/FindDependencies.cmake)
+include(${COLMAP_PACKAGE_PREFIX_DIR}/share/colmap/colmap-targets.cmake)
+check_required_components(colmap)
+
+# Reset to previous value
+set(CMAKE_MODULE_PATH ${TEMP_CMAKE_MODULE_PATH})
