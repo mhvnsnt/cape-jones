@@ -103,6 +103,9 @@ Automatic lip-sync from audio: phoneme recognition (Pocketsphinx-based) → Pres
 ### `pencil2d/` (pencil2d, ✅ cloned, 20MB)
 Hand-drawn 2D frame-by-frame animation app (Qt/C++). Bitmap + vector layers, onion skinning, camera layer, sound scrubbing. GPL-2.0 verified (LICENSE.TXT in-tree + GitHub API spdx_id=GPL-2.0, commercial use OK); upstream active (updated 2026-10-17). Upstream `.github/` workflows stripped per convention. ✅ PULLED 2026-10-18 (run: overnight-idle-pipeline) into `production/tools/pencil2d/` (610 files, shallow depth-1, no binaries >50MB). Candidate uses: hand-drawn 2D keyframes for Cape Jones shorts, EP01 gag-book sketches (fills the lightweight-frame-by-frame slot from FULL-PRODUCTION-STACK.md row 197).
 
+### `piper-tts/` (rhasspy, ✅ cloned, 47MB)
+Fast local offline neural text-to-speech: C++ inference binary + Python package + HTTP server. MIT verified (LICENSE.md in-tree + GitHub API spdx_id=MIT, commercial use OK); upstream archived 2026 (project complete/stable, v1.2.0). Upstream `.github/` workflows stripped per convention; all 233 upstream blobs verified present. ✅ PULLED 2026-10-18 (run: overnight-idle-pipeline) into `production/tools/piper-tts/` (shallow depth-1, source-only; `etc/test_voice.onnx` 27MB kept for smoke tests; voice files stay OUT of git — download on demand from rhasspy/piper-voices). Wiring doc: `production/tools/piper-tts/PIPER-TTS.md`. Candidate uses: scratch dialogue/temp narration for animatics without API keys (pairs with `rhubarb-lip-sync/` audio→mouth-shape + `cartoon-studio/` dialogue), podcast/narration drafts, voice prototyping before ElevenLabs/actor recordings.
+
 ## Disk Impact
 Custom scripts: <50KB. Clones: ~42MB. Total pull: <45MB.
 
