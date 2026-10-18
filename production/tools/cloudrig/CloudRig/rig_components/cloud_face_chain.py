@@ -1,0 +1,316 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from ..properties import RigComponent
+
+from bpy.app.translations import pgettext_n as n_
+from bpy.props import BoolProperty
+from bpy.types import Context, PropertyGroup, UILayout
+from mathutils import Vector
+
+from ..rig_component_features.bone_info import BoneInfo, ConstraintInfo
+from ..rig_component_features.overlay_painter import no_overlay
+from .cloud_chain import Component_ToonChain
+from .cloud_chain_anchor import Component_FaceChainAnchor
+
+MERGE_THRESHOLD = 0.000001
+# TODO: Center merging probably doesn't work without an anchor, or when Smooth Spline is on. Need tests!
+
+
+class Component_FaceChain(Component_ToonChain):
+    """Chain with cartoony squash and stretch controls, which supports intersecting bone chains."""
+
+    ui_name = "Chain: Face Grid"
+
+    ##############################
+    # Inherited functions.
+
+    def create_component_interactions(self, context: Context, last_chain_done=False):
+        """Coordinate intersection setup across all face-chain components, running it once after the last one."""
+        # Check the generator component list to see if we are the last chain component that will be generated.
+        self.chain_components = []
+        for component in self.generator.all_components:
+            if type(component).__name__ in ["Component_FaceChain", "Component_Eyelid"]:
+                # NOTE: I don't know why isinstance() doesn't work here.
+                # It works when cloud_eyelid is testing itself, but not when cloud_face_chain is testing cloud_eyelid.
+                self.chain_components.append(component)
+
+        self.is_last_chain_comp = self == self.chain_components[-1]
+
+        if last_chain_done:
+            super().create_component_interactions(context)
+
+        ### Following code is only run ONCE by the LAST face chain component.
+        if self.is_last_chain_comp and not last_chain_done:
+            self.fchain__create_and_setup_intersections(context)
+
+    @no_overlay
+    def base__relink(self, last_chain_done=False):
+        """Defer relinking until all face-chain components have finished generating."""
+        if last_chain_done:
+            super().base__relink()
+            return
+        elif not self.is_last_chain_comp:
+            return
+
+        for comp in self.chain_components:
+            comp.base__relink(last_chain_done=True)
+
+    def base__relink_get_target(self, org_i: int, con: ConstraintInfo) -> BoneInfo:
+        """Relink target should become the intersection control if there is one."""
+        relink_tgt: BoneInfo = super().base__relink_get_target(org_i, con)
+
+        intersection = relink_tgt.custom_data.get('intersection_ctrl')
+        relink_tgt = intersection or relink_tgt
+
+        # Don't create new parent helpers for face chain STR bones.
+        if con.type == 'ARMATURE' and not intersection and not relink_tgt.parent_helper and 'NOHLP' not in con.name:
+            con.name += "_NOHLP"
+
+        return relink_tgt
+
+    ##############################
+    # Face grid functions.
+
+    def fchain__create_and_setup_intersections(self, context: Context):
+        """Create intersection controls for overlapping STR bones, then trigger the final interaction pass."""
+        str_bone_clusters = get_bone_clusters(self.chain_components)
+        self.intersection_bones = []
+        for cluster in str_bone_clusters:
+            self.intersection_bones.append(self.__create_intersection_for_cluster(cluster))
+        self.__setup_all_intersections()
+
+        for comp in self.chain_components:
+            comp.create_component_interactions(context, last_chain_done=True)
+
+    def __create_intersection_for_cluster(self, cluster: list[BoneInfo]) -> BoneInfo:
+        """Try to find a Component_FaceChainAnchor to parent the cluster to.
+        If it doesn't exist, create one.
+        """
+
+        rig_component = cluster[0].owner_component
+
+        intersection_control = None
+        is_anchor = False
+        # Search for an anchor component
+        anchor_components = [
+            component
+            for component in rig_component.generator.all_components
+            if isinstance(component, Component_FaceChainAnchor)
+        ]
+        for anchor_comp in anchor_components:
+            distance = (anchor_comp.bones_org[0].head - cluster[0].head).length
+            if distance < 0.000001:
+                intersection_control = anchor_comp.bones_org[0]
+                is_anchor = True
+                break
+
+        if not intersection_control:
+            combined_name = rig_component.naming.combine_names(cluster)
+
+            slices = rig_component.naming.slice_name(combined_name)
+            # Discard prefixes, put STR-I.
+            bone_name = rig_component.naming.make_name(["STR", "I"], slices[1], slices[2])
+
+            intersection_control = rig_component.bone_sets['Intersection Controls'].new(
+                name=bone_name,
+                # STR bone won't have a parent helper when BBone Densitry is 0.
+                source=cluster[0].parent_helper or cluster[0],
+                parent=cluster[0].source,
+                custom_shape_name=self.params.face_chain.shape_intersection.shape_name,
+                custom_shape_scale_xyz=Vector((1, 1, 1)),
+            )
+            intersection_control.roll_align_other(cluster[0])
+
+        any_left = any((self.naming.side_is_left(b) for b in cluster))
+        any_right = any((self.naming.side_is_left(b) is False for b in cluster))
+        if abs(intersection_control.head.x) < 0.001 and any_left and any_right:
+            do_centered_cluster(cluster, intersection_control, is_anchor)
+
+        # Parent the bones
+        parent_cluster_to_intersection(cluster, intersection_control)
+
+        intersection_control.custom_data['str_bones'] = cluster
+        return intersection_control
+
+    def __setup_all_intersections(self):
+        """Apply armature constraints to intersection bones and trigger eyelid sticky setup."""
+        # HACK: We can't ensure that the last chain component to be executed is a cloud_eyelid,
+        # so we have to make sure the eyelid setup function runs even when that's not the case...
+        for chain_comp in self.chain_components:
+            if hasattr(chain_comp, 'eyelid__make_sticky_setup'):
+                chain_comp.eyelid__make_sticky_setup()
+
+    ##############################
+    # Parameters
+    @classmethod
+    def define_bone_sets(cls):
+        """Create parameters for this rig's bone sets."""
+        super().define_bone_sets()
+        # The sub_controls set is special in that its .new() function should never be
+        # called, and therefore it never creates any bones. However, pre-existing
+        # STR bones who then had a merged control created for them will be assigned
+        # the bone group and layer of this BoneSet.
+        cls.define_bone_set(
+            n_("Sub Controls"),
+            color_palette='THEME02',
+            collections=['Mechanism Bones'],
+            is_advanced=True,
+        )
+        cls.define_bone_set(
+            n_("Intersection Controls"),
+            color_palette='THEME09',
+            collections=['Stretch Controls'],
+            wire_width=1.5,
+        )
+
+    @classmethod
+    def draw_control_params(cls, layout: UILayout, context: Context, component: RigComponent):
+        super().draw_control_params(layout, context, component)
+        params = component.params
+        cls.draw_prop(context, layout, params.face_chain, 'merge')
+
+    @classmethod
+    def draw_appearance_params(cls, layout: UILayout, context: Context, component: RigComponent):
+        super().draw_appearance_params(layout, context, component)
+        params = component.params
+        cls.draw_prop_custom_shape(context, layout, params.face_chain, 'shape_intersection')
+
+
+def parent_cluster_to_intersection(cluster: list[BoneInfo], intersection: BoneInfo):
+    """Parent each STR bone in the cluster to the intersection control and configure smooth-intersection constraints."""
+    for str_bone in cluster:
+        component = str_bone.owner_component
+        str_bone.custom_data['intersection_ctrl'] = intersection
+
+        if str_bone.owner_component.params.chain.bbone_density > 0:
+            arm_con = str_bone.parent_armature_constraint
+            if arm_con:
+                arm_con.targets = [intersection.name]
+        else:
+            # STR bone will have no parent helper when BBone Density is 0.
+            str_bone.parent = intersection
+
+        if str_bone.custom_shape_transform:
+            str_bone.custom_shape_transform.add_constraint(
+                'COPY_TRANSFORMS',
+                name="Copy Anchor Transforms (Smooth Intersection)",
+                index=3,
+                subtarget=intersection,
+                target_space='LOCAL_OWNER_ORIENT',
+                mix_mode='BEFORE',
+            )
+            # This is horrendous, but I can't argue with the results.
+            # The tangent helper must inherit rotation, otherwise it doesn't get affected by the root (very bad).
+            # However, the current stack of constraints results in a double inheritance of just Y rotation,
+            # because the Damped Track constraints are fully locking the X and Z rotations.
+            str_bone.custom_shape_transform.add_constraint(
+                'COPY_ROTATION',
+                name="Counter Anchor Y Rot (Smooth Intersection)",
+                index=4,
+                subtarget=intersection,
+                use_xyz=[False, True, False],
+                invert_xyz=[False, True, False],
+                target_space='LOCAL_OWNER_ORIENT',
+                euler_order='YZX',
+                mix_mode='BEFORE',
+            )
+
+        str_bone.collections = component.bone_sets['Sub Controls'].collections
+        str_bone.color_palette_base = component.bone_sets['Sub Controls'].color_palette
+
+
+def get_bone_clusters(chain_components: list[Component_ToonChain]) -> list[list[BoneInfo]]:
+    """Gather a list of lists of more than one STR bones that are in the same
+    location as another STR bone from another face_chain rig with
+    params.face_chain.merge==True.
+    """
+
+    clusters = []
+    bones_in_a_cluster = []
+
+    all_str_bones = []
+    for component in chain_components:
+        if not component.params.face_chain.merge:
+            continue
+        all_str_bones.extend(component.main_str_bones)
+
+    for str_bone in all_str_bones:
+        if str_bone in bones_in_a_cluster:
+            continue
+        cluster = [str_bone]
+        for other_str in all_str_bones:
+            if other_str in bones_in_a_cluster:
+                continue
+            if str_bone == other_str:
+                continue
+            if (str_bone.head - other_str.head).length < MERGE_THRESHOLD:
+                cluster.append(other_str)
+        if len(cluster) > 1:
+            clusters.append(cluster)
+        bones_in_a_cluster.extend(cluster)
+
+    return clusters
+
+
+def do_centered_cluster(cluster: list[BoneInfo], intersection: BoneInfo, is_anchor=False):
+    """Flatten center bones along the X axis so left/right chains meet cleanly at the midpoint.
+
+    Handles cases like teeth or lips where two rig components meet at the center
+    and need to form a smooth, unkinked curve.
+    """
+    component = cluster[0].owner_component
+    pos_sum = cluster[0].tail.copy()
+    shape_scale_sum = Vector((abs(s) for s in cluster[0].custom_shape_scale_xyz))
+    z_axis_sum = cluster[0].z_axis
+    for str_bone in cluster[1:]:
+        pos_sum += str_bone.tail
+        z_axis_sum += str_bone.z_axis
+        shape_scale_sum += Vector((abs(s) for s in str_bone.custom_shape_scale_xyz))
+    direction = z_axis_sum.normalized()
+    avg_shape_scale = shape_scale_sum / len(cluster)
+    avg_z_axis = z_axis_sum / len(cluster)
+
+    if not is_anchor:
+        intersection.vector = direction * sum(b.length for b in cluster) / len(cluster)
+        intersection.roll_align_vector(avg_z_axis, axis='+Z')
+        intersection.use_custom_shape_bone_size = False
+        intersection.custom_shape_scale_xyz = avg_shape_scale
+
+    for str_bone in cluster:
+        flipped_name = component.naming.flip_name(str_bone)
+        if flipped_name == str_bone.name:
+            continue
+        opposite_bone = str_bone.owner_component.generator.find_bone_info(flipped_name)
+        if not opposite_bone:
+            continue
+
+        x_axis = 'X' if str_bone.tail.x > 0 else '-X'
+        str_bone.flatten(axis=x_axis)
+        str_bone.roll_align_vector(str_bone.head + z_axis_sum)
+        if str_bone.owner_component.needs_tangent_helpers:
+            str_bone.custom_data['tangent_helper'].flatten(axis=x_axis)
+            str_bone.custom_data['tangent_helper'].roll_align_vector(str_bone.head + z_axis_sum)
+        if str_bone.owner_component.needs_tangent_helpers and opposite_bone.owner_component.needs_tangent_helpers:
+            if not str_bone.next:
+                str_bone.next = opposite_bone.prev
+            if not str_bone.prev:
+                str_bone.prev = opposite_bone.next
+            str_bone.owner_component.chain__set_next_prev(str_bone)
+
+
+class Params(PropertyGroup):
+    merge: BoolProperty(
+        name="Merge Controls",
+        description="If any controls of this rig intersect with another, create a parent control that owns all overlapping controls, and hide the overlapping controls on a different layer",
+        default=True,
+    )
+
+    shape_intersection: Component_ToonChain.make_custom_shape_params(identifier="Intersection", default="Cube")
+
+
+RIG_COMPONENT_CLASS = Component_FaceChain
