@@ -123,3 +123,10 @@ Custom scripts: <50KB. Clones: ~42MB. Total pull: <45MB.
 - `three-anime-style/`: ✅ PULLED 2026-10-16 into production/tools/three-anime-style/ (MIT, 22MB).
 - `video-gif-studio/`: ✅ recovered via PR #34 (on main).
 - `hyperframes-effects-gallery/`: ✅ correct URL found (genoooool/hyperframes-effects-gallery). Status below.
+
+## 2026-10-18 06:44 CDT (idle pipeline) — PULLED Simple Retarget Tool into cape-jones
+- **Simple Retarget Tool** (cgvirus/Simple-Retarget-Tool-Blender @ 3adcfaf): free Blender addon, retargets Mixamo/BVH/iClone animation → Rigify, Daz3D (G3/G8), custom rigs. V2 one-click "Set Rest Pose" + preset import/export; V3 blend-shape-safe rest pose.
+- **License:** GPL-3.0 — own-eyes verified in-tree (`LICENSE`, GNU GPL Version 3, 29 June 2007). Commercial-safe as a tool (same standing as afk-rig).
+- **Pull:** 60KB, 2 Python files (py_compile clean), no deps, no binaries, no weights. Found via live 2026 search after the retargeting axis showed "no open-source, commercial-safe tool" in the 06:14 run's research. Closes that gap.
+- **Wiring:** `production/tools/simple-retarget-tool/CAPE-JONES-WIRING.md` (install, 5-step retarget workflow, rest-pose gotchas, hip/limb proportion tip carried from the "Good Good" technique note, Blender 4.x/5.x API note).
+- **Docs:** AUTO-RIGGING-TOOLS-2026.md retargeting table gained the PULLED row + gap-closed update.
