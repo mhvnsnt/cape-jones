@@ -48,6 +48,18 @@ Before reporting ANYTHING as done, complete, saved, uploaded, merged, or verifie
 
 **The 2026-10-16 incident:** An agent reported render chunks as saved. The owner asked questions. The agent flipped and agreed the work was lost — without checking its own lane. Both the original claim and the retraction were unverified. The work was actually fine. This law exists so that never happens again.
 
+## OWN-EYES-BEFORE-DELIVERY LAW (owner 2026-10-18)
+His words: "always look at what y'all do before y'all send it to me."
+
+**No render, video, image, model, or deliverable goes to the owner until YOU have viewed it with your own eyes and confirmed it is what was asked for.** Not "the script ran clean" — look at the pixels.
+
+1. **Looking is the job.** If you would have caught it by looking, you should have caught it. "The render completed" means nothing if the character is orbiting a black blob instead of sitting, or the fingers came out wrong. Open the image. Watch the video. Inspect the model.
+2. **Verify, don't assume.** A clean exit code is not verification. A file existing is not verification. Your eyes on the actual deliverable, confirming it matches what was asked — that is verification.
+3. **No guessing, no bullshitting.** If you haven't looked, say so: "not yet viewed." Never present an unviewed deliverable as ready.
+4. **Every lane inherits this.** Renders, turntables, videos, model drops, PR screenshots — nothing ships to the owner unviewed. Build the viewing step into the lane (render → view → fix → re-render → view → ship).
+
+**The 2026-10-18 incidents:** sitting turntables and fingertip fixes went out with defects visible on sight — caught by the owner instead of the lane. Never again.
+
 ## CHECK-RESEARCH-WIRE-DO LAW (owner 2026-10-16)
 
 The correct order of operations. Never reversed.
