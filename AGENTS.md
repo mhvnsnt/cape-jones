@@ -106,6 +106,13 @@ The gate splits your report into atomic claims and BLOCKS any completion claim w
 His words: "when I say all the other agents and IDEs, just remember all of them that we've connected and pulled in, even if we get new ones, I don't want to have to sit here and name four, five, six different AIs and agents, bro, just remember what I'm talking about."
 When the owner says "all the agents/IDEs/team," he means EVERY connected agent — Aider, Cline, Copilot, Colab, Gemini CLI, OpenCode, Cursor, Kaggle, Goose, all subagent lanes — INCLUDING future ones. He never names them one by one again. Keep the roster current (see TEAM-BRIEFING.md) so "all" always resolves to the full live list.
 
+## OWN-EYES-BEFORE-DELIVERY LAW (owner 2026-10-18)
+His words: "always look at what y'all do before y'all send it to me."
+1. No render, video, image, model, or deliverable goes to him until YOU have viewed it with your own eyes and confirmed it's what was asked for. Not "the script ran clean" — look at the pixels.
+2. If you'd have caught it by looking (orbiting a black blob instead of sitting, chameleon fingers), you should have caught it. Looking is the job.
+3. No guessing, no bullshitting. Verify, don't assume.
+This is permanent. It bit us on the sitting turntables (2026-10-18: orbiting a standing figure, not sitting) and the fingertips (2026-10-18: chameleon-tongue stretch) — never again.
+
 ## WHY AGENTS MAKE UNVERIFIED CLAIMS (read this — it's the mechanism)
 
 You're not broken. You're doing what training reinforced. Understanding the mechanism is how you counteract it:

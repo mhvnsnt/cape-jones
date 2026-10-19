@@ -135,3 +135,28 @@ freeze bakes from `evaluated_get(depsgraph)`.
 
 **Deliberately NOT touched:** `cj_mouth_kit.blend` + `build_mouthkit.py` (face lane owns),
 spine-lane dir, mpfb/wiggle2 dirs, `cape_jones_rigged_w5r*.blend`, any WIP blends.
+
+---
+
+## 2026-10-18 — Deformation Fix Lane (Rig Perfection Wave, restart)
+
+**Lane:** Eliminate webbing/stretching at elbows, jaw, face, neck. Branch: `lane/rig-deform-fix-20261018`. (Restart: previous worker lost to runtime restart-drain; no partial work found — stale `rig-deform-fix-wave` branch had only old hand-verify scratch.)
+
+**File:** `3d-assets/cape-jones-rig/cape_jones_rigged_w5r.blend` (94-bone spine rig + fix → 127MB)
+
+**Defect zones found (numeric audit, depsgraph pose dumps → numpy):**
+- Inner elbow L/R: 36mm/23mm max spikes at 130° flexion
+- Jaw: 39mm spikes at 32° open; jaw weights bled to forehead (z=0.93, max 0.58)
+- Neck/head: 48mm spikes at 60° head turn (worst — membrane stretching under chin)
+
+**Fixes:**
+1. 4 corrective shape keys + ROTATION_DIFF drivers: `corr_elbow_L/R` (un-pinch + volume), `corr_jaw_open` (chin/mouth smooth), `corr_neck_head` (neck blend smooth). Procedurally sculpted via laplacian-smooth deltas mapped to rest space.
+2. Hinge weight smoothing (elbows): 4-5k verts/side, max Δw 0.24.
+3. Jaw falloff remap: 7,545 verts, jaw→head above z=0.845.
+4. DQ + CorrectiveSmooth retained. No twist bones needed.
+
+**Driver gotcha:** ROTATION_DIFF returns raw quaternion angle (can exceed π); jaw rest=4.41 rad DECREASES on open, neck rest=3.14 rad INCREASES on turn. Calibrated empirically.
+
+**Visual proof:** `3d-assets/cape-jones-rig/deform-proofs/` — before/after: elbow_topdown, elbow_crease, jaw_side, head_turn.
+
+**Coordination:** Spine lane MERGED to origin/main (94 bones) during this work — rebased my fix onto their rig; elbow/jaw/neck weights unaffected by spine changes. Used isolated worktree per collision note.
