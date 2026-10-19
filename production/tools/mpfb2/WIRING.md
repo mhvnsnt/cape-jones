@@ -51,12 +51,21 @@ Headless notes: MPFB2 is a Blender extension; headless use imports it from
 `src/` with two mocks (`bpy.utils.extension_path_user`,
 `mpfb.get_preference`) — no upstream files modified. Run under `xvfb-run -a`.
 
+**Repo status note (2026-10-18):** the 141 MB wired blend
+(`cape_jones_mpfb_wired.blend`) and the B/C2/C3 proof shots below were produced
+on the pull lane's disk and are NOT in this repo (binary-size rule). Per the
+owner's CUSTOMIZATION PIPELINE LAW (2026-10-18), MPFB2 is the designated body-morph
+system of the wired customization pipeline (body morphs), alongside the
+GNM-derived face rig (face morphs) — see `docs/research/PARAMETRIC-BODY.md`.
+
 ## Proof renders
 
-`3d-assets/cape-jones-rig/mpfb_proofs/`:
-- `A1_morph_bulk_shoulders.png`, `A2_morph_belly_height_limbs.png`
-- `B_full_skeleton_163.png`
-- `C1_deep_knee_bend.png`, `C2_elbow_90.png`, `C3_spine_twist_bend.png`
+`production/tools/mpfb2/proof/` (in this repo):
+- `mpfb_proof.png` (+ `mpfb_proof.blend` scene) — headless create-human, apply
+  morphs, add 163-bone rig, render
+- `A1_morph_bulk_shoulders.png`, `A2_morph_belly_height_limbs.png`,
+  `C1_deep_knee_bend.png` — morph sweep + knee-bend proofs on the wired blend
+  (rendered on the lane's disk; scene file not in repo)
 
 ## For the rig/deformation lanes
 
