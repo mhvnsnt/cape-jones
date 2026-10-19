@@ -164,3 +164,23 @@ vendored — weights download at run time per each tool's README. No binaries
   fetch from fspy.io when a solve is needed.
 - **License:** GPL-3.0 — commercial use allowed (copyleft on derivative
   distribution of the add-on itself).
+
+## Transitions wave (2026-10-19, overnight-idle-pipeline)
+
+### gl-transitions (gl-transitions/gl-transitions, MIT)
+- **What:** 125 GPU transition shaders (fade, wipes, burns, 3D flips, glitch,
+  kaleidoscope, displacement...) — the open collection behind dozens of
+  editors. Vendored: all 125 `.glsl` shaders + LICENSE/README (dev tooling
+  not pulled).
+- **Why:** the show pipeline had no transition system — hard cuts or
+  hand-built fades only. Now: one command bakes any of 125 transitions
+  between two stills/clips, deterministically, headless.
+- **Use:** `production/tools/gl-transitions/` —
+  `render_transition.py --from a.png --to b.png --transition fade --out t.mp4`;
+  `--list` shows all 125; `--param name=value` overrides shader uniforms
+  (defaults parsed from the `.glsl` headers). Playwright + Chromium
+  (SwiftShader WebGL) renders frames, ffmpeg encodes H.264/yuv420p/faststart.
+  Wiring doc `CAPE-JONES-WIRING.md`. Verified own-eyes on fade,
+  undulatingBurnOut, displacement, luma (incl. extra-sampler path).
+- **License:** MIT (123 shaders) + BSD-2-Clause (1) + BSD-3-Clause (1) —
+  all permissive, commercial use allowed.
