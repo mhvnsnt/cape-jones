@@ -67,3 +67,44 @@ verified.
   the tar.xz is kept for reinstall). If a GPU/cloud lane needs it, the download
   URL + wrapper are documented here — fetch, don't re-upload.
 - GUI mode works under `xvfb-run -a` but is not the lane path; headless only.
+
+## Finishing comp template: `natron_comp_finish.py` (2026-10-19)
+
+The first real comp built on the headless Natron install — the "Krita -> Natron ->
+finish.py" pipeline step is now an actual runnable script, not just a doc line.
+
+**Graph:** `Read(beauty) -> Grade -> Saturation -> DenoiseSharpen(sharpen only)
+-> Merge(over, bg) -> Write`
+
+**Usage:**
+```bash
+NATRON_BEAUTY=/path/beauty.png NATRON_BG=/path/bg.png NATRON_OUT=/path/final.png \
+    ~/workspace/tools/natron/natron-render.sh production/tools/natron/natron_comp_finish.py < /dev/null
+```
+Env knobs: `NATRON_BEAUTY` (required), `NATRON_BG` (optional; skipped = comp on
+black), `NATRON_OUT` (required), `NATRON_MULTIPLY` (grade gain, linear),
+`NATRON_GAMMA`, `NATRON_SATURATION`, `NATRON_SHARPEN` (all optional, sane
+defaults). Self-test: `python3 natron_comp_finish.py --selftest` (needs PIL,
+runs the full headless comp on synthetic plates, pixel-verified, exit 0/1).
+
+**Hard-won facts (verified by render, not docs):**
+- Natron Merge: **input 0 = B (background), input 1 = A (foreground)**. Swapping
+  silently drops the foreground (verified by two rendered probes).
+- `createNode` returns `None` on bad plugin IDs (no exception) — always assert.
+- Choice params take **script names** (`"project"`, `"over"`), not display labels
+  (`"To Project Format"` silently breaks the node).
+- Still PNGs report frame range 0-0: normalize each Read to 1-1 AND pin the
+  project `frameRange` to (1,1), or NatronRenderer renders 0-250 onto one file.
+- Reformat's "project" mode misbehaves headless (black output) — dropped from
+  the chain; inputs must share the project format (true for render passes) and
+  Write conforms the output to it.
+- Misc bundle has no standalone Sharpen node: `net.sf.openfx.DenoiseSharpen`
+  with `denoiseAmount=0` sharpens only.
+- CLI args do NOT reach Natron scripts (`NatronRenderer script.py arg` fails);
+  params travel via env vars, and the script detects the Natron interpreter via
+  `import NatronEngine` so the same file runs as driver + build script.
+
+**Verified (own-eyes, 2026-10-19):** synthetic red-disc-over-blue comp rendered
+correct over, pixel math checked (red disc / blue bg / black surround), no-BG
+path renders, 0.5 grade gain maps to correct linear->sRGB (188). Output frame
+viewed and confirmed.
