@@ -73,3 +73,60 @@ All licenses verified commercial-use OK. Weights/models stay OFF disk — code o
 - **Why:** physical lighting for the living room fixtures without guessing.
 - **Use:** `tools/extra-lights/` (README + `install_extra_lights.py`).
 - **License:** GPL-3.0 — commercial OK.
+
+## Idle-pipeline tools wave (2026-10-19, overnight-idle-pipeline)
+Five open-source tools that were sitting as local-only clones in ~/workspace/tools/
+(untracked, unbacked-up) — now vendored into the repo (first store) per the
+PULL-STRAIGHT-TO-STORE / CONTINUOUS-MIRROR laws. Additions only, 0 deletions.
+All licenses verified commercial-use OK (see license notes). No model weights
+vendored — weights download at run time per each tool's README. No binaries
+>50MB, no node_modules, no .env.
+
+### OpenTimelineIO (AcademySoftwareFoundation/OpenTimelineIO, Apache-2.0)
+- **What:** Academy Software Foundation's open API + interchange format for
+  editorial timeline data — read/write OTIO, EDL, FCP XML and more. C++ core
+  with Python bindings.
+- **Why:** timeline interchange for the EP/edit pipeline — move cuts between
+  NLEs and our tooling without hand-rebuilding timelines.
+- **Use:** `production/tools/opentimelineio/` — its README; Python package
+  `opentimelineio`.
+- **License:** Apache-2.0 — commercial OK.
+
+### OpenVoice (myshell-ai/OpenVoice, MIT)
+- **What:** instant voice-cloning text-to-speech — clone a voice from a short
+  audio sample, multilingual, with tone/emotion/color control (MyShell.ai).
+- **Why:** character voice generation and cloning for dialogue — complements
+  Dia (below) and the existing voice lanes.
+- **Use:** `production/tools/openvoice/` — see its README; checkpoints download
+  at run time (kept OFF disk by policy).
+- **License:** MIT — commercial OK.
+
+### TheAnimeScripter (NevermindNilas/TheAnimeScripter, AGPL-3.0)
+- **What:** AI anime video upscaling / frame interpolation / restoration toolkit
+  (RIFE-class interpolation, Real-ESRGAN-class upscaling, scene-aware).
+- **Why:** upscale + interpolate anime/2D segments, restore low-res reference
+  footage for the show pipeline.
+- **Use:** `production/tools/theanimescripter/` — see its README; model weights
+  download at run time (kept OFF disk by policy).
+- **License:** AGPL-3.0 — commercial use allowed; copyleft: if you run a
+  modified version as a network service you must share the source. This repo is
+  public, so the source is published.
+
+### ChibiRigKit (milkc0de/ChibiRigKit, Apache-2.0)
+- **What:** Blender one-click auto-rig kit for chibi-style characters, ships
+  with a sample character.
+- **Why:** fast rigs for chibi/cute character variants in gags and shorts —
+  complements the full-body auto-riggers (blenrig6, afk-rig, ml-autorig,
+  pinocchio, skintokens-autorig).
+- **Use:** `production/tools/chibirigkit/` — `AUTO_RIG.sh` / README; sample
+  character under `characters/`.
+- **License:** Apache-2.0 — commercial OK.
+
+### Dia (nari-labs/Dia, Apache-2.0)
+- **What:** Nari Labs' 1.6B-parameter open text-to-speech model — natural
+  dialogue synthesis, speaker-consistent, runs locally.
+- **Why:** local TTS for dialogue/narration without cloud billing; pairs with
+  OpenVoice for cloning.
+- **Use:** `production/tools/dia/` — `cli.py` / `app.py`; model weights download
+  at run time (kept OFF disk by policy).
+- **License:** Apache-2.0 — commercial OK.
