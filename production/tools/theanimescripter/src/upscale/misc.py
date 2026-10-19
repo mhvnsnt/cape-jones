@@ -1,0 +1,405 @@
+import logging
+
+import torch
+
+from src.constants import ADOBE
+from src.infra.isCudaInit import CudaChecker
+from src.infra.logAndPrint import logAndPrint
+from src.model.download import resolveWeightPath
+from src.model.registry import modelsMap
+
+if ADOBE:
+    from src.server.aeComms import progressState
+
+checker = CudaChecker()
+
+torch.set_float32_matmul_precision("medium")
+
+
+class NvidiaVSR:
+    """
+    NVIDIA Maxine Video Super Resolution (RTX VSR).
+
+    Quality preset is parsed from `upscaleMethod` suffix, e.g.
+    `maxine-ultra` -> ULTRA. Default `maxine` -> HIGH.
+    Supported: BICUBIC, LOW, MEDIUM, HIGH, ULTRA, HIGHBITRATE_{LOW..ULTRA}.
+
+    API hard limits (Maxine 1.2.0):
+      - Input dtype must be float32 (no fp16/bf16)
+      - Input shape must be (3, H, W) (no batch, no channels_last)
+      - Scale factor must be 1..4
+
+    """
+
+    _VALID_QUALITIES = {
+        "BICUBIC",
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "ULTRA",
+        "HIGHBITRATE_LOW",
+        "HIGHBITRATE_MEDIUM",
+        "HIGHBITRATE_HIGH",
+        "HIGHBITRATE_ULTRA",
+    }
+
+    def __init__(
+        self,
+        upscaleMethod: str = "maxine-high",
+        upscaleFactor: int = 2,
+        half: bool = False,
+        width: int = 1920,
+        height: int = 1080,
+        customModel: str = None,
+        compileMode: str = "default",
+    ):
+        self.upscaleMethod = upscaleMethod
+        self.upscaleFactor = upscaleFactor
+        self.half = half
+        self.width = width
+        self.height = height
+        self.customModel = customModel
+        self.compileMode = compileMode
+
+        if not checker.cudaAvailable:
+            raise RuntimeError("NvidiaVSR requires a CUDA-capable NVIDIA GPU")
+
+        if self.half:
+            logAndPrint(
+                "NVIDIA VSR API requires float32 input; forcing half=False.",
+                "yellow",
+            )
+            self.half = False
+
+        if self.customModel:
+            logAndPrint(
+                "NVIDIA VSR does not support custom models (bundled in wheel); "
+                "ignoring customModel.",
+                "yellow",
+            )
+            self.customModel = None
+
+        if self.compileMode != "default":
+            logAndPrint(
+                f"compileMode '{self.compileMode}' ignored on NVIDIA VSR backend.",
+                "yellow",
+            )
+            self.compileMode = "default"
+
+        self.qualityName = self._parseQuality(self.upscaleMethod)
+
+        self.handleModel()
+
+    @classmethod
+    def _parseQuality(cls, method: str) -> str:
+        suffix = method.lower().replace("maxine", "", 1).lstrip("-")
+        name = suffix.upper() if suffix else "HIGH"
+        if name not in cls._VALID_QUALITIES:
+            raise ValueError(
+                f"Unknown Maxine VSR quality '{name}' in upscaleMethod "
+                f"'{method}'. Valid: {sorted(cls._VALID_QUALITIES)}"
+            )
+        return name
+
+    def handleModel(self):
+        if ADOBE:
+            progressState.update(
+                {"status": f"Loading NVIDIA VSR ({self.qualityName})..."}
+            )
+
+        import nvvfx
+        from nvvfx import VideoSuperRes
+
+        self.nvvfx = nvvfx
+
+        quality = VideoSuperRes.QualityLevel[self.qualityName]
+        deviceIdx = checker.device.index if checker.device.index is not None else 0
+
+        self.model = VideoSuperRes(quality=quality, device=deviceIdx)
+        self.model.output_width = self.width * self.upscaleFactor
+        self.model.output_height = self.height * self.upscaleFactor
+
+        try:
+            self.model.load()
+        except Exception as e:
+            logging.error(f"NVIDIA VSR load failed: {e}")
+            raise
+
+        self.dummyInput = torch.zeros(
+            (3, self.height, self.width),
+            device=checker.device,
+            dtype=torch.float32,
+        ).contiguous()
+
+        for _ in range(5):
+            _out = self.model.run(self.dummyInput, stream_ptr=0)
+            _ = torch.from_dlpack(_out.image).clone()
+        self.dummyInput.uniform_(0.0, 1.0)
+        for _ in range(5):
+            _out = self.model.run(self.dummyInput, stream_ptr=0)
+            _ = torch.from_dlpack(_out.image).clone()
+        self.dummyInput.zero_()
+        torch.cuda.synchronize()
+
+    @torch.inference_mode()
+    def __call__(
+        self, frame: torch.Tensor, nextFrame: torch.Tensor = None
+    ) -> torch.Tensor:
+        src = frame.squeeze(
+            0
+        )  # We are always using 4 dim throughout the process, but Maxine API expects 3 dim (C,H,W), so remove batch dim here.
+        self.dummyInput.copy_(src.contiguous(), non_blocking=False)
+        outCapsule = self.model.run(self.dummyInput, stream_ptr=0)
+        outImage = outCapsule.image
+        upscaled = torch.from_dlpack(outImage)  # (3, H', W')
+        expectedShape = (
+            3,
+            self.height * self.upscaleFactor,
+            self.width * self.upscaleFactor,
+        )
+        if (
+            upscaled.shape == expectedShape
+            and upscaled.dtype == self.dummyInput.dtype
+            and upscaled.device == self.dummyInput.device
+        ):
+            output = upscaled.unsqueeze(0).clone(memory_format=torch.contiguous_format)
+        else:
+            # Match the old fixed float32 buffer's conversion and broadcasting.
+            staging = torch.empty(
+                (1, *expectedShape),
+                device=self.dummyInput.device,
+                dtype=self.dummyInput.dtype,
+            )
+            staging[0].copy_(upscaled, non_blocking=False)
+            output = staging.clone()
+        torch.cuda.synchronize()
+        return output
+
+
+class AnimeSR:
+    # Recurrent arch: needs the next source frame handed to it. The previous
+    # frame is cached internally (padded), so it is not requested here.
+    temporalWindow = (0, 1)
+
+    def __init__(
+        self,
+        upscaleFactor: int = 2,
+        half: bool = False,
+        width: int = 1920,
+        height: int = 1080,
+        compileMode: str = "default",
+    ):
+        self.upscaleFactor = upscaleFactor
+        self.half = half
+        self.width = width
+        self.height = height
+        self.compileMode: str = compileMode
+
+        self.handleModel()
+
+    def handleModel(self):
+        """
+        Load the desired model
+        """
+        self.filename = modelsMap("animesr", self.upscaleFactor, modelType="pth")
+        modelPath = resolveWeightPath(
+            "animesr",
+            self.filename,
+            upscaleFactor=self.upscaleFactor,
+        )
+
+        from src.extraArches.AnimeSR import MSRSWVSR
+
+        self.model = MSRSWVSR(num_feat=64, num_block=[5, 3, 2], netscale=4)
+
+        stateDict = torch.load(modelPath, map_location="cpu")
+        self.model.load_state_dict(stateDict)
+        del stateDict
+
+        self.model = self.model.eval()
+
+        if self.half and checker.cudaAvailable:
+            try:
+                self.model = self.model.half()
+            except Exception as e:
+                logging.error(f"Error converting model to half precision: {e}")
+                self.model = self.model.float()
+                self.half = False
+
+        if checker.cudaAvailable:
+            self.model = self.model.cuda()
+            torch.cuda.empty_cache()
+
+        if self.compileMode != "default":
+            try:
+                if self.compileMode == "max":
+                    self.model.compile(mode="max-autotune-no-cudagraphs")
+                elif self.compileMode == "max-graphs":
+                    self.model.compile(
+                        mode="max-autotune-no-cudagraphs", fullgraph=True
+                    )
+            except Exception as e:
+                # AnimeSR has no self.upscaleMethod; referencing it here turned
+                # a compile failure into an AttributeError that hid the cause.
+                message = (
+                    f"Error compiling model animesr with mode {self.compileMode}: {e}"
+                )
+                logging.error(message)
+                logAndPrint(message, "red")
+
+            self.compileMode = "default"
+
+        # padding related logic
+        ph = (4 - self.height % 4) % 4
+        pw = (4 - self.width % 4) % 4
+        self.padding = (0, pw, 0, ph)
+
+        # The arch requires 3 inputs, so we create dummy inputs for the other two
+        self.prevFrame = torch.zeros(
+            (
+                1,
+                3,
+                self.padding[3] + self.height + self.padding[2],
+                self.padding[1] + self.width + self.padding[0],
+            ),
+            device=checker.device,
+            dtype=torch.float16 if self.half else torch.float32,
+        )
+        self.nextFrame = torch.zeros(
+            (
+                1,
+                3,
+                self.padding[3] + self.height + self.padding[2],
+                self.padding[1] + self.width + self.padding[0],
+            ),
+            device=checker.device,
+            dtype=torch.float16 if self.half else torch.float32,
+        )
+
+        # MSRSWVSR.forward wants prev/curr/next at [B, 3, H, W], the previous SR
+        # frame at [B, 3, H*4, W*4] and the state at [B, 64, H, W] -- all on the
+        # SAME H, W. The frame buffers above are padded, so these two have to be
+        # padded as well; sizing them from the raw dims broke every resolution
+        # that is not a multiple of 4.
+        paddedHeight = self.height + self.padding[3] + self.padding[2]
+        paddedWidth = self.width + self.padding[1] + self.padding[0]
+
+        self.dummyOutput = self.prevFrame.new_zeros(
+            1, 3, paddedHeight * 4, paddedWidth * 4
+        )
+
+        # The model has some caching functionality that requires a state
+        self.state = self.prevFrame.new_zeros(1, 64, paddedHeight, paddedWidth)
+
+        self.stream = torch.cuda.Stream()
+        self.normStream = torch.cuda.Stream()
+        self.outputStream = torch.cuda.Stream()
+
+        self.firstRun = True
+
+    def padFrame(self, frame: torch.tensor) -> torch.tensor:
+        return torch.nn.functional.pad(frame, self.padding, mode="reflect")
+
+    @torch.inference_mode()
+    def __call__(self, frame: torch.tensor, nextFrame: torch.tensor) -> torch.tensor:
+        # Pad first, then copy. prevFrame/nextFrame are allocated at padded size,
+        # and copy_ cannot broadcast an unpadded frame into them -- at any
+        # resolution that is not a multiple of 4 this raised "The size of tensor
+        # a (856) must match the size of tensor b (854)" on the very first frame.
+        # The TensorRT and DirectML siblings already pad before copying.
+        with torch.cuda.stream(self.normStream):
+            frame = self.padFrame(frame)
+            paddedNext = frame if nextFrame is None else self.padFrame(nextFrame)
+
+            if self.firstRun:
+                self.prevFrame.copy_(frame, non_blocking=False)
+                self.firstRun = False
+
+            self.nextFrame.copy_(paddedNext, non_blocking=False)
+        self.normStream.synchronize()
+
+        with torch.cuda.stream(self.outputStream):
+            self.dummyOutput, state = self.model(
+                self.prevFrame,
+                frame,
+                self.nextFrame,
+                self.dummyOutput,
+                self.state,
+            )
+
+            self.state = state
+        self.outputStream.synchronize()
+
+        with torch.cuda.stream(self.normStream):
+            self.prevFrame.copy_(frame, non_blocking=False)
+        self.normStream.synchronize()
+
+        # resize the output to self.height*2 and self.width * 2, cropping the
+        # reflect-padded border off first. Resizing the padded frame whole
+        # squeezes the real content and leaves a mirrored strip along the
+        # right/bottom edge (~4px and a 0.23% squeeze at 854x480). No-op when
+        # the input is already a multiple of 4.
+        with torch.cuda.stream(self.outputStream):
+            output = torch.nn.functional.interpolate(
+                self.dummyOutput[:, :, : self.height * 4, : self.width * 4],
+                size=(self.height * 2, self.width * 2),
+                mode="bicubic",
+                align_corners=False,
+            )
+        self.outputStream.synchronize()
+
+        return output
+
+
+class AnimeSRROCm(AnimeSR):
+    """ROCm (HIP) AnimeSR. Eager, no custom streams.
+
+    The CUDA parent runs the recurrent MSRSWVSR on three private streams;
+    HIP streams are functional but add cross-stream visibility risk for a
+    stateful recurrent arch, so the ROCm path runs synchronously on the
+    default stream. Same weights, same temporalWindow=(0, 1) contract.
+    """
+
+    temporalWindow = (0, 1)
+
+    def handleModel(self):
+        super().handleModel()
+        # Drop the private streams; __call__ below runs on the default stream.
+        self.stream = None
+        self.normStream = None
+        self.outputStream = None
+
+    @torch.inference_mode()
+    def __call__(self, frame: torch.tensor, nextFrame: torch.tensor) -> torch.tensor:
+        frame = self.padFrame(frame.to(device=checker.device))
+        paddedNext = (
+            frame
+            if nextFrame is None
+            else self.padFrame(nextFrame.to(device=checker.device))
+        )
+
+        if self.firstRun:
+            self.prevFrame.copy_(frame, non_blocking=False)
+            self.firstRun = False
+
+        self.nextFrame.copy_(paddedNext, non_blocking=False)
+
+        self.dummyOutput, state = self.model(
+            self.prevFrame,
+            frame,
+            self.nextFrame,
+            self.dummyOutput,
+            self.state,
+        )
+        self.state = state
+
+        self.prevFrame.copy_(frame, non_blocking=False)
+
+        output = torch.nn.functional.interpolate(
+            self.dummyOutput[:, :, : self.height * 4, : self.width * 4],
+            size=(self.height * 2, self.width * 2),
+            mode="bicubic",
+            align_corners=False,
+        )
+        torch.cuda.current_stream().synchronize()
+        return output
