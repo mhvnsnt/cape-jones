@@ -130,3 +130,37 @@ vendored — weights download at run time per each tool's README. No binaries
 - **Use:** `production/tools/dia/` — `cli.py` / `app.py`; model weights download
   at run time (kept OFF disk by policy).
 - **License:** Apache-2.0 — commercial OK.
+
+## Mocap + camera-match wave (2026-10-19, overnight-idle-pipeline)
+
+### FreeMoCap (freemocap/freemocap @ main, AGPL-3.0)
+- **What:** markerless motion capture from 2+ ordinary webcams/phones —
+  calibration, recording, 3D skeleton triangulation (body + hands + face),
+  Blender export (`freemocap/core/blender/export_to_blender.py`).
+- **Why:** real human motion for the 3D animation automation directive — the
+  direct answer to hand-posed sitting reading robotic. Capture real
+  performances, retarget via the repo's mocap-retarget pipeline.
+- **Use:** `production/tools/freemocap/` — wiring doc `CAPE-JONES-WIRING.md`;
+  install at runtime with `pip install freemocap` (python 3.9–3.11, NVIDIA GPU
+  recommended). Pairs with `production/tools/mocap-retarget/` and
+  `production/tools/rhubarb-lip-sync/`.
+- **Vendoring note:** sparse pull of essentials only — the `freemocap` Python
+  package + README/LICENSE/CITATION.cff/pyproject.toml. The `freemocap-ui`
+  frontend, docs site, and sample data were NOT pulled. Pose-estimation models
+  download at runtime (kept OFF disk by policy).
+- **License:** AGPL-3.0 — commercial use allowed; copyleft applies only if a
+  *modified* version is distributed or run as a network service. This repo is
+  public, so the source is published.
+
+### fSpy-Blender (stuffmatic/fSpy-Blender v1.0.3, GPL-3.0)
+- **What:** official fSpy camera-matching importer for Blender — imports
+  `.fspy` projects as solved Blender cameras with the photo as background
+  plate. Pure Python, zero dependencies.
+- **Why:** matchmove for set building — solve real cameras from still photos,
+  build environments to match, no eyeballed perspective.
+- **Use:** `production/tools/fspy-blender/` — `install_fspy_blender.py
+  --blender <dir>` installs into Blender's addons; wiring doc
+  `CAPE-JONES-WIRING.md`. The fSpy app itself (Electron) is NOT vendored —
+  fetch from fspy.io when a solve is needed.
+- **License:** GPL-3.0 — commercial use allowed (copyleft on derivative
+  distribution of the add-on itself).
