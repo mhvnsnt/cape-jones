@@ -53,9 +53,9 @@ for key in cfg["keys"]:
     drv.type = 'SCRIPTED'
     var = drv.variables.new()
     dt = key.get("driver", {"type": "ROTATION_DIFF"})
-    if dt["type"] == "TRANSFORM_CHAN":
+    if dt["type"] == "TRANSFORMS":
         var.name = dt.get("var", "a")
-        var.type = 'TRANSFORM_CHAN'
+        var.type = 'TRANSFORMS'
         var.targets[0].id = rig
         var.targets[0].bone_target = dt["bone"]
         var.targets[0].transform_type = dt["chan"]   # e.g. ROT_X

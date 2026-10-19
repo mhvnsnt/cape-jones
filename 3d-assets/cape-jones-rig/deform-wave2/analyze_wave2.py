@@ -195,9 +195,44 @@ for zname, z in ZONES.items():
             out[f"smooth_w2_{zname}_{g}_val"] = ws[idx]
             print(f"    smooth {zname}/{g}: {len(idx)} verts, max_dw={chg.max():.3f}", flush=True)
 
-# ---------- spine (waist + torso: pelvis/spine_1 and spine_1/spine_2 blends) ----------
+# ---------- spine (per-vert dominant bone pair for the rotation mapping) ----------
+# The old single-pair (pelvis, spine_1) mapping created cracks on verts
+# dominated by spine_2/chest. Now each vert uses its own top-2 weighted bones.
+DEFORM_BONES = ["pelvis", "spine_1", "spine_2", "chest", "clavicle_L", "clavicle_R",
+                "upperarm_L", "upperarm_R", "thigh_L", "thigh_R"]
 m_sp = (((blend("pelvis", "spine_1") > 0.06) | (blend("spine_1", "spine_2") > 0.06))
         & (R[:, 2] > 0.38) & (R[:, 2] < 0.72) & (np.abs(R[:, 0]) < 0.15))
+
+def build_fix_adaptive(zname, z, mask, d, P, Np):
+    """Per-vert dominant bone pair for the inverse-rotation mapping."""
+    S = laplacian_smooth(P, mask, iters=8, factor=0.5)
+    delta_posed = S - P
+    delta_posed[mask] += Np[mask] * (z["push"] / 1000.0)
+    midx = np.where(mask)[0]
+    # top-2 bones per vert by weight
+    Wstack = np.stack([W.get(b, np.zeros(n)) for b in DEFORM_BONES], axis=1).astype(np.float64)
+    order = np.argsort(-Wstack[midx], axis=1)
+    b1 = [DEFORM_BONES[i] for i in order[:, 0]]
+    b2 = [DEFORM_BONES[i] for i in order[:, 1]]
+    # group by pair for batched slerp
+    delta_rest = np.zeros((len(midx), 3), dtype=np.float64)
+    pairs = {}
+    for i, (a, b) in enumerate(zip(b1, b2)):
+        pairs.setdefault((a, b), []).append(i)
+    for (a, b), ii in pairs.items():
+        ii = np.array(ii)
+        wa = Wstack[midx[ii], DEFORM_BONES.index(a)]
+        wb = Wstack[midx[ii], DEFORM_BONES.index(b)]
+        qa = d["q_" + a].astype(np.float64)
+        qb = d["q_" + b].astype(np.float64)
+        Rm = blend_rot_mats(qa, qb, wa, wb)
+        delta_rest[ii] = np.einsum('mij,mj->mi', Rm.transpose(0, 2, 1), delta_posed[midx[ii]])
+    delta_rest = delta_rest.astype(np.float32)
+    mag = np.linalg.norm(delta_rest, axis=1)
+    print(f"    corrective corr_{zname}: {len(midx)} verts max_delta={mag.max()*1000:.2f}mm "
+          f"mean={mag.mean()*1000:.3f}mm", flush=True)
+    return midx.astype(np.int32), delta_rest
+
 for pose, zname in [("spine_fwd", "spine_fwd"), ("spine_twist", "spine_twist")]:
     d = np.load(f"{NPZ}/{pose}.npz")
     P = d["posed"].astype(np.float64)
@@ -209,7 +244,7 @@ for pose, zname in [("spine_fwd", "spine_fwd"), ("spine_twist", "spine_twist")]:
           f"p99={np.percentile(rv,99)*1000:.2f}mm max_disp={dv.max()*1000:.1f}mm", flush=True)
     if rv.max() * 1000 > 20 or (np.percentile(rv, 99) * 1000 > 2.5):
         FLAGGED.append((zname, ["residual"]))
-        midx, delta_rest = build_fix(zname, SPINE, m_sp, d, P, d["posed_normal"].astype(np.float64))
+        midx, delta_rest = build_fix_adaptive(zname, SPINE, m_sp, d, P, d["posed_normal"].astype(np.float64))
         out[f"corr_{zname}_idx"] = midx
         out[f"corr_{zname}_delta"] = delta_rest
 
