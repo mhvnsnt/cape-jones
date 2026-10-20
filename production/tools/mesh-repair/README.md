@@ -47,32 +47,32 @@ intended placement — it *restores* it (pelvis stays on the chair). Rule for
 all future placements: the mesh object must carry the rig's world transform
 (or be parented to it); moving the rig alone re-breaks the deform.
 
-**B. Weld the seams with a modifier, not a destructive edit**
-(`apply_weld.py`): builds a `weld_seams` vertex group containing exactly the
-boundary verts found by `detect_seams.py`, then inserts a **Weld modifier**
-(threshold 0.02, group-limited) **before** the Armature modifier:
+**B. Average the seams — no topology change** (`average_seams.py`):
+for each coincident seam-vert cluster, set identical deform weights
+(averaged, then normalized) and identical shape-key positions on all members.
+Identical rest position + identical weights + identical shape offsets =
+identical deformed position, so the seam stays shut (degenerate, invisible)
+through every pose.
 
-```
-WeldSeams (0.02, weld_seams group) -> Armature -> CorrectiveSmooth
-```
+This was chosen over a Weld *modifier* for a hard technical reason: merging
+verts changes the vert count (910,374 → 849,146), which permanently disables
+the CorrectiveSmooth modifier — it needs the original mesh for reference,
+and a topology-changing modifier before it breaks that correlation
+(verified: fresh CorrectiveSmooth outputs all zeros with a Weld upstream).
+The averaging approach changes zero topology, so CorrectiveSmooth, all 11
+shape keys, UVs and vertex groups are preserved intact, and the skin
+**stretches** across joints instead of gaping (the automated
+weight-redistribution the mandate asked for; the existing `corr_shoulderL/R`
+shape keys from PR #158 keep handling volume).
 
-* Coincident seam verts merge *before* deformation, so each seam deforms as
-  one vert with blended weights — the skin **stretches** across joints
-  instead of gaping. (This is the automated weight-redistribution the
-  mandate asked for; the existing `corr_shoulderL/R` shape keys from PR #158
-  keep handling volume.)
-* Group-limiting means only seam verts can merge — lips, fingers, cloth
-  layers and other close-but-separate interior verts are never touched.
-* Non-destructive: delete the modifier and the source mesh is byte-identical.
-* Pose-independent: it lives in the modifier stack, so **every future
-  pose/animation is repaired automatically** — no per-pose work.
+Only boundary-boundary coincident pairs are averaged — clothing-over-skin
+contacts (seam vert meeting an interior vert) are left alone, so layered
+parts can still slide.
 
-Measured result on the sitting scene: posed boundary edges **62,174 → 1,349**
-(97.8% of seam edges welded shut); flyers **182,557 → 0** after alignment.
-
-Why not edit-mode remove-doubles: on a 910k-vert / 11-shape-key mesh it OOMs
-an 8GB box (edit-mode bmesh + undo). The modifier path uses numpy only and
-peaks under 1.5GB.
+Measured result on the sitting scene: flyers **182,557 → 0**, world bbox
+diag **14.335 → 1.099**; posed seam separation **max 0.0026** (threshold 0.02,
+was up to ~5.0 before repair); coincident-pair weight diff **exactly 0.0**;
+CorrectiveSmooth **working** (verified non-zero output delta).
 
 ## Pipeline
 
@@ -81,9 +81,9 @@ production/tools/mesh-repair/
 ├── README.md            this file
 ├── align_mesh_to_rig.py re-sync body object transform to the rig (placement fix)
 ├── detect_seams.py      numpy boundary-edge detection -> seam_vert_indices.npy
-├── apply_weld.py        weld_seams group + Weld modifier before Armature
+├── average_seams.py     average weights + shape keys across coincident seam clusters
 ├── verify_repair.py     posed-mesh boundary recount + JSON verdict
-└── run_pipeline.py      driver: align -> detect -> weld -> verify -> save NEW blend
+└── run_pipeline.py      driver: align -> detect -> average -> verify -> save NEW blend
 ```
 
 One shot (never overwrites the input):
@@ -103,13 +103,16 @@ Or step by step inside headless Blender (all steps are numpy-only, no bmesh):
 B=~/workspace/tools/blender/blender-4.0.2-linux-x64/blender
 xvfb-run -a env -u PYTHONPATH $B -b in.blend --python align_mesh_to_rig.py -- CapeJones_Body CapeJones_Rig
 xvfb-run -a env -u PYTHONPATH $B -b in.blend --python detect_seams.py -- CapeJones_Body ./wk
-xvfb-run -a env -u PYTHONPATH $B -b in.blend --python apply_weld.py  -- CapeJones_Body ./wk/seam_vert_indices.npy 0.02
+xvfb-run -a env -u PYTHONPATH $B -b in.blend --python average_seams.py -- CapeJones_Body ./wk/seam_vert_indices.npy 0.02
 xvfb-run -a env -u PYTHONPATH $B -b in.blend --python verify_repair.py -- CapeJones_Body ./wk/verify.json
 ```
 
-`verify_repair.py` reports `rest_boundary_edges`, `posed_boundary_edges`,
-`posed_loop_count` and `welded_ok` (true when posed boundaries are under 5%
-of the rest count). Remaining loops are listed with centroid/radius for review.
+`verify_repair.py` reports `seam_verts`, `posed_max_seam_separation`,
+`posed_p99_seam_separation`, `posed_frac_seams_open`,
+`corrective_smooth_working` and `repaired_ok` (true when max separation is
+under threshold and CorrectiveSmooth is alive). Note: boundary-edge COUNT
+does not drop with averaging (no topology change) — separation is the
+correct metric.
 
 ## Standing use
 

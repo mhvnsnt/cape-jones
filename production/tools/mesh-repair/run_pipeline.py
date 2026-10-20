@@ -75,21 +75,23 @@ def main():
     print(f"[detect] {stats['boundary_edges']} boundary edges, "
           f"{stats['seam_verts']} seam verts", flush=True)
 
-    run_blender(tmp_blend, os.path.join(HERE, "apply_weld.py"),
-                [a.body, npy, str(a.threshold)], "weld")
+    run_blender(tmp_blend, os.path.join(HERE, "average_seams.py"),
+                [a.body, npy, str(a.threshold)], "average")
 
     run_blender(tmp_blend, os.path.join(HERE, "verify_repair.py"),
-                [a.body, verify_json], "verify")
+                [a.body, npy, verify_json, str(a.threshold)], "verify")
     report = json.load(open(verify_json))
-    print("[verify] rest boundary edges:  %(rest_boundary_edges)d\n"
-          "[verify] posed boundary edges: %(posed_boundary_edges)d\n"
-          "[verify] posed loop count:     %(posed_loop_count)d\n"
-          "[verify] welded_ok:            %(welded_ok)s" % report, flush=True)
+    print("[verify] seam verts:            %(seam_verts)d\n"
+          "[verify] posed max separation:  %(posed_max_seam_separation).5f\n"
+          "[verify] posed p99 separation:  %(posed_p99_seam_separation).5f\n"
+          "[verify] frac seams open:       %(posed_frac_seams_open).5f\n"
+          "[verify] corrective_smooth:     %(corrective_smooth_working)s\n"
+          "[verify] repaired_ok:           %(repaired_ok)s" % report, flush=True)
 
     shutil.copy2(tmp_blend, a.output)
     print(f"[done] repaired blend -> {a.output}", flush=True)
-    if not report["welded_ok"]:
-        raise SystemExit("[done] WARNING: welded_ok=false — see verify.json")
+    if not report["repaired_ok"]:
+        raise SystemExit("[done] WARNING: repaired_ok=false — see verify.json")
 
 
 if __name__ == "__main__":
