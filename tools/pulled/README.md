@@ -184,3 +184,25 @@ vendored — weights download at run time per each tool's README. No binaries
   undulatingBurnOut, displacement, luma (incl. extra-sampler path).
 - **License:** MIT (123 shaders) + BSD-2-Clause (1) + BSD-3-Clause (1) —
   all permissive, commercial use allowed.
+
+## GLB gate wave (2026-10-20, overnight-idle-pipeline)
+
+### gltf-transform (donmccurdy/glTF-Transform v4.5.1, MIT)
+- **What:** the industry-standard glTF 2.0 SDK + CLI — `inspect`, `validate`,
+  `copy`, `optimize`, `dedup`, `prune`, `merge`, `partition`, Draco/meshopt/WebP
+  compression, scriptable transform API. Full source tree vendored (16MB,
+  code only — no built artifacts, no node_modules).
+- **Why:** every Tripo pull lands as a GLB and the pipeline had no pinned,
+  repo-local glTF tooling — lanes were reaching for `npx gltf-transform`
+  ad-hoc (unpinned, needs network + npm cache). Now the canonical GLB gate:
+  validate every pulled model, inspect vertex/draw-call budgets before roster
+  wiring, optimize (dedup/prune/meshopt) before shipping to the game.
+- **Use:** `tools/pulled/gltf-transform/` — wiring doc `CAPE-JONES-WIRING.md`;
+  lanes run the published CLI pinned to the vendored version
+  (`npm install -g @gltf-transform/cli@4.5.1`), or build from source
+  (`npm install && npm run build`).
+- **Verified:** CLI 4.5.1 `--version`/`--help` clean; `inspect` + `validate` run
+  on a real pipeline asset (`tripo-recovery/kronos_attire1_default.glb` —
+  5.87M render verts, 0 errors, 1 tangent-space warning). Duplicate check:
+  `pygltflib` was only evaluated, never vendored — no overlap.
+- **License:** MIT — commercial OK.
