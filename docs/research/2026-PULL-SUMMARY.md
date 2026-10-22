@@ -33,6 +33,12 @@
 | Tool | Status | Notes |
 |------|--------|-------|
 | RealESRGAN_x4plus_anime_6B | ✅ Downloaded (17.9MB) | Anime-specific 4x, BSD-3 |
+| **Real-ESRGAN** (xinntao, code) | ✅ Pulled 2026-10-19 | `production/tools/realesrgan/`, BSD-3, 4x stills + video inference |
+
+## Video Generation
+| Tool | Status | Notes |
+|------|--------|-------|
+| **LTX-Video** (Lightricks) | ✅ Pulled 2026-10-22 | `production/tools/ltx-video/`, Apache-2.0, DiT t2v/i2v/keyframes — closes the video-gen hard gap |
 
 ## AI Music (documented, not pulled — GPU models)
 - Stable Audio 3 (Stability AI, open-weight)
