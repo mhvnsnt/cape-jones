@@ -74,6 +74,38 @@ diag **14.335 → 1.099**; posed seam separation **max 0.0026** (threshold 0.02,
 was up to ~5.0 before repair); coincident-pair weight diff **exactly 0.0**;
 CorrectiveSmooth **working** (verified non-zero output delta).
 
+> **⚠️ Those separation numbers were real but insufficient — see the
+> postmortem below. The original `average_seams.py` achieved them by
+> destroying the skinning. Do not use any pre-fix version of this tool.**
+
+## 2026-10-20 postmortem — the averaging bug (FIXED 2026-10-23)
+
+The first shipped `average_seams.py` clustered seam verts with a KDTree
+radius search (0.02 m) and merged clusters **transitively** (union-find).
+On a mesh whose verts sit millimetres apart, chaining walked across whole
+body regions: **53,128 verts received ONE identical 39-group weight set**
+(top weight: `shin_L` at 0.093 — on verts in the fingers, jaw, and torso).
+Every seam measured perfectly shut — verts with identical weights separate
+nowhere — so `verify_repair.py` reported `repaired_ok` while the skinning
+was destroyed body-wide. The owner caught it by eye in the frame-40 posed
+render (fingertips, face/neck and legs dragging toward wrong joints).
+
+Weight-plausibility audit (dominant bone vs nearest bone segment, rest
+pose): corrupt output **57,533 / 910,374 verts flagged (6.3%)**; untouched
+clean body **6,405 (0.70%)**.
+
+**The fix** (this branch): clustering is exact-coincidence only (1e-5 m
+position hash — no radius, no chaining), any cluster over 12 verts aborts
+the run, no global `vertex_group_normalize_all`, post-write group-count
+gates abort without saving, and `verify_repair.py` now includes the
+weight-plausibility audit in `repaired_ok` (gate: ≤ 1.5% flagged).
+
+Corrected run on the sitting scene: 30,080 coincident clusters (max size
+4), 60,754 seam verts, weight audit **6,369 flagged (0.70%)** — the clean
+baseline. The corrected scene is `scene_anim_placed3.blend` (release
+`sitcanon-anim-placed-20261020`); the corrupt pipeline output
+(`pipeline2_out` / `scene_anim_placed2`) must never be built on.
+
 ## Pipeline
 
 ```
@@ -109,10 +141,16 @@ xvfb-run -a env -u PYTHONPATH $B -b in.blend --python verify_repair.py -- CapeJo
 
 `verify_repair.py` reports `seam_verts`, `posed_max_seam_separation`,
 `posed_p99_seam_separation`, `posed_frac_seams_open`,
-`corrective_smooth_working` and `repaired_ok` (true when max separation is
-under threshold and CorrectiveSmooth is alive). Note: boundary-edge COUNT
-does not drop with averaging (no topology change) — separation is the
-correct metric.
+`corrective_smooth_working`, `weight_audit_flagged`, `weight_audit_frac`
+and `repaired_ok`. Note: boundary-edge COUNT does not drop with averaging
+(no topology change) — separation is the correct metric. `repaired_ok`
+requires p99 separation under threshold, ≤1% of sampled seams open,
+CorrectiveSmooth alive, and the weight audit at ≤1.5% flagged. Raw max
+separation is reported but is NOT a gate: ~1.4k seam verts are partnerless
+singletons (open contours like the cape hem) whose nearest-neighbor
+distance measures mesh density, not a tear. (The corrupt 2026-10-20 run
+passed a max-separation gate only because chaining had glued those
+singletons into mega-clusters — the gate now matches the metric's meaning.)
 
 ## Standing use
 
