@@ -1,8 +1,0 @@
-{
-  "paramsTypes": {
-    "strength": "float"
-  },
-  "defaultParams": {
-    "strength": 0.6
-  }
-}

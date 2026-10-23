@@ -1,2 +1,0 @@
-# Optional CPU foreground-segmentation backend; model weights download on first use.
-rembg[cpu]==2.0.84

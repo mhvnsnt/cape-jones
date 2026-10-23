@@ -1,5 +1,0 @@
-Character: STICK-UP, 266 beats, span 1.7s -> 116.0s
-  [entrance] 236 frames cached, skipping render
-  [taunts] 245 frames cached, skipping render
-  [taunts2] 287 frames cached, skipping render
-+ blender -b -P /home/hatch/workspace/bannon-video-pipe/repo/tools/entrance-video/render_scene.py -- --glb /home/hatch/workspace/bannon-video-pipe/repo/assets/models/STICKUP_repaired.glb --camera ...
