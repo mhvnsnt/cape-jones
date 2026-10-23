@@ -1,8 +1,0 @@
-{
-  "paramsTypes": {
-    "reverse": "bool"
-  },
-  "defaultParams": {
-    "reverse": false
-  }
-}

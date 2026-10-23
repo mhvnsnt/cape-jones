@@ -1,8 +1,0 @@
-bin/
-animeup
-*.md
-Makefile
-.git
-.DS_Store
-.env*
-*.log
