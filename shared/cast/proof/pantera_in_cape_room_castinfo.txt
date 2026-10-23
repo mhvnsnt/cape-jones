@@ -1,0 +1,1 @@
+CASTINFO {"glb": "/tmp/cjx/wh/roster/pantera/attires/leopard-king/model-rigged.glb", "height_m_before_scale": 1.7459987998008728, "scale": 1.0309285437110758, "placed_at": [1.3431181907653809, 1.4218456745147705, 0.18790824711322784], "camera": "MainCam", "objects": ["Character", "tripo_node_36243c06-de63-4673-8e71-a8c1947476fd"], "hidden_strays": ["Icosphere"]}
