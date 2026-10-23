@@ -95,3 +95,29 @@ release. Improvement paths, in order:
 - `detect_watermarks.py` — glyph detection, validated standalone
 - `build_v5_source.py` / `magenta_fit.py` — the v5 master rebuild
 - `wm_template_left.png` / `wm_template_right.png` — glyph template crops
+
+---
+
+## V6 ADDENDUM — the suit-overlap failure (found by QC scan 2026-10-21, fixed 2026-10-22)
+
+The v5 clean master passed every spot-check and still shipped leftovers: a full-video
+QC glyph scan (every 0.5s, both boxes) flagged sustained high scores, and own-eyes
+review confirmed the watermark **fully visible wherever it overlaps the white suit**:
+
+- right: ~101.5–103s, ~106.5–108.5s, ~127.5–129.5s, ~135–136s
+- left: across his torso through stretches of ~35–57.5s
+
+**Root cause:** the detection rule's white-fraction guard (`frac < 0.4`, added to reject
+a supposed suit false positive at 50s) rejected exactly the frames where the watermark
+sits on bright costume. That "false positive" was itself a real watermark over the suit.
+
+**The fix (v6, verified):** presence = glyph_score > 0.55, NO white-fraction guard.
+An independent relaxed scan of the source mapped 1307 left / 2495 right frames; the v6
+run's fill counts matched exactly. Own-eyes re-checks at 102s (cape/suit edge) and 37s
+(torso/belt line art) show the watermark gone and the artwork intact.
+
+**Standing rules added:**
+1. After ANY removal pass, run the full-video QC glyph scan on the result — spot-checks
+   alone missed this. Sustained glyph scores > 0.45 anywhere = inspect with eyes.
+2. Never add a guard that can veto detection on bright subjects; the glyph shape is the
+   discriminator, not the box's overall brightness.
