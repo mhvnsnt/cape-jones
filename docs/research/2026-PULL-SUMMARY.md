@@ -11,6 +11,7 @@
 |------|--------|-------|
 | **Kokoro** | 🔄 Installing | 82M params, CPU-compatible, Apache-2.0 |
 | **Chatterbox** | ✅ Cloned | Voice cloning, MIT, 23 languages |
+| **TTS-WebUI** (rsxdalv) | ✅ Pulled 2026-10-22 (PR #203) | `production/tools/tts-webui/`, MIT own-eyes verified — unified Gradio+React TTS studio, 69-extension catalog (bark/parler-tts/kokoro/styletts2/index-tts/fire-red-tts2/piper/RVC/openvoice-v2/gpt-sovits/f5-tts/chatterbox/higgs-v2 + audio-separator/demucs/stable-audio/musicgen); one UI to audition/manage all TTS engines. Code-only 11MB, 0 weights committed |
 
 ## AI Auto-Coloring
 | Tool | Status | Notes |
