@@ -409,3 +409,13 @@ wired into one studio. **`docs/STUDIO-ARCHITECTURE.md`** is the canonical doc.
 - **VERIFY-BEFORE-CLAIMING** — Check the source of truth yourself; tag confidence
 - **CHECK-RESEARCH-WIRE-DO** — Check first, research the gap, wire the fix, then do
 - **NEVER-QUICK-SAVE** — Quick Save preserves zero output files; bulletproof saver or Save & Run All only
+
+## EP01 V6 + 60fps Final (2026-10-23)
+
+- **Root cause of the v5 leftovers:** the detector's white-fraction guard (frac < 0.4) rejected exactly the suit-overlap frames — the viggle.ai watermark sat on his white suit at left torso ~35–57.5s and right ~101.5–103s / ~106.5–108.5s / ~127.5–129.5s / ~135–136s. (Failure mode addendum: `production/watermark-removal/README.md`, PR #218.)
+- **v6 LaMa re-pass** with glyph-only detection ran on the v5 clean master (kernel marsfmmg/cape-jones-wm-v3); fill counts 1307L/2495R matched the independent relaxed scan exactly.
+- **Own-eyes verified** clean at every former failure window (102s cape edge, 108s, 128s legs, 37s torso, 54s torso, 18.5s) — watermark gone, line art intact.
+- **METRIC CONFOUND (lesson):** the glyph score reads 0.5–0.99 over plain white costume even when fully clean — over bright subjects only EYES adjudicate, never the score alone.
+- **RIFE rebuilt on v6** (kernel marsfmmg/cape-jones-rife-v6): 5009→10017 frames, 60fps, 166.96s, audio muxed; spot frames verified.
+- **Files:** final phone copy `cape-jones-EP01-FINAL-60fps-phone.mp4` (52MB); masters live on Kaggle (datasets marsfmmg/cape-jones-episode-v5-wm + cape-jones-v6-clean-rife) — treat Kaggle as the masters' home, local as cache.
+- **LIP SYNC:** owner removed it from EP01 (2026-10-21) — do NOT chase timestamps for EP01.
