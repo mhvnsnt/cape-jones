@@ -1,0 +1,77 @@
+[tool.ruff]
+line-length = 88
+target-version = "py314"
+# Vendored / generated trees are third-party — not ours to reformat or lint.
+extend-exclude = [
+    "src/spandrel",                    # vendored fork of TNTwise/spandrel @ e747f27 — keep diff-clean vs upstream
+    "src/gmfss",                       # vendored GMFSS interpolation arch
+    "src/depth/depth_anything_3",      # vendored Depth-Anything-3 arch
+    "src/depth/video_depth_anything",  # vendored Video-Depth-Anything arch
+    "src/depth/dinov2_layers",         # vendored DINOv2 layers
+    "src/segment/birefnet_arch",      # adapted upstream BiRefNet inference arch
+    "dist-portable",                   # portable-Python build output (also gitignored)
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = [
+    "E501", # line length is enforced by the formatter, not the linter
+]
+
+[tool.ruff.lint.per-file-ignores]
+"src/depth/dpt_v2.py" = ["B006"]     # vendored DPT arch — keep upstream signatures intact
+"src/depth/og_dpt_v2.py" = ["B006"]  # vendored DPT arch — keep upstream signatures intact
+"src/segment/train.py" = ["F821"]    # training-only path; InSPyReNet arch not vendored for inference
+"src/io/ffmpegSettings.py" = ["E402", "I001"]  # nelux raises if imported before torch and after macOS link repair
+
+[tool.ruff.format]
+# Defaults: double quotes, 4-space indent, magic trailing comma.
+
+[tool.ty.environment]
+# Without this ty treats `src/` as a source root, which breaks every
+# `from .infra.x import y` inside src/*.py into a false unresolved-import.
+root = ["."]
+# The repo is Python 3.14-only (portable 3.14.6, ruff target py314): without
+# this ty parses with an older grammar and flags valid 3.14 syntax
+# (PEP 758 paren-less `except A, B:`) as invalid-syntax, burying the real
+# unresolved-import/unresolved-reference diagnostics ty exists for.
+python-version = "3.14"
+
+[tool.ty.src]
+# Same vendored trees ruff skips — not ours to annotate.
+exclude = [
+    "src/spandrel",
+    "src/gmfss",
+    "src/rifearches",
+    "src/depth/depth_anything_3",
+    "src/depth/video_depth_anything",
+    "src/depth/dinov2_layers",
+    "src/segment/birefnet_arch",
+    "dist-portable",
+    "portable-python",
+]
+
+[tool.ty.rules]
+# Scope: ty is here to catch names that do not exist — the failure mode the
+# backend dispatch tables are prone to, where a `match` arm lazily imports a
+# class that was renamed or never written and nothing fails until a user picks
+# that CLI choice. Ruff cannot see inside those arms and the tests do not
+# instantiate every backend.
+#
+# Everything below is a genuine ty finding, not noise, but clearing it is a
+# separate annotation project. Ratchet these up one at a time; do not bulk-enable.
+unresolved-attribute = "ignore"     # ~78/147 are the `self.model = None` in __init__, built in handleModel()
+invalid-argument-type = "ignore"
+invalid-type-form = "ignore"        # mostly `def f(x: torch.tensor)` — the function, not the type
+call-non-callable = "ignore"
+no-matching-overload = "ignore"
+invalid-parameter-default = "ignore"
+invalid-assignment = "ignore"
+unsupported-operator = "ignore"
+not-subscriptable = "ignore"
+missing-argument = "ignore"
+invalid-return-type = "ignore"
+possibly-missing-submodule = "ignore"
+# `# type: ignore` comments in this tree target other checkers; ty policing them
+# would just churn vendored-adjacent arch files.
+unused-type-ignore-comment = "ignore"

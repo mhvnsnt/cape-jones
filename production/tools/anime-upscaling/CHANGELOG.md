@@ -1,0 +1,98 @@
+# Changelog
+
+## [1.14.0](https://github.com/IvanMicai/anime-upscaling/compare/v1.13.4...v1.14.0) (2026-10-13)
+
+### Features
+
+* dual-audio Merge job, film upscale models and SeedVR2 ([#96](https://github.com/IvanMicai/anime-upscaling/issues/96)) ([dd5a58a](https://github.com/IvanMicai/anime-upscaling/commit/dd5a58a2b651ce7a449b98c59be0fe5f01188cbd))
+
+## [1.13.4](https://github.com/IvanMicai/anime-upscaling/compare/v1.13.3...v1.13.4) (2026-08-01)
+
+### Bug Fixes
+
+* **pipeline:** dispatch files in alphabetical order and stop starving resumed ones ([#89](https://github.com/IvanMicai/anime-upscaling/issues/89)) ([019244d](https://github.com/IvanMicai/anime-upscaling/commit/019244dd671575ce1cfdf050f668b13fcdf3a92b))
+
+## [1.13.3](https://github.com/IvanMicai/anime-upscaling/compare/v1.13.2...v1.13.3) (2026-07-29)
+
+### Bug Fixes
+
+* publish the web image as anime-upscaling-app again ([#88](https://github.com/IvanMicai/anime-upscaling/issues/88)) ([dc291de](https://github.com/IvanMicai/anime-upscaling/commit/dc291de48025b70f27f4e5084f91748567490415)), closes [#71](https://github.com/IvanMicai/anime-upscaling/issues/71)
+
+## [1.13.2](https://github.com/IvanMicai/anime-upscaling/compare/v1.13.1...v1.13.2) (2026-07-29)
+
+### Bug Fixes
+
+* **pipeline:** resume stranded files and keep both worker pools busy ([#86](https://github.com/IvanMicai/anime-upscaling/issues/86)) ([7cc44dc](https://github.com/IvanMicai/anime-upscaling/commit/7cc44dca4ef17df69618f1a18266a8563d0db451))
+
+## [1.13.1](https://github.com/IvanMicai/anime-upscaling/compare/v1.13.0...v1.13.1) (2026-07-13)
+
+### Bug Fixes
+
+* **deps:** bump web app runtime dependencies ([#78](https://github.com/IvanMicai/anime-upscaling/issues/78)) ([7dc9415](https://github.com/IvanMicai/anime-upscaling/commit/7dc94156185689edd9cd1c3bd07ced2b39d5838b)), closes [#71](https://github.com/IvanMicai/anime-upscaling/issues/71)
+
+## [1.13.0](https://github.com/IvanMicai/anime-upscaling/compare/v1.12.1...v1.13.0) (2026-07-08)
+
+### Features
+
+* default /files to All filter and confirm job cancellation ([#65](https://github.com/IvanMicai/anime-upscaling/issues/65)) ([7dda081](https://github.com/IvanMicai/anime-upscaling/commit/7dda081104b00a025bb9c45bf146ef4279cf97a1))
+
+## [1.12.1](https://github.com/IvanMicai/anime-upscaling/compare/v1.12.0...v1.12.1) (2026-07-04)
+
+### Bug Fixes
+
+* sort pipeline list alphabetically (stop reshuffling on /pipelines) ([#59](https://github.com/IvanMicai/anime-upscaling/issues/59)) ([65dcffa](https://github.com/IvanMicai/anime-upscaling/commit/65dcffa335866dd2098db9cf1ee6dea91969efbd))
+
+## [1.12.0](https://github.com/IvanMicai/anime-upscaling/compare/v1.11.1...v1.12.0) (2026-07-04)
+
+### Features
+
+* add copy pipeline action to duplicate an existing pipeline ([#58](https://github.com/IvanMicai/anime-upscaling/issues/58)) ([5d5aa1f](https://github.com/IvanMicai/anime-upscaling/commit/5d5aa1fafc0c5554a87a3ccab48fe08cf7aaee73))
+
+## [1.11.1](https://github.com/IvanMicai/anime-upscaling/compare/v1.11.0...v1.11.1) (2026-07-04)
+
+### Bug Fixes
+
+* normalize anamorphic/interlaced sources to square pixels before video2x ([#57](https://github.com/IvanMicai/anime-upscaling/issues/57)) ([504283a](https://github.com/IvanMicai/anime-upscaling/commit/504283a6470bef79f7545f9c126c4f300c70e839))
+
+## [1.11.0](https://github.com/IvanMicai/anime-upscaling/compare/v1.10.7...v1.11.0) (2026-06-30)
+
+### Features
+
+* ship dashboard UX redesign ([#56](https://github.com/IvanMicai/anime-upscaling/issues/56)) ([59fe1cd](https://github.com/IvanMicai/anime-upscaling/commit/59fe1cde4cbc94d0667ec45326c34268b87e65df)), closes [#49](https://github.com/IvanMicai/anime-upscaling/issues/49)
+
+## [1.10.7](https://github.com/IvanMicai/anime-upscaling/compare/v1.10.6...v1.10.7) (2026-06-09)
+
+### Bug Fixes
+
+* **api:** check os.Remove error in optimize cleanup defer ([#40](https://github.com/IvanMicai/anime-upscaling/issues/40)) ([abb8462](https://github.com/IvanMicai/anime-upscaling/commit/abb8462a168ab13419503d94dcd7f2fee479bb9e))
+
+## [1.10.6](https://github.com/IvanMicai/anime-upscaling/compare/v1.10.5...v1.10.6) (2026-06-07)
+
+### Bug Fixes
+
+* two-phase optimize encode — keep sparse subtitle tracks out of the slow mux ([769a3d2](https://github.com/IvanMicai/anime-upscaling/commit/769a3d2d0267a592eedf282ee1be9a95dd74dd04))
+
+## [1.10.5](https://github.com/IvanMicai/anime-upscaling/compare/v1.10.4...v1.10.5) (2026-06-07)
+
+### Bug Fixes
+
+* **docker:** install pnpm via npm — corepack removed from node >= 25 ([5a26f00](https://github.com/IvanMicai/anime-upscaling/commit/5a26f00b81431f8c605382319dc97d9d46ca64ca)), closes [#27](https://github.com/IvanMicai/anime-upscaling/issues/27)
+
+## [1.10.4](https://github.com/IvanMicai/anime-upscaling/compare/v1.10.3...v1.10.4) (2026-06-07)
+
+### Bug Fixes
+
+* confine libx265 worker pool to per-stream thread budget ([b1bb339](https://github.com/IvanMicai/anime-upscaling/commit/b1bb339ebda2f1477670c0b98cb1e76045d57420))
+
+## [1.10.3](https://github.com/IvanMicai/anime-upscaling/compare/v1.10.2...v1.10.3) (2026-06-04)
+
+### Bug Fixes
+
+* force A/V interleaving in optimize encode (-max_interleave_delta 0) ([#34](https://github.com/IvanMicai/anime-upscaling/issues/34)) ([10c9962](https://github.com/IvanMicai/anime-upscaling/commit/10c9962384fa1a320fae87313709a7c478da04ab))
+
+This file is maintained automatically by
+[semantic-release](https://github.com/semantic-release/semantic-release) from
+[Conventional Commits](https://www.conventionalcommits.org/). New releases are
+prepended above this note on each push to `main`; see
+[docs/RELEASING.md](docs/RELEASING.md). Every release also appears on the
+[GitHub Releases page](https://github.com/IvanMicai/anime-upscaling/releases).

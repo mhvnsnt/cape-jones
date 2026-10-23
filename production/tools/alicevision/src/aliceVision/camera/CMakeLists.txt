@@ -1,0 +1,77 @@
+# Headers
+set(camera_files_headers
+	camera.hpp
+	cameraCommon.hpp
+	cameraUndistortImage.hpp
+	Distortion.hpp
+	DistortionBrown.hpp
+	DistortionFisheye.hpp
+	DistortionFisheye1.hpp
+	DistortionRadial.hpp
+	Undistortion.hpp
+	Undistortion3DEA4.hpp
+    Undistortion3DERadial4.hpp
+    Undistortion3DEClassicLD.hpp
+    UndistortionRadial.hpp
+	Equidistant.hpp
+    Equirectangular.hpp
+	IntrinsicBase.hpp
+	IntrinsicInitMode.hpp
+	IntrinsicScaleOffset.hpp
+	IntrinsicScaleOffsetDisto.hpp
+	Pinhole.hpp
+)
+
+set(camera_files_sources
+    camera.cpp
+    DistortionBrown.cpp
+    DistortionFisheye.cpp
+    DistortionFisheye1.cpp
+    DistortionRadial.cpp
+    UndistortionRadial.cpp
+    Equidistant.cpp
+    Equirectangular.cpp
+    IntrinsicBase.cpp
+    IntrinsicScaleOffset.cpp
+    IntrinsicScaleOffsetDisto.cpp
+    Pinhole.cpp
+	Undistortion.cpp
+    Undistortion3DEA4.cpp
+    Undistortion3DERadial4.cpp
+    Undistortion3DEClassicLD.cpp
+)
+
+alicevision_add_library(aliceVision_camera
+    SOURCES ${camera_files_headers} ${camera_files_sources}
+    PUBLIC_LINKS
+        aliceVision_numeric
+        aliceVision_geometry
+        aliceVision_image
+        aliceVision_stl
+        aliceVision_system
+)
+
+# Unit tests
+alicevision_add_test(distortion_test.cpp           NAME "camera_distortionRadial"     LINKS aliceVision_camera)
+alicevision_add_test(undistortion_test.cpp         NAME "camera_undistortion"         LINKS aliceVision_camera)
+alicevision_add_test(intrinsicProjection_test.cpp  NAME "camera_intrinsicProjection"  LINKS aliceVision_camera)
+alicevision_add_test(intrinsicDerivatives_test.cpp NAME "camera_intrinsicDerivatives" LINKS aliceVision_camera)
+alicevision_add_test(intrinsicState_test.cpp       NAME "camera_intrinsicState"       LINKS aliceVision_camera)
+alicevision_add_test(cameraCommon_test.cpp         NAME "camera_cameraCommon"         LINKS aliceVision_camera)
+alicevision_add_test(cameraUndistortImage_test.cpp NAME "camera_undistortImage"       LINKS aliceVision_camera aliceVision_image)
+
+
+# SWIG Binding
+if (ALICEVISION_BUILD_SWIG_BINDING)
+    alicevision_swig_add_library(camera
+        SOURCES Camera.i
+        PUBLIC_LINKS
+            aliceVision_camera
+            ${Python3_LIBRARIES}
+        PRIVATE_INCLUDE_DIRS
+            ../include
+            ${ALICEVISION_ROOT}/include
+            ${Python3_INCLUDE_DIRS}
+            ${Python3_NumPy_INCLUDE_DIRS}
+    )
+endif()

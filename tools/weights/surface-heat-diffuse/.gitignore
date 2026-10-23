@@ -1,0 +1,7 @@
+# Compiled solver binaries are build artifacts — rebuild with ./build_linux.sh
+addon/surface_heat_diffuse_skinning/bin/Linux/shd
+addon/surface_heat_diffuse_skinning/bin/Windows/x64/shd
+addon/surface_heat_diffuse_skinning/bin/Windows/x86/shd
+addon/surface_heat_diffuse_skinning/bin/Darwin/shd
+# Solver I/O scratch
+addon/surface_heat_diffuse_skinning/data/untitled-*.txt

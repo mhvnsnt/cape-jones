@@ -1,0 +1,786 @@
+import os
+
+os.environ.setdefault("DA3_LOG_LEVEL", "ERROR")
+
+import logging
+from concurrent.futures import ThreadPoolExecutor
+
+import numpy as np
+import torch
+import torch.nn.functional as F
+
+from src.constants import ADOBE
+from src.depth.backends._shared import (
+    MEANTENSOR,
+    STDTENSOR,
+    DepthRunOutcome,
+    calculateAspectRatio,
+    limboDisparity,
+    limboOnnxPath,
+    limboResolution,
+)
+from src.infra.isCudaInit import CudaChecker
+from src.infra.logAndPrint import logAndPrint, logWarning
+from src.infra.progressBarLogic import ProgressBarLogic
+from src.infra.providerCheck import warnIfProviderMissing
+from src.io.ffmpegSettings import (
+    BuildBuffer,
+    WriteBuffer,
+)
+from src.model.download import resolveWeightPath
+from src.model.registry import modelsMap
+
+if ADOBE:
+    from src.server.aeComms import progressState
+
+checker = CudaChecker()
+
+
+class DepthDirectMLV2(DepthRunOutcome):
+    def __init__(
+        self,
+        input,
+        output,
+        width,
+        height,
+        fps,
+        half,
+        inpoint=0,
+        outpoint=0,
+        encode_method="x264",
+        depth_method="small",
+        benchmark=False,
+        totalFrames=0,
+        bitDepth: str = "16bit",
+        depthQuality: str = "high",
+    ):
+        import onnxruntime as ort
+
+        self.ort = ort
+
+        self.input = input
+        self.output = output
+        self.width = width
+        self.height = height
+        self.fps = fps
+        self.half = half
+        self.inpoint = inpoint
+        self.outpoint = outpoint
+        self.encode_method = encode_method
+        self.depth_method = depth_method
+        self.benchmark = benchmark
+        self.totalFrames = totalFrames
+        self.bitDepth = bitDepth
+        self.depthQuality = depthQuality
+
+        if "openvino" in depth_method:
+            logAndPrint(
+                "OpenVINO backend is an experimental feature, please report any issues you encounter.",
+                "yellow",
+            )
+            import openvino  # noqa: F401
+
+        self.handleModels()
+
+        # Same hooks OGDepthV2CUDA/OGDepthV2MPS carry: a subclass whose model
+        # resolution is known before the first frame can have the decoder scale
+        # to it (proper downscale filter, no per-frame full-res interpolate)
+        # instead of decoding at source. Default is the original behaviour.
+        decodeW = getattr(self, "_decodeWidth", self.width)
+        decodeH = getattr(self, "_decodeHeight", self.height)
+        decodeResize = getattr(self, "_decodeResize", False)
+
+        try:
+            self.readBuffer = BuildBuffer(
+                videoInput=self.input,
+                inpoint=self.inpoint,
+                outpoint=self.outpoint,
+                resize=decodeResize,
+                width=decodeW,
+                height=decodeH,
+            )
+
+            self.writeBuffer = WriteBuffer(
+                self.input,
+                self.output,
+                self.encode_method,
+                self.width,
+                self.height,
+                self.fps,
+                grayscale=True,
+                benchmark=self.benchmark,
+                bitDepth=self.bitDepth,
+            )
+
+            with ThreadPoolExecutor(max_workers=3) as executor:
+                executor.submit(self.writeBuffer)
+                executor.submit(self.readBuffer)
+                executor.submit(self.guardedProcess)
+
+        except Exception as e:
+            self.recordFailure(e)
+            logging.exception(f"Something went wrong, {e}")
+
+        self.reportOutcome()
+
+    def handleModels(self):
+        if ADOBE:
+            progressState.update(
+                {"status": f"Loading depth model: {self.depth_method}..."}
+            )
+
+        method = self.depth_method
+        if "openvino" in self.depth_method:
+            method = method.replace("openvino", "directml")
+
+        self.filename = modelsMap(model=method, modelType="onnx", half=self.half)
+
+        if "directml" in self.depth_method:
+            folderName = self.depth_method.replace("-directml", "-onnx")
+        elif "openvino" in self.depth_method:
+            folderName = self.depth_method.replace("-openvino", "-onnx")
+
+        modelPath = resolveWeightPath(
+            folderName,
+            self.filename,
+            downloadModel=method,
+            half=self.half,
+            modelType="onnx",
+        )
+
+        providers = self.ort.get_available_providers()
+
+        if (
+            "DmlExecutionProvider" in providers
+            or "OpenVINOExecutionProvider" in providers
+        ):
+            if "directml" in self.depth_method:
+                logging.info("DirectML provider available. Defaulting to DirectML")
+                self.model = self.ort.InferenceSession(
+                    modelPath, providers=["DmlExecutionProvider"]
+                )
+                warnIfProviderMissing(
+                    self.model, "DmlExecutionProvider", "DirectML depth"
+                )
+            elif "openvino" in self.depth_method:
+                logging.info("Using OpenVINO model")
+                self.model = self.ort.InferenceSession(
+                    modelPath, providers=["OpenVINOExecutionProvider"]
+                )
+                warnIfProviderMissing(
+                    self.model, "OpenVINOExecutionProvider", "OpenVINO depth"
+                )
+        else:
+            logWarning(
+                "DirectML provider not available, falling back to CPU, expect significantly worse performance, ensure that your drivers are up to date and your GPU supports DirectX 12"
+            )
+            self.model = self.ort.InferenceSession(
+                modelPath, providers=["CPUExecutionProvider"]
+            )
+        # Bind on CPU memory; ORT will handle copies for DML provider
+        self.deviceType = "cpu"
+        self.device = torch.device(self.deviceType)
+
+        # Calculate padded model resolution (height, width)
+        self.newHeight, self.newWidth = calculateAspectRatio(
+            self.width, self.height, self.depthQuality
+        )
+
+        # Discover actual I/O names and dtypes from the ONNX model
+        onnxInputs = self.model.get_inputs()
+        onnxOutputs = self.model.get_outputs()
+        self.inputName = onnxInputs[0].name
+        self.outputName = onnxOutputs[0].name
+
+        def onnxTypeToNumpy(typ: str):
+            return np.float16 if "float16" in typ else np.float32
+
+        def onnxTypeToTorch(typ: str):
+            return torch.float16 if "float16" in typ else torch.float32
+
+        self.numpyInDType = onnxTypeToNumpy(onnxInputs[0].type)
+        self.torchInDType = onnxTypeToTorch(onnxInputs[0].type)
+        self.numpyOutDType = onnxTypeToNumpy(onnxOutputs[0].type)
+        self.torchOutDType = onnxTypeToTorch(onnxOutputs[0].type)
+
+        # Allocate input/output buffers with correct shapes and dtypes
+        self.IoBinding = self.model.io_binding()
+        self.dummyInput = torch.zeros(
+            (1, 3, self.newHeight, self.newWidth),
+            device=self.deviceType,
+            dtype=self.torchInDType,
+        ).contiguous()
+
+        out_rank = len(onnxOutputs[0].shape) if hasattr(onnxOutputs[0], "shape") else 4
+        if out_rank == 3:
+            out_shape = (1, self.newHeight, self.newWidth)
+        else:
+            # Default to NCHW with C=1 when unknown or 4D
+            out_shape = (1, 1, self.newHeight, self.newWidth)
+
+        self.dummyOutput = torch.zeros(
+            out_shape,
+            device=self.deviceType,
+            dtype=self.torchOutDType,
+        ).contiguous()
+
+        self.IoBinding.bind_output(
+            name=self.outputName,
+            device_type=self.deviceType,
+            device_id=0,
+            element_type=self.numpyOutDType,
+            shape=self.dummyOutput.shape,
+            buffer_ptr=self.dummyOutput.data_ptr(),
+        )
+
+        self.usingCpuFallback = False
+        self.modelPath = modelPath
+
+    def _fallbackToCpu(self):
+        """Reinitialize model and CPU accelerate it after DirectML or OpenVINO fails."""
+        logAndPrint(
+            "DirectML/OpenVINO encountered an error, falling back to CPU. Performance will be slower.",
+            "yellow",
+        )
+
+        self.model = self.ort.InferenceSession(
+            self.modelPath, providers=["CPUExecutionProvider"]
+        )
+
+        self.IoBinding = self.model.io_binding()
+        self.IoBinding.bind_output(
+            name=self.outputName,
+            device_type=self.deviceType,
+            device_id=0,
+            element_type=self.numpyOutDType,
+            shape=self.dummyOutput.shape,
+            buffer_ptr=self.dummyOutput.data_ptr(),
+        )
+
+        self.usingCpuFallback = True
+
+    @torch.inference_mode()
+    def processFrame(self, frame):
+        try:
+            frame = frame.to(self.device)
+
+            frame = F.interpolate(
+                frame,
+                size=(self.newHeight, self.newWidth),
+                mode="bilinear",
+                align_corners=True,
+            )
+
+            frame = frame.to(dtype=self.torchInDType)
+
+            self.dummyInput.copy_(frame)
+            self.IoBinding.bind_input(
+                name=self.inputName,
+                device_type=self.deviceType,
+                device_id=0,
+                element_type=self.numpyInDType,
+                shape=self.dummyInput.shape,
+                buffer_ptr=self.dummyInput.data_ptr(),
+            )
+
+            self.model.run_with_iobinding(self.IoBinding)
+
+            out_tensor = self.dummyOutput.float()
+            if out_tensor.ndim == 3:
+                out_tensor = out_tensor.unsqueeze(0)
+            depth = F.interpolate(
+                out_tensor,
+                size=(self.height, self.width),
+                mode="bilinear",
+                align_corners=True,
+            )
+
+            depth = (depth - depth.min()) / (depth.max() - depth.min() + 1e-6)
+            self.writeBuffer.write(depth)
+
+        except UnicodeDecodeError as e:
+            if not self.usingCpuFallback:
+                logging.warning(f"DirectML/OpenVINO UnicodeDecodeError: {e}")
+                self._fallbackToCpu()
+                self.processFrame(frame)
+            else:
+                self.recordFailure(e)
+                logging.exception(
+                    f"Something went wrong while processing the frame, {e}"
+                )
+
+        except Exception as e:
+            self.recordFailure(e)
+            logging.exception(f"Something went wrong while processing the frame, {e}")
+
+    def process(self):
+        frameCount = 0
+
+        with ProgressBarLogic(self.totalFrames, title="Depth") as bar:
+            while (frame := self.readBuffer.read()) is not None:
+                self.processFrame(frame)
+                frameCount += 1
+                bar(1)
+
+        logging.info(f"Processed {frameCount} frames")
+
+        self.writeBuffer.close()
+
+
+class LimboOpenVino(DepthDirectMLV2):
+    """Limbo (anime-finetuned Depth Anything 3 small) on the OpenVINO provider.
+
+    Sits in the ORT class like every other OpenVINO depth path. Each Limbo
+    graph has one spatial size, so ``--depth_quality`` picks which graph
+    (limboOnnxPath) rather than a resize. The hosted export has a second output
+    (``depth_conf``) that gets bound too -- ORT would otherwise allocate it
+    itself on every single frame.
+
+    It also normalizes the input itself. The depth_anything_v2 ONNX bakes the
+    ImageNet transform into the graph, which is why DepthDirectMLV2 feeds it raw
+    [0, 1] frames; Limbo's export does not, and feeding it unnormalized frames
+    costs ~19 dB against the reference while still producing a plausible-looking
+    depth map.
+    """
+
+    def handleModels(self):
+        if ADOBE:
+            progressState.update(
+                {"status": f"Loading depth model: {self.depth_method}..."}
+            )
+
+        self.newHeight, self.newWidth = limboResolution(
+            self.width, self.height, self.depthQuality
+        )
+        modelPath = limboOnnxPath(
+            self.depth_method, self.newHeight, self.newWidth, self.half, "directml"
+        )
+
+        # A local export leaves the view axis free; pin it so the graph is as
+        # static as the hosted one. A no-op on the hosted exports.
+        self.sessionOptions = self.ort.SessionOptions()
+        self.sessionOptions.add_free_dimension_override_by_name("views", 1)
+
+        providers = self.ort.get_available_providers()
+        if "OpenVINOExecutionProvider" in providers:
+            logging.info("Using OpenVINO model")
+            self.model = self.ort.InferenceSession(
+                modelPath,
+                sess_options=self.sessionOptions,
+                providers=["OpenVINOExecutionProvider"],
+            )
+            warnIfProviderMissing(
+                self.model, "OpenVINOExecutionProvider", "OpenVINO depth"
+            )
+        else:
+            logWarning(
+                "OpenVINO provider not available, falling back to CPU, expect "
+                "significantly worse performance"
+            )
+            self.model = self.ort.InferenceSession(
+                modelPath,
+                sess_options=self.sessionOptions,
+                providers=["CPUExecutionProvider"],
+            )
+
+        self.deviceType = "cpu"
+        self.device = torch.device(self.deviceType)
+        # ORT binds host memory, so the module-level CUDA copies are no use here.
+        self.meanTensor = MEANTENSOR.to(self.device)
+        self.stdTensor = STDTENSOR.to(self.device)
+
+        # The input size is known before the first frame, so let the decoder
+        # scale to it: its filter beats a 3.8x bilinear downscale (~29 dB
+        # apart at 1080p) and it drops a full-res interpolate per frame.
+        self._decodeWidth = self.newWidth
+        self._decodeHeight = self.newHeight
+        self._decodeResize = True
+
+        onnxInputs = self.model.get_inputs()
+        onnxOutputs = {o.name: o for o in self.model.get_outputs()}
+        self.inputName = onnxInputs[0].name
+        self.outputName = "depth"
+
+        def onnxTypeToNumpy(typ: str):
+            return np.float16 if "float16" in typ else np.float32
+
+        def onnxTypeToTorch(typ: str):
+            return torch.float16 if "float16" in typ else torch.float32
+
+        self.numpyInDType = onnxTypeToNumpy(onnxInputs[0].type)
+        self.torchInDType = onnxTypeToTorch(onnxInputs[0].type)
+        self.numpyOutDType = onnxTypeToNumpy(onnxOutputs["depth"].type)
+        self.torchOutDType = onnxTypeToTorch(onnxOutputs["depth"].type)
+
+        self.IoBinding = self.model.io_binding()
+        self.dummyInput = torch.zeros(
+            (1, 3, self.newHeight, self.newWidth),
+            device=self.deviceType,
+            dtype=self.torchInDType,
+        ).contiguous()
+        self.dummyOutput = torch.zeros(
+            (1, self.newHeight, self.newWidth),
+            device=self.deviceType,
+            dtype=self.torchOutDType,
+        ).contiguous()
+        # Only the hosted exports carry depth_conf.
+        self.dummyConf = None
+        if "depth_conf" in onnxOutputs:
+            self.dummyConf = torch.zeros(
+                (1, self.newHeight, self.newWidth),
+                device=self.deviceType,
+                dtype=onnxTypeToTorch(onnxOutputs["depth_conf"].type),
+            ).contiguous()
+
+        self._bindOutputs()
+
+        self.usingCpuFallback = False
+        self.modelPath = modelPath
+
+    def _bindOutputs(self):
+        self.IoBinding.bind_output(
+            name="depth",
+            device_type=self.deviceType,
+            device_id=0,
+            element_type=self.numpyOutDType,
+            shape=self.dummyOutput.shape,
+            buffer_ptr=self.dummyOutput.data_ptr(),
+        )
+        if self.dummyConf is None:
+            return
+        self.IoBinding.bind_output(
+            name="depth_conf",
+            device_type=self.deviceType,
+            device_id=0,
+            element_type=(
+                np.float16 if self.dummyConf.dtype == torch.float16 else np.float32
+            ),
+            shape=self.dummyConf.shape,
+            buffer_ptr=self.dummyConf.data_ptr(),
+        )
+
+    def _fallbackToCpu(self):
+        logAndPrint(
+            "OpenVINO encountered an error, falling back to CPU. Performance will be slower.",
+            "yellow",
+        )
+        self.model = self.ort.InferenceSession(
+            self.modelPath,
+            sess_options=self.sessionOptions,
+            providers=["CPUExecutionProvider"],
+        )
+        self.IoBinding = self.model.io_binding()
+        self._bindOutputs()
+        self.usingCpuFallback = True
+
+    @torch.inference_mode()
+    def processFrame(self, frame):
+        try:
+            # `frame` is never rebound: the UnicodeDecodeError branch below
+            # retries with it, and a retry on the normalized copy would subtract
+            # the ImageNet mean a second time.
+            prepared = frame.to(self.device).float()
+            if prepared.shape[-2:] != (self.newHeight, self.newWidth):
+                prepared = F.interpolate(
+                    prepared,
+                    size=(self.newHeight, self.newWidth),
+                    mode="bilinear",
+                    align_corners=True,
+                )
+            prepared = ((prepared - self.meanTensor) / self.stdTensor).to(
+                dtype=self.torchInDType
+            )
+
+            self.dummyInput.copy_(prepared)
+            # Rebound every frame on purpose: ORT snapshots a bound input at
+            # bind_input() time, not at run time.
+            self.IoBinding.bind_input(
+                name=self.inputName,
+                device_type=self.deviceType,
+                device_id=0,
+                element_type=self.numpyInDType,
+                shape=self.dummyInput.shape,
+                buffer_ptr=self.dummyInput.data_ptr(),
+            )
+
+            self.model.run_with_iobinding(self.IoBinding)
+
+            gray = limboDisparity(self.dummyOutput.unsqueeze(1))
+            if gray.shape[-2:] != (self.height, self.width):
+                gray = F.interpolate(
+                    gray,
+                    size=(self.height, self.width),
+                    mode="bilinear",
+                    align_corners=True,
+                ).clamp(0.0, 1.0)
+            self.writeBuffer.write(gray)
+
+        except UnicodeDecodeError as e:
+            if not self.usingCpuFallback:
+                logging.warning(f"OpenVINO UnicodeDecodeError: {e}")
+                self._fallbackToCpu()
+                self.processFrame(frame)
+            else:
+                self.recordFailure(e)
+                logging.exception(
+                    f"Something went wrong while processing the frame, {e}"
+                )
+
+        except Exception as e:
+            self.recordFailure(e)
+            logging.exception(f"Something went wrong while processing the frame, {e}")
+
+
+class OGDepthV2DirectML(DepthRunOutcome):
+    def __init__(
+        self,
+        input,
+        output,
+        width,
+        height,
+        fps,
+        half,
+        inpoint=0,
+        outpoint=0,
+        encode_method="x264",
+        depth_method="og_small_v2-directml",
+        benchmark=False,
+        totalFrames=0,
+        bitDepth: str = "16bit",
+        depthQuality: str = "high",
+    ):
+        import onnxruntime as ort
+
+        self.ort = ort
+
+        self.input = input
+        self.output = output
+        self.width = width
+        self.height = height
+        self.fps = fps
+        self.half = half
+        self.inpoint = inpoint
+        self.outpoint = outpoint
+        self.encode_method = encode_method
+        self.depth_method = depth_method
+        self.benchmark = benchmark
+        self.totalFrames = totalFrames
+        self.bitDepth = bitDepth
+        self.depthQuality = depthQuality
+
+        if "openvino" in depth_method:
+            logAndPrint(
+                "OpenVINO backend is an experimental feature, please report any issues you encounter.",
+                "yellow",
+            )
+            import openvino  # noqa: F401
+
+        self.handleModels()
+
+        try:
+            self.readBuffer = BuildBuffer(
+                videoInput=self.input,
+                inpoint=self.inpoint,
+                outpoint=self.outpoint,
+                width=self.width,
+                height=self.height,
+                half=self.half,
+                resize=False,
+                toTorch=False,
+            )
+
+            # This used to be a cv2.VideoWriter pinned to the "mp4v" fourcc, so
+            # every og_* depth run wrote MPEG-4 Part 2 no matter what
+            # --encode_method said, and ignored --bit_depth. WriteBuffer is
+            # what every other depth backend uses.
+            self.writeBuffer = WriteBuffer(
+                self.input,
+                self.output,
+                self.encode_method,
+                self.width,
+                self.height,
+                self.fps,
+                grayscale=True,
+                benchmark=self.benchmark,
+                bitDepth=self.bitDepth,
+            )
+
+            with ThreadPoolExecutor(max_workers=3) as executor:
+                executor.submit(self.readBuffer)
+                executor.submit(self.writeBuffer)
+                executor.submit(self.guardedProcess)
+
+        except Exception as e:
+            self.recordFailure(e)
+            logging.exception(f"Something went wrong, {e}")
+
+        self.reportOutcome()
+
+    def handleModels(self):
+        depth_method = self.depth_method
+        if "openvino" in depth_method:
+            depth_method = depth_method.replace("openvino", "directml")
+
+        if "og_" in depth_method:
+            depth_method = depth_method.replace("og_", "")
+
+        self.filename = modelsMap(model=depth_method, modelType="onnx", half=self.half)
+
+        folderName = depth_method.replace("-directml", "-onnx")
+        modelPath = resolveWeightPath(
+            folderName,
+            self.filename,
+            downloadModel=depth_method,
+            half=self.half,
+            modelType="onnx",
+        )
+
+        providers = self.ort.get_available_providers()
+
+        if (
+            "DmlExecutionProvider" in providers
+            or "OpenVINOExecutionProvider" in providers
+        ):
+            if "directml" in self.depth_method:
+                logging.info("DirectML provider available. Defaulting to DirectML")
+                self.model = self.ort.InferenceSession(
+                    modelPath, providers=["DmlExecutionProvider"]
+                )
+                warnIfProviderMissing(
+                    self.model, "DmlExecutionProvider", "DirectML depth"
+                )
+            elif "openvino" in self.depth_method:
+                logging.info("Using OpenVINO model")
+                self.model = self.ort.InferenceSession(
+                    modelPath, providers=["OpenVINOExecutionProvider"]
+                )
+                warnIfProviderMissing(
+                    self.model, "OpenVINOExecutionProvider", "OpenVINO depth"
+                )
+        else:
+            logWarning("DirectML provider not available, falling back to CPU")
+            self.model = self.ort.InferenceSession(
+                modelPath, providers=["CPUExecutionProvider"]
+            )
+
+        self.deviceType = "cpu"
+        self.device = torch.device(self.deviceType)
+
+        self.newHeight, self.newWidth = calculateAspectRatio(
+            self.width, self.height, self.depthQuality
+        )
+
+        onnxInputs = self.model.get_inputs()
+        onnxOutputs = self.model.get_outputs()
+        self.inputName = onnxInputs[0].name
+        self.outputName = onnxOutputs[0].name
+
+        def onnxTypeToNumpy(typ: str):
+            return np.float16 if "float16" in typ else np.float32
+
+        def onnxTypeToTorch(typ: str):
+            return torch.float16 if "float16" in typ else torch.float32
+
+        self.numpyInDType = onnxTypeToNumpy(onnxInputs[0].type)
+        self.torchInDType = onnxTypeToTorch(onnxInputs[0].type)
+        self.numpyOutDType = onnxTypeToNumpy(onnxOutputs[0].type)
+        self.torchOutDType = onnxTypeToTorch(onnxOutputs[0].type)
+
+        self.IoBinding = self.model.io_binding()
+        self.dummyInput = torch.zeros(
+            (1, 3, self.newHeight, self.newWidth),
+            device=self.deviceType,
+            dtype=self.torchInDType,
+        ).contiguous()
+
+        out_rank = len(onnxOutputs[0].shape) if hasattr(onnxOutputs[0], "shape") else 4
+        if out_rank == 3:
+            out_shape = (1, self.newHeight, self.newWidth)
+        else:
+            out_shape = (1, 1, self.newHeight, self.newWidth)
+
+        self.dummyOutput = torch.zeros(
+            out_shape,
+            device=self.deviceType,
+            dtype=self.torchOutDType,
+        ).contiguous()
+
+        self.IoBinding.bind_output(
+            name=self.outputName,
+            device_type=self.deviceType,
+            device_id=0,
+            element_type=self.numpyOutDType,
+            shape=self.dummyOutput.shape,
+            buffer_ptr=self.dummyOutput.data_ptr(),
+        )
+
+    @torch.inference_mode()
+    def processFrame(self, frame):
+        try:
+            frame = torch.from_numpy(frame).to(self.device)
+            frame = frame.permute(2, 0, 1).unsqueeze(0)
+
+            frame = F.interpolate(
+                frame.float() / 255.0,
+                size=(self.newHeight, self.newWidth),
+                mode="bilinear",
+                align_corners=True,
+            )
+
+            frame = (frame - MEANTENSOR.cpu()) / STDTENSOR.cpu()
+            frame = frame.to(dtype=self.torchInDType)
+
+            self.dummyInput.copy_(frame)
+            self.IoBinding.bind_input(
+                name=self.inputName,
+                device_type=self.deviceType,
+                device_id=0,
+                element_type=self.numpyInDType,
+                shape=self.dummyInput.shape,
+                buffer_ptr=self.dummyInput.data_ptr(),
+            )
+
+            self.model.run_with_iobinding(self.IoBinding)
+
+            out_tensor = self.dummyOutput.float()
+            if out_tensor.ndim == 4:
+                out_tensor = out_tensor.squeeze(1)
+
+            depth = out_tensor[0].cpu().numpy()
+            depth = (depth - depth.min()) / (depth.max() - depth.min() + 1e-6)
+
+            # WriteBuffer takes [1, C, H, W] in [0, 1] and quantizes once, to 8
+            # or 16 bit per --bit_depth, instead of the uint8 cast this path
+            # used to hardcode. It also resizes a frame that does not match the
+            # output dimensions, so the cv2.resize the old encode thread did is
+            # not needed.
+            self.writeBuffer.write(
+                torch.from_numpy(np.ascontiguousarray(depth, dtype=np.float32))
+                .unsqueeze(0)
+                .unsqueeze(0)
+            )
+
+        except Exception as e:
+            self.recordFailure(e)
+            logging.exception(f"Something went wrong while processing the frame, {e}")
+
+    def process(self):
+        frameCount = 0
+
+        with ProgressBarLogic(self.totalFrames, title="Depth") as bar:
+            # Read to the sentinel, not to the frame-count estimate: that count
+            # is an estimate on VFR sources and on containers with no nb_frames
+            # header, and using it as a hard bound silently truncated the tail.
+            while True:
+                frame = self.readBuffer.read()
+                if frame is None:
+                    break
+                self.processFrame(frame)
+                frameCount += 1
+                bar(1)
+                if self.readBuffer.isReadFinished():
+                    if self.readBuffer.isQueueEmpty():
+                        break
+
+        logging.info(f"Processed {frameCount} frames")
+        self.writeBuffer.close()

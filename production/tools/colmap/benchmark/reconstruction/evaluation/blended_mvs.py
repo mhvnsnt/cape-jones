@@ -1,0 +1,134 @@
+# SPDX-License-Identifier: BSD-3-Clause
+
+from pathlib import Path
+
+import numpy as np
+from PIL import Image
+
+import pycolmap
+
+from .utils import Dataset, SceneInfo
+
+
+class DatasetBlendedMVS(Dataset):
+    @property
+    def position_accuracy_gt(self) -> float:
+        return 0.001
+
+    @property
+    def supports_covisibility_filtering(self) -> bool:
+        return True
+
+    def list_scenes(self) -> list[SceneInfo]:
+        scene_infos = []
+        for category_path in (self.data_path / "blended-mvs").iterdir():
+            if not category_path.is_dir() or (
+                self.categories and category_path.name not in self.categories
+            ):
+                continue
+
+            category = category_path.name
+
+            for scene_path in sorted(category_path.iterdir()):
+                if not scene_path.is_dir():
+                    continue
+
+                scene = scene_path.name
+                if self.scenes and scene not in self.scenes:
+                    continue
+
+                workspace_path = (
+                    self.run_path
+                    / self.run_name
+                    / "blended-mvs"
+                    / category
+                    / scene
+                )
+                image_path = scene_path / "blended_images"
+                image_list_path = scene_path / "images.txt"
+                num_images = 0
+                with open(image_list_path, "w") as fid:
+                    for filepath in sorted(image_path.iterdir()):
+                        image_name = str(filepath.name)
+                        if (
+                            image_name.endswith(".jpg")
+                            and "masked" not in image_name
+                        ):
+                            fid.write(image_name + "\n")
+                            num_images += 1
+
+                sparse_gt_path = scene_path / "sparse_gt"
+                colmap_extra_args: list[str | Path] = [
+                    "--image_list_path",
+                    image_list_path,
+                ]
+
+                scene_info = SceneInfo(
+                    dataset="blended-mvs",
+                    category=category,
+                    scene=scene,
+                    num_images=num_images,
+                    workspace_path=workspace_path,
+                    image_path=image_path,
+                    sparse_gt_path=sparse_gt_path,
+                    has_camera_priors=True,
+                    colmap_extra_args=colmap_extra_args,
+                )
+
+                scene_infos.append(scene_info)
+
+        return scene_infos
+
+    def prepare_scene(self, scene_info: SceneInfo) -> None:
+        if scene_info.sparse_gt_path.exists():
+            return
+
+        scene_path = scene_info.image_path.parent
+
+        sparse_gt = pycolmap.Reconstruction()
+        for i, filepath in enumerate(sorted((scene_path / "cams").iterdir())):
+            filename = str(filepath.name)
+            if not filename.endswith("_cam.txt"):
+                continue
+            image_name = filename[:-8] + ".jpg"
+            width, height = Image.open(
+                scene_path / "blended_images" / image_name
+            ).size[:2]
+            with open(filepath, encoding="ascii") as fid:
+                lines = list(map(lambda b: b.strip(), fid.readlines()))
+                extrinsic = np.fromstring(
+                    " ".join(lines[1:4]),
+                    count=12,
+                    sep=" ",
+                ).reshape(3, 4)
+                intrinsic = np.fromstring(
+                    " ".join(lines[7:10]),
+                    count=9,
+                    sep=" ",
+                ).reshape(3, 3)
+            camera = pycolmap.Camera(
+                camera_id=i,
+                model=pycolmap.CameraModelId.PINHOLE,
+                width=width,
+                height=height,
+                params=intrinsic[(0, 1, 0, 1), (0, 1, 2, 2)],
+            )
+            rig = pycolmap.Rig(rig_id=i)
+            rig.add_ref_sensor(camera.sensor_id)
+            image = pycolmap.Image(
+                image_id=i,
+                camera_id=i,
+                name=image_name,
+            )
+            image.frame_id = i
+            frame = pycolmap.Frame(frame_id=i)
+            frame.rig_id = i
+            frame.add_data_id(image.data_id)
+            frame.rig_from_world = pycolmap.Rigid3d(extrinsic)
+            sparse_gt.add_camera(camera)
+            sparse_gt.add_rig(rig)
+            sparse_gt.add_frame(frame)
+            sparse_gt.add_image(image)
+
+        scene_info.sparse_gt_path.mkdir(exist_ok=True)
+        sparse_gt.write(scene_info.sparse_gt_path)
