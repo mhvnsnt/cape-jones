@@ -1,8 +1,0 @@
-{
-  "paramsTypes": {
-    "speed": "float"
-  },
-  "defaultParams": {
-    "speed": 2
-  }
-}
