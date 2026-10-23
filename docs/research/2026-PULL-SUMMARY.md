@@ -39,6 +39,8 @@
 | Tool | Status | Notes |
 |------|--------|-------|
 | **LTX-Video** (Lightricks) | ✅ Pulled 2026-10-22 | `production/tools/ltx-video/`, Apache-2.0, DiT t2v/i2v/keyframes — closes the video-gen hard gap |
+| **LTX-2** (Lightricks) | ✅ Pulled 2026-10-22 (PR #199) | `production/tools/ltx2/`, LTX-2 Community License (free commercial < $10M revenue), first DiT synced audio+video model — picture AND sound in one generation |
+| **Wan2.1** (Alibaba Wan) | ✅ Pulled 2026-10-22 | `production/tools/wan2.1/`, Apache-2.0 (no revenue gate), t2v/i2v/first-last-frame/v2a + VACE unified editing (character/object reference replacement, pose control) — the directed-shot lane for the show pipeline; 1.3B tier ~8.2GB VRAM Kaggle-T4 friendly |
 
 ## AI Music (documented, not pulled — GPU models)
 - Stable Audio 3 (Stability AI, open-weight)
