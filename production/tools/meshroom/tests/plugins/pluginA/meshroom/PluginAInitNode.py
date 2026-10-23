@@ -1,0 +1,21 @@
+from meshroom.core import desc
+
+
+class PluginAInitNode(desc.InitNode):
+    inputs = [
+        desc.File(
+            name="input",
+            label="Input",
+            description="",
+            value="",
+        ),
+    ]
+
+    outputs = [
+        desc.File(
+            name="output",
+            label="Output",
+            description="",
+            value="",
+        ),
+    ]

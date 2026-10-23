@@ -1,0 +1,456 @@
+# Anime Upscaling API
+
+Go HTTP API for managing video upscaling and optimization jobs with video2x
+and FFmpeg.
+
+See [docs/ARCHITECTURE.md](../../docs/ARCHITECTURE.md) for the system design
+(trust boundary, queues, job lifecycle, GPU monitor).
+
+**Base URL:** `http://localhost:4751` when running the API directly. In the
+default Docker Compose stack, the API is private to the Compose network and the
+web app proxies browser requests to it.
+
+## Configuration
+
+| Setting | Value |
+|---------|-------|
+| Port | `API_PORT`, default `4751` |
+| Base directory | `PROCESS_DIR`, default `/data` |
+| Input directory | `{BaseDir}/input` |
+| Output directory | `{BaseDir}/output` |
+| Optimized directory | `{BaseDir}/optimized` |
+| Interpolated directory | `{BaseDir}/interpolated` |
+| Supported extensions | `.mkv`, `.mp4`, `.avi` |
+| CORS | All origins (`*`), methods `GET, POST, PUT, DELETE, OPTIONS`. Keep the API on a trusted private network. |
+
+## Endpoints
+
+### GET /api/files
+
+List video files in a directory.
+
+**Query Parameters:**
+
+| Param | Type | Default | Description |
+|-------|------|---------|-------------|
+| `dir` | string | `"input"` | One of `input`, `merged`, `output`, `interpolated`, `optimized` |
+
+**Response 200:**
+
+```json
+{
+  "dir": "input",
+  "files": ["video1.mkv", "video2.mp4"]
+}
+```
+
+**Response 400:**
+
+```json
+{ "error": "invalid dir: must be input, merged, output, interpolated, or optimized" }
+```
+
+**Example:**
+
+```bash
+curl 'http://localhost:4751/api/files?dir=input'
+```
+
+---
+
+### GET /api/jobs
+
+List all jobs.
+
+**Response 200:**
+
+```json
+[
+  {
+    "id": "j_1708540800_1a2b",
+    "type": "upscale",
+    "status": "running",
+    "files": ["video1.mkv"],
+    "progress": {
+      "total": 1,
+      "completed": 0,
+      "failed": 0,
+      "skipped": 0,
+      "current": "Processing video1.mkv"
+    },
+    "created_at": "2024-02-21T12:00:00Z",
+    "finished_at": null
+  }
+]
+```
+
+**Example:**
+
+```bash
+curl http://localhost:4751/api/jobs
+```
+
+---
+
+### POST /api/jobs
+
+Create a new job.
+
+**Request Body:**
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `type` | string | yes | `"upscale"`, `"interpolate"`, `"optimize"`, `"check"`, or `"merge"` |
+| `files` | string[] | no | Filenames from the selected source. If empty, uses all videos in that source |
+| `source` | string | no | One of `input`, `merged`, `output`, `interpolated`, `optimized`; defaults to `input` (a `merge` cannot read from `merged`) |
+| `frame_rate` | number | no | Optimize-only frame-rate divisor: `1` original, `2` half, or `4` quarter |
+| `processor` | string | no | Upscale-only: `realesrgan` (default), `libplacebo`, `realcugan`, or `seedvr2` |
+| `model` | string | no | Upscale-only model for the processor; see the README's model table |
+| `scale` | number | no | Upscale-only factor `2`, `3` or `4` (default `2`); ignored by `seedvr2` |
+| `noise_level` | number | no | Upscale-only, `0`–`3`; only Real-CUGAN and `realesr-generalv3` use it |
+| `target_height` | number | no | `seedvr2`-only output short side: `720`, `1080` (default), `1440` or `2160` |
+
+```json
+{
+  "type": "upscale",
+  "files": ["video1.mkv", "video2.mp4"]
+}
+```
+
+**Response 201:**
+
+```json
+{
+  "id": "j_1708540800_1a2b",
+  "type": "upscale",
+  "status": "queued",
+  "files": ["video1.mkv", "video2.mp4"]
+}
+```
+
+**Response 400:**
+
+```json
+{ "error": "type must be upscale, optimize, check, or interpolate" }
+```
+
+```json
+{ "error": "no video files found in input/" }
+```
+
+```json
+{ "error": "file not found in input/: video1.mkv" }
+```
+
+**Examples:**
+
+```bash
+# Upscale specific files
+curl -X POST http://localhost:4751/api/jobs \
+  -H 'Content-Type: application/json' \
+  -d '{"type": "upscale", "files": ["video1.mkv"]}'
+
+# Optimize all files in input/
+curl -X POST http://localhost:4751/api/jobs \
+  -H 'Content-Type: application/json' \
+  -d '{"type": "optimize"}'
+
+# Check all files in optimized/
+curl -X POST http://localhost:4751/api/jobs \
+  -H 'Content-Type: application/json' \
+  -d '{"type": "check", "source": "optimized"}'
+```
+
+---
+
+### GET /api/jobs/{id}
+
+Get job details.
+
+**Path Parameters:**
+
+| Param | Type | Description |
+|-------|------|-------------|
+| `id` | string | Job ID (e.g. `j_1708540800_1a2b`) |
+
+**Response 200:**
+
+```json
+{
+  "id": "j_1708540800_1a2b",
+  "type": "upscale",
+  "status": "completed",
+  "files": ["video1.mkv"],
+  "progress": {
+    "total": 1,
+    "completed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "current": ""
+  },
+  "created_at": "2024-02-21T12:00:00Z",
+  "finished_at": "2024-02-21T12:10:00Z"
+}
+```
+
+**Response 404:**
+
+```json
+{ "error": "job not found" }
+```
+
+**Example:**
+
+```bash
+curl http://localhost:4751/api/jobs/j_1708540800_1a2b
+```
+
+---
+
+### GET /api/jobs/{id}/logs
+
+Return a snapshot of a job's logs. Clients **poll** this endpoint (the web app
+polls every ~1.5s) and pass `?since=<cursor>` to fetch only entries newer than
+the cursor. It is plain JSON, not Server-Sent Events.
+
+**Path Parameters:**
+
+| Param | Type | Description |
+|-------|------|-------------|
+| `id` | string | Job ID |
+
+**Query Parameters:**
+
+| Param | Type | Default | Description |
+|-------|------|---------|-------------|
+| `since` | int | `0` | Return only log entries with array index >= this value |
+
+**Response 200:**
+
+```json
+{
+  "entries": [
+    {
+      "source": "GPU 0",
+      "level": "INFO",
+      "index": 1,
+      "message": "Iniciando: video1.mkv",
+      "time": "2024-02-21T12:00:05Z"
+    }
+  ],
+  "total": 1,
+  "running": true
+}
+```
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `entries` | array | Log entries with array index >= `since` |
+| `total` | int | Current log length — send this back as the next `since` cursor |
+| `running` | bool | `true` while the job is `queued` or `running`; clients stop polling when `false` |
+
+Each entry has these fields:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `source` | string | Worker identifier (`"GPU 0"`, `"GPU 1"`, `"FFMPEG"`, `"PIPELINE"`) |
+| `level` | string | Log level (see table below) |
+| `index` | int | File index in the job |
+| `message` | string | Log message |
+| `time` | string | ISO 8601 timestamp |
+
+**Response 404:**
+
+```json
+{ "error": "job not found" }
+```
+
+**Example:**
+
+```bash
+# Fetch all logs, then poll for new ones past the returned `total`.
+curl 'http://localhost:4751/api/jobs/j_1708540800_1a2b/logs?since=0'
+```
+
+---
+
+### GET /api/health/gpu
+
+Snapshot of the GPU health monitor. Probes `nvidia-smi -L` every 30s with an
+8-second timeout; after 2 consecutive failures the GPU is marked unhealthy and
+new GPU job dispatch is paused until the probe succeeds again. For non-NVIDIA
+deployments the monitor stays disabled and always reports healthy.
+
+**Response 200:**
+
+```json
+{
+  "enabled": true,
+  "healthy": true,
+  "last_check": "2026-05-04T20:30:00Z",
+  "last_healthy": "2026-05-04T20:30:00Z",
+  "consecutive_failures": 0
+}
+```
+
+When unhealthy, `last_error` carries the probe error and queued GPU jobs block
+on `Acquire` until recovery. The monitor only stops dispatch; host-side recovery
+(PCI remove+rescan, restarting the container) is out of scope for this process
+and should be handled by your own host watchdog.
+
+**Example:**
+
+```bash
+curl http://localhost:4751/api/health/gpu
+```
+
+---
+
+### POST /api/jobs/{id}/cancel
+
+Cancel a running job.
+
+**Path Parameters:**
+
+| Param | Type | Description |
+|-------|------|-------------|
+| `id` | string | Job ID |
+
+**Response 200:**
+
+```json
+{
+  "id": "j_1708540800_1a2b",
+  "status": "cancelled"
+}
+```
+
+**Response 404:**
+
+```json
+{ "error": "job not found" }
+```
+
+**Example:**
+
+```bash
+curl -X POST http://localhost:4751/api/jobs/j_1708540800_1a2b/cancel
+```
+
+---
+
+## Job Types
+
+| Type | Description | Workers |
+|------|-------------|---------|
+| `upscale` | Super-resolution using video2x | GPU queue |
+| `interpolate` | Frame interpolation using video2x/RIFE | GPU queue |
+| `optimize` | Compression/transcode using ffmpeg | FFmpeg queue or GPU queue when hardware encode is enabled |
+| `check` | Integrity check using full ffmpeg decode | FFmpeg queue |
+| `merge` | Dual audio: join two releases of an episode, keeping both audio tracks in sync | FFmpeg queue |
+
+### Upscale
+
+- video2x: built from source at a pinned commit (see `Dockerfile`)
+- Model: `realesr-animevideov3`
+- Scale: 2x
+- Output: `{BaseDir}/output/`
+- Skips files that already exist in output
+
+`processor: "seedvr2"` runs SeedVR2 instead of video2x. It needs the API image
+built with `--target seedvr2` (`GET /api/settings` reports
+`seedvr2_available`), takes the whole GPU it lands on, downloads its weights
+into `{BaseDir}/models/seedvr2` on first use, and muxes the source's audio,
+subtitles, attachments and chapters back into its output. Tuning:
+`SEEDVR2_BATCH_SIZE`, `SEEDVR2_BLOCKS_TO_SWAP`, `SEEDVR2_EXTRA_ARGS` (see
+`.env.example`).
+
+### Merge
+
+Pairs files by **name** — same name, different language tag (`ep01.pt-br.mp4` +
+`ep01.en.mkv` → `merged/ep01.mkv`) — and writes one file with the better picture
+and both audio tracks. Details and the reasoning: [docs/DUAL-AUDIO.md](../../docs/DUAL-AUDIO.md).
+
+What to merge, in order of precedence: `paths` (every video under each folder —
+the "two folders" case), `files` (an explicit list, may span folders), or neither
+(every video under `source`/`path`).
+
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| `paths` | string[] | — | Folders, relative to `source` |
+| `merge_video` | string | `"auto"` | `"auto"` (more pixels, then bitrate) or the language tag whose file supplies the picture |
+| `merge_tick` | number | `5` | Seconds between sync checks, `1`–`30` |
+| `merge_gap_fill` | string | `"base"` | What plays where the other track has no content: `"base"` (the video's own audio) or `"silence"` |
+| `merge_default_audio` | string | — | Language tag of the default track; empty = the language that did not supply the video |
+| `merge_force` | boolean | `false` | Write the file even when the sync could not be guaranteed |
+
+- Output: `{BaseDir}/merged/`, in the common ancestor folder of the pair. Skips pairs already merged.
+- A pair that fails the sync gate is **not written**; the log says why. With `merge_force` it is written and says so in its tags.
+- The verdict is stored in the file (`DUALAUDIO_SYNC` container tag) and returned by `GET /api/files` as `sync` / `merged_sync`.
+- ~1 GB of RAM and ~40–60 s per episode, CPU only.
+
+`POST /api/merge/preview` takes `source`, `path`, `files`, `paths` and returns
+`{ pairs, unpaired }` — the pairing a job would do, without starting it.
+
+Two endpoints support choosing the picture by eye:
+
+- `GET /api/merge/locate?source=&a=&b=&t=` — where time `t` (seconds) of file `a`
+  falls in file `b`, found by audio: `{ location: { t_a, t_b, lag, confidence,
+  matched }, a: { width, height, bitrate, duration }, b: {…} }`. The same scene
+  is not at the same timestamp in two releases. `matched: false` means it could
+  not be found and `t_b` falls back to `t`.
+- `GET /api/merge/frame?source=&file=&t=` — one frame as `image/png` (lossless,
+  so the comparison is not judging JPEG artefacts).
+
+### Optimize
+
+- Codec: `libx265` (HEVC)
+- Preset: `fast`, tune: `animation`
+- CRF: 19, pixel format: `yuv420p10le` (10-bit)
+- Optional resolution and frame-rate divisors: original, 1/2, or 1/4
+- Copies audio and subtitles as-is
+- Output: `{BaseDir}/optimized/`
+- CPUs: half of available cores
+
+### Saved Pipelines
+
+- Managed through `/api/pipelines`
+- Supports ordered `upscale`, `interpolate`, and `optimize` steps
+- Run with `POST /api/pipelines/{id}/run`
+
+## Job Statuses
+
+| Status | Description |
+|--------|-------------|
+| `running` | Job is currently executing |
+| `completed` | All files processed successfully |
+| `failed` | An error occurred during processing |
+| `cancelled` | Job was manually cancelled |
+
+## Log Levels
+
+| Level | Meaning | Effect on Progress |
+|-------|---------|--------------------|
+| `INFO` | Informational | Updates `progress.current` |
+| `OK` | File completed | Increments `progress.completed` |
+| `ERRO` | File failed | Increments `progress.failed` |
+| `SKIP` | File skipped (already exists) | Increments `progress.skipped` |
+| `WARN` | Warning | None |
+
+## Error Response Format
+
+All errors return JSON:
+
+```json
+{ "error": "description of the error" }
+```
+
+| Status Code | Meaning |
+|-------------|---------|
+| 200 | Success |
+| 201 | Job created |
+| 204 | CORS preflight |
+| 400 | Invalid request |
+| 404 | Job not found |
+| 405 | Method not allowed |
+| 500 | Internal server error |

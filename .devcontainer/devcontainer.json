@@ -1,0 +1,26 @@
+{
+    // cape-jones cloud IDE config. Works in GitHub Codespaces and any
+    // devcontainer-capable host (VS Code Remote, Daytona, Coder).
+    // Blender 4.5.12 LTS is baked into the image; GPU is NOT available on the
+    // Codespaces free tier, so this is a CPU iteration + scripting environment.
+    "name": "cape-jones (Blender 4.5.12 LTS)",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "ms-python.python",
+                "jacqueslucke.blender-development",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    // First launch: confirm Blender is healthy, install repo python deps.
+    "postCreateCommand": "blender --version && python --version",
+    // Forward nothing by default; uncomment if you serve previews from here.
+    // "forwardPorts": [8080],
+    "shutdownAction": "stopContainer"
+}

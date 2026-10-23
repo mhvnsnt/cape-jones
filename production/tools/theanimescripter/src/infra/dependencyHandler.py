@@ -1,0 +1,528 @@
+import json
+import logging
+import os
+import platform
+import re
+import shutil
+import subprocess
+import sys
+from collections.abc import Iterable
+from importlib import invalidate_caches
+from importlib.metadata import PackageNotFoundError, version
+from importlib.util import find_spec
+from pathlib import Path
+
+import src.constants as cs
+from src.infra.logAndPrint import logAndPrint
+
+KNOWN_MODULE_ALIASES = {
+    "opencv-python": "cv2",
+    "opencv-python-headless": "cv2",
+    "Pillow": "PIL",
+    "PyYAML": "yaml",
+    "scikit-image": "skimage",
+    "scikit-learn": "sklearn",
+    "onnxruntime-gpu": "onnxruntime",
+    "onnxruntime-directml": "onnxruntime",
+    "onnxruntime-openvino": "onnxruntime",
+    "imageio-ffmpeg": "imageio_ffmpeg",
+    "tensorrt": "tensorrt",
+    "torch": "torch",
+    "torchvision": "torchvision",
+    "torchaudio": "torchaudio",
+    "triton-windows": "triton",
+    "nvidia-vfx": "nvvfx",
+}
+
+DEPENDENCY_PROFILE_REQUIREMENTS = {
+    "windows-cuda": "extra-requirements-windows.txt",
+    "windows-lite": "extra-requirements-windows-lite.txt",
+    "linux-cuda": "extra-requirements-linux.txt",
+    "linux-lite": "extra-requirements-linux-lite.txt",
+    "linux-rocm": "extra-requirements-linux-rocm.txt",
+    "macos-lite": "extra-requirements-macos-lite.txt",
+    "macos-mps": "extra-requirements-macos.txt",
+}
+
+
+def getDependencyProfile(
+    systemName: str, supportsCuda: bool, isRocm: bool = False
+) -> str:
+    normalized = systemName.lower()
+    if normalized == "windows":
+        return "windows-cuda" if supportsCuda else "windows-lite"
+    if normalized == "darwin":
+        return "macos-mps"
+    if isRocm:
+        return "linux-rocm"
+    return "linux-cuda" if supportsCuda else "linux-lite"
+
+
+def getRequirementsFileForProfile(profile: str) -> str:
+    normalizedProfile = profile.strip().lower()
+    requirementsFile = DEPENDENCY_PROFILE_REQUIREMENTS.get(normalizedProfile)
+    if requirementsFile is None:
+        validProfiles = ", ".join(DEPENDENCY_PROFILE_REQUIREMENTS)
+        raise ValueError(
+            f"Unsupported dependency profile '{profile}'. Expected one of: {validProfiles}"
+        )
+    return requirementsFile
+
+
+def getPythonExecutable() -> str:
+    return sys.executable
+
+
+# https://github.com/pypa/hatch/blob/4ebce0e1fe8bf0fcdef587a704c207a063d72575/src/hatch/utils/platform.py#L176-L180
+def streamProcessOutput(process) -> Iterable[str]:
+    for line in iter(process.stdout.readline, b""):
+        yield line.decode("utf-8", errors="replace")
+
+
+def _getRuntimeRoot() -> Path:
+    if cs.WHEREAMIRUNFROM:
+        return Path(cs.WHEREAMIRUNFROM)
+    return Path(__file__).resolve().parents[2]
+
+
+def _resolveRequirementsPath(extension: str) -> tuple[bool, str]:
+    """Resolve a requirements file path based on the Python executable and runtime root."""
+    pythonPath = getPythonExecutable()
+    if not pythonPath:
+        return False, "Failed to detect Python executable path"
+
+    if extension and os.path.isabs(extension) and os.path.exists(extension):
+        return True, extension
+
+    candidate = os.path.join(os.path.dirname(pythonPath), extension)
+    if extension and os.path.exists(candidate):
+        return True, candidate
+
+    candidate = os.path.join(_getRuntimeRoot(), extension)
+    if extension and os.path.exists(candidate):
+        return True, candidate
+
+    return False, f"Requirements file not found: {candidate}"
+
+
+def _versionSatisfiesRequirement(specifier: str, installedVersion: str) -> bool:
+    try:
+        from packaging.requirements import Requirement
+
+        requirement = Requirement(specifier)
+        if not requirement.specifier:
+            return True
+        return requirement.specifier.contains(installedVersion, prereleases=True)
+    except Exception:
+        return True
+
+
+def _runPipCommand(pythonPath: str, args: list[str], action: str) -> tuple[bool, str]:
+    """Run pip with streamed output and return (success, message)."""
+    try:
+        logging.info("Using Python executable: %s", pythonPath)
+        logging.info("Running pip action: %s", action)
+
+        process = subprocess.Popen(
+            [pythonPath, "-I", "-m", "pip", *args],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+        )
+
+        if process.stdout is not None:
+            for line in streamProcessOutput(process):
+                print(line, end="")
+                logging.info(line.strip())
+            process.stdout.close()
+
+        returnCode = process.wait()
+        if returnCode != 0:
+            errorMsg = f"Error {action} requirements (exit code: {returnCode})"
+            logging.error(errorMsg)
+            print(errorMsg)
+            return False, errorMsg
+
+        return True, f"Successfully {action}ed dependencies from requirements file"
+    except Exception as e:
+        errorMsg = f"Error {action} requirements: {str(e)}"
+        logging.error(errorMsg)
+        print(errorMsg)
+        return False, errorMsg
+
+
+def uninstallDependencies(extension: str = "") -> tuple[bool, str]:
+    """Uninstall dependencies from the selected requirements file."""
+    pythonPath = getPythonExecutable()
+    ok, requirementsPath = _resolveRequirementsPath(extension)
+    if not ok:
+        return False, requirementsPath
+
+    logMessage = f"Uninstalling requirements from: {requirementsPath}"
+    logging.info(logMessage)
+    print(logMessage)
+
+    return _runPipCommand(
+        pythonPath,
+        [
+            "uninstall",
+            "-y",
+            "-r",
+            requirementsPath,
+            "--disable-pip-version-check",
+        ],
+        "uninstall",
+    )
+
+
+def installDependencies(extension: str = "") -> tuple[bool, str]:
+    """Install dependencies from the selected requirements file."""
+    pythonPath = getPythonExecutable()
+    ok, requirementsPath = _resolveRequirementsPath(extension)
+    if not ok:
+        return False, requirementsPath
+
+    logMessage = f"Installing requirements from: {requirementsPath}"
+    logging.info(logMessage)
+    print(logMessage)
+
+    success, message = _runPipCommand(
+        pythonPath,
+        [
+            "install",
+            "-r",
+            requirementsPath,
+            "--no-warn-script-location",
+            "--no-cache-dir",
+            "--disable-pip-version-check",
+        ],
+        "install",
+    )
+
+    return success, message
+
+
+_HOMEBREW_FFMPEG_CELLAR_RE = re.compile(
+    r"(/(?:opt/homebrew|usr/local)/Cellar/ffmpeg/[^/\s]+/lib/(lib(?:av|sw)[^/\s]+\.dylib))"
+)
+
+
+def _candidateMacosFfmpegLibDirs() -> list[Path]:
+    dirs = []
+    ffmpegExe = shutil.which("ffmpeg")
+    if ffmpegExe:
+        dirs.append(Path(ffmpegExe).resolve().parent.parent / "lib")
+
+    dirs.extend(
+        [
+            Path("/opt/homebrew/opt/ffmpeg/lib"),
+            Path("/usr/local/opt/ffmpeg/lib"),
+        ]
+    )
+
+    seen = set()
+    uniqueDirs = []
+    for libDir in dirs:
+        libDirStr = str(libDir)
+        if libDirStr not in seen:
+            seen.add(libDirStr)
+            uniqueDirs.append(libDir)
+    return uniqueDirs
+
+
+def _resolveMacosFfmpegLib(libName: str) -> str | None:
+    for libDir in _candidateMacosFfmpegLibDirs():
+        candidate = libDir / libName
+        if candidate.exists():
+            return str(candidate)
+    return None
+
+
+def repairNeluxMacosFfmpegLinks() -> int:
+    """Rewrite fragile Homebrew Cellar FFmpeg links in nelux binaries.
+
+    Some macOS nelux wheels contain install names that point to an exact
+    Homebrew FFmpeg Cellar version. Homebrew upgrades keep stable links under
+    opt/ffmpeg/lib, so prefer those at runtime.
+    """
+    if platform.system() != "Darwin":
+        return 0
+
+    try:
+        invalidate_caches()
+        spec = find_spec("nelux")
+        if spec is None or spec.origin is None:
+            return 0
+    except Exception as e:
+        logging.debug(f"Could not locate nelux for macOS dylib repair: {e}")
+        return 0
+
+    neluxDir = Path(spec.origin).parent
+    binaryPaths = [
+        path
+        for path in neluxDir.rglob("*")
+        if path.is_file() and path.suffix in {".so", ".dylib"}
+    ]
+
+    repaired = 0
+    for binaryPath in binaryPaths:
+        try:
+            result = subprocess.run(
+                ["otool", "-L", str(binaryPath)],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+        except (OSError, subprocess.SubprocessError) as _e:
+            continue
+
+        if result.returncode != 0:
+            continue
+
+        replacements = []
+        for oldPath, libName in _HOMEBREW_FFMPEG_CELLAR_RE.findall(result.stdout):
+            newPath = _resolveMacosFfmpegLib(libName)
+            if newPath:
+                replacements.append((oldPath, newPath))
+
+        binaryRepaired = False
+        for oldPath, newPath in replacements:
+            try:
+                change = subprocess.run(
+                    [
+                        "install_name_tool",
+                        "-change",
+                        oldPath,
+                        newPath,
+                        str(binaryPath),
+                    ],
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+            except (OSError, subprocess.SubprocessError) as e:
+                logging.warning(
+                    f"Could not repair nelux FFmpeg link in {binaryPath}: {e}"
+                )
+                continue
+
+            if change.returncode == 0:
+                repaired += 1
+                binaryRepaired = True
+            else:
+                logging.warning(
+                    "Could not repair nelux FFmpeg link in %s: %s",
+                    binaryPath,
+                    change.stderr.strip(),
+                )
+
+        if binaryRepaired:
+            try:
+                sign = subprocess.run(
+                    ["codesign", "--force", "--sign", "-", str(binaryPath)],
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                if sign.returncode != 0:
+                    logging.warning(
+                        "Could not ad-hoc sign repaired nelux binary %s: %s",
+                        binaryPath,
+                        sign.stderr.strip(),
+                    )
+            except (OSError, subprocess.SubprocessError) as e:
+                logging.warning(
+                    f"Could not ad-hoc sign repaired nelux binary {binaryPath}: {e}"
+                )
+
+    return repaired
+
+
+class DependencyChecker:
+    def __init__(self):
+        self.cachePath = _getRuntimeRoot() / ".dependencyCache.json"
+        self._cache = None
+        self.knownAliases = dict(KNOWN_MODULE_ALIASES)
+
+    def loadStoredProfile(self) -> str | None:
+        """Return the profile the user previously installed, or None."""
+        cache = self._loadCache()
+        return cache.get("profile")
+
+    def storeProfile(self, profile: str):
+        """Persist the user's chosen profile."""
+        try:
+            with open(self.cachePath, "w") as f:
+                json.dump({"profile": profile}, f)
+            self._cache = {"profile": profile}
+        except Exception as e:
+            logging.warning(f"Failed to store dependency profile: {e}")
+
+    def clearCache(self):
+        """Delete the cache file (used by --cleanup)."""
+        try:
+            if self.cachePath.exists():
+                self.cachePath.unlink()
+            self._cache = None
+        except Exception as e:
+            logging.warning(f"Failed to clear dependency cache: {e}")
+
+    def ensureDependencies(self) -> bool:
+        """Check that the stored profile's dependencies are installed.
+
+        - No stored profile → prompt + install + store.
+        - Stored profile with missing packages → prompt + install + store.
+        - Everything present → return True immediately.
+
+        Returns True if dependencies are satisfied after this call.
+        """
+        storedProfile = self.loadStoredProfile()
+
+        if storedProfile is None:
+            return self._promptInstallAndStore()
+
+        try:
+            requirementsFile = getRequirementsFileForProfile(storedProfile)
+        except ValueError:
+            logging.warning(
+                f"Stored profile '{storedProfile}' is invalid, re-prompting"
+            )
+            self.clearCache()
+            return self._promptInstallAndStore()
+
+        requirementsPath = os.path.join(_getRuntimeRoot(), requirementsFile)
+        if not os.path.exists(requirementsPath):
+            logging.warning(f"Requirements file missing: {requirementsPath}")
+            return False
+
+        missing, _, notImportable = self.checkRequirementsInstalled(
+            requirementsPath,
+            moduleAliases=self.knownAliases,
+        )
+
+        if not missing and not notImportable:
+            return True
+
+        logAndPrint(
+            "Missing dependencies detected: " + ", ".join(missing + notImportable),
+            "yellow",
+        )
+        return self._promptInstallAndStore()
+
+    def installProfile(self, profile: str) -> bool:
+        """Install a specific profile's requirements and store the choice."""
+        requirementsFile = getRequirementsFileForProfile(profile)
+
+        success, message = installDependencies(requirementsFile)
+
+        if not success:
+            logAndPrint(message, "red")
+            return False
+
+        if profile == "macos-mps":
+            try:
+                repaired = repairNeluxMacosFfmpegLinks()
+                if repaired:
+                    logAndPrint(
+                        f"Repaired {repaired} nelux FFmpeg library reference(s).",
+                        "green",
+                    )
+            except Exception as e:
+                logging.warning(f"nelux macOS FFmpeg link repair skipped: {e}")
+
+        self.storeProfile(profile)
+
+        invalidate_caches()
+
+        logAndPrint(
+            "Dependencies installed successfully, continuing execution.",
+            "green",
+        )
+        return True
+
+    def iterRequirements(self, requirementsPath: str):
+        """Yield (name, rawSpecifier) pairs from a requirements.txt file."""
+        try:
+            with open(requirementsPath, encoding="utf-8") as f:
+                for raw in f:
+                    line = raw.strip()
+                    if not line or line.startswith("#"):
+                        continue
+                    if line.startswith(("-r ", "--", "-c ")):
+                        continue
+                    if line.startswith(("-e ", "git+", "http://", "https://", "file:")):
+                        continue
+                    if ";" in line:
+                        line = line.split(";", 1)[0].strip()
+                    match = re.match(r"^([A-Za-z0-9._-]+)", line)
+                    if not match:
+                        continue
+                    name = match.group(1)
+                    spec = line[len(name) :].strip()
+                    yield name, spec
+        except FileNotFoundError:
+            logging.warning(
+                f"Requirements file not found for check: {requirementsPath}"
+            )
+            return
+        except Exception as e:
+            logging.warning(f"Failed to parse requirements at {requirementsPath}: {e}")
+            return
+
+    def checkRequirementsInstalled(
+        self,
+        requirementsPath: str,
+        moduleAliases: dict | None = None,
+        enforceVersions: bool = False,
+    ):
+        """Return (missing, wrongVersion, notImportable) without importing packages."""
+        moduleAliases = moduleAliases or {}
+        missing: list[str] = []
+        wrongVersion: list[tuple[str, str, str]] = []
+        notImportable: list[str] = []
+
+        for name, rawSpec in self.iterRequirements(requirementsPath):
+            try:
+                installedVer = version(name)
+            except PackageNotFoundError:
+                missing.append(name)
+                continue
+
+            if enforceVersions and rawSpec:
+                fullSpecifier = f"{name}{rawSpec}"
+                if not _versionSatisfiesRequirement(fullSpecifier, installedVer):
+                    wrongVersion.append((name, installedVer, rawSpec))
+
+            modName = moduleAliases.get(name, name.replace("-", "_"))
+            if modName and find_spec(modName) is None:
+                notImportable.append(modName)
+
+        return missing, wrongVersion, notImportable
+
+    def _promptInstallAndStore(self) -> bool:
+        """Show the inquirer prompt, install, and store the chosen profile."""
+        from src.cli.startup import _promptDownloadRequirementsSelection
+
+        try:
+            selectedProfile = _promptDownloadRequirementsSelection()
+        except Exception:
+            logAndPrint("Could not launch dependency installer.", "red")
+            return False
+
+        return self.installProfile(selectedProfile)
+
+    def _loadCache(self):
+        if self._cache is not None:
+            return self._cache
+
+        if not self.cachePath.exists():
+            self._cache = {}
+            return self._cache
+
+        try:
+            with open(self.cachePath) as f:
+                self._cache = json.load(f)
+            return self._cache
+        except Exception as e:
+            logging.warning(f"Failed to load dependency cache: {e}")
+            self._cache = {}
+            return self._cache

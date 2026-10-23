@@ -1,0 +1,16 @@
+node_modules/
+dist/
+site-dist/
+.DS_Store
+*.log
+*.tgz
+lab-dist/
+
+# Local credentials never belong in the library or static playground.
+.env
+.env.*
+.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
