@@ -56,3 +56,6 @@ Facing: glTF +Z forward imports facing Blender -Y = toward MainCam (0,-4.6,1.7).
 5. Before push: `git diff --cached --diff-filter=D --name-only` must be empty; gitleaks (or secret grep) clean. Push each piece as it's done; open PR with the instruction-gate template filled (verbatim owner quote, method, deviations, proof paths).
 6. Merge only: MERGEABLE+CLEAN, every latest Actions run success via `gh api repos/<r>/actions/runs?head_sha=<sha>` (unreadable/403 = fail), zero deletions. Otherwise leave open with a comment. Never force-push, rebase pushed work, or delete branches.
 7. Look at every render yourself before reporting; say exactly what the pixels show.
+
+## Animation gate (owner t117u, 2026-10-23 14:15 CT)
+See `docs/ANIM-GATE.md` — show clips can never play in FIGHT; crossover only via western-heart `game/data/crossover.json`.
