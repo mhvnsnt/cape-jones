@@ -53,3 +53,17 @@ A worker is searching for a free public-domain gigaleak-level hero collection (c
 
 ---
 *Inventory v1 — 2026-10-15. Updated as sources land.*
+
+## 7. Sitting saga scenes (2026-10-23) - HAVE (on Releases)
+
+The finished chair work. Scene files are too big for the git tree, so they
+live on this repo's Releases. Full index: `docs/SITTING-SAGA-2026-10-23.md`.
+
+| Scene | Release | Size |
+|---|---|---|
+| `scene_anim_placed3.blend` (canon placed) | `sitcanon-anim-placed-20261020` | 172,551,169 B |
+| `scene_recliner_mech.blend` | `recliner-mech-20261023` | 164,790,998 B |
+| `scene_capebaked.blend` | `cape-bake-20261023` | 828,433,505 B |
+| `scene_final.blend` (FINAL) | `sitting-final-20261023` | 832,635,494 B |
+
+Build scripts: `production/sitting-saga-20261023/scripts/`.
