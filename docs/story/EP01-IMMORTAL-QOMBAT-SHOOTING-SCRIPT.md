@@ -113,9 +113,11 @@ decision, not a script decision — §8, open item 9.)
 
 **ACTION:** Cape reaches for the LED remote on the coffee table (canon
 prop: black body, six colored buttons). He points it at the CRT TV. The
-TV wakes with its violet screen glow. He flips channels — quick flashes,
-no readable program content locked (contents TBD at owner approval —
-§8, open item 6). He is half-watching, the way a bored person flips.
+TV wakes with its violet screen glow. He flips channels — quick flashes
+of the owner's OWN stuff: TRIPPEDD, the wizard gang, and his other
+shows, plus bumps, cards, segments, and commercials from that catalog
+(owner-decided 2026-10-24 — §8, item 6 resolved; exact clips picked at
+production lock). He is half-watching, the way a bored person flips.
 
 **DIALOGUE:** None.
 
@@ -198,10 +200,11 @@ ambience.
 
 ### SCENE 6 — INT. THE ARENA — INSIDE THE GAME (est. 3:20–end)
 
-**VISUAL:** A fighting-game arena — a T7 extraction arena (NOT a Tekken
-3 arena; exact stage TBD at production lock — §8, open item 2). Wide,
-readable, good-looking. No crowd characters; the arena's own dressing
-carries the space.
+**VISUAL:** JUNGLE OUTPOST — a T7 extraction arena (NOT a Tekken 3
+arena; owner-picked 2026-10-24 — §8, item 2 resolved). A jungle
+outpost: dense green, temple/outpost structures, wide and readable,
+good-looking. No crowd characters; the arena's own dressing carries
+the space. (Fitting for Pantera: a panther in his jungle.)
 
 **ACTION:** Cape lands in the arena (`portal_03_arrival`). He gets his
 bearings — a man who just flew into his television, in a place where
@@ -224,7 +227,11 @@ he chose to come in, and he still doesn't want to be here.)
 > predatory patience — the mat is here, he is here, and now there is
 > someone to fight. The exact clip is chosen by EAR at sound lock;
 > VOICE-MAPPING notes current clip content is unverified by ear, so no
-> line is transcribed here as if it were the real audio.]
+> line is transcribed here as if it were the real audio. Owner-confirmed
+> 2026-10-24: these clips ARE King's voice from the teardown files —
+> and King's voice is big-cat growls, roars, and grunts, not spoken
+> words. Pantera's "lines" are those growls. Sound lock picks the
+> growls that read as the greeting and the fight vocalizations.]
 
 **FIGHT SCENES:** The fight plays out with fight music (Cue M4). Fight
 choreography uses fight moves ONLY — show animations are blocked from
@@ -234,9 +241,16 @@ Cape fights with his hand cannons (canon) and his reluctant-hero
 physicality. Pantera fights like Pantera: the clinch, the hold, the
 throw — because fighting is what he is.
 
-**FIGHT OUTCOME:** TBD at owner approval (§8, open item 4). This draft
-locks NO winner. The episode ends on the fight underway — the outcome
-is the owner's call, not the script's assumption.
+**FIGHT OUTCOME — OWNER-DECIDED 2026-10-24:** PANTERA WINS. The
+comeback kind of victory: Pantera is down to one hit from death, and
+then he hits his chain grapple — a King-style chain-throw sequence
+(technical note: Pantera takes King's moveset; in-universe it is simply
+Pantera's chain grapple, never named after another game's fighter) —
+a grapple-of-death chain that finishes Cape. One-hit-left comeback win.
+Production note: this fits Pantera's grappler KESSHOU design (chain all
+the grapples together, the full chain becomes the KESSHOU) — sound and
+animation lanes confirm the KESSHOU framing at production lock; the
+outcome itself is locked regardless.
 
 **MUSIC:** Cue M4 — fight music (§7). Fight SFX: hits, movement, arena
 ambience from the game's own audio where available.
@@ -295,7 +309,7 @@ nothing goes to Content ID, nothing goes to streaming distributors.
 | M1 | Living-room chill (Scenes 1–2, under) | Loyalty Freak Music | "Ghost Surf Rock" — from *WITCHY, BATTY, SPOOKY, HALLOWEEN IN SEPTEMBER !!* (04:07) | CC0 1.0 Universal | VERIFIED via Free Music Archive track page (CC0 1.0 stated). CORRECTED by owner 2026-10-24: this is the "ghost something" track he meant (not "A ghost Waltz" as first recorded). |
 | M2 | Title-card sting (Scene 3) | Loyalty Freak Music | Short sting cut from a CC0 catalog track at sound lock | CC0 1.0 Universal (target) | TRACK TBD at sound lock — must be a verified-CC0 Loyalty Freak track; log the exact track + album here before use. |
 | M3 | Portal-flight build (Scene 5) | Loyalty Freak Music | TBD at sound lock | CC0 1.0 Universal (target) | TRACK TBD — same rule as M2. |
-| M4 | Fight music (Scene 6) | Loyalty Freak Music | TBD at sound lock — high-energy pick from the CC0 catalog | CC0 1.0 Universal (target) | TRACK TBD — owner picks at approval or sound lock. No track named here because none was verified as the owner's pick. |
+| M4 | Fight music (Scene 6) | Public domain / no-copyright dramatic pick | LEADING CANDIDATE: Mussorgsky's "Night on Bald Mountain" (composition public domain, 1867; dark, demonic, Nosferatu-style drama) | Recording license TBD at sound lock | Owner direction 2026-10-24: use whatever is good, public domain or no-copyright, dramatic like Nosferatu. Candidate recording noted: Musopen Skidmore College Orchestra performance is CC BY-SA 3.0 (attribution + share-alike) — NOT public domain, so sound lock must confirm a usable recording and log its exact license here before use. Other Loyalty Freak dramatic tracks remain fallback per the owner's OK. |
 | M5 | End tag reprise (Tag) | Loyalty Freak Music | Reprise of M1 ("Ghost Surf Rock") | CC0 1.0 Universal | M1 confirmed by owner 2026-10-24. |
 
 **License caution (verified by research):** Loyalty Freak Music's catalog
@@ -327,22 +341,31 @@ The owner approves or decides each of these. Nothing here is assumed.
 1. **Kanji under the title card — CONFIRMED by owner 2026-10-24: 不死.** Verified meaning:
    *fushi* — "immortality; eternal life." Secondary dictionary sense:
    "undeath / undead." Owner confirms the kanji, or picks another.
-2. **Exact T7 arena for Scene 6 — TBD at production lock.** Must come
-   from T7 extractions (reference: the T7 34-stage ID table in the
-   teardown-gap audit). T3 arenas are excluded by owner rule. Production
-   proposes 2–3 candidates; owner picks.
-3. **Pantera's exact pulled lines — TBD at sound lock.** Source is
+2. **Exact T7 arena for Scene 6 — RESOLVED by owner 2026-10-24:
+   JUNGLE OUTPOST.** T7 extraction arena; T3 arenas excluded per owner
+   rule. Recorded in Scene 6.
+3. **Pantera's exact pulled clips — TBD at sound lock.** Source is
    locked (`F_KING`, 9 clips); the specific clips are picked by ear.
    No line is written in this script as if it were the real audio.
-4. **Fight outcome — TBD.** This draft locks no winner. Owner decides
-   whether Ep 1 ends mid-fight, on a result, or on a tag.
+   Owner-confirmed 2026-10-24: the clips ARE King's voice from the
+   teardown files — big-cat growls, roars, grunts, not spoken words.
+   Sound lock picks the growls; it does not invent dialogue.
+4. **Fight outcome — RESOLVED by owner 2026-10-24: PANTERA WINS.**
+   Comeback victory: Pantera down to one hit from death, then his
+   chain grapple (King-style chain sequence) finishes Cape. Recorded
+   in Scene 6.
 5. **Runtime — TBD.** Scene timings in §4 are production estimates
    only. Owner sets the target length at approval.
-6. **Channel-flip contents (Scene 2) — TBD.** Flashed channels carry no
-   locked program content in this draft. Owner approves any readable
-   content, or the flashes stay unidentifiable.
-7. **Fight-music exact track (M4) — TBD** at approval or sound lock
-   (§7). Must be verified-CC0 Loyalty Freak Music.
+6. **Channel-flip contents (Scene 2) — RESOLVED by owner 2026-10-24:
+   the owner's OWN stuff.** Flashed channels show material from
+   TRIPPEDD, the wizard gang, and the owner's other shows — plus
+   bumps, cards, segments, and commercials from that catalog. No
+   outside programs. Exact clips picked at production lock from the
+   owner's catalog.
+7. **Fight-music exact track (M4) — DIRECTION SET by owner 2026-10-24:**
+   dramatic public-domain / no-copyright pick, Nosferatu-style;
+   leading candidate Mussorgsky's "Night on Bald Mountain" (§7).
+   Exact recording + license logged at sound lock before use.
 8. **Cape's in-world identity depth — NOT exposed in Ep 1.** Canon says
    Cape Jones IS Cyborg X's main look and that his origin involves Doc
    Frank and a born-and-made-in-a-lab history. Ep 1 does NOT explain any
@@ -376,11 +399,11 @@ The owner approves or decides each of these. Nothing here is assumed.
 - [ ] Beats 1–7 approved as written, or marked up
 - [x] Kanji: 不死 confirmed (owner 2026-10-24)
 - [ ] Cape's Scene 6 line ("I don't even want to be here.") approved
-- [ ] Fight outcome decided (item 4)
+- [x] Fight outcome decided: Pantera wins, chain-grapple comeback (item 4, owner 2026-10-24)
 - [ ] Runtime target set (item 5)
-- [x] Music: M1 track confirmed as the "ghost something" track ("Ghost Surf Rock", corrected by owner 2026-10-24); other Loyalty Freak songs OK for remaining cues; M4 pick made or deferred to sound lock
-- [ ] Arena: T7 candidates proposed / picked (item 2)
-- [ ] Channel-flip contents approved or left unidentifiable (item 6)
+- [x] Music: M1 track confirmed ("Ghost Surf Rock", corrected by owner 2026-10-24); other Loyalty Freak songs OK for remaining cues; M4 direction set — dramatic public-domain, Nosferatu-style, Night on Bald Mountain leading candidate, recording logged at sound lock
+- [x] Arena: Jungle Outpost picked (item 2, owner 2026-10-24)
+- [x] Channel-flip contents: owner's own stuff — TRIPPEDD, wizard gang, shows, bumps, cards, segments, commercials (item 6, owner 2026-10-24)
 - [ ] APPROVED — animation may begin / NOT YET — revise and resubmit
 
 ---
