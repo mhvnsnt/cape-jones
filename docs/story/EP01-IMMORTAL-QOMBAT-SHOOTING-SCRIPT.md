@@ -46,7 +46,7 @@ SCRIPT UNTIL THE OWNER APPROVES IT.**
 | `western-heart/CANON.md` — CYBORG X, owner-locked chat-canon | Cape Jones IS Cyborg X's first attire / main look; he entered the game world by flying through the TV during an LED session, bored; Space Ghost / Batman-type who does NOT want to fight or be a hero — he only fights because everyone thinks he looks like a superhero; hand cannons; "I don't even want to be here."; honest mid-tier |
 | `western-heart/CANON.md` — PANTERA | Black panther, yellow eyes, black tail, purple tights, red PANTERA metal lettering, thigh tattoo-panther; TOU — battle itself; fights because fighting is what he is; predatory patience; "The mat is here. I am here." |
 | `western-heart/CANON.md` — THE WORLD | Tong-Nou (giant green head), the Western Heart, the trial inscription ("Fight. Die. Return. Claim the forces. Forge the katana. Become whole."), death-and-Reincarnation — context ONLY; Ep 1 does not explain the trial on screen |
-| `western-heart/docs/VOICE-MAPPING.md` | Pantera's voice source: Eastern Mind teardown `F_KING` stage voices (9 clips), Tier A real audio; clip content unverified by ear — sound lock must listen and pick |
+| `western-heart/docs/VOICE-MAPPING.md` | Pantera's voice source: Tekken 6 character voice bank (CORRECTED 2026-10-24 — the `F_KING` stage voices are stage sounds/music/SFX, NOT King dialogue, per owner ear-check; see `docs/research/EP1-PANTERA-VOICE-TRACK-G-2026-10-24.md`). Acquisition BLOCKED (no verifiable T6 bank yet) — sound lock stays blocked until a voice source is decided. |
 | `western-heart/docs/research/teardown-gap-audit-2026-10-22.md` | T7 34-stage ID table exists as the stage reference for arena selection |
 | Loyalty Freak Music (artist FAQ + Free Music Archive pages) | CC0 1.0 Universal license on verified tracks; artist conditions: attribute, do NOT activate Content ID, do NOT distribute to streaming services (§7) |
 
@@ -73,7 +73,7 @@ be here.
 | Character | Voice / audio | Notes |
 |---|---|---|
 | CAPE JONES | **[USER VO — to be recorded]** — owner voices ALL his lines; never synthesized | Male (owner-confirmed 2026-10-23). White suit, black cape, violet cowl per show canon. Sits, plays, flies into the TV. |
-| PANTERA | **Pulled game audio ONLY** — Eastern Mind teardown `F_KING` stage voices (9 clips); exact clip(s) picked at sound lock (§6). NO invented lines. | First fighter met inside. Best rig on the roster (owner-confirmed). Black panther, yellow eyes, purple tights, red PANTERA lettering. |
+| PANTERA | **Pulled game audio ONLY** — Tekken 6 character voice bank (pending; acquisition blocked — see §6). NO invented lines. | First fighter met inside. Best rig on the roster (owner-confirmed). Black panther, yellow eyes, purple tights, red PANTERA lettering. |
 | NOBODY ELSE | — | No crowd, no other fighters, no narrator in Ep 1. The arena carries no speaking cast. |
 
 ## 4. THE SCRIPT
@@ -225,16 +225,19 @@ he chose to come in, and he still doesn't want to be here.)
 
 **PANTERA** — [PULLED AUDIO ONLY — NO INVENTED LINES]
 
-> [Sound lock selects from Eastern Mind teardown `F_KING` stage voices,
-> 9 clips. Dramatic intent for the pick: a greeting that reads as
+> [Sound lock selects from the Tekken 6 character voice bank (pending —
+> acquisition blocked; see §6 and `docs/research/EP1-PANTERA-VOICE-TRACK-G-2026-10-24.md`).
+> Dramatic intent for the pick: a greeting that reads as
 > predatory patience — the mat is here, he is here, and now there is
-> someone to fight. The exact clip is chosen by EAR at sound lock;
-> VOICE-MAPPING notes current clip content is unverified by ear, so no
-> line is transcribed here as if it were the real audio. Owner-confirmed
-> 2026-10-24: these clips ARE King's voice from the teardown files —
-> and King's voice is big-cat growls, roars, and grunts, not spoken
-> words. Pantera's "lines" are those growls. Sound lock picks the
-> growls that read as the greeting and the fight vocalizations.]
+> someone to fight. The exact clip is chosen by EAR at sound lock.
+> CORRECTION 2026-10-24: the Eastern Mind teardown `F_KING` stage voices
+> (9 clips) previously listed here are stage sounds/music/SFX, NOT King
+> dialogue, per owner ear-check — they are NOT the voice source and must
+> not be used as dialogue. No line is transcribed here as if it were the
+> real audio. Pantera's "lines" are King's growls, roars, and grunts from
+> the character voice bank, not spoken words. Sound lock picks the
+> growls that read as the greeting and the fight vocalizations once a
+> verified bank is acquired.]
 
 **FIGHT SCENES:** The fight plays out with fight music (Cue M4). Fight
 choreography uses fight moves ONLY — show animations are blocked from
@@ -291,7 +294,7 @@ owner's call at approval.
 | Slot | Source | Status |
 |---|---|---|
 | All Cape Jones lines | Owner records himself | `[USER VO — to be recorded]` on every line. NEVER synthesized. Owner may rewrite any draft wording at approval — the dictated line in Scene 4 is verbatim and locked unless he changes it. |
-| Pantera greeting + fight vocalizations | Eastern Mind teardown `F_KING` stage voices (9 clips), via `western-heart/docs/VOICE-MAPPING.md` Tier A | PULLED AUDIO ONLY. No lines transcribed in this script — clip content is unverified by ear per VOICE-MAPPING. Sound lock: listen, pick, log clip IDs here before animation. |
+| Pantera greeting + fight vocalizations | Tekken 6 character voice bank (pending — acquisition BLOCKED, see `docs/research/EP1-PANTERA-VOICE-TRACK-G-2026-10-24.md`) | PULLED AUDIO ONLY. No lines transcribed in this script. CORRECTED 2026-10-24: the `F_KING` stage voices previously listed here are stage sounds/music/SFX, NOT King dialogue (owner ear-check) — do NOT use as dialogue. Sound lock: BLOCKED until a verified character voice bank is acquired (owner decision: PPSSPP lane, labelled non-T6 replacement, or owner-supplied files); then listen, pick, log clip IDs here before animation. |
 | Announcer / round calls (if used) | Game's own announcer triggers (`western-heart/docs/VOICE-MAPPING.md` announcer section) | OPTIONAL, only if the fight scene uses round structure. Subtitle-only placeholder status noted in VOICE-MAPPING — no copyrighted audio bytes ship in public repos. |
 | Fight SFX / arena ambience | Game's own audio where available | Per-use wiring; no invented SFX design locked here. |
 
@@ -347,11 +350,9 @@ The owner approves or decides each of these. Nothing here is assumed.
 2. **Exact T7 arena for Scene 6 — RESOLVED by owner 2026-10-24:
    JUNGLE OUTPOST.** T7 extraction arena; T3 arenas excluded per owner
    rule. Recorded in Scene 6.
-3. **Pantera's exact pulled clips — TBD at sound lock.** Source is
-   locked (`F_KING`, 9 clips); the specific clips are picked by ear.
+3. **Pantera's exact pulled clips — TBD at sound lock, SOURCE CORRECTED 2026-10-24.** Source is the Tekken 6 character voice bank (pending — acquisition BLOCKED, see `docs/research/EP1-PANTERA-VOICE-TRACK-G-2026-10-24.md`); the specific clips are picked by ear once a verified bank exists.
    No line is written in this script as if it were the real audio.
-   Owner-confirmed 2026-10-24: the clips ARE King's voice from the
-   teardown files — big-cat growls, roars, grunts, not spoken words.
+   SUPERSEDED: the earlier entry claiming the `F_KING` stage voices (9 clips) ARE King's voice is WITHDRAWN — owner ear-check 2026-10-24 found those clips are stage sounds/music/SFX, not dialogue. Pantera's voice is King's growls, roars, grunts from the character bank, not spoken words.
    Sound lock picks the growls; it does not invent dialogue.
 4. **Fight outcome — RESOLVED by owner 2026-10-24: PANTERA WINS.**
    Comeback victory: Pantera down to one hit from death, then his
