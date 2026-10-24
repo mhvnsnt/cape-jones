@@ -1,0 +1,13 @@
+{
+  "id": "marsfmmg/cape-jones-tooncrafter",
+  "title": "cape-jones-tooncrafter",
+  "code_file": "cape_jones_tooncrafter_kaggle.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["marsfmmg/tooncrafter-weights-fp16"],
+  "competition_sources": [],
+  "kernel_sources": []
+}
