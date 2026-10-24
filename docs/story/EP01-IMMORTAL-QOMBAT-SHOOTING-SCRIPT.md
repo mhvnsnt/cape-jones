@@ -136,7 +136,7 @@ IMMORTAL QOMBAT
 
 - Title: **IMMORTAL QOMBAT** — the in-universe game name. NEVER
   "Western Heart" on screen or in dialogue.
-- Kanji underneath: **不死** — PROPOSED, flagged for owner confirmation
+- Kanji underneath: **不死** — CONFIRMED by owner 2026-10-24
   (§8, open item 1). Verified meaning: *fushi* — "immortality; eternal
   life." Note the secondary dictionary sense "undeath / undead" — the
   owner confirms whether that shade is acceptable or a different kanji
@@ -292,11 +292,11 @@ nothing goes to Content ID, nothing goes to streaming distributors.
 
 | Cue | Use | Artist | Track | License | Verification |
 |---|---|---|---|---|---|
-| M1 | Living-room chill (Scenes 1–2, under) | Loyalty Freak Music | PROPOSED: "A ghost Waltz" — from *Witchy, Batty, Spooky, Halloween in September !!* | CC0 1.0 Universal | VERIFIED via Free Music Archive track page (CC0 1.0 stated). Owner confirms this is / isn't the "ghost something" track he meant. |
+| M1 | Living-room chill (Scenes 1–2, under) | Loyalty Freak Music | "A ghost Waltz" — from *Witchy, Batty, Spooky, Halloween in September !!* | CC0 1.0 Universal | VERIFIED via Free Music Archive track page (CC0 1.0 stated). CONFIRMED by owner 2026-10-24 as the "ghost something" track. |
 | M2 | Title-card sting (Scene 3) | Loyalty Freak Music | Short sting cut from a CC0 catalog track at sound lock | CC0 1.0 Universal (target) | TRACK TBD at sound lock — must be a verified-CC0 Loyalty Freak track; log the exact track + album here before use. |
 | M3 | Portal-flight build (Scene 5) | Loyalty Freak Music | TBD at sound lock | CC0 1.0 Universal (target) | TRACK TBD — same rule as M2. |
 | M4 | Fight music (Scene 6) | Loyalty Freak Music | TBD at sound lock — high-energy pick from the CC0 catalog | CC0 1.0 Universal (target) | TRACK TBD — owner picks at approval or sound lock. No track named here because none was verified as the owner's pick. |
-| M5 | End tag reprise (Tag) | Loyalty Freak Music | Reprise of M1 ("A ghost Waltz" if M1 confirmed) | CC0 1.0 Universal | Follows M1's confirmation. |
+| M5 | End tag reprise (Tag) | Loyalty Freak Music | Reprise of M1 ("A ghost Waltz") | CC0 1.0 Universal | M1 confirmed by owner 2026-10-24. |
 
 **License caution (verified by research):** Loyalty Freak Music's catalog
 is NOT uniformly CC0 — some tracks distributed via third parties carry
@@ -318,7 +318,7 @@ unverified-license candidate until its license is confirmed.
 
 The owner approves or decides each of these. Nothing here is assumed.
 
-1. **Kanji under the title card — PROPOSED: 不死.** Verified meaning:
+1. **Kanji under the title card — CONFIRMED by owner 2026-10-24: 不死.** Verified meaning:
    *fushi* — "immortality; eternal life." Secondary dictionary sense:
    "undeath / undead." Owner confirms the kanji, or picks another.
 2. **Exact T7 arena for Scene 6 — TBD at production lock.** Must come
@@ -368,12 +368,11 @@ The owner approves or decides each of these. Nothing here is assumed.
 ## 10. APPROVAL CHECKLIST (owner)
 
 - [ ] Beats 1–7 approved as written, or marked up
-- [ ] Kanji: 不死 confirmed, or replacement given
+- [x] Kanji: 不死 confirmed (owner 2026-10-24)
 - [ ] Cape's Scene 6 line ("I don't even want to be here.") approved
 - [ ] Fight outcome decided (item 4)
 - [ ] Runtime target set (item 5)
-- [ ] Music: M1 track confirmed as the "ghost something" track or
-      replaced; M4 pick made or deferred to sound lock
+- [x] Music: M1 track confirmed as the "ghost something" track ("A ghost Waltz", owner 2026-10-24); M4 pick made or deferred to sound lock
 - [ ] Arena: T7 candidates proposed / picked (item 2)
 - [ ] Channel-flip contents approved or left unidentifiable (item 6)
 - [ ] APPROVED — animation may begin / NOT YET — revise and resubmit
