@@ -100,7 +100,13 @@ and is not required for animation verification.
   f34=1.0, f36=0.2, f38=1.0, f40=0.1; pulse f50=0.98, f65=0.86; dropout
   f90=0.05, f100=0.05; steady f105=1.0. The pattern exists in the
   material's keyframes. PASS (pattern).
-- EEVEE visual (on vs dropout): PENDING at proof-index writing (CPU
-  EEVEE render in progress). If it does not complete before the PR, the
-  gag ships with the script + numeric proof, and the EEVEE visual stays
-  an open verification item — it is not claimed as viewed.
+## LED gag (EEVEE, viewed)
+
+- `led_f0030.png` (steady 1.0): the LED strip glows BRIGHT white-violet
+  and the room is washed in violet light. PASS.
+- `led_f0095.png` (dropout 0.05): the strip is DARK (a dark bar) and the
+  violet wash is gone (room lit only by remaining ambient glow, dimmer
+  and grayer). The on/off difference is unmistakable. PASS.
+- The EEVEE pair (CPU EEVEE_NEXT, 640x360, camera inside the room
+  looking at the back-wall strip) closes the LED gag verification: the
+  script + numeric keys + viewed on/dropout frames.
