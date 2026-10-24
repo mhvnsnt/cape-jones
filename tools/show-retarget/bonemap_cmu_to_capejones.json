@@ -1,0 +1,32 @@
+{
+ "format": "cmu-to-capejones/1",
+ "map": {
+  "Head": "head",
+  "Hips": "pelvis",
+  "LThumb": "finger_thumb_1_L",
+  "LeftArm": "upperarm_L",
+  "LeftFoot": "foot_L",
+  "LeftForeArm": "forearm_L",
+  "LeftHandIndex1": "finger_index_1_L",
+  "LeftLeg": "shin_L",
+  "LeftToeBase": "toe_L",
+  "LeftUpLeg": "thigh_L",
+  "LowerBack": "spine_1",
+  "Neck": "neck_1",
+  "Neck1": "neck_2",
+  "RThumb": "finger_thumb_1_R",
+  "RightArm": "upperarm_R",
+  "RightFoot": "foot_R",
+  "RightForeArm": "forearm_R",
+  "RightHandIndex1": "finger_index_1_R",
+  "RightLeg": "shin_R",
+  "RightToeBase": "toe_R",
+  "RightUpLeg": "thigh_R",
+  "Spine": "spine_3",
+  "Spine1": "chest",
+  "LeftHand": "hand_L",
+  "RightHand": "hand_R"
+ },
+ "source": "CMU 140_06.bvh (una-dinosauria/cmu-mocap; 31 bones)",
+ "target": "CapeJones_Rig (94 bones, cape-jones repo show rig); deform bones baked directly"
+}
