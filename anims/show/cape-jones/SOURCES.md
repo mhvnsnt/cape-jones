@@ -68,3 +68,73 @@ interchangeable. This directory is the show test-ground copy.
   CapeJones_Body + CapeJones_Cape, rest pose, skins, materials/textures.
   Exported from `3d-assets/living_room.blend` (never saved). The .blend is
   the source of truth; this GLB is the show pipeline's working copy.
+## Episode 1 "Immortal Qombat" clips (2026-10-24, Track B)
+
+Placement note (read first): the clips below depict the Episode 1 fight
+scene AS IT APPEARS IN THE SHOW. They are show-scene clips, not game
+movesets: they never drive gameplay, and they do not go into
+western-heart. The show-anim law on this page ("show clips play in SHOW /
+CUTSCENE / INTRO_OUTRO contexts, never FIGHT") is about game fights; the
+Ep 1 fight scene is a show context (a scene inside the episode). If the
+coordinator wants fight-scene clips housed elsewhere (e.g. a future
+`anims/fight/` directory), these files move with no content change.
+
+### Fight-scene clips (Cape) — T3 fallback, labeled
+
+Source motion: decoded Tekken 3 motion (owner's disc teardown), gunjack
+bank, `game/assets/anim/t3/` in western-heart (decoder
+`teardown/tekken3/tools/local/pose_assemble.py + usa_motion.py`). Tekken
+3 is the LOGGED FALLBACK ONLY: source priority is Tekken 5/6/7/TTT2, and
+every clip below is on the T7 swap list (see below). Baked with the
+world-space extrinsic retarget (`bake_cape_t3.py`, Track B work files):
+`Wdes = (QG @ W @ QG^-1) @ RESTW`, pelvis location converted from
+armature space to root-parent space. Exported armature-only, 30fps, one
+animation per GLB, 282 channels (94 bones x 3), same convention as
+`idle.glb`. Set scene fps to 30 BEFORE importing a clip GLB.
+
+| Slot | File | Source motion | Frames @ fps | Baked |
+| ---- | ---- | ------------- | ------------ | ----- |
+| stance | `ep1_cape_stance.glb` | gunjack `t3_stance_b.json` (near-static held guard, NOT a bounce) | 108 @ 30 | 2026-10-24 |
+| strike_light | `ep1_cape_strike_light.glb` | gunjack `t3_light.json` (move_row 119) — a 180-degree SPINNING strike, NOT a jab; ends turned 180 deg away | 22 @ 30 | 2026-10-24 |
+| strike_heavy | `ep1_cape_strike_heavy.glb` | gunjack `t3_heavy.json` (move_row 370) — overhead/hook swing | 34 @ 30 | 2026-10-24 |
+| hit | `ep1_cape_hit.glb` | gunjack `t3_hit.json` (stagger) | 21 @ 30 | 2026-10-24 |
+| hit_launch | `ep1_cape_hit_launch.glb` | gunjack `t3_hit_launch.json` (airborne tumble; frames 15+ drive the pelvis below ground — the paired choreography uses frames 0-14 only) | 25 @ 30 | 2026-10-24 |
+| ko | `ep1_cape_ko.glb` | gunjack `t3_ko.json` (flat on back/side, on the ground plane, no sinking) | 40 @ 30 | 2026-10-24 |
+
+Fingers, clavicles, and FK/IK layers stay at rest in these bakes (the T3
+source has no finger channels). Fingers stay open during grabs: a
+fist-curl pass is future polish, not blocking.
+
+### Living-room clips (Cape)
+
+| Slot | File | Source motion | Frames @ fps | Baked |
+| ---- | ---- | ------------- | ------------ | ----- |
+| channel_flip | `ep1_cape_channel_flip.glb` | CMU `13_05.bvh` (sit, hands against chin, fidget), source frames 600-1200 @120fps -> 151 @ 30, same CMU retarget as idle (pelvis parent-space conversion fixed) + procedural overlay: right-arm remote point (f10-25 ease-in, held, f135-150 release), head turns + right-hand thumb wags at beats f45/f85/f120 | 151 @ 30 | 2026-10-24 |
+| portal_flight | `ep1_cape_portal_flight.glb` | Seated hold sampled from `ep1_cape_channel_flip` frame 0 + procedural stand (slerp to stance, f15-34) + procedural flight (pelvis accelerates -Y 3.2 m + rises 0.35 m, body pitches to 70 deg superman, arms swept back, f35-94) + procedural land (pitch back to 0, crouch: thighs Rx-55 deg, shins vertical, feet flat, f95-114) + crouch hold (f115-124). No mocap source exists for being pulled through a TV. Cape streaming is the cloth lane's job — this clip moves the BODY only. | 125 @ 30 | 2026-10-24 |
+
+Known staging note (channel_flip / portal_flight): the CMU sit comes from
+a stepstool sit, so the feet dangle (toes z ~0.24-0.28) past the
+recliner's extended footrest instead of resting on it. The seat itself
+(pelvis at butt_target) is correct; footrest contact is a polish item
+for the sit pass.
+
+### LED gag (production script, not a skeletal clip)
+
+`tools/show/led_gag.py` keys `LEDStripMat`'s Principled Emission Color
+(canon violet `#731AE5`) and Emission Strength @30fps: steady 1.0
+(f0-29), flicker 1.0/0.1/1.0/0.2/1.0/0.1/1.0 (f30-41), slow pulse
+0.7-1.0 sine (f42-89), dropout 0.05 (f90-104 — he notices, does NOT fix
+it), steady 1.0 (f105+). The material previously had NO emission
+channel (dark gray Principled only); the gag script ADDS the emission.
+Single shared material, so all three strips animate together.
+
+### T7 swap list (these T3-fallback clips get replaced, not kept)
+
+- Cape: hand-cannon strike `.bin`s (especially a true jab to replace or
+  supplement the spinning `t3_light` if the owner wants a non-spin
+  strike), via TKMovesets2 extraction -> BlenderTekkenAnimationImporter
+  triage -> bake -> GLB (same convention, fps 30 before import).
+- General: any T7 animation that supersedes a T3 fallback clip.
+- Pull lane: T7/DepotDownloader (Grok's box). The importer addon has NO
+  license file (all rights reserved by default) — do NOT vendor it into
+  the repo; use it as a tool only.
