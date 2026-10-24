@@ -73,8 +73,8 @@ EXTRAPOLATED from the measured rate (labelled as such everywhere).
 | Cycles preview, 12 spp, 640x360 — PRIOR session, quiet VM | ~39–46 (avg ~42) | ~5 (log) | 16.8 h | 100.8 h = 4.2 days |
 | Cycles show, 16 spp adaptive 0.05 + OIDN + living-room bounces, 640x360 — TODAY, contended | 216.34 / 182.31 / 189.36 (avg 196.00) | 3 | 78.4 h | 470.4 h = 19.6 days |
 | Cycles show, 16 spp adaptive 0.05 + OIDN, 1920x1080 — TODAY | 819.12 | 1 | 327.7 h | 1,965.9 h = 81.9 days |
-| Eevee preview, TAA 24, 640x360 — TODAY | 289.36 | 1 clean (+1 rough, see §3c) | 115.7 h | 694.5 h = 28.9 days |
-| Eevee preview, TAA 24, 1920x1080 | EXTRAPOLATED ×9 pixels from 289.36 = ~2,604 | 0 (not run) | ~1,042 h | ~6,250 h = 260 days |
+| Eevee preview, TAA 24, 640x360 — TODAY | 227.24 / 289.36 (avg 258.30) | 2 clean (see §3c) | 103.3 h | 619.9 h = 25.8 days |
+| Eevee preview, TAA 24, 1920x1080 | EXTRAPOLATED ×9 pixels from 258.30 = ~2,325 | 0 (not run) | ~930 h | ~5,580 h = 232 days |
 | Cycles show, 1920x1080 → 720p scale | EXTRAPOLATED ×0.444 pixels from 819.12 = ~364 | 0 (not run) | ~145 h | ~873 h = 36.4 days |
 | Cycles hero, 32 spp — NOT measured | (would be ~2× show rate by samples; not claimed) | 0 | — | — |
 
@@ -106,14 +106,13 @@ this VM would be invented. GPU rendering requires a different machine
 
 ### (c) Eevee at show quality
 Measured, and the result kills the obvious hope: on THIS GPU-less VM,
-Eevee preview at 640x360 took 289.36 s/frame — SLOWER than Cycles
-preview (156 s contended / ~42 s quiet) on the same scene. Eevee runs
-on software GL (llvmpipe) here, and it is also fragile: two further
-Eevee attempts died mid-run (exit 134 libEGL abort; exit 137 SIGKILL
-twice, under shared-VM memory pressure), while Cycles runs completed.
-An earlier Eevee frame did complete (run 1, ≤5.1 min wall including
-import — consistent with ~289 s), so Eevee CAN render here, but it is
-neither fast nor reliable here.
+Eevee preview at 640x360 took 227.24 / 289.36 s/frame (avg 258.30,
+two clean frames) — SLOWER than Cycles preview (156 s contended /
+~42 s quiet) on the same scene. Eevee runs on software GL (llvmpipe)
+here, and it is also fragile: three Eevee attempts died mid-run after
+their first frame (exit 134 libEGL abort; exit 137 SIGKILL twice,
+under shared-VM memory pressure), while Cycles runs completed. So
+Eevee CAN render here, but it is neither fast nor reliable here.
 Visual check (viewed, not claimed): the Eevee frame holds the show's
 look — same purple LED wash, same room, same Cape. Against the Cycles
 frame of the same scene, Eevee is visibly grainier with flatter shadows
