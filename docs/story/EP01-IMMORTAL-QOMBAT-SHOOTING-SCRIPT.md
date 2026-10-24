@@ -292,11 +292,11 @@ nothing goes to Content ID, nothing goes to streaming distributors.
 
 | Cue | Use | Artist | Track | License | Verification |
 |---|---|---|---|---|---|
-| M1 | Living-room chill (Scenes 1–2, under) | Loyalty Freak Music | "A ghost Waltz" — from *Witchy, Batty, Spooky, Halloween in September !!* | CC0 1.0 Universal | VERIFIED via Free Music Archive track page (CC0 1.0 stated). CONFIRMED by owner 2026-10-24 as the "ghost something" track. |
+| M1 | Living-room chill (Scenes 1–2, under) | Loyalty Freak Music | "Ghost Surf Rock" — from *WITCHY, BATTY, SPOOKY, HALLOWEEN IN SEPTEMBER !!* (04:07) | CC0 1.0 Universal | VERIFIED via Free Music Archive track page (CC0 1.0 stated). CORRECTED by owner 2026-10-24: this is the "ghost something" track he meant (not "A ghost Waltz" as first recorded). |
 | M2 | Title-card sting (Scene 3) | Loyalty Freak Music | Short sting cut from a CC0 catalog track at sound lock | CC0 1.0 Universal (target) | TRACK TBD at sound lock — must be a verified-CC0 Loyalty Freak track; log the exact track + album here before use. |
 | M3 | Portal-flight build (Scene 5) | Loyalty Freak Music | TBD at sound lock | CC0 1.0 Universal (target) | TRACK TBD — same rule as M2. |
 | M4 | Fight music (Scene 6) | Loyalty Freak Music | TBD at sound lock — high-energy pick from the CC0 catalog | CC0 1.0 Universal (target) | TRACK TBD — owner picks at approval or sound lock. No track named here because none was verified as the owner's pick. |
-| M5 | End tag reprise (Tag) | Loyalty Freak Music | Reprise of M1 ("A ghost Waltz") | CC0 1.0 Universal | M1 confirmed by owner 2026-10-24. |
+| M5 | End tag reprise (Tag) | Loyalty Freak Music | Reprise of M1 ("Ghost Surf Rock") | CC0 1.0 Universal | M1 confirmed by owner 2026-10-24. |
 
 **License caution (verified by research):** Loyalty Freak Music's catalog
 is NOT uniformly CC0 — some tracks distributed via third parties carry
@@ -306,13 +306,19 @@ in this table. A track is not used until its license is logged. The
 public-domain classical examples already in the cape-jones repo are the
 fallback if a Loyalty Freak pick fails verification.
 
-**Candidate "ghost something" tracks found (owner to identify):**
-"A ghost Waltz" (verified CC0, above); "Ghost Village," "Ghost Mansion,"
-"Ghost Gardening" (GAME MUSIC album — license NOT verified, confirm at
-sound lock); "Love song by a ghost duet" (Gentlemen Monsters Society
-Soundtrack — license NOT verified, confirm at sound lock); "Halloween
-Ghost Party" (verified CC0 via Free Music Archive). Do not use an
-unverified-license candidate until its license is confirmed.
+**"Ghost something" track — RESOLVED by owner 2026-10-24:** "Ghost Surf
+Rock" (verified CC0, M1 above). Note: "A ghost Waltz" was first recorded
+as the pick from the owner's earlier "I confirm" — the owner corrected
+this: Ghost Surf Rock was the song he meant. Other candidates from the
+same album ("Ghost Village," "Ghost Mansion," "Ghost Gardening,"
+"Love song by a ghost duet," "Halloween Ghost Party") remain available
+as alternates, subject to the license-verification rule below.
+
+**Owner rule 2026-10-24: other songs by Loyalty Freak Music are OK too.**
+M2/M3/M4 may use any Loyalty Freak Music track (not only the Halloween
+album) — provided each track's license is verified and logged in this
+table before use. The CC0-only target stands; the catalog caution below
+still applies.
 
 ## 8. CANON GAPS & OPEN ITEMS — FLAGGED, NOT FILLED
 
@@ -372,7 +378,7 @@ The owner approves or decides each of these. Nothing here is assumed.
 - [ ] Cape's Scene 6 line ("I don't even want to be here.") approved
 - [ ] Fight outcome decided (item 4)
 - [ ] Runtime target set (item 5)
-- [x] Music: M1 track confirmed as the "ghost something" track ("A ghost Waltz", owner 2026-10-24); M4 pick made or deferred to sound lock
+- [x] Music: M1 track confirmed as the "ghost something" track ("Ghost Surf Rock", corrected by owner 2026-10-24); other Loyalty Freak songs OK for remaining cues; M4 pick made or deferred to sound lock
 - [ ] Arena: T7 candidates proposed / picked (item 2)
 - [ ] Channel-flip contents approved or left unidentifiable (item 6)
 - [ ] APPROVED — animation may begin / NOT YET — revise and resubmit
