@@ -1,0 +1,57 @@
+# flamenco-manager.ep1.yaml — Flamenco 3.9.3 manager config for Episode 1.
+#
+# HOW TO USE (on the machine that runs the Manager):
+#   1. Copy this file next to flamenco-manager as flamenco-manager.yaml
+#      (or paste these sections into the Manager web UI Settings tab).
+#   2. Replace SHARED_STORAGE with the ONE path that is identical on every
+#      worker (NAS/SMB mount, e.g. /mnt/ep1). The .blend, model/clip GLBs
+#      and ep1_render.py MUST live under it; outputs land under it too.
+#   3. Replace BLENDER_BIN on each platform with that machine's Blender
+#      path. The default ("blender") does NOT work unless Blender is on
+#      PATH — the Track D test worker reported "Blender could not be
+#      found" until this was set.
+#   4. Keep task_timeout ABOVE your slowest chunk: at measured
+#      Cycles-CPU ~40 s/frame, a 15-frame chunk needs 10 min; at
+#      Eevee-on-CPU ~4 min/frame, a chunk must be 1-2 frames. Prefer
+#      SMALL chunks (more tasks, each safely inside the timeout) over
+#      big ones. The standard Blender job type splits by frame chunk.
+#   5. Submit from Blender with the Flamenco add-on (download it from the
+#      Manager web UI, top-right, or directly from
+#      http://<manager>:8080/flamenco-addon.zip), pointing the job at
+#      production/pipeline/ep1_render.py via the chunk script, OR submit
+#      one ep1_render_chunk.sh invocation per task with a job type that
+#      runs a shell command. Either way: one task = one frame range.
+#
+# Verified on Track D (2026-10-24): Flamenco 3.9.3 Manager + Worker on one
+# VM, worker "htch-runtime" registered and awake. End-to-end job dispatch
+# was NOT exercised on this VM (the add-on job path needs the shared
+# storage + blender variable set first — see OWNER-NEEDED in the report).
+# Do NOT present this file as a running farm: it is the farm's config,
+# not the farm. The farm exists when 2+ workers on real machines sign on.
+
+_meta:
+  version: 3
+manager_name: EP1-Flamenco
+listen: :8080
+autodiscoverable: true
+local_manager_storage_path: ./flamenco-manager-storage
+shared_storage_path: "SHARED_STORAGE"
+task_timeout: 30m0s
+worker_timeout: 1m0s
+variables:
+  blender:
+    values:
+    - audience: all
+      platform: linux
+      value: BLENDER_BIN
+    - audience: all
+      platform: windows
+      value: blender.exe
+    - audience: all
+      platform: darwin
+      value: blender
+  blenderArgs:
+    values:
+    - audience: all
+      platform: all
+      value: -b -y
