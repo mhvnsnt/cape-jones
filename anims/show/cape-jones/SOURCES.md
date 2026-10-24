@@ -16,7 +16,11 @@ interchangeable. This directory is the show test-ground copy.
 
 | Slot | File | Source motion | Frames @ fps | Baked |
 |---|---|---|---|---|
-| idle | `idle.glb` | CMU `140_06.bvh` ("Idle", 3563f @120fps; used f200–680) | 121 @ 30 | 2026-10-23 |
+| idle | `idle.glb` | CMU `140_06.bvh` ("Idle", 3563f @120fps; used f1–197, skip 0 step 4) | 50 @ 30 | 2026-10-24 |
+
+### Idle re-cut (2026-10-24)
+
+Previous idle cut (source f200–680, 121 frames, baked 2026-10-23) played as a crouch-lean hold (torso ~33°, knees 64–76°), because the source subject crouches from ~frame 200 onward and never stands back up. Re-cut from the upright portion (source f1–197, skip 0 step 4, 50 frames @ 30, baked 2026-10-24): measured torso pitch 2.0–3.5°, knees ~19–21°, loop start/end within 1.5° pitch. Render proof: `anims/show/cape-jones/proof/upright-frame25.png`. Full diagnosis: `docs/research/CAPE-IDLE-RECUT-2026-10-24.md`. The fix is a re-cut, not a re-rig; the skeleton, bone map, and retarget method verified sound.
 
 ## Motion source
 
