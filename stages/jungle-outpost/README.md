@@ -4,7 +4,11 @@ Show asset for the Episode 1 fight scene (Cape lands in the arena and
 fights Pantera). Production/technical references live in this file only —
 never in in-universe writing.
 
-## Status: SHOW RECONSTRUCTION — not extracted game geometry
+## Status: RECREATION VERSION (preserved) — not extracted game geometry
+
+This asset is the RECREATION VERSION of the Jungle Outpost arena. It is
+PRESERVED permanently: it is never replaced or deleted, even after a true
+extraction lands (see the replacement note below).
 
 This GLB is original geometry built to the publicly documented layout of
 the stage the owner picked (technical stage code `stg02` in the source
@@ -14,7 +18,10 @@ either repo when this was built (survey 2026-10-24 — see below), and a
 direct pull was not possible from this box (no Steam session here; the
 saved Steam session lives on a collaborator's box, and no credentials
 were requested, copied, or used). When a true `stg02` extraction lands,
-it should replace this file and this README should be updated to say so.
+it is added as the ACTUAL version (a separate file) and this recreation is
+NOT replaced or deleted — both versions are kept. This README should
+then be updated to point at the actual version for final renders, while
+this recreation stays as reference and fallback.
 
 ## Sourced vs. approximated
 
@@ -37,6 +44,10 @@ it should replace this file and this README should be updated to say so.
   `KHR_lights_punctual`). Verified structure: 209 nodes, 203 meshes,
   15 materials, 1,669,744 bytes; spawn empties and both fight floors
   present with the dimensions in §Scale below.
+- `jungle-outpost-recreation.glb` — byte-identical preserved copy of
+  the recreation, saved 2026-10-24 (same bytes as `jungle-outpost.glb`).
+  The recreation version, kept permanently; the actual version, when it
+  lands, lives alongside it, never over it.
 - `build_jungle_outpost.py` — the source of truth for this asset.
   Rebuild + re-render with Blender 4.2 headless:
   `blender -b --python build_jungle_outpost.py -- jungle-outpost.glb proof`
