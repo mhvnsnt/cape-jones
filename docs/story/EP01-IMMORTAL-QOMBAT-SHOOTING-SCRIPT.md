@@ -117,7 +117,10 @@ TV wakes with its violet screen glow. He flips channels — quick flashes
 of the owner's OWN stuff: TRIPPEDD, the wizard gang, and his other
 shows, plus bumps, cards, segments, and commercials from that catalog
 (owner-decided 2026-10-24 — §8, item 6 resolved; exact clips picked at
-production lock). He is half-watching, the way a bored person flips.
+production lock). Entrance-kit videos also eligible here and in
+commercials — specifically the MOST RECENT versions of the El Toro De
+Oro and Stick Up entrance kits (owner-added 2026-10-24). He is
+half-watching, the way a bored person flips.
 
 **DIALOGUE:** None.
 
@@ -361,7 +364,10 @@ The owner approves or decides each of these. Nothing here is assumed.
    TRIPPEDD, the wizard gang, and the owner's other shows — plus
    bumps, cards, segments, and commercials from that catalog. No
    outside programs. Exact clips picked at production lock from the
-   owner's catalog.
+   owner's catalog. Owner-added 2026-10-24: entrance-kit videos are
+   also eligible for channel flips AND commercials — specifically the
+   MOST RECENT versions of the El Toro De Oro and Stick Up entrance
+   kits.
 7. **Fight-music exact track (M4) — DIRECTION SET by owner 2026-10-24:**
    dramatic public-domain / no-copyright pick, Nosferatu-style;
    leading candidate Mussorgsky's "Night on Bald Mountain" (§7).
@@ -398,12 +404,12 @@ The owner approves or decides each of these. Nothing here is assumed.
 
 - [ ] Beats 1–7 approved as written, or marked up
 - [x] Kanji: 不死 confirmed (owner 2026-10-24)
-- [ ] Cape's Scene 6 line ("I don't even want to be here.") approved
+- [x] Cape's Scene 6 line ("I don't even want to be here.") approved — owner 2026-10-24, verbatim his own line
 - [x] Fight outcome decided: Pantera wins, chain-grapple comeback (item 4, owner 2026-10-24)
 - [ ] Runtime target set (item 5)
 - [x] Music: M1 track confirmed ("Ghost Surf Rock", corrected by owner 2026-10-24); other Loyalty Freak songs OK for remaining cues; M4 direction set — dramatic public-domain, Nosferatu-style, Night on Bald Mountain leading candidate, recording logged at sound lock
 - [x] Arena: Jungle Outpost picked (item 2, owner 2026-10-24)
-- [x] Channel-flip contents: owner's own stuff — TRIPPEDD, wizard gang, shows, bumps, cards, segments, commercials (item 6, owner 2026-10-24)
+- [x] Channel-flip contents: owner's own stuff — TRIPPEDD, wizard gang, shows, bumps, cards, segments, commercials, plus most-recent El Toro De Oro + Stick Up entrance-kit videos (item 6, owner 2026-10-24)
 - [ ] APPROVED — animation may begin / NOT YET — revise and resubmit
 
 ---
