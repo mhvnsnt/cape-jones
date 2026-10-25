@@ -16,7 +16,11 @@ interchangeable. This directory is the show test-ground copy.
 
 | Slot | File | Source motion | Frames @ fps | Baked |
 |---|---|---|---|---|
-| idle | `idle.glb` | CMU `140_06.bvh` ("Idle", 3563f @120fps; used f200–680) | 121 @ 30 | 2026-10-23 |
+| idle | `idle.glb` | CMU `140_06.bvh` ("Idle", 3563f @120fps; used f1–197, skip 0 step 4) | 50 @ 30 | 2026-10-24 |
+
+### Idle re-cut (2026-10-24)
+
+Previous idle cut (source f200–680, 121 frames, baked 2026-10-23) played as a crouch-lean hold (torso ~33°, knees 64–76°), because the source subject crouches from ~frame 200 onward and never stands back up. Re-cut from the upright portion (source f1–197, skip 0 step 4, 50 frames @ 30, baked 2026-10-24): measured torso pitch 2.0–3.5°, knees ~19–21°, loop start/end within 1.5° pitch. Render proof: `anims/show/cape-jones/proof/upright-frame25.png`. Full diagnosis: `docs/research/CAPE-IDLE-RECUT-2026-10-24.md`. The fix is a re-cut, not a re-rig; the skeleton, bone map, and retarget method verified sound.
 
 ## Motion source
 
@@ -94,12 +98,16 @@ animation per GLB, 282 channels (94 bones x 3), same convention as
 
 | Slot | File | Source motion | Frames @ fps | Baked |
 | ---- | ---- | ------------- | ------------ | ----- |
-| stance | `ep1_cape_stance.glb` | gunjack `t3_stance_b.json` (near-static held guard, NOT a bounce) | 108 @ 30 | 2026-10-24 |
+| stance | `ep1_cape_stance.glb` | gunjack `t3_stance_b.json` (near-static held guard, NOT a bounce; re-baked 2026-10-24, direction-IK — see note below) | 108 @ 30 | 2026-10-24 |
 | strike_light | `ep1_cape_strike_light.glb` | gunjack `t3_light.json` (move_row 119) — a 180-degree SPINNING strike, NOT a jab; ends turned 180 deg away | 22 @ 30 | 2026-10-24 |
 | strike_heavy | `ep1_cape_strike_heavy.glb` | gunjack `t3_heavy.json` (move_row 370) — overhead/hook swing | 34 @ 30 | 2026-10-24 |
 | hit | `ep1_cape_hit.glb` | gunjack `t3_hit.json` (stagger) | 21 @ 30 | 2026-10-24 |
 | hit_launch | `ep1_cape_hit_launch.glb` | gunjack `t3_hit_launch.json` (airborne tumble; frames 15+ drive the pelvis below ground — the paired choreography uses frames 0-14 only) | 25 @ 30 | 2026-10-24 |
 | ko | `ep1_cape_ko.glb` | gunjack `t3_ko.json` (flat on back/side, on the ground plane, no sinking) | 40 @ 30 | 2026-10-24 |
+
+### Stance re-bake (2026-10-24)
+
+The first bake of `ep1_cape_stance.glb` (orientation retarget, `tools/show/bake_cape_t3.py`) played one arm down and one arm up (L upper 17–31° from down, R upper 130–144°), while the source guard has both arms raised. Re-baked with direction-IK (`tools/show/bake_stance_ik.py`): arm segment directions taken from motion-chain FK of the source, torso/legs kept on the orientation bake (which already matched source tilt/roll). Verified by measurement: the new clip matches source FK to ~1° on sampled frames (L upper ~45–49°, L fore ~149–156°, R upper ~57–67°, R fore ~111–125°; torso ~25°, shoulders rolled left-low). A segment-correct orientation map was also tested and did NOT fix it, so it was not shipped.
 
 Fingers, clavicles, and FK/IK layers stay at rest in these bakes (the T3
 source has no finger channels). Fingers stay open during grabs: a

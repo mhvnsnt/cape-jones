@@ -1,7 +1,6 @@
-# EPISODE 1 — "IMMORTAL QOMBAT" — SHOOTING SCRIPT (DRAFT)
+# EPISODE 1 — "IMMORTAL QOMBAT" — SHOOTING SCRIPT (OWNER-APPROVED)
 
-**Status: DRAFT FOR OWNER APPROVAL. NO ANIMATION IS AUTHORIZED FROM THIS
-SCRIPT UNTIL THE OWNER APPROVES IT.**
+**Status: OWNER-APPROVED 2026-10-24 (PR #234, merged as 688bcacc). Animation is authorized from this script.**
 
 - Series: Cape Jones (3D show)
 - Episode: 01 — "Immortal Qombat"
