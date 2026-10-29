@@ -25,3 +25,11 @@ Location: `~/workspace/ep1-farm/tools/wired/` — all four surveyed tools, copie
 
 ## Still missing (not in either repo, still owed)
 One small new Blender script that runs INSIDE a `.blend`: lock all actions (fake_user), bake deform→FK for constrained rigs, check body-to-rig alignment before render, and verify action/bone/bbox/weights after. The four tools above gate everything around it (proof, disk, GLB stage) but do not replace it.
+
+## blend_guard.py (added 2026-10-29 — the "still missing" script above, now landed)
+
+- Use: `blender -b scene.blend --python blend_guard.py -- [--bake-fk] [--save] [--report out.json]` — exit 0 on PASS, 2 on FAIL, so it can gate a render job.
+- Does the four jobs named in the "still missing" note: locks all actions (`use_fake_user`), checks body-to-rig alignment before render (sampled median distance from evaluated verts to the nearest POSE bone segment), verifies weight sums (unweighted fraction and fraction deviating from 1.0 by > 0.05) plus action/bone/bbox state after, and with `--bake-fk` bakes constrained rigs into a new `<Armature>_FKBAKE` action via visual keying (source actions untouched, baked action fake-user locked). Nothing is saved unless `--save` is passed.
+- Tested 2026-10-29 on a COPY of the canonical sit scene (`scene_anim_placed3.blend`, release `sitcanon-anim-placed-20261020`, sha256 `21e1c67a…`): **VERDICT PASS** — 5 actions locked, `CapeJones_Rig` running `mocap_sit_canon`, body 910,374 verts with unweighted 0.0000 / bad-sum 0.0018, alignment median 0.052 m; the FK bake produced `CapeJones_Rig_FKBAKE` from 22 constrained bones. Full report: release `fullstack-sit-tests-20261029` (`guard_report_placed3.json`).
+- Gotcha found while testing: alignment must be measured against POSE bones. Rest-pose bone positions read ~3.15 m off on a posed scene and false-FAIL the check. The landed version uses pose bones.
+- The bake is the slow step (nla.bake across the scene's full frame range: ~3.5 min for 360 frames on this VM). Without `--bake-fk` the whole check runs in seconds.
