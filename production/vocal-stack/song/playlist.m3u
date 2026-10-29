@@ -1,0 +1,8 @@
+#EXTM3U
+# Cape Jones dance song — playlist / mixer order
+#EXTINF:76,Cape Jones Dance - full mix
+song-full.mp3
+#EXTINF:76,Cape Jones Dance - vocal stem
+song-vocal-stem.wav
+#EXTINF:76,Cape Jones Dance - instrumental
+song-instrumental.mp3
