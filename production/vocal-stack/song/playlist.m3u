@@ -1,0 +1,24 @@
+#EXTM3U
+# Cape Jones dance song — playlist / mixer order (v2 first, v1 kept below)
+#EXTINF:76,Cape Jones Dance v2 - full mix (Japanese)
+song-full-v2-jp.mp3
+#EXTINF:76,Cape Jones Dance v2 - full mix (English)
+song-full-v2-en.mp3
+#EXTINF:76,Cape Jones Dance v2 - vocal stem (Japanese)
+song-vocal-stem-v2-jp.wav
+#EXTINF:76,Cape Jones Dance v2 - vocal stem (English)
+song-vocal-stem-v2-en.wav
+#EXTINF:76,Cape Jones Dance v2 - instrumental
+song-instrumental-v2.mp3
+#EXTINF:8,Cape Jones Dance - vocal entry excerpt v1 (before)
+excerpt-vocal-entry-v1.mp3
+#EXTINF:8,Cape Jones Dance - vocal entry excerpt v2 JP (after)
+excerpt-vocal-entry-v2-jp.mp3
+#EXTINF:8,Cape Jones Dance - vocal entry excerpt v2 EN (after)
+excerpt-vocal-entry-v2-en.mp3
+#EXTINF:76,Cape Jones Dance v1 - full mix
+song-full.mp3
+#EXTINF:76,Cape Jones Dance v1 - vocal stem
+song-vocal-stem.wav
+#EXTINF:76,Cape Jones Dance v1 - instrumental
+song-instrumental.mp3
