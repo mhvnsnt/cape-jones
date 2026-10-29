@@ -88,3 +88,43 @@ the world and its lighting change around him; the dance never changes (SHOW-BIBL
 ## Notes
 - ケープ・ジョーンズ (Keepu Joonzu) = Cape Jones. おどれ/まわれ = dance!/spin! — the chorus is a singalong command hook.
 - The bridge lists what changes (day/night, LED blue/pink/green) against the one thing that does not: him, dancing, right here.
+
+---
+
+# English-sung version (v2, 2026-10-29)
+
+Same melody, same session, same note grid as the Japanese take. The English
+lines are syllable-adapted to fit the Japanese phrases' note counts exactly
+(asserted in build_vocal_en.py), so the English vocal drops onto the same
+melody with no re-composing. Sung with the same repo v19 method (guide
+voice + Rubber Band pitch placement + Avanna bus) — see MIX-NOTES.md.
+
+## VERSE A
+- In the morning yard he is dancing all alone
+- Cape is fluttering, his face so dead serious
+- Even if the whole world changes, he never, ever does
+- Only his feet keep the beat, and the beat goes all day long
+
+## CHORUS A
+- Cape Jones, dance and dance, everybody come and dance, dance!
+- And when the colors change, you know the sky changes too
+- Cape Jones, spin and spin, everybody come and spin, spin!
+- Tomorrow, same old place, and the same old dance again
+
+## VERSE B
+- In his pocket there's a little pet and it beeps all day
+- Battery's running low and he doesn't care at all
+- Before dinner time and after dinner time, he dances
+- The same old step, the dream step, the same old step every day
+
+## BRIDGE
+- Day turns into night and the night turns to morning
+- L-E-D lights are shining blue and pink and green tonight
+- The only thing that changes is the world
+
+## CHORUS B — chorus A lines repeat
+
+## OUTRO
+- He is always standing right here
+- Cape Jones, dance, everybody, Cape Jones, dance
+- La la la la la la laa
