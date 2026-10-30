@@ -51,9 +51,9 @@ drops to ~0.2–0.5 s/frame and the silhouette/material read is unchanged
 at 960×540.
 
 Movement-spec verification (research doc §5 method, measured on the final
-video's first loop): **torso-band travel 10.0% of body width** (spec ~10%;
-v1 measured 7.7%), **foot-band travel 14.9%** (v1: 8.1%), foot/torso ratio
-1.49 (spec ≥ 0.5), and **40 of 48 frames distinct** (v1: 8 held poses).
+video's first loop): **torso-band travel 10.3% of body width** (spec ~10%;
+v1 measured 7.7%), **foot-band travel 15.2%** (v1: 8.1%), foot/torso ratio
+1.46 (spec ≥ 0.5), and **41 of 48 frames distinct** (v1: 8 held poses).
 Pelvis travel is 16.4 cm peak-to-peak across the loop. The cape passes the
 zoom checks (front, back, hem close-up at the deepest-dip frame): one
 continuous cloth, no slots, no separated ribbons.
