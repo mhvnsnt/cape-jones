@@ -1,0 +1,67 @@
+{
+  "clip": "walk",
+  "fps": 24,
+  "rig": "joint-locked-v6",
+  "angle_rule": "0=down, positive=screen-right, end=joint+length*(sin,cos)",
+  "labels": {
+    "arm1": "our left",
+    "arm2": "our right",
+    "leg1": "our left",
+    "leg2": "our right"
+  },
+  "timing": "normal on 2s, 12 drawings/sec, 4 keyframes per step cycle, holds 6-12",
+  "keyframes": [
+    {
+      "frame": 1,
+      "hold": 12,
+      "pose": "contact-leg1-forward",
+      "arm1_upper": -25,
+      "arm1_lower": -25,
+      "arm2_upper": 15,
+      "arm2_lower": 15,
+      "leg1_upper": -25,
+      "leg1_lower": 5,
+      "leg2_upper": 20,
+      "leg2_lower": -20
+    },
+    {
+      "frame": 13,
+      "hold": 12,
+      "pose": "passing-legs-together",
+      "arm1_upper": -20,
+      "arm1_lower": -20,
+      "arm2_upper": 20,
+      "arm2_lower": 20,
+      "leg1_upper": 0,
+      "leg1_lower": 0,
+      "leg2_upper": 0,
+      "leg2_lower": 0
+    },
+    {
+      "frame": 25,
+      "hold": 12,
+      "pose": "contact-leg2-forward",
+      "arm1_upper": -15,
+      "arm1_lower": -15,
+      "arm2_upper": 25,
+      "arm2_lower": 25,
+      "leg1_upper": 20,
+      "leg1_lower": -20,
+      "leg2_upper": -25,
+      "leg2_lower": 5
+    },
+    {
+      "frame": 37,
+      "hold": 12,
+      "pose": "passing-legs-together",
+      "arm1_upper": -20,
+      "arm1_lower": -20,
+      "arm2_upper": 20,
+      "arm2_lower": 20,
+      "leg1_upper": 0,
+      "leg1_lower": 0,
+      "leg2_upper": 0,
+      "leg2_lower": 0
+    }
+  ]
+}
