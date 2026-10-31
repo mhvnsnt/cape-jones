@@ -21,6 +21,13 @@ def main():
     plate_path, outdir = sys.argv[1], sys.argv[2]
     os.makedirs(outdir, exist_ok=True)
     plate = Image.open(plate_path).convert("RGBA")
+    # LABELS-ARE-DEBUG-ONLY gate: refuse any plate carrying red ARM/LEG
+    # debug labels, so rim/bleed/effects can never be drawn around them.
+    import numpy as _np
+    _a = _np.array(plate)
+    _red = int(((_a[:, :, 0] > 200) & (_a[:, :, 1] < 80) & (_a[:, :, 2] < 80) & (_a[:, :, 3] > 100)).sum())
+    if _red > 100:
+        raise SystemExit(f"REFUSED: plate carries {_red} red debug-label pixels. Strip labels (labels=False clean build) before any lighting/effects pass.")
     alpha = plate.split()[3]
     W, H = plate.size
     for colored in (True, False):
