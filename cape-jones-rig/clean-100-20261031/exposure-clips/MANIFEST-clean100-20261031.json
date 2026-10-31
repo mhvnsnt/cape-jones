@@ -1,0 +1,429 @@
+{
+ "batch": "clean-100-20261031 exposure-clips",
+ "labels": "False only",
+ "files": [
+  {
+   "file": "clips/walk/walk-01-contact-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/walk/walk-01-contact-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "4d43b3eae078"
+  },
+  {
+   "file": "clips/walk/walk-13-passing-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/walk/walk-13-passing-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "72d539e1dbf6"
+  },
+  {
+   "file": "clips/walk/walk-25-contact-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/walk/walk-25-contact-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "aa5471e9ce0a"
+  },
+  {
+   "file": "clips/walk/walk-37-passing-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/walk/walk-37-passing-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "72d539e1dbf6"
+  },
+  {
+   "file": "clips/dance/dance-01-a-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/dance/dance-01-a-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "6e377d4499ac"
+  },
+  {
+   "file": "clips/dance/dance-13-b-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/dance/dance-13-b-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "5a1ac6abb4a4"
+  },
+  {
+   "file": "clips/dance/dance-25-a-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/dance/dance-25-a-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "6e377d4499ac"
+  },
+  {
+   "file": "clips/flying/flying-01-hover-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/flying/flying-01-hover-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "f1b142f574a5"
+  },
+  {
+   "file": "clips/flying/flying-13-soar-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/flying/flying-13-soar-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "d589d4b775f9"
+  },
+  {
+   "file": "clips/flying/flying-25-dive-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/flying/flying-25-dive-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "00e2d86e72a8"
+  },
+  {
+   "file": "clips/flying/flying-37-hover-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/flying/flying-37-hover-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "f1b142f574a5"
+  },
+  {
+   "file": "clips/jump/jump-01-crouch-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/jump/jump-01-crouch-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "f3411fab0bea"
+  },
+  {
+   "file": "clips/jump/jump-07-takeoff-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/jump/jump-07-takeoff-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "c26ce6664d99"
+  },
+  {
+   "file": "clips/jump/jump-13-tuck-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/jump/jump-13-tuck-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "8efa65a29ae8"
+  },
+  {
+   "file": "clips/jump/jump-25-land-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/jump/jump-25-land-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "5af12566153a"
+  },
+  {
+   "file": "clips/punch/punch-09-impact-hold-v7c-clean100-20261031.png",
+   "source": "clips-v7c-clean-20261031/punch/punch-09-impact-hold-v7c-clean.png",
+   "method": "copy of existing v7c clean render (labels=False), new dated filename only",
+   "red_px": 0,
+   "sha12": "6d49cf36d6a8"
+  },
+  {
+   "file": "clips/flex/fighting-pose-forward-bicep-curl-v7c-clean100-20261031.png",
+   "source": "joint_locked_rig_v7c (rig-v7c-clean100.py), labels=False (fighting pose, arms up+in front)",
+   "method": "rig re-render, labels=False + OutFixed lowers",
+   "red_px": 0,
+   "sha12": "148f23a043a5",
+   "cfg": {
+    "arm_upper": {
+     "L": -20,
+     "R": 20
+    },
+    "arm_lower": {
+     "L": 160,
+     "R": -160
+    },
+    "leg_upper": {
+     "L": -10,
+     "R": 10
+    },
+    "leg_lower": {
+     "L": 10,
+     "R": -10
+    }
+   }
+  },
+  {
+   "file": "clips/flex/flex-07-flex-hold-v7c-clean100-20261031.png",
+   "source": "joint_locked_rig_v7c (rig-v7c-clean100.py), labels=False (SUPERSEDED name for the same fighting pose; pixels identical to fighting file)",
+   "method": "rig re-render, labels=False + OutFixed lowers",
+   "red_px": 0,
+   "sha12": "148f23a043a5",
+   "cfg": {
+    "arm_upper": {
+     "L": -20,
+     "R": 20
+    },
+    "arm_lower": {
+     "L": 160,
+     "R": -160
+    },
+    "leg_upper": {
+     "L": -10,
+     "R": 10
+    },
+    "leg_lower": {
+     "L": 10,
+     "R": -10
+    }
+   }
+  },
+  {
+   "file": "clips/punch-arm2-variants/punch-impact-a2l-160-current-v7c-clean100-20261031.png",
+   "source": "joint_locked_rig_v7c (rig-v7c-clean100.py), labels=False (punch impact, original lowers)",
+   "method": "rig re-render, labels=False + original lowers",
+   "red_px": 0,
+   "sha12": "6d49cf36d6a8",
+   "cfg": {
+    "arm_upper": {
+     "L": -90,
+     "R": 20
+    },
+    "arm_lower": {
+     "L": -90,
+     "R": 160
+    },
+    "leg_upper": {
+     "L": -15,
+     "R": 15
+    },
+    "leg_lower": {
+     "L": 15,
+     "R": -15
+    }
+   }
+  },
+  {
+   "file": "clips/punch-arm2-variants/punch-impact-a2l-minus110-across-up-v7c-clean100-20261031.png",
+   "source": "joint_locked_rig_v7c (rig-v7c-clean100.py), labels=False (punch impact, original lowers)",
+   "method": "rig re-render, labels=False + original lowers",
+   "red_px": 0,
+   "sha12": "f019940ab895",
+   "cfg": {
+    "arm_upper": {
+     "L": -90,
+     "R": 20
+    },
+    "arm_lower": {
+     "L": -90,
+     "R": -110
+    },
+    "leg_upper": {
+     "L": -15,
+     "R": 15
+    },
+    "leg_lower": {
+     "L": 15,
+     "R": -15
+    }
+   }
+  },
+  {
+   "file": "clips/punch-arm2-variants/punch-impact-a2l-minus70-across-down-v7c-clean100-20261031.png",
+   "source": "joint_locked_rig_v7c (rig-v7c-clean100.py), labels=False (punch impact, original lowers)",
+   "method": "rig re-render, labels=False + original lowers",
+   "red_px": 0,
+   "sha12": "3eac00f7d16e",
+   "cfg": {
+    "arm_upper": {
+     "L": -90,
+     "R": 20
+    },
+    "arm_lower": {
+     "L": -90,
+     "R": -70
+    },
+    "leg_upper": {
+     "L": -15,
+     "R": 15
+    },
+    "leg_lower": {
+     "L": 15,
+     "R": -15
+    }
+   }
+  },
+  {
+   "file": "clips/punch-arm2-variants/punch-impact-a2l-minus90-across-v7c-clean100-20261031.png",
+   "source": "joint_locked_rig_v7c (rig-v7c-clean100.py), labels=False (punch impact, original lowers)",
+   "method": "rig re-render, labels=False + original lowers",
+   "red_px": 0,
+   "sha12": "61ce6b14198e",
+   "cfg": {
+    "arm_upper": {
+     "L": -90,
+     "R": 20
+    },
+    "arm_lower": {
+     "L": -90,
+     "R": -90
+    },
+    "leg_upper": {
+     "L": -15,
+     "R": 15
+    },
+    "leg_lower": {
+     "L": 15,
+     "R": -15
+    }
+   }
+  },
+  {
+   "file": "clips/punch/punch-impact-locked-v7c-clean100-20261031.png",
+   "source": "joint_locked_rig_v7c (rig-v7c-clean100.py), labels=False (locked punch = -110 variant)",
+   "method": "rig re-render, labels=False + original lowers",
+   "red_px": 0,
+   "sha12": "f019940ab895",
+   "cfg": {
+    "arm_upper": {
+     "L": -90,
+     "R": 20
+    },
+    "arm_lower": {
+     "L": -90,
+     "R": -110
+    },
+    "leg_upper": {
+     "L": -15,
+     "R": 15
+    },
+    "leg_lower": {
+     "L": 15,
+     "R": -15
+    }
+   }
+  },
+  {
+   "file": "wave/wave-1-v7c-clean100-20261031.png",
+   "source": "joint_locked_rig_v7c (rig-v7c-clean100.py), labels=False (wave, R arm up behind head)",
+   "method": "rig re-render, labels=False + original lowers",
+   "red_px": 0,
+   "sha12": "1c926ef46fd4",
+   "cfg": {
+    "arm_upper": {
+     "L": -20,
+     "R": -120
+    },
+    "arm_lower": {
+     "L": -20,
+     "R": -120
+    },
+    "leg_upper": {
+     "L": -10,
+     "R": 10
+    },
+    "leg_lower": {
+     "L": 10,
+     "R": -10
+    }
+   }
+  },
+  {
+   "file": "wave/wave-2-v7c-clean100-20261031.png",
+   "source": "joint_locked_rig_v7c (rig-v7c-clean100.py), labels=False (wave, R arm up behind head)",
+   "method": "rig re-render, labels=False + original lowers",
+   "red_px": 0,
+   "sha12": "ff461323d898",
+   "cfg": {
+    "arm_upper": {
+     "L": -20,
+     "R": -150
+    },
+    "arm_lower": {
+     "L": -20,
+     "R": -150
+    },
+    "leg_upper": {
+     "L": -10,
+     "R": 10
+    },
+    "leg_lower": {
+     "L": 10,
+     "R": -10
+    }
+   }
+  },
+  {
+   "file": "wave/wave-3-v7c-clean100-20261031.png",
+   "source": "joint_locked_rig_v7c (rig-v7c-clean100.py), labels=False (wave, R arm up behind head)",
+   "method": "rig re-render, labels=False + original lowers",
+   "red_px": 0,
+   "sha12": "d6e5a5413e7c",
+   "cfg": {
+    "arm_upper": {
+     "L": -20,
+     "R": -180
+    },
+    "arm_lower": {
+     "L": -20,
+     "R": -180
+    },
+    "leg_upper": {
+     "L": -10,
+     "R": 10
+    },
+    "leg_lower": {
+     "L": 10,
+     "R": -10
+    }
+   }
+  },
+  {
+   "file": "exposure-sheets/exposure-walk-variant-v7c-clean100-20261031.png",
+   "source": "clean frames listed in panels",
+   "method": "exposure sheet assembly from clean frames, no labels, no recolour",
+   "red_px": 0,
+   "sha12": "147933426773",
+   "panels": [
+    "F1 contact LEG1 fwd - hold 12",
+    "F13 passing - hold 12",
+    "F25 contact LEG2 fwd - hold 12",
+    "F37 passing - hold 12, loop to F1"
+   ]
+  },
+  {
+   "file": "exposure-sheets/exposure-dance-v7c-clean100-20261031.png",
+   "source": "clean frames listed in panels",
+   "method": "exposure sheet assembly from clean frames, no labels, no recolour",
+   "red_px": 0,
+   "sha12": "59902c618db5",
+   "panels": [
+    "F1 dance-a - hold 12",
+    "F13 dance-b - hold 12",
+    "F25 dance-a repeat - hold 12"
+   ]
+  },
+  {
+   "file": "exposure-sheets/exposure-power-pose-v7c-clean100-20261031.png",
+   "source": "clean frames listed in panels",
+   "method": "exposure sheet assembly from clean frames, no labels, no recolour",
+   "red_px": 0,
+   "sha12": "f943e1ab7e79",
+   "panels": [
+    "F7 fighting pose - POWER POSE - gauntlet-out-fixed",
+    "F9 punch impact hold - hold 12"
+   ]
+  },
+  {
+   "file": "exposure-sheets/exposure-landing-v7c-clean100-20261031.png",
+   "source": "clean frames listed in panels",
+   "method": "exposure sheet assembly from clean frames, no labels, no recolour",
+   "red_px": 0,
+   "sha12": "ecb031b877fa",
+   "panels": [
+    "F1 crouch - hold 6",
+    "F7 takeoff - hold 2",
+    "F13 tuck - hold 12",
+    "F25 LAND - hold 6 (landing drawing)"
+   ]
+  },
+  {
+   "file": "exposure-sheets/exposure-wave-v7c-clean100-20261031.png",
+   "source": "clean frames listed in panels",
+   "method": "exposure sheet assembly from clean frames, no labels, no recolour",
+   "red_px": 0,
+   "sha12": "22fb2b3e37ef",
+   "panels": [
+    "Wave 1 - arm up, elbow -120",
+    "Wave 2 - arm up, elbow -150",
+    "Wave 3 - arm up, elbow -180"
+   ]
+  }
+ ]
+}
