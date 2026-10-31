@@ -1,15 +1,29 @@
 # Animation / movement examples — Mars, 2026-10-31
-Logged as STUDY, not as assets to copy. Influence only: Johnny Bravo,
-Gumball, Scooby-Doo / Scooby gang, Space Ghost (via Cape Jones canon).
-Cape Jones stays his own character, white suit + purple cape, his own
-canon. No show frames, GIFs, or character art from those shows are
-copied into this doc or into any repo. The repo version of this log
-will contain descriptions and timing only, never the show files.
+Logged as STUDY and as the example set Mars told us to put in the repo.
+Influence: Johnny Bravo, Gumball, Scooby-Doo / Scooby gang, Space Ghost
+(via Cape Jones canon). Cape Jones stays his own character, white suit
++ purple cape, his own canon. This log is descriptions, movement, and
+timing — the rig work that follows puts Cape Jones's own pieces on
+those movements, it does not ship another show's character.
+
+CORRECTION 2026-10-31 10:54 CDT, Mars: these were GIFs, not stills I
+was handed. What landed in workspace/user/files/ got flattened to
+JPEG stills (checked: magic bytes FF D8, 1 frame each, even the
+.gif-named files), so no frame timing can be measured off THOSE
+copies. That was my error to report as "you sent stills" — you sent
+GIFs, the copies flattened them. Timing below is the TV standard
+to use until the original GIF frames are back in hand.
+
+Mars's rule for what can be used (standing pull-first rule): the ONLY
+things off-limits are a character name, a logo, a character itself,
+and literal dialogue from their shows. Everything else — structure,
+order, movement, timing, poses, rig mechanics, tools — is usable
+material to get past hand-tooling, with Cape Jones's own pieces
+on it.
 
 ## What was actually received — check this first
-20 examples, files 10001790xx_4 through _23, all SINGLE-FRAME stills
-(JPEG, despite .gif names), 162x200 to 736x848, 7–94 KB each.
-0 animated frames to measure. So no FPS can be read off these files.
+20 examples, files 10001790xx_4 through _23, sent as GIFs, received
+here as flattened JPEG stills, 162x200 to 736x848, 7–94 KB each.
 File 1000179069_33_9jye.jpg is a byte-identical duplicate of _13
 (Scooby dance, 50,558 bytes, 736x848) — counted once, not twice.
 Files _24 through _32 were also present on disc at 10:46 but were NOT
@@ -88,9 +102,9 @@ groove = 48 frames, ~24 unique piece positions on 2s, not 48 new drawings.
 4. Then generate/make only the missing pieces listed above, one pack at a time, clean-cut sliced, shown to Mars before the next pack.
 
 ## Batch 2 — pose sheets, 2026-10-31 10:47 CDT (files _24 to _32, + duplicate _33)
-All single-frame stills again, JPEG/PNG, no animated frames to measure.
-Pose sheets, so one file = many poses. Do NOT copy these sheets into
-any repo — descriptions only, same rule as Batch 1.
+Sent as GIFs / images, received here as JPEG/PNG stills, same
+flattening as Batch 1. Pose sheets, so one file = many poses.
+Logged here as descriptions and movement, same as Batch 1.
 
 - _24 (570x570): Johnny Bravo pose sheet, labelled "20 DESIGN / 80 FILES" —
   ~20 small poses: flex, dance, lean, arms crossed, pointing, tuxedo,
@@ -129,27 +143,25 @@ Batch 2 totals: 9 new files, ~70+ individual poses across the sheets.
 Combined with Batch 1: 29 unique files, 20 single poses + ~70 sheet
 poses = ~90 poses to study, all as movement/pose descriptions only.
 
-## What I will NOT pull in, plainly
-- No CN / Nickelodeon / Disney show files, rigs, or character art
-  copied into the Cape Jones repo, and no "Giga leak" leaked material
-  pulled in. I have not verified any such leak repo in this workspace,
-  and a leak would not make a show's character art ours to ship.
-- No Toon Boom show rigs copied. Toon Boom as a tool is a different
-  thing from a show's rig file — if we use a tool, it will be on
-  Cape Jones's own pieces, not on a show's character.
-- No "250–300 tools" claim until inventoried. The tools I can verify
-  here and will use first are the ones already in this workspace:
-  slice_clean.py (clean cuts), Pack1 + cut limbs, assemble_tpose_default.py,
-  and the locked v8 pieces. If a tool is needed beyond that, it will
-  be named, checked, and added as its own step, not counted by guess.
-- Blair Witch / other repos: not verified as Cape Jones sources in
-  this turn, not pulled in on a name alone. If Mars names a specific
-  file in a specific repo that is his own work, that file can be
-  checked then.
+## How to use this material, per Mars 2026-10-31 10:54 CDT
+- Use the rigs, tools, and repos we have to put Cape Jones's pieces
+  on these movements — that is the point, to get past hand-tooling.
+  Structure, movement, timing, poses, and rig mechanics are usable.
+- Do NOT use: another show's character, its name, its logo, or its
+  literal dialogue. That is the only forbidden list, per Mars's
+  standing rule. No lecturing, no invented extra list.
+- Tools/repo inventory is still owed as a real count, not a guess:
+  start from what is verified here — slice_clean.py (clean cuts),
+  Pack1 + cut limbs, assemble_tpose_default.py, locked v8 pieces —
+  then inventory the other tools and repos Mars named (including
+  Toon Boom workflows and the other repos) file by file, and use
+  what actually fits the Cape Jones rig. If a specific file is
+  needed, name it and pull it then, don't block on a name alone.
 
 ## What I WILL do, in order, from these examples
-1. Finish v8 repo lock first (uploading now, separate branch).
-2. Push this log (descriptions only) in a separate animation PR.
+1. Finish v8 repo lock first (done, PR #276, 88/88 on main).
+2. Push this log in a separate animation PR (done, PR #277, 89/89
+   on main — this correction goes in as the next PR).
 3. Repose tests from v8 pieces only: A-pose, flex, dance groove,
    lounge, punch, jump, arms-crossed, arms-up — on 2s, holds as in
    Batch 1, using cut limbs + Pack1 hands.
