@@ -1,0 +1,219 @@
+{
+  "method": "mask-first swap library",
+  "layer_order": [
+    "head base",
+    "skin mask (gradient inpaint, mouth zone)",
+    "mouth shape",
+    "outline"
+  ],
+  "mouth_zone_fractions": {
+    "x0": 0.235,
+    "x1": 0.825,
+    "y0": 0.595,
+    "y1": 0.815,
+    "centre": [
+      0.5,
+      0.715
+    ]
+  },
+  "head_source": "sliced/Head_Front.png",
+  "scale": 4,
+  "visemes": [
+    {
+      "num": "01",
+      "key": "rest",
+      "label": "rest / Neutral",
+      "toonboom_chart": "X",
+      "head_file": "head-v2-01-rest-20261031.png",
+      "patch_file": "patch-v2-01-rest-20261031.png",
+      "patch_box_4x": [
+        111,
+        409,
+        392,
+        560
+      ]
+    },
+    {
+      "num": "02",
+      "key": "ee",
+      "label": "EE",
+      "toonboom_chart": "C",
+      "head_file": "head-v2-02-ee-20261031.png",
+      "patch_file": "patch-v2-02-ee-20261031.png",
+      "patch_box_4x": [
+        111,
+        409,
+        392,
+        560
+      ]
+    },
+    {
+      "num": "03",
+      "key": "eh",
+      "label": "EH",
+      "toonboom_chart": "C/D",
+      "head_file": "head-v2-03-eh-20261031.png",
+      "patch_file": "patch-v2-03-eh-20261031.png",
+      "patch_box_4x": [
+        111,
+        409,
+        392,
+        560
+      ]
+    },
+    {
+      "num": "04",
+      "key": "ah",
+      "label": "AH",
+      "toonboom_chart": "D",
+      "head_file": "head-v2-04-ah-20261031.png",
+      "patch_file": "patch-v2-04-ah-20261031.png",
+      "patch_box_4x": [
+        111,
+        409,
+        392,
+        560
+      ]
+    },
+    {
+      "num": "05",
+      "key": "oh",
+      "label": "OH",
+      "toonboom_chart": "E",
+      "head_file": "head-v2-05-oh-20261031.png",
+      "patch_file": "patch-v2-05-oh-20261031.png",
+      "patch_box_4x": [
+        111,
+        409,
+        392,
+        560
+      ]
+    },
+    {
+      "num": "06",
+      "key": "oo",
+      "label": "OO",
+      "toonboom_chart": "F",
+      "head_file": "head-v2-06-oo-20261031.png",
+      "patch_file": "patch-v2-06-oo-20261031.png",
+      "patch_box_4x": [
+        111,
+        409,
+        392,
+        560
+      ]
+    },
+    {
+      "num": "07",
+      "key": "mbp",
+      "label": "M/B/P",
+      "toonboom_chart": "A",
+      "head_file": "head-v2-07-mbp-20261031.png",
+      "patch_file": "patch-v2-07-mbp-20261031.png",
+      "patch_box_4x": [
+        111,
+        409,
+        392,
+        560
+      ]
+    },
+    {
+      "num": "08",
+      "key": "fv",
+      "label": "F/V",
+      "toonboom_chart": "G",
+      "head_file": "head-v2-08-fv-20261031.png",
+      "patch_file": "patch-v2-08-fv-20261031.png",
+      "patch_box_4x": [
+        111,
+        409,
+        392,
+        560
+      ]
+    },
+    {
+      "num": "09",
+      "key": "l",
+      "label": "L",
+      "toonboom_chart": "B",
+      "head_file": "head-v2-09-l-20261031.png",
+      "patch_file": "patch-v2-09-l-20261031.png",
+      "patch_box_4x": [
+        111,
+        409,
+        392,
+        560
+      ]
+    },
+    {
+      "num": "10",
+      "key": "sz",
+      "label": "S/Z",
+      "toonboom_chart": "G",
+      "head_file": "head-v2-10-sz-20261031.png",
+      "patch_file": "patch-v2-10-sz-20261031.png",
+      "patch_box_4x": [
+        111,
+        409,
+        392,
+        560
+      ]
+    },
+    {
+      "num": "11",
+      "key": "th",
+      "label": "TH",
+      "toonboom_chart": "B",
+      "head_file": "head-v2-11-th-20261031.png",
+      "patch_file": "patch-v2-11-th-20261031.png",
+      "patch_box_4x": [
+        111,
+        409,
+        392,
+        560
+      ]
+    },
+    {
+      "num": "12",
+      "key": "r",
+      "label": "R",
+      "toonboom_chart": "B",
+      "head_file": "head-v2-12-r-20261031.png",
+      "patch_file": "patch-v2-12-r-20261031.png",
+      "patch_box_4x": [
+        111,
+        409,
+        392,
+        560
+      ]
+    },
+    {
+      "num": "13",
+      "key": "w",
+      "label": "W",
+      "toonboom_chart": "F",
+      "head_file": "head-v2-13-w-20261031.png",
+      "patch_file": "patch-v2-13-w-20261031.png",
+      "patch_box_4x": [
+        111,
+        409,
+        392,
+        560
+      ]
+    },
+    {
+      "num": "14",
+      "key": "gk",
+      "label": "G/K",
+      "toonboom_chart": "B",
+      "head_file": "head-v2-14-gk-20261031.png",
+      "patch_file": "patch-v2-14-gk-20261031.png",
+      "patch_box_4x": [
+        111,
+        409,
+        392,
+        560
+      ]
+    }
+  ]
+}
