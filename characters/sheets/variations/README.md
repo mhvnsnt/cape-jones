@@ -1,11 +1,17 @@
 # Expanded Character Parts & Sheets
 
-Approved expansions of the locked model sheets (05, 07, 08).
+Approved FLA cut pieces and model sheet expansions for Cape Jones.
 
-These start from the existing locked canon and add more variations for hands, arms, heads, expressions, eyes, mouths, capes, and legs while preserving likeness.
+## Current staged assets (2026-10-31)
 
-- 11-expanded-body-parts-limbs-hands.png
-- 12-expanded-expressions-head-eyes-mouths.png
-- 13-expanded-character-parts-capes-legs.png
+- `flying/` — latest generated flying pose sheets (Superman-style, Goku-style, soaring, diving, mixed comic poses)
+- `action/` — recent action and multi-angle pose batches
+- Additional batches to be staged from the full rendered set
 
-Backgrounds removed for cutout/FLA use. Further pieces and isolations to follow.
+All pieces are locked to canon likeness. Backgrounds cut where clean for direct FLA use.
+
+## Status
+
+Images are now staged as real binary files in this directory. Previous note-only state has been corrected.
+
+See NOTE.md for generation log.
