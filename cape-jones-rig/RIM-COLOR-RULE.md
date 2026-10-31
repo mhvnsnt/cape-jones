@@ -59,3 +59,29 @@ that power's colour overrides the grade rim FOR THAT SHOT ONLY.
 - Every future lighting script must take rim from the grade / shot
   spec, never from a hardcoded fixed colour. A script with a fixed
   rim colour fails review.
+
+## DUAL-LIGHT / TERTIARY LEVEL — correction to the above (Mars, 2026-10-31 15:13 CDT)
+The cyan rim is NOT always a bug. It is a bug ONLY in a single-light
+setup where the rim is supposed to match the one key.
+TERTIARY LEVEL (third level of colour grading, after key and fill/bleed):
+- Front light: warm gold, key, from in front of him. Grade gain
+  (1.10, 0.95, 0.70), warm amber rim/bleed on the front-lit side.
+- Back light: cool cyan (0,200,255), from behind him, radiating
+  like god rays. This is a SECOND, named light source, not a
+  mismatched rim. Its rays are a separate volume pass (Level 3
+  atmosphere), and its rim is the back rim.
+- GOD-RAY SETUP (Mars, 15:13 CDT): cyan rays radiating from behind
+  him + different warm gold rays from in front of him. Demo proof:
+  showcase/dual-light-cyan-back-godrays-warm-front-v2-20261031.png
+  (cyan wedges 12 x 30°, blurred 18px, opacity 90/255, centre
+  (560,802); warm gold diagonal beams opacity 70/255, blurred 25px,
+  layered over the back rays, under the character). This PIL version
+  is a DRAFT setup proof only — production god rays are Blender
+  volumetric (separate back volume + front volume passes), not PIL
+  wedges, per the VFX hand-tool stop.
+- A dual-light shot spec MUST name both sources: front key (colour,
+  temperature, direction), back source (colour, temperature,
+  direction, ray type), and which rim belongs to which source.
+  A shot that lists only one source and uses the other source's
+  rim colour is still a mismatch — the difference is the record,
+  not just the colour.
