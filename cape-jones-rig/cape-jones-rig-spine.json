@@ -1,0 +1,241 @@
+{
+  "skeleton": {
+    "hash": "cape-jones-joint-locked-v4",
+    "spine": "3.8",
+    "x": 0,
+    "y": 0
+  },
+  "bones": [
+    {
+      "name": "root",
+      "x": 550,
+      "y": 697,
+      "rotation": 0
+    },
+    {
+      "name": "pelvis",
+      "parent": "root",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "name": "torso",
+      "parent": "pelvis",
+      "x": 0,
+      "y": 280,
+      "length": 303
+    },
+    {
+      "name": "neck",
+      "parent": "torso",
+      "x": 0,
+      "y": 303
+    },
+    {
+      "name": "head",
+      "parent": "neck",
+      "x": 0,
+      "y": 40
+    },
+    {
+      "name": "upperArmL",
+      "parent": "torso",
+      "x": -120,
+      "y": 258,
+      "length": 242,
+      "rotation": 0
+    },
+    {
+      "name": "lowerArmL",
+      "parent": "upperArmL",
+      "x": 0,
+      "y": -242,
+      "length": 219
+    },
+    {
+      "name": "upperArmR",
+      "parent": "torso",
+      "x": 120,
+      "y": 258,
+      "length": 242
+    },
+    {
+      "name": "lowerArmR",
+      "parent": "upperArmR",
+      "x": 0,
+      "y": -242,
+      "length": 219
+    },
+    {
+      "name": "upperLegL",
+      "parent": "pelvis",
+      "x": -55,
+      "y": 43,
+      "length": 271
+    },
+    {
+      "name": "lowerLegL",
+      "parent": "upperLegL",
+      "x": 0,
+      "y": -271,
+      "length": 320
+    },
+    {
+      "name": "upperLegR",
+      "parent": "pelvis",
+      "x": 35,
+      "y": 43,
+      "length": 271
+    },
+    {
+      "name": "lowerLegR",
+      "parent": "upperLegR",
+      "x": 0,
+      "y": -271,
+      "length": 320
+    }
+  ],
+  "slots": [
+    {
+      "name": "capeBack",
+      "bone": "torso",
+      "attachment": "Cape_Back_Main"
+    },
+    {
+      "name": "torsoChest",
+      "bone": "torso",
+      "attachment": "Torso_Chest"
+    },
+    {
+      "name": "pelvisSlot",
+      "bone": "pelvis",
+      "attachment": "Pelvis"
+    },
+    {
+      "name": "headSlot",
+      "bone": "head",
+      "attachment": "Head_Front"
+    },
+    {
+      "name": "upperArmLSlot",
+      "bone": "upperArmL",
+      "attachment": "Arm_Front_Upper"
+    },
+    {
+      "name": "lowerArmLSlot",
+      "bone": "lowerArmL",
+      "attachment": "Arm_Front_Lower"
+    },
+    {
+      "name": "upperArmRSlot",
+      "bone": "upperArmR",
+      "attachment": "Arm_Front_Upper"
+    },
+    {
+      "name": "lowerArmRSlot",
+      "bone": "lowerArmR",
+      "attachment": "Arm_Front_Lower"
+    },
+    {
+      "name": "upperLegLSlot",
+      "bone": "upperLegL",
+      "attachment": "Leg_Front_Upper"
+    },
+    {
+      "name": "lowerLegLSlot",
+      "bone": "lowerLegL",
+      "attachment": "Leg_Front_Lower"
+    },
+    {
+      "name": "upperLegRSlot",
+      "bone": "upperLegR",
+      "attachment": "Leg_Back_Upper"
+    },
+    {
+      "name": "lowerLegRSlot",
+      "bone": "lowerLegR",
+      "attachment": "Leg_Back_Lower"
+    }
+  ],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {}
+    }
+  ],
+  "animations": {
+    "apose": {
+      "bones": {
+        "upperArmL": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": -20
+            }
+          ]
+        },
+        "upperArmR": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 20
+            }
+          ]
+        }
+      }
+    },
+    "jump-tuck": {
+      "bones": {
+        "upperArmL": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": -150
+            }
+          ]
+        },
+        "upperArmR": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 150
+            }
+          ]
+        },
+        "upperLegL": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": -20
+            }
+          ]
+        },
+        "upperLegR": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 20
+            }
+          ]
+        },
+        "lowerLegL": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 45
+            }
+          ]
+        },
+        "lowerLegR": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": -45
+            }
+          ]
+        }
+      }
+    }
+  },
+  "notes": "Angles here are v4 screen angles (0=down, positive=screen-right), converted in the Python rig, not in Spine's y-up rotation. Use joint_locked_rig_v4.py as the reference renderer until a Spine/Rigby import is tested. Attachments are Cape Jones's own sliced pieces, no other show's art."
+}
