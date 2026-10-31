@@ -1,0 +1,71 @@
+{
+  "version": "joint-locked-v3",
+  "date": "2026-10-31",
+  "canvas": [
+    1100,
+    1500
+  ],
+  "shoulder_joints": {
+    "L": [
+      430,
+      445
+    ],
+    "R": [
+      670,
+      445
+    ]
+  },
+  "hip_joints": {
+    "L": [
+      495,
+      760
+    ],
+    "R": [
+      605,
+      760
+    ]
+  },
+  "anchors_unscaled": {
+    "arm_upper_shoulder": [
+      76,
+      30
+    ],
+    "arm_upper_elbow": [
+      76,
+      285
+    ],
+    "arm_lower_elbow": [
+      76,
+      20
+    ],
+    "leg_upper_hip": [
+      77,
+      40
+    ],
+    "leg_upper_knee": [
+      77,
+      325
+    ],
+    "leg_lower_knee": [
+      77,
+      25
+    ]
+  },
+  "lengths_scaled": {
+    "arm_upper": 242.25,
+    "leg_upper": 270.75
+  },
+  "rotation_rule": "end = joint + length * (sin(angle), cos(angle)), angle deg, 0 = straight down, positive = toward screen-right",
+  "layer_order": [
+    "Cape_Back_Main",
+    "legs",
+    "arms",
+    "Pelvis",
+    "Cape_Collar",
+    "Torso_Chest",
+    "Belt_Overlay",
+    "Neck",
+    "Head_Front"
+  ],
+  "note": "Limbs under torso/pelvis, joints inside torso/pelvis, so joints cannot float apart. Torso/pelvis fixed in these tests; if they move, joints move with them."
+}
