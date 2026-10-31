@@ -1,0 +1,92 @@
+{
+  "daylight": {
+    "gain": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "sat": 1.0,
+    "temp": [
+      0.0,
+      0.0
+    ],
+    "note": "Neutral, Rec.709, no shift. Base reference.",
+    "file": "lut-33-daylight.cube",
+    "status": "upgraded 33^3 template, not final approved"
+  },
+  "golden-hour": {
+    "gain": [
+      1.12,
+      1.0,
+      0.78
+    ],
+    "sat": 1.1,
+    "temp": [
+      0.06,
+      -0.06
+    ],
+    "note": "Warm key, gold rim, cool shadow hue separate in compositor.",
+    "file": "lut-33-golden-hour.cube",
+    "status": "upgraded 33^3 template, not final approved"
+  },
+  "night-city": {
+    "gain": [
+      0.82,
+      0.88,
+      1.08
+    ],
+    "sat": 1.05,
+    "temp": [
+      -0.04,
+      0.05
+    ],
+    "note": "Cool blue night, neon pink/cyan rim in compositor, not in LUT.",
+    "file": "lut-33-night-city.cube",
+    "status": "upgraded 33^3 template, not final approved"
+  },
+  "warm-interior": {
+    "gain": [
+      1.1,
+      0.98,
+      0.82
+    ],
+    "sat": 1.02,
+    "temp": [
+      0.05,
+      -0.05
+    ],
+    "note": "Warm lamp, interior key.",
+    "file": "lut-33-warm-interior.cube",
+    "status": "upgraded 33^3 template, not final approved"
+  },
+  "neon-alley": {
+    "gain": [
+      0.95,
+      0.88,
+      1.1
+    ],
+    "sat": 1.18,
+    "temp": [
+      -0.02,
+      0.04
+    ],
+    "note": "Pink/cyan neon, saturated, cool base.",
+    "file": "lut-33-neon-alley.cube",
+    "status": "upgraded 33^3 template, not final approved"
+  },
+  "blue-warehouse": {
+    "gain": [
+      0.9,
+      0.95,
+      1.12
+    ],
+    "sat": 0.95,
+    "temp": [
+      -0.05,
+      0.06
+    ],
+    "note": "Cool blue spotlight, desaturated slightly.",
+    "file": "lut-33-blue-warehouse.cube",
+    "status": "upgraded 33^3 template, not final approved"
+  }
+}
