@@ -5,14 +5,11 @@ Production cutout sheets for the Adobe Animate / Toon Boom style rig.
 ## Set 1 & 2
 Original and alternate modular packs (arms, legs, torso, heads, cape).
 
-## Cape Style Packs (research-based, 2026-10-31)
-- A: Kirby (broad, muscular, shoulder-accentuating)
-- B: McFarlane/Spawn (huge, sharp, geometric)
-- C: Neal Adams / classic Superman (sleek parachute curves)
-- D: Ditko (long, flowing, heavy shadow)
-- E: Batman: The Animated Series (pointed bat-wing edges)
+## Cape Style Packs (A–E)
+Research-based: Kirby, McFarlane/Spawn, Neal Adams, Ditko, BTAS.
 
-Backgrounds cut where clean. Locked to T-pose references.
+## Action Packs (1–10)
+Modular disconnected pieces for punch, flight, JoJo, kick, dive, power stance, run, soaring, combat.
 
 ## Next
-10 action shot FLA cut packs (comic, JoJo, fighting, flying poses).
+10 JoJo-style action FLA cut packs.
