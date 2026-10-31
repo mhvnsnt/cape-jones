@@ -1,0 +1,1 @@
+Approved expansions added. Transparent PNGs prepared for cutout pieces. Hands generated with care for correct finger counts. Additional parts examples included.
