@@ -1,0 +1,80 @@
+{
+  "version": "v8",
+  "date": "2026-10-31",
+  "canvas": [
+    1100,
+    1500
+  ],
+  "locked_file": "assembly-preview-v8-20261031.png",
+  "status": "LOCKED \u2014 Mars 2026-10-31 10:43 CDT, save as default T-pose",
+  "layers_bottom_to_top": [
+    {
+      "piece": "Cape_Back_Main.png",
+      "cx": 550,
+      "top": 410,
+      "scale": 0.95
+    },
+    {
+      "piece": "Leg_Front.png",
+      "cx": 460,
+      "top": 705,
+      "scale": 0.95
+    },
+    {
+      "piece": "Leg_Back_GRAFTED.png",
+      "cx": 640,
+      "top": 705,
+      "scale": 0.95
+    },
+    {
+      "piece": "Arm_Front.png",
+      "cx": 300,
+      "top": 380,
+      "scale": 0.95,
+      "transform": "flip_top_bottom,rotate+90,flip_top_bottom"
+    },
+    {
+      "piece": "Arm_Front.png",
+      "cx": 800,
+      "top": 380,
+      "scale": 0.95,
+      "transform": "rotate+90,flip_top_bottom"
+    },
+    {
+      "piece": "Pelvis.png",
+      "cx": 550,
+      "top": 680,
+      "scale": 0.95
+    },
+    {
+      "piece": "Cape_Collar.png",
+      "cx": 550,
+      "top": 370,
+      "scale": 0.95
+    },
+    {
+      "piece": "Torso_Chest.png",
+      "cx": 550,
+      "top": 400,
+      "scale": 0.95
+    },
+    {
+      "piece": "Belt_Overlay.png",
+      "cx": 550,
+      "top": 670,
+      "scale": 0.95
+    },
+    {
+      "piece": "Neck.png",
+      "cx": 550,
+      "top": 360,
+      "scale": 1.05
+    },
+    {
+      "piece": "Head_Front.png",
+      "cx": 550,
+      "top": 250,
+      "scale": 0.95
+    }
+  ]
+}
