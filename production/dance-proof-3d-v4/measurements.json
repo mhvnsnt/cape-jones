@@ -1,0 +1,70 @@
+{
+ "elbowL": {
+  "min": 30.3,
+  "max": 88.0,
+  "range": 57.7
+ },
+ "elbowR": {
+  "min": 48.5,
+  "max": 89.5,
+  "range": 41.0
+ },
+ "kneeL": {
+  "min": 36.9,
+  "max": 91.1,
+  "range": 54.2
+ },
+ "kneeR": {
+  "min": 32.4,
+  "max": 90.7,
+  "range": 58.3
+ },
+ "ankleL": {
+  "min": 56.0,
+  "max": 132.1,
+  "range": 76.0
+ },
+ "ankleR": {
+  "min": 59.7,
+  "max": 88.9,
+  "range": 29.2
+ },
+ "finger": {
+  "min": 103.5,
+  "max": 160.5,
+  "range": 57.1
+ },
+ "armdirL": {
+  "min_deg_from_horizontal": -76.8,
+  "max_deg_from_horizontal": -39.0,
+  "pct_frames_below_horizontal_15deg": 100.0
+ },
+ "armdirR": {
+  "min_deg_from_horizontal": -69.3,
+  "max_deg_from_horizontal": 30.5,
+  "pct_frames_below_horizontal_15deg": 72.9
+ },
+ "spine_bend_quat_range_deg": 27.1,
+ "chest_quat_range_deg": 31.3,
+ "neck_quat_range_deg": 28.9,
+ "head_quat_range_deg": 36.5,
+ "wrist_quat_range_deg_L": 164.6,
+ "wrist_quat_range_deg_R": 161.6,
+ "pelvis_travel_m": {
+  "x": 0.085,
+  "z_bounce": 0.193
+ },
+ "footL_travel_m": {
+  "x": 0.039,
+  "z_lift": 0.067
+ },
+ "footR_travel_m": {
+  "x": 0.069,
+  "z_lift": 0.065
+ },
+ "cape_tip_travel_m": {
+  "x": 0.456,
+  "y": 0.406,
+  "z": 0.422
+ }
+}
