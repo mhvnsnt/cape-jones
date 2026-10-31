@@ -1,0 +1,59 @@
+{
+  "default_lock": "joint-locked-v6",
+  "date": "2026-10-31",
+  "approved_by": "Mars, 2026-10-31 12:43 CDT: 'that's pretty perfect, save that as the new default lock'",
+  "supersedes": "joint-locked-v5, joint-locked-v4, joint-locked-v3, locked-default-tpose-v8 (T-pose only)",
+  "use_this_for": "all new poses, clips, and animation builds until a newer approved edit replaces it",
+  "joints": {
+    "shoulder": {
+      "arm1_our_left": [
+        430,
+        445
+      ],
+      "arm2_our_right": [
+        670,
+        445
+      ]
+    },
+    "hip": {
+      "leg1_our_left": [
+        470,
+        740
+      ],
+      "leg2_our_right": [
+        615,
+        740
+      ]
+    }
+  },
+  "locked_unchanged": [
+    "Head (550,250)",
+    "Neck (550,360, scale 1.05)",
+    "Torso_Chest (550,400)",
+    "Pelvis (550,680)",
+    "Belt (550,670)",
+    "Cape_Collar (550,370)",
+    "Cape_Back_Main (550,410)"
+  ],
+  "pieces": {
+    "arm1": "Arm_Front (whole) / Arm_Front_Upper+Lower (cut)",
+    "arm2": "Arm_Back (whole) / Arm_Back_Upper+Lower (cut)",
+    "leg1": "Leg_Front_Upper+Lower",
+    "leg2": "Leg_Back_Upper + Leg_Back_Lower-GRAFTED (228 wide, full toe)"
+  },
+  "labels": {
+    "arm1": "our left",
+    "arm2": "our right",
+    "leg1": "our left",
+    "leg2": "our right"
+  },
+  "builder": "joint_locked_rig_v6.py",
+  "clips_included": [
+    "jump",
+    "punch",
+    "dance",
+    "flex",
+    "flying"
+  ],
+  "note": "A version is locked only until a newer approved edit replaces it; then the newest edit becomes the new lock. Superseded versions are DO NOT USE."
+}

@@ -1,0 +1,29 @@
+{
+  "rig": "joint-locked-v6 (frames rendered with v5 rig, joints unchanged except Leg1 hip 470 and Leg2 grafted foot \u2014 frames are v5-rendered, re-render with v6 rig for v6 proof)",
+  "frames": {
+    "dance/dance-01-dance-a.png": "9328d883ea03586c5f830e039a9a204b9f30dbadf49e1c87f0b017444823b55a",
+    "dance/dance-13-dance-b.png": "8c69bea5cc73cc7c0678f7bdad1f1064491e8d59093284d087806ad997a18876",
+    "dance/dance-25-dance-a-repeat.png": "9328d883ea03586c5f830e039a9a204b9f30dbadf49e1c87f0b017444823b55a",
+    "flex/flex-01-apose.png": "7ed52114c06d9feb0d1eaaad97c11a6a13dea7dc0e14253d9d262d1d323db1c7",
+    "flex/flex-07-flex-hold.png": "fcf3d99c16f2e08b8a67021f57c99810d8be52f167ee186fad6411597e691bc3",
+    "flex/flex-31-apose.png": "7ed52114c06d9feb0d1eaaad97c11a6a13dea7dc0e14253d9d262d1d323db1c7",
+    "flying/flying-01-hovering.png": "01fadf3ddc865c9ed46ec44db65882ee1efa20a00a870d27a06a9efeb5aee88d",
+    "flying/flying-13-soaring-arms-out.png": "e19f52dacbcd9f40b300010fb22a6310bbd2ffd5497382064c4abd651e864de6",
+    "flying/flying-25-diving-arms-up.png": "018abc2a8e97000adbf68ea7c1383a1483be6e5975560dedbb71b322af0d0f03",
+    "flying/flying-37-hovering.png": "01fadf3ddc865c9ed46ec44db65882ee1efa20a00a870d27a06a9efeb5aee88d",
+    "jump/jump-01-crouch.png": "b18204672a1d3cf7c7e4c3bf34eddf8627082eae83d8eedcf8688b7ce10c2dad",
+    "jump/jump-07-takeoff-arms-whole-up.png": "4b6768ff24cef765af295e3c2930f1a2cf3b23ef19b7269fec66ac3a4d5cd54c",
+    "jump/jump-13-tuck-in.png": "b88fb563808cb2f4380b6e86aba7b717ee4922425538e52cb56bfbe61e037e8f",
+    "jump/jump-25-land-apose.png": "dd7d26a65046d7a604e82a0945b843cc6c5f828e11a9e928a50479637a7239cb",
+    "punch/punch-01-windup.png": "1ed35ebb0dc9cbbeed64f047d54b20d24b0df346994ca184ee3f258532090893",
+    "punch/punch-07-extend-snap.png": "7af22b024ecd4308f29b548246913f9f21b094644511b0e5bbb45467b2bd4300",
+    "punch/punch-09-impact-hold.png": "7af22b024ecd4308f29b548246913f9f21b094644511b0e5bbb45467b2bd4300",
+    "punch/punch-21-recover-apose.png": "7ed52114c06d9feb0d1eaaad97c11a6a13dea7dc0e14253d9d262d1d323db1c7",
+    "dance-clip.json": "56c81e9186d20d991310cccdfe47a103ea620e5135ea33f851b37831c3cd989c",
+    "flex-clip.json": "2adcd7a470d13416da7ac6d8600dfa7283f3f89fe581780c8bb055674ce0f6fd",
+    "flying-clip.json": "b4730cccba3e59201014f6b2b5aa1c0144c29e410440ee393e2efefac10b0f51",
+    "jump-clip.json": "65e3fc965ad7c5016362671c600d2e8567ce6f87d611d500d5b956f98c711f13",
+    "punch-clip.json": "d0d3c755545fb3c7cbcd8d4de48a2615c020c8b65b4961e3b57366d12499bb41"
+  },
+  "qc": "PENDING until Mars looks at frames"
+}
