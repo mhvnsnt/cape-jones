@@ -1,0 +1,18 @@
+{
+  "version": "shot-spec-templates-v1",
+  "fps": 24,
+  "timing": "normal on 2s, snaps on 1s, holds 6-24 frames",
+  "rig": "joint-locked-v6",
+  "common_fields": ["shot_id", "scene", "camera", "character", "action", "background", "props", "timing_frames", "mouth_viseme", "effects", "qc"],
+  "templates": {
+    "punch": {"camera": "front, static", "character": "Cape Jones, v6 rig", "action": "windup f1 hold6, extend-snap f7 hold2, impact-hold f9 hold12, recover f21 hold6", "clip": "clips/punch-clip.json", "background": "pick from characters/sheets/backgrounds/", "effects": "impact burst, optional", "qc": "PENDING until Mars looks"},
+    "walk": {"camera": "front, static (front-view step) OR side when side pieces land", "character": "Cape Jones, v6 rig", "action": "contact f1, passing f13, contact f25, passing f37, holds 12 each", "clip": "clips/walk-clip.json", "note": "Front-view walk is stepping out/in. True forward walk needs side-view pieces, not yet built.", "qc": "PENDING until Mars looks"},
+    "flex": {"camera": "front, static", "action": "apose f1 hold6, flex-hold f7 hold24, apose f31 hold6", "clip": "clips/flex-clip.json", "qc": "PENDING until Mars looks"},
+    "jump": {"camera": "front, static", "action": "crouch f1 hold6, takeoff f7 hold2, tuck f13 hold12, land f25 hold6", "clip": "clips/jump-clip.json", "qc": "PENDING until Mars looks"},
+    "dance": {"camera": "front, static", "action": "dance-a f1 hold12, dance-b f13 hold12, dance-a f25 hold12", "clip": "clips/dance-clip.json", "qc": "PENDING until Mars looks"},
+    "flying": {"camera": "front, static", "action": "hovering f1 hold12, soaring-arms-out f13 hold12, diving-arms-up f25 hold12, hovering f37 hold12", "clip": "clips/flying-clip.json", "note": "Forward-flight fists-toward-camera needs foreshortened forearm, not yet built.", "qc": "PENDING until Mars looks"},
+    "dialogue": {"camera": "front, static", "action": "lip sync from viseme chart, on 2s normal / on 1s snaps", "viseme_chart": "NOT yet sliced — charts staged on branch (viseme-charts/ 2 files + root viseme matrix), pieces 0/14 sliced", "qc": "PENDING until Mars looks"},
+    "lounge": {"camera": "front, static", "action": "seated approximation from v6 rig (front view only)", "note": "True recline needs a reclined torso piece, not yet built. Lounge packs on branch are pose sheets, not rig pieces.", "qc": "PENDING until Mars looks"}
+  },
+  "qc_checklist": ["frames reopened and counted", "pose matches keyframe label", "SHA-256 recorded in frame-proof-manifest.json", "Mars looked at frames", "no other show's character/name/logo/dialogue in frame"]
+}
