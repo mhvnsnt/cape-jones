@@ -76,3 +76,10 @@ Our rig wires into that pipeline as:
 - FLA path: JSFL builds .fla symbols from the same pieces, with
   pivots at v4 joints. Timeline JSFL from clip JSON is still the
   remaining FLA piece, after the Spine/Synfig rig template above.
+
+
+## Update 2026-10-31 — v6 default lock
+- Fully wired now: 5/7 = 71% (rig hierarchy v6, clean cuts, pose library v6, timeline/keyframes + 5 clips rendered, technique library index).
+- Partly wired: 2/7 = 29% — Symbol library + JSFL (timeline JSFL written, NOT run in Animate here), Shot spec + proof (spec + SHA manifest written, QC pending until Mars looks).
+- Methods pulled, systems only: METHODS-PULLED-20261031.md (5 method docs, 17,439 bytes, no characters).
+- NOT 100% yet, plainly: JSFL needs an Animate run, per-clip proof needs Mars's eyes, Synfig/Rigby2D bone template needs a test import of cape-jones-rig-spine.json.
