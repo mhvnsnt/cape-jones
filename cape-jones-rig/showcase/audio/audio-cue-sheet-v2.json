@@ -1,0 +1,62 @@
+[
+  {
+    "timecode": "00:00:00:00",
+    "shot": "punch-impact",
+    "cue": "Punch impact",
+    "in": "00:00:00:00",
+    "out": "00:00:00:14",
+    "duration_sec": 0.6,
+    "level_db": -6,
+    "lufs_target": -14,
+    "fade": "out 4f",
+    "status": "DEMO ONLY - synthesized tone/noise, not recorded audio"
+  },
+  {
+    "timecode": "00:00:01:02",
+    "shot": "fighting-pose",
+    "cue": "Fighting stance whoosh",
+    "in": "00:00:01:02",
+    "out": "00:00:01:14",
+    "duration_sec": 0.5,
+    "level_db": -12,
+    "lufs_target": -14,
+    "fade": "in/out 3f",
+    "status": "DEMO ONLY"
+  },
+  {
+    "timecode": "00:00:02:02",
+    "shot": "walk",
+    "cue": "Walk steps x2",
+    "in": "00:00:02:02",
+    "out": "00:00:02:19",
+    "duration_sec": 0.68,
+    "level_db": -18,
+    "lufs_target": -14,
+    "fade": "none",
+    "status": "DEMO ONLY"
+  },
+  {
+    "timecode": "00:00:03:07",
+    "shot": "jump",
+    "cue": "Jump rise",
+    "in": "00:00:03:07",
+    "out": "00:00:03:21",
+    "duration_sec": 0.6,
+    "level_db": -12,
+    "lufs_target": -14,
+    "fade": "out 4f",
+    "status": "DEMO ONLY"
+  },
+  {
+    "timecode": "00:00:04:09",
+    "shot": "dance",
+    "cue": "Dance beat x4",
+    "in": "00:00:04:09",
+    "out": "00:00:06:00",
+    "duration_sec": 1.6,
+    "level_db": -10,
+    "lufs_target": -14,
+    "fade": "none",
+    "status": "DEMO ONLY"
+  }
+]
