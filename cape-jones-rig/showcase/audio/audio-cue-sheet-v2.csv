@@ -1,0 +1,6 @@
+timecode,shot,cue,in,out,duration_sec,level_db,lufs_target,fade,status
+00:00:00:00,punch-impact,Punch impact,00:00:00:00,00:00:00:14,0.6,-6,-14,out 4f,"DEMO ONLY - synthesized tone/noise, not recorded audio"
+00:00:01:02,fighting-pose,Fighting stance whoosh,00:00:01:02,00:00:01:14,0.5,-12,-14,in/out 3f,DEMO ONLY
+00:00:02:02,walk,Walk steps x2,00:00:02:02,00:00:02:19,0.68,-18,-14,none,DEMO ONLY
+00:00:03:07,jump,Jump rise,00:00:03:07,00:00:03:21,0.6,-12,-14,out 4f,DEMO ONLY
+00:00:04:09,dance,Dance beat x4,00:00:04:09,00:00:06:00,1.6,-10,-14,none,DEMO ONLY
