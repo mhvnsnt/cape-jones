@@ -1,0 +1,56 @@
+{
+ "cfg": 5,
+ "negative": "3d render, cgi, photorealistic, live action, different character, costume change, color change, extra limbs, missing limbs, deformed hands, morphing face, flicker, warping background, moving camera, holes in cape, torn cape, split cape, text, watermark",
+ "prompt": "Flat 2D hand-drawn cartoon animation, exactly the character from the reference sheets: a superhero in a white suit with a purple cowl and a long dark cape, dancing in place with an energetic repetitive comedic dance. He steps side to side, knees bending, feet lifting off the ground and planting, hips shifting weight, arms swinging wide in big gestures, a small hop, head tilting and turning, his cape swinging and settling as ONE solid piece with no holes. Bold black outlines, flat colors, drawn cartoon style. The background, scenery and lighting stay exactly as in the source video; only the character is redrawn cleanly.",
+ "reference": "ref.png",
+ "sections": [
+  {
+   "id": "sec0_day",
+   "index": 0,
+   "mask": "sec0_mask.mp4",
+   "video": "sec0.mp4"
+  },
+  {
+   "id": "sec1_magenta",
+   "index": 1,
+   "mask": "sec1_mask.mp4",
+   "video": "sec1.mp4"
+  },
+  {
+   "id": "sec2_cyan",
+   "index": 2,
+   "mask": "sec2_mask.mp4",
+   "video": "sec2.mp4"
+  },
+  {
+   "id": "sec3_green",
+   "index": 3,
+   "mask": "sec3_mask.mp4",
+   "video": "sec3.mp4"
+  },
+  {
+   "id": "sec4_dusk",
+   "index": 4,
+   "mask": "sec4_mask.mp4",
+   "video": "sec4.mp4"
+  },
+  {
+   "id": "sec5_night",
+   "index": 5,
+   "mask": "sec5_mask.mp4",
+   "video": "sec5.mp4"
+  },
+  {
+   "id": "sec6_dayflip",
+   "index": 6,
+   "mask": "sec6_mask.mp4",
+   "video": "sec6.mp4"
+  }
+ ],
+ "steps": 30,
+ "references": [
+  "ref.png",
+  "ref_hero.png",
+  "ref_head.png"
+ ]
+}
