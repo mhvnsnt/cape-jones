@@ -14,7 +14,7 @@ Source: PR #272 (branch `feature/cj-dance-proof-3d-v3-20261030`), built by
 | File | What it is |
 |---|---|
 | `cj-dance-3d-v3.blend` | The full v3 scene exactly as rendered, with the dance inside it (see below). 20,423,101 bytes. |
-| `cj-dance-3d-v3.bvh` | Portable motion export of the dance, frames 1–1824 at 24 fps. Retarget onto any rig. 4,228,064 bytes. |
+| `cj-dance-3d-v3.bvh` | Portable motion export of the dance, frames 1–1824 at 24 fps. Retarget onto any rig. 9,297,190 bytes. |
 
 ## What's inside the .blend
 
