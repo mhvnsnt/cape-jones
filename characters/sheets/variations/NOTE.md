@@ -1,3 +1,3 @@
-Approved expansions added. Transparent PNGs prepared for cutout pieces where clean.
-Flying pose sheets and action batches staged as binary files on 2026-10-31.
-Hands generated with care for correct finger counts. Pelvis included on complete sets.
+2026-10-31: Locked T-pose front references staged in references/.
+Flying pose sheets and action batches previously staged as binary files.
+Approved expansions. Hands generated with care for correct finger counts. Pelvis included on complete sets.
