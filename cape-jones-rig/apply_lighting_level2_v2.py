@@ -16,7 +16,17 @@ Upgrades over v1 (which had a squashed-silhouette blob shadow, a flat
    lit side only, blended 50% toward the rim colour, fading inward.
    Base art is copied untouched; every light is a separate layer on top.
 6. Feathered silhouette edge (1px) so the rim does not look jagged.
-Usage: python3 apply_lighting_level2_v2.py PLATE.PNG OUTDIR
+7. RIM-COLOR RULE (Mars, 2026-10-31 15:02 CDT): rim colour MUST follow
+   the key / LUT colour — same hue family, not a fixed colour. The old
+   v2 used cyan (0,200,255) under a warm golden-hour grade, which is a
+   hue mismatch and is now a bug, not a style choice. Colored golden-hour
+   rim is warm amber (255,180,80), same family as bleed (255,120,0).
+   Non-colored rim is neutral white, matching its neutral grade.
+   EXCEPTION — power override: if a shot uses a specific power that
+   calls for a specific rim colour, that power's colour overrides the
+   grade rim for that shot ONLY, and must be recorded in the shot spec
+   (power name + rim + bleed). Default rim never changes silently.
+Usage: python3 apply_lighting_level2_v2.py PLATE.PNG OUTDIR [--power-rim R,G,B --power-name NAME]
 """
 import sys, os
 import numpy as np
@@ -24,6 +34,13 @@ from PIL import Image, ImageFilter, ImageDraw, ImageChops
 
 def main():
     plate_path, outdir = sys.argv[1], sys.argv[2]
+    power_rim = None; power_name = None
+    args = sys.argv[3:]
+    for i, a in enumerate(args):
+        if a == "--power-rim" and i + 1 < len(args):
+            power_rim = np.array([int(v) for v in args[i+1].split(",")], dtype=float)
+        if a == "--power-name" and i + 1 < len(args):
+            power_name = args[i+1]
     os.makedirs(outdir, exist_ok=True)
     plate = Image.open(plate_path).convert("RGBA")
     a = np.array(plate)
@@ -42,7 +59,9 @@ def main():
     gx = np.linspace(1.0, 0.3, W)[None, :].repeat(H, axis=0)
     for colored in (True, False):
         tag = "colored" if colored else "noncolored"
-        rim_col = np.array([0, 200, 255], dtype=float) if colored else np.array([255, 255, 255], dtype=float)
+        rim_col = np.array([255, 180, 80], dtype=float) if colored else np.array([255, 255, 255], dtype=float)
+        if power_rim is not None:
+            rim_col = power_rim.copy()  # power override: this shot only, recorded in spec
         bleed_col = np.array([255, 120, 0], dtype=float) if colored else np.array([255, 255, 255], dtype=float)
         gain = np.array([1.10, 0.95, 0.70]) if colored else np.array([1.0, 1.0, 1.0])
         # 1. graded base
@@ -104,6 +123,12 @@ def main():
         for nm, img in [("shadow", shadow), ("rim", rim_img), ("bleed", bleed_img), ("internal", internal)]:
             img.save(os.path.join(outdir, f"pass-{nm}-{tag}.png"))
         print(f"level-2-v2-{tag} done, rim max {rim_a.max():.2f}, bleed max {bleed_a.max():.2f}")
+    import json as _json
+    _json.dump({"rule": "rim follows key/LUT hue family; power override is shot-only",
+                "colored": {"gain": [1.10, 0.95, 0.70], "rim": [255, 180, 80], "bleed": [255, 120, 0]},
+                "noncolored": {"gain": [1.0, 1.0, 1.0], "rim": [255, 255, 255], "bleed": [255, 255, 255]},
+                "power_override": {"name": power_name, "rim": power_rim.tolist() if power_rim is not None else None}},
+               open(os.path.join(outdir, "level-2-v2-colors.json"), "w"), indent=2)
 
 if __name__ == "__main__":
     main()
