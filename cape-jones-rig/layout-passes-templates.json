@@ -1,0 +1,7 @@
+{"version": "layout-passes-templates-v1", "scenes": [
+ {"scene": "room", "camera": "front, static, safe areas marked", "staging": "character centre, props from characters/sheets/props/", "background": "pick from characters/sheets/backgrounds/", "layout_fields": ["camera", "character_position", "prop_positions", "background_placement", "foreground_layer"]},
+ {"scene": "flying", "camera": "front, static", "staging": "character soaring/diving, cape trailing", "background": "sky background, line-art version left", "layout_fields": ["camera", "character_position", "cape_state", "background_placement"]},
+ {"scene": "rooftop", "camera": "front, static", "staging": "character on rooftop edge", "background": "rooftop background", "layout_fields": ["camera", "character_position", "background_placement", "foreground_layer"]},
+ {"scene": "alley", "camera": "front, static", "staging": "character centre, foreground dressing", "background": "alley background", "layout_fields": ["camera", "character_position", "background_placement", "foreground_layer"]},
+ {"scene": "desk", "camera": "front, static", "staging": "character at desk, props scaled from prop-scale-sheets", "background": "desk background", "layout_fields": ["camera", "character_position", "prop_positions", "background_placement"]}
+], "status": "templates only, 0/5 layout passes drawn"}
