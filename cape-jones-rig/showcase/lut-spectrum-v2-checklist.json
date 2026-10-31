@@ -1,186 +1,194 @@
 [
-  {
-    "name": "red-orange-normal",
-    "gain": [
-      1.25,
-      0.85,
-      0.65
-    ],
-    "deep": false,
-    "cube": "luts-spectrum-v2/lut-33-red-orange-normal.cube",
-    "status": "expanded v2, not yet approved"
-  },
-  {
-    "name": "red-orange-deep",
-    "gain": [
-      1.1500000000000001,
-      0.782,
-      0.5980000000000001
-    ],
-    "deep": true,
-    "cube": "luts-spectrum-v2/lut-33-red-orange-deep.cube",
-    "status": "expanded v2, not yet approved"
-  },
-  {
-    "name": "orange-yellow-normal",
-    "gain": [
-      1.22,
-      1.05,
-      0.65
-    ],
-    "deep": false,
-    "cube": "luts-spectrum-v2/lut-33-orange-yellow-normal.cube",
-    "status": "expanded v2, not yet approved"
-  },
-  {
-    "name": "orange-yellow-deep",
-    "gain": [
-      1.1224,
-      0.9660000000000001,
-      0.5980000000000001
-    ],
-    "deep": true,
-    "cube": "luts-spectrum-v2/lut-33-orange-yellow-deep.cube",
-    "status": "expanded v2, not yet approved"
-  },
-  {
-    "name": "yellow-green-normal",
-    "gain": [
-      0.95,
-      1.2,
-      0.7
-    ],
-    "deep": false,
-    "cube": "luts-spectrum-v2/lut-33-yellow-green-normal.cube",
-    "status": "expanded v2, not yet approved"
-  },
-  {
-    "name": "yellow-green-deep",
-    "gain": [
-      0.874,
-      1.104,
-      0.644
-    ],
-    "deep": true,
-    "cube": "luts-spectrum-v2/lut-33-yellow-green-deep.cube",
-    "status": "expanded v2, not yet approved"
-  },
-  {
-    "name": "green-cyan-normal",
-    "gain": [
-      0.7,
-      1.15,
-      1.05
-    ],
-    "deep": false,
-    "cube": "luts-spectrum-v2/lut-33-green-cyan-normal.cube",
-    "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
-    "approved_date": "2026-10-31"
-  },
-  {
-    "name": "green-cyan-deep",
-    "gain": [
-      0.644,
-      1.058,
-      0.9660000000000001
-    ],
-    "deep": true,
-    "cube": "luts-spectrum-v2/lut-33-green-cyan-deep.cube",
-    "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
-    "approved_date": "2026-10-31"
-  },
-  {
-    "name": "cyan-blue-normal",
-    "gain": [
-      0.7,
-      1.0,
-      1.25
-    ],
-    "deep": false,
-    "cube": "luts-spectrum-v2/lut-33-cyan-blue-normal.cube",
-    "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
-    "approved_date": "2026-10-31"
-  },
-  {
-    "name": "cyan-blue-deep",
-    "gain": [
-      0.644,
-      0.92,
-      1.1500000000000001
-    ],
-    "deep": true,
-    "cube": "luts-spectrum-v2/lut-33-cyan-blue-deep.cube",
-    "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
-    "approved_date": "2026-10-31"
-  },
-  {
-    "name": "blue-violet-normal",
-    "gain": [
-      0.85,
-      0.8,
-      1.25
-    ],
-    "deep": false,
-    "cube": "luts-spectrum-v2/lut-33-blue-violet-normal.cube",
-    "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
-    "approved_date": "2026-10-31"
-  },
-  {
-    "name": "blue-violet-deep",
-    "gain": [
-      0.782,
-      0.7360000000000001,
-      1.1500000000000001
-    ],
-    "deep": true,
-    "cube": "luts-spectrum-v2/lut-33-blue-violet-deep.cube",
-    "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
-    "approved_date": "2026-10-31"
-  },
-  {
-    "name": "violet-magenta-normal",
-    "gain": [
-      1.05,
-      0.75,
-      1.2
-    ],
-    "deep": false,
-    "cube": "luts-spectrum-v2/lut-33-violet-magenta-normal.cube",
-    "status": "expanded v2, not yet approved"
-  },
-  {
-    "name": "violet-magenta-deep",
-    "gain": [
-      0.9660000000000001,
-      0.6900000000000001,
-      1.104
-    ],
-    "deep": true,
-    "cube": "luts-spectrum-v2/lut-33-violet-magenta-deep.cube",
-    "status": "expanded v2, not yet approved"
-  },
-  {
-    "name": "magenta-rose-normal",
-    "gain": [
-      1.25,
-      0.7,
-      0.9
-    ],
-    "deep": false,
-    "cube": "luts-spectrum-v2/lut-33-magenta-rose-normal.cube",
-    "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
-    "approved_date": "2026-10-31"
-  },
-  {
-    "name": "magenta-rose-deep",
-    "gain": [
-      1.1500000000000001,
-      0.644,
-      0.8280000000000001
-    ],
-    "deep": true,
-    "cube": "luts-spectrum-v2/lut-33-magenta-rose-deep.cube",
-    "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
-    "approved_date": "2026-10-31"
-  }
+ {
+  "name": "red-orange-normal",
+  "gain": [
+   1.25,
+   0.85,
+   0.65
+  ],
+  "deep": false,
+  "cube": "luts-spectrum-v2/lut-33-red-orange-normal.cube",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "red-orange-deep",
+  "gain": [
+   1.1500000000000001,
+   0.782,
+   0.5980000000000001
+  ],
+  "deep": true,
+  "cube": "luts-spectrum-v2/lut-33-red-orange-deep.cube",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "orange-yellow-normal",
+  "gain": [
+   1.22,
+   1.05,
+   0.65
+  ],
+  "deep": false,
+  "cube": "luts-spectrum-v2/lut-33-orange-yellow-normal.cube",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "orange-yellow-deep",
+  "gain": [
+   1.1224,
+   0.9660000000000001,
+   0.5980000000000001
+  ],
+  "deep": true,
+  "cube": "luts-spectrum-v2/lut-33-orange-yellow-deep.cube",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "yellow-green-normal",
+  "gain": [
+   0.95,
+   1.2,
+   0.7
+  ],
+  "deep": false,
+  "cube": "luts-spectrum-v2/lut-33-yellow-green-normal.cube",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "yellow-green-deep",
+  "gain": [
+   0.874,
+   1.104,
+   0.644
+  ],
+  "deep": true,
+  "cube": "luts-spectrum-v2/lut-33-yellow-green-deep.cube",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "green-cyan-normal",
+  "gain": [
+   0.7,
+   1.15,
+   1.05
+  ],
+  "deep": false,
+  "cube": "luts-spectrum-v2/lut-33-green-cyan-normal.cube",
+  "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "green-cyan-deep",
+  "gain": [
+   0.644,
+   1.058,
+   0.9660000000000001
+  ],
+  "deep": true,
+  "cube": "luts-spectrum-v2/lut-33-green-cyan-deep.cube",
+  "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "cyan-blue-normal",
+  "gain": [
+   0.7,
+   1.0,
+   1.25
+  ],
+  "deep": false,
+  "cube": "luts-spectrum-v2/lut-33-cyan-blue-normal.cube",
+  "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "cyan-blue-deep",
+  "gain": [
+   0.644,
+   0.92,
+   1.1500000000000001
+  ],
+  "deep": true,
+  "cube": "luts-spectrum-v2/lut-33-cyan-blue-deep.cube",
+  "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "blue-violet-normal",
+  "gain": [
+   0.85,
+   0.8,
+   1.25
+  ],
+  "deep": false,
+  "cube": "luts-spectrum-v2/lut-33-blue-violet-normal.cube",
+  "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "blue-violet-deep",
+  "gain": [
+   0.782,
+   0.7360000000000001,
+   1.1500000000000001
+  ],
+  "deep": true,
+  "cube": "luts-spectrum-v2/lut-33-blue-violet-deep.cube",
+  "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "violet-magenta-normal",
+  "gain": [
+   1.05,
+   0.75,
+   1.2
+  ],
+  "deep": false,
+  "cube": "luts-spectrum-v2/lut-33-violet-magenta-normal.cube",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "violet-magenta-deep",
+  "gain": [
+   0.9660000000000001,
+   0.6900000000000001,
+   1.104
+  ],
+  "deep": true,
+  "cube": "luts-spectrum-v2/lut-33-violet-magenta-deep.cube",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "magenta-rose-normal",
+  "gain": [
+   1.25,
+   0.7,
+   0.9
+  ],
+  "deep": false,
+  "cube": "luts-spectrum-v2/lut-33-magenta-rose-normal.cube",
+  "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "magenta-rose-deep",
+  "gain": [
+   1.1500000000000001,
+   0.644,
+   0.8280000000000001
+  ],
+  "deep": true,
+  "cube": "luts-spectrum-v2/lut-33-magenta-rose-deep.cube",
+  "status": "APPROVED by Mars 2026-10-31 14:54 CDT - spectrum v2 sheet 1/2, all 8 on that sheet approved",
+  "approved_date": "2026-10-31"
+ }
 ]
