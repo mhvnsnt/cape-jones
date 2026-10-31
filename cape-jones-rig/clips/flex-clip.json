@@ -1,0 +1,53 @@
+{
+  "clip": "flex",
+  "fps": 24,
+  "rig": "joint-locked-v5",
+  "angle_rule": "0=down, positive=screen-right, end=joint+length*(sin,cos)",
+  "labels": {
+    "arm1": "our left, Arm_Front, locked good",
+    "arm2": "our right, Arm_Back, fixed v5",
+    "leg1": "our left, Leg_Front",
+    "leg2": "our right, Leg_Back"
+  },
+  "keyframes": [
+    {
+      "frame": 1,
+      "hold": 6,
+      "pose": "apose",
+      "arm1_upper": -20,
+      "arm1_lower": -20,
+      "arm2_upper": 20,
+      "arm2_lower": 20,
+      "leg1_upper": -10,
+      "leg1_lower": 10,
+      "leg2_upper": 10,
+      "leg2_lower": -10
+    },
+    {
+      "frame": 7,
+      "hold": 24,
+      "pose": "flex-hold",
+      "arm1_upper": -20,
+      "arm1_lower": 160,
+      "arm2_upper": 20,
+      "arm2_lower": -160,
+      "leg1_upper": -10,
+      "leg1_lower": 10,
+      "leg2_upper": 10,
+      "leg2_lower": -10
+    },
+    {
+      "frame": 31,
+      "hold": 6,
+      "pose": "apose",
+      "arm1_upper": -20,
+      "arm1_lower": -20,
+      "arm2_upper": 20,
+      "arm2_lower": 20,
+      "leg1_upper": -10,
+      "leg1_lower": 10,
+      "leg2_upper": 10,
+      "leg2_lower": -10
+    }
+  ]
+}
