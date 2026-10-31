@@ -1,0 +1,42 @@
+[
+  {
+    "file": "eye-normal-v4-01-neutral-20261031.png",
+    "expression": "neutral",
+    "source": "Robin Day.jpg near eye, Teen Titans complete archive, verbatim mask",
+    "transform": "scale_x=1.0 scale_y=1.0 shear=0.0 rot=0 (pulled mask only, no drawn shape)",
+    "dark_end": "image-LEFT x38-79, Arm1 side (v3-confirmed, NOT flipped back)",
+    "black_pixels_in_strip": 0
+  },
+  {
+    "file": "eye-normal-v4-02-determined-focused-20261031.png",
+    "expression": "determined-focused",
+    "source": "Robin Day.jpg near eye, Teen Titans complete archive, verbatim mask",
+    "transform": "scale_x=1.0 scale_y=0.85 shear=-0.1 rot=-5 (pulled mask only, no drawn shape)",
+    "dark_end": "image-LEFT x38-79, Arm1 side (v3-confirmed, NOT flipped back)",
+    "black_pixels_in_strip": 0
+  },
+  {
+    "file": "eye-normal-v4-03-angry-scowling-20261031.png",
+    "expression": "angry-scowling",
+    "source": "Robin Day.jpg near eye, Teen Titans complete archive, verbatim mask",
+    "transform": "scale_x=1.0 scale_y=0.65 shear=-0.2 rot=-12 (pulled mask only, no drawn shape)",
+    "dark_end": "image-LEFT x38-79, Arm1 side (v3-confirmed, NOT flipped back)",
+    "black_pixels_in_strip": 0
+  },
+  {
+    "file": "eye-normal-v4-04-surprised-alarmed-20261031.png",
+    "expression": "surprised-alarmed",
+    "source": "Robin Day.jpg near eye, Teen Titans complete archive, verbatim mask",
+    "transform": "scale_x=1.0 scale_y=1.2 shear=0.0 rot=0 (pulled mask only, no drawn shape)",
+    "dark_end": "image-LEFT x38-79, Arm1 side (v3-confirmed, NOT flipped back)",
+    "black_pixels_in_strip": 0
+  },
+  {
+    "file": "eye-normal-v4-05-concentrating-20261031.png",
+    "expression": "concentrating",
+    "source": "Robin Day.jpg near eye, Teen Titans complete archive, verbatim mask",
+    "transform": "scale_x=1.0 scale_y=0.75 shear=-0.14 rot=-8 (pulled mask only, no drawn shape)",
+    "dark_end": "image-LEFT x38-79, Arm1 side (v3-confirmed, NOT flipped back)",
+    "black_pixels_in_strip": 0
+  }
+]
