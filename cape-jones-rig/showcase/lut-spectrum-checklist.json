@@ -1,272 +1,290 @@
 [
-  {
-    "name": "red-normal",
-    "gain": [
-      1.25,
-      0.75,
-      0.75
-    ],
-    "deep": false,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/red-normal.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "red-deep",
-    "gain": [
-      1.25,
-      0.75,
-      0.75
-    ],
-    "deep": true,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/red-deep.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "orange-normal",
-    "gain": [
-      1.25,
-      0.95,
-      0.65
-    ],
-    "deep": false,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/orange-normal.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "orange-deep",
-    "gain": [
-      1.25,
-      0.95,
-      0.65
-    ],
-    "deep": true,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/orange-deep.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "yellow-normal",
-    "gain": [
-      1.2,
-      1.15,
-      0.7
-    ],
-    "deep": false,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/yellow-normal.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "yellow-deep",
-    "gain": [
-      1.2,
-      1.15,
-      0.7
-    ],
-    "deep": true,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/yellow-deep.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "green-normal",
-    "gain": [
-      0.75,
-      1.2,
-      0.8
-    ],
-    "deep": false,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/green-normal.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "green-deep",
-    "gain": [
-      0.75,
-      1.2,
-      0.8
-    ],
-    "deep": true,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/green-deep.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "teal-normal",
-    "gain": [
-      0.7,
-      1.1,
-      1.05
-    ],
-    "deep": false,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/teal-normal.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "teal-deep",
-    "gain": [
-      0.7,
-      1.1,
-      1.05
-    ],
-    "deep": true,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/teal-deep.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "cyan-normal",
-    "gain": [
-      0.7,
-      1.05,
-      1.25
-    ],
-    "deep": false,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/cyan-normal.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "cyan-deep",
-    "gain": [
-      0.7,
-      1.05,
-      1.25
-    ],
-    "deep": true,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/cyan-deep.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "blue-normal",
-    "gain": [
-      0.75,
-      0.9,
-      1.25
-    ],
-    "deep": false,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/blue-normal.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "blue-deep",
-    "gain": [
-      0.75,
-      0.9,
-      1.25
-    ],
-    "deep": true,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/blue-deep.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "indigo-normal",
-    "gain": [
-      0.85,
-      0.75,
-      1.25
-    ],
-    "deep": false,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/indigo-normal.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "indigo-deep",
-    "gain": [
-      0.85,
-      0.75,
-      1.25
-    ],
-    "deep": true,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/indigo-deep.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "purple-normal",
-    "gain": [
-      1.05,
-      0.75,
-      1.25
-    ],
-    "deep": false,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/purple-normal.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "purple-deep",
-    "gain": [
-      1.05,
-      0.75,
-      1.25
-    ],
-    "deep": true,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/purple-deep.jpg",
-    "status": "expanded, not yet approved"
-  },
-  {
-    "name": "magenta-normal",
-    "gain": [
-      1.25,
-      0.75,
-      1.15
-    ],
-    "deep": false,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/magenta-normal.jpg",
-    "status": "APPROVED by Mars 2026-10-31 14:46 CDT - spectrum sheet 4/4, all 6 on that sheet approved",
-    "approved_date": "2026-10-31"
-  },
-  {
-    "name": "magenta-deep",
-    "gain": [
-      1.25,
-      0.75,
-      1.15
-    ],
-    "deep": true,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/magenta-deep.jpg",
-    "status": "APPROVED by Mars 2026-10-31 14:46 CDT - spectrum sheet 4/4, all 6 on that sheet approved",
-    "approved_date": "2026-10-31"
-  },
-  {
-    "name": "pink-normal",
-    "gain": [
-      1.25,
-      0.85,
-      1.05
-    ],
-    "deep": false,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/pink-normal.jpg",
-    "status": "APPROVED by Mars 2026-10-31 14:46 CDT - spectrum sheet 4/4, all 6 on that sheet approved",
-    "approved_date": "2026-10-31"
-  },
-  {
-    "name": "pink-deep",
-    "gain": [
-      1.25,
-      0.85,
-      1.05
-    ],
-    "deep": true,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/pink-deep.jpg",
-    "status": "APPROVED by Mars 2026-10-31 14:46 CDT - spectrum sheet 4/4, all 6 on that sheet approved",
-    "approved_date": "2026-10-31"
-  },
-  {
-    "name": "lime-normal",
-    "gain": [
-      0.95,
-      1.25,
-      0.7
-    ],
-    "deep": false,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/lime-normal.jpg",
-    "status": "APPROVED by Mars 2026-10-31 14:46 CDT - spectrum sheet 4/4, all 6 on that sheet approved",
-    "approved_date": "2026-10-31"
-  },
-  {
-    "name": "lime-deep",
-    "gain": [
-      0.95,
-      1.25,
-      0.7
-    ],
-    "deep": true,
-    "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/lime-deep.jpg",
-    "status": "APPROVED by Mars 2026-10-31 14:46 CDT - spectrum sheet 4/4, all 6 on that sheet approved",
-    "approved_date": "2026-10-31"
-  }
+ {
+  "name": "red-normal",
+  "gain": [
+   1.25,
+   0.75,
+   0.75
+  ],
+  "deep": false,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/red-normal.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "red-deep",
+  "gain": [
+   1.25,
+   0.75,
+   0.75
+  ],
+  "deep": true,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/red-deep.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "orange-normal",
+  "gain": [
+   1.25,
+   0.95,
+   0.65
+  ],
+  "deep": false,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/orange-normal.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "orange-deep",
+  "gain": [
+   1.25,
+   0.95,
+   0.65
+  ],
+  "deep": true,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/orange-deep.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "yellow-normal",
+  "gain": [
+   1.2,
+   1.15,
+   0.7
+  ],
+  "deep": false,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/yellow-normal.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "yellow-deep",
+  "gain": [
+   1.2,
+   1.15,
+   0.7
+  ],
+  "deep": true,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/yellow-deep.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "green-normal",
+  "gain": [
+   0.75,
+   1.2,
+   0.8
+  ],
+  "deep": false,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/green-normal.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "green-deep",
+  "gain": [
+   0.75,
+   1.2,
+   0.8
+  ],
+  "deep": true,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/green-deep.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "teal-normal",
+  "gain": [
+   0.7,
+   1.1,
+   1.05
+  ],
+  "deep": false,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/teal-normal.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "teal-deep",
+  "gain": [
+   0.7,
+   1.1,
+   1.05
+  ],
+  "deep": true,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/teal-deep.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "cyan-normal",
+  "gain": [
+   0.7,
+   1.05,
+   1.25
+  ],
+  "deep": false,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/cyan-normal.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "cyan-deep",
+  "gain": [
+   0.7,
+   1.05,
+   1.25
+  ],
+  "deep": true,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/cyan-deep.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "blue-normal",
+  "gain": [
+   0.75,
+   0.9,
+   1.25
+  ],
+  "deep": false,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/blue-normal.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "blue-deep",
+  "gain": [
+   0.75,
+   0.9,
+   1.25
+  ],
+  "deep": true,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/blue-deep.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "indigo-normal",
+  "gain": [
+   0.85,
+   0.75,
+   1.25
+  ],
+  "deep": false,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/indigo-normal.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "indigo-deep",
+  "gain": [
+   0.85,
+   0.75,
+   1.25
+  ],
+  "deep": true,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/indigo-deep.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "purple-normal",
+  "gain": [
+   1.05,
+   0.75,
+   1.25
+  ],
+  "deep": false,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/purple-normal.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "purple-deep",
+  "gain": [
+   1.05,
+   0.75,
+   1.25
+  ],
+  "deep": true,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/purple-deep.jpg",
+  "status": "APPROVED by Mars 2026-10-31 15:17 CDT - all LUTs approved, all 70/70",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "magenta-normal",
+  "gain": [
+   1.25,
+   0.75,
+   1.15
+  ],
+  "deep": false,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/magenta-normal.jpg",
+  "status": "APPROVED by Mars 2026-10-31 14:46 CDT - spectrum sheet 4/4, all 6 on that sheet approved",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "magenta-deep",
+  "gain": [
+   1.25,
+   0.75,
+   1.15
+  ],
+  "deep": true,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/magenta-deep.jpg",
+  "status": "APPROVED by Mars 2026-10-31 14:46 CDT - spectrum sheet 4/4, all 6 on that sheet approved",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "pink-normal",
+  "gain": [
+   1.25,
+   0.85,
+   1.05
+  ],
+  "deep": false,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/pink-normal.jpg",
+  "status": "APPROVED by Mars 2026-10-31 14:46 CDT - spectrum sheet 4/4, all 6 on that sheet approved",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "pink-deep",
+  "gain": [
+   1.25,
+   0.85,
+   1.05
+  ],
+  "deep": true,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/pink-deep.jpg",
+  "status": "APPROVED by Mars 2026-10-31 14:46 CDT - spectrum sheet 4/4, all 6 on that sheet approved",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "lime-normal",
+  "gain": [
+   0.95,
+   1.25,
+   0.7
+  ],
+  "deep": false,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/lime-normal.jpg",
+  "status": "APPROVED by Mars 2026-10-31 14:46 CDT - spectrum sheet 4/4, all 6 on that sheet approved",
+  "approved_date": "2026-10-31"
+ },
+ {
+  "name": "lime-deep",
+  "gain": [
+   0.95,
+   1.25,
+   0.7
+  ],
+  "deep": true,
+  "image": "/home/hatch/workspace/cape-jones-rig/showcase/lut-spectrum/lime-deep.jpg",
+  "status": "APPROVED by Mars 2026-10-31 14:46 CDT - spectrum sheet 4/4, all 6 on that sheet approved",
+  "approved_date": "2026-10-31"
+ }
 ]
