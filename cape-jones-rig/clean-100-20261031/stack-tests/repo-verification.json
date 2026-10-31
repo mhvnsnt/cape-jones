@@ -1,0 +1,319 @@
+{
+  "main_head": "02694af9d149e57d619402c8ecf154ed2be87f13",
+  "total_blobs_on_main": 47541,
+  "checklist_total": 32,
+  "checklist_present": 22,
+  "results": [
+    {
+      "repo_path": "cape-jones-rig/joint_locked_rig_v7c.py",
+      "on_main": true,
+      "repo_size": 5676,
+      "repo_sha": "d1ed904b9c9e2941b403caf6507c4859154c6938",
+      "local_size": 5676,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/rig-apose-v7c-clean-transparent.png",
+      "on_main": true,
+      "repo_size": 478221,
+      "repo_sha": "31a96a1446c11e4a162a19fb3ec1fc8f28daee21",
+      "local_size": 478221,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/cut-limbs-v7c-gauntlet-out-fixed/Arm_Front_Lower_OutFixed.png",
+      "on_main": true,
+      "repo_size": 39624,
+      "repo_sha": "c4a5a5bf79c3da61523f405109f073d59494bed0",
+      "local_size": 39624,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/cut-limbs-v7c-gauntlet-out-fixed/Arm_Back_Lower_OutFixed.png",
+      "on_main": true,
+      "repo_size": 38291,
+      "repo_sha": "eb8cf69318fe71cf8f34729993be7341ce77f8f7",
+      "local_size": 38291,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/cut-limbs-v7c-flex-out/Arm_Front_Lower_FlexOut.png",
+      "on_main": true,
+      "repo_size": 40437,
+      "repo_sha": "5c0534f1e1239aea23e21a1f2a5f2fd90d3a4591",
+      "local_size": 40437,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/reposes-v7c-clean/fighting-pose-forward-bicep-curl-gauntlet-out-fixed-v7c-clean.png",
+      "on_main": true,
+      "repo_size": 399260,
+      "repo_sha": "13f046d9a144818845eedd8191e1027b072980c0",
+      "local_size": 399260,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/reposes-v7c-clean/true-flex-double-bicep-v7c-clean.png",
+      "on_main": true,
+      "repo_size": 434759,
+      "repo_sha": "6a53b062fc0d0188f2fc4d9e655d03bff89fa140",
+      "local_size": 434759,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/reposes-v7c-clean/true-flex-double-bicep-gauntlet-out-fist-in-roll-v7c-clean.png",
+      "on_main": true,
+      "repo_size": 446174,
+      "repo_sha": "11cf5261a0827a5303f32c2ada2b5ff47f10c700",
+      "local_size": 446174,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/clips-v7c-clean-20261031/flex/true-flex-double-bicep-v7c-clean.png",
+      "on_main": false,
+      "repo_size": null,
+      "repo_sha": null,
+      "local_size": null,
+      "size_match": false
+    },
+    {
+      "repo_path": "cape-jones-rig/apply_lighting_level2_v2.py",
+      "on_main": true,
+      "repo_size": 8453,
+      "repo_sha": "e7ffbc7c538b4499c516f4e92a051b3d46c4b1af",
+      "local_size": 8453,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/showcase/lighting-level2-v2/level-2-v2-colored-warm-rim-20261031.png",
+      "on_main": true,
+      "repo_size": 606536,
+      "repo_sha": "04e3a74eaf51935891f72d9464850bff59865a47",
+      "local_size": 606536,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/showcase/luts-spectrum-v2/lut-33-blue-violet-normal.cube",
+      "on_main": true,
+      "repo_size": 754747,
+      "repo_sha": "837d4fa2bfa45c146678de1c62b5e7092d0d3582",
+      "local_size": 754747,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/showcase/luts-spectrum-v2/lut-33-magenta-rose-deep.cube",
+      "on_main": true,
+      "repo_size": 754747,
+      "repo_sha": "63efc07f7577db0328d3cdd165f1f5fa4312f74c",
+      "local_size": 754747,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/showcase/lut-neutral.cube",
+      "on_main": true,
+      "repo_size": 688234,
+      "repo_sha": "5635747144c44577c688eb6d26d6f3546ae054b9",
+      "local_size": 688234,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/showcase/lut-warm.cube",
+      "on_main": true,
+      "repo_size": 688234,
+      "repo_sha": "d8e9ba87c40d77509749bcbb9ff19e229dc04ae0",
+      "local_size": 688234,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/LIGHTING-LEVELS-0-5.md",
+      "on_main": true,
+      "repo_size": 4656,
+      "repo_sha": "fb49245834083aa313c8f5ea55bfd69afd3a7e81",
+      "local_size": 4656,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/RIM-COLOR-RULE.md",
+      "on_main": true,
+      "repo_size": 4782,
+      "repo_sha": "3e62159c28bd581305be14393cc38410f4cc17d4",
+      "local_size": 4782,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/GAUNTLET-FLIP-RULE.md",
+      "on_main": true,
+      "repo_size": 7376,
+      "repo_sha": "cdcf11f16647e16684c3ac24eb44cf0914cc208d",
+      "local_size": 7376,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/STATUS-20261031-1428.md",
+      "on_main": true,
+      "repo_size": 24733,
+      "repo_sha": "65e9edea411eb99221d901c2a950a970743b47b8",
+      "local_size": 37488,
+      "size_match": false
+    },
+    {
+      "repo_path": "cape-jones-rig/TRACKER-20261031.md",
+      "on_main": true,
+      "repo_size": 8412,
+      "repo_sha": "0179dcde3bfd2ad6a286aff768f70ad9ea4faea4",
+      "local_size": 8763,
+      "size_match": false
+    },
+    {
+      "repo_path": "cape-jones-rig/COMPARISON-TESTS.md",
+      "on_main": false,
+      "repo_size": null,
+      "repo_sha": null,
+      "local_size": 2853,
+      "size_match": false
+    },
+    {
+      "repo_path": "cape-jones-rig/FREE-FIRST-WIRING.md",
+      "on_main": true,
+      "repo_size": 2647,
+      "repo_sha": "049f4bf045259215900910feaec2f99ef0e7332a",
+      "local_size": 2988,
+      "size_match": false
+    },
+    {
+      "repo_path": "cape-jones-rig/pack4-20261031/PACK4-REPORT-20261031.md",
+      "on_main": false,
+      "repo_size": null,
+      "repo_sha": null,
+      "local_size": 2661,
+      "size_match": false
+    },
+    {
+      "repo_path": "cape-jones-rig/pack4-20261031/pack4-manifest-20261031.json",
+      "on_main": false,
+      "repo_size": null,
+      "repo_sha": null,
+      "local_size": 4764,
+      "size_match": false
+    },
+    {
+      "repo_path": "cape-jones-rig/pack4-20261031/visemes/viseme-01-rest-20261031.png",
+      "on_main": false,
+      "repo_size": null,
+      "repo_sha": null,
+      "local_size": 406,
+      "size_match": false
+    },
+    {
+      "repo_path": "cape-jones-rig/pack4-20261031/eye-strips/eye-strip-01-determined-focused-20261031.png",
+      "on_main": false,
+      "repo_size": null,
+      "repo_sha": null,
+      "local_size": 958,
+      "size_match": false
+    },
+    {
+      "repo_path": "cape-jones-rig/pack4-20261031/cape-states/cape-billowing-20261031.png",
+      "on_main": false,
+      "repo_size": null,
+      "repo_sha": null,
+      "local_size": 108274,
+      "size_match": false
+    },
+    {
+      "repo_path": "cape-jones-rig/pack4-20261031/head-34-front-derived-20261031.png",
+      "on_main": false,
+      "repo_size": null,
+      "repo_sha": null,
+      "local_size": 24547,
+      "size_match": false
+    },
+    {
+      "repo_path": "cape-jones-rig/clips-v7c-clean-20261031/walk/walk-01-contact-v7c-clean.png",
+      "on_main": false,
+      "repo_size": null,
+      "repo_sha": null,
+      "local_size": 431920,
+      "size_match": false
+    },
+    {
+      "repo_path": "cape-jones-rig/12-PRINCIPLES-CHECKLIST-20261031.md",
+      "on_main": false,
+      "repo_size": null,
+      "repo_sha": null,
+      "local_size": 4229,
+      "size_match": false
+    },
+    {
+      "repo_path": "cape-jones-rig/UNIVERSAL-PIPELINE.md",
+      "on_main": true,
+      "repo_size": 5110,
+      "repo_sha": "a6ffd393933ddbfae13c30629b4f77d00cb4b163",
+      "local_size": 5110,
+      "size_match": true
+    },
+    {
+      "repo_path": "cape-jones-rig/UNIVERSE-COLOR-LANGUAGE.md",
+      "on_main": true,
+      "repo_size": 6834,
+      "repo_sha": "a5f2676039841a5e2598c0d5996b7fadf3f1d226",
+      "local_size": 7233,
+      "size_match": false
+    }
+  ],
+  "fla_paths": [],
+  "archive_paths": [
+    "3d-assets/cape-jones-rig/idle-test/idle_frames.zip",
+    "3d-assets/face-rig/tools/rhubarb/Rhubarb-Lip-Sync-1.14.0-Linux.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/altoFluteTrem.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/arpeggios.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/barlineTypesOriginal.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/bcl.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/beamsOverBarlines.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/bowDirection.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/breathMark.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/clarinet38.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/dynamicV1V2.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/dynamicVoice.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/dynamicsHairpins.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/dynamicsKbdVoices.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/enharmonicPart.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/fermata.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/graceArps.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/graceBeamed.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/key56Wrapped56Unedited.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/key77.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/key77Wrapped.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/measnumSequences.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/multinoteTremolos.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/multinoteTremolosAdv.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/nonArpeggios.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/ottavas.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/tupletHiddenRest.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/tupletNested.enigmaxml.zip",
+    "production/tools/audio/musescore/src/importexport/mnx/tests/data/project_sources/tupletSimple.enigmaxml.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/cause-relay/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/column-reveal/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/correction-reveal/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/duo-overlay/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/evidence-footnote/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/feedback-circuit/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/inflection-note/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/measure-bars/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/milestone-rail/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/option-balance/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/ordered-podium/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/paired-values/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/percent-ticks/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/series-trace/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/state-handoff/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/step-stair/template.zip",
+    "production/tools/hyperframes-effects-gallery/assets/atelier/knowledge/term-definition/template.zip",
+    "production/tools/ml-autorig/unirig/blender/add-on-vrm-v2.20.77_modified.zip",
+    "production/tools/mpfb2/test/testdata/packs/mac_corrupted.zip",
+    "production/tools/mpfb2/test/testdata/packs/no_packs.zip",
+    "production/tools/mpfb2/test/testdata/packs/too_deep_cc0.zip",
+    "production/tools/mpfb2/test/testdata/packs/too_deep_ccby.zip",
+    "production/tools/mpfb2/test/testdata/packs/valid.zip"
+  ]
+}

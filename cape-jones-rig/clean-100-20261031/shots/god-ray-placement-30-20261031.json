@@ -1,0 +1,276 @@
+{
+ "version": "god-ray-placement-30-20261031",
+ "date": "2026-10-31",
+ "decisions": "30/30 - 9 god-ray placements (Level 3) + 21 explicit Level-2 no-god-rays decisions. This is NOT 30 god-ray shots.",
+ "god_ray_shots": [
+  "CJ-11",
+  "CJ-12",
+  "CJ-13",
+  "CJ-14",
+  "CJ-19",
+  "CJ-22",
+  "CJ-28",
+  "CJ-29",
+  "CJ-30"
+ ],
+ "no_god_ray_level2_shots": [
+  "CJ-01",
+  "CJ-02",
+  "CJ-03",
+  "CJ-04",
+  "CJ-05",
+  "CJ-06",
+  "CJ-07",
+  "CJ-08",
+  "CJ-09",
+  "CJ-10",
+  "CJ-15",
+  "CJ-16",
+  "CJ-17",
+  "CJ-18",
+  "CJ-20",
+  "CJ-21",
+  "CJ-23",
+  "CJ-24",
+  "CJ-25",
+  "CJ-26",
+  "CJ-27"
+ ],
+ "placements": [
+  {
+   "shot_id": "CJ-01",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "No volumetric source in shot; god rays NEVER in Level 2."
+  },
+  {
+   "shot_id": "CJ-02",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "No volumetric source in shot; god rays NEVER in Level 2."
+  },
+  {
+   "shot_id": "CJ-03",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Impact energy/glow are FX passes, not god rays; no volumetric source named."
+  },
+  {
+   "shot_id": "CJ-04",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Recover beat, interior street grade only; god rays NEVER in Level 2."
+  },
+  {
+   "shot_id": "CJ-05",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Daylight placement frame; no back volumetric source named."
+  },
+  {
+   "shot_id": "CJ-06",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Daylight street walk; no volumetric source named."
+  },
+  {
+   "shot_id": "CJ-07",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Evening town walk; no volumetric source named."
+  },
+  {
+   "shot_id": "CJ-08",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Night alley walk is Level 2 by design; neon volume is CJ-30, not this shot."
+  },
+  {
+   "shot_id": "CJ-09",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Dance-a stage grade only; spotlight volume is CJ-11 finale, not this shot."
+  },
+  {
+   "shot_id": "CJ-10",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Dance-b stage grade only; no volumetric source named."
+  },
+  {
+   "shot_id": "CJ-11",
+   "decision": "god_rays",
+   "level": "Level 3",
+   "source_direction": "spotlight from front-top, above stage",
+   "wedge_count": 6,
+   "angular_spread_deg": "fan 30 deg centred on stage front-top",
+   "colour": "warm spotlight white 255,220,170",
+   "intensity": "opacity 70/255, blur 25px (draft preview)",
+   "rim_ownership": "rim 220,150,255 belongs to the violet-magenta stage key (single family); spotlight shafts are the same warm-white volume, not a second rim colour",
+   "production": "Blender volumetric passes (separate back volume + front volume passes). PIL wedge numbers below are DRAFT preview only, not production god rays."
+  },
+  {
+   "shot_id": "CJ-12",
+   "decision": "god_rays",
+   "level": "Level 3",
+   "source_direction": "sun behind, upper-right",
+   "wedge_count": 8,
+   "angular_spread_deg": "fan 50 deg centred upper-right",
+   "colour": "warm gold 255,180,80",
+   "intensity": "opacity 70/255, blur 25px (draft preview)",
+   "rim_ownership": "rim warm amber 255,180,80 belongs to the sun-behind source (single family)",
+   "production": "Blender volumetric passes (separate back volume + front volume passes). PIL wedge numbers below are DRAFT preview only, not production god rays."
+  },
+  {
+   "shot_id": "CJ-13",
+   "decision": "god_rays",
+   "level": "Level 3",
+   "source_direction": "sun directly behind character",
+   "wedge_count": 12,
+   "angular_spread_deg": "radial fan 12 x 30 deg (full halo fan)",
+   "colour": "warm gold 255,200,110",
+   "intensity": "opacity 80/255, blur 20px (draft preview)",
+   "rim_ownership": "rim 255,200,110 belongs to the sun-behind source (single family)",
+   "production": "Blender volumetric passes (separate back volume + front volume passes). PIL wedge numbers below are DRAFT preview only, not production god rays."
+  },
+  {
+   "shot_id": "CJ-14",
+   "decision": "god_rays",
+   "level": "Level 3",
+   "source_direction": "sun high behind character",
+   "wedge_count": 10,
+   "angular_spread_deg": "fan 60 deg centred high-behind",
+   "colour": "warm sunset 255,155,75",
+   "intensity": "opacity 75/255, blur 22px (draft preview)",
+   "rim_ownership": "rim 255,155,75 belongs to the sun-high-behind source (single family)",
+   "production": "Blender volumetric passes (separate back volume + front volume passes). PIL wedge numbers below are DRAFT preview only, not production god rays."
+  },
+  {
+   "shot_id": "CJ-15",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Spec only (foreshortened piece owed); no god rays until the piece exists and a volumetric source is named."
+  },
+  {
+   "shot_id": "CJ-16",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Anticipation frame, grade only; god rays NEVER in Level 2."
+  },
+  {
+   "shot_id": "CJ-17",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Reference pose, grade only; god rays NEVER in Level 2."
+  },
+  {
+   "shot_id": "CJ-18",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Spec only (seam fix owed); no god rays until a final flex exists."
+  },
+  {
+   "shot_id": "CJ-19",
+   "decision": "god_rays",
+   "level": "Level 3 dual-light",
+   "source_direction": "cyan back source behind character + warm gold front beams",
+   "wedge_count": "cyan back 12 x 30 deg; warm front diagonal beams (count per Blender volume pass, not fixed in PIL draft)",
+   "angular_spread_deg": "cyan radial fan behind; warm beams diagonal from front",
+   "colour": "back cyan 0,200,255; front warm gold 255,180,80",
+   "intensity": "cyan opacity 90/255 blur 18px, centre (560,802) in the viewed dual-light demo; warm opacity 70/255 blur 25px layered over back rays, under character (draft preview numbers from showcase/dual-light-cyan-back-godrays-warm-front-v2-20261031.png)",
+   "rim_ownership": "BACK rim cyan 0,200,255 belongs to back cyan source; FRONT rim warm amber 255,180,80 belongs to front warm gold key - recorded separately, never swapped",
+   "production": "Blender volumetric passes (separate back volume + front volume passes). PIL wedge numbers below are DRAFT preview only, not production god rays."
+  },
+  {
+   "shot_id": "CJ-20",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Stance frame, grade only; god rays NEVER in Level 2."
+  },
+  {
+   "shot_id": "CJ-21",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Crouch/takeoff, grade only; god rays NEVER in Level 2."
+  },
+  {
+   "shot_id": "CJ-22",
+   "decision": "god_rays",
+   "level": "Level 3",
+   "source_direction": "sun low behind skyline",
+   "wedge_count": 8,
+   "angular_spread_deg": "fan 45 deg centred low-behind",
+   "colour": "warm gold 255,180,80",
+   "intensity": "opacity 70/255, blur 25px (draft preview)",
+   "rim_ownership": "rim warm amber 255,180,80 belongs to the sun-low-behind source (single family)",
+   "production": "Blender volumetric passes (separate back volume + front volume passes). PIL wedge numbers below are DRAFT preview only, not production god rays."
+  },
+  {
+   "shot_id": "CJ-23",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Interior room, lamp key only; god rays NEVER in Level 2."
+  },
+  {
+   "shot_id": "CJ-24",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Interior desk, lamp key only; god rays NEVER in Level 2."
+  },
+  {
+   "shot_id": "CJ-25",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Interior room, lamp key only; god rays NEVER in Level 2."
+  },
+  {
+   "shot_id": "CJ-26",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Spec only (visemes owed); interior dialogue, no volumetric source."
+  },
+  {
+   "shot_id": "CJ-27",
+   "decision": "none_level2",
+   "level": "Level 2",
+   "reason": "Spec only (visemes owed); interior dialogue, no volumetric source."
+  },
+  {
+   "shot_id": "CJ-28",
+   "decision": "god_rays",
+   "level": "Level 3",
+   "source_direction": "sun low behind rooftop horizon",
+   "wedge_count": 10,
+   "angular_spread_deg": "fan 55 deg centred low-behind",
+   "colour": "warm sunset gold 255,155,75",
+   "intensity": "opacity 75/255, blur 22px (draft preview)",
+   "rim_ownership": "character rim 255,155,75 belongs to sunset LUT key; JOJO-ATMOSPHERE background shift does NOT create a second character rim",
+   "production": "Blender volumetric passes (separate back volume + front volume passes). PIL wedge numbers below are DRAFT preview only, not production god rays.",
+   "atmosphere_note": "Environment-only: background gain recorded separately (sky warm/purple shift); character gain 1,1,1, character palette unchanged."
+  },
+  {
+   "shot_id": "CJ-29",
+   "decision": "god_rays",
+   "level": "Level 3",
+   "source_direction": "city glow behind rooftop, low-behind",
+   "wedge_count": 8,
+   "angular_spread_deg": "fan 50 deg centred low-behind",
+   "colour": "cool city blue 160,185,255",
+   "intensity": "opacity 65/255, blur 25px (draft preview)",
+   "rim_ownership": "rim 160,185,255 belongs to the back city-glow source (single cool family)",
+   "production": "Blender volumetric passes (separate back volume + front volume passes). PIL wedge numbers below are DRAFT preview only, not production god rays."
+  },
+  {
+   "shot_id": "CJ-30",
+   "decision": "god_rays",
+   "level": "Level 3 dual-light",
+   "source_direction": "cyan back source behind character in alley + pink/magenta front neon",
+   "wedge_count": "cyan back 12 x 30 deg; pink front beams diagonal (count per Blender volume pass)",
+   "angular_spread_deg": "cyan radial fan behind; pink beams diagonal from front",
+   "colour": "back cyan 0,200,255; front pink/magenta 255,178,229",
+   "intensity": "cyan opacity 90/255 blur 18px; pink opacity 70/255 blur 25px (draft preview, following the CJ-19 dual-light demo pattern - alley centre to be set on the alley plate, NOT copied from CJ-19's (560,802))",
+   "rim_ownership": "BACK rim cyan 0,200,255 belongs to back cyan source; FRONT rim magenta-rose 255,178,229 belongs to front pink source - recorded separately, never swapped",
+   "production": "Blender volumetric passes (separate back volume + front volume passes). PIL wedge numbers below are DRAFT preview only, not production god rays."
+  }
+ ]
+}
