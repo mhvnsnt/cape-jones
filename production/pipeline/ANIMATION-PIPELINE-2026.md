@@ -14,13 +14,13 @@ Tahoma2D   →    Synfig            →    RIFE (Kaggle GPU)   →   OpenToonz
  timeline,       bone rigs)              footage)                  particles)
  Xsheet)
    │                │                        │                        │
-   └────────────────┴────────────────────────┴────────────────────────┘
+   └───────────────┤─────────────────────────┤───────────────────────┘
                                     │
                               FINISH (existing)
                     FLIPACLIP-POST-PIPELINE.md
         (grades → bloom → watermark removal → audio master → cards)
                                     │
-                              Blender VSE / ffmpeg
+                              Blender 5.2.3 LTS VSE / ffmpeg
                               (final assembly → MP4)
 ```
 
@@ -76,9 +76,9 @@ grades (LED sequences, canon palette) → bloom → **watermark removal**
 the Kiko-video method; black-box/blur cover-ups are banned) → audio master
 (loudnorm + compressor + limiter) → bump cards → final MP4.
 
-## Stage 6 — Final assembly: Blender VSE / ffmpeg
+## Stage 6 — Final assembly: Blender 5.2.3 LTS VSE / ffmpeg
 
-Blender (4.0.2 now, 5.x upgrade path in `production/tools/BLENDER-5X-UPGRADE.md`)
+**Blender 5.2.3 LTS** (wired 2026-10-31 — see `production/tools/BLENDER-5X-UPGRADE.md`)
 for 2D/3D hybrid shots (Grease Pencil), node-compositor bloom passes, and VSE
 final assembly. ffmpeg for transcoding and delivery encodes.
 
@@ -109,6 +109,7 @@ final assembly. ffmpeg for transcoding and delivery encodes.
 - `production/tools/rhubarb-lip-sync/` — audio → mouth-shape timelines.
 - `tools/watermark-removal/` — the correct AI pipeline (template-match + Telea).
 - RIFE notebook + model (`production/kaggle/`).
+- Blender 5.2.3 LTS (production default).
 
 ## Proving order (owner's order)
 
