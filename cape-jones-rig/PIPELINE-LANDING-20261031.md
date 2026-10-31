@@ -67,3 +67,12 @@ alone — repo landing is NOT content approval.
   pushed. Pushing them before delivery would land the wrong version.
 - Comparison tests 0/7 — no their-side viewed files; needs legitimate
   Harmony/Animate trial install.
+
+## ADDENDUM — Eyes v3 label correction (Mars, 16:48–16:49 CDT)
+- eyes-normal-superhero-v3-20261031/ is FALLBACK / DRAFT / PLACEHOLDER /
+  REFERENCE eyes only — good for a start, NOT fully approved, NEVER labelled
+  as approved normal eyes. See EYES-V3-STATUS-FALLBACK-DRAFT-20261031.md in
+  that folder. V3 approval: 0/1.
+- The REAL normal eyes will be v4: pulled Batman-style shapes, separate
+  workstream, NOT YET DELIVERED. Do NOT present v3 as the final eyes.
+  When v4 lands, v4 supersedes v3 as the normal-eyes candidate.
