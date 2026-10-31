@@ -1,0 +1,39 @@
+# Shot spec + proof — Cape Jones clips, TRIPPEDD pattern
+# Every clip gets: spec, rendered frames, reopen-and-check, SHA, QC.
+# QC is PENDING until Mars looks at the frames himself — no clip is called done before that.
+fps: 24
+timing: "normal on 2s (12 drawings/sec), snaps on 1s (24/sec), holds 6-24 frames"
+rig: joint-locked-v5
+labels: "arm1=our left, arm2=our right, leg1=our left, leg2=our right"
+clips:
+  - name: jump
+    file: clips/jump-clip.json
+    frames_rendered: 4
+    keyframes: "crouch f1 hold6, takeoff f7 hold2, tuck f13 hold12, land f25 hold6"
+    proof: "frames in clips/jump/, reopen + count + SHA, QC pending"
+  - name: punch
+    file: clips/punch-clip.json
+    frames_rendered: 4
+    keyframes: "windup f1 hold6, extend-snap f7 hold2, impact-hold f9 hold12, recover f21 hold6"
+    proof: "rendered with v5 rig, reopen + count + SHA, QC pending"
+  - name: dance
+    file: clips/dance-clip.json
+    frames_rendered: 3
+    keyframes: "dance-a f1 hold12, dance-b f13 hold12, dance-a f25 hold12"
+    proof: "rendered with v5 rig, reopen + count + SHA, QC pending"
+  - name: flex
+    file: clips/flex-clip.json
+    frames_rendered: 3
+    keyframes: "apose f1 hold6, flex-hold f7 hold24, apose f31 hold6"
+    proof: "rendered with v5 rig, reopen + count + SHA, QC pending"
+  - name: flying
+    file: clips/flying-clip.json
+    frames_rendered: 4
+    keyframes: "hovering f1 hold12, soaring-arms-out f13 hold12, diving-arms-up f25 hold12, hovering f37 hold12"
+    source_angles: "staged sheet 9dc2Q.jpg viewed 2026-10-31: hovering (standing, arms down, legs together), banking/turning, forward flight (back view, cape spread)"
+    missing_note: "forward-flight fists-toward-camera is NOT in this clip — needs a foreshortened forearm piece, still missing, not faked by rotating a flat arm"
+proof_steps:
+  - "render frames from clip JSON with v5 rig"
+  - "reopen every frame, count them, confirm pose matches keyframe label"
+  - "SHA-256 each frame, record in manifest"
+  - "QC: Mars looks at frames — only then mark done"
