@@ -1,0 +1,1 @@
+{"version": "audio-cue-template-v1", "fields": ["cue_id", "shot_id", "timecode", "music", "sfx", "dialogue", "viseme_clip", "loudness_lufs"], "loudness_target": "-14 LUFS", "status": "template only, no per-shot cue sheets built"}
