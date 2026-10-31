@@ -39,6 +39,8 @@ def main():
     for i, a in enumerate(args):
         if a == "--power-rim" and i + 1 < len(args):
             power_rim = np.array([int(v) for v in args[i+1].split(",")], dtype=float)
+        if a == "--rim" and i + 1 < len(args):
+            power_rim = np.array([int(v) for v in args[i+1].split(",")], dtype=float); power_name = power_name or "rim-override"
         if a == "--power-name" and i + 1 < len(args):
             power_name = args[i+1]
     os.makedirs(outdir, exist_ok=True)

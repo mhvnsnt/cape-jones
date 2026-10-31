@@ -91,3 +91,12 @@ DOES NOT APPLY:
   confined to the gauntlet zone (bbox within x300-800, y400-600).
 - Run that test before any arms-up clip is shipped, and before any
   gauntlet piece is changed. A change to a lower piece re-runs the test.
+
+## PERSPECTIVE RULE — HAND ORIENTATION DRIVES CUFF/FIST, NOT ARM HEIGHT ALONE (Mars, 2026-10-31 15:21-15:22 CDT, research-backed)
+Technical relay, industry terms: a limb has pitch (bend at elbow), yaw (turn at shoulder), and ROLL (twist around the forearm's own long axis). Forearm roll is pronation/supination in anatomy: the radius rotates around the ulna, up to ~180 degrees, palm facing flips, while the elbow angle and shoulder angle do NOT change. In a 2D cutout rig that roll is handled by DRAWING SUBSTITUTION (swap the cuff/fist piece for its mirrored version), not by moving the limb. That is why the same arm height can need opposite cuff facing — the hand's roll decides it.
+Decision table — check hand FIRST, every pose, before building:
+- Fist curled, thumbs toward midline / palm toward camera, arms up (flex, fighting pose): cuff TOPS OUTWARD, fist THUMBS INWARD. Pieces: OutFixed / FlexOut (per-row mirror, cuff y62-180 + fist y180-end, forearm position unchanged).
+- Hands flat/open, fingers straightened, hands pointed OUTWARD away from head, perpendicular to shoulders (Mars's "snake hands" example): cuff tops INWARD is correct. Reason: the hand has rolled ~180 degrees from the flex case, so the plate that was camera-facing is now turned away. Pieces: ORIGINAL lowers, not flipped. This is the ONLY arms-up case where inward tops are correct.
+- Arms down in front, hands in front of body: cuff tops may face INWARD (hand roll is neutral/down, palm not turned to camera the same way). Pieces: original lowers.
+- Fist roll in flex (Mars 15:21 CDT): after the flip, fists ROLL a little toward head/shoulders — in 2D, rotate the fist segment around the wrist pivot so knuckles angle down/inward toward neck/shoulders, forearm/bicep angles unchanged. Flex roll pieces: cut-limbs-v7c-flex-out-roll/, pose true-flex-double-bicep-gauntlet-out-fist-in-roll-v7c-clean.png.
+FIRST-TIME CHECKLIST (so this is not corrected again): before any arms-up pose ships, record in the pose log: (1) elbow position, (2) forearm direction, (3) hand shape — fist curled vs flat/open, (4) palm/thumb direction — toward midline/camera vs outward away from head, (5) cuff piece selected from the table above and why. If (3) or (4) is missing, do NOT build — ask for the hand, because that is what decides the piece.
