@@ -40,3 +40,18 @@ Perspective rule (arms): hand drives cuff/fist. Knee-feet rule (legs): knee driv
 - Combine dance: same defect in its groove pose, NOT fixed here — no
   builder script in its folder. See FIX-REPORT-20261031.md in the fix
   folder for the full still-owed list.
+
+## CORRECTION 2026-10-31 16:58 CDT — BIDIRECTIONAL RULE, BLOCK RANGE WAS WRONG (Mars)
+- Mars, reply to dance-kneefeet-contact-20261031.png, top row third frame: his knees are pointed OUTWARD in that frame, but the v1 fix pointed his feet INWARD. That frame is incorrect and must be fixed: feet back OUTWARD to match outward knees.
+- The v1 mistake was a BLOCK range: FootIn ON for frames 15-55, as if every frame in that stretch had inward knees. It did not. Knee direction changes inside the stretch (stride -> groove -> kick), so a block flips outward-knee frames inward and misses inward-knee frames before frame 15.
+- BIDIRECTIONAL RULE, standing, both directions, no exceptions except a deliberately broken leg named in the shot spec:
+  * Knees pointed OUTWARD -> feet pointed OUTWARD (original lowers).
+  * Knees pointed INWARD -> feet pointed INWARD (FootIn mirrored lowers).
+  * Knees straight/forward -> feet straight/forward (original lowers; do not flip on a near-zero crossing).
+- PIPELINE GATE (per frame, not per block, not per segment):
+  * Read that frame's own leg_upper angles. FootIn = True ONLY if leg_upper L > 0 AND leg_upper R < 0 (both thighs angled toward the midline = both kneecaps inward).
+  * Otherwise FootIn = False. This is the thigh-angle sign, NOT knee-x minus hip-x: at rest the thigh piece already sits slightly inboard of the hip, so x-offset alone misreads straight legs as inward.
+  * Audit table must list every rendered frame (frame, L upper, R upper, knee direction, foot choice, changed vs previous) — a block range with no per-frame table FAILS the gate.
+  * Contact-sheet keyframe check (8/8 must pass): f001 OUT/OUT, f015 IN/IN, f028 OUT/OUT (the corrected frame), f042 IN/IN, f056 OUT/OUT, f069 OUT/OUT, f083 OUT/OUT, f097 OUT/OUT.
+- Anatomy study behind the correction (same sources as above, applied in both directions): the tibia tracks over the 2nd toe in EITHER direction — internal tibial rotation sends toes inward, external tibial rotation sends toes outward. Valgus (knee-in / toe-out) and varus (knee-out / toe-in) are BOTH misalignments: the knee is a hinge, it cannot bend sideways, so any knee/foot direction mismatch reads as a broken joint, whichever way it points. That is why the rule is bidirectional and why a one-way "always inward" fix creates the exact same broken read in reverse.
+- Correction folder: dance-kneefeet-fix-correction-20261031/ (v1 fix folder untouched). See CORRECTION-REPORT-20261031.md there for the per-frame audit.
