@@ -1,0 +1,10 @@
+/home/hatch/workspace/cape-jones-rig/godray-level3-20261031/blender_composite_l3.py:27: DeprecationWarning: 'Scene.use_nodes' is expected to be removed in Blender 6.0
+  scene.use_nodes = True
+00:13.756  render           | Saved: '/home/hatch/workspace/cape-jones-rig/godray-level3-20261031/v5-level3-20261031.png'
+nodes: ['GodRayV2_Light', 'GroundShadow', 'CastShadow', 'ArmsUpPlate_Untouched', 'Over_BG_Ground', 'Over_Cast', 'Over_Plate', 'BleedGold_solid', 'BleedGold_mask', 'BleedGold_sep', 'BleedGold', 'Over_BleedGold', 'BleedCyan_solid', 'BleedCyan_mask', 'BleedCyan_sep', 'BleedCyan', 'Over_BleedCyan2', 'SpillCyan', 'Over_SpillCyan', 'SpillGold', 'Over_SpillGold', 'RimInnerGoldL_solid', 'RimInnerGoldL_mask', 'RimInnerGoldL_sep', 'RimInnerGoldL', 'Over_RimInnerL', 'RimInnerCyanR_solid', 'RimInnerCyanR_mask', 'RimInnerCyanR_sep', 'RimInnerCyanR', 'Over_RimInnerR', 'RimOuterGoldL_solid', 'RimOuterGoldL_mask', 'RimOuterGoldL_sep', 'RimOuterGoldL', 'Over_RimOuterL', 'RimOuterCyanR_solid', 'RimOuterCyanR_mask', 'RimOuterCyanR_sep', 'RimOuterCyanR', 'Over_RimOuterR', 'BloomFogGlow', 'Output']
+Info: Saved as "v5-level3-20261031.blend"
+rendering L3 V5 ...
+L3_V5_DONE /home/hatch/workspace/cape-jones-rig/godray-level3-20261031/v5-level3-20261031.png
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:35:05)
+
+Blender quit
