@@ -1,0 +1,153 @@
+{
+  "cape_consumed_uncropped_apose": {
+    "canvas": [
+      1300,
+      1700
+    ],
+    "alpha_px": 247825,
+    "bbox": [
+      348,
+      354,
+      975,
+      1394
+    ],
+    "margins": {
+      "top": 354,
+      "bottom": 305,
+      "left": 348,
+      "right": 324
+    },
+    "edge_alpha": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "body_18_18_22_px": 246301,
+    "white_px": 1524,
+    "feet_bands": {
+      "above_feet_90-45px": {
+        "alpha_px": 6354,
+        "x_min": 431,
+        "x_max": 918,
+        "y_range": [
+          1304,
+          1348
+        ]
+      },
+      "feet_lowest_45px": {
+        "alpha_px": 8691,
+        "x_min": 404,
+        "x_max": 931,
+        "y_range": [
+          1349,
+          1394
+        ]
+      }
+    },
+    "source": "future-symbiote-capeless-white-outline-20261031/symbiote-apose-CAPELESS-20261031.png (true piece omission, no rectangle erase), padded 100 px all sides",
+    "feet_note": "Full feet visible: lowest band spreads x304-831 on the source canvas (x404-931 padded); toes forward, front-facing."
+  },
+  "cape_consumed_crossed_white_outline_uncropped": {
+    "canvas": [
+      1300,
+      1700
+    ],
+    "alpha_px": 202694,
+    "bbox": [
+      404,
+      354,
+      931,
+      1394
+    ],
+    "margins": {
+      "top": 354,
+      "bottom": 305,
+      "left": 404,
+      "right": 368
+    },
+    "edge_alpha": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "body_18_18_22_px": 197735,
+    "white_px": 4959,
+    "feet_bands": {
+      "above_feet_90-45px": {
+        "alpha_px": 6354,
+        "x_min": 431,
+        "x_max": 918,
+        "y_range": [
+          1304,
+          1348
+        ]
+      },
+      "feet_lowest_45px": {
+        "alpha_px": 8691,
+        "x_min": 404,
+        "x_max": 931,
+        "y_range": [
+          1349,
+          1394
+        ]
+      }
+    },
+    "source": "future-symbiote-capeless-white-outline-20261031/symbiote-crossed-WHITE-OUTLINE-20261031.png, padded 100 px all sides; white crossing ring 3,458 px, width 4, from that builder (white_px here includes symbol diamond 1,524 px + ring + outline detail)"
+  },
+  "feet_front_facing_engulfed": {
+    "canvas": [
+      1100,
+      1500
+    ],
+    "alpha_px": 288094,
+    "bbox": [
+      321,
+      253,
+      783,
+      1292
+    ],
+    "margins": {
+      "top": 253,
+      "bottom": 207,
+      "left": 321,
+      "right": 316
+    },
+    "edge_alpha": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "body_18_18_22_px": 286575,
+    "white_px": 1519,
+    "feet_bands": {
+      "above_feet_90-45px": {
+        "alpha_px": 3708,
+        "x_min": 380,
+        "x_max": 720,
+        "y_range": [
+          1202,
+          1246
+        ]
+      },
+      "feet_lowest_45px": {
+        "alpha_px": 2727,
+        "x_min": 380,
+        "x_max": 720,
+        "y_range": [
+          1247,
+          1292
+        ]
+      }
+    },
+    "source": "crystal-cape-jones-v2-transformation-upgrade-20261031/future-symbiote-black-white-symbol-NO-cape-20261031.png, BYTE-IDENTICAL copy, md5 d133260530769632791fb0f5a3616b57 (original md5 d133260530769632791fb0f5a3616b57), kept as-is, feet engulfed in the black slab, not fixed over",
+    "feet_note": "Feet engulfed: lowest bands confined to x380-720 on the source canvas, no outward toes \u2014 this is the read Mars flagged as cropped off. Canvas bottom margin is 207 px, so it is engulfment, not a canvas-edge crop."
+  },
+  "contact": {
+    "file": "cape-consumed-contact-20261031.png",
+    "tiles": "full-aspect, width 360 px each, never square-cropped; tile heights follow each plate's own aspect",
+    "note": "Detail row is a labelled magnifier of the feet zone only; the full figures above it are uncropped."
+  }
+}
