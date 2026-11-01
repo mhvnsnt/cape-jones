@@ -1,0 +1,26 @@
+{
+  "source": "rig-apose-v7c-clean-transparent.png (1100x1500)",
+  "alpha_bbox": [
+    248,
+    253,
+    875,
+    1294
+  ],
+  "alpha_px": 373846,
+  "figure_w": 627,
+  "figure_h": 1041,
+  "centre_x": 561,
+  "red_label_px": 0,
+  "g4_methods_total": 20,
+  "g4_methods_with_real_measurement_here": 6,
+  "g4_real_methods": [
+    "alpha_bbox",
+    "alpha_px",
+    "figure_w_h",
+    "centre_x",
+    "red_label_px",
+    "apose_size"
+  ],
+  "g4_methods_still_schema_or_placeholder": 14,
+  "note": "Cowl collar-edge, arm angle, fist offset, knee/foot angle need piece-separated renders, not a flat apose PNG. Those 14 remain NOT measured here."
+}
