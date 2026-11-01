@@ -1,0 +1,9 @@
+00:02.291  blend            | Read blend: "/home/hatch/workspace/cape-jones-rig/canonical-room-3d-2d-20261101/work/room-clone/3d-assets/living_room.blend"
+00:04.673  reports          | Read library: '/home/hatch/workspace/cape-jones-rig/canonical-room-3d-2d-20261101/work/room-clone/3d-assets/living-room/recliner/recliner_rigged.blend', '//living-room/recliner/recliner_rigged.blend', parent '<direct>'
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:35:05)
+00:11.492  cycles           | WARNING Image file /home/hatch/workspace/cape-jones-rig/canonical-room-3d-2d-20261101/work/room-clone/3d-assets/living-room/tv/frames/tv_show_0048.png does not exist.
+00:15.536  cycles           | ERROR Failed to load 1 image files
+01:16.805  render           | Saved: '/home/hatch/workspace/cape-jones-rig/canonical-room-3d-2d-20261101/work/blender-render-maincam.png'
+RENDERED
+
+Blender quit
