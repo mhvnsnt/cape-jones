@@ -1,0 +1,654 @@
+{
+ "bg": [
+  147.0,
+  147.0,
+  146.0
+ ],
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    54,
+    99
+   ],
+   "opaque_px": 4579,
+   "sheet_bbox": [
+    114,
+    330,
+    168,
+    429
+   ]
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    53,
+    80
+   ],
+   "opaque_px": 3444,
+   "sheet_bbox": [
+    118,
+    438,
+    171,
+    518
+   ]
+  },
+  {
+   "name": "Row1_3",
+   "file": "Row1_3.png",
+   "size": [
+    85,
+    141
+   ],
+   "opaque_px": 8179,
+   "sheet_bbox": [
+    127,
+    182,
+    212,
+    323
+   ]
+  },
+  {
+   "name": "Row1_4",
+   "file": "Row1_4.png",
+   "size": [
+    77,
+    238
+   ],
+   "opaque_px": 11011,
+   "sheet_bbox": [
+    135,
+    655,
+    212,
+    893
+   ]
+  },
+  {
+   "name": "Row1_5",
+   "file": "Row1_5.png",
+   "size": [
+    72,
+    162
+   ],
+   "opaque_px": 9054,
+   "sheet_bbox": [
+    178,
+    482,
+    250,
+    644
+   ]
+  },
+  {
+   "name": "Row1_6",
+   "file": "Row1_6.png",
+   "size": [
+    361,
+    288
+   ],
+   "opaque_px": 43580,
+   "sheet_bbox": [
+    248,
+    44,
+    609,
+    332
+   ]
+  },
+  {
+   "name": "Row1_7",
+   "file": "Row1_7.png",
+   "size": [
+    100,
+    81
+   ],
+   "opaque_px": 6610,
+   "sheet_bbox": [
+    284,
+    416,
+    384,
+    497
+   ]
+  },
+  {
+   "name": "Row1_8",
+   "file": "Row1_8.png",
+   "size": [
+    93,
+    44
+   ],
+   "opaque_px": 4087,
+   "sheet_bbox": [
+    289,
+    350,
+    382,
+    394
+   ]
+  },
+  {
+   "name": "Row1_9",
+   "file": "Row1_9.png",
+   "size": [
+    69,
+    155
+   ],
+   "opaque_px": 8834,
+   "sheet_bbox": [
+    347,
+    476,
+    416,
+    631
+   ]
+  },
+  {
+   "name": "Row1_10",
+   "file": "Row1_10.png",
+   "size": [
+    109,
+    207
+   ],
+   "opaque_px": 11182,
+   "sheet_bbox": [
+    349,
+    646,
+    458,
+    853
+   ]
+  },
+  {
+   "name": "Row1_11",
+   "file": "Row1_11.png",
+   "size": [
+    57,
+    127
+   ],
+   "opaque_px": 6266,
+   "sheet_bbox": [
+    462,
+    207,
+    519,
+    334
+   ]
+  },
+  {
+   "name": "Row1_12",
+   "file": "Row1_12.png",
+   "size": [
+    62,
+    94
+   ],
+   "opaque_px": 4231,
+   "sheet_bbox": [
+    485,
+    342,
+    547,
+    436
+   ]
+  },
+  {
+   "name": "Row1_13",
+   "file": "Row1_13.png",
+   "size": [
+    39,
+    77
+   ],
+   "opaque_px": 2481,
+   "sheet_bbox": [
+    519,
+    441,
+    558,
+    518
+   ]
+  },
+  {
+   "name": "Row1_14",
+   "file": "Row1_14.png",
+   "size": [
+    174,
+    652
+   ],
+   "opaque_px": 79465,
+   "sheet_bbox": [
+    619,
+    149,
+    793,
+    801
+   ]
+  },
+  {
+   "name": "Row1_15",
+   "file": "Row1_15.png",
+   "size": [
+    73,
+    239
+   ],
+   "opaque_px": 10583,
+   "sheet_bbox": [
+    784,
+    651,
+    857,
+    890
+   ]
+  },
+  {
+   "name": "Row1_16",
+   "file": "Row1_16.png",
+   "size": [
+    330,
+    283
+   ],
+   "opaque_px": 34562,
+   "sheet_bbox": [
+    812,
+    49,
+    1142,
+    332
+   ]
+  },
+  {
+   "name": "Row1_17",
+   "file": "Row1_17.png",
+   "size": [
+    70,
+    156
+   ],
+   "opaque_px": 8482,
+   "sheet_bbox": [
+    820,
+    480,
+    890,
+    636
+   ]
+  },
+  {
+   "name": "Row1_18",
+   "file": "Row1_18.png",
+   "size": [
+    113,
+    83
+   ],
+   "opaque_px": 7618,
+   "sheet_bbox": [
+    844,
+    416,
+    957,
+    499
+   ]
+  },
+  {
+   "name": "Row1_19",
+   "file": "Row1_19.png",
+   "size": [
+    108,
+    45
+   ],
+   "opaque_px": 4834,
+   "sheet_bbox": [
+    846,
+    349,
+    954,
+    394
+   ]
+  },
+  {
+   "name": "Row1_20",
+   "file": "Row1_20.png",
+   "size": [
+    69,
+    101
+   ],
+   "opaque_px": 6329,
+   "sheet_bbox": [
+    863,
+    43,
+    932,
+    144
+   ]
+  },
+  {
+   "name": "Row1_21",
+   "file": "Row1_21.png",
+   "size": [
+    67,
+    157
+   ],
+   "opaque_px": 8213,
+   "sheet_bbox": [
+    911,
+    480,
+    978,
+    637
+   ]
+  },
+  {
+   "name": "Row1_22",
+   "file": "Row1_22.png",
+   "size": [
+    90,
+    227
+   ],
+   "opaque_px": 10831,
+   "sheet_bbox": [
+    931,
+    651,
+    1021,
+    878
+   ]
+  },
+  {
+   "name": "Row1_23",
+   "file": "Row1_23.png",
+   "size": [
+    143,
+    369
+   ],
+   "opaque_px": 28372,
+   "sheet_bbox": [
+    1002,
+    437,
+    1145,
+    806
+   ]
+  },
+  {
+   "name": "Row1_24",
+   "file": "Row1_24.png",
+   "size": [
+    67,
+    126
+   ],
+   "opaque_px": 6144,
+   "sheet_bbox": [
+    1024,
+    207,
+    1091,
+    333
+   ]
+  },
+  {
+   "name": "Row1_25",
+   "file": "Row1_25.png",
+   "size": [
+    64,
+    97
+   ],
+   "opaque_px": 4421,
+   "sheet_bbox": [
+    1060,
+    336,
+    1124,
+    433
+   ]
+  },
+  {
+   "name": "Row1_26",
+   "file": "Row1_26.png",
+   "size": [
+    41,
+    79
+   ],
+   "opaque_px": 2571,
+   "sheet_bbox": [
+    1087,
+    441,
+    1128,
+    520
+   ]
+  },
+  {
+   "name": "Row1_27",
+   "file": "Row1_27.png",
+   "size": [
+    196,
+    663
+   ],
+   "opaque_px": 86429,
+   "sheet_bbox": [
+    1179,
+    146,
+    1375,
+    809
+   ]
+  },
+  {
+   "name": "Row1_28",
+   "file": "Row1_28.png",
+   "size": [
+    73,
+    240
+   ],
+   "opaque_px": 10840,
+   "sheet_bbox": [
+    1359,
+    650,
+    1432,
+    890
+   ]
+  },
+  {
+   "name": "Row1_29",
+   "file": "Row1_29.png",
+   "size": [
+    330,
+    284
+   ],
+   "opaque_px": 35387,
+   "sheet_bbox": [
+    1389,
+    51,
+    1719,
+    335
+   ]
+  },
+  {
+   "name": "Row1_30",
+   "file": "Row1_30.png",
+   "size": [
+    76,
+    155
+   ],
+   "opaque_px": 9030,
+   "sheet_bbox": [
+    1397,
+    480,
+    1473,
+    635
+   ]
+  },
+  {
+   "name": "Row1_31",
+   "file": "Row1_31.png",
+   "size": [
+    115,
+    87
+   ],
+   "opaque_px": 7817,
+   "sheet_bbox": [
+    1426,
+    417,
+    1541,
+    504
+   ]
+  },
+  {
+   "name": "Row1_32",
+   "file": "Row1_32.png",
+   "size": [
+    110,
+    45
+   ],
+   "opaque_px": 4930,
+   "sheet_bbox": [
+    1429,
+    351,
+    1539,
+    396
+   ]
+  },
+  {
+   "name": "Row1_33",
+   "file": "Row1_33.png",
+   "size": [
+    76,
+    99
+   ],
+   "opaque_px": 6556,
+   "sheet_bbox": [
+    1436,
+    44,
+    1512,
+    143
+   ]
+  },
+  {
+   "name": "Row1_34",
+   "file": "Row1_34.png",
+   "size": [
+    72,
+    157
+   ],
+   "opaque_px": 8953,
+   "sheet_bbox": [
+    1498,
+    480,
+    1570,
+    637
+   ]
+  },
+  {
+   "name": "Row1_35",
+   "file": "Row1_35.png",
+   "size": [
+    108,
+    218
+   ],
+   "opaque_px": 11230,
+   "sheet_bbox": [
+    1521,
+    650,
+    1629,
+    868
+   ]
+  },
+  {
+   "name": "Row1_36",
+   "file": "Row1_36.png",
+   "size": [
+    55,
+    73
+   ],
+   "opaque_px": 2824,
+   "sheet_bbox": [
+    1584,
+    368,
+    1639,
+    441
+   ]
+  },
+  {
+   "name": "Row1_37",
+   "file": "Row1_37.png",
+   "size": [
+    67,
+    131
+   ],
+   "opaque_px": 6417,
+   "sheet_bbox": [
+    1602,
+    204,
+    1669,
+    335
+   ]
+  },
+  {
+   "name": "Row1_38",
+   "file": "Row1_38.png",
+   "size": [
+    36,
+    76
+   ],
+   "opaque_px": 2190,
+   "sheet_bbox": [
+    1617,
+    447,
+    1653,
+    523
+   ]
+  },
+  {
+   "name": "Row1_39",
+   "file": "Row1_39.png",
+   "size": [
+    68,
+    95
+   ],
+   "opaque_px": 4390,
+   "sheet_bbox": [
+    1641,
+    336,
+    1709,
+    431
+   ]
+  },
+  {
+   "name": "Row1_40",
+   "file": "Row1_40.png",
+   "size": [
+    39,
+    76
+   ],
+   "opaque_px": 2353,
+   "sheet_bbox": [
+    1680,
+    441,
+    1719,
+    517
+   ]
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    86,
+    26
+   ],
+   "opaque_px": 1959,
+   "sheet_bbox": [
+    844,
+    933,
+    930,
+    959
+   ]
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    142,
+    30
+   ],
+   "opaque_px": 3209,
+   "sheet_bbox": [
+    1332,
+    933,
+    1474,
+    963
+   ]
+  },
+  {
+   "name": "Row2_3",
+   "file": "Row2_3.png",
+   "size": [
+    125,
+    26
+   ],
+   "opaque_px": 2677,
+   "sheet_bbox": [
+    1479,
+    933,
+    1604,
+    959
+   ]
+  }
+ ]
+}
