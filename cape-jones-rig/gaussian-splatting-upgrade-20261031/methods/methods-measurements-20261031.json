@@ -1,0 +1,72 @@
+{
+  "I1-3dgs-core": {
+    "label": "3DGS core (industry)",
+    "file": "method-I1-3dgs-core-front-20261031.png",
+    "plate_alpha_px": 373846,
+    "splat_alpha_px": 250408,
+    "iou_alpha": 0.6472
+  },
+  "I2-voxel": {
+    "label": "Voxel grid 8px (industry)",
+    "file": "method-I2-voxel-front-20261031.png",
+    "plate_alpha_px": 373846,
+    "splat_alpha_px": 346460,
+    "iou_alpha": 0.8778
+  },
+  "I3-palette16": {
+    "label": "Palette quantize 16 (industry)",
+    "file": "method-I3-palette16-front-20261031.png",
+    "plate_alpha_px": 373846,
+    "splat_alpha_px": 250408,
+    "iou_alpha": 0.6472
+  },
+  "I4-dither-fs": {
+    "label": "Floyd-Steinberg dither 16 (industry)",
+    "file": "method-I4-dither-fs-front-20261031.png",
+    "plate_alpha_px": 373846,
+    "splat_alpha_px": 248826,
+    "iou_alpha": 0.6433
+  },
+  "I5-mip": {
+    "label": "Mip-Splatting filter (industry)",
+    "file": "method-I5-mip-front-20261031.png",
+    "plate_alpha_px": 373846,
+    "splat_alpha_px": 344823,
+    "iou_alpha": 0.7671
+  },
+  "X1-2dgs": {
+    "label": "2DGS surfels (experimental)",
+    "file": "method-X1-2dgs-front-20261031.png",
+    "plate_alpha_px": 373846,
+    "splat_alpha_px": 160218,
+    "iou_alpha": 0.4137
+  },
+  "X2-scaffold": {
+    "label": "Scaffold-GS anchors (experimental)",
+    "file": "method-X2-scaffold-front-20261031.png",
+    "plate_alpha_px": 373846,
+    "splat_alpha_px": 136006,
+    "iou_alpha": 0.3504
+  },
+  "X3-4dgs": {
+    "label": "4DGS breathing t=0.25 (experimental)",
+    "file": "method-X3-4dgs-front-20261031.png",
+    "plate_alpha_px": 373846,
+    "splat_alpha_px": 244145,
+    "iou_alpha": 0.6089
+  },
+  "X4-jitter": {
+    "label": "Jittered/blue-noise sampling (experimental)",
+    "file": "method-X4-jitter-front-20261031.png",
+    "plate_alpha_px": 373846,
+    "splat_alpha_px": 214553,
+    "iou_alpha": 0.5498
+  },
+  "X5-depth-sigma": {
+    "label": "Depth-scaled sigma (experimental)",
+    "file": "method-X5-depth-sigma-front-20261031.png",
+    "plate_alpha_px": 373846,
+    "splat_alpha_px": 354853,
+    "iou_alpha": 0.8979
+  }
+}
