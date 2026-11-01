@@ -1,0 +1,88 @@
+frame,kind,from,to,t,eased,dy_rig,dx_rig,height_video_px,label
+0,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+1,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+2,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+3,inbetween,apose,Recoome rollcall,0.12,0.01,0,0,0,GROUNDED
+4,inbetween,apose,Recoome rollcall,0.25,0.06,4,0,0,GROUNDED
+5,BREAKDOWN arc +10deg largest-moving arm upper,apose,Recoome rollcall,0.38,0.21,16,0,0,GROUNDED
+6,inbetween,apose,Recoome rollcall,0.5,0.5,38,0,0,GROUNDED
+7,BREAKDOWN follow-through +8deg that arm lower,apose,Recoome rollcall,0.62,0.79,59,0,0,GROUNDED
+8,inbetween,apose,Recoome rollcall,0.75,0.94,71,0,0,GROUNDED
+9,inbetween,apose,Recoome rollcall,0.88,0.99,75,0,0,GROUNDED
+10,KEY hold,Recoome rollcall,Recoome rollcall,0,0,76,0,0,GROUNDED
+11,KEY hold,Recoome rollcall,Recoome rollcall,0,0,76,0,0,GROUNDED
+12,KEY hold,Recoome rollcall,Recoome rollcall,0,0,76,0,0,GROUNDED
+13,KEY hold,Recoome rollcall,Recoome rollcall,0,0,76,0,0,GROUNDED
+14,KEY hold,Recoome rollcall,Recoome rollcall,0,0,76,0,0,GROUNDED
+15,inbetween,Recoome rollcall,Burter rollcall,0.12,0.01,75,0,0,GROUNDED
+16,inbetween,Recoome rollcall,Burter rollcall,0.25,0.06,73,0,0,GROUNDED
+17,BREAKDOWN arc +10deg largest-moving arm upper,Recoome rollcall,Burter rollcall,0.38,0.21,66,0,0,GROUNDED
+18,inbetween,Recoome rollcall,Burter rollcall,0.5,0.5,53,0,0,GROUNDED
+19,BREAKDOWN follow-through +8deg that arm lower,Recoome rollcall,Burter rollcall,0.62,0.79,39,0,0,GROUNDED
+20,inbetween,Recoome rollcall,Burter rollcall,0.75,0.94,32,0,0,GROUNDED
+21,inbetween,Recoome rollcall,Burter rollcall,0.88,0.99,30,0,0,GROUNDED
+22,KEY hold,Burter rollcall,Burter rollcall,0,0,30,0,0,GROUNDED
+23,KEY hold,Burter rollcall,Burter rollcall,0,0,30,0,0,GROUNDED
+24,KEY hold,Burter rollcall,Burter rollcall,0,0,30,0,0,GROUNDED
+25,KEY hold,Burter rollcall,Burter rollcall,0,0,30,0,0,GROUNDED
+26,KEY hold,Burter rollcall,Burter rollcall,0,0,30,0,0,GROUNDED
+27,inbetween,Burter rollcall,Jeice rollcall,0.12,0.01,29,0,0,GROUNDED
+28,inbetween,Burter rollcall,Jeice rollcall,0.25,0.06,28,0,0,GROUNDED
+29,BREAKDOWN arc +10deg largest-moving arm upper,Burter rollcall,Jeice rollcall,0.38,0.21,24,0,0,GROUNDED
+30,inbetween,Burter rollcall,Jeice rollcall,0.5,0.5,16,0,0,GROUNDED
+31,BREAKDOWN follow-through +8deg that arm lower,Burter rollcall,Jeice rollcall,0.62,0.79,7,0,0,GROUNDED
+32,inbetween,Burter rollcall,Jeice rollcall,0.75,0.94,3,0,0,GROUNDED
+33,inbetween,Burter rollcall,Jeice rollcall,0.88,0.99,2,0,0,GROUNDED
+34,KEY hold,Jeice rollcall,Jeice rollcall,0,0,2,0,0,GROUNDED
+35,KEY hold,Jeice rollcall,Jeice rollcall,0,0,2,0,0,GROUNDED
+36,KEY hold,Jeice rollcall,Jeice rollcall,0,0,2,0,0,GROUNDED
+37,KEY hold,Jeice rollcall,Jeice rollcall,0,0,2,0,0,GROUNDED
+38,KEY hold,Jeice rollcall,Jeice rollcall,0,0,2,0,0,GROUNDED
+39,inbetween,Jeice rollcall,Guldo rollcall,0.12,0.01,2,0,0,GROUNDED
+40,inbetween,Jeice rollcall,Guldo rollcall,0.25,0.06,8,0,0,GROUNDED
+41,BREAKDOWN arc +10deg largest-moving arm upper,Jeice rollcall,Guldo rollcall,0.38,0.21,24,0,0,GROUNDED
+42,inbetween,Jeice rollcall,Guldo rollcall,0.5,0.5,55,0,0,GROUNDED
+43,BREAKDOWN follow-through +8deg that arm lower,Jeice rollcall,Guldo rollcall,0.62,0.79,85,0,0,GROUNDED
+44,inbetween,Jeice rollcall,Guldo rollcall,0.75,0.94,101,0,0,GROUNDED
+45,inbetween,Jeice rollcall,Guldo rollcall,0.88,0.99,107,0,0,GROUNDED
+46,KEY hold,Guldo rollcall,Guldo rollcall,0,0,108,0,0,GROUNDED
+47,KEY hold,Guldo rollcall,Guldo rollcall,0,0,108,0,0,GROUNDED
+48,KEY hold,Guldo rollcall,Guldo rollcall,0,0,108,0,0,GROUNDED
+49,KEY hold,Guldo rollcall,Guldo rollcall,0,0,108,0,0,GROUNDED
+50,KEY hold,Guldo rollcall,Guldo rollcall,0,0,108,0,0,GROUNDED
+51,inbetween,Guldo rollcall,Captain rollcall,0.12,0.01,107,0,0,GROUNDED
+52,inbetween,Guldo rollcall,Captain rollcall,0.25,0.06,103,0,0,GROUNDED
+53,BREAKDOWN arc +10deg largest-moving arm upper,Guldo rollcall,Captain rollcall,0.38,0.21,94,0,0,GROUNDED
+54,inbetween,Guldo rollcall,Captain rollcall,0.5,0.5,75,0,0,GROUNDED
+55,BREAKDOWN follow-through +8deg that arm lower,Guldo rollcall,Captain rollcall,0.62,0.79,55,0,0,GROUNDED
+56,inbetween,Guldo rollcall,Captain rollcall,0.75,0.94,46,0,0,GROUNDED
+57,inbetween,Guldo rollcall,Captain rollcall,0.88,0.99,42,0,0,GROUNDED
+58,KEY hold,Captain rollcall,Captain rollcall,0,0,42,0,0,GROUNDED
+59,KEY hold,Captain rollcall,Captain rollcall,0,0,42,0,0,GROUNDED
+60,KEY hold,Captain rollcall,Captain rollcall,0,0,42,0,0,GROUNDED
+61,KEY hold,Captain rollcall,Captain rollcall,0,0,42,0,0,GROUNDED
+62,KEY hold,Captain rollcall,Captain rollcall,0,0,42,0,0,GROUNDED
+63,inbetween,Captain rollcall,Captain spread,0.12,0.01,41,0,0,GROUNDED
+64,inbetween,Captain rollcall,Captain spread,0.25,0.06,41,0,0,GROUNDED
+65,BREAKDOWN arc +10deg largest-moving arm upper,Captain rollcall,Captain spread,0.38,0.21,39,0,0,GROUNDED
+66,inbetween,Captain rollcall,Captain spread,0.5,0.5,36,0,0,GROUNDED
+67,BREAKDOWN follow-through +8deg that arm lower,Captain rollcall,Captain spread,0.62,0.79,32,0,0,GROUNDED
+68,inbetween,Captain rollcall,Captain spread,0.75,0.94,30,0,0,GROUNDED
+69,inbetween,Captain rollcall,Captain spread,0.88,0.99,30,0,0,GROUNDED
+70,KEY hold,Captain spread,Captain spread,0,0,30,0,0,GROUNDED
+71,KEY hold,Captain spread,Captain spread,0,0,30,0,0,GROUNDED
+72,KEY hold,Captain spread,Captain spread,0,0,30,0,0,GROUNDED
+73,KEY hold,Captain spread,Captain spread,0,0,30,0,0,GROUNDED
+74,KEY hold,Captain spread,Captain spread,0,0,30,0,0,GROUNDED
+75,OVERSHOOT 5% beyond key,Captain rollcall,Captain spread,1.05,1.05,30,0,0,GROUNDED
+76,SETTLE back to key,Captain spread,Captain spread,1.0,1.0,30,0,0,GROUNDED
+77,inbetween,Captain spread,apose,0.12,0.01,29,0,0,GROUNDED
+78,inbetween,Captain spread,apose,0.25,0.06,28,0,0,GROUNDED
+79,BREAKDOWN arc +10deg largest-moving arm upper,Captain spread,apose,0.38,0.21,23,0,0,GROUNDED
+80,inbetween,Captain spread,apose,0.5,0.5,15,0,0,GROUNDED
+81,BREAKDOWN follow-through +8deg that arm lower,Captain spread,apose,0.62,0.79,6,0,0,GROUNDED
+82,inbetween,Captain spread,apose,0.75,0.94,1,0,0,GROUNDED
+83,inbetween,Captain spread,apose,0.88,0.99,0,0,0,GROUNDED
+84,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+85,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+86,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
