@@ -1,0 +1,26 @@
+{
+  "plate_alpha_px": 373846,
+  "splat_alpha_px": 250408,
+  "iou_alpha": 0.6472,
+  "version": "V1",
+  "label": "V1 preset (reproduction)",
+  "gaussians": 5846,
+  "stride": 8,
+  "sigma": 3.2,
+  "opacity": 0.85,
+  "kernel": "gauss",
+  "palette": null,
+  "depth_max_px": 81.9,
+  "frames": 9,
+  "angles": [
+    -40,
+    -25,
+    -10,
+    0,
+    10,
+    25,
+    40,
+    25,
+    10
+  ]
+}
