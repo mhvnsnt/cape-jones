@@ -1,0 +1,262 @@
+{
+ "source": "color-keys/color-key-sheet-4.jpg",
+ "group": "color-keys",
+ "plate": "color-keys/color-key-sheet-4.png",
+ "plate_md5": "095fe1acf9255013816daf6be5cfbdb3",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    89,
+    21
+   ],
+   "opaque_px": 1689,
+   "sheet_bbox": [
+    225,
+    15,
+    314,
+    36
+   ],
+   "area_px": 1689,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    77,
+    21
+   ],
+   "opaque_px": 1370,
+   "sheet_bbox": [
+    788,
+    15,
+    865,
+    36
+   ],
+   "area_px": 1370,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_3",
+   "file": "Row1_3.png",
+   "size": [
+    109,
+    21
+   ],
+   "opaque_px": 2145,
+   "sheet_bbox": [
+    870,
+    15,
+    979,
+    36
+   ],
+   "area_px": 2145,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_4",
+   "file": "Row1_4.png",
+   "size": [
+    159,
+    21
+   ],
+   "opaque_px": 2848,
+   "sheet_bbox": [
+    1399,
+    15,
+    1558,
+    36
+   ],
+   "area_px": 2848,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    556,
+    457
+   ],
+   "opaque_px": 253121,
+   "sheet_bbox": [
+    25,
+    40,
+    581,
+    497
+   ],
+   "area_px": 253121,
+   "provisional_class": "colour_variant_figure",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    564,
+    456
+   ],
+   "opaque_px": 256688,
+   "sheet_bbox": [
+    607,
+    41,
+    1171,
+    497
+   ],
+   "area_px": 256688,
+   "provisional_class": "colour_variant_figure",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_3",
+   "file": "Row2_3.png",
+   "size": [
+    579,
+    457
+   ],
+   "opaque_px": 263453,
+   "sheet_bbox": [
+    1189,
+    40,
+    1768,
+    497
+   ],
+   "area_px": 263453,
+   "provisional_class": "colour_variant_figure",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_1",
+   "file": "Row3_1.png",
+   "size": [
+    77,
+    21
+   ],
+   "opaque_px": 1501,
+   "sheet_bbox": [
+    447,
+    513,
+    524,
+    534
+   ],
+   "area_px": 1501,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_2",
+   "file": "Row3_2.png",
+   "size": [
+    71,
+    21
+   ],
+   "opaque_px": 1246,
+   "sheet_bbox": [
+    530,
+    513,
+    601,
+    534
+   ],
+   "area_px": 1246,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_3",
+   "file": "Row3_3.png",
+   "size": [
+    78,
+    21
+   ],
+   "opaque_px": 1453,
+   "sheet_bbox": [
+    605,
+    513,
+    683,
+    534
+   ],
+   "area_px": 1453,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_4",
+   "file": "Row3_4.png",
+   "size": [
+    73,
+    20
+   ],
+   "opaque_px": 1373,
+   "sheet_bbox": [
+    1119,
+    514,
+    1192,
+    534
+   ],
+   "area_px": 1373,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_5",
+   "file": "Row3_5.png",
+   "size": [
+    91,
+    21
+   ],
+   "opaque_px": 1624,
+   "sheet_bbox": [
+    1198,
+    514,
+    1289,
+    535
+   ],
+   "area_px": 1624,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row4_1",
+   "file": "Row4_1.png",
+   "size": [
+    587,
+    447
+   ],
+   "opaque_px": 261855,
+   "sheet_bbox": [
+    285,
+    538,
+    872,
+    985
+   ],
+   "area_px": 261855,
+   "provisional_class": "colour_variant_figure",
+   "grid_split": false
+  },
+  {
+   "name": "Row4_2",
+   "file": "Row4_2.png",
+   "size": [
+    570,
+    448
+   ],
+   "opaque_px": 254016,
+   "sheet_bbox": [
+    918,
+    538,
+    1488,
+    986
+   ],
+   "area_px": 254016,
+   "provisional_class": "colour_variant_figure",
+   "grid_split": false
+  }
+ ]
+}
