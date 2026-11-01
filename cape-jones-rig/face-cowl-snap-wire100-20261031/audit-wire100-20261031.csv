@@ -1,0 +1,9 @@
+pose,side,gate_output,applied,eye_check,result
+jojo-03,L,NO SNAP,"L:none,R:face",,PASS
+jojo-03,R,FACE-SNAP: whole chain above head (torso < head < arm),"L:none,R:face",,PASS
+ginyu-03,L,COWL-CANDIDATE: raised arm + collar overlap — EYE-CHECK bicep interruption before snapping,"L:cowl-upper,R:cowl-upper","bicep notch at collar, both sides, viewed",PASS
+ginyu-03,R,COWL-CANDIDATE: raised arm + collar overlap — EYE-CHECK bicep interruption before snapping,"L:cowl-upper,R:cowl-upper","bicep notch at collar, both sides, viewed",PASS
+jojo-02,L,COWL-CANDIDATE: raised arm + collar overlap — EYE-CHECK bicep interruption before snapping,"L:none,R:none","L FALSE POSITIVE: fist beside head, shoulder attachment only, not a cut bicep; R chest: forearm already in front, upper at side, not eaten",PASS
+jojo-02,R,"CHEST-SNAP: whole chain above torso, below head (torso < arm < head)","L:none,R:none","L FALSE POSITIVE: fist beside head, shoulder attachment only, not a cut bicep; R chest: forearm already in front, upper at side, not eaten",PASS
+v7c-jump,L,COWL-CANDIDATE: raised arm + collar overlap — EYE-CHECK bicep interruption before snapping,"L:cowl-upper,R:cowl-upper","bicep notch at collar, both sides, viewed",PASS
+v7c-jump,R,COWL-CANDIDATE: raised arm + collar overlap — EYE-CHECK bicep interruption before snapping,"L:cowl-upper,R:cowl-upper","bicep notch at collar, both sides, viewed",PASS
