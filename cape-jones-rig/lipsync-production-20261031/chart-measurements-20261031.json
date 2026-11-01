@@ -1,0 +1,562 @@
+[
+ {
+  "key": "rest",
+  "label": "REST / neutral (closed)",
+  "patch": "rest_mbp_copy.png",
+  "patch_size": [
+   68,
+   9
+  ],
+  "patch_alpha_px": 276,
+  "patch_alpha_bbox": [
+   0,
+   0,
+   67,
+   8
+  ],
+  "fitted_width": 178,
+  "method": "reuse (same drawing as MBP)",
+  "sources": "09_RBN01_CAMS",
+  "angle": "FRONT",
+  "skin_test_px": 0,
+  "costume_test_px": 0,
+  "scale": 2.6176,
+  "fitted_size": [
+   178,
+   24
+  ],
+  "fitted_alpha_bbox": [
+   0,
+   0,
+   177,
+   23,
+   2863
+  ],
+  "fitted_alpha_px": 2863,
+  "jaw_drop": 0,
+  "mouth_centre": [
+   231.5,
+   504.5
+  ]
+ },
+ {
+  "key": "ee",
+  "label": "EE (smile)",
+  "patch": "ee_verbatim.png",
+  "patch_size": [
+   292,
+   110
+  ],
+  "patch_alpha_px": 1710,
+  "patch_alpha_bbox": [
+   0,
+   0,
+   291,
+   109
+  ],
+  "fitted_width": 180,
+  "method": "verbatim single-source",
+  "sources": "50_RBEXPRES04",
+  "angle": "FRONT",
+  "skin_test_px": 0,
+  "costume_test_px": 0,
+  "scale": 0.6164,
+  "fitted_size": [
+   180,
+   68
+  ],
+  "fitted_alpha_bbox": [
+   0,
+   0,
+   179,
+   67,
+   1201
+  ],
+  "fitted_alpha_px": 1201,
+  "jaw_drop": 2,
+  "mouth_centre": [
+   231.5,
+   505.0
+  ]
+ },
+ {
+  "key": "eh",
+  "label": "EH (open smile)",
+  "patch": "eh_verbatim.png",
+  "patch_size": [
+   466,
+   160
+  ],
+  "patch_alpha_px": 36600,
+  "patch_alpha_bbox": [
+   0,
+   0,
+   465,
+   159
+  ],
+  "fitted_width": 194,
+  "method": "verbatim single-source",
+  "sources": "53_RBEXPRES03",
+  "angle": "FRONT",
+  "skin_test_px": 0,
+  "costume_test_px": 0,
+  "scale": 0.4163,
+  "fitted_size": [
+   194,
+   67
+  ],
+  "fitted_alpha_bbox": [
+   0,
+   0,
+   193,
+   66,
+   6895
+  ],
+  "fitted_alpha_px": 6895,
+  "jaw_drop": 10,
+  "mouth_centre": [
+   231.5,
+   507.0
+  ]
+ },
+ {
+  "key": "ah",
+  "label": "AH SHOUT (teeth + tongue)",
+  "patch": "ah_shout_composite.png",
+  "patch_size": [
+   466,
+   160
+  ],
+  "patch_alpha_px": 42165,
+  "patch_alpha_bbox": [
+   0,
+   0,
+   465,
+   159
+  ],
+  "fitted_width": 198,
+  "method": "composite: EH cavity+tongue + GK upper teeth",
+  "sources": "53_RBEXPRES03 + 49_RBEXPRES05",
+  "angle": "FRONT (both)",
+  "skin_test_px": 30,
+  "costume_test_px": 15,
+  "scale": 0.4249,
+  "fitted_size": [
+   198,
+   68
+  ],
+  "fitted_alpha_bbox": [
+   0,
+   0,
+   197,
+   67,
+   8457
+  ],
+  "fitted_alpha_px": 8457,
+  "jaw_drop": 16,
+  "mouth_centre": [
+   231.5,
+   508.5
+  ]
+ },
+ {
+  "key": "oh",
+  "label": "OH (tall oval)",
+  "patch": "oh_composite.png",
+  "patch_size": [
+   256,
+   151
+  ],
+  "patch_alpha_px": 18097,
+  "patch_alpha_bbox": [
+   0,
+   0,
+   255,
+   150
+  ],
+  "fitted_width": 110,
+  "method": "composite-transform: EH cavity-only, sx0.55 sy0.95 + per-column fill between first/last alpha (4866px, nearest pulled pixel); lower tongue bay stays transparent (head skin = light lower interior, disclosed)",
+  "sources": "53_RBEXPRES03 (cavity)",
+  "angle": "FRONT",
+  "skin_test_px": 5,
+  "costume_test_px": 145,
+  "scale": 0.4297,
+  "fitted_size": [
+   110,
+   65
+  ],
+  "fitted_alpha_bbox": [
+   0,
+   0,
+   109,
+   64,
+   3485
+  ],
+  "fitted_alpha_px": 3485,
+  "jaw_drop": 12,
+  "mouth_centre": [
+   231.5,
+   507.5
+  ]
+ },
+ {
+  "key": "oo",
+  "label": "OO (small round)",
+  "patch": "oo_composite.png",
+  "patch_size": [
+   168,
+   99
+  ],
+  "patch_alpha_px": 8204,
+  "patch_alpha_bbox": [
+   0,
+   0,
+   167,
+   98
+  ],
+  "fitted_width": 72,
+  "method": "composite-transform: EH cavity-only, sx0.36 sy0.62 + per-column fill (2160px); lower tongue bay stays transparent (disclosed)",
+  "sources": "53_RBEXPRES03 (cavity)",
+  "angle": "FRONT",
+  "skin_test_px": 5,
+  "costume_test_px": 17,
+  "scale": 0.4286,
+  "fitted_size": [
+   72,
+   42
+  ],
+  "fitted_alpha_bbox": [
+   0,
+   0,
+   71,
+   41,
+   1557
+  ],
+  "fitted_alpha_px": 1557,
+  "jaw_drop": 8,
+  "mouth_centre": [
+   231.5,
+   506.5
+  ]
+ },
+ {
+  "key": "mbp",
+  "label": "MBP (closed)",
+  "patch": "mbp_verbatim.png",
+  "patch_size": [
+   68,
+   9
+  ],
+  "patch_alpha_px": 276,
+  "patch_alpha_bbox": [
+   0,
+   0,
+   67,
+   8
+  ],
+  "fitted_width": 178,
+  "method": "verbatim single-source, 288dpi",
+  "sources": "09_RBN01_CAMS",
+  "angle": "FRONT",
+  "skin_test_px": 0,
+  "costume_test_px": 0,
+  "scale": 2.6176,
+  "fitted_size": [
+   178,
+   24
+  ],
+  "fitted_alpha_bbox": [
+   0,
+   0,
+   177,
+   23,
+   2863
+  ],
+  "fitted_alpha_px": 2863,
+  "jaw_drop": 0,
+  "mouth_centre": [
+   231.5,
+   504.5
+  ]
+ },
+ {
+  "key": "fv",
+  "label": "FV (teeth on lip)",
+  "patch": "fv_composite.png",
+  "patch_size": [
+   420,
+   50
+  ],
+  "patch_alpha_px": 9021,
+  "patch_alpha_bbox": [
+   0,
+   0,
+   419,
+   47
+  ],
+  "fitted_width": 170,
+  "method": "composite: GK teeth row + MBP lip line",
+  "sources": "49_RBEXPRES05 + 09_RBN01_CAMS",
+  "angle": "FRONT (both)",
+  "skin_test_px": 28,
+  "costume_test_px": 22,
+  "scale": 0.4048,
+  "fitted_size": [
+   170,
+   20
+  ],
+  "fitted_alpha_bbox": [
+   0,
+   0,
+   169,
+   19,
+   1809
+  ],
+  "fitted_alpha_px": 1809,
+  "jaw_drop": 2,
+  "mouth_centre": [
+   231.5,
+   505.0
+  ]
+ },
+ {
+  "key": "l",
+  "label": "L (tongue up)",
+  "patch": "l_composite.png",
+  "patch_size": [
+   289,
+   127
+  ],
+  "patch_alpha_px": 22962,
+  "patch_alpha_bbox": [
+   0,
+   0,
+   288,
+   126
+  ],
+  "fitted_width": 130,
+  "method": "composite: narrowed cavity (sx0.62 sy0.80) + tongue rotated 90deg (tip up) + per-column fill (956px)",
+  "sources": "53_RBEXPRES03",
+  "angle": "FRONT",
+  "skin_test_px": 2,
+  "costume_test_px": 95,
+  "scale": 0.4498,
+  "fitted_size": [
+   130,
+   57
+  ],
+  "fitted_alpha_bbox": [
+   0,
+   0,
+   129,
+   56,
+   4785
+  ],
+  "fitted_alpha_px": 4785,
+  "jaw_drop": 6,
+  "mouth_centre": [
+   231.5,
+   506.0
+  ]
+ },
+ {
+  "key": "sz",
+  "label": "SZ (closed teeth)",
+  "patch": "sz_composite.png",
+  "patch_size": [
+   699,
+   102
+  ],
+  "patch_alpha_px": 36814,
+  "patch_alpha_bbox": [
+   0,
+   0,
+   698,
+   101
+  ],
+  "fitted_width": 150,
+  "method": "composite-transform: GK teeth, sx0.75 sy0.70",
+  "sources": "49_RBEXPRES05",
+  "angle": "FRONT",
+  "skin_test_px": 166,
+  "costume_test_px": 33,
+  "scale": 0.2146,
+  "fitted_size": [
+   150,
+   22
+  ],
+  "fitted_alpha_bbox": [
+   0,
+   0,
+   149,
+   21,
+   2046
+  ],
+  "fitted_alpha_px": 2046,
+  "jaw_drop": 2,
+  "mouth_centre": [
+   231.5,
+   505.0
+  ]
+ },
+ {
+  "key": "th",
+  "label": "TH (tongue thru teeth)",
+  "patch": "th_composite.png",
+  "patch_size": [
+   727,
+   127
+  ],
+  "patch_alpha_px": 43160,
+  "patch_alpha_bbox": [
+   0,
+   0,
+   726,
+   126
+  ],
+  "fitted_width": 150,
+  "method": "composite: GK teeth + tongue protruding below",
+  "sources": "49_RBEXPRES05 + 53_RBEXPRES03",
+  "angle": "FRONT (both)",
+  "skin_test_px": 167,
+  "costume_test_px": 49,
+  "scale": 0.2063,
+  "fitted_size": [
+   150,
+   26
+  ],
+  "fitted_alpha_bbox": [
+   0,
+   0,
+   149,
+   25,
+   2234
+  ],
+  "fitted_alpha_px": 2234,
+  "jaw_drop": 4,
+  "mouth_centre": [
+   231.5,
+   505.5
+  ]
+ },
+ {
+  "key": "r",
+  "label": "R (small rounded)",
+  "patch": "r_composite.png",
+  "patch_size": [
+   224,
+   108
+  ],
+  "patch_alpha_px": 11667,
+  "patch_alpha_bbox": [
+   0,
+   0,
+   223,
+   107
+  ],
+  "fitted_width": 90,
+  "method": "composite-transform: EH cavity-only, sx0.48 sy0.68 + per-column fill (3099px); lower tongue bay stays transparent (disclosed)",
+  "sources": "53_RBEXPRES03 (cavity)",
+  "angle": "FRONT",
+  "skin_test_px": 1,
+  "costume_test_px": 30,
+  "scale": 0.4018,
+  "fitted_size": [
+   90,
+   43
+  ],
+  "fitted_alpha_bbox": [
+   0,
+   0,
+   89,
+   42,
+   1946
+  ],
+  "fitted_alpha_px": 1946,
+  "jaw_drop": 6,
+  "mouth_centre": [
+   231.5,
+   506.0
+  ]
+ },
+ {
+  "key": "w",
+  "label": "W (tight round)",
+  "patch": "w_composite.png",
+  "patch_size": [
+   154,
+   83
+  ],
+  "patch_alpha_px": 6426,
+  "patch_alpha_bbox": [
+   0,
+   0,
+   153,
+   82
+  ],
+  "fitted_width": 64,
+  "method": "composite-transform: EH cavity-only, sx0.33 sy0.52 + per-column fill (1699px); lower tongue bay stays transparent (disclosed)",
+  "sources": "53_RBEXPRES03 (cavity)",
+  "angle": "FRONT",
+  "skin_test_px": 0,
+  "costume_test_px": 2,
+  "scale": 0.4156,
+  "fitted_size": [
+   64,
+   34
+  ],
+  "fitted_alpha_bbox": [
+   0,
+   0,
+   63,
+   33,
+   1141
+  ],
+  "fitted_alpha_px": 1141,
+  "jaw_drop": 6,
+  "mouth_centre": [
+   231.5,
+   506.0
+  ]
+ },
+ {
+  "key": "gk",
+  "label": "GK (teeth grin)",
+  "patch": "gk_verbatim.png",
+  "patch_size": [
+   932,
+   145
+  ],
+  "patch_alpha_px": 64304,
+  "patch_alpha_bbox": [
+   0,
+   0,
+   931,
+   144
+  ],
+  "fitted_width": 190,
+  "method": "verbatim single-source, chin curve dropped, corner outlines retained",
+  "sources": "49_RBEXPRES05",
+  "angle": "FRONT",
+  "skin_test_px": 0,
+  "costume_test_px": 0,
+  "scale": 0.2039,
+  "fitted_size": [
+   190,
+   30
+  ],
+  "fitted_alpha_bbox": [
+   0,
+   0,
+   189,
+   29,
+   3361
+  ],
+  "fitted_alpha_px": 3361,
+  "jaw_drop": 8,
+  "mouth_centre": [
+   231.5,
+   506.5
+  ]
+ }
+]
