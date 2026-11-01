@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Synfig tween test, Cape Jones free stack, 2026-10-31.
+     A red circle tweens left->right across 24 frames @24fps (1s),
+     over the grey-128 plate colour used by the Cape Jones rig.
+     Vector tween = the Synfig replacement for Animate shape tweens. -->
+<canvas version="1.5" width="550" height="750" xres="2834.64" yres="2834.64" view-box="-2.75 3.75 2.75 -3.75" bgcolor="0.50196 0.50196 0.50196 1" fps="24" begin-time="0f" end-time="24f" antialias="1">
+  <name>cape-jones-synfig-tween-test</name>
+  <desc>24-frame vector tween test for the free animation stack</desc>
+  <layer type="circle" active="true" version="0.2" exclude_from_rendering="false">
+    <param name="z_depth">
+      <real value="0.0000000000"/>
+    </param>
+    <param name="amount">
+      <real value="1.0000000000"/>
+    </param>
+    <param name="blend_method">
+      <integer value="0"/>
+    </param>
+    <param name="origin">
+      <animated type="vector">
+        <waypoint time="0f" before="clamped" after="clamped">
+          <vector>
+            <x>-2.0000000000</x>
+            <y>0.0000000000</y>
+          </vector>
+        </waypoint>
+        <waypoint time="24f" before="clamped" after="clamped">
+          <vector>
+            <x>2.0000000000</x>
+            <y>0.0000000000</y>
+          </vector>
+        </waypoint>
+      </animated>
+    </param>
+    <param name="radius">
+      <real value="0.5000000000"/>
+    </param>
+    <param name="color">
+      <color>
+        <r>1.0000000000</r>
+        <g>0.0000000000</g>
+        <b>0.0000000000</b>
+        <a>1.0000000000</a>
+      </color>
+    </param>
+  </layer>
+</canvas>
