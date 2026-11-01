@@ -1,0 +1,41 @@
+{
+  "preset": "Dream 10",
+  "name": "Dream 10 \u2014 Light Pink Cape, Cyan Suit",
+  "status": "PRESET, approval 0/1 separately",
+  "cape": [
+    255,
+    120,
+    220
+  ],
+  "cowl_helm": [
+    60,
+    220,
+    120
+  ],
+  "suit": [
+    180,
+    240,
+    255
+  ],
+  "suit_shadow": [
+    140,
+    190,
+    210
+  ],
+  "skin": [
+    255,
+    200,
+    180
+  ],
+  "rim_6px": [
+    255,
+    120,
+    220
+  ],
+  "method": "nearest-base-colour recolour, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim",
+  "source_base": "rig-apose-v7c-clean-transparent.png",
+  "size": [
+    1100,
+    1500
+  ]
+}
