@@ -1,0 +1,47 @@
+{
+  "approval": "Mars 2026-11-01 01:48 CST: Great job save those presets and land it in the repo I approve",
+  "scope": "approved for saving as presets + landing in repo; shots listed as approved-for-landing, NOT final TV shot approval 30/30 unless Mars says so explicitly later",
+  "presets": [
+    {
+      "name": "shots-30",
+      "source": "shots-endtoend-20261031",
+      "status": "approved-for-landing"
+    },
+    {
+      "name": "storyboards-animatic",
+      "source": "storyboards-animatic-20261031",
+      "status": "approved-for-landing"
+    },
+    {
+      "name": "wired-sit-chair",
+      "source": "rig-34-disassembled-wired-20261101",
+      "status": "APPROVED PERFECT 1/1 (2026-11-01 01:21 CST), confirmed for landing, do NOT overwrite"
+    },
+    {
+      "name": "bicep-whole-fix",
+      "source": "rig-34-bicep-whole-fix-20261101",
+      "status": "approved-for-landing, whole pieces only"
+    },
+    {
+      "name": "locked-default-sitting-pose",
+      "source": "rig-34-locked-default-sitting-20261101",
+      "status": "NOT approved as-is (superseded 01:54 CST), neck v2 owed, land old pose only as unapproved work-in-progress"
+    },
+    {
+      "name": "sit-lean-animation",
+      "source": "anim-sit-locked-20261101",
+      "status": "NOT approved, playback failure, land original + small version as unapproved"
+    },
+    {
+      "name": "sit-idle-animation",
+      "source": "rig-34-locked-default-sitting-20261101/animation/sit-idle-locked-20261101",
+      "status": "APPROVED 1/1, SAVED (2026-11-01 01:54 CST)"
+    }
+  ],
+  "corrections_20261101_0154": {
+    "locked_default_sitting_pose": "NOT approved as-is, superseded by neck v2: neck 25% wider (101->~126px), lower 20px (top 330->350, bottom 412->432), centre x700 unchanged, whole-piece only",
+    "sit_idle": "APPROVED 1/1, SAVED, land as approved",
+    "sit_lean": "NOT approved, playback failure, GIF 21 MB / MP4 50 MB too large for chat, small version <8 MB / 700px wide owed, land original + small version as unapproved when small version arrives",
+    "shots": "still approved-for-landing only, NOT final TV shot approval 30/30 unless Mars says so explicitly later"
+  }
+}
