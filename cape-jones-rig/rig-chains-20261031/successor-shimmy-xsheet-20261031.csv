@@ -1,0 +1,62 @@
+frame,kind,from,to,t,eased,dy_rig,dx_rig,height_video_px,label
+0,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+1,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+2,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+3,inbetween,apose,shimmy centre,0.12,0.01,0,0,0,GROUNDED
+4,inbetween,apose,shimmy centre,0.25,0.06,0,0,0,GROUNDED
+5,BREAKDOWN arc +10deg largest-moving arm upper,apose,shimmy centre,0.38,0.21,2,0,0,GROUNDED
+6,inbetween,apose,shimmy centre,0.5,0.5,6,0,0,GROUNDED
+7,BREAKDOWN follow-through +8deg that arm lower,apose,shimmy centre,0.62,0.79,9,0,0,GROUNDED
+8,inbetween,apose,shimmy centre,0.75,0.94,11,0,0,GROUNDED
+9,inbetween,apose,shimmy centre,0.88,0.99,11,0,0,GROUNDED
+10,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+11,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+12,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+13,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+14,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+15,inbetween,shimmy centre,shimmy sway left,0.12,0.01,12,0,0,GROUNDED
+16,inbetween,shimmy centre,shimmy sway left,0.25,0.06,12,-1,0,GROUNDED
+17,BREAKDOWN arc +10deg largest-moving arm upper,shimmy centre,shimmy sway left,0.38,0.21,12,-6,0,GROUNDED
+18,inbetween,shimmy centre,shimmy sway left,0.5,0.5,12,-15,0,GROUNDED
+19,BREAKDOWN follow-through +8deg that arm lower,shimmy centre,shimmy sway left,0.62,0.79,12,-23,0,GROUNDED
+20,inbetween,shimmy centre,shimmy sway left,0.75,0.94,12,-28,0,GROUNDED
+21,inbetween,shimmy centre,shimmy sway left,0.88,0.99,12,-29,0,GROUNDED
+22,KEY hold,shimmy sway left,shimmy sway left,0,0,12,-30,0,GROUNDED
+23,KEY hold,shimmy sway left,shimmy sway left,0,0,12,-30,0,GROUNDED
+24,KEY hold,shimmy sway left,shimmy sway left,0,0,12,-30,0,GROUNDED
+25,KEY hold,shimmy sway left,shimmy sway left,0,0,12,-30,0,GROUNDED
+26,inbetween,shimmy sway left,shimmy sway right,0.12,0.01,12,-29,0,GROUNDED
+27,inbetween,shimmy sway left,shimmy sway right,0.25,0.06,12,-26,0,GROUNDED
+28,BREAKDOWN arc +10deg largest-moving arm upper,shimmy sway left,shimmy sway right,0.38,0.21,12,-17,0,GROUNDED
+29,inbetween,shimmy sway left,shimmy sway right,0.5,0.5,12,0,0,GROUNDED
+30,BREAKDOWN follow-through +8deg that arm lower,shimmy sway left,shimmy sway right,0.62,0.79,12,17,0,GROUNDED
+31,inbetween,shimmy sway left,shimmy sway right,0.75,0.94,12,26,0,GROUNDED
+32,inbetween,shimmy sway left,shimmy sway right,0.88,0.99,12,29,0,GROUNDED
+33,KEY hold,shimmy sway right,shimmy sway right,0,0,12,30,0,GROUNDED
+34,KEY hold,shimmy sway right,shimmy sway right,0,0,12,30,0,GROUNDED
+35,KEY hold,shimmy sway right,shimmy sway right,0,0,12,30,0,GROUNDED
+36,KEY hold,shimmy sway right,shimmy sway right,0,0,12,30,0,GROUNDED
+37,inbetween,shimmy sway right,shimmy centre,0.12,0.01,12,29,0,GROUNDED
+38,inbetween,shimmy sway right,shimmy centre,0.25,0.06,12,28,0,GROUNDED
+39,BREAKDOWN arc +10deg largest-moving arm upper,shimmy sway right,shimmy centre,0.38,0.21,12,23,0,GROUNDED
+40,inbetween,shimmy sway right,shimmy centre,0.5,0.5,12,15,0,GROUNDED
+41,BREAKDOWN follow-through +8deg that arm lower,shimmy sway right,shimmy centre,0.62,0.79,12,6,0,GROUNDED
+42,inbetween,shimmy sway right,shimmy centre,0.75,0.94,12,1,0,GROUNDED
+43,inbetween,shimmy sway right,shimmy centre,0.88,0.99,12,0,0,GROUNDED
+44,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+45,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+46,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+47,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+48,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+49,OVERSHOOT 5% beyond key,shimmy sway right,shimmy centre,1.05,1.05,12,0,0,GROUNDED
+50,SETTLE back to key,shimmy centre,shimmy centre,1.0,1.0,12,0,0,GROUNDED
+51,inbetween,shimmy centre,apose,0.12,0.01,11,0,0,GROUNDED
+52,inbetween,shimmy centre,apose,0.25,0.06,11,0,0,GROUNDED
+53,BREAKDOWN arc +10deg largest-moving arm upper,shimmy centre,apose,0.38,0.21,9,0,0,GROUNDED
+54,inbetween,shimmy centre,apose,0.5,0.5,6,0,0,GROUNDED
+55,BREAKDOWN follow-through +8deg that arm lower,shimmy centre,apose,0.62,0.79,2,0,0,GROUNDED
+56,inbetween,shimmy centre,apose,0.75,0.94,0,0,0,GROUNDED
+57,inbetween,shimmy centre,apose,0.88,0.99,0,0,0,GROUNDED
+58,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+59,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+60,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
