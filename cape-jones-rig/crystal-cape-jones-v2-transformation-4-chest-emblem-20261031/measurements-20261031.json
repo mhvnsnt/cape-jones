@@ -1,0 +1,169 @@
+{
+  "transformation_4": {
+    "status": "Crystal Form V2 transformation, NOT V1, NOT canon story effects, approval 0/1",
+    "transformation_3_status": "SAVED as Transformation Three, awesome/cool, NOT overwritten, NOT reworked into #4",
+    "origin": "chest emblem centre, VERIFIED from base plate",
+    "origin_xy": [
+      551,
+      491
+    ],
+    "origin_measured": "purple connected component bbox x539-562 y475-510, 474 px, centroid (550.8, 491.1)",
+    "origin_correction": "earlier future-symbiote diamond centre (557, 502) / zone x540-575 y460-545 was approximate, ~6 px right / ~11 px low vs measured piece; #4 uses measured (551, 491); old symbiote files untouched",
+    "growth": "facets sorted by Euclidean distance from emblem centre + jitter (0-45 px), frontier 20 facets 60% crystal + 40% base + 25 brighten + cyan (0,200,255) edge; no spikes, no dust (those belong to #3)",
+    "frames": 20,
+    "duration_ms": 160,
+    "duration_s": 3.2,
+    "facets_total": 208,
+    "seed_grid_facets": 308,
+    "facet_system": "Preset 8 Voronoi, spacing 48, seed 7, same as #2/#3",
+    "end_state": "100% P8-06 glint, V2 default power-on",
+    "palette": "cyan (42,126,207) / pink (213,123,206) / centre (128,136,219); vivid boost (0,200,255)/(255,110,210)/(140,120,255) NOT used in #4 frames (P8-06 file as-is)",
+    "frame00_0pct": {
+      "facets_revealed": 10,
+      "pct_facets": 4.8,
+      "pixels_revealed": 21714,
+      "pct_pixels": 5.8,
+      "revealed_distance_max_px": 88.5
+    },
+    "frame09_50pct": {
+      "facets_revealed": 104,
+      "pct_facets": 50.0,
+      "pixels_revealed": 199786,
+      "pct_pixels": 53.4,
+      "revealed_distance_max_px": 367.7
+    },
+    "frame19_100pct": {
+      "facets_revealed": 208,
+      "pct_facets": 100.0,
+      "pixels_revealed": 373846,
+      "pct_pixels": 100.0,
+      "revealed_distance_max_px": 815.5
+    },
+    "all_frames": {
+      "frame00": {
+        "facets_revealed": 10,
+        "pct_facets": 4.8,
+        "pixels_revealed": 21714,
+        "pct_pixels": 5.8,
+        "revealed_distance_max_px": 88.5
+      },
+      "frame01": {
+        "facets_revealed": 21,
+        "pct_facets": 10.1,
+        "pixels_revealed": 48597,
+        "pct_pixels": 13.0
+      },
+      "frame02": {
+        "facets_revealed": 31,
+        "pct_facets": 14.9,
+        "pixels_revealed": 68796,
+        "pct_pixels": 18.4
+      },
+      "frame03": {
+        "facets_revealed": 42,
+        "pct_facets": 20.2,
+        "pixels_revealed": 84813,
+        "pct_pixels": 22.7
+      },
+      "frame04": {
+        "facets_revealed": 52,
+        "pct_facets": 25.0,
+        "pixels_revealed": 104427,
+        "pct_pixels": 27.9
+      },
+      "frame05": {
+        "facets_revealed": 62,
+        "pct_facets": 29.8,
+        "pixels_revealed": 121272,
+        "pct_pixels": 32.4
+      },
+      "frame06": {
+        "facets_revealed": 73,
+        "pct_facets": 35.1,
+        "pixels_revealed": 141362,
+        "pct_pixels": 37.8
+      },
+      "frame07": {
+        "facets_revealed": 83,
+        "pct_facets": 39.9,
+        "pixels_revealed": 160641,
+        "pct_pixels": 43.0
+      },
+      "frame08": {
+        "facets_revealed": 94,
+        "pct_facets": 45.2,
+        "pixels_revealed": 180238,
+        "pct_pixels": 48.2
+      },
+      "frame09": {
+        "facets_revealed": 104,
+        "pct_facets": 50.0,
+        "pixels_revealed": 199786,
+        "pct_pixels": 53.4,
+        "revealed_distance_max_px": 367.7
+      },
+      "frame10": {
+        "facets_revealed": 114,
+        "pct_facets": 54.8,
+        "pixels_revealed": 215944,
+        "pct_pixels": 57.8
+      },
+      "frame11": {
+        "facets_revealed": 125,
+        "pct_facets": 60.1,
+        "pixels_revealed": 240566,
+        "pct_pixels": 64.3
+      },
+      "frame12": {
+        "facets_revealed": 135,
+        "pct_facets": 64.9,
+        "pixels_revealed": 253703,
+        "pct_pixels": 67.9
+      },
+      "frame13": {
+        "facets_revealed": 146,
+        "pct_facets": 70.2,
+        "pixels_revealed": 273426,
+        "pct_pixels": 73.1
+      },
+      "frame14": {
+        "facets_revealed": 156,
+        "pct_facets": 75.0,
+        "pixels_revealed": 294044,
+        "pct_pixels": 78.7
+      },
+      "frame15": {
+        "facets_revealed": 166,
+        "pct_facets": 79.8,
+        "pixels_revealed": 313482,
+        "pct_pixels": 83.9
+      },
+      "frame16": {
+        "facets_revealed": 177,
+        "pct_facets": 85.1,
+        "pixels_revealed": 336902,
+        "pct_pixels": 90.1
+      },
+      "frame17": {
+        "facets_revealed": 187,
+        "pct_facets": 89.9,
+        "pixels_revealed": 350024,
+        "pct_pixels": 93.6
+      },
+      "frame18": {
+        "facets_revealed": 198,
+        "pct_facets": 95.2,
+        "pixels_revealed": 363318,
+        "pct_pixels": 97.2
+      },
+      "frame19": {
+        "facets_revealed": 208,
+        "pct_facets": 100.0,
+        "pixels_revealed": 373846,
+        "pct_pixels": 100.0,
+        "revealed_distance_max_px": 815.5
+      }
+    },
+    "base_plate": "rig-apose-v7c-clean-transparent.png, mask 373846 px, base never recoloured"
+  }
+}
