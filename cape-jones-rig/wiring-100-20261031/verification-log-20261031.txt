@@ -1,0 +1,29 @@
+CAMERA SHEET: 30/30 rows
+CAMERA DIAGRAM: (1800, 760)
+EDIT INPUTS: 6/6 afterglow clips present
+EDITED SEQUENCE (Stage E, visual only): rc=0 /home/hatch/workspace/cape-jones-rig/wiring-100-20261031/edited-sequence-stageE-visual-20261031.mp4 exists=True
+EDITED SEQUENCE PROBE: {'programs': [], 'stream_groups': [], 'streams': [{'codec_name': 'h264', 'codec_type': 'video', 'width': 960, 'height': 720, 'r_frame_rate': '24/1'}], 'format': {'duration': '7.208333'}}
+3-LAYER TEMP MIX: rc=0 exists=True
+TEMP MIX LOUDNORM (target -14 LUFS, temp tones only): {'input_i': '-17.96', 'input_tp': '-3.79', 'input_lra': '0.00', 'input_thresh': '-27.96', 'output_i': '-23.93', 'output_tp': '-9.81', 'output_lra': '0.00', 'output_thresh': '-33.93', 'normalization_type': 'dynamic', 'target_offset': '-0.07'}
+TEMP MIX GAIN-CORRECTED: gain=3.96dB rc=0 loudnorm={'input_i': '-14.00', 'input_tp': '0.17', 'input_lra': '0.00', 'input_thresh': '-24.00', 'output_i': '-23.93', 'output_tp': '-9.81', 'output_lra': '0.00', 'output_thresh': '-33.93', 'normalization_type': 'dynamic', 'target_offset': '-0.07'}
+STAGE P EDIT+AUDIO: rc=0 exists=True probe={'programs': [], 'stream_groups': [], 'streams': [{'codec_name': 'h264', 'codec_type': 'video', 'width': 960, 'height': 720, 'r_frame_rate': '24/1'}, {'codec_name': 'aac', 'codec_type': 'audio', 'r_frame_rate': '0/0'}], 'format': {'duration': '7.208333'}}
+ANIMATIC WITH SOUND (Stage P temp tone; prior animatic was video-only): rc=0 exists=True probe={'programs': [], 'stream_groups': [], 'streams': [{'codec_name': 'h264', 'codec_type': 'video', 'width': 960, 'height': 720, 'r_frame_rate': '24/1'}, {'codec_name': 'aac', 'codec_type': 'audio', 'r_frame_rate': '0/0'}], 'format': {'duration': '2.166667'}}
+VISEMES FOUND: 14/14
+LIP-SYNC STRIP: (2420, 560)
+LIP-SYNC VIDEO (Stage P temp): rc=0 exists=True probe={'programs': [], 'stream_groups': [], 'streams': [{'codec_name': 'h264', 'codec_type': 'video', 'width': 640, 'height': 480, 'r_frame_rate': '24/1'}, {'codec_name': 'aac', 'codec_type': 'audio', 'r_frame_rate': '0/0'}], 'format': {'duration': '2.000000'}}
+BACKGROUND CHECK: 9/9 verified backgrounds checked; batch-15 NOT found, flagged
+COLOUR SCRIPT: (1600, 620)
+SAFE AREAS: (1920, 1080)
+CAPTIONS: 3 descriptive captions (not dialogue)
+BIBLE CONTACT: (1600, 700)
+ASSET TRACKER: 30/30 rows; pose-pending 9/30 (poses owed as art, not invented)
+QC v2 (visual, Stage E): 27/30 PASS, 3/30 FAIL (neutral-rim ruling owed)
+GROUND GATE apose: rc=0
+NO-CROP apose: rc=0
+WRIST GATE existing csv: rc=0
+SNAP GATE neutral: rc=0 out=L: lower_vs_head=0 upper_vs_collar=5647 lower_vs_torso=0 elbow_dy=182 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=5586 lower_vs_torso=0 elbow_dy=182 -> NO SNAP
+PASS
+SHADING RETRIEVE: rc=0
+GATES RUN: ground/no-crop/wrist/snap/retrieve/compositor recorded
+INVENTORY: 41 items, 24 wired before, 17 wired now, 41/41 after; TV 10/10 after

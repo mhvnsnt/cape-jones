@@ -1,0 +1,219 @@
+{
+  "version": "wiring-100",
+  "stage": "E-visual QC (dialogue QC is separate Stage P)",
+  "pass": 27,
+  "fail": 3,
+  "total": 30,
+  "results": [
+    {
+      "shot_id": "CJ-01",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-02",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-03",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-04",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-05",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "FAIL",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-06",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "FAIL",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-07",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-08",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-09",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-10",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-11",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-12",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-13",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-14",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-15",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-16",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-17",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-18",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-19",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-20",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-21",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-22",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-23",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-24",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-25",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-26",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "FAIL",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-27",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-28",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-29",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    },
+    {
+      "shot_id": "CJ-30",
+      "fields_present": 7,
+      "missing_fields": [],
+      "prior_qc_verdict": "PASS",
+      "note": "FAIL = neutral-rim unverifiable (CJ-05/06 neutral key+white rim, CJ-26 grey rim); needs a Mars ruling, NOT a dialogue-QC item and NOT hidden by Stage P"
+    }
+  ]
+}

@@ -1,0 +1,4176 @@
+[
+ {
+  "source": "01-tpose-turnaround.jpg",
+  "group": "root",
+  "status": "converted",
+  "output": "root/01-tpose-turnaround.png",
+  "size": [
+   2048,
+   1143
+  ],
+  "alpha_px_gt10": 492537,
+  "alpha_frac": 0.21040820825131235,
+  "bbox": [
+   424,
+   24,
+   1623,
+   1136
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "02-model-sheet-orthographic-turnaround.jpg",
+  "group": "root",
+  "status": "converted",
+  "output": "root/02-model-sheet-orthographic-turnaround.png",
+  "size": [
+   928,
+   1152
+  ],
+  "alpha_px_gt10": 451097,
+  "alpha_frac": 0.42195825101772033,
+  "bbox": [
+   21,
+   39,
+   922,
+   786
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "03-color-lighting-vfx-key.jpg",
+  "group": "root",
+  "status": "converted",
+  "output": "root/03-color-lighting-vfx-key.png",
+  "size": [
+   1649,
+   2048
+  ],
+  "alpha_px_gt10": 1698441,
+  "alpha_frac": 0.5029211003828078,
+  "bbox": [
+   64,
+   55,
+   1647,
+   1988
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "04-action-flight-vfx-reference.jpg",
+  "group": "root",
+  "status": "converted",
+  "output": "root/04-action-flight-vfx-reference.png",
+  "size": [
+   1649,
+   2048
+  ],
+  "alpha_px_gt10": 1233999,
+  "alpha_frac": 0.36539634579669494,
+  "bbox": [
+   54,
+   49,
+   1647,
+   2018
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "05-expression-eye-dart-matrix.jpg",
+  "group": "root",
+  "status": "converted",
+  "output": "root/05-expression-eye-dart-matrix.png",
+  "size": [
+   1649,
+   2048
+  ],
+  "alpha_px_gt10": 1209137,
+  "alpha_frac": 0.35803452139554276,
+  "bbox": [
+   48,
+   45,
+   1592,
+   2022
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "06-viseme-phoneme-mouth-matrix.jpg",
+  "group": "root",
+  "status": "converted",
+  "output": "root/06-viseme-phoneme-mouth-matrix.png",
+  "size": [
+   2048,
+   1529
+  ],
+  "alpha_px_gt10": 1202443,
+  "alpha_frac": 0.3839963185701439,
+  "bbox": [
+   82,
+   56,
+   1971,
+   1483
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "07-character-parts-expressions.jpg",
+  "group": "root",
+  "status": "converted",
+  "output": "root/07-character-parts-expressions.png",
+  "size": [
+   928,
+   1152
+  ],
+  "alpha_px_gt10": 422651,
+  "alpha_frac": 0.3953497291068008,
+  "bbox": [
+   39,
+   25,
+   889,
+   1128
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "08-body-parts-limbs-capes.jpg",
+  "group": "root",
+  "status": "converted",
+  "output": "root/08-body-parts-limbs-capes.png",
+  "size": [
+   1649,
+   2048
+  ],
+  "alpha_px_gt10": 1337969,
+  "alpha_frac": 0.3961826414683141,
+  "bbox": [
+   54,
+   42,
+   1596,
+   1999
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "09-hero-shot-black.png",
+  "group": "root",
+  "status": "converted",
+  "output": "root/09-hero-shot-black.png",
+  "size": [
+   921,
+   2047
+  ],
+  "alpha_px_gt10": 520910,
+  "alpha_frac": 0.2763027592085449,
+  "bbox": [
+   143,
+   298,
+   919,
+   1595
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "10-hero-in-space.jpg",
+  "group": "root",
+  "status": "converted",
+  "output": "root/10-hero-in-space.png",
+  "size": [
+   921,
+   2047
+  ],
+  "alpha_px_gt10": 1341766,
+  "alpha_frac": 0.7117038413779971,
+  "bbox": [
+   1,
+   1,
+   919,
+   1970
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "backgrounds/batch-Auzjk.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/batch-JmGUv.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/batch-KKGuh.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/batch-MvYdV.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/batch-RjoBx.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/batch-WEqVc.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/batch-bfSpz.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/batch-giKK3.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/batch-h4Un3.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/batch-jPaPG.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/batch-rzOMM.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/batch-s2Iq5.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/batch-xyug7.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/batch-yFJdx.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/batch-ywOUG.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/bg-DGb2j.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/bg-F72A5.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/bg-IUUgX.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/bg-IowZk.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/bg-N3ies.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/bg-OAFac.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/bg-U8YqN.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/bg-ZdzDG.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/bg-jvqhV.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/bg-wDheK.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/bg-zxxqO.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/style-JmGUv.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/style-MvYdV.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/style-WEqVc.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/style-bfSpz.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/style-giKK3.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/style-h4Un3.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/style-jPaPG.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/style-rzOMM.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/style-s2Iq5.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/style-xyug7.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "backgrounds/style-yFJdx.jpg",
+  "group": "backgrounds",
+  "status": "excluded-background",
+  "reason": "Image IS a background/room, not a figure sheet; cutting its background would destroy it."
+ },
+ {
+  "source": "color-keys/color-key-lighting-conditions.jpg",
+  "group": "color-keys",
+  "status": "converted",
+  "output": "color-keys/color-key-lighting-conditions.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 1088270,
+  "alpha_frac": 0.6024737368905896,
+  "bbox": [
+   1,
+   183,
+   1790,
+   797
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "color-keys/color-key-sheet-1.jpg",
+  "group": "color-keys",
+  "status": "converted",
+  "output": "color-keys/color-key-sheet-1.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 1392595,
+  "alpha_frac": 0.7709501443806689,
+  "bbox": [
+   16,
+   16,
+   1774,
+   984
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "color-keys/color-key-sheet-2.jpg",
+  "group": "color-keys",
+  "status": "converted",
+  "output": "color-keys/color-key-sheet-2.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 1352858,
+  "alpha_frac": 0.7489514686082767,
+  "bbox": [
+   1,
+   9,
+   1790,
+   990
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "color-keys/color-key-sheet-3.jpg",
+  "group": "color-keys",
+  "status": "converted",
+  "output": "color-keys/color-key-sheet-3.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 1204477,
+  "alpha_frac": 0.6668067292020975,
+  "bbox": [
+   2,
+   47,
+   1787,
+   869
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "color-keys/color-key-sheet-4.jpg",
+  "group": "color-keys",
+  "status": "converted",
+  "output": "color-keys/color-key-sheet-4.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 1304382,
+  "alpha_frac": 0.7221148224914966,
+  "bbox": [
+   25,
+   15,
+   1767,
+   985
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "color-keys/color-key-sheet-5.jpg",
+  "group": "color-keys",
+  "status": "converted",
+  "output": "color-keys/color-key-sheet-5.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 872796,
+  "alpha_frac": 0.4831858524659864,
+  "bbox": [
+   1,
+   44,
+   1779,
+   908
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "exposure-sheets/exposure-sheet-1-walk.jpg",
+  "group": "exposure-sheets",
+  "status": "converted",
+  "output": "exposure-sheets/exposure-sheet-1-walk.png",
+  "size": [
+   1264,
+   1568
+  ],
+  "alpha_px_gt10": 980737,
+  "alpha_frac": 0.4948338809416172,
+  "bbox": [
+   69,
+   24,
+   1161,
+   1530
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "exposure-sheets/exposure-sheet-10-flex.jpg",
+  "group": "exposure-sheets",
+  "status": "converted",
+  "output": "exposure-sheets/exposure-sheet-10-flex.png",
+  "size": [
+   1152,
+   1728
+  ],
+  "alpha_px_gt10": 977329,
+  "alpha_frac": 0.4909582569765947,
+  "bbox": [
+   14,
+   21,
+   1136,
+   1696
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "exposure-sheets/exposure-sheet-2-jump.jpg",
+  "group": "exposure-sheets",
+  "status": "converted",
+  "output": "exposure-sheets/exposure-sheet-2-jump.png",
+  "size": [
+   1264,
+   1568
+  ],
+  "alpha_px_gt10": 1787434,
+  "alpha_frac": 0.9018553426117283,
+  "bbox": [
+   35,
+   33,
+   1229,
+   1529
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "exposure-sheets/exposure-sheet-3-punch.jpg",
+  "group": "exposure-sheets",
+  "status": "converted",
+  "output": "exposure-sheets/exposure-sheet-3-punch.png",
+  "size": [
+   1152,
+   1728
+  ],
+  "alpha_px_gt10": 1876957,
+  "alpha_frac": 0.9428836524241255,
+  "bbox": [
+   16,
+   17,
+   1135,
+   1693
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "exposure-sheets/exposure-sheet-4-flight.jpg",
+  "group": "exposure-sheets",
+  "status": "converted",
+  "output": "exposure-sheets/exposure-sheet-4-flight.png",
+  "size": [
+   1152,
+   1728
+  ],
+  "alpha_px_gt10": 1939484,
+  "alpha_frac": 0.974293901105967,
+  "bbox": [
+   1,
+   1,
+   1144,
+   1710
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "exposure-sheets/exposure-sheet-5-reaction.jpg",
+  "group": "exposure-sheets",
+  "status": "converted",
+  "output": "exposure-sheets/exposure-sheet-5-reaction.png",
+  "size": [
+   1152,
+   1728
+  ],
+  "alpha_px_gt10": 1788974,
+  "alpha_frac": 0.8986856594007202,
+  "bbox": [
+   19,
+   25,
+   1132,
+   1678
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "exposure-sheets/exposure-sheet-6-sit.jpg",
+  "group": "exposure-sheets",
+  "status": "converted",
+  "output": "exposure-sheets/exposure-sheet-6-sit.png",
+  "size": [
+   1728,
+   1152
+  ],
+  "alpha_px_gt10": 1311111,
+  "alpha_frac": 0.6586326316550926,
+  "bbox": [
+   3,
+   19,
+   1700,
+   1061
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "exposure-sheets/exposure-sheet-7-cape.jpg",
+  "group": "exposure-sheets",
+  "status": "converted",
+  "output": "exposure-sheets/exposure-sheet-7-cape.png",
+  "size": [
+   1264,
+   1568
+  ],
+  "alpha_px_gt10": 1063766,
+  "alpha_frac": 0.5367264192069233,
+  "bbox": [
+   17,
+   22,
+   1242,
+   1534
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "exposure-sheets/exposure-sheet-8-turnaround.jpg",
+  "group": "exposure-sheets",
+  "status": "converted",
+  "output": "exposure-sheets/exposure-sheet-8-turnaround.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 1705665,
+  "alpha_frac": 0.9442678438562925,
+  "bbox": [
+   13,
+   10,
+   1778,
+   976
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "exposure-sheets/exposure-sheet-9-run.jpg",
+  "group": "exposure-sheets",
+  "status": "converted",
+  "output": "exposure-sheets/exposure-sheet-9-run.png",
+  "size": [
+   1152,
+   1728
+  ],
+  "alpha_px_gt10": 195246,
+  "alpha_frac": 0.09808123553240741,
+  "bbox": [
+   31,
+   26,
+   1110,
+   1638
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/action-packs/action-1vU75.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/action-1vU75.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 651377,
+  "alpha_frac": 0.3606067752621882,
+  "bbox": [
+   31,
+   41,
+   1755,
+   923
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/action-packs/action-60rw7.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/action-60rw7.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 575940,
+  "alpha_frac": 0.31884433460884354,
+  "bbox": [
+   46,
+   212,
+   1769,
+   754
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/action-packs/action-9NXQv.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/action-9NXQv.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 734350,
+  "alpha_frac": 0.4065411972080499,
+  "bbox": [
+   74,
+   46,
+   1728,
+   958
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/action-packs/action-EBPJX.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/action-EBPJX.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 522126,
+  "alpha_frac": 0.2640200242718447,
+  "bbox": [
+   29,
+   162,
+   1178,
+   1474
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/action-packs/action-HJUwB.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/action-HJUwB.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 422890,
+  "alpha_frac": 0.21384000809061487,
+  "bbox": [
+   74,
+   149,
+   1134,
+   1505
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/action-packs/action-Ne4dq.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/action-Ne4dq.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 727833,
+  "alpha_frac": 0.4029333413052721,
+  "bbox": [
+   63,
+   68,
+   1768,
+   942
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/action-packs/action-Nk9xR.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/action-Nk9xR.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 215418,
+  "alpha_frac": 0.10892900485436893,
+  "bbox": [
+   405,
+   65,
+   800,
+   1511
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/action-packs/action-QjT3b.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/action-QjT3b.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 305084,
+  "alpha_frac": 0.1688965950963719,
+  "bbox": [
+   79,
+   77,
+   1707,
+   873
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/action-packs/action-RTpXF.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/action-RTpXF.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 619317,
+  "alpha_frac": 0.3428581393494898,
+  "bbox": [
+   27,
+   206,
+   1771,
+   791
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/action-packs/action-TatNd.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/action-TatNd.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 289417,
+  "alpha_frac": 0.1463475930420712,
+  "bbox": [
+   81,
+   135,
+   1127,
+   1425
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/action-packs/action-WUwKS.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/action-WUwKS.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 342179,
+  "alpha_frac": 0.18943264154620182,
+  "bbox": [
+   97,
+   108,
+   1689,
+   898
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/action-packs/action-Wtv8t.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/action-Wtv8t.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 502684,
+  "alpha_frac": 0.25418891585760517,
+  "bbox": [
+   49,
+   245,
+   1158,
+   1445
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/action-packs/action-cJWaN.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/action-cJWaN.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 877104,
+  "alpha_frac": 0.44351941747572815,
+  "bbox": [
+   7,
+   48,
+   1193,
+   1570
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/action-packs/action-f5Q6Z.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/action-f5Q6Z.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 448441,
+  "alpha_frac": 0.24826001364087302,
+  "bbox": [
+   62,
+   177,
+   1723,
+   806
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/action-packs/action-wdNk1.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/action-wdNk1.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 653043,
+  "alpha_frac": 0.361529084289966,
+  "bbox": [
+   15,
+   105,
+   1776,
+   839
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/angle-sheets/fla-3quarter-back.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/fla-3quarter-back.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 444965,
+  "alpha_frac": 0.24633567619756236,
+  "bbox": [
+   65,
+   59,
+   1687,
+   906
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/angle-sheets/fla-3quarter-front.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/fla-3quarter-front.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 397809,
+  "alpha_frac": 0.22022979113520408,
+  "bbox": [
+   431,
+   32,
+   1681,
+   942
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/angle-sheets/fla-back.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/fla-back.png",
+  "size": [
+   1888,
+   1056
+  ],
+  "alpha_px_gt10": 555828,
+  "alpha_frac": 0.27878828004622497,
+  "bbox": [
+   107,
+   33,
+   1832,
+   1005
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/angle-sheets/fla-front.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/fla-front.png",
+  "size": [
+   1888,
+   1056
+  ],
+  "alpha_px_gt10": 552380,
+  "alpha_frac": 0.27705885657421675,
+  "bbox": [
+   168,
+   30,
+   1801,
+   1002
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/dance-packs/dance-2e9kj.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/dance-2e9kj.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 639297,
+  "alpha_frac": 0.3232691140776699,
+  "bbox": [
+   16,
+   149,
+   1184,
+   1487
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/dance-packs/dance-D3pmc.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/dance-D3pmc.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 605867,
+  "alpha_frac": 0.3063647855987055,
+  "bbox": [
+   36,
+   123,
+   1168,
+   1512
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/dance-packs/dance-MAHyh.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/dance-MAHyh.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 509425,
+  "alpha_frac": 0.2820211743551587,
+  "bbox": [
+   85,
+   71,
+   1731,
+   925
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/dance-packs/dance-UgepP.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/dance-UgepP.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 553434,
+  "alpha_frac": 0.2798513349514563,
+  "bbox": [
+   54,
+   147,
+   1155,
+   1483
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/dance-packs/dance-ZxEwS.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/dance-ZxEwS.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 493601,
+  "alpha_frac": 0.24959597491909385,
+  "bbox": [
+   48,
+   145,
+   1151,
+   1479
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/dance-packs/dance-a3jha.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/dance-a3jha.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 509499,
+  "alpha_frac": 0.2576350121359223,
+  "bbox": [
+   50,
+   151,
+   1148,
+   1481
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/dance-packs/dance-etaPY.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/dance-etaPY.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 417028,
+  "alpha_frac": 0.23086956136621314,
+  "bbox": [
+   83,
+   75,
+   1711,
+   891
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/dance-packs/dance-mANuo.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/dance-mANuo.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 246515,
+  "alpha_frac": 0.12465362055016181,
+  "bbox": [
+   78,
+   205,
+   1121,
+   1427
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/dance-packs/dance-qIxLo.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/dance-qIxLo.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 447901,
+  "alpha_frac": 0.2264871561488673,
+  "bbox": [
+   167,
+   156,
+   1135,
+   1509
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/dance-packs/dance-smAFI.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/dance-smAFI.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 507320,
+  "alpha_frac": 0.2565331715210356,
+  "bbox": [
+   62,
+   159,
+   1143,
+   1450
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/dance-packs/dance-w2Zh1.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/dance-w2Zh1.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 538078,
+  "alpha_frac": 0.27208636731391583,
+  "bbox": [
+   42,
+   183,
+   1149,
+   1470
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-2e9kj.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-2e9kj.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 639297,
+  "alpha_frac": 0.3232691140776699,
+  "bbox": [
+   16,
+   149,
+   1184,
+   1487
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-3N1l4.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-3N1l4.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 526810,
+  "alpha_frac": 0.26638855177993526,
+  "bbox": [
+   26,
+   27,
+   1142,
+   1519
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-8chi3.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-8chi3.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 400485,
+  "alpha_frac": 0.2217112430909864,
+  "bbox": [
+   56,
+   41,
+   1744,
+   909
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-D3pmc.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-D3pmc.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 605867,
+  "alpha_frac": 0.3063647855987055,
+  "bbox": [
+   36,
+   123,
+   1168,
+   1512
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-HXbRz.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-HXbRz.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 490865,
+  "alpha_frac": 0.24821247977346278,
+  "bbox": [
+   21,
+   149,
+   1161,
+   1499
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-J9hos.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-J9hos.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 539240,
+  "alpha_frac": 0.27267394822006474,
+  "bbox": [
+   57,
+   43,
+   1144,
+   1511
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-MAHyh.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-MAHyh.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 509425,
+  "alpha_frac": 0.2820211743551587,
+  "bbox": [
+   85,
+   71,
+   1731,
+   925
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-PL6xL.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-PL6xL.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 671647,
+  "alpha_frac": 0.3396273260517799,
+  "bbox": [
+   18,
+   14,
+   1196,
+   1553
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-TdvUD.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-TdvUD.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 604603,
+  "alpha_frac": 0.3057256270226537,
+  "bbox": [
+   30,
+   50,
+   1169,
+   1511
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-UgepP.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-UgepP.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 553434,
+  "alpha_frac": 0.2798513349514563,
+  "bbox": [
+   54,
+   147,
+   1155,
+   1483
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-XcaBI.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-XcaBI.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 581940,
+  "alpha_frac": 0.29426577669902915,
+  "bbox": [
+   109,
+   137,
+   1110,
+   1501
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-XkboO.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-XkboO.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 548896,
+  "alpha_frac": 0.27755663430420713,
+  "bbox": [
+   19,
+   55,
+   1186,
+   1497
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-ZxEwS.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-ZxEwS.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 493601,
+  "alpha_frac": 0.24959597491909385,
+  "bbox": [
+   48,
+   145,
+   1151,
+   1479
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-a3jha.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-a3jha.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 509499,
+  "alpha_frac": 0.2576350121359223,
+  "bbox": [
+   50,
+   151,
+   1148,
+   1481
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-akfZy.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-akfZy.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 607828,
+  "alpha_frac": 0.3073563915857605,
+  "bbox": [
+   59,
+   74,
+   1163,
+   1563
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-chKT5.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-chKT5.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 399955,
+  "alpha_frac": 0.22141783145549887,
+  "bbox": [
+   295,
+   28,
+   1589,
+   928
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-etaPY.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-etaPY.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 417028,
+  "alpha_frac": 0.23086956136621314,
+  "bbox": [
+   83,
+   75,
+   1711,
+   891
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-l3Ch8.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-l3Ch8.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 501618,
+  "alpha_frac": 0.2536498786407767,
+  "bbox": [
+   63,
+   203,
+   1140,
+   1427
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-lHT9s.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-lHT9s.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 472695,
+  "alpha_frac": 0.23902457524271845,
+  "bbox": [
+   68,
+   118,
+   1181,
+   1497
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-mANuo.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-mANuo.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 246515,
+  "alpha_frac": 0.12465362055016181,
+  "bbox": [
+   78,
+   205,
+   1121,
+   1427
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-nh3HD.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-nh3HD.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 528338,
+  "alpha_frac": 0.26716120550161815,
+  "bbox": [
+   73,
+   148,
+   1118,
+   1449
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-qIxLo.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-qIxLo.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 447901,
+  "alpha_frac": 0.2264871561488673,
+  "bbox": [
+   167,
+   156,
+   1135,
+   1509
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-smAFI.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-smAFI.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 507320,
+  "alpha_frac": 0.2565331715210356,
+  "bbox": [
+   62,
+   159,
+   1143,
+   1450
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs/recent-w2Zh1.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-w2Zh1.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 538078,
+  "alpha_frac": 0.27208636731391583,
+  "bbox": [
+   42,
+   183,
+   1149,
+   1470
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs-2/recent-2e9kj.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-2e9kj.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 639297,
+  "alpha_frac": 0.3232691140776699,
+  "bbox": [
+   16,
+   149,
+   1184,
+   1487
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs-2/recent-D3pmc.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-D3pmc.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 605867,
+  "alpha_frac": 0.3063647855987055,
+  "bbox": [
+   36,
+   123,
+   1168,
+   1512
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs-2/recent-MAHyh.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-MAHyh.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 509425,
+  "alpha_frac": 0.2820211743551587,
+  "bbox": [
+   85,
+   71,
+   1731,
+   925
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs-2/recent-UgepP.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-UgepP.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 553434,
+  "alpha_frac": 0.2798513349514563,
+  "bbox": [
+   54,
+   147,
+   1155,
+   1483
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs-2/recent-ZxEwS.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-ZxEwS.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 493601,
+  "alpha_frac": 0.24959597491909385,
+  "bbox": [
+   48,
+   145,
+   1151,
+   1479
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs-2/recent-a3jha.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-a3jha.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 509499,
+  "alpha_frac": 0.2576350121359223,
+  "bbox": [
+   50,
+   151,
+   1148,
+   1481
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs-2/recent-etaPY.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-etaPY.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 417028,
+  "alpha_frac": 0.23086956136621314,
+  "bbox": [
+   83,
+   75,
+   1711,
+   891
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs-2/recent-mANuo.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-mANuo.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 246515,
+  "alpha_frac": 0.12465362055016181,
+  "bbox": [
+   78,
+   205,
+   1121,
+   1427
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs-2/recent-qIxLo.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-qIxLo.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 447901,
+  "alpha_frac": 0.2264871561488673,
+  "bbox": [
+   167,
+   156,
+   1135,
+   1509
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs-2/recent-smAFI.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-smAFI.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 507320,
+  "alpha_frac": 0.2565331715210356,
+  "bbox": [
+   62,
+   159,
+   1143,
+   1450
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/jojo-packs-2/recent-w2Zh1.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/recent-w2Zh1.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 538078,
+  "alpha_frac": 0.27208636731391583,
+  "bbox": [
+   42,
+   183,
+   1149,
+   1470
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-3quarter-packs/clean-DGb2j.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/clean-DGb2j.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 536004,
+  "alpha_frac": 0.29673549107142855,
+  "bbox": [
+   185,
+   132,
+   1698,
+   848
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-3quarter-packs/clean-F72A5.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/clean-F72A5.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 375644,
+  "alpha_frac": 0.18994943365695793,
+  "bbox": [
+   64,
+   225,
+   1116,
+   1386
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-3quarter-packs/clean-IUUgX.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/clean-IUUgX.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 532510,
+  "alpha_frac": 0.26927083333333335,
+  "bbox": [
+   92,
+   122,
+   1158,
+   1552
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-3quarter-packs/clean-IowZk.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/clean-IowZk.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 487539,
+  "alpha_frac": 0.2465306432038835,
+  "bbox": [
+   97,
+   178,
+   1133,
+   1425
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-3quarter-packs/clean-N3ies.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/clean-N3ies.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 518803,
+  "alpha_frac": 0.26233970469255663,
+  "bbox": [
+   89,
+   194,
+   1132,
+   1456
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-3quarter-packs/clean-OAFac.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/clean-OAFac.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 561184,
+  "alpha_frac": 0.28377022653721684,
+  "bbox": [
+   92,
+   140,
+   1147,
+   1506
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-3quarter-packs/clean-U8YqN.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/clean-U8YqN.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 442249,
+  "alpha_frac": 0.22362914644012946,
+  "bbox": [
+   171,
+   97,
+   1075,
+   1540
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-3quarter-packs/clean-ZdzDG.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/clean-ZdzDG.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 461347,
+  "alpha_frac": 0.23328630663430422,
+  "bbox": [
+   65,
+   149,
+   1168,
+   1488
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-3quarter-packs/clean-jvqhV.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/clean-jvqhV.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 604690,
+  "alpha_frac": 0.30576961974110034,
+  "bbox": [
+   94,
+   205,
+   1171,
+   1403
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-3quarter-packs/clean-wDheK.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/clean-wDheK.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 434594,
+  "alpha_frac": 0.2197582928802589,
+  "bbox": [
+   145,
+   180,
+   1128,
+   1448
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-3quarter-packs/clean-zxxqO.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/clean-zxxqO.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 607251,
+  "alpha_frac": 0.30706462378640775,
+  "bbox": [
+   37,
+   138,
+   1192,
+   1512
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-packs/lounge-DGb2j.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/lounge-DGb2j.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 536004,
+  "alpha_frac": 0.29673549107142855,
+  "bbox": [
+   185,
+   132,
+   1698,
+   848
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-packs/lounge-F72A5.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/lounge-F72A5.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 375644,
+  "alpha_frac": 0.18994943365695793,
+  "bbox": [
+   64,
+   225,
+   1116,
+   1386
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-packs/lounge-IUUgX.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/lounge-IUUgX.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 532510,
+  "alpha_frac": 0.26927083333333335,
+  "bbox": [
+   92,
+   122,
+   1158,
+   1552
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-packs/lounge-IowZk.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/lounge-IowZk.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 487539,
+  "alpha_frac": 0.2465306432038835,
+  "bbox": [
+   97,
+   178,
+   1133,
+   1425
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-packs/lounge-N3ies.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/lounge-N3ies.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 518803,
+  "alpha_frac": 0.26233970469255663,
+  "bbox": [
+   89,
+   194,
+   1132,
+   1456
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-packs/lounge-OAFac.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/lounge-OAFac.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 561184,
+  "alpha_frac": 0.28377022653721684,
+  "bbox": [
+   92,
+   140,
+   1147,
+   1506
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-packs/lounge-U8YqN.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/lounge-U8YqN.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 442249,
+  "alpha_frac": 0.22362914644012946,
+  "bbox": [
+   171,
+   97,
+   1075,
+   1540
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-packs/lounge-ZdzDG.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/lounge-ZdzDG.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 461347,
+  "alpha_frac": 0.23328630663430422,
+  "bbox": [
+   65,
+   149,
+   1168,
+   1488
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-packs/lounge-jvqhV.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/lounge-jvqhV.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 604690,
+  "alpha_frac": 0.30576961974110034,
+  "bbox": [
+   94,
+   205,
+   1171,
+   1403
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-packs/lounge-wDheK.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/lounge-wDheK.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 434594,
+  "alpha_frac": 0.2197582928802589,
+  "bbox": [
+   145,
+   180,
+   1128,
+   1448
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/lounge-packs/lounge-zxxqO.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/lounge-zxxqO.png",
+  "size": [
+   1200,
+   1648
+  ],
+  "alpha_px_gt10": 607251,
+  "alpha_frac": 0.30706462378640775,
+  "bbox": [
+   37,
+   138,
+   1192,
+   1512
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/references/tpose-front-alt.png",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/tpose-front-alt.png",
+  "size": [
+   1006,
+   2236
+  ],
+  "alpha_px_gt10": 1338333,
+  "alpha_frac": 0.5949690942004503,
+  "bbox": [
+   1,
+   32,
+   1004,
+   2200
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/references/tpose-front.png",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/tpose-front.png",
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px_gt10": 387156,
+  "alpha_frac": 0.23464,
+  "bbox": [
+   59,
+   252,
+   1039,
+   1311
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/xray-vision/hands/xray-hand-sheet-1.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/xray-hand-sheet-1.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 216664,
+  "alpha_frac": 0.11994667658730158,
+  "bbox": [
+   32,
+   262,
+   1740,
+   648
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/xray-vision/hands/xray-hand-sheet-2.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/xray-hand-sheet-2.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 250818,
+  "alpha_frac": 0.13885456526360543,
+  "bbox": [
+   48,
+   267,
+   1738,
+   669
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/xray-vision/hands/xray-hand-sheet-3.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/xray-hand-sheet-3.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 404545,
+  "alpha_frac": 0.22395888694019275,
+  "bbox": [
+   155,
+   92,
+   1613,
+   865
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/xray-vision/heads/xray-head-sheet-1.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/xray-head-sheet-1.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 365901,
+  "alpha_frac": 0.20256530346513604,
+  "bbox": [
+   64,
+   269,
+   1736,
+   681
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/xray-vision/heads/xray-head-sheet-2.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/xray-head-sheet-2.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 405875,
+  "alpha_frac": 0.22469518406320863,
+  "bbox": [
+   81,
+   262,
+   1723,
+   693
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/xray-vision/heads/xray-head-sheet-3.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/xray-head-sheet-3.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 352630,
+  "alpha_frac": 0.19521838683390022,
+  "bbox": [
+   73,
+   223,
+   1731,
+   641
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/xray-vision/heads/xray-head-sheet-4.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/xray-head-sheet-4.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 448470,
+  "alpha_frac": 0.24827606823979592,
+  "bbox": [
+   96,
+   240,
+   1698,
+   718
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/xray-vision/heads/xray-head-sheet-5.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/xray-head-sheet-5.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 445646,
+  "alpha_frac": 0.24671268246882086,
+  "bbox": [
+   55,
+   252,
+   1740,
+   694
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/xray-vision/xray-fla-3quarter-back.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/xray-fla-3quarter-back.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 497270,
+  "alpha_frac": 0.27529208297902497,
+  "bbox": [
+   63,
+   47,
+   1732,
+   942
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/xray-vision/xray-fla-3quarter-front.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/xray-fla-3quarter-front.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 449796,
+  "alpha_frac": 0.24901015093537415,
+  "bbox": [
+   64,
+   58,
+   1748,
+   920
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/xray-vision/xray-fla-back.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/xray-fla-back.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 392718,
+  "alpha_frac": 0.21741137861394558,
+  "bbox": [
+   168,
+   36,
+   1659,
+   929
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/xray-vision/xray-fla-front.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/xray-fla-front.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 424401,
+  "alpha_frac": 0.23495130474064627,
+  "bbox": [
+   88,
+   85,
+   1704,
+   899
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "fla-packs/xray-vision/xray-turnaround.jpg",
+  "group": "fla-packs",
+  "status": "converted",
+  "output": "fla-packs/xray-turnaround.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 543810,
+  "alpha_frac": 0.3010569462159864,
+  "bbox": [
+   1,
+   162,
+   1790,
+   827
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "layout-line-art/layout-beach-kitchen-subway-park.jpg",
+  "group": "layout-line-art",
+  "status": "converted",
+  "output": "layout-line-art/layout-beach-kitchen-subway-park.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 1614463,
+  "alpha_frac": 0.8937777910643424,
+  "bbox": [
+   16,
+   15,
+   1773,
+   960
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "layout-line-art/layout-bedroom-garage-mountain-hallway.jpg",
+  "group": "layout-line-art",
+  "status": "converted",
+  "output": "layout-line-art/layout-bedroom-garage-mountain-hallway.png",
+  "size": [
+   1888,
+   1056
+  ],
+  "alpha_px_gt10": 1749068,
+  "alpha_frac": 0.8772851662814587,
+  "bbox": [
+   25,
+   22,
+   1861,
+   1010
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "layout-line-art/layout-rooftop-office-desert-street.jpg",
+  "group": "layout-line-art",
+  "status": "converted",
+  "output": "layout-line-art/layout-rooftop-office-desert-street.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 1205448,
+  "alpha_frac": 0.6673442814625851,
+  "bbox": [
+   9,
+   132,
+   1782,
+   822
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "layout-line-art/layout-urban-interior.jpg",
+  "group": "layout-line-art",
+  "status": "converted",
+  "output": "layout-line-art/layout-urban-interior.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 1622278,
+  "alpha_frac": 0.8981042286706349,
+  "bbox": [
+   16,
+   16,
+   1775,
+   967
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "layout-line-art/layout-warehouse-forest-skyline.jpg",
+  "group": "layout-line-art",
+  "status": "converted",
+  "output": "layout-line-art/layout-warehouse-forest-skyline.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 1643161,
+  "alpha_frac": 0.9096652007157029,
+  "bbox": [
+   16,
+   16,
+   1767,
+   981
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "model-sheets/model-sheet-3quarter-back-set1.jpg",
+  "group": "model-sheets",
+  "status": "converted",
+  "output": "model-sheets/model-sheet-3quarter-back-set1.png",
+  "size": [
+   1888,
+   1056
+  ],
+  "alpha_px_gt10": 301568,
+  "alpha_frac": 0.1512583461736004,
+  "bbox": [
+   649,
+   20,
+   1330,
+   1022
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "model-sheets/model-sheet-3quarter-back-set2.jpg",
+  "group": "model-sheets",
+  "status": "converted",
+  "output": "model-sheets/model-sheet-3quarter-back-set2.png",
+  "size": [
+   1888,
+   1056
+  ],
+  "alpha_px_gt10": 321899,
+  "alpha_frac": 0.16145582546866974,
+  "bbox": [
+   571,
+   21,
+   1191,
+   1018
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "model-sheets/model-sheet-3quarter-front-set2.jpg",
+  "group": "model-sheets",
+  "status": "converted",
+  "output": "model-sheets/model-sheet-3quarter-front-set2.png",
+  "size": [
+   1888,
+   1056
+  ],
+  "alpha_px_gt10": 340512,
+  "alpha_frac": 0.1707916024653313,
+  "bbox": [
+   720,
+   20,
+   1244,
+   1044
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "model-sheets/model-sheet-back-set1.jpg",
+  "group": "model-sheets",
+  "status": "converted",
+  "output": "model-sheets/model-sheet-back-set1.png",
+  "size": [
+   1888,
+   1056
+  ],
+  "alpha_px_gt10": 399972,
+  "alpha_frac": 0.20061512904468412,
+  "bbox": [
+   399,
+   23,
+   1485,
+   1024
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "model-sheets/model-sheet-back-set2.jpg",
+  "group": "model-sheets",
+  "status": "converted",
+  "output": "model-sheets/model-sheet-back-set2.png",
+  "size": [
+   1888,
+   1056
+  ],
+  "alpha_px_gt10": 406517,
+  "alpha_frac": 0.2038979238893169,
+  "bbox": [
+   400,
+   20,
+   1487,
+   1025
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "model-sheets/model-sheet-front-set2.jpg",
+  "group": "model-sheets",
+  "status": "converted",
+  "output": "model-sheets/model-sheet-front-set2.png",
+  "size": [
+   1888,
+   1056
+  ],
+  "alpha_px_gt10": 416478,
+  "alpha_frac": 0.20889409187211094,
+  "bbox": [
+   389,
+   18,
+   1496,
+   1033
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "model-sheets/model-sheet-side-set2.jpg",
+  "group": "model-sheets",
+  "status": "converted",
+  "output": "model-sheets/model-sheet-side-set2.png",
+  "size": [
+   1888,
+   1056
+  ],
+  "alpha_px_gt10": 208805,
+  "alpha_frac": 0.10473093621597329,
+  "bbox": [
+   819,
+   21,
+   1155,
+   1018
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "prop-scale-sheets/prop-scale-electronics-furniture.jpg",
+  "group": "prop-scale-sheets",
+  "status": "converted",
+  "output": "prop-scale-sheets/prop-scale-electronics-furniture.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 553295,
+  "alpha_frac": 0.30630790727749435,
+  "bbox": [
+   27,
+   50,
+   1716,
+   908
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "prop-scale-sheets/prop-scale-outdoor-furniture.jpg",
+  "group": "prop-scale-sheets",
+  "status": "converted",
+  "output": "prop-scale-sheets/prop-scale-outdoor-furniture.png",
+  "size": [
+   1888,
+   1056
+  ],
+  "alpha_px_gt10": 768346,
+  "alpha_frac": 0.38538155656137646,
+  "bbox": [
+   39,
+   28,
+   1845,
+   977
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-8LjQY.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-8LjQY.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 898811,
+  "alpha_frac": 0.9815433236650825,
+  "bbox": [
+   1,
+   1,
+   1166,
+   782
+  ],
+  "quality": "CHECK-high"
+ },
+ {
+  "source": "props/prop-BBvxs.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-BBvxs.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 237092,
+  "alpha_frac": 0.25891546687168016,
+  "bbox": [
+   78,
+   35,
+   1105,
+   705
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-HeTHP.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-HeTHP.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 625670,
+  "alpha_frac": 0.6832606758456807,
+  "bbox": [
+   34,
+   1,
+   1158,
+   782
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-IApiu.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-IApiu.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 311344,
+  "alpha_frac": 0.3400020967291026,
+  "bbox": [
+   84,
+   29,
+   1067,
+   734
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-JmGUv.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-JmGUv.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 631771,
+  "alpha_frac": 0.6899232509784736,
+  "bbox": [
+   1,
+   13,
+   1166,
+   782
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-Nr2it.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-Nr2it.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 624180,
+  "alpha_frac": 0.6816335266983505,
+  "bbox": [
+   1,
+   1,
+   1136,
+   782
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-SNnYp.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-SNnYp.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 211974,
+  "alpha_frac": 0.23148544520547945,
+  "bbox": [
+   40,
+   179,
+   1139,
+   548
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-YAhuI.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-YAhuI.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 864560,
+  "alpha_frac": 0.9441396421582332,
+  "bbox": [
+   1,
+   1,
+   1166,
+   782
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-ZG2Bt.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-ZG2Bt.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 817378,
+  "alpha_frac": 0.8926147085546547,
+  "bbox": [
+   1,
+   47,
+   1166,
+   782
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-bfSpz.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-bfSpz.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 755393,
+  "alpha_frac": 0.8249242119793123,
+  "bbox": [
+   1,
+   41,
+   1166,
+   782
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-fi3j8.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-fi3j8.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 672286,
+  "alpha_frac": 0.7341675111825552,
+  "bbox": [
+   1,
+   1,
+   1166,
+   782
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-hvZmi.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-hvZmi.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 495454,
+  "alpha_frac": 0.5410587608331003,
+  "bbox": [
+   1,
+   30,
+   1166,
+   782
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-izNQ9.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-izNQ9.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 832265,
+  "alpha_frac": 0.9088720034246576,
+  "bbox": [
+   1,
+   1,
+   1166,
+   782
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-jPaPG.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-jPaPG.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 608173,
+  "alpha_frac": 0.6641531398518311,
+  "bbox": [
+   1,
+   1,
+   1166,
+   782
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-luSwX.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-luSwX.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 352734,
+  "alpha_frac": 0.38520189753983786,
+  "bbox": [
+   29,
+   33,
+   1115,
+   721
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-nFMhU.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-nFMhU.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 275976,
+  "alpha_frac": 0.3013785993849595,
+  "bbox": [
+   64,
+   19,
+   1098,
+   727
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "props/prop-oCpSw.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-oCpSw.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 911389,
+  "alpha_frac": 0.9952790833799273,
+  "bbox": [
+   1,
+   1,
+   1166,
+   782
+  ],
+  "quality": "CHECK-high"
+ },
+ {
+  "source": "props/prop-rY6iH.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-rY6iH.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 911812,
+  "alpha_frac": 0.9957410190103438,
+  "bbox": [
+   1,
+   1,
+   1166,
+   782
+  ],
+  "quality": "CHECK-high"
+ },
+ {
+  "source": "props/prop-xyug7.jpg",
+  "group": "props",
+  "status": "converted",
+  "output": "props/prop-xyug7.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 911812,
+  "alpha_frac": 0.9957410190103438,
+  "bbox": [
+   1,
+   1,
+   1166,
+   782
+  ],
+  "quality": "CHECK-high"
+ },
+ {
+  "source": "storyboards/storyboard-sheet-1.jpg",
+  "group": "storyboards",
+  "status": "converted",
+  "output": "storyboards/storyboard-sheet-1.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 1331573,
+  "alpha_frac": 0.7371679466057256,
+  "bbox": [
+   31,
+   49,
+   1756,
+   913
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "storyboards/storyboard-sheet-2.jpg",
+  "group": "storyboards",
+  "status": "converted",
+  "output": "storyboards/storyboard-sheet-2.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 1409747,
+  "alpha_frac": 0.7804456092332767,
+  "bbox": [
+   24,
+   43,
+   1766,
+   925
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "storyboards/storyboard-sheet-3.jpg",
+  "group": "storyboards",
+  "status": "converted",
+  "output": "storyboards/storyboard-sheet-3.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 1471212,
+  "alpha_frac": 0.8144730548469388,
+  "bbox": [
+   23,
+   30,
+   1766,
+   924
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "storyboards/storyboard-sheet-4.jpg",
+  "group": "storyboards",
+  "status": "converted",
+  "output": "storyboards/storyboard-sheet-4.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 1299677,
+  "alpha_frac": 0.7195101022179705,
+  "bbox": [
+   30,
+   50,
+   1760,
+   900
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "storyboards/storyboard-sheet-5.jpg",
+  "group": "storyboards",
+  "status": "converted",
+  "output": "storyboards/storyboard-sheet-5.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 1350606,
+  "alpha_frac": 0.7477047459608843,
+  "bbox": [
+   19,
+   42,
+   1768,
+   901
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/6KSNq.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/6KSNq.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 530039,
+  "alpha_frac": 0.29343322615504536,
+  "bbox": [
+   113,
+   42,
+   1719,
+   963
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/6TXRQ.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/6TXRQ.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 457467,
+  "alpha_frac": 0.25325686915391155,
+  "bbox": [
+   84,
+   1,
+   1706,
+   1006
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/9A7pl.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/9A7pl.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 553416,
+  "alpha_frac": 0.306374893707483,
+  "bbox": [
+   73,
+   64,
+   1727,
+   955
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/9AuKw.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/9AuKw.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 497143,
+  "alpha_frac": 0.2752217749078798,
+  "bbox": [
+   44,
+   91,
+   1772,
+   934
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/FPEeg.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/FPEeg.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 491485,
+  "alpha_frac": 0.2720894672973356,
+  "bbox": [
+   71,
+   64,
+   1744,
+   957
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/GCQ03.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/GCQ03.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 531323,
+  "alpha_frac": 0.29414405736252835,
+  "bbox": [
+   22,
+   89,
+   1758,
+   939
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/I2t0d.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/I2t0d.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 555280,
+  "alpha_frac": 0.30740681689342403,
+  "bbox": [
+   72,
+   65,
+   1728,
+   952
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/KRuoB.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/KRuoB.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 541540,
+  "alpha_frac": 0.2998002586451247,
+  "bbox": [
+   49,
+   110,
+   1775,
+   841
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/Lf8uW.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/Lf8uW.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 564019,
+  "alpha_frac": 0.3122447872378118,
+  "bbox": [
+   41,
+   45,
+   1762,
+   953
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/N39Xr.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/N39Xr.png",
+  "size": [
+   1264,
+   1568
+  ],
+  "alpha_px_gt10": 658065,
+  "alpha_frac": 0.3320287272345647,
+  "bbox": [
+   60,
+   105,
+   1222,
+   1448
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/SWiWT.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/SWiWT.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 543263,
+  "alpha_frac": 0.3007541232638889,
+  "bbox": [
+   60,
+   67,
+   1743,
+   951
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/T2SRf.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/T2SRf.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 542933,
+  "alpha_frac": 0.30057143300028344,
+  "bbox": [
+   104,
+   50,
+   1692,
+   990
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/TwyB6.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/TwyB6.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 760194,
+  "alpha_frac": 0.4208486128826531,
+  "bbox": [
+   34,
+   20,
+   1775,
+   946
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/URmgB.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/URmgB.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 466998,
+  "alpha_frac": 0.2585332961309524,
+  "bbox": [
+   46,
+   160,
+   1745,
+   783
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/V9r14.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/V9r14.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 711050,
+  "alpha_frac": 0.39364215738378683,
+  "bbox": [
+   79,
+   68,
+   1772,
+   900
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/adOmH.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/adOmH.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 562554,
+  "alpha_frac": 0.31143375318877553,
+  "bbox": [
+   72,
+   65,
+   1732,
+   954
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/aqMG1.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/aqMG1.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 556590,
+  "alpha_frac": 0.3081320418792517,
+  "bbox": [
+   66,
+   94,
+   1710,
+   945
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/cDeSs.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/cDeSs.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 475270,
+  "alpha_frac": 0.2631127320719955,
+  "bbox": [
+   47,
+   64,
+   1686,
+   947
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/dAvtg.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/dAvtg.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 523888,
+  "alpha_frac": 0.2900279903628118,
+  "bbox": [
+   23,
+   91,
+   1756,
+   935
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/hJsrN.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/hJsrN.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 663335,
+  "alpha_frac": 0.36722680608701813,
+  "bbox": [
+   58,
+   24,
+   1771,
+   965
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/rzhOh.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/rzhOh.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 508126,
+  "alpha_frac": 0.28130203904478457,
+  "bbox": [
+   40,
+   99,
+   1731,
+   949
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/sODBO.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/sODBO.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 550340,
+  "alpha_frac": 0.3046719990079365,
+  "bbox": [
+   80,
+   161,
+   1684,
+   839
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/tMEvT.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/tMEvT.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 467592,
+  "alpha_frac": 0.25886213860544216,
+  "bbox": [
+   41,
+   96,
+   1749,
+   935
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/uU0ry.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/uU0ry.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 632231,
+  "alpha_frac": 0.3500074183319161,
+  "bbox": [
+   63,
+   52,
+   1744,
+   948
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/action/wZf6q.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/wZf6q.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 682590,
+  "alpha_frac": 0.377886506164966,
+  "bbox": [
+   47,
+   20,
+   1775,
+   943
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/flying/9dc2Q.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/9dc2Q.png",
+  "size": [
+   1264,
+   1568
+  ],
+  "alpha_px_gt10": 777402,
+  "alpha_frac": 0.39224057898475845,
+  "bbox": [
+   14,
+   66,
+   1262,
+   1556
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/flying/AKqzs.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/AKqzs.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 395185,
+  "alpha_frac": 0.4315603595890411,
+  "bbox": [
+   18,
+   12,
+   1148,
+   764
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/flying/CgfRw.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/CgfRw.png",
+  "size": [
+   1264,
+   1568
+  ],
+  "alpha_px_gt10": 527580,
+  "alpha_frac": 0.26619211766985273,
+  "bbox": [
+   45,
+   31,
+   1227,
+   1526
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/flying/GQCnK.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/GQCnK.png",
+  "size": [
+   1264,
+   1568
+  ],
+  "alpha_px_gt10": 920323,
+  "alpha_frac": 0.46435181074011883,
+  "bbox": [
+   1,
+   96,
+   1262,
+   1449
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/flying/RbAEI.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/RbAEI.png",
+  "size": [
+   1264,
+   1568
+  ],
+  "alpha_px_gt10": 776993,
+  "alpha_frac": 0.3920342167721519,
+  "bbox": [
+   56,
+   31,
+   1223,
+   1542
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/flying/Thtr3.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/Thtr3.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 796236,
+  "alpha_frac": 0.8695266634050881,
+  "bbox": [
+   5,
+   7,
+   1154,
+   766
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/flying/VRwDb.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/VRwDb.png",
+  "size": [
+   1264,
+   1568
+  ],
+  "alpha_px_gt10": 773198,
+  "alpha_frac": 0.3901194378067683,
+  "bbox": [
+   35,
+   51,
+   1230,
+   1415
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/flying/abfwV.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/abfwV.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 593870,
+  "alpha_frac": 0.3287705055980726,
+  "bbox": [
+   17,
+   20,
+   1743,
+   987
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/flying/ekuiT.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/ekuiT.png",
+  "size": [
+   1168,
+   784
+  ],
+  "alpha_px_gt10": 724507,
+  "alpha_frac": 0.7911952666340509,
+  "bbox": [
+   13,
+   8,
+   1154,
+   766
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/flying/hGsDr.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/hGsDr.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 960576,
+  "alpha_frac": 0.531781462585034,
+  "bbox": [
+   26,
+   29,
+   1790,
+   917
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/flying/lQzUV.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/lQzUV.png",
+  "size": [
+   1008,
+   1792
+  ],
+  "alpha_px_gt10": 692804,
+  "alpha_frac": 0.38354104662698413,
+  "bbox": [
+   34,
+   21,
+   974,
+   1760
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/flying/qGZGX.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/qGZGX.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 706364,
+  "alpha_frac": 0.3910479556405896,
+  "bbox": [
+   31,
+   22,
+   1784,
+   1000
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/flying/ydJQP.jpg",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/ydJQP.png",
+  "size": [
+   1264,
+   1568
+  ],
+  "alpha_px_gt10": 833696,
+  "alpha_frac": 0.42064389046757944,
+  "bbox": [
+   16,
+   15,
+   1262,
+   1559
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/references/cape-jones-tpose-front-alt.png",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/cape-jones-tpose-front-alt.png",
+  "size": [
+   1006,
+   2236
+  ],
+  "alpha_px_gt10": 1338333,
+  "alpha_frac": 0.5949690942004503,
+  "bbox": [
+   1,
+   32,
+   1004,
+   2200
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "variations/references/cape-jones-tpose-front.png",
+  "group": "variations",
+  "status": "converted",
+  "output": "variations/cape-jones-tpose-front.png",
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px_gt10": 387156,
+  "alpha_frac": 0.23464,
+  "bbox": [
+   59,
+   252,
+   1039,
+   1311
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "viseme-charts/viseme-chart-happy-angry.jpg",
+  "group": "viseme-charts",
+  "status": "converted",
+  "output": "viseme-charts/viseme-chart-happy-angry.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 933286,
+  "alpha_frac": 0.5166735313917233,
+  "bbox": [
+   19,
+   27,
+   1770,
+   958
+  ],
+  "quality": "PASS"
+ },
+ {
+  "source": "viseme-charts/viseme-chart-neutral-phonemes.jpg",
+  "group": "viseme-charts",
+  "status": "converted",
+  "output": "viseme-charts/viseme-chart-neutral-phonemes.png",
+  "size": [
+   1792,
+   1008
+  ],
+  "alpha_px_gt10": 582038,
+  "alpha_frac": 0.32222022923752835,
+  "bbox": [
+   146,
+   18,
+   1654,
+   973
+  ],
+  "quality": "PASS"
+ }
+]

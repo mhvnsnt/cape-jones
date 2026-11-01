@@ -1,0 +1,45 @@
+{
+  "ground_gate_apose": {
+    "rc": 0,
+    "stdout": "{\n  \"mode\": \"GROUNDED\",\n  \"feet_y\": 1294,\n  \"feet_centre_x\": 561,\n  \"figure_height\": 1041,\n  \"tolerance_px\": 10,\n  \"warnings\": [],\n  \"fails\": [],\n  \"ground_y\": 1294,\n  \"offset_px\": 0,\n  \"offset_note\": \"negative = floating above line, positive = sunk below line\",\n  \"verdict\": \"PASS\",\n  \"bbox\": [\n    248,\n    253,\n    875,\n    1294\n  ],\n  \"head_y\": 253,\n  \"height\": 1041,\n  \"alpha_px\": 373846,\n  \"size\": [\n    1100,\n    1500\n  ]\n}",
+    "stderr": ""
+  },
+  "no_crop_apose": {
+    "rc": 0,
+    "stdout": "{\"file\": \"/home/hatch/workspace/cape-jones-rig/rig-apose-v7c-clean-transparent.png\", \"size\": [1100, 1500], \"alpha_px\": 373846, \"bbox\": [248, 253, 876, 1295], \"edge_touch\": {\"top\": 0, \"bottom\": 0, \"left\": 0, \"right\": 0}, \"margins\": {\"left\": 248, \"top\": 253, \"right\": 224, \"bottom\": 205}, \"cv2_bbox_xywh\": \"not installed, numpy/Pillow bbox used\", \"verdict\": \"PASS\", \"fail_reasons\": []}"
+  },
+  "wrist_gate_existing_csv": {
+    "rc": 0,
+    "stdout": "item, hand, centre, angle, scale, forearm_end, d_wrist, d_tip, verdict\njei-01-serve-OLD, Hand_3_Open, (314, 530), -20, 1.0, (314.0, 517.0), 70.6, 54.9, FAIL\njei-01-serve-FIXED, Hand_3_Open, (307.6, 549.6), 164.7, 1.0, (314.0, 517.0), 25.0, 99.6, PASS\njei-01-serve-MOVE-ONLY-CONTROL, Hand_3_Open, (331.6, 461.6), -20, 1.0, (314.0, 517.0), 0.0, 124.6, PASS (numeric only; hand overlaps gauntlet, see crop)"
+  },
+  "snap_gate_neutral": {
+    "rc": 0,
+    "stdout": "L: lower_vs_head=0 upper_vs_collar=5647 lower_vs_torso=0 elbow_dy=182 -> NO SNAP\nR: lower_vs_head=0 upper_vs_collar=5586 lower_vs_torso=0 elbow_dy=182 -> NO SNAP\nPASS",
+    "stderr": ""
+  },
+  "shading_retrieve": {
+    "rc": 0,
+    "stdout": "CORE-HERO | arms-up Lambert LEFT | tier=CLEAN status=DEFINITELY WORKS \u2014 CLEAN + STRONG, ARMS-UP ONLY PLATE\n  file: /home/hatch/workspace/cape-jones-rig/shading-upgrade-20261031/HERO-arms-up-lambert-LEFT-20261031.png\n  half=52.0 edge=78.0 plate=ARMS_UP light=LEFT finish=CLEAN/STRONG run=PIL run\n  method: V2 Lambert left applied to approved arms-up plate\n  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.\nCONT-X01-ARMS | edge-aware ARMS-UP | tier=CLEAN status=DEFINITELY WORKS \u2014 CLEAN ON ARMS-UP\n  file: /home/hatch/workspace/cape-jones-rig/shading-sets-20261031/new-variants/X01-edge-aware-ARMS.png\n  half=51.4 edge=75.3 plate=ARMS_UP light=LEFT finish=CLEAN run=PIL run\n  method: Arms-up check of X01 edge-aware\n  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.\nCONT-X07-ARMS | multiscale ARMS-",
+    "stderr": ""
+  },
+  "pil_compositor_help": {
+    "rc": 0,
+    "stdout": "usage: apply_compositor.py [-h] [--condition CONDITION] [--all]\n\noptions:\n  -h, --help            show this help message and exit\n  --condition CONDITION\n  --all"
+  },
+  "capegp": {
+    "blend_exists": true,
+    "blend_bytes": 135935,
+    "builder": "/home/hatch/workspace/cape-jones-rig/capegp-presets-20261031/build_capegp_presets.py"
+  },
+  "gaussian": {
+    "ply_exists": true,
+    "ply_bytes": 194379,
+    "builder": "/home/hatch/workspace/cape-jones-rig/gaussian-splatting-20261031/build_splats.py",
+    "note": "Output verified, builder NOT rerun here (would overwrite its own folder)."
+  },
+  "blender_compositor_stack": {
+    "file_exists": true,
+    "lines": 230,
+    "note": "Blender binary is NOT on PATH in this VM session (blender: command not found), so the node tree is audited as a file (spec + builder present), NOT claimed as rendered here. PIL compositor (same layer order) is the runnable compositor in this run."
+  }
+}
