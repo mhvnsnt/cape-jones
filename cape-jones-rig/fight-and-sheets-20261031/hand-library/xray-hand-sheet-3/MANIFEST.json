@@ -1,0 +1,114 @@
+{
+ "bg": [
+  138.0,
+  138.5,
+  138.5
+ ],
+ "pieces": [
+  {
+   "name": "Hand_1",
+   "file": "Hand_1.png",
+   "size": [
+    228,
+    366
+   ],
+   "opaque_px": 54922,
+   "sheet_bbox": [
+    156,
+    128,
+    384,
+    494
+   ]
+  },
+  {
+   "name": "Hand_2",
+   "file": "Hand_2.png",
+   "size": [
+    268,
+    399
+   ],
+   "opaque_px": 63030,
+   "sheet_bbox": [
+    559,
+    93,
+    827,
+    492
+   ]
+  },
+  {
+   "name": "Hand_3",
+   "file": "Hand_3.png",
+   "size": [
+    243,
+    374
+   ],
+   "opaque_px": 55197,
+   "sheet_bbox": [
+    962,
+    119,
+    1205,
+    493
+   ]
+  },
+  {
+   "name": "Hand_4",
+   "file": "Hand_4.png",
+   "size": [
+    222,
+    315
+   ],
+   "opaque_px": 50605,
+   "sheet_bbox": [
+    1391,
+    160,
+    1613,
+    475
+   ]
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    235,
+    313
+   ],
+   "opaque_px": 52796,
+   "sheet_bbox": [
+    161,
+    552,
+    396,
+    865
+   ]
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    430,
+    263
+   ],
+   "opaque_px": 62136,
+   "sheet_bbox": [
+    591,
+    591,
+    1021,
+    854
+   ]
+  },
+  {
+   "name": "Row2_3",
+   "file": "Row2_3.png",
+   "size": [
+    437,
+    354
+   ],
+   "opaque_px": 74184,
+   "sheet_bbox": [
+    1176,
+    506,
+    1613,
+    860
+   ]
+  }
+ ]
+}
