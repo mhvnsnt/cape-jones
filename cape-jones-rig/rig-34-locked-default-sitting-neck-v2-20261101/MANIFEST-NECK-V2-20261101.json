@@ -1,0 +1,809 @@
+{
+  "name": "ORIGINAL DEFAULT SITTING POSE - NECK V2 (Mars correction 2026-11-01 01:54 CST)",
+  "authored_by": "Mars himself",
+  "base": "rig-34-locked-default-sitting-20261101 + neck v2 only; all other pieces/positions unchanged",
+  "lock_type": "JOINTS LOCKED TOGETHER, NOT FROZEN IN SPACE \u2014 chains move together, pieces can still animate",
+  "joint_locks": [
+    {
+      "id": "SHOULDER_TORSO",
+      "parent": "torso",
+      "children": [
+        "upperArmL",
+        "upperArmR"
+      ],
+      "note": "Arm1 behind torso (z1<z8), Arm2 in front (z10>z8); upper pivots top-centre: L 552.5,390 R 861,420"
+    },
+    {
+      "id": "ELBOW_BICEP",
+      "parent": "upperArmL/upperArmR",
+      "children": [
+        "elbowCapL",
+        "elbowCapR"
+      ],
+      "note": "Caps at elbows, v7c method"
+    },
+    {
+      "id": "ELBOW_FOREARM",
+      "parent": "elbowCapL/elbowCapR",
+      "children": [
+        "forearmL",
+        "forearmR"
+      ],
+      "note": "Forearm pivots: L 511.6,610.2 R 779.5,680.1"
+    },
+    {
+      "id": "FOREARM_WRIST_HAND",
+      "parent": "forearmL/forearmR",
+      "children": [
+        "handL",
+        "handR"
+      ],
+      "note": "Hands at saved centres, wrist anchored at forearm end; Arm1 as-is, Arm2 mirrored thumb opposite"
+    },
+    {
+      "id": "HIP_PELVIS",
+      "parent": "pelvis",
+      "children": [
+        "thighL",
+        "thighR"
+      ],
+      "note": "Thigh pivots 515,710 and 699,750 inside pelvis bbox 565-783,650-831"
+    },
+    {
+      "id": "HIP_KNEE_TURN",
+      "parent": "thighL/thighR",
+      "children": [
+        "kneeL",
+        "kneeR"
+      ],
+      "note": "Kneecaps are rotation pivots, NOT secondary knees; cap centres L 417,932 R 597,997 (saved)"
+    },
+    {
+      "id": "KNEE_SHIN",
+      "parent": "kneeL/kneeR",
+      "children": [
+        "shinL",
+        "shinR"
+      ],
+      "note": "Shin pivots top-centre: L 347,945 R 523,985; shin tops overlap caps by design (v7c)"
+    },
+    {
+      "id": "LAYERS",
+      "parent": "rig",
+      "children": [
+        "all"
+      ],
+      "note": "DEFS-stable z order: cape 0, upperArmL 1, thighR 2, thighL 3, forearmL/pelvis/kneeL 4, elbowCapL 5, shins 6, kneeR 7, torso 8, neck 8.5, head 9, upperArmR 10, forearmR 11, elbowCapR 12, hands 13"
+    },
+    {
+      "id": "CAPE_BACK",
+      "parent": "torso/shoulders",
+      "children": [
+        "cape"
+      ],
+      "note": "Cape locked to back placement, backmost z0, 360,330, 514x900, covers both shoulders"
+    },
+    {
+      "id": "NECK_HEAD",
+      "parent": "head",
+      "children": [
+        "neck"
+      ],
+      "note": "Neck attached to head exactly as front view (see neck entry)"
+    }
+  ],
+  "neck": {
+    "source": "sliced/Neck.png (front rig, read-only, whole piece only, no crop, no erase, no in-place rotate)",
+    "native_alpha_bbox": [
+      4,
+      1,
+      100,
+      79
+    ],
+    "native_size": [
+      96,
+      78
+    ],
+    "old_rendered_core_alpha": [
+      101,
+      82
+    ],
+    "old_centre_x": 700,
+    "old_top": 330,
+    "old_bottom_exclusive": 412,
+    "new_rendered_core_alpha": [
+      127,
+      82
+    ],
+    "new_rendered_expected": [
+      126,
+      82
+    ],
+    "note_core_vs_halo": "Core alpha measured at alpha>10: 127x82 (126.25 expected from 101x1.25, pixel rounding to 127). Faint AA halo at alpha>0 measures 134x85 - that is the resize halo, not the neck body. Height unchanged at 82.",
+    "new_centre_x": 700,
+    "new_top": 350,
+    "new_bottom_exclusive": 432,
+    "new_bottom_inclusive": 431,
+    "piece_size": [
+      137,
+      87
+    ],
+    "piece_top_left": [
+      632,
+      349
+    ],
+    "scale": "width 1.3125 (126/96, +25% wider only), height 1.05 (82/78, unchanged) - non-uniform widen-only stretch, stated plainly",
+    "draw_order": "after arms, before head, z 8.5",
+    "lowered_by_px": 20,
+    "widened_by_percent": 25,
+    "builder": "build_locked_neck_v2.py, large-temp rotate method inherited (neck rotation 0)"
+  },
+  "pieces": {
+    "cape": {
+      "xy": [
+        360,
+        330
+      ],
+      "rotation": 0,
+      "size": [
+        514,
+        900
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 0,
+      "alpha_bbox": [
+        360,
+        330,
+        874,
+        1230
+      ],
+      "alpha_centre": [
+        617.0,
+        780.0
+      ],
+      "expected_pivot_xy": [
+        617.0,
+        780.0
+      ]
+    },
+    "upperArmL": {
+      "xy": [
+        490,
+        390
+      ],
+      "rotation": 5,
+      "size": [
+        125,
+        237
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 1,
+      "alpha_bbox": [
+        470,
+        389,
+        612,
+        626
+      ],
+      "alpha_centre": [
+        541.0,
+        507.5
+      ],
+      "expected_pivot_xy": [
+        552.5,
+        390
+      ]
+    },
+    "thighR": {
+      "xy": [
+        590,
+        750
+      ],
+      "rotation": 6,
+      "size": [
+        218,
+        299
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 2,
+      "alpha_bbox": [
+        561,
+        755,
+        803,
+        1041
+      ],
+      "alpha_centre": [
+        682.0,
+        898.0
+      ],
+      "expected_pivot_xy": [
+        699.0,
+        750
+      ]
+    },
+    "thighL": {
+      "xy": [
+        400,
+        710
+      ],
+      "rotation": 2,
+      "size": [
+        230,
+        267
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 3,
+      "alpha_bbox": [
+        391,
+        711,
+        627,
+        975
+      ],
+      "alpha_centre": [
+        509.0,
+        843.0
+      ],
+      "expected_pivot_xy": [
+        515.0,
+        710
+      ]
+    },
+    "forearmL": {
+      "xy": [
+        455,
+        580
+      ],
+      "rotation": -15,
+      "size": [
+        145,
+        275
+      ],
+      "pivot": [
+        0.39,
+        0.11
+      ],
+      "z": 4,
+      "alpha_bbox": [
+        470,
+        572,
+        625,
+        841
+      ],
+      "alpha_centre": [
+        547.5,
+        706.5
+      ],
+      "expected_pivot_xy": [
+        511.6,
+        610.2
+      ]
+    },
+    "pelvis": {
+      "xy": [
+        565,
+        650
+      ],
+      "rotation": 0,
+      "size": [
+        218,
+        181
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 4,
+      "alpha_bbox": [
+        565,
+        650,
+        783,
+        831
+      ],
+      "alpha_centre": [
+        674.0,
+        740.5
+      ],
+      "expected_pivot_xy": [
+        674.0,
+        740.5
+      ]
+    },
+    "kneeL": {
+      "xy": [
+        380,
+        885
+      ],
+      "rotation": 0,
+      "size": [
+        74,
+        94
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 4,
+      "alpha_bbox": [
+        380,
+        885,
+        454,
+        979
+      ],
+      "alpha_centre": [
+        417.0,
+        932.0
+      ],
+      "expected_pivot_xy": [
+        417.0,
+        932.0
+      ]
+    },
+    "elbowCapL": {
+      "xy": [
+        465,
+        580
+      ],
+      "rotation": 0,
+      "size": [
+        63,
+        63
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 5,
+      "alpha_bbox": [
+        465,
+        580,
+        528,
+        643
+      ],
+      "alpha_centre": [
+        496.5,
+        611.5
+      ],
+      "expected_pivot_xy": [
+        496.5,
+        611.5
+      ]
+    },
+    "shinL": {
+      "xy": [
+        225,
+        945
+      ],
+      "rotation": 0,
+      "size": [
+        244,
+        410
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 6,
+      "alpha_bbox": [
+        225,
+        945,
+        469,
+        1355
+      ],
+      "alpha_centre": [
+        347.0,
+        1150.0
+      ],
+      "expected_pivot_xy": [
+        347.0,
+        945
+      ]
+    },
+    "shinR": {
+      "xy": [
+        395,
+        985
+      ],
+      "rotation": -10,
+      "size": [
+        256,
+        415
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 6,
+      "alpha_bbox": [
+        461,
+        975,
+        664,
+        1411
+      ],
+      "alpha_centre": [
+        562.5,
+        1193.0
+      ],
+      "expected_pivot_xy": [
+        523.0,
+        985
+      ]
+    },
+    "kneeR": {
+      "xy": [
+        560,
+        950
+      ],
+      "rotation": 0,
+      "size": [
+        74,
+        94
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 7,
+      "alpha_bbox": [
+        560,
+        950,
+        634,
+        1044
+      ],
+      "alpha_centre": [
+        597.0,
+        997.0
+      ],
+      "expected_pivot_xy": [
+        597.0,
+        997.0
+      ]
+    },
+    "torso": {
+      "xy": [
+        550,
+        370
+      ],
+      "rotation": 0,
+      "size": [
+        291,
+        315
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 8,
+      "alpha_bbox": [
+        550,
+        370,
+        841,
+        685
+      ],
+      "alpha_centre": [
+        695.5,
+        527.5
+      ],
+      "expected_pivot_xy": [
+        695.5,
+        370
+      ]
+    },
+    "upperArmR": {
+      "xy": [
+        805,
+        420
+      ],
+      "rotation": 15,
+      "size": [
+        112,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 10,
+      "alpha_bbox": [
+        767,
+        413,
+        902,
+        672
+      ],
+      "alpha_centre": [
+        834.5,
+        542.5
+      ],
+      "expected_pivot_xy": [
+        861.0,
+        420
+      ]
+    },
+    "forearmR": {
+      "xy": [
+        685,
+        650
+      ],
+      "rotation": 45,
+      "size": [
+        150,
+        274
+      ],
+      "pivot": [
+        0.63,
+        0.11
+      ],
+      "z": 11,
+      "alpha_bbox": [
+        593,
+        635,
+        825,
+        868
+      ],
+      "alpha_centre": [
+        709.0,
+        751.5
+      ],
+      "expected_pivot_xy": [
+        779.5,
+        680.1
+      ]
+    },
+    "elbowCapR": {
+      "xy": [
+        775,
+        610
+      ],
+      "rotation": 0,
+      "size": [
+        63,
+        63
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 12,
+      "alpha_bbox": [
+        775,
+        610,
+        838,
+        673
+      ],
+      "alpha_centre": [
+        806.5,
+        641.5
+      ],
+      "expected_pivot_xy": [
+        806.5,
+        641.5
+      ]
+    },
+    "neck": {
+      "xy": [
+        632,
+        349
+      ],
+      "rotation": 0,
+      "size": [
+        137,
+        87
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 8.5,
+      "alpha_bbox_gt0": [
+        634,
+        349,
+        767,
+        434
+      ],
+      "alpha_bbox_gt10": [
+        637,
+        350,
+        763,
+        431
+      ],
+      "alpha_centre": [
+        700.5,
+        391.5
+      ],
+      "expected_pivot_xy": [
+        700.5,
+        392.5
+      ]
+    },
+    "head": {
+      "xy": [
+        635,
+        195
+      ],
+      "rotation": 0,
+      "size": [
+        130,
+        196
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 9,
+      "alpha_bbox": [
+        635,
+        195,
+        765,
+        391
+      ],
+      "alpha_centre": [
+        700.0,
+        293.0
+      ],
+      "expected_pivot_xy": [
+        700.0,
+        293.0
+      ]
+    },
+    "handL": {
+      "xy": [
+        530,
+        740
+      ],
+      "rotation": -46,
+      "size": [
+        117,
+        170
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 13,
+      "alpha_bbox": [
+        519,
+        741,
+        662,
+        912
+      ],
+      "alpha_centre": [
+        590.5,
+        826.5
+      ],
+      "expected_pivot_xy": [
+        588.5,
+        825.0
+      ]
+    },
+    "handR": {
+      "xy": [
+        565,
+        755
+      ],
+      "rotation": 70,
+      "size": [
+        117,
+        170
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 13,
+      "alpha_bbox": [
+        546,
+        769,
+        707,
+        913
+      ],
+      "alpha_centre": [
+        626.5,
+        841.0
+      ],
+      "expected_pivot_xy": [
+        623.5,
+        840.0
+      ]
+    }
+  },
+  "gates": {
+    "canvas": [
+      1400,
+      1600
+    ],
+    "bbox": [
+      225,
+      195,
+      901,
+      1410
+    ],
+    "alpha_bottom_overall": 1410,
+    "neck": {
+      "source": "sliced/Neck.png (front rig, read-only, whole piece only, no crop, no erase, no in-place rotate)",
+      "native_alpha_bbox": [
+        4,
+        1,
+        100,
+        79
+      ],
+      "native_size": [
+        96,
+        78
+      ],
+      "old_rendered_core_alpha": [
+        101,
+        82
+      ],
+      "old_centre_x": 700,
+      "old_top": 330,
+      "old_bottom_exclusive": 412,
+      "new_rendered_core_alpha": [
+        127,
+        82
+      ],
+      "new_rendered_expected": [
+        126,
+        82
+      ],
+      "note_core_vs_halo": "Core alpha measured at alpha>10: 127x82 (126.25 expected from 101x1.25, pixel rounding to 127). Faint AA halo at alpha>0 measures 134x85 - that is the resize halo, not the neck body. Height unchanged at 82.",
+      "new_centre_x": 700,
+      "new_top": 350,
+      "new_bottom_exclusive": 432,
+      "new_bottom_inclusive": 431,
+      "piece_size": [
+        137,
+        87
+      ],
+      "piece_top_left": [
+        632,
+        349
+      ],
+      "scale": "width 1.3125 (126/96, +25% wider only), height 1.05 (82/78, unchanged) - non-uniform widen-only stretch, stated plainly",
+      "draw_order": "after arms, before head, z 8.5",
+      "lowered_by_px": 20,
+      "widened_by_percent": 25,
+      "builder": "build_locked_neck_v2.py, large-temp rotate method inherited (neck rotation 0)"
+    },
+    "head_bottom": 391,
+    "torso_top": 370,
+    "hands": 2,
+    "fists_full_forearm_drawn": 2,
+    "note": "Full forearm+fist drawn as in literal widget rebuild; separate open hands drawn over them at saved positions. Fist-omitted clean version is a separate toggleable-layer job, not faked here."
+  },
+  "animation": {
+    "sit_idle_neck_v2": {
+      "frames": 48,
+      "fps": 24,
+      "duration_s": 2.0
+    },
+    "sit_lean_neck_v2": {
+      "frames": 96,
+      "fps": 24,
+      "duration_s": 4.0,
+      "note": "built in animation-lean/ by build_sit_lean_neck_v2.py"
+    }
+  },
+  "status": "NECK V2 ONLY - approval 0/1 separately; original locked pose NOT approved as-is (superseded by neck correction); sit-idle original APPROVED 1/1 separately, untouched",
+  "approval": "0/1 neck v2 pose, 0/1 sit-idle-neck-v2, 0/1 sit-lean-neck-v2, separately. Sit-idle-locked-20261101 (original neck) APPROVED 1/1, SAVED, untouched.",
+  "diff_vs_approved_wired": {
+    "pixels": 28043,
+    "bbox": [
+      470,
+      352,
+      821,
+      847
+    ],
+    "note": "Neck + forearm/hand area; built from wired pieces (forearm_no_fist, fist layers OFF), not from literal rebuild"
+  },
+  "fists_drawn": 0
+}
