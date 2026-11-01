@@ -1,0 +1,13 @@
+{
+  "code": "I5",
+  "slug": "soft-shadow",
+  "kind": "industry",
+  "name": "Soft / PCF-like shadow",
+  "description": "Blurred union of contact + cast, blur 12, penumbra falloff. This is the ground shadow used in FULL composites, not triple-stacked with I1+I2.",
+  "parameters": {
+    "blur": 12
+  },
+  "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+  "sample": "sample.png",
+  "status": "preset saved, approval 0/1"
+}

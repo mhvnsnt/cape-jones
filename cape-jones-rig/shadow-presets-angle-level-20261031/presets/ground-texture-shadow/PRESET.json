@@ -1,0 +1,14 @@
+{
+  "code": "X5",
+  "slug": "ground-texture-shadow",
+  "kind": "experimental",
+  "name": "Ground-texture shadow",
+  "description": "Cast alpha reduced 30% where floor pools band is bright (room mean >110 in y1400-1500), so shadow follows floor light.",
+  "parameters": {
+    "reduction": 0.3,
+    "pool_threshold": 110
+  },
+  "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+  "sample": "sample.png",
+  "status": "preset saved, approval 0/1"
+}
