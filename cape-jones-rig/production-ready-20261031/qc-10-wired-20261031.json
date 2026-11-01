@@ -1,0 +1,20 @@
+{
+  "wired_10": 10,
+  "outputs": [
+    "01-pseudo-normal-relight-20261031.png",
+    "02-volumetric-shafts-20261031.png",
+    "03-dust-motes-20261031.png",
+    "04-side-weighted-wrap-20261031.png",
+    "05-limb-afterglow-punch-20261031.png",
+    "06-energy-orbs-snapped-fists-20261031.png",
+    "07-running-cycle-afterglow-20261031.png",
+    "08-lipsync-timeline-20261031.png",
+    "09-storyboard-animatic-20261031.png",
+    "10-qc-gate-title-card-20261031.png"
+  ],
+  "honest_limits": [
+    "01 pseudo-normal from silhouette depth, not measured 3D normal",
+    "02 shafts reuse Cycles godray-v2 bg + PIL beams for this proof",
+    "orb fist coords are plate-scaled estimates, viewed, snap to be re-measured on full plate"
+  ]
+}
