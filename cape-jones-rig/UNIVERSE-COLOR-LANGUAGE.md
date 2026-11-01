@@ -116,3 +116,7 @@ Dialect 1 (lighting-motivated colour) has levels, not just one key:
 God-ray setup: cyan rays from behind + warm gold rays from in front,
 demo file showcase/dual-light-cyan-back-godrays-warm-front-v2-20261031.png
 (PIL draft proof; production = Blender volumetric passes).
+
+## RENAME 2026-10-31 15:50 CDT (Mars)
+- The combined golden-hour + JOJO-TENSION image is BRIGHT PINK, not golden hour. Call it BRIGHT PINK JOJO TENSION or PINK HOUR JOJO TENSION, never golden hour for that image. Approved as that.
+- DUAL-LIGHT CORRECTION 2026-10-31 15:48 CDT: cyan backlight god rays apply ONLY when cyan rim + gold LUT/overlay are combined. Gold rim alone gets NO cyan backlight.
