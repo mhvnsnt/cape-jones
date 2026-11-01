@@ -1,0 +1,15 @@
+{
+  "code": "I4",
+  "slug": "form-shadow",
+  "kind": "industry",
+  "name": "Form / cel shadow",
+  "description": "Gradient across light axis, 1.0 lit side to 0.72 side light / 0.78 overhead. Character only.",
+  "parameters": {
+    "lit": 1.0,
+    "side_dark": 0.72,
+    "overhead_dark": 0.78
+  },
+  "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+  "sample": "sample.png",
+  "status": "preset saved, approval 0/1"
+}
