@@ -1,0 +1,17 @@
+Builder: poses-as-movements-20261031/build_movements.py
+Source: explicit expand=False, expand=False sites: 1
+Pattern: M1 limb rotate + M3 paste
+Has limb() function: False
+Opaque canvas in file: True
+Migration (pattern, original untouched):
+  limb rotate: layer.rotate(angle, center=joint, expand=False)
+    -> no_crop.limb_layer_nocrop(canvas_size, piece, joint, anchor, angle) + paste_nocrop()
+  whole-figure rotate/shear on fixed canvas
+    -> no_crop.rotate_nocrop() / shear_nocrop() (pad, transform, trim bbox+40)
+  paste_at / paste partly off-canvas
+    -> no_crop.paste_nocrop() (canvas auto-expands, shift returned)
+  opaque canvas (if flagged): figure layer must become transparent RGBA first;
+    background, if any, is a separate layer, never baked into the figure file.
+  pre-delivery: python3 gate_mandatory.py <output>  (must PASS, logged)
+
+Correction: grey canvas flag = True; save-time convert(RGB) = True (display save, not a canvas flag; gate must run on the RGBA pre-save file).
