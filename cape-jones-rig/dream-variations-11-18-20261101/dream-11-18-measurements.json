@@ -1,0 +1,418 @@
+{
+  "11": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-variations-11-18-20261101/presets/dream-11/dream-11-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 11",
+      "name": "Dream 11 \u2014 Lime Helm, Coral Suit, Navy Cape, Gold Rim",
+      "status": "PRESET, approval 0/1 separately",
+      "cowl_helm": [
+        180,
+        255,
+        60
+      ],
+      "skin": [
+        255,
+        220,
+        200
+      ],
+      "suit": [
+        255,
+        120,
+        120
+      ],
+      "suit_shadow": [
+        198,
+        93,
+        93
+      ],
+      "cape": [
+        30,
+        30,
+        180
+      ],
+      "rim_6px": [
+        255,
+        215,
+        0
+      ],
+      "rim_note": "rim is its OWN colour here, not a copy of the cape colour",
+      "eye_note": "no separate eye class in this method; white eye pixels sit in the suit-white class, so eyes follow the suit class",
+      "method": "nearest-base-colour recolour, int32, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim, interior preserved 100%",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ],
+      "base_alpha_px": 373846,
+      "canvas_alpha_px": 416053
+    }
+  },
+  "12": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-variations-11-18-20261101/presets/dream-12/dream-12-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 12",
+      "name": "Dream 12 \u2014 Cyan Helm, Magenta Suit, Forest Cape, Orange Rim",
+      "status": "PRESET, approval 0/1 separately",
+      "cowl_helm": [
+        0,
+        220,
+        220
+      ],
+      "skin": [
+        240,
+        180,
+        150
+      ],
+      "suit": [
+        255,
+        80,
+        200
+      ],
+      "suit_shadow": [
+        198,
+        62,
+        156
+      ],
+      "cape": [
+        20,
+        140,
+        60
+      ],
+      "rim_6px": [
+        255,
+        150,
+        0
+      ],
+      "rim_note": "rim is its OWN colour here, not a copy of the cape colour",
+      "eye_note": "no separate eye class in this method; white eye pixels sit in the suit-white class, so eyes follow the suit class",
+      "method": "nearest-base-colour recolour, int32, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim, interior preserved 100%",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ],
+      "base_alpha_px": 373846,
+      "canvas_alpha_px": 416053
+    }
+  },
+  "13": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-variations-11-18-20261101/presets/dream-13/dream-13-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 13",
+      "name": "Dream 13 \u2014 Red Helm, Teal Suit, Yellow Cape, Purple Rim",
+      "status": "PRESET, approval 0/1 separately",
+      "cowl_helm": [
+        220,
+        30,
+        30
+      ],
+      "skin": [
+        255,
+        200,
+        180
+      ],
+      "suit": [
+        0,
+        160,
+        160
+      ],
+      "suit_shadow": [
+        0,
+        124,
+        124
+      ],
+      "cape": [
+        255,
+        230,
+        0
+      ],
+      "rim_6px": [
+        150,
+        0,
+        255
+      ],
+      "rim_note": "rim is its OWN colour here, not a copy of the cape colour",
+      "eye_note": "no separate eye class in this method; white eye pixels sit in the suit-white class, so eyes follow the suit class",
+      "method": "nearest-base-colour recolour, int32, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim, interior preserved 100%",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ],
+      "base_alpha_px": 373846,
+      "canvas_alpha_px": 416053
+    }
+  },
+  "14": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-variations-11-18-20261101/presets/dream-14/dream-14-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 14",
+      "name": "Dream 14 \u2014 Gold Helm, Navy Suit, Pink Cape, Green Rim",
+      "status": "PRESET, approval 0/1 separately",
+      "cowl_helm": [
+        255,
+        200,
+        0
+      ],
+      "skin": [
+        230,
+        170,
+        140
+      ],
+      "suit": [
+        25,
+        25,
+        120
+      ],
+      "suit_shadow": [
+        19,
+        19,
+        93
+      ],
+      "cape": [
+        255,
+        100,
+        180
+      ],
+      "rim_6px": [
+        0,
+        220,
+        100
+      ],
+      "rim_note": "rim is its OWN colour here, not a copy of the cape colour",
+      "eye_note": "no separate eye class in this method; white eye pixels sit in the suit-white class, so eyes follow the suit class",
+      "method": "nearest-base-colour recolour, int32, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim, interior preserved 100%",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ],
+      "base_alpha_px": 373846,
+      "canvas_alpha_px": 416053
+    }
+  },
+  "15": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-variations-11-18-20261101/presets/dream-15/dream-15-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 15",
+      "name": "Dream 15 \u2014 Violet Helm, Orange Suit, Silver Cape, Cyan Rim",
+      "status": "PRESET, approval 0/1 separately",
+      "cowl_helm": [
+        130,
+        0,
+        220
+      ],
+      "skin": [
+        255,
+        210,
+        190
+      ],
+      "suit": [
+        255,
+        140,
+        0
+      ],
+      "suit_shadow": [
+        198,
+        109,
+        0
+      ],
+      "cape": [
+        200,
+        205,
+        215
+      ],
+      "rim_6px": [
+        0,
+        180,
+        255
+      ],
+      "rim_note": "rim is its OWN colour here, not a copy of the cape colour",
+      "eye_note": "no separate eye class in this method; white eye pixels sit in the suit-white class, so eyes follow the suit class",
+      "method": "nearest-base-colour recolour, int32, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim, interior preserved 100%",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ],
+      "base_alpha_px": 373846,
+      "canvas_alpha_px": 416053
+    }
+  },
+  "16": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-variations-11-18-20261101/presets/dream-16/dream-16-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 16",
+      "name": "Dream 16 \u2014 Deep Blue Helm, Lime Suit, Crimson Cape, White Rim",
+      "status": "PRESET, approval 0/1 separately",
+      "cowl_helm": [
+        0,
+        60,
+        180
+      ],
+      "skin": [
+        245,
+        190,
+        165
+      ],
+      "suit": [
+        170,
+        255,
+        80
+      ],
+      "suit_shadow": [
+        132,
+        198,
+        62
+      ],
+      "cape": [
+        200,
+        0,
+        80
+      ],
+      "rim_6px": [
+        255,
+        255,
+        255
+      ],
+      "rim_note": "rim is its OWN colour here, not a copy of the cape colour",
+      "eye_note": "no separate eye class in this method; white eye pixels sit in the suit-white class, so eyes follow the suit class",
+      "method": "nearest-base-colour recolour, int32, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim, interior preserved 100%",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ],
+      "base_alpha_px": 373846,
+      "canvas_alpha_px": 416053
+    }
+  },
+  "17": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-variations-11-18-20261101/presets/dream-17/dream-17-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 17",
+      "name": "Dream 17 \u2014 Pink Helm, Purple Suit, Teal-Green Cape, Red Rim",
+      "status": "PRESET, approval 0/1 separately",
+      "cowl_helm": [
+        255,
+        130,
+        200
+      ],
+      "skin": [
+        255,
+        225,
+        205
+      ],
+      "suit": [
+        120,
+        60,
+        200
+      ],
+      "suit_shadow": [
+        93,
+        46,
+        156
+      ],
+      "cape": [
+        0,
+        200,
+        140
+      ],
+      "rim_6px": [
+        255,
+        40,
+        40
+      ],
+      "rim_note": "rim is its OWN colour here, not a copy of the cape colour",
+      "eye_note": "no separate eye class in this method; white eye pixels sit in the suit-white class, so eyes follow the suit class",
+      "method": "nearest-base-colour recolour, int32, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim, interior preserved 100%",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ],
+      "base_alpha_px": 373846,
+      "canvas_alpha_px": 416053
+    }
+  },
+  "18": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-variations-11-18-20261101/presets/dream-18/dream-18-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 18",
+      "name": "Dream 18 \u2014 Orange-Red Helm, Sky Suit, Charcoal-Purple Cape, Lime Rim",
+      "status": "PRESET, approval 0/1 separately",
+      "cowl_helm": [
+        255,
+        80,
+        0
+      ],
+      "skin": [
+        235,
+        175,
+        145
+      ],
+      "suit": [
+        120,
+        200,
+        255
+      ],
+      "suit_shadow": [
+        93,
+        156,
+        198
+      ],
+      "cape": [
+        70,
+        40,
+        110
+      ],
+      "rim_6px": [
+        140,
+        255,
+        0
+      ],
+      "rim_note": "rim is its OWN colour here, not a copy of the cape colour",
+      "eye_note": "no separate eye class in this method; white eye pixels sit in the suit-white class, so eyes follow the suit class",
+      "method": "nearest-base-colour recolour, int32, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim, interior preserved 100%",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ],
+      "base_alpha_px": 373846,
+      "canvas_alpha_px": 416053
+    }
+  }
+}
