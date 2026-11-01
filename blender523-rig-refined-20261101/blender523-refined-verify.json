@@ -1,0 +1,114 @@
+{
+ "blender": "5.2.3 LTS",
+ "blend": "/home/hatch/workspace/cape-jones-rig/blender523-rig-refined-20261101/cape_jones_toon_blender523_REFINED.blend",
+ "peg_count": 17,
+ "drawing_count": 11,
+ "fk_chains": {
+  "spine": [
+   "Pelvis-P",
+   "Torso-P",
+   "Neck-P",
+   "Head-P"
+  ],
+  "cape": [
+   "Cape-P",
+   "CapeCollar-P"
+  ],
+  "arm1_LEFT_Arm_Front": [
+   "Arm1-Upper-P",
+   "Arm1-Forearm-P",
+   "Arm1-Hand-P"
+  ],
+  "arm2_RIGHT_Arm_Back": [
+   "Arm2-Upper-P",
+   "Arm2-Forearm-P",
+   "Arm2-Hand-P"
+  ],
+  "leg1_LEFT_Leg_Front": [
+   "Leg1-Thigh-P",
+   "Leg1-Knee-P"
+  ],
+  "leg2_RIGHT_Leg_Back": [
+   "Leg2-Thigh-P",
+   "Leg2-Knee-P"
+  ]
+ },
+ "fk_chain_count": 6,
+ "parents_ok": true,
+ "hand_world_at_crossed_f25": [
+  1.308,
+  2.137,
+  0.0
+ ],
+ "snap_z_at_f25": {
+  "arm1_draw_z": 0.11,
+  "arm2_draw_z": 0.11,
+  "torso_z": 0.08,
+  "head_z": 0.12
+ },
+ "flex_spread_deg_at_f37": 120,
+ "grease_pencil_overlay": {
+  "ok": true,
+  "strokes": 4,
+  "source": "gp-silhouette.json from rig-apose-v7c-clean-transparent.png"
+ },
+ "refined_rest": {
+  "arm1_upper_deg": -20,
+  "arm2_upper_deg": 20,
+  "leg1_thigh_deg": -9,
+  "leg2_thigh_deg": 10,
+  "leg_plane_shift_units": 0.15,
+  "leg_plane_shift_px": 30,
+  "unchanged": [
+   "Head",
+   "Neck",
+   "Cape_Collar",
+   "Torso_Chest",
+   "Pelvis",
+   "Belt_Overlay",
+   "Cape_Back_Main"
+  ]
+ },
+ "renders": [
+  "pose-crossed-chest-snap.png",
+  "pose-flex-obtuse-WIDE.png",
+  "pose-flex-obtuse.png",
+  "pose-rest-GP-OVERLAY.png",
+  "pose-rest.png"
+ ],
+ "measurement": {
+  "method": "per-row left/right edge in 2D canvas coords, Blender rest render mapped via camera ortho 6.2 centre Y 1.03, 10 rows y=300..1200",
+  "fixed_mean_edge_dev_px": 34.7,
+  "refined_mean_edge_dev_px": 12.8,
+  "fixed_bbox_2d": [
+   [
+    309,
+    254
+   ],
+   [
+    791,
+    1335
+   ]
+  ],
+  "refined_bbox_2d": [
+   [
+    239,
+    254
+   ],
+   [
+    887,
+    1292
+   ]
+  ],
+  "apose_bbox_2d": [
+   [
+    248,
+    253
+   ],
+   [
+    876,
+    1295
+   ]
+  ]
+ }
+}
