@@ -1,0 +1,70 @@
+{
+  "palette_measured": {
+    "cyan_left_mean": [
+      42,
+      126,
+      207
+    ],
+    "pink_right_mean": [
+      213,
+      123,
+      206
+    ],
+    "centre_mean": [
+      128,
+      136,
+      219
+    ],
+    "all_mean": [
+      127,
+      127,
+      209
+    ]
+  },
+  "palette_vivid": {
+    "cyan": [
+      0,
+      200,
+      255
+    ],
+    "pink": [
+      255,
+      110,
+      210
+    ],
+    "purple": [
+      140,
+      120,
+      255
+    ]
+  },
+  "plates": {
+    "apose": {
+      "P8-01": 308,
+      "P8-03_facets": 112,
+      "P8-04_facets": 874,
+      "mask_px": 373846,
+      "alpha_preserved": true,
+      "facets_spacing48": 308,
+      "alpha_preserved_note": "Alpha channel copied verbatim from plate."
+    },
+    "armsup": {
+      "P8-01": 308,
+      "P8-03_facets": 126,
+      "P8-04_facets": 912,
+      "mask_px": 369712,
+      "alpha_preserved": true,
+      "facets_spacing48": 308,
+      "alpha_preserved_note": "Alpha channel copied verbatim from plate: alpha>0 count 376,907 identical to plate, including 7,222 feather pixels (0<alpha<=128). The earlier False was a check bug (mask used alpha>128 threshold, 369,685 px) not a loss."
+    }
+  },
+  "transition_frames": [
+    "frames/crystal-transition-00-0pct.png",
+    "frames/crystal-transition-01-20pct.png",
+    "frames/crystal-transition-02-40pct.png",
+    "frames/crystal-transition-03-60pct.png",
+    "frames/crystal-transition-04-80pct.png",
+    "frames/crystal-transition-05-100pct.png"
+  ],
+  "transition_note": "Power OFF = base plate (0%). Power ON = full facet glint image (100%). Sweep rises from feet upward; intermediate frames are a partial-crystallisation proof, not a story claim about hardness/reflectivity."
+}
