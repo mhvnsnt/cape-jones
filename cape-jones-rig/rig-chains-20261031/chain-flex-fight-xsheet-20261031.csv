@@ -1,0 +1,76 @@
+frame,kind,from,to,t,eased,dy_rig,dx_rig,height_video_px,label
+0,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+1,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+2,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+3,inbetween,apose,flex anticipation,0.12,0.01,0,0,0,GROUNDED
+4,inbetween,apose,flex anticipation,0.25,0.06,0,0,0,GROUNDED
+5,BREAKDOWN arc +10deg largest-moving arm upper,apose,flex anticipation,0.38,0.21,1,0,0,GROUNDED
+6,inbetween,apose,flex anticipation,0.5,0.5,3,0,0,GROUNDED
+7,BREAKDOWN follow-through +8deg that arm lower,apose,flex anticipation,0.62,0.79,4,0,0,GROUNDED
+8,inbetween,apose,flex anticipation,0.75,0.94,5,0,0,GROUNDED
+9,inbetween,apose,flex anticipation,0.88,0.99,5,0,0,GROUNDED
+10,KEY hold,flex anticipation,flex anticipation,0,0,6,0,0,GROUNDED
+11,KEY hold,flex anticipation,flex anticipation,0,0,6,0,0,GROUNDED
+12,KEY hold,flex anticipation,flex anticipation,0,0,6,0,0,GROUNDED
+13,KEY hold,flex anticipation,flex anticipation,0,0,6,0,0,GROUNDED
+14,KEY hold,flex anticipation,flex anticipation,0,0,6,0,0,GROUNDED
+15,inbetween,flex anticipation,arms up reference,0.12,0.01,5,0,0,GROUNDED
+16,inbetween,flex anticipation,arms up reference,0.25,0.06,5,0,0,GROUNDED
+17,BREAKDOWN arc +10deg largest-moving arm upper,flex anticipation,arms up reference,0.38,0.21,5,0,0,GROUNDED
+18,inbetween,flex anticipation,arms up reference,0.5,0.5,4,0,0,GROUNDED
+19,BREAKDOWN follow-through +8deg that arm lower,flex anticipation,arms up reference,0.62,0.79,2,0,0,GROUNDED
+20,inbetween,flex anticipation,arms up reference,0.75,0.94,2,0,0,GROUNDED
+21,inbetween,flex anticipation,arms up reference,0.88,0.99,2,0,0,GROUNDED
+22,KEY hold,arms up reference,arms up reference,0,0,2,0,0,GROUNDED
+23,KEY hold,arms up reference,arms up reference,0,0,2,0,0,GROUNDED
+24,KEY hold,arms up reference,arms up reference,0,0,2,0,0,GROUNDED
+25,KEY hold,arms up reference,arms up reference,0,0,2,0,0,GROUNDED
+26,KEY hold,arms up reference,arms up reference,0,0,2,0,0,GROUNDED
+27,inbetween,arms up reference,"true flex double bicep (NO 28px dip, labelled)",0.12,0.01,2,0,0,GROUNDED
+28,inbetween,arms up reference,"true flex double bicep (NO 28px dip, labelled)",0.25,0.06,2,0,0,GROUNDED
+29,BREAKDOWN arc +10deg largest-moving arm upper,arms up reference,"true flex double bicep (NO 28px dip, labelled)",0.38,0.21,2,0,0,GROUNDED
+30,inbetween,arms up reference,"true flex double bicep (NO 28px dip, labelled)",0.5,0.5,4,0,0,GROUNDED
+31,BREAKDOWN follow-through +8deg that arm lower,arms up reference,"true flex double bicep (NO 28px dip, labelled)",0.62,0.79,5,0,0,GROUNDED
+32,inbetween,arms up reference,"true flex double bicep (NO 28px dip, labelled)",0.75,0.94,5,0,0,GROUNDED
+33,inbetween,arms up reference,"true flex double bicep (NO 28px dip, labelled)",0.88,0.99,5,0,0,GROUNDED
+34,KEY hold,"true flex double bicep (NO 28px dip, labelled)","true flex double bicep (NO 28px dip, labelled)",0,0,6,0,0,GROUNDED
+35,KEY hold,"true flex double bicep (NO 28px dip, labelled)","true flex double bicep (NO 28px dip, labelled)",0,0,6,0,0,GROUNDED
+36,KEY hold,"true flex double bicep (NO 28px dip, labelled)","true flex double bicep (NO 28px dip, labelled)",0,0,6,0,0,GROUNDED
+37,KEY hold,"true flex double bicep (NO 28px dip, labelled)","true flex double bicep (NO 28px dip, labelled)",0,0,6,0,0,GROUNDED
+38,KEY hold,"true flex double bicep (NO 28px dip, labelled)","true flex double bicep (NO 28px dip, labelled)",0,0,6,0,0,GROUNDED
+39,inbetween,"true flex double bicep (NO 28px dip, labelled)",fighting forward bicep curl,0.12,0.01,5,0,0,GROUNDED
+40,inbetween,"true flex double bicep (NO 28px dip, labelled)",fighting forward bicep curl,0.25,0.06,5,0,0,GROUNDED
+41,BREAKDOWN arc +10deg largest-moving arm upper,"true flex double bicep (NO 28px dip, labelled)",fighting forward bicep curl,0.38,0.21,5,0,0,GROUNDED
+42,inbetween,"true flex double bicep (NO 28px dip, labelled)",fighting forward bicep curl,0.5,0.5,4,0,0,GROUNDED
+43,BREAKDOWN follow-through +8deg that arm lower,"true flex double bicep (NO 28px dip, labelled)",fighting forward bicep curl,0.62,0.79,2,0,0,GROUNDED
+44,inbetween,"true flex double bicep (NO 28px dip, labelled)",fighting forward bicep curl,0.75,0.94,2,0,0,GROUNDED
+45,inbetween,"true flex double bicep (NO 28px dip, labelled)",fighting forward bicep curl,0.88,0.99,2,0,0,GROUNDED
+46,KEY hold,fighting forward bicep curl,fighting forward bicep curl,0,0,2,0,0,GROUNDED
+47,KEY hold,fighting forward bicep curl,fighting forward bicep curl,0,0,2,0,0,GROUNDED
+48,KEY hold,fighting forward bicep curl,fighting forward bicep curl,0,0,2,0,0,GROUNDED
+49,KEY hold,fighting forward bicep curl,fighting forward bicep curl,0,0,2,0,0,GROUNDED
+50,KEY hold,fighting forward bicep curl,fighting forward bicep curl,0,0,2,0,0,GROUNDED
+51,inbetween,fighting forward bicep curl,fighting stance arms up high,0.12,0.01,2,0,0,GROUNDED
+52,inbetween,fighting forward bicep curl,fighting stance arms up high,0.25,0.06,2,0,0,GROUNDED
+53,BREAKDOWN arc +10deg largest-moving arm upper,fighting forward bicep curl,fighting stance arms up high,0.38,0.21,2,0,0,GROUNDED
+54,inbetween,fighting forward bicep curl,fighting stance arms up high,0.5,0.5,2,0,0,GROUNDED
+55,BREAKDOWN follow-through +8deg that arm lower,fighting forward bicep curl,fighting stance arms up high,0.62,0.79,2,0,0,GROUNDED
+56,inbetween,fighting forward bicep curl,fighting stance arms up high,0.75,0.94,2,0,0,GROUNDED
+57,inbetween,fighting forward bicep curl,fighting stance arms up high,0.88,0.99,2,0,0,GROUNDED
+58,KEY hold,fighting stance arms up high,fighting stance arms up high,0,0,2,0,0,GROUNDED
+59,KEY hold,fighting stance arms up high,fighting stance arms up high,0,0,2,0,0,GROUNDED
+60,KEY hold,fighting stance arms up high,fighting stance arms up high,0,0,2,0,0,GROUNDED
+61,KEY hold,fighting stance arms up high,fighting stance arms up high,0,0,2,0,0,GROUNDED
+62,KEY hold,fighting stance arms up high,fighting stance arms up high,0,0,2,0,0,GROUNDED
+63,OVERSHOOT 5% beyond key,fighting forward bicep curl,fighting stance arms up high,1.05,1.05,2,0,0,GROUNDED
+64,SETTLE back to key,fighting stance arms up high,fighting stance arms up high,1.0,1.0,2,0,0,GROUNDED
+65,inbetween,fighting stance arms up high,apose,0.12,0.01,1,0,0,GROUNDED
+66,inbetween,fighting stance arms up high,apose,0.25,0.06,1,0,0,GROUNDED
+67,BREAKDOWN arc +10deg largest-moving arm upper,fighting stance arms up high,apose,0.38,0.21,1,0,0,GROUNDED
+68,inbetween,fighting stance arms up high,apose,0.5,0.5,1,0,0,GROUNDED
+69,BREAKDOWN follow-through +8deg that arm lower,fighting stance arms up high,apose,0.62,0.79,0,0,0,GROUNDED
+70,inbetween,fighting stance arms up high,apose,0.75,0.94,0,0,0,GROUNDED
+71,inbetween,fighting stance arms up high,apose,0.88,0.99,0,0,0,GROUNDED
+72,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+73,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+74,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
