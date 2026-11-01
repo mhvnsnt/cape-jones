@@ -1,0 +1,114 @@
+[
+ {
+  "viseme": "MBP",
+  "key": "mbp-front-09",
+  "source": "09_RBN01_CAMS_DCTTAS.png (model sheet, FRONT)",
+  "angle": "front",
+  "tight_patch": "/home/hatch/workspace/cape-jones-rig/pahgo-mouth-fix-20261031/mouths-tight/mbp-front-09_tight_patch.png",
+  "tight_alpha_bbox": [
+   8,
+   0,
+   75,
+   6,
+   93
+  ],
+  "scale": 2.4512,
+  "resized": [
+   211,
+   25
+  ],
+  "alpha_bbox": [
+   14,
+   0,
+   191,
+   22,
+   1368
+  ],
+  "alpha_px": 1368,
+  "alpha_size": [
+   178,
+   23
+  ],
+  "target": [
+   231.5,
+   504.5
+  ]
+ },
+ {
+  "viseme": "AH",
+  "key": "ah-front-03",
+  "source": "53_RBEXPRES03_CA_DCTTAS.png via old 03 patch, re-cut tight (FRONT/near-front)",
+  "angle": "front",
+  "tight_patch": "/home/hatch/workspace/cape-jones-rig/pahgo-mouth-fix-20261031/mouths-tight/ah-front-03_tight_patch.png",
+  "tight_alpha_bbox": [
+   0,
+   8,
+   270,
+   97,
+   11096
+  ],
+  "scale": 0.7117,
+  "resized": [
+   211,
+   70
+  ],
+  "alpha_bbox": [
+   0,
+   3,
+   195,
+   69,
+   6984
+  ],
+  "alpha_px": 6984,
+  "alpha_size": [
+   196,
+   67
+  ],
+  "target": [
+   231.5,
+   504.5
+  ]
+ },
+ {
+  "viseme": "GK",
+  "key": "gk-front-05",
+  "source": "49_RBEXPRES05_CA_DCTTAS.png via old 05 patch, re-cut tight (FRONT)",
+  "angle": "front",
+  "tight_patch": "/home/hatch/workspace/cape-jones-rig/pahgo-mouth-fix-20261031/mouths-tight/gk-front-05_tight_patch.png",
+  "tight_alpha_bbox": [
+   64,
+   0,
+   530,
+   68,
+   15716
+  ],
+  "scale": 0.3968,
+  "resized": [
+   211,
+   32
+  ],
+  "alpha_bbox": [
+   23,
+   0,
+   210,
+   29,
+   3211
+  ],
+  "alpha_px": 3211,
+  "alpha_size": [
+   188,
+   30
+  ],
+  "target": [
+   231.5,
+   504.5
+  ]
+ },
+ {
+  "viseme": "OH",
+  "key": "gap",
+  "source": "GAP: clean head, no mouth patch",
+  "angle": "n/a",
+  "note": "No front round OH/OO mouth exists in the Robin set; EH (03) was NOT duplicated to paper over it."
+ }
+]
