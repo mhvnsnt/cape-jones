@@ -1,0 +1,117 @@
+{
+ "version": "background-consistency-check-20261031",
+ "date": "2026-10-31",
+ "scope": "4 painted backgrounds + 4 new layout passes from clean-100-20261031/layouts/ + locked room layout pass (5th). showcase/backgrounds-new-20261031/ flat vector files are EXCLUDED \u2014 per layouts README they were NOT used and are NOT counted as final painted backgrounds.",
+ "rule_checked": "Room-only 2.5x scale: applied to room ONLY, never to flying/rooftop/alley/desk. Character feet on ground plane (or stated exception: airborne flying, seated desk). Horizon and light direction named per background.",
+ "counts": {
+  "backgrounds_checked": 5,
+  "pass": 5,
+  "fail": 0,
+  "layout_passes_found": 5
+ },
+ "entries": [
+  {
+   "background": "flying",
+   "painted_file": "clean-100-20261031/layouts/bg-flying-painted-20261031.jpg",
+   "layout_file": "clean-100-20261031/layouts/layout-pass-flying-painted-20261031.jpg",
+   "scale_check": "PASS (exception): airborne by design \u2014 plate height 520px, visible 366px, feet y=550 over open sky, city far below. No ground contact expected.",
+   "room_2_5x_applied": false,
+   "horizon": "Low horizon: tiny lit skyline at bottom edge, open sky centre, large low moon.",
+   "light_direction": "Dusk purple/gold sky light; moon/sky glow from above. Character plate unrecoloured (resize only).",
+   "layout_pass_exists": true,
+   "verdict": "PASS",
+   "painted_file_exists": true,
+   "painted_file_size_px": [
+    1168,
+    784
+   ],
+   "layout_file_exists": true,
+   "layout_file_size_px": [
+    1168,
+    784
+   ]
+  },
+  {
+   "background": "rooftop",
+   "painted_file": "clean-100-20261031/layouts/bg-rooftop-painted-20261031.jpg",
+   "layout_file": "clean-100-20261031/layouts/layout-pass-rooftop-painted-20261031.jpg",
+   "scale_check": "PASS: plate height 560px, visible 394px, centre-x=470 (left to clear water tower/antenna), feet y=750 on foreground roof floor \u2014 corrected from y=690 which landed inside the parapet band.",
+   "room_2_5x_applied": false,
+   "horizon": "Night skyline horizon mid-frame; full moon above skyline; foreground roof slab + parapet below horizon.",
+   "light_direction": "Moonlight + lit windows; gold edge light on skyline. Character plate unrecoloured.",
+   "layout_pass_exists": true,
+   "verdict": "PASS",
+   "painted_file_exists": true,
+   "painted_file_size_px": [
+    1168,
+    784
+   ],
+   "layout_file_exists": true,
+   "layout_file_size_px": [
+    1168,
+    784
+   ]
+  },
+  {
+   "background": "alley",
+   "painted_file": "clean-100-20261031/layouts/bg-alley-painted-20261031.jpg",
+   "layout_file": "clean-100-20261031/layouts/layout-pass-alley-painted-20261031.jpg",
+   "scale_check": "PASS: plate height 560px, visible 394px, centred x=584, feet y=650 on cobbles, puddles foreground, walls clear.",
+   "room_2_5x_applied": false,
+   "horizon": "Vanishing-point alley: lit tower at the end, brick walls both sides converging to the end point.",
+   "light_direction": "Warm lit windows + tower light at alley end; puddle reflections carry the warm light. Character plate unrecoloured.",
+   "layout_pass_exists": true,
+   "verdict": "PASS",
+   "painted_file_exists": true,
+   "painted_file_size_px": [
+    1168,
+    784
+   ],
+   "layout_file_exists": true,
+   "layout_file_size_px": [
+    1168,
+    784
+   ]
+  },
+  {
+   "background": "desk",
+   "painted_file": "clean-100-20261031/layouts/bg-desk-painted-20261031.jpg",
+   "layout_file": "clean-100-20261031/layouts/layout-pass-desk-painted-20261031.jpg",
+   "scale_check": "PASS (seated exception): seated plate height 480px, visible 308px, centred x=584, pose bottom y=685 seated cross-legged on rug in front of desk. Feet-on-ground-plane check does not apply to a seated pose; rug contact is the ground contact.",
+   "room_2_5x_applied": false,
+   "horizon": "Interior: sage walls, bookshelf left, large window right (hills beyond = exterior horizon through window), wooden floor + rug foreground.",
+   "light_direction": "Warm study lamp + window daylight right. Seated plate grey-128 background removed by distance-to-grey alpha only; no recolour.",
+   "layout_pass_exists": true,
+   "verdict": "PASS",
+   "painted_file_exists": true,
+   "painted_file_size_px": [
+    1168,
+    784
+   ],
+   "layout_file_exists": true,
+   "layout_file_size_px": [
+    1168,
+    784
+   ]
+  },
+  {
+   "background": "room",
+   "painted_file": "(batch-KKGuh room \u2014 locked prior file, NOT rebuilt here; painted-room file not in layouts/)",
+   "layout_file": "showcase/layout-pass-room-scaled-25x-20261031.jpg",
+   "scale_check": "PASS: ROOM-ONLY 2.5x correctly applied here and ONLY here \u2014 rig 950px tall, feet on floor/rug, green armchair back at waist height to his side.",
+   "room_2_5x_applied": true,
+   "horizon": "Interior floor plane: rug/floor line under feet; chair back at waist height confirms standing scale in-room.",
+   "light_direction": "Warm interior key (warm-interior/warm-lamp LUT family per CJ-23..CJ-27 specs).",
+   "layout_pass_exists": true,
+   "verdict": "PASS",
+   "painted_file_size_px": null,
+   "painted_file_exists": null,
+   "layout_file_exists": true,
+   "layout_file_size_px": [
+    1168,
+    1060
+   ]
+  }
+ ],
+ "mars_approval": 0
+}

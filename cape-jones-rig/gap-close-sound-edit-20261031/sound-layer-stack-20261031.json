@@ -1,0 +1,129 @@
+{
+ "version": "sound-layer-stack-20261031",
+ "date": "2026-10-31",
+ "recorded_final_audio_pct": 0,
+ "disclaimer": "SYNTHESIZED DEMO ONLY \u2014 tones/noise built with ffmpeg. Not recorded audio. The demo + this layer stack is the working replacement, not a claim of recorded audio.",
+ "mix_integrated_target_lufs": -14,
+ "mix_true_peak_ceiling_db": -1.5,
+ "method_note": "Each layer stem is authored against the same -14 LUFS mix target; the MIX (not the arithmetic sum of stems) is measured with ffmpeg loudnorm, following the wired-100-20261031 loudnorm method.",
+ "layers": [
+  {
+   "layer": "dialogue",
+   "role": "Spoken lines",
+   "demo_cues": [
+    "CJ-A26",
+    "CJ-A27"
+   ],
+   "demo_content": "EMPTY in demo mix \u2014 no recorded dialogue exists yet",
+   "lufs_target": -14
+  },
+  {
+   "layer": "sfx",
+   "role": "Impact, snap, whoosh, steps, jump",
+   "demo_cues": [
+    "CJ-A01",
+    "CJ-A02",
+    "CJ-A03",
+    "CJ-A04",
+    "CJ-A05"
+   ],
+   "demo_content": "synthesized tones/noise per cue sheet v2",
+   "lufs_target": -14
+  },
+  {
+   "layer": "music",
+   "role": "Dance beat bed",
+   "demo_cues": [
+    "CJ-A09",
+    "CJ-A10",
+    "CJ-A11"
+   ],
+   "demo_content": "110 Hz thump tones on beat starts (not a composed track)",
+   "lufs_target": -14
+  },
+  {
+   "layer": "ambience",
+   "role": "Room/street bed",
+   "demo_cues": [
+    "all shots (bed)"
+   ],
+   "demo_content": "low brown-noise bed, whole mix",
+   "lufs_target": -14
+  },
+  {
+   "layer": "device_beep_metronome",
+   "role": "Device beep as metronome (dance beat sheet)",
+   "demo_cues": [
+    "CJ-09",
+    "CJ-10",
+    "CJ-11 dance beats"
+   ],
+   "demo_content": "880 Hz ticks on beat starts in dance section",
+   "lufs_target": -14
+  }
+ ],
+ "demo_cues_v2": [
+  {
+   "cue": "Punch impact",
+   "time": "0.00-0.60s",
+   "method": "120 Hz thump + noise burst",
+   "peak_db": "-6 dB peak"
+  },
+  {
+   "cue": "Fighting stance whoosh",
+   "time": "1.08-1.58s",
+   "method": "Filtered noise swell",
+   "peak_db": "-12 dB peak"
+  },
+  {
+   "cue": "Walk steps x2",
+   "time": "2.08-2.75s",
+   "method": "2 short noise taps",
+   "peak_db": "-18 dB peak"
+  },
+  {
+   "cue": "Jump rise",
+   "time": "3.29-3.88s",
+   "method": "Stepped 300/600 Hz rise",
+   "peak_db": "-12 dB peak"
+  },
+  {
+   "cue": "Dance beat x4",
+   "time": "4.38-5.98s",
+   "method": "110 Hz thumps + 880 Hz beep ticks",
+   "peak_db": "-10 dB peak"
+  }
+ ],
+ "demo_audio_file": "sound-demo-mix-measured-20261031.wav",
+ "source_cue_sheet": "showcase/audio/audio-cue-sheet-v2.csv (5 demo cues)",
+ "mars_approval": 0,
+ "still_owed": [
+  "recorded dialogue",
+  "recorded SFX",
+  "composed music track",
+  "dialogue shot audio sync to a real recording"
+ ],
+ "loudnorm": {
+  "method": "ffmpeg loudnorm, same method as wired-100-20261031 (dynamic; wired file itself measured output -24.01, so dynamic loudnorm on sparse demo material does not by itself hit -14)",
+  "raw_mix": {
+   "input_i": "-26.44",
+   "input_tp": "-6.34",
+   "input_lra": "14.30"
+  },
+  "pass1_measured": {
+   "input_i": "-17.11",
+   "input_tp": "-1.44",
+   "input_lra": "10.20"
+  },
+  "final_pass2_measured": {
+   "input_i": "-16.27",
+   "input_tp": "-1.39",
+   "input_lra": "8.50",
+   "mean_volume_db": "-20.4",
+   "max_volume_db": "-1.6"
+  },
+  "target_lufs": -14,
+  "gap_db": 2.27,
+  "honest_statement": "Final demo measures -16.27 LUFS, NOT -14. A straight +2.27 dB gain would push true peak above 0 (TP already -1.39) and clip. The -14 LUFS target stands for final delivery with real, denser audio; this sparse tone demo cannot honestly claim it. File is therefore named 'measured', not 'minus14lufs'."
+ }
+}

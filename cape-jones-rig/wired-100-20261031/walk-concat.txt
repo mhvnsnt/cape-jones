@@ -1,0 +1,8 @@
+file '/home/hatch/workspace/cape-jones-rig/clips-v7c-clean-20261031/walk/walk-01-contact-v7c-clean.png'
+file '/home/hatch/workspace/cape-jones-rig/clips-v7c-clean-20261031/walk/walk-13-passing-v7c-clean.png'
+file '/home/hatch/workspace/cape-jones-rig/clips-v7c-clean-20261031/walk/walk-25-contact-v7c-clean.png'
+file '/home/hatch/workspace/cape-jones-rig/clips-v7c-clean-20261031/walk/walk-37-passing-v7c-clean.png'
+file '/home/hatch/workspace/cape-jones-rig/clips-v7c-clean-20261031/walk/walk-01-contact-v7c-clean.png'
+file '/home/hatch/workspace/cape-jones-rig/clips-v7c-clean-20261031/walk/walk-13-passing-v7c-clean.png'
+file '/home/hatch/workspace/cape-jones-rig/clips-v7c-clean-20261031/walk/walk-25-contact-v7c-clean.png'
+file '/home/hatch/workspace/cape-jones-rig/clips-v7c-clean-20261031/walk/walk-37-passing-v7c-clean.png'

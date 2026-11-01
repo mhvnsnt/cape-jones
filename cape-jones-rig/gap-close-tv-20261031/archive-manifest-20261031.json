@@ -1,0 +1,483 @@
+{
+ "version": "archive-manifest-gap-close-tv-20261031",
+ "folder": "gap-close-tv-20261031",
+ "purpose": "Archive set: everything needed to re-assemble the CJ-01..CJ-30 episode stack from this folder + the referenced production files. No repo push by this workstream.",
+ "checklist": [
+  {
+   "item": "Shot specs (referenced, not rebuilt)",
+   "status": "REFERENCED",
+   "file": "../clean-100-20261031/shots/shot-specs-30-20261031.json"
+  },
+  {
+   "item": "Shot specs companion: god-ray placements (referenced)",
+   "status": "REFERENCED",
+   "file": "../clean-100-20261031/shots/god-ray-placement-30-20261031.json"
+  },
+  {
+   "item": "Storyboard: 6-panel punch sequence",
+   "status": "BUILT",
+   "file": "storyboard-punch-6panel-20261031.png"
+  },
+  {
+   "item": "Storyboard: 30-panel thumbnail index CJ-01..CJ-30",
+   "status": "BUILT",
+   "file": "storyboard-index-30panel-20261031.png"
+  },
+  {
+   "item": "Animatic MP4 (24fps, looped twice)",
+   "status": "BUILT",
+   "file": "animatic-punch-20261031.mp4"
+  },
+  {
+   "item": "Animatic contact sheet",
+   "status": "BUILT",
+   "file": "animatic-punch-contact-20261031.png"
+  },
+  {
+   "item": "Animatic frames (52 PNGs)",
+   "status": "BUILT",
+   "file": "animatic-frames-20261031/"
+  },
+  {
+   "item": "Edit Decision List JSON",
+   "status": "BUILT",
+   "file": "edl-cj01-cj30-20261031.json"
+  },
+  {
+   "item": "Edit Decision List CSV",
+   "status": "BUILT",
+   "file": "edl-cj01-cj30-20261031.csv"
+  },
+  {
+   "item": "QC report JSON",
+   "status": "BUILT",
+   "file": "qc-cj01-cj30-20261031.json"
+  },
+  {
+   "item": "QC report readable MD",
+   "status": "BUILT",
+   "file": "qc-cj01-cj30-20261031.md"
+  },
+  {
+   "item": "12-principles matrix JSON",
+   "status": "BUILT",
+   "file": "principles-matrix-cj01-cj30-20261031.json"
+  },
+  {
+   "item": "12-principles matrix sheet",
+   "status": "BUILT",
+   "file": "principles-matrix-cj01-cj30-20261031.png"
+  },
+  {
+   "item": "Title card",
+   "status": "BUILT",
+   "file": "title-card-cape-jones-20261031.png"
+  },
+  {
+   "item": "Credits template PNG + MD (all TBD)",
+   "status": "BUILT",
+   "file": "credits-template-20261031.png + credits-template-20261031.md"
+  },
+  {
+   "item": "Dialogue shot CJ-26 (visual only, no recorded audio)",
+   "status": "BUILT",
+   "file": "dialogue-shot-cj26-neutral-ah-20261031.png"
+  },
+  {
+   "item": "Build script (reproducibility)",
+   "status": "BUILT",
+   "file": "build_gap_close_tv_20261031.py"
+  },
+  {
+   "item": "Archive manifest (this file)",
+   "status": "BUILT",
+   "file": "archive-manifest-20261031.json"
+  },
+  {
+   "item": "Mars approval for all 30 shots",
+   "status": "OWED \u2014 0 approved, all PENDING (not claimed anywhere in this folder)"
+  },
+  {
+   "item": "Recorded dialogue audio (CJ-A26/CJ-A27 cues are IDs/notes only)",
+   "status": "OWED \u2014 visual shot only; no audio recorded"
+  },
+  {
+   "item": "Delivery frame size",
+   "status": "OWED \u2014 NOT invented; safe areas are percentage-based only in prior work"
+  },
+  {
+   "item": "POSE PENDING clean poses (CJ-01, CJ-02, CJ-04, CJ-11, CJ-15, CJ-17, CJ-18, CJ-20, CJ-27)",
+   "status": "OWED \u2014 apose plate used, no pose invented"
+  },
+  {
+   "item": "Final painted backgrounds (alley, desk, rooftop, skyline/flying, stage)",
+   "status": "OWED \u2014 stand-ins per shot spec"
+  }
+ ],
+ "key_referenced_production_files": [
+  "../clean-100-20261031/shots/shot-specs-30-20261031.json",
+  "../clean-100-20261031/shots/god-ray-placement-30-20261031.json",
+  "../gap-audit-critique-log-20261031/punch-cj01-exposure-smear-20261031.png",
+  "../gap-audit-critique-log-20261031/silhouette-readability-20261031.png",
+  "../gap-audit-critique-log-20261031/cape-follow-through-20261031.png",
+  "../gap-audit-critique-log-20261031/camera-180-rule-20261031.png",
+  "../gap-audit-critique-log-20261031/lipsync-timeline-test-20261031.png",
+  "../tv-production-stack-20261031/01-storyboard-animatic.png",
+  "../tv-production-stack-20261031/07-titles-credits-delivery.png",
+  "../tv-production-stack-20261031/10-quality-control.png",
+  "../visemes-v2-20261031/head-v2-04-ah-20261031.png",
+  "../rig-apose-v7c-clean-transparent.png",
+  "../showcase/on-background-room.jpg",
+  "../mochiichao-combine-build-20261031/device-in-final-shot-room-20261031.png",
+  "../showcase/lut-approval-checklist.json",
+  "../showcase/lut-spectrum-checklist.json",
+  "../showcase/lut-spectrum-v2-checklist.json"
+ ],
+ "reassembly_order": [
+  "1. Read shot specs + god-ray file.",
+  "2. Read storyboard index + 6-panel board.",
+  "3. Cut per EDL (cuts only) at 24fps.",
+  "4. Check QC report \u2014 fix the 3 rim-hue failures before final.",
+  "5. Apply principles matrix gates per shot.",
+  "6. Place title card + credits template (names TBD).",
+  "7. Dialogue: use CJ-26 composite as the visual; record audio separately (owed)."
+ ],
+ "files_in_this_folder": [
+  {
+   "path": "animatic-punch-20261031.mp4",
+   "bytes": 86299,
+   "sha256": "41e86ba3343ebfea"
+  },
+  {
+   "path": "animatic-punch-contact-20261031.png",
+   "bytes": 200037,
+   "sha256": "ee5ba44d45200bf9"
+  },
+  {
+   "path": "build_gap_close_tv_20261031.py",
+   "bytes": 32270,
+   "sha256": "26689c80c86631de"
+  },
+  {
+   "path": "credits-template-20261031.md",
+   "bytes": 426,
+   "sha256": "3fd71d7d189ca284"
+  },
+  {
+   "path": "credits-template-20261031.png",
+   "bytes": 74451,
+   "sha256": "3970674496ddf684"
+  },
+  {
+   "path": "dialogue-shot-cj26-neutral-ah-20261031.png",
+   "bytes": 978531,
+   "sha256": "053dee90e2e2db74"
+  },
+  {
+   "path": "edl-cj01-cj30-20261031.csv",
+   "bytes": 8358,
+   "sha256": "d4098f3295238a2b"
+  },
+  {
+   "path": "edl-cj01-cj30-20261031.json",
+   "bytes": 16354,
+   "sha256": "e1238d53bbcc70cd"
+  },
+  {
+   "path": "principles-matrix-cj01-cj30-20261031.json",
+   "bytes": 8618,
+   "sha256": "43752c6fbe8e4ab4"
+  },
+  {
+   "path": "principles-matrix-cj01-cj30-20261031.png",
+   "bytes": 333986,
+   "sha256": "a9a9b3b3efaf5053"
+  },
+  {
+   "path": "qc-cj01-cj30-20261031.json",
+   "bytes": 34581,
+   "sha256": "63e07c532da01071"
+  },
+  {
+   "path": "qc-cj01-cj30-20261031.md",
+   "bytes": 3350,
+   "sha256": "aec2c7b6f3276181"
+  },
+  {
+   "path": "storyboard-index-30panel-20261031.png",
+   "bytes": 726444,
+   "sha256": "c3989560f4616498"
+  },
+  {
+   "path": "storyboard-punch-6panel-20261031.png",
+   "bytes": 323543,
+   "sha256": "52fcdceea0e73f3c"
+  },
+  {
+   "path": "title-card-cape-jones-20261031.png",
+   "bytes": 67559,
+   "sha256": "dc764bc4f19d0db2"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f001.png",
+   "bytes": 107119,
+   "sha256": "98a3bcc2e7ca2d7a"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f002.png",
+   "bytes": 107119,
+   "sha256": "98a3bcc2e7ca2d7a"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f003.png",
+   "bytes": 107119,
+   "sha256": "98a3bcc2e7ca2d7a"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f004.png",
+   "bytes": 107119,
+   "sha256": "98a3bcc2e7ca2d7a"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f005.png",
+   "bytes": 107119,
+   "sha256": "98a3bcc2e7ca2d7a"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f006.png",
+   "bytes": 107119,
+   "sha256": "98a3bcc2e7ca2d7a"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f007.png",
+   "bytes": 108004,
+   "sha256": "32b98c019dd3855e"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f008.png",
+   "bytes": 108004,
+   "sha256": "32b98c019dd3855e"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f009.png",
+   "bytes": 104990,
+   "sha256": "41b30434208f2d58"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f010.png",
+   "bytes": 104990,
+   "sha256": "41b30434208f2d58"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f011.png",
+   "bytes": 104990,
+   "sha256": "41b30434208f2d58"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f012.png",
+   "bytes": 104990,
+   "sha256": "41b30434208f2d58"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f013.png",
+   "bytes": 104990,
+   "sha256": "41b30434208f2d58"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f014.png",
+   "bytes": 104990,
+   "sha256": "41b30434208f2d58"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f015.png",
+   "bytes": 104990,
+   "sha256": "41b30434208f2d58"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f016.png",
+   "bytes": 104990,
+   "sha256": "41b30434208f2d58"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f017.png",
+   "bytes": 104990,
+   "sha256": "41b30434208f2d58"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f018.png",
+   "bytes": 104990,
+   "sha256": "41b30434208f2d58"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f019.png",
+   "bytes": 104990,
+   "sha256": "41b30434208f2d58"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f020.png",
+   "bytes": 104990,
+   "sha256": "41b30434208f2d58"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f021.png",
+   "bytes": 107880,
+   "sha256": "4ffd858bdb9453d0"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f022.png",
+   "bytes": 107880,
+   "sha256": "4ffd858bdb9453d0"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f023.png",
+   "bytes": 107880,
+   "sha256": "4ffd858bdb9453d0"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f024.png",
+   "bytes": 107880,
+   "sha256": "4ffd858bdb9453d0"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f025.png",
+   "bytes": 107880,
+   "sha256": "4ffd858bdb9453d0"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f026.png",
+   "bytes": 107880,
+   "sha256": "4ffd858bdb9453d0"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f027.png",
+   "bytes": 107081,
+   "sha256": "6f507ccaee0e3859"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f028.png",
+   "bytes": 107081,
+   "sha256": "6f507ccaee0e3859"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f029.png",
+   "bytes": 107081,
+   "sha256": "6f507ccaee0e3859"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f030.png",
+   "bytes": 107081,
+   "sha256": "6f507ccaee0e3859"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f031.png",
+   "bytes": 107081,
+   "sha256": "6f507ccaee0e3859"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f032.png",
+   "bytes": 107081,
+   "sha256": "6f507ccaee0e3859"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f033.png",
+   "bytes": 107965,
+   "sha256": "4bc79592a1d9dce0"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f034.png",
+   "bytes": 107965,
+   "sha256": "4bc79592a1d9dce0"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f035.png",
+   "bytes": 105006,
+   "sha256": "50f9419d83314b19"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f036.png",
+   "bytes": 105006,
+   "sha256": "50f9419d83314b19"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f037.png",
+   "bytes": 105006,
+   "sha256": "50f9419d83314b19"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f038.png",
+   "bytes": 105006,
+   "sha256": "50f9419d83314b19"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f039.png",
+   "bytes": 105006,
+   "sha256": "50f9419d83314b19"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f040.png",
+   "bytes": 105006,
+   "sha256": "50f9419d83314b19"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f041.png",
+   "bytes": 105006,
+   "sha256": "50f9419d83314b19"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f042.png",
+   "bytes": 105006,
+   "sha256": "50f9419d83314b19"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f043.png",
+   "bytes": 105006,
+   "sha256": "50f9419d83314b19"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f044.png",
+   "bytes": 105006,
+   "sha256": "50f9419d83314b19"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f045.png",
+   "bytes": 105006,
+   "sha256": "50f9419d83314b19"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f046.png",
+   "bytes": 105006,
+   "sha256": "50f9419d83314b19"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f047.png",
+   "bytes": 107842,
+   "sha256": "86c63949a358bfdb"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f048.png",
+   "bytes": 107842,
+   "sha256": "86c63949a358bfdb"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f049.png",
+   "bytes": 107842,
+   "sha256": "86c63949a358bfdb"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f050.png",
+   "bytes": 107842,
+   "sha256": "86c63949a358bfdb"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f051.png",
+   "bytes": 107842,
+   "sha256": "86c63949a358bfdb"
+  },
+  {
+   "path": "animatic-frames-20261031/anim-f052.png",
+   "bytes": 107842,
+   "sha256": "86c63949a358bfdb"
+  }
+ ],
+ "file_count": 67
+}

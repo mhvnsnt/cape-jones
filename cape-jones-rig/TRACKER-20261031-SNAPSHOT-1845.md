@@ -1,0 +1,119 @@
+# Tracker — everything started, completed, and unfinished, with percentages
+Updated 2026-10-31 15:18 CDT. This file is updated in every message going forward.
+Rule: a percentage always has its count behind it. A stub is never hidden —
+it is listed as unfinished with its count.
+
+## Tools pulled in and wired — name, what it does, how far
+
+- Blender 5.2.3 LTS compositor — node tree file verified: 18 nodes, 22 links,
+  LUT_PATH text block present. Node types wired 6/6 (AlphaOver, MixRGB, Math,
+  Glare Fog Glow, DilateErode, ColorBalance sockets). Blender RENDER viewed
+  0/1 = 0%. Per-shot Blender masks/fog 0/2 = 0%. Overall Blender: tree 100%,
+  render 0% — do not call Blender "done" until a render is viewed.
+- FFmpeg lut3d — 70/70 .cube files apply cleanly = 100%. Delivery -14 LUFS
+  target set in cue sheet, loudness measured 0/5 cues = 0% (target only, not measured).
+- PIL compositor stack (apply_compositor.py) — layers 12: background, tint,
+  character, hard shadow, rim, energy, glow, god-ray, fog, foreground, LUT,
+  delivery. Fully wired 10/12 = 83%. Partial 2/12: god-ray per-shot placement,
+  ACES transform (NOT wired, needs a colour-managed tool). Foreground plate
+  0/1 in tests (none supplied).
+- PIL Level 2 v2 (apply_lighting_level2_v2.py) — features 6/6 = 100% for
+  this script: LUT grade, directional rim (3px, lit-side fade), falloff bleed
+  (5px, 0.20, blurred), clean shadow (ellipse + foot pads, NO blob),
+  internal line light (12px inner band, lit side), 1px feather. Per-shot
+  tuning of v2 0/30 shots = 0%.
+- PIL Level 2 v1 — superseded by v2 for new work. v1 clean Level 2 is
+  APPROVED by Mars, v2 is built and NOT yet approved.
+- slice_clean.py — method wired 100% (component cuts, 1px feather, fringe
+  decontamination, no hand rectangles). Batch applied 0/184 unique branch
+  sheets = 0%.
+- Joint rig v7c — ball pivots 4/4 (2 elbows, 2 knees) = 100%. Clean poses
+  6/6 = 100%, 0 red label pixels. Clean clips: poses only; labelled
+  clips-v7c files are DEBUG ONLY, clean clip re-render 0/17 = 0%.
+- Audio (FFmpeg + PIL cue sheet) — cue sheet v2 100%, CSV/JSON for DAW
+  100%, demo audio 6.0s 100% as DEMO ONLY. Recorded/final audio 0% — never
+  claimed as recorded.
+- OpenColorIO (bundled with Blender) — present, ACES transform in PIL
+  0/1 = 0%. In Blender, OCIO is available but no ACES render is viewed.
+
+## Work — completed
+
+- Base LUTs approved 30/30 = 100%.
+- Spectrum LUTs approved 6/24 = 25% (sheet 4 only).
+- Spectrum v2 LUTs approved 8/16 = 50% (sheet 1 only).
+- Total LUTs approved 70/70 = 100% (Mars 15:17 CDT: all remaining 26 approved).
+- Lighting demos colored + non-colored approved. Clean Level 2 (v1) approved.
+- Lighting levels 0-5 doc written, Mars wording + industry term, 11 rows.
+- Fighting pose renamed (flex-hold -> fighting pose / forward bicep curl).
+- Labels-are-debug rule wired: builder labels=False, lighting script
+  refuses labelled plates, clean poses 6/6, clean lighting 22/22 files.
+- Room vs LUT diagnostic built, grey-128 control rule set.
+- Universal pipeline doc written, gate order set (Cape Jones alone first).
+- Audio cue sheet v2 + demo link (expires 2026-11-02).
+
+## Work — started, not finished
+
+- Level 2 v2 warm-rim: APPROVED by Mars 2026-10-31 15:11 CDT
+  ("perfect exactly"). Cyan-rim single-light version remains NOT
+  approved as a single-light grade, but IS valid as a dual-light
+  variant (see below). Bleed tightened 8px/0.25
+  -> 5px/0.20 after viewing (halo was too wide). Rim-colour fix 15:02 CDT:
+  cyan rim (0,200,255) under warm grade was a hue mismatch — rebuilt
+  with warm amber rim (255,180,80) matching bleed/gain, viewed, still
+  NOT approved as a whole (awaiting Mars on the rebuilt version).
+- Gauntlet-out FIXED version: APPROVED by Mars 2026-10-31 15:00 CDT,
+  re-confirmed 15:02 CDT
+  ("that one's perfect"). v1 floating version is SUPERSEDED, do not use.
+  Regression test check_gauntlet_flip.py: ALL PASS (see below). Fixed version flips per-row within
+  the cuff's own span, so cuff position/connection is exactly as inward.
+  Scope: arms-up / arms-in-front poses ONLY, panels outward / toward
+  camera, never inward toward each other.
+- Repo push for post-#285 batch: in progress via background worker,
+  verified on main 0 files so far for THIS batch. Previous PRs #276-#285
+  verified 194/194 on main. Do not claim this batch landed until verified.
+
+## Work — unfinished (0% or explicitly owed)
+
+- True flex pose (separate from fighting pose): 0/1.
+- Gauntlet flip regression test: 5/5 checks PASS = 100% (OutFixed pieces,
+  per-row range, approved pose, v1 superseded list, diff confined to
+  gauntlet zone).
+- Punch Arm 2 pick: variants built 4/4, Mars pick 0/1.
+- Room scale lock: 2x vs 2.5x pick 0/1. Canonical room recolour: blocked
+  on Mars identifying the canonical room reference.
+- Effects anchored to the fist (Blender Glare route): 0/1.
+- Cleanup v2 with metrics: 0/1.
+- Clean-slice batch: 0/184 sheets.
+- JSFL run in real Adobe Animate: 0/1 (VM has no Animate).
+- Final painted backgrounds flying/rooftop/alley/desk: 0/4 (stand-ins in place).
+- Viseme pieces 0/14, eye strips 0/8, cape states 0/4, foreshortened forearm 0/1.
+- Proof shot end-to-end with Cape Jones alone: 0/1. Other shows: 0 (gated).
+  More characters: 0 (gated after proof shot + a little while).
+- Shots run through the compositor stack: 0/30.
+- ACES transform, viewed Blender render, per-shot tuning: all 0% as above.
+
+- Universe Color Language: doc written 100%, JoJo demo sheet 4/4
+  palettes built and viewed = 100% as a demo (palettes NOT yet
+  approved as canon — Mars approves each for canon separately).
+- Dual-light god-ray setup: demo v2 built and viewed = 100% as a
+  PIL draft proof (cyan back rays + warm front rays, both read).
+  Production Blender volumetric version 0/1 = 0%.
+- Dual-light tertiary rule: logged 100% (repo doc, AGENTS.md,
+  MEMORY.md, tracker, status).
+
+- True flex: built 1/1 pose, NOT yet approved (true-flex-double-bicep-v7c-clean.png + alt variant). Fighting pose is separate and approved; true flex is distinct.
+- Repo pull confirmed: Darwin dance (Gumball GB214 Sc057+Sc059) found, Richard dance NOT found (0 Watterson hits, pose libraries only). CN Foster's + Grim catalogs searched, pipeline only, not wired into pose.
+- Scope confirmed by Mars 15:18 CDT: pull anything except literal character images, names, literal dialogue, logos (+ standing cry/town-name ban).
+
+- Flex roll: built 1/1 + viewed, approval 0/1 (gauntlet-out, fist-in, roll toward neck/shoulders).
+- Color batch: combined 1/1, atmosphere 1/1, shot-spec template 1/1, script --rim wiring 1/1 (test run only, approved outputs untouched).
+- Scope final 15:23-15:24 CDT: barred ONLY likeness/character literally/name/dialogue/logo; character image as transform-only parody/different-character reference allowed, never ship-as-is.
+- Deep show audit: running, not yet reported; findings so far = Darwin dance only, Richard dance absent, Foster's/Grim pipeline only.
+
+## FULL LIST — todo / completion / percentages (2026-10-31 15:26 CDT, Mars requested)
+DONE 100%: LUTs 70/70; gauntlet-out-fixed fighting pose 1/1 + regression 5/5; Level 2 v2 warm-rim 1/1; lighting levels demos 2/2; clean poses 6/6; v7c pivots 4/4; audio cue sheet v2 + CSV/JSON 3/3; color batch 4/4 (combined, atmosphere, spec template, --rim wiring test); deep audit 41/41 rows; flex anticipation frame 1/1.
+IN PROGRESS: top-5 pulls wiring (delegated, 0/5 parsed yet); repo push post-#285 (worker pending, 0 files verified on main for this batch); flex final (0/1 — detached-fist fix owed); punch Arm2 pick (0/1, 4 variants built); room scale pick (0/1, 2x vs 2.5x).
+NOT DONE / BLOCKED: Blender volumetric god rays 0/1 (needs real shot + GPU); JoJo palette canon approval 0/4 palettes (demos only); opposition pair demo 0/1 (needs antagonist plate); clean-slice batch 0/184 sheets; clean clip re-render 0/17 clips; JSFL in Adobe Animate 0/1 (Animate not on VM); final painted backgrounds 0/4 (flying/rooftop/alley/desk); visemes 0/14; eye strips 0/8; cape states 0/4; 3/4 rig pieces (1 owed); foreshortened forearm 0/1; ACES in colour-managed tool 0/1; viewed Blender render 0/1; per-shot god-ray placement 0/30; shots through compositor stack 0/30; flex clip retarget (Darwin dance) 0/1; RAR5 full-leak walk (Gumball 86 parts) 0/1; Nick/Disney/PPG full downloads (listings only, in wiring batch).
+- Room scale: LOCKED 2.5x = 100% (Mars 15:34 CDT). Seated scale rule: standing - 0.2 (2.5x -> 2.3x seated, approximate, verify on seated pose).
+- Punch Impact: LOCKED -110 across-up = 100%. Punch sequence frame -70 across-down approved for before/during/after punch.
+- Arm2 fist-up: gauntlet pad flipped, arm same spot, different-angle fist owed 0/1.

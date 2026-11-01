@@ -1,0 +1,250 @@
+{
+  "punch_v4c": {
+    "elbows_L": {
+      "expected": [
+        390.3,
+        563.2
+      ],
+      "measured": [
+        391.5,
+        561.2
+      ],
+      "delta_px": 2.3,
+      "pass": true
+    },
+    "elbows_R": {
+      "expected": [
+        952.4,
+        423.2
+      ],
+      "measured": [
+        949.3,
+        425.7
+      ],
+      "delta_px": 4.0,
+      "pass": true
+    },
+    "wrists_R": {
+      "expected": [
+        1123.4,
+        408.9
+      ],
+      "measured": [
+        1125.4,
+        409.3
+      ],
+      "delta_px": 2.0,
+      "pass": true
+    },
+    "wrists_L": {
+      "expected": [
+        282.1,
+        696.9
+      ],
+      "measured": [
+        275.7,
+        688.6
+      ],
+      "delta_px": 10.4,
+      "pass": true
+    },
+    "fist_R": {
+      "expected": [
+        1163.9,
+        408.4
+      ],
+      "measured": [
+        1140.5,
+        408.9
+      ],
+      "delta_px": 23.4,
+      "pass": true
+    },
+    "cuff_L": {
+      "expected": [
+        298.3,
+        676.8
+      ],
+      "measured": [
+        291.2,
+        666.7
+      ],
+      "delta_px": 12.4,
+      "pass": true
+    },
+    "cuff_R": {
+      "expected": [
+        1097.8,
+        411.0
+      ],
+      "measured": [
+        1096.6,
+        409.8
+      ],
+      "delta_px": 1.6,
+      "pass": true
+    },
+    "onbody_elbows_L": {
+      "pass": true
+    },
+    "onbody_elbows_R": {
+      "pass": true
+    },
+    "onbody_wrists_R": {
+      "pass": true
+    },
+    "onbody_wrists_L": {
+      "pass": true
+    }
+  },
+  "flex_v2": {
+    "elbows_L": {
+      "expected": [
+        247.0,
+        473.8
+      ],
+      "measured": [
+        280.2,
+        456.6
+      ],
+      "delta_px": 37.4,
+      "pass": false
+    },
+    "elbows_R": {
+      "expected": [
+        853.6,
+        467.1
+      ],
+      "measured": [
+        817.9,
+        452.4
+      ],
+      "delta_px": 38.6,
+      "pass": false
+    },
+    "wrists_L": {
+      "expected": [
+        330.3,
+        323.3
+      ],
+      "measured": [
+        341.3,
+        354.7
+      ],
+      "delta_px": 33.3,
+      "pass": false
+    },
+    "wrists_R": {
+      "expected": [
+        753.2,
+        328.7
+      ],
+      "measured": [
+        747.3,
+        357.5
+      ],
+      "delta_px": 29.4,
+      "pass": false
+    },
+    "fist_L": {
+      "expected": [
+        375.4,
+        339.0
+      ],
+      "measured": [
+        357.9,
+        384.7
+      ],
+      "delta_px": 48.9,
+      "pass": false
+    },
+    "fist_R": {
+      "expected": [
+        707.4,
+        342.6
+      ],
+      "measured": [
+        720.3,
+        385.8
+      ],
+      "delta_px": 45.1,
+      "pass": false
+    },
+    "cuff_L": {
+      "expected": [
+        317.8,
+        345.9
+      ],
+      "measured": [
+        324.4,
+        354.2
+      ],
+      "delta_px": 10.6,
+      "pass": true
+    },
+    "cuff_R": {
+      "expected": [
+        768.3,
+        349.5
+      ],
+      "measured": [
+        763.1,
+        355.8
+      ],
+      "delta_px": 8.1,
+      "pass": true
+    },
+    "onbody_elbows_L": {
+      "pass": true
+    },
+    "onbody_elbows_R": {
+      "pass": true
+    },
+    "onbody_wrists_L": {
+      "pass": true
+    },
+    "onbody_wrists_R": {
+      "pass": true
+    }
+  },
+  "kneefeet_flex": {
+    "L": {
+      "knee": [
+        388.3,
+        987.8
+      ],
+      "ankle": [
+        450.4,
+        1241.1
+      ],
+      "toe_x": 351.0,
+      "knee_dir": -62.0,
+      "foot_dir": -99.4,
+      "pass": true
+    },
+    "R": {
+      "knee": [
+        726.6,
+        975.7
+      ],
+      "ankle": [
+        696.4,
+        1234.6
+      ],
+      "toe_x": 781.0,
+      "knee_dir": 30.2,
+      "foot_dir": 84.6,
+      "pass": true
+    }
+  },
+  "kneefeet_dance_f015": {
+    "L": {
+      "pass": null,
+      "note": "INCONCLUSIVE - crossed legs; centre split cannot assign feet to legs; use visual tracking"
+    },
+    "R": {
+      "pass": null,
+      "note": "INCONCLUSIVE - crossed legs; centre split cannot assign feet to legs; use visual tracking"
+    }
+  }
+}
