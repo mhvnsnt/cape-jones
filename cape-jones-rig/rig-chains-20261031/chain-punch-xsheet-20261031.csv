@@ -1,0 +1,76 @@
+frame,kind,from,to,t,eased,dy_rig,dx_rig,height_video_px,label
+0,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+1,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+2,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+3,inbetween,apose,punch windup,0.12,0.01,0,0,0,GROUNDED
+4,inbetween,apose,punch windup,0.25,0.06,0,0,0,GROUNDED
+5,BREAKDOWN arc +10deg largest-moving arm upper,apose,punch windup,0.38,0.21,0,0,0,GROUNDED
+6,inbetween,apose,punch windup,0.5,0.5,1,0,0,GROUNDED
+7,BREAKDOWN follow-through +8deg that arm lower,apose,punch windup,0.62,0.79,1,0,0,GROUNDED
+8,inbetween,apose,punch windup,0.75,0.94,1,0,0,GROUNDED
+9,inbetween,apose,punch windup,0.88,0.99,1,0,0,GROUNDED
+10,KEY hold,punch windup,punch windup,0,0,2,0,0,GROUNDED
+11,KEY hold,punch windup,punch windup,0,0,2,0,0,GROUNDED
+12,KEY hold,punch windup,punch windup,0,0,2,0,0,GROUNDED
+13,KEY hold,punch windup,punch windup,0,0,2,0,0,GROUNDED
+14,KEY hold,punch windup,punch windup,0,0,2,0,0,GROUNDED
+15,inbetween,punch windup,punch extend/snap,0.12,0.01,2,0,0,GROUNDED
+16,inbetween,punch windup,punch extend/snap,0.25,0.06,2,0,0,GROUNDED
+17,BREAKDOWN arc +10deg largest-moving arm upper,punch windup,punch extend/snap,0.38,0.21,2,0,0,GROUNDED
+18,inbetween,punch windup,punch extend/snap,0.5,0.5,2,0,0,GROUNDED
+19,BREAKDOWN follow-through +8deg that arm lower,punch windup,punch extend/snap,0.62,0.79,2,0,0,GROUNDED
+20,inbetween,punch windup,punch extend/snap,0.75,0.94,2,0,0,GROUNDED
+21,inbetween,punch windup,punch extend/snap,0.88,0.99,2,0,0,GROUNDED
+22,KEY hold,punch extend/snap,punch extend/snap,0,0,2,0,0,GROUNDED
+23,KEY hold,punch extend/snap,punch extend/snap,0,0,2,0,0,GROUNDED
+24,KEY hold,punch extend/snap,punch extend/snap,0,0,2,0,0,GROUNDED
+25,KEY hold,punch extend/snap,punch extend/snap,0,0,2,0,0,GROUNDED
+26,KEY hold,punch extend/snap,punch extend/snap,0,0,2,0,0,GROUNDED
+27,inbetween,punch extend/snap,punch impact locked,0.12,0.01,2,0,0,GROUNDED
+28,inbetween,punch extend/snap,punch impact locked,0.25,0.06,2,0,0,GROUNDED
+29,BREAKDOWN arc +10deg largest-moving arm upper,punch extend/snap,punch impact locked,0.38,0.21,2,0,0,GROUNDED
+30,inbetween,punch extend/snap,punch impact locked,0.5,0.5,2,0,0,GROUNDED
+31,BREAKDOWN follow-through +8deg that arm lower,punch extend/snap,punch impact locked,0.62,0.79,2,0,0,GROUNDED
+32,inbetween,punch extend/snap,punch impact locked,0.75,0.94,2,0,0,GROUNDED
+33,inbetween,punch extend/snap,punch impact locked,0.88,0.99,2,0,0,GROUNDED
+34,KEY hold,punch impact locked,punch impact locked,0,0,2,0,0,GROUNDED
+35,KEY hold,punch impact locked,punch impact locked,0,0,2,0,0,GROUNDED
+36,KEY hold,punch impact locked,punch impact locked,0,0,2,0,0,GROUNDED
+37,KEY hold,punch impact locked,punch impact locked,0,0,2,0,0,GROUNDED
+38,KEY hold,punch impact locked,punch impact locked,0,0,2,0,0,GROUNDED
+39,inbetween,punch impact locked,punch recover / fight,0.12,0.01,2,0,0,GROUNDED
+40,inbetween,punch impact locked,punch recover / fight,0.25,0.06,2,0,0,GROUNDED
+41,BREAKDOWN arc +10deg largest-moving arm upper,punch impact locked,punch recover / fight,0.38,0.21,2,0,0,GROUNDED
+42,inbetween,punch impact locked,punch recover / fight,0.5,0.5,2,0,0,GROUNDED
+43,BREAKDOWN follow-through +8deg that arm lower,punch impact locked,punch recover / fight,0.62,0.79,2,0,0,GROUNDED
+44,inbetween,punch impact locked,punch recover / fight,0.75,0.94,2,0,0,GROUNDED
+45,inbetween,punch impact locked,punch recover / fight,0.88,0.99,2,0,0,GROUNDED
+46,KEY hold,punch recover / fight,punch recover / fight,0,0,2,0,0,GROUNDED
+47,KEY hold,punch recover / fight,punch recover / fight,0,0,2,0,0,GROUNDED
+48,KEY hold,punch recover / fight,punch recover / fight,0,0,2,0,0,GROUNDED
+49,KEY hold,punch recover / fight,punch recover / fight,0,0,2,0,0,GROUNDED
+50,KEY hold,punch recover / fight,punch recover / fight,0,0,2,0,0,GROUNDED
+51,inbetween,punch recover / fight,punch across-down placement,0.12,0.01,2,0,0,GROUNDED
+52,inbetween,punch recover / fight,punch across-down placement,0.25,0.06,2,0,0,GROUNDED
+53,BREAKDOWN arc +10deg largest-moving arm upper,punch recover / fight,punch across-down placement,0.38,0.21,2,0,0,GROUNDED
+54,inbetween,punch recover / fight,punch across-down placement,0.5,0.5,2,0,0,GROUNDED
+55,BREAKDOWN follow-through +8deg that arm lower,punch recover / fight,punch across-down placement,0.62,0.79,2,0,0,GROUNDED
+56,inbetween,punch recover / fight,punch across-down placement,0.75,0.94,2,0,0,GROUNDED
+57,inbetween,punch recover / fight,punch across-down placement,0.88,0.99,2,0,0,GROUNDED
+58,KEY hold,punch across-down placement,punch across-down placement,0,0,2,0,0,GROUNDED
+59,KEY hold,punch across-down placement,punch across-down placement,0,0,2,0,0,GROUNDED
+60,KEY hold,punch across-down placement,punch across-down placement,0,0,2,0,0,GROUNDED
+61,KEY hold,punch across-down placement,punch across-down placement,0,0,2,0,0,GROUNDED
+62,KEY hold,punch across-down placement,punch across-down placement,0,0,2,0,0,GROUNDED
+63,OVERSHOOT 5% beyond key,punch recover / fight,punch across-down placement,1.05,1.05,2,0,0,GROUNDED
+64,SETTLE back to key,punch across-down placement,punch across-down placement,1.0,1.0,2,0,0,GROUNDED
+65,inbetween,punch across-down placement,apose,0.12,0.01,1,0,0,GROUNDED
+66,inbetween,punch across-down placement,apose,0.25,0.06,1,0,0,GROUNDED
+67,BREAKDOWN arc +10deg largest-moving arm upper,punch across-down placement,apose,0.38,0.21,1,0,0,GROUNDED
+68,inbetween,punch across-down placement,apose,0.5,0.5,1,0,0,GROUNDED
+69,BREAKDOWN follow-through +8deg that arm lower,punch across-down placement,apose,0.62,0.79,0,0,0,GROUNDED
+70,inbetween,punch across-down placement,apose,0.75,0.94,0,0,0,GROUNDED
+71,inbetween,punch across-down placement,apose,0.88,0.99,0,0,0,GROUNDED
+72,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+73,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+74,KEY hold,apose,apose,0,0,0,0,0,GROUNDED

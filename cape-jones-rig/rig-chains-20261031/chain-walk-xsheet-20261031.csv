@@ -1,0 +1,68 @@
+frame,kind,from,to,t,eased,dy_rig,dx_rig,height_video_px,label
+0,KEY hold,walk contact A,walk contact A,0,0,34,0,0,GROUNDED
+1,KEY hold,walk contact A,walk contact A,0,0,34,0,0,GROUNDED
+2,KEY hold,walk contact A,walk contact A,0,0,34,0,0,GROUNDED
+3,inbetween,walk contact A,walk passing A,0.17,0.02,33,0,0,GROUNDED
+4,inbetween,walk contact A,walk passing A,0.33,0.15,27,0,0,GROUNDED
+5,BREAKDOWN arc +10deg largest-moving arm upper,walk contact A,walk passing A,0.5,0.5,13,0,0,GROUNDED
+6,inbetween,walk contact A,walk passing A,0.67,0.85,-1,0,0,GROUNDED
+7,BREAKDOWN follow-through +8deg that arm lower,walk contact A,walk passing A,0.83,0.98,-7,0,0,GROUNDED
+8,KEY hold,walk passing A,walk passing A,0,0,-8,0,0,GROUNDED
+9,KEY hold,walk passing A,walk passing A,0,0,-8,0,0,GROUNDED
+10,KEY hold,walk passing A,walk passing A,0,0,-8,0,0,GROUNDED
+11,inbetween,walk passing A,walk contact B,0.17,0.02,-6,0,0,GROUNDED
+12,inbetween,walk passing A,walk contact B,0.33,0.15,1,0,0,GROUNDED
+13,BREAKDOWN arc +10deg largest-moving arm upper,walk passing A,walk contact B,0.5,0.5,23,0,0,GROUNDED
+14,inbetween,walk passing A,walk contact B,0.67,0.85,44,0,0,GROUNDED
+15,BREAKDOWN follow-through +8deg that arm lower,walk passing A,walk contact B,0.83,0.98,52,0,0,GROUNDED
+16,KEY hold,walk contact B,walk contact B,0,0,54,0,0,GROUNDED
+17,KEY hold,walk contact B,walk contact B,0,0,54,0,0,GROUNDED
+18,KEY hold,walk contact B,walk contact B,0,0,54,0,0,GROUNDED
+19,inbetween,walk contact B,walk passing B,0.17,0.02,53,0,0,GROUNDED
+20,inbetween,walk contact B,walk passing B,0.33,0.15,48,0,0,GROUNDED
+21,BREAKDOWN arc +10deg largest-moving arm upper,walk contact B,walk passing B,0.5,0.5,34,0,0,GROUNDED
+22,inbetween,walk contact B,walk passing B,0.67,0.85,19,0,0,GROUNDED
+23,BREAKDOWN follow-through +8deg that arm lower,walk contact B,walk passing B,0.83,0.98,14,0,0,GROUNDED
+24,KEY hold,walk passing B,walk passing B,0,0,14,0,0,GROUNDED
+25,KEY hold,walk passing B,walk passing B,0,0,14,0,0,GROUNDED
+26,KEY hold,walk passing B,walk passing B,0,0,14,0,0,GROUNDED
+27,inbetween,walk passing B,walk contact A,0.17,0.02,14,0,0,GROUNDED
+28,inbetween,walk passing B,walk contact A,0.33,0.15,16,0,0,GROUNDED
+29,BREAKDOWN arc +10deg largest-moving arm upper,walk passing B,walk contact A,0.5,0.5,24,0,0,GROUNDED
+30,inbetween,walk passing B,walk contact A,0.67,0.85,31,0,0,GROUNDED
+31,BREAKDOWN follow-through +8deg that arm lower,walk passing B,walk contact A,0.83,0.98,33,0,0,GROUNDED
+32,KEY hold,walk contact A,walk contact A,0,0,34,0,0,GROUNDED
+33,KEY hold,walk contact A,walk contact A,0,0,34,0,0,GROUNDED
+34,KEY hold,walk contact A,walk contact A,0,0,34,0,0,GROUNDED
+35,inbetween,walk contact A,walk passing A,0.17,0.02,33,0,0,GROUNDED
+36,inbetween,walk contact A,walk passing A,0.33,0.15,27,0,0,GROUNDED
+37,BREAKDOWN arc +10deg largest-moving arm upper,walk contact A,walk passing A,0.5,0.5,13,0,0,GROUNDED
+38,inbetween,walk contact A,walk passing A,0.67,0.85,-1,0,0,GROUNDED
+39,BREAKDOWN follow-through +8deg that arm lower,walk contact A,walk passing A,0.83,0.98,-7,0,0,GROUNDED
+40,KEY hold,walk passing A,walk passing A,0,0,-8,0,0,GROUNDED
+41,KEY hold,walk passing A,walk passing A,0,0,-8,0,0,GROUNDED
+42,KEY hold,walk passing A,walk passing A,0,0,-8,0,0,GROUNDED
+43,inbetween,walk passing A,walk contact B,0.17,0.02,-6,0,0,GROUNDED
+44,inbetween,walk passing A,walk contact B,0.33,0.15,1,0,0,GROUNDED
+45,BREAKDOWN arc +10deg largest-moving arm upper,walk passing A,walk contact B,0.5,0.5,23,0,0,GROUNDED
+46,inbetween,walk passing A,walk contact B,0.67,0.85,44,0,0,GROUNDED
+47,BREAKDOWN follow-through +8deg that arm lower,walk passing A,walk contact B,0.83,0.98,52,0,0,GROUNDED
+48,KEY hold,walk contact B,walk contact B,0,0,54,0,0,GROUNDED
+49,KEY hold,walk contact B,walk contact B,0,0,54,0,0,GROUNDED
+50,KEY hold,walk contact B,walk contact B,0,0,54,0,0,GROUNDED
+51,inbetween,walk contact B,walk passing B,0.17,0.02,53,0,0,GROUNDED
+52,inbetween,walk contact B,walk passing B,0.33,0.15,48,0,0,GROUNDED
+53,BREAKDOWN arc +10deg largest-moving arm upper,walk contact B,walk passing B,0.5,0.5,34,0,0,GROUNDED
+54,inbetween,walk contact B,walk passing B,0.67,0.85,19,0,0,GROUNDED
+55,BREAKDOWN follow-through +8deg that arm lower,walk contact B,walk passing B,0.83,0.98,14,0,0,GROUNDED
+56,KEY hold,walk passing B,walk passing B,0,0,14,0,0,GROUNDED
+57,KEY hold,walk passing B,walk passing B,0,0,14,0,0,GROUNDED
+58,KEY hold,walk passing B,walk passing B,0,0,14,0,0,GROUNDED
+59,inbetween,walk passing B,walk contact A,0.17,0.02,14,0,0,GROUNDED
+60,inbetween,walk passing B,walk contact A,0.33,0.15,16,0,0,GROUNDED
+61,BREAKDOWN arc +10deg largest-moving arm upper,walk passing B,walk contact A,0.5,0.5,24,0,0,GROUNDED
+62,inbetween,walk passing B,walk contact A,0.67,0.85,31,0,0,GROUNDED
+63,BREAKDOWN follow-through +8deg that arm lower,walk passing B,walk contact A,0.83,0.98,33,0,0,GROUNDED
+64,KEY hold,walk contact A,walk contact A,0,0,34,0,0,GROUNDED
+65,KEY hold,walk contact A,walk contact A,0,0,34,0,0,GROUNDED
+66,KEY hold,walk contact A,walk contact A,0,0,34,0,0,GROUNDED
