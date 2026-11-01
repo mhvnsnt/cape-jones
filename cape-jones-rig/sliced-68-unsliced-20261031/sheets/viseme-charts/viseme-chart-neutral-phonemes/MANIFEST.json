@@ -1,0 +1,208 @@
+{
+ "source": "viseme-charts/viseme-chart-neutral-phonemes.jpg",
+ "group": "viseme-charts",
+ "plate": "viseme-charts/viseme-chart-neutral-phonemes.png",
+ "plate_md5": "012b660ba95c3b682b5fd06b894ecac0",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    245,
+    307
+   ],
+   "opaque_px": 52179,
+   "sheet_bbox": [
+    146,
+    19,
+    391,
+    326
+   ],
+   "area_px": 52179,
+   "provisional_class": "viseme_head_cell",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    241,
+    307
+   ],
+   "opaque_px": 51280,
+   "sheet_bbox": [
+    558,
+    19,
+    799,
+    326
+   ],
+   "area_px": 51280,
+   "provisional_class": "viseme_head_cell",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_3",
+   "file": "Row1_3.png",
+   "size": [
+    240,
+    307
+   ],
+   "opaque_px": 50942,
+   "sheet_bbox": [
+    970,
+    18,
+    1210,
+    325
+   ],
+   "area_px": 50942,
+   "provisional_class": "viseme_head_cell",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_4",
+   "file": "Row1_4.png",
+   "size": [
+    239,
+    306
+   ],
+   "opaque_px": 50740,
+   "sheet_bbox": [
+    1381,
+    20,
+    1620,
+    326
+   ],
+   "area_px": 50740,
+   "provisional_class": "viseme_head_cell",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    247,
+    307
+   ],
+   "opaque_px": 53492,
+   "sheet_bbox": [
+    158,
+    346,
+    405,
+    653
+   ],
+   "area_px": 53492,
+   "provisional_class": "viseme_head_cell",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    249,
+    303
+   ],
+   "opaque_px": 53554,
+   "sheet_bbox": [
+    556,
+    350,
+    805,
+    653
+   ],
+   "area_px": 53554,
+   "provisional_class": "viseme_head_cell",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_3",
+   "file": "Row2_3.png",
+   "size": [
+    242,
+    307
+   ],
+   "opaque_px": 52515,
+   "sheet_bbox": [
+    974,
+    346,
+    1216,
+    653
+   ],
+   "area_px": 52515,
+   "provisional_class": "viseme_head_cell",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_4",
+   "file": "Row2_4.png",
+   "size": [
+    243,
+    307
+   ],
+   "opaque_px": 52288,
+   "sheet_bbox": [
+    1412,
+    346,
+    1655,
+    653
+   ],
+   "area_px": 52288,
+   "provisional_class": "viseme_head_cell",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_1",
+   "file": "Row3_1.png",
+   "size": [
+    248,
+    315
+   ],
+   "opaque_px": 55929,
+   "sheet_bbox": [
+    320,
+    659,
+    568,
+    974
+   ],
+   "area_px": 55929,
+   "provisional_class": "viseme_head_cell",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_2",
+   "file": "Row3_2.png",
+   "size": [
+    248,
+    315
+   ],
+   "opaque_px": 54928,
+   "sheet_bbox": [
+    763,
+    659,
+    1011,
+    974
+   ],
+   "area_px": 54928,
+   "provisional_class": "viseme_head_cell",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_3",
+   "file": "Row3_3.png",
+   "size": [
+    246,
+    315
+   ],
+   "opaque_px": 54191,
+   "sheet_bbox": [
+    1213,
+    659,
+    1459,
+    974
+   ],
+   "area_px": 54191,
+   "provisional_class": "viseme_head_cell",
+   "grid_split": false
+  }
+ ]
+}
