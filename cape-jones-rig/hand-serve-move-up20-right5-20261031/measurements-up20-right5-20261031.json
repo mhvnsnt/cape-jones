@@ -1,0 +1,109 @@
+{
+  "move": "dx=+5, dy=-20 from move-up-left version; palm/ball centre (304,501) -> (309,481); total from original (314,530): dx=-5, dy=-49",
+  "angle": 164.8,
+  "scale": 1.0,
+  "mirror": "Arm1 horizontal in place, unchanged",
+  "forced_changes": "none to angle/scale/mirror; paste centre shifted (+5,-20) only",
+  "centre_paste_moveupleft": [
+    293.0,
+    519.3
+  ],
+  "centre_paste_new": [
+    298.0,
+    499.3
+  ],
+  "palm_ball_centre_prev": [
+    304,
+    501
+  ],
+  "palm_ball_centre_new": [
+    309,
+    481
+  ],
+  "palm_ball_centre_measured_yellow": [
+    309.0,
+    481.0
+  ],
+  "wrist_registry_prev": [
+    310.6,
+    463.9
+  ],
+  "wrist_registry_new": [
+    315.6,
+    443.9
+  ],
+  "tip_registry_new": [
+    284.2,
+    564.5
+  ],
+  "d_wrist_registry_to_forearm_end_F": 73.1,
+  "cuff_bottom_y": 474,
+  "wrist_registry_above_cuff_bottom_px": 30.1,
+  "column_gaps_prev": {
+    "x290": -22,
+    "x300": -23,
+    "x310": -21,
+    "x320": -17,
+    "x330": -11,
+    "x340": 24,
+    "x350": null
+  },
+  "column_gaps_new": {
+    "x290": -38,
+    "x300": -43,
+    "x310": -41,
+    "x320": -40,
+    "x330": -36,
+    "x340": -27,
+    "x350": null
+  },
+  "hand_bbox_prev": [
+    238,
+    452,
+    344,
+    583
+  ],
+  "hand_bbox_new": [
+    243,
+    432,
+    349,
+    563
+  ],
+  "fist_pixels_remaining_outside_hand": 0,
+  "torso_cape_diff_x_ge_380_new_vs_moveupleft": 0,
+  "alpha_transparent_runs_prev": {
+    "x290": 918,
+    "x300": 918,
+    "x310": 918,
+    "x320": 437,
+    "x330": 363,
+    "x340": 339
+  },
+  "alpha_transparent_runs_new": {
+    "x290": 936,
+    "x300": 942,
+    "x310": 936,
+    "x320": 451,
+    "x330": 383,
+    "x340": 339
+  },
+  "no_crop_plain": {
+    "pass": true,
+    "bbox": [
+      243,
+      237,
+      884,
+      1296
+    ]
+  },
+  "no_crop_ball": {
+    "pass": true,
+    "bbox": [
+      239,
+      237,
+      884,
+      1296
+    ]
+  },
+  "approval": "0/1, NOT approved until Mars sees it"
+}
