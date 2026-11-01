@@ -1,0 +1,45 @@
+{
+  "preset": "Dream 18",
+  "name": "Dream 18 \u2014 Orange-Red Helm, Sky Suit, Charcoal-Purple Cape, Lime Rim",
+  "status": "PRESET, approval 0/1 separately",
+  "cowl_helm": [
+    255,
+    80,
+    0
+  ],
+  "skin": [
+    235,
+    175,
+    145
+  ],
+  "suit": [
+    120,
+    200,
+    255
+  ],
+  "suit_shadow": [
+    93,
+    156,
+    198
+  ],
+  "cape": [
+    70,
+    40,
+    110
+  ],
+  "rim_6px": [
+    140,
+    255,
+    0
+  ],
+  "rim_note": "rim is its OWN colour here, not a copy of the cape colour",
+  "eye_note": "no separate eye class in this method; white eye pixels sit in the suit-white class, so eyes follow the suit class",
+  "method": "nearest-base-colour recolour, int32, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim, interior preserved 100%",
+  "source_base": "rig-apose-v7c-clean-transparent.png",
+  "size": [
+    1100,
+    1500
+  ],
+  "base_alpha_px": 373846,
+  "canvas_alpha_px": 416053
+}
