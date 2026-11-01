@@ -1,0 +1,12 @@
+file,frames,max_frame_jump,jumps_over_25_5,verdict
+01-gumball-dance-strut-twist-arm-snap-fixed-20261101.mp4,54,4.98,0,PASS whole-frame proxy (no >3 flashes/sec; a jump >=25.5 on one frame is not a flash rate)
+02-gumball-fight-kick-arm-snap-fixed-20261101.mp4,60,5.34,0,PASS whole-frame proxy (no >3 flashes/sec; a jump >=25.5 on one frame is not a flash rate)
+03-fosters-pose-swap-gesture-arm-snap-fixed-20261101.mp4,37,0.5,0,PASS whole-frame proxy (no >3 flashes/sec; a jump >=25.5 on one frame is not a flash rate)
+04-smiling-friends-pose-swap-head-arm-snap-fixed-20261101.mp4,67,0.88,0,PASS whole-frame proxy (no >3 flashes/sec; a jump >=25.5 on one frame is not a flash rate)
+05-scooby-song-step-arm-snap-fixed-20261101.mp4,47,0.97,0,PASS whole-frame proxy (no >3 flashes/sec; a jump >=25.5 on one frame is not a flash rate)
+06-nick-baked-cache-walk-arm-snap-fixed-20261101.mp4,33,1.72,0,PASS whole-frame proxy (no >3 flashes/sec; a jump >=25.5 on one frame is not a flash rate)
+07-johnny-bravo-flex-dance-arm-snap-fixed-20261101.mp4,37,0.76,0,PASS whole-frame proxy (no >3 flashes/sec; a jump >=25.5 on one frame is not a flash rate)
+08-richard-scooby-gang-step-arm-snap-fixed-20261101.mp4,54,3.87,0,PASS whole-frame proxy (no >3 flashes/sec; a jump >=25.5 on one frame is not a flash rate)
+dance-test-EN-excerpt-20261101-arm-snap-fixed-20261101.mp4,54,66.59,2,PASS whole-frame proxy (no >3 flashes/sec; a jump >=25.5 on one frame is not a flash rate)
+dance-test-JP-excerpt-20261101-arm-snap-fixed-20261101.mp4,54,66.59,2,PASS whole-frame proxy (no >3 flashes/sec; a jump >=25.5 on one frame is not a flash rate)
+dance-test-visual-silent-20261101-arm-snap-fixed-20261101.mp4,54,66.59,2,PASS whole-frame proxy (no >3 flashes/sec; a jump >=25.5 on one frame is not a flash rate)
