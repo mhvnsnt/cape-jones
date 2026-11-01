@@ -1,0 +1,860 @@
+{
+ "ground_line_Gy": 1400,
+ "canvas": [
+  1100,
+  1500
+ ],
+ "main": {
+  "id": "MAIN",
+  "mode": "GROUNDED",
+  "orig_bbox": [
+   222,
+   240,
+   879,
+   1282
+  ],
+  "shift_dy": 118,
+  "grounded_bbox": [
+   222,
+   358,
+   879,
+   1400
+  ],
+  "feet_y": 1400,
+  "feet_minus_Gy": 0,
+  "shaft_runs": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ]
+ },
+ "per_shot": [
+  {
+   "shot_id": "CJ-01",
+   "slug": "punch-windup",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    100,
+    252,
+    868,
+    1312
+   ],
+   "shift_dy": 88,
+   "grounded_bbox": [
+    100,
+    340,
+    868,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-01-punch-windup-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-02",
+   "slug": "punch-extend-snap",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    1,
+    252,
+    868,
+    1309
+   ],
+   "shift_dy": 91,
+   "grounded_bbox": [
+    1,
+    343,
+    868,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-02-punch-extend-snap-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-03",
+   "slug": "punch-impact-locked",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    1,
+    252,
+    789,
+    1309
+   ],
+   "shift_dy": 91,
+   "grounded_bbox": [
+    1,
+    343,
+    789,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-03-punch-impact-locked-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-04",
+   "slug": "punch-recover",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    247,
+    252,
+    876,
+    1312
+   ],
+   "shift_dy": 88,
+   "grounded_bbox": [
+    247,
+    340,
+    876,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-04-punch-recover-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-05",
+   "slug": "punch-across-down-placement",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    1,
+    252,
+    789,
+    1309
+   ],
+   "shift_dy": 91,
+   "grounded_bbox": [
+    1,
+    343,
+    789,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-05-punch-across-down-placement-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-06",
+   "slug": "walk-street-contact",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    214,
+    252,
+    843,
+    1296
+   ],
+   "shift_dy": 104,
+   "grounded_bbox": [
+    214,
+    356,
+    843,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-06-walk-street-contact-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-07",
+   "slug": "walk-town-passing",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    247,
+    252,
+    876,
+    1306
+   ],
+   "shift_dy": 94,
+   "grounded_bbox": [
+    247,
+    346,
+    876,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-07-walk-town-passing-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-08",
+   "slug": "walk-alley-night",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    282,
+    252,
+    910,
+    1282
+   ],
+   "shift_dy": 118,
+   "grounded_bbox": [
+    282,
+    370,
+    910,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-08-walk-alley-night-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-09",
+   "slug": "dance-a",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    182,
+    47,
+    876,
+    1308
+   ],
+   "shift_dy": 92,
+   "grounded_bbox": [
+    182,
+    139,
+    876,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-09-dance-a-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-10",
+   "slug": "dance-b",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    247,
+    35,
+    896,
+    1288
+   ],
+   "shift_dy": 112,
+   "grounded_bbox": [
+    247,
+    147,
+    896,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-10-dance-b-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-11",
+   "slug": "dance-combined-finale",
+   "level": "Level 3",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    182,
+    47,
+    876,
+    1308
+   ],
+   "shift_dy": 92,
+   "grounded_bbox": [
+    182,
+    139,
+    876,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-11-dance-combined-finale-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-12",
+   "slug": "flying-hover",
+   "level": "Level 3",
+   "mode": "AIRBORNE",
+   "orig_bbox": [
+    247,
+    252,
+    876,
+    1310
+   ],
+   "shift_dy": 0,
+   "grounded_bbox": [
+    247,
+    252,
+    876,
+    1310
+   ],
+   "feet_y": 1310,
+   "feet_minus_Gy": -90,
+   "height_above_Gy": 90,
+   "file": "CJ-12-flying-hover-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS-AIRBORNE"
+  },
+  {
+   "shot_id": "CJ-13",
+   "slug": "flying-soar",
+   "level": "Level 3",
+   "mode": "AIRBORNE",
+   "orig_bbox": [
+    1,
+    252,
+    1098,
+    1310
+   ],
+   "shift_dy": 0,
+   "grounded_bbox": [
+    1,
+    252,
+    1098,
+    1310
+   ],
+   "feet_y": 1310,
+   "feet_minus_Gy": -90,
+   "height_above_Gy": 90,
+   "file": "CJ-13-flying-soar-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS-AIRBORNE"
+  },
+  {
+   "shot_id": "CJ-14",
+   "slug": "flying-dive",
+   "level": "Level 3",
+   "mode": "AIRBORNE",
+   "orig_bbox": [
+    182,
+    35,
+    896,
+    1310
+   ],
+   "shift_dy": 0,
+   "grounded_bbox": [
+    182,
+    35,
+    896,
+    1310
+   ],
+   "feet_y": 1310,
+   "feet_minus_Gy": -90,
+   "height_above_Gy": 90,
+   "file": "CJ-14-flying-dive-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS-AIRBORNE"
+  },
+  {
+   "shot_id": "CJ-15",
+   "slug": "flying-forward-foreshortened",
+   "level": "Level 2",
+   "mode": "AIRBORNE",
+   "orig_bbox": [
+    247,
+    252,
+    876,
+    1310
+   ],
+   "shift_dy": 0,
+   "grounded_bbox": [
+    247,
+    252,
+    876,
+    1310
+   ],
+   "feet_y": 1310,
+   "feet_minus_Gy": -90,
+   "height_above_Gy": 90,
+   "file": "CJ-15-flying-forward-foreshortened-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS-AIRBORNE"
+  },
+  {
+   "shot_id": "CJ-16",
+   "slug": "flex-anticipation-before-tighten",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    221,
+    252,
+    879,
+    1290
+   ],
+   "shift_dy": 110,
+   "grounded_bbox": [
+    221,
+    362,
+    879,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-16-flex-anticipation-before-tighten-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-17",
+   "slug": "arms-up-reference",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    222,
+    240,
+    879,
+    1282
+   ],
+   "shift_dy": 118,
+   "grounded_bbox": [
+    222,
+    358,
+    879,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-17-arms-up-reference-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-18",
+   "slug": "true-flex-double-bicep",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    221,
+    239,
+    879,
+    1290
+   ],
+   "shift_dy": 110,
+   "grounded_bbox": [
+    221,
+    349,
+    879,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-18-true-flex-double-bicep-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-19",
+   "slug": "fighting-pose-forward-bicep-curl",
+   "level": "Level 3",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    303,
+    252,
+    832,
+    1294
+   ],
+   "shift_dy": 106,
+   "grounded_bbox": [
+    303,
+    358,
+    832,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-19-fighting-pose-forward-bicep-curl-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-20",
+   "slug": "fighting-stance-arms-up-high",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    222,
+    240,
+    879,
+    1282
+   ],
+   "shift_dy": 118,
+   "grounded_bbox": [
+    222,
+    358,
+    879,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-20-fighting-stance-arms-up-high-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-21",
+   "slug": "jump-crouch-takeoff",
+   "level": "Level 2",
+   "mode": "AIRBORNE",
+   "orig_bbox": [
+    182,
+    36,
+    897,
+    1312
+   ],
+   "shift_dy": 0,
+   "grounded_bbox": [
+    182,
+    36,
+    897,
+    1312
+   ],
+   "feet_y": 1312,
+   "feet_minus_Gy": -88,
+   "height_above_Gy": 88,
+   "file": "CJ-21-jump-crouch-takeoff-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS-AIRBORNE"
+  },
+  {
+   "shot_id": "CJ-22",
+   "slug": "jump-tuck-landing",
+   "level": "Level 3",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    247,
+    252,
+    876,
+    1312
+   ],
+   "shift_dy": 88,
+   "grounded_bbox": [
+    247,
+    340,
+    876,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-22-jump-tuck-landing-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-23",
+   "slug": "lounge-seated-room",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    224,
+    252,
+    876,
+    1198
+   ],
+   "shift_dy": 202,
+   "grounded_bbox": [
+    224,
+    454,
+    876,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-23-lounge-seated-room-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-24",
+   "slug": "desk-seated",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    224,
+    252,
+    876,
+    1198
+   ],
+   "shift_dy": 202,
+   "grounded_bbox": [
+    224,
+    454,
+    876,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-24-desk-seated-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-25",
+   "slug": "room-standing-device-gag",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    248,
+    253,
+    875,
+    1294
+   ],
+   "shift_dy": 106,
+   "grounded_bbox": [
+    248,
+    359,
+    875,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-25-room-standing-device-gag-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-26",
+   "slug": "dialogue-neutral-unsure",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    248,
+    253,
+    875,
+    1294
+   ],
+   "shift_dy": 106,
+   "grounded_bbox": [
+    248,
+    359,
+    875,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-26-dialogue-neutral-unsure-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-27",
+   "slug": "dialogue-shout-angry",
+   "level": "Level 2",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    248,
+    253,
+    875,
+    1294
+   ],
+   "shift_dy": 106,
+   "grounded_bbox": [
+    248,
+    359,
+    875,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-27-dialogue-shout-angry-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-28",
+   "slug": "rooftop-sunset",
+   "level": "Level 3",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    248,
+    253,
+    875,
+    1294
+   ],
+   "shift_dy": 106,
+   "grounded_bbox": [
+    248,
+    359,
+    875,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-28-rooftop-sunset-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-29",
+   "slug": "rooftop-night-city",
+   "level": "Level 3",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    248,
+    253,
+    875,
+    1294
+   ],
+   "shift_dy": 106,
+   "grounded_bbox": [
+    248,
+    359,
+    875,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-29-rooftop-night-city-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  },
+  {
+   "shot_id": "CJ-30",
+   "slug": "alley-neon-dual-light",
+   "level": "Level 3",
+   "mode": "GROUNDED",
+   "orig_bbox": [
+    248,
+    253,
+    875,
+    1294
+   ],
+   "shift_dy": 106,
+   "grounded_bbox": [
+    248,
+    359,
+    875,
+    1400
+   ],
+   "feet_y": 1400,
+   "feet_minus_Gy": 0,
+   "height_above_Gy": 0,
+   "file": "CJ-30-alley-neon-dual-light-shafts-GROUNDED-20261031.png",
+   "occlusion_max_diff": 0.0,
+   "pass_occlusion": true,
+   "figure_inside_canvas": true,
+   "verdict": "PASS"
+  }
+ ]
+}
