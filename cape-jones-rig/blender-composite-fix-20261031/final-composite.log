@@ -1,0 +1,16 @@
+/home/hatch/workspace/cape-jones-rig/blender-composite-fix-20261031/blender_composite_final.py:35: DeprecationWarning: 'Scene.use_nodes' is expected to be removed in Blender 6.0
+  scene.use_nodes = True
+EGL Error (0x3009): EGL_BAD_MATCH: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+EGL Error (0x3009): EGL_BAD_MATCH: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+EGL Error (0x3009): EGL_BAD_MATCH: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+00:06.222  render           | Saved: '/home/hatch/workspace/cape-jones-rig/blender-composite-fix-20261031/cape-jones-dual-light-combined-blender-composite-20261031.png'
+FINAL COMPOSITE START
+Plate size [1100, 1500]
+nodes: ['VolumetricBase', 'GoldGrade_BG_Only', 'CharacterPlate_Untouched', 'Plate_Scale', 'Plate_Translate', 'AlphaOver_BG_Plate', 'Plate_Alpha_Extract', 'Rim_Dilate3', 'Rim_Subtract', 'CyanBackRim_Add', 'Output']
+links: [('VolumetricBase', 'Image', 'GoldGrade_BG_Only', 'Color1'), ('CharacterPlate_Untouched', 'Image', 'Plate_Scale', 'Image'), ('Plate_Scale', 'Image', 'Plate_Translate', 'Image'), ('GoldGrade_BG_Only', 'Color', 'AlphaOver_BG_Plate', 'Background'), ('Plate_Translate', 'Image', 'AlphaOver_BG_Plate', 'Foreground'), ('Plate_Translate', 'Image', 'Plate_Alpha_Extract', 'Image'), ('Plate_Alpha_Extract', 'Alpha', 'Rim_Dilate3', 'Mask'), ('Rim_Dilate3', 'Mask', 'Rim_Subtract', 'Value'), ('Plate_Alpha_Extract', 'Alpha', 'Rim_Subtract', 'Value'), ('Rim_Subtract', 'Value', 'CyanBackRim_Add', 'Factor'), ('AlphaOver_BG_Plate', 'Image', 'CyanBackRim_Add', 'Color1'), ('CyanBackRim_Add', 'Color', 'Output', 'Image')]
+Info: Saved as "cape-jones-blender-composite-20261031.blend"
+saved blend, rendering compositor...
+FINAL COMPOSITE DONE
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:35:05)
+
+Blender quit
