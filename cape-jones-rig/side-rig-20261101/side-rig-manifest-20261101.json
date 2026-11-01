@@ -1,0 +1,280 @@
+{
+ "canvas": [
+  1200,
+  1800
+ ],
+ "ground_y": 1600,
+ "facing_default": "LEFT (toe-left, nose-left, matching model-side)",
+ "front_rig_untouched": true,
+ "no_push": true,
+ "pieces": [
+  {
+   "name": "side_head_cowl",
+   "kind": "SUBSTITUTION",
+   "file": "pieces/side_head_cowl-20261101.png",
+   "size": [
+    307,
+    330
+   ],
+   "pivot_fraction": [
+    0.58,
+    0.89
+   ]
+  },
+  {
+   "name": "side_torso",
+   "kind": "NEW DRAW",
+   "file": "pieces/side_torso-20261101.png",
+   "size": [
+    230,
+    530
+   ],
+   "pivot_fraction": [
+    0.5,
+    0.97
+   ]
+  },
+  {
+   "name": "side_pelvis_belt",
+   "kind": "NEW DRAW",
+   "file": "pieces/side_pelvis_belt-20261101.png",
+   "size": [
+    220,
+    210
+   ],
+   "pivot_fraction": [
+    0.5,
+    0.1
+   ]
+  },
+  {
+   "name": "side_upper_arm_near",
+   "kind": "NEW DRAW",
+   "file": "pieces/side_upper_arm_near-20261101.png",
+   "size": [
+    150,
+    280
+   ],
+   "pivot_fraction": [
+    0.5,
+    0.18
+   ]
+  },
+  {
+   "name": "side_forearm_gauntlet_near",
+   "kind": "NEW DRAW",
+   "file": "pieces/side_forearm_gauntlet_near-20261101.png",
+   "size": [
+    120,
+    280
+   ],
+   "pivot_fraction": [
+    0.5,
+    0.08
+   ]
+  },
+  {
+   "name": "side_hand_fist_near",
+   "kind": "NEW DRAW",
+   "file": "pieces/side_hand_fist_near-20261101.png",
+   "size": [
+    120,
+    155
+   ],
+   "pivot_fraction": [
+    0.5,
+    0.1
+   ]
+  },
+  {
+   "name": "side_thigh_near",
+   "kind": "NEW DRAW",
+   "file": "pieces/side_thigh_near-20261101.png",
+   "size": [
+    150,
+    300
+   ],
+   "pivot_fraction": [
+    0.5,
+    0.1
+   ]
+  },
+  {
+   "name": "side_shin_near",
+   "kind": "NEW DRAW",
+   "file": "pieces/side_shin_near-20261101.png",
+   "size": [
+    110,
+    260
+   ],
+   "pivot_fraction": [
+    0.5,
+    0.06
+   ]
+  },
+  {
+   "name": "side_boot_near",
+   "kind": "NEW DRAW",
+   "file": "pieces/side_boot_near-20261101.png",
+   "size": [
+    230,
+    95
+   ],
+   "pivot_fraction": [
+    0.65,
+    0.25
+   ]
+  },
+  {
+   "name": "side_cape_drape",
+   "kind": "NEW DRAW",
+   "file": "pieces/side_cape_drape-20261101.png",
+   "size": [
+    300,
+    1080
+   ],
+   "pivot_fraction": [
+    0.45,
+    0.02
+   ]
+  },
+  {
+   "name": "side_upper_arm_far",
+   "kind": "NEW DRAW (far-side stand-in, darkened)",
+   "file": "pieces/side_upper_arm_far-20261101.png",
+   "size": [
+    150,
+    280
+   ],
+   "pivot_fraction": [
+    0.5,
+    0.18
+   ]
+  },
+  {
+   "name": "side_forearm_gauntlet_far",
+   "kind": "NEW DRAW (far-side stand-in, darkened)",
+   "file": "pieces/side_forearm_gauntlet_far-20261101.png",
+   "size": [
+    120,
+    280
+   ],
+   "pivot_fraction": [
+    0.5,
+    0.08
+   ]
+  },
+  {
+   "name": "side_hand_fist_far",
+   "kind": "NEW DRAW (far-side stand-in, darkened)",
+   "file": "pieces/side_hand_fist_far-20261101.png",
+   "size": [
+    120,
+    155
+   ],
+   "pivot_fraction": [
+    0.5,
+    0.1
+   ]
+  },
+  {
+   "name": "side_thigh_far",
+   "kind": "NEW DRAW (far-side stand-in, darkened)",
+   "file": "pieces/side_thigh_far-20261101.png",
+   "size": [
+    150,
+    300
+   ],
+   "pivot_fraction": [
+    0.5,
+    0.1
+   ]
+  },
+  {
+   "name": "side_shin_far",
+   "kind": "NEW DRAW (far-side stand-in, darkened)",
+   "file": "pieces/side_shin_far-20261101.png",
+   "size": [
+    110,
+    260
+   ],
+   "pivot_fraction": [
+    0.5,
+    0.06
+   ]
+  },
+  {
+   "name": "side_boot_far",
+   "kind": "NEW DRAW (far-side stand-in, darkened)",
+   "file": "pieces/side_boot_far-20261101.png",
+   "size": [
+    230,
+    95
+   ],
+   "pivot_fraction": [
+    0.65,
+    0.25
+   ]
+  },
+  {
+   "name": "side_elbow_cap_near",
+   "kind": "NEW DRAW",
+   "file": "pieces/side_elbow_cap_near-20261101.png",
+   "size": [
+    64,
+    64
+   ],
+   "pivot_fraction": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "name": "side_knee_cap_near",
+   "kind": "NEW DRAW",
+   "file": "pieces/side_knee_cap_near-20261101.png",
+   "size": [
+    70,
+    70
+   ],
+   "pivot_fraction": [
+    0.5,
+    0.5
+   ]
+  }
+ ],
+ "chains": {
+  "spine": "pelvis -> torso -> head",
+  "arm_near": "shoulder_n -> elbow_n -> wrist_n -> hand_n",
+  "arm_far": "shoulder_f -> elbow_f -> wrist_f -> hand_f",
+  "leg_near": "hip_n -> knee_n -> ankle_n -> boot_n",
+  "leg_far": "hip_f -> knee_f -> ankle_f -> boot_f",
+  "cape": "parented to torso/shoulders, backmost layer, rotation 0"
+ },
+ "layer_order_back_to_front": [
+  "side_cape_drape",
+  "side_upper_arm_far",
+  "side_forearm_gauntlet_far",
+  "side_hand_fist_far",
+  "side_thigh_far",
+  "side_shin_far",
+  "side_boot_far",
+  "side_pelvis_belt",
+  "side_torso",
+  "side_thigh_near",
+  "side_knee_cap_near",
+  "side_shin_near",
+  "side_boot_near",
+  "side_upper_arm_near",
+  "side_elbow_cap_near",
+  "side_forearm_gauntlet_near",
+  "side_hand_fist_near",
+  "side_head_cowl"
+ ],
+ "rules": {
+  "knee_feet": "In profile, knee direction and toe direction must match: toe-left boots require knees forward-left or straight, never right/back of the hip-ankle line (except a deliberately broken leg named in the shot spec).",
+  "wrist": "Hand pivot sits exactly on the FK wrist joint (forearm end); hands are never free-placed.",
+  "ground": "Planted boot bottom == ground y (1600) within 3px; a swing boot in walk-step is raised, stated, not faked flat.",
+  "no_squash": "No front piece was squashed into a side piece. Front emblem appears only as an edge sliver on the side torso."
+ }
+}

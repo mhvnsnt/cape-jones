@@ -1,0 +1,236 @@
+{
+ "canvas": [
+  1400,
+  1600
+ ],
+ "bbox": [
+  225,
+  195,
+  902,
+  1411
+ ],
+ "alpha_px": 400827,
+ "inside_canvas": true,
+ "pieces_drawn": 18,
+ "pieces_total_manifest": 20,
+ "fists_drawn": 0,
+ "hands_drawn": 2,
+ "neck": {
+  "source": "sliced/Neck.png",
+  "md5": "94025a6c683d6b7d6b2bc73267b2e725",
+  "resized_to": [
+   109,
+   87
+  ],
+  "alpha_bbox": [
+   648,
+   329,
+   753,
+   414
+  ],
+  "alpha_width_px": 101,
+  "alpha_height_px": 82,
+  "draw_order": "after arms, before head (z 8.5)",
+  "piece_crop": "NONE - whole file",
+  "alpha_bbox_gt0": [
+   648,
+   329,
+   753,
+   414
+  ],
+  "alpha_bbox_gt10": [
+   650,
+   330,
+   751,
+   412
+  ],
+  "measurement_note": "Alpha>10 renders exactly 101x82 (front-view size). Alpha>0 bbox is 105x85 from LANCZOS halo pixels (alpha 1-9) at the resized edge; those are not visible art."
+ },
+ "piece_bboxes": {
+  "cape": [
+   360,
+   330,
+   874,
+   1230
+  ],
+  "upperArmL": [
+   470,
+   389,
+   612,
+   626
+  ],
+  "thighR": [
+   561,
+   755,
+   803,
+   1041
+  ],
+  "thighL": [
+   391,
+   711,
+   627,
+   975
+  ],
+  "forearmL": [
+   472,
+   572,
+   625,
+   852
+  ],
+  "pelvis": [
+   565,
+   650,
+   783,
+   831
+  ],
+  "kneeL": [
+   380,
+   885,
+   454,
+   979
+  ],
+  "elbowCapL": [
+   465,
+   580,
+   528,
+   643
+  ],
+  "shinL": [
+   225,
+   945,
+   469,
+   1355
+  ],
+  "shinR": [
+   461,
+   975,
+   664,
+   1411
+  ],
+  "kneeR": [
+   560,
+   950,
+   634,
+   1044
+  ],
+  "torso": [
+   550,
+   370,
+   841,
+   685
+  ],
+  "head": [
+   635,
+   195,
+   765,
+   391
+  ],
+  "upperArmR": [
+   767,
+   413,
+   902,
+   672
+  ],
+  "forearmR": [
+   584,
+   635,
+   825,
+   881
+  ],
+  "elbowCapR": [
+   775,
+   610,
+   838,
+   673
+  ],
+  "handL": [
+   519,
+   741,
+   662,
+   912
+  ],
+  "handR": [
+   530,
+   786,
+   712,
+   905
+  ],
+  "neck": [
+   648,
+   329,
+   753,
+   414
+  ]
+ },
+ "knee_shin_L": {
+  "knee_bbox": [
+   380,
+   885,
+   454,
+   979
+  ],
+  "shin_bbox": [
+   225,
+   945,
+   469,
+   1355
+  ],
+  "knee_pivot_xy": [
+   417.0,
+   932.0
+  ],
+  "shin_pivot_xy": [
+   347.0,
+   945
+  ],
+  "pivot_centre_distance_px": 71.2,
+  "horizontal_pivot_offset_px": -70.0,
+  "vertical_pivot_offset_px": 13.0,
+  "alpha_overlap_px": 910,
+  "knee_bottom_minus_shin_top_px": 34
+ },
+ "knee_shin_R": {
+  "knee_bbox": [
+   560,
+   950,
+   634,
+   1044
+  ],
+  "shin_bbox": [
+   461,
+   975,
+   664,
+   1411
+  ],
+  "knee_pivot_xy": [
+   597.0,
+   997.0
+  ],
+  "shin_pivot_xy": [
+   523.0,
+   985
+  ],
+  "pivot_centre_distance_px": 75.0,
+  "horizontal_pivot_offset_px": -74.0,
+  "vertical_pivot_offset_px": -12.0,
+  "alpha_overlap_px": 3681,
+  "knee_bottom_minus_shin_top_px": 69
+ },
+ "vs_locked_v2": {
+  "locked_bbox": [
+   225,
+   195,
+   902,
+   1411
+  ],
+  "finished_bbox": [
+   225,
+   195,
+   902,
+   1411
+  ],
+  "alpha_only_locked": 1,
+  "alpha_only_finished": 10
+ },
+ "knee_shin_gap_status": "STILL OPEN as a pivot gap: L pivot-centre distance 71.2px, R 75.0px. Alpha bboxes DO overlap (L 910px, R 3681px shared), so the leg reads connected, but the shin top-centre pivots do not coincide with the knee-cap centres. Rotating a shin about its saved pivot would swing it away from its cap. NOT silently closed, NOT fixed here, because fixing it means moving pivots or re-cutting pieces away from Mars's authored saved positions. Owed: pivot-coincident re-cut (Mars decision)."
+}
