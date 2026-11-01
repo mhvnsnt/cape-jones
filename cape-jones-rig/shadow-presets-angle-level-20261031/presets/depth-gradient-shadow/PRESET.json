@@ -1,0 +1,14 @@
+{
+  "code": "X2",
+  "slug": "depth-gradient-shadow",
+  "kind": "experimental",
+  "name": "Depth-gradient shadow",
+  "description": "Cast alpha fades 1.0 to 0.25 with distance below feet. Ground only.",
+  "parameters": {
+    "fade_start": 1.0,
+    "fade_end": 0.25
+  },
+  "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+  "sample": "sample.png",
+  "status": "preset saved, approval 0/1"
+}
