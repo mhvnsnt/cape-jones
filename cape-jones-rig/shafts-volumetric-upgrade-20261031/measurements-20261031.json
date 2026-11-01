@@ -1,0 +1,25 @@
+{
+  "canvas": [
+    1100,
+    1500
+  ],
+  "figure_alpha_bbox": [
+    222,
+    240,
+    879,
+    1282
+  ],
+  "edge_alpha_max": 0,
+  "no_crop_gate": "PASS",
+  "shaft_runs_at_y600": [],
+  "shaft_columns_count": 0,
+  "shaft_bright_pixel_fraction_rows400_900": 0.0052436363636363635,
+  "shaft_mean_bright_RGB": [
+    197.7,
+    192.5,
+    181.2
+  ],
+  "shaft_over_opaque_figure_max_diff": 0.0,
+  "shaft_over_figure_gate": "PASS",
+  "note": "shaft-over-figure is 0 by construction: shafts masked by (1-figure_alpha) and figure pasted on top at full opacity where alpha==255"
+}
