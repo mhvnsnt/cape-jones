@@ -1,0 +1,1119 @@
+{
+  "preset_system": "AFTERGLOW SHOT PRESETS",
+  "saved_by": "Mars, 2026-10-31 ~18:31 CDT",
+  "source": "afterglow-videos-20261031 shot-afterglow-index, Blender key frames + PIL trail renders using identical layers",
+  "rule": "Trail in motion only, zero at rest. Hold shots generate no trail while still.",
+  "count": 30,
+  "presets": [
+    {
+      "preset_name": "AFTERGLOW-CJ-01",
+      "shot_id": "CJ-01",
+      "slug": "punch-windup",
+      "trail_input_rgb": [
+        255,
+        178,
+        229
+      ],
+      "on_screen_sample_rgb": [
+        18,
+        18,
+        28
+      ],
+      "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)",
+      "motion_class": "hold-still (zero at rest)",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-01-punch-windup-afterglow-20261031.mp4",
+      "video_gif": "CJ-01-punch-windup-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-02",
+      "shot_id": "CJ-02",
+      "slug": "punch-extend-snap",
+      "trail_input_rgb": [
+        255,
+        178,
+        229
+      ],
+      "on_screen_sample_rgb": [
+        197,
+        137,
+        177
+      ],
+      "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift",
+      "motion_class": "moving",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-02-punch-extend-snap-afterglow-20261031.mp4",
+      "video_gif": "CJ-02-punch-extend-snap-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-03",
+      "shot_id": "CJ-03",
+      "slug": "punch-impact-locked",
+      "trail_input_rgb": [
+        255,
+        120,
+        115
+      ],
+      "on_screen_sample_rgb": [
+        18,
+        18,
+        28
+      ],
+      "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)",
+      "motion_class": "hold-still (zero at rest)",
+      "frames": 12,
+      "lighting_level": "Level 2 (+ separate FX passes, not god rays)",
+      "video_mp4": "CJ-03-punch-impact-locked-afterglow-20261031.mp4",
+      "video_gif": "CJ-03-punch-impact-locked-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-04",
+      "shot_id": "CJ-04",
+      "slug": "punch-recover",
+      "trail_input_rgb": [
+        255,
+        180,
+        80
+      ],
+      "on_screen_sample_rgb": [
+        197,
+        139,
+        63
+      ],
+      "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift",
+      "motion_class": "moving",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-04-punch-recover-afterglow-20261031.mp4",
+      "video_gif": "CJ-04-punch-recover-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-05",
+      "shot_id": "CJ-05",
+      "slug": "punch-across-down-placement",
+      "trail_input_rgb": [
+        255,
+        255,
+        255
+      ],
+      "on_screen_sample_rgb": [
+        197,
+        197,
+        197
+      ],
+      "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift",
+      "motion_class": "moving",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-05-punch-across-down-placement-afterglow-20261031.mp4",
+      "video_gif": "CJ-05-punch-across-down-placement-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-06",
+      "shot_id": "CJ-06",
+      "slug": "walk-street-contact",
+      "trail_input_rgb": [
+        255,
+        255,
+        255
+      ],
+      "on_screen_sample_rgb": [
+        197,
+        197,
+        197
+      ],
+      "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift",
+      "motion_class": "moving",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-06-walk-street-contact-afterglow-20261031.mp4",
+      "video_gif": "CJ-06-walk-street-contact-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-07",
+      "shot_id": "CJ-07",
+      "slug": "walk-town-passing",
+      "trail_input_rgb": [
+        255,
+        180,
+        80
+      ],
+      "on_screen_sample_rgb": [
+        197,
+        139,
+        63
+      ],
+      "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift",
+      "motion_class": "moving",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-07-walk-town-passing-afterglow-20261031.mp4",
+      "video_gif": "CJ-07-walk-town-passing-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-08",
+      "shot_id": "CJ-08",
+      "slug": "walk-alley-night",
+      "trail_input_rgb": [
+        160,
+        185,
+        255
+      ],
+      "on_screen_sample_rgb": [
+        123,
+        142,
+        197
+      ],
+      "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift",
+      "motion_class": "moving",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-08-walk-alley-night-afterglow-20261031.mp4",
+      "video_gif": "CJ-08-walk-alley-night-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-09",
+      "shot_id": "CJ-09",
+      "slug": "dance-a",
+      "trail_input_rgb": [
+        255,
+        178,
+        229
+      ],
+      "on_screen_sample_rgb": [
+        197,
+        137,
+        177
+      ],
+      "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift",
+      "motion_class": "moving",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-09-dance-a-afterglow-20261031.mp4",
+      "video_gif": "CJ-09-dance-a-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-10",
+      "shot_id": "CJ-10",
+      "slug": "dance-b",
+      "trail_input_rgb": [
+        255,
+        190,
+        220
+      ],
+      "on_screen_sample_rgb": [
+        197,
+        146,
+        170
+      ],
+      "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift",
+      "motion_class": "moving",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-10-dance-b-afterglow-20261031.mp4",
+      "video_gif": "CJ-10-dance-b-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-11",
+      "shot_id": "CJ-11",
+      "slug": "dance-combined-finale",
+      "trail_input_rgb": [
+        220,
+        150,
+        255
+      ],
+      "on_screen_sample_rgb": [
+        170,
+        115,
+        197
+      ],
+      "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift",
+      "motion_class": "moving",
+      "frames": 12,
+      "lighting_level": "Level 3",
+      "video_mp4": "CJ-11-dance-combined-finale-afterglow-20261031.mp4",
+      "video_gif": "CJ-11-dance-combined-finale-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-12",
+      "shot_id": "CJ-12",
+      "slug": "flying-hover",
+      "trail_input_rgb": [
+        255,
+        180,
+        80
+      ],
+      "on_screen_sample_rgb": [
+        197,
+        139,
+        63
+      ],
+      "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift",
+      "motion_class": "moving",
+      "frames": 12,
+      "lighting_level": "Level 3",
+      "video_mp4": "CJ-12-flying-hover-afterglow-20261031.mp4",
+      "video_gif": "CJ-12-flying-hover-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-13",
+      "shot_id": "CJ-13",
+      "slug": "flying-soar",
+      "trail_input_rgb": [
+        255,
+        200,
+        110
+      ],
+      "on_screen_sample_rgb": [
+        197,
+        154,
+        85
+      ],
+      "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift",
+      "motion_class": "moving",
+      "frames": 12,
+      "lighting_level": "Level 3",
+      "video_mp4": "CJ-13-flying-soar-afterglow-20261031.mp4",
+      "video_gif": "CJ-13-flying-soar-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-14",
+      "shot_id": "CJ-14",
+      "slug": "flying-dive",
+      "trail_input_rgb": [
+        255,
+        155,
+        75
+      ],
+      "on_screen_sample_rgb": [
+        197,
+        119,
+        59
+      ],
+      "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift",
+      "motion_class": "moving",
+      "frames": 12,
+      "lighting_level": "Level 3",
+      "video_mp4": "CJ-14-flying-dive-afterglow-20261031.mp4",
+      "video_gif": "CJ-14-flying-dive-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-15",
+      "shot_id": "CJ-15",
+      "slug": "flying-forward-foreshortened",
+      "trail_input_rgb": [
+        140,
+        200,
+        255
+      ],
+      "on_screen_sample_rgb": [
+        108,
+        154,
+        197
+      ],
+      "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift",
+      "motion_class": "moving",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-15-flying-forward-foreshortened-afterglow-20261031.mp4",
+      "video_gif": "CJ-15-flying-forward-foreshortened-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-16",
+      "shot_id": "CJ-16",
+      "slug": "flex-anticipation-before-tighten",
+      "trail_input_rgb": [
+        255,
+        180,
+        90
+      ],
+      "on_screen_sample_rgb": [
+        18,
+        18,
+        28
+      ],
+      "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)",
+      "motion_class": "hold-still (zero at rest)",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-16-flex-anticipation-before-tighten-afterglow-20261031.mp4",
+      "video_gif": "CJ-16-flex-anticipation-before-tighten-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-17",
+      "shot_id": "CJ-17",
+      "slug": "arms-up-reference",
+      "trail_input_rgb": [
+        255,
+        230,
+        140
+      ],
+      "on_screen_sample_rgb": [
+        18,
+        18,
+        28
+      ],
+      "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)",
+      "motion_class": "hold-still (zero at rest)",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-17-arms-up-reference-afterglow-20261031.mp4",
+      "video_gif": "CJ-17-arms-up-reference-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-18",
+      "shot_id": "CJ-18",
+      "slug": "true-flex-double-bicep",
+      "trail_input_rgb": [
+        255,
+        165,
+        95
+      ],
+      "on_screen_sample_rgb": [
+        18,
+        18,
+        28
+      ],
+      "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)",
+      "motion_class": "hold-still (zero at rest)",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-18-true-flex-double-bicep-afterglow-20261031.mp4",
+      "video_gif": "CJ-18-true-flex-double-bicep-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-19",
+      "shot_id": "CJ-19",
+      "slug": "fighting-pose-forward-bicep-curl",
+      "trail_input_rgb": [
+        255,
+        180,
+        80
+      ],
+      "on_screen_sample_rgb": [
+        18,
+        18,
+        28
+      ],
+      "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)",
+      "motion_class": "hold-still (zero at rest)",
+      "frames": 12,
+      "lighting_level": "Level 3 (dual-light)",
+      "video_mp4": "CJ-19-fighting-pose-forward-bicep-curl-afterglow-20261031.mp4",
+      "video_gif": "CJ-19-fighting-pose-forward-bicep-curl-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-20",
+      "shot_id": "CJ-20",
+      "slug": "fighting-stance-arms-up-high",
+      "trail_input_rgb": [
+        255,
+        150,
+        60
+      ],
+      "on_screen_sample_rgb": [
+        18,
+        18,
+        28
+      ],
+      "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)",
+      "motion_class": "hold-still (zero at rest)",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-20-fighting-stance-arms-up-high-afterglow-20261031.mp4",
+      "video_gif": "CJ-20-fighting-stance-arms-up-high-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-21",
+      "shot_id": "CJ-21",
+      "slug": "jump-crouch-takeoff",
+      "trail_input_rgb": [
+        140,
+        220,
+        210
+      ],
+      "on_screen_sample_rgb": [
+        108,
+        170,
+        162
+      ],
+      "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift",
+      "motion_class": "moving",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-21-jump-crouch-takeoff-afterglow-20261031.mp4",
+      "video_gif": "CJ-21-jump-crouch-takeoff-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-22",
+      "shot_id": "CJ-22",
+      "slug": "jump-tuck-landing",
+      "trail_input_rgb": [
+        255,
+        180,
+        80
+      ],
+      "on_screen_sample_rgb": [
+        197,
+        139,
+        63
+      ],
+      "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift",
+      "motion_class": "moving",
+      "frames": 12,
+      "lighting_level": "Level 3",
+      "video_mp4": "CJ-22-jump-tuck-landing-afterglow-20261031.mp4",
+      "video_gif": "CJ-22-jump-tuck-landing-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-23",
+      "shot_id": "CJ-23",
+      "slug": "lounge-seated-room",
+      "trail_input_rgb": [
+        255,
+        185,
+        95
+      ],
+      "on_screen_sample_rgb": [
+        18,
+        18,
+        28
+      ],
+      "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)",
+      "motion_class": "hold-still (zero at rest)",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-23-lounge-seated-room-afterglow-20261031.mp4",
+      "video_gif": "CJ-23-lounge-seated-room-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-24",
+      "shot_id": "CJ-24",
+      "slug": "desk-seated",
+      "trail_input_rgb": [
+        255,
+        185,
+        95
+      ],
+      "on_screen_sample_rgb": [
+        18,
+        18,
+        28
+      ],
+      "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)",
+      "motion_class": "hold-still (zero at rest)",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-24-desk-seated-afterglow-20261031.mp4",
+      "video_gif": "CJ-24-desk-seated-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-25",
+      "shot_id": "CJ-25",
+      "slug": "room-standing-device-gag",
+      "trail_input_rgb": [
+        255,
+        185,
+        95
+      ],
+      "on_screen_sample_rgb": [
+        18,
+        18,
+        28
+      ],
+      "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)",
+      "motion_class": "hold-still (zero at rest)",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-25-room-standing-device-gag-afterglow-20261031.mp4",
+      "video_gif": "CJ-25-room-standing-device-gag-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-26",
+      "shot_id": "CJ-26",
+      "slug": "dialogue-neutral-unsure",
+      "trail_input_rgb": [
+        255,
+        255,
+        255
+      ],
+      "on_screen_sample_rgb": [
+        18,
+        18,
+        28
+      ],
+      "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)",
+      "motion_class": "hold-still (zero at rest)",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-26-dialogue-neutral-unsure-afterglow-20261031.mp4",
+      "video_gif": "CJ-26-dialogue-neutral-unsure-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-27",
+      "shot_id": "CJ-27",
+      "slug": "dialogue-shout-angry",
+      "trail_input_rgb": [
+        255,
+        130,
+        120
+      ],
+      "on_screen_sample_rgb": [
+        18,
+        18,
+        28
+      ],
+      "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)",
+      "motion_class": "hold-still (zero at rest)",
+      "frames": 12,
+      "lighting_level": "Level 2",
+      "video_mp4": "CJ-27-dialogue-shout-angry-afterglow-20261031.mp4",
+      "video_gif": "CJ-27-dialogue-shout-angry-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-28",
+      "shot_id": "CJ-28",
+      "slug": "rooftop-sunset",
+      "trail_input_rgb": [
+        255,
+        155,
+        75
+      ],
+      "on_screen_sample_rgb": [
+        18,
+        18,
+        28
+      ],
+      "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)",
+      "motion_class": "hold-still (zero at rest)",
+      "frames": 12,
+      "lighting_level": "Level 3",
+      "video_mp4": "CJ-28-rooftop-sunset-afterglow-20261031.mp4",
+      "video_gif": "CJ-28-rooftop-sunset-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-29",
+      "shot_id": "CJ-29",
+      "slug": "rooftop-night-city",
+      "trail_input_rgb": [
+        160,
+        185,
+        255
+      ],
+      "on_screen_sample_rgb": [
+        18,
+        18,
+        28
+      ],
+      "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)",
+      "motion_class": "hold-still (zero at rest)",
+      "frames": 12,
+      "lighting_level": "Level 3",
+      "video_mp4": "CJ-29-rooftop-night-city-afterglow-20261031.mp4",
+      "video_gif": "CJ-29-rooftop-night-city-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    },
+    {
+      "preset_name": "AFTERGLOW-CJ-30",
+      "shot_id": "CJ-30",
+      "slug": "alley-neon-dual-light",
+      "trail_input_rgb": [
+        255,
+        178,
+        229
+      ],
+      "on_screen_sample_rgb": [
+        18,
+        18,
+        28
+      ],
+      "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)",
+      "motion_class": "hold-still (zero at rest)",
+      "frames": 12,
+      "lighting_level": "Level 3 (dual-light)",
+      "video_mp4": "CJ-30-alley-neon-dual-light-afterglow-20261031.mp4",
+      "video_gif": "CJ-30-alley-neon-dual-light-afterglow-20261031.gif",
+      "upgrade_axes": {
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "expand_horizontal": 1.0,
+        "expand_vertical": 1.0,
+        "trail_lag_frames": 6,
+        "trail_fade": [
+          0.5,
+          0.4,
+          0.3,
+          0.2,
+          0.12,
+          0.06
+        ],
+        "power_effects": []
+      }
+    }
+  ]
+}
