@@ -1,0 +1,28 @@
+frame,kind,from,to,t,eased,note
+0,KEY hold,apose,,,,
+1,KEY hold,apose,,,,
+2,KEY hold,apose,,,,
+3,inbetween,apose,"HERO-LAND CROUCH (grounded landing, feet planted)",0.125,0.008,largest arm R; snap {'L': 'chest'}
+4,inbetween,apose,"HERO-LAND CROUCH (grounded landing, feet planted)",0.25,0.062,largest arm R; snap {'L': 'chest'}
+5,BREAKDOWN arc bulge +10deg largest-moving arm upper,apose,"HERO-LAND CROUCH (grounded landing, feet planted)",0.375,0.211,largest arm R; snap {'L': 'chest'}
+6,inbetween,apose,"HERO-LAND CROUCH (grounded landing, feet planted)",0.5,0.5,largest arm R; snap {'L': 'chest'}
+7,BREAKDOWN follow-through +8deg same arm lower,apose,"HERO-LAND CROUCH (grounded landing, feet planted)",0.625,0.789,largest arm R; snap {'L': 'chest'}
+8,inbetween,apose,"HERO-LAND CROUCH (grounded landing, feet planted)",0.75,0.938,largest arm R; snap {'L': 'chest'}
+9,inbetween,apose,"HERO-LAND CROUCH (grounded landing, feet planted)",0.875,0.992,largest arm R; snap {'L': 'chest'}
+10,OVERSHOOT +5%,"HERO-LAND CROUCH (grounded landing, feet planted)",,,,"real frame, not a hold"
+11,SETTLE,"HERO-LAND CROUCH (grounded landing, feet planted)",,,,"real frame, not a hold"
+12,KEY hold,"HERO-LAND CROUCH (grounded landing, feet planted)",,,,
+13,KEY hold,"HERO-LAND CROUCH (grounded landing, feet planted)",,,,
+14,KEY hold,"HERO-LAND CROUCH (grounded landing, feet planted)",,,,
+15,KEY hold,"HERO-LAND CROUCH (grounded landing, feet planted)",,,,
+16,KEY hold,"HERO-LAND CROUCH (grounded landing, feet planted)",,,,
+17,inbetween,"HERO-LAND CROUCH (grounded landing, feet planted)",apose,0.125,0.008,largest arm R; snap {'L': 'chest'}
+18,inbetween,"HERO-LAND CROUCH (grounded landing, feet planted)",apose,0.25,0.062,largest arm R; snap {'L': 'chest'}
+19,BREAKDOWN arc bulge +10deg largest-moving arm upper,"HERO-LAND CROUCH (grounded landing, feet planted)",apose,0.375,0.211,largest arm R; snap {'L': 'chest'}
+20,inbetween,"HERO-LAND CROUCH (grounded landing, feet planted)",apose,0.5,0.5,largest arm R; snap {'L': 'chest'}
+21,BREAKDOWN follow-through +8deg same arm lower,"HERO-LAND CROUCH (grounded landing, feet planted)",apose,0.625,0.789,largest arm R; snap {'L': 'chest'}
+22,inbetween,"HERO-LAND CROUCH (grounded landing, feet planted)",apose,0.75,0.938,largest arm R; snap {'L': 'chest'}
+23,inbetween,"HERO-LAND CROUCH (grounded landing, feet planted)",apose,0.875,0.992,largest arm R; snap {'L': 'chest'}
+24,KEY hold,apose,,,,
+25,KEY hold,apose,,,,
+26,KEY hold,apose,,,,

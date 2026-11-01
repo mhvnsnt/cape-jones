@@ -1,0 +1,28 @@
+frame,kind,from,to,t,eased,note
+0,KEY hold,apose,,,,
+1,KEY hold,apose,,,,
+2,KEY hold,apose,,,,
+3,inbetween,apose,OVERHEAD SMASH WINDUP (grounded braced),0.125,0.008,largest arm L; snap {}
+4,inbetween,apose,OVERHEAD SMASH WINDUP (grounded braced),0.25,0.062,largest arm L; snap {}
+5,BREAKDOWN arc bulge +10deg largest-moving arm upper,apose,OVERHEAD SMASH WINDUP (grounded braced),0.375,0.211,largest arm L; snap {}
+6,inbetween,apose,OVERHEAD SMASH WINDUP (grounded braced),0.5,0.5,largest arm L; snap {}
+7,BREAKDOWN follow-through +8deg same arm lower,apose,OVERHEAD SMASH WINDUP (grounded braced),0.625,0.789,largest arm L; snap {}
+8,inbetween,apose,OVERHEAD SMASH WINDUP (grounded braced),0.75,0.938,largest arm L; snap {}
+9,inbetween,apose,OVERHEAD SMASH WINDUP (grounded braced),0.875,0.992,largest arm L; snap {}
+10,OVERSHOOT +5%,OVERHEAD SMASH WINDUP (grounded braced),,,,"real frame, not a hold"
+11,SETTLE,OVERHEAD SMASH WINDUP (grounded braced),,,,"real frame, not a hold"
+12,KEY hold,OVERHEAD SMASH WINDUP (grounded braced),,,,
+13,KEY hold,OVERHEAD SMASH WINDUP (grounded braced),,,,
+14,KEY hold,OVERHEAD SMASH WINDUP (grounded braced),,,,
+15,KEY hold,OVERHEAD SMASH WINDUP (grounded braced),,,,
+16,KEY hold,OVERHEAD SMASH WINDUP (grounded braced),,,,
+17,inbetween,OVERHEAD SMASH WINDUP (grounded braced),apose,0.125,0.008,largest arm L; snap {}
+18,inbetween,OVERHEAD SMASH WINDUP (grounded braced),apose,0.25,0.062,largest arm L; snap {}
+19,BREAKDOWN arc bulge +10deg largest-moving arm upper,OVERHEAD SMASH WINDUP (grounded braced),apose,0.375,0.211,largest arm L; snap {}
+20,inbetween,OVERHEAD SMASH WINDUP (grounded braced),apose,0.5,0.5,largest arm L; snap {}
+21,BREAKDOWN follow-through +8deg same arm lower,OVERHEAD SMASH WINDUP (grounded braced),apose,0.625,0.789,largest arm L; snap {}
+22,inbetween,OVERHEAD SMASH WINDUP (grounded braced),apose,0.75,0.938,largest arm L; snap {}
+23,inbetween,OVERHEAD SMASH WINDUP (grounded braced),apose,0.875,0.992,largest arm L; snap {}
+24,KEY hold,apose,,,,
+25,KEY hold,apose,,,,
+26,KEY hold,apose,,,,

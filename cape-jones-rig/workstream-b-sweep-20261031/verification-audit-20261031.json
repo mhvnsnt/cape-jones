@@ -1,0 +1,216 @@
+{
+ "pseudo_turn_templates": {
+  "pseudo-turn": {
+   "transparent_master_frames": 13,
+   "gif_frames": 13,
+   "mp4_exists": true,
+   "canvas_sizes": [
+    [
+     652,
+     1110
+    ]
+   ],
+   "edge_alpha_px_total": 0,
+   "no_crop_gate": "PASS",
+   "alpha_px_first_last": [
+    337389,
+    361330
+   ],
+   "ground": "GROUNDED (apose base; feet-anchored union canvas in original build)"
+  },
+  "stretch-power": {
+   "transparent_master_frames": 13,
+   "gif_frames": 13,
+   "mp4_exists": true,
+   "canvas_sizes": [
+    [
+     512,
+     1526
+    ]
+   ],
+   "edge_alpha_px_total": 0,
+   "no_crop_gate": "PASS",
+   "alpha_px_first_last": [
+    337389,
+    337389
+   ],
+   "ground": "GROUNDED (apose base; feet-anchored union canvas in original build)"
+  },
+  "thin-power": {
+   "transparent_master_frames": 13,
+   "gif_frames": 13,
+   "mp4_exists": true,
+   "canvas_sizes": [
+    [
+     512,
+     1156
+    ]
+   ],
+   "edge_alpha_px_total": 0,
+   "no_crop_gate": "PASS",
+   "alpha_px_first_last": [
+    337389,
+    338534
+   ],
+   "ground": "GROUNDED (apose base; feet-anchored union canvas in original build)"
+  },
+  "invisible-power": {
+   "transparent_master_frames": 17,
+   "gif_frames": 17,
+   "mp4_exists": true,
+   "canvas_sizes": [
+    [
+     512,
+     1104
+    ]
+   ],
+   "edge_alpha_px_total": 0,
+   "no_crop_gate": "PASS",
+   "alpha_px_first_last": [
+    337389,
+    337389
+   ],
+   "ground": "GROUNDED (apose base; feet-anchored union canvas in original build)"
+  },
+  "cheat-turn-a-depth-dark": {
+   "transparent_master_frames": 13,
+   "gif_frames": 13,
+   "mp4_exists": true,
+   "canvas_sizes": [
+    [
+     652,
+     1108
+    ]
+   ],
+   "edge_alpha_px_total": 0,
+   "no_crop_gate": "PASS",
+   "alpha_px_first_last": [
+    337389,
+    361330
+   ],
+   "ground": "GROUNDED (apose base; feet-anchored union canvas in original build)"
+  },
+  "cheat-turn-b-bend-mirror": {
+   "transparent_master_frames": 13,
+   "gif_frames": 13,
+   "mp4_exists": true,
+   "canvas_sizes": [
+    [
+     652,
+     1110
+    ]
+   ],
+   "edge_alpha_px_total": 0,
+   "no_crop_gate": "PASS",
+   "alpha_px_first_last": [
+    337389,
+    361330
+   ],
+   "ground": "GROUNDED (apose base; feet-anchored union canvas in original build)"
+  },
+  "sheet-animated-turn-attempt": {
+   "transparent_master_frames": 15,
+   "gif_frames": 15,
+   "mp4_exists": true,
+   "canvas_sizes": [
+    [
+     512,
+     1110
+    ]
+   ],
+   "edge_alpha_px_total": 0,
+   "no_crop_gate": "PASS",
+   "alpha_px_first_last": [
+    337389,
+    309546
+   ],
+   "ground": "GROUNDED (apose base; feet-anchored union canvas in original build)"
+  }
+ },
+ "poses_as_movements_v1": {
+  "jump-cowl-snap-movement-20261031": {
+   "mp4_frames": 46,
+   "method": "IMAGE-interp (eased crossfade + translation), NOT rig-angle",
+   "ground_label": "AIRBORNE",
+   "note": "apex raised 100px over ground line; flight line crouch->takeoff->apex->tuck->land; DEFECT: baked-in red debug label dots, use clean version instead",
+   "video_approval": "0/1"
+  },
+  "jump-cowl-snap-movement-clean-20261031": {
+   "mp4_frames": 38,
+   "method": "IMAGE-interp (eased crossfade + translation), NOT rig-angle",
+   "ground_label": "AIRBORNE",
+   "note": "apex raised 100px over ground line; flight line crouch->takeoff->apex->tuck->land; CLEAN (no debug dots) \u2014 the jump to show",
+   "video_approval": "0/1"
+  },
+  "shimmy-cowl-snap-movement-20261031": {
+   "mp4_frames": 70,
+   "method": "IMAGE-interp (crossfade + sway translation), NOT rig-angle",
+   "ground_label": "GROUNDED",
+   "note": "hips sway +/-40px, +/-3deg, 2 cycles; mid-blend ghost (double figure) \u2014 honest limit of this method",
+   "video_approval": "0/1"
+  },
+  "ginyu-force-movement-20261031": {
+   "mp4_frames": 64,
+   "method": "IMAGE-interp (crossfade between key stills), NOT rig-angle",
+   "ground_label": "GROUNDED",
+   "note": "roll-call order Recoome/Burter/Jeice/Guldo/Captain/spread; announce hold + fast snap inbetween",
+   "video_approval": "0/1"
+  },
+  "pose-dialects-movements-20261031": {
+   "mp4_frames": 108,
+   "method": "IMAGE-interp (crossfade between key stills), NOT rig-angle",
+   "ground_label": "GROUNDED",
+   "note": "all 8 dialect poses with neutral between each; stand pairs aspect-preserved (wide canvas, read smaller \u2014 correct, not squeezed)",
+   "video_approval": "0/1"
+  },
+  "move-punch-to-flex-20261031": {
+   "mp4_frames": 33,
+   "method": "IMAGE-interp (crossfade), NOT rig-angle",
+   "ground_label": "GROUNDED",
+   "note": "punch impact -> fighting pose -> true final flex",
+   "video_approval": "0/1"
+  },
+  "move-jump-to-shimmy-20261031": {
+   "mp4_frames": 33,
+   "method": "IMAGE-interp (crossfade), NOT rig-angle",
+   "ground_label": "MIXED: AIRBORNE land -> GROUNDED shimmy",
+   "note": "land, shimmy, shimmy (shimmy repeated twice); rig re-key BLOCKED on Mars say-so, NOT built as rig v2",
+   "video_approval": "0/1"
+  },
+  "move-serve-to-guard-20261031": {
+   "mp4_frames": 33,
+   "method": "IMAGE-interp (crossfade), NOT rig-angle",
+   "ground_label": "GROUNDED",
+   "note": "Jeice serve -> Guldo guard -> fighting pose; rig successors: v2 (0/1), v3 this sweep (0/1)",
+   "video_approval": "0/1"
+  },
+  "move-rollcall-snap-to-spread-20261031": {
+   "mp4_frames": 33,
+   "method": "IMAGE-interp (crossfade), NOT rig-angle",
+   "ground_label": "GROUNDED",
+   "note": "Captain entrance -> crossed command -> Captain spread; rig successor v2 (0/1)",
+   "video_approval": "0/1"
+  }
+ },
+ "movements_interp_v2": {
+  "move-serve-to-guard-v2-20261031": {
+   "mp4_frames": 43,
+   "method": "RIG-ANGLE (v2 simplified builder, NOT snap.figure passes; top-arm union approximation)",
+   "ground_label": "GROUNDED",
+   "video_approval": "0/1"
+  },
+  "move-punch-to-flex-v2-20261031": {
+   "mp4_frames": 41,
+   "method": "RIG-ANGLE (v2 simplified builder, NOT snap.figure passes; top-arm union approximation)",
+   "ground_label": "GROUNDED",
+   "video_approval": "0/1"
+  },
+  "move-rollcall-snap-to-spread-v2-20261031": {
+   "mp4_frames": 41,
+   "method": "RIG-ANGLE (v2 simplified builder, NOT snap.figure passes; top-arm union approximation)",
+   "ground_label": "GROUNDED",
+   "video_approval": "0/1"
+  }
+ },
+ "notes": "MP4 frame counts by ffprobe (authoritative). GIF view copies may show fewer frames where identical hold frames are dropped by the GIF encoder \u2014 MP4 counts match the source reports (v1 458 frames on disk incl. clean rebuild; v2 43/41/41). Stills approved != videos approved: every video above is 0/1 unless Mars says otherwise."
+}

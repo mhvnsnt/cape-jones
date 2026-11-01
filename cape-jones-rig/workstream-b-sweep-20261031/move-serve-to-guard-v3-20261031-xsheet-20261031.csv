@@ -1,0 +1,56 @@
+frame,kind,from,to,t,eased,note
+0,KEY hold,apose,,,,
+1,KEY hold,apose,,,,
+2,KEY hold,apose,,,,
+3,inbetween,apose,jei-01 serve windup FIST (Ginyu builder exact),0.125,0.008,largest arm L; snap {'L': 'cowl'}
+4,inbetween,apose,jei-01 serve windup FIST (Ginyu builder exact),0.25,0.062,largest arm L; snap {'L': 'cowl'}
+5,BREAKDOWN arc bulge +10deg largest-moving arm upper,apose,jei-01 serve windup FIST (Ginyu builder exact),0.375,0.211,largest arm L; snap {'L': 'cowl'}
+6,inbetween,apose,jei-01 serve windup FIST (Ginyu builder exact),0.5,0.5,largest arm L; snap {'L': 'cowl'}
+7,BREAKDOWN follow-through +8deg same arm lower,apose,jei-01 serve windup FIST (Ginyu builder exact),0.625,0.789,largest arm L; snap {'L': 'cowl'}
+8,inbetween,apose,jei-01 serve windup FIST (Ginyu builder exact),0.75,0.938,largest arm L; snap {'L': 'cowl'}
+9,inbetween,apose,jei-01 serve windup FIST (Ginyu builder exact),0.875,0.992,largest arm L; snap {'L': 'cowl'}
+10,OVERSHOOT +5%,jei-01 serve windup FIST (Ginyu builder exact),,,,"real frame, not a hold"
+11,SETTLE,jei-01 serve windup FIST (Ginyu builder exact),,,,"real frame, not a hold"
+12,KEY hold,jei-01 serve windup FIST (Ginyu builder exact),,,,
+13,KEY hold,jei-01 serve windup FIST (Ginyu builder exact),,,,
+14,KEY hold,jei-01 serve windup FIST (Ginyu builder exact),,,,
+15,KEY hold,jei-01 serve windup FIST (Ginyu builder exact),,,,
+16,KEY hold,jei-01 serve windup FIST (Ginyu builder exact),,,,
+17,inbetween,jei-01 serve windup FIST (Ginyu builder exact),gul-03 guard crouch (Ginyu builder exact),0.125,0.008,"largest arm L; snap {'L': 'cowl', 'R': 'chest'}"
+18,inbetween,jei-01 serve windup FIST (Ginyu builder exact),gul-03 guard crouch (Ginyu builder exact),0.25,0.062,"largest arm L; snap {'L': 'cowl', 'R': 'chest'}"
+19,BREAKDOWN arc bulge +10deg largest-moving arm upper,jei-01 serve windup FIST (Ginyu builder exact),gul-03 guard crouch (Ginyu builder exact),0.375,0.211,"largest arm L; snap {'L': 'cowl', 'R': 'chest'}"
+20,inbetween,jei-01 serve windup FIST (Ginyu builder exact),gul-03 guard crouch (Ginyu builder exact),0.5,0.5,"largest arm L; snap {'L': 'cowl', 'R': 'chest'}"
+21,BREAKDOWN follow-through +8deg same arm lower,jei-01 serve windup FIST (Ginyu builder exact),gul-03 guard crouch (Ginyu builder exact),0.625,0.789,"largest arm L; snap {'L': 'cowl', 'R': 'chest'}"
+22,inbetween,jei-01 serve windup FIST (Ginyu builder exact),gul-03 guard crouch (Ginyu builder exact),0.75,0.938,"largest arm L; snap {'L': 'cowl', 'R': 'chest'}"
+23,inbetween,jei-01 serve windup FIST (Ginyu builder exact),gul-03 guard crouch (Ginyu builder exact),0.875,0.992,"largest arm L; snap {'L': 'cowl', 'R': 'chest'}"
+24,OVERSHOOT +5%,gul-03 guard crouch (Ginyu builder exact),,,,"real frame, not a hold"
+25,SETTLE,gul-03 guard crouch (Ginyu builder exact),,,,"real frame, not a hold"
+26,KEY hold,gul-03 guard crouch (Ginyu builder exact),,,,
+27,KEY hold,gul-03 guard crouch (Ginyu builder exact),,,,
+28,KEY hold,gul-03 guard crouch (Ginyu builder exact),,,,
+29,KEY hold,gul-03 guard crouch (Ginyu builder exact),,,,
+30,KEY hold,gul-03 guard crouch (Ginyu builder exact),,,,
+31,inbetween,gul-03 guard crouch (Ginyu builder exact),"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",0.125,0.008,"largest arm L; snap {'L': 'chest', 'R': 'chest'}"
+32,inbetween,gul-03 guard crouch (Ginyu builder exact),"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",0.25,0.062,"largest arm L; snap {'L': 'chest', 'R': 'chest'}"
+33,BREAKDOWN arc bulge +10deg largest-moving arm upper,gul-03 guard crouch (Ginyu builder exact),"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",0.375,0.211,"largest arm L; snap {'L': 'chest', 'R': 'chest'}"
+34,inbetween,gul-03 guard crouch (Ginyu builder exact),"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",0.5,0.5,"largest arm L; snap {'L': 'chest', 'R': 'chest'}"
+35,BREAKDOWN follow-through +8deg same arm lower,gul-03 guard crouch (Ginyu builder exact),"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",0.625,0.789,"largest arm L; snap {'L': 'chest', 'R': 'chest'}"
+36,inbetween,gul-03 guard crouch (Ginyu builder exact),"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",0.75,0.938,"largest arm L; snap {'L': 'chest', 'R': 'chest'}"
+37,inbetween,gul-03 guard crouch (Ginyu builder exact),"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",0.875,0.992,"largest arm L; snap {'L': 'chest', 'R': 'chest'}"
+38,OVERSHOOT +5%,"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",,,,"real frame, not a hold"
+39,SETTLE,"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",,,,"real frame, not a hold"
+40,KEY hold,"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",,,,
+41,KEY hold,"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",,,,
+42,KEY hold,"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",,,,
+43,KEY hold,"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",,,,
+44,KEY hold,"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",,,,
+45,inbetween,"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",apose,0.125,0.008,largest arm L; snap {}
+46,inbetween,"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",apose,0.25,0.062,largest arm L; snap {}
+47,BREAKDOWN arc bulge +10deg largest-moving arm upper,"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",apose,0.375,0.211,largest arm L; snap {}
+48,inbetween,"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",apose,0.5,0.5,largest arm L; snap {}
+49,BREAKDOWN follow-through +8deg same arm lower,"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",apose,0.625,0.789,largest arm L; snap {}
+50,inbetween,"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",apose,0.75,0.938,largest arm L; snap {}
+51,inbetween,"fighting pose (MEASURED-ESTIMATE +/-15deg, NOT builder-exact)",apose,0.875,0.992,largest arm L; snap {}
+52,KEY hold,apose,,,,
+53,KEY hold,apose,,,,
+54,KEY hold,apose,,,,
