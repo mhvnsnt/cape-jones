@@ -1,0 +1,1031 @@
+{
+  "presets": [
+    {
+      "preset_name": "FIGURE-MATCHED PRESET S1 \u2014 V2 WARM OVERHEAD",
+      "scenario_id": "S1-v2-warm-overhead",
+      "source": "figure-matched-room-lighting-20261031, Mars saved-good 2026-10-31 23:00 CDT (saved-good, NOT upgraded to full 1/1 approval)",
+      "room": "shafts-v2",
+      "direction": "overhead",
+      "gain": [
+        1.1,
+        0.95,
+        0.7
+      ],
+      "rim_RGB": [
+        255,
+        180,
+        80
+      ],
+      "shadow_RGB": [
+        40,
+        50,
+        90
+      ],
+      "lit_mean_RGB_source": [
+        161.3,
+        132.7,
+        94.5
+      ],
+      "base_mean_RGB_source": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "source_canvas": [
+        1260,
+        1660
+      ],
+      "source_figure_alpha_px_source_JSON": 374127,
+      "measured_lit_transparent_alpha_px": 408573,
+      "alpha_note": "Source JSON figure_alpha_px (374127) differs from measured lit-transparent alpha (408573, S4 423488). Both recorded; source value preserved verbatim, measured value is from the lit-transparent file used here. Rim expansion in the lit file is the likely cause; not resolved by editing either number.",
+      "line_band_px_source": 49849,
+      "rim_px_source": 34446,
+      "line_band_mean_light_factor_source": 0.633,
+      "shared_method": {
+        "cel_bands": [
+          1.12,
+          0.92,
+          0.72
+        ],
+        "cel_bands_note": "3 bands by light direction, from original figure-matched report",
+        "rim_method": "dilate(figure,6) - figure, rim_px 34446 in source JSON (measured lit rim included in lit-transparent alpha)",
+        "interior_line_method": "ink band: dark pixels within 3px of non-dark, 49849 px in source JSON, recoloured 80% toward rim on light side and toward shadow on away side; pec, rib, ab, belt, gauntlet, cape-fold and cowl lines carry light, not left black under a flat tint",
+        "interior_sheen": "<=14px inside-edge band, up to 38% rim",
+        "base_art": "never recoloured; lighting on separate layers over a copy of the clean plate",
+        "no_crop_source": "source padded canvas 1260x1660, padded edge alpha max 0.0 in source JSON",
+        "ground_bounce": {
+          "S3": "45% in bottom 28% of figure",
+          "other": "not specified in source report, recorded as none specified, not invented"
+        }
+      },
+      "ground_bounce": "not specified in source report",
+      "vertical": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "fit_scale": 0.8571,
+        "fitted_size": [
+          1080,
+          1423
+        ],
+        "paste_xy": [
+          0,
+          248
+        ],
+        "figure_bbox": {
+          "x_min": 253,
+          "x_max": 827,
+          "y_min": 517,
+          "y_max": 1420,
+          "alpha_px_source_lit": 408573,
+          "margins": {
+            "left": 253,
+            "right": 252,
+            "top": 517,
+            "bottom": 499
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "horizontal": {
+        "canvas": [
+          1920,
+          1080
+        ],
+        "fit_scale": 0.6506,
+        "fitted_size": [
+          820,
+          1080
+        ],
+        "paste_xy": [
+          550,
+          0
+        ],
+        "figure_bbox": {
+          "x_min": 742,
+          "x_max": 1177,
+          "y_min": 204,
+          "y_max": 890,
+          "alpha_px_source_lit": 408573,
+          "margins": {
+            "left": 742,
+            "right": 742,
+            "top": 204,
+            "bottom": 189
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "files": [
+        "S1-v2-warm-overhead-horizontal-1920x1080-20261031.png",
+        "S1-v2-warm-overhead-lit-transparent-20261031.png",
+        "S1-v2-warm-overhead-on-grey-20261031.png",
+        "S1-v2-warm-overhead-on-room-20261031.png",
+        "S1-v2-warm-overhead-vertical-1080x1920-20261031.png"
+      ],
+      "approval": "0/1 preset set, 0/1 vertical set, 0/1 horizontal set separately; original set saved-good by Mars"
+    },
+    {
+      "preset_name": "FIGURE-MATCHED PRESET S2 \u2014 V3 WARM OVERHEAD STRONG",
+      "scenario_id": "S2-v3-warm-overhead-strong",
+      "source": "figure-matched-room-lighting-20261031, Mars saved-good 2026-10-31 23:00 CDT (saved-good, NOT upgraded to full 1/1 approval)",
+      "room": "shafts-v3",
+      "direction": "overhead_centre",
+      "gain": [
+        1.15,
+        0.98,
+        0.72
+      ],
+      "rim_RGB": [
+        255,
+        190,
+        90
+      ],
+      "shadow_RGB": [
+        40,
+        50,
+        90
+      ],
+      "lit_mean_RGB_source": [
+        169.8,
+        140.0,
+        99.9
+      ],
+      "base_mean_RGB_source": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "source_canvas": [
+        1260,
+        1660
+      ],
+      "source_figure_alpha_px_source_JSON": 374127,
+      "measured_lit_transparent_alpha_px": 408573,
+      "alpha_note": "Source JSON figure_alpha_px (374127) differs from measured lit-transparent alpha (408573, S4 423488). Both recorded; source value preserved verbatim, measured value is from the lit-transparent file used here. Rim expansion in the lit file is the likely cause; not resolved by editing either number.",
+      "line_band_px_source": 49849,
+      "rim_px_source": 34446,
+      "line_band_mean_light_factor_source": 0.652,
+      "shared_method": {
+        "cel_bands": [
+          1.12,
+          0.92,
+          0.72
+        ],
+        "cel_bands_note": "3 bands by light direction, from original figure-matched report",
+        "rim_method": "dilate(figure,6) - figure, rim_px 34446 in source JSON (measured lit rim included in lit-transparent alpha)",
+        "interior_line_method": "ink band: dark pixels within 3px of non-dark, 49849 px in source JSON, recoloured 80% toward rim on light side and toward shadow on away side; pec, rib, ab, belt, gauntlet, cape-fold and cowl lines carry light, not left black under a flat tint",
+        "interior_sheen": "<=14px inside-edge band, up to 38% rim",
+        "base_art": "never recoloured; lighting on separate layers over a copy of the clean plate",
+        "no_crop_source": "source padded canvas 1260x1660, padded edge alpha max 0.0 in source JSON",
+        "ground_bounce": {
+          "S3": "45% in bottom 28% of figure",
+          "other": "not specified in source report, recorded as none specified, not invented"
+        }
+      },
+      "ground_bounce": "not specified in source report",
+      "vertical": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "fit_scale": 0.8571,
+        "fitted_size": [
+          1080,
+          1423
+        ],
+        "paste_xy": [
+          0,
+          248
+        ],
+        "figure_bbox": {
+          "x_min": 253,
+          "x_max": 827,
+          "y_min": 517,
+          "y_max": 1420,
+          "alpha_px_source_lit": 408573,
+          "margins": {
+            "left": 253,
+            "right": 252,
+            "top": 517,
+            "bottom": 499
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "horizontal": {
+        "canvas": [
+          1920,
+          1080
+        ],
+        "fit_scale": 0.6506,
+        "fitted_size": [
+          820,
+          1080
+        ],
+        "paste_xy": [
+          550,
+          0
+        ],
+        "figure_bbox": {
+          "x_min": 742,
+          "x_max": 1177,
+          "y_min": 204,
+          "y_max": 890,
+          "alpha_px_source_lit": 408573,
+          "margins": {
+            "left": 742,
+            "right": 742,
+            "top": 204,
+            "bottom": 189
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "files": [
+        "S2-v3-warm-overhead-strong-horizontal-1920x1080-20261031.png",
+        "S2-v3-warm-overhead-strong-lit-transparent-20261031.png",
+        "S2-v3-warm-overhead-strong-on-grey-20261031.png",
+        "S2-v3-warm-overhead-strong-on-room-20261031.png",
+        "S2-v3-warm-overhead-strong-vertical-1080x1920-20261031.png"
+      ],
+      "approval": "0/1 preset set, 0/1 vertical set, 0/1 horizontal set separately; original set saved-good by Mars"
+    },
+    {
+      "preset_name": "FIGURE-MATCHED PRESET S3 \u2014 V3+POOLS WARM GROUND BOUNCE",
+      "scenario_id": "S3-v3pools-warm-overhead-bounce",
+      "source": "figure-matched-room-lighting-20261031, Mars saved-good 2026-10-31 23:00 CDT (saved-good, NOT upgraded to full 1/1 approval)",
+      "room": "shafts-v3pools",
+      "direction": "overhead_centre",
+      "gain": [
+        1.12,
+        0.96,
+        0.71
+      ],
+      "rim_RGB": [
+        255,
+        185,
+        85
+      ],
+      "shadow_RGB": [
+        42,
+        52,
+        92
+      ],
+      "lit_mean_RGB_source": [
+        171.7,
+        140.1,
+        98.2
+      ],
+      "base_mean_RGB_source": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "source_canvas": [
+        1260,
+        1660
+      ],
+      "source_figure_alpha_px_source_JSON": 374127,
+      "measured_lit_transparent_alpha_px": 408573,
+      "alpha_note": "Source JSON figure_alpha_px (374127) differs from measured lit-transparent alpha (408573, S4 423488). Both recorded; source value preserved verbatim, measured value is from the lit-transparent file used here. Rim expansion in the lit file is the likely cause; not resolved by editing either number.",
+      "line_band_px_source": 49849,
+      "rim_px_source": 34446,
+      "line_band_mean_light_factor_source": 0.652,
+      "shared_method": {
+        "cel_bands": [
+          1.12,
+          0.92,
+          0.72
+        ],
+        "cel_bands_note": "3 bands by light direction, from original figure-matched report",
+        "rim_method": "dilate(figure,6) - figure, rim_px 34446 in source JSON (measured lit rim included in lit-transparent alpha)",
+        "interior_line_method": "ink band: dark pixels within 3px of non-dark, 49849 px in source JSON, recoloured 80% toward rim on light side and toward shadow on away side; pec, rib, ab, belt, gauntlet, cape-fold and cowl lines carry light, not left black under a flat tint",
+        "interior_sheen": "<=14px inside-edge band, up to 38% rim",
+        "base_art": "never recoloured; lighting on separate layers over a copy of the clean plate",
+        "no_crop_source": "source padded canvas 1260x1660, padded edge alpha max 0.0 in source JSON",
+        "ground_bounce": {
+          "S3": "45% in bottom 28% of figure",
+          "other": "not specified in source report, recorded as none specified, not invented"
+        }
+      },
+      "ground_bounce": "45% in bottom 28% of figure",
+      "vertical": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "fit_scale": 0.8571,
+        "fitted_size": [
+          1080,
+          1423
+        ],
+        "paste_xy": [
+          0,
+          248
+        ],
+        "figure_bbox": {
+          "x_min": 253,
+          "x_max": 827,
+          "y_min": 517,
+          "y_max": 1420,
+          "alpha_px_source_lit": 408573,
+          "margins": {
+            "left": 253,
+            "right": 252,
+            "top": 517,
+            "bottom": 499
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "horizontal": {
+        "canvas": [
+          1920,
+          1080
+        ],
+        "fit_scale": 0.6506,
+        "fitted_size": [
+          820,
+          1080
+        ],
+        "paste_xy": [
+          550,
+          0
+        ],
+        "figure_bbox": {
+          "x_min": 742,
+          "x_max": 1177,
+          "y_min": 204,
+          "y_max": 890,
+          "alpha_px_source_lit": 408573,
+          "margins": {
+            "left": 742,
+            "right": 742,
+            "top": 204,
+            "bottom": 189
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "files": [
+        "S3-v3pools-warm-overhead-bounce-horizontal-1920x1080-20261031.png",
+        "S3-v3pools-warm-overhead-bounce-lit-transparent-20261031.png",
+        "S3-v3pools-warm-overhead-bounce-on-grey-20261031.png",
+        "S3-v3pools-warm-overhead-bounce-on-room-20261031.png",
+        "S3-v3pools-warm-overhead-bounce-vertical-1080x1920-20261031.png"
+      ],
+      "approval": "0/1 preset set, 0/1 vertical set, 0/1 horizontal set separately; original set saved-good by Mars"
+    },
+    {
+      "preset_name": "FIGURE-MATCHED PRESET S4 \u2014 GLARE WARM OVERHEAD GLOW",
+      "scenario_id": "S4-glare-warm-overhead-glow",
+      "source": "figure-matched-room-lighting-20261031, Mars saved-good 2026-10-31 23:00 CDT (saved-good, NOT upgraded to full 1/1 approval)",
+      "room": "shafts-glare",
+      "direction": "overhead",
+      "gain": [
+        1.1,
+        0.95,
+        0.7
+      ],
+      "rim_RGB": [
+        255,
+        180,
+        80
+      ],
+      "shadow_RGB": [
+        40,
+        50,
+        90
+      ],
+      "lit_mean_RGB_source": [
+        156.9,
+        128.8,
+        91.4
+      ],
+      "base_mean_RGB_source": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "source_canvas": [
+        1260,
+        1660
+      ],
+      "source_figure_alpha_px_source_JSON": 374127,
+      "measured_lit_transparent_alpha_px": 423488,
+      "alpha_note": "Source JSON figure_alpha_px (374127) differs from measured lit-transparent alpha (408573, S4 423488). Both recorded; source value preserved verbatim, measured value is from the lit-transparent file used here. Rim expansion in the lit file is the likely cause; not resolved by editing either number.",
+      "line_band_px_source": 49849,
+      "rim_px_source": 34446,
+      "line_band_mean_light_factor_source": 0.633,
+      "shared_method": {
+        "cel_bands": [
+          1.12,
+          0.92,
+          0.72
+        ],
+        "cel_bands_note": "3 bands by light direction, from original figure-matched report",
+        "rim_method": "dilate(figure,6) - figure, rim_px 34446 in source JSON (measured lit rim included in lit-transparent alpha)",
+        "interior_line_method": "ink band: dark pixels within 3px of non-dark, 49849 px in source JSON, recoloured 80% toward rim on light side and toward shadow on away side; pec, rib, ab, belt, gauntlet, cape-fold and cowl lines carry light, not left black under a flat tint",
+        "interior_sheen": "<=14px inside-edge band, up to 38% rim",
+        "base_art": "never recoloured; lighting on separate layers over a copy of the clean plate",
+        "no_crop_source": "source padded canvas 1260x1660, padded edge alpha max 0.0 in source JSON",
+        "ground_bounce": {
+          "S3": "45% in bottom 28% of figure",
+          "other": "not specified in source report, recorded as none specified, not invented"
+        }
+      },
+      "ground_bounce": "not specified in source report",
+      "vertical": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "fit_scale": 0.8571,
+        "fitted_size": [
+          1080,
+          1423
+        ],
+        "paste_xy": [
+          0,
+          248
+        ],
+        "figure_bbox": {
+          "x_min": 249,
+          "x_max": 831,
+          "y_min": 513,
+          "y_max": 1420,
+          "alpha_px_source_lit": 423488,
+          "margins": {
+            "left": 249,
+            "right": 248,
+            "top": 513,
+            "bottom": 499
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "horizontal": {
+        "canvas": [
+          1920,
+          1080
+        ],
+        "fit_scale": 0.6506,
+        "fitted_size": [
+          820,
+          1080
+        ],
+        "paste_xy": [
+          550,
+          0
+        ],
+        "figure_bbox": {
+          "x_min": 739,
+          "x_max": 1181,
+          "y_min": 201,
+          "y_max": 890,
+          "alpha_px_source_lit": 423488,
+          "margins": {
+            "left": 739,
+            "right": 738,
+            "top": 201,
+            "bottom": 189
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "files": [
+        "S4-glare-warm-overhead-glow-horizontal-1920x1080-20261031.png",
+        "S4-glare-warm-overhead-glow-lit-transparent-20261031.png",
+        "S4-glare-warm-overhead-glow-on-grey-20261031.png",
+        "S4-glare-warm-overhead-glow-on-room-20261031.png",
+        "S4-glare-warm-overhead-glow-vertical-1080x1920-20261031.png"
+      ],
+      "approval": "0/1 preset set, 0/1 vertical set, 0/1 horizontal set separately; original set saved-good by Mars"
+    },
+    {
+      "preset_name": "FIGURE-MATCHED PRESET S5 \u2014 COLOUR MAGENTA-ROSE",
+      "scenario_id": "S5-colour-magenta-rose",
+      "source": "figure-matched-room-lighting-20261031, Mars saved-good 2026-10-31 23:00 CDT (saved-good, NOT upgraded to full 1/1 approval)",
+      "room": "colour-magenta",
+      "direction": "front",
+      "gain": [
+        1.25,
+        0.7,
+        0.9
+      ],
+      "rim_RGB": [
+        255,
+        178,
+        229
+      ],
+      "shadow_RGB": [
+        60,
+        30,
+        70
+      ],
+      "lit_mean_RGB_source": [
+        214.6,
+        127.1,
+        166.6
+      ],
+      "base_mean_RGB_source": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "source_canvas": [
+        1260,
+        1660
+      ],
+      "source_figure_alpha_px_source_JSON": 374127,
+      "measured_lit_transparent_alpha_px": 408573,
+      "alpha_note": "Source JSON figure_alpha_px (374127) differs from measured lit-transparent alpha (408573, S4 423488). Both recorded; source value preserved verbatim, measured value is from the lit-transparent file used here. Rim expansion in the lit file is the likely cause; not resolved by editing either number.",
+      "line_band_px_source": 49849,
+      "rim_px_source": 34446,
+      "line_band_mean_light_factor_source": 0.935,
+      "shared_method": {
+        "cel_bands": [
+          1.12,
+          0.92,
+          0.72
+        ],
+        "cel_bands_note": "3 bands by light direction, from original figure-matched report",
+        "rim_method": "dilate(figure,6) - figure, rim_px 34446 in source JSON (measured lit rim included in lit-transparent alpha)",
+        "interior_line_method": "ink band: dark pixels within 3px of non-dark, 49849 px in source JSON, recoloured 80% toward rim on light side and toward shadow on away side; pec, rib, ab, belt, gauntlet, cape-fold and cowl lines carry light, not left black under a flat tint",
+        "interior_sheen": "<=14px inside-edge band, up to 38% rim",
+        "base_art": "never recoloured; lighting on separate layers over a copy of the clean plate",
+        "no_crop_source": "source padded canvas 1260x1660, padded edge alpha max 0.0 in source JSON",
+        "ground_bounce": {
+          "S3": "45% in bottom 28% of figure",
+          "other": "not specified in source report, recorded as none specified, not invented"
+        }
+      },
+      "ground_bounce": "not specified in source report",
+      "vertical": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "fit_scale": 0.8571,
+        "fitted_size": [
+          1080,
+          1423
+        ],
+        "paste_xy": [
+          0,
+          248
+        ],
+        "figure_bbox": {
+          "x_min": 253,
+          "x_max": 827,
+          "y_min": 517,
+          "y_max": 1420,
+          "alpha_px_source_lit": 408573,
+          "margins": {
+            "left": 253,
+            "right": 252,
+            "top": 517,
+            "bottom": 499
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "horizontal": {
+        "canvas": [
+          1920,
+          1080
+        ],
+        "fit_scale": 0.6506,
+        "fitted_size": [
+          820,
+          1080
+        ],
+        "paste_xy": [
+          550,
+          0
+        ],
+        "figure_bbox": {
+          "x_min": 742,
+          "x_max": 1177,
+          "y_min": 204,
+          "y_max": 890,
+          "alpha_px_source_lit": 408573,
+          "margins": {
+            "left": 742,
+            "right": 742,
+            "top": 204,
+            "bottom": 189
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "files": [
+        "S5-colour-magenta-rose-horizontal-1920x1080-20261031.png",
+        "S5-colour-magenta-rose-lit-transparent-20261031.png",
+        "S5-colour-magenta-rose-on-grey-20261031.png",
+        "S5-colour-magenta-rose-on-room-20261031.png",
+        "S5-colour-magenta-rose-vertical-1080x1920-20261031.png"
+      ],
+      "approval": "0/1 preset set, 0/1 vertical set, 0/1 horizontal set separately; original set saved-good by Mars"
+    },
+    {
+      "preset_name": "FIGURE-MATCHED PRESET S6 \u2014 COLOUR CYAN DUAL BACKLIGHT",
+      "scenario_id": "S6-colour-cyan-dual-backlight",
+      "source": "figure-matched-room-lighting-20261031, Mars saved-good 2026-10-31 23:00 CDT (saved-good, NOT upgraded to full 1/1 approval)",
+      "room": "colour-cyan-dual",
+      "direction": "back",
+      "gain": [
+        0.9,
+        1.05,
+        1.15
+      ],
+      "rim_RGB": [
+        0,
+        200,
+        255
+      ],
+      "shadow_RGB": [
+        20,
+        40,
+        70
+      ],
+      "lit_mean_RGB_source": [
+        94.9,
+        149.5,
+        175.5
+      ],
+      "base_mean_RGB_source": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "source_canvas": [
+        1260,
+        1660
+      ],
+      "source_figure_alpha_px_source_JSON": 374127,
+      "measured_lit_transparent_alpha_px": 408573,
+      "alpha_note": "Source JSON figure_alpha_px (374127) differs from measured lit-transparent alpha (408573, S4 423488). Both recorded; source value preserved verbatim, measured value is from the lit-transparent file used here. Rim expansion in the lit file is the likely cause; not resolved by editing either number.",
+      "line_band_px_source": 49849,
+      "rim_px_source": 34446,
+      "line_band_mean_light_factor_source": 0.744,
+      "shared_method": {
+        "cel_bands": [
+          1.12,
+          0.92,
+          0.72
+        ],
+        "cel_bands_note": "3 bands by light direction, from original figure-matched report",
+        "rim_method": "dilate(figure,6) - figure, rim_px 34446 in source JSON (measured lit rim included in lit-transparent alpha)",
+        "interior_line_method": "ink band: dark pixels within 3px of non-dark, 49849 px in source JSON, recoloured 80% toward rim on light side and toward shadow on away side; pec, rib, ab, belt, gauntlet, cape-fold and cowl lines carry light, not left black under a flat tint",
+        "interior_sheen": "<=14px inside-edge band, up to 38% rim",
+        "base_art": "never recoloured; lighting on separate layers over a copy of the clean plate",
+        "no_crop_source": "source padded canvas 1260x1660, padded edge alpha max 0.0 in source JSON",
+        "ground_bounce": {
+          "S3": "45% in bottom 28% of figure",
+          "other": "not specified in source report, recorded as none specified, not invented"
+        }
+      },
+      "ground_bounce": "not specified in source report",
+      "vertical": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "fit_scale": 0.8571,
+        "fitted_size": [
+          1080,
+          1423
+        ],
+        "paste_xy": [
+          0,
+          248
+        ],
+        "figure_bbox": {
+          "x_min": 253,
+          "x_max": 827,
+          "y_min": 517,
+          "y_max": 1420,
+          "alpha_px_source_lit": 408573,
+          "margins": {
+            "left": 253,
+            "right": 252,
+            "top": 517,
+            "bottom": 499
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "horizontal": {
+        "canvas": [
+          1920,
+          1080
+        ],
+        "fit_scale": 0.6506,
+        "fitted_size": [
+          820,
+          1080
+        ],
+        "paste_xy": [
+          550,
+          0
+        ],
+        "figure_bbox": {
+          "x_min": 742,
+          "x_max": 1177,
+          "y_min": 204,
+          "y_max": 890,
+          "alpha_px_source_lit": 408573,
+          "margins": {
+            "left": 742,
+            "right": 742,
+            "top": 204,
+            "bottom": 189
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "files": [
+        "S6-colour-cyan-dual-backlight-horizontal-1920x1080-20261031.png",
+        "S6-colour-cyan-dual-backlight-lit-transparent-20261031.png",
+        "S6-colour-cyan-dual-backlight-on-grey-20261031.png",
+        "S6-colour-cyan-dual-backlight-on-room-20261031.png",
+        "S6-colour-cyan-dual-backlight-vertical-1080x1920-20261031.png"
+      ],
+      "approval": "0/1 preset set, 0/1 vertical set, 0/1 horizontal set separately; original set saved-good by Mars"
+    },
+    {
+      "preset_name": "FIGURE-MATCHED PRESET S7 \u2014 COLOUR GOLDEN-HOUR FRONT",
+      "scenario_id": "S7-colour-golden-hour-front",
+      "source": "figure-matched-room-lighting-20261031, Mars saved-good 2026-10-31 23:00 CDT (saved-good, NOT upgraded to full 1/1 approval)",
+      "room": "colour-gold",
+      "direction": "front",
+      "gain": [
+        1.1,
+        0.95,
+        0.7
+      ],
+      "rim_RGB": [
+        255,
+        180,
+        80
+      ],
+      "shadow_RGB": [
+        40,
+        50,
+        90
+      ],
+      "lit_mean_RGB_source": [
+        195.5,
+        159.2,
+        109.1
+      ],
+      "base_mean_RGB_source": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "source_canvas": [
+        1260,
+        1660
+      ],
+      "source_figure_alpha_px_source_JSON": 374127,
+      "measured_lit_transparent_alpha_px": 408573,
+      "alpha_note": "Source JSON figure_alpha_px (374127) differs from measured lit-transparent alpha (408573, S4 423488). Both recorded; source value preserved verbatim, measured value is from the lit-transparent file used here. Rim expansion in the lit file is the likely cause; not resolved by editing either number.",
+      "line_band_px_source": 49849,
+      "rim_px_source": 34446,
+      "line_band_mean_light_factor_source": 0.935,
+      "shared_method": {
+        "cel_bands": [
+          1.12,
+          0.92,
+          0.72
+        ],
+        "cel_bands_note": "3 bands by light direction, from original figure-matched report",
+        "rim_method": "dilate(figure,6) - figure, rim_px 34446 in source JSON (measured lit rim included in lit-transparent alpha)",
+        "interior_line_method": "ink band: dark pixels within 3px of non-dark, 49849 px in source JSON, recoloured 80% toward rim on light side and toward shadow on away side; pec, rib, ab, belt, gauntlet, cape-fold and cowl lines carry light, not left black under a flat tint",
+        "interior_sheen": "<=14px inside-edge band, up to 38% rim",
+        "base_art": "never recoloured; lighting on separate layers over a copy of the clean plate",
+        "no_crop_source": "source padded canvas 1260x1660, padded edge alpha max 0.0 in source JSON",
+        "ground_bounce": {
+          "S3": "45% in bottom 28% of figure",
+          "other": "not specified in source report, recorded as none specified, not invented"
+        }
+      },
+      "ground_bounce": "not specified in source report",
+      "vertical": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "fit_scale": 0.8571,
+        "fitted_size": [
+          1080,
+          1423
+        ],
+        "paste_xy": [
+          0,
+          248
+        ],
+        "figure_bbox": {
+          "x_min": 253,
+          "x_max": 827,
+          "y_min": 517,
+          "y_max": 1420,
+          "alpha_px_source_lit": 408573,
+          "margins": {
+            "left": 253,
+            "right": 252,
+            "top": 517,
+            "bottom": 499
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "horizontal": {
+        "canvas": [
+          1920,
+          1080
+        ],
+        "fit_scale": 0.6506,
+        "fitted_size": [
+          820,
+          1080
+        ],
+        "paste_xy": [
+          550,
+          0
+        ],
+        "figure_bbox": {
+          "x_min": 742,
+          "x_max": 1177,
+          "y_min": 204,
+          "y_max": 890,
+          "alpha_px_source_lit": 408573,
+          "margins": {
+            "left": 742,
+            "right": 742,
+            "top": 204,
+            "bottom": 189
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "files": [
+        "S7-colour-golden-hour-front-horizontal-1920x1080-20261031.png",
+        "S7-colour-golden-hour-front-lit-transparent-20261031.png",
+        "S7-colour-golden-hour-front-on-grey-20261031.png",
+        "S7-colour-golden-hour-front-on-room-20261031.png",
+        "S7-colour-golden-hour-front-vertical-1080x1920-20261031.png"
+      ],
+      "approval": "0/1 preset set, 0/1 vertical set, 0/1 horizontal set separately; original set saved-good by Mars"
+    },
+    {
+      "preset_name": "FIGURE-MATCHED PRESET S8 \u2014 COLOUR COOL-BLUE NIGHT",
+      "scenario_id": "S8-colour-cool-blue-night",
+      "source": "figure-matched-room-lighting-20261031, Mars saved-good 2026-10-31 23:00 CDT (saved-good, NOT upgraded to full 1/1 approval)",
+      "room": "colour-blue-night",
+      "direction": "cool_front",
+      "gain": [
+        0.85,
+        0.95,
+        1.2
+      ],
+      "rim_RGB": [
+        160,
+        200,
+        255
+      ],
+      "shadow_RGB": [
+        15,
+        25,
+        55
+      ],
+      "lit_mean_RGB_source": [
+        143.1,
+        163.2,
+        210.7
+      ],
+      "base_mean_RGB_source": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "source_canvas": [
+        1260,
+        1660
+      ],
+      "source_figure_alpha_px_source_JSON": 374127,
+      "measured_lit_transparent_alpha_px": 408573,
+      "alpha_note": "Source JSON figure_alpha_px (374127) differs from measured lit-transparent alpha (408573, S4 423488). Both recorded; source value preserved verbatim, measured value is from the lit-transparent file used here. Rim expansion in the lit file is the likely cause; not resolved by editing either number.",
+      "line_band_px_source": 49849,
+      "rim_px_source": 34446,
+      "line_band_mean_light_factor_source": 0.914,
+      "shared_method": {
+        "cel_bands": [
+          1.12,
+          0.92,
+          0.72
+        ],
+        "cel_bands_note": "3 bands by light direction, from original figure-matched report",
+        "rim_method": "dilate(figure,6) - figure, rim_px 34446 in source JSON (measured lit rim included in lit-transparent alpha)",
+        "interior_line_method": "ink band: dark pixels within 3px of non-dark, 49849 px in source JSON, recoloured 80% toward rim on light side and toward shadow on away side; pec, rib, ab, belt, gauntlet, cape-fold and cowl lines carry light, not left black under a flat tint",
+        "interior_sheen": "<=14px inside-edge band, up to 38% rim",
+        "base_art": "never recoloured; lighting on separate layers over a copy of the clean plate",
+        "no_crop_source": "source padded canvas 1260x1660, padded edge alpha max 0.0 in source JSON",
+        "ground_bounce": {
+          "S3": "45% in bottom 28% of figure",
+          "other": "not specified in source report, recorded as none specified, not invented"
+        }
+      },
+      "ground_bounce": "not specified in source report",
+      "vertical": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "fit_scale": 0.8571,
+        "fitted_size": [
+          1080,
+          1423
+        ],
+        "paste_xy": [
+          0,
+          248
+        ],
+        "figure_bbox": {
+          "x_min": 253,
+          "x_max": 827,
+          "y_min": 517,
+          "y_max": 1420,
+          "alpha_px_source_lit": 408573,
+          "margins": {
+            "left": 253,
+            "right": 252,
+            "top": 517,
+            "bottom": 499
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "horizontal": {
+        "canvas": [
+          1920,
+          1080
+        ],
+        "fit_scale": 0.6506,
+        "fitted_size": [
+          820,
+          1080
+        ],
+        "paste_xy": [
+          550,
+          0
+        ],
+        "figure_bbox": {
+          "x_min": 742,
+          "x_max": 1177,
+          "y_min": 204,
+          "y_max": 890,
+          "alpha_px_source_lit": 408573,
+          "margins": {
+            "left": 742,
+            "right": 742,
+            "top": 204,
+            "bottom": 189
+          }
+        },
+        "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+      },
+      "files": [
+        "S8-colour-cool-blue-night-horizontal-1920x1080-20261031.png",
+        "S8-colour-cool-blue-night-lit-transparent-20261031.png",
+        "S8-colour-cool-blue-night-on-grey-20261031.png",
+        "S8-colour-cool-blue-night-on-room-20261031.png",
+        "S8-colour-cool-blue-night-vertical-1080x1920-20261031.png"
+      ],
+      "approval": "0/1 preset set, 0/1 vertical set, 0/1 horizontal set separately; original set saved-good by Mars"
+    }
+  ],
+  "canvases": {
+    "source": [
+      1260,
+      1660
+    ],
+    "vertical": [
+      1080,
+      1920
+    ],
+    "horizontal": [
+      1920,
+      1080
+    ]
+  },
+  "counts": {
+    "presets": 8,
+    "vertical_files": 8,
+    "horizontal_files": 8
+  }
+}
