@@ -1,0 +1,11 @@
+rank,way,free_or_paid,runs_windows_exe,needs_mars,works_on_this_vm,confidence_for_harmony27
+1,1 Native Linux tar.gz on Rocky/CentOS,Free existing licence,No - uses Linux tar.gz,A Rocky/CentOS machine,No - Ubuntu 7.7GB no GPU,HIGH supported
+2,9 Separate Windows/Mac machine transfer,Free if machine exists,Yes Windows; Mac needs Mac installer,A Windows/Mac machine 10 min,No - no machine connected,HIGHEST native simplest
+3,3 Remote desktop to Mars machine,Free if machine exists,Yes on target,Name machine enable remote,No - no target connected,HIGH native on target
+4,10 Cape Jones Toon fallback + Toon Boom server/WebCC later,Free,No - does not need exe,Nothing new,YES tested exit 0,HIGH for our work not Harmony replacement
+5,2 Cloud Windows VM Win365/WorkSpaces,Trial only then $28+/mo,Yes natively,Pick ONE trial card cancel risk,No - not provisioned,HIGH native Windows in cloud
+6,6 Virtualization on cloud host Rocky or Windows guest,Free software host costs,Yes in Windows guest; Linux guest uses tar.gz,Bigger host,No - host too small no qemu/VBox,HIGH native in guest
+7,8 Browser RDP/VNC client from here,Free clients target costs,No - screen only,A target Ways 2/3/6/9,Partial - browser reaches web not Downloads/exe,HIGH once target exists
+8,7 Remote app streaming,Host costs,Yes on server,A Windows host,No - no host no RDP client,MEDIUM-HIGH needs host setup
+9,4 Wine/Proton,Free,In theory unverified,Install + test time,No - wine not found,LOW licence-daemon app
+10,5 CrossOver paid Wine,Trial then paid approval needed,In theory unverified,Approval + purchase,No - not installed,LOW-MEDIUM same Wine risk paid support

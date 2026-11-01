@@ -1,0 +1,8 @@
+Way 9: Separate Windows/Mac machine transfer - checklist
+1. Copy HAR27-PRM-win-25340.exe (656 MB, already downloaded twice, 0 charges per site text) to a Windows 10/11 64-bit PC.
+   - Do NOT download a third copy. On a Mac, download the Mac installer instead - do NOT run the .exe on a Mac.
+2. Run it, install Harmony 27 Premium, launch it.
+3. Sign in ONLY as fmmg.mars@gmail.com, activate.
+4. Record what the app shows: edition, subscription/trial, start date, end date. That is the confirmation missing since 2026-10-31.
+5. Import CapeJones_Sitting pack (toon-boom-wire100-20261101/), run harmony_check.js, save .tpl, export .plt, render.
+6. Export work back to the repo. No card entry by an agent, no purchase by an agent.

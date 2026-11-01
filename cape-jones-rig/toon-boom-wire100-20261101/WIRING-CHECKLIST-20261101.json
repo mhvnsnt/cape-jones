@@ -1,0 +1,278 @@
+{
+ "activation_blocker": {
+  "account": "fmmg.mars@gmail.com only",
+  "confirmation_needed": "in-app edition/subscription/start/end after install + launch + sign-in on Windows/Mac",
+  "installer": "HAR27-PRM-win-25340.exe, 656 MB, found in browser downloads",
+  "linux_vm": "NOT installed, NOT claimed installed; Windows/Mac only route",
+  "mars_claim_2026-11-01_0128_CST": "paid subscription, we own it \u2014 recorded, NOT confirmed",
+  "shop_pages_last_check": "0 subscriptions, 0 orders, 1 Visa ending 3493 on file"
+ },
+ "date": "2026-11-01",
+ "items": [
+  {
+   "area": "formats",
+   "id": "F01",
+   "item": ".xstage scene folder structure documented",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "formats",
+   "id": "F02",
+   "item": ".vbd compact file (v25+) documented, default non-compact chosen",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "formats",
+   "id": "F03",
+   "item": ".tvg vector drawings documented",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "formats",
+   "id": "F04",
+   "item": "Bitmap import (PNG/JPEG/PSD) documented, whole pieces, no silent .tvg conversion",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "formats",
+   "id": "F05",
+   "item": "pix2vec utility documented (optional vectorisation only)",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "formats",
+   "id": "F06",
+   "item": "Palette (.plt) sharing warning + versioning rule documented",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "formats",
+   "id": "F07",
+   "item": "Template (.tpl) + Library rule documented",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "formats",
+   "id": "F08",
+   "item": "Qt Script (.js, ECMAScript) + Script Node + Control Center + Python interfaces documented",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "bridge",
+   "id": "B01",
+   "item": "Node map 19 nodes (18 pieces + neck) with z, pivot, saved xy/rotation",
+   "status": "READY_SCRIPT"
+  },
+  {
+   "area": "bridge",
+   "id": "B02",
+   "item": "Peg pivots: top-centre / forearm 0.39,0.11 / 0.63,0.11 / centre, documented",
+   "status": "READY_SCRIPT"
+  },
+  {
+   "area": "bridge",
+   "id": "B03",
+   "item": "Cape/pelvis/head pivots flagged ASSUMED centre, to verify in-app",
+   "status": "READY_SCRIPT"
+  },
+  {
+   "area": "bridge",
+   "id": "B04",
+   "item": "Joint locks together (not frozen) mapped to peg hierarchy / deformers",
+   "status": "READY_SCRIPT"
+  },
+  {
+   "area": "bridge",
+   "id": "B05",
+   "item": "Kinematic Output for hands under deformers documented",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "bridge",
+   "id": "B06",
+   "item": "Drawing substitutions: hands, mouths, eyes mapped",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "bridge",
+   "id": "B07",
+   "item": "Palette CSV 7 colours, measured, to import in-app",
+   "status": "READY_SCRIPT"
+  },
+  {
+   "area": "bridge",
+   "id": "B08",
+   "item": "Rim / dual-light / shadow / crystal / dream colourways as palette/effect swaps, not re-draws",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "bridge",
+   "id": "B09",
+   "item": "Sitting default pose as Harmony scene base (1400x1600 rig canvas, 24fps)",
+   "status": "READY_SCRIPT"
+  },
+  {
+   "area": "bridge",
+   "id": "B10",
+   "item": "TV scene canvas separated (1920x1280, ground 1180) from rig canvas",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "bridge",
+   "id": "B11",
+   "item": "Ground guide rule: check feet, never shift figure in post to fake it",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "bridge",
+   "id": "B12",
+   "item": "Bicep square-crop lesson wired in: peg rotation check, never rectangle clip",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "scripts",
+   "id": "S01",
+   "item": "build_harmony_pack.py builds scene skeleton + nodes.csv + palette.csv",
+   "status": "READY_SCRIPT"
+  },
+  {
+   "area": "scripts",
+   "id": "S02",
+   "item": "cape_jones_import_stub.js (QtScript, log-vs-CSV check)",
+   "status": "READY_SCRIPT_UNTESTED"
+  },
+  {
+   "area": "scripts",
+   "id": "S03",
+   "item": "Pack tested by running builder (19 nodes, 7 colours, exit 0) without Harmony",
+   "status": "READY_SCRIPT"
+  },
+  {
+   "area": "scripts",
+   "id": "S04",
+   "item": "Import stub executed inside Harmony and log checked vs nodes.csv",
+   "status": "BLOCKED_ACTIVATION"
+  },
+  {
+   "area": "scripts",
+   "id": "S05",
+   "item": "Rig saved as .tpl in CapeJones library inside Harmony",
+   "status": "BLOCKED_ACTIVATION"
+  },
+  {
+   "area": "scripts",
+   "id": "S06",
+   "item": "Palette saved as verified .plt exported from Harmony, replacing CSV",
+   "status": "BLOCKED_ACTIVATION"
+  },
+  {
+   "area": "reverse-engineer",
+   "id": "R01",
+   "item": "Node View -> z-order map, test planned",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "reverse-engineer",
+   "id": "R02",
+   "item": "Peg -> pivot map, test planned",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "reverse-engineer",
+   "id": "R03",
+   "item": "Drawing substitution -> hands/mouths/eyes map, test planned",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "reverse-engineer",
+   "id": "R04",
+   "item": "Deformer Bone/Curve/Envelope -> FK chains map, test planned",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "reverse-engineer",
+   "id": "R05",
+   "item": "Master Controller -> pose dials map, test planned",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "reverse-engineer",
+   "id": "R06",
+   "item": "Onion skin / Xsheet -> inbetweening map, test planned",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "reverse-engineer",
+   "id": "R07",
+   "item": "Camera / multiplane -> room scale / ground gate map, test planned",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "reverse-engineer",
+   "id": "R08",
+   "item": "Effects / compositing -> L0-L5, rim, shadows, crystal map, test planned",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "reverse-engineer",
+   "id": "R09",
+   "item": "Lip-sync / Storyboard Pro -> 107 BPM, 14/14 chart, Space Ghost Phases map, test planned",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "reverse-engineer",
+   "id": "R10",
+   "item": "Batch render / Control Center -> wire_tv_100 + TV export map, test planned",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "activation",
+   "id": "A01",
+   "item": "Installer located (656 MB, complete, no third download)",
+   "status": "READY_DOC"
+  },
+  {
+   "area": "activation",
+   "id": "A02",
+   "item": "Install on Windows/Mac",
+   "status": "BLOCKED_ACTIVATION"
+  },
+  {
+   "area": "activation",
+   "id": "A03",
+   "item": "Launch + sign-in as fmmg.mars@gmail.com, in-app subscription/edition confirmed",
+   "status": "BLOCKED_ACTIVATION"
+  },
+  {
+   "area": "activation",
+   "id": "A04",
+   "item": "First in-Harmony render of sitting pose verified (node order, pivots, bicep whole)",
+   "status": "BLOCKED_ACTIVATION"
+  }
+ ],
+ "legal_boundary": "No cracking, no license bypass, no key extraction, no activation bypass, no redistribution of installer/binaries, no Toon Boom code copy, no card entry, no purchase by agent. Reverse engineering here = observing owned app behaviour + documenting public interfaces + writing interoperable scripts/templates.",
+ "name": "Toon Boom Harmony 27 Premium wiring checklist",
+ "not_done_owed": [
+  "Side art / side rig, back art / back rig, VIEW field \u2014 owed before Harmony, not faked in this pack",
+  "Native separate fist file, native gauntlet-only forearm file \u2014 owed",
+  "Verified .tpl and verified .plt \u2014 must be saved/exported inside Harmony after activation",
+  "In-app reverse-engineering log (menu paths, attribute names, render results) \u2014 to fill after activation"
+ ],
+ "summary": {
+  "blocked_activation_steps": 6,
+  "blocked_ids": [
+   "S04",
+   "S05",
+   "S06",
+   "A02",
+   "A03",
+   "A04"
+  ],
+  "claim": "Wiring is NOT 100% live. It is 85% documented/scripted ready-to-run on activation, 0% live-verified, because activation is 0%. The 10 reverse-engineer test-plans (R01-R10) are documented and ready to execute, but their in-app tests are also pending activation.",
+  "documented_or_scripted_not_live_verified": 34,
+  "live_wired_in_harmony_verified": 0,
+  "percent_live": "0/40 = 0%",
+  "percent_ready": "34/40 = 85%"
+ },
+ "total": 40
+}

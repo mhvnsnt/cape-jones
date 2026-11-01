@@ -1,0 +1,20 @@
+z,piece_id,drawing_node,peg_node,pivot_ox,pivot_oy,saved_x,saved_y,saved_rotation,chain_note
+0,cape,Cape,Cape-P,0.5,0.5,360,330,0,"backmost, shoulders-back, collar fused in torso"
+1,upperArmL,Arm1-Upper,Arm1-Upper-P,0.5,0,490,390,5,"LEFT arm, behind torso"
+2,thighR,Leg2-Thigh,Leg2-Thigh-P,0.5,0,590,750,6,RIGHT leg
+3,thighL,Leg1-Thigh,Leg1-Thigh-P,0.5,0,400,710,2,LEFT leg
+4,forearmL,Arm1-Forearm,Arm1-Forearm-P,0.39,0.11,455,580,-15,"LEFT forearm, whole, fist attached"
+4,pelvis,Pelvis,Pelvis-P,0.5,0.5,565,650,0,ASSUMED centre pivot — verify in-app
+4,kneeL,Leg1-Knee,Leg1-Knee-P,0.5,0.5,380,885,0,"knee pivot, NOT a secondary knee"
+5,elbowCapL,Arm1-ElbowCap,Arm1-ElbowCap-P,0.5,0.5,465,580,0,LEFT elbow cap
+6,shinL,Leg1-Shin,Leg1-Shin-P,0.5,0,225,945,0,LEFT shin
+6,shinR,Leg2-Shin,Leg2-Shin-P,0.5,0,395,985,-10,RIGHT shin
+7,kneeR,Leg2-Knee,Leg2-Knee-P,0.5,0.5,560,950,0,knee pivot
+8,torso,Torso,Torso-P,0.5,0,550,370,0,"collar fused, locked"
+8.5,neck,Neck,Neck-P,0.5,0.5,650,330,0,"front-view neck, 101x82 rendered, 1.05x, NOT squashed"
+9,head,Head,Head-P,0.5,0.5,635,195,0,ASSUMED centre pivot — verify in-app
+10,upperArmR,Arm2-Upper,Arm2-Upper-P,0.5,0,805,420,15,"RIGHT arm, PERFECT, do not move"
+11,forearmR,Arm2-Forearm,Arm2-Forearm-P,0.63,0.11,685,650,45,"RIGHT forearm, whole, fist attached"
+12,elbowCapR,Arm2-ElbowCap,Arm2-ElbowCap-P,0.5,0.5,775,610,0,RIGHT elbow cap
+13,handL,Arm1-Hand,Arm1-Hand-P,0.5,0.5,530,740,-46,"LEFT hand, as-is, thumb east"
+13,handR,Arm2-Hand,Arm2-Hand-P,0.5,0.5,565,755,70,"RIGHT hand, mirrored whole, thumb west"
