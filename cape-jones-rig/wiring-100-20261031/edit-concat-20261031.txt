@@ -1,0 +1,6 @@
+file '/home/hatch/workspace/cape-jones-rig/afterglow-videos-20261031/CJ-01-afterglow-20261031.mp4'
+file '/home/hatch/workspace/cape-jones-rig/afterglow-videos-20261031/CJ-02-afterglow-20261031.mp4'
+file '/home/hatch/workspace/cape-jones-rig/afterglow-videos-20261031/CJ-03-afterglow-20261031.mp4'
+file '/home/hatch/workspace/cape-jones-rig/afterglow-videos-20261031/CJ-04-afterglow-20261031.mp4'
+file '/home/hatch/workspace/cape-jones-rig/afterglow-videos-20261031/CJ-06-afterglow-20261031.mp4'
+file '/home/hatch/workspace/cape-jones-rig/afterglow-videos-20261031/CJ-09-afterglow-20261031.mp4'
