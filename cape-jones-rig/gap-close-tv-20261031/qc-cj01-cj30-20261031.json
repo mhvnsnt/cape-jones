@@ -1,0 +1,1104 @@
+{
+ "version": "qc-cj01-cj30-20261031",
+ "source_specs": "clean-100-20261031/shots/shot-specs-30-20261031.json",
+ "checks_applied": [
+  "fields_present (15 fields)",
+  "lut_in_approved_70_set",
+  "rim_within_20_of_shifted_key",
+  "dual_light_exception_only_where_allowed",
+  "god_ray_decision_present (+ Level 2 none / Level 3 god-rays cross-check)",
+  "audio_cue_present",
+  "label_gate_0_red_pixels (strong-red proxy on referenced clean poses)"
+ ],
+ "counts": {
+  "pass": 27,
+  "fail": 3,
+  "total": 30
+ },
+ "failures_plain": [
+  {
+   "shot_id": "CJ-05",
+   "failed_checks": [
+    "rim_within_20_of_shifted_key"
+   ],
+   "detail": [
+    "UNVERIFIABLE \u2014 key hue None, rim hue None; cannot confirm within +/-20 deg. Spec records: 'neutral exception: neutral key, white rim'. This is NOT the dual-light exception and needs a ruling; counted as FAIL here."
+   ]
+  },
+  {
+   "shot_id": "CJ-06",
+   "failed_checks": [
+    "rim_within_20_of_shifted_key"
+   ],
+   "detail": [
+    "UNVERIFIABLE \u2014 key hue None, rim hue None; cannot confirm within +/-20 deg. Spec records: 'neutral exception: neutral key, white rim'. This is NOT the dual-light exception and needs a ruling; counted as FAIL here."
+   ]
+  },
+  {
+   "shot_id": "CJ-26",
+   "failed_checks": [
+    "rim_within_20_of_shifted_key"
+   ],
+   "detail": [
+    "UNVERIFIABLE \u2014 key hue None, rim hue None; cannot confirm within +/-20 deg. Spec records: 'near black-and-white uncertainty shift: rim is neutral grey 240,240,240, hue N/A by design (not a hue mismatch)'. This is NOT the dual-light exception and needs a ruling; counted as FAIL here."
+   ]
+  }
+ ],
+ "notes": [
+  "CJ-09/CJ-10/CJ-16/CJ-17/CJ-21 lut_file is a directory path ('showcase/lut-spectrum/ ...') not a specific .cube file \u2014 LUT NAME still in the approved set, so not failed here, but the file path should be made specific before final delivery.",
+  "POSE PENDING shots (9) are not QC-failed for having no pose; their missing poses are tracked in the storyboard index and EDL thumbnail_status.",
+  "Label gate uses a strong-red pixel proxy (R>=200,G<=80,B<=80). It is a label-remnant screen, not a full label audit; all checked clean pieces returned 0."
+ ],
+ "results": [
+  {
+   "shot_id": "CJ-01",
+   "slug": "punch-windup",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'golden-hour' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "shifted key 325 deg vs rim 325 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A01 \u2014 impact/windup cue, -14 LUFS, delivered as LINK never in chat"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "n/a \u2014 no clean pose referenced (POSE PENDING); no piece to gate. Not counted as a label pass on a piece."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-02",
+   "slug": "punch-extend-snap",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'golden-hour' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "shifted key 325 deg vs rim 325 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A02 \u2014 snap cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "n/a \u2014 no clean pose referenced (POSE PENDING); no piece to gate. Not counted as a label pass on a piece."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-03",
+   "slug": "punch-impact-locked",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'golden-hour' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "shifted key 5 deg vs rim 5 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2 (+ separate FX passes, not god rays))."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A03 \u2014 impact cue + gauntlet glow cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on punch-impact-locked-v7c-clean100-20261031.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-04",
+   "slug": "punch-recover",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'golden-hour' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 35 deg vs rim 35 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A04 \u2014 recover cue (light), -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "n/a \u2014 no clean pose referenced (POSE PENDING); no piece to gate. Not counted as a label pass on a piece."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-05",
+   "slug": "punch-across-down-placement",
+   "overall": "FAIL",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'daylight' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": false,
+     "detail": "UNVERIFIABLE \u2014 key hue None, rim hue None; cannot confirm within +/-20 deg. Spec records: 'neutral exception: neutral key, white rim'. This is NOT the dual-light exception and needs a ruling; counted as FAIL here."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A05 \u2014 placement cue (light, if used), -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on punch-impact-a2l-minus70-across-down-v7c-clean100-20261031.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-06",
+   "slug": "walk-street-contact",
+   "overall": "FAIL",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'daylight' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": false,
+     "detail": "UNVERIFIABLE \u2014 key hue None, rim hue None; cannot confirm within +/-20 deg. Spec records: 'neutral exception: neutral key, white rim'. This is NOT the dual-light exception and needs a ruling; counted as FAIL here."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A06 \u2014 footstep cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on walk-01-contact-v7c-clean.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-07",
+   "slug": "walk-town-passing",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'golden-hour' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 35 deg vs rim 35 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A07 \u2014 footstep cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on walk-13-passing-v7c-clean.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-08",
+   "slug": "walk-alley-night",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'night-city' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 220 deg vs rim 220 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A08 \u2014 footstep + night ambience cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on walk-01-contact-v7c-clean.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-09",
+   "slug": "dance-a",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'magenta-normal' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 320 deg vs rim 325 deg = diff 5 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A09 \u2014 dance beat cue (Darwin beat grid, on twos), -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on dance-01-a-v7c-clean.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-10",
+   "slug": "dance-b",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'pink-normal' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 335 deg vs rim 335 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A10 \u2014 dance beat cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on dance-13-b-v7c-clean.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-11",
+   "slug": "dance-combined-finale",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'violet-magenta-normal' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 275 deg vs rim 275 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'GOD RAYS - see god-ray file CJ-11' (level: Level 3)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A11 \u2014 dance finale cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "n/a \u2014 no clean pose referenced (POSE PENDING); no piece to gate. Not counted as a label pass on a piece."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-12",
+   "slug": "flying-hover",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'golden-hour' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 35 deg vs rim 35 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'GOD RAYS - see god-ray file CJ-12' (level: Level 3)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A12 \u2014 wind/hover cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on flying-01-hover-v7c-clean.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-13",
+   "slug": "flying-soar",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'desert-sun' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 40 deg vs rim 40 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'GOD RAYS - see god-ray file CJ-13' (level: Level 3)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A13 \u2014 soar/wind cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on flying-13-soar-v7c-clean.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-14",
+   "slug": "flying-dive",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'warm-sunset' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 27 deg vs rim 27 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'GOD RAYS - see god-ray file CJ-14' (level: Level 3)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A14 \u2014 dive/wind cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on flying-25-dive-v7c-clean.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-15",
+   "slug": "flying-forward-foreshortened",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'cyan-blue-normal' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 205 deg vs rim 205 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A15 \u2014 forward-flight wind cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "n/a \u2014 no clean pose referenced (POSE PENDING); no piece to gate. Not counted as a label pass on a piece."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-16",
+   "slug": "flex-anticipation-before-tighten",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'orange-normal' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 35 deg vs rim 35 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A16 \u2014 anticipation cue (light, if used), -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on flex-anticipation-before-tighten-v7c-clean.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-17",
+   "slug": "arms-up-reference",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'yellow-normal' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 50 deg vs rim 50 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A17 \u2014 none (reference pose; no cue unless cut into a shot), -14 LUFS if audio added, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "n/a \u2014 no clean pose referenced (POSE PENDING); no piece to gate. Not counted as a label pass on a piece."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-18",
+   "slug": "true-flex-double-bicep",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'red-orange-normal' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 20 deg vs rim 20 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A18 \u2014 flex/power cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "n/a \u2014 no clean pose referenced (POSE PENDING); no piece to gate. Not counted as a label pass on a piece."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-19",
+   "slug": "fighting-pose-forward-bicep-curl",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'golden-hour' in approved set (76 names incl. cube files)"
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "DUAL-LIGHT EXCEPTION (allowed: Level 3 dual-light, both sources named + rim ownership stated). Front rim hue 34 vs front key hue 34; back rim hue 193 vs back source hue 193."
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "dual_light present and lighting_level is dual-light; both sources named."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'GOD RAYS - see god-ray file CJ-19' (level: Level 3 (dual-light))."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A19 \u2014 fighting-stance cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on fighting-pose-forward-bicep-curl-gauntlet-out-fixed-v7c-clean.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-20",
+   "slug": "fighting-stance-arms-up-high",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'fire' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 25 deg vs rim 25 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A20 \u2014 stance cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "n/a \u2014 no clean pose referenced (POSE PENDING); no piece to gate. Not counted as a label pass on a piece."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-21",
+   "slug": "jump-crouch-takeoff",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'teal-normal' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 175 deg vs rim 175 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A21 \u2014 takeoff cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on jump-01-crouch-v7c-clean.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-22",
+   "slug": "jump-tuck-landing",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'golden-hour' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 35 deg vs rim 35 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'GOD RAYS - see god-ray file CJ-22' (level: Level 3)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A22 \u2014 landing cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on jump-13-tuck-v7c-clean.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-23",
+   "slug": "lounge-seated-room",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'warm-interior' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 36 deg vs rim 36 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A23 \u2014 room ambience cue (light, if used), -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on joint-seated-v7c-clean.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-24",
+   "slug": "desk-seated",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'warm-lamp' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 36 deg vs rim 36 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A24 \u2014 desk ambience cue (light, if used), -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on joint-seated-v7c-clean.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-25",
+   "slug": "room-standing-device-gag",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'warm-interior' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 36 deg vs rim 36 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A25 \u2014 device gag cue (light, if used), -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on rig-apose-v7c-clean-transparent.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-26",
+   "slug": "dialogue-neutral-unsure",
+   "overall": "FAIL",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'natural-window-light' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": false,
+     "detail": "UNVERIFIABLE \u2014 key hue None, rim hue None; cannot confirm within +/-20 deg. Spec records: 'near black-and-white uncertainty shift: rim is neutral grey 240,240,240, hue N/A by design (not a hue mismatch)'. This is NOT the dual-light exception and needs a ruling; counted as FAIL here."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A26 \u2014 dialogue cue (no recorded dialogue claimed), -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on dialogue-shot-cj26-neutral-ah-20261031.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-27",
+   "slug": "dialogue-shout-angry",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'red-alert' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 5 deg vs rim 5 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'none - Level 2: god rays NEVER in Level 2' (level: Level 2)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A27 \u2014 dialogue shout cue (no recorded dialogue claimed), -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "n/a \u2014 no clean pose referenced (POSE PENDING); no piece to gate. Not counted as a label pass on a piece."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-28",
+   "slug": "rooftop-sunset",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'sunset-rooftop' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 27 deg vs rim 27 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'GOD RAYS - see god-ray file CJ-28' (level: Level 3)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A28 \u2014 rooftop ambience cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on rig-apose-v7c-clean-transparent.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-29",
+   "slug": "rooftop-night-city",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'night-city' in approved set (76 names incl. cube files)"
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "no dual_light claimed."
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "base key 220 deg vs rim 220 deg = diff 0 deg (<=20)."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'GOD RAYS - see god-ray file CJ-29' (level: Level 3)."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A29 \u2014 night-city ambience cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on rig-apose-v7c-clean-transparent.png."
+    }
+   }
+  },
+  {
+   "shot_id": "CJ-30",
+   "slug": "alley-neon-dual-light",
+   "overall": "PASS",
+   "checks": {
+    "fields_present": {
+     "pass": true,
+     "detail": "all 15 required fields present"
+    },
+    "lut_in_approved_70_set": {
+     "pass": true,
+     "detail": "lut 'neon-alley-pink-cyan' in approved set (76 names incl. cube files)"
+    },
+    "rim_within_20_of_shifted_key": {
+     "pass": true,
+     "detail": "DUAL-LIGHT EXCEPTION (allowed: Level 3 dual-light, both sources named + rim ownership stated). Front rim hue 320 vs front key hue 320; back rim hue 193 vs back source hue 193."
+    },
+    "dual_light_exception_only_where_allowed": {
+     "pass": true,
+     "detail": "dual_light present and lighting_level is dual-light; both sources named."
+    },
+    "god_ray_decision_present": {
+     "pass": true,
+     "detail": "decision present: 'GOD RAYS - see god-ray file CJ-30' (level: Level 3 (dual-light))."
+    },
+    "audio_cue_present": {
+     "pass": true,
+     "detail": "CJ-A30 \u2014 alley neon ambience cue, -14 LUFS, link delivery"
+    },
+    "label_gate_0_red_pixels": {
+     "pass": true,
+     "detail": "strong-red pixels (R>=200,G<=80,B<=80) = 0 on rig-apose-v7c-clean-transparent.png."
+    }
+   }
+  }
+ ]
+}
