@@ -1,0 +1,127 @@
+{
+  "proof-01-mediapipe-jojo01-overlay-20261031.png": {
+    "pose": "jojo-01",
+    "source": "jojo-01-contrapposto-s-curve-20261031.png",
+    "angles": {
+      "elbow_L": 44.5,
+      "knee_L": 117.2,
+      "shoulder_L": 89.7,
+      "hip_L": 114.3,
+      "foot_turnout_L": 45.0,
+      "knee_ankle_offset_L": 0.045,
+      "elbow_R": 95.3,
+      "knee_R": 118.6,
+      "shoulder_R": 55.2,
+      "hip_R": 110.6,
+      "foot_turnout_R": 35.5,
+      "knee_ankle_offset_R": 0.04,
+      "com_x": 0.502,
+      "support_span": [
+        0.335,
+        0.675
+      ],
+      "com_inside_support": true,
+      "com_margin_to_edge": 0.167
+    }
+  },
+  "proof-02-openpose-ginyu02-squat-overlay-20261031.png": {
+    "pose": "ginyu-02",
+    "source": "ginyu-02-squat-elbows-out-goofy-20261031.png",
+    "angles": {
+      "elbow_L": 62.4,
+      "knee_L": 84.3,
+      "shoulder_L": 93.6,
+      "hip_L": 101.9,
+      "foot_turnout_L": 26.6,
+      "knee_ankle_offset_L": 0.12,
+      "elbow_R": 62.4,
+      "knee_R": 84.3,
+      "shoulder_R": 93.6,
+      "hip_R": 101.9,
+      "foot_turnout_R": 26.6,
+      "knee_ankle_offset_R": 0.12,
+      "com_x": 0.5,
+      "support_span": [
+        0.36,
+        0.64
+      ],
+      "com_inside_support": true,
+      "com_margin_to_edge": 0.14
+    }
+  },
+  "proof-03-dwpose-jojo02-twist-overlay-20261031.png": {
+    "pose": "jojo-02",
+    "source": "jojo-02-fashion-twist-point-20261031.png",
+    "angles": {
+      "elbow_L": 164.6,
+      "knee_L": 146.0,
+      "shoulder_L": 127.4,
+      "hip_L": 128.7,
+      "foot_turnout_L": 40.6,
+      "knee_ankle_offset_L": 0.005,
+      "elbow_R": 13.7,
+      "knee_R": 125.3,
+      "shoulder_R": 85.5,
+      "hip_R": 120.3,
+      "foot_turnout_R": 40.6,
+      "knee_ankle_offset_R": 0.035,
+      "com_x": 0.502,
+      "support_span": [
+        0.33,
+        0.65
+      ],
+      "com_inside_support": true,
+      "com_margin_to_edge": 0.148
+    }
+  },
+  "proof-04-cascadeur-method-ginyu02-balance-20261031.png": {
+    "pose": "ginyu-02",
+    "source": "ginyu-02-squat-elbows-out-goofy-20261031.png",
+    "angles": {
+      "elbow_L": 62.4,
+      "knee_L": 84.3,
+      "shoulder_L": 93.6,
+      "hip_L": 101.9,
+      "foot_turnout_L": 26.6,
+      "knee_ankle_offset_L": 0.12,
+      "elbow_R": 62.4,
+      "knee_R": 84.3,
+      "shoulder_R": 93.6,
+      "hip_R": 101.9,
+      "foot_turnout_R": 26.6,
+      "knee_ankle_offset_R": 0.12,
+      "com_x": 0.5,
+      "support_span": [
+        0.36,
+        0.64
+      ],
+      "com_inside_support": true,
+      "com_margin_to_edge": 0.14
+    }
+  },
+  "proof-05-plask-moveai-ginyu03-dance-retarget-20261031.png": {
+    "pose": "ginyu-03",
+    "source": "ginyu-03-dance-shimmy-hips-out-20261031.png",
+    "angles": {
+      "elbow_L": 118.3,
+      "knee_L": 117.9,
+      "shoulder_L": 135.4,
+      "hip_L": 119.1,
+      "foot_turnout_L": 15.9,
+      "knee_ankle_offset_L": 0.06,
+      "elbow_R": 118.3,
+      "knee_R": 114.5,
+      "shoulder_R": 134.2,
+      "hip_R": 116.5,
+      "foot_turnout_R": 29.7,
+      "knee_ankle_offset_R": 0.06,
+      "com_x": 0.502,
+      "support_span": [
+        0.355,
+        0.645
+      ],
+      "com_inside_support": true,
+      "com_margin_to_edge": 0.143
+    }
+  }
+}
