@@ -1,0 +1,72 @@
+{
+ "0": {
+  "bbox": [
+   435,
+   126,
+   664,
+   652
+  ],
+  "bottom": 652,
+  "inside_canvas": true
+ },
+ "10": {
+  "bbox": [
+   387,
+   180,
+   712,
+   652
+  ],
+  "bottom": 652,
+  "inside_canvas": true
+ },
+ "22": {
+  "bbox": [
+   383,
+   131,
+   716,
+   622
+  ],
+  "bottom": 622,
+  "inside_canvas": true
+ },
+ "33": {
+  "bbox": [
+   376,
+   76,
+   720,
+   552
+  ],
+  "bottom": 552,
+  "inside_canvas": true
+ },
+ "45": {
+  "bbox": [
+   387,
+   180,
+   712,
+   652
+  ],
+  "bottom": 652,
+  "inside_canvas": true
+ },
+ "59": {
+  "bbox": [
+   435,
+   126,
+   664,
+   652
+  ],
+  "bottom": 652,
+  "inside_canvas": true
+ },
+ "61": {
+  "bbox": [
+   435,
+   126,
+   664,
+   652
+  ],
+  "bottom": 652,
+  "inside_canvas": true
+ }
+}
