@@ -1,0 +1,209 @@
+{
+ "source": "fla-packs/jojo-packs-2/recent-smAFI.jpg",
+ "group": "fla-packs",
+ "plate": "fla-packs/recent-smAFI.png",
+ "plate_md5": "44052146f74bdec9e34a8f8c5e5a1222",
+ "duplicate_of": "fla-packs/jojo-packs/recent-smAFI.jpg",
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    114,
+    201
+   ],
+   "opaque_px": 19824,
+   "sheet_bbox": [
+    543,
+    159,
+    657,
+    360
+   ],
+   "area_px": 19824,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    257,
+    304
+   ],
+   "opaque_px": 26746,
+   "sheet_bbox": [
+    169,
+    365,
+    426,
+    669
+   ],
+   "area_px": 26746,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    288,
+    303
+   ],
+   "opaque_px": 65692,
+   "sheet_bbox": [
+    461,
+    371,
+    749,
+    674
+   ],
+   "area_px": 65692,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_3",
+   "file": "Row2_3.png",
+   "size": [
+    252,
+    305
+   ],
+   "opaque_px": 26435,
+   "sheet_bbox": [
+    773,
+    366,
+    1025,
+    671
+   ],
+   "area_px": 26435,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_1",
+   "file": "Row3_1.png",
+   "size": [
+    121,
+    134
+   ],
+   "opaque_px": 10563,
+   "sheet_bbox": [
+    68,
+    680,
+    189,
+    814
+   ],
+   "area_px": 10563,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_2",
+   "file": "Row3_2.png",
+   "size": [
+    206,
+    74
+   ],
+   "opaque_px": 14293,
+   "sheet_bbox": [
+    503,
+    707,
+    709,
+    781
+   ],
+   "area_px": 14293,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_3",
+   "file": "Row3_3.png",
+   "size": [
+    130,
+    145
+   ],
+   "opaque_px": 11707,
+   "sheet_bbox": [
+    999,
+    685,
+    1129,
+    830
+   ],
+   "area_px": 11707,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row4_1",
+   "file": "Row4_1.png",
+   "size": [
+    382,
+    755
+   ],
+   "opaque_px": 118396,
+   "sheet_bbox": [
+    62,
+    623,
+    444,
+    1378
+   ],
+   "area_px": 118396,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row4_2",
+   "file": "Row4_2.png",
+   "size": [
+    282,
+    637
+   ],
+   "opaque_px": 55140,
+   "sheet_bbox": [
+    290,
+    814,
+    572,
+    1451
+   ],
+   "area_px": 55140,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row4_3",
+   "file": "Row4_3.png",
+   "size": [
+    298,
+    641
+   ],
+   "opaque_px": 56251,
+   "sheet_bbox": [
+    649,
+    809,
+    947,
+    1450
+   ],
+   "area_px": 56251,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row4_4",
+   "file": "Row4_4.png",
+   "size": [
+    385,
+    758
+   ],
+   "opaque_px": 102273,
+   "sheet_bbox": [
+    759,
+    635,
+    1144,
+    1393
+   ],
+   "area_px": 102273,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  }
+ ],
+ "duplicate_md5_of": "fla-packs/jojo-packs/recent-smAFI.jpg"
+}
