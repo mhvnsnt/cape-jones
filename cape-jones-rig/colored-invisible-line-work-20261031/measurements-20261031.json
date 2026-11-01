@@ -1,0 +1,317 @@
+{
+  "preset": "COLORED_INVISIBLE_LINE_WORK",
+  "default_source": "NORMAL",
+  "mode": "coloured GP strokes only, no fills, transparent background",
+  "layers": [
+    "FaceSnapArm",
+    "Head",
+    "CowlUpperArm",
+    "Neck",
+    "ChestSnapArm",
+    "Torso",
+    "Collar",
+    "NormalArm",
+    "Legs",
+    "CapeBack"
+  ],
+  "colours_rgba": {
+    "FaceSnapArm": [
+      255,
+      102,
+      51,
+      255
+    ],
+    "Head": [
+      140,
+      51,
+      179,
+      255
+    ],
+    "CowlUpperArm": [
+      255,
+      204,
+      51,
+      255
+    ],
+    "Neck": [
+      242,
+      179,
+      128,
+      255
+    ],
+    "ChestSnapArm": [
+      51,
+      204,
+      255,
+      255
+    ],
+    "Torso": [
+      230,
+      230,
+      242,
+      255
+    ],
+    "Collar": [
+      26,
+      26,
+      38,
+      255
+    ],
+    "NormalArm": [
+      217,
+      217,
+      230,
+      255
+    ],
+    "Legs": [
+      204,
+      217,
+      242,
+      255
+    ],
+    "CapeBack": [
+      38,
+      31,
+      51,
+      255
+    ]
+  },
+  "variants": {
+    "NORMAL": {
+      "strokes": {
+        "Head": 1,
+        "Neck": 1,
+        "Torso": 3,
+        "Collar": 1,
+        "NormalArm": 6,
+        "Legs": 6,
+        "CapeBack": 1
+      },
+      "total_strokes": 19,
+      "render_size": [
+        550,
+        750
+      ],
+      "alpha_bbox": [
+        165,
+        140,
+        384,
+        638
+      ],
+      "alpha_px": 33919,
+      "edge_touch_px": 0,
+      "colour_px_near_layer_colour": {
+        "FaceSnapArm": 0,
+        "Head": 563,
+        "CowlUpperArm": 0,
+        "Neck": 1442,
+        "ChestSnapArm": 0,
+        "Torso": 2,
+        "Collar": 0,
+        "NormalArm": 16337,
+        "Legs": 16426,
+        "CapeBack": 0
+      },
+      "blend": "colored-invisible-NORMAL.blend",
+      "transparent": "colored-invisible-NORMAL-transparent.png",
+      "on_black": "colored-invisible-NORMAL-on-black.png"
+    },
+    "APOSE_FLEX": {
+      "strokes": {
+        "Head": 1,
+        "Neck": 1,
+        "Torso": 3,
+        "Collar": 1,
+        "NormalArm": 6,
+        "Legs": 6,
+        "CapeBack": 1
+      },
+      "total_strokes": 19,
+      "render_size": [
+        550,
+        750
+      ],
+      "alpha_bbox": [
+        116,
+        132,
+        448,
+        649
+      ],
+      "alpha_px": 34947,
+      "edge_touch_px": 0,
+      "colour_px_near_layer_colour": {
+        "FaceSnapArm": 0,
+        "Head": 599,
+        "CowlUpperArm": 0,
+        "Neck": 1530,
+        "ChestSnapArm": 0,
+        "Torso": 5,
+        "Collar": 0,
+        "NormalArm": 17254,
+        "Legs": 17340,
+        "CapeBack": 0
+      },
+      "blend": "colored-invisible-APOSE_FLEX.blend",
+      "transparent": "colored-invisible-APOSE_FLEX-transparent.png",
+      "on_black": "colored-invisible-APOSE_FLEX-on-black.png"
+    },
+    "FACE_SNAP": {
+      "strokes": {
+        "FaceSnapArm": 3,
+        "Head": 1,
+        "Neck": 1,
+        "Torso": 3,
+        "Collar": 1,
+        "NormalArm": 3,
+        "Legs": 6,
+        "CapeBack": 1
+      },
+      "total_strokes": 19,
+      "render_size": [
+        550,
+        750
+      ],
+      "alpha_bbox": [
+        146,
+        136,
+        384,
+        638
+      ],
+      "alpha_px": 33010,
+      "edge_touch_px": 0,
+      "colour_px_near_layer_colour": {
+        "FaceSnapArm": 0,
+        "Head": 539,
+        "CowlUpperArm": 0,
+        "Neck": 3618,
+        "ChestSnapArm": 0,
+        "Torso": 2,
+        "Collar": 0,
+        "NormalArm": 13253,
+        "Legs": 13335,
+        "CapeBack": 0
+      },
+      "blend": "colored-invisible-FACE_SNAP.blend",
+      "transparent": "colored-invisible-FACE_SNAP-transparent.png",
+      "on_black": "colored-invisible-FACE_SNAP-on-black.png"
+    },
+    "COWL_SNAP": {
+      "strokes": {
+        "Head": 1,
+        "CowlUpperArm": 2,
+        "Neck": 1,
+        "Torso": 3,
+        "Collar": 1,
+        "NormalArm": 4,
+        "Legs": 6,
+        "CapeBack": 1
+      },
+      "total_strokes": 19,
+      "render_size": [
+        550,
+        750
+      ],
+      "alpha_bbox": [
+        116,
+        132,
+        448,
+        649
+      ],
+      "alpha_px": 34944,
+      "edge_touch_px": 0,
+      "colour_px_near_layer_colour": {
+        "FaceSnapArm": 0,
+        "Head": 586,
+        "CowlUpperArm": 0,
+        "Neck": 3605,
+        "ChestSnapArm": 0,
+        "Torso": 5,
+        "Collar": 0,
+        "NormalArm": 15200,
+        "Legs": 15284,
+        "CapeBack": 0
+      },
+      "blend": "colored-invisible-COWL_SNAP.blend",
+      "transparent": "colored-invisible-COWL_SNAP-transparent.png",
+      "on_black": "colored-invisible-COWL_SNAP-on-black.png"
+    },
+    "CHEST_SNAP": {
+      "strokes": {
+        "Head": 1,
+        "Neck": 1,
+        "ChestSnapArm": 6,
+        "Torso": 3,
+        "Collar": 1,
+        "Legs": 6,
+        "CapeBack": 1
+      },
+      "total_strokes": 19,
+      "render_size": [
+        550,
+        750
+      ],
+      "alpha_bbox": [
+        136,
+        140,
+        430,
+        638
+      ],
+      "alpha_px": 34933,
+      "edge_touch_px": 0,
+      "colour_px_near_layer_colour": {
+        "FaceSnapArm": 0,
+        "Head": 511,
+        "CowlUpperArm": 0,
+        "Neck": 968,
+        "ChestSnapArm": 0,
+        "Torso": 3,
+        "Collar": 0,
+        "NormalArm": 12099,
+        "Legs": 12186,
+        "CapeBack": 0
+      },
+      "blend": "colored-invisible-CHEST_SNAP.blend",
+      "transparent": "colored-invisible-CHEST_SNAP-transparent.png",
+      "on_black": "colored-invisible-CHEST_SNAP-on-black.png"
+    },
+    "JOINT_SMOOTH": {
+      "strokes": {
+        "Head": 1,
+        "Neck": 1,
+        "Torso": 3,
+        "Collar": 1,
+        "NormalArm": 6,
+        "Legs": 6,
+        "CapeBack": 1
+      },
+      "total_strokes": 19,
+      "render_size": [
+        550,
+        750
+      ],
+      "alpha_bbox": [
+        117,
+        133,
+        447,
+        648
+      ],
+      "alpha_px": 34384,
+      "edge_touch_px": 0,
+      "colour_px_near_layer_colour": {
+        "FaceSnapArm": 0,
+        "Head": 584,
+        "CowlUpperArm": 0,
+        "Neck": 1532,
+        "ChestSnapArm": 0,
+        "Torso": 4,
+        "Collar": 0,
+        "NormalArm": 16742,
+        "Legs": 16827,
+        "CapeBack": 0
+      },
+      "blend": "colored-invisible-JOINT_SMOOTH.blend",
+      "transparent": "colored-invisible-JOINT_SMOOTH-transparent.png",
+      "on_black": "colored-invisible-JOINT_SMOOTH-on-black.png"
+    }
+  }
+}
