@@ -1,0 +1,64 @@
+{
+ "source": "props/prop-bfSpz.jpg",
+ "group": "props",
+ "plate": "props/prop-bfSpz.png",
+ "plate_md5": "6865a193ed92d4bc96eeb669c60393ce",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    212,
+    77
+   ],
+   "opaque_px": 9810,
+   "sheet_bbox": [
+    515,
+    41,
+    727,
+    118
+   ],
+   "area_px": 9810,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    135,
+    50
+   ],
+   "opaque_px": 3966,
+   "sheet_bbox": [
+    1009,
+    113,
+    1144,
+    163
+   ],
+   "area_px": 3966,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    1166,
+    737
+   ],
+   "opaque_px": 741617,
+   "sheet_bbox": [
+    1,
+    46,
+    1167,
+    783
+   ],
+   "area_px": 741617,
+   "provisional_class": "prop_main_object",
+   "grid_split": false
+  }
+ ]
+}
