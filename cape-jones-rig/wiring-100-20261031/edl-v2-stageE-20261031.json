@@ -1,0 +1,46 @@
+{
+  "version": "wiring-100-edl-v2",
+  "fps": 24,
+  "stage": "E-visual edit (dialogue/L-J audio decisions that need dialogue are Stage P, marked as such)",
+  "sequence_file": "edited-sequence-stageE-visual-20261031.mp4",
+  "cuts": [
+    {
+      "order": 1,
+      "shot_id": "CJ-01",
+      "cut": "open",
+      "audio_decision": "visual cut only in Stage E; L/J-cut with dialogue audio is Stage P"
+    },
+    {
+      "order": 2,
+      "shot_id": "CJ-02",
+      "cut": "cut on action",
+      "audio_decision": "visual cut only in Stage E; L/J-cut with dialogue audio is Stage P"
+    },
+    {
+      "order": 3,
+      "shot_id": "CJ-03",
+      "cut": "cut on action",
+      "audio_decision": "visual cut only in Stage E; L/J-cut with dialogue audio is Stage P"
+    },
+    {
+      "order": 4,
+      "shot_id": "CJ-04",
+      "cut": "cut on action",
+      "audio_decision": "visual cut only in Stage E; L/J-cut with dialogue audio is Stage P"
+    },
+    {
+      "order": 5,
+      "shot_id": "CJ-06",
+      "cut": "cut on action",
+      "audio_decision": "visual cut only in Stage E; L/J-cut with dialogue audio is Stage P"
+    },
+    {
+      "order": 6,
+      "shot_id": "CJ-09",
+      "cut": "cut on action",
+      "audio_decision": "visual cut only in Stage E; L/J-cut with dialogue audio is Stage P"
+    }
+  ],
+  "prior_edl_entries": 30,
+  "note": "Prior EDL CJ-01..CJ-30 (gap-close-tv) is the full 30-shot EDL; this v2 is the Stage E sample-edit EDL (6 shots). L/J-cut is NOT claimed for dialogue audio that does not exist yet."
+}
