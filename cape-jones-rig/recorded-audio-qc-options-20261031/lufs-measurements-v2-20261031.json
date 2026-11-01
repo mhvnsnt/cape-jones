@@ -1,0 +1,116 @@
+{
+ "107": {
+  "bpm": 107,
+  "stems": {
+   "dialogue": {
+    "integrated_lufs": null,
+    "true_peak_db": null,
+    "note": "SILENCE placeholder \u2014 no recorded dialogue; Space Ghost workflow: Mars fills dialogue AFTER episodes are built, so this stem is empty by design at this stage, not a missing episode blocker."
+   },
+   "sfx": {
+    "integrated_lufs_ebur128": -17.9,
+    "integrated_lufs_loudnorm": -17.83,
+    "true_peak_db_loudnorm": -0.69,
+    "lra_lu": 13.1
+   },
+   "music": {
+    "integrated_lufs_ebur128": -14.4,
+    "integrated_lufs_loudnorm": -14.49,
+    "true_peak_db_loudnorm": -0.09,
+    "lra_lu": 1.1
+   },
+   "ambience": {
+    "integrated_lufs_ebur128": -42.8,
+    "integrated_lufs_loudnorm": -42.08,
+    "true_peak_db_loudnorm": -5.54,
+    "lra_lu": 0.4
+   },
+   "device_beep_metronome": {
+    "integrated_lufs_ebur128": -23.6,
+    "integrated_lufs_loudnorm": -23.78,
+    "true_peak_db_loudnorm": -10.43,
+    "lra_lu": 3.8
+   }
+  },
+  "mix_v2": {
+   "chain": "acompressor threshold=-20dB ratio=4 attack=5ms release=120ms -> alimiter limit=0.84 -> linear makeup gain",
+   "makeup_gain_db": 10.0,
+   "pre_gain_measure": {
+    "integrated_lufs_ebur128": -24.0,
+    "integrated_lufs_loudnorm": -24.07,
+    "true_peak_db_loudnorm": -12.29,
+    "lra_lu": 1.7
+   },
+   "final_measure": {
+    "integrated_lufs_ebur128": -14.0,
+    "integrated_lufs_loudnorm": -14.07,
+    "true_peak_db_loudnorm": -2.29,
+    "lra_lu": 1.7
+   },
+   "final_file": "/home/hatch/workspace/cape-jones-rig/recorded-audio-qc-options-20261031/final-mix-107bpm-minus14lufs-v2-20261031.wav",
+   "accept": true
+  },
+  "mix_v1_superseded": {
+   "file": "/home/hatch/workspace/cape-jones-rig/recorded-audio-qc-options-20261031/final-mix-107bpm-minus14lufs-20261031.wav",
+   "reason": "SUPERSEDED by v2: v1 integrated -14.0 LUFS but true peak -0.80 (107) / -0.90 (152) dB, over the -1.5 dB ceiling. Kept on disk, not deleted, not used as the delivery."
+  },
+  "duration_sec": 17.943917
+ },
+ "152": {
+  "bpm": 152,
+  "stems": {
+   "dialogue": {
+    "integrated_lufs": null,
+    "true_peak_db": null,
+    "note": "SILENCE placeholder \u2014 no recorded dialogue; Space Ghost workflow: Mars fills dialogue AFTER episodes are built, so this stem is empty by design at this stage, not a missing episode blocker."
+   },
+   "sfx": {
+    "integrated_lufs_ebur128": -18.0,
+    "integrated_lufs_loudnorm": -17.84,
+    "true_peak_db_loudnorm": -0.69,
+    "lra_lu": 10.2
+   },
+   "music": {
+    "integrated_lufs_ebur128": -13.7,
+    "integrated_lufs_loudnorm": -13.76,
+    "true_peak_db_loudnorm": -0.09,
+    "lra_lu": 0.5
+   },
+   "ambience": {
+    "integrated_lufs_ebur128": -43.5,
+    "integrated_lufs_loudnorm": -42.45,
+    "true_peak_db_loudnorm": -5.54,
+    "lra_lu": 0.4
+   },
+   "device_beep_metronome": {
+    "integrated_lufs_ebur128": -23.2,
+    "integrated_lufs_loudnorm": -23.48,
+    "true_peak_db_loudnorm": -10.43,
+    "lra_lu": 4.5
+   }
+  },
+  "mix_v2": {
+   "chain": "acompressor threshold=-20dB ratio=4 attack=5ms release=120ms -> alimiter limit=0.84 -> linear makeup gain",
+   "makeup_gain_db": 9.7,
+   "pre_gain_measure": {
+    "integrated_lufs_ebur128": -23.7,
+    "integrated_lufs_loudnorm": -23.83,
+    "true_peak_db_loudnorm": -12.59,
+    "lra_lu": 0.9
+   },
+   "final_measure": {
+    "integrated_lufs_ebur128": -14.0,
+    "integrated_lufs_loudnorm": -14.13,
+    "true_peak_db_loudnorm": -2.89,
+    "lra_lu": 0.9
+   },
+   "final_file": "/home/hatch/workspace/cape-jones-rig/recorded-audio-qc-options-20261031/final-mix-152bpm-minus14lufs-v2-20261031.wav",
+   "accept": true
+  },
+  "mix_v1_superseded": {
+   "file": "/home/hatch/workspace/cape-jones-rig/recorded-audio-qc-options-20261031/final-mix-152bpm-minus14lufs-20261031.wav",
+   "reason": "SUPERSEDED by v2: v1 integrated -14.0 LUFS but true peak -0.80 (107) / -0.90 (152) dB, over the -1.5 dB ceiling. Kept on disk, not deleted, not used as the delivery."
+  },
+  "duration_sec": 12.631563
+ }
+}
