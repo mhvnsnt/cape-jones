@@ -1,0 +1,135 @@
+frame,kind,from,to,t,eased,dy_rig,dx_rig,height_video_px,label
+0,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+1,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+2,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+3,inbetween,apose,JoJo 01 contrapposto,0.17,0.02,0,0,0,GROUNDED
+4,inbetween,apose,JoJo 01 contrapposto,0.33,0.15,3,0,0,GROUNDED
+5,BREAKDOWN arc +10deg largest-moving arm upper,apose,JoJo 01 contrapposto,0.5,0.5,13,0,0,GROUNDED
+6,inbetween,apose,JoJo 01 contrapposto,0.67,0.85,22,0,0,GROUNDED
+7,BREAKDOWN follow-through +8deg that arm lower,apose,JoJo 01 contrapposto,0.83,0.98,25,0,0,GROUNDED
+8,KEY hold,JoJo 01 contrapposto,JoJo 01 contrapposto,0,0,26,0,0,GROUNDED
+9,KEY hold,JoJo 01 contrapposto,JoJo 01 contrapposto,0,0,26,0,0,GROUNDED
+10,KEY hold,JoJo 01 contrapposto,JoJo 01 contrapposto,0,0,26,0,0,GROUNDED
+11,KEY hold,JoJo 01 contrapposto,JoJo 01 contrapposto,0,0,26,0,0,GROUNDED
+12,inbetween,JoJo 01 contrapposto,apose neutral between,0.17,0.02,25,0,0,GROUNDED
+13,inbetween,JoJo 01 contrapposto,apose neutral between,0.33,0.15,22,0,0,GROUNDED
+14,BREAKDOWN arc +10deg largest-moving arm upper,JoJo 01 contrapposto,apose neutral between,0.5,0.5,13,0,0,GROUNDED
+15,inbetween,JoJo 01 contrapposto,apose neutral between,0.67,0.85,3,0,0,GROUNDED
+16,BREAKDOWN follow-through +8deg that arm lower,JoJo 01 contrapposto,apose neutral between,0.83,0.98,0,0,0,GROUNDED
+17,KEY hold,apose neutral between,apose neutral between,0,0,0,0,0,GROUNDED
+18,KEY hold,apose neutral between,apose neutral between,0,0,0,0,0,GROUNDED
+19,inbetween,apose neutral between,JoJo 02 fashion twist,0.17,0.02,0,0,0,GROUNDED
+20,inbetween,apose neutral between,JoJo 02 fashion twist,0.33,0.15,0,0,0,GROUNDED
+21,BREAKDOWN arc +10deg largest-moving arm upper,apose neutral between,JoJo 02 fashion twist,0.5,0.5,0,0,0,GROUNDED
+22,inbetween,apose neutral between,JoJo 02 fashion twist,0.67,0.85,0,0,0,GROUNDED
+23,BREAKDOWN follow-through +8deg that arm lower,apose neutral between,JoJo 02 fashion twist,0.83,0.98,0,0,0,GROUNDED
+24,KEY hold,JoJo 02 fashion twist,JoJo 02 fashion twist,0,0,0,0,0,GROUNDED
+25,KEY hold,JoJo 02 fashion twist,JoJo 02 fashion twist,0,0,0,0,0,GROUNDED
+26,KEY hold,JoJo 02 fashion twist,JoJo 02 fashion twist,0,0,0,0,0,GROUNDED
+27,KEY hold,JoJo 02 fashion twist,JoJo 02 fashion twist,0,0,0,0,0,GROUNDED
+28,inbetween,JoJo 02 fashion twist,apose neutral between,0.17,0.02,0,0,0,GROUNDED
+29,inbetween,JoJo 02 fashion twist,apose neutral between,0.33,0.15,0,0,0,GROUNDED
+30,BREAKDOWN arc +10deg largest-moving arm upper,JoJo 02 fashion twist,apose neutral between,0.5,0.5,0,0,0,GROUNDED
+31,inbetween,JoJo 02 fashion twist,apose neutral between,0.67,0.85,0,0,0,GROUNDED
+32,BREAKDOWN follow-through +8deg that arm lower,JoJo 02 fashion twist,apose neutral between,0.83,0.98,0,0,0,GROUNDED
+33,KEY hold,apose neutral between,apose neutral between,0,0,0,0,0,GROUNDED
+34,KEY hold,apose neutral between,apose neutral between,0,0,0,0,0,GROUNDED
+35,inbetween,apose neutral between,JoJo 03 menacing lean,0.17,0.02,0,0,0,GROUNDED
+36,inbetween,apose neutral between,JoJo 03 menacing lean,0.33,0.15,0,0,0,GROUNDED
+37,BREAKDOWN arc +10deg largest-moving arm upper,apose neutral between,JoJo 03 menacing lean,0.5,0.5,1,0,0,GROUNDED
+38,inbetween,apose neutral between,JoJo 03 menacing lean,0.67,0.85,1,0,0,GROUNDED
+39,BREAKDOWN follow-through +8deg that arm lower,apose neutral between,JoJo 03 menacing lean,0.83,0.98,1,0,0,GROUNDED
+40,KEY hold,JoJo 03 menacing lean,JoJo 03 menacing lean,0,0,2,0,0,GROUNDED
+41,KEY hold,JoJo 03 menacing lean,JoJo 03 menacing lean,0,0,2,0,0,GROUNDED
+42,KEY hold,JoJo 03 menacing lean,JoJo 03 menacing lean,0,0,2,0,0,GROUNDED
+43,KEY hold,JoJo 03 menacing lean,JoJo 03 menacing lean,0,0,2,0,0,GROUNDED
+44,inbetween,JoJo 03 menacing lean,apose neutral between,0.17,0.02,1,0,0,GROUNDED
+45,inbetween,JoJo 03 menacing lean,apose neutral between,0.33,0.15,1,0,0,GROUNDED
+46,BREAKDOWN arc +10deg largest-moving arm upper,JoJo 03 menacing lean,apose neutral between,0.5,0.5,1,0,0,GROUNDED
+47,inbetween,JoJo 03 menacing lean,apose neutral between,0.67,0.85,0,0,0,GROUNDED
+48,BREAKDOWN follow-through +8deg that arm lower,JoJo 03 menacing lean,apose neutral between,0.83,0.98,0,0,0,GROUNDED
+49,KEY hold,apose neutral between,apose neutral between,0,0,0,0,0,GROUNDED
+50,KEY hold,apose neutral between,apose neutral between,0,0,0,0,0,GROUNDED
+51,inbetween,apose neutral between,Ginyu 01 chest out,0.17,0.02,0,0,0,GROUNDED
+52,inbetween,apose neutral between,Ginyu 01 chest out,0.33,0.15,1,0,0,GROUNDED
+53,BREAKDOWN arc +10deg largest-moving arm upper,apose neutral between,Ginyu 01 chest out,0.5,0.5,6,0,0,GROUNDED
+54,inbetween,apose neutral between,Ginyu 01 chest out,0.67,0.85,10,0,0,GROUNDED
+55,BREAKDOWN follow-through +8deg that arm lower,apose neutral between,Ginyu 01 chest out,0.83,0.98,11,0,0,GROUNDED
+56,KEY hold,Ginyu 01 chest out,Ginyu 01 chest out,0,0,12,0,0,GROUNDED
+57,KEY hold,Ginyu 01 chest out,Ginyu 01 chest out,0,0,12,0,0,GROUNDED
+58,KEY hold,Ginyu 01 chest out,Ginyu 01 chest out,0,0,12,0,0,GROUNDED
+59,KEY hold,Ginyu 01 chest out,Ginyu 01 chest out,0,0,12,0,0,GROUNDED
+60,inbetween,Ginyu 01 chest out,apose neutral between,0.17,0.02,11,0,0,GROUNDED
+61,inbetween,Ginyu 01 chest out,apose neutral between,0.33,0.15,10,0,0,GROUNDED
+62,BREAKDOWN arc +10deg largest-moving arm upper,Ginyu 01 chest out,apose neutral between,0.5,0.5,6,0,0,GROUNDED
+63,inbetween,Ginyu 01 chest out,apose neutral between,0.67,0.85,1,0,0,GROUNDED
+64,BREAKDOWN follow-through +8deg that arm lower,Ginyu 01 chest out,apose neutral between,0.83,0.98,0,0,0,GROUNDED
+65,KEY hold,apose neutral between,apose neutral between,0,0,0,0,0,GROUNDED
+66,KEY hold,apose neutral between,apose neutral between,0,0,0,0,0,GROUNDED
+67,inbetween,apose neutral between,Ginyu 02 squat,0.17,0.02,1,0,0,GROUNDED
+68,inbetween,apose neutral between,Ginyu 02 squat,0.33,0.15,12,0,0,GROUNDED
+69,BREAKDOWN arc +10deg largest-moving arm upper,apose neutral between,Ginyu 02 squat,0.5,0.5,42,0,0,GROUNDED
+70,inbetween,apose neutral between,Ginyu 02 squat,0.67,0.85,71,0,0,GROUNDED
+71,BREAKDOWN follow-through +8deg that arm lower,apose neutral between,Ginyu 02 squat,0.83,0.98,82,0,0,GROUNDED
+72,KEY hold,Ginyu 02 squat,Ginyu 02 squat,0,0,84,0,0,GROUNDED
+73,KEY hold,Ginyu 02 squat,Ginyu 02 squat,0,0,84,0,0,GROUNDED
+74,KEY hold,Ginyu 02 squat,Ginyu 02 squat,0,0,84,0,0,GROUNDED
+75,KEY hold,Ginyu 02 squat,Ginyu 02 squat,0,0,84,0,0,GROUNDED
+76,inbetween,Ginyu 02 squat,apose neutral between,0.17,0.02,82,0,0,GROUNDED
+77,inbetween,Ginyu 02 squat,apose neutral between,0.33,0.15,71,0,0,GROUNDED
+78,BREAKDOWN arc +10deg largest-moving arm upper,Ginyu 02 squat,apose neutral between,0.5,0.5,42,0,0,GROUNDED
+79,inbetween,Ginyu 02 squat,apose neutral between,0.67,0.85,12,0,0,GROUNDED
+80,BREAKDOWN follow-through +8deg that arm lower,Ginyu 02 squat,apose neutral between,0.83,0.98,1,0,0,GROUNDED
+81,KEY hold,apose neutral between,apose neutral between,0,0,0,0,0,GROUNDED
+82,KEY hold,apose neutral between,apose neutral between,0,0,0,0,0,GROUNDED
+83,inbetween,apose neutral between,Ginyu 03 shimmy,0.17,0.02,0,0,0,GROUNDED
+84,inbetween,apose neutral between,Ginyu 03 shimmy,0.33,0.15,1,0,0,GROUNDED
+85,BREAKDOWN arc +10deg largest-moving arm upper,apose neutral between,Ginyu 03 shimmy,0.5,0.5,6,0,0,GROUNDED
+86,inbetween,apose neutral between,Ginyu 03 shimmy,0.67,0.85,10,0,0,GROUNDED
+87,BREAKDOWN follow-through +8deg that arm lower,apose neutral between,Ginyu 03 shimmy,0.83,0.98,11,0,0,GROUNDED
+88,KEY hold,Ginyu 03 shimmy,Ginyu 03 shimmy,0,0,12,0,0,GROUNDED
+89,KEY hold,Ginyu 03 shimmy,Ginyu 03 shimmy,0,0,12,0,0,GROUNDED
+90,KEY hold,Ginyu 03 shimmy,Ginyu 03 shimmy,0,0,12,0,0,GROUNDED
+91,KEY hold,Ginyu 03 shimmy,Ginyu 03 shimmy,0,0,12,0,0,GROUNDED
+92,inbetween,Ginyu 03 shimmy,apose neutral between,0.17,0.02,11,0,0,GROUNDED
+93,inbetween,Ginyu 03 shimmy,apose neutral between,0.33,0.15,10,0,0,GROUNDED
+94,BREAKDOWN arc +10deg largest-moving arm upper,Ginyu 03 shimmy,apose neutral between,0.5,0.5,6,0,0,GROUNDED
+95,inbetween,Ginyu 03 shimmy,apose neutral between,0.67,0.85,1,0,0,GROUNDED
+96,BREAKDOWN follow-through +8deg that arm lower,Ginyu 03 shimmy,apose neutral between,0.83,0.98,0,0,0,GROUNDED
+97,KEY hold,apose neutral between,apose neutral between,0,0,0,0,0,GROUNDED
+98,KEY hold,apose neutral between,apose neutral between,0,0,0,0,0,GROUNDED
+99,inbetween,apose neutral between,"Stand 01 user figure only (stand figure omitted, labelled)",0.17,0.02,0,0,0,GROUNDED
+100,inbetween,apose neutral between,"Stand 01 user figure only (stand figure omitted, labelled)",0.33,0.15,1,0,0,GROUNDED
+101,BREAKDOWN arc +10deg largest-moving arm upper,apose neutral between,"Stand 01 user figure only (stand figure omitted, labelled)",0.5,0.5,4,0,0,GROUNDED
+102,inbetween,apose neutral between,"Stand 01 user figure only (stand figure omitted, labelled)",0.67,0.85,6,0,0,GROUNDED
+103,BREAKDOWN follow-through +8deg that arm lower,apose neutral between,"Stand 01 user figure only (stand figure omitted, labelled)",0.83,0.98,7,0,0,GROUNDED
+104,KEY hold,"Stand 01 user figure only (stand figure omitted, labelled)","Stand 01 user figure only (stand figure omitted, labelled)",0,0,8,0,0,GROUNDED
+105,KEY hold,"Stand 01 user figure only (stand figure omitted, labelled)","Stand 01 user figure only (stand figure omitted, labelled)",0,0,8,0,0,GROUNDED
+106,KEY hold,"Stand 01 user figure only (stand figure omitted, labelled)","Stand 01 user figure only (stand figure omitted, labelled)",0,0,8,0,0,GROUNDED
+107,KEY hold,"Stand 01 user figure only (stand figure omitted, labelled)","Stand 01 user figure only (stand figure omitted, labelled)",0,0,8,0,0,GROUNDED
+108,inbetween,"Stand 01 user figure only (stand figure omitted, labelled)",apose neutral between,0.17,0.02,7,0,0,GROUNDED
+109,inbetween,"Stand 01 user figure only (stand figure omitted, labelled)",apose neutral between,0.33,0.15,6,0,0,GROUNDED
+110,BREAKDOWN arc +10deg largest-moving arm upper,"Stand 01 user figure only (stand figure omitted, labelled)",apose neutral between,0.5,0.5,4,0,0,GROUNDED
+111,inbetween,"Stand 01 user figure only (stand figure omitted, labelled)",apose neutral between,0.67,0.85,1,0,0,GROUNDED
+112,BREAKDOWN follow-through +8deg that arm lower,"Stand 01 user figure only (stand figure omitted, labelled)",apose neutral between,0.83,0.98,0,0,0,GROUNDED
+113,KEY hold,apose neutral between,apose neutral between,0,0,0,0,0,GROUNDED
+114,KEY hold,apose neutral between,apose neutral between,0,0,0,0,0,GROUNDED
+115,inbetween,apose neutral between,"Stand 02 user figure only (stand figure omitted, labelled)",0.17,0.02,0,0,0,GROUNDED
+116,inbetween,apose neutral between,"Stand 02 user figure only (stand figure omitted, labelled)",0.33,0.15,5,0,0,GROUNDED
+117,BREAKDOWN arc +10deg largest-moving arm upper,apose neutral between,"Stand 02 user figure only (stand figure omitted, labelled)",0.5,0.5,19,0,0,GROUNDED
+118,inbetween,apose neutral between,"Stand 02 user figure only (stand figure omitted, labelled)",0.67,0.85,32,0,0,GROUNDED
+119,BREAKDOWN follow-through +8deg that arm lower,apose neutral between,"Stand 02 user figure only (stand figure omitted, labelled)",0.83,0.98,37,0,0,GROUNDED
+120,KEY hold,"Stand 02 user figure only (stand figure omitted, labelled)","Stand 02 user figure only (stand figure omitted, labelled)",0,0,38,0,0,GROUNDED
+121,KEY hold,"Stand 02 user figure only (stand figure omitted, labelled)","Stand 02 user figure only (stand figure omitted, labelled)",0,0,38,0,0,GROUNDED
+122,KEY hold,"Stand 02 user figure only (stand figure omitted, labelled)","Stand 02 user figure only (stand figure omitted, labelled)",0,0,38,0,0,GROUNDED
+123,KEY hold,"Stand 02 user figure only (stand figure omitted, labelled)","Stand 02 user figure only (stand figure omitted, labelled)",0,0,38,0,0,GROUNDED
+124,OVERSHOOT 5% beyond key,apose neutral between,"Stand 02 user figure only (stand figure omitted, labelled)",1.05,1.05,38,0,0,GROUNDED
+125,SETTLE back to key,"Stand 02 user figure only (stand figure omitted, labelled)","Stand 02 user figure only (stand figure omitted, labelled)",1.0,1.0,38,0,0,GROUNDED
+126,inbetween,"Stand 02 user figure only (stand figure omitted, labelled)",apose,0.17,0.02,37,0,0,GROUNDED
+127,inbetween,"Stand 02 user figure only (stand figure omitted, labelled)",apose,0.33,0.15,32,0,0,GROUNDED
+128,BREAKDOWN arc +10deg largest-moving arm upper,"Stand 02 user figure only (stand figure omitted, labelled)",apose,0.5,0.5,19,0,0,GROUNDED
+129,inbetween,"Stand 02 user figure only (stand figure omitted, labelled)",apose,0.67,0.85,5,0,0,GROUNDED
+130,BREAKDOWN follow-through +8deg that arm lower,"Stand 02 user figure only (stand figure omitted, labelled)",apose,0.83,0.98,0,0,0,GROUNDED
+131,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+132,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+133,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
