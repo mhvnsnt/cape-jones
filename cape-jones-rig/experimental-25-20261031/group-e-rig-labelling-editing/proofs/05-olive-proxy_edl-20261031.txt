@@ -1,0 +1,4 @@
+OLIVE-METHOD EDL (ffmpeg implementation; Olive GUI did NOT run here — headless VM, alpha app)
+001  dance  04-animate-anyone-proxy_pose-driven-20261031.mp4  00:00:00:00-00:00:02:00  CUT
+002  fight  05-olive-proxy_fight-clip-20261031.mp4          00:00:00:00-00:00:01:00  XFADE 0.5s at 00:00:01:12
+OUT  05-olive-proxy_edited-dance-fight-20261031.mp4
