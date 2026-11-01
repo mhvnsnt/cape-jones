@@ -1,0 +1,3 @@
+shot_id,status,qc,debug_labels,audio_lufs
+CJ-01,finished,pass,no,-14.0
+CJ-26,not_finished,fail,no,
