@@ -1,0 +1,87 @@
+{
+  "CJ-23": {
+    "figure_bbox": [
+      603,
+      146,
+      1316,
+      1180
+    ],
+    "figure_size": [
+      713,
+      1034
+    ],
+    "chair_bbox_scene": [
+      153,
+      438,
+      1731,
+      1178
+    ],
+    "chair_box_design": [
+      153,
+      433,
+      1766,
+      1180
+    ],
+    "seat_top_y": 799,
+    "thigh_band_scene": [
+      690,
+      854
+    ],
+    "chair_feet_bottom": 1178,
+    "ground_y": 1180,
+    "ground_diff_px": -2,
+    "figure_bottom": 1180,
+    "figure_ground_diff_px": 0,
+    "margins": {
+      "left": 603,
+      "right": 604,
+      "top": 146,
+      "bottom": 100,
+      "chair_left": 153,
+      "chair_right": 189
+    },
+    "clipped": false,
+    "seat_supports_thighs": true,
+    "chair_back_top": 438,
+    "belt_y_scene": 651,
+    "chair_back_above_belt": true,
+    "rim_px": 15731,
+    "bleed_px": 24207,
+    "occlusion": "chair layer entirely BEHIND figure (alpha_composite order: BG, shadow, chair, rim, figure); chair visible only outside figure alpha"
+  },
+  "CJ-24": {
+    "figure_bbox": [
+      603,
+      146,
+      1316,
+      1180
+    ],
+    "desk_top_y": 800,
+    "ground_y": 1180,
+    "figure_bottom": 1180,
+    "figure_ground_diff_px": 0,
+    "margins": {
+      "left": 603,
+      "right": 604,
+      "top": 146,
+      "bottom": 100
+    },
+    "clipped": false,
+    "bg_size": [
+      1920,
+      1280
+    ],
+    "occlusion": "desk BG entirely BEHIND figure (layout-pass composition); desk top 800 crosses figure at thigh/shin level, visible at sides",
+    "rim_px": 15731,
+    "bleed_px": 24207
+  },
+  "verdicts": {
+    "CJ-23_ground": "PASS",
+    "CJ-23_seated_anchor": "PASS",
+    "CJ-23_no_crop": "PASS",
+    "CJ-23_occlusion": "PASS (chair behind figure by layer order; chair back top 438 (measured alpha top; design box top 433) above belt 651, not waist)",
+    "CJ-24_ground": "PASS",
+    "CJ-24_no_crop": "PASS",
+    "CJ-24_occlusion": "PASS (desk BG behind figure by layer order; no front occluder in main composite)"
+  }
+}
