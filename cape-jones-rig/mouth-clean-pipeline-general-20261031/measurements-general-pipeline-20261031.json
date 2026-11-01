@@ -1,0 +1,1568 @@
+{
+ "V2-7__ah-v2_clean_patch.png": {
+  "src_alpha": 9553,
+  "kept_alpha": 9051,
+  "dropped": 502,
+  "m1_class_dropped": 0,
+  "rule": "ALL",
+  "anchors": [
+   [
+    3303,
+    [
+     34,
+     164,
+     58,
+     97
+    ]
+   ]
+  ],
+  "largest_kept": 9051,
+  "group": "V2-7",
+  "source": "/home/hatch/workspace/cape-jones-rig/pahgo-mouth-cleanup-v2-20261031/mouths-v2/ah-v2_clean_patch.png",
+  "fitted_bbox": [
+   0,
+   17,
+   228,
+   97,
+   9051
+  ],
+  "patch_centre": [
+   114.0,
+   57.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "V2-7__ah34-v2_clean_patch.png": {
+  "src_alpha": 53058,
+  "kept_alpha": 52653,
+  "dropped": 405,
+  "m1_class_dropped": 0,
+  "rule": "ALL",
+  "anchors": [
+   [
+    12771,
+    [
+     63,
+     365,
+     12,
+     93
+    ]
+   ],
+   [
+    12042,
+    [
+     125,
+     358,
+     120,
+     190
+    ]
+   ]
+  ],
+  "largest_kept": 52653,
+  "group": "V2-7",
+  "source": "/home/hatch/workspace/cape-jones-rig/pahgo-mouth-cleanup-v2-20261031/mouths-v2/ah34-v2_clean_patch.png",
+  "fitted_bbox": [
+   45,
+   9,
+   400,
+   190,
+   52653
+  ],
+  "patch_centre": [
+   222.5,
+   99.5
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "V2-7__ee-v2_clean_patch.png": {
+  "src_alpha": 362,
+  "kept_alpha": 362,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 362,
+  "group": "V2-7",
+  "source": "/home/hatch/workspace/cape-jones-rig/pahgo-mouth-cleanup-v2-20261031/mouths-v2/ee-v2_clean_patch.png",
+  "fitted_bbox": [
+   10,
+   32,
+   154,
+   85,
+   362
+  ],
+  "patch_centre": [
+   82.0,
+   58.5
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "V2-7__gk-v2_clean_patch.png": {
+  "src_alpha": 14958,
+  "kept_alpha": 14958,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "ALL",
+  "anchors": [
+   [
+    2466,
+    [
+     328,
+     444,
+     27,
+     60
+    ]
+   ],
+   [
+    2413,
+    [
+     134,
+     225,
+     18,
+     64
+    ]
+   ],
+   [
+    2296,
+    [
+     68,
+     142,
+     19,
+     62
+    ]
+   ],
+   [
+    2082,
+    [
+     228,
+     327,
+     30,
+     67
+    ]
+   ],
+   [
+    1861,
+    [
+     437,
+     510,
+     24,
+     60
+    ]
+   ],
+   [
+    764,
+    [
+     507,
+     530,
+     25,
+     65
+    ]
+   ]
+  ],
+  "largest_kept": 14958,
+  "group": "V2-7",
+  "source": "/home/hatch/workspace/cape-jones-rig/pahgo-mouth-cleanup-v2-20261031/mouths-v2/gk-v2_clean_patch.png",
+  "fitted_bbox": [
+   65,
+   16,
+   530,
+   68,
+   14958
+  ],
+  "patch_centre": [
+   297.5,
+   42.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "V2-7__mbp-v2_clean_patch.png": {
+  "src_alpha": 67,
+  "kept_alpha": 67,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 67,
+  "group": "V2-7",
+  "source": "/home/hatch/workspace/cape-jones-rig/pahgo-mouth-cleanup-v2-20261031/mouths-v2/mbp-v2_clean_patch.png",
+  "fitted_bbox": [
+   8,
+   2,
+   41,
+   6,
+   67
+  ],
+  "patch_centre": [
+   24.5,
+   4.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "V2-7__mbp34-v2_clean_patch.png": {
+  "src_alpha": 272,
+  "kept_alpha": 179,
+  "dropped": 93,
+  "m1_class_dropped": 0,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 179,
+  "group": "V2-7",
+  "source": "/home/hatch/workspace/cape-jones-rig/pahgo-mouth-cleanup-v2-20261031/mouths-v2/mbp34-v2_clean_patch.png",
+  "fitted_bbox": [
+   102,
+   0,
+   150,
+   9,
+   179
+  ],
+  "patch_centre": [
+   126.0,
+   4.5
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "V2-7__smile34-v2_clean_patch.png": {
+  "src_alpha": 5942,
+  "kept_alpha": 3006,
+  "dropped": 2936,
+  "m1_class_dropped": 0,
+  "rule": "ALL",
+  "anchors": [
+   [
+    841,
+    [
+     53,
+     119,
+     45,
+     71
+    ]
+   ],
+   [
+    284,
+    [
+     51,
+     102,
+     26,
+     36
+    ]
+   ],
+   [
+    376,
+    [
+     71,
+     117,
+     41,
+     52
+    ]
+   ]
+  ],
+  "largest_kept": 3006,
+  "group": "V2-7",
+  "source": "/home/hatch/workspace/cape-jones-rig/pahgo-mouth-cleanup-v2-20261031/mouths-v2/smile34-v2_clean_patch.png",
+  "fitted_bbox": [
+   30,
+   18,
+   135,
+   73,
+   3006
+  ],
+  "patch_centre": [
+   82.5,
+   45.5
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "PACKS__ah-v2-pipeline-patch.png": {
+  "src_alpha": 9553,
+  "kept_alpha": 9051,
+  "dropped": 502,
+  "m1_class_dropped": 0,
+  "rule": "ALL",
+  "anchors": [
+   [
+    3303,
+    [
+     34,
+     164,
+     58,
+     97
+    ]
+   ]
+  ],
+  "largest_kept": 9051,
+  "group": "PACKS",
+  "source": "/home/hatch/workspace/cape-jones-rig/mouth-packs-clean-pipeline-20261031/packs/ah-v2-pipeline-patch.png",
+  "fitted_bbox": [
+   0,
+   17,
+   228,
+   97,
+   9051
+  ],
+  "patch_centre": [
+   114.0,
+   57.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "PACKS__ah34-pipeline-patch.png": {
+  "src_alpha": 53058,
+  "kept_alpha": 52653,
+  "dropped": 405,
+  "m1_class_dropped": 0,
+  "rule": "ALL",
+  "anchors": [
+   [
+    12771,
+    [
+     63,
+     365,
+     12,
+     93
+    ]
+   ],
+   [
+    12042,
+    [
+     125,
+     358,
+     120,
+     190
+    ]
+   ]
+  ],
+  "largest_kept": 52653,
+  "group": "PACKS",
+  "source": "/home/hatch/workspace/cape-jones-rig/mouth-packs-clean-pipeline-20261031/packs/ah34-pipeline-patch.png",
+  "fitted_bbox": [
+   45,
+   9,
+   400,
+   190,
+   52653
+  ],
+  "patch_centre": [
+   222.5,
+   99.5
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "PACKS__ee-clean-line-patch.png": {
+  "src_alpha": 572,
+  "kept_alpha": 572,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 572,
+  "group": "PACKS",
+  "source": "/home/hatch/workspace/cape-jones-rig/mouth-packs-clean-pipeline-20261031/packs/ee-clean-line-patch.png",
+  "fitted_bbox": [
+   12,
+   40,
+   191,
+   105,
+   572
+  ],
+  "patch_centre": [
+   101.5,
+   72.5
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "PACKS__gk-v2-pipeline-patch.png": {
+  "src_alpha": 14958,
+  "kept_alpha": 14958,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "ALL",
+  "anchors": [
+   [
+    2466,
+    [
+     328,
+     444,
+     27,
+     60
+    ]
+   ],
+   [
+    2413,
+    [
+     134,
+     225,
+     18,
+     64
+    ]
+   ],
+   [
+    2296,
+    [
+     68,
+     142,
+     19,
+     62
+    ]
+   ],
+   [
+    2082,
+    [
+     228,
+     327,
+     30,
+     67
+    ]
+   ],
+   [
+    1861,
+    [
+     437,
+     510,
+     24,
+     60
+    ]
+   ],
+   [
+    764,
+    [
+     507,
+     530,
+     25,
+     65
+    ]
+   ]
+  ],
+  "largest_kept": 14958,
+  "group": "PACKS",
+  "source": "/home/hatch/workspace/cape-jones-rig/mouth-packs-clean-pipeline-20261031/packs/gk-v2-pipeline-patch.png",
+  "fitted_bbox": [
+   65,
+   16,
+   530,
+   68,
+   14958
+  ],
+  "patch_centre": [
+   297.5,
+   42.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "PACKS__mbp-clean-line-patch.png": {
+  "src_alpha": 703,
+  "kept_alpha": 703,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 703,
+  "group": "PACKS",
+  "source": "/home/hatch/workspace/cape-jones-rig/mouth-packs-clean-pipeline-20261031/packs/mbp-clean-line-patch.png",
+  "fitted_bbox": [
+   15,
+   0,
+   156,
+   19,
+   703
+  ],
+  "patch_centre": [
+   85.5,
+   9.5
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "PACKS__mbp-v2-pipeline-patch.png": {
+  "src_alpha": 67,
+  "kept_alpha": 67,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 67,
+  "group": "PACKS",
+  "source": "/home/hatch/workspace/cape-jones-rig/mouth-packs-clean-pipeline-20261031/packs/mbp-v2-pipeline-patch.png",
+  "fitted_bbox": [
+   8,
+   2,
+   41,
+   6,
+   67
+  ],
+  "patch_centre": [
+   24.5,
+   4.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "PACKS__mbp34-pipeline-patch.png": {
+  "src_alpha": 272,
+  "kept_alpha": 179,
+  "dropped": 93,
+  "m1_class_dropped": 0,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 179,
+  "group": "PACKS",
+  "source": "/home/hatch/workspace/cape-jones-rig/mouth-packs-clean-pipeline-20261031/packs/mbp34-pipeline-patch.png",
+  "fitted_bbox": [
+   102,
+   0,
+   150,
+   9,
+   179
+  ],
+  "patch_centre": [
+   126.0,
+   4.5
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "PACKS__smile34-pipeline-patch.png": {
+  "src_alpha": 5942,
+  "kept_alpha": 3006,
+  "dropped": 2936,
+  "m1_class_dropped": 0,
+  "rule": "ALL",
+  "anchors": [
+   [
+    841,
+    [
+     53,
+     119,
+     45,
+     71
+    ]
+   ],
+   [
+    284,
+    [
+     51,
+     102,
+     26,
+     36
+    ]
+   ],
+   [
+    376,
+    [
+     71,
+     117,
+     41,
+     52
+    ]
+   ]
+  ],
+  "largest_kept": 3006,
+  "group": "PACKS",
+  "source": "/home/hatch/workspace/cape-jones-rig/mouth-packs-clean-pipeline-20261031/packs/smile34-pipeline-patch.png",
+  "fitted_bbox": [
+   30,
+   18,
+   135,
+   73,
+   3006
+  ],
+  "patch_centre": [
+   82.5,
+   45.5
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC___eh_cavity_only.png": {
+  "src_alpha": 23147,
+  "kept_alpha": 23147,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 23147,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/_eh_cavity_only.png",
+  "fitted_bbox": [
+   0,
+   0,
+   465,
+   158,
+   23147
+  ],
+  "patch_centre": [
+   232.5,
+   79.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC___eh_tongue_only.png": {
+  "src_alpha": 13078,
+  "kept_alpha": 13078,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "ANY",
+  "anchors": [
+   [
+    13078,
+    [
+     0,
+     261,
+     0,
+     76
+    ]
+   ]
+  ],
+  "largest_kept": 13078,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/_eh_tongue_only.png",
+  "fitted_bbox": [
+   0,
+   0,
+   261,
+   76,
+   13078
+  ],
+  "patch_centre": [
+   130.5,
+   38.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__ah_shout_composite.png": {
+  "src_alpha": 41514,
+  "kept_alpha": 40980,
+  "dropped": 534,
+  "m1_class_dropped": 395,
+  "rule": "ALL",
+  "anchors": [
+   [
+    1088,
+    [
+     83,
+     166,
+     17,
+     40
+    ]
+   ],
+   [
+    1063,
+    [
+     264,
+     368,
+     25,
+     40
+    ]
+   ],
+   [
+    912,
+    [
+     368,
+     429,
+     22,
+     40
+    ]
+   ],
+   [
+    864,
+    [
+     28,
+     86,
+     17,
+     40
+    ]
+   ],
+   [
+    262,
+    [
+     429,
+     446,
+     23,
+     40
+    ]
+   ],
+   [
+    205,
+    [
+     170,
+     191,
+     28,
+     40
+    ]
+   ],
+   [
+    13132,
+    [
+     69,
+     330,
+     83,
+     159
+    ]
+   ]
+  ],
+  "largest_kept": 40980,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/ah_shout_composite.png",
+  "fitted_bbox": [
+   0,
+   0,
+   465,
+   159,
+   40980
+  ],
+  "patch_centre": [
+   232.5,
+   79.5
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__ee_verbatim.png": {
+  "src_alpha": 1710,
+  "kept_alpha": 1504,
+  "dropped": 206,
+  "m1_class_dropped": 104,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 1504,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/ee_verbatim.png",
+  "fitted_bbox": [
+   0,
+   0,
+   291,
+   108,
+   1504
+  ],
+  "patch_centre": [
+   145.5,
+   54.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__ee_verbatim_288.png": {
+  "src_alpha": 1710,
+  "kept_alpha": 1504,
+  "dropped": 206,
+  "m1_class_dropped": 104,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 1504,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/ee_verbatim_288.png",
+  "fitted_bbox": [
+   0,
+   0,
+   291,
+   108,
+   1504
+  ],
+  "patch_centre": [
+   145.5,
+   54.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__eh_verbatim.png": {
+  "src_alpha": 36600,
+  "kept_alpha": 36279,
+  "dropped": 321,
+  "m1_class_dropped": 203,
+  "rule": "ALL",
+  "anchors": [
+   [
+    13132,
+    [
+     69,
+     330,
+     83,
+     159
+    ]
+   ]
+  ],
+  "largest_kept": 36279,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/eh_verbatim.png",
+  "fitted_bbox": [
+   0,
+   1,
+   465,
+   159,
+   36279
+  ],
+  "patch_centre": [
+   232.5,
+   80.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__eh_verbatim_288.png": {
+  "src_alpha": 36600,
+  "kept_alpha": 36279,
+  "dropped": 321,
+  "m1_class_dropped": 203,
+  "rule": "ALL",
+  "anchors": [
+   [
+    13132,
+    [
+     69,
+     330,
+     83,
+     159
+    ]
+   ]
+  ],
+  "largest_kept": 36279,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/eh_verbatim_288.png",
+  "fitted_bbox": [
+   0,
+   1,
+   465,
+   159,
+   36279
+  ],
+  "patch_centre": [
+   232.5,
+   80.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__fv_composite.png": {
+  "src_alpha": 7334,
+  "kept_alpha": 6887,
+  "dropped": 447,
+  "m1_class_dropped": 366,
+  "rule": "ALL",
+  "anchors": [
+   [
+    668,
+    [
+     345,
+     402,
+     22,
+     37
+    ]
+   ],
+   [
+    577,
+    [
+     10,
+     64,
+     17,
+     38
+    ]
+   ],
+   [
+    412,
+    [
+     63,
+     107,
+     17,
+     32
+    ]
+   ],
+   [
+    304,
+    [
+     262,
+     319,
+     24,
+     32
+    ]
+   ],
+   [
+    248,
+    [
+     403,
+     419,
+     23,
+     39
+    ]
+   ]
+  ],
+  "largest_kept": 6887,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/fv_composite.png",
+  "fitted_bbox": [
+   0,
+   0,
+   419,
+   47,
+   6887
+  ],
+  "patch_centre": [
+   209.5,
+   23.5
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__gk_verbatim.png": {
+  "src_alpha": 64269,
+  "kept_alpha": 63559,
+  "dropped": 710,
+  "m1_class_dropped": 267,
+  "rule": "ALL",
+  "anchors": [
+   [
+    9975,
+    [
+     527,
+     760,
+     54,
+     122
+    ]
+   ],
+   [
+    9724,
+    [
+     140,
+     322,
+     37,
+     128
+    ]
+   ],
+   [
+    9283,
+    [
+     7,
+     156,
+     38,
+     126
+    ]
+   ],
+   [
+    8395,
+    [
+     328,
+     528,
+     60,
+     136
+    ]
+   ],
+   [
+    7477,
+    [
+     746,
+     894,
+     48,
+     122
+    ]
+   ],
+   [
+    2950,
+    [
+     886,
+     931,
+     50,
+     130
+    ]
+   ]
+  ],
+  "largest_kept": 63559,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/gk_verbatim.png",
+  "fitted_bbox": [
+   0,
+   0,
+   931,
+   144,
+   63559
+  ],
+  "patch_centre": [
+   465.5,
+   72.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__gk_verbatim_288.png": {
+  "src_alpha": 64269,
+  "kept_alpha": 63559,
+  "dropped": 710,
+  "m1_class_dropped": 267,
+  "rule": "ALL",
+  "anchors": [
+   [
+    9975,
+    [
+     527,
+     760,
+     54,
+     122
+    ]
+   ],
+   [
+    9724,
+    [
+     140,
+     322,
+     37,
+     128
+    ]
+   ],
+   [
+    9283,
+    [
+     7,
+     156,
+     38,
+     126
+    ]
+   ],
+   [
+    8395,
+    [
+     328,
+     528,
+     60,
+     136
+    ]
+   ],
+   [
+    7477,
+    [
+     746,
+     894,
+     48,
+     122
+    ]
+   ],
+   [
+    2950,
+    [
+     886,
+     931,
+     50,
+     130
+    ]
+   ]
+  ],
+  "largest_kept": 63559,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/gk_verbatim_288.png",
+  "fitted_bbox": [
+   0,
+   0,
+   931,
+   144,
+   63559
+  ],
+  "patch_centre": [
+   465.5,
+   72.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__l_composite.png": {
+  "src_alpha": 20851,
+  "kept_alpha": 20829,
+  "dropped": 22,
+  "m1_class_dropped": 22,
+  "rule": "ALL",
+  "anchors": [
+   [
+    14418,
+    [
+     57,
+     231,
+     0,
+     126
+    ]
+   ]
+  ],
+  "largest_kept": 20829,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/l_composite.png",
+  "fitted_bbox": [
+   0,
+   0,
+   288,
+   126,
+   20829
+  ],
+  "patch_centre": [
+   144.0,
+   63.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__mbp_verbatim.png": {
+  "src_alpha": 276,
+  "kept_alpha": 276,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 276,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/mbp_verbatim.png",
+  "fitted_bbox": [
+   0,
+   0,
+   67,
+   8,
+   276
+  ],
+  "patch_centre": [
+   33.5,
+   4.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__mbp_verbatim_288.png": {
+  "src_alpha": 276,
+  "kept_alpha": 276,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 276,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/mbp_verbatim_288.png",
+  "fitted_bbox": [
+   0,
+   0,
+   67,
+   8,
+   276
+  ],
+  "patch_centre": [
+   33.5,
+   4.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__oh_composite.png": {
+  "src_alpha": 12200,
+  "kept_alpha": 12200,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 12200,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/oh_composite.png",
+  "fitted_bbox": [
+   0,
+   0,
+   255,
+   150,
+   12200
+  ],
+  "patch_centre": [
+   127.5,
+   75.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__oo_composite.png": {
+  "src_alpha": 5272,
+  "kept_alpha": 5272,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 5272,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/oo_composite.png",
+  "fitted_bbox": [
+   0,
+   0,
+   167,
+   98,
+   5272
+  ],
+  "patch_centre": [
+   83.5,
+   49.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__r_composite.png": {
+  "src_alpha": 7679,
+  "kept_alpha": 7679,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 7679,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/r_composite.png",
+  "fitted_bbox": [
+   0,
+   0,
+   223,
+   107,
+   7679
+  ],
+  "patch_centre": [
+   111.5,
+   53.5
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__rest_mbp_copy.png": {
+  "src_alpha": 276,
+  "kept_alpha": 276,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 276,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/rest_mbp_copy.png",
+  "fitted_bbox": [
+   0,
+   0,
+   67,
+   8,
+   276
+  ],
+  "patch_centre": [
+   33.5,
+   4.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__sz_composite.png": {
+  "src_alpha": 33982,
+  "kept_alpha": 33222,
+  "dropped": 760,
+  "m1_class_dropped": 636,
+  "rule": "ALL",
+  "anchors": [
+   [
+    5219,
+    [
+     396,
+     570,
+     38,
+     86
+    ]
+   ],
+   [
+    5090,
+    [
+     105,
+     241,
+     26,
+     90
+    ]
+   ],
+   [
+    4865,
+    [
+     5,
+     117,
+     27,
+     88
+    ]
+   ],
+   [
+    4398,
+    [
+     246,
+     395,
+     42,
+     95
+    ]
+   ],
+   [
+    3912,
+    [
+     559,
+     670,
+     34,
+     85
+    ]
+   ],
+   [
+    1543,
+    [
+     665,
+     698,
+     35,
+     91
+    ]
+   ]
+  ],
+  "largest_kept": 33222,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/sz_composite.png",
+  "fitted_bbox": [
+   0,
+   0,
+   698,
+   101,
+   33222
+  ],
+  "patch_centre": [
+   349.0,
+   50.5
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__th_composite.png": {
+  "src_alpha": 40021,
+  "kept_alpha": 39258,
+  "dropped": 763,
+  "m1_class_dropped": 636,
+  "rule": "ALL",
+  "anchors": [
+   [
+    5814,
+    [
+     412,
+     593,
+     41,
+     91
+    ]
+   ],
+   [
+    5663,
+    [
+     109,
+     251,
+     28,
+     96
+    ]
+   ],
+   [
+    5407,
+    [
+     6,
+     121,
+     29,
+     94
+    ]
+   ],
+   [
+    4503,
+    [
+     256,
+     411,
+     45,
+     102
+    ]
+   ],
+   [
+    4358,
+    [
+     582,
+     697,
+     36,
+     92
+    ]
+   ],
+   [
+    1713,
+    [
+     691,
+     726,
+     38,
+     97
+    ]
+   ],
+   [
+    3123,
+    [
+     299,
+     427,
+     91,
+     126
+    ]
+   ]
+  ],
+  "largest_kept": 39258,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/th_composite.png",
+  "fitted_bbox": [
+   0,
+   0,
+   726,
+   126,
+   39258
+  ],
+  "patch_centre": [
+   363.0,
+   63.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "LIPSYNC__w_composite.png": {
+  "src_alpha": 4065,
+  "kept_alpha": 4065,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "CHAIN",
+  "anchors": [],
+  "largest_kept": 4065,
+  "group": "LIPSYNC",
+  "source": "/home/hatch/workspace/cape-jones-rig/lipsync-production-20261031/mouths/w_composite.png",
+  "fitted_bbox": [
+   0,
+   0,
+   153,
+   82,
+   4065
+  ],
+  "patch_centre": [
+   76.5,
+   41.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "APPROVED__ah-clean_clean_patch.png": {
+  "src_alpha": 9051,
+  "kept_alpha": 9051,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "ALL",
+  "anchors": [
+   [
+    3303,
+    [
+     34,
+     164,
+     58,
+     97
+    ]
+   ]
+  ],
+  "largest_kept": 9051,
+  "group": "APPROVED",
+  "source": "/home/hatch/workspace/cape-jones-rig/mouth-ah-smile34-clean-20261031/patches/ah-clean_clean_patch.png",
+  "fitted_bbox": [
+   0,
+   17,
+   228,
+   97,
+   9051
+  ],
+  "patch_centre": [
+   114.0,
+   57.0
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ },
+ "APPROVED__smile34-clean_clean_patch.png": {
+  "src_alpha": 3006,
+  "kept_alpha": 3006,
+  "dropped": 0,
+  "m1_class_dropped": 0,
+  "rule": "ALL",
+  "anchors": [
+   [
+    841,
+    [
+     53,
+     119,
+     45,
+     71
+    ]
+   ],
+   [
+    284,
+    [
+     51,
+     102,
+     26,
+     36
+    ]
+   ],
+   [
+    376,
+    [
+     71,
+     117,
+     41,
+     52
+    ]
+   ]
+  ],
+  "largest_kept": 3006,
+  "group": "APPROVED",
+  "source": "/home/hatch/workspace/cape-jones-rig/mouth-ah-smile34-clean-20261031/patches/smile34-clean_clean_patch.png",
+  "fitted_bbox": [
+   30,
+   18,
+   135,
+   73,
+   3006
+  ],
+  "patch_centre": [
+   82.5,
+   45.5
+  ],
+  "gate_G1_subset": true,
+  "gate_G2_present": true,
+  "gate_PASS": true
+ }
+}

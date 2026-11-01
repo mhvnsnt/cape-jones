@@ -1,0 +1,15 @@
+{
+ "old_groups": 498,
+ "old_members": 1420,
+ "missing_files": 0,
+ "true_subgroups": 474,
+ "true_files": 975,
+ "near_files": 440,
+ "other_files": 5,
+ "true_pct_of_old_members": 68.7,
+ "near_pct": 31.0,
+ "other_pct": 0.4,
+ "groups_fully_true": 295,
+ "groups_with_near": 201,
+ "groups_with_other": 3
+}

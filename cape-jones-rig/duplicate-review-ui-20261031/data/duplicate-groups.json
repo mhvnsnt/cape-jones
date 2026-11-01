@@ -1,0 +1,802 @@
+{
+ "version": "20261031",
+ "source": "honest-defects-10-methods-20261031/measurements-10-methods-20261031.json M7_duplicates, cross-checked against transparent-plates-grok-full-sweep-20261031/conversion-manifest.json (245 entries)",
+ "totals": {
+  "sheets_total": 245,
+  "figure_sheets": 208,
+  "background_sheets": 37,
+  "plates_checked": 208,
+  "unique_plate_hashes": 173,
+  "duplicate_groups": 24,
+  "duplicate_items": 59,
+  "extra_copies": 35,
+  "sliced_pieces_total": 3818,
+  "sliced_pieces_named": 1908,
+  "sliced_pieces_mixed": 1910
+ },
+ "plate_files_missing": 0,
+ "groups": [
+  {
+   "group_id": "DG-01",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 3,
+   "suggested_canonical": "fla-packs/dance-packs/dance-2e9kj.jpg",
+   "items": [
+    {
+     "source": "fla-packs/dance-packs/dance-2e9kj.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-2e9kj.png",
+     "plate_exists": true,
+     "alpha_frac": 0.3232691140776699,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs/recent-2e9kj.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-2e9kj.png",
+     "plate_exists": true,
+     "alpha_frac": 0.3232691140776699,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs-2/recent-2e9kj.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-2e9kj.png",
+     "plate_exists": true,
+     "alpha_frac": 0.3232691140776699,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-02",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 3,
+   "suggested_canonical": "fla-packs/dance-packs/dance-D3pmc.jpg",
+   "items": [
+    {
+     "source": "fla-packs/dance-packs/dance-D3pmc.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-D3pmc.png",
+     "plate_exists": true,
+     "alpha_frac": 0.3063647855987055,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs/recent-D3pmc.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-D3pmc.png",
+     "plate_exists": true,
+     "alpha_frac": 0.3063647855987055,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs-2/recent-D3pmc.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-D3pmc.png",
+     "plate_exists": true,
+     "alpha_frac": 0.3063647855987055,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-03",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 3,
+   "suggested_canonical": "fla-packs/dance-packs/dance-MAHyh.jpg",
+   "items": [
+    {
+     "source": "fla-packs/dance-packs/dance-MAHyh.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-MAHyh.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2820211743551587,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs/recent-MAHyh.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-MAHyh.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2820211743551587,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs-2/recent-MAHyh.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-MAHyh.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2820211743551587,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-04",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 3,
+   "suggested_canonical": "fla-packs/dance-packs/dance-UgepP.jpg",
+   "items": [
+    {
+     "source": "fla-packs/dance-packs/dance-UgepP.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-UgepP.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2798513349514563,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs/recent-UgepP.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-UgepP.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2798513349514563,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs-2/recent-UgepP.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-UgepP.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2798513349514563,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-05",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 3,
+   "suggested_canonical": "fla-packs/dance-packs/dance-ZxEwS.jpg",
+   "items": [
+    {
+     "source": "fla-packs/dance-packs/dance-ZxEwS.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-ZxEwS.png",
+     "plate_exists": true,
+     "alpha_frac": 0.24959597491909385,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs/recent-ZxEwS.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-ZxEwS.png",
+     "plate_exists": true,
+     "alpha_frac": 0.24959597491909385,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs-2/recent-ZxEwS.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-ZxEwS.png",
+     "plate_exists": true,
+     "alpha_frac": 0.24959597491909385,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-06",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 3,
+   "suggested_canonical": "fla-packs/dance-packs/dance-a3jha.jpg",
+   "items": [
+    {
+     "source": "fla-packs/dance-packs/dance-a3jha.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-a3jha.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2576350121359223,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs/recent-a3jha.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-a3jha.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2576350121359223,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs-2/recent-a3jha.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-a3jha.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2576350121359223,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-07",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 3,
+   "suggested_canonical": "fla-packs/dance-packs/dance-etaPY.jpg",
+   "items": [
+    {
+     "source": "fla-packs/dance-packs/dance-etaPY.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-etaPY.png",
+     "plate_exists": true,
+     "alpha_frac": 0.23086956136621314,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs/recent-etaPY.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-etaPY.png",
+     "plate_exists": true,
+     "alpha_frac": 0.23086956136621314,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs-2/recent-etaPY.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-etaPY.png",
+     "plate_exists": true,
+     "alpha_frac": 0.23086956136621314,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-08",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 3,
+   "suggested_canonical": "fla-packs/dance-packs/dance-mANuo.jpg",
+   "items": [
+    {
+     "source": "fla-packs/dance-packs/dance-mANuo.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-mANuo.png",
+     "plate_exists": true,
+     "alpha_frac": 0.12465362055016181,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs/recent-mANuo.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-mANuo.png",
+     "plate_exists": true,
+     "alpha_frac": 0.12465362055016181,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs-2/recent-mANuo.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-mANuo.png",
+     "plate_exists": true,
+     "alpha_frac": 0.12465362055016181,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-09",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 3,
+   "suggested_canonical": "fla-packs/dance-packs/dance-qIxLo.jpg",
+   "items": [
+    {
+     "source": "fla-packs/dance-packs/dance-qIxLo.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-qIxLo.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2264871561488673,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs/recent-qIxLo.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-qIxLo.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2264871561488673,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs-2/recent-qIxLo.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-qIxLo.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2264871561488673,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-10",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 3,
+   "suggested_canonical": "fla-packs/dance-packs/dance-smAFI.jpg",
+   "items": [
+    {
+     "source": "fla-packs/dance-packs/dance-smAFI.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-smAFI.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2565331715210356,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs/recent-smAFI.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-smAFI.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2565331715210356,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs-2/recent-smAFI.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-smAFI.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2565331715210356,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-11",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 3,
+   "suggested_canonical": "fla-packs/dance-packs/dance-w2Zh1.jpg",
+   "items": [
+    {
+     "source": "fla-packs/dance-packs/dance-w2Zh1.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-w2Zh1.png",
+     "plate_exists": true,
+     "alpha_frac": 0.27208636731391583,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs/recent-w2Zh1.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-w2Zh1.png",
+     "plate_exists": true,
+     "alpha_frac": 0.27208636731391583,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/jojo-packs-2/recent-w2Zh1.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-w2Zh1.png",
+     "plate_exists": true,
+     "alpha_frac": 0.27208636731391583,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-12",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 2,
+   "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-DGb2j.jpg",
+   "items": [
+    {
+     "source": "fla-packs/lounge-3quarter-packs/clean-DGb2j.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-DGb2j.png",
+     "plate_exists": true,
+     "alpha_frac": 0.29673549107142855,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/lounge-packs/lounge-DGb2j.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-DGb2j.png",
+     "plate_exists": true,
+     "alpha_frac": 0.29673549107142855,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-13",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 2,
+   "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-F72A5.jpg",
+   "items": [
+    {
+     "source": "fla-packs/lounge-3quarter-packs/clean-F72A5.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-F72A5.png",
+     "plate_exists": true,
+     "alpha_frac": 0.18994943365695793,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/lounge-packs/lounge-F72A5.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-F72A5.png",
+     "plate_exists": true,
+     "alpha_frac": 0.18994943365695793,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-14",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 2,
+   "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-IUUgX.jpg",
+   "items": [
+    {
+     "source": "fla-packs/lounge-3quarter-packs/clean-IUUgX.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-IUUgX.png",
+     "plate_exists": true,
+     "alpha_frac": 0.26927083333333335,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/lounge-packs/lounge-IUUgX.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-IUUgX.png",
+     "plate_exists": true,
+     "alpha_frac": 0.26927083333333335,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-15",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 2,
+   "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-IowZk.jpg",
+   "items": [
+    {
+     "source": "fla-packs/lounge-3quarter-packs/clean-IowZk.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-IowZk.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2465306432038835,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/lounge-packs/lounge-IowZk.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-IowZk.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2465306432038835,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-16",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 2,
+   "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-N3ies.jpg",
+   "items": [
+    {
+     "source": "fla-packs/lounge-3quarter-packs/clean-N3ies.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-N3ies.png",
+     "plate_exists": true,
+     "alpha_frac": 0.26233970469255663,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/lounge-packs/lounge-N3ies.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-N3ies.png",
+     "plate_exists": true,
+     "alpha_frac": 0.26233970469255663,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-17",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 2,
+   "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-OAFac.jpg",
+   "items": [
+    {
+     "source": "fla-packs/lounge-3quarter-packs/clean-OAFac.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-OAFac.png",
+     "plate_exists": true,
+     "alpha_frac": 0.28377022653721684,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/lounge-packs/lounge-OAFac.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-OAFac.png",
+     "plate_exists": true,
+     "alpha_frac": 0.28377022653721684,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-18",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 2,
+   "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-U8YqN.jpg",
+   "items": [
+    {
+     "source": "fla-packs/lounge-3quarter-packs/clean-U8YqN.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-U8YqN.png",
+     "plate_exists": true,
+     "alpha_frac": 0.22362914644012946,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/lounge-packs/lounge-U8YqN.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-U8YqN.png",
+     "plate_exists": true,
+     "alpha_frac": 0.22362914644012946,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-19",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 2,
+   "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-ZdzDG.jpg",
+   "items": [
+    {
+     "source": "fla-packs/lounge-3quarter-packs/clean-ZdzDG.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-ZdzDG.png",
+     "plate_exists": true,
+     "alpha_frac": 0.23328630663430422,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/lounge-packs/lounge-ZdzDG.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-ZdzDG.png",
+     "plate_exists": true,
+     "alpha_frac": 0.23328630663430422,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-20",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 2,
+   "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-jvqhV.jpg",
+   "items": [
+    {
+     "source": "fla-packs/lounge-3quarter-packs/clean-jvqhV.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-jvqhV.png",
+     "plate_exists": true,
+     "alpha_frac": 0.30576961974110034,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/lounge-packs/lounge-jvqhV.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-jvqhV.png",
+     "plate_exists": true,
+     "alpha_frac": 0.30576961974110034,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-21",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 2,
+   "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-wDheK.jpg",
+   "items": [
+    {
+     "source": "fla-packs/lounge-3quarter-packs/clean-wDheK.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-wDheK.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2197582928802589,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/lounge-packs/lounge-wDheK.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-wDheK.png",
+     "plate_exists": true,
+     "alpha_frac": 0.2197582928802589,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-22",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 2,
+   "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-zxxqO.jpg",
+   "items": [
+    {
+     "source": "fla-packs/lounge-3quarter-packs/clean-zxxqO.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-zxxqO.png",
+     "plate_exists": true,
+     "alpha_frac": 0.30706462378640775,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "fla-packs/lounge-packs/lounge-zxxqO.jpg",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-zxxqO.png",
+     "plate_exists": true,
+     "alpha_frac": 0.30706462378640775,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-23",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 2,
+   "suggested_canonical": "fla-packs/references/tpose-front-alt.png",
+   "items": [
+    {
+     "source": "fla-packs/references/tpose-front-alt.png",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/tpose-front-alt.png",
+     "plate_exists": true,
+     "alpha_frac": 0.5949690942004503,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "variations/references/cape-jones-tpose-front-alt.png",
+     "group_folder": "variations",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/variations/cape-jones-tpose-front-alt.png",
+     "plate_exists": true,
+     "alpha_frac": 0.5949690942004503,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "group_id": "DG-24",
+   "method": "exact MD5 file hash (M7, honest-defects-10-methods)",
+   "size": 2,
+   "suggested_canonical": "fla-packs/references/tpose-front.png",
+   "items": [
+    {
+     "source": "fla-packs/references/tpose-front.png",
+     "group_folder": "fla-packs",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/tpose-front.png",
+     "plate_exists": true,
+     "alpha_frac": 0.23464,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    },
+    {
+     "source": "variations/references/cape-jones-tpose-front.png",
+     "group_folder": "variations",
+     "plate": "../transparent-plates-grok-full-sweep-20261031/plates/variations/cape-jones-tpose-front.png",
+     "plate_exists": true,
+     "alpha_frac": 0.23464,
+     "quality": "PASS",
+     "suggested_label": "",
+     "decision": "UNDECIDED"
+    }
+   ]
+  }
+ ]
+}
