@@ -1,0 +1,265 @@
+{
+  "G1": {
+    "exit": 0,
+    "gate": {
+      "mode": "GROUNDED",
+      "feet_y": 693,
+      "feet_centre_x": 550,
+      "figure_height": 593,
+      "tolerance_px": 10,
+      "warnings": [],
+      "fails": [],
+      "ground_y": 700,
+      "offset_px": -7,
+      "offset_note": "negative = floating above line, positive = sunk below line",
+      "verdict": "PASS",
+      "diff_bbox": [
+        370,
+        100,
+        731,
+        699
+      ],
+      "bbox": [
+        370,
+        100,
+        731,
+        693
+      ],
+      "head_y": 100,
+      "height": 593,
+      "size": [
+        1100,
+        750
+      ],
+      "shadow": {
+        "present": true,
+        "dark_px": 540,
+        "top_y": 699,
+        "gap_px": 6,
+        "centroid_y": 700,
+        "ground_band_dark_px": 565,
+        "ground_band_present": true,
+        "ground_gap_px": 7
+      }
+    }
+  },
+  "G2": {
+    "exit": 2,
+    "gate": {
+      "mode": "GROUNDED",
+      "feet_y": 646,
+      "feet_centre_x": 550,
+      "figure_height": 593,
+      "tolerance_px": 10,
+      "warnings": [],
+      "fails": [
+        "FEET OFF GROUND: offset -54px exceeds tolerance 10px"
+      ],
+      "ground_y": 700,
+      "offset_px": -54,
+      "offset_note": "negative = floating above line, positive = sunk below line",
+      "verdict": "FAIL: FEET OFF GROUND: offset -54px exceeds tolerance 10px",
+      "diff_bbox": [
+        370,
+        53,
+        731,
+        653
+      ],
+      "bbox": [
+        370,
+        53,
+        731,
+        646
+      ],
+      "head_y": 53,
+      "height": 593,
+      "size": [
+        1100,
+        750
+      ],
+      "shadow": {
+        "present": true,
+        "dark_px": 540,
+        "top_y": 699,
+        "gap_px": 53,
+        "centroid_y": 700,
+        "ground_band_dark_px": 540,
+        "ground_band_present": true,
+        "ground_gap_px": 54
+      }
+    }
+  },
+  "G3": {
+    "exit": 0,
+    "gate": {
+      "mode": "AIRBORNE",
+      "feet_y": 514,
+      "feet_centre_x": 550,
+      "figure_height": 414,
+      "tolerance_px": 10,
+      "warnings": [],
+      "fails": [],
+      "ground_y": 700,
+      "height_px": 180,
+      "flight_line": "hover 180px above floor, shadow detached on ground line",
+      "verdict": "PASS",
+      "diff_bbox": [
+        424,
+        100,
+        677,
+        722
+      ],
+      "bbox": [
+        424,
+        100,
+        677,
+        514
+      ],
+      "head_y": 100,
+      "height": 414,
+      "size": [
+        1100,
+        750
+      ],
+      "shadow": {
+        "present": false,
+        "dark_px": 4,
+        "ground_band_dark_px": 2190,
+        "ground_band_present": true,
+        "ground_gap_px": 186
+      }
+    }
+  },
+  "A_FAIL": {
+    "exit": 2,
+    "gate": {
+      "mode": "AIRBORNE",
+      "feet_y": 693,
+      "feet_centre_x": 550,
+      "figure_height": 593,
+      "tolerance_px": 10,
+      "warnings": [],
+      "fails": [
+        "AIRBORNE SPEC MISMATCH: height 0px <= tolerance 10px, feet are on the ground, relabel GROUNDED"
+      ],
+      "ground_y": 700,
+      "height_px": 0,
+      "flight_line": "claimed hover, feet actually on ground",
+      "verdict": "FAIL: AIRBORNE SPEC MISMATCH: height 0px <= tolerance 10px, feet are on the ground, relabel GROUNDED",
+      "diff_bbox": [
+        370,
+        100,
+        731,
+        699
+      ],
+      "bbox": [
+        370,
+        100,
+        731,
+        693
+      ],
+      "head_y": 100,
+      "height": 593,
+      "size": [
+        1100,
+        750
+      ],
+      "shadow": {
+        "present": true,
+        "dark_px": 540,
+        "top_y": 699,
+        "gap_px": 6,
+        "centroid_y": 700,
+        "ground_band_dark_px": 565,
+        "ground_band_present": true,
+        "ground_gap_px": 7
+      }
+    }
+  },
+  "WALK_SEQUENCE": {
+    "mode": "GROUNDED",
+    "n_frames": 5,
+    "feet_y_min": 700,
+    "feet_y_max": 700,
+    "feet_y_spread": 0,
+    "warnings": [],
+    "fails": [],
+    "feet_centre_x_spread": 160,
+    "verdict": "PASS"
+  },
+  "BARS_EXISTING": {
+    "mode": "GROUNDED",
+    "n_frames": 24,
+    "feet_y_min": 700,
+    "feet_y_max": 700,
+    "feet_y_spread": 0,
+    "warnings": [],
+    "fails": [],
+    "feet_centre_x_spread": 1,
+    "verdict": "PASS"
+  },
+  "SIZE_WALK_EXISTING": {
+    "mode": "GROUNDED",
+    "n_frames": 44,
+    "feet_y_min": 1500,
+    "feet_y_max": 1500,
+    "feet_y_spread": 0,
+    "warnings": [],
+    "fails": [],
+    "feet_centre_x_spread": 0,
+    "verdict": "PASS"
+  },
+  "SIZE_POWER_EXISTING": {
+    "mode": "GROUNDED",
+    "n_frames": 54,
+    "feet_y_min": 1500,
+    "feet_y_max": 1500,
+    "feet_y_spread": 0,
+    "warnings": [],
+    "fails": [],
+    "feet_centre_x_spread": 0,
+    "verdict": "PASS"
+  },
+  "PORTRAIT_A_PLANTED": {
+    "mode": "GROUNDED",
+    "feet_y": 1700,
+    "feet_centre_x": 539,
+    "figure_height": 1165,
+    "tolerance_px": 10,
+    "warnings": [],
+    "fails": [],
+    "rug_far": 1421,
+    "rug_near": 1868,
+    "rug_position": 0.624,
+    "rug_in_front_px": 168,
+    "verdict": "PASS"
+  },
+  "PORTRAIT_OLD_FLOAT": {
+    "mode": "GROUNDED",
+    "feet_y": 1548,
+    "feet_centre_x": 539,
+    "figure_height": 1165,
+    "tolerance_px": 10,
+    "warnings": [],
+    "fails": [
+      "FEET NOT PLANTED ON RUG: rug_position 0.284 outside [0.55, 0.95]"
+    ],
+    "rug_far": 1421,
+    "rug_near": 1868,
+    "rug_position": 0.284,
+    "rug_in_front_px": 320,
+    "verdict": "FAIL: FEET NOT PLANTED ON RUG: rug_position 0.284 outside [0.55, 0.95]"
+  },
+  "AUTO_SYNTHETIC": {
+    "ground_y_estimate": 700,
+    "edge_strength": 45.264,
+    "confidence": 0.013,
+    "note": "ESTIMATE only; confirm in shot spec"
+  },
+  "AUTO_KKGUH": {
+    "ground_y_estimate": 436,
+    "edge_strength": 7.867,
+    "confidence": 0.155,
+    "note": "ESTIMATE only; confirm in shot spec"
+  }
+}
