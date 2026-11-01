@@ -1,0 +1,135 @@
+{
+ "placement_target": [
+  231.5,
+  504.5
+ ],
+ "stats": {
+  "MBP_clean_line": {
+   "name": "MBP-clean-line",
+   "placed_size": [
+    178,
+    23
+   ],
+   "stroke_px": 5,
+   "source_columns": [
+    8,
+    75
+   ],
+   "median_residual_px": 0.203,
+   "max_residual_px": 0.84,
+   "median_thickness_source_px": 2.0,
+   "svg_segments": 17,
+   "svg_path_points": 18,
+   "gate": {
+    "name": "MBP-clean-line",
+    "dark_columns": [
+     15,
+     156
+    ],
+    "missing_columns_inside": [],
+    "max_adjacent_centre_step_px": 1.0,
+    "pass": true
+   }
+  },
+  "MBP_approved": {
+   "gate": {
+    "name": "MBP-approved",
+    "dark_columns": [
+     16,
+     157
+    ],
+    "missing_columns_inside": [],
+    "max_adjacent_centre_step_px": 2.0,
+    "pass": true
+   },
+   "note": "Straight 6px bridge, gap 88-137, flat y14.0, step vs wavy fragments at 3x."
+  },
+  "EE_clean_line": {
+   "name": "EE-clean-line",
+   "placed_size": [
+    200,
+    113
+   ],
+   "stroke_px": 3,
+   "source_columns": [
+    10,
+    154
+   ],
+   "median_residual_px": 0.083,
+   "max_residual_px": 0.414,
+   "median_thickness_source_px": 2.0,
+   "svg_segments": 36,
+   "svg_path_points": 37,
+   "gate": {
+    "name": "EE-clean-line",
+    "dark_columns": [
+     12,
+     191
+    ],
+    "missing_columns_inside": [],
+    "max_adjacent_centre_step_px": 1.0,
+    "pass": true
+   }
+  },
+  "ah-v2": {
+   "size": [
+    296,
+    98
+   ],
+   "alpha_px": 9553
+  },
+  "gk-v2": {
+   "size": [
+    531,
+    81
+   ],
+   "alpha_px": 14958
+  },
+  "mbp-v2": {
+   "size": [
+    86,
+    10
+   ],
+   "alpha_px": 67
+  },
+  "ah34": {
+   "size": [
+    401,
+    191
+   ],
+   "alpha_px": 53058
+  },
+  "mbp34": {
+   "size": [
+    151,
+    26
+   ],
+   "alpha_px": 272
+  },
+  "smile34": {
+   "size": [
+    136,
+    86
+   ],
+   "alpha_px": 5942
+  }
+ },
+ "packs": {
+  "LINECLEAN-PAHGO": [
+   "MBP",
+   "AH",
+   "GK"
+  ],
+  "FRONT-4": [
+   "MBP-v2",
+   "AH-v2",
+   "GK-v2",
+   "EE-vector"
+  ],
+  "THREEQUARTER-3": [
+   "AH34",
+   "MBP34",
+   "SMILE34"
+  ]
+ }
+}
