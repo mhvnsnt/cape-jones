@@ -1,0 +1,82 @@
+{
+ "source": "layout-line-art/layout-bedroom-garage-mountain-hallway.jpg",
+ "group": "layout-line-art",
+ "plate": "layout-line-art/layout-bedroom-garage-mountain-hallway.png",
+ "plate_md5": "4ab8309bfc55762a23da938857cd6a53",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    906,
+    479
+   ],
+   "opaque_px": 433279,
+   "sheet_bbox": [
+    25,
+    22,
+    931,
+    501
+   ],
+   "area_px": 433279,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    905,
+    480
+   ],
+   "opaque_px": 433148,
+   "sheet_bbox": [
+    957,
+    22,
+    1862,
+    502
+   ],
+   "area_px": 433148,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    906,
+    488
+   ],
+   "opaque_px": 441509,
+   "sheet_bbox": [
+    25,
+    523,
+    931,
+    1011
+   ],
+   "area_px": 441509,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    905,
+    488
+   ],
+   "opaque_px": 441132,
+   "sheet_bbox": [
+    957,
+    523,
+    1862,
+    1011
+   ],
+   "area_px": 441132,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  }
+ ]
+}
