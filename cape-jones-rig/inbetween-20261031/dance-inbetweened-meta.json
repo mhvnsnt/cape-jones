@@ -1,0 +1,6 @@
+{
+ "method": "IMAGE interpolation (alpha blend 0.5 between consecutive corrected dance frames), NOT rig inbetweening",
+ "source_frames": 63,
+ "total_frames": 125,
+ "fps": 24
+}
