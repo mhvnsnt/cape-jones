@@ -1,0 +1,63 @@
+frame,kind,from,to,t,eased,dy_rig,dx_rig,height_video_px,label
+0,KEY hold,apose,apose,0,0,0,0,0,AIRBORNE
+1,KEY hold,apose,apose,0,0,0,0,0,AIRBORNE
+2,KEY hold,apose,apose,0,0,0,0,0,AIRBORNE
+3,inbetween,apose,jump crouch,0.12,0.01,0,0,0,AIRBORNE
+4,inbetween,apose,jump crouch,0.25,0.06,6,0,0,AIRBORNE
+5,BREAKDOWN arc +10deg largest-moving arm upper,apose,jump crouch,0.38,0.21,22,0,0,AIRBORNE
+6,inbetween,apose,jump crouch,0.5,0.5,54,0,0,AIRBORNE
+7,BREAKDOWN follow-through +8deg that arm lower,apose,jump crouch,0.62,0.79,85,0,0,AIRBORNE
+8,inbetween,apose,jump crouch,0.75,0.94,101,0,0,AIRBORNE
+9,inbetween,apose,jump crouch,0.88,0.99,107,0,0,AIRBORNE
+10,KEY hold,jump crouch,jump crouch,0,0,108,0,0,AIRBORNE
+11,KEY hold,jump crouch,jump crouch,0,0,108,0,0,AIRBORNE
+12,KEY hold,jump crouch,jump crouch,0,0,108,0,0,AIRBORNE
+13,KEY hold,jump crouch,jump crouch,0,0,108,0,0,AIRBORNE
+14,KEY hold,jump crouch,jump crouch,0,0,108,0,0,AIRBORNE
+15,inbetween,jump crouch,jump takeoff,0.12,0.01,107,0,0,AIRBORNE
+16,inbetween,jump crouch,jump takeoff,0.25,0.06,101,0,2,AIRBORNE
+17,BREAKDOWN arc +10deg largest-moving arm upper,jump crouch,jump takeoff,0.38,0.21,87,0,6,AIRBORNE
+18,inbetween,jump crouch,jump takeoff,0.5,0.5,59,0,15,AIRBORNE
+19,BREAKDOWN follow-through +8deg that arm lower,jump crouch,jump takeoff,0.62,0.79,30,0,24,AIRBORNE
+20,inbetween,jump crouch,jump takeoff,0.75,0.94,16,0,28,AIRBORNE
+21,inbetween,jump crouch,jump takeoff,0.88,0.99,10,0,30,AIRBORNE
+22,KEY hold,jump takeoff,jump takeoff,0,0,10,0,30,AIRBORNE
+23,KEY hold,jump takeoff,jump takeoff,0,0,10,0,30,AIRBORNE
+24,KEY hold,jump takeoff,jump takeoff,0,0,10,0,30,AIRBORNE
+25,KEY hold,jump takeoff,jump takeoff,0,0,10,0,30,AIRBORNE
+26,inbetween,jump takeoff,jump tuck apex,0.12,0.01,9,0,31,AIRBORNE
+27,inbetween,jump takeoff,jump tuck apex,0.25,0.06,3,0,34,AIRBORNE
+28,BREAKDOWN arc +10deg largest-moving arm upper,jump takeoff,jump tuck apex,0.38,0.21,-11,0,45,AIRBORNE
+29,inbetween,jump takeoff,jump tuck apex,0.5,0.5,-41,0,65,AIRBORNE
+30,BREAKDOWN follow-through +8deg that arm lower,jump takeoff,jump tuck apex,0.62,0.79,-70,0,85,AIRBORNE
+31,inbetween,jump takeoff,jump tuck apex,0.75,0.94,-85,0,96,AIRBORNE
+32,inbetween,jump takeoff,jump tuck apex,0.88,0.99,-91,0,99,AIRBORNE
+33,KEY hold,jump tuck apex,jump tuck apex,0,0,-92,0,100,AIRBORNE
+34,KEY hold,jump tuck apex,jump tuck apex,0,0,-92,0,100,AIRBORNE
+35,KEY hold,jump tuck apex,jump tuck apex,0,0,-92,0,100,AIRBORNE
+36,KEY hold,jump tuck apex,jump tuck apex,0,0,-92,0,100,AIRBORNE
+37,KEY hold,jump tuck apex,jump tuck apex,0,0,-92,0,100,AIRBORNE
+38,inbetween,jump tuck apex,jump land (crouch),0.12,0.01,-90,0,99,AIRBORNE
+39,inbetween,jump tuck apex,jump land (crouch),0.25,0.06,-79,0,94,AIRBORNE
+40,BREAKDOWN arc +10deg largest-moving arm upper,jump tuck apex,jump land (crouch),0.38,0.21,-49,0,79,AIRBORNE
+41,inbetween,jump tuck apex,jump land (crouch),0.5,0.5,8,0,50,AIRBORNE
+42,BREAKDOWN follow-through +8deg that arm lower,jump tuck apex,jump land (crouch),0.62,0.79,65,0,21,AIRBORNE
+43,inbetween,jump tuck apex,jump land (crouch),0.75,0.94,95,0,6,AIRBORNE
+44,inbetween,jump tuck apex,jump land (crouch),0.88,0.99,106,0,1,AIRBORNE
+45,KEY hold,jump land (crouch),jump land (crouch),0,0,108,0,0,AIRBORNE
+46,KEY hold,jump land (crouch),jump land (crouch),0,0,108,0,0,AIRBORNE
+47,KEY hold,jump land (crouch),jump land (crouch),0,0,108,0,0,AIRBORNE
+48,KEY hold,jump land (crouch),jump land (crouch),0,0,108,0,0,AIRBORNE
+49,KEY hold,jump land (crouch),jump land (crouch),0,0,108,0,0,AIRBORNE
+50,OVERSHOOT 5% beyond key,jump tuck apex,jump land (crouch),1.05,1.05,108,0,0,AIRBORNE
+51,SETTLE back to key,jump land (crouch),jump land (crouch),1.0,1.0,108,0,0,AIRBORNE
+52,inbetween,jump land (crouch),apose,0.12,0.01,107,0,0,AIRBORNE
+53,inbetween,jump land (crouch),apose,0.25,0.06,101,0,0,AIRBORNE
+54,BREAKDOWN arc +10deg largest-moving arm upper,jump land (crouch),apose,0.38,0.21,85,0,0,AIRBORNE
+55,inbetween,jump land (crouch),apose,0.5,0.5,54,0,0,AIRBORNE
+56,BREAKDOWN follow-through +8deg that arm lower,jump land (crouch),apose,0.62,0.79,22,0,0,AIRBORNE
+57,inbetween,jump land (crouch),apose,0.75,0.94,6,0,0,AIRBORNE
+58,inbetween,jump land (crouch),apose,0.88,0.99,0,0,0,AIRBORNE
+59,KEY hold,apose,apose,0,0,0,0,0,AIRBORNE
+60,KEY hold,apose,apose,0,0,0,0,0,AIRBORNE
+61,KEY hold,apose,apose,0,0,0,0,0,AIRBORNE
