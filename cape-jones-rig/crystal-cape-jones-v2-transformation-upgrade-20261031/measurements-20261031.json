@@ -1,0 +1,42 @@
+{
+  "t2": {
+    "frame08_50pct": {
+      "facets_revealed": 104,
+      "pct_facets": 50.0,
+      "pixels_revealed": 184848,
+      "pct_pixels": 49.4,
+      "revealed_centroid_y_min": 774.1,
+      "revealed_centroid_y_max": 1268.8,
+      "note": "BFS creep: at 50% the revealed set spans feet to mid-torso with branches, NOT a clean horizontal band like #1 at 50% (y threshold only)."
+    },
+    "frames": 16,
+    "duration_ms": 200,
+    "seeds": 15,
+    "facets_total": 208,
+    "growth": "feet seeds, BFS over facet adjacency, shuffled within layer, frontier 15 facets at 50% mix + cyan edge",
+    "final": "100% P8-06 glint, same as V2 power-on"
+  },
+  "t3": {
+    "frame10_50pct": {
+      "facets_revealed": 104,
+      "pct_facets": 50.0,
+      "pixels_revealed": 208894,
+      "pct_pixels": 55.9,
+      "note": "Vein-first: at 50% vein facets up the centre/arms are crystallised while large off-vein areas are still base, unlike #1's horizontal band."
+    },
+    "frames": 20,
+    "duration_ms": 160,
+    "facets_total": 208,
+    "growth": "vein skeleton centre+arms+legs, facets sorted by vein distance + height term + jitter, frontier 20 facets, shard spikes 10-14px on silhouette-edge frontier facets, Gaussian-dot dust 60 particles/frame ahead of front (PIL proxy, NOT a true splat render)",
+    "final": "100% P8-06 glint, spikes and dust fade to 0 at final frame"
+  },
+  "future_variant": {
+    "status": "FUTURE VARIANT ONLY, NOT V2, NOT canon, approval 0/1",
+    "body": "all figure pixels (18,18,22), alpha verbatim from base plate",
+    "symbol": "white (255,255,255) diamond zone x540-575 y460-545, diamond |x-557|/18+|y-502|/42<=1, approximate chest emblem, NOT head cowl (cowl purple left black)",
+    "cape_consumed": "y>=600 alpha erased outside x380-720 (cape side flaps), legs kept; y<600 cape behind shoulders is black-on-black so no difference claimed there \u2014 true cape-piece separation would need sliced cape pieces, not a zone erase",
+    "alpha_with_cape": 373846,
+    "alpha_no_cape": 288094,
+    "alpha_removed": 85752
+  }
+}
