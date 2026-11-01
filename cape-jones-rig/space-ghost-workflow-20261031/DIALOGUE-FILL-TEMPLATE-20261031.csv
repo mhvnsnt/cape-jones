@@ -1,0 +1,31 @@
+shot,pose_clip,dialogue_class,slot_tc_in,slot_tc_out,speaker,intent,line_mars_only,take_selected,viseme_pass_done,qc_phase6_queue_a,notes
+CJ-01,"Punch windup, hold 6f",SILENT-OK,,,,,,,,,
+CJ-02,"Punch extend-snap, hold 2f",SILENT-OK,,,,,,,,,
+CJ-03,"Punch impact-hold, hold 12f (LOCKED impact frame)",SILENT-OK,,,,,,,,,
+CJ-04,"Punch recover, hold 6f",SILENT-OK,,,,,,,,,
+CJ-05,"Punch across-down placement",SILENT-OK,,,,,,,,,"Rim ruling owed, Phase 6 queue B (neutral key, white rim, NOT dual-light)"
+CJ-06,"Walk contact LEG1, hold 12f, loop",SILENT-OK,,,,,,,,,"Rim ruling owed, Phase 6 queue B (neutral key, white rim, NOT dual-light)"
+CJ-07,"Walk passing, hold 12f, loop",SILENT-OK,,,,,,,,,
+CJ-08,"Walk cycle, alley night",SILENT-OK,,,,,,,,,
+CJ-09,"Dance-a, hold 12f, loop",SILENT-OK,,,,,,,,,
+CJ-10,"Dance-b, hold 12f, loop",SILENT-OK,,,,,,,,,
+CJ-11,"Dance repeat / combined finale",SILENT-OK,,,,,,,,,"Tempo slot Phase 5: 152 vs ~107 BPM, Mars choice owed"
+CJ-12,"Flying hovering, hold 12f",SILENT-OK,,,,,,,,,
+CJ-13,"Flying soaring, arms out, hold 12f",SILENT-OK,,,,,,,,,
+CJ-14,"Flying diving, arms up, hold 12f",SILENT-OK,,,,,,,,,
+CJ-15,"Flying forward-flight, foreshortened",SILENT-OK,,,,,,,,,
+CJ-16,"Flex anticipation / before-tighten",SILENT-OK,,,,,,,,,
+CJ-17,"Arms-up reference pose",SILENT-OK,,,,,,,,,
+CJ-18,"True flex, double-bicep",SILENT-OK,,,,,,,,,
+CJ-19,"Fighting pose, forward bicep curl (dual-light)",SILENT-OK,,,,,,,,,
+CJ-20,"Fighting stance, arms up high",SILENT-OK,,,,,,,,,
+CJ-21,"Jump crouch + takeoff",SILENT-OK,,,,,,,,,
+CJ-22,"Jump tuck + landing, cape wind",SILENT-OK,,,,,,,,,
+CJ-23,"Lounge / seated pose in room",SILENT-OK,,,,,,,,,
+CJ-24,"Desk shot, seated at desk",SILENT-OK,,,,,,,,,
+CJ-25,"Room standing, handheld gag device",SILENT-OK,,,,,,,,,
+CJ-26,"Dialogue, neutral / unsure beat",DIALOGUE-PRIMARY,,,,,,,,,"Rim ruling owed, Phase 6 queue B (grey rim 240,240,240, hue N/A by design, NOT dual-light); dialogue QC queue A"
+CJ-27,"Dialogue, shout / angry beat",DIALOGUE-PRIMARY,,,,,,,,,"Anger is viseme/pose, not a colour shift (per shot spec)"
+CJ-28,"Rooftop sunset",SILENT-OK,,,,,,,,,
+CJ-29,"Rooftop night city",SILENT-OK,,,,,,,,,
+CJ-30,"Alley neon dual-light",SILENT-OK,,,,,,,,,
