@@ -1,0 +1,16 @@
+{
+ "frames": 55,
+ "fps": 24,
+ "seconds": 2.29,
+ "canvas": [
+  788,
+  1148
+ ],
+ "edge_alpha_px": 0,
+ "grounded_y_translation_all_zero": true,
+ "fight_snap": "NONE (recovered gate PASS, NO SNAP both sides)",
+ "serve_snap": "L cowl ASSIGNED (gate check still owed)",
+ "guard_snap": "L/R chest ASSIGNED (gate check still owed)",
+ "contact": "move-serve-to-guard-v3-20261031-contact-20261031.png",
+ "xsheet": "move-serve-to-guard-v3-20261031-xsheet-20261031.csv"
+}
