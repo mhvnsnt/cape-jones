@@ -1,0 +1,14 @@
+{
+  "fps": 24,
+  "method": "IMAGE interpolation (eased crossfade + whole-image translation), NOT rig-angle inbetweening; keys are original rig files, layer order preserved inside each key image; mid-blend frames can ghost slightly",
+  "videos": {
+    "jump-cowl-snap-movement": 46,
+    "shimmy-cowl-snap-movement": 70,
+    "ginyu-force-movement": 64,
+    "pose-dialects-movements": 108,
+    "move-punch-to-flex": 33,
+    "move-jump-to-shimmy": 33,
+    "move-serve-to-guard": 33,
+    "move-rollcall-snap-to-spread": 33
+  }
+}
