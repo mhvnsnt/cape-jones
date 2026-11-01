@@ -1,0 +1,58 @@
+{
+  "master": "1920x1920 square open-gate master",
+  "protected_square": [
+    420,
+    420,
+    1500,
+    1500
+  ],
+  "landscape_crop": [
+    0,
+    420,
+    1920,
+    1500
+  ],
+  "portrait_crop": [
+    420,
+    0,
+    1500,
+    1920
+  ],
+  "figure_bbox_master": [
+    737,
+    613,
+    1184,
+    1322
+  ],
+  "figure_bbox_landscape": [
+    737,
+    193,
+    1184,
+    902
+  ],
+  "figure_bbox_portrait": [
+    317,
+    613,
+    764,
+    1322
+  ],
+  "figure_whole_in_landscape": true,
+  "figure_whole_in_portrait": true,
+  "portrait_safe_organic": {
+    "left": 97,
+    "right": 238,
+    "top": 288,
+    "bottom": 438,
+    "box": [
+      97,
+      288,
+      842,
+      1482
+    ]
+  },
+  "portrait_safe_ads_bottom": 672,
+  "blind_crop_figure_cut": {
+    "left_px": 0,
+    "right_px": 0
+  }
+}
