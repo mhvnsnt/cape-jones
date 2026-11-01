@@ -11,3 +11,4 @@ Neck 550/360 scale 1.05, Head_Front 550/250.
 Arms: VERTICAL flip (top-to-bottom, NOT horizontal), pads TOP, bicep BOTTOM, fists BOTTOM.
 Legs: 180 apart, up 15px vs v7, leg-pelvis overlap 98px.
 Waist: pelvis up 20px vs v6, belt up 10px, torso-pelvis overlap 23px.
+Repo status: MERGED, 2026-10-31. PR https://github.com/mhvnsnt/cape-jones/pull/276, merge f14598fc02c25c723f8e03a7e5576a599d340aef, verified 88/88 files on main by size + blob SHA = 100%. v7 branch abandoned, never merged, main untouched by it.
