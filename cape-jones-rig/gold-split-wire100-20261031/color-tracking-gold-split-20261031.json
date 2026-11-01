@@ -1,0 +1,313 @@
+{
+  "input_color": {
+    "gold": [
+      255,
+      180,
+      80
+    ],
+    "cyan": [
+      0,
+      200,
+      255
+    ]
+  },
+  "seam_x": 550,
+  "seam_rule": "gold x<550, cyan x>=550, zero left/right overlap",
+  "view_transform_main": "Standard",
+  "plate": "dual-light-variants-20261031/base-arms-up-transparent-20261031.png (untouched, full 1100x1500 canvas, plate bbox x222-879 y239-1282, touches_edge=False, no crop window)",
+  "measurements": {
+    "new_standard": {
+      "gold_outer": {
+        "median": [
+          255,
+          180,
+          80
+        ],
+        "mean": [
+          254.9,
+          180.0,
+          80.0
+        ],
+        "exact_input_pct": 83.59,
+        "n": 53735
+      },
+      "gold_inner": {
+        "median": [
+          255,
+          180,
+          80
+        ],
+        "mean": [
+          254.9,
+          180.0,
+          80.0
+        ],
+        "exact_input_pct": 83.59,
+        "n": 75410
+      },
+      "cyan_outer": {
+        "median": [
+          3,
+          204,
+          255
+        ],
+        "mean": [
+          5.0,
+          203.6,
+          255.0
+        ],
+        "exact_input_pct": 0.0,
+        "n": 51627
+      },
+      "cyan_inner": {
+        "median": [
+          6,
+          204,
+          255
+        ],
+        "mean": [
+          8.7,
+          203.7,
+          255.0
+        ],
+        "exact_input_pct": 0.0,
+        "n": 72490
+      }
+    },
+    "agx_control": {
+      "gold_outer": {
+        "median": [
+          204,
+          160,
+          107
+        ],
+        "mean": [
+          203.6,
+          159.9,
+          107.4
+        ],
+        "exact_input_pct": 0.0,
+        "n": 53735
+      },
+      "gold_inner": {
+        "median": [
+          204,
+          160,
+          107
+        ],
+        "mean": [
+          203.6,
+          159.9,
+          107.4
+        ],
+        "exact_input_pct": 0.0,
+        "n": 75410
+      },
+      "cyan_outer": {
+        "median": [
+          109,
+          176,
+          201
+        ],
+        "mean": [
+          109.4,
+          175.6,
+          200.6
+        ],
+        "exact_input_pct": 0.0,
+        "n": 51627
+      },
+      "cyan_inner": {
+        "median": [
+          109,
+          176,
+          201
+        ],
+        "mean": [
+          109.4,
+          175.6,
+          200.7
+        ],
+        "exact_input_pct": 0.0,
+        "n": 72490
+      }
+    },
+    "aces_control": {
+      "gold_outer": {
+        "median": [
+          211,
+          161,
+          69
+        ],
+        "mean": [
+          211.0,
+          160.8,
+          68.8
+        ],
+        "exact_input_pct": 0.0,
+        "n": 53735
+      },
+      "gold_inner": {
+        "median": [
+          211,
+          161,
+          69
+        ],
+        "mean": [
+          211.0,
+          160.8,
+          68.8
+        ],
+        "exact_input_pct": 0.0,
+        "n": 75410
+      },
+      "cyan_outer": {
+        "median": [
+          21,
+          175,
+          206
+        ],
+        "mean": [
+          21.0,
+          175.4,
+          206.2
+        ],
+        "exact_input_pct": 0.0,
+        "n": 51627
+      },
+      "cyan_inner": {
+        "median": [
+          21,
+          175,
+          206
+        ],
+        "mean": [
+          21.0,
+          175.4,
+          206.2
+        ],
+        "exact_input_pct": 0.0,
+        "n": 72490
+      }
+    },
+    "old_l3_v5": {
+      "gold_outer": {
+        "median": [
+          174,
+          147,
+          153
+        ],
+        "mean": [
+          166.4,
+          142.2,
+          153.5
+        ],
+        "exact_input_pct": 0.0,
+        "n": 53735
+      },
+      "gold_inner": {
+        "median": [
+          170,
+          146,
+          149
+        ],
+        "mean": [
+          157.8,
+          137.6,
+          144.0
+        ],
+        "exact_input_pct": 0.0,
+        "n": 75410
+      },
+      "cyan_outer": {
+        "median": [
+          122,
+          150,
+          184
+        ],
+        "mean": [
+          124.3,
+          142.9,
+          177.8
+        ],
+        "exact_input_pct": 0.0,
+        "n": 51627
+      },
+      "cyan_inner": {
+        "median": [
+          122,
+          150,
+          179
+        ],
+        "mean": [
+          125.6,
+          140.8,
+          164.9
+        ],
+        "exact_input_pct": 0.0,
+        "n": 72490
+      }
+    },
+    "old_goldpres_v5": {
+      "gold_outer": {
+        "median": [
+          194,
+          148,
+          158
+        ],
+        "mean": [
+          184.7,
+          142.0,
+          160.2
+        ],
+        "exact_input_pct": 0.0,
+        "n": 53735
+      },
+      "gold_inner": {
+        "median": [
+          187,
+          146,
+          152
+        ],
+        "mean": [
+          174.5,
+          140.4,
+          150.9
+        ],
+        "exact_input_pct": 0.0,
+        "n": 75410
+      },
+      "cyan_outer": {
+        "median": [
+          115,
+          150,
+          211
+        ],
+        "mean": [
+          113.5,
+          142.2,
+          201.8
+        ],
+        "exact_input_pct": 0.0,
+        "n": 51627
+      },
+      "cyan_inner": {
+        "median": [
+          112,
+          149,
+          202
+        ],
+        "mean": [
+          120.9,
+          144.1,
+          185.7
+        ],
+        "exact_input_pct": 0.0,
+        "n": 72490
+      }
+    }
+  },
+  "verdict": "PRESERVED: new Standard gold median (255,180,80) on outer and inner, delta (0,0,0) vs input, within ~5/channel gate. Non-exact 16.41% of gold pixels are +-1 channel sRGB round-trip rounding only: (255,181,81) 4374px, (254,179,79) 4258px, rest <=113px each. AgX control gold median (204,160,107) delta (-51,-20,+27) = the old pinkish shift, reproduced. ACES 1.3 control gold median (211,161,69) delta (-44,-19,-11) = creative look, not preservation. Cyan median on new Standard (3,204,255) outer / (6,204,255) inner vs input (0,200,255): +3/+6 from cyan-side-only bloom, expected, gold side unaffected.",
+  "mix_cause": "Old shift cause 1 AgX tone mapping + cause 2 semi-transparent split masks (max alpha 0.627) mixing gold over cyan/bg + unmasked Glare. New stack removes all three for gold: Standard view, opaque split rings alpha 1.0, cyan-only Glare masked to x>=550 after the gold rim.",
+  "approval": "approval 0/1, Mars approval pending"
+}
