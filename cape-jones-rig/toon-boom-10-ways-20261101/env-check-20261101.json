@@ -1,0 +1,25 @@
+{
+  "os": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\nIMAGE_ID=\"hatch-image\"\nIMAGE_VERSION=\"0.1.46\"",
+  "kernel": "Linux htch-runtime 7.0.0-39-generic #1 SMP PREEMPT_DYNAMIC Thu Sep 24 08:42:15 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+  "cpu_count": 4,
+  "mem": "total        used        free      shared  buff/cache   available\nMem:           7.7Gi       6.2Gi       184Mi       290Mi       2.0Gi       1.6Gi\nSwap:             0B          0B          0B",
+  "disk_home": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/mapper/rv  150G   92G   57G  62% /home/hatch",
+  "tools": {
+    "wine": null,
+    "winetricks": null,
+    "qemu-system-x86_64": null,
+    "VBoxManage": null,
+    "docker": null,
+    "podman": null,
+    "rdesktop": null,
+    "xfreerdp": null,
+    "remmina": null,
+    "vncviewer": null,
+    "flatpak": null,
+    "steam": null
+  },
+  "gpu": "NOT FOUND / ERROR: [Errno 2] No such file or directory: 'lspci'",
+  "harmony_linux_supported": "CentOS Stream 9 / Rocky Linux 9.4 per docs.toonboom.com Harmony 27 System Requirements",
+  "this_vm_matches_linux": false,
+  "reason": "This VM is Ubuntu 24.04, 4 CPUs, 7.7GB RAM (below Harmony 8GB minimum), no GPU, no wine/qemu/VirtualBox/docker found. Harmony 27 Linux says 'may not run on other distributions' \u2014 Ubuntu is NOT a supported distro."
+}
