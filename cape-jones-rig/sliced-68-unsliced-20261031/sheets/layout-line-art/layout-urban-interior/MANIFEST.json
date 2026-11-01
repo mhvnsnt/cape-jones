@@ -1,0 +1,82 @@
+{
+ "source": "layout-line-art/layout-urban-interior.jpg",
+ "group": "layout-line-art",
+ "plate": "layout-line-art/layout-urban-interior.png",
+ "plate_md5": "5e00cf957a2de29e33df31b1e9800be2",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    871,
+    471
+   ],
+   "opaque_px": 409002,
+   "sheet_bbox": [
+    16,
+    16,
+    887,
+    487
+   ],
+   "area_px": 409002,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    871,
+    470
+   ],
+   "opaque_px": 409153,
+   "sheet_bbox": [
+    905,
+    16,
+    1776,
+    486
+   ],
+   "area_px": 409153,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    871,
+    463
+   ],
+   "opaque_px": 401979,
+   "sheet_bbox": [
+    16,
+    505,
+    887,
+    968
+   ],
+   "area_px": 401979,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    871,
+    463
+   ],
+   "opaque_px": 402144,
+   "sheet_bbox": [
+    905,
+    505,
+    1776,
+    968
+   ],
+   "area_px": 402144,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  }
+ ]
+}

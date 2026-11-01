@@ -1,0 +1,82 @@
+{
+ "source": "layout-line-art/layout-rooftop-office-desert-street.jpg",
+ "group": "layout-line-art",
+ "plate": "layout-line-art/layout-rooftop-office-desert-street.png",
+ "plate_md5": "ac481f40b0f211fc1e61ef38c6e5f04e",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    437,
+    691
+   ],
+   "opaque_px": 301225,
+   "sheet_bbox": [
+    9,
+    132,
+    446,
+    823
+   ],
+   "area_px": 301225,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    430,
+    691
+   ],
+   "opaque_px": 296080,
+   "sheet_bbox": [
+    455,
+    132,
+    885,
+    823
+   ],
+   "area_px": 296080,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_3",
+   "file": "Row1_3.png",
+   "size": [
+    444,
+    691
+   ],
+   "opaque_px": 305818,
+   "sheet_bbox": [
+    892,
+    132,
+    1336,
+    823
+   ],
+   "area_px": 305818,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_4",
+   "file": "Row1_4.png",
+   "size": [
+    438,
+    691
+   ],
+   "opaque_px": 302325,
+   "sheet_bbox": [
+    1345,
+    132,
+    1783,
+    823
+   ],
+   "area_px": 302325,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  }
+ ]
+}
