@@ -1,0 +1,5 @@
+frame,pose,hold_frames,audio_cue,notes
+1,walk-01-contact,12,footstep,"walk clip, clean v7c, 24fps"
+13,walk-13-passing,12,footstep-alt,"walk clip, clean v7c, 24fps"
+25,walk-25-contact,12,footstep,"walk clip, clean v7c, 24fps"
+37,walk-37-passing,12,footstep-alt,"walk clip, clean v7c, 24fps"
