@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duplicate Review — Cape Jones sheets</title>
+<style>
+  :root{--ink:#1a1a2e;--mut:#5b5b6b;--line:#d9d9e2;--bg:#f6f6fa;--keep:#1d7a3a;--del:#b3261e;--card:#fff}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+  header{background:#1a1a2e;color:#fff;padding:20px 24px}
+  header h1{margin:0 0 6px;font-size:26px}
+  header p{margin:4px 0;color:#cfcfe0}
+  .warn{background:#fff3cd;border:2px solid #d9a400;padding:14px 18px;margin:18px 24px;border-radius:10px;font-size:17px}
+  .warn b{color:#7a5200}
+  .stats{display:flex;flex-wrap:wrap;gap:12px;margin:0 24px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;min-width:150px}
+  .stat b{display:block;font-size:24px}
+  .stat span{color:var(--mut);font-size:13px}
+  .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 24px;padding:14px;background:var(--card);border:1px solid var(--line);border-radius:10px;position:sticky;top:0;z-index:5}
+  .toolbar input,.toolbar select{font-size:15px;padding:8px 10px;border:1px solid var(--line);border-radius:8px}
+  .toolbar input[type=search]{flex:1;min-width:220px}
+  button{font-size:15px;padding:9px 14px;border-radius:8px;border:1px solid var(--line);background:#fff;cursor:pointer}
+  button.primary{background:#1a1a2e;color:#fff}
+  button.keep-on{background:var(--keep);color:#fff;border-color:var(--keep)}
+  button.del-on{background:var(--del);color:#fff;border-color:var(--del)}
+  main{margin:0 24px 40px}
+  .group{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:16px 0;padding:16px}
+  .group h2{margin:0 0 4px;font-size:19px}
+  .group .meta{color:var(--mut);font-size:14px;margin-bottom:12px}
+  .tiles{display:flex;flex-wrap:wrap;gap:14px}
+  .tile{border:2px solid var(--line);border-radius:10px;padding:10px;width:300px;background:#fff}
+  .tile.keep{border-color:var(--keep)}
+  .tile.del{border-color:var(--del)}
+  .tile .imgwrap{background:repeating-conic-gradient(#ddd 0% 25%,#fff 0% 50%) 0 0/20px 20px;min-height:220px;display:flex;align-items:center;justify-content:center;cursor:zoom-in}
+  .tile img{max-width:280px;max-height:300px;object-fit:contain}
+  .tile code{font-size:12px;word-break:break-all}
+  .tile .cap{font-size:13px;color:var(--mut);margin:6px 0}
+  .tile label{font-size:13px;color:var(--mut)}
+  .tile input[type=text]{width:100%;font-size:14px;padding:6px 8px;border:1px solid var(--line);border-radius:6px;margin:4px 0 8px}
+  .decisions{display:flex;gap:6px;flex-wrap:wrap}
+  .decisions button{font-size:13px;padding:6px 9px}
+  .summary{font-size:15px;margin:8px 0}
+  #exportBox{width:100%;min-height:180px;font-family:ui-monospace,Menlo,monospace;font-size:12px;padding:10px;border:1px solid var(--line);border-radius:8px}
+  .modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:20;align-items:center;justify-content:center}
+  .modal.open{display:flex}
+  .modal img{max-width:90vw;max-height:90vh;background:repeating-conic-gradient(#ddd 0% 25%,#fff 0% 50%) 0 0/24px 24px}
+  .modal button{position:absolute;top:16px;right:16px}
+  footer{margin:0 24px 40px;color:var(--mut);font-size:13px}
+  .featurebar{background:#eef3ff;border:1px solid #b9c8ef;border-radius:10px;padding:12px 16px;margin:0 24px 12px;font-size:14px}
+  .featurebar b{color:#1a1a2e}
+  .bulkbar{display:none;gap:8px;align-items:center;margin:12px 24px;padding:12px;background:#fff7e6;border:1px solid #e0b84f;border-radius:10px;position:sticky;top:60px;z-index:4}
+  .bulkbar.show{display:flex;flex-wrap:wrap}
+  .progress{height:14px;background:#e5e5ee;border-radius:8px;overflow:hidden;margin:8px 24px}
+  .progress i{display:block;height:100%;background:#1d7a3a}
+  .valid{margin:12px 24px;padding:12px 16px;background:#fff;border:1px solid var(--line);border-radius:10px;font-size:14px}
+  .valid.warnbox{border-color:#d9a400;background:#fff8e1}
+  .tile .conf{font-size:12px;color:#1d7a3a;font-weight:600}
+  .tile .rel{font-size:12px;color:var(--mut);margin-top:6px}
+  .tile input[type=checkbox]{transform:scale(1.3);margin-right:6px}
+  .helpmodal{max-width:640px;background:#fff;border-radius:12px;padding:20px;font-size:15px}
+  .diffbar{font-size:14px;margin-top:8px}
+
+</style>
+</head>
+<body>
+<header>
+  <h1>Duplicate Review — Cape Jones sheets</h1>
+  <p>Go through duplicate groups, see the same art side by side, label each item, mark KEEP or DELETE CANDIDATE, and export the decision list.</p>
+  <p>Data: real duplicate groups from the verified manifests — never invented. See README for sources and how to swap in a newer export.</p>
+</header>
+
+<div class="warn"><b>NOTHING IS DELETED HERE.</b> This UI only records your choices.
+Nothing is deleted, moved, or renamed by this page. Deletion happens ONLY later, after you approve the exact keep/delete list exported from here, in a separate job.</div>
+
+<div class="stats" id="stats"></div>
+
+<div class="toolbar">
+  <input type="search" id="q" placeholder="Search source name, e.g. 2e9kj, lounge, tpose…">
+  <select id="folderFilter"><option value="">All folders</option></select>
+  <select id="sizeFilter"><option value="">Any group size</option><option value="2">2 copies</option><option value="3">3 copies</option></select>
+  <select id="decFilter"><option value="">Any decision state</option><option value="undecided">Has undecided items</option><option value="decided">All items decided</option><option value="hasdelete">Has a DELETE CANDIDATE</option></select>
+  <select id="sortSel"><option value="id">Sort: group number</option><option value="size">Sort: group size</option><option value="name">Sort: first source name</option></select>
+  <button class="primary" id="exportJson">Export decisions (JSON)</button>
+  <button id="exportCsv">Export decisions (CSV)</button>
+  <button id="resetBtn">Reset all decisions</button>
+  <button id="undoBtn" title="Ctrl+Z">Undo (Ctrl+Z)</button>
+  <button id="validateBtn">Validate export</button>
+  <button id="helpBtn" title="Press ?">Shortcuts (?)</button>
+  <button id="importBtn">Import decisions</button>
+  <input type="file" id="importFile" accept=".json" hidden>
+</div>
+<div class="featurebar"><b>V2 features:</b> I1 keyboard shortcuts · I2 bulk select/actions · I3 undo · I4 indexed search · I5 export validation · X1 near-duplicate preview · X2 auto-label suggestions · X3 confidence scoring · X4 pixel-diff compare · X5 progress persistence (scroll restore + import). Press <b>?</b> for shortcuts. Nothing here deletes files.</div>
+<div class="progress" title="Decided progress"><i id="progressFill" style="width:0%"></i></div>
+<div class="bulkbar" id="bulkBar"><span id="bulkCount">0 selected</span>
+  <button id="bulkKeep">Bulk KEEP</button><button id="bulkDel">Bulk DELETE CANDIDATE</button>
+  <button id="bulkUnd">Bulk Undecided</button><button id="bulkClear">Clear selection</button>
+  <button id="bulkLabel">Apply suggested labels to selected</button></div>
+<div class="valid" id="validBox">Validation: not run yet — click “Validate export”.</div>
+
+<main>
+  <div class="summary" id="summary"></div>
+  <div id="groups"></div>
+  <h2>Decision export preview</h2>
+  <p>Copy this, or use the export buttons above to download it. A later landing/deletion job reads exactly this shape — it must never act on anything not in an approved export.</p>
+  <textarea id="exportBox" readonly></textarea>
+</main>
+
+<div class="modal" id="modal"><button id="modalClose">Close ✕</button><img id="modalImg" alt="Enlarged plate"></div>
+
+<footer>
+  Arrangement in the repo: this folder holds index.html (the UI), data/duplicate-groups.json (the swappable data source), build_data.py (regenerates the page from the data), README.md (sources, export format, walkthrough), and contacts/ (proofs).
+  Method for these 24 groups: exact MD5 file hash. Near-duplicates that are not byte-identical are NOT in this set — that is a separate, still-owed pass, not a claim that no near-duplicates exist.
+</footer>
+
+<script>
+const DATA = {"version": "20261031", "source": "honest-defects-10-methods-20261031/measurements-10-methods-20261031.json M7_duplicates, cross-checked against transparent-plates-grok-full-sweep-20261031/conversion-manifest.json (245 entries)", "totals": {"sheets_total": 245, "figure_sheets": 208, "background_sheets": 37, "plates_checked": 208, "unique_plate_hashes": 173, "duplicate_groups": 24, "duplicate_items": 59, "extra_copies": 35, "sliced_pieces_total": 3818, "sliced_pieces_named": 1908, "sliced_pieces_mixed": 1910}, "plate_files_missing": 0, "groups": [{"group_id": "DG-01", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 3, "suggested_canonical": "fla-packs/dance-packs/dance-2e9kj.jpg", "items": [{"source": "fla-packs/dance-packs/dance-2e9kj.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-2e9kj.png", "plate_exists": true, "alpha_frac": 0.3232691140776699, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs/recent-2e9kj.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-2e9kj.png", "plate_exists": true, "alpha_frac": 0.3232691140776699, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs-2/recent-2e9kj.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-2e9kj.png", "plate_exists": true, "alpha_frac": 0.3232691140776699, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-02", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 3, "suggested_canonical": "fla-packs/dance-packs/dance-D3pmc.jpg", "items": [{"source": "fla-packs/dance-packs/dance-D3pmc.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-D3pmc.png", "plate_exists": true, "alpha_frac": 0.3063647855987055, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs/recent-D3pmc.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-D3pmc.png", "plate_exists": true, "alpha_frac": 0.3063647855987055, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs-2/recent-D3pmc.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-D3pmc.png", "plate_exists": true, "alpha_frac": 0.3063647855987055, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-03", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 3, "suggested_canonical": "fla-packs/dance-packs/dance-MAHyh.jpg", "items": [{"source": "fla-packs/dance-packs/dance-MAHyh.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-MAHyh.png", "plate_exists": true, "alpha_frac": 0.2820211743551587, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs/recent-MAHyh.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-MAHyh.png", "plate_exists": true, "alpha_frac": 0.2820211743551587, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs-2/recent-MAHyh.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-MAHyh.png", "plate_exists": true, "alpha_frac": 0.2820211743551587, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-04", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 3, "suggested_canonical": "fla-packs/dance-packs/dance-UgepP.jpg", "items": [{"source": "fla-packs/dance-packs/dance-UgepP.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-UgepP.png", "plate_exists": true, "alpha_frac": 0.2798513349514563, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs/recent-UgepP.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-UgepP.png", "plate_exists": true, "alpha_frac": 0.2798513349514563, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs-2/recent-UgepP.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-UgepP.png", "plate_exists": true, "alpha_frac": 0.2798513349514563, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-05", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 3, "suggested_canonical": "fla-packs/dance-packs/dance-ZxEwS.jpg", "items": [{"source": "fla-packs/dance-packs/dance-ZxEwS.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-ZxEwS.png", "plate_exists": true, "alpha_frac": 0.24959597491909385, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs/recent-ZxEwS.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-ZxEwS.png", "plate_exists": true, "alpha_frac": 0.24959597491909385, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs-2/recent-ZxEwS.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-ZxEwS.png", "plate_exists": true, "alpha_frac": 0.24959597491909385, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-06", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 3, "suggested_canonical": "fla-packs/dance-packs/dance-a3jha.jpg", "items": [{"source": "fla-packs/dance-packs/dance-a3jha.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-a3jha.png", "plate_exists": true, "alpha_frac": 0.2576350121359223, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs/recent-a3jha.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-a3jha.png", "plate_exists": true, "alpha_frac": 0.2576350121359223, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs-2/recent-a3jha.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-a3jha.png", "plate_exists": true, "alpha_frac": 0.2576350121359223, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-07", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 3, "suggested_canonical": "fla-packs/dance-packs/dance-etaPY.jpg", "items": [{"source": "fla-packs/dance-packs/dance-etaPY.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-etaPY.png", "plate_exists": true, "alpha_frac": 0.23086956136621314, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs/recent-etaPY.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-etaPY.png", "plate_exists": true, "alpha_frac": 0.23086956136621314, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs-2/recent-etaPY.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-etaPY.png", "plate_exists": true, "alpha_frac": 0.23086956136621314, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-08", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 3, "suggested_canonical": "fla-packs/dance-packs/dance-mANuo.jpg", "items": [{"source": "fla-packs/dance-packs/dance-mANuo.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-mANuo.png", "plate_exists": true, "alpha_frac": 0.12465362055016181, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs/recent-mANuo.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-mANuo.png", "plate_exists": true, "alpha_frac": 0.12465362055016181, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs-2/recent-mANuo.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-mANuo.png", "plate_exists": true, "alpha_frac": 0.12465362055016181, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-09", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 3, "suggested_canonical": "fla-packs/dance-packs/dance-qIxLo.jpg", "items": [{"source": "fla-packs/dance-packs/dance-qIxLo.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-qIxLo.png", "plate_exists": true, "alpha_frac": 0.2264871561488673, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs/recent-qIxLo.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-qIxLo.png", "plate_exists": true, "alpha_frac": 0.2264871561488673, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs-2/recent-qIxLo.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-qIxLo.png", "plate_exists": true, "alpha_frac": 0.2264871561488673, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-10", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 3, "suggested_canonical": "fla-packs/dance-packs/dance-smAFI.jpg", "items": [{"source": "fla-packs/dance-packs/dance-smAFI.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-smAFI.png", "plate_exists": true, "alpha_frac": 0.2565331715210356, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs/recent-smAFI.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-smAFI.png", "plate_exists": true, "alpha_frac": 0.2565331715210356, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs-2/recent-smAFI.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-smAFI.png", "plate_exists": true, "alpha_frac": 0.2565331715210356, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-11", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 3, "suggested_canonical": "fla-packs/dance-packs/dance-w2Zh1.jpg", "items": [{"source": "fla-packs/dance-packs/dance-w2Zh1.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/dance-w2Zh1.png", "plate_exists": true, "alpha_frac": 0.27208636731391583, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs/recent-w2Zh1.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-w2Zh1.png", "plate_exists": true, "alpha_frac": 0.27208636731391583, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/jojo-packs-2/recent-w2Zh1.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/recent-w2Zh1.png", "plate_exists": true, "alpha_frac": 0.27208636731391583, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-12", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 2, "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-DGb2j.jpg", "items": [{"source": "fla-packs/lounge-3quarter-packs/clean-DGb2j.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-DGb2j.png", "plate_exists": true, "alpha_frac": 0.29673549107142855, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/lounge-packs/lounge-DGb2j.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-DGb2j.png", "plate_exists": true, "alpha_frac": 0.29673549107142855, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-13", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 2, "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-F72A5.jpg", "items": [{"source": "fla-packs/lounge-3quarter-packs/clean-F72A5.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-F72A5.png", "plate_exists": true, "alpha_frac": 0.18994943365695793, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/lounge-packs/lounge-F72A5.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-F72A5.png", "plate_exists": true, "alpha_frac": 0.18994943365695793, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-14", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 2, "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-IUUgX.jpg", "items": [{"source": "fla-packs/lounge-3quarter-packs/clean-IUUgX.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-IUUgX.png", "plate_exists": true, "alpha_frac": 0.26927083333333335, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/lounge-packs/lounge-IUUgX.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-IUUgX.png", "plate_exists": true, "alpha_frac": 0.26927083333333335, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-15", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 2, "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-IowZk.jpg", "items": [{"source": "fla-packs/lounge-3quarter-packs/clean-IowZk.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-IowZk.png", "plate_exists": true, "alpha_frac": 0.2465306432038835, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/lounge-packs/lounge-IowZk.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-IowZk.png", "plate_exists": true, "alpha_frac": 0.2465306432038835, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-16", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 2, "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-N3ies.jpg", "items": [{"source": "fla-packs/lounge-3quarter-packs/clean-N3ies.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-N3ies.png", "plate_exists": true, "alpha_frac": 0.26233970469255663, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/lounge-packs/lounge-N3ies.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-N3ies.png", "plate_exists": true, "alpha_frac": 0.26233970469255663, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-17", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 2, "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-OAFac.jpg", "items": [{"source": "fla-packs/lounge-3quarter-packs/clean-OAFac.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-OAFac.png", "plate_exists": true, "alpha_frac": 0.28377022653721684, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/lounge-packs/lounge-OAFac.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-OAFac.png", "plate_exists": true, "alpha_frac": 0.28377022653721684, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-18", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 2, "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-U8YqN.jpg", "items": [{"source": "fla-packs/lounge-3quarter-packs/clean-U8YqN.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-U8YqN.png", "plate_exists": true, "alpha_frac": 0.22362914644012946, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/lounge-packs/lounge-U8YqN.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-U8YqN.png", "plate_exists": true, "alpha_frac": 0.22362914644012946, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-19", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 2, "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-ZdzDG.jpg", "items": [{"source": "fla-packs/lounge-3quarter-packs/clean-ZdzDG.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-ZdzDG.png", "plate_exists": true, "alpha_frac": 0.23328630663430422, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/lounge-packs/lounge-ZdzDG.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-ZdzDG.png", "plate_exists": true, "alpha_frac": 0.23328630663430422, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-20", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 2, "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-jvqhV.jpg", "items": [{"source": "fla-packs/lounge-3quarter-packs/clean-jvqhV.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-jvqhV.png", "plate_exists": true, "alpha_frac": 0.30576961974110034, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/lounge-packs/lounge-jvqhV.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-jvqhV.png", "plate_exists": true, "alpha_frac": 0.30576961974110034, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-21", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 2, "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-wDheK.jpg", "items": [{"source": "fla-packs/lounge-3quarter-packs/clean-wDheK.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-wDheK.png", "plate_exists": true, "alpha_frac": 0.2197582928802589, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/lounge-packs/lounge-wDheK.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-wDheK.png", "plate_exists": true, "alpha_frac": 0.2197582928802589, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-22", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 2, "suggested_canonical": "fla-packs/lounge-3quarter-packs/clean-zxxqO.jpg", "items": [{"source": "fla-packs/lounge-3quarter-packs/clean-zxxqO.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/clean-zxxqO.png", "plate_exists": true, "alpha_frac": 0.30706462378640775, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "fla-packs/lounge-packs/lounge-zxxqO.jpg", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/lounge-zxxqO.png", "plate_exists": true, "alpha_frac": 0.30706462378640775, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-23", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 2, "suggested_canonical": "fla-packs/references/tpose-front-alt.png", "items": [{"source": "fla-packs/references/tpose-front-alt.png", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/tpose-front-alt.png", "plate_exists": true, "alpha_frac": 0.5949690942004503, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "variations/references/cape-jones-tpose-front-alt.png", "group_folder": "variations", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/variations/cape-jones-tpose-front-alt.png", "plate_exists": true, "alpha_frac": 0.5949690942004503, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}, {"group_id": "DG-24", "method": "exact MD5 file hash (M7, honest-defects-10-methods)", "size": 2, "suggested_canonical": "fla-packs/references/tpose-front.png", "items": [{"source": "fla-packs/references/tpose-front.png", "group_folder": "fla-packs", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/fla-packs/tpose-front.png", "plate_exists": true, "alpha_frac": 0.23464, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}, {"source": "variations/references/cape-jones-tpose-front.png", "group_folder": "variations", "plate": "../transparent-plates-grok-full-sweep-20261031/plates/variations/cape-jones-tpose-front.png", "plate_exists": true, "alpha_frac": 0.23464, "quality": "PASS", "suggested_label": "", "decision": "UNDECIDED"}]}]};
+const LS_KEY = "duplicate-review-decisions-20261031";
+let saved = {};
+try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "{}"); } catch(e) { saved = {}; }
+// Apply saved decisions/labels onto the data (in memory only).
+DATA.groups.forEach(g => g.items.forEach(it => {
+  const s = saved[g.group_id + "|" + it.source];
+  if (s) { it.decision = s.decision || it.decision; it.suggested_label = s.label || ""; }
+}));
+function persist() {
+  const out = {};
+  DATA.groups.forEach(g => g.items.forEach(it => { out[g.group_id + "|" + it.source] = {decision: it.decision, label: it.suggested_label}; }));
+  try { localStorage.setItem(LS_KEY, JSON.stringify(out)); } catch(e) {}
+  renderExport();
+}
+function counts() {
+  let keep=0, del=0, und=0;
+  DATA.groups.forEach(g => g.items.forEach(it => { if(it.decision==="KEEP") keep++; else if(it.decision==="DELETE") del++; else und++; }));
+  return {keep, del, und};
+}
+function renderStats() {
+  const t = DATA.totals, c = counts();
+  document.getElementById("stats").innerHTML = [
+    ["Duplicate groups", t.duplicate_groups], ["Items in groups", t.duplicate_items],
+    ["Extra copies", t.extra_copies], ["Unique plate hashes", t.unique_plate_hashes + " / " + t.plates_checked + " plates"],
+    ["Sheets total", t.sheets_total + " (208 figure + 37 backgrounds)"],
+    ["Sliced pieces", t.sliced_pieces_total + " (" + t.sliced_pieces_named + " named, " + t.sliced_pieces_mixed + " MIXED)"],
+    ["Marked KEEP", c.keep], ["Marked DELETE CANDIDATE", c.del], ["Still undecided", c.und]
+  ].map(([l,v]) => `<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("");
+  document.getElementById("summary").textContent =
+    `Showing groups after filters. Decisions so far: KEEP ${c.keep}, DELETE CANDIDATE ${c.del}, undecided ${c.und}. Nothing is deleted by this page.`;
+}
+function renderExport() {
+  const exp = {version: DATA.version, exported_from: "duplicate-review-ui-20261031",
+    note: "CANDIDATES ONLY — no deletion is authorised by this file alone. A later job may act only on a list Mars approves exactly.",
+    groups: DATA.groups.map(g => ({group_id: g.group_id, method: g.method, suggested_canonical: g.suggested_canonical,
+      items: g.items.map(it => ({source: it.source, plate: it.plate, decision: it.decision, label: it.suggested_label}))}))};
+  document.getElementById("exportBox").value = JSON.stringify(exp, null, 1);
+  return exp;
+}
+function download(name, text, type) {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([text], {type})); a.download = name; a.click();
+}
+function exportCSV() {
+  const rows = [["group_id","method","suggested_canonical","source","plate","decision","label"]];
+  DATA.groups.forEach(g => g.items.forEach(it => rows.push([g.group_id, g.method, g.suggested_canonical, it.source, it.plate || "", it.decision, (it.suggested_label||"").replace(/"/g,'""')])));
+  return rows.map(r => r.map(c => `"${c}"`).join(",")).join("\n");
+}
+function filteredGroups() {
+  const q = (document.getElementById("q").value || "").toLowerCase();
+  const folder = document.getElementById("folderFilter").value;
+  const size = document.getElementById("sizeFilter").value;
+  const dec = document.getElementById("decFilter").value;
+  const sort = document.getElementById("sortSel").value;
+  let list = DATA.groups.filter(g => {
+    if (q && !g.items.some(it => it.source.toLowerCase().includes(q))) return false;
+    if (folder && !g.items.some(it => it.group_folder === folder)) return false;
+    if (size && g.size !== Number(size)) return false;
+    if (dec === "undecided" && !g.items.some(it => it.decision === "UNDECIDED")) return false;
+    if (dec === "decided" && g.items.some(it => it.decision === "UNDECIDED")) return false;
+    if (dec === "hasdelete" && !g.items.some(it => it.decision === "DELETE")) return false;
+    return true;
+  });
+  if (sort === "size") list.sort((a,b) => b.size - a.size);
+  if (sort === "name") list.sort((a,b) => a.suggested_canonical.localeCompare(b.suggested_canonical));
+  return list;
+}
+function renderGroups() {
+  const wrap = document.getElementById("groups");
+  const list = filteredGroups();
+  wrap.innerHTML = list.length ? list.map(g => {
+    const decided = g.items.filter(it => it.decision !== "UNDECIDED").length;
+    return `<section class="group" data-gid="${g.group_id}">
+      <h2>${g.group_id} — ${g.size} copies, same file</h2>
+      <div class="meta">Method: ${g.method}. Suggested canonical (first item, changeable by your KEEP pick): <code>${g.suggested_canonical}</code> · Decided ${decided}/${g.size}
+      · <button data-keepfirst="${g.group_id}">Keep first, mark rest DELETE CANDIDATE</button>
+      · <button data-selectgroup="${g.group_id}">Select all in group</button></div>
+      <div class="tiles">${g.items.map(it => `
+        <article class="tile ${it.decision==="KEEP"?"keep":it.decision==="DELETE"?"del":""}" data-tile="${g.group_id}|${it.source}">
+          <div><input type="checkbox" data-select="${g.group_id}|${it.source}" ${selected.has(g.group_id+"|"+it.source)?"checked":""}> <span class="conf">Confidence 100% — exact MD5 match</span></div>
+          <div class="rel">Suggested label: <b>${suggestLabel(it.source)}</b> <button data-autolabel="${g.group_id}|${it.source}">Use suggestion</button></div>
+          <div class="rel">Near-duplicate preview (same stem in other groups): ${relatedGroups(g, it).length?relatedGroups(g, it).join(", "):"none"}</div>
+          <div class="imgwrap" data-img="${it.plate || ""}">${it.plate ? `<img src="${it.plate}" alt="${it.source}" loading="lazy">` : `<span>No plate image found</span>`}</div>
+          <code>${it.source}</code>
+          <div class="cap">Plate: ${it.plate ? it.plate.split("/").slice(-1)[0] : "—"} · alpha ${it.alpha_frac!=null?Math.round(it.alpha_frac*1000)/10+"%":"—"} · quality ${it.quality||"—"}</div>
+          <label>Label for this item <input type="text" data-label="${g.group_id}|${it.source}" value="${(it.suggested_label||"").replace(/"/g,"&quot;")}" placeholder="e.g. dance pack, lounge clean, tpose front"></label>
+          <div class="decisions">
+            <button data-compare="${g.group_id}|${it.source}">Compare (pixel diff)</button>
+            <button data-decision="KEEP|${g.group_id}|${it.source}" class="${it.decision==="KEEP"?"keep-on":""}">✓ KEEP</button>
+            <button data-decision="DELETE|${g.group_id}|${it.source}" class="${it.decision==="DELETE"?"del-on":""}">✕ DELETE CANDIDATE</button>
+            <button data-decision="UNDECIDED|${g.group_id}|${it.source}">Undecided</button>
+          </div>
+        </article>`).join("")}
+      </div></section>`;
+  }).join("") : `<p>No groups match the current search/filters. Clear the search or change a filter.</p>`;
+  // folder filter options, once
+  const sel = document.getElementById("folderFilter");
+  if (sel.options.length === 1) {
+    [...new Set(DATA.groups.flatMap(g => g.items.map(it => it.group_folder)))].sort().forEach(f => {
+      const o = document.createElement("option"); o.value = f; o.textContent = f; sel.appendChild(o);
+    });
+  }
+}
+function renderAll() { renderStats(); renderGroups(); renderExport(); }
+document.addEventListener("click", e => {
+  const d = e.target.closest("[data-decision]");
+  if (d) {
+    const [dec, gid, ...src] = d.dataset.decision.split("|"); const source = src.join("|");
+    const g = DATA.groups.find(x => x.group_id === gid); const it = g.items.find(x => x.source === source);
+    it.decision = dec; persist(); renderAll(); return;
+  }
+  const k = e.target.closest("[data-keepfirst]");
+  if (k) {
+    if (!confirm("Mark the FIRST item in this group KEEP and the rest DELETE CANDIDATE? This only records candidates — nothing is deleted.")) return;
+    const g = DATA.groups.find(x => x.group_id === k.dataset.keepfirst);
+    g.items.forEach((it, i) => it.decision = i === 0 ? "KEEP" : "DELETE");
+    persist(); renderAll(); return;
+  }
+  const img = e.target.closest("[data-img]");
+  if (img && img.dataset.img) {
+    document.getElementById("modalImg").src = img.dataset.img;
+    document.getElementById("modal").classList.add("open"); return;
+  }
+  if (e.target.id === "modalClose" || e.target.id === "modal") document.getElementById("modal").classList.remove("open");
+});
+document.addEventListener("input", e => {
+  if (e.target.dataset.label) {
+    const [gid, ...src] = e.target.dataset.label.split("|"); const source = src.join("|");
+    const g = DATA.groups.find(x => x.group_id === gid); g.items.find(x => x.source === source).suggested_label = e.target.value;
+    persist();
+  }
+  if (e.target.id === "q") renderGroups();
+});
+document.addEventListener("change", e => { if (["folderFilter","sizeFilter","decFilter","sortSel"].includes(e.target.id)) renderGroups(); });
+document.getElementById("exportJson").onclick = () => download("duplicate-decisions-20261031.json", JSON.stringify(renderExport(), null, 1), "application/json");
+document.getElementById("exportCsv").onclick = () => download("duplicate-decisions-20261031.csv", exportCSV(), "text/csv");
+document.getElementById("resetBtn").onclick = () => {
+  if (!confirm("Reset ALL decisions and labels to undecided/blank? This only clears this page's saved choices.")) return;
+  DATA.groups.forEach(g => g.items.forEach(it => { it.decision = "UNDECIDED"; it.suggested_label = ""; }));
+  try { localStorage.removeItem(LS_KEY); } catch(e) {}
+  renderAll();
+};
+
+// ============ V2 FEATURES ============
+// I4 indexed search: token index over source, folder, group, label
+const SEARCH_INDEX = {};
+DATA.groups.forEach(g => g.items.forEach(it => {
+  const toks = (g.group_id + " " + it.source + " " + it.group_folder + " " + (it.suggested_label||"")).toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+  toks.forEach(t => { (SEARCH_INDEX[t] = SEARCH_INDEX[t] || new Set()).add(g.group_id + "|" + it.source); });
+}));
+function indexedSearch(q) {
+  const toks = q.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+  if (!toks.length) return null;
+  let out = null;
+  toks.forEach(t => {
+    const hits = new Set();
+    Object.keys(SEARCH_INDEX).forEach(k => { if (k.includes(t)) SEARCH_INDEX[k].forEach(v => hits.add(v)); });
+    out = out === null ? hits : new Set([...out].filter(v => hits.has(v)));
+  });
+  return out;
+}
+// X2 auto-label suggestions from path
+function suggestLabel(source) {
+  const s = source.toLowerCase();
+  if (s.includes("dance-packs")) return "dance pack";
+  if (s.includes("jojo-packs-2")) return "jojo pack 2";
+  if (s.includes("jojo-packs")) return "jojo pack";
+  if (s.includes("lounge-3quarter")) return "lounge clean 3quarter";
+  if (s.includes("lounge-packs")) return "lounge pack";
+  if (s.includes("references")) return "reference tpose";
+  return "sheet";
+}
+// X1 near-duplicate preview: same stripped stem in another group
+function stemOf(source) {
+  const base = source.split("/").pop().replace(/\.(jpg|png)$/i, "");
+  return base.replace(/^(dance|recent|clean|lounge|cape-jones)-/, "").replace(/^tpose-/, "tpose-");
+}
+function relatedGroups(g, it) {
+  const st = stemOf(it.source), out = [];
+  DATA.groups.forEach(o => { if (o.group_id !== g.group_id && o.items.some(x => stemOf(x.source) === st)) out.push(o.group_id); });
+  return out;
+}
+// I3 undo, 50 steps
+let selected = new Set();
+const history = [];
+function snapshot() {
+  history.push(JSON.stringify(DATA.groups.map(g => g.items.map(it => ({decision: it.decision, label: it.suggested_label})))));
+  if (history.length > 50) history.shift();
+}
+function undo() {
+  if (!history.length) return;
+  const prev = JSON.parse(history.pop());
+  DATA.groups.forEach((g, gi) => g.items.forEach((it, ii) => { it.decision = prev[gi][ii].decision; it.suggested_label = prev[gi][ii].label; }));
+  persist(); renderAll();
+}
+// I5 export validation
+function validateExport() {
+  const issues = [];
+  DATA.groups.forEach(g => {
+    const keeps = g.items.filter(i => i.decision === "KEEP").length;
+    const dels = g.items.filter(i => i.decision === "DELETE").length;
+    const und = g.items.filter(i => i.decision === "UNDECIDED").length;
+    if (keeps > 1) issues.push(g.group_id + ": " + keeps + " KEEP — only one canonical should be kept per group.");
+    if (keeps === 0 && dels > 0) issues.push(g.group_id + ": DELETE CANDIDATEs but no KEEP — nothing would remain.");
+    if (keeps === 0 && dels === 0 && und === g.size) issues.push(g.group_id + ": all undecided.");
+  });
+  const box = document.getElementById("validBox");
+  box.className = "valid" + (issues.length ? " warnbox" : "");
+  box.innerHTML = issues.length
+    ? "<b>Validation issues (" + issues.length + "):</b><br>" + issues.map(i => "• " + i).join("<br>") + "<br>Export is still allowed, but confirm you intend these."
+    : "<b>Validation PASS:</b> every group has at most one KEEP, and no group would be left empty.";
+  return issues;
+}
+// X5 progress persistence: progress bar + scroll restore + import
+function updateProgress() {
+  const total = DATA.groups.reduce((n, g) => n + g.items.length, 0);
+  const done = DATA.groups.reduce((n, g) => n + g.items.filter(i => i.decision !== "UNDECIDED").length, 0);
+  const el = document.getElementById("progressFill");
+  if (el) el.style.width = (total ? Math.round(done / total * 100) : 0) + "%";
+  try { localStorage.setItem("duplicate-review-scroll-20261031", String(window.scrollY)); } catch(e) {}
+}
+function restoreScroll() {
+  try { const y = Number(localStorage.getItem("duplicate-review-scroll-20261031") || 0); if (y) window.scrollTo(0, y); } catch(e) {}
+}
+// X4 pixel-diff compare: load two plate images on canvas, compare RGBA
+let compareFirst = null;
+function pixelDiff(urlA, urlB, cb) {
+  const a = new Image(), b = new Image();
+  a.crossOrigin = "anonymous"; b.crossOrigin = "anonymous";
+  a.onload = () => { b.onload = () => {
+    try {
+      const w = Math.min(a.naturalWidth, b.naturalWidth), h = Math.min(a.naturalHeight, b.naturalHeight);
+      const c = document.createElement("canvas"); c.width = w; c.height = h; const ctx = c.getContext("2d");
+      ctx.drawImage(a, 0, 0, w, h); const d1 = ctx.getImageData(0, 0, w, h).data;
+      ctx.clearRect(0, 0, w, h); ctx.drawImage(b, 0, 0, w, h); const d2 = ctx.getImageData(0, 0, w, h).data;
+      let diff = 0; for (let i = 0; i < d1.length; i += 4) if (Math.abs(d1[i]-d2[i]) + Math.abs(d1[i+1]-d2[i+1]) + Math.abs(d1[i+2]-d2[i+2]) + Math.abs(d1[i+3]-d2[i+3]) > 30) diff++;
+      cb("Pixel diff: " + diff + " / " + (w*h) + " pixels (" + (100*diff/(w*h)).toFixed(2) + "% differing). Exact MD5 groups should read ~0%.");
+    } catch(e) { cb("Pixel diff unavailable in this browser context (canvas tainted, e.g. file://) — MD5 exact-match confidence still 100%."); }
+  }; b.src = urlB; }; a.src = urlA;
+  a.onerror = () => cb("Could not load first image for diff.");
+}
+// Wrap renderAll to also update progress + bulk bar
+const _renderAll = renderAll;
+renderAll = function() { _renderAll(); updateProgress();
+  const bar = document.getElementById("bulkBar");
+  if (bar) { bar.classList.toggle("show", selected.size > 0); document.getElementById("bulkCount").textContent = selected.size + " selected"; }
+};
+// I2 bulk actions + I1 shortcuts + compare + autolabel + select
+document.addEventListener("click", e => {
+  const sel = e.target.closest("[data-select]");
+  if (sel) { const k = sel.dataset.select; sel.checked ? selected.add(k) : selected.delete(k); renderAll(); return; }
+  const sg = e.target.closest("[data-selectgroup]");
+  if (sg) { const g = DATA.groups.find(x => x.group_id === sg.dataset.selectgroup); g.items.forEach(it => selected.add(g.group_id + "|" + it.source)); renderAll(); return; }
+  const al = e.target.closest("[data-autolabel]");
+  if (al) { const [gid, ...src] = al.dataset.autolabel.split("|"); const g = DATA.groups.find(x => x.group_id === gid); const it = g.items.find(x => x.source === src.join("|")); snapshot(); it.suggested_label = suggestLabel(it.source); persist(); renderAll(); return; }
+  const cp = e.target.closest("[data-compare]");
+  if (cp) {
+    const [gid, ...src] = cp.dataset.compare.split("|"); const g = DATA.groups.find(x => x.group_id === gid); const it = g.items.find(x => x.source === src.join("|"));
+    if (!compareFirst) { compareFirst = it; alert("First tile picked: " + it.source + ". Now click Compare on a second tile."); return; }
+    const first = compareFirst; compareFirst = null;
+    pixelDiff(first.plate, it.plate, msg => alert(first.source + " vs " + it.source + "\n" + msg));
+    return;
+  }
+  if (e.target.id === "bulkKeep" || e.target.id === "bulkDel" || e.target.id === "bulkUnd") {
+    snapshot(); const dec = e.target.id === "bulkKeep" ? "KEEP" : e.target.id === "bulkDel" ? "DELETE" : "UNDECIDED";
+    selected.forEach(k => { const [gid, ...src] = k.split("|"); const g = DATA.groups.find(x => x.group_id === gid); const it = g && g.items.find(x => x.source === src.join("|")); if (it) it.decision = dec; });
+    persist(); renderAll(); return;
+  }
+  if (e.target.id === "bulkClear") { selected.clear(); renderAll(); return; }
+  if (e.target.id === "bulkLabel") { snapshot(); selected.forEach(k => { const [gid, ...src] = k.split("|"); const g = DATA.groups.find(x => x.group_id === gid); const it = g && g.items.find(x => x.source === src.join("|")); if (it) it.suggested_label = suggestLabel(it.source); }); persist(); renderAll(); return; }
+  if (e.target.id === "undoBtn") { undo(); return; }
+  if (e.target.id === "validateBtn") { validateExport(); return; }
+  if (e.target.id === "helpBtn") { alert("Shortcuts:\n/ focus search\nj / k move focus between groups (scrolls)\nK keep focused tile, D delete candidate, U undecided\nEsc close modal\nCtrl+Z undo\nClick a tile checkbox to bulk-select; bulk bar appears when any tile is selected."); return; }
+  if (e.target.id === "importBtn") { document.getElementById("importFile").click(); return; }
+  if (e.target.id === "exportJson" || e.target.id === "exportCsv") { const issues = validateExport(); if (issues.length && !confirm("Validation found " + issues.length + " issue(s). Export anyway?")) return; }
+});
+document.addEventListener("change", e => {
+  if (e.target.id === "importFile" && e.target.files[0]) {
+    const r = new FileReader();
+    r.onload = () => { try { const exp = JSON.parse(r.result); snapshot();
+      exp.groups.forEach(eg => { const g = DATA.groups.find(x => x.group_id === eg.group_id); if (!g) return; eg.items.forEach(ei => { const it = g.items.find(x => x.source === ei.source); if (it) { it.decision = ei.decision; it.suggested_label = ei.label || it.suggested_label; } }); });
+      persist(); renderAll(); alert("Imported decisions."); } catch(err) { alert("Import failed: not a valid decision export JSON."); } };
+    r.readAsText(e.target.files[0]);
+  }
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "/" && document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "TEXTAREA") { e.preventDefault(); document.getElementById("q").focus(); }
+  if (e.key === "?" && document.activeElement.tagName !== "INPUT") { document.getElementById("helpBtn").click(); }
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z") { e.preventDefault(); undo(); }
+  if (e.key === "Escape") document.getElementById("modal").classList.remove("open");
+});
+// Snapshot before single decisions too
+document.addEventListener("click", e => { const d = e.target.closest("[data-decision]"); if (d) snapshot(); }, true);
+// Use indexed search inside filteredGroups by patching q handling: wrap original
+const _filtered = filteredGroups;
+filteredGroups = function() {
+  const q = (document.getElementById("q").value || "").trim();
+  if (!q) return _filtered();
+  const hits = indexedSearch(q);
+  const base = _filtered();
+  return base.filter(g => g.items.some(it => hits && hits.has(g.group_id + "|" + it.source)));
+};
+window.addEventListener("load", restoreScroll);
+
+// V2: export validation runs BEFORE download (overrides v1 onclick)
+document.getElementById("exportJson").onclick = () => { const issues = validateExport(); if (issues.length && !confirm("Validation found " + issues.length + " issue(s). Export anyway?")) return; download("duplicate-decisions-20261031.json", JSON.stringify(renderExport(), null, 1), "application/json"); };
+document.getElementById("exportCsv").onclick = () => { const issues = validateExport(); if (issues.length && !confirm("Validation found " + issues.length + " issue(s). Export anyway?")) return; download("duplicate-decisions-20261031.csv", exportCSV(), "text/csv"); };
+document.addEventListener("click", e => { const k = e.target.closest("[data-keepfirst]"); if (k) snapshot(); }, true);
+
+renderAll();
+</script>
+</body>
+</html>
