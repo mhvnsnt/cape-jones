@@ -1,0 +1,3 @@
+pose,side,gate_output,applied,eye_check,result
+crossed-down-across-chest,L,"CHEST-SNAP: whole chain above torso, below head (torso < arm < head)","L:chest,R:chest","upper eaten in NORMAL control: biceps hidden behind chest, forearm/fist floating at waist; snapped version: bicep-to-elbow chain continuous over chest, head above arm",PASS
+crossed-down-across-chest,R,"CHEST-SNAP: whole chain above torso, below head (torso < arm < head)","L:chest,R:chest","upper eaten in NORMAL control: biceps hidden behind chest, forearm/fist floating at waist; snapped version: bicep-to-elbow chain continuous over chest, head above arm",PASS
