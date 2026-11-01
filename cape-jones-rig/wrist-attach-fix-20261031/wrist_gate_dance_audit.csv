@@ -1,0 +1,19 @@
+item,hand,old_method,old_d_wrist,old_d_tip,old_verdict,new_method,new_d_wrist,new_d_tip,new_verdict
+open-groove-a-L,Hand_3_Open.png,OLD centre-paste,98.9,113.2,FAIL,FIXED wrist-first,20.0,222.7,PASS
+open-groove-a-R,Hand_3_Open.png,OLD centre-paste,98.9,113.2,FAIL,FIXED wrist-first,20.0,222.3,PASS
+open-groove-b-L,Hand_3_Open.png,OLD centre-paste,98.9,113.2,FAIL,FIXED wrist-first,20.0,220.8,PASS
+open-groove-b-R,Hand_3_Open.png,OLD centre-paste,98.9,113.2,FAIL,FIXED wrist-first,20.0,211.3,PASS
+open-groove-c-L,Hand_3_Open.png,OLD centre-paste,98.9,113.2,FAIL,FIXED wrist-first,20.0,213.7,PASS
+open-groove-c-R,Hand_3_Open.png,OLD centre-paste,98.9,113.2,FAIL,FIXED wrist-first,20.0,195.6,PASS
+point-groove-a-L,Hand_4_Point.png,OLD centre-paste,104.7,119.0,FAIL,FIXED wrist-first,20.0,234.4,PASS
+point-groove-a-R,Hand_4_Point.png,OLD centre-paste,104.7,119.0,FAIL,FIXED wrist-first,20.0,234.3,PASS
+point-groove-b-L,Hand_4_Point.png,OLD centre-paste,104.7,119.0,FAIL,FIXED wrist-first,20.0,232.8,PASS
+point-groove-b-R,Hand_4_Point.png,OLD centre-paste,104.7,119.0,FAIL,FIXED wrist-first,20.0,222.9,PASS
+point-groove-c-L,Hand_4_Point.png,OLD centre-paste,104.7,119.0,FAIL,FIXED wrist-first,20.0,225.4,PASS
+point-groove-c-R,Hand_4_Point.png,OLD centre-paste,104.7,119.0,FAIL,FIXED wrist-first,20.0,207.6,PASS
+relaxed-groove-a-L,Hand_6_Relaxed.png,OLD centre-paste,101.0,114.2,FAIL,FIXED wrist-first,20.0,223.4,PASS
+relaxed-groove-a-R,Hand_6_Relaxed.png,OLD centre-paste,101.0,114.2,FAIL,FIXED wrist-first,20.0,227.4,PASS
+relaxed-groove-b-L,Hand_6_Relaxed.png,OLD centre-paste,101.0,114.2,FAIL,FIXED wrist-first,20.0,226.1,PASS
+relaxed-groove-b-R,Hand_6_Relaxed.png,OLD centre-paste,101.0,114.2,FAIL,FIXED wrist-first,20.0,211.5,PASS
+relaxed-groove-c-L,Hand_6_Relaxed.png,OLD centre-paste,101.0,114.2,FAIL,FIXED wrist-first,20.0,214.0,PASS
+relaxed-groove-c-R,Hand_6_Relaxed.png,OLD centre-paste,101.0,114.2,FAIL,FIXED wrist-first,20.0,200.4,PASS

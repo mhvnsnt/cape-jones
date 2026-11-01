@@ -1,0 +1,26 @@
+{
+  "plate_alpha_px": 373846,
+  "splat_alpha_px": 383176,
+  "iou_alpha": 0.9653,
+  "version": "V2",
+  "label": "V2 DENSE",
+  "gaussians": 23391,
+  "stride": 4,
+  "sigma": 2.4,
+  "opacity": 0.85,
+  "kernel": "gauss",
+  "palette": null,
+  "depth_max_px": 84.5,
+  "frames": 9,
+  "angles": [
+    -40,
+    -25,
+    -10,
+    0,
+    10,
+    25,
+    40,
+    25,
+    10
+  ]
+}

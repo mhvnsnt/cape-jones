@@ -1,0 +1,84 @@
+{
+  "name": "BARS PRESET",
+  "screen": [
+    1100,
+    750
+  ],
+  "world": [
+    1700,
+    750
+  ],
+  "frames": 24,
+  "fps": 12,
+  "camera": {
+    "axis": "horizontal only",
+    "camera_x_start": 0,
+    "camera_x_end": 120,
+    "vertical_camera": 0
+  },
+  "parallax": {
+    "far_bg": 0.3,
+    "ground": 1.0,
+    "cape": 1.0,
+    "foreground": 1.8
+  },
+  "camera_move_px": {
+    "far_bg": 36,
+    "ground": 120,
+    "cape": 120,
+    "foreground": 216
+  },
+  "ground": {
+    "ground_line_y_world": 700,
+    "ground_line_y_screen": 700,
+    "rule": "feet alpha-bbox bottom == ground line, every frame, world and screen"
+  },
+  "cape": {
+    "figure": "snap_figure true-final-flex angles",
+    "angles": {
+      "arm_upper": {
+        "L": -85,
+        "R": 85
+      },
+      "arm_lower": {
+        "L": 145,
+        "R": -145
+      },
+      "leg_upper": {
+        "L": -22,
+        "R": 22
+      },
+      "leg_lower": {
+        "L": 10,
+        "R": -10
+      }
+    },
+    "size_px": [
+      550,
+      750
+    ],
+    "alpha_bbox_bottom_in_figure": 653,
+    "paste_y_world": 47,
+    "centre_x_world": 850
+  },
+  "foreground": {
+    "test": {
+      "bar_w": 55,
+      "alpha": 210,
+      "spacing": 180,
+      "blur": 2.0,
+      "label": "TEST bars, original, heavy/occluding"
+    },
+    "final": {
+      "bar_w": 28,
+      "alpha": 140,
+      "spacing": 260,
+      "blur": 1.0,
+      "label": "FINAL bars, thinner/sparser"
+    }
+  },
+  "far_bg": {
+    "blur": 1.2,
+    "darken": 0.85
+  }
+}

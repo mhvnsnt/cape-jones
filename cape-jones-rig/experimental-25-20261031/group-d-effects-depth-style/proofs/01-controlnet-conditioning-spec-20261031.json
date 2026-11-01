@@ -1,0 +1,15 @@
+{
+  "project": "ControlNet",
+  "status": "METHOD-WIRED, model NOT run",
+  "conditioning": [
+    "depth (silhouette-distance proxy)",
+    "lineart (edge proxy)"
+  ],
+  "real_checkpoints_for_next_step": [
+    "lllyasviel/control_v11f1p_sd15_depth",
+    "lllyasviel/control_v11p_sd15_lineart"
+  ],
+  "cape_use": "Feed depth+lineart as ControlNet conditions so a re-render keeps pose/silhouette while style/lighting change; never as character generator",
+  "source": "pose-dialects-20261031/jojo-01-contrapposto-s-curve-20261031.png",
+  "base_art_recoloured": false
+}

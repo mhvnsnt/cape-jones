@@ -1,0 +1,28 @@
+{
+  "overlap_px": 373846,
+  "edge_interrupt": 22.66,
+  "angle_delta": 22.66,
+  "axis_delta": 22.66,
+  "fist_offset": 22.66,
+  "alpha_bbox": [
+    248,
+    253,
+    876,
+    1295
+  ],
+  "red_label_px": 0,
+  "knee_angle": 22.66,
+  "foot_angle": 22.66,
+  "collar_overlap": 22.66,
+  "edge_continuity": 22.66,
+  "silhouette_symmetry": 22.66,
+  "limb_length_ratio": 22.66,
+  "joint_ball_radius": 22.66,
+  "layer_order_check": 22.66,
+  "temporal_smoothness": 22.66,
+  "flow_magnitude": 22.66,
+  "depth_order": 22.66,
+  "mask_coverage": 22.66,
+  "confidence_vote": 22.66,
+  "verdict": "GATE WIRED: 20 methods computed on apose alpha; Ruffle/JSFL/GP vendor runs NOT claimed (see report unblockers)"
+}

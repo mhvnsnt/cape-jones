@@ -1,0 +1,14 @@
+[
+  {
+    "pose": "v7c-jump-COWL-SNAP",
+    "gate": "PASS"
+  },
+  {
+    "pose": "ginyu-03-COWL-SNAP",
+    "gate": "PASS"
+  },
+  {
+    "pose": "rendered_clip_no_angles",
+    "gate": "FAIL-missing-angles"
+  }
+]

@@ -1,0 +1,7 @@
+case,band_diff_px,ratio_vs_apose_baseline,eye_check_note
+apose_baseline,10221,1.0,no snap needed
+jojo02_false_positive,10350,1.01,eye-check: fist beside head, not a cut bicep
+ginyu03_true_notch,6891,0.67,eye-check: bicep notched by collar both sides
+v7c_jump_true_notch,7547,0.74,eye-check: bicep notched by collar both sides
+ginyu01_true_notch,8853,0.87,eye-check: L bicep cut by collar
+jojo03_face,8700,0.85,face snap, not a cowl case (control)

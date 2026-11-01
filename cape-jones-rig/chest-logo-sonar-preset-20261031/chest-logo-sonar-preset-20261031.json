@@ -1,0 +1,24 @@
+{
+  "preset": "CHEST LOGO SONAR",
+  "origin": [
+    551,
+    491
+  ],
+  "origin_source": "Transformation #4 measured purple emblem piece, bbox x539-562 y475-510, centroid 550.8,491.1",
+  "ring_count": 3,
+  "max_radius_px": 420,
+  "colour": [
+    0,
+    200,
+    255
+  ],
+  "frames": 24,
+  "fps": 12,
+  "duration_ms": 2000,
+  "loop": "1 full pulse cycle, rings staggered 1/3 cycle",
+  "layer": "separate effect layer, base art never recoloured or baked",
+  "categories": [
+    "POWER (superpowers)",
+    "GADGET (cyborg + gadget costume)"
+  ]
+}

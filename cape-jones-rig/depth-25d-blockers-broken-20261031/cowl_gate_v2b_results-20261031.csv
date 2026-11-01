@@ -1,0 +1,9 @@
+case,upper_px,remaining_px,components,top_component_sizes,bite_fraction,eye_check_note
+apose_L,20458,14811,3,"[14809, 1, 1]",0.276,no snap needed
+apose_R,19424,13838,12,"[13717, 108, 3]",0.288,no snap needed
+jojo02_L_false_positive,20449,16556,3,"[16554, 1, 1]",0.19,eye: fist beside head, not cut
+ginyu03_L_true,20462,16207,2,"[16206, 1]",0.208,eye: notched both sides
+ginyu03_R_true,19431,15263,7,"[15252, 3, 2]",0.215,eye: notched both sides
+jump_L_true,20462,15688,3,"[15686, 1, 1]",0.233,eye: notched both sides
+ginyu01_L_true,20457,15360,3,"[15358, 1, 1]",0.249,eye: L bicep cut
+ginyu01_R_normal,19422,14648,8,"[14476, 109, 58]",0.246,eye: R not raised/cut
