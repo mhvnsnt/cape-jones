@@ -1,0 +1,425 @@
+{
+  "PASS": false,
+  "builders_scanned": 48,
+  "results": [
+    {
+      "builder": "build_exaggerated_deep_squat.py",
+      "keys_scanned": 1,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "build_hip_lower.py",
+      "keys_scanned": 2,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "build_true_final_flex_v2.py",
+      "keys_scanned": 2,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "joint_locked_rig.py",
+      "keys_scanned": 6,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "joint_locked_rig_v4.py",
+      "keys_scanned": 6,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "joint_locked_rig_v5.py",
+      "keys_scanned": 6,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "joint_locked_rig_v6.py",
+      "keys_scanned": 6,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "joint_locked_rig_v7.py",
+      "keys_scanned": 6,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "joint_locked_rig_v7b.py",
+      "keys_scanned": 6,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "joint_locked_rig_v7c.py",
+      "keys_scanned": 6,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "dance-improved-20261031/build_dance.py",
+      "keys_scanned": 9,
+      "keys_failing_if_original_lowers": 2,
+      "failing_keys": [
+        {
+          "key_index": 1,
+          "leg_upper_L": 25.0,
+          "leg_upper_R": -25.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        },
+        {
+          "key_index": 3,
+          "leg_upper_L": 15.0,
+          "leg_upper_R": -15.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        }
+      ]
+    },
+    {
+      "builder": "clean-100-20261031/flex-opposition/build_flex_opposition_20261031.py",
+      "keys_scanned": 4,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "clean-100-20261031/exposure-clips/build-clean100.py",
+      "keys_scanned": 3,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "dual-light-variants-20261031/build_base.py",
+      "keys_scanned": 1,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "dance-kneefeet-fix-20261031/fix_dance.py",
+      "keys_scanned": 9,
+      "keys_failing_if_original_lowers": 2,
+      "failing_keys": [
+        {
+          "key_index": 1,
+          "leg_upper_L": 25.0,
+          "leg_upper_R": -25.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        },
+        {
+          "key_index": 3,
+          "leg_upper_L": 15.0,
+          "leg_upper_R": -15.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        }
+      ]
+    },
+    {
+      "builder": "dance-kneefeet-fix-correction-20261031/build_corrected.py",
+      "keys_scanned": 9,
+      "keys_failing_if_original_lowers": 2,
+      "failing_keys": [
+        {
+          "key_index": 1,
+          "leg_upper_L": 25.0,
+          "leg_upper_R": -25.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        },
+        {
+          "key_index": 3,
+          "leg_upper_L": 15.0,
+          "leg_upper_R": -15.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        }
+      ]
+    },
+    {
+      "builder": "dance-kneefeet-fix-correction-20261031/fix_dance_v1.py",
+      "keys_scanned": 9,
+      "keys_failing_if_original_lowers": 2,
+      "failing_keys": [
+        {
+          "key_index": 1,
+          "leg_upper_L": 25.0,
+          "leg_upper_R": -25.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        },
+        {
+          "key_index": 3,
+          "leg_upper_L": 15.0,
+          "leg_upper_R": -15.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        }
+      ]
+    },
+    {
+      "builder": "joint-cleanup-20261031/build_restore_originals.py",
+      "keys_scanned": 2,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "joint-cleanup-20261031/build_test_cap_omit.py",
+      "keys_scanned": 2,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "dance-arm-snap-20261031/build_arm_snap.py",
+      "keys_scanned": 9,
+      "keys_failing_if_original_lowers": 2,
+      "failing_keys": [
+        {
+          "key_index": 1,
+          "leg_upper_L": 25.0,
+          "leg_upper_R": -25.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        },
+        {
+          "key_index": 3,
+          "leg_upper_L": 15.0,
+          "leg_upper_R": -15.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        }
+      ]
+    },
+    {
+      "builder": "pose-dialects-20261031/build_poses.py",
+      "keys_scanned": 10,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "face-cowl-snap-wire100-20261031/build_cowl_fixes.py",
+      "keys_scanned": 2,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "face-cowl-snap-wire100-20261031/test_snaps.py",
+      "keys_scanned": 7,
+      "keys_failing_if_original_lowers": 1,
+      "failing_keys": [
+        {
+          "key_index": 5,
+          "leg_upper_L": 25.0,
+          "leg_upper_R": -25.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        }
+      ]
+    },
+    {
+      "builder": "fight-and-sheets-20261031/build_dance_variants.py",
+      "keys_scanned": 3,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "fight-and-sheets-20261031/build_fight.py",
+      "keys_scanned": 8,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "depth-25d-blockers-broken-20261031/build_25d_and_tests.py",
+      "keys_scanned": 3,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "depth-25d-blockers-broken-20261031/cowl_gate_v2.py",
+      "keys_scanned": 6,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "depth-25d-blockers-broken-20261031/trace_gp_frames.py",
+      "keys_scanned": 3,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "wrist-attach-fix-20261031/build_library_demos.py",
+      "keys_scanned": 1,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "wrist-attach-fix-20261031/build_wrist_fixes.py",
+      "keys_scanned": 3,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "pseudo-turn-templates-20261031/build_templates.py",
+      "keys_scanned": 3,
+      "keys_failing_if_original_lowers": 1,
+      "failing_keys": [
+        {
+          "key_index": 2,
+          "leg_upper_L": 20.0,
+          "leg_upper_R": -15.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        }
+      ]
+    },
+    {
+      "builder": "size-transformation-power-20261031/build_size_power.py",
+      "keys_scanned": 4,
+      "keys_failing_if_original_lowers": 1,
+      "failing_keys": [
+        {
+          "key_index": 3,
+          "leg_upper_L": 22.0,
+          "leg_upper_R": -28.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        }
+      ]
+    },
+    {
+      "builder": "multiplane-upgrade-20261031/build_multiplane_upgrade.py",
+      "keys_scanned": 1,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "capegp-presets-20261031/build_capegp_presets.py",
+      "keys_scanned": 4,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "hand-tpose-flatten-20261031/build_combined.py",
+      "keys_scanned": 4,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "hand-tpose-flatten-20261031/build_tpose_flatten.py",
+      "keys_scanned": 1,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "no-crop-never-again-20261031/v7c_nocrop.py",
+      "keys_scanned": 2,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "coming-forward-walk-layer-fix-20261031/build_walk_layer_fix.py",
+      "keys_scanned": 3,
+      "keys_failing_if_original_lowers": 1,
+      "failing_keys": [
+        {
+          "key_index": 2,
+          "leg_upper_L": 22.0,
+          "leg_upper_R": -28.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        }
+      ]
+    },
+    {
+      "builder": "coming-forward-walk-layer-fix-20261031/measure_chest_masked.py",
+      "keys_scanned": 3,
+      "keys_failing_if_original_lowers": 1,
+      "failing_keys": [
+        {
+          "key_index": 2,
+          "leg_upper_L": 22.0,
+          "leg_upper_R": -28.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        }
+      ]
+    },
+    {
+      "builder": "coming-forward-walk-layer-fix-20261031/measure_upper_eaten.py",
+      "keys_scanned": 3,
+      "keys_failing_if_original_lowers": 1,
+      "failing_keys": [
+        {
+          "key_index": 2,
+          "leg_upper_L": 22.0,
+          "leg_upper_R": -28.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        }
+      ]
+    },
+    {
+      "builder": "future-symbiote-capeless-white-outline-20261031/build_capeless.py",
+      "keys_scanned": 2,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "future-symbiote-capeless-white-outline-20261031/tmp/test_poses.py",
+      "keys_scanned": 4,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "hand-flips-vertical-inplace-20261031/build_vertical_flips.py",
+      "keys_scanned": 1,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "cape-consumed-bare-upper-20261031/build_base.py",
+      "keys_scanned": 2,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "storyboards-animatic-20261031/build_poses.py",
+      "keys_scanned": 9,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "storyboards-animatic-20261031/fix_cj15_v3.py",
+      "keys_scanned": 1,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "storyboards-animatic-20261031/fix_poses.py",
+      "keys_scanned": 3,
+      "keys_failing_if_original_lowers": 0,
+      "failing_keys": []
+    },
+    {
+      "builder": "coming-forward-walk-elbow-fix-20261031/build_elbow_fix.py",
+      "keys_scanned": 4,
+      "keys_failing_if_original_lowers": 1,
+      "failing_keys": [
+        {
+          "key_index": 2,
+          "leg_upper_L": 22.0,
+          "leg_upper_R": -28.0,
+          "knee_L": "INWARD",
+          "knee_R": "INWARD"
+        }
+      ]
+    }
+  ]
+}
