@@ -1,0 +1,3498 @@
+[
+  {
+    "file": "build_exaggerated_deep_squat.py",
+    "sites": 3,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "build_hip_lower.py",
+    "sites": 3,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "build_true_final_flex_v2.py",
+    "sites": 3,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "clean-100-20261031/exposure-clips/rig-v7c-clean100.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": true,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN + GREY-CANVAS-FLAG",
+    "canvas_grey_128": true,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "clean-100-20261031/flex-opposition/build_flex_opposition_20261031.py",
+    "sites": 4,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "dance-arm-snap-20261031/build_arm_snap.py",
+    "sites": 2,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "dance-improved-20261031/build_dance.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "dance-kneefeet-fix-20261031/fix_dance.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "dance-kneefeet-fix-correction-20261031/build_corrected.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "dance-kneefeet-fix-correction-20261031/fix_dance_v1.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "depth-25d-blockers-broken-20261031/cowl_gate_v2b.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate",
+    "has_limb_fn": false,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "drawing-masters-upgrade-20261031/build_upgrade.py",
+    "sites": 2,
+    "source": "rotate() default expand=False",
+    "pattern": "M1/M2 rotate + M2 whole-figure shear + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "dual-light-variants-20261031/build_base.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "face-cowl-snap-wire100-20261031/snap_figure.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "face-cowl-snap-wire100-20261031/test_snaps.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "fight-and-sheets-20261031/build_dance_variants.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "fight-and-sheets-20261031/build_fight.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "forearm-fist-v4-20261031/build_fist_v4.py",
+    "sites": 1,
+    "source": "rotate() default expand=False",
+    "pattern": "M1/M2 rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "forearm-fist-v4-20261031/build_fist_v4b.py",
+    "sites": 1,
+    "source": "rotate() default expand=False",
+    "pattern": "M1/M2 rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": true,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN + GREY-CANVAS-FLAG",
+    "canvas_grey_128": true,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "forearm-fist-v4-20261031/build_fist_v4c.py",
+    "sites": 1,
+    "source": "rotate() default expand=False",
+    "pattern": "M1/M2 rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": true,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN + GREY-CANVAS-FLAG",
+    "canvas_grey_128": true,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "forearm-fist-v4-20261031/build_fist_v4d.py",
+    "sites": 1,
+    "source": "rotate() default expand=False",
+    "pattern": "M1/M2 rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": true,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN + GREY-CANVAS-FLAG",
+    "canvas_grey_128": true,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "gap-close-rig-20261031/build_gap_close.py",
+    "sites": 8,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "gap-close-rig-20261031/rebuild_punch.py",
+    "sites": 2,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "ginyu-force-limits-broken-20261031/build_limits_broken.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "ginyu-force-poses-20261031/build_ginyu_force.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": true,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN + GREY-CANVAS-FLAG",
+    "canvas_grey_128": true,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "hand-tpose-flatten-20261031/build_combined.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "hand-tpose-flatten-20261031/build_tpose_flatten.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "inbetween-20261031/build_inbetween.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": true,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN + GREY-CANVAS-FLAG",
+    "canvas_grey_128": true,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "joint-cleanup-20261031/build_restore_originals.py",
+    "sites": 3,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "joint-cleanup-20261031/build_test_cap_omit.py",
+    "sites": 3,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "joint_locked_rig.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "joint_locked_rig_v4.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "joint_locked_rig_v5.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "joint_locked_rig_v6.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "joint_locked_rig_v7.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "joint_locked_rig_v7b.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": true,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN + GREY-CANVAS-FLAG",
+    "canvas_grey_128": true,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "joint_locked_rig_v7c.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": true,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN + GREY-CANVAS-FLAG",
+    "canvas_grey_128": true,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "limits-broken-10x10-20261031/build_10x10.py",
+    "sites": 5,
+    "source": "rotate() default expand=False",
+    "pattern": "M1 limb rotate + M2 whole-figure shear + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "movements-interp-v2-20261031/build_interp_v2.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": true,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN + GREY-CANVAS-FLAG",
+    "canvas_grey_128": true,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "pose-dialects-20261031/build_poses.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": true,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN + GREY-CANVAS-FLAG",
+    "canvas_grey_128": true,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "pose-dialects-fix-face-cowl-20261031/build_fixed.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": true,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN + GREY-CANVAS-FLAG",
+    "canvas_grey_128": true,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "pose-dialects-fix-face-cowl-20261031/check_face_cowl_snap.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": false
+  },
+  {
+    "file": "poses-as-movements-20261031/build_movements.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": true,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN + GREY-CANVAS-FLAG",
+    "canvas_grey_128": true,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "repose_tests_v2.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": false,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "wrist-attach-fix-20261031/build_library_demos.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  },
+  {
+    "file": "wrist-attach-fix-20261031/build_wrist_fixes.py",
+    "sites": 1,
+    "source": "explicit expand=False",
+    "pattern": "M1 limb rotate + M3 paste",
+    "has_limb_fn": true,
+    "opaque_canvas": false,
+    "tests": {
+      "limb_rotate_160": {
+        "old_alpha": 20148,
+        "new_alpha": 20149,
+        "ref_alpha": 20153,
+        "lost_old": 5,
+        "lost_new": 4,
+        "gate_old": "PASS",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "whole_rotate_shear": {
+        "old_alpha": 320919,
+        "new_alpha": 373813,
+        "ref_alpha": 373819,
+        "lost_old": 52900,
+        "lost_new": 6,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 0,
+          "left": 461,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "offedge_paste": {
+        "old_alpha": 4242,
+        "new_alpha": 20151,
+        "ref_alpha": 20151,
+        "lost_old": 15909,
+        "lost_new": 0,
+        "gate_old": "FAIL",
+        "gate_new": "PASS",
+        "edge_old": {
+          "top": 0,
+          "bottom": 50,
+          "left": 99,
+          "right": 0
+        },
+        "edge_new": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      }
+    },
+    "status": "MIGRATED-PATTERN",
+    "canvas_grey_128": false,
+    "save_convert_rgb": true
+  }
+]
