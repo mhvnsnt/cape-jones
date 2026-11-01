@@ -1,0 +1,362 @@
+[
+ {
+  "shot_id": "CJ-01",
+  "slug": "punch-windup",
+  "file": "CJ-01-punch-windup-clean-plate-rerender-20261031.png",
+  "proof": "CJ-01-punch-windup-clean-plate-rerender-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/art-owed-punch-plates-20261031/plates-clean/CJ-01-punch-windup-clean-plate-20261031.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (street family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "lut_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "char_gain": [
+   1.2,
+   0.7,
+   1.3
+  ],
+  "rim": [
+   255,
+   178,
+   229
+  ],
+  "bleed": [
+   230,
+   80,
+   170
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   641,
+   70,
+   1279,
+   950
+  ],
+  "char_size": [
+   638,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 641,
+   "right": 641,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 18204,
+  "bleed_px": 27956,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "wind-streaks",
+  "effect_px": 3728,
+  "note": "JOJO-TENSION demo-only; char gain = tension gain, BG = base golden-hour | CLEAN-PLATE RERENDER: v7c labels=False plate, 0 red px, plate swap only",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A01 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-02",
+  "slug": "punch-extend-snap",
+  "file": "CJ-02-punch-extend-snap-clean-plate-rerender-20261031.png",
+  "proof": "CJ-02-punch-extend-snap-clean-plate-rerender-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/art-owed-punch-plates-20261031/plates-clean/CJ-02-punch-extend-snap-clean-plate-20261031.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (street family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "lut_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "char_gain": [
+   1.2,
+   0.7,
+   1.3
+  ],
+  "rim": [
+   255,
+   178,
+   229
+  ],
+  "bleed": [
+   230,
+   80,
+   170
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   599,
+   70,
+   1321,
+   950
+  ],
+  "char_size": [
+   722,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 599,
+   "right": 599,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 18763,
+  "bleed_px": 28930,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "snap-lines",
+  "effect_px": 4086,
+  "note": "JOJO-TENSION continued demo-only | CLEAN-PLATE RERENDER: v7c labels=False plate, 0 red px, plate swap only",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A02 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-03",
+  "slug": "punch-impact-locked",
+  "file": "CJ-03-punch-impact-locked-clean-plate-rerender-20261031.png",
+  "proof": "CJ-03-punch-impact-locked-clean-plate-rerender-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/art-owed-punch-plates-20261031/plates-clean/CJ-03-punch-impact-locked-clean-plate-20261031.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (street family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "lut_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "char_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "rim": [
+   255,
+   120,
+   115
+  ],
+  "bleed": [
+   220,
+   60,
+   50
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   634,
+   70,
+   1286,
+   950
+  ],
+  "char_size": [
+   652,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 634,
+   "right": 634,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 17236,
+  "bleed_px": 26526,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "impact-burst + gauntlet-glow",
+  "effect_px": 16370,
+  "note": "JOJO-POWER demo-only; locked impact plate; FX passes, not god rays | CLEAN-PLATE RERENDER: v7c labels=False plate, 0 red px, plate swap only",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A03 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-04",
+  "slug": "punch-recover",
+  "file": "CJ-04-punch-recover-clean-plate-rerender-20261031.png",
+  "proof": "CJ-04-punch-recover-clean-plate-rerender-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/art-owed-punch-plates-20261031/plates-clean/CJ-04-punch-recover-clean-plate-20261031.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (street family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "lut_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "char_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "bleed": [
+   255,
+   120,
+   0
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   698,
+   70,
+   1221,
+   950
+  ],
+  "char_size": [
+   523,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 698,
+   "right": 699,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 18398,
+  "bleed_px": 28482,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "afterglow-faint",
+  "effect_px": 29848,
+  "note": "Return-to-base: tension/power beats closed here | CLEAN-PLATE RERENDER: v7c labels=False plate, 0 red px, plate swap only",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A04 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-05",
+  "slug": "punch-across-down-placement",
+  "file": "CJ-05-punch-across-down-placement-clean-plate-rerender-20261031.png",
+  "proof": "CJ-05-punch-across-down-placement-clean-plate-rerender-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/art-owed-punch-plates-20261031/plates-clean/CJ-05-punch-across-down-placement-clean-plate-20261031.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (town family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1,
+   1,
+   1
+  ],
+  "lut_gain": [
+   1,
+   1,
+   1
+  ],
+  "char_gain": [
+   1,
+   1,
+   1
+  ],
+  "rim": [
+   255,
+   255,
+   255
+  ],
+  "bleed": [
+   255,
+   255,
+   255
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   634,
+   70,
+   1286,
+   950
+  ],
+  "char_size": [
+   652,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 634,
+   "right": 634,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 17130,
+  "bleed_px": 26315,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "placement-glow",
+  "effect_px": 18372,
+  "note": "Across-down placement frame, NOT the impact frame. QC CJ-05 is post-episode per Space Ghost workflow, not a hold. | CLEAN-PLATE RERENDER: v7c labels=False plate, 0 red px, plate swap only",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A05 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ }
+]
