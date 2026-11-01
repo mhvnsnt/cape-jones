@@ -1,0 +1,1122 @@
+[
+  {
+    "n": 1,
+    "sheet": "01-tpose-turnaround.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 2,
+    "sheet": "02-model-sheet-orthographic-turnaround.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 3,
+    "sheet": "03-color-lighting-vfx-key.jpg",
+    "pieces": 97,
+    "pieces_on_disc": 97,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 4,
+    "sheet": "04-action-flight-vfx-reference.jpg",
+    "pieces": 87,
+    "pieces_on_disc": 87,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 5,
+    "sheet": "05-expression-eye-dart-matrix.jpg",
+    "pieces": 89,
+    "pieces_on_disc": 89,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 6,
+    "sheet": "06-viseme-phoneme-mouth-matrix.jpg",
+    "pieces": 66,
+    "pieces_on_disc": 66,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 7,
+    "sheet": "07-character-parts-expressions.jpg",
+    "pieces": 48,
+    "pieces_on_disc": 48,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 8,
+    "sheet": "08-body-parts-limbs-capes.jpg",
+    "pieces": 72,
+    "pieces_on_disc": 72,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 9,
+    "sheet": "09-hero-shot-black.png",
+    "pieces": 2,
+    "pieces_on_disc": 2,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 10,
+    "sheet": "10-hero-in-space.jpg",
+    "pieces": 4,
+    "pieces_on_disc": 4,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 11,
+    "sheet": "exposure-sheets/exposure-sheet-1-walk.jpg",
+    "pieces": 12,
+    "pieces_on_disc": 12,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 12,
+    "sheet": "exposure-sheets/exposure-sheet-10-flex.jpg",
+    "pieces": 14,
+    "pieces_on_disc": 14,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 13,
+    "sheet": "exposure-sheets/exposure-sheet-2-jump.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "1 piece = whole strip, not per-frame pieces (column-split owed, known)"
+  },
+  {
+    "n": 14,
+    "sheet": "exposure-sheets/exposure-sheet-3-punch.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "1 piece = whole strip, not per-frame pieces"
+  },
+  {
+    "n": 15,
+    "sheet": "exposure-sheets/exposure-sheet-4-flight.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "1 piece = whole strip, not per-frame pieces"
+  },
+  {
+    "n": 16,
+    "sheet": "exposure-sheets/exposure-sheet-5-reaction.jpg",
+    "pieces": 13,
+    "pieces_on_disc": 13,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 17,
+    "sheet": "exposure-sheets/exposure-sheet-6-sit.jpg",
+    "pieces": 28,
+    "pieces_on_disc": 28,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 18,
+    "sheet": "exposure-sheets/exposure-sheet-7-cape.jpg",
+    "pieces": 8,
+    "pieces_on_disc": 8,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 19,
+    "sheet": "exposure-sheets/exposure-sheet-8-turnaround.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "1 piece = whole strip, not per-frame pieces"
+  },
+  {
+    "n": 20,
+    "sheet": "exposure-sheets/exposure-sheet-9-run.jpg",
+    "pieces": 31,
+    "pieces_on_disc": 31,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 21,
+    "sheet": "fla-packs/action-packs/action-1vU75.jpg",
+    "pieces": 17,
+    "pieces_on_disc": 17,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 22,
+    "sheet": "fla-packs/action-packs/action-60rw7.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 23,
+    "sheet": "fla-packs/action-packs/action-9NXQv.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 24,
+    "sheet": "fla-packs/action-packs/action-EBPJX.jpg",
+    "pieces": 15,
+    "pieces_on_disc": 15,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 25,
+    "sheet": "fla-packs/action-packs/action-HJUwB.jpg",
+    "pieces": 13,
+    "pieces_on_disc": 13,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 26,
+    "sheet": "fla-packs/action-packs/action-Ne4dq.jpg",
+    "pieces": 8,
+    "pieces_on_disc": 8,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 27,
+    "sheet": "fla-packs/action-packs/action-Nk9xR.jpg",
+    "pieces": 12,
+    "pieces_on_disc": 12,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 28,
+    "sheet": "fla-packs/action-packs/action-QjT3b.jpg",
+    "pieces": 23,
+    "pieces_on_disc": 23,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 29,
+    "sheet": "fla-packs/action-packs/action-RTpXF.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 30,
+    "sheet": "fla-packs/action-packs/action-TatNd.jpg",
+    "pieces": 11,
+    "pieces_on_disc": 11,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 31,
+    "sheet": "fla-packs/action-packs/action-WUwKS.jpg",
+    "pieces": 36,
+    "pieces_on_disc": 36,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 32,
+    "sheet": "fla-packs/action-packs/action-Wtv8t.jpg",
+    "pieces": 14,
+    "pieces_on_disc": 14,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 33,
+    "sheet": "fla-packs/action-packs/action-cJWaN.jpg",
+    "pieces": 6,
+    "pieces_on_disc": 6,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 34,
+    "sheet": "fla-packs/action-packs/action-f5Q6Z.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 35,
+    "sheet": "fla-packs/action-packs/action-wdNk1.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 36,
+    "sheet": "fla-packs/angle-sheets/fla-3quarter-back.jpg",
+    "pieces": 16,
+    "pieces_on_disc": 16,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 37,
+    "sheet": "fla-packs/angle-sheets/fla-3quarter-front.jpg",
+    "pieces": 9,
+    "pieces_on_disc": 9,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 38,
+    "sheet": "fla-packs/angle-sheets/fla-back.jpg",
+    "pieces": 41,
+    "pieces_on_disc": 41,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 39,
+    "sheet": "fla-packs/angle-sheets/fla-front.jpg",
+    "pieces": 33,
+    "pieces_on_disc": 33,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 40,
+    "sheet": "fla-packs/dance-packs/dance-2e9kj.jpg",
+    "pieces": 24,
+    "pieces_on_disc": 24,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 41,
+    "sheet": "fla-packs/dance-packs/dance-D3pmc.jpg",
+    "pieces": 19,
+    "pieces_on_disc": 19,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 42,
+    "sheet": "fla-packs/dance-packs/dance-MAHyh.jpg",
+    "pieces": 24,
+    "pieces_on_disc": 24,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 43,
+    "sheet": "fla-packs/dance-packs/dance-UgepP.jpg",
+    "pieces": 11,
+    "pieces_on_disc": 11,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 44,
+    "sheet": "fla-packs/dance-packs/dance-ZxEwS.jpg",
+    "pieces": 25,
+    "pieces_on_disc": 25,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 45,
+    "sheet": "fla-packs/dance-packs/dance-a3jha.jpg",
+    "pieces": 17,
+    "pieces_on_disc": 17,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 46,
+    "sheet": "fla-packs/dance-packs/dance-etaPY.jpg",
+    "pieces": 32,
+    "pieces_on_disc": 32,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 47,
+    "sheet": "fla-packs/dance-packs/dance-mANuo.jpg",
+    "pieces": 16,
+    "pieces_on_disc": 16,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 48,
+    "sheet": "fla-packs/dance-packs/dance-qIxLo.jpg",
+    "pieces": 20,
+    "pieces_on_disc": 20,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 49,
+    "sheet": "fla-packs/dance-packs/dance-smAFI.jpg",
+    "pieces": 11,
+    "pieces_on_disc": 11,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 50,
+    "sheet": "fla-packs/dance-packs/dance-w2Zh1.jpg",
+    "pieces": 17,
+    "pieces_on_disc": 17,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 51,
+    "sheet": "fla-packs/jojo-packs/recent-3N1l4.jpg",
+    "pieces": 26,
+    "pieces_on_disc": 26,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 52,
+    "sheet": "fla-packs/jojo-packs/recent-8chi3.jpg",
+    "pieces": 27,
+    "pieces_on_disc": 27,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 53,
+    "sheet": "fla-packs/jojo-packs/recent-HXbRz.jpg",
+    "pieces": 13,
+    "pieces_on_disc": 13,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 54,
+    "sheet": "fla-packs/jojo-packs/recent-J9hos.jpg",
+    "pieces": 17,
+    "pieces_on_disc": 17,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 55,
+    "sheet": "fla-packs/jojo-packs/recent-PL6xL.jpg",
+    "pieces": 15,
+    "pieces_on_disc": 15,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 56,
+    "sheet": "fla-packs/jojo-packs/recent-TdvUD.jpg",
+    "pieces": 29,
+    "pieces_on_disc": 29,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 57,
+    "sheet": "fla-packs/jojo-packs/recent-XcaBI.jpg",
+    "pieces": 12,
+    "pieces_on_disc": 12,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 58,
+    "sheet": "fla-packs/jojo-packs/recent-XkboO.jpg",
+    "pieces": 19,
+    "pieces_on_disc": 19,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 59,
+    "sheet": "fla-packs/jojo-packs/recent-akfZy.jpg",
+    "pieces": 30,
+    "pieces_on_disc": 30,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 60,
+    "sheet": "fla-packs/jojo-packs/recent-chKT5.jpg",
+    "pieces": 19,
+    "pieces_on_disc": 19,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 61,
+    "sheet": "fla-packs/jojo-packs/recent-l3Ch8.jpg",
+    "pieces": 18,
+    "pieces_on_disc": 18,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 62,
+    "sheet": "fla-packs/jojo-packs/recent-lHT9s.jpg",
+    "pieces": 13,
+    "pieces_on_disc": 13,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 63,
+    "sheet": "fla-packs/jojo-packs/recent-nh3HD.jpg",
+    "pieces": 14,
+    "pieces_on_disc": 14,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "title/label text slices as components too; text fragments are NOT rig pieces, art pieces clean"
+  },
+  {
+    "n": 64,
+    "sheet": "fla-packs/references/tpose-front-alt.png",
+    "pieces": 7,
+    "pieces_on_disc": 7,
+    "verdict": "FLAG",
+    "note": "FLAG-REFERENCE-ONLY: phone screenshot with UI chrome + blurred background in its 7 pieces; do NOT use as a clean rig source. The clean tpose-front.png (#65) is the rig source."
+  },
+  {
+    "n": 65,
+    "sheet": "fla-packs/references/tpose-front.png",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 66,
+    "sheet": "fla-packs/xray-vision/hands/xray-hand-sheet-1.jpg",
+    "pieces": 6,
+    "pieces_on_disc": 6,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "xray specialty layer (green skeleton), not standard rig pieces"
+  },
+  {
+    "n": 67,
+    "sheet": "fla-packs/xray-vision/hands/xray-hand-sheet-2.jpg",
+    "pieces": 6,
+    "pieces_on_disc": 6,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "xray specialty layer (green skeleton), not standard rig pieces"
+  },
+  {
+    "n": 68,
+    "sheet": "fla-packs/xray-vision/hands/xray-hand-sheet-3.jpg",
+    "pieces": 7,
+    "pieces_on_disc": 7,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "xray specialty layer (green skeleton), not standard rig pieces"
+  },
+  {
+    "n": 69,
+    "sheet": "fla-packs/xray-vision/heads/xray-head-sheet-1.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "xray specialty layer (green skeleton), not standard rig pieces"
+  },
+  {
+    "n": 70,
+    "sheet": "fla-packs/xray-vision/heads/xray-head-sheet-2.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "xray specialty layer (green skeleton), not standard rig pieces"
+  },
+  {
+    "n": 71,
+    "sheet": "fla-packs/xray-vision/heads/xray-head-sheet-3.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "xray specialty layer (green skeleton), not standard rig pieces"
+  },
+  {
+    "n": 72,
+    "sheet": "fla-packs/xray-vision/heads/xray-head-sheet-4.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "xray specialty layer (green skeleton), not standard rig pieces"
+  },
+  {
+    "n": 73,
+    "sheet": "fla-packs/xray-vision/heads/xray-head-sheet-5.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "xray specialty layer (green skeleton), not standard rig pieces"
+  },
+  {
+    "n": 74,
+    "sheet": "fla-packs/xray-vision/xray-fla-3quarter-back.jpg",
+    "pieces": 38,
+    "pieces_on_disc": 38,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "xray specialty layer (green skeleton), not standard rig pieces"
+  },
+  {
+    "n": 75,
+    "sheet": "fla-packs/xray-vision/xray-fla-3quarter-front.jpg",
+    "pieces": 35,
+    "pieces_on_disc": 35,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "xray specialty layer (green skeleton), not standard rig pieces"
+  },
+  {
+    "n": 76,
+    "sheet": "fla-packs/xray-vision/xray-fla-back.jpg",
+    "pieces": 26,
+    "pieces_on_disc": 26,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "xray specialty layer (green skeleton), not standard rig pieces"
+  },
+  {
+    "n": 77,
+    "sheet": "fla-packs/xray-vision/xray-fla-front.jpg",
+    "pieces": 47,
+    "pieces_on_disc": 47,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "xray specialty layer (green skeleton), not standard rig pieces"
+  },
+  {
+    "n": 78,
+    "sheet": "fla-packs/xray-vision/xray-turnaround.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "xray specialty layer (green skeleton), not standard rig pieces"
+  },
+  {
+    "n": 79,
+    "sheet": "model-sheets/model-sheet-3quarter-back-set1.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 80,
+    "sheet": "model-sheets/model-sheet-3quarter-back-set2.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 81,
+    "sheet": "model-sheets/model-sheet-3quarter-front-set2.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 82,
+    "sheet": "model-sheets/model-sheet-back-set1.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 83,
+    "sheet": "model-sheets/model-sheet-back-set2.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 84,
+    "sheet": "model-sheets/model-sheet-front-set2.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 85,
+    "sheet": "model-sheets/model-sheet-side-set2.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 86,
+    "sheet": "prop-scale-sheets/prop-scale-electronics-furniture.jpg",
+    "pieces": 9,
+    "pieces_on_disc": 9,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 87,
+    "sheet": "prop-scale-sheets/prop-scale-outdoor-furniture.jpg",
+    "pieces": 21,
+    "pieces_on_disc": 21,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 88,
+    "sheet": "props/prop-8LjQY.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "scene/background: whole kitchen scene, 1 scene piece, not a prop piece"
+  },
+  {
+    "n": 89,
+    "sheet": "props/prop-BBvxs.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 90,
+    "sheet": "props/prop-HeTHP.jpg",
+    "pieces": 4,
+    "pieces_on_disc": 4,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "scene/background: whole warehouse scene"
+  },
+  {
+    "n": 91,
+    "sheet": "props/prop-IApiu.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 92,
+    "sheet": "props/prop-Nr2it.jpg",
+    "pieces": 4,
+    "pieces_on_disc": 4,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "scene/background: whole forest scene"
+  },
+  {
+    "n": 93,
+    "sheet": "props/prop-SNnYp.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 94,
+    "sheet": "props/prop-YAhuI.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "scene/background: whole subway scene"
+  },
+  {
+    "n": 95,
+    "sheet": "props/prop-ZG2Bt.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "scene/background: whole beach scene"
+  },
+  {
+    "n": 96,
+    "sheet": "props/prop-fi3j8.jpg",
+    "pieces": 2,
+    "pieces_on_disc": 2,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "scene/background: whole rooftop scene"
+  },
+  {
+    "n": 97,
+    "sheet": "props/prop-hvZmi.jpg",
+    "pieces": 7,
+    "pieces_on_disc": 7,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "scene/background: whole night street scene"
+  },
+  {
+    "n": 98,
+    "sheet": "props/prop-izNQ9.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "scene/background: whole living-room scene"
+  },
+  {
+    "n": 99,
+    "sheet": "props/prop-luSwX.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 100,
+    "sheet": "props/prop-nFMhU.jpg",
+    "pieces": 5,
+    "pieces_on_disc": 5,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 101,
+    "sheet": "props/prop-oCpSw.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "scene/background: whole desert scene"
+  },
+  {
+    "n": 102,
+    "sheet": "props/prop-rY6iH.jpg",
+    "pieces": 1,
+    "pieces_on_disc": 1,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "scene/background: whole park path scene"
+  },
+  {
+    "n": 103,
+    "sheet": "variations/action/6KSNq.jpg",
+    "pieces": 43,
+    "pieces_on_disc": 43,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "variant palette: blue suit variant, not canon white; label separately from canon white pieces"
+  },
+  {
+    "n": 104,
+    "sheet": "variations/action/6TXRQ.jpg",
+    "pieces": 36,
+    "pieces_on_disc": 36,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 105,
+    "sheet": "variations/action/9A7pl.jpg",
+    "pieces": 17,
+    "pieces_on_disc": 17,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 106,
+    "sheet": "variations/action/9AuKw.jpg",
+    "pieces": 30,
+    "pieces_on_disc": 30,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 107,
+    "sheet": "variations/action/FPEeg.jpg",
+    "pieces": 25,
+    "pieces_on_disc": 25,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 108,
+    "sheet": "variations/action/GCQ03.jpg",
+    "pieces": 39,
+    "pieces_on_disc": 39,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "variant palette: red/yellow variant, not canon white; label separately from canon white pieces"
+  },
+  {
+    "n": 109,
+    "sheet": "variations/action/I2t0d.jpg",
+    "pieces": 17,
+    "pieces_on_disc": 17,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 110,
+    "sheet": "variations/action/KRuoB.jpg",
+    "pieces": 19,
+    "pieces_on_disc": 19,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 111,
+    "sheet": "variations/action/Lf8uW.jpg",
+    "pieces": 42,
+    "pieces_on_disc": 42,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 112,
+    "sheet": "variations/action/N39Xr.jpg",
+    "pieces": 14,
+    "pieces_on_disc": 14,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "variant palette: blue suit variant, not canon white; label separately from canon white pieces"
+  },
+  {
+    "n": 113,
+    "sheet": "variations/action/SWiWT.jpg",
+    "pieces": 20,
+    "pieces_on_disc": 20,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "variant palette: blue suit variant, not canon white; label separately from canon white pieces"
+  },
+  {
+    "n": 114,
+    "sheet": "variations/action/T2SRf.jpg",
+    "pieces": 13,
+    "pieces_on_disc": 13,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 115,
+    "sheet": "variations/action/TwyB6.jpg",
+    "pieces": 46,
+    "pieces_on_disc": 46,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 116,
+    "sheet": "variations/action/URmgB.jpg",
+    "pieces": 9,
+    "pieces_on_disc": 9,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 117,
+    "sheet": "variations/action/V9r14.jpg",
+    "pieces": 8,
+    "pieces_on_disc": 8,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 118,
+    "sheet": "variations/action/adOmH.jpg",
+    "pieces": 25,
+    "pieces_on_disc": 25,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 119,
+    "sheet": "variations/action/aqMG1.jpg",
+    "pieces": 7,
+    "pieces_on_disc": 7,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 120,
+    "sheet": "variations/action/cDeSs.jpg",
+    "pieces": 27,
+    "pieces_on_disc": 27,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 121,
+    "sheet": "variations/action/dAvtg.jpg",
+    "pieces": 39,
+    "pieces_on_disc": 39,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "variant palette: blue suit variant, not canon white; label separately from canon white pieces"
+  },
+  {
+    "n": 122,
+    "sheet": "variations/action/hJsrN.jpg",
+    "pieces": 17,
+    "pieces_on_disc": 17,
+    "verdict": "PASS-WITH-NOTE",
+    "note": "variant palette: red/blue variant with lightning FX, not canon white; label separately from canon white pieces"
+  },
+  {
+    "n": 123,
+    "sheet": "variations/action/rzhOh.jpg",
+    "pieces": 11,
+    "pieces_on_disc": 11,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 124,
+    "sheet": "variations/action/sODBO.jpg",
+    "pieces": 3,
+    "pieces_on_disc": 3,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 125,
+    "sheet": "variations/action/tMEvT.jpg",
+    "pieces": 27,
+    "pieces_on_disc": 27,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 126,
+    "sheet": "variations/action/uU0ry.jpg",
+    "pieces": 17,
+    "pieces_on_disc": 17,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 127,
+    "sheet": "variations/action/wZf6q.jpg",
+    "pieces": 48,
+    "pieces_on_disc": 48,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 128,
+    "sheet": "variations/flying/9dc2Q.jpg",
+    "pieces": 50,
+    "pieces_on_disc": 50,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 129,
+    "sheet": "variations/flying/AKqzs.jpg",
+    "pieces": 40,
+    "pieces_on_disc": 40,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 130,
+    "sheet": "variations/flying/CgfRw.jpg",
+    "pieces": 106,
+    "pieces_on_disc": 106,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 131,
+    "sheet": "variations/flying/GQCnK.jpg",
+    "pieces": 24,
+    "pieces_on_disc": 24,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 132,
+    "sheet": "variations/flying/RbAEI.jpg",
+    "pieces": 61,
+    "pieces_on_disc": 61,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 133,
+    "sheet": "variations/flying/Thtr3.jpg",
+    "pieces": 11,
+    "pieces_on_disc": 11,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 134,
+    "sheet": "variations/flying/VRwDb.jpg",
+    "pieces": 37,
+    "pieces_on_disc": 37,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 135,
+    "sheet": "variations/flying/abfwV.jpg",
+    "pieces": 78,
+    "pieces_on_disc": 78,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 136,
+    "sheet": "variations/flying/ekuiT.jpg",
+    "pieces": 20,
+    "pieces_on_disc": 20,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 137,
+    "sheet": "variations/flying/hGsDr.jpg",
+    "pieces": 33,
+    "pieces_on_disc": 33,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 138,
+    "sheet": "variations/flying/lQzUV.jpg",
+    "pieces": 96,
+    "pieces_on_disc": 96,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 139,
+    "sheet": "variations/flying/qGZGX.jpg",
+    "pieces": 63,
+    "pieces_on_disc": 63,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  },
+  {
+    "n": 140,
+    "sheet": "variations/flying/ydJQP.jpg",
+    "pieces": 20,
+    "pieces_on_disc": 20,
+    "verdict": "PASS",
+    "note": "clean at contact + largest-piece view; numeric QC match"
+  }
+]
