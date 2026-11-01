@@ -1,0 +1,614 @@
+{
+ "chain-punch": {
+  "frames": 75,
+  "mp4_frames": "75",
+  "seconds": 3.12,
+  "key_bottoms": [
+   {
+    "key": "apose",
+    "height_px": "0",
+    "frame": 0,
+    "bottom_y": 652,
+    "top_y": 126,
+    "left": 435,
+    "right": 663
+   },
+   {
+    "key": "punch windup",
+    "height_px": "0",
+    "frame": 10,
+    "bottom_y": 652,
+    "top_y": 127,
+    "left": 410,
+    "right": 691
+   },
+   {
+    "key": "punch extend/snap",
+    "height_px": "0",
+    "frame": 22,
+    "bottom_y": 652,
+    "top_y": 119,
+    "left": 435,
+    "right": 666
+   },
+   {
+    "key": "punch impact locked",
+    "height_px": "0",
+    "frame": 34,
+    "bottom_y": 652,
+    "top_y": 127,
+    "left": 387,
+    "right": 666
+   },
+   {
+    "key": "punch recover / fight",
+    "height_px": "0",
+    "frame": 46,
+    "bottom_y": 652,
+    "top_y": 127,
+    "left": 388,
+    "right": 712
+   },
+   {
+    "key": "punch across-down placement",
+    "height_px": "0",
+    "frame": 58,
+    "bottom_y": 652,
+    "top_y": 127,
+    "left": 386,
+    "right": 691
+   }
+  ],
+  "all_frames_bottom_min": 651,
+  "all_frames_bottom_max": 654,
+  "all_frames_top_min": 119,
+  "ghost_mid_frame": 5,
+  "double_edge_ratio": 1.005,
+  "wash_pct": 18.4
+ },
+ "chain-walk": {
+  "frames": 67,
+  "mp4_frames": "67",
+  "seconds": 2.79,
+  "key_bottoms": [
+   {
+    "key": "walk contact A",
+    "height_px": "0",
+    "frame": 0,
+    "bottom_y": 652,
+    "top_y": 143,
+    "left": 408,
+    "right": 681
+   },
+   {
+    "key": "walk passing A",
+    "height_px": "0",
+    "frame": 8,
+    "bottom_y": 652,
+    "top_y": 122,
+    "left": 435,
+    "right": 674
+   },
+   {
+    "key": "walk contact B",
+    "height_px": "0",
+    "frame": 16,
+    "bottom_y": 652,
+    "top_y": 153,
+    "left": 422,
+    "right": 680
+   },
+   {
+    "key": "walk passing B",
+    "height_px": "0",
+    "frame": 24,
+    "bottom_y": 652,
+    "top_y": 133,
+    "left": 435,
+    "right": 665
+   }
+  ],
+  "all_frames_bottom_min": 650,
+  "all_frames_bottom_max": 666,
+  "all_frames_top_min": 122,
+  "ghost_mid_frame": 5,
+  "double_edge_ratio": 1.025,
+  "wash_pct": 29.9
+ },
+ "chain-dance": {
+  "frames": 93,
+  "mp4_frames": "93",
+  "seconds": 3.88,
+  "key_bottoms": [
+   {
+    "key": "apose",
+    "height_px": "0",
+    "frame": 0,
+    "bottom_y": 652,
+    "top_y": 126,
+    "left": 435,
+    "right": 663
+   },
+   {
+    "key": "dance A",
+    "height_px": "0",
+    "frame": 10,
+    "bottom_y": 652,
+    "top_y": 136,
+    "left": 383,
+    "right": 716
+   },
+   {
+    "key": "shimmy centre",
+    "height_px": "0",
+    "frame": 22,
+    "bottom_y": 651,
+    "top_y": 132,
+    "left": 309,
+    "right": 792
+   },
+   {
+    "key": "shimmy sway left",
+    "height_px": "0",
+    "frame": 33,
+    "bottom_y": 651,
+    "top_y": 132,
+    "left": 294,
+    "right": 777
+   },
+   {
+    "key": "shimmy sway right",
+    "height_px": "0",
+    "frame": 43,
+    "bottom_y": 651,
+    "top_y": 132,
+    "left": 324,
+    "right": 807
+   },
+   {
+    "key": "dance B",
+    "height_px": "0",
+    "frame": 64,
+    "bottom_y": 652,
+    "top_y": 140,
+    "left": 398,
+    "right": 815
+   },
+   {
+    "key": "dance combined finale",
+    "height_px": "0",
+    "frame": 76,
+    "bottom_y": 652,
+    "top_y": 139,
+    "left": 418,
+    "right": 685
+   }
+  ],
+  "all_frames_bottom_min": 651,
+  "all_frames_bottom_max": 663,
+  "all_frames_top_min": 126,
+  "ghost_mid_frame": 5,
+  "double_edge_ratio": 1.052,
+  "wash_pct": 21.7
+ },
+ "chain-flying": {
+  "frames": 75,
+  "mp4_frames": "75",
+  "seconds": 3.12,
+  "key_bottoms": [
+   {
+    "key": "apose",
+    "height_px": "0",
+    "frame": 0,
+    "bottom_y": 652,
+    "top_y": 126,
+    "left": 435,
+    "right": 663
+   },
+   {
+    "key": "flying hover",
+    "height_px": "60",
+    "frame": 10,
+    "bottom_y": 592,
+    "top_y": 117,
+    "left": 398,
+    "right": 707
+   },
+   {
+    "key": "flying soar",
+    "height_px": "100",
+    "frame": 22,
+    "bottom_y": 552,
+    "top_y": 69,
+    "left": 402,
+    "right": 700
+   },
+   {
+    "key": "flying dive",
+    "height_px": "40",
+    "frame": 34,
+    "bottom_y": 611,
+    "top_y": 93,
+    "left": 391,
+    "right": 709
+   },
+   {
+    "key": "flying forward foreshortened",
+    "height_px": "80",
+    "frame": 46,
+    "bottom_y": 572,
+    "top_y": 100,
+    "left": 388,
+    "right": 710
+   },
+   {
+    "key": "flying hover return",
+    "height_px": "60",
+    "frame": 58,
+    "bottom_y": 592,
+    "top_y": 117,
+    "left": 398,
+    "right": 707
+   }
+  ],
+  "all_frames_bottom_min": 552,
+  "all_frames_bottom_max": 655,
+  "all_frames_top_min": 69,
+  "ghost_mid_frame": 5,
+  "double_edge_ratio": 1.105,
+  "wash_pct": 15.1
+ },
+ "chain-flex-fight": {
+  "frames": 75,
+  "mp4_frames": "75",
+  "seconds": 3.12,
+  "key_bottoms": [
+   {
+    "key": "apose",
+    "height_px": "0",
+    "frame": 0,
+    "bottom_y": 652,
+    "top_y": 126,
+    "left": 435,
+    "right": 663
+   },
+   {
+    "key": "flex anticipation",
+    "height_px": "0",
+    "frame": 10,
+    "bottom_y": 652,
+    "top_y": 129,
+    "left": 410,
+    "right": 691
+   },
+   {
+    "key": "arms up reference",
+    "height_px": "0",
+    "frame": 22,
+    "bottom_y": 652,
+    "top_y": 116,
+    "left": 435,
+    "right": 663
+   },
+   {
+    "key": "true flex double bicep (NO 28px dip, labelled)",
+    "height_px": "0",
+    "frame": 34,
+    "bottom_y": 652,
+    "top_y": 105,
+    "left": 382,
+    "right": 716
+   },
+   {
+    "key": "fighting forward bicep curl",
+    "height_px": "0",
+    "frame": 46,
+    "bottom_y": 652,
+    "top_y": 127,
+    "left": 388,
+    "right": 701
+   },
+   {
+    "key": "fighting stance arms up high",
+    "height_px": "0",
+    "frame": 58,
+    "bottom_y": 652,
+    "top_y": 124,
+    "left": 435,
+    "right": 663
+   }
+  ],
+  "all_frames_bottom_min": 651,
+  "all_frames_bottom_max": 655,
+  "all_frames_top_min": 105,
+  "ghost_mid_frame": 5,
+  "double_edge_ratio": 1.027,
+  "wash_pct": 22.8
+ },
+ "chain-jump": {
+  "frames": 62,
+  "mp4_frames": "62",
+  "seconds": 2.58,
+  "key_bottoms": [
+   {
+    "key": "apose",
+    "height_px": "0",
+    "frame": 0,
+    "bottom_y": 652,
+    "top_y": 126,
+    "left": 435,
+    "right": 663
+   },
+   {
+    "key": "jump crouch",
+    "height_px": "0",
+    "frame": 10,
+    "bottom_y": 652,
+    "top_y": 180,
+    "left": 387,
+    "right": 712
+   },
+   {
+    "key": "jump takeoff",
+    "height_px": "30",
+    "frame": 22,
+    "bottom_y": 621,
+    "top_y": 131,
+    "left": 383,
+    "right": 716
+   },
+   {
+    "key": "jump tuck apex",
+    "height_px": "100",
+    "frame": 33,
+    "bottom_y": 552,
+    "top_y": 77,
+    "left": 376,
+    "right": 720
+   },
+   {
+    "key": "jump land (crouch)",
+    "height_px": "0",
+    "frame": 45,
+    "bottom_y": 652,
+    "top_y": 180,
+    "left": 387,
+    "right": 712
+   }
+  ],
+  "all_frames_bottom_min": 552,
+  "all_frames_bottom_max": 665,
+  "all_frames_top_min": 77,
+  "ghost_mid_frame": 5,
+  "double_edge_ratio": 1.052,
+  "wash_pct": 23.1
+ },
+ "successor-shimmy": {
+  "frames": 61,
+  "mp4_frames": "61",
+  "seconds": 2.54,
+  "key_bottoms": [
+   {
+    "key": "apose",
+    "height_px": "0",
+    "frame": 0,
+    "bottom_y": 652,
+    "top_y": 126,
+    "left": 435,
+    "right": 663
+   },
+   {
+    "key": "shimmy centre",
+    "height_px": "0",
+    "frame": 10,
+    "bottom_y": 651,
+    "top_y": 132,
+    "left": 309,
+    "right": 792
+   },
+   {
+    "key": "shimmy sway left",
+    "height_px": "0",
+    "frame": 22,
+    "bottom_y": 651,
+    "top_y": 132,
+    "left": 294,
+    "right": 777
+   },
+   {
+    "key": "shimmy sway right",
+    "height_px": "0",
+    "frame": 33,
+    "bottom_y": 651,
+    "top_y": 132,
+    "left": 324,
+    "right": 807
+   }
+  ],
+  "all_frames_bottom_min": 651,
+  "all_frames_bottom_max": 658,
+  "all_frames_top_min": 126,
+  "ghost_mid_frame": 5,
+  "double_edge_ratio": 1.056,
+  "wash_pct": 16.3
+ },
+ "successor-ginyu-force": {
+  "frames": 87,
+  "mp4_frames": "87",
+  "seconds": 3.62,
+  "key_bottoms": [
+   {
+    "key": "apose",
+    "height_px": "0",
+    "frame": 0,
+    "bottom_y": 652,
+    "top_y": 126,
+    "left": 435,
+    "right": 663
+   },
+   {
+    "key": "Recoome rollcall",
+    "height_px": "0",
+    "frame": 10,
+    "bottom_y": 651,
+    "top_y": 164,
+    "left": 325,
+    "right": 778
+   },
+   {
+    "key": "Burter rollcall",
+    "height_px": "0",
+    "frame": 22,
+    "bottom_y": 652,
+    "top_y": 141,
+    "left": 372,
+    "right": 728
+   },
+   {
+    "key": "Jeice rollcall",
+    "height_px": "0",
+    "frame": 34,
+    "bottom_y": 652,
+    "top_y": 127,
+    "left": 383,
+    "right": 716
+   },
+   {
+    "key": "Guldo rollcall",
+    "height_px": "0",
+    "frame": 46,
+    "bottom_y": 652,
+    "top_y": 180,
+    "left": 394,
+    "right": 706
+   },
+   {
+    "key": "Captain rollcall",
+    "height_px": "0",
+    "frame": 58,
+    "bottom_y": 652,
+    "top_y": 147,
+    "left": 386,
+    "right": 770
+   },
+   {
+    "key": "Captain spread",
+    "height_px": "0",
+    "frame": 70,
+    "bottom_y": 652,
+    "top_y": 138,
+    "left": 398,
+    "right": 707
+   }
+  ],
+  "all_frames_bottom_min": 641,
+  "all_frames_bottom_max": 666,
+  "all_frames_top_min": 126,
+  "ghost_mid_frame": 5,
+  "double_edge_ratio": 1.109,
+  "wash_pct": 17.8
+ },
+ "successor-pose-dialects": {
+  "frames": 134,
+  "mp4_frames": "134",
+  "seconds": 5.58,
+  "key_bottoms": [
+   {
+    "key": "apose",
+    "height_px": "0",
+    "frame": 0,
+    "bottom_y": 652,
+    "top_y": 126,
+    "left": 435,
+    "right": 663
+   },
+   {
+    "key": "JoJo 01 contrapposto",
+    "height_px": "0",
+    "frame": 8,
+    "bottom_y": 652,
+    "top_y": 139,
+    "left": 384,
+    "right": 691
+   },
+   {
+    "key": "apose neutral between",
+    "height_px": "0",
+    "frame": 17,
+    "bottom_y": 652,
+    "top_y": 126,
+    "left": 435,
+    "right": 663
+   },
+   {
+    "key": "JoJo 02 fashion twist",
+    "height_px": "0",
+    "frame": 24,
+    "bottom_y": 652,
+    "top_y": 126,
+    "left": 395,
+    "right": 712
+   },
+   {
+    "key": "JoJo 03 menacing lean",
+    "height_px": "0",
+    "frame": 40,
+    "bottom_y": 652,
+    "top_y": 123,
+    "left": 415,
+    "right": 663
+   },
+   {
+    "key": "Ginyu 01 chest out",
+    "height_px": "0",
+    "frame": 56,
+    "bottom_y": 652,
+    "top_y": 124,
+    "left": 404,
+    "right": 785
+   },
+   {
+    "key": "Ginyu 02 squat",
+    "height_px": "0",
+    "frame": 72,
+    "bottom_y": 651,
+    "top_y": 168,
+    "left": 386,
+    "right": 714
+   },
+   {
+    "key": "Ginyu 03 shimmy",
+    "height_px": "0",
+    "frame": 88,
+    "bottom_y": 651,
+    "top_y": 132,
+    "left": 309,
+    "right": 792
+   },
+   {
+    "key": "Stand 01 user figure only (stand figure omitted, labelled)",
+    "height_px": "0",
+    "frame": 104,
+    "bottom_y": 651,
+    "top_y": 130,
+    "left": 391,
+    "right": 709
+   },
+   {
+    "key": "Stand 02 user figure only (stand figure omitted, labelled)",
+    "height_px": "0",
+    "frame": 120,
+    "bottom_y": 652,
+    "top_y": 145,
+    "left": 415,
+    "right": 686
+   }
+  ],
+  "all_frames_bottom_min": 651,
+  "all_frames_bottom_max": 670,
+  "all_frames_top_min": 120,
+  "ghost_mid_frame": 5,
+  "double_edge_ratio": 1.067,
+  "wash_pct": 25.6
+ }
+}
