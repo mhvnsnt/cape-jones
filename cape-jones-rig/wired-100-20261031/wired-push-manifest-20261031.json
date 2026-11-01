@@ -1,0 +1,281 @@
+{
+ "folder": "wired-100-20261031",
+ "files": [
+  {
+   "file": "build_extra.py",
+   "bytes": 5833,
+   "sha256": "15c582b8675e990b9695db209bd40381cb12f2f43277784ddda39559f116dd1b"
+  },
+  {
+   "file": "build_gap_closure.py",
+   "bytes": 8464,
+   "sha256": "02f96710445ea3f68003e0fa90da5ba2716cdb41e81d307f935d05a83836047d"
+  },
+  {
+   "file": "build_tool_projects.py",
+   "bytes": 5618,
+   "sha256": "917f57ca8dfabbf148d379fbb41cfdafb90df2d7901524e8c25a464ff84b3a48"
+  },
+  {
+   "file": "build_wired.py",
+   "bytes": 9546,
+   "sha256": "47cecf90fc59ae1951f62b29436c024594531af290e89655bbed7edb4d0a00b5"
+  },
+  {
+   "file": "walk-concat.txt",
+   "bytes": 832,
+   "sha256": "cf10610725fbb6c44a81011d28eb5caf9b2d393e583b379c6add8344f8c07e82"
+  },
+  {
+   "file": "wired-audio-loudnorm-20261031.json",
+   "bytes": 263,
+   "sha256": "7c62c449d2a5963402fe5eb02b254b81a3c29199f5dc5ea2045d2df85a013ec8"
+  },
+  {
+   "file": "wired-audio-minus14lufs-20261031.wav",
+   "bytes": 2288734,
+   "sha256": "17ac740a1381bafd4b068206f8a9c883d7f423826f9a5a1fe56dae443f226860"
+  },
+  {
+   "file": "wired-audio-minus14lufs-measure-20261031.json",
+   "bytes": 263,
+   "sha256": "96581860ffa475191043eea6200d60ce4b7ee3edcb2baae3304ace70c88cab45"
+  },
+  {
+   "file": "wired-blender-fade-mask-20261031.png",
+   "bytes": 4793,
+   "sha256": "6fe3990e7bcfda13551d12d2078d63306883e953dd3e2a7e447fc4c8f759e428"
+  },
+  {
+   "file": "wired-blender-linellight-mask-20261031.png",
+   "bytes": 121035,
+   "sha256": "7f4df772587904d67c8922a3963e9f9fc007e9a8b79ff026e60ba00d622b3386"
+  },
+  {
+   "file": "wired-blender-shadow-ellipse-pads-mask-20261031.png",
+   "bytes": 18169,
+   "sha256": "42a16fef733da31a18c619c5f3be66d1def72242f5960a14963162fbb5dc84e1"
+  },
+  {
+   "file": "wired-blender-v2-cycles-test-20261031.blend",
+   "bytes": 100528,
+   "sha256": "15721d46c9ee85e25412dd804fe3d6f6ab49aa6dd8d94360f2ab5ab7715fcdfb"
+  },
+  {
+   "file": "wired-blender-v2-standard-20261031.blend",
+   "bytes": 100558,
+   "sha256": "e586983e08a2b4fb465802ceece4463fb8ca81aa0ad561c7617adb8ee2562a63"
+  },
+  {
+   "file": "wired-blender-v2-standard-20261031.blend1",
+   "bytes": 100556,
+   "sha256": "651ae52048301e47db8e181f2329419ba4d5e36e43f68a65fa058783260dce37"
+  },
+  {
+   "file": "wired-driver-log-20261031.json",
+   "bytes": 1836,
+   "sha256": "cd5c3d8f4d24658f61eb8e75c5eb26c61b2e06d1b1a56b554ad63c25f5a09a39"
+  },
+  {
+   "file": "wired-ffmpeg-lut3d-fighting-20261031.png",
+   "bytes": 419850,
+   "sha256": "b1997d523346522a7fecfe3c49024781e82b1c8dc715a3c55c4ce4f35837267f"
+  },
+  {
+   "file": "wired-gap-blank-heads-5-furious-1-20261031.jpg",
+   "bytes": 78605,
+   "sha256": "db1ac8d25b1e1a568806e62fbfcb3a1d5a60374d17a19961b8a13870c103241e"
+  },
+  {
+   "file": "wired-gap-feet-2-20261031.jpg",
+   "bytes": 13148,
+   "sha256": "e2abab51a5a400b92a7f4420f33e778c8d4f79cde3f601dcc8dcb3690ae1ba8d"
+  },
+  {
+   "file": "wired-gap-gauntlet-only-2-20261031.jpg",
+   "bytes": 16727,
+   "sha256": "a07e0f2540a3c3a0cb1a0884513f1c885124c00d7a1d162cdd7a31da39bf4290"
+  },
+  {
+   "file": "wired-gap-neck-cylinders-5-20261031.jpg",
+   "bytes": 23994,
+   "sha256": "5bce01346ec0251fe7cf3e47556912c1105650f08facaa54c16337d9e8e2eb9a"
+  },
+  {
+   "file": "wired-gap-turnaround-warps-20261031.jpg",
+   "bytes": 83065,
+   "sha256": "0b5dec6bdf359d50c69e9bc7844283438775f9cbc347aaf95bb1504a4d199191"
+  },
+  {
+   "file": "wired-lipsync-moo-strip-20261031.jpg",
+   "bytes": 70363,
+   "sha256": "31f700fe137132419da53c4f38b81c6aae2e1192eeaff5b8749ed46c4efdbd27"
+  },
+  {
+   "file": "wired-motion-smear-punch-20261031.jpg",
+   "bytes": 43642,
+   "sha256": "34c9beb542e1fe8020938ece6b9e9a777ef4a2ae45370c35cead2da9fdfcd50b"
+  },
+  {
+   "file": "wired-onion-skin-walk-20261031.jpg",
+   "bytes": 124519,
+   "sha256": "cfbee300912679e9497aa2bb16b3468386376dc066fc78f4ec29b99563b612ef"
+  },
+  {
+   "file": "wired-pencil2d-cape-jones-20261031.pclx",
+   "bytes": 557413,
+   "sha256": "b9c9732869c8ad0fa7b3f2d1ecddeb1e2ff3b89faa499f7cb93296bb25a4707e"
+  },
+  {
+   "file": "wired-punch-greykeyed-plate-20261031.png",
+   "bytes": 481269,
+   "sha256": "cadae5ea748d1e52e1ca74115997c5bd883fffb72493d99cb10f1b95d54af933"
+  },
+  {
+   "file": "wired-shot-cj19-dual-light-20261031.jpg",
+   "bytes": 165292,
+   "sha256": "ea6d6864436bebf363f811df28cbeb4944ae18200e537e79785a25e7ef3b5b4e"
+  },
+  {
+   "file": "wired-shot-cj28-rooftop-20261031.jpg",
+   "bytes": 261963,
+   "sha256": "0b1ed3cc5fb5cbf6c05338b3bf96a666f7b370420666dbee079f07cb3f539688"
+  },
+  {
+   "file": "wired-shot-cj30-alley-20261031.jpg",
+   "bytes": 373953,
+   "sha256": "b3a0813b7c78eba678670315bb5e591fe5cc7efc327e82b587104e2e4529a343"
+  },
+  {
+   "file": "wired-shot-flying-painted-bg-20261031.jpg",
+   "bytes": 248432,
+   "sha256": "31b5e6f8a7047afc90ebf12cbebedd026787a979b354f72725fc226196165c1c"
+  },
+  {
+   "file": "wired-sliced-clean-layout-20261031.jpg",
+   "bytes": 38212,
+   "sha256": "c1d933da4f3d99413b3bd7d1ecac99708836f0ac18afbfeb3050ff3c13e89055"
+  },
+  {
+   "file": "wired-squash-stretch-jump-20261031.jpg",
+   "bytes": 38701,
+   "sha256": "af1d062a45dfaf8ddbf534fdf8c72c6acdaf2e90f79924b635b24d2f94b479ad"
+  },
+  {
+   "file": "wired-synfig-cape-jones-rig-20261031.sif",
+   "bytes": 1816,
+   "sha256": "e25d8395b548bc3bd76568b7bdf19898acd67bb345494ece5f1bf1388cb43d3f"
+  },
+  {
+   "file": "wired-title-safe-test-20261031.jpg",
+   "bytes": 253627,
+   "sha256": "e279f5311b7f6432b0fa58ad60d71fbbceaf96492836158ff63f54a42d9d286c"
+  },
+  {
+   "file": "wired-tool-frames-20261031.mp4",
+   "bytes": 15299,
+   "sha256": "e609533c73c60940d79cf76ad5d2564037685c136fe96cde7f7ca84c43126745"
+  },
+  {
+   "file": "wired-tool-frames-contact-20261031.jpg",
+   "bytes": 166474,
+   "sha256": "eadf360db222140b5d765d339ea8de67497f83e21c63d63f8a8ee840e82ae28c"
+  },
+  {
+   "file": "wired-walk-clean-clips-20261031.mp4",
+   "bytes": 32211,
+   "sha256": "2de1b748fb31d058a6d9d994fa9aea6a2d42aaae47e75b23fdbe387f0c016d72"
+  },
+  {
+   "file": "wired-xsheet-walk-20261031.csv",
+   "bytes": 295,
+   "sha256": "2dc191afa383364f52b16fe9fed52555d4a3155ae679ff327eeb89a779741e87"
+  },
+  {
+   "file": "wired_blender_v2.py",
+   "bytes": 10855,
+   "sha256": "c6d06c8ab9967d6538ccfcac5b08521490a798475b5630d20414188fe28bb241"
+  },
+  {
+   "file": "wired-shot-cj01-punch-level2/level-2-v2-colored.png",
+   "bytes": 621190,
+   "sha256": "8a6de7f44bf20fc550cdddfd4d56178673c0aafc4290c0c1c7f02682d2656370"
+  },
+  {
+   "file": "wired-shot-cj01-punch-level2/level-2-v2-colors.json",
+   "bytes": 493,
+   "sha256": "a00d20128085d12e3eae552992c2e82bb6ee335133dac2f99907b1511325fd4f"
+  },
+  {
+   "file": "wired-shot-cj01-punch-level2/level-2-v2-noncolored.png",
+   "bytes": 629286,
+   "sha256": "53a8eca6ad162f65f6f2d03f74e77bb6fb369b295de6ff34aa9dcca59274e3e3"
+  },
+  {
+   "file": "wired-shot-cj01-punch-level2/pass-bleed-colored.png",
+   "bytes": 66686,
+   "sha256": "6e4d02d509411b67d0317f776210ffa431bf47ff9d28e3365eb891f7e2d7411b"
+  },
+  {
+   "file": "wired-shot-cj01-punch-level2/pass-bleed-noncolored.png",
+   "bytes": 66651,
+   "sha256": "27d17ab1e41f8305a3be66a107b3c78cf729973974eea8a431ed4a34d8fdf8cd"
+  },
+  {
+   "file": "wired-shot-cj01-punch-level2/pass-internal-colored.png",
+   "bytes": 534046,
+   "sha256": "f472eba16665ed15ec6a456c8d584f956774b507653e4c269bb6ecf819f39182"
+  },
+  {
+   "file": "wired-shot-cj01-punch-level2/pass-internal-noncolored.png",
+   "bytes": 553309,
+   "sha256": "9115823af28cb783d93fe236a624ea1a9e1820f6ca667f891ceba312bd41eb16"
+  },
+  {
+   "file": "wired-shot-cj01-punch-level2/pass-rim-colored.png",
+   "bytes": 132339,
+   "sha256": "318b5f0d8acd4db0c040684b5be87e4784194e2328260d7b2ffd5aaec8ec05ed"
+  },
+  {
+   "file": "wired-shot-cj01-punch-level2/pass-rim-noncolored.png",
+   "bytes": 132324,
+   "sha256": "f4cd42f29174327e9dc40410196110a5c32ed71043dda43a975dd75de6a39d1d"
+  },
+  {
+   "file": "wired-shot-cj01-punch-level2/pass-shadow-colored.png",
+   "bytes": 32068,
+   "sha256": "72d7835f87209e96dc5c8354e256c3d083917d41552483d70b70fdce12a6e750"
+  },
+  {
+   "file": "wired-shot-cj01-punch-level2/pass-shadow-noncolored.png",
+   "bytes": 32068,
+   "sha256": "72d7835f87209e96dc5c8354e256c3d083917d41552483d70b70fdce12a6e750"
+  },
+  {
+   "file": "wired-xfl-punch-20261031/DOMDocument.xml",
+   "bytes": 7976,
+   "sha256": "d0e2ccde3e3d2c391706751c054fe834514074ba61cfbd98c51889b377eebe1b"
+  },
+  {
+   "file": "wired-tool-frames/frame-01.png",
+   "bytes": 139012,
+   "sha256": "0ed4d803d801e0e4cef6c4fcfd1ec9c7f9c4bafccb2a81c64090d7b8f18fb102"
+  },
+  {
+   "file": "wired-tool-frames/frame-02.png",
+   "bytes": 139026,
+   "sha256": "7f2b9c0bcec9c4120f944935897e44328e6d6f61ce648720571c541290143bae"
+  },
+  {
+   "file": "wired-tool-frames/frame-03.png",
+   "bytes": 139012,
+   "sha256": "0ed4d803d801e0e4cef6c4fcfd1ec9c7f9c4bafccb2a81c64090d7b8f18fb102"
+  },
+  {
+   "file": "wired-tool-frames/frame-04.png",
+   "bytes": 139017,
+   "sha256": "3c531847cbc6b20977f5d2ed3f90fcc2c35ab68ad3c08c36026e3bc685cb1d06"
+  }
+ ],
+ "count": 55
+}
