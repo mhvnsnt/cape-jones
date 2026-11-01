@@ -1,0 +1,49 @@
+{
+  "source": "cut-limbs-v7c/Leg_Front_Lower.png (LEG1, our left, read only)",
+  "v2_shin_crop_full_canvas": [
+    0,
+    30,
+    155,
+    250
+  ],
+  "v2_shin_crop_size": [
+    105,
+    220
+  ],
+  "v2_shin_resize": [
+    170,
+    130
+  ],
+  "v2_shin_height_scale": 0.591,
+  "v2_boot_crop_full_canvas": [
+    0,
+    238,
+    155,
+    323
+  ],
+  "v2_boot_crop_size": [
+    129,
+    84
+  ],
+  "v2_boot_resize": [
+    175,
+    114
+  ],
+  "v2_boot_width_scale": 1.357,
+  "piece_canvas": [
+    340,
+    320
+  ],
+  "piece_alpha_bbox": [
+    82,
+    10,
+    257,
+    224
+  ],
+  "piece_cropped_size": [
+    175,
+    214
+  ],
+  "method": "resize-only reassembly (LANCZOS), same as CJ-15 foreshortened forearm. No smear, no blur-stretch, no recolour, no hand-drawn boot. Boot is the existing side-profile boot, enlarged and overlapped in front of the compressed shin; it is NOT a drawn sole-to-camera view.",
+  "v1_superseded": "v1 (shin 95 tall, boot 142 tall) hid the shin behind the boot; v2 keeps shin visible. v1 file overwritten in this batch folder only - v1 was never shown to Mars, never in a repo, so no Mars-seen version was overwritten."
+}
