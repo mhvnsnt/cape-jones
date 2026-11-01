@@ -1,0 +1,182 @@
+[
+ {
+  "transition": "apose->jei-01 serve windup (FIST, Ginyu builder exact)",
+  "j": 1,
+  "elbow_L": [
+   377.66238921101433,
+   620.3897787697465
+  ],
+  "elbow_R": [
+   710.564692290086,
+   624.1694400265029
+  ]
+ },
+ {
+  "transition": "apose->jei-01 serve windup (FIST, Ginyu builder exact)",
+  "j": 2,
+  "elbow_L": [
+   297.7948812945777,
+   571.5804352500227
+  ],
+  "elbow_R": [
+   755.0290749009938,
+   607.8411462790691
+  ]
+ },
+ {
+  "transition": "apose->jei-01 serve windup (FIST, Ginyu builder exact)",
+  "j": 3,
+  "elbow_L": [
+   247.60000000000002,
+   429.8
+  ],
+  "elbow_R": [
+   803.9825310889744,
+   570.6815971532507
+  ]
+ },
+ {
+  "transition": "apose->jei-01 serve windup (FIST, Ginyu builder exact)",
+  "j": 4,
+  "elbow_L": [
+   276.9890273379049,
+   344.5587622288555
+  ],
+  "elbow_R": [
+   837.9395177989965,
+   519.4546899895537
+  ]
+ },
+ {
+  "transition": "apose->jei-01 serve windup (FIST, Ginyu builder exact)",
+  "j": 5,
+  "elbow_L": [
+   346.65412599181695,
+   282.04520477809785
+  ],
+  "elbow_R": [
+   851.3945027869262,
+   474.03819654668337
+  ]
+ },
+ {
+  "transition": "jei-01 serve windup (FIST, Ginyu builder exact)->gul-03 guard crouch",
+  "j": 1,
+  "elbow_L": [
+   353.0354387304554,
+   278.935987316377
+  ],
+  "elbow_R": [
+   852.3840523570849,
+   466.9827192541801
+  ]
+ },
+ {
+  "transition": "jei-01 serve windup (FIST, Ginyu builder exact)->gul-03 guard crouch",
+  "j": 2,
+  "elbow_L": [
+   291.98950982322987,
+   324.7756072954925
+  ],
+  "elbow_R": [
+   846.4705919449227,
+   496.0422636509058
+  ]
+ },
+ {
+  "transition": "jei-01 serve windup (FIST, Ginyu builder exact)->gul-03 guard crouch",
+  "j": 3,
+  "elbow_L": [
+   246.96931977830124,
+   445.7550480661783
+  ],
+  "elbow_R": [
+   831.9459780125824,
+   531.7218698227164
+  ]
+ },
+ {
+  "transition": "jei-01 serve windup (FIST, Ginyu builder exact)->gul-03 guard crouch",
+  "j": 4,
+  "elbow_L": [
+   259.7418500954883,
+   512.1785858074788
+  ],
+  "elbow_R": [
+   810.2999511478614,
+   563.587968225734
+  ]
+ },
+ {
+  "transition": "jei-01 serve windup (FIST, Ginyu builder exact)->gul-03 guard crouch",
+  "j": 5,
+  "elbow_L": [
+   301.9544116007023,
+   575.786571525817
+  ],
+  "elbow_R": [
+   789.3908465055789,
+   584.6173637864621
+  ]
+ },
+ {
+  "transition": "gul-03 guard crouch->fighting pose (MEASURED-ESTIMATE +/-15deg)",
+  "j": 1,
+  "elbow_L": [
+   318.94174071809067,
+   590.488360514758
+  ],
+  "elbow_R": [
+   786.6610308759666,
+   586.9062591112765
+  ]
+ },
+ {
+  "transition": "gul-03 guard crouch->fighting pose (MEASURED-ESTIMATE +/-15deg)",
+  "j": 2,
+  "elbow_L": [
+   303.2285533432255,
+   577.0219690526867
+  ],
+  "elbow_R": [
+   801.9340524873879,
+   572.8303105458763
+  ]
+ },
+ {
+  "transition": "gul-03 guard crouch->fighting pose (MEASURED-ESTIMATE +/-15deg)",
+  "j": 3,
+  "elbow_L": [
+   267.99844623685794,
+   530.1838985861048
+  ],
+  "elbow_R": [
+   819.2410322705688,
+   552.1181440597952
+  ]
+ },
+ {
+  "transition": "gul-03 guard crouch->fighting pose (MEASURED-ESTIMATE +/-15deg)",
+  "j": 4,
+  "elbow_L": [
+   270.3995217311593,
+   534.6018266351603
+  ],
+  "elbow_R": [
+   833.326235503856,
+   529.09353896786
+  ]
+ },
+ {
+  "transition": "gul-03 guard crouch->fighting pose (MEASURED-ESTIMATE +/-15deg)",
+  "j": 5,
+  "elbow_L": [
+   261.3051851728192,
+   516.0130935139653
+  ],
+  "elbow_R": [
+   841.7749715336305,
+   510.11944144892846
+  ]
+ }
+]
