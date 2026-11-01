@@ -1,0 +1,10 @@
+/home/hatch/workspace/cape-jones-rig/godray-level3-20261031/blender_composite_l3.py:27: DeprecationWarning: 'Scene.use_nodes' is expected to be removed in Blender 6.0
+  scene.use_nodes = True
+00:22.133  render           | Saved: '/home/hatch/workspace/cape-jones-rig/godray-level3-20261031/vv4-level3-20261031.png'
+nodes: ['GodRayV2_Light', 'GroundShadow', 'CastShadow', 'ArmsUpPlate_Untouched', 'Over_BG_Ground', 'Over_Cast', 'Over_Plate', 'BleedCyan_solid', 'BleedCyan_mask', 'BleedCyan_sep', 'BleedCyan', 'Over_BleedCyan', 'SpillCyan', 'Over_SpillCyan', 'SpillGold', 'Over_SpillGold', 'RimInnerCyan_solid', 'RimInnerCyan_mask', 'RimInnerCyan_sep', 'RimInnerCyan', 'Over_RimInnerCyan', 'RimOuterGold_solid', 'RimOuterGold_mask', 'RimOuterGold_sep', 'RimOuterGold', 'Over_RimOuterGold', 'BloomFogGlow', 'Output']
+Info: Saved as "vv4-level3-20261031.blend"
+rendering L3 V4 ...
+L3_V4_DONE /home/hatch/workspace/cape-jones-rig/godray-level3-20261031/vv4-level3-20261031.png
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:35:05)
+
+Blender quit

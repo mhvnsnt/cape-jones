@@ -1,0 +1,73 @@
+{
+  "mars_approved": false,
+  "scenes": [
+    {
+      "scene": "room",
+      "bg_note": "desk painting (clean-100; KKGuh substitute, stated)",
+      "base_palette": "canon base",
+      "lut": "warm-interior",
+      "lut_gain": [
+        1.1,
+        0.95,
+        0.7
+      ],
+      "key": "warm lamp, front-left",
+      "rim": "warm amber (255,180,80)",
+      "bleed": "orange (255,120,0) 0.20",
+      "jojo_shift": "none",
+      "light_direction": "front-left, lamp height",
+      "horizon_scale": "ROOM-ONLY 2.5x rule: rig 950px tall, feet on floor, chair back at waist (locked sheet)"
+    },
+    {
+      "scene": "street",
+      "bg_note": "NO clean painted street art on disk \u2014 swatch panel only; layout-pass-street.jpg is labelled, NOT embedded",
+      "base_palette": "canon base",
+      "lut": "golden-hour",
+      "lut_gain": [
+        1.1,
+        0.95,
+        0.7
+      ],
+      "key": "warm gold sun, front-right low",
+      "rim": "magenta-rose (255,178,229) ONLY under TENSION shift",
+      "bleed": "pink-dark (230,80,170)",
+      "jojo_shift": "JOJO-TENSION (CJ-01 family; demo-only, not canon until Mars approves)",
+      "light_direction": "front-right, low sun",
+      "horizon_scale": "layout scale ~0.35 of rig canvas (room 2.5x rule does NOT apply \u2014 room-only)"
+    },
+    {
+      "scene": "rooftop",
+      "bg_note": "rooftop painting (clean-100)",
+      "base_palette": "canon base (character)",
+      "lut": "sunset-rooftop",
+      "lut_gain": [
+        1.15,
+        0.8,
+        0.7
+      ],
+      "key": "sun low behind (primary source)",
+      "rim": "warm sunset (255,155,75) \u2014 follows sunset LUT, NOT the atmosphere shift",
+      "bleed": "orange (255,100,20)",
+      "jojo_shift": "JOJO-ATMOSPHERE, environment-only (approved 15:36 as world shift; character never leaves base)",
+      "light_direction": "behind, low",
+      "horizon_scale": "layout scale ~0.35 of rig canvas; horizon at rooftop parapet line"
+    },
+    {
+      "scene": "alley",
+      "bg_note": "alley painting (clean-100)",
+      "base_palette": "canon base",
+      "lut": "neon-alley-pink-cyan",
+      "lut_gain": [
+        0.95,
+        0.85,
+        1.05
+      ],
+      "key": "pink/magenta neon front + cyan neon back (dual)",
+      "rim": "FRONT magenta-rose (255,178,229) + BACK cyan (0,200,255) \u2014 each rim named to its source",
+      "bleed": "front pink-dark (230,80,170); back cyan-dark (0,140,200)",
+      "jojo_shift": "none (dual-light exception, not a JoJo shift)",
+      "light_direction": "front neon + behind cyan",
+      "horizon_scale": "layout scale ~0.35 of rig canvas; alley walls converge to centre horizon"
+    }
+  ]
+}
