@@ -1,0 +1,42 @@
+{
+  "clip_id": "old_wrist_cut",
+  "verdict": "FAIL",
+  "rules_loaded": 13,
+  "rules": [
+    "R01-arm-front-snap",
+    "R02-face-snap",
+    "R03-cowl-upper-only",
+    "R04-knee-feet-per-frame",
+    "R04b-leg1-leg2-exception-20261101",
+    "R05-wrist",
+    "R06-flex-obtuse",
+    "R07-elbow-direction",
+    "R08-shuffle-alternating-steps",
+    "R09-grounded",
+    "R10-cape-two-parts",
+    "R11-no-crop-no-handdraw",
+    "R12-flicker"
+  ],
+  "failures": [
+    {
+      "rule": "R05-wrist",
+      "frame": 1,
+      "message": "wrist cut \u2014 banned; hands go WITH the wrist"
+    },
+    {
+      "rule": "R05-wrist",
+      "frame": 1,
+      "message": "wrist_distance=80px >30 \u2014 hand not attached by wrist"
+    },
+    {
+      "rule": "R05-wrist",
+      "frame": 1,
+      "message": "wrist is NOT nearer than fingertip \u2014 hand attached by fingertips"
+    }
+  ],
+  "warnings": [],
+  "missing_table": false,
+  "video_flash": {},
+  "audio": {},
+  "correction_log": "CORRECTION-LOG-20261101.md (append-only; every logged correction is a rule above)"
+}
