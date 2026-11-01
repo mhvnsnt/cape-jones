@@ -1,0 +1,136 @@
+{
+ "fps_mp4": 24,
+ "fps_gif": 12,
+ "total_frames_24fps": 332,
+ "total_seconds": 13.833,
+ "gif_frames": 166,
+ "gif_size": [
+  960,
+  720
+ ],
+ "transition": "cuts only",
+ "shots": [
+  [
+   "CJ-01",
+   6
+  ],
+  [
+   "CJ-02",
+   2
+  ],
+  [
+   "CJ-03",
+   12
+  ],
+  [
+   "CJ-04",
+   6
+  ],
+  [
+   "CJ-05",
+   12
+  ],
+  [
+   "CJ-06",
+   12
+  ],
+  [
+   "CJ-07",
+   12
+  ],
+  [
+   "CJ-08",
+   12
+  ],
+  [
+   "CJ-09",
+   12
+  ],
+  [
+   "CJ-10",
+   12
+  ],
+  [
+   "CJ-11",
+   12
+  ],
+  [
+   "CJ-12",
+   12
+  ],
+  [
+   "CJ-13",
+   12
+  ],
+  [
+   "CJ-14",
+   12
+  ],
+  [
+   "CJ-15",
+   12
+  ],
+  [
+   "CJ-16",
+   12
+  ],
+  [
+   "CJ-17",
+   12
+  ],
+  [
+   "CJ-18",
+   12
+  ],
+  [
+   "CJ-19",
+   12
+  ],
+  [
+   "CJ-20",
+   12
+  ],
+  [
+   "CJ-21",
+   6
+  ],
+  [
+   "CJ-22",
+   12
+  ],
+  [
+   "CJ-23",
+   12
+  ],
+  [
+   "CJ-24",
+   12
+  ],
+  [
+   "CJ-25",
+   12
+  ],
+  [
+   "CJ-26",
+   12
+  ],
+  [
+   "CJ-27",
+   12
+  ],
+  [
+   "CJ-28",
+   12
+  ],
+  [
+   "CJ-29",
+   12
+  ],
+  [
+   "CJ-30",
+   12
+  ]
+ ],
+ "note": "GIF built with ffmpeg from the same 332 JPG frames (every 2nd frame at 12fps); MP4 is the 24fps master.",
+ "gif_note": "GIF preview: 166 frames at 12fps (ffmpeg, every 2nd of the 332 frames); MP4 332f @24fps is the master"
+}
