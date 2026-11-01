@@ -1,0 +1,28 @@
+{
+ "source": "variations/references/cape-jones-tpose-front.png",
+ "group": "variations",
+ "plate": "variations/cape-jones-tpose-front.png",
+ "plate_md5": "adf43e8e2c2069cfd40ba076ec414367",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    981,
+    1060
+   ],
+   "opaque_px": 387156,
+   "sheet_bbox": [
+    59,
+    252,
+    1040,
+    1312
+   ],
+   "area_px": 387156,
+   "provisional_class": "full_figure_tpose",
+   "grid_split": false
+  }
+ ]
+}
