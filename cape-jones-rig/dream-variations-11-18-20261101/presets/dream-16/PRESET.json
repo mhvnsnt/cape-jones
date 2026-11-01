@@ -1,0 +1,45 @@
+{
+  "preset": "Dream 16",
+  "name": "Dream 16 \u2014 Deep Blue Helm, Lime Suit, Crimson Cape, White Rim",
+  "status": "PRESET, approval 0/1 separately",
+  "cowl_helm": [
+    0,
+    60,
+    180
+  ],
+  "skin": [
+    245,
+    190,
+    165
+  ],
+  "suit": [
+    170,
+    255,
+    80
+  ],
+  "suit_shadow": [
+    132,
+    198,
+    62
+  ],
+  "cape": [
+    200,
+    0,
+    80
+  ],
+  "rim_6px": [
+    255,
+    255,
+    255
+  ],
+  "rim_note": "rim is its OWN colour here, not a copy of the cape colour",
+  "eye_note": "no separate eye class in this method; white eye pixels sit in the suit-white class, so eyes follow the suit class",
+  "method": "nearest-base-colour recolour, int32, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim, interior preserved 100%",
+  "source_base": "rig-apose-v7c-clean-transparent.png",
+  "size": [
+    1100,
+    1500
+  ],
+  "base_alpha_px": 373846,
+  "canvas_alpha_px": 416053
+}
