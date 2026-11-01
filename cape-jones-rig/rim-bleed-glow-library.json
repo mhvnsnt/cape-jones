@@ -1,0 +1,437 @@
+{
+  "version": "rim-bleed-glow-library-v1",
+  "rule": "Suit base stays white. Bleed goes to rim and glow only, never full suit tint, except tint-library which is per-key lighting tint (see sheet rule: suit tint changes per lighting condition, cape stays black).",
+  "rim_types": [
+    {
+      "name": "CYAN VOID",
+      "color": [
+        0,
+        220,
+        255
+      ],
+      "width_px": 3,
+      "blend": "Add",
+      "opacity": 1.0
+    },
+    {
+      "name": "PINK NEON",
+      "color": [
+        255,
+        80,
+        180
+      ],
+      "width_px": 3,
+      "blend": "Add",
+      "opacity": 1.0
+    },
+    {
+      "name": "RED FIRE",
+      "color": [
+        255,
+        42,
+        26
+      ],
+      "width_px": 3,
+      "blend": "Add",
+      "opacity": 1.0
+    },
+    {
+      "name": "GOLDEN HOUR",
+      "color": [
+        255,
+        179,
+        0
+      ],
+      "width_px": 3,
+      "blend": "Add",
+      "opacity": 1.0
+    },
+    {
+      "name": "COOL BLUE",
+      "color": [
+        74,
+        144,
+        255
+      ],
+      "width_px": 3,
+      "blend": "Add",
+      "opacity": 1.0
+    },
+    {
+      "name": "PURPLE",
+      "color": [
+        176,
+        74,
+        255
+      ],
+      "width_px": 3,
+      "blend": "Add",
+      "opacity": 1.0
+    },
+    {
+      "name": "GREEN NIGHT",
+      "color": [
+        125,
+        255,
+        106
+      ],
+      "width_px": 3,
+      "blend": "Add",
+      "opacity": 1.0
+    },
+    {
+      "name": "WHITE SPOT",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "width_px": 3,
+      "blend": "Add",
+      "opacity": 1.0
+    }
+  ],
+  "bleed_types": [
+    {
+      "name": "rim-only",
+      "where": "outer rim 2-4px",
+      "blend": "Add"
+    },
+    {
+      "name": "glow-only",
+      "where": "energy glow rings + sparks",
+      "blend": "Color Dodge/Add"
+    },
+    {
+      "name": "rim+glow",
+      "where": "rim + energy glow, same environment colour",
+      "blend": "Add + Color Dodge"
+    },
+    {
+      "name": "background-bleed",
+      "where": "background colour sampled, applied to rim only",
+      "blend": "Add"
+    }
+  ],
+  "tint_types": [
+    {
+      "name": "DAYLIGHT",
+      "multiplier": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "GOLDEN HOUR",
+      "multiplier": [
+        1.1,
+        0.95,
+        0.7
+      ]
+    },
+    {
+      "name": "WARM LAMP",
+      "multiplier": [
+        1.1,
+        0.95,
+        0.75
+      ]
+    },
+    {
+      "name": "FLUORESCENT",
+      "multiplier": [
+        0.9,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SPOTLIGHT",
+      "multiplier": [
+        1.05,
+        1.05,
+        1.05
+      ]
+    },
+    {
+      "name": "RAINY NIGHT",
+      "multiplier": [
+        0.8,
+        0.85,
+        1.05
+      ]
+    },
+    {
+      "name": "NEON PINK/CYAN",
+      "multiplier": [
+        0.95,
+        0.85,
+        1.05
+      ]
+    },
+    {
+      "name": "FIRE",
+      "multiplier": [
+        1.15,
+        0.85,
+        0.6
+      ]
+    },
+    {
+      "name": "UNDERWATER",
+      "multiplier": [
+        0.8,
+        0.95,
+        1.1
+      ]
+    },
+    {
+      "name": "RED ALERT",
+      "multiplier": [
+        1.2,
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "name": "DESERT SUN",
+      "multiplier": [
+        1.15,
+        1.0,
+        0.65
+      ]
+    },
+    {
+      "name": "FOGGY",
+      "multiplier": [
+        0.9,
+        0.95,
+        1.0
+      ]
+    },
+    {
+      "name": "CANDLELIGHT",
+      "multiplier": [
+        1.15,
+        0.9,
+        0.6
+      ]
+    },
+    {
+      "name": "GREEN NIGHT",
+      "multiplier": [
+        0.7,
+        1.15,
+        0.7
+      ]
+    },
+    {
+      "name": "WARM SUNSET",
+      "multiplier": [
+        1.15,
+        0.8,
+        0.7
+      ]
+    },
+    {
+      "name": "CITY NOON",
+      "multiplier": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "STORMY NIGHT",
+      "multiplier": [
+        0.8,
+        0.85,
+        1.0
+      ]
+    },
+    {
+      "name": "COZY FIRE",
+      "multiplier": [
+        1.15,
+        0.9,
+        0.65
+      ]
+    },
+    {
+      "name": "CYAN CYBER",
+      "multiplier": [
+        0.85,
+        1.05,
+        1.2
+      ]
+    },
+    {
+      "name": "NATURAL WINDOW",
+      "multiplier": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "glow_types": [
+    {
+      "name": "WHITE CORE / NORMAL",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "blend": "Normal",
+      "core": "#FFFFFF Normal"
+    },
+    {
+      "name": "GOLD #FFB300 / COLOR DODGE",
+      "color": [
+        255,
+        179,
+        0
+      ],
+      "blend": "Color Dodge",
+      "core": "#FFFFFF Normal"
+    },
+    {
+      "name": "CYAN / ADD",
+      "color": [
+        0,
+        220,
+        255
+      ],
+      "blend": "Add",
+      "core": "#FFFFFF Normal"
+    },
+    {
+      "name": "PINK NEON / ADD",
+      "color": [
+        255,
+        80,
+        180
+      ],
+      "blend": "Add",
+      "core": "#FFFFFF Normal"
+    },
+    {
+      "name": "RED FIRE / SCREEN",
+      "color": [
+        255,
+        42,
+        26
+      ],
+      "blend": "Screen",
+      "core": "#FFFFFF Normal"
+    },
+    {
+      "name": "GREEN / ADD",
+      "color": [
+        125,
+        255,
+        106
+      ],
+      "blend": "Add",
+      "core": "#FFFFFF Normal"
+    },
+    {
+      "name": "PURPLE / SCREEN",
+      "color": [
+        176,
+        74,
+        255
+      ],
+      "blend": "Screen",
+      "core": "#FFFFFF Normal"
+    }
+  ],
+  "pipeline_order": [
+    "background",
+    "color key tint",
+    "character",
+    "hard shadow",
+    "rim (environment colour)",
+    "energy (Add/Color Dodge)",
+    "glow/bloom",
+    "volumetric",
+    "fog",
+    "foreground",
+    "LUT",
+    "delivery"
+  ],
+  "tools": [
+    "Natron (node, free)",
+    "Blender Compositor + Glare (free)",
+    "OpenToonz (free)",
+    "Krita (free)",
+    "FFmpeg (free)",
+    "After Effects / Resolve Fusion (paid standard, same operations)"
+  ],
+  "inner_outline_types": [
+    {
+      "status": "DO NOT USE - SUPERSEDED 2026-10-31, user correction: inner outline made rim thicker, not line work. Use linework-study instead.",
+      "replaced_by": "linework-study-coloured-lines-soft-bleed.jpg",
+      "rule": "Rim is outer only, 2-4px. Line work is coloured per lighting key and soft bleed into folds, not a second outline."
+    }
+  ],
+  "vfx_types": [
+    {
+      "name": "sparkles",
+      "shape": "4-point star",
+      "color": "white/yellow",
+      "blend": "Add"
+    },
+    {
+      "name": "orbs",
+      "shape": "glowing sphere, white core",
+      "colors": [
+        "cyan",
+        "gold",
+        "pink"
+      ],
+      "blend": "Add"
+    },
+    {
+      "name": "shines",
+      "shape": "starburst lines + white core",
+      "blend": "Add"
+    },
+    {
+      "name": "god rays",
+      "shape": "light cone, low opacity",
+      "blend": "Add",
+      "opacity": 0.15
+    },
+    {
+      "name": "dust motes",
+      "shape": "small white dots in light cone",
+      "blend": "Add"
+    },
+    {
+      "name": "lens flare",
+      "shape": "circles along light diagonal",
+      "blend": "Screen"
+    },
+    {
+      "name": "bloom streaks",
+      "shape": "horizontal streak from bright source",
+      "blend": "Add"
+    }
+  ],
+  "linework": {
+    "original": "black line art #000000",
+    "night_lines": "dark blue (30,30,90)",
+    "golden_lines": "dark brown (70,40,10)",
+    "soft_bleed": "edge band, Gaussian blur, opacity 0.45, fades inward, not a hard line",
+    "rim": "outer only, 2-4px, Add"
+  },
+  "vfx_upgraded": [
+    "sparkles varied size/rotation + halo",
+    "orbs gradient + highlight + rim",
+    "shines anamorphic streak + lens flare",
+    "god rays layered soft cones + dust",
+    "beam core + jagged lightning + shockwave ring"
+  ]
+}

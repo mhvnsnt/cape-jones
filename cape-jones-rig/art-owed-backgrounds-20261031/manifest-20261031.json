@@ -1,0 +1,583 @@
+{
+ "locations": {
+  "street": {
+   "master": "media-generation-bg-street-golden-hour-painted-0-08bdd466-9aea-4b00-8910-0d5727b491aa.png",
+   "method": "media-generated",
+   "shots": [
+    "CJ-01",
+    "CJ-02",
+    "CJ-03",
+    "CJ-04",
+    "CJ-06"
+   ]
+  },
+  "town": {
+   "master": "media-generation-bg-town-golden-hour-painted-ne-0-cfb30d3e-8bdc-49ba-8639-42f54c113dcf.png",
+   "method": "media-generated",
+   "shots": [
+    "CJ-05",
+    "CJ-07"
+   ]
+  },
+  "stage": {
+   "master": "media-generation-bg-stage-magenta-painted-new-2-0-0083de41-4d57-40bd-9cdf-04fd8a56d4a1.png",
+   "method": "media-generated",
+   "shots": [
+    "CJ-09",
+    "CJ-10",
+    "CJ-11"
+   ]
+  },
+  "night-city": {
+   "master": "media-generation-bg-night-city-cj29-painted-new-0-6135bc99-9e34-4855-904a-c165edbdc0e0.png",
+   "method": "media-generated",
+   "shots": [
+    "CJ-29"
+   ]
+  },
+  "plaza": {
+   "master": "bg-plaza-neutral-painted-code-20261031.png",
+   "method": "code-painted (PIL)",
+   "shots": [
+    "CJ-16",
+    "CJ-17",
+    "CJ-18",
+    "CJ-19",
+    "CJ-20"
+   ]
+  },
+  "room": {
+   "master": "bg-room-lounge-painted-code-20261031.png",
+   "method": "code-painted (PIL)",
+   "shots": [
+    "CJ-23",
+    "CJ-25",
+    "CJ-27"
+   ]
+  }
+ },
+ "per_shot": [
+  {
+   "shot": "CJ-01",
+   "slug": "punch-windup",
+   "location": "street",
+   "method": "media-generated",
+   "spec_bg_source_before": "colour-script multiplane (street family; final painted BG owed)",
+   "spec_bg_kind_before": "script",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-01-bg-street-painted-new-20261031.png",
+   "master": "media-generation-bg-street-golden-hour-painted-0-08bdd466-9aea-4b00-8910-0d5727b491aa.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    178,
+    229
+   ],
+   "bleed": [
+    230,
+    80,
+    170
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  },
+  {
+   "shot": "CJ-02",
+   "slug": "punch-extend-snap",
+   "location": "street",
+   "method": "media-generated",
+   "spec_bg_source_before": "colour-script multiplane (street family; final painted BG owed)",
+   "spec_bg_kind_before": "script",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-02-bg-street-painted-new-20261031.png",
+   "master": "media-generation-bg-street-golden-hour-painted-0-08bdd466-9aea-4b00-8910-0d5727b491aa.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    178,
+    229
+   ],
+   "bleed": [
+    230,
+    80,
+    170
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  },
+  {
+   "shot": "CJ-03",
+   "slug": "punch-impact-locked",
+   "location": "street",
+   "method": "media-generated",
+   "spec_bg_source_before": "colour-script multiplane (street family; final painted BG owed)",
+   "spec_bg_kind_before": "script",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-03-bg-street-painted-new-20261031.png",
+   "master": "media-generation-bg-street-golden-hour-painted-0-08bdd466-9aea-4b00-8910-0d5727b491aa.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    120,
+    115
+   ],
+   "bleed": [
+    220,
+    60,
+    50
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  },
+  {
+   "shot": "CJ-04",
+   "slug": "punch-recover",
+   "location": "street",
+   "method": "media-generated",
+   "spec_bg_source_before": "colour-script multiplane (street family; final painted BG owed)",
+   "spec_bg_kind_before": "script",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-04-bg-street-painted-new-20261031.png",
+   "master": "media-generation-bg-street-golden-hour-painted-0-08bdd466-9aea-4b00-8910-0d5727b491aa.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    180,
+    80
+   ],
+   "bleed": [
+    255,
+    120,
+    0
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  },
+  {
+   "shot": "CJ-05",
+   "slug": "punch-across-down-placement",
+   "location": "town",
+   "method": "media-generated",
+   "spec_bg_source_before": "colour-script multiplane (town family; final painted BG owed)",
+   "spec_bg_kind_before": "script",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-05-bg-town-painted-new-20261031.png",
+   "master": "media-generation-bg-town-golden-hour-painted-ne-0-cfb30d3e-8bdc-49ba-8639-42f54c113dcf.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    255,
+    255
+   ],
+   "bleed": [
+    255,
+    255,
+    255
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  },
+  {
+   "shot": "CJ-06",
+   "slug": "walk-street-contact",
+   "location": "street",
+   "method": "media-generated",
+   "spec_bg_source_before": "colour-script multiplane (street family; final painted BG owed)",
+   "spec_bg_kind_before": "script",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-06-bg-street-painted-new-20261031.png",
+   "master": "media-generation-bg-street-golden-hour-painted-0-08bdd466-9aea-4b00-8910-0d5727b491aa.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    255,
+    255
+   ],
+   "bleed": [
+    255,
+    255,
+    255
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  },
+  {
+   "shot": "CJ-07",
+   "slug": "walk-town-passing",
+   "location": "town",
+   "method": "media-generated",
+   "spec_bg_source_before": "colour-script multiplane (town family; final painted BG owed)",
+   "spec_bg_kind_before": "script",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-07-bg-town-painted-new-20261031.png",
+   "master": "media-generation-bg-town-golden-hour-painted-ne-0-cfb30d3e-8bdc-49ba-8639-42f54c113dcf.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    180,
+    80
+   ],
+   "bleed": [
+    255,
+    120,
+    0
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  },
+  {
+   "shot": "CJ-09",
+   "slug": "dance-a",
+   "location": "stage",
+   "method": "media-generated",
+   "spec_bg_source_before": "colour-script multiplane (stage family; final painted BG owed)",
+   "spec_bg_kind_before": "script",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-09-bg-stage-painted-new-20261031.png",
+   "master": "media-generation-bg-stage-magenta-painted-new-2-0-0083de41-4d57-40bd-9cdf-04fd8a56d4a1.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    178,
+    229
+   ],
+   "bleed": [
+    230,
+    80,
+    180
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  },
+  {
+   "shot": "CJ-10",
+   "slug": "dance-b",
+   "location": "stage",
+   "method": "media-generated",
+   "spec_bg_source_before": "colour-script multiplane (stage family; final painted BG owed)",
+   "spec_bg_kind_before": "script",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-10-bg-stage-painted-new-20261031.png",
+   "master": "media-generation-bg-stage-magenta-painted-new-2-0-0083de41-4d57-40bd-9cdf-04fd8a56d4a1.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    190,
+    220
+   ],
+   "bleed": [
+    235,
+    110,
+    185
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  },
+  {
+   "shot": "CJ-11",
+   "slug": "dance-combined-finale",
+   "location": "stage",
+   "method": "media-generated",
+   "spec_bg_source_before": "colour-script multiplane (stage family; final painted BG owed)",
+   "spec_bg_kind_before": "script",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-11-bg-stage-painted-new-20261031.png",
+   "master": "media-generation-bg-stage-magenta-painted-new-2-0-0083de41-4d57-40bd-9cdf-04fd8a56d4a1.png",
+   "level": "Level 3",
+   "rim": [
+    220,
+    150,
+    255
+   ],
+   "bleed": [
+    170,
+    80,
+    235
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  },
+  {
+   "shot": "CJ-16",
+   "slug": "flex-anticipation-before-tighten",
+   "location": "plaza",
+   "method": "code-painted (PIL)",
+   "spec_bg_source_before": "colour-script multiplane (any family; final painted BG owed)",
+   "spec_bg_kind_before": "script",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-16-bg-plaza-painted-new-20261031.png",
+   "master": "bg-plaza-neutral-painted-code-20261031.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    180,
+    90
+   ],
+   "bleed": [
+    255,
+    120,
+    30
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  },
+  {
+   "shot": "CJ-17",
+   "slug": "arms-up-reference",
+   "location": "plaza",
+   "method": "code-painted (PIL)",
+   "spec_bg_source_before": "colour-script multiplane (any family; final painted BG owed)",
+   "spec_bg_kind_before": "script",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-17-bg-plaza-painted-new-20261031.png",
+   "master": "bg-plaza-neutral-painted-code-20261031.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    230,
+    140
+   ],
+   "bleed": [
+    255,
+    200,
+    60
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  },
+  {
+   "shot": "CJ-18",
+   "slug": "true-flex-double-bicep",
+   "location": "plaza",
+   "method": "code-painted (PIL)",
+   "spec_bg_source_before": "colour-script multiplane (any family; final painted BG owed)",
+   "spec_bg_kind_before": "script",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-18-bg-plaza-painted-new-20261031.png",
+   "master": "bg-plaza-neutral-painted-code-20261031.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    165,
+    95
+   ],
+   "bleed": [
+    255,
+    110,
+    30
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  },
+  {
+   "shot": "CJ-19",
+   "slug": "fighting-pose-forward-bicep-curl",
+   "location": "plaza",
+   "method": "code-painted (PIL)",
+   "spec_bg_source_before": "colour-script multiplane (any family; final painted BG owed)",
+   "spec_bg_kind_before": "script",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-19-bg-plaza-painted-new-20261031.png",
+   "master": "bg-plaza-neutral-painted-code-20261031.png",
+   "level": "Level 3",
+   "rim": [
+    255,
+    180,
+    80
+   ],
+   "bleed": [
+    255,
+    120,
+    0
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  },
+  {
+   "shot": "CJ-20",
+   "slug": "fighting-stance-arms-up-high",
+   "location": "plaza",
+   "method": "code-painted (PIL)",
+   "spec_bg_source_before": "colour-script multiplane (any family; final painted BG owed)",
+   "spec_bg_kind_before": "script",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-20-bg-plaza-painted-new-20261031.png",
+   "master": "bg-plaza-neutral-painted-code-20261031.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    150,
+    60
+   ],
+   "bleed": [
+    255,
+    100,
+    20
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  },
+  {
+   "shot": "CJ-23",
+   "slug": "lounge-seated-room",
+   "location": "room",
+   "method": "code-painted (PIL)",
+   "spec_bg_source_before": "gap-close-color-20261031/room-proof-bg-canvas-20261031.png",
+   "spec_bg_kind_before": "painted",
+   "canvas": [
+    1920,
+    1280
+   ],
+   "file": "per-shot/CJ-23-bg-room-painted-new-20261031.png",
+   "master": "bg-room-lounge-painted-code-20261031.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    185,
+    95
+   ],
+   "bleed": [
+    255,
+    125,
+    20
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": false
+  },
+  {
+   "shot": "CJ-25",
+   "slug": "room-standing-device-gag",
+   "location": "room",
+   "method": "code-painted (PIL)",
+   "spec_bg_source_before": "gap-close-color-20261031/room-proof-bg-canvas-20261031.png",
+   "spec_bg_kind_before": "painted",
+   "canvas": [
+    1920,
+    1280
+   ],
+   "file": "per-shot/CJ-25-bg-room-painted-new-20261031.png",
+   "master": "bg-room-lounge-painted-code-20261031.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    185,
+    95
+   ],
+   "bleed": [
+    255,
+    125,
+    20
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": false
+  },
+  {
+   "shot": "CJ-27",
+   "slug": "dialogue-shout-angry",
+   "location": "room",
+   "method": "code-painted (PIL)",
+   "spec_bg_source_before": "gap-close-color-20261031/room-proof-bg-canvas-20261031.png",
+   "spec_bg_kind_before": "painted",
+   "canvas": [
+    1920,
+    1280
+   ],
+   "file": "per-shot/CJ-27-bg-room-painted-new-20261031.png",
+   "master": "bg-room-lounge-painted-code-20261031.png",
+   "level": "Level 2",
+   "rim": [
+    255,
+    130,
+    120
+   ],
+   "bleed": [
+    220,
+    50,
+    40
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": false
+  },
+  {
+   "shot": "CJ-29",
+   "slug": "rooftop-night-city",
+   "location": "night-city",
+   "method": "media-generated",
+   "spec_bg_source_before": "clean-100-20261031/layouts/bg-rooftop-painted-20261031.jpg",
+   "spec_bg_kind_before": "painted",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "file": "per-shot/CJ-29-bg-night-city-painted-new-20261031.png",
+   "master": "media-generation-bg-night-city-cj29-painted-new-0-6135bc99-9e34-4855-904a-c165edbdc0e0.png",
+   "level": "Level 3",
+   "rim": [
+    160,
+    185,
+    255
+   ],
+   "bleed": [
+    80,
+    120,
+    255
+   ],
+   "approval": "0/1 PENDING Mars look",
+   "canonical_matched": true
+  }
+ ],
+ "counts": {
+  "new_painted_shots": 19,
+  "painted_before": "15/30 shots (shots-endtoend count; CJ-29 counted there on graded rooftop)",
+  "painted_after": "30/30 = 100% by existence (14 prior distinct + CJ-26 existing composite + 19 new; CJ-29 graded-rooftop stand-in replaced; CJ-23/25/27 room-proof canvas replaced)",
+  "approval": "0/1 for the painted background set",
+  "canonical_matched": "27/30 = 90% \u2014 room CJ-23/25/27 (3) are painted but NON-CANONICAL: canonical room picture received 2026-11-01 00:00 CDT (purple/pink neon, pink wingback chair, CRT TV, sunset window) differs in palette/furniture from this batch's warm sage lounge room; a separate canonical-room workstream is running, so no repaint was made here to avoid clobbering it",
+  "cave": "0 \u2014 no cave location spec exists in shots-endtoend-20261031.json and no CJ shot is a cave; nothing cave was painted, nothing cave is owed by this shot list",
+  "any_family_note": "CJ-16..20 spec family is literally 'any' (no location named); painted as a neutral open plaza so flex/fighting poses read \u2014 Mars can redirect to a named location"
+ }
+}

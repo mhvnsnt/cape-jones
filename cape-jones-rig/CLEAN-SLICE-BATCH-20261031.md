@@ -1,0 +1,178 @@
+# CLEAN-SLICE BATCH + CLEAN CLIP RE-RENDER — 2026-10-31
+
+Method: slice_clean.py ONLY (bg = median of 4 corners, mask distance >30, 3x3 closing x2 + hole fill, components >=800px, rows clustered by centre-y gap >150, 1px feather + fringe decontamination). No hand rectangles, no square crops. rembg NOT used: scripted pieces viewed clean, so no per-piece rembg check was needed; rembg remains check-only per CLEAN-CUT-NOTES.md, never on a full sheet.
+Source: ~/workspace/cape-jones-flying/characters/sheets/ — READ-ONLY, nothing written or committed there. Output: sliced-clean-20261031/ (new dated folder, no version Mars saw was overwritten).
+
+## Batch reconciliation (verified by MD5)
+- Image files in sheets/: 245. Unique by MD5: 184. Duplicate files (exact MD5 copies, excluded, no content lost): 61.
+- Sliced with slice_clean.py: 140/184 = 76%. Pieces written: 2,854. Numeric QC: 2,854/2,854 piece files exist, non-empty, RGBA, 0 flags.
+- NOT sliced as rig pieces: 44/184 = 24% — backgrounds 26 unique (painted scenes, slicing them into pieces would be wrong; verified present, kept as paintings) + reference sheets 18 (color-keys 6, layout-line-art 5, storyboards 5, viseme-charts 2).
+- Eye-verified in this run (contact sheets / full frames viewed by Muse): sheets 08, 07, 01-tpose (numeric alpha check: corners 0, figure opaque, 29,472 feather px), model-front-set2, fla-front, xray-fla-front, dance-2e9kj, exposure-walk, variations 6KSNq, prop-8LjQY = 11 sheets viewed in detail. Remaining 129 sliced sheets are manifest + numeric-QC verified but NOT yet individually eye-viewed — they are sliced, not claimed eye-done. Per the own-eyes law, the per-sheet eye pass for those 129 is still owed.
+
+## Per-group piece counts
+- A-root: 10 sheets, 471 pieces
+- B-model: 7 sheets, 7 pieces
+- C-variations: 38 sheets, 1238 pieces
+- D-xray-angle-ref: 19 sheets, 302 pieces
+- E-exposure: 10 sheets, 110 pieces
+- F-fla-packs: 39 sheets, 648 pieces
+- G-props: 17 sheets, 78 pieces
+
+## Triage notes (viewed sheets)
+- Titled/matrix sheets: title letters and section labels slice as components too (e.g. 08: 72 components incl. title/label text; 07: 48 incl. text). Text fragments are NOT rig pieces; art pieces in those sheets are clean. Row naming does not follow sheet sections on dense sheets (07 put 44 pieces in Row1) — manifest bboxes are the reliable index, not Row names.
+- Exposure sheets: the walk strip slices as ONE tall strip piece (frames connected by grid lines), not per-frame pieces. Exposure sheets are timing reference, not per-frame rig sources. A sheet-driven column-split pass (not hand rectangles) is the owed workaround for per-frame exposure pieces.
+- Model sheets (B-model, 7 sheets): each is a single full figure = 1 clean piece each. Correct, not a failure.
+- Variations 6KSNq and similar: BLUE costume variant exploded sheets — clean pieces, but variant palette, not canon white suit. Label variant sets separately from canon pieces.
+- Props: some 'prop' files are whole interior scenes (e.g. prop-8LjQY kitchen = 1 scene piece). Those are backgrounds/scenes, not prop pieces.
+- xray-fla-front: 47 clean pieces — x-ray skeleton layer set (bones, ribcage, pelvis, skull) + cape + head. Specialty layer, not standard rig.
+
+## Clean clip re-render: 17/17 = 100%
+Folder: clips-v7c-clean-20261031/ (walk 4, jump 4, punch 1, flying 4, dance 3, flex/fighting-pose 1). Excluded by design: flex-07-flex-hold (duplicate of fighting pose) and punch-arm2-variants (4, unpicked). Method: joint_locked_rig_v7c.py function definitions only, labels=False clean mode, configs from clips/*-clip.json. Verification per frame: 0 pure-red pixels AND 0 pixel difference vs the labelled original outside the label-circle/text mask. Two v7c corrections found and applied: jump-25-land leg_lower is 10/-10 (JSON says -10/10); flying-25-dive uses segmented arms, not whole arms (v5 render used whole). All 17 viewed via 2 contact sheets. NOTE: the clean fighting-pose clip frame uses the ORIGINAL lowers (faithful to the labelled original); the approved gauntlet-out-fixed fighting pose is a separate file in reposes-v7c-clean/, not a clip frame.
+
+## Per-sheet piece counts (full table in sliced-clean-20261031-results.json)
+- 01-tpose-turnaround.jpg: 1
+- 02-model-sheet-orthographic-turnaround.jpg: 5
+- 03-color-lighting-vfx-key.jpg: 97
+- 04-action-flight-vfx-reference.jpg: 87
+- 05-expression-eye-dart-matrix.jpg: 89
+- 06-viseme-phoneme-mouth-matrix.jpg: 66
+- 07-character-parts-expressions.jpg: 48
+- 08-body-parts-limbs-capes.jpg: 72
+- 09-hero-shot-black.png: 2
+- 10-hero-in-space.jpg: 4
+- exposure-sheets/exposure-sheet-1-walk.jpg: 12
+- exposure-sheets/exposure-sheet-10-flex.jpg: 14
+- exposure-sheets/exposure-sheet-2-jump.jpg: 1
+- exposure-sheets/exposure-sheet-3-punch.jpg: 1
+- exposure-sheets/exposure-sheet-4-flight.jpg: 1
+- exposure-sheets/exposure-sheet-5-reaction.jpg: 13
+- exposure-sheets/exposure-sheet-6-sit.jpg: 28
+- exposure-sheets/exposure-sheet-7-cape.jpg: 8
+- exposure-sheets/exposure-sheet-8-turnaround.jpg: 1
+- exposure-sheets/exposure-sheet-9-run.jpg: 31
+- fla-packs/action-packs/action-1vU75.jpg: 17
+- fla-packs/action-packs/action-60rw7.jpg: 5
+- fla-packs/action-packs/action-9NXQv.jpg: 5
+- fla-packs/action-packs/action-EBPJX.jpg: 15
+- fla-packs/action-packs/action-HJUwB.jpg: 13
+- fla-packs/action-packs/action-Ne4dq.jpg: 8
+- fla-packs/action-packs/action-Nk9xR.jpg: 12
+- fla-packs/action-packs/action-QjT3b.jpg: 23
+- fla-packs/action-packs/action-RTpXF.jpg: 5
+- fla-packs/action-packs/action-TatNd.jpg: 11
+- fla-packs/action-packs/action-WUwKS.jpg: 36
+- fla-packs/action-packs/action-Wtv8t.jpg: 14
+- fla-packs/action-packs/action-cJWaN.jpg: 6
+- fla-packs/action-packs/action-f5Q6Z.jpg: 5
+- fla-packs/action-packs/action-wdNk1.jpg: 5
+- fla-packs/angle-sheets/fla-3quarter-back.jpg: 16
+- fla-packs/angle-sheets/fla-3quarter-front.jpg: 9
+- fla-packs/angle-sheets/fla-back.jpg: 41
+- fla-packs/angle-sheets/fla-front.jpg: 33
+- fla-packs/dance-packs/dance-2e9kj.jpg: 24
+- fla-packs/dance-packs/dance-D3pmc.jpg: 19
+- fla-packs/dance-packs/dance-MAHyh.jpg: 24
+- fla-packs/dance-packs/dance-UgepP.jpg: 11
+- fla-packs/dance-packs/dance-ZxEwS.jpg: 25
+- fla-packs/dance-packs/dance-a3jha.jpg: 17
+- fla-packs/dance-packs/dance-etaPY.jpg: 32
+- fla-packs/dance-packs/dance-mANuo.jpg: 16
+- fla-packs/dance-packs/dance-qIxLo.jpg: 20
+- fla-packs/dance-packs/dance-smAFI.jpg: 11
+- fla-packs/dance-packs/dance-w2Zh1.jpg: 17
+- fla-packs/jojo-packs/recent-3N1l4.jpg: 26
+- fla-packs/jojo-packs/recent-8chi3.jpg: 27
+- fla-packs/jojo-packs/recent-HXbRz.jpg: 13
+- fla-packs/jojo-packs/recent-J9hos.jpg: 17
+- fla-packs/jojo-packs/recent-PL6xL.jpg: 15
+- fla-packs/jojo-packs/recent-TdvUD.jpg: 29
+- fla-packs/jojo-packs/recent-XcaBI.jpg: 12
+- fla-packs/jojo-packs/recent-XkboO.jpg: 19
+- fla-packs/jojo-packs/recent-akfZy.jpg: 30
+- fla-packs/jojo-packs/recent-chKT5.jpg: 19
+- fla-packs/jojo-packs/recent-l3Ch8.jpg: 18
+- fla-packs/jojo-packs/recent-lHT9s.jpg: 13
+- fla-packs/jojo-packs/recent-nh3HD.jpg: 14
+- fla-packs/references/tpose-front-alt.png: 7
+- fla-packs/references/tpose-front.png: 1
+- fla-packs/xray-vision/hands/xray-hand-sheet-1.jpg: 6
+- fla-packs/xray-vision/hands/xray-hand-sheet-2.jpg: 6
+- fla-packs/xray-vision/hands/xray-hand-sheet-3.jpg: 7
+- fla-packs/xray-vision/heads/xray-head-sheet-1.jpg: 5
+- fla-packs/xray-vision/heads/xray-head-sheet-2.jpg: 5
+- fla-packs/xray-vision/heads/xray-head-sheet-3.jpg: 5
+- fla-packs/xray-vision/heads/xray-head-sheet-4.jpg: 5
+- fla-packs/xray-vision/heads/xray-head-sheet-5.jpg: 5
+- fla-packs/xray-vision/xray-fla-3quarter-back.jpg: 38
+- fla-packs/xray-vision/xray-fla-3quarter-front.jpg: 35
+- fla-packs/xray-vision/xray-fla-back.jpg: 26
+- fla-packs/xray-vision/xray-fla-front.jpg: 47
+- fla-packs/xray-vision/xray-turnaround.jpg: 5
+- model-sheets/model-sheet-3quarter-back-set1.jpg: 1
+- model-sheets/model-sheet-3quarter-back-set2.jpg: 1
+- model-sheets/model-sheet-3quarter-front-set2.jpg: 1
+- model-sheets/model-sheet-back-set1.jpg: 1
+- model-sheets/model-sheet-back-set2.jpg: 1
+- model-sheets/model-sheet-front-set2.jpg: 1
+- model-sheets/model-sheet-side-set2.jpg: 1
+- prop-scale-sheets/prop-scale-electronics-furniture.jpg: 9
+- prop-scale-sheets/prop-scale-outdoor-furniture.jpg: 21
+- props/prop-8LjQY.jpg: 1
+- props/prop-BBvxs.jpg: 5
+- props/prop-HeTHP.jpg: 4
+- props/prop-IApiu.jpg: 5
+- props/prop-Nr2it.jpg: 4
+- props/prop-SNnYp.jpg: 5
+- props/prop-YAhuI.jpg: 1
+- props/prop-ZG2Bt.jpg: 1
+- props/prop-fi3j8.jpg: 2
+- props/prop-hvZmi.jpg: 7
+- props/prop-izNQ9.jpg: 1
+- props/prop-luSwX.jpg: 5
+- props/prop-nFMhU.jpg: 5
+- props/prop-oCpSw.jpg: 1
+- props/prop-rY6iH.jpg: 1
+- variations/action/6KSNq.jpg: 43
+- variations/action/6TXRQ.jpg: 36
+- variations/action/9A7pl.jpg: 17
+- variations/action/9AuKw.jpg: 30
+- variations/action/FPEeg.jpg: 25
+- variations/action/GCQ03.jpg: 39
+- variations/action/I2t0d.jpg: 17
+- variations/action/KRuoB.jpg: 19
+- variations/action/Lf8uW.jpg: 42
+- variations/action/N39Xr.jpg: 14
+- variations/action/SWiWT.jpg: 20
+- variations/action/T2SRf.jpg: 13
+- variations/action/TwyB6.jpg: 46
+- variations/action/URmgB.jpg: 9
+- variations/action/V9r14.jpg: 8
+- variations/action/adOmH.jpg: 25
+- variations/action/aqMG1.jpg: 7
+- variations/action/cDeSs.jpg: 27
+- variations/action/dAvtg.jpg: 39
+- variations/action/hJsrN.jpg: 17
+- variations/action/rzhOh.jpg: 11
+- variations/action/sODBO.jpg: 3
+- variations/action/tMEvT.jpg: 27
+- variations/action/uU0ry.jpg: 17
+- variations/action/wZf6q.jpg: 48
+- variations/flying/9dc2Q.jpg: 50
+- variations/flying/AKqzs.jpg: 40
+- variations/flying/CgfRw.jpg: 106
+- variations/flying/GQCnK.jpg: 24
+- variations/flying/RbAEI.jpg: 61
+- variations/flying/Thtr3.jpg: 11
+- variations/flying/VRwDb.jpg: 37
+- variations/flying/abfwV.jpg: 78
+- variations/flying/ekuiT.jpg: 20
+- variations/flying/hGsDr.jpg: 33
+- variations/flying/lQzUV.jpg: 96
+- variations/flying/qGZGX.jpg: 63
+- variations/flying/ydJQP.jpg: 20
+
+## Still owed
+- Per-sheet eye pass for 129 sliced sheets (contacts not yet viewed individually).
+- 44/184 not sliced as pieces: backgrounds (kept as paintings, correct) + reference sheets (no rig pieces expected).
+- Per-frame exposure-strip split (sheet-driven column method, owed, not hand rectangles).
+- Wiring the new pieces into the rig (naming/registration of variant + xray sets) — slicing only, not wiring, in this run.

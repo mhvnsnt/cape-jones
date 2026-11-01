@@ -1,0 +1,191 @@
+[
+ [
+  "A-01",
+  "shots-endtoend-20261031",
+  "Mars approval of end-to-end shots",
+  30,
+  "shots",
+  "OWED - decision",
+  "Mars views each shot (0/1 each)"
+ ],
+ [
+  "A-02",
+  "storyboards-animatic-20261031",
+  "Mars approval of poses/panels/animatic",
+  72,
+  "files (37 poses + 30 panels + 5 animatic)",
+  "OWED - decision",
+  "Mars views each (0/1 each)"
+ ],
+ [
+  "A-03",
+  "true-masters-20261031",
+  "Mars approval of true masters",
+  4,
+  "masters",
+  "OWED - decision",
+  "Mars views each (0/1 each)"
+ ],
+ [
+  "A-04",
+  "rig-chains-20261031",
+  "Mars approval of chain/successor videos",
+  9,
+  "videos",
+  "OWED - decision",
+  "Mars views each (0/1 each)"
+ ],
+ [
+  "A-05",
+  "roomscale-eyes-20261031",
+  "Mars approval: room-scale table + eye verdicts (seated pick RESOLVED 2026-11-01 00:01 CDT: 2.8x LOCKED, 2.3x REJECTED - do not re-ask)",
+  2,
+  "decisions remaining (seated pick decided)",
+  "OWED - decision (partially resolved)",
+  "Mars approval of table + verdicts 0/1; seated uses locked 2.8x"
+ ],
+ [
+  "A-06",
+  "storyboards-animatic-20261031",
+  "Room scale lock: 3.0x vs older 2.5x (seated 2.3x)",
+  1,
+  "decision",
+  "OWED - decision",
+  "Mars confirms which lock supersedes"
+ ],
+ [
+  "A-07",
+  "rig-chains-20261031",
+  "move-jump-to-shimmy successor re-key",
+  1,
+  "successor",
+  "BLOCKED - do not build silently",
+  "Mars says re-key (with key sequence) or drop it"
+ ],
+ [
+  "A-08",
+  "true-masters-20261031",
+  "Single hand-drawn torso-twist sheet",
+  1,
+  "sheet",
+  "CONDITIONAL - only if Mars rejects twist composite nits",
+  "Mars rejection of composite + artist pass"
+ ],
+ [
+  "A-09",
+  "roomscale-eyes-20261031",
+  "Canonical room pictures - SUPERSEDED 2026-11-01 00:00 CDT: Mars supplied canonical-room-20261101.jpg (2048x1152); re-measure + CJ-23 chair now in a separate RUNNING workstream",
+  1,
+  "picture (supplied)",
+  "SUPPLIED - sibling workstream running, NOT owed here",
+  "That workstream's re-measured scale + CJ-23 chair approvals (0/1 each)"
+ ],
+ [
+  "A-10",
+  "roomscale-eyes-20261031",
+  "Chair-back-at-waist clarification",
+  1,
+  "clarification",
+  "OWED - decision",
+  "Mars clarifies chair-back position"
+ ],
+ [
+  "A-11",
+  "roomscale-eyes-20261031",
+  "Full-resolution per-piece inspection (largest-piece + numeric QC done)",
+  2854,
+  "pieces",
+  "OWED - inspection, not claimed",
+  "A full-res pass, if Mars wants it"
+ ],
+ [
+  "A-12",
+  "wiring-100-20261031",
+  "Neutral-rim ruling for QC-FAIL shots CJ-05, CJ-06, CJ-26",
+  3,
+  "shots under 1 ruling",
+  "OWED - decision (ruling sheet built here)",
+  "Mars ruling on neutral key + white/grey rim"
+ ],
+ [
+  "A-13",
+  "wiring-100-20261031",
+  "Pose-pending tracker rows (apose plate only, pose NOT invented)",
+  9,
+  "shots: CJ-01, CJ-02, CJ-04, CJ-11, CJ-15, CJ-17, CJ-18, CJ-20, CJ-27",
+  "OWED - tracked, not invented",
+  "Clean pose plates / final renders (CJ-15 + CJ-18 via sibling jobs)"
+ ],
+ [
+  "A-14",
+  "shots-endtoend-20261031",
+  "Figure-matched lighting lane (per-line shading/tinting + 4 shafts presets, NOT merged into shots)",
+  1,
+  "workstream",
+  "OWED - separate lane",
+  "That lane's own approval 0/1"
+ ],
+ [
+  "A-15",
+  "rig-chains-20261031",
+  "Flex 28px dip (no dip parameter in chain builder)",
+  1,
+  "builder parameter",
+  "NAMED FIX - needs go-ahead, not silently applied",
+  "Mars wants dip applied; builder change + re-render"
+ ],
+ [
+  "A-16",
+  "rig-chains-20261031",
+  "Per-frame hip-compensation (inbetween dip up to 18px dialects, 13-14px walk/ginyu/jump, <=11px elsewhere)",
+  1,
+  "pass over 9 videos",
+  "NAMED FIX - needs go-ahead, not silently applied",
+  "Mars wants compensation pass; re-render"
+ ],
+ [
+  "A-17",
+  "rig-chains-20261031",
+  "Two-figure stand version (successor-pose-dialects uses USER figure only)",
+  1,
+  "version",
+  "OWED - separate build",
+  "Stand figure keys / Mars go-ahead"
+ ],
+ [
+  "A-18",
+  "rig-chains-20261031",
+  "Forward-travelling walk with background scroll (current walk is a cycle)",
+  1,
+  "version",
+  "OWED - separate build",
+  "Background scroll build"
+ ],
+ [
+  "A-19",
+  "storyboards-animatic-20261031 + wiring-100-20261031",
+  "Final dialogue shots CJ-26/CJ-27 viseme/eye-strip finals",
+  2,
+  "shots",
+  "OWED - post-episode + sibling-dependent",
+  "Mars dialogue lines (post-episode) + exposure-strip split (sibling)"
+ ],
+ [
+  "A-20",
+  "wiring-100-20261031 + all lanes",
+  "Post-episode steps: Mars dialogue fill-in, audio pass, dialogue QC, song-tempo choice",
+  4,
+  "steps",
+  "OWED - post-episode, NOT blockers",
+  "Mars dialogue + tempo choice after episodes"
+ ],
+ [
+  "A-21",
+  "superhero-mouths-20261031 (cross-ref)",
+  "Wiring pulled Robin mouths into main lip-sync builder as default (PAH GO rebuild here is standalone proof)",
+  1,
+  "builder swap",
+  "OWED - wiring",
+  "Builder chart swap + re-test"
+ ]
+]

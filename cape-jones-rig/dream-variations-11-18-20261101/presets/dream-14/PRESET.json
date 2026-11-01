@@ -1,0 +1,45 @@
+{
+  "preset": "Dream 14",
+  "name": "Dream 14 \u2014 Gold Helm, Navy Suit, Pink Cape, Green Rim",
+  "status": "PRESET, approval 0/1 separately",
+  "cowl_helm": [
+    255,
+    200,
+    0
+  ],
+  "skin": [
+    230,
+    170,
+    140
+  ],
+  "suit": [
+    25,
+    25,
+    120
+  ],
+  "suit_shadow": [
+    19,
+    19,
+    93
+  ],
+  "cape": [
+    255,
+    100,
+    180
+  ],
+  "rim_6px": [
+    0,
+    220,
+    100
+  ],
+  "rim_note": "rim is its OWN colour here, not a copy of the cape colour",
+  "eye_note": "no separate eye class in this method; white eye pixels sit in the suit-white class, so eyes follow the suit class",
+  "method": "nearest-base-colour recolour, int32, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim, interior preserved 100%",
+  "source_base": "rig-apose-v7c-clean-transparent.png",
+  "size": [
+    1100,
+    1500
+  ],
+  "base_alpha_px": 373846,
+  "canvas_alpha_px": 416053
+}

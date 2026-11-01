@@ -1,0 +1,466 @@
+[
+ {
+  "name": ".aider.conf.yml",
+  "path": ".aider.conf.yml",
+  "sha": "40015d5891546db805f72cc90cbf7b8039cf51b7",
+  "size": 1436,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.aider.conf.yml?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/.aider.conf.yml",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/40015d5891546db805f72cc90cbf7b8039cf51b7",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/.aider.conf.yml",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.aider.conf.yml?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/40015d5891546db805f72cc90cbf7b8039cf51b7",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/.aider.conf.yml"
+  }
+ },
+ {
+  "name": ".aiderignore",
+  "path": ".aiderignore",
+  "sha": "08f9bfda79c83bd12f9d455bbd30c5d326eed618",
+  "size": 236,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.aiderignore?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/.aiderignore",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/08f9bfda79c83bd12f9d455bbd30c5d326eed618",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/.aiderignore",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.aiderignore?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/08f9bfda79c83bd12f9d455bbd30c5d326eed618",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/.aiderignore"
+  }
+ },
+ {
+  "name": ".clinerules",
+  "path": ".clinerules",
+  "sha": "66600f4d89d4ceb513eddea62764b613b9e07828",
+  "size": 3692,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.clinerules?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/.clinerules",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/66600f4d89d4ceb513eddea62764b613b9e07828",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/.clinerules",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.clinerules?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/66600f4d89d4ceb513eddea62764b613b9e07828",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/.clinerules"
+  }
+ },
+ {
+  "name": ".devcontainer",
+  "path": ".devcontainer",
+  "sha": "3dfe54efc6e24cecffdd4b5d9e30489fbb284f86",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.devcontainer?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/.devcontainer",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/3dfe54efc6e24cecffdd4b5d9e30489fbb284f86",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.devcontainer?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/3dfe54efc6e24cecffdd4b5d9e30489fbb284f86",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/.devcontainer"
+  }
+ },
+ {
+  "name": ".editorconfig",
+  "path": ".editorconfig",
+  "sha": "bdbd6e591b72d36ff936909776365b6338b4eed5",
+  "size": 548,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.editorconfig?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/.editorconfig",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/bdbd6e591b72d36ff936909776365b6338b4eed5",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/.editorconfig",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.editorconfig?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/bdbd6e591b72d36ff936909776365b6338b4eed5",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/.editorconfig"
+  }
+ },
+ {
+  "name": ".github",
+  "path": ".github",
+  "sha": "6deb63e2df539cd74bf80cbf686b1b9bb335791a",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.github?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/.github",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/6deb63e2df539cd74bf80cbf686b1b9bb335791a",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.github?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/6deb63e2df539cd74bf80cbf686b1b9bb335791a",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/.github"
+  }
+ },
+ {
+  "name": ".gitignore",
+  "path": ".gitignore",
+  "sha": "ccdacce3609624aca8a828a9f9af5a4f5a1ba7f8",
+  "size": 226,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.gitignore?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/.gitignore",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/ccdacce3609624aca8a828a9f9af5a4f5a1ba7f8",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/.gitignore",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.gitignore?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/ccdacce3609624aca8a828a9f9af5a4f5a1ba7f8",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/.gitignore"
+  }
+ },
+ {
+  "name": ".roomodes",
+  "path": ".roomodes",
+  "sha": "4d2b355c5424884eb0b1fe469e6179b2f97f2fb4",
+  "size": 1663,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.roomodes?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/.roomodes",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/4d2b355c5424884eb0b1fe469e6179b2f97f2fb4",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/.roomodes",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.roomodes?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/4d2b355c5424884eb0b1fe469e6179b2f97f2fb4",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/.roomodes"
+  }
+ },
+ {
+  "name": ".vscode",
+  "path": ".vscode",
+  "sha": "52b74178ccd9821330a42659ffc31d49417b7d16",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.vscode?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/.vscode",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/52b74178ccd9821330a42659ffc31d49417b7d16",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/.vscode?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/52b74178ccd9821330a42659ffc31d49417b7d16",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/.vscode"
+  }
+ },
+ {
+  "name": "3d-assets",
+  "path": "3d-assets",
+  "sha": "95979250b2eb031ce2b037663efb3a9cde2b5fb4",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/3d-assets",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/95979250b2eb031ce2b037663efb3a9cde2b5fb4",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/95979250b2eb031ce2b037663efb3a9cde2b5fb4",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/3d-assets"
+  }
+ },
+ {
+  "name": "AGENTS.md",
+  "path": "AGENTS.md",
+  "sha": "8a250a905ab5d75182cfbfcbbb303f78a7039247",
+  "size": 14507,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/AGENTS.md?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/AGENTS.md",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/8a250a905ab5d75182cfbfcbbb303f78a7039247",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/AGENTS.md",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/AGENTS.md?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/8a250a905ab5d75182cfbfcbbb303f78a7039247",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/AGENTS.md"
+  }
+ },
+ {
+  "name": "AUDIT-FIXES.md",
+  "path": "AUDIT-FIXES.md",
+  "sha": "14b7ab87e87b6a7dd404c909ff1023b54b79ebc3",
+  "size": 949,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/AUDIT-FIXES.md?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/AUDIT-FIXES.md",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/14b7ab87e87b6a7dd404c909ff1023b54b79ebc3",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/AUDIT-FIXES.md",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/AUDIT-FIXES.md?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/14b7ab87e87b6a7dd404c909ff1023b54b79ebc3",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/AUDIT-FIXES.md"
+  }
+ },
+ {
+  "name": "README.md",
+  "path": "README.md",
+  "sha": "23b9d252c876fda8a1be90b747510896ceb98462",
+  "size": 610,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/README.md?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/README.md",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/23b9d252c876fda8a1be90b747510896ceb98462",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/README.md",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/README.md?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/23b9d252c876fda8a1be90b747510896ceb98462",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/README.md"
+  }
+ },
+ {
+  "name": "TEAM-CONVERSATION.md",
+  "path": "TEAM-CONVERSATION.md",
+  "sha": "e0982f7a3e0b58b9ee3acc4a88b990d0d738b892",
+  "size": 10107,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/TEAM-CONVERSATION.md?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/TEAM-CONVERSATION.md",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/e0982f7a3e0b58b9ee3acc4a88b990d0d738b892",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/TEAM-CONVERSATION.md",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/TEAM-CONVERSATION.md?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/e0982f7a3e0b58b9ee3acc4a88b990d0d738b892",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/TEAM-CONVERSATION.md"
+  }
+ },
+ {
+  "name": "WORKING-METHOD.md",
+  "path": "WORKING-METHOD.md",
+  "sha": "c51d177e762191b149d13c08a7a8e789adcdf654",
+  "size": 316,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/WORKING-METHOD.md?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/WORKING-METHOD.md",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/c51d177e762191b149d13c08a7a8e789adcdf654",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/WORKING-METHOD.md",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/WORKING-METHOD.md?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/c51d177e762191b149d13c08a7a8e789adcdf654",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/WORKING-METHOD.md"
+  }
+ },
+ {
+  "name": "anims",
+  "path": "anims",
+  "sha": "8d7434ee2a8773b3065768e59fd9f32b6d724975",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/anims?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/anims",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/8d7434ee2a8773b3065768e59fd9f32b6d724975",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/anims?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/8d7434ee2a8773b3065768e59fd9f32b6d724975",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/anims"
+  }
+ },
+ {
+  "name": "cape-jones-rig",
+  "path": "cape-jones-rig",
+  "sha": "9e30acd4c13b866e1a90e65593aed87a25ea738f",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/cape-jones-rig?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/cape-jones-rig",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/9e30acd4c13b866e1a90e65593aed87a25ea738f",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/cape-jones-rig?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/9e30acd4c13b866e1a90e65593aed87a25ea738f",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/cape-jones-rig"
+  }
+ },
+ {
+  "name": "characters",
+  "path": "characters",
+  "sha": "a4d55e03b1e82789b57ee1b6b31d310585c620c1",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/characters?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/characters",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/a4d55e03b1e82789b57ee1b6b31d310585c620c1",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/characters?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/a4d55e03b1e82789b57ee1b6b31d310585c620c1",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/characters"
+  }
+ },
+ {
+  "name": "docs",
+  "path": "docs",
+  "sha": "a0f8b31dbc94fa14a0e9d4d3752135aec9270266",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/docs?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/docs",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/a0f8b31dbc94fa14a0e9d4d3752135aec9270266",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/docs?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/a0f8b31dbc94fa14a0e9d4d3752135aec9270266",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/docs"
+  }
+ },
+ {
+  "name": "duplicate-review-ui-v2-20261031",
+  "path": "duplicate-review-ui-v2-20261031",
+  "sha": "c508b01af8cb266b2a748675b832e27f0bb9365c",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/duplicate-review-ui-v2-20261031?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/duplicate-review-ui-v2-20261031",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/c508b01af8cb266b2a748675b832e27f0bb9365c",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/duplicate-review-ui-v2-20261031?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/c508b01af8cb266b2a748675b832e27f0bb9365c",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/duplicate-review-ui-v2-20261031"
+  }
+ },
+ {
+  "name": "mocap_retarget.py",
+  "path": "mocap_retarget.py",
+  "sha": "8c8413ed0e7d7290116e8b529d649ae29890cc39",
+  "size": 8283,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/mocap_retarget.py?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/mocap_retarget.py",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/8c8413ed0e7d7290116e8b529d649ae29890cc39",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/mocap_retarget.py",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/mocap_retarget.py?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/8c8413ed0e7d7290116e8b529d649ae29890cc39",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/mocap_retarget.py"
+  }
+ },
+ {
+  "name": "notebooks",
+  "path": "notebooks",
+  "sha": "ae15185cb7879c42079cc30830c9fecab535e98a",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/notebooks?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/notebooks",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/ae15185cb7879c42079cc30830c9fecab535e98a",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/notebooks?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/ae15185cb7879c42079cc30830c9fecab535e98a",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/notebooks"
+  }
+ },
+ {
+  "name": "opencode.json",
+  "path": "opencode.json",
+  "sha": "fe7e3c263e2bcb4577a60eb4808fdda83b5e0461",
+  "size": 149,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/opencode.json?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/opencode.json",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/fe7e3c263e2bcb4577a60eb4808fdda83b5e0461",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/opencode.json",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/opencode.json?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/fe7e3c263e2bcb4577a60eb4808fdda83b5e0461",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/opencode.json"
+  }
+ },
+ {
+  "name": "production",
+  "path": "production",
+  "sha": "77e491100f75fe6f1bc7c6f5440f473783b04570",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/production?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/production",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/77e491100f75fe6f1bc7c6f5440f473783b04570",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/production?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/77e491100f75fe6f1bc7c6f5440f473783b04570",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/production"
+  }
+ },
+ {
+  "name": "proof",
+  "path": "proof",
+  "sha": "502359333c4d6eccda0a3b838d6ee604b19f4e8a",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/proof?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/proof",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/502359333c4d6eccda0a3b838d6ee604b19f4e8a",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/proof?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/502359333c4d6eccda0a3b838d6ee604b19f4e8a",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/proof"
+  }
+ },
+ {
+  "name": "proof_render.py",
+  "path": "proof_render.py",
+  "sha": "a1ef7100c18703e514c13df50c74265006d81d96",
+  "size": 1293,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/proof_render.py?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/proof_render.py",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/a1ef7100c18703e514c13df50c74265006d81d96",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/proof_render.py",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/proof_render.py?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/a1ef7100c18703e514c13df50c74265006d81d96",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/proof_render.py"
+  }
+ },
+ {
+  "name": "shared",
+  "path": "shared",
+  "sha": "4f7e324c3b0e83b9319d52632201fe5db3681229",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/shared?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/shared",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/4f7e324c3b0e83b9319d52632201fe5db3681229",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/shared?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/4f7e324c3b0e83b9319d52632201fe5db3681229",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/shared"
+  }
+ },
+ {
+  "name": "stages",
+  "path": "stages",
+  "sha": "25f27b84019e345060774c733c4597147c07faaa",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/stages?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/stages",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/25f27b84019e345060774c733c4597147c07faaa",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/stages?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/25f27b84019e345060774c733c4597147c07faaa",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/stages"
+  }
+ },
+ {
+  "name": "tools",
+  "path": "tools",
+  "sha": "d88f7ee5b1ae0ad15b16f84182fc92f31ce85ff8",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/tools?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/tools",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/d88f7ee5b1ae0ad15b16f84182fc92f31ce85ff8",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/tools?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/d88f7ee5b1ae0ad15b16f84182fc92f31ce85ff8",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/tools"
+  }
+ }
+]

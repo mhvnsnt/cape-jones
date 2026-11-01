@@ -1,0 +1,270 @@
+{
+ "batch": "art-owed-punch-plates-20261031",
+ "plates": [
+  {
+   "shot": "CJ-01",
+   "slug": "punch-windup",
+   "cfg": {
+    "arm_upper": {
+     "L": -20,
+     "R": 20
+    },
+    "arm_lower": {
+     "L": -120,
+     "R": 160
+    },
+    "leg_upper": {
+     "L": -10,
+     "R": 10
+    },
+    "leg_lower": {
+     "L": 10,
+     "R": -10
+    }
+   },
+   "clean_rig_rgb": "plates-clean/CJ-01-punch-windup-clean-rig-rgb-20261031.png",
+   "clean_plate": "plates-clean/CJ-01-punch-windup-clean-plate-20261031.png",
+   "labelled_source_rgb": "clips-v7/punch/punch-01-windup-v7.png",
+   "labelled_source_plate": "transparent-plates-sweep-20261031/plates/clips-v7__punch__punch-01-windup-v7.png",
+   "clean_rgb_red_px": 0,
+   "clean_plate_red_px": 0,
+   "old_plate_red_px": 8360,
+   "rgb_size": [
+    1100,
+    1500
+   ],
+   "plate_size": [
+    1100,
+    1500
+   ],
+   "plate_alpha_px": 386867,
+   "plate_bbox": [
+    100,
+    252,
+    868,
+    1312
+   ],
+   "plate_sha12": "a21d0eb26da2",
+   "rgb_sha12": "bd4cb09d0280",
+   "diff_vs_labelled_rgb_all": 37486,
+   "diff_vs_labelled_rgb_outside_label_mask": 25903,
+   "diff_vs_labelled_rgb_inside_label_mask": 11583,
+   "method": "joint_locked_rig_v7c labels=False, original lowers; transparent convert (sweep method)",
+   "v7b_control_vs_labelled_outside_label_mask": 0,
+   "v7b_control_vs_labelled_all": 10603,
+   "v7b_control_file": "control-v7b-stripped-NOT-plates/CJ-01-punch-windup-v7b-stripped-control-20261031.png"
+  },
+  {
+   "shot": "CJ-02",
+   "slug": "punch-extend-snap",
+   "cfg": {
+    "arm_upper": {
+     "L": -90,
+     "R": 20
+    },
+    "arm_lower": {
+     "L": -90,
+     "R": 160
+    },
+    "leg_upper": {
+     "L": -15,
+     "R": 15
+    },
+    "leg_lower": {
+     "L": 15,
+     "R": -15
+    }
+   },
+   "clean_rig_rgb": "plates-clean/CJ-02-punch-extend-snap-clean-rig-rgb-20261031.png",
+   "clean_plate": "plates-clean/CJ-02-punch-extend-snap-clean-plate-20261031.png",
+   "labelled_source_rgb": "clips-v7/punch/punch-07-extend-snap-v7.png",
+   "labelled_source_plate": "transparent-plates-sweep-20261031/plates/clips-v7__punch__punch-07-extend-snap-v7.png",
+   "clean_rgb_red_px": 0,
+   "clean_plate_red_px": 0,
+   "old_plate_red_px": 8426,
+   "rgb_size": [
+    1100,
+    1500
+   ],
+   "plate_size": [
+    1100,
+    1500
+   ],
+   "plate_alpha_px": 391055,
+   "plate_bbox": [
+    1,
+    252,
+    868,
+    1309
+   ],
+   "plate_sha12": "82198aa4c46d",
+   "rgb_sha12": "6d49cf36d6a8",
+   "diff_vs_labelled_rgb_all": 38343,
+   "diff_vs_labelled_rgb_outside_label_mask": 25944,
+   "diff_vs_labelled_rgb_inside_label_mask": 12399,
+   "method": "joint_locked_rig_v7c labels=False, original lowers; transparent convert (sweep method)",
+   "v7b_control_vs_labelled_outside_label_mask": 0,
+   "v7b_control_vs_labelled_all": 10484,
+   "v7b_control_file": "control-v7b-stripped-NOT-plates/CJ-02-punch-extend-snap-v7b-stripped-control-20261031.png"
+  },
+  {
+   "shot": "CJ-03",
+   "slug": "punch-impact-locked",
+   "cfg": {
+    "arm_upper": {
+     "L": -90,
+     "R": 20
+    },
+    "arm_lower": {
+     "L": -90,
+     "R": -110
+    },
+    "leg_upper": {
+     "L": -15,
+     "R": 15
+    },
+    "leg_lower": {
+     "L": 15,
+     "R": -15
+    }
+   },
+   "clean_rig_rgb": "plates-clean/CJ-03-punch-impact-locked-clean-rig-rgb-20261031.png",
+   "clean_plate": "plates-clean/CJ-03-punch-impact-locked-clean-plate-20261031.png",
+   "labelled_source_rgb": "clips-v7c/punch-impact-locked-v7c.png",
+   "labelled_source_plate": "transparent-plates-sweep-20261031/plates/clips-v7c__punch-impact-locked-v7c.png",
+   "clean_rgb_red_px": 0,
+   "clean_plate_red_px": 0,
+   "old_plate_red_px": 8426,
+   "rgb_size": [
+    1100,
+    1500
+   ],
+   "plate_size": [
+    1100,
+    1500
+   ],
+   "plate_alpha_px": 375861,
+   "plate_bbox": [
+    1,
+    252,
+    784,
+    1309
+   ],
+   "plate_sha12": "474891a1af39",
+   "rgb_sha12": "f019940ab895",
+   "diff_vs_labelled_rgb_all": 10489,
+   "diff_vs_labelled_rgb_outside_label_mask": 0,
+   "diff_vs_labelled_rgb_inside_label_mask": 10489,
+   "method": "joint_locked_rig_v7c labels=False, original lowers; transparent convert (sweep method)",
+   "v7b_control_vs_labelled_outside_label_mask": 25800,
+   "v7b_control_vs_labelled_all": 38224,
+   "v7b_control_file": "control-v7b-stripped-NOT-plates/CJ-03-punch-impact-locked-v7b-stripped-control-20261031.png"
+  },
+  {
+   "shot": "CJ-04",
+   "slug": "punch-recover",
+   "cfg": {
+    "arm_upper": {
+     "L": -20,
+     "R": 20
+    },
+    "arm_lower": {
+     "L": -20,
+     "R": 20
+    },
+    "leg_upper": {
+     "L": -10,
+     "R": 10
+    },
+    "leg_lower": {
+     "L": 10,
+     "R": -10
+    }
+   },
+   "clean_rig_rgb": "plates-clean/CJ-04-punch-recover-clean-rig-rgb-20261031.png",
+   "clean_plate": "plates-clean/CJ-04-punch-recover-clean-plate-20261031.png",
+   "labelled_source_rgb": "clips-v7/punch/punch-21-recover-v7.png",
+   "labelled_source_plate": "transparent-plates-sweep-20261031/plates/clips-v7__punch__punch-21-recover-v7.png",
+   "clean_rgb_red_px": 0,
+   "clean_plate_red_px": 0,
+   "old_plate_red_px": 8360,
+   "rgb_size": [
+    1100,
+    1500
+   ],
+   "plate_size": [
+    1100,
+    1500
+   ],
+   "plate_alpha_px": 390283,
+   "plate_bbox": [
+    247,
+    252,
+    876,
+    1312
+   ],
+   "plate_sha12": "81a4d3ebebb9",
+   "rgb_sha12": "5af12566153a",
+   "diff_vs_labelled_rgb_all": 38445,
+   "diff_vs_labelled_rgb_outside_label_mask": 26847,
+   "diff_vs_labelled_rgb_inside_label_mask": 11598,
+   "method": "joint_locked_rig_v7c labels=False, original lowers; transparent convert (sweep method)",
+   "v7b_control_vs_labelled_outside_label_mask": 0,
+   "v7b_control_vs_labelled_all": 10618,
+   "v7b_control_file": "control-v7b-stripped-NOT-plates/CJ-04-punch-recover-v7b-stripped-control-20261031.png"
+  },
+  {
+   "shot": "CJ-05",
+   "slug": "punch-across-down-placement",
+   "cfg": {
+    "arm_upper": {
+     "L": -90,
+     "R": 20
+    },
+    "arm_lower": {
+     "L": -90,
+     "R": -70
+    },
+    "leg_upper": {
+     "L": -15,
+     "R": 15
+    },
+    "leg_lower": {
+     "L": 15,
+     "R": -15
+    }
+   },
+   "clean_rig_rgb": "plates-clean/CJ-05-punch-across-down-placement-clean-rig-rgb-20261031.png",
+   "clean_plate": "plates-clean/CJ-05-punch-across-down-placement-clean-plate-20261031.png",
+   "labelled_source_rgb": "clips-v7c/punch-arm2-variants/punch-impact-a2l-minus70-across-down-v7c.png",
+   "labelled_source_plate": "transparent-plates-sweep-20261031/plates/clips-v7c__punch-arm2-variants__punch-impact-a2l-minus70-across-down-v7c.png",
+   "clean_rgb_red_px": 0,
+   "clean_plate_red_px": 0,
+   "old_plate_red_px": 8426,
+   "rgb_size": [
+    1100,
+    1500
+   ],
+   "plate_size": [
+    1100,
+    1500
+   ],
+   "plate_alpha_px": 376482,
+   "plate_bbox": [
+    1,
+    252,
+    784,
+    1309
+   ],
+   "plate_sha12": "53f0710b0f38",
+   "rgb_sha12": "3eac00f7d16e",
+   "diff_vs_labelled_rgb_all": 10489,
+   "diff_vs_labelled_rgb_outside_label_mask": 0,
+   "diff_vs_labelled_rgb_inside_label_mask": 10489,
+   "method": "joint_locked_rig_v7c labels=False, original lowers; transparent convert (sweep method)",
+   "v7b_control_vs_labelled_outside_label_mask": 26695,
+   "v7b_control_vs_labelled_all": 39119,
+   "v7b_control_file": "control-v7b-stripped-NOT-plates/CJ-05-punch-across-down-placement-v7b-stripped-control-20261031.png"
+  }
+ ]
+}

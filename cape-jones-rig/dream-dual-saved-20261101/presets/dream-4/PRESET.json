@@ -1,0 +1,41 @@
+{
+  "preset": "Dream 4",
+  "name": "Dream 4 \u2014 Red Cape, Violet Helm",
+  "status": "PRESET, approval 0/1 separately",
+  "cape": [
+    255,
+    60,
+    60
+  ],
+  "cowl_helm": [
+    140,
+    80,
+    220
+  ],
+  "suit": [
+    200,
+    210,
+    220
+  ],
+  "suit_shadow": [
+    150,
+    160,
+    175
+  ],
+  "skin": [
+    255,
+    200,
+    180
+  ],
+  "rim_6px": [
+    255,
+    60,
+    60
+  ],
+  "method": "nearest-base-colour recolour, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim",
+  "source_base": "rig-apose-v7c-clean-transparent.png",
+  "size": [
+    1100,
+    1500
+  ]
+}

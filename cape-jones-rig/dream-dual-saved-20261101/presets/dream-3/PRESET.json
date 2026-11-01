@@ -1,0 +1,41 @@
+{
+  "preset": "Dream 3",
+  "name": "Dream 3 \u2014 Cyan Cape",
+  "status": "PRESET, approval 0/1 separately",
+  "cape": [
+    0,
+    200,
+    255
+  ],
+  "cowl_helm": [
+    255,
+    60,
+    180
+  ],
+  "suit": [
+    255,
+    255,
+    255
+  ],
+  "suit_shadow": [
+    178,
+    186,
+    199
+  ],
+  "skin": [
+    255,
+    200,
+    180
+  ],
+  "rim_6px": [
+    0,
+    200,
+    255
+  ],
+  "method": "nearest-base-colour recolour, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim",
+  "source_base": "rig-apose-v7c-clean-transparent.png",
+  "size": [
+    1100,
+    1500
+  ]
+}

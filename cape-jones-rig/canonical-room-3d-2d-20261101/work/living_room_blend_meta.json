@@ -1,0 +1,17 @@
+{
+ "name": "living_room.blend",
+ "path": "3d-assets/living_room.blend",
+ "sha": "c537475db64c33c5c36fa308ba16adb921e7df16",
+ "size": 92300171,
+ "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living_room.blend?ref=main",
+ "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living_room.blend",
+ "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/c537475db64c33c5c36fa308ba16adb921e7df16",
+ "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living_room.blend",
+ "type": "file",
+ "encoding": "none",
+ "_links": {
+  "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living_room.blend?ref=main",
+  "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/c537475db64c33c5c36fa308ba16adb921e7df16",
+  "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living_room.blend"
+ }
+}

@@ -1,0 +1,41 @@
+{
+  "preset": "Dream 5",
+  "name": "Dream 5 \u2014 Green Cape, Orange Helm",
+  "status": "PRESET, approval 0/1 separately",
+  "cape": [
+    60,
+    220,
+    120
+  ],
+  "cowl_helm": [
+    255,
+    140,
+    40
+  ],
+  "suit": [
+    255,
+    255,
+    255
+  ],
+  "suit_shadow": [
+    178,
+    186,
+    199
+  ],
+  "skin": [
+    255,
+    200,
+    180
+  ],
+  "rim_6px": [
+    60,
+    220,
+    120
+  ],
+  "method": "nearest-base-colour recolour, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim",
+  "source_base": "rig-apose-v7c-clean-transparent.png",
+  "size": [
+    1100,
+    1500
+  ]
+}
