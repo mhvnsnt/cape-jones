@@ -1,0 +1,211 @@
+{
+  "name": "V6",
+  "filing": [
+    "standalone split preset V6",
+    "POWER CANDIDATE (not canon, no name yet)"
+  ],
+  "not_a_level": true,
+  "built_on": "L3 V5 shot (god-ray Level 3, variant V5)",
+  "replaces": "nothing",
+  "v5_status": "unchanged",
+  "old_golds_status": "preferred main gold look, unchanged",
+  "level_answer": "NOT a new level. L3 V5 + opaque gold/cyan split, Blender 5.2.3, Standard, seam x550, gold (255,180,80) delta 0",
+  "rim_method": "dilate-minus-alpha, rim only outside silhouette, plate on top, halo under opaque ring",
+  "width_ladder_px": {
+    "thin": 6,
+    "medium": 12,
+    "heavy": 20
+  },
+  "seam_options": [
+    550,
+    650
+  ],
+  "gold_median": [
+    255,
+    180,
+    80
+  ],
+  "gold_delta": [
+    0,
+    0,
+    0
+  ],
+  "rim_inside_plate_px": 0,
+  "black_interior_opaque_preserved_pct": 100.0,
+  "original_defect": {
+    "rim_union_px": 164692,
+    "rim_inside_px": 93355,
+    "rim_inside_pct": 56.7,
+    "black_interior_covered_pct": 23.01,
+    "old_L3_black_interior_covered_pct": 2.67
+  },
+  "power_candidates": [
+    "DUAL-CHARGE (thin+halo)",
+    "DUAL-AURA (medium+halo)",
+    "SPLIT-OVERLAY (heavy+dark bg)"
+  ],
+  "approval": "0/1",
+  "repo_push": "none",
+  "variants": {
+    "v6-thin-outer-only-6px-seam550": {
+      "file": "v6-thin-outer-only-6px-seam550-20261031.png",
+      "rim_width_px": 6,
+      "seam_x": 550,
+      "halo": false,
+      "gold_rim_px": 18430,
+      "cyan_rim_px": 15874,
+      "rim_inside_plate_px": 0,
+      "rim_outside_plate_px": 34304,
+      "gold_exact_px_in_final_outside": 16905,
+      "cyan_exact_px_in_final_outside": 14858,
+      "gold_median": [
+        255,
+        180,
+        80
+      ],
+      "black_interior_preserved_pct": 96.72752731649373,
+      "black_interior_opaque_preserved_pct": 100.0,
+      "black_interior_total": 127121
+    },
+    "v6-medium-outer-only-12px-seam550": {
+      "file": "v6-medium-outer-only-12px-seam550-20261031.png",
+      "rim_width_px": 12,
+      "seam_x": 550,
+      "halo": false,
+      "gold_rim_px": 31106,
+      "cyan_rim_px": 28832,
+      "rim_inside_plate_px": 0,
+      "rim_outside_plate_px": 59938,
+      "gold_exact_px_in_final_outside": 29581,
+      "cyan_exact_px_in_final_outside": 27816,
+      "gold_median": [
+        255,
+        180,
+        80
+      ],
+      "black_interior_preserved_pct": 96.72752731649373,
+      "black_interior_opaque_preserved_pct": 100.0,
+      "black_interior_total": 127121
+    },
+    "v6-medium-halo-under-opaque-12px-seam550": {
+      "file": "v6-medium-halo-under-opaque-12px-seam550-20261031.png",
+      "rim_width_px": 12,
+      "seam_x": 550,
+      "halo": true,
+      "gold_rim_px": 31106,
+      "cyan_rim_px": 28832,
+      "rim_inside_plate_px": 0,
+      "rim_outside_plate_px": 59938,
+      "gold_exact_px_in_final_outside": 29581,
+      "cyan_exact_px_in_final_outside": 27816,
+      "gold_median": [
+        255,
+        180,
+        80
+      ],
+      "black_interior_preserved_pct": 96.72752731649373,
+      "black_interior_opaque_preserved_pct": 100.0,
+      "black_interior_total": 127121
+    },
+    "v6-heavy-outer-only-20px-seam550": {
+      "file": "v6-heavy-outer-only-20px-seam550-20261031.png",
+      "rim_width_px": 20,
+      "seam_x": 550,
+      "halo": false,
+      "gold_rim_px": 47811,
+      "cyan_rim_px": 45786,
+      "rim_inside_plate_px": 0,
+      "rim_outside_plate_px": 93597,
+      "gold_exact_px_in_final_outside": 46286,
+      "cyan_exact_px_in_final_outside": 44770,
+      "gold_median": [
+        255,
+        180,
+        80
+      ],
+      "black_interior_preserved_pct": 96.72752731649373,
+      "black_interior_opaque_preserved_pct": 100.0,
+      "black_interior_total": 127121
+    },
+    "v6-medium-seam-offset-650": {
+      "file": "v6-medium-seam-offset-650-20261031.png",
+      "rim_width_px": 12,
+      "seam_x": 650,
+      "halo": true,
+      "gold_rim_px": 35047,
+      "cyan_rim_px": 24891,
+      "rim_inside_plate_px": 0,
+      "rim_outside_plate_px": 59938,
+      "gold_exact_px_in_final_outside": 33360,
+      "cyan_exact_px_in_final_outside": 24037,
+      "gold_median": [
+        255,
+        180,
+        80
+      ],
+      "black_interior_preserved_pct": 96.72752731649373,
+      "black_interior_opaque_preserved_pct": 100.0,
+      "black_interior_total": 127121
+    },
+    "v6-power-candidate-1-dual-charge-thin-halo": {
+      "file": "v6-power-candidate-1-dual-charge-20261031.png",
+      "rim_width_px": 6,
+      "seam_x": 550,
+      "halo": true,
+      "gold_rim_px": 18430,
+      "cyan_rim_px": 15874,
+      "rim_inside_plate_px": 0,
+      "rim_outside_plate_px": 34304,
+      "gold_exact_px_in_final_outside": 16905,
+      "cyan_exact_px_in_final_outside": 14858,
+      "gold_median": [
+        255,
+        180,
+        80
+      ],
+      "black_interior_preserved_pct": 96.72752731649373,
+      "black_interior_opaque_preserved_pct": 100.0,
+      "black_interior_total": 127121
+    },
+    "v6-power-candidate-2-dual-aura-medium-halo": {
+      "file": "v6-power-candidate-2-dual-aura-20261031.png",
+      "rim_width_px": 12,
+      "seam_x": 550,
+      "halo": true,
+      "gold_rim_px": 31106,
+      "cyan_rim_px": 28832,
+      "rim_inside_plate_px": 0,
+      "rim_outside_plate_px": 59938,
+      "gold_exact_px_in_final_outside": 29581,
+      "cyan_exact_px_in_final_outside": 27816,
+      "gold_median": [
+        255,
+        180,
+        80
+      ],
+      "black_interior_preserved_pct": 96.72752731649373,
+      "black_interior_opaque_preserved_pct": 100.0,
+      "black_interior_total": 127121
+    },
+    "v6-power-candidate-3-split-overlay-heavy-darkbg": {
+      "file": "v6-power-candidate-3-split-overlay-20261031.png",
+      "rim_width_px": 20,
+      "seam_x": 550,
+      "halo": true,
+      "gold_rim_px": 47811,
+      "cyan_rim_px": 45786,
+      "rim_inside_plate_px": 0,
+      "rim_outside_plate_px": 93597,
+      "gold_exact_px_in_final_outside": 46286,
+      "cyan_exact_px_in_final_outside": 44770,
+      "gold_median": [
+        255,
+        180,
+        80
+      ],
+      "black_interior_preserved_pct": 97.10512031843676,
+      "black_interior_opaque_preserved_pct": 100.0,
+      "black_interior_total": 127121
+    }
+  }
+}
