@@ -1,0 +1,2048 @@
+[
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 365900,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   305,
+   252,
+   803,
+   1312
+  ],
+  "source": "clips-v7/flex/flex-07-flex-hold-v7.png",
+  "output": "plates/clips-v7__flex__flex-07-flex-hold-v7.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 392770,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   100,
+   252,
+   868,
+   1312
+  ],
+  "source": "clips-v7/punch/punch-01-windup-v7.png",
+  "output": "plates/clips-v7__punch__punch-01-windup-v7.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 394184,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   1,
+   252,
+   868,
+   1309
+  ],
+  "source": "clips-v7/punch/punch-07-extend-snap-v7.png",
+  "output": "plates/clips-v7__punch__punch-07-extend-snap-v7.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 394184,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   1,
+   252,
+   868,
+   1309
+  ],
+  "source": "clips-v7/punch/punch-09-impact-hold-v7.png",
+  "output": "plates/clips-v7__punch__punch-09-impact-hold-v7.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 396710,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   252,
+   876,
+   1312
+  ],
+  "source": "clips-v7/punch/punch-21-recover-v7.png",
+  "output": "plates/clips-v7__punch__punch-21-recover-v7.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 395533,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   182,
+   47,
+   876,
+   1308
+  ],
+  "source": "clips-v7c-clean-20261031/dance/dance-01-a-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__dance__dance-01-a-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 391851,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   35,
+   896,
+   1288
+  ],
+  "source": "clips-v7c-clean-20261031/dance/dance-13-b-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__dance__dance-13-b-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 395533,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   182,
+   47,
+   876,
+   1308
+  ],
+  "source": "clips-v7c-clean-20261031/dance/dance-25-a-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__dance__dance-25-a-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 359250,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   319,
+   252,
+   784,
+   1312
+  ],
+  "source": "clips-v7c-clean-20261031/flex/fighting-pose-forward-bicep-curl-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__flex__fighting-pose-forward-bicep-curl-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 390111,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   252,
+   876,
+   1310
+  ],
+  "source": "clips-v7c-clean-20261031/flying/flying-01-hover-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__flying__flying-01-hover-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 397640,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   1,
+   252,
+   1098,
+   1310
+  ],
+  "source": "clips-v7c-clean-20261031/flying/flying-13-soar-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__flying__flying-13-soar-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 400780,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   182,
+   35,
+   896,
+   1310
+  ],
+  "source": "clips-v7c-clean-20261031/flying/flying-25-dive-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__flying__flying-25-dive-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 390111,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   252,
+   876,
+   1310
+  ],
+  "source": "clips-v7c-clean-20261031/flying/flying-37-hover-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__flying__flying-37-hover-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 385265,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   252,
+   876,
+   1285
+  ],
+  "source": "clips-v7c-clean-20261031/jump/jump-01-crouch-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__jump__jump-01-crouch-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 401615,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   182,
+   36,
+   897,
+   1312
+  ],
+  "source": "clips-v7c-clean-20261031/jump/jump-07-takeoff-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__jump__jump-07-takeoff-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 385756,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   182,
+   36,
+   897,
+   1263
+  ],
+  "source": "clips-v7c-clean-20261031/jump/jump-13-tuck-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__jump__jump-13-tuck-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 390283,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   252,
+   876,
+   1312
+  ],
+  "source": "clips-v7c-clean-20261031/jump/jump-25-land-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__jump__jump-25-land-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 391055,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   1,
+   252,
+   868,
+   1309
+  ],
+  "source": "clips-v7c-clean-20261031/punch/punch-09-impact-hold-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__punch__punch-09-impact-hold-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 386874,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   214,
+   252,
+   843,
+   1296
+  ],
+  "source": "clips-v7c-clean-20261031/walk/walk-01-contact-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__walk__walk-01-contact-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 389788,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   252,
+   876,
+   1306
+  ],
+  "source": "clips-v7c-clean-20261031/walk/walk-13-passing-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__walk__walk-13-passing-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 378092,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   282,
+   252,
+   910,
+   1282
+  ],
+  "source": "clips-v7c-clean-20261031/walk/walk-25-contact-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__walk__walk-25-contact-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 389788,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   252,
+   876,
+   1306
+  ],
+  "source": "clips-v7c-clean-20261031/walk/walk-37-passing-v7c-clean.png",
+  "output": "plates/clips-v7c-clean-20261031__walk__walk-37-passing-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 400822,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   182,
+   47,
+   876,
+   1308
+  ],
+  "source": "clips-v7c/dance/dance-01-a-v7c.png",
+  "output": "plates/clips-v7c__dance__dance-01-a-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 397194,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   35,
+   896,
+   1288
+  ],
+  "source": "clips-v7c/dance/dance-13-b-v7c.png",
+  "output": "plates/clips-v7c__dance__dance-13-b-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 400822,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   182,
+   47,
+   876,
+   1308
+  ],
+  "source": "clips-v7c/dance/dance-25-a-v7c.png",
+  "output": "plates/clips-v7c__dance__dance-25-a-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 364999,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   311,
+   252,
+   789,
+   1312
+  ],
+  "source": "clips-v7c/flex/fighting-pose-forward-bicep-curl-v7c.png",
+  "output": "plates/clips-v7c__flex__fighting-pose-forward-bicep-curl-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 364999,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   311,
+   252,
+   789,
+   1312
+  ],
+  "source": "clips-v7c/flex/flex-07-flex-hold-v7c.png",
+  "output": "plates/clips-v7c__flex__flex-07-flex-hold-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 395901,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   252,
+   876,
+   1310
+  ],
+  "source": "clips-v7c/flying/flying-01-hover-v7c.png",
+  "output": "plates/clips-v7c__flying__flying-01-hover-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 397640,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   1,
+   252,
+   1098,
+   1310
+  ],
+  "source": "clips-v7c/flying/flying-13-soar-v7c.png",
+  "output": "plates/clips-v7c__flying__flying-13-soar-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 405622,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   182,
+   35,
+   896,
+   1310
+  ],
+  "source": "clips-v7c/flying/flying-25-dive-v7c.png",
+  "output": "plates/clips-v7c__flying__flying-25-dive-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 395901,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   252,
+   876,
+   1310
+  ],
+  "source": "clips-v7c/flying/flying-37-hover-v7c.png",
+  "output": "plates/clips-v7c__flying__flying-37-hover-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 391055,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   252,
+   876,
+   1285
+  ],
+  "source": "clips-v7c/jump/jump-01-crouch-v7c.png",
+  "output": "plates/clips-v7c__jump__jump-01-crouch-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 406456,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   182,
+   36,
+   897,
+   1312
+  ],
+  "source": "clips-v7c/jump/jump-07-takeoff-v7c.png",
+  "output": "plates/clips-v7c__jump__jump-07-takeoff-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 390597,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   182,
+   36,
+   897,
+   1263
+  ],
+  "source": "clips-v7c/jump/jump-13-tuck-v7c.png",
+  "output": "plates/clips-v7c__jump__jump-13-tuck-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 396073,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   252,
+   876,
+   1312
+  ],
+  "source": "clips-v7c/jump/jump-25-land-v7c.png",
+  "output": "plates/clips-v7c__jump__jump-25-land-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 393343,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   1,
+   252,
+   868,
+   1309
+  ],
+  "source": "clips-v7c/punch-arm2-variants/punch-impact-a2l-160-current-v7c.png",
+  "output": "plates/clips-v7c__punch-arm2-variants__punch-impact-a2l-160-current-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 378866,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   1,
+   252,
+   789,
+   1309
+  ],
+  "source": "clips-v7c/punch-arm2-variants/punch-impact-a2l-minus110-across-up-v7c.png",
+  "output": "plates/clips-v7c__punch-arm2-variants__punch-impact-a2l-minus110-across-up-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 379487,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   1,
+   252,
+   789,
+   1309
+  ],
+  "source": "clips-v7c/punch-arm2-variants/punch-impact-a2l-minus70-across-down-v7c.png",
+  "output": "plates/clips-v7c__punch-arm2-variants__punch-impact-a2l-minus70-across-down-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 379020,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   1,
+   252,
+   789,
+   1309
+  ],
+  "source": "clips-v7c/punch-arm2-variants/punch-impact-a2l-minus90-across-v7c.png",
+  "output": "plates/clips-v7c__punch-arm2-variants__punch-impact-a2l-minus90-across-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 378866,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   1,
+   252,
+   789,
+   1309
+  ],
+  "source": "clips-v7c/punch-impact-locked-v7c.png",
+  "output": "plates/clips-v7c__punch-impact-locked-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 393343,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   1,
+   252,
+   868,
+   1309
+  ],
+  "source": "clips-v7c/punch/punch-09-impact-hold-v7c.png",
+  "output": "plates/clips-v7c__punch__punch-09-impact-hold-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 392705,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   214,
+   252,
+   843,
+   1296
+  ],
+  "source": "clips-v7c/walk/walk-01-contact-v7c.png",
+  "output": "plates/clips-v7c__walk__walk-01-contact-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 395578,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   252,
+   876,
+   1306
+  ],
+  "source": "clips-v7c/walk/walk-13-passing-v7c.png",
+  "output": "plates/clips-v7c__walk__walk-13-passing-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 383852,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   282,
+   252,
+   910,
+   1282
+  ],
+  "source": "clips-v7c/walk/walk-25-contact-v7c.png",
+  "output": "plates/clips-v7c__walk__walk-25-contact-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 395578,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   252,
+   876,
+   1306
+  ],
+  "source": "clips-v7c/walk/walk-37-passing-v7c.png",
+  "output": "plates/clips-v7c__walk__walk-37-passing-v7c.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 402376,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   179,
+   42,
+   878,
+   1314
+  ],
+  "source": "clips/dance/dance-01-dance-a.png",
+  "output": "plates/clips__dance__dance-01-dance-a.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 398397,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   245,
+   31,
+   899,
+   1294
+  ],
+  "source": "clips/dance/dance-13-dance-b.png",
+  "output": "plates/clips__dance__dance-13-dance-b.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 402376,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   179,
+   42,
+   878,
+   1314
+  ],
+  "source": "clips/dance/dance-25-dance-a-repeat.png",
+  "output": "plates/clips__dance__dance-25-dance-a-repeat.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 397920,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   245,
+   252,
+   878,
+   1314
+  ],
+  "source": "clips/flex/flex-01-apose.png",
+  "output": "plates/clips__flex__flex-01-apose.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 372831,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   270,
+   252,
+   835,
+   1314
+  ],
+  "source": "clips/flex/flex-07-flex-hold.png",
+  "output": "plates/clips__flex__flex-07-flex-hold.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 397920,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   245,
+   252,
+   878,
+   1314
+  ],
+  "source": "clips/flex/flex-31-apose.png",
+  "output": "plates/clips__flex__flex-31-apose.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 397676,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   245,
+   252,
+   878,
+   1312
+  ],
+  "source": "clips/flying/flying-01-hovering.png",
+  "output": "plates/clips__flying__flying-01-hovering.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 398736,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   1,
+   252,
+   1098,
+   1312
+  ],
+  "source": "clips/flying/flying-13-soaring-arms-out.png",
+  "output": "plates/clips__flying__flying-13-soaring-arms-out.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 406478,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   182,
+   36,
+   897,
+   1312
+  ],
+  "source": "clips/flying/flying-25-diving-arms-up.png",
+  "output": "plates/clips__flying__flying-25-diving-arms-up.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 397676,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   245,
+   252,
+   878,
+   1312
+  ],
+  "source": "clips/flying/flying-37-hovering.png",
+  "output": "plates/clips__flying__flying-37-hovering.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 393609,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   245,
+   252,
+   878,
+   1294
+  ],
+  "source": "clips/jump/jump-01-crouch.png",
+  "output": "plates/clips__jump__jump-01-crouch.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 406722,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   182,
+   36,
+   897,
+   1314
+  ],
+  "source": "clips/jump/jump-07-takeoff-arms-whole-up.png",
+  "output": "plates/clips__jump__jump-07-takeoff-arms-whole-up.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 391149,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   179,
+   31,
+   899,
+   1281
+  ],
+  "source": "clips/jump/jump-13-tuck-in.png",
+  "output": "plates/clips__jump__jump-13-tuck-in.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 396744,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   245,
+   252,
+   878,
+   1294
+  ],
+  "source": "clips/jump/jump-25-land-apose.png",
+  "output": "plates/clips__jump__jump-25-land-apose.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 389646,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   149,
+   252,
+   835,
+   1314
+  ],
+  "source": "clips/punch/punch-01-windup.png",
+  "output": "plates/clips__punch__punch-01-windup.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 392666,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   1,
+   252,
+   835,
+   1312
+  ],
+  "source": "clips/punch/punch-07-extend-snap.png",
+  "output": "plates/clips__punch__punch-07-extend-snap.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 392666,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   1,
+   252,
+   835,
+   1312
+  ],
+  "source": "clips/punch/punch-09-impact-hold.png",
+  "output": "plates/clips__punch__punch-09-impact-hold.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 397920,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   245,
+   252,
+   878,
+   1314
+  ],
+  "source": "clips/punch/punch-21-recover-apose.png",
+  "output": "plates/clips__punch__punch-21-recover-apose.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 394510,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   211,
+   252,
+   843,
+   1307
+  ],
+  "source": "clips/walk/walk-01-contact-leg1-forward.png",
+  "output": "plates/clips__walk__walk-01-contact-leg1-forward.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 397297,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   245,
+   252,
+   878,
+   1307
+  ],
+  "source": "clips/walk/walk-13-passing-legs-together.png",
+  "output": "plates/clips__walk__walk-13-passing-legs-together.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 383909,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   281,
+   252,
+   912,
+   1274
+  ],
+  "source": "clips/walk/walk-25-contact-leg2-forward.png",
+  "output": "plates/clips__walk__walk-25-contact-leg2-forward.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 397297,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   245,
+   252,
+   878,
+   1307
+  ],
+  "source": "clips/walk/walk-37-passing-legs-together.png",
+  "output": "plates/clips__walk__walk-37-passing-legs-together.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 383483,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   245,
+   126,
+   832,
+   1294
+  ],
+  "source": "clips/wave-1.png",
+  "output": "plates/clips__wave-1.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 384592,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   245,
+   50,
+   832,
+   1294
+  ],
+  "source": "clips/wave-2.png",
+  "output": "plates/clips__wave-2.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 386032,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   245,
+   20,
+   832,
+   1294
+  ],
+  "source": "clips/wave-3.png",
+  "output": "plates/clips__wave-3.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 365373,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   303,
+   252,
+   832,
+   1294
+  ],
+  "source": "reposes-v7c-clean/fighting-pose-forward-bicep-curl-gauntlet-out-fixed-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__fighting-pose-forward-bicep-curl-gauntlet-out-fixed-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 376431,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   285,
+   252,
+   834,
+   1294
+  ],
+  "source": "reposes-v7c-clean/fighting-pose-forward-bicep-curl-gauntlet-out-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__fighting-pose-forward-bicep-curl-gauntlet-out-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 365379,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   303,
+   252,
+   832,
+   1294
+  ],
+  "source": "reposes-v7c-clean/fighting-pose-forward-bicep-curl-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__fighting-pose-forward-bicep-curl-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 381801,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   221,
+   252,
+   879,
+   1290
+  ],
+  "source": "reposes-v7c-clean/flex-anticipation-before-tighten-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__flex-anticipation-before-tighten-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 365220,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   221,
+   333,
+   879,
+   1299
+  ],
+  "source": "reposes-v7c-clean/full-final-flex-exaggerated-deep-squat-20261031.png",
+  "output": "plates/reposes-v7c-clean__full-final-flex-exaggerated-deep-squat-20261031.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 364221,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   221,
+   333,
+   879,
+   1299
+  ],
+  "source": "reposes-v7c-clean/full-final-flex-exaggerated-deep-squat-hip-lower-20261031.png",
+  "output": "plates/reposes-v7c-clean__full-final-flex-exaggerated-deep-squat-hip-lower-20261031.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 370637,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   221,
+   280,
+   879,
+   1300
+  ],
+  "source": "reposes-v7c-clean/full-final-flex-over-exaggerated-cleaned-20261031.png",
+  "output": "plates/reposes-v7c-clean__full-final-flex-over-exaggerated-cleaned-20261031.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 370637,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   221,
+   280,
+   879,
+   1300
+  ],
+  "source": "reposes-v7c-clean/full-final-flex-over-exaggerated-hip-lower-20261031.png",
+  "output": "plates/reposes-v7c-clean__full-final-flex-over-exaggerated-hip-lower-20261031.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 375189,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   221,
+   280,
+   879,
+   1328
+  ],
+  "source": "reposes-v7c-clean/full-final-flex-v7c-clean-20261031.png",
+  "output": "plates/reposes-v7c-clean__full-final-flex-v7c-clean-20261031.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 389339,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   247,
+   252,
+   876,
+   1294
+  ],
+  "source": "reposes-v7c-clean/joint-apose-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__joint-apose-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 398466,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   32,
+   252,
+   1078,
+   1294
+  ],
+  "source": "reposes-v7c-clean/joint-dance-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__joint-dance-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 385756,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   182,
+   36,
+   897,
+   1263
+  ],
+  "source": "reposes-v7c-clean/joint-jump-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__joint-jump-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 394444,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   96,
+   252,
+   1098,
+   1268
+  ],
+  "source": "reposes-v7c-clean/joint-punch-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__joint-punch-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 385687,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   224,
+   252,
+   876,
+   1198
+  ],
+  "source": "reposes-v7c-clean/joint-seated-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__joint-seated-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 384160,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   214,
+   280,
+   884,
+   1300
+  ],
+  "source": "reposes-v7c-clean/true-final-flex-relaxed-clean-20261031.png",
+  "output": "plates/reposes-v7c-clean__true-final-flex-relaxed-clean-20261031.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 381291,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   232,
+   252,
+   869,
+   1290
+  ],
+  "source": "reposes-v7c-clean/true-flex-double-bicep-alt-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__true-flex-double-bicep-alt-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 386527,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   221,
+   250,
+   879,
+   1290
+  ],
+  "source": "reposes-v7c-clean/true-flex-double-bicep-final-fists-in-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__true-flex-double-bicep-final-fists-in-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 388424,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   221,
+   253,
+   879,
+   1290
+  ],
+  "source": "reposes-v7c-clean/true-flex-double-bicep-final-pose-space-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__true-flex-double-bicep-final-pose-space-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 389834,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   221,
+   250,
+   879,
+   1290
+  ],
+  "source": "reposes-v7c-clean/true-flex-double-bicep-final2-fists-in-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__true-flex-double-bicep-final2-fists-in-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 392882,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   221,
+   234,
+   879,
+   1290
+  ],
+  "source": "reposes-v7c-clean/true-flex-double-bicep-gauntlet-out-fist-in-roll-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__true-flex-double-bicep-gauntlet-out-fist-in-roll-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 389359,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   221,
+   239,
+   879,
+   1290
+  ],
+  "source": "reposes-v7c-clean/true-flex-double-bicep-gauntlet-out-fist-in-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__true-flex-double-bicep-gauntlet-out-fist-in-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 381801,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   221,
+   252,
+   879,
+   1290
+  ],
+  "source": "reposes-v7c-clean/true-flex-double-bicep-gauntlet-out-fist-roll2-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__true-flex-double-bicep-gauntlet-out-fist-roll2-v7c-clean.png"
+ },
+ {
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ],
+  "size": [
+   1100,
+   1500
+  ],
+  "alpha_px": 389367,
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "bbox": [
+   221,
+   239,
+   879,
+   1290
+  ],
+  "source": "reposes-v7c-clean/true-flex-double-bicep-v7c-clean.png",
+  "output": "plates/reposes-v7c-clean__true-flex-double-bicep-v7c-clean.png"
+ }
+]
