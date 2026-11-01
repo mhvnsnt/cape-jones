@@ -1,0 +1,41 @@
+{
+  "preset": "Dream 9",
+  "name": "Dream 9 \u2014 Orange Cape, Blue Helm",
+  "status": "PRESET, approval 0/1 separately",
+  "cape": [
+    255,
+    120,
+    40
+  ],
+  "cowl_helm": [
+    40,
+    100,
+    255
+  ],
+  "suit": [
+    255,
+    255,
+    255
+  ],
+  "suit_shadow": [
+    178,
+    186,
+    199
+  ],
+  "skin": [
+    255,
+    200,
+    180
+  ],
+  "rim_6px": [
+    255,
+    120,
+    40
+  ],
+  "method": "nearest-base-colour recolour, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim",
+  "source_base": "rig-apose-v7c-clean-transparent.png",
+  "size": [
+    1100,
+    1500
+  ]
+}
