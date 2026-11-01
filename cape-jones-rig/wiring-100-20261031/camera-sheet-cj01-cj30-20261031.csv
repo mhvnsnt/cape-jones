@@ -1,0 +1,31 @@
+shot_id,slug,scene,shot_size,angle,move,lens_feel,lighting_level,lut
+CJ-01,punch-windup,street (stand-in),medium close-up,low (power),"static, cut on action",85mm feel: fist + chest fill frame,Level 2,golden-hour
+CJ-02,punch-extend-snap,street (stand-in),medium close-up,low (power),"static, cut on action",85mm feel: fist + chest fill frame,Level 2,golden-hour
+CJ-03,punch-impact-locked,street (stand-in),medium close-up,low (power),"static, cut on action",85mm feel: fist + chest fill frame,"Level 2 (+ separate FX passes, not god rays)",golden-hour
+CJ-04,punch-recover,street (stand-in),medium close-up,low (power),"static, cut on action",85mm feel: fist + chest fill frame,Level 2,golden-hour
+CJ-05,punch-across-down-placement,street / town (stand-in),medium close-up,low (power),"static, cut on action",85mm feel: fist + chest fill frame,Level 2,daylight
+CJ-06,walk-street-contact,street,wide,eye level,tracking pan with walker,35mm feel: full figure + street,Level 2,daylight
+CJ-07,walk-town-passing,town,wide,eye level,tracking pan with walker,35mm feel: full figure + street,Level 2,golden-hour
+CJ-08,walk-alley-night,alley (stand-in; final painted alley owed),wide,eye level,tracking pan with walker,35mm feel: full figure + street,Level 2,night-city
+CJ-09,dance-a,stage / street (stand-in),medium wide,eye level,"static, beat cuts on 12f holds","50mm feel: full body, stage width",Level 2,magenta-normal
+CJ-10,dance-b,stage / street (stand-in),medium wide,eye level,"static, beat cuts on 12f holds","50mm feel: full body, stage width",Level 2,pink-normal
+CJ-11,dance-combined-finale,stage (stand-in),medium wide,eye level,"static, beat cuts on 12f holds","50mm feel: full body, stage width",Level 3,violet-magenta-normal
+CJ-12,flying-hover,skyline (stand-in; final painted flying background owed),wide,"low (power, looking up)",dolly / push-in,35mm feel: figure against sky,Level 3,golden-hour
+CJ-13,flying-soar,skyline / sky (stand-in),wide,"low (power, looking up)",dolly / push-in,35mm feel: figure against sky,Level 3,desert-sun
+CJ-14,flying-dive,sky (stand-in),wide,"low (power, looking up)",dolly / push-in,35mm feel: figure against sky,Level 3,warm-sunset
+CJ-15,flying-forward-foreshortened,sky (stand-in),wide,"low (power, looking up)",dolly / push-in,35mm feel: figure against sky,Level 2,cyan-blue-normal
+CJ-16,flex-anticipation-before-tighten,any (stand-in),medium,low (power),"static, hold on pose",50mm feel: torso + arms fill frame,Level 2,orange-normal
+CJ-17,arms-up-reference,any (stand-in),medium,low (power),"static, hold on pose",50mm feel: torso + arms fill frame,Level 2,yellow-normal
+CJ-18,true-flex-double-bicep,any (stand-in),medium,low (power),"static, hold on pose",50mm feel: torso + arms fill frame,Level 2,red-orange-normal
+CJ-19,fighting-pose-forward-bicep-curl,any (stand-in),medium,low (power),"static, hold on pose",50mm feel: torso + arms fill frame,Level 3 (dual-light),golden-hour
+CJ-20,fighting-stance-arms-up-high,any (stand-in),medium,low (power),"static, hold on pose",50mm feel: torso + arms fill frame,Level 2,fire
+CJ-21,jump-crouch-takeoff,rooftop (stand-in; final painted rooftop owed),medium wide,low,"tilt up on takeoff, tilt down on landing",50mm feel: rooftop + arc,Level 2,teal-normal
+CJ-22,jump-tuck-landing,skyline / rooftop (stand-in),medium wide,low,"tilt up on takeoff, tilt down on landing",50mm feel: rooftop + arc,Level 3,golden-hour
+CJ-23,lounge-seated-room,room (batch-KKGuh room),medium wide,eye level,"static, room scale 2.5x lock",35mm feel: figure + furniture ratio,Level 2,warm-interior
+CJ-24,desk-seated,desk (STAND-IN; final painted desk background owed),medium wide,eye level,"static, room scale 2.5x lock",35mm feel: figure + furniture ratio,Level 2,warm-lamp
+CJ-25,room-standing-device-gag,room (batch-KKGuh room),medium wide,eye level,"static, room scale 2.5x lock",35mm feel: figure + furniture ratio,Level 2,warm-interior
+CJ-26,dialogue-neutral-unsure,room (batch-KKGuh room),medium close-up,eye level,"static, hold on face beat",85mm feel: head + shoulders,Level 2,natural-window-light
+CJ-27,dialogue-shout-angry,room (batch-KKGuh room),medium close-up,eye level,"static, hold on face beat",85mm feel: head + shoulders,Level 2,red-alert
+CJ-28,rooftop-sunset,rooftop (stand-in; final painted rooftop owed),wide,low,"static, sunset / night city width",35mm feel: skyline width,Level 3,sunset-rooftop
+CJ-29,rooftop-night-city,rooftop / night city (stand-in),wide,low,"static, sunset / night city width",35mm feel: skyline width,Level 3,night-city
+CJ-30,alley-neon-dual-light,alley (stand-in; final painted alley owed),medium wide,"high (small, enclosed)","static, neon dual-light width",50mm feel: alley depth,Level 3 (dual-light),neon-alley-pink-cyan
