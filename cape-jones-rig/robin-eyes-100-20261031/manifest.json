@@ -1,0 +1,443 @@
+[
+ {
+  "idx": 0,
+  "name": "TEEN TITANS/CN/Character Art/Robin 1.ai",
+  "file": "00_Robin_1.ai",
+  "usize": 389986,
+  "sha256": "fc9e4935a1203523e71ae9bfd3bfe8476e1bf30dd5115cbe056c74217e2b2267"
+ },
+ {
+  "idx": 1,
+  "name": "TEEN TITANS/CN/Character Art/Robin 2.ai",
+  "file": "01_Robin_2.ai",
+  "usize": 258915,
+  "sha256": "117b2beabfc87ccd1e38592461d287be4e8061bd8484e2b65d58258155fd9690"
+ },
+ {
+  "idx": 2,
+  "name": "TEEN TITANS/TEEN TITANS MAIN MODEL PACK/Main Models/jpeg/ROBIN Day.jpg",
+  "file": "02_ROBIN_Day.jpg",
+  "usize": 178021,
+  "sha256": "7abe13eb496aef2545e1131e33d56b8f6394edb85636d4f61dfe2f0338342965"
+ },
+ {
+  "idx": 3,
+  "name": "TEEN TITANS/TEEN TITANS MAIN MODEL PACK/Main Models/jpeg/ROBIN Night.jpg",
+  "file": "03_ROBIN_Night.jpg",
+  "usize": 156333,
+  "sha256": "4f94228266464b5b8185b97fb6cd4a4efc130d21625d9c37731f971e306c790b"
+ },
+ {
+  "idx": 4,
+  "name": "TEEN TITANS/CN/Color Callouts/WIP/Robin place.jpg",
+  "file": "04_Robin_place.jpg",
+  "usize": 149943,
+  "sha256": "8d2ec62ebc830c02f456bdb08f2fa96533e6b5b6fba74718c2e79928ba0350c6"
+ },
+ {
+  "idx": 5,
+  "name": "TEEN TITANS/CN/Color Callouts/AI/Robin CC.ai",
+  "file": "05_Robin_CC.ai",
+  "usize": 2520919,
+  "sha256": "627d3aceea687aae06a71bb8aad31c48c96080b7bc47f1530a5ba9b8815a4324"
+ },
+ {
+  "idx": 6,
+  "name": "TEEN TITANS/CN/Color Callouts/WIP/Robin swt.jpg",
+  "file": "06_Robin_swt.jpg",
+  "usize": 45286,
+  "sha256": "cba05a9610ed8c7159819bb8115b6bbfe5f80b680ea65789f3fe560c48f6b198"
+ },
+ {
+  "idx": 7,
+  "name": "TEEN TITANS/CN/Color Callouts/JPEGs/Robin CC.jpg",
+  "file": "07_Robin_CC.jpg",
+  "usize": 74831,
+  "sha256": "928afc4373018d588b55bada272d438510eeaf5ec40fb94f8ef93bdf774f4474"
+ },
+ {
+  "idx": 8,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Model Sheets/Color/Robin/Icon\uf00d",
+  "file": "08_Icon\uf00d",
+  "usize": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "idx": 9,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Model Sheets/Color/Robin/RBN01_CAMS_DCTTAS.EPS",
+  "file": "09_RBN01_CAMS_DCTTAS.EPS",
+  "usize": 398254,
+  "sha256": "dd691162dfb0e511e7ea479330f003d4f7bc6f5a422a3a4e100cb8a3eb3419b4"
+ },
+ {
+  "idx": 10,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Model Sheets/Color/Robin/RBN02_CAMS_DCTTAS.EPS",
+  "file": "10_RBN02_CAMS_DCTTAS.EPS",
+  "usize": 363657,
+  "sha256": "4c5d2ef3a6acf4d5122b46a6a5484383270dc1209449deaf55f177b380ee7082"
+ },
+ {
+  "idx": 11,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Model Sheets/Color/Robin/RBN03_CAMS_DCTTAS.EPS",
+  "file": "11_RBN03_CAMS_DCTTAS.EPS",
+  "usize": 345981,
+  "sha256": "d96875cd9dbc61c4242f22c1c325f4b26cee356348675b2753002fea1dba2801"
+ },
+ {
+  "idx": 12,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Model Sheets/Black & White/Robin/Icon\uf00d",
+  "file": "12_Icon\uf00d",
+  "usize": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "idx": 13,
+  "name": "TEEN TITANS/CN/Character Art/~Heads/Robin Head.ai",
+  "file": "13_Robin_Head.ai",
+  "usize": 335177,
+  "sha256": "bdc1c973cddde7e090bf6a2a6c2cf75b78dc83b6e55d6948543287c5c902d2e6"
+ },
+ {
+  "idx": 14,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Black & White/Robin/Icon\uf00d",
+  "file": "14_Icon\uf00d",
+  "usize": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "idx": 15,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Model Sheets/Black & White/Robin/RBN01_CAMSb_DCTTAS.EPS",
+  "file": "15_RBN01_CAMSb_DCTTAS.EPS",
+  "usize": 327232,
+  "sha256": "b49a88138500139b6c0729f1cdc41cd32cbeed24222432f8b4ba33100536d6a3"
+ },
+ {
+  "idx": 16,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Black & White/Robin/RBN02_CAb_DCTTAS.EPS",
+  "file": "16_RBN02_CAb_DCTTAS.EPS",
+  "usize": 167326,
+  "sha256": "e763c02efb7e89f647aa8bbd000b67b11d284a0e3a24c855bf2e17bd10f60681"
+ },
+ {
+  "idx": 17,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Color/Robin/Icon\uf00d",
+  "file": "17_Icon\uf00d",
+  "usize": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "idx": 18,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Model Sheets/Black & White/Robin/RBN03_CAMSb_DCTTAS.EPS",
+  "file": "18_RBN03_CAMSb_DCTTAS.EPS",
+  "usize": 293759,
+  "sha256": "a925dc2cc739b2a7cf2aa49d42e3a466c090db4d3ff70d85609c46f81c4e4060"
+ },
+ {
+  "idx": 19,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Model Sheets/Black & White/Robin/RBN02_CAMSb_DCTTAS.EPS",
+  "file": "19_RBN02_CAMSb_DCTTAS.EPS",
+  "usize": 306437,
+  "sha256": "a86e78382ae6aec1d591b1c3b76c81e0b294729ef10bfbc137518ee89a106ffb"
+ },
+ {
+  "idx": 20,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Black & White/Robin/RBN01_CAb_DCTTAS.EPS",
+  "file": "20_RBN01_CAb_DCTTAS.EPS",
+  "usize": 194748,
+  "sha256": "376fef0da9e8cf6f8502059e11160ab706727d391483a54bd3f258707c2bbb13"
+ },
+ {
+  "idx": 21,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Model Sheets/Color/Robin/Icon\uf00d",
+  "file": "21_Icon\uf00d",
+  "usize": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "idx": 22,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Black & White/Robin/RBN03_CAb_DCTTAS.EPS",
+  "file": "22_RBN03_CAb_DCTTAS.EPS",
+  "usize": 184601,
+  "sha256": "b6a52a48816d221d8bad1848900fc851923db0ea5b8dbc505d65658b72b41c15"
+ },
+ {
+  "idx": 23,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Color/Robin/RBN01_CA_DCTTAS.EPS",
+  "file": "23_RBN01_CA_DCTTAS.EPS",
+  "usize": 290400,
+  "sha256": "56be47b1dd47bfdd6234d3576e55b2fd858126fd1451317b4d167e9981441257"
+ },
+ {
+  "idx": 24,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Color/Robin/RBN03_CA_DCTTAS.EPS",
+  "file": "24_RBN03_CA_DCTTAS.EPS",
+  "usize": 281781,
+  "sha256": "ec1500ab6e2f8613bb49a125ff7b25eed098c66d383c6e6ca292248625bd747f"
+ },
+ {
+  "idx": 25,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Model Sheets/Black & White/Robin/Icon\uf00d",
+  "file": "25_Icon\uf00d",
+  "usize": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "idx": 26,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Color/Robin/RBN02_CA_DCTTAS.EPS",
+  "file": "26_RBN02_CA_DCTTAS.EPS",
+  "usize": 249908,
+  "sha256": "0932f6c7b16f042d8bf70b9b699835dee580b44a6a920e63941afc511fc8568e"
+ },
+ {
+  "idx": 27,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Model Sheets/Color/Robin/RBN02_CAMS_DCTTA.EPS",
+  "file": "27_RBN02_CAMS_DCTTA.EPS",
+  "usize": 363657,
+  "sha256": "4c5d2ef3a6acf4d5122b46a6a5484383270dc1209449deaf55f177b380ee7082"
+ },
+ {
+  "idx": 28,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Model Sheets/Color/Robin/RBN03_CAMS_DCTTA.EPS",
+  "file": "28_RBN03_CAMS_DCTTA.EPS",
+  "usize": 345981,
+  "sha256": "d96875cd9dbc61c4242f22c1c325f4b26cee356348675b2753002fea1dba2801"
+ },
+ {
+  "idx": 29,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Model Sheets/Color/Robin/RBN01_CAMS_DCTTA.EPS",
+  "file": "29_RBN01_CAMS_DCTTA.EPS",
+  "usize": 398254,
+  "sha256": "dd691162dfb0e511e7ea479330f003d4f7bc6f5a422a3a4e100cb8a3eb3419b4"
+ },
+ {
+  "idx": 30,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Model Sheets/Black & White/Robin/RBN03_CAMSb_DCTTA.EPS",
+  "file": "30_RBN03_CAMSb_DCTTA.EPS",
+  "usize": 293759,
+  "sha256": "a925dc2cc739b2a7cf2aa49d42e3a466c090db4d3ff70d85609c46f81c4e4060"
+ },
+ {
+  "idx": 31,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Model Sheets/Black & White/Robin/RBN01_CAMSb_DCTTA.EPS",
+  "file": "31_RBN01_CAMSb_DCTTA.EPS",
+  "usize": 327232,
+  "sha256": "b49a88138500139b6c0729f1cdc41cd32cbeed24222432f8b4ba33100536d6a3"
+ },
+ {
+  "idx": 32,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Character Art/Color/Robin/Icon\uf00d",
+  "file": "32_Icon\uf00d",
+  "usize": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "idx": 33,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Character Art/Black & White/Robin/Icon\uf00d",
+  "file": "33_Icon\uf00d",
+  "usize": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "idx": 34,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Model Sheets/Black & White/Robin/RBN02_CAMSb_DCTTA.EPS",
+  "file": "34_RBN02_CAMSb_DCTTA.EPS",
+  "usize": 306437,
+  "sha256": "a86e78382ae6aec1d591b1c3b76c81e0b294729ef10bfbc137518ee89a106ffb"
+ },
+ {
+  "idx": 35,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Character Art/Black & White/Robin/RBN01_CAb_DCTTA.EPS",
+  "file": "35_RBN01_CAb_DCTTA.EPS",
+  "usize": 322445,
+  "sha256": "aee14dc007456c5e5b8fca0eeec6ba909fe6483e1d38974f303f5db844d1fb1a"
+ },
+ {
+  "idx": 36,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Character Art/Black & White/Robin/RBN02_CAb_DCTTA.EPS",
+  "file": "36_RBN02_CAb_DCTTA.EPS",
+  "usize": 347982,
+  "sha256": "1afd5887b87c45a4edab20ba8d5f5f7dcb5d5025e29eaba2f6e0201542b12dc4"
+ },
+ {
+  "idx": 37,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Character Art/Color/Robin/RB01_CA_DCTTA.EPS",
+  "file": "37_RB01_CA_DCTTA.EPS",
+  "usize": 404903,
+  "sha256": "8d5d5d900f0ece31f774ac396234ca606979d171b77a6e837ba841f5fddda157"
+ },
+ {
+  "idx": 38,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Character Art/Color/Character Expressions/RBNEXPRES_CA_DCTTA.EPS",
+  "file": "38_RBNEXPRES_CA_DCTTA.EPS",
+  "usize": 315211,
+  "sha256": "392e39a1b0f5af48da3d4bdd87992605eb27c6e336a09a4f8a6bf19fac720b52"
+ },
+ {
+  "idx": 39,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Character Art/Color/Robin/RB03_CA_DCTTA.EPS",
+  "file": "39_RB03_CA_DCTTA.EPS",
+  "usize": 422626,
+  "sha256": "1b630e71560c0af59cee5c4cb3dda1feea764f4734585765adbfacdd3a61b2b0"
+ },
+ {
+  "idx": 40,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Character Art/Color/Robin/RB02_CA_DCTTA.EPS",
+  "file": "40_RB02_CA_DCTTA.EPS",
+  "usize": 435432,
+  "sha256": "99b181715386e758212fa4f44c33e91a75f46f9fb0a20f180c5f2ff36e734e15"
+ },
+ {
+  "idx": 41,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Character Art/Black & White/Robin/RBN03_CAb_DCTTA.EPS",
+  "file": "41_RBN03_CAb_DCTTA.EPS",
+  "usize": 331860,
+  "sha256": "48fcf8660f50bfab073ca8e5ec9f98d73b8cf3b8fd83879c9c69ad07106578e3"
+ },
+ {
+  "idx": 42,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 01/Character Art/Black & White/Character Expressions/RBNEXPRES_CAb_DCTTA.EPS",
+  "file": "42_RBNEXPRES_CAb_DCTTA.EPS",
+  "usize": 309956,
+  "sha256": "4a67b987624804e26ef4364e51c088b8f346f1ec2e3adbd5a524fdaa76693fdd"
+ },
+ {
+  "idx": 43,
+  "name": "TEEN TITANS/TEEN TITANS MAIN MODEL PACK/Main Models/psd/ROBIN.Night.psd",
+  "file": "43_ROBIN.Night.psd",
+  "usize": 370122,
+  "sha256": "b1f2fdf44454333f5eff4174a37acd8c380e15c066fbe19c8bdb590267dae855"
+ },
+ {
+  "idx": 44,
+  "name": "TEEN TITANS/TEEN TITANS MAIN MODEL PACK/Main Models/psd/ROBIN.Day.psd",
+  "file": "44_ROBIN.Day.psd",
+  "usize": 375514,
+  "sha256": "a07796ffbd1c47a45018fc2f81c0d1468633b2ec35d138c634244b46626dbda2"
+ },
+ {
+  "idx": 45,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Color/Character Expressions/Robin/Icon\uf00d",
+  "file": "45_Icon\uf00d",
+  "usize": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "idx": 46,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Black & White/Character Expressions/Robin/Icon\uf00d",
+  "file": "46_Icon\uf00d",
+  "usize": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "idx": 47,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Color/Character Expressions/Robin/RBEXPRES02_CA_DCTTAS.EPS",
+  "file": "47_RBEXPRES02_CA_DCTTAS.EPS",
+  "usize": 177420,
+  "sha256": "457acb350ca96d6176d297e60e4baf8592750f0068111ae599249fcd5502c389"
+ },
+ {
+  "idx": 48,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Black & White/Character Expressions/Robin/RBEXPRES01_CAb_DCTTAS.EPS",
+  "file": "48_RBEXPRES01_CAb_DCTTAS.EPS",
+  "usize": 160565,
+  "sha256": "f6be682ab8fa2012bd57eb2abd51baae197b70fe776fab0f87e3210c109cee46"
+ },
+ {
+  "idx": 49,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Color/Character Expressions/Robin/RBEXPRES05_CA_DCTTAS.EPS",
+  "file": "49_RBEXPRES05_CA_DCTTAS.EPS",
+  "usize": 187616,
+  "sha256": "592da65e2529a199d0444e6e44ec6ce9c1be6b0b341a6c772fdfe2cfe7ac4fc3"
+ },
+ {
+  "idx": 50,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Color/Character Expressions/Robin/RBEXPRES04_CA_DCTTAS.EPS",
+  "file": "50_RBEXPRES04_CA_DCTTAS.EPS",
+  "usize": 189205,
+  "sha256": "c0fade1f1c6837383425b5294fefa177450ef12deca6fe99d579a737302bf204"
+ },
+ {
+  "idx": 51,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Color/Character Expressions/Robin/RBEXPRES01_CA_DCTTAS.EPS",
+  "file": "51_RBEXPRES01_CA_DCTTAS.EPS",
+  "usize": 170210,
+  "sha256": "7b3068f38baad15a9b8fcdd89c554c3961c7f741672f3e06d6455a37ab58d55b"
+ },
+ {
+  "idx": 52,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Black & White/Character Expressions/Robin/RBEXPRES04_CAb_DCTTAS.EPS",
+  "file": "52_RBEXPRES04_CAb_DCTTAS.EPS",
+  "usize": 183229,
+  "sha256": "ecae66275b76eaa5908e614081095af13789383628b92416ab1b7d22f5d270c8"
+ },
+ {
+  "idx": 53,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Color/Character Expressions/Robin/RBEXPRES03_CA_DCTTAS.EPS",
+  "file": "53_RBEXPRES03_CA_DCTTAS.EPS",
+  "usize": 173121,
+  "sha256": "8fbaee6cc1284f011c71ee163dfe4dda2515ba0d6a3ac83edc5562f25fb81a59"
+ },
+ {
+  "idx": 54,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Black & White/Character Expressions/Robin/RBEXPRES05_CAb_DCTTAS.EPS",
+  "file": "54_RBEXPRES05_CAb_DCTTAS.EPS",
+  "usize": 166987,
+  "sha256": "22ef7f23d7de2240f45732509e3d598ffd32ac4e3094f4f52a0839ef9842cc16"
+ },
+ {
+  "idx": 55,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Black & White/Character Expressions/Robin/RBEXPRES03_CAb_DCTTAS.EPS",
+  "file": "55_RBEXPRES03_CAb_DCTTAS.EPS",
+  "usize": 163437,
+  "sha256": "c9a04265ad32cb9d3e5ae51263f4891cb0be82fe17a23631c59960a8a261f37c"
+ },
+ {
+  "idx": 56,
+  "name": "TEEN TITANS/TEEN TITANS STYLE GUIDE 02/Character Art/Black & White/Character Expressions/Robin/RBEXPRES02_CAb_DCTTAS.EPS",
+  "file": "56_RBEXPRES02_CAb_DCTTAS.EPS",
+  "usize": 166362,
+  "sha256": "70a7434d641885334ec874ead09a6596a68ad2dd84f8df0772cdff8f6bb14f62"
+ },
+ {
+  "idx": 57,
+  "name": "TEEN TITANS/CN/Reference/DC Comics/8.0/Robin3.eps",
+  "file": "57_Robin3.eps",
+  "usize": 428155,
+  "sha256": "37e11dad2841e5016755c9bd6837dcd277fd52166b67915c8bb2cccef678bd60"
+ },
+ {
+  "idx": 58,
+  "name": "TEEN TITANS/CN/Reference/DC Comics/8.0/Robin1.eps",
+  "file": "58_Robin1.eps",
+  "usize": 437818,
+  "sha256": "3f13aad1b555b59e3b42f37dd0e771b234d640fe38a6ca816570a9fc52b0bbf4"
+ },
+ {
+  "idx": 59,
+  "name": "TEEN TITANS/CN/Reference/DC Comics/8.0/Robin2.eps",
+  "file": "59_Robin2.eps",
+  "usize": 416371,
+  "sha256": "1417bccd1667334d582fa5a987e7762fefdd73268478beadb03f90dd3f3fbeb5"
+ },
+ {
+  "idx": 60,
+  "name": "TEEN TITANS/CN/Reference/DC Comics/10.0/Robin3.eps",
+  "file": "60_Robin3.eps",
+  "usize": 423491,
+  "sha256": "76b38343f35c1c8e71fecde7a60a3471dceed554a31ec16d77c65b796976be86"
+ },
+ {
+  "idx": 61,
+  "name": "TEEN TITANS/CN/Reference/DC Comics/10.0/Robin1.eps",
+  "file": "61_Robin1.eps",
+  "usize": 437277,
+  "sha256": "aef814630f3ff738a4b99b739b5c487b07ce20cb6c7b349532ff84c24f9ae967"
+ },
+ {
+  "idx": 62,
+  "name": "TEEN TITANS/CN/Reference/DC Comics/10.0/Robin2.eps",
+  "file": "62_Robin2.eps",
+  "usize": 405808,
+  "sha256": "9049dbe8fb3a37aa5ba7f236deb16c78bcb978d5dfca520f540ebf1d4d1a7128"
+ }
+]
