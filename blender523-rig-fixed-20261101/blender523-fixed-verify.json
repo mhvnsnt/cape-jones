@@ -1,0 +1,75 @@
+{
+ "blender": "5.2.3 LTS",
+ "blend": "/home/hatch/workspace/cape-jones-rig/blender523-rig-fixed-20261101/cape_jones_toon_blender523_FIXED.blend",
+ "peg_count": 17,
+ "drawing_count": 11,
+ "fk_chains": {
+  "spine": [
+   "Pelvis-P",
+   "Torso-P",
+   "Neck-P",
+   "Head-P"
+  ],
+  "cape": [
+   "Cape-P",
+   "CapeCollar-P"
+  ],
+  "arm1_LEFT_Arm_Front": [
+   "Arm1-Upper-P",
+   "Arm1-Forearm-P",
+   "Arm1-Hand-P"
+  ],
+  "arm2_RIGHT_Arm_Back": [
+   "Arm2-Upper-P",
+   "Arm2-Forearm-P",
+   "Arm2-Hand-P"
+  ],
+  "leg1_LEFT_Leg_Front": [
+   "Leg1-Thigh-P",
+   "Leg1-Knee-P"
+  ],
+  "leg2_RIGHT_Leg_Back": [
+   "Leg2-Thigh-P",
+   "Leg2-Knee-P"
+  ]
+ },
+ "fk_chain_count": 6,
+ "parents_ok": true,
+ "hand_world_at_crossed_f25": [
+  1.308,
+  2.137,
+  0.0
+ ],
+ "snap_z_at_f25": {
+  "arm1_draw_z": 0.11,
+  "arm2_draw_z": 0.11,
+  "torso_z": 0.08,
+  "head_z": 0.12
+ },
+ "flex_spread_deg_at_f37": 120,
+ "shuffle_at_f48": "Leg1 lifted, Leg2 planted, alternating single-support",
+ "mapping": {
+  "arm1": "Arm_Front (viewer-left)",
+  "arm2": "Arm_Back (viewer-right)",
+  "leg1": "Leg_Front (viewer-left, canonical)",
+  "leg2": "Leg_Back (viewer-right, canonical)"
+ },
+ "seating": {
+  "head_top": 3.75,
+  "head_base": 2.89,
+  "neck_centre": 2.98,
+  "neck_top": 3.2,
+  "head_neck_overlap": 0.31,
+  "collar_top": 3.15,
+  "collar_z": 0.05,
+  "torso_z": 0.08,
+  "cape_top": 2.95,
+  "cape_bottom": -1.22,
+  "cape_z": -0.2
+ },
+ "renders": [
+  "pose-crossed-chest-snap.png",
+  "pose-flex-obtuse.png",
+  "pose-rest.png"
+ ]
+}
