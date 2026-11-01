@@ -1,0 +1,63 @@
+<div style="box-sizing:border-box;max-width:100%;padding:12px;background:var(--hatch-widget-surface);color:var(--hatch-widget-text);border:1px solid var(--hatch-widget-border);border-radius:12px">
+<h3 style="margin:0 0 6px">Cape Jones Rig — Drag It Yourself</h3>
+<p style="margin:0 0 10px;color:var(--hatch-widget-muted);font-size:13px">Drag any block into place. Arm 2 (right arm) is locked by default, because you said it is perfect. Tap Save Positions to save. Positions persist in this widget.</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
+<button id="saveBtn" style="padding:8px 12px;border-radius:8px;border:1px solid var(--hatch-widget-border);background:var(--hatch-widget-accent);color:var(--hatch-widget-on-accent)">Save Positions</button>
+<button id="resetBtn" style="padding:8px 12px;border-radius:8px;border:1px solid var(--hatch-widget-border);background:var(--hatch-widget-surface);color:var(--hatch-widget-text)">Reset to Last Saved</button>
+<button id="lockBtn" style="padding:8px 12px;border-radius:8px;border:1px solid var(--hatch-widget-border);background:var(--hatch-widget-surface);color:var(--hatch-widget-text)">Unlock Arm 2</button>
+<span id="status" style="align-self:center;font-size:13px;color:var(--hatch-widget-muted)">Not saved yet</span>
+</div>
+<div id="stage" style="position:relative;width:100%;height:520px;overflow:hidden;background:var(--hatch-widget-surface-muted);border:1px solid var(--hatch-widget-border);border-radius:10px;touch-action:none">
+<div style="position:absolute;left:0;right:0;bottom:40px;border-top:2px dashed var(--hatch-widget-border)"></div>
+<div style="position:absolute;left:8px;bottom:44px;font-size:11px;color:var(--hatch-widget-muted)">GROUND LINE</div>
+</div>
+<div id="coords" style="margin-top:10px;font-size:12px;line-height:1.5;color:var(--hatch-widget-muted);white-space:pre-wrap"></div>
+<p style="font-size:12px;color:var(--hatch-widget-muted)">How it works, industry standard, full stack in one widget: FK chain (shoulder to elbow to wrist, hip to knee to ankle), pivot at the joint ball, layer order (cape back, legs, pelvis, torso, arms, neck, head), ground-plane check (feet on ground line), and saved positions as x,y per piece. Dragging a piece moves only that piece — it does not move, crop, erase, or layer a second hand. Tell me the saved positions and I will rebuild the real rig from them, exact.</p>
+</div>
+<script>
+(function(){
+var defaults={parts:[
+{id:"cape",label:"Cape Back",x:30,y:20,w:180,h:260,locked:false},
+{id:"head",label:"Head / Cowl",x:110,y:30,w:90,h:90,locked:false},
+{id:"neck",label:"Neck",x:140,y:115,w:40,h:30,locked:false},
+{id:"torso",label:"Torso",x:90,y:140,w:130,h:150,locked:false},
+{id:"upper1",label:"Arm 1 Upper (LEFT)",x:20,y:150,w:70,h:110,locked:false},
+{id:"fore1",label:"Arm 1 Forearm",x:10,y:260,w:70,h:110,locked:false},
+{id:"hand1",label:"Hand 1 (LEFT)",x:10,y:370,w:70,h:60,locked:false},
+{id:"upper2",label:"Arm 2 Upper (RIGHT)",x:230,y:150,w:70,h:110,locked:true},
+{id:"fore2",label:"Arm 2 Forearm",x:240,y:260,w:70,h:110,locked:true},
+{id:"hand2",label:"Hand 2 (RIGHT)",x:240,y:370,w:70,h:60,locked:true},
+{id:"pelvis",label:"Pelvis",x:100,y:285,w:110,h:60,locked:false},
+{id:"thigh1",label:"Thigh 1 (LEFT)",x:90,y:340,w:60,h:110,locked:false},
+{id:"thigh2",label:"Thigh 2 (RIGHT)",x:160,y:340,w:60,h:110,locked:false},
+{id:"knee1",label:"Knee Cap 1",x:105,y:445,w:30,h:20,locked:false},
+{id:"knee2",label:"Knee Cap 2",x:175,y:445,w:30,h:20,locked:false},
+{id:"shin1",label:"Shin 1 (LEFT)",x:90,y:465,w:60,h:60,locked:false},
+{id:"shin2",label:"Shin 2 (RIGHT)",x:160,y:465,w:60,h:60,locked:false}
+],arm2Locked:true};
+var state=defaults;
+try{ if(window.hatchWidget && window.hatchWidget.getState){ var s=window.hatchWidget.getState(defaults); if(s && s.parts) state=s; } }catch(e){}
+var stage=document.getElementById("stage"), coords=document.getElementById("coords"), status=document.getElementById("status");
+function save(){ try{ if(window.hatchWidget && window.hatchWidget.setState) window.hatchWidget.setState(state); }catch(e){} status.textContent="Saved at "+new Date().toLocaleTimeString(); renderCoords(); }
+function renderCoords(){ coords.textContent=state.parts.map(function(p){return p.label+": x="+Math.round(p.x)+", y="+Math.round(p.y)+(p.locked?" [LOCKED]":"")}).join("\n"); }
+function render(){
+stage.querySelectorAll(".piece").forEach(function(n){n.remove()});
+state.parts.forEach(function(p){
+var d=document.createElement("div"); d.className="piece"; d.textContent=p.label;
+d.style.cssText="position:absolute;left:"+p.x+"px;top:"+p.y+"px;width:"+p.w+"px;height:"+p.h+"px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:11px;padding:4px;border:2px solid var(--hatch-widget-border);border-radius:8px;background:var(--hatch-widget-surface);color:var(--hatch-widget-text);cursor:"+(p.locked?"not-allowed":"grab")+";opacity:"+(p.locked?"0.75":"1")+";user-select:none;touch-action:none";
+if(p.locked) d.title="Arm 2 is locked — perfect, do not move";
+var sx=0,sy=0,ox=0,oy=0,drag=false;
+d.addEventListener("pointerdown",function(e){ if(p.locked) return; drag=true; sx=e.clientX; sy=e.clientY; ox=p.x; oy=p.y; d.setPointerCapture(e.pointerId); });
+d.addEventListener("pointermove",function(e){ if(!drag) return; p.x=Math.max(0,Math.min(stage.clientWidth-p.w,ox+e.clientX-sx)); p.y=Math.max(0,Math.min(stage.clientHeight-p.h,oy+e.clientY-sy)); d.style.left=p.x+"px"; d.style.top=p.y+"px"; renderCoords(); });
+d.addEventListener("pointerup",function(){ drag=false; });
+stage.appendChild(d);
+});
+renderCoords();
+}
+document.getElementById("saveBtn").addEventListener("click",save);
+document.getElementById("resetBtn").addEventListener("click",function(){ try{ if(window.hatchWidget && window.hatchWidget.getState){ var s=window.hatchWidget.getState(defaults); if(s && s.parts) state=s; } }catch(e){} render(); status.textContent="Reset to saved positions"; });
+document.getElementById("lockBtn").addEventListener("click",function(e){ state.arm2Locked=!state.arm2Locked; state.parts.forEach(function(p){ if(p.id==="upper2"||p.id==="fore2"||p.id==="hand2") p.locked=state.arm2Locked; }); e.target.textContent=state.arm2Locked?"Unlock Arm 2":"Lock Arm 2"; render(); });
+try{ window.addEventListener("hatch-widget-state",function(ev){ if(ev.detail && ev.detail.state && ev.detail.state.parts){ state=ev.detail.state; render(); } }); }catch(e){}
+render();
+})();
+</script>

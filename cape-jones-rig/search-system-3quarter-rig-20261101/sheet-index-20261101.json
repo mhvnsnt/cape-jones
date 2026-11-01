@@ -1,0 +1,3018 @@
+[
+ {
+  "repo_path": "characters/sheets/01-tpose-turnaround.jpg",
+  "group": "01-tpose-turnaround.jpg",
+  "filename": "01-tpose-turnaround.jpg",
+  "size_bytes": 113433,
+  "present_locally": true,
+  "md5_local": "6670a7ab263bdf9d9a51436b0aa7876b",
+  "dhash": "0011000111110000111100001010101010101010101010100011000000110010",
+  "dimensions": "2048x1143",
+  "tags": [
+   "turnaround"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/02-model-sheet-orthographic-turnaround.jpg",
+  "group": "02-model-sheet-orthographic-turnaround.jpg",
+  "filename": "02-model-sheet-orthographic-turnaround.jpg",
+  "size_bytes": 113691,
+  "present_locally": true,
+  "md5_local": "f6470fc2ff5d1881ae4de3dafc1fe427",
+  "dhash": "1000010110101010101111100101011011010110101010100001000000000010",
+  "dimensions": "928x1152",
+  "tags": [
+   "turnaround"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/03-color-lighting-vfx-key.jpg",
+  "group": "03-color-lighting-vfx-key.jpg",
+  "filename": "03-color-lighting-vfx-key.jpg",
+  "size_bytes": 421396,
+  "present_locally": true,
+  "md5_local": "c6274cf66f6335879aa8262e3dd35c80",
+  "dhash": "1010010011101010100110111011001110101010111011000111111000111011",
+  "dimensions": "1649x2048",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/04-action-flight-vfx-reference.jpg",
+  "group": "04-action-flight-vfx-reference.jpg",
+  "filename": "04-action-flight-vfx-reference.jpg",
+  "size_bytes": 433309,
+  "present_locally": true,
+  "md5_local": "a45a52123d01ce13b54ef03810cdc9d2",
+  "dhash": "1110000011000010110101111101001000110110001010101100100010001000",
+  "dimensions": "1649x2048",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/05-expression-eye-dart-matrix.jpg",
+  "group": "05-expression-eye-dart-matrix.jpg",
+  "filename": "05-expression-eye-dart-matrix.jpg",
+  "size_bytes": 340439,
+  "present_locally": true,
+  "md5_local": "fb8d6a8176999905c65ee4c04386ac14",
+  "dhash": "1010101010101010101010101010101010100110101001101100011011001110",
+  "dimensions": "1649x2048",
+  "tags": [
+   "expression"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/06-viseme-phoneme-mouth-matrix.jpg",
+  "group": "06-viseme-phoneme-mouth-matrix.jpg",
+  "filename": "06-viseme-phoneme-mouth-matrix.jpg",
+  "size_bytes": 351622,
+  "present_locally": true,
+  "md5_local": "078ea5d6be9474c867cbc0e326d1bc63",
+  "dhash": "1001100010101011101100101011010010000110110001001010011110001110",
+  "dimensions": "2048x1529",
+  "tags": [
+   "viseme"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/07-character-parts-expressions.jpg",
+  "group": "07-character-parts-expressions.jpg",
+  "filename": "07-character-parts-expressions.jpg",
+  "size_bytes": 158394,
+  "present_locally": true,
+  "md5_local": "9f0731a5a9f3e50e7ffccae8665b689f",
+  "dhash": "1100110010010110101110001111011010011010101011001010000010110010",
+  "dimensions": "928x1152",
+  "tags": [
+   "expression"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/08-body-parts-limbs-capes.jpg",
+  "group": "08-body-parts-limbs-capes.jpg",
+  "filename": "08-body-parts-limbs-capes.jpg",
+  "size_bytes": 392881,
+  "present_locally": true,
+  "md5_local": "880251a72de571ef9ad15f87d8008ab6",
+  "dhash": "1010100001101000100101001001001000101011110100001011010001010100",
+  "dimensions": "1649x2048",
+  "tags": [
+   "cape"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/09-hero-shot-black.png",
+  "group": "09-hero-shot-black.png",
+  "filename": "09-hero-shot-black.png",
+  "size_bytes": 84648,
+  "present_locally": true,
+  "md5_local": "1ff29da67abc52729f897371d9bcbf04",
+  "dhash": "0100001010001100001011110100111110011101100011011011011000000000",
+  "dimensions": "921x2047",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/10-hero-in-space.jpg",
+  "group": "10-hero-in-space.jpg",
+  "filename": "10-hero-in-space.jpg",
+  "size_bytes": 182541,
+  "present_locally": true,
+  "md5_local": "1a58368a7c6287cf01e615335ad9ac4f",
+  "dhash": "0111010000001111000011100100111110011100101011010000010100000011",
+  "dimensions": "921x2047",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/batch-Auzjk.jpg",
+  "group": "backgrounds",
+  "filename": "batch-Auzjk.jpg",
+  "size_bytes": 132806,
+  "present_locally": true,
+  "md5_local": "e926bd8b4d70521d06ababc8e9416512",
+  "dhash": "0000111001001111010000110100011100000011101000110000111100011111",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/batch-JmGUv.jpg",
+  "group": "backgrounds",
+  "filename": "batch-JmGUv.jpg",
+  "size_bytes": 149563,
+  "present_locally": true,
+  "md5_local": "d28e45918b3bf6eaed4ef9f639c595e9",
+  "dhash": "0011011100110110101101100110011110001110000011110001111100011111",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/batch-KKGuh.jpg",
+  "group": "backgrounds",
+  "filename": "batch-KKGuh.jpg",
+  "size_bytes": 219081,
+  "present_locally": true,
+  "md5_local": "c41d2d7b5b642f1340fd19e93cd4c5ec",
+  "dhash": "1101100110011011100110101001101101011011000110100000111000110110",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/batch-MvYdV.jpg",
+  "group": "backgrounds",
+  "filename": "batch-MvYdV.jpg",
+  "size_bytes": 224151,
+  "present_locally": true,
+  "md5_local": "09443b691d1466cc5d85a932d4f5d482",
+  "dhash": "0011000101000111010011001001110000011101000111110000001100000100",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/batch-RjoBx.jpg",
+  "group": "backgrounds",
+  "filename": "batch-RjoBx.jpg",
+  "size_bytes": 194348,
+  "present_locally": true,
+  "md5_local": "e1b07f078ac4b9d95b2063ce14e40b53",
+  "dhash": "1000011011001111100111101001011110000111000011100000111110001101",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/batch-WEqVc.jpg",
+  "group": "backgrounds",
+  "filename": "batch-WEqVc.jpg",
+  "size_bytes": 160369,
+  "present_locally": true,
+  "md5_local": "be34ec51d3e52212856328a6d3499dd4",
+  "dhash": "0001010000010110100101110011001101110011100110010010111001111100",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/batch-bfSpz.jpg",
+  "group": "backgrounds",
+  "filename": "batch-bfSpz.jpg",
+  "size_bytes": 243330,
+  "present_locally": true,
+  "md5_local": "4559f9915296b9d9b8840372192155d3",
+  "dhash": "0100110101001100000011000001010000010100100111111011111111111100",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/batch-giKK3.jpg",
+  "group": "backgrounds",
+  "filename": "batch-giKK3.jpg",
+  "size_bytes": 346820,
+  "present_locally": true,
+  "md5_local": "5cb30bf4289bfa14c747a1d7e1df9c76",
+  "dhash": "0011001000110010011011100000101000001011000010010000111100010011",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/batch-h4Un3.jpg",
+  "group": "backgrounds",
+  "filename": "batch-h4Un3.jpg",
+  "size_bytes": 217439,
+  "present_locally": true,
+  "md5_local": "bf689d34dbb196491237c4914a043894",
+  "dhash": "1110010000001011100110111101001100101011111100011100010010100100",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/batch-jPaPG.jpg",
+  "group": "backgrounds",
+  "filename": "batch-jPaPG.jpg",
+  "size_bytes": 145634,
+  "present_locally": true,
+  "md5_local": "999d75a888ad11916f4ef8270cd0af98",
+  "dhash": "0110010001101011101010011000010000010110100100111000101111001100",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/batch-rzOMM.jpg",
+  "group": "backgrounds",
+  "filename": "batch-rzOMM.jpg",
+  "size_bytes": 349475,
+  "present_locally": true,
+  "md5_local": "c7a34ed5814b6662361b4aefc3beaf50",
+  "dhash": "1000111101001110010010100100101101011011100010010001100100011101",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/batch-s2Iq5.jpg",
+  "group": "backgrounds",
+  "filename": "batch-s2Iq5.jpg",
+  "size_bytes": 236305,
+  "present_locally": true,
+  "md5_local": "5dcc97feab4bfa9fc49056b26e41b149",
+  "dhash": "0010100101101100110111000001101000111010011011000100111100011111",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/batch-xyug7.jpg",
+  "group": "backgrounds",
+  "filename": "batch-xyug7.jpg",
+  "size_bytes": 159231,
+  "present_locally": true,
+  "md5_local": "1bcdbf721d5b030665ae3092377cc1d4",
+  "dhash": "1011010000110011000110011001100110011111000011110110011100101110",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/batch-yFJdx.jpg",
+  "group": "backgrounds",
+  "filename": "batch-yFJdx.jpg",
+  "size_bytes": 127807,
+  "present_locally": true,
+  "md5_local": "6b8b944556829b9aed19fc3fa6e217e8",
+  "dhash": "0110011001101101000110010010111001111111000111110000111100000111",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/batch-ywOUG.jpg",
+  "group": "backgrounds",
+  "filename": "batch-ywOUG.jpg",
+  "size_bytes": 174271,
+  "present_locally": true,
+  "md5_local": "f9d59d85378caf03ac83759c6ad2e0a7",
+  "dhash": "1010001011100101011100011101101110011000010001001111000100010110",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/bg-DGb2j.jpg",
+  "group": "backgrounds",
+  "filename": "bg-DGb2j.jpg",
+  "size_bytes": 215091,
+  "present_locally": true,
+  "md5_local": "32e1f4702c10754f8953b41e54996166",
+  "dhash": "1010100110100110001101100010011000101110001011100101111010100001",
+  "dimensions": "1792x1008",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/bg-F72A5.jpg",
+  "group": "backgrounds",
+  "filename": "bg-F72A5.jpg",
+  "size_bytes": 253763,
+  "present_locally": true,
+  "md5_local": "66430136dcfdc7832cf741484dfca269",
+  "dhash": "0001000000110011011011010110101101010101010101010001010110001010",
+  "dimensions": "1200x1648",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/bg-IUUgX.jpg",
+  "group": "backgrounds",
+  "filename": "bg-IUUgX.jpg",
+  "size_bytes": 261351,
+  "present_locally": true,
+  "md5_local": "61fc87d2afe3563d41454eeb1a38e7f8",
+  "dhash": "1011001001110001010010010110100101001110011001100101110010011100",
+  "dimensions": "1200x1648",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/bg-IowZk.jpg",
+  "group": "backgrounds",
+  "filename": "bg-IowZk.jpg",
+  "size_bytes": 243002,
+  "present_locally": true,
+  "md5_local": "4147d5c5240740a49d6f28ffbda91aa2",
+  "dhash": "1011000000110110000010110110111000101110001011100010110000010001",
+  "dimensions": "1200x1648",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/bg-N3ies.jpg",
+  "group": "backgrounds",
+  "filename": "bg-N3ies.jpg",
+  "size_bytes": 267097,
+  "present_locally": true,
+  "md5_local": "c90d25b07041355b58de6b172e81cd00",
+  "dhash": "1001000000110011000011100010111001010110010101100101011000010001",
+  "dimensions": "1200x1648",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/bg-OAFac.jpg",
+  "group": "backgrounds",
+  "filename": "bg-OAFac.jpg",
+  "size_bytes": 243049,
+  "present_locally": true,
+  "md5_local": "c7132156bed427e5d223883019d2ab65",
+  "dhash": "1011000001010101010010010100010001001100010011000110110000101101",
+  "dimensions": "1200x1648",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/bg-U8YqN.jpg",
+  "group": "backgrounds",
+  "filename": "bg-U8YqN.jpg",
+  "size_bytes": 215235,
+  "present_locally": true,
+  "md5_local": "3fa30be349da109b9486ff7cb0731772",
+  "dhash": "0111001010001100000010110101001100011100010111000101110000011100",
+  "dimensions": "1200x1648",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/bg-ZdzDG.jpg",
+  "group": "backgrounds",
+  "filename": "bg-ZdzDG.jpg",
+  "size_bytes": 254076,
+  "present_locally": true,
+  "md5_local": "c6ce04c65101e93610e2a599ca9b5b5c",
+  "dhash": "1001011001110001100011101000111010001110000011110101010011010100",
+  "dimensions": "1200x1648",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/bg-jvqhV.jpg",
+  "group": "backgrounds",
+  "filename": "bg-jvqhV.jpg",
+  "size_bytes": 248621,
+  "present_locally": true,
+  "md5_local": "2a0b03c42fab9c7a0cfa077c40375c64",
+  "dhash": "0100100001000001001111010011110000101100001011100010110000010001",
+  "dimensions": "1200x1648",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/bg-wDheK.jpg",
+  "group": "backgrounds",
+  "filename": "bg-wDheK.jpg",
+  "size_bytes": 227178,
+  "present_locally": true,
+  "md5_local": "afd775a8c395416366572a9dcbf59bed",
+  "dhash": "1011000000010110010010100110111001001110110011100101111000010101",
+  "dimensions": "1200x1648",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/bg-zxxqO.jpg",
+  "group": "backgrounds",
+  "filename": "bg-zxxqO.jpg",
+  "size_bytes": 334202,
+  "present_locally": true,
+  "md5_local": "48d9f7ff18568baf5fbb54340bd0394c",
+  "dhash": "0111001001000111011010011110110010000100100101110001011011010110",
+  "dimensions": "1200x1648",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/style-JmGUv.jpg",
+  "group": "backgrounds",
+  "filename": "style-JmGUv.jpg",
+  "size_bytes": 149563,
+  "present_locally": true,
+  "md5_local": "d28e45918b3bf6eaed4ef9f639c595e9",
+  "dhash": "0011011100110110101101100110011110001110000011110001111100011111",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/style-MvYdV.jpg",
+  "group": "backgrounds",
+  "filename": "style-MvYdV.jpg",
+  "size_bytes": 224151,
+  "present_locally": true,
+  "md5_local": "09443b691d1466cc5d85a932d4f5d482",
+  "dhash": "0011000101000111010011001001110000011101000111110000001100000100",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/style-WEqVc.jpg",
+  "group": "backgrounds",
+  "filename": "style-WEqVc.jpg",
+  "size_bytes": 160369,
+  "present_locally": true,
+  "md5_local": "be34ec51d3e52212856328a6d3499dd4",
+  "dhash": "0001010000010110100101110011001101110011100110010010111001111100",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/style-bfSpz.jpg",
+  "group": "backgrounds",
+  "filename": "style-bfSpz.jpg",
+  "size_bytes": 243330,
+  "present_locally": true,
+  "md5_local": "4559f9915296b9d9b8840372192155d3",
+  "dhash": "0100110101001100000011000001010000010100100111111011111111111100",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/style-giKK3.jpg",
+  "group": "backgrounds",
+  "filename": "style-giKK3.jpg",
+  "size_bytes": 346820,
+  "present_locally": true,
+  "md5_local": "5cb30bf4289bfa14c747a1d7e1df9c76",
+  "dhash": "0011001000110010011011100000101000001011000010010000111100010011",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/style-h4Un3.jpg",
+  "group": "backgrounds",
+  "filename": "style-h4Un3.jpg",
+  "size_bytes": 217439,
+  "present_locally": true,
+  "md5_local": "bf689d34dbb196491237c4914a043894",
+  "dhash": "1110010000001011100110111101001100101011111100011100010010100100",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/style-jPaPG.jpg",
+  "group": "backgrounds",
+  "filename": "style-jPaPG.jpg",
+  "size_bytes": 145634,
+  "present_locally": true,
+  "md5_local": "999d75a888ad11916f4ef8270cd0af98",
+  "dhash": "0110010001101011101010011000010000010110100100111000101111001100",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/style-rzOMM.jpg",
+  "group": "backgrounds",
+  "filename": "style-rzOMM.jpg",
+  "size_bytes": 349475,
+  "present_locally": true,
+  "md5_local": "c7a34ed5814b6662361b4aefc3beaf50",
+  "dhash": "1000111101001110010010100100101101011011100010010001100100011101",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/style-s2Iq5.jpg",
+  "group": "backgrounds",
+  "filename": "style-s2Iq5.jpg",
+  "size_bytes": 236305,
+  "present_locally": true,
+  "md5_local": "5dcc97feab4bfa9fc49056b26e41b149",
+  "dhash": "0010100101101100110111000001101000111010011011000100111100011111",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/style-xyug7.jpg",
+  "group": "backgrounds",
+  "filename": "style-xyug7.jpg",
+  "size_bytes": 159231,
+  "present_locally": true,
+  "md5_local": "1bcdbf721d5b030665ae3092377cc1d4",
+  "dhash": "1011010000110011000110011001100110011111000011110110011100101110",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/backgrounds/style-yFJdx.jpg",
+  "group": "backgrounds",
+  "filename": "style-yFJdx.jpg",
+  "size_bytes": 127807,
+  "present_locally": true,
+  "md5_local": "6b8b944556829b9aed19fc3fa6e217e8",
+  "dhash": "0110011001101101000110010010111001111111000111110000111100000111",
+  "dimensions": "1168x784",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/color-keys/color-key-lighting-conditions.jpg",
+  "group": "color-keys",
+  "filename": "color-key-lighting-conditions.jpg",
+  "size_bytes": 412049,
+  "present_locally": true,
+  "md5_local": "ddd7e8ddae77888f1f53d8a3afa68cd0",
+  "dhash": "0010001111001100110011001100101011101010110010001100110000110011",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/color-keys/color-key-sheet-1.jpg",
+  "group": "color-keys",
+  "filename": "color-key-sheet-1.jpg",
+  "size_bytes": 494536,
+  "present_locally": true,
+  "md5_local": "8e9230117f44579710731b61b579e54a",
+  "dhash": "0110100101101011011010010110100110011010110110101001101010011011",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/color-keys/color-key-sheet-2.jpg",
+  "group": "color-keys",
+  "filename": "color-key-sheet-2.jpg",
+  "size_bytes": 509049,
+  "present_locally": true,
+  "md5_local": "2ecc1a2ff7c8bfbbd005ae8494d4aad9",
+  "dhash": "1110101111101011011010010110100111001000110101001100010011001000",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/color-keys/color-key-sheet-3.jpg",
+  "group": "color-keys",
+  "filename": "color-key-sheet-3.jpg",
+  "size_bytes": 455015,
+  "present_locally": true,
+  "md5_local": "75e6894e441ce76099668be1b1890784",
+  "dhash": "0000011011001100111011001010100010101000101110001011110001000100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/color-keys/color-key-sheet-4.jpg",
+  "group": "color-keys",
+  "filename": "color-key-sheet-4.jpg",
+  "size_bytes": 380751,
+  "present_locally": true,
+  "md5_local": "7eedb930702a8769600d57c368b8a75c",
+  "dhash": "0110110001101101101011011110110111100100101101001111010011100100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/color-keys/color-key-sheet-5.jpg",
+  "group": "color-keys",
+  "filename": "color-key-sheet-5.jpg",
+  "size_bytes": 383292,
+  "present_locally": true,
+  "md5_local": "ac528d59b4c2829d81481b715285a943",
+  "dhash": "1000111001010101110000001100101011001010110010101100001000100000",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/exposure-sheets/exposure-sheet-1-walk.jpg",
+  "group": "exposure-sheets",
+  "filename": "exposure-sheet-1-walk.jpg",
+  "size_bytes": 300446,
+  "present_locally": true,
+  "md5_local": "ac9679a248ecbab7e4daeafd19a073dc",
+  "dhash": "0011001011001100110101001101010011010100110011001100110011001100",
+  "dimensions": "1264x1568",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/exposure-sheets/exposure-sheet-10-flex.jpg",
+  "group": "exposure-sheets",
+  "filename": "exposure-sheet-10-flex.jpg",
+  "size_bytes": 370574,
+  "present_locally": true,
+  "md5_local": "884d1e80378e4a186331f431b0616a70",
+  "dhash": "1001011010101010101010101010101000101011001010100010101000101010",
+  "dimensions": "1152x1728",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/exposure-sheets/exposure-sheet-2-jump.jpg",
+  "group": "exposure-sheets",
+  "filename": "exposure-sheet-2-jump.jpg",
+  "size_bytes": 369968,
+  "present_locally": true,
+  "md5_local": "ad09ed417d12535d2abdc0e8aea5f1c1",
+  "dhash": "0100110101101101011011010100101101001011010010110100111101001101",
+  "dimensions": "1264x1568",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/exposure-sheets/exposure-sheet-3-punch.jpg",
+  "group": "exposure-sheets",
+  "filename": "exposure-sheet-3-punch.jpg",
+  "size_bytes": 344173,
+  "present_locally": true,
+  "md5_local": "be683dd66d533c009a74c5010d6a77a3",
+  "dhash": "1110010001000010110100101101001011010010110101101101001010010010",
+  "dimensions": "1152x1728",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/exposure-sheets/exposure-sheet-4-flight.jpg",
+  "group": "exposure-sheets",
+  "filename": "exposure-sheet-4-flight.jpg",
+  "size_bytes": 518304,
+  "present_locally": true,
+  "md5_local": "8fd9fe0878af78e666b8c722450f3969",
+  "dhash": "0101000101110001001100010011000100110011001101010010010101100101",
+  "dimensions": "1152x1728",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/exposure-sheets/exposure-sheet-5-reaction.jpg",
+  "group": "exposure-sheets",
+  "filename": "exposure-sheet-5-reaction.jpg",
+  "size_bytes": 328402,
+  "present_locally": true,
+  "md5_local": "279c69b8570e0f0411920eb03a146b5d",
+  "dhash": "1101100001000101010001010101000110101101100010011100110110001101",
+  "dimensions": "1152x1728",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/exposure-sheets/exposure-sheet-6-sit.jpg",
+  "group": "exposure-sheets",
+  "filename": "exposure-sheet-6-sit.jpg",
+  "size_bytes": 410892,
+  "present_locally": true,
+  "md5_local": "9d22d74267ba524b720bdfd4cc9890d9",
+  "dhash": "0110100111100011100010000100100110011000110010000011101100101001",
+  "dimensions": "1728x1152",
+  "tags": [
+   "lounge",
+   "seated",
+   "sit",
+   "sitting"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/exposure-sheets/exposure-sheet-7-cape.jpg",
+  "group": "exposure-sheets",
+  "filename": "exposure-sheet-7-cape.jpg",
+  "size_bytes": 328756,
+  "present_locally": true,
+  "md5_local": "eae5e4499457fc8047f85171b2a82967",
+  "dhash": "0000110001001010010010100100101101001000010010101100101011001010",
+  "dimensions": "1264x1568",
+  "tags": [
+   "cape"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/exposure-sheets/exposure-sheet-8-turnaround.jpg",
+  "group": "exposure-sheets",
+  "filename": "exposure-sheet-8-turnaround.jpg",
+  "size_bytes": 340927,
+  "present_locally": true,
+  "md5_local": "ca624a1ef001bf47d45c33da93245477",
+  "dhash": "0010110101100100011101000110010001101100011001000110010001101101",
+  "dimensions": "1792x1008",
+  "tags": [
+   "turnaround"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/exposure-sheets/exposure-sheet-9-run.jpg",
+  "group": "exposure-sheets",
+  "filename": "exposure-sheet-9-run.jpg",
+  "size_bytes": 294434,
+  "present_locally": true,
+  "md5_local": "52820f9db98c3bcb2deca3e30873ff82",
+  "dhash": "1111100110010111101110011011001010111010101010111011001110100011",
+  "dimensions": "1152x1728",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/action-packs/action-1vU75.jpg",
+  "group": "fla-packs",
+  "filename": "action-1vU75.jpg",
+  "size_bytes": 370072,
+  "present_locally": true,
+  "md5_local": "ec9ca0ae74d763a3e7e092d8e9f4fb33",
+  "dhash": "1101000111100100110000101110101010110110000110000100100101100101",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/action-packs/action-60rw7.jpg",
+  "group": "fla-packs",
+  "filename": "action-60rw7.jpg",
+  "size_bytes": 171072,
+  "present_locally": true,
+  "md5_local": "8063d1f9289392dbc9c94983f866dc80",
+  "dhash": "1001001001101100011101000101001010010010110011000100100000110010",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/action-packs/action-9NXQv.jpg",
+  "group": "fla-packs",
+  "filename": "action-9NXQv.jpg",
+  "size_bytes": 204272,
+  "present_locally": true,
+  "md5_local": "ecc1f10a56ced857539440ce1644fe2f",
+  "dhash": "1010101010110010101100101011011010101001011011001100110011001100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/action-packs/action-EBPJX.jpg",
+  "group": "fla-packs",
+  "filename": "action-EBPJX.jpg",
+  "size_bytes": 277165,
+  "present_locally": true,
+  "md5_local": "ac8f21092dbd1bdd6cf31e53247d7103",
+  "dhash": "1011001001110001000011110110100111001100100101101001001000101011",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/action-packs/action-HJUwB.jpg",
+  "group": "fla-packs",
+  "filename": "action-HJUwB.jpg",
+  "size_bytes": 242728,
+  "present_locally": true,
+  "md5_local": "c250ff5d41841f4de3af9a864b3f53ca",
+  "dhash": "0111000010010110000011101100110011010100110101001101011000010111",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/action-packs/action-Ne4dq.jpg",
+  "group": "fla-packs",
+  "filename": "action-Ne4dq.jpg",
+  "size_bytes": 238760,
+  "present_locally": true,
+  "md5_local": "6bad368897944cedb514c785a3a82452",
+  "dhash": "0001010001100110010010101001101001011010001010001010101000101010",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/action-packs/action-Nk9xR.jpg",
+  "group": "fla-packs",
+  "filename": "action-Nk9xR.jpg",
+  "size_bytes": 176039,
+  "present_locally": true,
+  "md5_local": "c1f825d98c40f7ee4e512dba90b4ae7a",
+  "dhash": "1011001010110010101100101011001001001110100011101000111000010110",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/action-packs/action-QjT3b.jpg",
+  "group": "fla-packs",
+  "filename": "action-QjT3b.jpg",
+  "size_bytes": 231871,
+  "present_locally": true,
+  "md5_local": "5fb3c87912dca260fd90e4500bf9ecb3",
+  "dhash": "1011001000110101100101101001011000110011101100100100110110110000",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/action-packs/action-RTpXF.jpg",
+  "group": "fla-packs",
+  "filename": "action-RTpXF.jpg",
+  "size_bytes": 187190,
+  "present_locally": true,
+  "md5_local": "1539ad6050885254fc61818518b8822f",
+  "dhash": "1001100001000110011001101001010100010001011001110100011110110000",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/action-packs/action-TatNd.jpg",
+  "group": "fla-packs",
+  "filename": "action-TatNd.jpg",
+  "size_bytes": 225354,
+  "present_locally": true,
+  "md5_local": "58bf319351deca63ddc7edcd03d1bd6e",
+  "dhash": "1001010000101011011011011100111110001011100101011011001000101001",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/action-packs/action-WUwKS.jpg",
+  "group": "fla-packs",
+  "filename": "action-WUwKS.jpg",
+  "size_bytes": 233077,
+  "present_locally": true,
+  "md5_local": "bde0991468c6a5796e3f14ef8a48c531",
+  "dhash": "1001011011010110010001101010001000101000100010001000010100000101",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/action-packs/action-Wtv8t.jpg",
+  "group": "fla-packs",
+  "filename": "action-Wtv8t.jpg",
+  "size_bytes": 246676,
+  "present_locally": true,
+  "md5_local": "432b692cb03d1f5aace65d5656fff78f",
+  "dhash": "0000110000110011010011011000111001101001010101010101010110010110",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/action-packs/action-cJWaN.jpg",
+  "group": "fla-packs",
+  "filename": "action-cJWaN.jpg",
+  "size_bytes": 433826,
+  "present_locally": true,
+  "md5_local": "738b4f35094b58cb2549a376dc3db5aa",
+  "dhash": "1010010010101010101010101010100110101000110111001010110010101010",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/action-packs/action-f5Q6Z.jpg",
+  "group": "fla-packs",
+  "filename": "action-f5Q6Z.jpg",
+  "size_bytes": 221653,
+  "present_locally": true,
+  "md5_local": "f2f9ca9b4b767599e951daf707567eae",
+  "dhash": "0000100000110101011101010111000100110001001010010010100101010100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/action-packs/action-wdNk1.jpg",
+  "group": "fla-packs",
+  "filename": "action-wdNk1.jpg",
+  "size_bytes": 180574,
+  "present_locally": true,
+  "md5_local": "8de91b3b97c228d0e5f895403e3591b7",
+  "dhash": "1000110000010101000100010001010101010101010011000110101000010000",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/angle-sheets/fla-3quarter-back.jpg",
+  "group": "fla-packs",
+  "filename": "fla-3quarter-back.jpg",
+  "size_bytes": 236811,
+  "present_locally": true,
+  "md5_local": "baf74d0fd9f0e9a849785f1fd7d3d948",
+  "dhash": "1001000101010110011011101011011000101110001011100010111011001001",
+  "dimensions": "1792x1008",
+  "tags": [
+   "3quarter",
+   "back",
+   "quarter",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/angle-sheets/fla-3quarter-front.jpg",
+  "group": "fla-packs",
+  "filename": "fla-3quarter-front.jpg",
+  "size_bytes": 204764,
+  "present_locally": true,
+  "md5_local": "9040864f954b399d4795682b8d4db367",
+  "dhash": "1010000100100110000101100011011001001110010011100100111000001001",
+  "dimensions": "1792x1008",
+  "tags": [
+   "3quarter",
+   "front",
+   "quarter",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/angle-sheets/fla-back.jpg",
+  "group": "fla-packs",
+  "filename": "fla-back.jpg",
+  "size_bytes": 294778,
+  "present_locally": true,
+  "md5_local": "4d226cbcc82a43c7d40d2344edb6ff93",
+  "dhash": "1011000010001111010011100010011000100110001001100110011000100111",
+  "dimensions": "1888x1056",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/angle-sheets/fla-front.jpg",
+  "group": "fla-packs",
+  "filename": "fla-front.jpg",
+  "size_bytes": 295133,
+  "present_locally": true,
+  "md5_local": "01dc4fc18f05b25764f0a8f32d85d797",
+  "dhash": "0111000100010110001011100010011000000110000001100011011001010100",
+  "dimensions": "1888x1056",
+  "tags": [
+   "front"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/dance-packs/dance-2e9kj.jpg",
+  "group": "fla-packs",
+  "filename": "dance-2e9kj.jpg",
+  "size_bytes": 296473,
+  "present_locally": true,
+  "md5_local": "1cdda5f6880eb30362a82b5b0ed0b2db",
+  "dhash": "1001001000110011101011101000110010001110100101101001011000010110",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/dance-packs/dance-D3pmc.jpg",
+  "group": "fla-packs",
+  "filename": "dance-D3pmc.jpg",
+  "size_bytes": 266236,
+  "present_locally": true,
+  "md5_local": "e6e894606bce59241eb17a3793cfd728",
+  "dhash": "1011001000001101011010011000111010010110100101101001011000010111",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/dance-packs/dance-MAHyh.jpg",
+  "group": "fla-packs",
+  "filename": "dance-MAHyh.jpg",
+  "size_bytes": 276351,
+  "present_locally": true,
+  "md5_local": "36110cbdb3612026051c3a0ead2ef529",
+  "dhash": "1001011001110001010011100100111001100110010001100100011011010110",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/dance-packs/dance-UgepP.jpg",
+  "group": "fla-packs",
+  "filename": "dance-UgepP.jpg",
+  "size_bytes": 303813,
+  "present_locally": true,
+  "md5_local": "aede684eef396b3cbaad08b8f85b7ff5",
+  "dhash": "1011001001110001001010110110110111010110100101101011011000101000",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/dance-packs/dance-ZxEwS.jpg",
+  "group": "fla-packs",
+  "filename": "dance-ZxEwS.jpg",
+  "size_bytes": 264882,
+  "present_locally": true,
+  "md5_local": "5f3348cb9612368df037582a6994ddb2",
+  "dhash": "1001001001110001010011011100110011001100110101000101010100110011",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/dance-packs/dance-a3jha.jpg",
+  "group": "fla-packs",
+  "filename": "dance-a3jha.jpg",
+  "size_bytes": 262130,
+  "present_locally": true,
+  "md5_local": "562a5e72536ab296a5c2990b9252adf3",
+  "dhash": "1111000000110011001011110100110111010100100101101001011000110011",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/dance-packs/dance-etaPY.jpg",
+  "group": "fla-packs",
+  "filename": "dance-etaPY.jpg",
+  "size_bytes": 244286,
+  "present_locally": true,
+  "md5_local": "0c000357d92dd308dd0c66f9849d31d8",
+  "dhash": "1001000000110111000101101101111010010110000101101101011000100001",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/dance-packs/dance-mANuo.jpg",
+  "group": "fla-packs",
+  "filename": "dance-mANuo.jpg",
+  "size_bytes": 209557,
+  "present_locally": true,
+  "md5_local": "ee4b2b1a6041c6c7108268bb3189fa71",
+  "dhash": "0111000010010110100011100010100101010101100101101001011010101010",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/dance-packs/dance-qIxLo.jpg",
+  "group": "fla-packs",
+  "filename": "dance-qIxLo.jpg",
+  "size_bytes": 229156,
+  "present_locally": true,
+  "md5_local": "e16cca250a26d715383f06ab0ea2b155",
+  "dhash": "1111010100110110010010110100110110001110101011101010111000101100",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/dance-packs/dance-smAFI.jpg",
+  "group": "fla-packs",
+  "filename": "dance-smAFI.jpg",
+  "size_bytes": 257251,
+  "present_locally": true,
+  "md5_local": "87362abdc5c1bd46d49ee2058337fb74",
+  "dhash": "0111000110010110001011110100110111010100100101101011001000101001",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/dance-packs/dance-w2Zh1.jpg",
+  "group": "fla-packs",
+  "filename": "dance-w2Zh1.jpg",
+  "size_bytes": 291861,
+  "present_locally": true,
+  "md5_local": "5f52e20655888d4602f44669a4458159",
+  "dhash": "1001010000110011001010110100110111010100100101101001011000110011",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs-2/recent-2e9kj.jpg",
+  "group": "fla-packs",
+  "filename": "recent-2e9kj.jpg",
+  "size_bytes": 296473,
+  "present_locally": true,
+  "md5_local": "1cdda5f6880eb30362a82b5b0ed0b2db",
+  "dhash": "1001001000110011101011101000110010001110100101101001011000010110",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs-2/recent-D3pmc.jpg",
+  "group": "fla-packs",
+  "filename": "recent-D3pmc.jpg",
+  "size_bytes": 266236,
+  "present_locally": true,
+  "md5_local": "e6e894606bce59241eb17a3793cfd728",
+  "dhash": "1011001000001101011010011000111010010110100101101001011000010111",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs-2/recent-MAHyh.jpg",
+  "group": "fla-packs",
+  "filename": "recent-MAHyh.jpg",
+  "size_bytes": 276351,
+  "present_locally": true,
+  "md5_local": "36110cbdb3612026051c3a0ead2ef529",
+  "dhash": "1001011001110001010011100100111001100110010001100100011011010110",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs-2/recent-UgepP.jpg",
+  "group": "fla-packs",
+  "filename": "recent-UgepP.jpg",
+  "size_bytes": 303813,
+  "present_locally": true,
+  "md5_local": "aede684eef396b3cbaad08b8f85b7ff5",
+  "dhash": "1011001001110001001010110110110111010110100101101011011000101000",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs-2/recent-ZxEwS.jpg",
+  "group": "fla-packs",
+  "filename": "recent-ZxEwS.jpg",
+  "size_bytes": 264882,
+  "present_locally": true,
+  "md5_local": "5f3348cb9612368df037582a6994ddb2",
+  "dhash": "1001001001110001010011011100110011001100110101000101010100110011",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs-2/recent-a3jha.jpg",
+  "group": "fla-packs",
+  "filename": "recent-a3jha.jpg",
+  "size_bytes": 262130,
+  "present_locally": true,
+  "md5_local": "562a5e72536ab296a5c2990b9252adf3",
+  "dhash": "1111000000110011001011110100110111010100100101101001011000110011",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs-2/recent-etaPY.jpg",
+  "group": "fla-packs",
+  "filename": "recent-etaPY.jpg",
+  "size_bytes": 244286,
+  "present_locally": true,
+  "md5_local": "0c000357d92dd308dd0c66f9849d31d8",
+  "dhash": "1001000000110111000101101101111010010110000101101101011000100001",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs-2/recent-mANuo.jpg",
+  "group": "fla-packs",
+  "filename": "recent-mANuo.jpg",
+  "size_bytes": 209557,
+  "present_locally": true,
+  "md5_local": "ee4b2b1a6041c6c7108268bb3189fa71",
+  "dhash": "0111000010010110100011100010100101010101100101101001011010101010",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs-2/recent-qIxLo.jpg",
+  "group": "fla-packs",
+  "filename": "recent-qIxLo.jpg",
+  "size_bytes": 229156,
+  "present_locally": true,
+  "md5_local": "e16cca250a26d715383f06ab0ea2b155",
+  "dhash": "1111010100110110010010110100110110001110101011101010111000101100",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs-2/recent-smAFI.jpg",
+  "group": "fla-packs",
+  "filename": "recent-smAFI.jpg",
+  "size_bytes": 257251,
+  "present_locally": true,
+  "md5_local": "87362abdc5c1bd46d49ee2058337fb74",
+  "dhash": "0111000110010110001011110100110111010100100101101011001000101001",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs-2/recent-w2Zh1.jpg",
+  "group": "fla-packs",
+  "filename": "recent-w2Zh1.jpg",
+  "size_bytes": 291861,
+  "present_locally": true,
+  "md5_local": "5f52e20655888d4602f44669a4458159",
+  "dhash": "1001010000110011001010110100110111010100100101101001011000110011",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-2e9kj.jpg",
+  "group": "fla-packs",
+  "filename": "recent-2e9kj.jpg",
+  "size_bytes": 296473,
+  "present_locally": true,
+  "md5_local": "1cdda5f6880eb30362a82b5b0ed0b2db",
+  "dhash": "1001001000110011101011101000110010001110100101101001011000010110",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-3N1l4.jpg",
+  "group": "fla-packs",
+  "filename": "recent-3N1l4.jpg",
+  "size_bytes": 319182,
+  "present_locally": true,
+  "md5_local": "b90888a848a7d0e1fb43eccd55476082",
+  "dhash": "0011001001010101000011111010101011010100100101101001001100110010",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-8chi3.jpg",
+  "group": "fla-packs",
+  "filename": "recent-8chi3.jpg",
+  "size_bytes": 262919,
+  "present_locally": true,
+  "md5_local": "70d360d793bd8f3fbcf3c71bdc65252f",
+  "dhash": "1101010001110001100011001000110010100110010011010111010100100110",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-D3pmc.jpg",
+  "group": "fla-packs",
+  "filename": "recent-D3pmc.jpg",
+  "size_bytes": 266236,
+  "present_locally": true,
+  "md5_local": "e6e894606bce59241eb17a3793cfd728",
+  "dhash": "1011001000001101011010011000111010010110100101101001011000010111",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-HXbRz.jpg",
+  "group": "fla-packs",
+  "filename": "recent-HXbRz.jpg",
+  "size_bytes": 316533,
+  "present_locally": true,
+  "md5_local": "ffac35f17fdeae2cb6933a923f93723b",
+  "dhash": "0101000101110001000010110100100101010101010100010011010110110100",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-J9hos.jpg",
+  "group": "fla-packs",
+  "filename": "recent-J9hos.jpg",
+  "size_bytes": 274365,
+  "present_locally": true,
+  "md5_local": "ccf5b3b2de045675f36c0d4857764c0b",
+  "dhash": "1101010000110011010011011100110011001100100101101001011010110010",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-MAHyh.jpg",
+  "group": "fla-packs",
+  "filename": "recent-MAHyh.jpg",
+  "size_bytes": 276351,
+  "present_locally": true,
+  "md5_local": "36110cbdb3612026051c3a0ead2ef529",
+  "dhash": "1001011001110001010011100100111001100110010001100100011011010110",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-PL6xL.jpg",
+  "group": "fla-packs",
+  "filename": "recent-PL6xL.jpg",
+  "size_bytes": 375124,
+  "present_locally": true,
+  "md5_local": "3be40381a9d723b8a1f4c97f42085b8b",
+  "dhash": "0101000001110001000010111100110010010110001101100010001101101011",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-TdvUD.jpg",
+  "group": "fla-packs",
+  "filename": "recent-TdvUD.jpg",
+  "size_bytes": 318406,
+  "present_locally": true,
+  "md5_local": "a1d9f2552fb48febed9672700eec5d2b",
+  "dhash": "0010011000110001010011011010101010001110100011100001011000010011",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-UgepP.jpg",
+  "group": "fla-packs",
+  "filename": "recent-UgepP.jpg",
+  "size_bytes": 303813,
+  "present_locally": true,
+  "md5_local": "aede684eef396b3cbaad08b8f85b7ff5",
+  "dhash": "1011001001110001001010110110110111010110100101101011011000101000",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-XcaBI.jpg",
+  "group": "fla-packs",
+  "filename": "recent-XcaBI.jpg",
+  "size_bytes": 289491,
+  "present_locally": true,
+  "md5_local": "be2416e2783d9afdc25e29254279ee38",
+  "dhash": "1011001001110101010011010100110101010101010101010101010101010101",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-XkboO.jpg",
+  "group": "fla-packs",
+  "filename": "recent-XkboO.jpg",
+  "size_bytes": 272832,
+  "present_locally": true,
+  "md5_local": "3c31fac16fb69d163a80182329886260",
+  "dhash": "1101010000110011000011110100110111001100100101101001011000010011",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-ZxEwS.jpg",
+  "group": "fla-packs",
+  "filename": "recent-ZxEwS.jpg",
+  "size_bytes": 264882,
+  "present_locally": true,
+  "md5_local": "5f3348cb9612368df037582a6994ddb2",
+  "dhash": "1001001001110001010011011100110011001100110101000101010100110011",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-a3jha.jpg",
+  "group": "fla-packs",
+  "filename": "recent-a3jha.jpg",
+  "size_bytes": 262130,
+  "present_locally": true,
+  "md5_local": "562a5e72536ab296a5c2990b9252adf3",
+  "dhash": "1111000000110011001011110100110111010100100101101001011000110011",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-akfZy.jpg",
+  "group": "fla-packs",
+  "filename": "recent-akfZy.jpg",
+  "size_bytes": 403713,
+  "present_locally": true,
+  "md5_local": "e7835eace84ba77a27df86928db917c2",
+  "dhash": "0011001110110101100110000011001000100111001001110011100101011001",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-chKT5.jpg",
+  "group": "fla-packs",
+  "filename": "recent-chKT5.jpg",
+  "size_bytes": 237675,
+  "present_locally": true,
+  "md5_local": "22acde0f3b809746b89025d792e8f797",
+  "dhash": "0110100101110000000011110010110000101100001011000010110000001100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-etaPY.jpg",
+  "group": "fla-packs",
+  "filename": "recent-etaPY.jpg",
+  "size_bytes": 244286,
+  "present_locally": true,
+  "md5_local": "0c000357d92dd308dd0c66f9849d31d8",
+  "dhash": "1001000000110111000101101101111010010110000101101101011000100001",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-l3Ch8.jpg",
+  "group": "fla-packs",
+  "filename": "recent-l3Ch8.jpg",
+  "size_bytes": 272440,
+  "present_locally": true,
+  "md5_local": "4144a4f29f6845a5aa4442ceaeb9f6cc",
+  "dhash": "1001010001110001010011011110011000110110011101100101011000010001",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-lHT9s.jpg",
+  "group": "fla-packs",
+  "filename": "recent-lHT9s.jpg",
+  "size_bytes": 263981,
+  "present_locally": true,
+  "md5_local": "381068244b025307646490e4f284d889",
+  "dhash": "1110001101111100000111000111110001010101010101011011001000101011",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-mANuo.jpg",
+  "group": "fla-packs",
+  "filename": "recent-mANuo.jpg",
+  "size_bytes": 209557,
+  "present_locally": true,
+  "md5_local": "ee4b2b1a6041c6c7108268bb3189fa71",
+  "dhash": "0111000010010110100011100010100101010101100101101001011010101010",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-nh3HD.jpg",
+  "group": "fla-packs",
+  "filename": "recent-nh3HD.jpg",
+  "size_bytes": 246509,
+  "present_locally": true,
+  "md5_local": "8e7a0704da472e2e0cda4dce30cd580e",
+  "dhash": "1001011001110001000010111010110000111100001111000001110001001001",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-qIxLo.jpg",
+  "group": "fla-packs",
+  "filename": "recent-qIxLo.jpg",
+  "size_bytes": 229156,
+  "present_locally": true,
+  "md5_local": "e16cca250a26d715383f06ab0ea2b155",
+  "dhash": "1111010100110110010010110100110110001110101011101010111000101100",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-smAFI.jpg",
+  "group": "fla-packs",
+  "filename": "recent-smAFI.jpg",
+  "size_bytes": 257251,
+  "present_locally": true,
+  "md5_local": "87362abdc5c1bd46d49ee2058337fb74",
+  "dhash": "0111000110010110001011110100110111010100100101101011001000101001",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/jojo-packs/recent-w2Zh1.jpg",
+  "group": "fla-packs",
+  "filename": "recent-w2Zh1.jpg",
+  "size_bytes": 291861,
+  "present_locally": true,
+  "md5_local": "5f52e20655888d4602f44669a4458159",
+  "dhash": "1001010000110011001010110100110111010100100101101001011000110011",
+  "dimensions": "1200x1648",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-DGb2j.jpg",
+  "group": "fla-packs",
+  "filename": "clean-DGb2j.jpg",
+  "size_bytes": 215091,
+  "present_locally": true,
+  "md5_local": "32e1f4702c10754f8953b41e54996166",
+  "dhash": "1010100110100110001101100010011000101110001011100101111010100001",
+  "dimensions": "1792x1008",
+  "tags": [
+   "3quarter",
+   "lounge",
+   "quarter",
+   "seated",
+   "sit",
+   "sitting",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-F72A5.jpg",
+  "group": "fla-packs",
+  "filename": "clean-F72A5.jpg",
+  "size_bytes": 253763,
+  "present_locally": true,
+  "md5_local": "66430136dcfdc7832cf741484dfca269",
+  "dhash": "0001000000110011011011010110101101010101010101010001010110001010",
+  "dimensions": "1200x1648",
+  "tags": [
+   "3quarter",
+   "lounge",
+   "quarter",
+   "seated",
+   "sit",
+   "sitting",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-IUUgX.jpg",
+  "group": "fla-packs",
+  "filename": "clean-IUUgX.jpg",
+  "size_bytes": 261351,
+  "present_locally": true,
+  "md5_local": "61fc87d2afe3563d41454eeb1a38e7f8",
+  "dhash": "1011001001110001010010010110100101001110011001100101110010011100",
+  "dimensions": "1200x1648",
+  "tags": [
+   "3quarter",
+   "lounge",
+   "quarter",
+   "seated",
+   "sit",
+   "sitting",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-IowZk.jpg",
+  "group": "fla-packs",
+  "filename": "clean-IowZk.jpg",
+  "size_bytes": 243002,
+  "present_locally": true,
+  "md5_local": "4147d5c5240740a49d6f28ffbda91aa2",
+  "dhash": "1011000000110110000010110110111000101110001011100010110000010001",
+  "dimensions": "1200x1648",
+  "tags": [
+   "3quarter",
+   "lounge",
+   "quarter",
+   "seated",
+   "sit",
+   "sitting",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-N3ies.jpg",
+  "group": "fla-packs",
+  "filename": "clean-N3ies.jpg",
+  "size_bytes": 267097,
+  "present_locally": true,
+  "md5_local": "c90d25b07041355b58de6b172e81cd00",
+  "dhash": "1001000000110011000011100010111001010110010101100101011000010001",
+  "dimensions": "1200x1648",
+  "tags": [
+   "3quarter",
+   "lounge",
+   "quarter",
+   "seated",
+   "sit",
+   "sitting",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-OAFac.jpg",
+  "group": "fla-packs",
+  "filename": "clean-OAFac.jpg",
+  "size_bytes": 243049,
+  "present_locally": true,
+  "md5_local": "c7132156bed427e5d223883019d2ab65",
+  "dhash": "1011000001010101010010010100010001001100010011000110110000101101",
+  "dimensions": "1200x1648",
+  "tags": [
+   "3quarter",
+   "lounge",
+   "quarter",
+   "seated",
+   "sit",
+   "sitting",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-U8YqN.jpg",
+  "group": "fla-packs",
+  "filename": "clean-U8YqN.jpg",
+  "size_bytes": 215235,
+  "present_locally": true,
+  "md5_local": "3fa30be349da109b9486ff7cb0731772",
+  "dhash": "0111001010001100000010110101001100011100010111000101110000011100",
+  "dimensions": "1200x1648",
+  "tags": [
+   "3quarter",
+   "lounge",
+   "quarter",
+   "seated",
+   "sit",
+   "sitting",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-ZdzDG.jpg",
+  "group": "fla-packs",
+  "filename": "clean-ZdzDG.jpg",
+  "size_bytes": 254076,
+  "present_locally": true,
+  "md5_local": "c6ce04c65101e93610e2a599ca9b5b5c",
+  "dhash": "1001011001110001100011101000111010001110000011110101010011010100",
+  "dimensions": "1200x1648",
+  "tags": [
+   "3quarter",
+   "lounge",
+   "quarter",
+   "seated",
+   "sit",
+   "sitting",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-jvqhV.jpg",
+  "group": "fla-packs",
+  "filename": "clean-jvqhV.jpg",
+  "size_bytes": 248621,
+  "present_locally": true,
+  "md5_local": "2a0b03c42fab9c7a0cfa077c40375c64",
+  "dhash": "0100100001000001001111010011110000101100001011100010110000010001",
+  "dimensions": "1200x1648",
+  "tags": [
+   "3quarter",
+   "lounge",
+   "quarter",
+   "seated",
+   "sit",
+   "sitting",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-wDheK.jpg",
+  "group": "fla-packs",
+  "filename": "clean-wDheK.jpg",
+  "size_bytes": 227178,
+  "present_locally": true,
+  "md5_local": "afd775a8c395416366572a9dcbf59bed",
+  "dhash": "1011000000010110010010100110111001001110110011100101111000010101",
+  "dimensions": "1200x1648",
+  "tags": [
+   "3quarter",
+   "lounge",
+   "quarter",
+   "seated",
+   "sit",
+   "sitting",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-zxxqO.jpg",
+  "group": "fla-packs",
+  "filename": "clean-zxxqO.jpg",
+  "size_bytes": 334202,
+  "present_locally": true,
+  "md5_local": "48d9f7ff18568baf5fbb54340bd0394c",
+  "dhash": "0111001001000111011010011110110010000100100101110001011011010110",
+  "dimensions": "1200x1648",
+  "tags": [
+   "3quarter",
+   "lounge",
+   "quarter",
+   "seated",
+   "sit",
+   "sitting",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-packs/lounge-DGb2j.jpg",
+  "group": "fla-packs",
+  "filename": "lounge-DGb2j.jpg",
+  "size_bytes": 215091,
+  "present_locally": true,
+  "md5_local": "32e1f4702c10754f8953b41e54996166",
+  "dhash": "1010100110100110001101100010011000101110001011100101111010100001",
+  "dimensions": "1792x1008",
+  "tags": [
+   "lounge",
+   "seated",
+   "sit",
+   "sitting"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-packs/lounge-F72A5.jpg",
+  "group": "fla-packs",
+  "filename": "lounge-F72A5.jpg",
+  "size_bytes": 253763,
+  "present_locally": true,
+  "md5_local": "66430136dcfdc7832cf741484dfca269",
+  "dhash": "0001000000110011011011010110101101010101010101010001010110001010",
+  "dimensions": "1200x1648",
+  "tags": [
+   "lounge",
+   "seated",
+   "sit",
+   "sitting"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-packs/lounge-IUUgX.jpg",
+  "group": "fla-packs",
+  "filename": "lounge-IUUgX.jpg",
+  "size_bytes": 261351,
+  "present_locally": true,
+  "md5_local": "61fc87d2afe3563d41454eeb1a38e7f8",
+  "dhash": "1011001001110001010010010110100101001110011001100101110010011100",
+  "dimensions": "1200x1648",
+  "tags": [
+   "lounge",
+   "seated",
+   "sit",
+   "sitting"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-packs/lounge-IowZk.jpg",
+  "group": "fla-packs",
+  "filename": "lounge-IowZk.jpg",
+  "size_bytes": 243002,
+  "present_locally": true,
+  "md5_local": "4147d5c5240740a49d6f28ffbda91aa2",
+  "dhash": "1011000000110110000010110110111000101110001011100010110000010001",
+  "dimensions": "1200x1648",
+  "tags": [
+   "lounge",
+   "seated",
+   "sit",
+   "sitting"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-packs/lounge-N3ies.jpg",
+  "group": "fla-packs",
+  "filename": "lounge-N3ies.jpg",
+  "size_bytes": 267097,
+  "present_locally": true,
+  "md5_local": "c90d25b07041355b58de6b172e81cd00",
+  "dhash": "1001000000110011000011100010111001010110010101100101011000010001",
+  "dimensions": "1200x1648",
+  "tags": [
+   "lounge",
+   "seated",
+   "sit",
+   "sitting"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-packs/lounge-OAFac.jpg",
+  "group": "fla-packs",
+  "filename": "lounge-OAFac.jpg",
+  "size_bytes": 243049,
+  "present_locally": true,
+  "md5_local": "c7132156bed427e5d223883019d2ab65",
+  "dhash": "1011000001010101010010010100010001001100010011000110110000101101",
+  "dimensions": "1200x1648",
+  "tags": [
+   "lounge",
+   "seated",
+   "sit",
+   "sitting"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-packs/lounge-U8YqN.jpg",
+  "group": "fla-packs",
+  "filename": "lounge-U8YqN.jpg",
+  "size_bytes": 215235,
+  "present_locally": true,
+  "md5_local": "3fa30be349da109b9486ff7cb0731772",
+  "dhash": "0111001010001100000010110101001100011100010111000101110000011100",
+  "dimensions": "1200x1648",
+  "tags": [
+   "lounge",
+   "seated",
+   "sit",
+   "sitting"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-packs/lounge-ZdzDG.jpg",
+  "group": "fla-packs",
+  "filename": "lounge-ZdzDG.jpg",
+  "size_bytes": 254076,
+  "present_locally": true,
+  "md5_local": "c6ce04c65101e93610e2a599ca9b5b5c",
+  "dhash": "1001011001110001100011101000111010001110000011110101010011010100",
+  "dimensions": "1200x1648",
+  "tags": [
+   "lounge",
+   "seated",
+   "sit",
+   "sitting"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-packs/lounge-jvqhV.jpg",
+  "group": "fla-packs",
+  "filename": "lounge-jvqhV.jpg",
+  "size_bytes": 248621,
+  "present_locally": true,
+  "md5_local": "2a0b03c42fab9c7a0cfa077c40375c64",
+  "dhash": "0100100001000001001111010011110000101100001011100010110000010001",
+  "dimensions": "1200x1648",
+  "tags": [
+   "lounge",
+   "seated",
+   "sit",
+   "sitting"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-packs/lounge-wDheK.jpg",
+  "group": "fla-packs",
+  "filename": "lounge-wDheK.jpg",
+  "size_bytes": 227178,
+  "present_locally": true,
+  "md5_local": "afd775a8c395416366572a9dcbf59bed",
+  "dhash": "1011000000010110010010100110111001001110110011100101111000010101",
+  "dimensions": "1200x1648",
+  "tags": [
+   "lounge",
+   "seated",
+   "sit",
+   "sitting"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/lounge-packs/lounge-zxxqO.jpg",
+  "group": "fla-packs",
+  "filename": "lounge-zxxqO.jpg",
+  "size_bytes": 334202,
+  "present_locally": true,
+  "md5_local": "48d9f7ff18568baf5fbb54340bd0394c",
+  "dhash": "0111001001000111011010011110110010000100100101110001011011010110",
+  "dimensions": "1200x1648",
+  "tags": [
+   "lounge",
+   "seated",
+   "sit",
+   "sitting"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/references/tpose-front-alt.png",
+  "group": "fla-packs",
+  "filename": "tpose-front-alt.png",
+  "size_bytes": 71490,
+  "present_locally": true,
+  "md5_local": "62967a3e451db214b6c4f3a24798a4b6",
+  "dhash": "0011000011100000100101101110100001101000111100000001011101101001",
+  "dimensions": "1006x2236",
+  "tags": [
+   "front"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/references/tpose-front.png",
+  "group": "fla-packs",
+  "filename": "tpose-front.png",
+  "size_bytes": 75666,
+  "present_locally": true,
+  "md5_local": "72a3a1ff0974f1f6d69c8626ee5034f9",
+  "dhash": "1000110000110001010011010110100101001101010011010100110100010110",
+  "dimensions": "1100x1500",
+  "tags": [
+   "front"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/xray-vision/hands/xray-hand-sheet-1.jpg",
+  "group": "fla-packs",
+  "filename": "xray-hand-sheet-1.jpg",
+  "size_bytes": 258717,
+  "present_locally": true,
+  "md5_local": "6717efbbd8df0f578ce460f3314e4517",
+  "dhash": "0000000000000001001000100010000111010001000010100000010000100000",
+  "dimensions": "1792x1008",
+  "tags": [
+   "hand"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/xray-vision/hands/xray-hand-sheet-2.jpg",
+  "group": "fla-packs",
+  "filename": "xray-hand-sheet-2.jpg",
+  "size_bytes": 267049,
+  "present_locally": true,
+  "md5_local": "784087d7955a26761d1194de00339ab7",
+  "dhash": "0000000000100100110010110001101101100101010000111001110000000001",
+  "dimensions": "1792x1008",
+  "tags": [
+   "hand"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/xray-vision/hands/xray-hand-sheet-3.jpg",
+  "group": "fla-packs",
+  "filename": "xray-hand-sheet-3.jpg",
+  "size_bytes": 357975,
+  "present_locally": true,
+  "md5_local": "7794c05a9ca46939def4ea942191f270",
+  "dhash": "0010100110101010101010101010101010110110101001101010010000010011",
+  "dimensions": "1792x1008",
+  "tags": [
+   "hand"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/xray-vision/heads/xray-head-sheet-1.jpg",
+  "group": "fla-packs",
+  "filename": "xray-head-sheet-1.jpg",
+  "size_bytes": 234664,
+  "present_locally": true,
+  "md5_local": "cd3415bd582f2ba3551b751f1b279f2c",
+  "dhash": "0010001001010100001010110000101101010111010011110010000000000011",
+  "dimensions": "1792x1008",
+  "tags": [
+   "head"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/xray-vision/heads/xray-head-sheet-2.jpg",
+  "group": "fla-packs",
+  "filename": "xray-head-sheet-2.jpg",
+  "size_bytes": 255466,
+  "present_locally": true,
+  "md5_local": "dc9f120c78c45b68cedd1ccc140aa826",
+  "dhash": "0000000100010010101001011011010111010101110101010010101000000000",
+  "dimensions": "1792x1008",
+  "tags": [
+   "head"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/xray-vision/heads/xray-head-sheet-3.jpg",
+  "group": "fla-packs",
+  "filename": "xray-head-sheet-3.jpg",
+  "size_bytes": 234057,
+  "present_locally": true,
+  "md5_local": "445f92ab191c5b3cde4639cc1b9ed9b9",
+  "dhash": "0111001000001100010011010001110101010100010101000010101100000001",
+  "dimensions": "1792x1008",
+  "tags": [
+   "head"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/xray-vision/heads/xray-head-sheet-4.jpg",
+  "group": "fla-packs",
+  "filename": "xray-head-sheet-4.jpg",
+  "size_bytes": 285419,
+  "present_locally": true,
+  "md5_local": "4a2d24aadd7875171fc776631c4d5a11",
+  "dhash": "0010100001010110001010011010110110010111110101000010101100000001",
+  "dimensions": "1792x1008",
+  "tags": [
+   "head"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/xray-vision/heads/xray-head-sheet-5.jpg",
+  "group": "fla-packs",
+  "filename": "xray-head-sheet-5.jpg",
+  "size_bytes": 256619,
+  "present_locally": true,
+  "md5_local": "53552d3ecfe91ef3788f184a066ea1b7",
+  "dhash": "0010000001010110101010011010100101010001010101010010101000000000",
+  "dimensions": "1792x1008",
+  "tags": [
+   "head"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/xray-vision/xray-fla-3quarter-back.jpg",
+  "group": "fla-packs",
+  "filename": "xray-fla-3quarter-back.jpg",
+  "size_bytes": 347852,
+  "present_locally": true,
+  "md5_local": "a81874a548f6d09bbee1e42b164edee7",
+  "dhash": "1000100110010010110010100011001010101010101010101000101010010001",
+  "dimensions": "1792x1008",
+  "tags": [
+   "3quarter",
+   "back",
+   "quarter",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/xray-vision/xray-fla-3quarter-front.jpg",
+  "group": "fla-packs",
+  "filename": "xray-fla-3quarter-front.jpg",
+  "size_bytes": 358391,
+  "present_locally": true,
+  "md5_local": "636eb663dfdb2199372bf550387dbdcc",
+  "dhash": "0000000110110010101100100101001001010010001001101010011110000001",
+  "dimensions": "1792x1008",
+  "tags": [
+   "3quarter",
+   "front",
+   "quarter",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/xray-vision/xray-fla-back.jpg",
+  "group": "fla-packs",
+  "filename": "xray-fla-back.jpg",
+  "size_bytes": 292646,
+  "present_locally": true,
+  "md5_local": "3dfef7015daa71fca4e3cc345c85610a",
+  "dhash": "0011000111010110110101101101011011010110110101100111011011000010",
+  "dimensions": "1792x1008",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/xray-vision/xray-fla-front.jpg",
+  "group": "fla-packs",
+  "filename": "xray-fla-front.jpg",
+  "size_bytes": 333972,
+  "present_locally": true,
+  "md5_local": "fed18d76314d288da49dcececeff932f",
+  "dhash": "1000110110100010101010100100001010101010101010101010101000110001",
+  "dimensions": "1792x1008",
+  "tags": [
+   "front"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/fla-packs/xray-vision/xray-turnaround.jpg",
+  "group": "fla-packs",
+  "filename": "xray-turnaround.jpg",
+  "size_bytes": 325688,
+  "present_locally": true,
+  "md5_local": "c37033a3aadebb6de15c773de6d5953d",
+  "dhash": "0101010110101010101000101011001010100010101000101011001000000000",
+  "dimensions": "1792x1008",
+  "tags": [
+   "turnaround"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/layout-line-art/layout-beach-kitchen-subway-park.jpg",
+  "group": "layout-line-art",
+  "filename": "layout-beach-kitchen-subway-park.jpg",
+  "size_bytes": 627406,
+  "present_locally": true,
+  "md5_local": "4eff66a7a28527f31c3cce4338363a75",
+  "dhash": "0001101001111100100011000001001111010011110010001010001000110011",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/layout-line-art/layout-bedroom-garage-mountain-hallway.jpg",
+  "group": "layout-line-art",
+  "filename": "layout-bedroom-garage-mountain-hallway.jpg",
+  "size_bytes": 398137,
+  "present_locally": true,
+  "md5_local": "8036385717e9fcf662097a0e4b164f34",
+  "dhash": "0101100010011010000101100101011000011010100111000010001001010011",
+  "dimensions": "1888x1056",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/layout-line-art/layout-rooftop-office-desert-street.jpg",
+  "group": "layout-line-art",
+  "filename": "layout-rooftop-office-desert-street.jpg",
+  "size_bytes": 423365,
+  "present_locally": true,
+  "md5_local": "78637bdb79d59619b59ea5ccb0d10a3a",
+  "dhash": "0100100101000100000101011011010110000110000101011001010101100010",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/layout-line-art/layout-urban-interior.jpg",
+  "group": "layout-line-art",
+  "filename": "layout-urban-interior.jpg",
+  "size_bytes": 519303,
+  "present_locally": true,
+  "md5_local": "5c8f72f05d407515f55681d727ad942a",
+  "dhash": "0101101011011110100011101100001100100011011001010010000110010001",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/layout-line-art/layout-warehouse-forest-skyline.jpg",
+  "group": "layout-line-art",
+  "filename": "layout-warehouse-forest-skyline.jpg",
+  "size_bytes": 537127,
+  "present_locally": true,
+  "md5_local": "ba1eb6ad300ac8e0f9a605ed03378e3a",
+  "dhash": "1100001011000010110000100001001000011011100000110010001100100001",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/model-sheets/model-sheet-3quarter-back-set1.jpg",
+  "group": "model-sheets",
+  "filename": "model-sheet-3quarter-back-set1.jpg",
+  "size_bytes": 195048,
+  "present_locally": true,
+  "md5_local": "8f376e96a5df1c9bb77df34669316966",
+  "dhash": "1011000010110100101011011010111010101100011011010110110000101100",
+  "dimensions": "1888x1056",
+  "tags": [
+   "3quarter",
+   "back",
+   "quarter",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/model-sheets/model-sheet-3quarter-back-set2.jpg",
+  "group": "model-sheets",
+  "filename": "model-sheet-3quarter-back-set2.jpg",
+  "size_bytes": 186815,
+  "present_locally": true,
+  "md5_local": "eebc4c8d67cc6923b7148d3eec74f5fc",
+  "dhash": "0001001010110100101101001010010010100101011001000110010110100100",
+  "dimensions": "1888x1056",
+  "tags": [
+   "3quarter",
+   "back",
+   "quarter",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/model-sheets/model-sheet-3quarter-front-set2.jpg",
+  "group": "model-sheets",
+  "filename": "model-sheet-3quarter-front-set2.jpg",
+  "size_bytes": 213658,
+  "present_locally": true,
+  "md5_local": "47508407ac1bfb6b7a82b949638dabb1",
+  "dhash": "0011001000110100010010000100101001001010101110010110100101001100",
+  "dimensions": "1888x1056",
+  "tags": [
+   "3quarter",
+   "front",
+   "quarter",
+   "three"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/model-sheets/model-sheet-back-set1.jpg",
+  "group": "model-sheets",
+  "filename": "model-sheet-back-set1.jpg",
+  "size_bytes": 183239,
+  "present_locally": true,
+  "md5_local": "49a9488816faab78a083804b39ee5493",
+  "dhash": "0101000010110010101100101010101010101010101010100010101001001000",
+  "dimensions": "1888x1056",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/model-sheets/model-sheet-back-set2.jpg",
+  "group": "model-sheets",
+  "filename": "model-sheet-back-set2.jpg",
+  "size_bytes": 212515,
+  "present_locally": true,
+  "md5_local": "eda53baade89d37b7540f5193b548307",
+  "dhash": "1111000010110010101100101010101010101010101010000110100101001100",
+  "dimensions": "1888x1056",
+  "tags": [
+   "back"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/model-sheets/model-sheet-front-set2.jpg",
+  "group": "model-sheets",
+  "filename": "model-sheet-front-set2.jpg",
+  "size_bytes": 231517,
+  "present_locally": true,
+  "md5_local": "35be49498d58f9f35a1a90780ce9ad1d",
+  "dhash": "0111000010010110101010101010101010101010101010100110100001001100",
+  "dimensions": "1888x1056",
+  "tags": [
+   "front"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/model-sheets/model-sheet-side-set2.jpg",
+  "group": "model-sheets",
+  "filename": "model-sheet-side-set2.jpg",
+  "size_bytes": 176574,
+  "present_locally": true,
+  "md5_local": "9ae3319577e811edb5cdb805e5e94332",
+  "dhash": "0011010010010010010010100101101001011010110110100101101001001010",
+  "dimensions": "1888x1056",
+  "tags": [
+   "side"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/prop-scale-sheets/prop-scale-electronics-furniture.jpg",
+  "group": "prop-scale-sheets",
+  "filename": "prop-scale-electronics-furniture.jpg",
+  "size_bytes": 219818,
+  "present_locally": true,
+  "md5_local": "6525716d3287981e7a52682df86c67f3",
+  "dhash": "1101100011000001110010101101110011001100110011001101110011010101",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/prop-scale-sheets/prop-scale-outdoor-furniture.jpg",
+  "group": "prop-scale-sheets",
+  "filename": "prop-scale-outdoor-furniture.jpg",
+  "size_bytes": 375917,
+  "present_locally": true,
+  "md5_local": "503725f09622a9ed96b808340b14f6b3",
+  "dhash": "1001011110010101100011101010101010101010101011100100110001001100",
+  "dimensions": "1888x1056",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-8LjQY.jpg",
+  "group": "props",
+  "filename": "prop-8LjQY.jpg",
+  "size_bytes": 242542,
+  "present_locally": true,
+  "md5_local": "11e1a87ae43495057e21b4b5aa4f06b3",
+  "dhash": "1010110010001100100111001001111100011011010001100000110000011101",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-BBvxs.jpg",
+  "group": "props",
+  "filename": "prop-BBvxs.jpg",
+  "size_bytes": 134528,
+  "present_locally": true,
+  "md5_local": "d271f1ca5aa3df70eef66cd1735e50fe",
+  "dhash": "1000110010010010101100101001001010010110100100111001011000110110",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-HeTHP.jpg",
+  "group": "props",
+  "filename": "prop-HeTHP.jpg",
+  "size_bytes": 156654,
+  "present_locally": true,
+  "md5_local": "53804a0b19f5ac5cb3289c0c43c14c12",
+  "dhash": "1001000111010100010011000110100000111000000111010001111101000011",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-IApiu.jpg",
+  "group": "props",
+  "filename": "prop-IApiu.jpg",
+  "size_bytes": 145691,
+  "present_locally": true,
+  "md5_local": "72bf3c49e46f97ae4e2a1c21f10238f1",
+  "dhash": "1001011010010110100101101001010011010100101011001000110010001100",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-JmGUv.jpg",
+  "group": "props",
+  "filename": "prop-JmGUv.jpg",
+  "size_bytes": 149563,
+  "present_locally": true,
+  "md5_local": "d28e45918b3bf6eaed4ef9f639c595e9",
+  "dhash": "0011011100110110101101100110011110001110000011110001111100011111",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-Nr2it.jpg",
+  "group": "props",
+  "filename": "prop-Nr2it.jpg",
+  "size_bytes": 149609,
+  "present_locally": true,
+  "md5_local": "a6b16fc29b1059585c089345e2bab28c",
+  "dhash": "0010011110001111010011110100111100001110100011111100111100011111",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-SNnYp.jpg",
+  "group": "props",
+  "filename": "prop-SNnYp.jpg",
+  "size_bytes": 120766,
+  "present_locally": true,
+  "md5_local": "895551ead7c075f93ca47eb1fc4e1f3f",
+  "dhash": "0000100001110100001100101011010110110101001101010000101000010001",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-YAhuI.jpg",
+  "group": "props",
+  "filename": "prop-YAhuI.jpg",
+  "size_bytes": 196271,
+  "present_locally": true,
+  "md5_local": "4cf82f1c38b4e34934f86f3ba45aa6b9",
+  "dhash": "1101001000100010000001100000110111100100011111100000111100000011",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-ZG2Bt.jpg",
+  "group": "props",
+  "filename": "prop-ZG2Bt.jpg",
+  "size_bytes": 220044,
+  "present_locally": true,
+  "md5_local": "534bd48bd66146147ffcdd05623c07e9",
+  "dhash": "1000001010000111000011110000011111000111011101110011011100010111",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-bfSpz.jpg",
+  "group": "props",
+  "filename": "prop-bfSpz.jpg",
+  "size_bytes": 243330,
+  "present_locally": true,
+  "md5_local": "4559f9915296b9d9b8840372192155d3",
+  "dhash": "0100110101001100000011000001010000010100100111111011111111111100",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-fi3j8.jpg",
+  "group": "props",
+  "filename": "prop-fi3j8.jpg",
+  "size_bytes": 294348,
+  "present_locally": true,
+  "md5_local": "676a2a8e919b7f01e13c8befb653cf65",
+  "dhash": "0010011110110111000101110010101100011011000100110000001100110011",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-hvZmi.jpg",
+  "group": "props",
+  "filename": "prop-hvZmi.jpg",
+  "size_bytes": 166348,
+  "present_locally": true,
+  "md5_local": "7f538a11a3c2582249597645e2f53b34",
+  "dhash": "0011001100110011010011000000111100011111000111100011001010100000",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-izNQ9.jpg",
+  "group": "props",
+  "filename": "prop-izNQ9.jpg",
+  "size_bytes": 178154,
+  "present_locally": true,
+  "md5_local": "6910947fcaa4ea9207c1b3806507e7ae",
+  "dhash": "0001101001011010010110100100101001100011010000111010110011100000",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-jPaPG.jpg",
+  "group": "props",
+  "filename": "prop-jPaPG.jpg",
+  "size_bytes": 145634,
+  "present_locally": true,
+  "md5_local": "999d75a888ad11916f4ef8270cd0af98",
+  "dhash": "0110010001101011101010011000010000010110100100111000101111001100",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-luSwX.jpg",
+  "group": "props",
+  "filename": "prop-luSwX.jpg",
+  "size_bytes": 148385,
+  "present_locally": true,
+  "md5_local": "d2628a070f61692756d807fe5e505e4e",
+  "dhash": "1000110010001100101011011010110011000110110101101101101000001110",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-nFMhU.jpg",
+  "group": "props",
+  "filename": "prop-nFMhU.jpg",
+  "size_bytes": 190817,
+  "present_locally": true,
+  "md5_local": "2ea64567594f2f41b44a53a49d517939",
+  "dhash": "1011000110110010101100101001011010111000110110011101100111011000",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-oCpSw.jpg",
+  "group": "props",
+  "filename": "prop-oCpSw.jpg",
+  "size_bytes": 298989,
+  "present_locally": true,
+  "md5_local": "7dd840e6e9fb493ffbf26cc1c0e2733f",
+  "dhash": "0110000110010000100101001001011010001110100011000000111000001111",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-rY6iH.jpg",
+  "group": "props",
+  "filename": "prop-rY6iH.jpg",
+  "size_bytes": 162310,
+  "present_locally": true,
+  "md5_local": "602c89a397556ea74e680c35552839ec",
+  "dhash": "0011001100110100100111001000110011001101100011010000111100000111",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/props/prop-xyug7.jpg",
+  "group": "props",
+  "filename": "prop-xyug7.jpg",
+  "size_bytes": 159231,
+  "present_locally": true,
+  "md5_local": "1bcdbf721d5b030665ae3092377cc1d4",
+  "dhash": "1011010000110011000110011001100110011111000011110110011100101110",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/storyboards/storyboard-sheet-1.jpg",
+  "group": "storyboards",
+  "filename": "storyboard-sheet-1.jpg",
+  "size_bytes": 297699,
+  "present_locally": true,
+  "md5_local": "10c2542219bcff3213445cac78e26547",
+  "dhash": "1001011010010110100011010110110110010110011011101001011010010001",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/storyboards/storyboard-sheet-2.jpg",
+  "group": "storyboards",
+  "filename": "storyboard-sheet-2.jpg",
+  "size_bytes": 418665,
+  "present_locally": true,
+  "md5_local": "4b82a5b00ef15f226f0eaec1a73a3982",
+  "dhash": "1001010010100111011011110111010110110001001100100101011010010110",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/storyboards/storyboard-sheet-3.jpg",
+  "group": "storyboards",
+  "filename": "storyboard-sheet-3.jpg",
+  "size_bytes": 402461,
+  "present_locally": true,
+  "md5_local": "ce74f0f0ce0c0235ffd595931942391b",
+  "dhash": "1011001010010100010011010110100100010110001001000110110010001010",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/storyboards/storyboard-sheet-4.jpg",
+  "group": "storyboards",
+  "filename": "storyboard-sheet-4.jpg",
+  "size_bytes": 420999,
+  "present_locally": true,
+  "md5_local": "5dfe3b8a09295eed3d44eccdea4d03e7",
+  "dhash": "0111001001001010010010110100101101000011010001010100011111001011",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/storyboards/storyboard-sheet-5.jpg",
+  "group": "storyboards",
+  "filename": "storyboard-sheet-5.jpg",
+  "size_bytes": 360895,
+  "present_locally": true,
+  "md5_local": "0e8aaffbf89f23e5648a63cf6756a6f2",
+  "dhash": "1011011010100101010011011011011010010010100010011111000101110001",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/6KSNq.jpg",
+  "group": "variations",
+  "filename": "6KSNq.jpg",
+  "size_bytes": 357878,
+  "present_locally": true,
+  "md5_local": "6e2f5aa4899cc0f72a197f3e3e47af98",
+  "dhash": "1001001010110110101001001010010010101100101010001001001010110110",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/6TXRQ.jpg",
+  "group": "variations",
+  "filename": "6TXRQ.jpg",
+  "size_bytes": 376812,
+  "present_locally": true,
+  "md5_local": "97fb34f9f2e536b30aed947bf052c94c",
+  "dhash": "1100110010100101101011010001001010010110001010001010100110001001",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/9A7pl.jpg",
+  "group": "variations",
+  "filename": "9A7pl.jpg",
+  "size_bytes": 319920,
+  "present_locally": true,
+  "md5_local": "d6383f188d666eabe5ec9930921b1da9",
+  "dhash": "1000010011011101101110011011100110111011001100110111010110011100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/9AuKw.jpg",
+  "group": "variations",
+  "filename": "9AuKw.jpg",
+  "size_bytes": 331854,
+  "present_locally": true,
+  "md5_local": "e654570f54389c9f1db909cce0c83042",
+  "dhash": "0001010000011100101001000010010001101001110110101101001000110100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/FPEeg.jpg",
+  "group": "variations",
+  "filename": "FPEeg.jpg",
+  "size_bytes": 370249,
+  "present_locally": true,
+  "md5_local": "c3b9aa8b2d9742be6cca5ca515be36dd",
+  "dhash": "1010011011011101110011001011101000110011011000110110011110011100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/GCQ03.jpg",
+  "group": "variations",
+  "filename": "GCQ03.jpg",
+  "size_bytes": 398182,
+  "present_locally": true,
+  "md5_local": "78f43f73e64735b31b06528c7642d7a6",
+  "dhash": "0100101110010010101101100010010000100100001010000001101000110110",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/I2t0d.jpg",
+  "group": "variations",
+  "filename": "I2t0d.jpg",
+  "size_bytes": 309395,
+  "present_locally": true,
+  "md5_local": "825186775a797ab107b4f7b1bb8cf96c",
+  "dhash": "1000110011011101101110111011101110111011001100110111010110011100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/KRuoB.jpg",
+  "group": "variations",
+  "filename": "KRuoB.jpg",
+  "size_bytes": 323962,
+  "present_locally": true,
+  "md5_local": "9f41c1504db05bf18c2e5ae3b7495ad6",
+  "dhash": "0010000100100100001001000010010101011011110100101001001000100100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/Lf8uW.jpg",
+  "group": "variations",
+  "filename": "Lf8uW.jpg",
+  "size_bytes": 267266,
+  "present_locally": true,
+  "md5_local": "3dbded4ca05c6b889d97a17cd15562d8",
+  "dhash": "1010101010101000001010101010101010101010101101101010101000110010",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/N39Xr.jpg",
+  "group": "variations",
+  "filename": "N39Xr.jpg",
+  "size_bytes": 312637,
+  "present_locally": true,
+  "md5_local": "633d670539ac217b70383a0119f708e5",
+  "dhash": "0010110110101100101011100010110000101010001010100110101111001100",
+  "dimensions": "1264x1568",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/SWiWT.jpg",
+  "group": "variations",
+  "filename": "SWiWT.jpg",
+  "size_bytes": 369141,
+  "present_locally": true,
+  "md5_local": "1ed7ccf81f9f7a5236fcd840cf4c8979",
+  "dhash": "1000010011001100110011001001100010011001101000010011001111001100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/T2SRf.jpg",
+  "group": "variations",
+  "filename": "T2SRf.jpg",
+  "size_bytes": 321905,
+  "present_locally": true,
+  "md5_local": "baef71fd96891d91b72fe980694afd84",
+  "dhash": "1000100010001000100110011011101101110011010001000010110000001100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/TwyB6.jpg",
+  "group": "variations",
+  "filename": "TwyB6.jpg",
+  "size_bytes": 357543,
+  "present_locally": true,
+  "md5_local": "7933699804797139e0a60bdfe56ed97f",
+  "dhash": "1011010000100011001000111011011110100011110100111101001110001100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/URmgB.jpg",
+  "group": "variations",
+  "filename": "URmgB.jpg",
+  "size_bytes": 308301,
+  "present_locally": true,
+  "md5_local": "aa480342e2cc0b2e64db6e67942a79de",
+  "dhash": "0101101110100100001001010010010000100100001001000100101110110100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/V9r14.jpg",
+  "group": "variations",
+  "filename": "V9r14.jpg",
+  "size_bytes": 192316,
+  "present_locally": true,
+  "md5_local": "46fa982cb40723085ef3364e8af34413",
+  "dhash": "1011001010110110101101101011011010100110101001001011011001001001",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/adOmH.jpg",
+  "group": "variations",
+  "filename": "adOmH.jpg",
+  "size_bytes": 344601,
+  "present_locally": true,
+  "md5_local": "1d5df513000ffeb461d3742693fbef6f",
+  "dhash": "1000110011011101101110011001100110111011001000110111011111011100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/aqMG1.jpg",
+  "group": "variations",
+  "filename": "aqMG1.jpg",
+  "size_bytes": 257473,
+  "present_locally": true,
+  "md5_local": "d8a8b7a58632158b9ac555659eb99974",
+  "dhash": "0100100111011010100100101101001010010011100100101001001000101001",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/cDeSs.jpg",
+  "group": "variations",
+  "filename": "cDeSs.jpg",
+  "size_bytes": 285323,
+  "present_locally": true,
+  "md5_local": "2ea33808176b0715c8c9140d418128d2",
+  "dhash": "0101010110011100100011001010010000101010011011100101101010010101",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/dAvtg.jpg",
+  "group": "variations",
+  "filename": "dAvtg.jpg",
+  "size_bytes": 334976,
+  "present_locally": true,
+  "md5_local": "d1effb089b92f73a6fac2d7376de0b94",
+  "dhash": "1100101110010010101101100010010000101100001010000001001010110110",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/hJsrN.jpg",
+  "group": "variations",
+  "filename": "hJsrN.jpg",
+  "size_bytes": 393832,
+  "present_locally": true,
+  "md5_local": "de369fa2e48d4b0896fb9ee45485a301",
+  "dhash": "0101001001010010010110101101100001011000010110101100101001001010",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/rzhOh.jpg",
+  "group": "variations",
+  "filename": "rzhOh.jpg",
+  "size_bytes": 313751,
+  "present_locally": true,
+  "md5_local": "f6b02cc7b05a2b6baba342f4c4e3cb39",
+  "dhash": "0101101010010100001001010010010100101001010010101011001010010100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/sODBO.jpg",
+  "group": "variations",
+  "filename": "sODBO.jpg",
+  "size_bytes": 257508,
+  "present_locally": true,
+  "md5_local": "49a3b351e811c689d1532c009deaa8ef",
+  "dhash": "0011011011101001110011001000111011001100110011000110110010010100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/tMEvT.jpg",
+  "group": "variations",
+  "filename": "tMEvT.jpg",
+  "size_bytes": 287808,
+  "present_locally": true,
+  "md5_local": "5438fe44a9d55a541ab52df28141cb06",
+  "dhash": "0101101010010100001101000010010000101001010010101101001010110100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/uU0ry.jpg",
+  "group": "variations",
+  "filename": "uU0ry.jpg",
+  "size_bytes": 228316,
+  "present_locally": true,
+  "md5_local": "20ed156113f9cfe99bf988f9464738a5",
+  "dhash": "0000111010010110100101101001011111010100110011001100110001001101",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/action/wZf6q.jpg",
+  "group": "variations",
+  "filename": "wZf6q.jpg",
+  "size_bytes": 316582,
+  "present_locally": true,
+  "md5_local": "b4151364c9198835dbc113b8813c697b",
+  "dhash": "1011010000100011011010111101001110011011110100111101001100100100",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/flying/9dc2Q.jpg",
+  "group": "variations",
+  "filename": "9dc2Q.jpg",
+  "size_bytes": 534585,
+  "present_locally": true,
+  "md5_local": "0995b3f68dffe0c0d7d47200990393a3",
+  "dhash": "1010001010010101110001011001001000101110001010101100100010001000",
+  "dimensions": "1264x1568",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/flying/AKqzs.jpg",
+  "group": "variations",
+  "filename": "AKqzs.jpg",
+  "size_bytes": 271815,
+  "present_locally": true,
+  "md5_local": "b8891efdf20670b4bc1926e3b9e8c1d8",
+  "dhash": "1001110001010010101101100100110011000011100001010000010110000101",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/flying/CgfRw.jpg",
+  "group": "variations",
+  "filename": "CgfRw.jpg",
+  "size_bytes": 505428,
+  "present_locally": true,
+  "md5_local": "33d74b1b2360b5c58493b826d11ec8dc",
+  "dhash": "1000110010110110101101101101100010111011101001101001110010010010",
+  "dimensions": "1264x1568",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/flying/GQCnK.jpg",
+  "group": "variations",
+  "filename": "GQCnK.jpg",
+  "size_bytes": 480203,
+  "present_locally": true,
+  "md5_local": "ea32a8d32320989a176909d630bec7d3",
+  "dhash": "0111011001110011010010110100100100110010001100110001001111001100",
+  "dimensions": "1264x1568",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/flying/RbAEI.jpg",
+  "group": "variations",
+  "filename": "RbAEI.jpg",
+  "size_bytes": 464956,
+  "present_locally": true,
+  "md5_local": "e027fe686b63630bbb0df1ed0f51fb2e",
+  "dhash": "1100100010010110101110000101011010011011101011001010000010110011",
+  "dimensions": "1264x1568",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/flying/Thtr3.jpg",
+  "group": "variations",
+  "filename": "Thtr3.jpg",
+  "size_bytes": 260116,
+  "present_locally": true,
+  "md5_local": "ad6331c65c90792e4f1fb7f2cacfaaca",
+  "dhash": "1101010010100010110110101011000010011111111010011100000111000001",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/flying/VRwDb.jpg",
+  "group": "variations",
+  "filename": "VRwDb.jpg",
+  "size_bytes": 393352,
+  "present_locally": true,
+  "md5_local": "50bb143c3f3ceca8d80dd7c414600578",
+  "dhash": "1100111010010010001011010110111001001010110010101001000101001000",
+  "dimensions": "1264x1568",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/flying/abfwV.jpg",
+  "group": "variations",
+  "filename": "abfwV.jpg",
+  "size_bytes": 474583,
+  "present_locally": true,
+  "md5_local": "deff5c39da56c16cc427b3daab1f67ff",
+  "dhash": "0001100000010100110010001100101000001000000110011011100000101001",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/flying/ekuiT.jpg",
+  "group": "variations",
+  "filename": "ekuiT.jpg",
+  "size_bytes": 284984,
+  "present_locally": true,
+  "md5_local": "91b6a15d6e028053cc000f2194e2de2a",
+  "dhash": "1000110010110100101001100110111000100111000110010001011001111010",
+  "dimensions": "1168x784",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/flying/hGsDr.jpg",
+  "group": "variations",
+  "filename": "hGsDr.jpg",
+  "size_bytes": 487513,
+  "present_locally": true,
+  "md5_local": "a6066a112a37413c704b35a3920f95b9",
+  "dhash": "0110100110010101010101000101010111010101101101011001010100101010",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/flying/lQzUV.jpg",
+  "group": "variations",
+  "filename": "lQzUV.jpg",
+  "size_bytes": 527954,
+  "present_locally": true,
+  "md5_local": "78f60eecf2d0b1c3bb65dbea333edeec",
+  "dhash": "1010100010110100100100100010101011110100010101000001010000100110",
+  "dimensions": "1008x1792",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/flying/qGZGX.jpg",
+  "group": "variations",
+  "filename": "qGZGX.jpg",
+  "size_bytes": 458181,
+  "present_locally": true,
+  "md5_local": "e08829523d7bb0b88016ea3ae943dc6d",
+  "dhash": "1100110011011010010110101001010001010010010011101001100100011001",
+  "dimensions": "1792x1008",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/flying/ydJQP.jpg",
+  "group": "variations",
+  "filename": "ydJQP.jpg",
+  "size_bytes": 443002,
+  "present_locally": true,
+  "md5_local": "dea7b7a05c4b407b51d7ae4a0cd1985b",
+  "dhash": "1100110001110100101101110111000100110010010010010110100000011110",
+  "dimensions": "1264x1568",
+  "tags": []
+ },
+ {
+  "repo_path": "characters/sheets/variations/references/cape-jones-tpose-front-alt.png",
+  "group": "variations",
+  "filename": "cape-jones-tpose-front-alt.png",
+  "size_bytes": 71490,
+  "present_locally": true,
+  "md5_local": "62967a3e451db214b6c4f3a24798a4b6",
+  "dhash": "0011000011100000100101101110100001101000111100000001011101101001",
+  "dimensions": "1006x2236",
+  "tags": [
+   "cape",
+   "front"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/variations/references/cape-jones-tpose-front.png",
+  "group": "variations",
+  "filename": "cape-jones-tpose-front.png",
+  "size_bytes": 75666,
+  "present_locally": true,
+  "md5_local": "72a3a1ff0974f1f6d69c8626ee5034f9",
+  "dhash": "1000110000110001010011010110100101001101010011010100110100010110",
+  "dimensions": "1100x1500",
+  "tags": [
+   "cape",
+   "front"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/viseme-charts/viseme-chart-happy-angry.jpg",
+  "group": "viseme-charts",
+  "filename": "viseme-chart-happy-angry.jpg",
+  "size_bytes": 443885,
+  "present_locally": true,
+  "md5_local": "ff9ebe26a8c39a8a66653994885fdbc1",
+  "dhash": "1011011010010110100101101001011010010110100101101001011010010110",
+  "dimensions": "1792x1008",
+  "tags": [
+   "viseme"
+  ]
+ },
+ {
+  "repo_path": "characters/sheets/viseme-charts/viseme-chart-neutral-phonemes.jpg",
+  "group": "viseme-charts",
+  "filename": "viseme-chart-neutral-phonemes.jpg",
+  "size_bytes": 286307,
+  "present_locally": true,
+  "md5_local": "04452e64d1a962e3b3e61b286f535f45",
+  "dhash": "1010101010101010101010101010101010101010110101001101010011010100",
+  "dimensions": "1792x1008",
+  "tags": [
+   "viseme"
+  ]
+ }
+]

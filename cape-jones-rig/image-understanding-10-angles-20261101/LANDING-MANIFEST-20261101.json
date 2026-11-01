@@ -1,0 +1,87 @@
+{
+  "status": "PREPARED-NOT-LANDED",
+  "note": "Do NOT claim landed until a PR is merged AND every file is verified on main by size+SHA after merge. Hand this manifest to the land-all job. Excluded on purpose: work/living_room.blend + work/recliner_rigged.blend (already in repo 3d-assets/, must NOT be landed as duplicates), angles/media-generation-*.webp/json (byte-identical duplicates of the canonical angle-*.webp files, md5-verified), work/render_angles.py + rejected Blender framing (scratch, not a deliverable).",
+  "mode": "PR-only, additions only, 0 deletions, no force-push",
+  "files": [
+    {
+      "local_path": "/home/hatch/workspace/cape-jones-rig/canonical-main-room-10-angles-20261101/canonical-main-room-approved-2d-20261101.png",
+      "repo_path": "canonical-main-room-10-angles-20261101/canonical-main-room-approved-2d-20261101.png",
+      "bytes": 943142,
+      "md5": "3f557709a14444ecff7cb99398ed2cb6"
+    },
+    {
+      "local_path": "/home/hatch/workspace/cape-jones-rig/canonical-main-room-10-angles-20261101/CANONICAL-MAIN-ROOM-RECORD-20261101.md",
+      "repo_path": "canonical-main-room-10-angles-20261101/CANONICAL-MAIN-ROOM-RECORD-20261101.md",
+      "bytes": 2275,
+      "md5": "63f89b6710fac2e03afea3a532bfada9"
+    },
+    {
+      "local_path": "/home/hatch/workspace/cape-jones-rig/canonical-main-room-10-angles-20261101/contacts/contact-10-angles-20261101.png",
+      "repo_path": "canonical-main-room-10-angles-20261101/contacts/contact-10-angles-20261101.png",
+      "bytes": 2067729,
+      "md5": "4640a3340836b6840140374d4548425c"
+    },
+    {
+      "local_path": "/home/hatch/workspace/cape-jones-rig/canonical-main-room-10-angles-20261101/angles/angle-01-tv-facing-front-20261101.webp",
+      "repo_path": "canonical-main-room-10-angles-20261101/angles/angle-01-tv-facing-front-20261101.webp",
+      "bytes": 219974,
+      "md5": "bf786ec2d00ee46d4949824d8020dd98"
+    },
+    {
+      "local_path": "/home/hatch/workspace/cape-jones-rig/canonical-main-room-10-angles-20261101/angles/angle-02-chair-facing-20261101.webp",
+      "repo_path": "canonical-main-room-10-angles-20261101/angles/angle-02-chair-facing-20261101.webp",
+      "bytes": 240794,
+      "md5": "be789cd3d729461ed9ff81d8232c6bef"
+    },
+    {
+      "local_path": "/home/hatch/workspace/cape-jones-rig/canonical-main-room-10-angles-20261101/angles/angle-03-from-tv-side-20261101.webp",
+      "repo_path": "canonical-main-room-10-angles-20261101/angles/angle-03-from-tv-side-20261101.webp",
+      "bytes": 213444,
+      "md5": "a59882050ac6ec615e1c5442b14d7a70"
+    },
+    {
+      "local_path": "/home/hatch/workspace/cape-jones-rig/canonical-main-room-10-angles-20261101/angles/angle-04-from-window-side-20261101.webp",
+      "repo_path": "canonical-main-room-10-angles-20261101/angles/angle-04-from-window-side-20261101.webp",
+      "bytes": 219618,
+      "md5": "31940f69c39e8f882fc2f405c96ea97a"
+    },
+    {
+      "local_path": "/home/hatch/workspace/cape-jones-rig/canonical-main-room-10-angles-20261101/angles/angle-05-from-doorway-20261101.webp",
+      "repo_path": "canonical-main-room-10-angles-20261101/angles/angle-05-from-doorway-20261101.webp",
+      "bytes": 222622,
+      "md5": "c3896496d7dabbfab522adef6b1bc460"
+    },
+    {
+      "local_path": "/home/hatch/workspace/cape-jones-rig/canonical-main-room-10-angles-20261101/angles/angle-06-low-angle-20261101.webp",
+      "repo_path": "canonical-main-room-10-angles-20261101/angles/angle-06-low-angle-20261101.webp",
+      "bytes": 272368,
+      "md5": "92c0c0c8cbc91cedc85249d6ece1ddc8"
+    },
+    {
+      "local_path": "/home/hatch/workspace/cape-jones-rig/canonical-main-room-10-angles-20261101/angles/angle-07-high-angle-20261101.webp",
+      "repo_path": "canonical-main-room-10-angles-20261101/angles/angle-07-high-angle-20261101.webp",
+      "bytes": 221692,
+      "md5": "0e092ce2c56ab3d5f52748f37a860e39"
+    },
+    {
+      "local_path": "/home/hatch/workspace/cape-jones-rig/canonical-main-room-10-angles-20261101/angles/angle-08-rug-chair-closeup-20261101.webp",
+      "repo_path": "canonical-main-room-10-angles-20261101/angles/angle-08-rug-chair-closeup-20261101.webp",
+      "bytes": 186980,
+      "md5": "6e6f7f56b18beea14c6c9b57baaee072"
+    },
+    {
+      "local_path": "/home/hatch/workspace/cape-jones-rig/canonical-main-room-10-angles-20261101/angles/angle-09-coffee-table-foreground-20261101.webp",
+      "repo_path": "canonical-main-room-10-angles-20261101/angles/angle-09-coffee-table-foreground-20261101.webp",
+      "bytes": 189070,
+      "md5": "ef2fa714b53a9b89dd314b4ea3afa055"
+    },
+    {
+      "local_path": "/home/hatch/workspace/cape-jones-rig/canonical-main-room-10-angles-20261101/angles/angle-10-tv-stand-closeup-20261101.webp",
+      "repo_path": "canonical-main-room-10-angles-20261101/angles/angle-10-tv-stand-closeup-20261101.webp",
+      "bytes": 173870,
+      "md5": "f89c2ed402cb852062e489919a3a52bb"
+    }
+  ],
+  "total_bytes": 5173578,
+  "file_count": 13
+}

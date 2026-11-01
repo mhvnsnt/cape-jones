@@ -1,0 +1,63 @@
+{
+  "base": "rig-34-attachment-fix-20261101 (rebuilt, not layered over 1.45x hands, to keep 1 hand per arm)",
+  "prev": "rig-34-hands-replace-20261101",
+  "prev_md5": "92f22454ef4ccef200dbdd56a78dc008",
+  "old_scale": 1.45,
+  "new_scale": 1.0875,
+  "scale_factor": 0.75,
+  "fist_centres": {
+    "L": [
+      479,
+      791
+    ],
+    "R": [
+      909,
+      827
+    ]
+  },
+  "arm1_left": {
+    "source": "hand_spare_L.png, as-is",
+    "scale": 1.0875,
+    "angle_pil_rotate": 6,
+    "hand_bbox": [
+      436,
+      726,
+      522,
+      855
+    ]
+  },
+  "arm2_right": {
+    "source": "hand_spare_L.png MIRRORED left-right, thumb opposite Arm 1",
+    "scale": 1.0875,
+    "angle_pil_rotate": 0,
+    "hand_bbox": [
+      865,
+      763,
+      952,
+      889
+    ]
+  },
+  "hand_native_size": "81x117 -> 1.45x 117x170 -> 1.0875x 88x127",
+  "hands_total": 2,
+  "bbox": [
+    431,
+    195,
+    955,
+    1475
+  ],
+  "feet_alpha_bottom": {
+    "L": 1475,
+    "R": 1475
+  },
+  "fist_sliver_estimate": {
+    "arm1": {
+      "fist_neighbourhood_alpha_px": 6336,
+      "outside_hand_bbox_px": 241
+    },
+    "arm2": {
+      "fist_neighbourhood_alpha_px": 8942,
+      "outside_hand_bbox_px": 491
+    },
+    "note": "Estimate only: base-alpha pixels within r=55 of fist centre lying outside the scaled hand bbox. At 1.45x this was ~10px peek at zoom; smaller hand covers less, so peek is larger \u2014 see zooms, not faked away."
+  }
+}

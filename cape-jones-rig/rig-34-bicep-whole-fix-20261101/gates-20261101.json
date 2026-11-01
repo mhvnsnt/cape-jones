@@ -1,0 +1,722 @@
+{
+  "canvas": [
+    1400,
+    1600
+  ],
+  "bbox": [
+    225,
+    195,
+    901,
+    1410
+  ],
+  "alpha_bottom_overall": 1410,
+  "widget_ground_y": 1475,
+  "hands": 2,
+  "forearms_whole_with_attached_fist": 2,
+  "fists_drawn": 2,
+  "note": "Forearms whole as in widget; separate open hands drawn whole over them at saved positions. No piece square/rectangular cropped. Ground bottom is saved pose, not shifted to fake 1475.",
+  "audit": [
+    {
+      "id": "cape",
+      "source": "sitting-rig-34-20261101/pieces/cape_back.png",
+      "native_size": [
+        395,
+        692
+      ],
+      "display_size": [
+        514,
+        900
+      ],
+      "saved_xy": [
+        360,
+        330
+      ],
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 0,
+      "flip_whole": false,
+      "alpha_before_rotation": 308099,
+      "alpha_after_large_tmp_rotation": 308099,
+      "alpha_change_px": 0,
+      "alpha_change_pct": 0.0,
+      "alpha_bbox": [
+        360,
+        330,
+        874,
+        1230
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "upperArmL",
+      "source": "sitting-rig-34-20261101/pieces/upper_arm_L_socket.png",
+      "native_size": [
+        96,
+        182
+      ],
+      "display_size": [
+        125,
+        237
+      ],
+      "saved_xy": [
+        490,
+        390
+      ],
+      "rotation": 5,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 1,
+      "flip_whole": false,
+      "alpha_before_rotation": 22117,
+      "alpha_after_large_tmp_rotation": 22203,
+      "alpha_change_px": 86,
+      "alpha_change_pct": 0.39,
+      "alpha_bbox": [
+        470,
+        389,
+        612,
+        626
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "thighR",
+      "source": "sitting-rig-34-20261101/pieces/thigh_bent_R.png",
+      "native_size": [
+        168,
+        230
+      ],
+      "display_size": [
+        218,
+        299
+      ],
+      "saved_xy": [
+        590,
+        750
+      ],
+      "rotation": 6,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 2,
+      "flip_whole": false,
+      "alpha_before_rotation": 36446,
+      "alpha_after_large_tmp_rotation": 36535,
+      "alpha_change_px": 89,
+      "alpha_change_pct": 0.24,
+      "alpha_bbox": [
+        561,
+        755,
+        803,
+        1041
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "thighL",
+      "source": "sitting-rig-34-20261101/pieces/thigh_bent_L.png",
+      "native_size": [
+        177,
+        205
+      ],
+      "display_size": [
+        230,
+        267
+      ],
+      "saved_xy": [
+        400,
+        710
+      ],
+      "rotation": 2,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 3,
+      "flip_whole": false,
+      "alpha_before_rotation": 34543,
+      "alpha_after_large_tmp_rotation": 34617,
+      "alpha_change_px": 74,
+      "alpha_change_pct": 0.21,
+      "alpha_bbox": [
+        391,
+        711,
+        627,
+        975
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "forearmL",
+      "source": "cut-limbs-v7c/Arm_Front_Lower.png",
+      "native_size": [
+        153,
+        289
+      ],
+      "display_size": [
+        145,
+        275
+      ],
+      "saved_xy": [
+        455,
+        580
+      ],
+      "rotation": -15,
+      "pivot": [
+        0.39,
+        0.11
+      ],
+      "z": 4,
+      "flip_whole": false,
+      "alpha_before_rotation": 19784,
+      "alpha_after_large_tmp_rotation": 19751,
+      "alpha_change_px": -33,
+      "alpha_change_pct": -0.17,
+      "alpha_bbox": [
+        470,
+        572,
+        625,
+        841
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "pelvis",
+      "source": "sitting-rig-34-20261101/pieces/pelvis_belt.png",
+      "native_size": [
+        168,
+        139
+      ],
+      "display_size": [
+        218,
+        181
+      ],
+      "saved_xy": [
+        565,
+        650
+      ],
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 4,
+      "flip_whole": false,
+      "alpha_before_rotation": 30469,
+      "alpha_after_large_tmp_rotation": 30469,
+      "alpha_change_px": 0,
+      "alpha_change_pct": 0.0,
+      "alpha_bbox": [
+        565,
+        650,
+        783,
+        831
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "kneeL",
+      "source": "sitting-rig-34-20261101/pieces/knee_ball_spare.png",
+      "native_size": [
+        57,
+        72
+      ],
+      "display_size": [
+        74,
+        94
+      ],
+      "saved_xy": [
+        380,
+        885
+      ],
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 4,
+      "flip_whole": false,
+      "alpha_before_rotation": 5882,
+      "alpha_after_large_tmp_rotation": 5882,
+      "alpha_change_px": 0,
+      "alpha_change_pct": 0.0,
+      "alpha_bbox": [
+        380,
+        885,
+        454,
+        979
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "elbowCapL",
+      "source": "cut-limbs-v7c/Arm_Front_Cap.png",
+      "native_size": [
+        66,
+        66
+      ],
+      "display_size": [
+        63,
+        63
+      ],
+      "saved_xy": [
+        465,
+        580
+      ],
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 5,
+      "flip_whole": false,
+      "alpha_before_rotation": 3324,
+      "alpha_after_large_tmp_rotation": 3324,
+      "alpha_change_px": 0,
+      "alpha_change_pct": 0.0,
+      "alpha_bbox": [
+        465,
+        580,
+        528,
+        643
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "shinL",
+      "source": "sitting-rig-34-20261101/pieces/shin_boot_L.png",
+      "native_size": [
+        188,
+        315
+      ],
+      "display_size": [
+        244,
+        410
+      ],
+      "saved_xy": [
+        225,
+        945
+      ],
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 6,
+      "flip_whole": false,
+      "alpha_before_rotation": 41538,
+      "alpha_after_large_tmp_rotation": 41538,
+      "alpha_change_px": 0,
+      "alpha_change_pct": 0.0,
+      "alpha_bbox": [
+        225,
+        945,
+        469,
+        1355
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "shinR",
+      "source": "sitting-rig-34-20261101/pieces/shin_boot_mid.png",
+      "native_size": [
+        197,
+        319
+      ],
+      "display_size": [
+        256,
+        415
+      ],
+      "saved_xy": [
+        395,
+        985
+      ],
+      "rotation": -10,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 6,
+      "flip_whole": false,
+      "alpha_before_rotation": 41096,
+      "alpha_after_large_tmp_rotation": 41197,
+      "alpha_change_px": 101,
+      "alpha_change_pct": 0.25,
+      "alpha_bbox": [
+        461,
+        975,
+        664,
+        1411
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "kneeR",
+      "source": "sitting-rig-34-20261101/pieces/knee_ball_spare.png",
+      "native_size": [
+        57,
+        72
+      ],
+      "display_size": [
+        74,
+        94
+      ],
+      "saved_xy": [
+        560,
+        950
+      ],
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 7,
+      "flip_whole": false,
+      "alpha_before_rotation": 5882,
+      "alpha_after_large_tmp_rotation": 5882,
+      "alpha_change_px": 0,
+      "alpha_change_pct": 0.0,
+      "alpha_bbox": [
+        560,
+        950,
+        634,
+        1044
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "torso",
+      "source": "sitting-rig-34-20261101/pieces/torso.png",
+      "native_size": [
+        224,
+        242
+      ],
+      "display_size": [
+        291,
+        315
+      ],
+      "saved_xy": [
+        550,
+        370
+      ],
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 8,
+      "flip_whole": false,
+      "alpha_before_rotation": 74257,
+      "alpha_after_large_tmp_rotation": 74257,
+      "alpha_change_px": 0,
+      "alpha_change_pct": 0.0,
+      "alpha_bbox": [
+        550,
+        370,
+        841,
+        685
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "head",
+      "source": "sitting-rig-34-20261101/pieces/head_cowl.png",
+      "native_size": [
+        100,
+        151
+      ],
+      "display_size": [
+        130,
+        196
+      ],
+      "saved_xy": [
+        635,
+        195
+      ],
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 9,
+      "flip_whole": false,
+      "alpha_before_rotation": 22173,
+      "alpha_after_large_tmp_rotation": 22173,
+      "alpha_change_px": 0,
+      "alpha_change_pct": 0.0,
+      "alpha_bbox": [
+        635,
+        195,
+        765,
+        391
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "upperArmR",
+      "source": "sitting-rig-34-20261101/pieces/upper_arm_R.png",
+      "native_size": [
+        86,
+        197
+      ],
+      "display_size": [
+        112,
+        256
+      ],
+      "saved_xy": [
+        805,
+        420
+      ],
+      "rotation": 15,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 10,
+      "flip_whole": false,
+      "alpha_before_rotation": 24215,
+      "alpha_after_large_tmp_rotation": 24278,
+      "alpha_change_px": 63,
+      "alpha_change_pct": 0.26,
+      "alpha_bbox": [
+        767,
+        413,
+        902,
+        672
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "forearmR",
+      "source": "cut-limbs-v7c/Arm_Back_Lower.png",
+      "native_size": [
+        158,
+        288
+      ],
+      "display_size": [
+        150,
+        274
+      ],
+      "saved_xy": [
+        685,
+        650
+      ],
+      "rotation": 45,
+      "pivot": [
+        0.63,
+        0.11
+      ],
+      "z": 11,
+      "flip_whole": false,
+      "alpha_before_rotation": 19566,
+      "alpha_after_large_tmp_rotation": 19539,
+      "alpha_change_px": -27,
+      "alpha_change_pct": -0.14,
+      "alpha_bbox": [
+        593,
+        635,
+        825,
+        868
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "elbowCapR",
+      "source": "cut-limbs-v7c/Arm_Back_Cap.png",
+      "native_size": [
+        66,
+        66
+      ],
+      "display_size": [
+        63,
+        63
+      ],
+      "saved_xy": [
+        775,
+        610
+      ],
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 12,
+      "flip_whole": false,
+      "alpha_before_rotation": 3311,
+      "alpha_after_large_tmp_rotation": 3311,
+      "alpha_change_px": 0,
+      "alpha_change_pct": 0.0,
+      "alpha_bbox": [
+        775,
+        610,
+        838,
+        673
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "handL",
+      "source": "sitting-rig-34-20261101/pieces/hand_spare_L.png",
+      "native_size": [
+        81,
+        117
+      ],
+      "display_size": [
+        117,
+        170
+      ],
+      "saved_xy": [
+        530,
+        740
+      ],
+      "rotation": -46,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 13,
+      "flip_whole": false,
+      "alpha_before_rotation": 14339,
+      "alpha_after_large_tmp_rotation": 14453,
+      "alpha_change_px": 114,
+      "alpha_change_pct": 0.8,
+      "alpha_bbox": [
+        519,
+        741,
+        662,
+        912
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    },
+    {
+      "id": "handR",
+      "source": "sitting-rig-34-20261101/pieces/hand_spare_L.png",
+      "native_size": [
+        81,
+        117
+      ],
+      "display_size": [
+        117,
+        170
+      ],
+      "saved_xy": [
+        565,
+        755
+      ],
+      "rotation": 70,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 13,
+      "flip_whole": true,
+      "alpha_before_rotation": 14339,
+      "alpha_after_large_tmp_rotation": 14478,
+      "alpha_change_px": 139,
+      "alpha_change_pct": 0.97,
+      "alpha_bbox": [
+        546,
+        769,
+        707,
+        913
+      ],
+      "square_crop": "NO",
+      "rectangular_crop": "NO",
+      "cut": "NO",
+      "split": "NO",
+      "erased": "NO",
+      "status": "WHOLE"
+    }
+  ]
+}
