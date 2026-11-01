@@ -1,0 +1,198 @@
+{
+ "107": {
+  "bpm": 107,
+  "duration_sec": 17.9439,
+  "beat_sec": 0.5607,
+  "beat_frames_24fps": 13.46,
+  "stems": {
+   "dialogue": {
+    "integrated_lufs": null,
+    "note": "SILENCE placeholder \u2014 no recorded dialogue; ebur128 has no loudness to measure (-inf)"
+   },
+   "sfx": {
+    "integrated_lufs": -17.9,
+    "true_peak_db": NaN,
+    "lra_lu": 13.1,
+    "method": "ebur128"
+   },
+   "music": {
+    "integrated_lufs": -14.4,
+    "true_peak_db": NaN,
+    "lra_lu": 1.1,
+    "method": "ebur128"
+   },
+   "ambience": {
+    "integrated_lufs": -42.8,
+    "true_peak_db": NaN,
+    "lra_lu": 0.4,
+    "method": "ebur128"
+   },
+   "device_beep_metronome": {
+    "integrated_lufs": -23.6,
+    "true_peak_db": NaN,
+    "lra_lu": 3.8,
+    "method": "ebur128"
+   }
+  },
+  "stem_peaks": {
+   "dialogue": 0.0,
+   "sfx": 0.9233613967036983,
+   "music": 1.0274964606301316,
+   "ambience": 0.5285533905925275,
+   "device_beep_metronome": 0.300468411144298
+  },
+  "mix_final": {
+   "integrated_lufs": -14.0,
+   "true_peak_db": NaN,
+   "lra_lu": 2.4,
+   "method": "ebur128"
+  },
+  "mix_file": "/home/hatch/workspace/cape-jones-rig/recorded-audio-qc-options-20261031/final-mix-107bpm-minus14lufs-20261031.wav",
+  "normalisation_steps": [
+   {
+    "stage": "raw",
+    "measured": {
+     "input_i": "-18.92",
+     "input_tp": "-0.07",
+     "input_lra": "1.80",
+     "input_thresh": "-29.02",
+     "output_i": "-24.09",
+     "output_tp": "-6.45",
+     "output_lra": "1.40",
+     "output_thresh": "-34.16",
+     "normalization_type": "dynamic",
+     "target_offset": "0.09"
+    }
+   },
+   {
+    "stage": "loudnorm-pass0",
+    "measured_before": {
+     "input_i": "-18.92",
+     "input_tp": "-0.07",
+     "input_lra": "1.80",
+     "input_thresh": "-29.02",
+     "output_i": "-24.09",
+     "output_tp": "-6.45",
+     "output_lra": "1.40",
+     "output_thresh": "-34.16",
+     "normalization_type": "dynamic",
+     "target_offset": "0.09"
+    },
+    "verify": {
+     "integrated_lufs": -14.7,
+     "true_peak_db": NaN,
+     "lra_lu": 2.4,
+     "method": "ebur128"
+    }
+   },
+   {
+    "stage": "gain-correction",
+    "gain_db": 0.7,
+    "verify": {
+     "integrated_lufs": -14.0,
+     "true_peak_db": NaN,
+     "lra_lu": 2.4,
+     "method": "ebur128"
+    }
+   }
+  ]
+ },
+ "152": {
+  "bpm": 152,
+  "duration_sec": 12.6316,
+  "beat_sec": 0.3947,
+  "beat_frames_24fps": 9.47,
+  "stems": {
+   "dialogue": {
+    "integrated_lufs": null,
+    "note": "SILENCE placeholder \u2014 no recorded dialogue; ebur128 has no loudness to measure (-inf)"
+   },
+   "sfx": {
+    "integrated_lufs": -18.0,
+    "true_peak_db": NaN,
+    "lra_lu": 10.2,
+    "method": "ebur128"
+   },
+   "music": {
+    "integrated_lufs": -13.7,
+    "true_peak_db": NaN,
+    "lra_lu": 0.5,
+    "method": "ebur128"
+   },
+   "ambience": {
+    "integrated_lufs": -43.5,
+    "true_peak_db": NaN,
+    "lra_lu": 0.4,
+    "method": "ebur128"
+   },
+   "device_beep_metronome": {
+    "integrated_lufs": -23.2,
+    "true_peak_db": NaN,
+    "lra_lu": 4.5,
+    "method": "ebur128"
+   }
+  },
+  "stem_peaks": {
+   "dialogue": 0.0,
+   "sfx": 0.9233613967036983,
+   "music": 1.0095698390133665,
+   "ambience": 0.5285533905925868,
+   "device_beep_metronome": 0.300468411144298
+  },
+  "mix_final": {
+   "integrated_lufs": -14.0,
+   "true_peak_db": NaN,
+   "lra_lu": 1.6,
+   "method": "ebur128"
+  },
+  "mix_file": "/home/hatch/workspace/cape-jones-rig/recorded-audio-qc-options-20261031/final-mix-152bpm-minus14lufs-20261031.wav",
+  "normalisation_steps": [
+   {
+    "stage": "raw",
+    "measured": {
+     "input_i": "-18.22",
+     "input_tp": "-0.07",
+     "input_lra": "1.80",
+     "input_thresh": "-28.22",
+     "output_i": "-24.02",
+     "output_tp": "-6.87",
+     "output_lra": "1.60",
+     "output_thresh": "-34.02",
+     "normalization_type": "dynamic",
+     "target_offset": "0.02"
+    }
+   },
+   {
+    "stage": "loudnorm-pass0",
+    "measured_before": {
+     "input_i": "-18.22",
+     "input_tp": "-0.07",
+     "input_lra": "1.80",
+     "input_thresh": "-28.22",
+     "output_i": "-24.02",
+     "output_tp": "-6.87",
+     "output_lra": "1.60",
+     "output_thresh": "-34.02",
+     "normalization_type": "dynamic",
+     "target_offset": "0.02"
+    },
+    "verify": {
+     "integrated_lufs": -14.6,
+     "true_peak_db": NaN,
+     "lra_lu": 1.6,
+     "method": "ebur128"
+    }
+   },
+   {
+    "stage": "gain-correction",
+    "gain_db": 0.6,
+    "verify": {
+     "integrated_lufs": -14.0,
+     "true_peak_db": NaN,
+     "lra_lu": 1.6,
+     "method": "ebur128"
+    }
+   }
+  ]
+ }
+}
