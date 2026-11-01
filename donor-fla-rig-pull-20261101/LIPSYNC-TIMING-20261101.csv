@@ -1,0 +1,97 @@
+frame,time_s,cape_jones_mouth_piece,phoneme_class,note
+0,0.0,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+1,0.042,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+2,0.083,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+3,0.125,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+4,0.167,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+5,0.208,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+6,0.25,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+7,0.292,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+8,0.333,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+9,0.375,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+10,0.417,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
+11,0.458,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
+12,0.5,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+13,0.542,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+14,0.583,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+15,0.625,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+16,0.667,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+17,0.708,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+18,0.75,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+19,0.792,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+20,0.833,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+21,0.875,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+22,0.917,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
+23,0.958,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
+24,1.0,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+25,1.042,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+26,1.083,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+27,1.125,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+28,1.167,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+29,1.208,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+30,1.25,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+31,1.292,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+32,1.333,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+33,1.375,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+34,1.417,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
+35,1.458,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
+36,1.5,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+37,1.542,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+38,1.583,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+39,1.625,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+40,1.667,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+41,1.708,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+42,1.75,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+43,1.792,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+44,1.833,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+45,1.875,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+46,1.917,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
+47,1.958,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
+48,2.0,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+49,2.042,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+50,2.083,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+51,2.125,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+52,2.167,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+53,2.208,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+54,2.25,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+55,2.292,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+56,2.333,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+57,2.375,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+58,2.417,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
+59,2.458,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
+60,2.5,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+61,2.542,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+62,2.583,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+63,2.625,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+64,2.667,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+65,2.708,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+66,2.75,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+67,2.792,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+68,2.833,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+69,2.875,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+70,2.917,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
+71,2.958,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
+72,3.0,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+73,3.042,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+74,3.083,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+75,3.125,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+76,3.167,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+77,3.208,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+78,3.25,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+79,3.292,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+80,3.333,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+81,3.375,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+82,3.417,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
+83,3.458,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
+84,3.5,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+85,3.542,Closed,rest/closure,TEMPLATE ONLY - no donor line, no donor voice
+86,3.583,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+87,3.625,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+88,3.667,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+89,3.708,Open,vowel,TEMPLATE ONLY - no donor line, no donor voice
+90,3.75,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+91,3.792,Teeth,fricative,TEMPLATE ONLY - no donor line, no donor voice
+92,3.833,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+93,3.875,Shout,stressed vowel,TEMPLATE ONLY - no donor line, no donor voice
+94,3.917,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
+95,3.958,Smile,hold,TEMPLATE ONLY - no donor line, no donor voice
