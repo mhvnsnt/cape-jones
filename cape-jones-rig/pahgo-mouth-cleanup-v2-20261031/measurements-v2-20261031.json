@@ -1,0 +1,213 @@
+[
+ {
+  "key": "mbp-v2",
+  "source": "mbp-front-09_tight_patch.png",
+  "angle": "front",
+  "thin_line_rule": true,
+  "orig_alpha": 93,
+  "leak_nonmouth": 0,
+  "leak_thin_or_bbox": 0,
+  "leak_fragments": 26,
+  "clean_alpha": 67,
+  "removed": 26,
+  "scale": 2.4512,
+  "resized": [
+   211,
+   25
+  ],
+  "alpha_bbox": [
+   20,
+   5,
+   102,
+   16,
+   381
+  ],
+  "alpha_px": 381,
+  "fringe_dropped": 618,
+  "target": [
+   231.5,
+   504.5
+  ]
+ },
+ {
+  "key": "ah-v2",
+  "source": "ah-front-03_tight_patch.png",
+  "angle": "front",
+  "thin_line_rule": false,
+  "orig_alpha": 11096,
+  "leak_nonmouth": 438,
+  "leak_thin_or_bbox": 1105,
+  "leak_fragments": 0,
+  "clean_alpha": 9553,
+  "removed": 1543,
+  "scale": 0.7117,
+  "resized": [
+   211,
+   70
+  ],
+  "alpha_bbox": [
+   0,
+   12,
+   163,
+   69,
+   4860
+  ],
+  "alpha_px": 4860,
+  "fringe_dropped": 637,
+  "target": [
+   231.5,
+   504.5
+  ]
+ },
+ {
+  "key": "gk-v2",
+  "source": "gk-front-05_tight_patch.png",
+  "angle": "front",
+  "thin_line_rule": false,
+  "orig_alpha": 15716,
+  "leak_nonmouth": 404,
+  "leak_thin_or_bbox": 350,
+  "leak_fragments": 0,
+  "clean_alpha": 14962,
+  "removed": 754,
+  "scale": 0.3968,
+  "resized": [
+   211,
+   32
+  ],
+  "alpha_bbox": [
+   26,
+   6,
+   210,
+   26,
+   2445
+  ],
+  "alpha_px": 2445,
+  "fringe_dropped": 617,
+  "target": [
+   231.5,
+   504.5
+  ]
+ },
+ {
+  "key": "ee-v2",
+  "source": "04_smile-ee_patch.png",
+  "angle": "front",
+  "thin_line_rule": true,
+  "orig_alpha": 1678,
+  "leak_nonmouth": 170,
+  "leak_thin_or_bbox": 0,
+  "leak_fragments": 0,
+  "leak_face_block": 1146,
+  "clean_alpha": 362,
+  "removed": 1316,
+  "scale": 1.2443,
+  "resized": [
+   200,
+   113
+  ],
+  "alpha_bbox": [
+   12,
+   40,
+   192,
+   106,
+   578
+  ],
+  "alpha_px": 578,
+  "fringe_dropped": 683,
+  "target": [
+   231.5,
+   504.5
+  ]
+ },
+ {
+  "key": "ah34-v2",
+  "source": "01_shout-ah_patch.png",
+  "angle": "3/4-source",
+  "thin_line_rule": false,
+  "orig_alpha": 54560,
+  "leak_nonmouth": 662,
+  "leak_thin_or_bbox": 823,
+  "leak_fragments": 1,
+  "clean_alpha": 53074,
+  "removed": 1486,
+  "scale": 0.5257,
+  "resized": [
+   211,
+   100
+  ],
+  "alpha_bbox": [
+   24,
+   0,
+   210,
+   99,
+   14722
+  ],
+  "alpha_px": 14722,
+  "fringe_dropped": 570,
+  "target": [
+   231.5,
+   504.5
+  ]
+ },
+ {
+  "key": "mbp34-v2",
+  "source": "02_closed-mbp_patch.png",
+  "angle": "3/4-source",
+  "thin_line_rule": true,
+  "orig_alpha": 307,
+  "leak_nonmouth": 35,
+  "leak_thin_or_bbox": 0,
+  "leak_fragments": 0,
+  "clean_alpha": 272,
+  "removed": 35,
+  "scale": 1.3958,
+  "resized": [
+   211,
+   36
+  ],
+  "alpha_bbox": [
+   0,
+   0,
+   210,
+   13,
+   521
+  ],
+  "alpha_px": 521,
+  "fringe_dropped": 351,
+  "target": [
+   231.5,
+   504.5
+  ]
+ },
+ {
+  "key": "smile34-v2",
+  "source": "06_rbn01-open-smile_patch.png",
+  "angle": "3/4-source",
+  "thin_line_rule": false,
+  "orig_alpha": 6821,
+  "leak_nonmouth": 618,
+  "leak_thin_or_bbox": 236,
+  "leak_fragments": 21,
+  "clean_alpha": 5946,
+  "removed": 875,
+  "scale": 1.317,
+  "resized": [
+   179,
+   113
+  ],
+  "alpha_bbox": [
+   0,
+   24,
+   178,
+   112,
+   10257
+  ],
+  "alpha_px": 10257,
+  "fringe_dropped": 1473,
+  "target": [
+   231.5,
+   504.5
+  ]
+ }
+]

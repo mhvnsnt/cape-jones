@@ -1,0 +1,1040 @@
+{
+  "1_fist": {
+    "hand": "Hand_1_Fist.png",
+    "operation": "VERTICAL FLIP IN PLACE",
+    "gate": {
+      "L": {
+        "arm": "Arm1",
+        "mirror_horizontal_inplace": true,
+        "angle": 90,
+        "scale": 1.275,
+        "operation": "VERTICAL FLIP IN PLACE",
+        "wrist_target": [
+          268.1,
+          429.8
+        ],
+        "forearm_end": [
+          248.1,
+          429.8
+        ],
+        "centre_pre": [
+          215.1,
+          435.8
+        ],
+        "centre_post": [
+          215.1,
+          423.8
+        ],
+        "centre_shift_px": [
+          0.0,
+          -12.0
+        ],
+        "gate_pre": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            151.3,
+            442.9
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 97.7,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "gate_post": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            151.3,
+            416.7
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 97.7,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "finger_dir_pre": [
+          -0.994,
+          0.112
+        ],
+        "hand_bbox_pre": [
+          151,
+          383,
+          277,
+          487
+        ],
+        "hand_bbox_post": [
+          151,
+          370,
+          277,
+          474
+        ],
+        "wrist_to_bbox_top_pre": 46.8,
+        "wrist_to_bbox_bottom_pre": 57.2,
+        "wrist_to_bbox_top_post": 59.8,
+        "wrist_to_bbox_bottom_post": 44.2,
+        "finger_dir_post": [
+          -0.994,
+          -0.112
+        ]
+      },
+      "R": {
+        "arm": "Arm2",
+        "mirror_horizontal_inplace": false,
+        "angle": -90,
+        "scale": 1.275,
+        "operation": "VERTICAL FLIP IN PLACE",
+        "wrist_target": [
+          1231.9,
+          423.2
+        ],
+        "forearm_end": [
+          1251.9,
+          423.2
+        ],
+        "centre_pre": [
+          1284.9,
+          429.1
+        ],
+        "centre_post": [
+          1284.9,
+          417.2
+        ],
+        "centre_shift_px": [
+          0.0,
+          -12.0
+        ],
+        "gate_pre": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1348.7,
+            436.3
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 97.7,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "gate_post": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1348.7,
+            410.0
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 97.7,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "finger_dir_pre": [
+          0.994,
+          0.112
+        ],
+        "hand_bbox_pre": [
+          1221,
+          377,
+          1347,
+          481
+        ],
+        "hand_bbox_post": [
+          1221,
+          364,
+          1347,
+          468
+        ],
+        "wrist_to_bbox_top_pre": 46.2,
+        "wrist_to_bbox_bottom_pre": 57.8,
+        "wrist_to_bbox_top_post": 59.2,
+        "wrist_to_bbox_bottom_post": 44.8,
+        "finger_dir_post": [
+          0.994,
+          -0.112
+        ]
+      }
+    },
+    "no_crop": {
+      "pass": true,
+      "bbox": [
+        151,
+        253,
+        1347,
+        1311
+      ]
+    }
+  },
+  "3_open": {
+    "hand": "Hand_3_Open.png",
+    "operation": "VERTICAL FLIP IN PLACE",
+    "gate": {
+      "L": {
+        "arm": "Arm1",
+        "mirror_horizontal_inplace": true,
+        "angle": 90,
+        "scale": 1.275,
+        "operation": "VERTICAL FLIP IN PLACE",
+        "wrist_target": [
+          268.1,
+          429.8
+        ],
+        "forearm_end": [
+          248.1,
+          429.8
+        ],
+        "centre_pre": [
+          194.0,
+          426.7
+        ],
+        "centre_post": [
+          194.0,
+          432.9
+        ],
+        "centre_shift_px": [
+          0.0,
+          6.1
+        ],
+        "gate_pre": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            109.2,
+            431.6
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 138.9,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "gate_post": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            109.2,
+            428.0
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 138.9,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "finger_dir_pre": [
+          -1.0,
+          0.011
+        ],
+        "hand_bbox_pre": [
+          109,
+          366,
+          277,
+          490
+        ],
+        "hand_bbox_post": [
+          109,
+          368,
+          277,
+          492
+        ],
+        "wrist_to_bbox_top_pre": 63.8,
+        "wrist_to_bbox_bottom_pre": 60.2,
+        "wrist_to_bbox_top_post": 61.8,
+        "wrist_to_bbox_bottom_post": 62.2,
+        "finger_dir_post": [
+          -1.0,
+          -0.011
+        ]
+      },
+      "R": {
+        "arm": "Arm2",
+        "mirror_horizontal_inplace": false,
+        "angle": -90,
+        "scale": 1.275,
+        "operation": "VERTICAL FLIP IN PLACE",
+        "wrist_target": [
+          1231.9,
+          423.2
+        ],
+        "forearm_end": [
+          1251.9,
+          423.2
+        ],
+        "centre_pre": [
+          1306.0,
+          420.1
+        ],
+        "centre_post": [
+          1306.0,
+          426.2
+        ],
+        "centre_shift_px": [
+          0.0,
+          6.1
+        ],
+        "gate_pre": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1390.8,
+            424.9
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 138.9,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "gate_post": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1390.8,
+            421.4
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 138.9,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "finger_dir_pre": [
+          1.0,
+          0.011
+        ],
+        "hand_bbox_pre": [
+          1221,
+          359,
+          1389,
+          483
+        ],
+        "hand_bbox_post": [
+          1221,
+          361,
+          1389,
+          485
+        ],
+        "wrist_to_bbox_top_pre": 64.2,
+        "wrist_to_bbox_bottom_pre": 59.8,
+        "wrist_to_bbox_top_post": 62.2,
+        "wrist_to_bbox_bottom_post": 61.8,
+        "finger_dir_post": [
+          1.0,
+          -0.011
+        ]
+      }
+    },
+    "no_crop": {
+      "pass": true,
+      "bbox": [
+        109,
+        253,
+        1389,
+        1311
+      ]
+    }
+  },
+  "4_point": {
+    "hand": "Hand_4_Point.png",
+    "operation": "VERTICAL FLIP IN PLACE",
+    "gate": {
+      "L": {
+        "arm": "Arm1",
+        "mirror_horizontal_inplace": true,
+        "angle": 90,
+        "scale": 1.275,
+        "operation": "VERTICAL FLIP IN PLACE",
+        "wrist_target": [
+          268.1,
+          429.8
+        ],
+        "forearm_end": [
+          248.1,
+          429.8
+        ],
+        "centre_pre": [
+          189.6,
+          431.1
+        ],
+        "centre_post": [
+          189.6,
+          428.5
+        ],
+        "centre_shift_px": [
+          0.0,
+          -2.5
+        ],
+        "gate_pre": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            100.3,
+            430.4
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 147.8,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "gate_post": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            100.3,
+            429.2
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 147.8,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "finger_dir_pre": [
+          -1.0,
+          0.004
+        ],
+        "hand_bbox_pre": [
+          100,
+          382,
+          277,
+          481
+        ],
+        "hand_bbox_post": [
+          100,
+          377,
+          277,
+          476
+        ],
+        "wrist_to_bbox_top_pre": 47.8,
+        "wrist_to_bbox_bottom_pre": 51.2,
+        "wrist_to_bbox_top_post": 52.8,
+        "wrist_to_bbox_bottom_post": 46.2,
+        "finger_dir_post": [
+          -1.0,
+          -0.004
+        ]
+      },
+      "R": {
+        "arm": "Arm2",
+        "mirror_horizontal_inplace": false,
+        "angle": -90,
+        "scale": 1.275,
+        "operation": "VERTICAL FLIP IN PLACE",
+        "wrist_target": [
+          1231.9,
+          423.2
+        ],
+        "forearm_end": [
+          1251.9,
+          423.2
+        ],
+        "centre_pre": [
+          1310.4,
+          424.4
+        ],
+        "centre_post": [
+          1310.4,
+          421.9
+        ],
+        "centre_shift_px": [
+          0.0,
+          -2.5
+        ],
+        "gate_pre": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1399.7,
+            423.8
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 147.8,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "gate_post": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1399.7,
+            422.5
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 147.8,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "finger_dir_pre": [
+          1.0,
+          0.004
+        ],
+        "hand_bbox_pre": [
+          1221,
+          375,
+          1398,
+          474
+        ],
+        "hand_bbox_post": [
+          1221,
+          370,
+          1398,
+          469
+        ],
+        "wrist_to_bbox_top_pre": 48.2,
+        "wrist_to_bbox_bottom_pre": 50.8,
+        "wrist_to_bbox_top_post": 53.2,
+        "wrist_to_bbox_bottom_post": 45.8,
+        "finger_dir_post": [
+          1.0,
+          -0.004
+        ]
+      }
+    },
+    "no_crop": {
+      "pass": true,
+      "bbox": [
+        100,
+        253,
+        1398,
+        1311
+      ]
+    }
+  },
+  "5_point2": {
+    "hand": "Hand_5_Point2.png",
+    "operation": "VERTICAL FLIP IN PLACE",
+    "gate": {
+      "L": {
+        "arm": "Arm1",
+        "mirror_horizontal_inplace": true,
+        "angle": 90,
+        "scale": 1.275,
+        "operation": "VERTICAL FLIP IN PLACE",
+        "wrist_target": [
+          268.1,
+          429.8
+        ],
+        "forearm_end": [
+          248.1,
+          429.8
+        ],
+        "centre_pre": [
+          189.8,
+          433.5
+        ],
+        "centre_post": [
+          189.8,
+          426.1
+        ],
+        "centre_shift_px": [
+          0.0,
+          -7.4
+        ],
+        "gate_pre": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            100.6,
+            444.1
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 148.2,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "gate_post": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            100.6,
+            415.5
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 148.2,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "finger_dir_pre": [
+          -0.996,
+          0.085
+        ],
+        "hand_bbox_pre": [
+          100,
+          376,
+          277,
+          488
+        ],
+        "hand_bbox_post": [
+          100,
+          369,
+          277,
+          481
+        ],
+        "wrist_to_bbox_top_pre": 53.8,
+        "wrist_to_bbox_bottom_pre": 58.2,
+        "wrist_to_bbox_top_post": 60.8,
+        "wrist_to_bbox_bottom_post": 51.2,
+        "finger_dir_post": [
+          -0.996,
+          -0.085
+        ]
+      },
+      "R": {
+        "arm": "Arm2",
+        "mirror_horizontal_inplace": false,
+        "angle": -90,
+        "scale": 1.275,
+        "operation": "VERTICAL FLIP IN PLACE",
+        "wrist_target": [
+          1231.9,
+          423.2
+        ],
+        "forearm_end": [
+          1251.9,
+          423.2
+        ],
+        "centre_pre": [
+          1310.2,
+          426.8
+        ],
+        "centre_post": [
+          1310.2,
+          419.5
+        ],
+        "centre_shift_px": [
+          0.0,
+          -7.4
+        ],
+        "gate_pre": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1399.4,
+            437.4
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 148.2,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "gate_post": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1399.4,
+            408.9
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 148.2,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "finger_dir_pre": [
+          0.996,
+          0.085
+        ],
+        "hand_bbox_pre": [
+          1221,
+          370,
+          1398,
+          482
+        ],
+        "hand_bbox_post": [
+          1221,
+          362,
+          1398,
+          474
+        ],
+        "wrist_to_bbox_top_pre": 53.2,
+        "wrist_to_bbox_bottom_pre": 58.8,
+        "wrist_to_bbox_top_post": 61.2,
+        "wrist_to_bbox_bottom_post": 50.8,
+        "finger_dir_post": [
+          0.996,
+          -0.085
+        ]
+      }
+    },
+    "no_crop": {
+      "pass": true,
+      "bbox": [
+        100,
+        253,
+        1398,
+        1311
+      ]
+    }
+  },
+  "6_relaxed": {
+    "hand": "Hand_6_Relaxed.png",
+    "operation": "VERTICAL FLIP IN PLACE",
+    "gate": {
+      "L": {
+        "arm": "Arm1",
+        "mirror_horizontal_inplace": true,
+        "angle": 90,
+        "scale": 1.275,
+        "operation": "VERTICAL FLIP IN PLACE",
+        "wrist_target": [
+          268.1,
+          429.8
+        ],
+        "forearm_end": [
+          248.1,
+          429.8
+        ],
+        "centre_pre": [
+          193.6,
+          415.9
+        ],
+        "centre_post": [
+          193.6,
+          443.7
+        ],
+        "centre_shift_px": [
+          0.0,
+          27.8
+        ],
+        "gate_pre": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            108.2,
+            410.0
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 141.3,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "gate_post": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            108.2,
+            449.6
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 141.3,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "finger_dir_pre": [
+          -0.992,
+          -0.123
+        ],
+        "hand_bbox_pre": [
+          108,
+          356,
+          278,
+          477
+        ],
+        "hand_bbox_post": [
+          108,
+          380,
+          278,
+          501
+        ],
+        "wrist_to_bbox_top_pre": 73.8,
+        "wrist_to_bbox_bottom_pre": 47.2,
+        "wrist_to_bbox_top_post": 49.8,
+        "wrist_to_bbox_bottom_post": 71.2,
+        "finger_dir_post": [
+          -0.992,
+          0.123
+        ]
+      },
+      "R": {
+        "arm": "Arm2",
+        "mirror_horizontal_inplace": false,
+        "angle": -90,
+        "scale": 1.275,
+        "operation": "VERTICAL FLIP IN PLACE",
+        "wrist_target": [
+          1231.9,
+          423.2
+        ],
+        "forearm_end": [
+          1251.9,
+          423.2
+        ],
+        "centre_pre": [
+          1306.4,
+          409.3
+        ],
+        "centre_post": [
+          1306.4,
+          437.0
+        ],
+        "centre_shift_px": [
+          0.0,
+          27.8
+        ],
+        "gate_pre": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1391.8,
+            403.4
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 141.3,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "gate_post": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1391.8,
+            442.9
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 141.3,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "finger_dir_pre": [
+          0.992,
+          -0.123
+        ],
+        "hand_bbox_pre": [
+          1220,
+          350,
+          1390,
+          471
+        ],
+        "hand_bbox_post": [
+          1220,
+          374,
+          1390,
+          495
+        ],
+        "wrist_to_bbox_top_pre": 73.2,
+        "wrist_to_bbox_bottom_pre": 47.8,
+        "wrist_to_bbox_top_post": 49.2,
+        "wrist_to_bbox_bottom_post": 71.8,
+        "finger_dir_post": [
+          0.992,
+          0.123
+        ]
+      }
+    },
+    "no_crop": {
+      "pass": true,
+      "bbox": [
+        108,
+        253,
+        1390,
+        1311
+      ]
+    }
+  },
+  "7_grip": {
+    "hand": "Hand_7_Grip.png",
+    "operation": "VERTICAL FLIP IN PLACE",
+    "gate": {
+      "L": {
+        "arm": "Arm1",
+        "mirror_horizontal_inplace": true,
+        "angle": 90,
+        "scale": 1.275,
+        "operation": "VERTICAL FLIP IN PLACE",
+        "wrist_target": [
+          268.1,
+          429.8
+        ],
+        "forearm_end": [
+          248.1,
+          429.8
+        ],
+        "centre_pre": [
+          201.8,
+          414.5
+        ],
+        "centre_post": [
+          201.8,
+          445.1
+        ],
+        "centre_shift_px": [
+          0.0,
+          30.6
+        ],
+        "gate_pre": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            124.7,
+            418.5
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 124.0,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "gate_post": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            124.7,
+            441.1
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 124.0,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "finger_dir_pre": [
+          -0.997,
+          -0.079
+        ],
+        "hand_bbox_pre": [
+          124,
+          354,
+          277,
+          474
+        ],
+        "hand_bbox_post": [
+          124,
+          384,
+          277,
+          504
+        ],
+        "wrist_to_bbox_top_pre": 75.8,
+        "wrist_to_bbox_bottom_pre": 44.2,
+        "wrist_to_bbox_top_post": 45.8,
+        "wrist_to_bbox_bottom_post": 74.2,
+        "finger_dir_post": [
+          -0.997,
+          0.079
+        ]
+      },
+      "R": {
+        "arm": "Arm2",
+        "mirror_horizontal_inplace": false,
+        "angle": -90,
+        "scale": 1.275,
+        "operation": "VERTICAL FLIP IN PLACE",
+        "wrist_target": [
+          1231.9,
+          423.2
+        ],
+        "forearm_end": [
+          1251.9,
+          423.2
+        ],
+        "centre_pre": [
+          1298.2,
+          407.9
+        ],
+        "centre_post": [
+          1298.2,
+          438.5
+        ],
+        "centre_shift_px": [
+          0.0,
+          30.6
+        ],
+        "gate_pre": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1375.3,
+            411.8
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 124.0,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "gate_post": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1375.3,
+            434.5
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 124.0,
+          "pass": true,
+          "verdict": "PASS"
+        },
+        "finger_dir_pre": [
+          0.997,
+          -0.079
+        ],
+        "hand_bbox_pre": [
+          1221,
+          347,
+          1374,
+          467
+        ],
+        "hand_bbox_post": [
+          1221,
+          377,
+          1374,
+          497
+        ],
+        "wrist_to_bbox_top_pre": 76.2,
+        "wrist_to_bbox_bottom_pre": 43.8,
+        "wrist_to_bbox_top_post": 46.2,
+        "wrist_to_bbox_bottom_post": 73.8,
+        "finger_dir_post": [
+          0.997,
+          0.079
+        ]
+      }
+    },
+    "no_crop": {
+      "pass": true,
+      "bbox": [
+        124,
+        253,
+        1374,
+        1311
+      ]
+    }
+  }
+}

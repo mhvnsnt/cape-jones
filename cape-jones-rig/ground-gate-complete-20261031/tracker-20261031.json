@@ -1,0 +1,26 @@
+{
+  "method": "OpenCV Lucas-Kanade (free tracker, AE/Premiere tracker equivalent \u2014 AE itself not run, see report)",
+  "note": "AE/Premiere tracker itself: NOT run \u2014 Adobe trial not confirmed, Win/Mac only, no AE on this Linux VM. Free way around RUN here: OpenCV tracker on the walk composites, plus Blender Cycles ground-plane render above.",
+  "track_half_res": [
+    [
+      "CJ-06-walk-street-contact-20261031.png",
+      275.0,
+      498.0
+    ],
+    [
+      "CJ-07-walk-town-passing-20261031.png",
+      356.9869079589844,
+      254.37254333496094
+    ],
+    [
+      "CJ-08-walk-alley-night-20261031.png",
+      348.57318115234375,
+      259.92987060546875
+    ],
+    [
+      "CJ-06-walk-street-contact-20261031.png",
+      364.6878662109375,
+      258.92254638671875
+    ]
+  ]
+}
