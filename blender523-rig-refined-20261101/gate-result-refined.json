@@ -1,0 +1,27 @@
+{
+ "gate": "blender523-rig-refined",
+ "result": "PASS_WITH_KNOWN_LIMITS",
+ "checks": {
+  "arm1_is_Arm_Front_viewer_left": true,
+  "arm2_is_Arm_Back_viewer_right": true,
+  "leg1_is_Leg_Front_viewer_left": true,
+  "leg2_is_Leg_Back_viewer_right": true,
+  "parents_ok": true,
+  "fk_chains_6": true,
+  "collar_below_torso": true,
+  "cape_below_torso_and_below_head_top": true,
+  "head_neck_overlap_gt_0": true,
+  "crossed_snap_z_above_torso_below_head": true,
+  "flex_spread_in_100_160": true,
+  "flex_wide_fists_fully_in_frame": true,
+  "flex_narrow_6p2_fists_cropped": true,
+  "no_crop_no_wrist_cut_no_hand_draw_no_square_crop": true,
+  "grease_pencil_overlay_4_strokes": true,
+  "rest_mean_edge_dev_improved_34p7_to_12p8_px": true
+ },
+ "known_limits": [
+  "flex at ortho 6.2 crops fists at both edges; use pose-flex-obtuse-WIDE.png (ortho 8.5) as the flex deliverable",
+  "whole-piece arms/legs cannot match the 2D cut-limb elbow/knee bend exactly: at y900 left edge 286 vs apose 331 (whole-arm fist hangs lower/out), at y1200 right edge 793 vs apose 734 (whole-leg toe swings further out)",
+  "rest legs are straight angled lines, not cut thigh+shin: knees sit further out than the 2D apose, shins slant outward where the apose shins are near-vertical"
+ ]
+}

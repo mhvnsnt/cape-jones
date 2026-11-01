@@ -1,0 +1,19 @@
+{
+ "gate": "blender523-rig-fixed",
+ "result": "PASS",
+ "checks": {
+  "arm1_is_Arm_Front_viewer_left": true,
+  "arm2_is_Arm_Back_viewer_right": true,
+  "leg1_is_Leg_Front_viewer_left": true,
+  "leg2_is_Leg_Back_viewer_right": true,
+  "parents_ok": true,
+  "fk_chains_6": true,
+  "collar_below_torso": true,
+  "cape_below_torso_and_below_head_top": true,
+  "head_neck_overlap_gt_0": true,
+  "crossed_snap_z_above_torso_below_head": true,
+  "flex_spread_in_100_160": true,
+  "no_crop_no_wrist_cut_no_hand_draw": true
+ },
+ "failures": []
+}
