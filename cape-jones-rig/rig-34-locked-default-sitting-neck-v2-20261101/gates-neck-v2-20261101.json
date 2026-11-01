@@ -1,0 +1,604 @@
+{
+  "centres": {
+    "cape": {
+      "xy": [
+        360,
+        330
+      ],
+      "rotation": 0,
+      "size": [
+        514,
+        900
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 0,
+      "alpha_bbox": [
+        360,
+        330,
+        874,
+        1230
+      ],
+      "alpha_centre": [
+        617.0,
+        780.0
+      ],
+      "expected_pivot_xy": [
+        617.0,
+        780.0
+      ]
+    },
+    "upperArmL": {
+      "xy": [
+        490,
+        390
+      ],
+      "rotation": 5,
+      "size": [
+        125,
+        237
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 1,
+      "alpha_bbox": [
+        470,
+        389,
+        612,
+        626
+      ],
+      "alpha_centre": [
+        541.0,
+        507.5
+      ],
+      "expected_pivot_xy": [
+        552.5,
+        390
+      ]
+    },
+    "thighR": {
+      "xy": [
+        590,
+        750
+      ],
+      "rotation": 6,
+      "size": [
+        218,
+        299
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 2,
+      "alpha_bbox": [
+        561,
+        755,
+        803,
+        1041
+      ],
+      "alpha_centre": [
+        682.0,
+        898.0
+      ],
+      "expected_pivot_xy": [
+        699.0,
+        750
+      ]
+    },
+    "thighL": {
+      "xy": [
+        400,
+        710
+      ],
+      "rotation": 2,
+      "size": [
+        230,
+        267
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 3,
+      "alpha_bbox": [
+        391,
+        711,
+        627,
+        975
+      ],
+      "alpha_centre": [
+        509.0,
+        843.0
+      ],
+      "expected_pivot_xy": [
+        515.0,
+        710
+      ]
+    },
+    "forearmL": {
+      "xy": [
+        455,
+        580
+      ],
+      "rotation": -15,
+      "size": [
+        145,
+        275
+      ],
+      "pivot": [
+        0.39,
+        0.11
+      ],
+      "z": 4,
+      "alpha_bbox": [
+        472,
+        572,
+        625,
+        852
+      ],
+      "alpha_centre": [
+        548.5,
+        712.0
+      ],
+      "expected_pivot_xy": [
+        511.6,
+        610.2
+      ]
+    },
+    "pelvis": {
+      "xy": [
+        565,
+        650
+      ],
+      "rotation": 0,
+      "size": [
+        218,
+        181
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 4,
+      "alpha_bbox": [
+        565,
+        650,
+        783,
+        831
+      ],
+      "alpha_centre": [
+        674.0,
+        740.5
+      ],
+      "expected_pivot_xy": [
+        674.0,
+        740.5
+      ]
+    },
+    "kneeL": {
+      "xy": [
+        380,
+        885
+      ],
+      "rotation": 0,
+      "size": [
+        74,
+        94
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 4,
+      "alpha_bbox": [
+        380,
+        885,
+        454,
+        979
+      ],
+      "alpha_centre": [
+        417.0,
+        932.0
+      ],
+      "expected_pivot_xy": [
+        417.0,
+        932.0
+      ]
+    },
+    "elbowCapL": {
+      "xy": [
+        465,
+        580
+      ],
+      "rotation": 0,
+      "size": [
+        63,
+        63
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 5,
+      "alpha_bbox": [
+        465,
+        580,
+        528,
+        643
+      ],
+      "alpha_centre": [
+        496.5,
+        611.5
+      ],
+      "expected_pivot_xy": [
+        496.5,
+        611.5
+      ]
+    },
+    "shinL": {
+      "xy": [
+        225,
+        945
+      ],
+      "rotation": 0,
+      "size": [
+        244,
+        410
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 6,
+      "alpha_bbox": [
+        225,
+        945,
+        469,
+        1355
+      ],
+      "alpha_centre": [
+        347.0,
+        1150.0
+      ],
+      "expected_pivot_xy": [
+        347.0,
+        945
+      ]
+    },
+    "shinR": {
+      "xy": [
+        395,
+        985
+      ],
+      "rotation": -10,
+      "size": [
+        256,
+        415
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 6,
+      "alpha_bbox": [
+        461,
+        975,
+        664,
+        1411
+      ],
+      "alpha_centre": [
+        562.5,
+        1193.0
+      ],
+      "expected_pivot_xy": [
+        523.0,
+        985
+      ]
+    },
+    "kneeR": {
+      "xy": [
+        560,
+        950
+      ],
+      "rotation": 0,
+      "size": [
+        74,
+        94
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 7,
+      "alpha_bbox": [
+        560,
+        950,
+        634,
+        1044
+      ],
+      "alpha_centre": [
+        597.0,
+        997.0
+      ],
+      "expected_pivot_xy": [
+        597.0,
+        997.0
+      ]
+    },
+    "torso": {
+      "xy": [
+        550,
+        370
+      ],
+      "rotation": 0,
+      "size": [
+        291,
+        315
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 8,
+      "alpha_bbox": [
+        550,
+        370,
+        841,
+        685
+      ],
+      "alpha_centre": [
+        695.5,
+        527.5
+      ],
+      "expected_pivot_xy": [
+        695.5,
+        370
+      ]
+    },
+    "upperArmR": {
+      "xy": [
+        805,
+        420
+      ],
+      "rotation": 15,
+      "size": [
+        112,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 10,
+      "alpha_bbox": [
+        767,
+        413,
+        902,
+        672
+      ],
+      "alpha_centre": [
+        834.5,
+        542.5
+      ],
+      "expected_pivot_xy": [
+        861.0,
+        420
+      ]
+    },
+    "forearmR": {
+      "xy": [
+        685,
+        650
+      ],
+      "rotation": 45,
+      "size": [
+        150,
+        274
+      ],
+      "pivot": [
+        0.63,
+        0.11
+      ],
+      "z": 11,
+      "alpha_bbox": [
+        584,
+        635,
+        825,
+        881
+      ],
+      "alpha_centre": [
+        704.5,
+        758.0
+      ],
+      "expected_pivot_xy": [
+        779.5,
+        680.1
+      ]
+    },
+    "elbowCapR": {
+      "xy": [
+        775,
+        610
+      ],
+      "rotation": 0,
+      "size": [
+        63,
+        63
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 12,
+      "alpha_bbox": [
+        775,
+        610,
+        838,
+        673
+      ],
+      "alpha_centre": [
+        806.5,
+        641.5
+      ],
+      "expected_pivot_xy": [
+        806.5,
+        641.5
+      ]
+    },
+    "neck": {
+      "xy": [
+        632,
+        349
+      ],
+      "rotation": 0,
+      "size": [
+        137,
+        87
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 8.5,
+      "alpha_bbox": [
+        634,
+        349,
+        767,
+        434
+      ],
+      "alpha_centre": [
+        700.5,
+        391.5
+      ],
+      "expected_pivot_xy": [
+        700.5,
+        392.5
+      ]
+    },
+    "head": {
+      "xy": [
+        635,
+        195
+      ],
+      "rotation": 0,
+      "size": [
+        130,
+        196
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 9,
+      "alpha_bbox": [
+        635,
+        195,
+        765,
+        391
+      ],
+      "alpha_centre": [
+        700.0,
+        293.0
+      ],
+      "expected_pivot_xy": [
+        700.0,
+        293.0
+      ]
+    },
+    "handL": {
+      "xy": [
+        530,
+        740
+      ],
+      "rotation": -46,
+      "size": [
+        117,
+        170
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 13,
+      "alpha_bbox": [
+        519,
+        741,
+        662,
+        912
+      ],
+      "alpha_centre": [
+        590.5,
+        826.5
+      ],
+      "expected_pivot_xy": [
+        588.5,
+        825.0
+      ]
+    },
+    "handR": {
+      "xy": [
+        565,
+        755
+      ],
+      "rotation": 70,
+      "size": [
+        117,
+        170
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 13,
+      "alpha_bbox": [
+        546,
+        769,
+        707,
+        913
+      ],
+      "alpha_centre": [
+        626.5,
+        841.0
+      ],
+      "expected_pivot_xy": [
+        623.5,
+        840.0
+      ]
+    }
+  },
+  "gates": {
+    "canvas": [
+      1400,
+      1600
+    ],
+    "bbox": [
+      225,
+      195,
+      901,
+      1410
+    ],
+    "alpha_bottom_overall": 1410,
+    "neck": {
+      "source": "sliced/Neck.png",
+      "rendered_size": [
+        126,
+        82
+      ],
+      "centre_x": 700,
+      "top": 350,
+      "bottom": 432,
+      "draw_order": "after arms, before head",
+      "front_view_scale": "width 1.3125 (126/96, +25% wider only), height 1.05 (82/78, unchanged), native alpha 96x78, non-uniform widen-only stretch, stated plainly"
+    },
+    "head_bottom": 391,
+    "torso_top": 370,
+    "hands": 2,
+    "fists_full_forearm_drawn": 2,
+    "note": "Full forearm+fist drawn as in literal widget rebuild; separate open hands drawn over them at saved positions. Fist-omitted clean version is a separate toggleable-layer job, not faked here."
+  }
+}
