@@ -1,0 +1,25 @@
+{
+ "old_sliced_clean": {
+  "files": 2854,
+  "blank": 0,
+  "tiny_lt800": 0,
+  "corrupt": 0,
+  "total_opaque_px": 88596328
+ },
+ "new_sliced_68_sheets": {
+  "files": 964,
+  "blank": 0,
+  "tiny_lt800": 0,
+  "corrupt": 0,
+  "total_opaque_px": 50119035
+ },
+ "new_manifest": {
+  "sheets": 68,
+  "pieces": 964,
+  "named": 114,
+  "mixed": 850,
+  "named_check_sum": 114,
+  "mixed_check_sum": 850
+ },
+ "anomalies": []
+}
