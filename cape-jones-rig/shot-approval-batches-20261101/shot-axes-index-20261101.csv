@@ -1,0 +1,121 @@
+shot,slug,axis,axis_check,status,batch
+CJ-01,punch-windup,A1 SHADING,"Character-only LUT gain [1.1, 0.95, 0.7] + outer rim band 4px in spec rim colour (255, 178, 229) + inner bleed band 6px at 35% bleed colour (230, 80, 170).",0/1 PENDING Mars,Batch 1
+CJ-01,punch-windup,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 1
+CJ-01,punch-windup,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 1
+CJ-01,punch-windup,A4 EFFECTS,"One named, measured effect layer: wind-streaks, effect_px = 3728 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 1
+CJ-02,punch-extend-snap,A1 SHADING,"Character-only LUT gain [1.1, 0.95, 0.7] + outer rim band 4px in spec rim colour (255, 178, 229) + inner bleed band 6px at 35% bleed colour (230, 80, 170).",0/1 PENDING Mars,Batch 1
+CJ-02,punch-extend-snap,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 1
+CJ-02,punch-extend-snap,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 1
+CJ-02,punch-extend-snap,A4 EFFECTS,"One named, measured effect layer: snap-lines, effect_px = 4086 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 1
+CJ-03,punch-impact-locked,A1 SHADING,"Character-only LUT gain [1.1, 0.95, 0.7] + outer rim band 4px in spec rim colour (255, 120, 115) + inner bleed band 6px at 35% bleed colour (220, 60, 50).",0/1 PENDING Mars,Batch 1
+CJ-03,punch-impact-locked,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 1
+CJ-03,punch-impact-locked,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 1
+CJ-03,punch-impact-locked,A4 EFFECTS,"One named, measured effect layer: impact-burst + gauntlet-glow, effect_px = 16370 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 1
+CJ-04,punch-recover,A1 SHADING,"Character-only LUT gain [1.1, 0.95, 0.7] + outer rim band 4px in spec rim colour (255, 180, 80) + inner bleed band 6px at 35% bleed colour (255, 120, 0).",0/1 PENDING Mars,Batch 1
+CJ-04,punch-recover,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 1
+CJ-04,punch-recover,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 1
+CJ-04,punch-recover,A4 EFFECTS,"One named, measured effect layer: afterglow-faint, effect_px = 29848 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 1
+CJ-05,punch-across-down-placement,A1 SHADING,"Character-only LUT gain [1, 1, 1] + outer rim band 4px in spec rim colour (255, 255, 255) + inner bleed band 6px at 35% bleed colour (255, 255, 255).",0/1 PENDING Mars,Batch 1
+CJ-05,punch-across-down-placement,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 1
+CJ-05,punch-across-down-placement,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 1
+CJ-05,punch-across-down-placement,A4 EFFECTS,"One named, measured effect layer: placement-glow, effect_px = 18464 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 1
+CJ-06,walk-street-contact,A1 SHADING,"Character-only LUT gain [1, 1, 1] + outer rim band 4px in spec rim colour (255, 255, 255) + inner bleed band 6px at 35% bleed colour (255, 255, 255).",0/1 PENDING Mars,Batch 1
+CJ-06,walk-street-contact,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 1
+CJ-06,walk-street-contact,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 1
+CJ-06,walk-street-contact,A4 EFFECTS,"One named, measured effect layer: dust-puffs, effect_px = 5806 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 1
+CJ-07,walk-town-passing,A1 SHADING,"Character-only LUT gain [1.1, 0.95, 0.7] + outer rim band 4px in spec rim colour (255, 180, 80) + inner bleed band 6px at 35% bleed colour (255, 120, 0).",0/1 PENDING Mars,Batch 1
+CJ-07,walk-town-passing,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 1
+CJ-07,walk-town-passing,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 1
+CJ-07,walk-town-passing,A4 EFFECTS,"One named, measured effect layer: dust-puffs, effect_px = 5806 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 1
+CJ-08,walk-alley-night,A1 SHADING,"Character-only LUT gain [0.8, 0.85, 1.05] + outer rim band 4px in spec rim colour (160, 185, 255) + inner bleed band 6px at 35% bleed colour (80, 120, 255).",0/1 PENDING Mars,Batch 1
+CJ-08,walk-alley-night,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 1
+CJ-08,walk-alley-night,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 1
+CJ-08,walk-alley-night,A4 EFFECTS,"One named, measured effect layer: dust-puffs-night, effect_px = 5806 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 1
+CJ-09,dance-a,A1 SHADING,"Character-only LUT gain [1.25, 0.75, 1.15] + outer rim band 4px in spec rim colour (255, 178, 229) + inner bleed band 6px at 35% bleed colour (230, 80, 180).",0/1 PENDING Mars,Batch 1
+CJ-09,dance-a,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 1
+CJ-09,dance-a,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 1
+CJ-09,dance-a,A4 EFFECTS,"One named, measured effect layer: stage-sparkles, effect_px = 5560 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 1
+CJ-10,dance-b,A1 SHADING,"Character-only LUT gain [1.25, 0.85, 1.05] + outer rim band 4px in spec rim colour (255, 190, 220) + inner bleed band 6px at 35% bleed colour (235, 110, 185).",0/1 PENDING Mars,Batch 1
+CJ-10,dance-b,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 1
+CJ-10,dance-b,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 1
+CJ-10,dance-b,A4 EFFECTS,"One named, measured effect layer: stage-sparkles, effect_px = 5522 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 1
+CJ-11,dance-combined-finale,A1 SHADING,"Character-only LUT gain [1.05, 0.75, 1.2] + outer rim band 4px in spec rim colour (220, 150, 255) + inner bleed band 6px at 35% bleed colour (170, 80, 235).",0/1 PENDING Mars,Batch 2
+CJ-11,dance-combined-finale,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 2
+CJ-11,dance-combined-finale,A3 SHAFTS,"Level 3: 6 shaft wedges in rim/key colour, blurred, behind character (this shot: shaft_count = 6, colours [[220, 150, 255]]).",0/1 PENDING Mars,Batch 2
+CJ-11,dance-combined-finale,A4 EFFECTS,"One named, measured effect layer: stage-sparkles, effect_px = 5560 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 2
+CJ-12,flying-hover,A1 SHADING,"Character-only LUT gain [1.1, 0.95, 0.7] + outer rim band 4px in spec rim colour (255, 180, 80) + inner bleed band 6px at 35% bleed colour (255, 120, 0).",0/1 PENDING Mars,Batch 2
+CJ-12,flying-hover,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 2
+CJ-12,flying-hover,A3 SHAFTS,"Level 3: 6 shaft wedges in rim/key colour, blurred, behind character (this shot: shaft_count = 6, colours [[255, 180, 80]]).",0/1 PENDING Mars,Batch 2
+CJ-12,flying-hover,A4 EFFECTS,"One named, measured effect layer: hover-rings, effect_px = 31080 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 2
+CJ-13,flying-soar,A1 SHADING,"Character-only LUT gain [1.15, 1.0, 0.65] + outer rim band 4px in spec rim colour (255, 200, 110) + inner bleed band 6px at 35% bleed colour (255, 150, 40).",0/1 PENDING Mars,Batch 2
+CJ-13,flying-soar,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 2
+CJ-13,flying-soar,A3 SHAFTS,"Level 3: 6 shaft wedges in rim/key colour, blurred, behind character (this shot: shaft_count = 6, colours [[255, 200, 110]]).",0/1 PENDING Mars,Batch 2
+CJ-13,flying-soar,A4 EFFECTS,"One named, measured effect layer: speed-lines, effect_px = 8544 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 2
+CJ-14,flying-dive,A1 SHADING,"Character-only LUT gain [1.15, 0.8, 0.7] + outer rim band 4px in spec rim colour (255, 155, 75) + inner bleed band 6px at 35% bleed colour (255, 100, 20).",0/1 PENDING Mars,Batch 2
+CJ-14,flying-dive,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 2
+CJ-14,flying-dive,A3 SHAFTS,"Level 3: 6 shaft wedges in rim/key colour, blurred, behind character (this shot: shaft_count = 6, colours [[255, 155, 75]]).",0/1 PENDING Mars,Batch 2
+CJ-14,flying-dive,A4 EFFECTS,"One named, measured effect layer: dive-streaks, effect_px = 8544 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 2
+CJ-15,flying-forward-foreshortened,A1 SHADING,"Character-only LUT gain [0.7, 1.0, 1.25] + outer rim band 4px in spec rim colour (140, 200, 255) + inner bleed band 6px at 35% bleed colour (70, 140, 255).",0/1 PENDING Mars,Batch 2
+CJ-15,flying-forward-foreshortened,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 2
+CJ-15,flying-forward-foreshortened,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 2
+CJ-15,flying-forward-foreshortened,A4 EFFECTS,"One named, measured effect layer: speed-lines, effect_px = 8544 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 2
+CJ-16,flex-anticipation-before-tighten,A1 SHADING,"Character-only LUT gain [1.25, 0.95, 0.65] + outer rim band 4px in spec rim colour (255, 180, 90) + inner bleed band 6px at 35% bleed colour (255, 120, 30).",0/1 PENDING Mars,Batch 2
+CJ-16,flex-anticipation-before-tighten,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 2
+CJ-16,flex-anticipation-before-tighten,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 2
+CJ-16,flex-anticipation-before-tighten,A4 EFFECTS,"One named, measured effect layer: power-aura, effect_px = 38016 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 2
+CJ-17,arms-up-reference,A1 SHADING,"Character-only LUT gain [1.2, 1.15, 0.7] + outer rim band 4px in spec rim colour (255, 230, 140) + inner bleed band 6px at 35% bleed colour (255, 200, 60).",0/1 PENDING Mars,Batch 2
+CJ-17,arms-up-reference,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 2
+CJ-17,arms-up-reference,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 2
+CJ-17,arms-up-reference,A4 EFFECTS,"One named, measured effect layer: aura-soft, effect_px = 37936 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 2
+CJ-18,true-flex-double-bicep,A1 SHADING,"Character-only LUT gain [1.25, 0.85, 0.65] + outer rim band 4px in spec rim colour (255, 165, 95) + inner bleed band 6px at 35% bleed colour (255, 110, 30).",0/1 PENDING Mars,Batch 2
+CJ-18,true-flex-double-bicep,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 2
+CJ-18,true-flex-double-bicep,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 2
+CJ-18,true-flex-double-bicep,A4 EFFECTS,"One named, measured effect layer: power-aura, effect_px = 37832 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 2
+CJ-19,fighting-pose-forward-bicep-curl,A1 SHADING,"Character-only LUT gain [1.1, 0.95, 0.7] + outer rim band 4px in spec rim colour (255, 180, 80) + inner bleed band 6px at 35% bleed colour (255, 120, 0). Dual-light: rim split left = front source, right = back source, both sources named.",0/1 PENDING Mars,Batch 2
+CJ-19,fighting-pose-forward-bicep-curl,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 2
+CJ-19,fighting-pose-forward-bicep-curl,A3 SHAFTS,"Level 3: 6 shaft wedges in rim/key colour, blurred, behind character (this shot: shaft_count = 6, colours [[255, 180, 80], [0, 200, 255]]).",0/1 PENDING Mars,Batch 2
+CJ-19,fighting-pose-forward-bicep-curl,A4 EFFECTS,"One named, measured effect layer: gauntlet-glow, effect_px = 3912 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 2
+CJ-20,fighting-stance-arms-up-high,A1 SHADING,"Character-only LUT gain [1.15, 0.85, 0.6] + outer rim band 4px in spec rim colour (255, 150, 60) + inner bleed band 6px at 35% bleed colour (255, 100, 20).",0/1 PENDING Mars,Batch 2
+CJ-20,fighting-stance-arms-up-high,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 2
+CJ-20,fighting-stance-arms-up-high,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 2
+CJ-20,fighting-stance-arms-up-high,A4 EFFECTS,"One named, measured effect layer: aura-soft, effect_px = 37936 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 2
+CJ-21,jump-crouch-takeoff,A1 SHADING,"Character-only LUT gain [0.7, 1.1, 1.05] + outer rim band 4px in spec rim colour (140, 220, 210) + inner bleed band 6px at 35% bleed colour (60, 180, 170).",0/1 PENDING Mars,Batch 3
+CJ-21,jump-crouch-takeoff,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 3
+CJ-21,jump-crouch-takeoff,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 3
+CJ-21,jump-crouch-takeoff,A4 EFFECTS,"One named, measured effect layer: takeoff-dust, effect_px = 5806 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 3
+CJ-22,jump-tuck-landing,A1 SHADING,"Character-only LUT gain [1.1, 0.95, 0.7] + outer rim band 4px in spec rim colour (255, 180, 80) + inner bleed band 6px at 35% bleed colour (255, 120, 0).",0/1 PENDING Mars,Batch 3
+CJ-22,jump-tuck-landing,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 3
+CJ-22,jump-tuck-landing,A3 SHAFTS,"Level 3: 6 shaft wedges in rim/key colour, blurred, behind character (this shot: shaft_count = 6, colours [[255, 180, 80]]).",0/1 PENDING Mars,Batch 3
+CJ-22,jump-tuck-landing,A4 EFFECTS,"One named, measured effect layer: landing-dust + cape-streaks, effect_px = 5806 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 3
+CJ-23,lounge-seated-room,A1 SHADING,"Character-only LUT gain [1.1, 0.95, 0.75] + outer rim band 4px in spec rim colour (255, 185, 95) + inner bleed band 6px at 35% bleed colour (255, 125, 20).",0/1 PENDING Mars,Batch 3
+CJ-23,lounge-seated-room,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 3
+CJ-23,lounge-seated-room,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 3
+CJ-23,lounge-seated-room,A4 EFFECTS,"One named, measured effect layer: lamp-halo, effect_px = 5788 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 3
+CJ-24,desk-seated,A1 SHADING,"Character-only LUT gain [1.1, 0.95, 0.75] + outer rim band 4px in spec rim colour (255, 185, 95) + inner bleed band 6px at 35% bleed colour (255, 125, 20).",0/1 PENDING Mars,Batch 3
+CJ-24,desk-seated,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 3
+CJ-24,desk-seated,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 3
+CJ-24,desk-seated,A4 EFFECTS,"One named, measured effect layer: lamp-halo, effect_px = 5788 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 3
+CJ-25,room-standing-device-gag,A1 SHADING,"Character-only LUT gain [1.1, 0.95, 0.75] + outer rim band 4px in spec rim colour (255, 185, 95) + inner bleed band 6px at 35% bleed colour (255, 125, 20).",0/1 PENDING Mars,Batch 3
+CJ-25,room-standing-device-gag,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 3
+CJ-25,room-standing-device-gag,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 3
+CJ-25,room-standing-device-gag,A4 EFFECTS,"One named, measured effect layer: device-glow, effect_px = 21668 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 3
+CJ-26,dialogue-neutral-unsure,A1 SHADING,"Character-only LUT gain [1, 1, 1] + outer rim band 4px in spec rim colour (240, 240, 240) + inner bleed band 6px at 35% bleed colour (180, 180, 180).",0/1 PENDING Mars,Batch 3
+CJ-26,dialogue-neutral-unsure,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 3
+CJ-26,dialogue-neutral-unsure,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 3
+CJ-26,dialogue-neutral-unsure,A4 EFFECTS,"One named, measured effect layer: beat-halo, effect_px = 5788 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 3
+CJ-27,dialogue-shout-angry,A1 SHADING,"Character-only LUT gain [1.2, 0.6, 0.6] + outer rim band 4px in spec rim colour (255, 130, 120) + inner bleed band 6px at 35% bleed colour (220, 50, 40).",0/1 PENDING Mars,Batch 3
+CJ-27,dialogue-shout-angry,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 3
+CJ-27,dialogue-shout-angry,A3 SHAFTS,"Level 2: 0 shafts, verified (this shot: shaft_count = 0).",0/1 PENDING Mars,Batch 3
+CJ-27,dialogue-shout-angry,A4 EFFECTS,"One named, measured effect layer: shout-burst, effect_px = 12988 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 3
+CJ-28,rooftop-sunset,A1 SHADING,"Character-only LUT gain [1.15, 0.8, 0.7] + outer rim band 4px in spec rim colour (255, 155, 75) + inner bleed band 6px at 35% bleed colour (255, 100, 20).",0/1 PENDING Mars,Batch 3
+CJ-28,rooftop-sunset,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 3
+CJ-28,rooftop-sunset,A3 SHAFTS,"Level 3: 6 shaft wedges in rim/key colour, blurred, behind character (this shot: shaft_count = 6, colours [[255, 155, 75]]).",0/1 PENDING Mars,Batch 3
+CJ-28,rooftop-sunset,A4 EFFECTS,"One named, measured effect layer: sun-flare, effect_px = 7960 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 3
+CJ-29,rooftop-night-city,A1 SHADING,"Character-only LUT gain [0.8, 0.85, 1.05] + outer rim band 4px in spec rim colour (160, 185, 255) + inner bleed band 6px at 35% bleed colour (80, 120, 255).",0/1 PENDING Mars,Batch 3
+CJ-29,rooftop-night-city,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 3
+CJ-29,rooftop-night-city,A3 SHAFTS,"Level 3: 6 shaft wedges in rim/key colour, blurred, behind character (this shot: shaft_count = 6, colours [[160, 185, 255]]).",0/1 PENDING Mars,Batch 3
+CJ-29,rooftop-night-city,A4 EFFECTS,"One named, measured effect layer: city-bokeh, effect_px = 10325 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 3
+CJ-30,alley-neon-dual-light,A1 SHADING,"Character-only LUT gain [0.95, 0.85, 1.05] + outer rim band 4px in spec rim colour (255, 178, 229) + inner bleed band 6px at 35% bleed colour (230, 80, 170). Dual-light: rim split left = front source, right = back source, both sources named.",0/1 PENDING Mars,Batch 3
+CJ-30,alley-neon-dual-light,A2 MULTIPLANE,"4 planes every shot: far BG plane (blurred) + mid BG plane (1.07x, +24px offset, ground band) + character + foreground strip (blurred BG, 30% alpha, in front of feet).",0/1 PENDING Mars,Batch 3
+CJ-30,alley-neon-dual-light,A3 SHAFTS,"Level 3: 6 shaft wedges in rim/key colour, blurred, behind character (this shot: shaft_count = 6, colours [[255, 178, 229], [0, 200, 255]]).",0/1 PENDING Mars,Batch 3
+CJ-30,alley-neon-dual-light,A4 EFFECTS,"One named, measured effect layer: neon-rings, effect_px = 31476 (alpha>10 pixel count of that layer).",0/1 PENDING Mars,Batch 3
