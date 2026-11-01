@@ -1,0 +1,8 @@
+{
+  "project": "MiDaS / Depth Anything",
+  "status": "METHOD-WIRED, models NOT run",
+  "proxy": "scipy distance_transform_edt inside silhouette, normalised 0-1, relative only (no metres)",
+  "real_next_step": "Depth Anything V2/V3 small or MiDaS small on Kaggle/Colab free GPU (torch required, not installed here); then compare proxy vs model depth on same frame",
+  "cape_use": "Depth maps drive 2.5D parallax, rim/wrap falloff and layer ordering; relative depth is enough for cutout parallax, metric depth is not needed",
+  "base_art_recoloured": false
+}
