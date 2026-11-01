@@ -1,0 +1,35 @@
+{
+  "preset": "Dream 1",
+  "name": "DREAM A \u2014 cape FULL magenta-pink, suit WHITE",
+  "cape": [
+    255,
+    60,
+    180
+  ],
+  "cowl_helm": [
+    40,
+    200,
+    210
+  ],
+  "suit": [
+    255,
+    255,
+    255
+  ],
+  "skin": [
+    255,
+    200,
+    180
+  ],
+  "eye": [
+    220,
+    250,
+    255
+  ],
+  "source": "jojo-shift-variation-20261031/jojo-dream-dream-a-cape-full-suit-white-20261031.png",
+  "status": "PRESET, approval 0/1 separately",
+  "size": [
+    1100,
+    1500
+  ]
+}
