@@ -1,0 +1,94 @@
+frame,kind,from,to,t,eased,dy_rig,dx_rig,height_video_px,label
+0,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+1,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+2,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+3,inbetween,apose,dance A,0.12,0.01,0,0,0,GROUNDED
+4,inbetween,apose,dance A,0.25,0.06,1,0,0,GROUNDED
+5,BREAKDOWN arc +10deg largest-moving arm upper,apose,dance A,0.38,0.21,4,0,0,GROUNDED
+6,inbetween,apose,dance A,0.5,0.5,10,0,0,GROUNDED
+7,BREAKDOWN follow-through +8deg that arm lower,apose,dance A,0.62,0.79,15,0,0,GROUNDED
+8,inbetween,apose,dance A,0.75,0.94,18,0,0,GROUNDED
+9,inbetween,apose,dance A,0.88,0.99,19,0,0,GROUNDED
+10,KEY hold,dance A,dance A,0,0,20,0,0,GROUNDED
+11,KEY hold,dance A,dance A,0,0,20,0,0,GROUNDED
+12,KEY hold,dance A,dance A,0,0,20,0,0,GROUNDED
+13,KEY hold,dance A,dance A,0,0,20,0,0,GROUNDED
+14,KEY hold,dance A,dance A,0,0,20,0,0,GROUNDED
+15,inbetween,dance A,shimmy centre,0.12,0.01,19,0,0,GROUNDED
+16,inbetween,dance A,shimmy centre,0.25,0.06,19,0,0,GROUNDED
+17,BREAKDOWN arc +10deg largest-moving arm upper,dance A,shimmy centre,0.38,0.21,18,0,0,GROUNDED
+18,inbetween,dance A,shimmy centre,0.5,0.5,16,0,0,GROUNDED
+19,BREAKDOWN follow-through +8deg that arm lower,dance A,shimmy centre,0.62,0.79,13,0,0,GROUNDED
+20,inbetween,dance A,shimmy centre,0.75,0.94,12,0,0,GROUNDED
+21,inbetween,dance A,shimmy centre,0.88,0.99,12,0,0,GROUNDED
+22,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+23,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+24,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+25,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+26,inbetween,shimmy centre,shimmy sway left,0.12,0.01,12,0,0,GROUNDED
+27,inbetween,shimmy centre,shimmy sway left,0.25,0.06,12,-1,0,GROUNDED
+28,BREAKDOWN arc +10deg largest-moving arm upper,shimmy centre,shimmy sway left,0.38,0.21,12,-6,0,GROUNDED
+29,inbetween,shimmy centre,shimmy sway left,0.5,0.5,12,-15,0,GROUNDED
+30,BREAKDOWN follow-through +8deg that arm lower,shimmy centre,shimmy sway left,0.62,0.79,12,-23,0,GROUNDED
+31,inbetween,shimmy centre,shimmy sway left,0.75,0.94,12,-28,0,GROUNDED
+32,inbetween,shimmy centre,shimmy sway left,0.88,0.99,12,-29,0,GROUNDED
+33,KEY hold,shimmy sway left,shimmy sway left,0,0,12,-30,0,GROUNDED
+34,KEY hold,shimmy sway left,shimmy sway left,0,0,12,-30,0,GROUNDED
+35,KEY hold,shimmy sway left,shimmy sway left,0,0,12,-30,0,GROUNDED
+36,inbetween,shimmy sway left,shimmy sway right,0.12,0.01,12,-29,0,GROUNDED
+37,inbetween,shimmy sway left,shimmy sway right,0.25,0.06,12,-26,0,GROUNDED
+38,BREAKDOWN arc +10deg largest-moving arm upper,shimmy sway left,shimmy sway right,0.38,0.21,12,-17,0,GROUNDED
+39,inbetween,shimmy sway left,shimmy sway right,0.5,0.5,12,0,0,GROUNDED
+40,BREAKDOWN follow-through +8deg that arm lower,shimmy sway left,shimmy sway right,0.62,0.79,12,17,0,GROUNDED
+41,inbetween,shimmy sway left,shimmy sway right,0.75,0.94,12,26,0,GROUNDED
+42,inbetween,shimmy sway left,shimmy sway right,0.88,0.99,12,29,0,GROUNDED
+43,KEY hold,shimmy sway right,shimmy sway right,0,0,12,30,0,GROUNDED
+44,KEY hold,shimmy sway right,shimmy sway right,0,0,12,30,0,GROUNDED
+45,KEY hold,shimmy sway right,shimmy sway right,0,0,12,30,0,GROUNDED
+46,inbetween,shimmy sway right,shimmy centre,0.12,0.01,12,29,0,GROUNDED
+47,inbetween,shimmy sway right,shimmy centre,0.25,0.06,12,28,0,GROUNDED
+48,BREAKDOWN arc +10deg largest-moving arm upper,shimmy sway right,shimmy centre,0.38,0.21,12,23,0,GROUNDED
+49,inbetween,shimmy sway right,shimmy centre,0.5,0.5,12,15,0,GROUNDED
+50,BREAKDOWN follow-through +8deg that arm lower,shimmy sway right,shimmy centre,0.62,0.79,12,6,0,GROUNDED
+51,inbetween,shimmy sway right,shimmy centre,0.75,0.94,12,1,0,GROUNDED
+52,inbetween,shimmy sway right,shimmy centre,0.88,0.99,12,0,0,GROUNDED
+53,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+54,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+55,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+56,KEY hold,shimmy centre,shimmy centre,0,0,12,0,0,GROUNDED
+57,inbetween,shimmy centre,dance B,0.12,0.01,12,0,0,GROUNDED
+58,inbetween,shimmy centre,dance B,0.25,0.06,13,0,0,GROUNDED
+59,BREAKDOWN arc +10deg largest-moving arm upper,shimmy centre,dance B,0.38,0.21,15,0,0,GROUNDED
+60,inbetween,shimmy centre,dance B,0.5,0.5,21,0,0,GROUNDED
+61,BREAKDOWN follow-through +8deg that arm lower,shimmy centre,dance B,0.62,0.79,26,0,0,GROUNDED
+62,inbetween,shimmy centre,dance B,0.75,0.94,28,0,0,GROUNDED
+63,inbetween,shimmy centre,dance B,0.88,0.99,29,0,0,GROUNDED
+64,KEY hold,dance B,dance B,0,0,30,0,0,GROUNDED
+65,KEY hold,dance B,dance B,0,0,30,0,0,GROUNDED
+66,KEY hold,dance B,dance B,0,0,30,0,0,GROUNDED
+67,KEY hold,dance B,dance B,0,0,30,0,0,GROUNDED
+68,KEY hold,dance B,dance B,0,0,30,0,0,GROUNDED
+69,inbetween,dance B,dance combined finale,0.12,0.01,30,0,0,GROUNDED
+70,inbetween,dance B,dance combined finale,0.25,0.06,31,0,0,GROUNDED
+71,BREAKDOWN arc +10deg largest-moving arm upper,dance B,dance combined finale,0.38,0.21,33,0,0,GROUNDED
+72,inbetween,dance B,dance combined finale,0.5,0.5,39,0,0,GROUNDED
+73,BREAKDOWN follow-through +8deg that arm lower,dance B,dance combined finale,0.62,0.79,44,0,0,GROUNDED
+74,inbetween,dance B,dance combined finale,0.75,0.94,46,0,0,GROUNDED
+75,inbetween,dance B,dance combined finale,0.88,0.99,47,0,0,GROUNDED
+76,KEY hold,dance combined finale,dance combined finale,0,0,48,0,0,GROUNDED
+77,KEY hold,dance combined finale,dance combined finale,0,0,48,0,0,GROUNDED
+78,KEY hold,dance combined finale,dance combined finale,0,0,48,0,0,GROUNDED
+79,KEY hold,dance combined finale,dance combined finale,0,0,48,0,0,GROUNDED
+80,KEY hold,dance combined finale,dance combined finale,0,0,48,0,0,GROUNDED
+81,OVERSHOOT 5% beyond key,dance B,dance combined finale,1.05,1.05,48,0,0,GROUNDED
+82,SETTLE back to key,dance combined finale,dance combined finale,1.0,1.0,48,0,0,GROUNDED
+83,inbetween,dance combined finale,apose,0.12,0.01,47,0,0,GROUNDED
+84,inbetween,dance combined finale,apose,0.25,0.06,45,0,0,GROUNDED
+85,BREAKDOWN arc +10deg largest-moving arm upper,dance combined finale,apose,0.38,0.21,37,0,0,GROUNDED
+86,inbetween,dance combined finale,apose,0.5,0.5,24,0,0,GROUNDED
+87,BREAKDOWN follow-through +8deg that arm lower,dance combined finale,apose,0.62,0.79,10,0,0,GROUNDED
+88,inbetween,dance combined finale,apose,0.75,0.94,3,0,0,GROUNDED
+89,inbetween,dance combined finale,apose,0.88,0.99,0,0,0,GROUNDED
+90,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+91,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+92,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
