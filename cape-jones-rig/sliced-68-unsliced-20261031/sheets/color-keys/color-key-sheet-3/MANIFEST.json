@@ -1,0 +1,226 @@
+{
+ "source": "color-keys/color-key-sheet-3.jpg",
+ "group": "color-keys",
+ "plate": "color-keys/color-key-sheet-3.png",
+ "plate_md5": "14f6f2296497c4752d6d30c243e60df1",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    110,
+    35
+   ],
+   "opaque_px": 2632,
+   "sheet_bbox": [
+    563,
+    48,
+    673,
+    83
+   ],
+   "area_px": 2632,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    86,
+    35
+   ],
+   "opaque_px": 2168,
+   "sheet_bbox": [
+    684,
+    48,
+    770,
+    83
+   ],
+   "area_px": 2168,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_3",
+   "file": "Row1_3.png",
+   "size": [
+    49,
+    35
+   ],
+   "opaque_px": 1387,
+   "sheet_bbox": [
+    774,
+    48,
+    823,
+    83
+   ],
+   "area_px": 1387,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_4",
+   "file": "Row1_4.png",
+   "size": [
+    143,
+    36
+   ],
+   "opaque_px": 3892,
+   "sheet_bbox": [
+    836,
+    47,
+    979,
+    83
+   ],
+   "area_px": 3892,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_5",
+   "file": "Row1_5.png",
+   "size": [
+    79,
+    34
+   ],
+   "opaque_px": 2020,
+   "sheet_bbox": [
+    992,
+    48,
+    1071,
+    82
+   ],
+   "area_px": 2020,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_6",
+   "file": "Row1_6.png",
+   "size": [
+    55,
+    36
+   ],
+   "opaque_px": 1542,
+   "sheet_bbox": [
+    1082,
+    47,
+    1137,
+    83
+   ],
+   "area_px": 1542,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_7",
+   "file": "Row1_7.png",
+   "size": [
+    75,
+    34
+   ],
+   "opaque_px": 1960,
+   "sheet_bbox": [
+    1140,
+    48,
+    1215,
+    82
+   ],
+   "area_px": 1960,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    358,
+    712
+   ],
+   "opaque_px": 246509,
+   "sheet_bbox": [
+    2,
+    158,
+    360,
+    870
+   ],
+   "area_px": 246509,
+   "provisional_class": "colour_variant_figure",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    349,
+    711
+   ],
+   "opaque_px": 246979,
+   "sheet_bbox": [
+    365,
+    158,
+    714,
+    869
+   ],
+   "area_px": 246979,
+   "provisional_class": "colour_variant_figure",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_3",
+   "file": "Row2_3.png",
+   "size": [
+    352,
+    713
+   ],
+   "opaque_px": 249059,
+   "sheet_bbox": [
+    719,
+    157,
+    1071,
+    870
+   ],
+   "area_px": 249059,
+   "provisional_class": "colour_variant_figure",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_4",
+   "file": "Row2_4.png",
+   "size": [
+    349,
+    712
+   ],
+   "opaque_px": 246786,
+   "sheet_bbox": [
+    1075,
+    158,
+    1424,
+    870
+   ],
+   "area_px": 246786,
+   "provisional_class": "colour_variant_figure",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_5",
+   "file": "Row2_5.png",
+   "size": [
+    360,
+    668
+   ],
+   "opaque_px": 199543,
+   "sheet_bbox": [
+    1428,
+    200,
+    1788,
+    868
+   ],
+   "area_px": 199543,
+   "provisional_class": "colour_variant_figure",
+   "grid_split": false
+  }
+ ]
+}

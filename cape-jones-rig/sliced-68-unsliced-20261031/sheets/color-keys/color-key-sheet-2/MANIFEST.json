@@ -1,0 +1,100 @@
+{
+ "source": "color-keys/color-key-sheet-2.jpg",
+ "group": "color-keys",
+ "plate": "color-keys/color-key-sheet-2.png",
+ "plate_md5": "fbcdbeb64503c24a3f1e9a2fde64daa1",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    585,
+    479
+   ],
+   "opaque_px": 278359,
+   "sheet_bbox": [
+    1,
+    9,
+    586,
+    488
+   ],
+   "area_px": 278359,
+   "provisional_class": "colour_variant_figure",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    574,
+    480
+   ],
+   "opaque_px": 273987,
+   "sheet_bbox": [
+    607,
+    9,
+    1181,
+    489
+   ],
+   "area_px": 273987,
+   "provisional_class": "colour_variant_figure",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_3",
+   "file": "Row1_3.png",
+   "size": [
+    586,
+    478
+   ],
+   "opaque_px": 278859,
+   "sheet_bbox": [
+    1205,
+    9,
+    1791,
+    487
+   ],
+   "area_px": 278859,
+   "provisional_class": "colour_variant_figure",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    535,
+    480
+   ],
+   "opaque_px": 256309,
+   "sheet_bbox": [
+    311,
+    511,
+    846,
+    991
+   ],
+   "area_px": 256309,
+   "provisional_class": "colour_variant_figure",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    556,
+    479
+   ],
+   "opaque_px": 265344,
+   "sheet_bbox": [
+    903,
+    511,
+    1459,
+    990
+   ],
+   "area_px": 265344,
+   "provisional_class": "colour_variant_figure",
+   "grid_split": false
+  }
+ ]
+}
