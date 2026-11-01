@@ -1,0 +1,16 @@
+/home/hatch/workspace/cape-jones-rig/shafts-fix-100-20261031/build_cycles_v4_separate.py:39: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w.use_nodes = True
+/home/hatch/workspace/cape-jones-rig/shafts-fix-100-20261031/build_cycles_v4_separate.py:55: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+/home/hatch/workspace/cape-jones-rig/shafts-fix-100-20261031/build_cycles_v4_separate.py:72: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tm.use_nodes = True
+/home/hatch/workspace/cape-jones-rig/shafts-fix-100-20261031/build_cycles_v4_separate.py:81: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  fm.use_nodes = True
+/home/hatch/workspace/cape-jones-rig/shafts-fix-100-20261031/build_cycles_v4_separate.py:105: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  dm.use_nodes = True
+15:50.712  render           | Saved: '/home/hatch/workspace/cape-jones-rig/shafts-fix-100-20261031/shafts-only-cycles-v4-separate-20261031.png'
+DENOISE_ON
+SHAFTS_V4_SEPARATE_DONE /home/hatch/workspace/cape-jones-rig/shafts-fix-100-20261031/shafts-only-cycles-v4-separate-20261031.png
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:35:05)
+
+Blender quit
