@@ -1,0 +1,91 @@
+{
+  "scenarios": [
+    {
+      "scenario": "A-shafts-overhead",
+      "feet_y": 1400,
+      "bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "ground_shadow_px": 70329,
+      "char_form_px": 373846,
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "rim": [
+        255,
+        180,
+        80
+      ],
+      "light_dx": 30,
+      "light_side": "above"
+    },
+    {
+      "scenario": "B-golden-frontleft",
+      "feet_y": 1400,
+      "bbox": [
+        216,
+        346,
+        885,
+        1400
+      ],
+      "ground_shadow_px": 84261,
+      "char_form_px": 405110,
+      "figure_alpha_px": 408573,
+      "figure_alpha_unchanged": true,
+      "rim": [
+        255,
+        180,
+        80
+      ],
+      "light_dx": 120,
+      "light_side": "left"
+    }
+  ],
+  "gates": {
+    "A": {
+      "canvas": [
+        1100,
+        1500
+      ],
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "edge_alpha_touch": false,
+      "figure_inside": true
+    },
+    "B": {
+      "canvas": [
+        1100,
+        1500
+      ],
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "edge_alpha_touch": false,
+      "figure_inside": true
+    }
+  },
+  "methods": {
+    "industry": [
+      "I1 contact shadow",
+      "I2 cast/projected shadow",
+      "I3 ambient occlusion",
+      "I4 form/cel shadow",
+      "I5 soft/PCF-like blur"
+    ],
+    "experimental": [
+      "X1 shaft-aligned shadow",
+      "X2 depth-gradient shadow",
+      "X3 colour-bleed shadow",
+      "X4 flicker/sway sequence",
+      "X5 ground-texture interaction"
+    ]
+  },
+  "mapping_only": [
+    "Blender Cycles true 3D shadow pass (needs 3D figure model, not run here, not counted in 10)",
+    "Ray-traced shadow map (no ray tracer run, PIL proxy only)",
+    "True volumetric shadow (shaft volume shadow, PIL column mask proxy only)"
+  ]
+}
