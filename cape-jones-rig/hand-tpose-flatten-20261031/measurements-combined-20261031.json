@@ -1,0 +1,1300 @@
+{
+  "tpose": {
+    "1_fist": {
+      "hand": "Hand_1_Fist.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "before_bbox_px": [
+        139,
+        null
+      ],
+      "gate": {
+        "L": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            151.3,
+            442.9
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 97.7,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -0.994,
+            0.112
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 90,
+          "scale": 1.275,
+          "wrist_target": [
+            268.1,
+            429.8
+          ],
+          "forearm_end": [
+            248.1,
+            429.8
+          ],
+          "forearm_outward": [
+            -1.0,
+            0.0
+          ]
+        },
+        "R": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1348.7,
+            436.3
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 97.7,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            0.994,
+            0.112
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": -90,
+          "scale": 1.275,
+          "wrist_target": [
+            1231.9,
+            423.2
+          ],
+          "forearm_end": [
+            1251.9,
+            423.2
+          ],
+          "forearm_outward": [
+            1.0,
+            0.0
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          151,
+          253,
+          1347,
+          1311
+        ]
+      }
+    },
+    "2_fistback": {
+      "hand": "Hand_2_FistBack.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "before_bbox_px": [
+        null,
+        null
+      ],
+      "gate": {
+        "L": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            122.2,
+            444.7
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 126.7,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -0.995,
+            0.102
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 90,
+          "scale": 1.275,
+          "wrist_target": [
+            268.1,
+            429.8
+          ],
+          "forearm_end": [
+            248.1,
+            429.8
+          ],
+          "forearm_outward": [
+            -1.0,
+            0.0
+          ]
+        },
+        "R": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1377.8,
+            438.1
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 126.7,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            0.995,
+            0.102
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": -90,
+          "scale": 1.275,
+          "wrist_target": [
+            1231.9,
+            423.2
+          ],
+          "forearm_end": [
+            1251.9,
+            423.2
+          ],
+          "forearm_outward": [
+            1.0,
+            0.0
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          122,
+          253,
+          1376,
+          1311
+        ]
+      }
+    },
+    "3_open": {
+      "hand": "Hand_3_Open.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "before_bbox_px": [
+        null,
+        null
+      ],
+      "gate": {
+        "L": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            109.2,
+            431.6
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 138.9,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -1.0,
+            0.011
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 90,
+          "scale": 1.275,
+          "wrist_target": [
+            268.1,
+            429.8
+          ],
+          "forearm_end": [
+            248.1,
+            429.8
+          ],
+          "forearm_outward": [
+            -1.0,
+            0.0
+          ]
+        },
+        "R": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1390.8,
+            424.9
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 138.9,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            1.0,
+            0.011
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": -90,
+          "scale": 1.275,
+          "wrist_target": [
+            1231.9,
+            423.2
+          ],
+          "forearm_end": [
+            1251.9,
+            423.2
+          ],
+          "forearm_outward": [
+            1.0,
+            0.0
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          109,
+          253,
+          1389,
+          1311
+        ]
+      }
+    },
+    "4_point": {
+      "hand": "Hand_4_Point.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "before_bbox_px": [
+        null,
+        null
+      ],
+      "gate": {
+        "L": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            100.3,
+            430.4
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 147.8,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -1.0,
+            0.004
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 90,
+          "scale": 1.275,
+          "wrist_target": [
+            268.1,
+            429.8
+          ],
+          "forearm_end": [
+            248.1,
+            429.8
+          ],
+          "forearm_outward": [
+            -1.0,
+            0.0
+          ]
+        },
+        "R": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1399.7,
+            423.8
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 147.8,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            1.0,
+            0.004
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": -90,
+          "scale": 1.275,
+          "wrist_target": [
+            1231.9,
+            423.2
+          ],
+          "forearm_end": [
+            1251.9,
+            423.2
+          ],
+          "forearm_outward": [
+            1.0,
+            0.0
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          100,
+          253,
+          1398,
+          1311
+        ]
+      }
+    },
+    "5_point2": {
+      "hand": "Hand_5_Point2.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "before_bbox_px": [
+        null,
+        null
+      ],
+      "gate": {
+        "L": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            100.6,
+            444.1
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 148.2,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -0.996,
+            0.085
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 90,
+          "scale": 1.275,
+          "wrist_target": [
+            268.1,
+            429.8
+          ],
+          "forearm_end": [
+            248.1,
+            429.8
+          ],
+          "forearm_outward": [
+            -1.0,
+            0.0
+          ]
+        },
+        "R": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1399.4,
+            437.4
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 148.2,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            0.996,
+            0.085
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": -90,
+          "scale": 1.275,
+          "wrist_target": [
+            1231.9,
+            423.2
+          ],
+          "forearm_end": [
+            1251.9,
+            423.2
+          ],
+          "forearm_outward": [
+            1.0,
+            0.0
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          100,
+          253,
+          1398,
+          1311
+        ]
+      }
+    },
+    "6_relaxed": {
+      "hand": "Hand_6_Relaxed.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "before_bbox_px": [
+        null,
+        null
+      ],
+      "gate": {
+        "L": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            108.2,
+            410.0
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 141.3,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -0.992,
+            -0.123
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 90,
+          "scale": 1.275,
+          "wrist_target": [
+            268.1,
+            429.8
+          ],
+          "forearm_end": [
+            248.1,
+            429.8
+          ],
+          "forearm_outward": [
+            -1.0,
+            0.0
+          ]
+        },
+        "R": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1391.8,
+            403.4
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 141.3,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            0.992,
+            -0.123
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": -90,
+          "scale": 1.275,
+          "wrist_target": [
+            1231.9,
+            423.2
+          ],
+          "forearm_end": [
+            1251.9,
+            423.2
+          ],
+          "forearm_outward": [
+            1.0,
+            0.0
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          108,
+          253,
+          1390,
+          1311
+        ]
+      }
+    },
+    "7_grip": {
+      "hand": "Hand_7_Grip.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "before_bbox_px": [
+        null,
+        null
+      ],
+      "gate": {
+        "L": {
+          "wrist": [
+            268.1,
+            429.8
+          ],
+          "tip": [
+            124.7,
+            418.5
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 124.0,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -0.997,
+            -0.079
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 90,
+          "scale": 1.275,
+          "wrist_target": [
+            268.1,
+            429.8
+          ],
+          "forearm_end": [
+            248.1,
+            429.8
+          ],
+          "forearm_outward": [
+            -1.0,
+            0.0
+          ]
+        },
+        "R": {
+          "wrist": [
+            1231.9,
+            423.2
+          ],
+          "tip": [
+            1375.3,
+            411.8
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 124.0,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            0.997,
+            -0.079
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": -90,
+          "scale": 1.275,
+          "wrist_target": [
+            1231.9,
+            423.2
+          ],
+          "forearm_end": [
+            1251.9,
+            423.2
+          ],
+          "forearm_outward": [
+            1.0,
+            0.0
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          124,
+          253,
+          1374,
+          1311
+        ]
+      }
+    }
+  },
+  "dance": {
+    "open-groove-a": {
+      "hand": "Hand_3_Open.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "gate": {
+        "L": {
+          "wrist": [
+            109.0,
+            612.8
+          ],
+          "tip": [
+            107.2,
+            453.9
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 169.6,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -0.011,
+            -1.0
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            -0.866,
+            0.5
+          ]
+        },
+        "R": {
+          "wrist": [
+            994.3,
+            607.0
+          ],
+          "tip": [
+            996.1,
+            448.2
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 169.6,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            0.011,
+            -1.0
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            0.866,
+            0.5
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          47,
+          253,
+          1054,
+          1311
+        ]
+      }
+    },
+    "open-groove-b": {
+      "hand": "Hand_3_Open.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "gate": {
+        "L": {
+          "wrist": [
+            433.8,
+            430.0
+          ],
+          "tip": [
+            432.0,
+            271.1
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 168.5,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -0.011,
+            -1.0
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            0.906,
+            0.423
+          ]
+        },
+        "R": {
+          "wrist": [
+            674.8,
+            423.5
+          ],
+          "tip": [
+            676.6,
+            264.6
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 158.6,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            0.011,
+            -1.0
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            -0.996,
+            -0.087
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          240,
+          253,
+          884,
+          1309
+        ]
+      }
+    },
+    "open-groove-c": {
+      "hand": "Hand_3_Open.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "gate": {
+        "L": {
+          "wrist": [
+            159.7,
+            610.2
+          ],
+          "tip": [
+            158.0,
+            451.3
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 160.6,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -0.011,
+            -1.0
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            -0.999,
+            0.035
+          ]
+        },
+        "R": {
+          "wrist": [
+            895.5,
+            434.8
+          ],
+          "tip": [
+            897.3,
+            276.0
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 142.8,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            0.011,
+            -1.0
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            0.574,
+            -0.819
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          98,
+          253,
+          955,
+          1303
+        ]
+      }
+    },
+    "point-groove-a": {
+      "hand": "Hand_4_Point.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "gate": {
+        "L": {
+          "wrist": [
+            109.0,
+            612.8
+          ],
+          "tip": [
+            108.3,
+            445.0
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 178.6,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -0.004,
+            -1.0
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            -0.866,
+            0.5
+          ]
+        },
+        "R": {
+          "wrist": [
+            994.3,
+            607.0
+          ],
+          "tip": [
+            995.0,
+            439.2
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 178.6,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            0.004,
+            -1.0
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            0.866,
+            0.5
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          56,
+          253,
+          1046,
+          1311
+        ]
+      }
+    },
+    "point-groove-b": {
+      "hand": "Hand_4_Point.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "gate": {
+        "L": {
+          "wrist": [
+            433.8,
+            430.0
+          ],
+          "tip": [
+            433.2,
+            262.2
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 177.2,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -0.004,
+            -1.0
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            0.906,
+            0.423
+          ]
+        },
+        "R": {
+          "wrist": [
+            674.8,
+            423.5
+          ],
+          "tip": [
+            675.4,
+            255.7
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 167.3,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            0.004,
+            -1.0
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            -0.996,
+            -0.087
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          240,
+          253,
+          884,
+          1309
+        ]
+      }
+    },
+    "point-groove-c": {
+      "hand": "Hand_4_Point.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "gate": {
+        "L": {
+          "wrist": [
+            159.7,
+            610.2
+          ],
+          "tip": [
+            159.1,
+            442.4
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 169.6,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -0.004,
+            -1.0
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            -0.999,
+            0.035
+          ]
+        },
+        "R": {
+          "wrist": [
+            895.5,
+            434.8
+          ],
+          "tip": [
+            896.1,
+            267.1
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 151.8,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            0.004,
+            -1.0
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            0.574,
+            -0.819
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          106,
+          253,
+          947,
+          1303
+        ]
+      }
+    },
+    "relaxed-groove-a": {
+      "hand": "Hand_6_Relaxed.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "gate": {
+        "L": {
+          "wrist": [
+            109.0,
+            612.8
+          ],
+          "tip": [
+            128.7,
+            452.9
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 173.9,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            0.123,
+            -0.992
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            -0.866,
+            0.5
+          ]
+        },
+        "R": {
+          "wrist": [
+            994.3,
+            607.0
+          ],
+          "tip": [
+            974.6,
+            447.1
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 173.9,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -0.123,
+            -0.992
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            0.866,
+            0.5
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          59,
+          253,
+          1042,
+          1311
+        ]
+      }
+    },
+    "relaxed-groove-b": {
+      "hand": "Hand_6_Relaxed.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "gate": {
+        "L": {
+          "wrist": [
+            433.8,
+            430.0
+          ],
+          "tip": [
+            453.6,
+            270.1
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 168.3,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            0.123,
+            -0.992
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            0.906,
+            0.423
+          ]
+        },
+        "R": {
+          "wrist": [
+            674.8,
+            423.5
+          ],
+          "tip": [
+            655.0,
+            263.6
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 158.1,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -0.123,
+            -0.992
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            -0.996,
+            -0.087
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          240,
+          253,
+          884,
+          1309
+        ]
+      }
+    },
+    "relaxed-groove-c": {
+      "hand": "Hand_6_Relaxed.png",
+      "before_scale": 1.7,
+      "after_scale": 1.275,
+      "gate": {
+        "L": {
+          "wrist": [
+            159.7,
+            610.2
+          ],
+          "tip": [
+            179.5,
+            450.3
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 165.4,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            0.123,
+            -0.992
+          ],
+          "arm": "Arm1",
+          "mirror": true,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            -0.999,
+            0.035
+          ]
+        },
+        "R": {
+          "wrist": [
+            895.5,
+            434.8
+          ],
+          "tip": [
+            875.7,
+            275.0
+          ],
+          "d_wrist": 20.0,
+          "d_tip": 146.9,
+          "pass": true,
+          "verdict": "PASS",
+          "finger_dir": [
+            -0.123,
+            -0.992
+          ],
+          "arm": "Arm2",
+          "mirror": false,
+          "angle": 0,
+          "scale": 1.275,
+          "forearm_outward": [
+            0.574,
+            -0.819
+          ]
+        }
+      },
+      "no_crop": {
+        "pass": true,
+        "bbox": [
+          110,
+          253,
+          943,
+          1303
+        ]
+      }
+    }
+  },
+  "serve": {
+    "arm": "Arm1 (L arm top, per build_wrist_fixes doc)",
+    "mirror": true,
+    "angle": 164.8,
+    "scale": 1.0,
+    "forearm_end_F": [
+      314.0,
+      517.0
+    ],
+    "arm_direction_D": [
+      -0.263,
+      0.965
+    ],
+    "wrist_target": [
+      320.6,
+      492.9
+    ],
+    "palm_centre": [
+      314,
+      530
+    ],
+    "gate": {
+      "d_wrist": 25.0,
+      "d_tip": 99.6,
+      "verdict": "PASS"
+    },
+    "erase_region_base_alpha_px": 10173,
+    "fist_pixels_remaining_outside_hand": 0,
+    "no_crop": {
+      "pass": true,
+      "bbox": [
+        248,
+        237,
+        884,
+        1296
+      ]
+    },
+    "no_crop_ball": {
+      "pass": true,
+      "bbox": [
+        232,
+        237,
+        884,
+        1296
+      ]
+    },
+    "erase_method": "tight fist rectangle x200-365 y475-610, all alpha (cuff preserved above y475; torso/cape starts x~397)",
+    "erase_rect_base_alpha_px": 3730,
+    "torso_region_alpha_diff_px_x_ge_380": 0,
+    "placement": "hand centre = fist centre (314,530) exactly, v3; v2 wrist-inside placement left a visible gap to the cuff and was discarded before Mars saw it",
+    "hand_centre": [
+      314.0,
+      530.0
+    ],
+    "wrist": [
+      331.6,
+      474.6
+    ],
+    "tip": [
+      300.2,
+      595.2
+    ],
+    "d_wrist_to_fist_centre": 58.1,
+    "d_wrist_to_cuff_bottom": 11.3,
+    "fist_pixels_remaining_y465_475_outside_hand": 310
+  }
+}
