@@ -1,0 +1,70 @@
+{
+  "skeleton": {
+    "hash": "cape-jones-side-auto-20261101",
+    "spine": "3.8",
+    "x": 0,
+    "y": 0
+  },
+  "bones": [
+    {
+      "name": "root",
+      "x": -46.8,
+      "y": 554.6
+    },
+    {
+      "name": "pelvis",
+      "parent": "root",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "name": "chest",
+      "parent": "pelvis",
+      "x": 9.5,
+      "y": 138.8,
+      "length": 240.5
+    },
+    {
+      "name": "neck",
+      "parent": "chest",
+      "x": 0.1,
+      "y": 303.8,
+      "length": 177.8
+    },
+    {
+      "name": "head",
+      "parent": "neck",
+      "x": 0,
+      "y": 177.8
+    },
+    {
+      "name": "upper_arm",
+      "parent": "chest",
+      "x": -45.7,
+      "y": 236.1,
+      "length": 229.5
+    },
+    {
+      "name": "forearm",
+      "parent": "upper_arm",
+      "x": 0,
+      "y": 0,
+      "length": 207.7
+    },
+    {
+      "name": "thigh",
+      "parent": "pelvis",
+      "x": -9.5,
+      "y": -138.8,
+      "length": 232.2
+    },
+    {
+      "name": "shin",
+      "parent": "thigh",
+      "x": 0,
+      "y": 0,
+      "length": 324.1
+    }
+  ],
+  "source": "AUTO-MANIFEST.json joints, global scale S=0.9557, no hand-typed bone coords"
+}
