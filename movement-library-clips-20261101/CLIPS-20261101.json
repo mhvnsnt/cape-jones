@@ -1,0 +1,58 @@
+[
+  {
+    "id": "01-gumball-dance-strut-twist",
+    "source": "dance-recreation-20261031/dance-recreation-main-20261031.mp4",
+    "duration": 4.52,
+    "mp4_bytes": 316950,
+    "sound": "Gumball Darwin dance timing, Cape Jones version"
+  },
+  {
+    "id": "02-gumball-fight-kick",
+    "source": "dance-improved-20261031/dance-improved-20261031.mp4",
+    "duration": 5.04,
+    "mp4_bytes": 117928,
+    "sound": "Gumball fight timing, kick segment, Cape Jones version"
+  },
+  {
+    "id": "03-fosters-pose-swap-gesture",
+    "source": "rig-chains-20261031/chain-punch-20261031.mp4",
+    "duration": 3.12,
+    "mp4_bytes": 161803,
+    "sound": "Fosters pose-swap / gesture timing, Cape Jones version"
+  },
+  {
+    "id": "04-smiling-friends-pose-swap-head",
+    "source": "rig-chains-20261031/successor-pose-dialects-20261031.mp4",
+    "duration": 5.58,
+    "mp4_bytes": 476287,
+    "sound": "Smiling Friends frame-addressed swap libraries, Cape Jones version"
+  },
+  {
+    "id": "05-scooby-song-step",
+    "source": "rig-chains-20261031/chain-dance-20261031.mp4",
+    "duration": 3.88,
+    "mp4_bytes": 255627,
+    "sound": "Scooby 607 song animatic step timing, Cape Jones version"
+  },
+  {
+    "id": "06-nick-baked-cache-walk",
+    "source": "rig-chains-20261031/chain-walk-20261031.mp4",
+    "duration": 2.79,
+    "mp4_bytes": 214770,
+    "sound": "Nick Maya/Alembic baked-cache walk timing, Cape Jones version"
+  },
+  {
+    "id": "07-johnny-bravo-flex-dance",
+    "source": "rig-chains-20261031/chain-flex-fight-20261031.mp4",
+    "duration": 3.12,
+    "mp4_bytes": 204802,
+    "sound": "Johnny Bravo flex/dance, Cape Jones version"
+  },
+  {
+    "id": "08-richard-scooby-gang-step",
+    "source": "dance-recreation-20261031/dance-recreation-combine-20261031.mp4",
+    "duration": 4.48,
+    "mp4_bytes": 302434,
+    "sound": "Richard arms-up + Scooby gang stepping, Cape Jones version"
+  }
+]
