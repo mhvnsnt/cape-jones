@@ -1,0 +1,20 @@
+{
+  "canvas": [
+    1400,
+    1600
+  ],
+  "bbox": [
+    225,
+    195,
+    901,
+    1410
+  ],
+  "alpha_bottom_overall": 1410,
+  "alpha_bottom_left_band_0_700": 1410,
+  "alpha_bottom_right_band_700_1400": 1229,
+  "widget_ground_y": 1475,
+  "hands_drawn": 2,
+  "fists_drawn": 0,
+  "pieces_drawn": 18,
+  "pieces_total": 20
+}
