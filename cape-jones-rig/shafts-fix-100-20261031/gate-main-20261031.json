@@ -1,0 +1,52 @@
+{
+ "shafts": "shafts-eevee-v4-fullres-20261031.png",
+ "composite": "composite-shafts-v4-figure-20261031.png",
+ "mid_band_peak": 104.49383333333334,
+ "mid_band_median_valley": 25.078166666666668,
+ "mid_threshold": 64.786,
+ "mid_runs": [
+  [
+   58,
+   212
+  ],
+  [
+   267,
+   418
+  ],
+  [
+   474,
+   622
+  ],
+  [
+   679,
+   832
+  ],
+  [
+   887,
+   1041
+  ]
+ ],
+ "n_runs": 5,
+ "pass_5col": true,
+ "top300_max_row_nearblack_fraction": 0.0,
+ "pass_slat_not_dominant": true,
+ "pool_centre_vals": [
+  114.88333333333334,
+  111.44000000000001,
+  110.99000000000001,
+  111.71,
+  114.84333333333335
+ ],
+ "pool_gap_vals": [
+  120.48666666666666,
+  136.15666666666667,
+  136.14666666666668,
+  120.04333333333334
+ ],
+ "pass_pools_in_scene": true,
+ "edge_alpha_max": 255.0,
+ "pass_no_crop_edge_transparent_only": false,
+ "occlusion_max_diff_opaque_figure": 0.0,
+ "pass_occlusion": true,
+ "overall_pass": true
+}
