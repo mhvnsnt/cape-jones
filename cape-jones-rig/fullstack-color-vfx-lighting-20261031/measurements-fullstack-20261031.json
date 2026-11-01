@@ -1,0 +1,291 @@
+{
+  "base_bbox": [
+    248,
+    359,
+    875,
+    1400
+  ],
+  "base_alpha": 373846,
+  "projects": [
+    {
+      "id": "F-I1",
+      "name": "Golden Hour Hero",
+      "kind": "industry",
+      "file": "F-I1-golden-hour-hero-20261031.png",
+      "stack": {
+        "color": "LUT/grade gains (1.15, 1.0, 0.85) on warm room",
+        "vfx": "god-ray shafts + warm glow",
+        "lighting": "key rim (255, 180, 80) form x->0.78 wrap 0.3",
+        "shadow": "contact+cast dx=30 + cel form + AO<12px 25%",
+        "keying": "hue-key purple glow (255, 180, 80) x0.4"
+      },
+      "bbox": [
+        248,
+        359,
+        875,
+        1400
+      ],
+      "feet": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_alpha": 373846,
+      "ground_shadow_px": 100897,
+      "rim_px": 34840,
+      "key_mask_px": 9731,
+      "inside_canvas": true,
+      "gate": "PASS"
+    },
+    {
+      "id": "F-I2",
+      "name": "Night City Neon",
+      "kind": "industry",
+      "file": "F-I2-night-city-neon-20261031.png",
+      "stack": {
+        "color": "LUT/grade gains (0.85, 0.95, 1.2) on night room",
+        "vfx": "cyan neon rim glow + city shafts",
+        "lighting": "key rim (0, 200, 255) form -x->0.72 wrap 0.3",
+        "shadow": "contact+cast dx=-120 + cel form + AO<12px 25%",
+        "keying": "hue-key cyan glow (0, 220, 255) x0.5"
+      },
+      "bbox": [
+        248,
+        359,
+        875,
+        1400
+      ],
+      "feet": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_alpha": 373846,
+      "ground_shadow_px": 100958,
+      "rim_px": 34840,
+      "key_mask_px": 60,
+      "inside_canvas": true,
+      "gate": "PASS"
+    },
+    {
+      "id": "F-I3",
+      "name": "Comic Dramatic Uplight",
+      "kind": "industry",
+      "file": "F-I3-comic-dramatic-uplight-20261031.png",
+      "stack": {
+        "color": "LUT/grade gains (1.1, 1.05, 1.05) on comic room",
+        "vfx": "underlight spot + AO drama",
+        "lighting": "key rim (255, 220, 150) form -y->0.7 wrap 0.3",
+        "shadow": "contact+cast dx=60 + cel form + AO<12px 25%",
+        "keying": "hue-key face glow (255, 200, 120) x0.5"
+      },
+      "bbox": [
+        248,
+        359,
+        875,
+        1400
+      ],
+      "feet": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_alpha": 373846,
+      "ground_shadow_px": 100875,
+      "rim_px": 34840,
+      "key_mask_px": 3226,
+      "inside_canvas": true,
+      "gate": "PASS"
+    },
+    {
+      "id": "F-I4",
+      "name": "Desert Day Dappled",
+      "kind": "industry",
+      "file": "F-I4-desert-day-dappled-20261031.png",
+      "stack": {
+        "color": "LUT/grade gains (1.1, 1.05, 0.9) on day room",
+        "vfx": "dappled shaft stripes on figure+ground",
+        "lighting": "key rim (255, 200, 120) form y->0.78 wrap 0.3",
+        "shadow": "contact+cast dx=30 + cel form + AO<12px 25%",
+        "keying": "hue-key gold glow (255, 210, 100) x0.4"
+      },
+      "bbox": [
+        248,
+        359,
+        875,
+        1400
+      ],
+      "feet": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_alpha": 373846,
+      "ground_shadow_px": 100897,
+      "rim_px": 34840,
+      "key_mask_px": 284,
+      "inside_canvas": true,
+      "gate": "PASS"
+    },
+    {
+      "id": "F-I5",
+      "name": "Dual-Light Split",
+      "kind": "industry",
+      "file": "F-I5-dual-light-split-20261031.png",
+      "stack": {
+        "color": "LUT/grade gains (1.05, 0.95, 1.05) on dual room",
+        "vfx": "dual god rays warm front + cyan back, double shadow",
+        "lighting": "key rim (255, 180, 80) form x->0.72 wrap 0.3",
+        "shadow": "contact+cast dx=60 + cel form + AO<12px 25%",
+        "keying": "hue-key purple glow (0, 200, 255) x0.4"
+      },
+      "bbox": [
+        248,
+        359,
+        875,
+        1400
+      ],
+      "feet": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_alpha": 373846,
+      "ground_shadow_px": 107157,
+      "rim_px": 34840,
+      "key_mask_px": 9731,
+      "inside_canvas": true,
+      "gate": "PASS"
+    },
+    {
+      "id": "F-X1",
+      "name": "Chroma Prism",
+      "kind": "experimental",
+      "file": "F-X1-chroma-prism-20261031.png",
+      "stack": {
+        "color": "LUT/grade gains (1.1, 0.95, 1.15) on prism room",
+        "vfx": "prismatic RGB edge shift + light leak",
+        "lighting": "key rim (255, 120, 220) form x->0.72 wrap 0.3",
+        "shadow": "contact+cast dx=90 + cel form + AO<12px 25%",
+        "keying": "hue-key purple glow (255, 100, 220) x0.6"
+      },
+      "bbox": [
+        248,
+        359,
+        875,
+        1400
+      ],
+      "feet": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_alpha": 373846,
+      "ground_shadow_px": 100893,
+      "rim_px": 34840,
+      "key_mask_px": 9731,
+      "inside_canvas": true,
+      "gate": "PASS"
+    },
+    {
+      "id": "F-X2",
+      "name": "Crystal Power",
+      "kind": "experimental",
+      "file": "F-X2-crystal-power-20261031.png",
+      "stack": {
+        "color": "LUT/grade gains (0.9, 1.1, 1.2) on crystal room",
+        "vfx": "crystal cyan/pink glints + facet tint",
+        "lighting": "key rim (42, 126, 207) form y->0.75 wrap 0.3",
+        "shadow": "contact+cast dx=30 + cel form + AO<12px 25%",
+        "keying": "hue-key white glow (42, 200, 255) x0.5"
+      },
+      "bbox": [
+        248,
+        359,
+        875,
+        1400
+      ],
+      "feet": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_alpha": 373846,
+      "ground_shadow_px": 100897,
+      "rim_px": 34840,
+      "key_mask_px": 161595,
+      "inside_canvas": true,
+      "gate": "PASS"
+    },
+    {
+      "id": "F-X3",
+      "name": "Ghost Outline",
+      "kind": "experimental",
+      "file": "F-X3-ghost-outline-20261031.png",
+      "stack": {
+        "color": "LUT/grade gains (0.85, 0.9, 0.95) on ghost room",
+        "vfx": "invisible outline + halo, desaturated ghost",
+        "lighting": "key rim (0, 200, 255) form -x->0.72 wrap 0.3",
+        "shadow": "contact+cast dx=-60 + cel form + AO<12px 25%",
+        "keying": "hue-key cyan glow (180, 245, 255) x0.6"
+      },
+      "bbox": [
+        248,
+        359,
+        875,
+        1400
+      ],
+      "feet": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_alpha": 373846,
+      "ground_shadow_px": 100934,
+      "rim_px": 34840,
+      "key_mask_px": 60,
+      "inside_canvas": true,
+      "gate": "PASS"
+    },
+    {
+      "id": "F-X4",
+      "name": "Storm Flicker",
+      "kind": "experimental",
+      "file": "F-X4-storm-flicker-20261031.png",
+      "stack": {
+        "color": "LUT/grade gains (0.9, 0.95, 1.15) on storm room",
+        "vfx": "lightning flash + flicker sway shadow",
+        "lighting": "key rim (160, 200, 255) form x->0.7 wrap 0.3",
+        "shadow": "contact+cast dx=120 + cel form + AO<12px 25%",
+        "keying": "hue-key white glow (200, 220, 255) x0.5"
+      },
+      "bbox": [
+        248,
+        359,
+        875,
+        1400
+      ],
+      "feet": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_alpha": 373846,
+      "ground_shadow_px": 100868,
+      "rim_px": 34840,
+      "key_mask_px": 161595,
+      "inside_canvas": true,
+      "gate": "PASS"
+    },
+    {
+      "id": "F-X5",
+      "name": "Ground Pool Dance",
+      "kind": "experimental",
+      "file": "F-X5-ground-pool-dance-20261031.png",
+      "stack": {
+        "color": "LUT/grade gains (1.15, 1.0, 0.85) on pools room",
+        "vfx": "floor pool glow + ground bounce, depth-gradient shadow",
+        "lighting": "key rim (255, 180, 80) form y->0.78 wrap 0.3",
+        "shadow": "contact+cast dx=30 + cel form + AO<12px 25%",
+        "keying": "hue-key gold glow (255, 180, 80) x0.5"
+      },
+      "bbox": [
+        248,
+        359,
+        875,
+        1400
+      ],
+      "feet": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_alpha": 373846,
+      "ground_shadow_px": 99497,
+      "rim_px": 34840,
+      "key_mask_px": 284,
+      "inside_canvas": true,
+      "gate": "PASS"
+    }
+  ]
+}
