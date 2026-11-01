@@ -1,0 +1,93 @@
+=== jojo-01 ===
+L: lower_vs_head=0 upper_vs_collar=3548 lower_vs_torso=0 elbow_dy=33 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=4052 lower_vs_torso=0 elbow_dy=126 -> NO SNAP
+=== jojo-02 ===
+L: lower_vs_head=2996 upper_vs_collar=3893 lower_vs_torso=0 elbow_dy=-91 -> COWL-CANDIDATE: raised arm + collar overlap — EYE-CHECK bicep interruption before snapping
+R: lower_vs_head=0 upper_vs_collar=3501 lower_vs_torso=7388 elbow_dy=57 -> CHEST-SNAP: whole chain above torso, below head (torso < arm < head)
+=== jojo-03-ORIGINAL ===
+L: lower_vs_head=0 upper_vs_collar=4644 lower_vs_torso=0 elbow_dy=159 -> NO SNAP
+R: lower_vs_head=7941 upper_vs_collar=19172 lower_vs_torso=2143 elbow_dy=28 -> FACE-SNAP: whole chain above head (torso < head < arm)
+=== jojo-03-FIXED (chain on top, gate should still report need) ===
+L: lower_vs_head=0 upper_vs_collar=4644 lower_vs_torso=0 elbow_dy=159 -> NO SNAP
+R: lower_vs_head=7941 upper_vs_collar=19172 lower_vs_torso=2143 elbow_dy=28 -> FACE-SNAP: whole chain above head (torso < head < arm)
+=== stand-01-user ===
+L: lower_vs_head=0 upper_vs_collar=3676 lower_vs_torso=160 elbow_dy=78 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=3565 lower_vs_torso=486 elbow_dy=72 -> NO SNAP
+=== stand-01-shadow-figure ===
+L: lower_vs_head=0 upper_vs_collar=3676 lower_vs_torso=160 elbow_dy=78 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=3565 lower_vs_torso=486 elbow_dy=72 -> NO SNAP
+=== stand-02-user ===
+L: lower_vs_head=0 upper_vs_collar=4276 lower_vs_torso=4657 elbow_dy=141 -> CHEST-SNAP: whole chain above torso, below head (torso < arm < head)
+R: lower_vs_head=0 upper_vs_collar=4212 lower_vs_torso=2732 elbow_dy=137 -> CHEST-SNAP: whole chain above torso, below head (torso < arm < head)
+=== stand-02-shadow-figure ===
+L: lower_vs_head=0 upper_vs_collar=4774 lower_vs_torso=0 elbow_dy=-166 -> COWL-CANDIDATE: raised arm + collar overlap — EYE-CHECK bicep interruption before snapping
+R: lower_vs_head=0 upper_vs_collar=4700 lower_vs_torso=0 elbow_dy=-169 -> COWL-CANDIDATE: raised arm + collar overlap — EYE-CHECK bicep interruption before snapping
+=== ginyu-01-ORIGINAL ===
+L: lower_vs_head=0 upper_vs_collar=5097 lower_vs_torso=0 elbow_dy=-177 -> COWL-CANDIDATE: raised arm + collar overlap — EYE-CHECK bicep interruption before snapping
+R: lower_vs_head=0 upper_vs_collar=4774 lower_vs_torso=0 elbow_dy=164 -> NO SNAP
+=== ginyu-01-FIXED (chain on top) ===
+L: lower_vs_head=0 upper_vs_collar=5097 lower_vs_torso=0 elbow_dy=-177 -> COWL-CANDIDATE: raised arm + collar overlap — EYE-CHECK bicep interruption before snapping
+R: lower_vs_head=0 upper_vs_collar=4774 lower_vs_torso=0 elbow_dy=164 -> NO SNAP
+=== ginyu-02 ===
+L: lower_vs_head=0 upper_vs_collar=3569 lower_vs_torso=0 elbow_dy=48 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=3451 lower_vs_torso=0 elbow_dy=42 -> NO SNAP
+=== ginyu-03 ===
+L: lower_vs_head=0 upper_vs_collar=4255 lower_vs_torso=0 elbow_dy=-129 -> COWL-CANDIDATE: raised arm + collar overlap — EYE-CHECK bicep interruption before snapping
+R: lower_vs_head=0 upper_vs_collar=4168 lower_vs_torso=0 elbow_dy=-134 -> COWL-CANDIDATE: raised arm + collar overlap — EYE-CHECK bicep interruption before snapping
+=== v7c-apose ===
+L: lower_vs_head=0 upper_vs_collar=4830 lower_vs_torso=0 elbow_dy=166 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=4774 lower_vs_torso=0 elbow_dy=164 -> NO SNAP
+=== v7c-flex ===
+L: lower_vs_head=0 upper_vs_collar=4644 lower_vs_torso=2025 elbow_dy=159 -> CHEST-SNAP: whole chain above torso, below head (torso < arm < head)
+R: lower_vs_head=0 upper_vs_collar=4586 lower_vs_torso=2349 elbow_dy=156 -> CHEST-SNAP: whole chain above torso, below head (torso < arm < head)
+=== v7c-punch ===
+L: lower_vs_head=0 upper_vs_collar=3969 lower_vs_torso=0 elbow_dy=118 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=3474 lower_vs_torso=0 elbow_dy=-22 -> NO SNAP
+=== v7c-jump-armsup ===
+L: lower_vs_head=0 upper_vs_collar=4774 lower_vs_torso=0 elbow_dy=-166 -> COWL-CANDIDATE: raised arm + collar overlap — EYE-CHECK bicep interruption before snapping
+R: lower_vs_head=0 upper_vs_collar=4700 lower_vs_torso=0 elbow_dy=-169 -> COWL-CANDIDATE: raised arm + collar overlap — EYE-CHECK bicep interruption before snapping
+=== v7c-dance ===
+L: lower_vs_head=0 upper_vs_collar=3676 lower_vs_torso=0 elbow_dy=78 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=3565 lower_vs_torso=0 elbow_dy=72 -> NO SNAP
+=== v7c-seated ===
+L: lower_vs_head=0 upper_vs_collar=4830 lower_vs_torso=0 elbow_dy=166 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=4774 lower_vs_torso=0 elbow_dy=164 -> NO SNAP
+=== true-final-flex-v2 ===
+L: lower_vs_head=0 upper_vs_collar=3542 lower_vs_torso=0 elbow_dy=1 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=3452 lower_vs_torso=0 elbow_dy=-6 -> NO SNAP
+=== flex-variant-70-135 ===
+L: lower_vs_head=0 upper_vs_collar=3569 lower_vs_torso=0 elbow_dy=48 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=3451 lower_vs_torso=0 elbow_dy=42 -> NO SNAP
+=== arms-up-base ===
+L: lower_vs_head=0 upper_vs_collar=3569 lower_vs_torso=0 elbow_dy=48 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=3451 lower_vs_torso=0 elbow_dy=42 -> NO SNAP
+=== flex-split-armsup ===
+L: lower_vs_head=0 upper_vs_collar=3569 lower_vs_torso=0 elbow_dy=48 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=3451 lower_vs_torso=0 elbow_dy=42 -> NO SNAP
+=== dance-STRIDE_A ===
+L: lower_vs_head=0 upper_vs_collar=4276 lower_vs_torso=0 elbow_dy=141 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=4212 lower_vs_torso=0 elbow_dy=137 -> NO SNAP
+=== dance-STRIDE_B ===
+L: lower_vs_head=0 upper_vs_collar=9486 lower_vs_torso=7970 elbow_dy=158 -> CHEST-SNAP: whole chain above torso, below head (torso < arm < head)
+R: lower_vs_head=0 upper_vs_collar=9322 lower_vs_torso=7428 elbow_dy=162 -> CHEST-SNAP: whole chain above torso, below head (torso < arm < head)
+=== dance-GROOVE_A ===
+L: lower_vs_head=0 upper_vs_collar=3676 lower_vs_torso=0 elbow_dy=78 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=3565 lower_vs_torso=0 elbow_dy=72 -> NO SNAP
+=== dance-GROOVE_B ===
+L: lower_vs_head=0 upper_vs_collar=3569 lower_vs_torso=0 elbow_dy=48 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=3451 lower_vs_torso=0 elbow_dy=42 -> NO SNAP
+=== dance-KICK ===
+L: lower_vs_head=0 upper_vs_collar=3969 lower_vs_torso=0 elbow_dy=118 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=3474 lower_vs_torso=0 elbow_dy=-22 -> NO SNAP
+=== dance-SPLIT ===
+L: lower_vs_head=0 upper_vs_collar=3569 lower_vs_torso=0 elbow_dy=48 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=3451 lower_vs_torso=0 elbow_dy=42 -> NO SNAP
+=== dance-TWIST ===
+L: lower_vs_head=0 upper_vs_collar=3560 lower_vs_torso=0 elbow_dy=-15 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=4774 lower_vs_torso=2155 elbow_dy=164 -> CHEST-SNAP: whole chain above torso, below head (torso < arm < head)
+=== dance-ARMSUP ===
+L: lower_vs_head=0 upper_vs_collar=3569 lower_vs_torso=0 elbow_dy=48 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=3451 lower_vs_torso=0 elbow_dy=42 -> NO SNAP
+=== dance-REST ===
+L: lower_vs_head=0 upper_vs_collar=4830 lower_vs_torso=0 elbow_dy=166 -> NO SNAP
+R: lower_vs_head=0 upper_vs_collar=4774 lower_vs_torso=0 elbow_dy=164 -> NO SNAP
