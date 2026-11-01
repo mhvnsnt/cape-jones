@@ -1,0 +1,42 @@
+id,item,status,evidence
+TV-01,Storyboard + animatic,PARTIAL before -> WIRED now,"animatic-punch-with-sound-stageP-20261031.mp4 (prior silent animatic + new temp-tone mux, ffprobe verified); storyboard index 30/30 prior"
+TV-02,Camera language,PARTIAL before -> WIRED now,camera-sheet-cj01-cj30-20261031.csv/json 30/30 + camera-diagram-20261031.png
+TV-03,Editing / cutting,PARTIAL before -> WIRED now,edited-sequence-stageE-visual-20261031.mp4 (6-shot visual edit) + edl-v2-stageE-20261031.json; L/J with dialogue = Stage P
+TV-04,Sound design + mixing,PARTIAL before -> WIRED now (Stage P tool),"sound-mix-3layer-stageP-temp-20261031.wav, 3 separate temp layers, LUFS measured; NOT final recorded audio, NOT an episode gate"
+TV-05,Lip-sync,PARTIAL before -> WIRED now (Stage P tool),lip-sync-timeline-stageP-20261031.json 48f + lip-sync-strip + lip-sync-video-stageP-temp-20261031.mp4; 14/14 visemes; Mars dialogue replaces placeholder in Stage P
+TV-06,Background painting,"WIRED before, verified now","background-consistency-20261031.json/csv 9/9 verified backgrounds + colour-script-20261031.png (4 scenes); batch-15 claim NOT re-verified, flagged"
+TV-07,Titles / credits / delivery,PARTIAL before -> WIRED now,delivery-spec-final-20261031.md (1920x1080 + 1080x1920) + safe-areas-20261031.png + captions-stageE-descriptive-20261031.srt; title card + credits template prior
+TV-08,Character bible / model sheet,PARTIAL before -> WIRED now (document),"character-bible-20261031.md + bible-contact-20261031.png; true hand-drawn 3/4 art still owed, flagged in the bible"
+TV-09,Production tracking,"WIRED before, verified + extended now","asset-tracker-cj01-cj30-20261031.csv/json 30/30 rows (pose-pending 9/30 flagged, not invented)"
+TV-10,Quality control / broadcast QC,"WIRED before, verified + consolidated now",qc-v2-cj01-cj30-20261031.json 27/30 PASS + qc-checklist-20261031.md; CJ-05/06/26 neutral-rim FAILs flagged for Mars ruling
+11,Storyboard 30-panel index (gap-close-tv),WIRED before,gap-close-tv-20261031/storyboard-index-30panel-20261031.png
+12,"Punch animatic, silent (gap-close-tv)",WIRED before,"gap-close-tv-20261031/animatic-punch-20261031.mp4 (52f, video-only — sound added in this folder as Stage P)"
+13,EDL CJ-01..CJ-30 (gap-close-tv),WIRED before,gap-close-tv-20261031/edl-cj01-cj30-20261031.csv/json
+14,Principles matrix CJ-01..CJ-30 (gap-close-tv),WIRED before,gap-close-tv-20261031/principles-matrix-cj01-cj30-20261031.json/png
+15,QC run CJ-01..CJ-30 (gap-close-tv),WIRED before,gap-close-tv-20261031/qc-cj01-cj30-20261031.json/md (27/30 PASS)
+16,Title card art (gap-close-tv),WIRED before,gap-close-tv-20261031/title-card-cape-jones-20261031.png
+17,Credits template (gap-close-tv),WIRED before,"gap-close-tv-20261031/credits-template-20261031.md/png (roles TBD, no names invented)"
+18,Dialogue shot CJ-26 composite (gap-close-tv),WIRED before,gap-close-tv-20261031/dialogue-shot-cj26-neutral-ah-20261031.png
+19,Audio cue sheet v2 + demo tones,WIRED before,showcase/audio/audio-cue-sheet-v2.csv/json + cape-jones-audio-cues-demo.mp3 (DEMO ONLY tones)
+20,Ground-feet gate,"WIRED before, rerun now",ground-feet-placement-wire100-20261031/ground_gate.py — rerun on apose in gates-run-20261031.json
+21,No-crop gate,"WIRED before, rerun now",no-crop-window-20261031/check_no_clip.py — rerun on apose in gates-run-20261031.json
+22,Wrist gate,"WIRED before, rerun now",wrist-attach-fix-20261031/check_wrist_attach.py — rerun on existing csv in gates-run-20261031.json
+23,Snap gates (face/cowl/chest),"WIRED before, rerun now",face-cowl-snap-wire100-20261031/check_pose_snap.py — neutral run in gates-run-20261031.json
+24,Shading preset library (retrieve.py),"WIRED before, rerun now",shading-preset-library-20261031/retrieve.py — CLEAN/ARMS_UP run in gates-run-20261031.json
+25,CapeGP presets,"WIRED before, output verified now",capegp-presets-20261031/capegp_all_presets.blend (builder not rerun — would overwrite its folder)
+26,Gaussian splatting builder,"WIRED before, output verified now",gaussian-splatting-20261031/cape-gaussians-20261031.ply (builder not rerun — would overwrite its folder)
+27,PIL compositor stack,"WIRED before, help verified now",apply_compositor.py --help rc=0; same layer order as Blender tree
+28,Lighting levels runner (levels 0-5),WIRED before,apply_lighting_levels.py + apply_lighting_level2_v2.py (prior runs; Level 2 v2 warm-rim on file)
+29,LUT library (70 .cube),WIRED before,showcase/luts-30 + lut-spectrum + lut-spectrum-v2 (70 total per prior counts; base 30 + spectrum 24 + v2 16)
+30,FFmpeg delivery encode,"WIRED before, rerun now",ffmpeg 8.1.2; afterglow CJ mp4s + new Stage E/P mp4s ffprobe-verified in this run
+31,Free-stack tools (Tahoma/Krita/Pencil/Synfig),WIRED before,"FREE-FIRST-WIRING.md install/test batch (4/4 tool tests, prior workstream)"
+32,Master pipeline runner (this folder),WIRED now,"wire_tv_100.py — one command builds camera, edit, mix, lip-sync, backgrounds, delivery, bible, tracker, QC, gates"
+33,Ground-feet gate RUN on TV shots,WIRED now,gates-run-20261031.json: ground_gate apose GROUNDED ground-y 1294
+34,No-crop gate RUN on TV outputs,WIRED now,"gates-run-20261031.json: check_no_clip on apose plate (composites are opaque, so no-crop applies to plates, stated)"
+35,Wrist + snap gates RUN in TV pipeline,WIRED now,gates-run-20261031.json: wrist csv + snap neutral run + snap csv in this folder
+36,Shading preset APPLIED path (retrieve -> TV shot),WIRED now,"gates-run-20261031.json retrieve run + delivery/bible naming the preset path; preset PNGs are source-referenced, not duplicated"
+37,CapeGP + Gaussian outputs wired into TV inventory,WIRED now,gates-run-20261031.json: blend + ply existence/bytes recorded in TV gates file
+38,Blender compositor node-tree audit,WIRED now (file audit),"gates-run-20261031.json: blender-compositor-stack.py lines recorded; Blender binary NOT on PATH here, so NOT claimed rendered"
+39,Version-lock archive manifest for this folder,WIRED now,"wiring-100-manifest-20261031.json (this run, below) — file list + reassembly order"
+40,Pre-delivery check runner (Stage E + Stage P split),WIRED now,"pre-delivery-check-20261031.md + qc-v2 + gates-run: Stage E checks gate the edit, Stage P checks are listed separately and do NOT gate Stage E"
+41,Space Ghost workflow wiring (episode-first order),WIRED now,SPACE-GHOST-WORKFLOW-20261031.md — Stage E / Stage P split enforced in this script's file naming and gate logic
