@@ -90,7 +90,7 @@ NOT episode blockers. They are post-episode steps.
 - DELIVERY-009 Ground gate complete (shots gated 30/30, gate pass, NOT shot
   approval) — ground-gate-complete-20261031/
 - DELIVERY-010 Coming-forward walk layer fix — coming-forward-walk-layer-fix-20261031/
-- DELIVERY-011 Coming-forward walk elbow fix — coming-forward-walk-elbow-fix-20261031/
+- DELIVERY-011 Coming-forward walk elbow fix — coming-forward-walk-elbow-fix-20261031/ — APPROVED PERFECT 1/1, 2026-10-31 23:02 CDT (Mars: 'Okay, perfect. That's perfect. You did fix it.' elbows pointing out not in). Rig chain approval 0/1 separately. GIF resend pending in chat (GIF may have disappeared).
 - DELIVERY-012 2D-to-3D bridge + jaw gag — mixed-media-2d-3d-bridge-20261031/
   NOTE: 3D head in this version is a stylised PROXY, saved as 3D DRAFT ONE,
   hilariously bad / ugly, NOT Cape's actual model. Actual-model rebuild running.
@@ -152,4 +152,6 @@ NOT episode blockers. They are post-episode steps.
   similar to read the repo and show him the work; wire multi-channel feedback
   100% in the repo AND to chat, usable by all his agents.
 - 2026-10-31 23:00 CDT, Mars (via parent memory): figure-matched lighting scenarios SAVED AS PRESETS, all 8 (S1 V2 warm overhead, S2 V3 warm strong, S3 V3+pools bounce, S4 Glare glow, S5 magenta-rose, S6 cyan dual backlight, S7 golden-hour front, S8 cool-blue night), saved-good (not full 1/1 approval), then continue building on those presets in vertical (portrait) and horizontal (landscape) ways. Workstream running.
+- 2026-10-31 23:01 CDT, Mars (via parent memory): transparent-plates sweep SAVED PERFECT, full sweep ordered = all Grok-made sheets + all sheets pushed to repo that still need background cut out, cape sheets included, Mars estimate 300-400 sheets (NOT verified count), clean cut only, inventory must answer labelled/organized counts plainly. Workstream running.
+- 2026-10-31 23:02 CDT, Mars (via parent memory): coming-forward walk ELBOW-FIXED APPROVED PERFECT 1/1, elbows pointing out not in, bicep/forearm opposite tilt, elbow repositioned. Rig chain 0/1 separately.
 - [APPEND NEXT ENTRY HERE — date, time, channel, what changed, approval or correction verbatim, folder path if any]
