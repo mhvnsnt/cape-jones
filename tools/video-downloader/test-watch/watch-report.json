@@ -1,0 +1,73 @@
+{
+  "label": "FRAME-STREAM ANALYSIS \u2014 not human eyes",
+  "source": "test-download/7383414354852465966.mp4",
+  "native_fps": 30.0,
+  "stream_fps": 30.0,
+  "duration_s": 14.1,
+  "size_bytes": 404672,
+  "width": 720,
+  "height": 1280,
+  "frames_extracted": 423,
+  "motion_per_second": {
+    "0": 0.522,
+    "1": 1.413,
+    "2": 1.993,
+    "3": 1.367,
+    "4": 0.711,
+    "5": 0.618,
+    "6": 1.002,
+    "7": 1.169,
+    "8": 0.66,
+    "9": 0.664,
+    "10": 1.178,
+    "11": 1.256,
+    "12": 1.174,
+    "13": 1.483,
+    "14": 0.0
+  },
+  "median_motion": 1.169,
+  "scene_change_seconds": [],
+  "key_moments_top10_seconds": [
+    {
+      "second": 2,
+      "motion": 1.993
+    },
+    {
+      "second": 13,
+      "motion": 1.483
+    },
+    {
+      "second": 1,
+      "motion": 1.413
+    },
+    {
+      "second": 3,
+      "motion": 1.367
+    },
+    {
+      "second": 11,
+      "motion": 1.256
+    },
+    {
+      "second": 10,
+      "motion": 1.178
+    },
+    {
+      "second": 12,
+      "motion": 1.174
+    },
+    {
+      "second": 7,
+      "motion": 1.169
+    },
+    {
+      "second": 6,
+      "motion": 1.002
+    },
+    {
+      "second": 4,
+      "motion": 0.711
+    }
+  ],
+  "contact_sheet": "/var/tmp/watch-test/contact-sheet.png"
+}
