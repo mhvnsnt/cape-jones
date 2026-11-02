@@ -1,0 +1,14 @@
+{
+ "frames": 48,
+ "fps": 24,
+ "extension_frames": "20-31 (sole native)",
+ "piece": "rig-pieces/Sole_Boot_Native_L.png (copy of slices/Boot_Angled_Sole_L.png; original untouched)",
+ "cuff_anchor_native_px": [
+  284,
+  80
+ ],
+ "scale": 1.2,
+ "draw_slot": "inside figure_native(), after torso/belt, before neck/head",
+ "old_overlay": "production-extensions-20261101/kick/* untouched; old method pasted onto finished frame after figure() returned",
+ "planted_leg": "LEG2 never moves"
+}
