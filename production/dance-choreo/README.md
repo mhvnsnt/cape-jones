@@ -9,6 +9,13 @@ onto the motion once his 2D FLAs exist. This folder is the first extraction.
 **Darwin's dance — "The Words" (Gumball S2, ep. GB214), scenes Sc057 + Sc059.**
 
 - `dance-gumball-darwin-words-sc057-sc059.json` — the choreography file (v1).
+- `darwin-hallway-dance-clean-20261102.mp4` — **the scene as a watchable
+  video**: Sc057 then Sc059 in episode order, rendered from the production
+  SWFs at native 1920x1080, 25 fps, 12.1 s, H.264 with faststart (plays
+  inline on a phone). The production SWFs' own embedded audio track is
+  kept, exactly as authored — nothing added by us. Clean:
+  **no Cape Jones in it** — he gets worked into the scene as a parody in a
+  later step, directed by the owner.
 - Proof sheet (rendered from the source SWF with JPEXS FFDec):
   `~/workspace/your_files/dance-choreo/dance-gumball-darwin-sheet-v1.png`
   (9 frames across Sc057: wide strides, kicked leg, split stances, twist finish.)
