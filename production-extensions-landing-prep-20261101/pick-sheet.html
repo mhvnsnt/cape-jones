@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Cape Jones — Production Extensions: one-tap picks (Mars, 2026-11-01)</title>
+<style>body{font-family:sans-serif;max-width:900px;margin:2em auto;padding:0 1em;color:#111}
+img{max-width:420px;border:1px solid #888;background:#222;display:block;margin:.5em 0}
+.opt{border:2px solid #333;padding:1em;margin:1em 0}.rec{background:#eef7ee}
+h1{font-size:1.4em}code{background:#eee;padding:0 .3em}</style></head>
+<body>
+<h1>Cape Jones — Production Extensions: one-tap picks</h1>
+<p><b>Status: PROPOSAL ONLY. Nothing has landed. Approval 0/1.</b> Reply with two letters, e.g. <b>“Torso A, Pelvis A”</b> (or any A/B mix). Both torso drawings land either way — this pick only fixes their names. Only the pelvis pick deletes a name (one drawing, two names).</p>
+<p>Recommendation (evidence in README): <b>Option A for both</b>. The 34-pass naming is the content-correct scheme: it is right on the two independently checkable crossed labels (head vs neck-ring, fist vs open palm), and its torso/pelvis notes match the art.</p>
+
+<h2>Conflict 1 — Torso: TWO different drawings, not one</h2>
+<p><b>Verdict: genuinely different drawings.</b> Pixel check: Torso_Front vs Torso_LeanBack — mean RGB difference 94.97 on common opaque pixels (same-drawing pairs score 0.00). Sizes differ: 408×238 vs 317×320. Do NOT delete either.</p>
+<h3>Drawing X — wide torso, neck stump on top, purple V emblem (sheet-2 bbox [1144, 67, 1550, 303])</h3>
+<img src="pick-images/Torso_LeanForward.png" alt="Drawing X wide torso">
+<p>On disk today as both <code>Torso_Front.png</code> (33-pass file, survives) and <code>Torso_LeanForward.png</code> (34-pass re-crop, pixel-identical colour content: alpha IoU 0.9771, RGB diff 0.00).</p>
+<h3>Drawing Y — tall torso, leaning to the side, abs visible (sheet-2 bbox [1578, 48, 1894, 367])</h3>
+<img src="pick-images/Torso_LeanBack.png" alt="Drawing Y tall leaning torso">
+<p>On disk today as <code>Torso_LeanBack.png</code> (34-pass). The 33-pass called this same bbox <code>Torso_LeanForward</code> — that is the real collision: both passes used “LeanForward” for different drawings.</p>
+<div class="opt rec"><b>Option A (recommended):</b> X = <code>Torso_LeanForward</code>, Y = <code>Torso_LeanBack</code>. Both land under these names (34-pass files).</div>
+<div class="opt"><b>Option B:</b> X = <code>Torso_Front</code>, Y = <code>Torso_LeanForward</code>. Both land; “LeanBack” disappears as a name. Landed bytes are still the 34-pass re-crops, renamed — the surviving 33-pass <code>Torso_Front.png</code> becomes the duplicate.</div>
+<p>Also note: a straight front torso exists only inside <code>Flex_Front</code>; neither X nor Y is a straight-front standalone slice.</p>
+
+<h2>Conflict 2 — Pelvis dome: ONE drawing, two names</h2>
+<p><b>Verdict: same drawing.</b> Pixel check: Pelvis_Top_Dome vs Pelvis_UnderView — trimmed size identical 255×204, alpha IoU 0.9692, RGB diff 0.00. Sheet-2 bbox [570, 332, 824, 535] in both indexes. Only one name lands; the other becomes an alias.</p>
+<img src="pick-images/Pelvis_UnderView.png" alt="Pelvis dome with two black leg sockets">
+<p>The drawing: a dome with two black leg-socket openings. (For contrast, <code>Pelvis_Whole.png</code> is a different drawing — whole pelvis/brief, RGB diff 103.74 vs the dome — and it lands regardless.)</p>
+<div class="opt rec"><b>Option A (recommended):</b> <code>Pelvis_UnderView</code> — describes what you see (underside, two sockets). Lands as <code>Pelvis_UnderView.png</code> (34-pass file).</div>
+<div class="opt"><b>Option B:</b> <code>Pelvis_Top_Dome</code> — describes the dome top. Lands as <code>Pelvis_Top_Dome.png</code> (same 34-pass bytes, renamed); the surviving 33-pass <code>Pelvis_Top_Dome.png</code> becomes the duplicate.</div>
+
+<h2>What happens after you pick</h2>
+<p>34 canonical piece PNGs land (list in <code>landing-manifest.md</code>), plus the canonical index (JSON + CSV) with the picked names. 21 duplicate on-disk piece PNGs do not land. No <code>.blend1</code>, no <code>frames/</code> scratch, no pose-table / flex-spin / kick clip variants land on this pick — those collisions still need their own picks.</p>
+</body></html>
