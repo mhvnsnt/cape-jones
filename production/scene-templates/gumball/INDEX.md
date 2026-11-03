@@ -258,14 +258,14 @@ The other two classes from the survey below are now logged to the same standard.
 | [gb200-puppet-gumball-v004](libraries/gb200-puppet-gumball-v004/) | Gumball | 61 | Complete — assembles in full (earlier save) |
 | [gb200-puppet-gumball-v001-cs3](libraries/gb200-puppet-gumball-v001-cs3/) | Gumball | binary | Presumed complete (version-001 original) — census is strings-level only |
 | [gb200-puppet-darwin-v002](libraries/gb200-puppet-darwin-v002/) | Darwin | 34 | Complete — assembles in full |
-| [gb200-puppet-darwin-v002-dup9](libraries/gb200-puppet-darwin-v002-dup9/) | Darwin | binary | Complete — assembles in full (duplicate copy) |
+| [gb200-puppet-darwin-v002-dup9](libraries/gb200-puppet-darwin-v002-dup9/) | Darwin | 34 | Complete — assembles in full (duplicate copy) |
 | [gb200-puppet-darwin-v002-cs5](libraries/gb200-puppet-darwin-v002-cs5/) | Darwin | 34 | Complete — assembles in full (CS5 save) |
 | [gb200-puppet-mom-v002](libraries/gb200-puppet-mom-v002/) | Nicole (Mom) | 38 | Complete — assembles in full |
-| [gb200-puppet-mom-v002-dup10](libraries/gb200-puppet-mom-v002-dup10/) | Nicole (Mom) | binary | Complete — assembles in full (duplicate copy) |
+| [gb200-puppet-mom-v002-dup10](libraries/gb200-puppet-mom-v002-dup10/) | Nicole (Mom) | 38 | Complete — assembles in full (duplicate copy) |
 | [gb200-puppet-dad-v004](libraries/gb200-puppet-dad-v004/) | Richard (Dad) | 46 | Complete — assembles in full (richest Dad save) |
 | [gb200-puppet-dad-v003](libraries/gb200-puppet-dad-v003/) | Richard (Dad) | 43 | Complete — assembles in full (earlier save) |
 | [gb200-puppet-anais-v002](libraries/gb200-puppet-anais-v002/) | Anais | 48 | Complete — assembles in full |
-| [gb200-puppet-anais-v002-dup8](libraries/gb200-puppet-anais-v002-dup8/) | Anais | binary | Complete — assembles in full (duplicate copy) |
+| [gb200-puppet-anais-v002-dup8](libraries/gb200-puppet-anais-v002-dup8/) | Anais | 48 | Complete — assembles in full (duplicate copy) |
 | [gb200-puppet-hector-v001-cs3](libraries/gb200-puppet-hector-v001-cs3/) | Hector | binary | Documented shape-set library — full census needs the file opened in Flash/Animate |
 | [rig-carrie-ghost](libraries/rig-carrie-ghost/) | Carrie | binary | Rig present; part census partial — most symbol names not string-recoverable |
 | [rig-ocho-spider](libraries/rig-ocho-spider/) | Ocho | binary | Minimal rig — named parts only; completeness limited |
