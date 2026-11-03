@@ -1,5 +1,5 @@
 {
- "format": "cape-jones/scene-anatomy v1",
+ "format": "cape-jones/scene-anatomy v2 (library)",
  "title": "The Banana \u2014 crashed top shot: dedicated overhead-angle puppets (approved pose sheet)",
  "show": "The Amazing World of Gumball",
  "episode": {
@@ -61453,5 +61453,180 @@
   "Honest label: this file is a pose sheet, not a staged scene \u2014 2 root frames, no background. The performance poses live in the puppet timelines inside the FLA.",
   "Angle-specific puppets (top shot here) are a standing technique in this production: new viewpoint = new puppet variant, not a transform trick.",
   "The field-guide frame (4/3 SAFE / FULL guides, CN bug, slate) is part of every GB209 export \u2014 presentation and approval are built into the file."
- ]
+ ],
+ "library": {
+  "slug": "gb209-banana-crashed-topshot",
+  "class": "partial \u2014 approved pose sheet (wave-1 bonus, not one of the 31)",
+  "episode_code": "GB209",
+  "folder": "gb209-banana-crashed-topshot"
+ },
+ "cast": [
+  {
+   "character": "Darwin",
+   "puppets": [
+    "GB209_DARWIN_CRASHED_TOP_SHOT_PUPPET_v001"
+   ],
+   "evidence": [
+    "puppet symbol 'GB209_DARWIN_CRASHED_TOP_SHOT_PUPPET_v001'",
+    "scene layer named 'GB209_DARWIN_CRASHED_TOP_SHOT_V001'",
+    "face comp 'GB209_DARWIN_CRASHED_TOP_SHOT_EYECOMP'",
+    "face comp 'GB209_DARWIN_CRASHED_TOP_SHOT_HEAD'",
+    "face comp 'GB209_DARWIN_CRASHED_TOP_SHOT_HEADCOMP'",
+    "face comp 'GB209_DARWIN_CRASHED_TOP_SHOT_Mouth'",
+    "puppet 'GB209_DARWIN_CRASHED_TOP_SHOT_PUPPET_v001/GB209_DARWIN_CRASHED_TOP_SHOT_PUPPET_v001' placed at scene level"
+   ]
+  },
+  {
+   "character": "Gumball",
+   "puppets": [
+    "GB209_GUMBALL_CRASHED_TOP_SHOT_PUPPET_001"
+   ],
+   "evidence": [
+    "puppet symbol 'GB209_GUMBALL_CRASHED_TOP_SHOT_PUPPET_001'",
+    "scene layer named 'GB209_GUMBALL_CRASHED_TOP_SHOT_V001'",
+    "face comp 'GB209_GUMBALL_CRASHED_TOP_SHOT_EYESCOMP'",
+    "face comp 'GB209_GUMBALL_CRASHED_TOP_SHOT_HEAD'",
+    "face comp 'GB209_GUMBALL_CRASHED_TOP_SHOT_HEADCOMP'",
+    "face comp 'GB209_GUMBALL_CRASHED_TOP_SHOT_MOUTH'",
+    "puppet 'GB209_GUMBALL_CRASHED_TOP_SHOT_PUPPET_V001/GB209_GUMBALL_CRASHED_TOP_SHOT_PUPPET_001' placed at scene level"
+   ]
+  }
+ ],
+ "rigs": [
+  {
+   "symbol": "GB209_DARWIN_CRASHED_TOP_SHOT_PUPPET_v001",
+   "library_path": "LIBRARY/GB209_DARWIN_CRASHED_TOP_SHOT_PUPPET_v001/GB209_DARWIN_CRASHED_TOP_SHOT_PUPPET_v001.xml",
+   "character": "Darwin",
+   "keyframes": 149,
+   "variant_tokens": [
+    "CRASHED",
+    "TOP_SHOT"
+   ]
+  },
+  {
+   "symbol": "GB209_GUMBALL_CRASHED_TOP_SHOT_PUPPET_001",
+   "library_path": "LIBRARY/GB209_GUMBALL_CRASHED_TOP_SHOT_PUPPET_V001/GB209_GUMBALL_CRASHED_TOP_SHOT_PUPPET_001.xml",
+   "character": "Gumball",
+   "keyframes": 187,
+   "variant_tokens": [
+    "CRASHED",
+    "TOP_SHOT"
+   ]
+  }
+ ],
+ "backgrounds": [
+  {
+   "item": "REF/GB209_BANANA_GB+D_crashed_top_shot_RTK.jpg",
+   "kind": "bitmap",
+   "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)",
+   "evidence": "bitmap item 'REF/GB209_BANANA_GB+D_crashed_top_shot_RTK.jpg' on background layer(s) ['REF']",
+   "layers": [
+    "REF"
+   ],
+   "first_frame": 0,
+   "last_frame": 2
+  }
+ ],
+ "animations_census": {
+  "total_keyframes_all_symbols": 1178,
+  "animated_symbols": 10,
+  "entries": [
+   {
+    "symbol": "GB209_GUMBALL_CRASHED_TOP_SHOT_PUPPET_001",
+    "kind": "puppet",
+    "keyframes": 187,
+    "end_frame": 160
+   },
+   {
+    "symbol": "GB209_DARWIN_CRASHED_TOP_SHOT_PUPPET_v001",
+    "kind": "puppet",
+    "keyframes": 149,
+    "end_frame": 186
+   },
+   {
+    "symbol": "GB209_GUMBALL_CRASHED_TOP_SHOT_EYESCOMP",
+    "kind": "face-comp",
+    "keyframes": 148,
+    "end_frame": 217
+   },
+   {
+    "symbol": "GB209_DARWIN_CRASHED_TOP_SHOT_EYECOMP",
+    "kind": "face-comp",
+    "keyframes": 133,
+    "end_frame": 62
+   },
+   {
+    "symbol": "GB209_GUMBALL_CRASHED_TOP_SHOT_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 133,
+    "end_frame": 140
+   },
+   {
+    "symbol": "GB209_DARWIN_CRASHED_TOP_SHOT_Mouth",
+    "kind": "face-comp",
+    "keyframes": 104,
+    "end_frame": 63
+   },
+   {
+    "symbol": "GB209_GUMBALL_CRASHED_TOP_SHOT_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 59,
+    "end_frame": 330
+   },
+   {
+    "symbol": "GB209_DARWIN_CRASHED_TOP_SHOT_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 53,
+    "end_frame": 164
+   },
+   {
+    "symbol": "GB209_DARWIN_CRASHED_TOP_SHOT_HEAD",
+    "kind": "face-comp",
+    "keyframes": 27,
+    "end_frame": 9
+   },
+   {
+    "symbol": "GB209_GUMBALL_CRASHED_TOP_SHOT_HEAD",
+    "kind": "face-comp",
+    "keyframes": 24,
+    "end_frame": 6
+   }
+  ]
+ },
+ "seams": {
+  "opens_with": [
+   "GB209_DARWIN_CRASHED_TOP_SHOT_PUPPET_v001/GB209_DARWIN_CRASHED_TOP_SHOT_PUPPET_v001",
+   "GB209_GUMBALL_CRASHED_TOP_SHOT_PUPPET_V001/GB209_GUMBALL_CRASHED_TOP_SHOT_PUPPET_001",
+   "REF/GB209_BANANA_GB+D_crashed_top_shot_RTK.jpg",
+   "REF/TEMPLATE/GB200_ASSETT_CONTAINER"
+  ],
+  "closes_with": [
+   "GB209_DARWIN_CRASHED_TOP_SHOT_PUPPET_v001/GB209_DARWIN_CRASHED_TOP_SHOT_PUPPET_v001",
+   "GB209_GUMBALL_CRASHED_TOP_SHOT_PUPPET_V001/GB209_GUMBALL_CRASHED_TOP_SHOT_PUPPET_001",
+   "REF/GB209_BANANA_GB+D_crashed_top_shot_RTK.jpg",
+   "REF/TEMPLATE/GB200_ASSETT_CONTAINER"
+  ],
+  "background_switch_frames": [],
+  "has_layout_mov_reference": false,
+  "frame_counter_overlay": false,
+  "field_guide_overlay": false
+ },
+ "tags": [
+  {
+   "tag": "costume-variant-puppet",
+   "evidence": "puppet 'GB209_DARWIN_CRASHED_TOP_SHOT_PUPPET_v001' carries variant token(s) ['CRASHED', 'TOP_SHOT']"
+  },
+  {
+   "tag": "angle-variant-puppet",
+   "evidence": "puppet 'GB209_DARWIN_CRASHED_TOP_SHOT_PUPPET_v001' is built for a specific camera angle"
+  },
+  {
+   "tag": "face-comp-driven",
+   "evidence": "face comps hold 681 kf vs body puppets 336 kf \u2014 the face system carries the scene"
+  }
+ ],
+ "media": {
+  "contact_sheet": "done (wave 1, already in repo)",
+  "video": "n/a \u2014 pose sheet, 2 root frames"
+ }
 }

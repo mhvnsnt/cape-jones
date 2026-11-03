@@ -1,5 +1,5 @@
 {
- "format": "cape-jones/scene-anatomy v1",
+ "format": "cape-jones/scene-anatomy v2 (library)",
  "title": "The Job \u2014 Sc019: amazed two-shot on a photographic background plate",
  "show": "The Amazing World of Gumball",
  "episode": {
@@ -119011,5 +119011,195 @@
   "Eye/mouth comps (EYESCOMP2/MOUTH2, 199-223 kf each) carry the scene; bodies are nearly still. In close-up, the face system IS the animation.",
   "Darwin's squee never breaks; Gumball's drops at ~f35 \u2014 offsetting reaction timing between characters in the same shot is the joke's engine.",
   "Second-generation comps (the '2' versions) are used: the library keeps versioned face systems per production block."
- ]
+ ],
+ "library": {
+  "slug": "gb206-job-sc019",
+  "class": "complete animated scene",
+  "episode_code": "GB206",
+  "folder": "gb206-job-sc019"
+ },
+ "cast": [
+  {
+   "character": "Darwin",
+   "puppets": [
+    "GB200_DRW_ORIGINAL_PUPPET_v001"
+   ],
+   "evidence": [
+    "puppet symbol 'GB200_DRW_ORIGINAL_PUPPET_v001'",
+    "scene layer named 'DARWIN'",
+    "face comp 'GB200_DRW_EYECOMP2'",
+    "face comp 'GB200_DRW_HEAD'",
+    "face comp 'GB200_DRW_HEADCOMP'",
+    "face comp 'GB200_DRW_Mouth'",
+    "puppet 'Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001' placed at scene level"
+   ]
+  },
+  {
+   "character": "Gumball",
+   "puppets": [
+    "GB200_GUMBALL_PUPPET_001",
+    "GB200_GUMBALL_PUPPET_001"
+   ],
+   "evidence": [
+    "puppet symbol 'GB200_GUMBALL_PUPPET_001'",
+    "scene layer named 'GB200_GUMBALL_PUPPET_STD_001'",
+    "face comp 'GB200_GB_EYESCOMP2'",
+    "face comp 'GB200_GB_HEAD'",
+    "face comp 'GB200_GB_HEADCOMP'",
+    "face comp 'GB200_GB_MOUTH2'",
+    "puppet 'Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001 copy/GB200_GUMBALL_PUPPET_001' placed at scene level"
+   ]
+  }
+ ],
+ "rigs": [
+  {
+   "symbol": "GB200_DRW_ORIGINAL_PUPPET_v001",
+   "library_path": "LIBRARY/Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001.xml",
+   "character": "Darwin",
+   "keyframes": 244,
+   "variant_tokens": []
+  },
+  {
+   "symbol": "GB200_GUMBALL_PUPPET_001",
+   "library_path": "LIBRARY/Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001 copy/GB200_GUMBALL_PUPPET_001.xml",
+   "character": "Gumball",
+   "keyframes": 301,
+   "variant_tokens": []
+  },
+  {
+   "symbol": "GB200_GUMBALL_PUPPET_001",
+   "library_path": "LIBRARY/Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001.xml",
+   "character": "Gumball",
+   "keyframes": 170,
+   "variant_tokens": []
+  }
+ ],
+ "backgrounds": [
+  {
+   "item": "Scene atributes/BACKGROUNDS/GB206JOB_SC019_LO_BG.jpg",
+   "kind": "bitmap",
+   "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)",
+   "evidence": "bitmap item 'Scene atributes/BACKGROUNDS/GB206JOB_SC019_LO_BG.jpg' on background layer(s) ['background']",
+   "layers": [
+    "background"
+   ],
+   "first_frame": 0,
+   "last_frame": 56
+  }
+ ],
+ "animations_census": {
+  "total_keyframes_all_symbols": 2075,
+  "animated_symbols": 11,
+  "entries": [
+   {
+    "symbol": "GB200_GUMBALL_PUPPET_001",
+    "kind": "puppet",
+    "keyframes": 301,
+    "end_frame": 249
+   },
+   {
+    "symbol": "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "kind": "puppet",
+    "keyframes": 244,
+    "end_frame": 184
+   },
+   {
+    "symbol": "GB200_GB_EYESCOMP2",
+    "kind": "face-comp",
+    "keyframes": 223,
+    "end_frame": 213
+   },
+   {
+    "symbol": "GB200_GB_MOUTH2",
+    "kind": "face-comp",
+    "keyframes": 199,
+    "end_frame": 155
+   },
+   {
+    "symbol": "GB200_GUMBALL_PUPPET_001",
+    "kind": "puppet",
+    "keyframes": 170,
+    "end_frame": 160
+   },
+   {
+    "symbol": "GB200_DRW_EYECOMP2",
+    "kind": "face-comp",
+    "keyframes": 158,
+    "end_frame": 64
+   },
+   {
+    "symbol": "GB200_GB_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 148,
+    "end_frame": 177
+   },
+   {
+    "symbol": "GB200_DRW_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 115,
+    "end_frame": 179
+   },
+   {
+    "symbol": "GB200_DRW_Mouth",
+    "kind": "face-comp",
+    "keyframes": 104,
+    "end_frame": 63
+   },
+   {
+    "symbol": "GB200_DRW_HEAD",
+    "kind": "face-comp",
+    "keyframes": 34,
+    "end_frame": 11
+   },
+   {
+    "symbol": "GB200_GB_HEAD",
+    "kind": "face-comp",
+    "keyframes": 15,
+    "end_frame": 5
+   }
+  ]
+ },
+ "seams": {
+  "opens_with": [
+   "Field&Framecounter/Fieldguide_001",
+   "Field&Framecounter/framecounter1000",
+   "Scene atributes/BACKGROUNDS/GB206JOB_SC019_LO_BG.jpg",
+   "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+   "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001 copy/GB200_GUMBALL_PUPPET_001"
+  ],
+  "closes_with": [
+   "Field&Framecounter/Fieldguide_001",
+   "Field&Framecounter/framecounter1000",
+   "Scene atributes/BACKGROUNDS/GB206JOB_SC019_LO_BG.jpg",
+   "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+   "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001 copy/GB200_GUMBALL_PUPPET_001"
+  ],
+  "background_switch_frames": [
+   0
+  ],
+  "has_layout_mov_reference": true,
+  "frame_counter_overlay": true,
+  "field_guide_overlay": true
+ },
+ "tags": [
+  {
+   "tag": "layout-mov-reference",
+   "evidence": "scene carries a 'layout mov' reference-video layer"
+  },
+  {
+   "tag": "photo-plate",
+   "evidence": "render-verified in wave 1: the background is a real photograph of a house and picket fence (GB206JOB_SC019_LO_BG.jpg)"
+  },
+  {
+   "tag": "dialogue-two-shot",
+   "evidence": "two characters in one close shot on separate scene layers (DARWIN over the Gumball puppet layer), offset reaction timing"
+  }
+ ],
+ "media": {
+  "contact_sheet": "done",
+  "video": "done",
+  "video_audio": "production audio muxed from SWF sound asset",
+  "frames_rendered": 56,
+  "frames_expected": 56
+ }
 }

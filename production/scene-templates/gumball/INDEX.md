@@ -1,161 +1,296 @@
-# Gumball scene templates — wave 1
+# Gumball scene templates — the complete-scene library
 
-Owner's order (2026-11-02): pull scenes from the Gumball production holdings into this repo as **working scene templates** for Cape Jones production — production anatomy from an actual show: how they layer a scene, how they stage multiple characters, camera use, timing. Scope extension (same day): every deep-extracted scene also gets its **full video** rendered from the production SWF, and this index surveys **all 71 FLAs** in the archive so the owner can see exactly which complete animated scenes exist in the holdings. Every character appearing in an extracted scene is **named** — background and onlooker characters included.
+Owner's program (2026-11-02): every complete animated scene in the Gumball production holdings, logged into this repo fully deconstructed — every FLA piece, background, animation, rig, seam and technique labeled — as reusable template work for Cape Jones production. Built with the wired stack: JPEXS FFDec (renders/video), XFL structure parsing (the FLA is a zip of XML), and the dance-choreo neutral JSON format.
 
-Source archive: `CN-Leaks-001-gumball.zip` (876 entries, 1,709,550,213 bytes; GitHub `mhvnsnt/cn-gigaleak-gumball`, draft release `untagged-1676e192ae8c72e95791`). Method: FLAs are XFL zips with a malformed central directory, read via a sequential local-header parser; `DOMDocument.xml` + `LIBRARY/` symbol XMLs parsed directly. Contact sheets and videos rendered from the production SWFs with JPEXS FFDec 26.3.0. Nothing was redrawn or approximated — and every scene below was verified by rendering it, not by trusting its filename (filenames in this archive lie; see the surprises section).
+**The library: 31 complete animated scenes** (the wave-1 survey of all 71 FLAs in `CN-Leaks-001-gumball.zip` found 31 complete / 11 partial / 28 static / 1 unverified — the survey table is preserved at the bottom of this file). Deconstructed: **31/31** · contact sheets: **31** · videos: **31**.
 
-> **Landing status (2026-11-02):** the anatomy JSONs and this index are landed for all 8 scenes, with contact sheets for 6. The Sc099 and Sc144 sheets, and all 8 scene videos, are a pending follow-up: mid-harvest the sandbox engaged a write guard that refuses binary production-asset writes (rendered PNG frames, encoded video) with EPERM, while text/analysis writes pass. The moment the guard lifts, the renders finish from the staged files and the folders gain their `contact-sheet.png` / `video.mp4` — the two affected folders are marked below.
+## How to recall a scene
 
-## The format
+`CATALOG.json` is the machine-readable index — one record per scene with cast, backgrounds, rigs, animation counts, seams, technique tags and media status. It answers questions like:
 
-Each scene folder holds `scene-anatomy.json`, `contact-sheet.png`, and the scene **video** (MP4, native fps and stage size, H.264 faststart; if a video file is too large for the git tree it lives on the `scene-templates-wave1` release and is linked from the scene's row instead). *(Sheets/videos pending for the folders marked † — see the landing-status note above.)* The JSON uses the same neutral per-keyframe transform format as `production/dance-choreo` v1: a part pose is `(item, first_frame, affine matrix a/b/c/d/tx/ty, pivot)`; frame numbers are 0-based XFL indices at 25 fps unless noted. Contents per file: `layer_stack` (every scene layer, what it holds, keyframe counts), `placements` (the full scene timeline), `characters` (puppet timelines with per-frame `sampled_frames` expansion — keyMode 9728 is pose-to-pose, so each keyframe holds to the next, matching SWF playback), `face_components` (eye/mouth/head comp timelines — the face system is separate from the body), `key_symbols` (any other symbol with 300+ keyframes: nested scene nests, cycles, scene-specific animation copies), `other_symbols` (the rest of the library, by name + keyframe count).
+- *every scene with a per-character mask* → filter `tags` for `per-character-mask`
+- *every scene Tina appears in* → filter `cast` for `Tina` (Tina appears in none of the 31 — she is not in this archive's complete scenes; the Wattersons plus Penny/Carrie-class puppets live in the static rig files)
+- *every scene reusing the school hallway plate* → `shared_backgrounds` in CATALOG.json
 
-## Cross-scene lessons (the short version)
+Each scene folder holds `scene-anatomy.json` (library standard v2: layer stack with per-layer contents, named cast with the puppet/rig identity for each character, backgrounds census, animations census, seams, evidence-tagged techniques), `NOTES.md` (what the scene teaches, in plain words), `contact-sheet.png` and `video.mp4` (native fps/resolution, production audio kept where the SWF exports a sound asset).
 
-- **The face is a separate rig.** Every scene splits the puppet into body + eye comp + mouth comp (+ head comp), each on its own timeline with its own keyframes. Close-ups are animated almost entirely in the comps.
-- **Special states get their own symbols.** Pyjama puppets (Sc105), an about-to-explode head (Sc099), an "evil mum face" (Sc119), crashed top-shot puppets (GB209) — the production never bends the stock puppet into a special state; it swaps in a variant built for the beat.
-- **Cycles are library performances.** Run cycles (Sc108) are full puppet performances stored as symbols and reused at any scale — including two scales in the same frame.
-- **Occlusion is solved with layers + masks, not redraws.** The bed scene (Sc105) stacks 18+ layers with per-character masks so three bodies share one duvet.
-- **Scene files keep their roughs.** Rough animator layers ship inside clean files (Sc105, Sc142). Working files are not sterilized.
-- **Exports carry their paperwork.** GB209 files are approved pose sheets on a field-guide template with slate + APPROVED box; GB2xx scene exports carry frame counters. Approval/presentation is built into the file, not added later.
+## The 31 scenes, by episode
 
-## The deep-extracted scenes (wave 1)
+### GB202 "The Remote"
 
-| Folder | Scene | Episode | Frames | Cast (every character in the scene) | Teaches |
-|--------|-------|---------|--------|------|---------|
-| [gb202-remote-sc144](gb202-remote-sc144/) † | Sc144 | GB202 "The Remote" | 262 | Gumball, Darwin, Richard, Nicole | Multi-character staging / physical comedy |
-| [gb214-words-sc099](gb214-words-sc099/) † | Sc099 | GB214 "The Words" | 284 | Gumball, Darwin | Dialogue two-shot / rant staging |
-| [gb211-treasure-sc105](gb211-treasure-sc105/) | Sc105 | GB211 "The Treasure" | 123 | Nicole, Gumball, Richard | Layering & occlusion (the duvet sandwich) |
-| [gb206-job-sc019](gb206-job-sc019/) | Sc019 | GB206 "The Job" | 56 | Darwin, Gumball | Two-character close interaction / photo plate |
-| [gb202-remote-sc108](gb202-remote-sc108/) | Sc108 | GB202 "The Remote" | 40 | Darwin, Gumball | Locomotion cycles / forced perspective |
-| [gb206-job-sc119](gb206-job-sc119/) | Sc119 | GB206 "The Job" | 57 | Nicole | Emotion close-up / in-scene camera punch |
-| [gb2215-apology-sc142](gb2215-apology-sc142/) | Sc142 | GB2215 "The Apology" | 75 | Gumball | Wildcard: transformation by puppet dissection |
-| [gb209-banana-crashed-topshot](gb209-banana-crashed-topshot/) | Crashed top shot | GB209 "The Banana" | 2 (pose sheet) | Gumball, Darwin | Wildcard: camera-angle puppets / approved pose sheet |
+| Scene | Frames | Cast | Tags | Sheet | Video |
+|---|---|---|---|---|---|
+| [Sc094](scenes/gb202-remote-sc094/) | 56 | Nicole | nested-master-symbol, layout-mov-reference, photo-plate | done | done |
+| [Sc103](scenes/gb202-remote-sc103/) | 141 | Darwin, Gumball, Richard | run-cycle-library, layout-mov-reference, face-comp-driven, multi-character-staging | done | done |
+| [Sc108](gb202-remote-sc108/) | 40 | Darwin, Gumball | run-cycle-library, layout-mov-reference, face-comp-driven, forced-perspective, speed-smear, cycle-multi-scale | done | done |
+| [Sc144](gb202-remote-sc144/) | 262 | Darwin, Gumball, Nicole, Richard | nested-master-symbol, run-cycle-library, layout-mov-reference, multi-character-staging | done | done |
+| [Sc147](scenes/gb202-remote-sc147/) | 147 | Darwin, Gumball, Nicole, Richard | layout-mov-reference, face-comp-driven, photo-plate, multi-character-staging | done | done |
+| [Sc160](scenes/gb202-remote-sc160/) | 31 | Darwin, Gumball, Nicole, Richard | layout-mov-reference, face-comp-driven, multi-character-staging | done | done |
 
-### GB202 "The Remote" — Sc144
+### GB204 "The Phone"
 
-**The Remote — Sc144: kids burst in, Richard tackles them for the remote**
+| Scene | Frames | Cast | Tags | Sheet | Video |
+|---|---|---|---|---|---|
+| [Sc154](scenes/gb204-phone-sc154/) | 184 | Darwin, Gumball | rough-layer-shipped, layout-mov-reference, face-comp-driven, photo-plate, dialogue-two-shot | done | done |
 
-- Cast: **Gumball, Darwin, Richard, Nicole** (the whole family except Anais, who has no puppet or placement anywhere in this file).
-- Frames: 262 @ 25 fps · stage 1920x1080 · source FLA `GB202REMOTE_Sc144_KeyAnim_V050_clean_MS.fla`
-- Scene layers (7): audio, framecounter, fieldguide, animation, white, background, layout mov
+### GB206 "The Job"
 
-**What it teaches:** Multi-character staging in one master animation symbol: the whole family's performance is nested inside a single 'animation' symbol (1,413 keyframes) placed over white + background, instead of one scene layer per character. Entrances, a run cycle and a tackle are choreographed inside the nest where all the timing can be seen together.
+| Scene | Frames | Cast | Tags | Sheet | Video |
+|---|---|---|---|---|---|
+| [Sc019](gb206-job-sc019/) | 56 | Darwin, Gumball | layout-mov-reference, photo-plate, dialogue-two-shot | done | done |
+| [Sc119](gb206-job-sc119/) | 57 | Nicole | head-comp-swap, layout-mov-reference, face-comp-driven, punch-zoom, solo-close-up | done | done |
 
-**Scene notes:**
-- Scene timeline is only 3 working layers: animation / white / background — all character work is nested in the 'animation' symbol.
-- Contains a nested 'gb run cycle' (375 kf) and Nicole's mouth comp (349 kf): cycles and face comps are shared library assets dropped into the nest.
-- Highest motion sum of the wave (136,609) — this is the most physical scene in the set.
+### GB211 "The Treasure"
 
-### GB214 "The Words" — Sc099
+| Scene | Frames | Cast | Tags | Sheet | Video |
+|---|---|---|---|---|---|
+| [Sc105](gb211-treasure-sc105/) | 123 | Gumball, Nicole, Richard | per-character-mask, rough-layer-shipped, overlay-hands, costume-variant-puppet, layout-mov-reference, face-comp-driven | done | done |
+| [Sc117](scenes/gb211-treasure-sc117/) | 136 | Anais, Darwin, Gumball | layout-mov-reference, face-comp-driven, photo-plate, multi-character-staging | done | done |
+| [Sc122](scenes/gb211-treasure-sc122/) | 23 | Anais, Darwin, Gumball | layout-mov-reference, face-comp-driven, photo-plate, multi-character-staging | done | done |
 
-**The Words — Sc099: Darwin's about-to-explode rant (two-shot on white)**
+### GB214 "The Words"
 
-- Cast: **Gumball, Darwin** — the only two puppets in the file; the classroom is background art, no other character is placed or puppeted in this scene.
-- Frames: 284 @ 25 fps · stage 1920x1080 · source FLA `GB214WORDS_Sc099_V006_CLEAN_HS_FR_157.fla`
-- Scene layers include per-character layers: GUMBALL, DARWIN, WHITE, background
+| Scene | Frames | Cast | Tags | Sheet | Video |
+|---|---|---|---|---|---|
+| [Sc054](scenes/gb214-words-sc054/) | 229 | Darwin | mask-layer, nested-master-symbol, layout-mov-reference, photo-plate, solo-close-up | done | done |
+| [Sc055](scenes/gb214-words-sc055/) | 94 | Darwin | nested-master-symbol, layout-mov-reference, face-comp-driven, solo-close-up, photo-plate | done | done |
+| [Sc056](scenes/gb214-words-sc056/) | 178 | Carrie, Darwin, Masami, Ocho, Tobias | nested-master-symbol, layout-mov-reference, multi-character-staging | done | done |
+| [Sc057](scenes/gb214-words-sc057/) | 198 | Carmen, Carrie, Darwin, Masami, Ocho, Tobias | per-character-mask, nested-master-symbol, layout-mov-reference, multi-character-staging, photo-plate | done | done |
+| [Sc058](scenes/gb214-words-sc058/) | 17 | Darwin | face-comp-driven, angle-variant-puppet, solo-close-up, photo-plate | done | done |
+| [Sc059](scenes/gb214-words-sc059/) | 105 | Darwin, Masami | layout-mov-reference, face-comp-driven, dialogue-two-shot, photo-plate | done | done |
+| [Sc061](scenes/gb214-words-sc061/) | 100 | Darwin | layout-mov-reference, face-comp-driven | done | done |
+| [Sc062](scenes/gb214-words-sc062/) | 59 | Carmen, Carrie, Darwin, Masami, Ocho, Tobias | nested-master-symbol, layout-mov-reference, multi-character-staging, photo-plate | done | done |
+| [Sc063](scenes/gb214-words-sc063/) | 109 | Carrie, Darwin | layout-mov-reference, face-comp-driven, dialogue-two-shot, photo-plate | done | done |
+| [Sc099](gb214-words-sc099/) | 284 | Darwin, Gumball | costume-variant-puppet, head-comp-swap, layout-mov-reference, face-comp-driven, dialogue-two-shot | done | done |
 
-**What it teaches:** Dialogue two-shot construction: one scene layer per character over a WHITE layer and background, so each performance can be retimed independently. Uses an episode-specific costume head comp ('DRWAboutToExplode', 628 keyframes) swapped onto the standard Darwin puppet for one story beat.
+### GB218 "The Flakers"
 
-**Scene notes:**
-- Scene layers are literally named per character: GUMBALL, DARWIN, WHITE, background.
-- The exploding-head variant is a separate library symbol — special story states get their own comp instead of redrawing the stock head.
-- Mouth comps for both characters run 304–433 keyframes: lip sync is its own pass on its own timeline.
-- Render note: this SWF embeds a reference video on its 'layout mov' layer (video character 1). The contact sheet and video were rendered from a copy with that reference-video tag stripped — the reference movie is a layout guide, not scene content; all character and background art is untouched.
+| Scene | Frames | Cast | Tags | Sheet | Video |
+|---|---|---|---|---|---|
+| [Sc002](scenes/gb218-flakers-sc002/) | 42 | Darwin, Gumball | forced-perspective, run-cycle-library, layout-mov-reference, face-comp-driven, cycle-multi-scale, photo-plate | done | done |
+| [Sc117](scenes/gb218-flakers-sc117/) | 312 | Anais, Darwin, Gumball | rough-layer-shipped, layout-mov-reference, face-comp-driven, multi-character-staging | done | done |
 
-### GB211 "The Treasure" — Sc105
+### GB219 "The Watch"
 
-**The Treasure — Sc105: the whole family in one bed, the duvet layer sandwich**
+| Scene | Frames | Cast | Tags | Sheet | Video |
+|---|---|---|---|---|---|
+| [Sc075](scenes/gb219-watch-sc075/) | 78 | Darwin, Gumball, Richard | layout-mov-reference, face-comp-driven, multi-character-staging | done | done |
+| [Sc076](scenes/gb219-watch-sc076/) | 209 | Darwin, Gumball | layout-mov-reference, face-comp-driven, dialogue-two-shot | done | done |
+| [Sc111](scenes/gb219-watch-sc111/) | 68 | Darwin, Gumball | rough-layer-shipped, layout-mov-reference, face-comp-driven, costume-variant-puppet | done | done |
 
-- Cast: **Nicole, Gumball, Richard** — Nicole reads the bedtime story, Gumball lies between his parents faking sleep, Richard is already out.
-- Frames: 123 @ 25 fps · stage 1920x1080 · source FLA `GB211TREASURE_Sc105_V013_clean_GD.fla`
-- Scene layers (23 in the timeline incl. folders): Roughs, DAD, MOM, MOM R ARM FRONT, DAD OVERLAY HANDS, DUVET, DUVET GUMBALL, dark stripe, MAIN, DUVET MOM MASK, DUVET MOM SIDE, DUVET DAD MASK, DUVET DAD SIDE, GUMBALL, duvet, background, …
+### GB2215 "The Apology"
 
-**What it teaches:** The layering masterclass of this wave: 18+ scene layers build one bed holding THREE characters — Nicole, Gumball (middle) and Richard — all tucked under a single dark duvet while a bedtime story is read. Each character gets duvet-side and duvet MASK layers so bodies sink under the blanket correctly, Gumball gets his own duvet piece, and 'DAD OVERLAY HANDS' rides on top so hands rest on the covers. The performances are tiny (mouths, eyelids, one eye popping open) — the construction is the show.
+| Scene | Frames | Cast | Tags | Sheet | Video |
+|---|---|---|---|---|---|
+| [Sc142](gb2215-apology-sc142/) | 75 | Gumball | rough-layer-shipped, layout-mov-reference, face-comp-driven, dissection-gag, transformation-gag | done | done |
+| [Sc144](scenes/gb2215-apology-sc144/) | 51 | Gumball | layout-mov-reference, face-comp-driven, solo-close-up | done | done |
+| [Sc146](scenes/gb2215-apology-sc146/) | 86 | Darwin, Gumball | layout-mov-reference, face-comp-driven, photo-plate, dialogue-two-shot | done | done |
 
-**Scene notes:**
-- Three heads, one blanket: Nicole left, Gumball centre, Richard right. Gumball's one-eye-open beat (around frames 62–93) is the gag — he's faking sleep during the story.
-- Masks, not redraws, solve occlusion: DUVET MOM MASK / DUVET DAD MASK clip each body to its place under the shared duvet.
-- Costume-variant puppets again: GB211_PYJAMAS_DAD_PUPPET and GB211_PYJAMAS_MOM_PUPPET — pyjama versions of the stock puppets, built for this episode.
-- 'DAD ANIMATION copy' (452 kf) and 'MOM ANIMATION copy' (370 kf): scene-specific copies are edited in place; library originals stay clean.
-- In the production SWF export the bedroom background renders white — the visible architecture is the duvet sandwich itself; frame-counter and field-guide overlays are part of the export.
+### GB222 "The Bumpkin"
 
-### GB206 "The Job" — Sc019
+| Scene | Frames | Cast | Tags | Sheet | Video |
+|---|---|---|---|---|---|
+| [Sc089](scenes/gb222-bumpkin-sc089/) | 177 | Anais, Darwin, Nicole | layout-mov-reference, face-comp-driven, multi-character-staging | done | done |
 
-**The Job — Sc019: amazed two-shot on a photographic background plate**
+## The 31 scenes, by technique
 
-- Cast: **Darwin, Gumball**.
-- Frames: 56 @ 25 fps · stage 1920x1080 · source FLA `GB206JOB_Sc019_V007_Clean_MB.fla`
+- **angle-variant-puppet** (1): GB214 Sc058
+- **costume-variant-puppet** (3): GB211 Sc105, GB214 Sc099, GB219 Sc111
+- **cycle-multi-scale** (2): GB202 Sc108, GB218 Sc002
+- **dialogue-two-shot** (7): GB204 Sc154, GB206 Sc019, GB214 Sc059, GB214 Sc063, GB214 Sc099, GB219 Sc076, GB2215 Sc146
+- **dissection-gag** (1): GB2215 Sc142
+- **face-comp-driven** (24): GB202 Sc103, GB202 Sc108, GB202 Sc147, GB202 Sc160, GB204 Sc154, GB206 Sc119, GB211 Sc105, GB211 Sc117, GB211 Sc122, GB214 Sc055, GB214 Sc058, GB214 Sc059, GB214 Sc061, GB214 Sc063, GB214 Sc099, GB218 Sc002, GB218 Sc117, GB219 Sc075, GB219 Sc076, GB219 Sc111, GB2215 Sc142, GB2215 Sc144, GB2215 Sc146, GB222 Sc089
+- **forced-perspective** (2): GB202 Sc108, GB218 Sc002
+- **head-comp-swap** (2): GB206 Sc119, GB214 Sc099
+- **layout-mov-reference** (30): GB202 Sc094, GB202 Sc103, GB202 Sc108, GB202 Sc144, GB202 Sc147, GB202 Sc160, GB204 Sc154, GB206 Sc019, GB206 Sc119, GB211 Sc105, GB211 Sc117, GB211 Sc122, GB214 Sc054, GB214 Sc055, GB214 Sc056, GB214 Sc057, GB214 Sc059, GB214 Sc061, GB214 Sc062, GB214 Sc063, GB214 Sc099, GB218 Sc002, GB218 Sc117, GB219 Sc075, GB219 Sc076, GB219 Sc111, GB2215 Sc142, GB2215 Sc144, GB2215 Sc146, GB222 Sc089
+- **mask-layer** (1): GB214 Sc054
+- **multi-character-staging** (12): GB202 Sc103, GB202 Sc144, GB202 Sc147, GB202 Sc160, GB211 Sc117, GB211 Sc122, GB214 Sc056, GB214 Sc057, GB214 Sc062, GB218 Sc117, GB219 Sc075, GB222 Sc089
+- **nested-master-symbol** (7): GB202 Sc094, GB202 Sc144, GB214 Sc054, GB214 Sc055, GB214 Sc056, GB214 Sc057, GB214 Sc062
+- **overlay-hands** (1): GB211 Sc105
+- **per-character-mask** (2): GB211 Sc105, GB214 Sc057
+- **photo-plate** (15): GB202 Sc094, GB202 Sc147, GB204 Sc154, GB206 Sc019, GB211 Sc117, GB211 Sc122, GB214 Sc054, GB214 Sc055, GB214 Sc057, GB214 Sc058, GB214 Sc059, GB214 Sc062, GB214 Sc063, GB218 Sc002, GB2215 Sc146
+- **punch-zoom** (1): GB206 Sc119
+- **rough-layer-shipped** (5): GB204 Sc154, GB211 Sc105, GB218 Sc117, GB219 Sc111, GB2215 Sc142
+- **run-cycle-library** (4): GB202 Sc103, GB202 Sc108, GB202 Sc144, GB218 Sc002
+- **solo-close-up** (5): GB206 Sc119, GB214 Sc054, GB214 Sc055, GB214 Sc058, GB2215 Sc144
+- **speed-smear** (1): GB202 Sc108
+- **transformation-gag** (1): GB2215 Sc142
 
-**What it teaches:** Two-character close interaction over a PHOTO plate: the background is a real photograph of a house and picket fence (Gumball's mixed-media signature), and both puppets play a 'squee' reaction — hands pressed to cheeks, star-pupil eyes — stacked as separate scene layers (DARWIN over the Gumball puppet layer). The comedy timing is offset: Darwin holds the delight for the whole 56 frames while Gumball's face falls to a worried blank stare around frame 35. Same frame, two reaction clocks.
+## Scene details
 
-**Scene notes:**
-- Background is a photographic plate, not a painted BG — the flat vector puppets are composited over it on the 'background' layer.
-- Eye/mouth comps (EYESCOMP2/MOUTH2, 199–223 kf each) carry the scene; bodies are nearly still. In close-up, the face system IS the animation.
-- Darwin's squee never breaks; Gumball's drops at ~f35 — offsetting reaction timing between characters in the same shot is the joke's engine.
-- Second-generation comps (the '2' versions) are used: the library keeps versioned face systems per production block.
+### GB202 "The Remote" — Sc094
+**The Remote — Sc094: Nicole dives over the car (photo-plate garage stunt)** · 56 frames @ 25 fps · cast: Nicole · folder: `production/scene-templates/gumball/scenes/gb202-remote-sc094/`
+
+Stunt staging on a photographic plate with an unfinished prop: the shot opens on ~14 frames of empty parking-garage photo plate with only a blue layout-line car in it, then Nicole drops in from the TOP of the frame (not through any door), tumbles, stretches into a full horizontal dive over the car roof (~frame 35), lands past it (~frame 42) and holds an angry crouch (~frame 49) before vanishing, leaving the empty plate again. The entire performance lives inside one nested master symbol ('Mom angry run rough', 1752 kf) placed over a single 'bg' symbol; the comedy and the danger come from trajectory and timing against a static plate, not from camera moves or extra drawings -- the car itself is never even painted.
+
+### GB202 "The Remote" — Sc103
+**The Remote — Sc103: Richard hogs the remote (three run cycles, one garage)** · 141 frames @ 25 fps · cast: Darwin, Gumball, Richard · folder: `production/scene-templates/gumball/scenes/gb202-remote-sc103/`
+
+Three run cycles, three jobs: Gumball and Darwin charge in from frame-left on their library run cycles, furious, while Richard -- also on a run cycle ('dad_run') -- runs nowhere: he sits cross-legged at centre frame clutching the remote, hovering in place, grinning. When the kids exit (~frame 71) the same static garage plate and the same seated pose carry a 70-frame solo rant, performed almost entirely by face comps (1720 kf of face work vs 294 kf of body), until a final-frame flip puts Richard upside down with his soles to camera. The lesson: a cycle is not locomotion until staging says so -- placed on a seated, centred character, a run cycle becomes pure manic energy.
 
 ### GB202 "The Remote" — Sc108
+**The Remote — Sc108: forced-perspective run (giant Darwin FG, small Gumball BG)** · 40 frames @ 25 fps · cast: Darwin, Gumball · folder: `production/scene-templates/gumball/gb202-remote-sc108/`
 
-**The Remote — Sc108: forced-perspective run (giant Darwin FG, small Gumball BG)**
+Locomotion + forced perspective: both characters run library cycles ('gb run cycle' 410 kf, 'dar run cycle' 223 kf), but the staging does the work — Darwin's cycle is placed HUGE in the foreground, cropped by the frame edge, one giant leg swinging across the shot, while Gumball runs the same kind of cycle small in the background clutching the remote. The background is reduced to a horizontal speed smear: no location detail at all. Travel, scale comedy and near-collision (Darwin's foot swings past Gumball ~frame 23) all come from placement scale, not new drawings.
 
-- Cast: **Darwin, Gumball**.
-- Frames: 40 @ 25 fps · stage 1920x1080 · source FLA `GB202REMOTE_Sc108_Clean_V001_STN.fla`
+### GB202 "The Remote" — Sc144
+**The Remote — Sc144: kids burst in, Richard tackles them for the remote** · 262 frames @ 25 fps · cast: Darwin, Gumball, Nicole, Richard · folder: `production/scene-templates/gumball/gb202-remote-sc144/`
 
-**What it teaches:** Locomotion + forced perspective: both characters run library cycles ('gb run cycle' 410 kf, 'dar run cycle' 223 kf), but the staging does the work — Darwin's cycle is placed HUGE in the foreground, cropped by the frame edge, one giant leg swinging across the shot, while Gumball runs the same kind of cycle small in the background clutching the remote. The background is reduced to a horizontal speed smear: no location detail at all. Travel, scale comedy and near-collision (Darwin's foot swings past Gumball ~frame 23) all come from placement scale, not new drawings.
+Multi-character staging in one master animation symbol: the whole family's performance is nested inside a single 'animation' symbol placed over white + background, instead of one scene layer per character. Entrances, a run cycle and a tackle are choreographed inside the nest where all the timing can be seen together.
 
-**Scene notes:**
-- Same asset class, two scales: a cycle symbol reads completely differently at 0.3x (background) vs 3x cropped (foreground).
-- The 'background' layer is a speed-line smear — at full run, location is deleted on purpose.
-- Darwin's foreground leg overlaps Gumball's space on the swing: FG/BG characters share the frame's depth, staged by layer order.
-- 40 frames total: just enough loops for the cut; the cycles do the rest.
+### GB202 "The Remote" — Sc147
+**The Remote — Sc147: family pile on the sidewalk, neighbour rants back (in-file cut)** · 147 frames @ 25 fps · cast: Darwin, Gumball, Nicole, Richard · folder: `production/scene-templates/gumball/scenes/gb202-remote-sc147/`
+
+Two held tableaux joined by a cut INSIDE the scene file: the background layer swaps at frame 42. First, the Wattersons sit in a heap on a photographic suburban sidewalk -- Richard reclined on the ground, Nicole, Gumball and Darwin clustered over him -- and hold it for ~41 frames with only face-comp micro-variation (the whole group is one nested symbol, 'animation', on a single 'family' layer; there are zero scene-level body-puppet keyframes in the file). Then the file cuts to the neighbour (a stock CROWD_GUY build) alone in his driveway, arms up and mouth wide in a shout that he holds, with slow settling, for the remaining ~105 frames. The lesson is reaction-shot economy: when the joke is 'they stare / he yells', build one group nest and one solo hold, and let a background keyframe do the cutting.
+
+### GB202 "The Remote" — Sc160
+**The Remote — Sc160: Richard erupts at the family (31-frame punctuation shot)** · 31 frames @ 25 fps · cast: Darwin, Gumball, Nicole, Richard · folder: `production/scene-templates/gumball/scenes/gb202-remote-sc160/`
+
+The punctuation shot: a complete story beat — entrance, scatter, eruption — in 31 frames on an empty stage. Richard storms in, the family hits the floor, and the scream is a single held pose with micro-variations. Nothing is wasted: one entrance vector, one group reaction, one held accent. Short shots in this production are built like jokes — setup inside 12 frames, payoff held.
+
+### GB204 "The Phone" — Sc154
+**The Phone — Sc154: tug-of-war over the phone (photo street, one held grapple)** · 184 frames @ 25 fps · cast: Darwin, Gumball · folder: `production/scene-templates/gumball/scenes/gb204-phone-sc154/`
+
+How to run a 184-frame scene on one held body pose: Gumball and Darwin sit tangled on a lawn in front of a photographic suburban fence, limbs bound up together with grey bands, both gripping the same green-cased phone, and for ~160 frames almost nothing moves except their faces -- rage, strain and shouted insults cycle through the face-comp system (2,683 face kf against 1,680 body kf) while the grapple itself is a single sustained strain. The payoff is saved for the last ~24 frames: Darwin's expression flips to delight, the tangle breaks, he exits frame-right with the prize and Gumball is left toppling backwards, dazed. A shouting match is a face scene; the bodies just have to hold the tension.
+
+### GB206 "The Job" — Sc019
+**The Job — Sc019: amazed two-shot on a photographic background plate** · 56 frames @ 25 fps · cast: Darwin, Gumball · folder: `production/scene-templates/gumball/gb206-job-sc019/`
+
+Two-character close interaction over a PHOTO plate: the background is a real photograph of a house and picket fence (Gumball's mixed-media signature), and both puppets play a 'squee' reaction — hands pressed to cheeks, star-pupil eyes — stacked as separate scene layers (DARWIN over the Gumball puppet layer). The comedy timing is offset: Darwin holds the delight for the whole 56 frames while Gumball's face falls to a worried blank stare around frame 35. Same frame, two reaction clocks.
 
 ### GB206 "The Job" — Sc119
+**The Job — Sc119: Nicole close-up that punch-zooms into an extreme face shot** · 57 frames @ 25 fps · cast: Nicole · folder: `production/scene-templates/gumball/gb206-job-sc119/`
 
-**The Job — Sc119: Nicole close-up that punch-zooms into an extreme face shot**
+Emotion close-up with an in-scene camera punch: the shot opens as a medium close-up of Nicole against a blurred room background ('background 1st'), then smash-zooms around frame 15 into an extreme close-up where her eyes and mouth fill the entire 16:9 frame over flat blue ('background Last'). One character layer (MOM) the whole time — the 'cut' is a scale/background swap inside the scene, and the scream is carried entirely by the eye/mouth comp system plus a dedicated 'evil mum face' symbol.
 
-- Cast: **Nicole** (solo).
-- Frames: 57 @ 25 fps · stage 1920x1080 · source FLA `GB206JOB_Sc119_V004_clean_AO.fla`
-- Scene layers: MOM, background 1st, background Last (+ production layers)
+### GB211 "The Treasure" — Sc105
+**The Treasure — Sc105: the whole family in one bed, the duvet layer sandwich** · 123 frames @ 25 fps · cast: Gumball, Nicole, Richard · folder: `production/scene-templates/gumball/gb211-treasure-sc105/`
 
-**What it teaches:** Emotion close-up with an in-scene camera punch: the shot opens as a medium close-up of Nicole against a blurred room background ('background 1st'), then smash-zooms around frame 15 into an extreme close-up where her eyes and mouth fill the entire 16:9 frame over flat blue ('background Last'). One character layer (MOM) the whole time — the 'cut' is a scale/background swap inside the scene, and the scream is carried entirely by the eye/mouth comp system plus a dedicated 'evil mum face' symbol.
+The layering masterclass of this wave: 18+ scene layers build one bed holding THREE characters — Nicole, Gumball (middle) and Richard — all tucked under a single dark duvet while a bedtime story is read. Each character gets duvet-side and duvet MASK layers so bodies sink under the blanket correctly, Gumball gets his own duvet piece, and 'DAD OVERLAY HANDS' rides on top so hands rest on the covers. The performances are tiny (mouths, eyelids, one eye popping open) — the construction is the show.
 
-**Scene notes:**
-- Frames 1–8: medium close-up, blurred photographic-style room BG. Frame ~15 onward: extreme close-up, face = the whole frame, flat colour BG.
-- The two background layers are the before/after of the punch-in — no camera symbol, just a BG swap + puppet scale jump.
-- Extreme expressions get their own symbol ('evil mum face', 76 kf) instead of being posed on the stock face comps.
-- Mouth shapes in the extreme section cycle scream → round 'o' → clamped shut: the whole beat is lip-sync comps at wall size.
+### GB211 "The Treasure" — Sc117
+**The Treasure — Sc117: Anais makes her case (Darwin in the fishbowl)** · 136 frames @ 25 fps · cast: Anais, Darwin, Gumball · folder: `production/scene-templates/gumball/scenes/gb211-treasure-sc117/`
+
+Dialogue staging with an unequal movement budget: over 136 frames in the photographic bedroom, only Anais actually performs -- she starts centre-frame smiling, cracks up laughing (~frame 35), turns furious and stomps her way to frame-right (frames 52-69), softens into pleading (~frame 85) and ends smiling again. Her brothers are near-frozen gags: Gumball sits on the lower bunk wearing one worried look for the whole scene, and Darwin stands inside a fishbowl on the dresser -- body behind the BOWL_FRONT glass layer, head out of the top -- moving only his eyes until the last frame, when his mouth finally opens. The construction lesson is the sandwich: character layer(s) + a front-glass prop layer = a character credibly inside a transparent container, no special rig required.
+
+### GB211 "The Treasure" — Sc122
+**The Treasure — Sc122: heads on a string (23-frame bedroom insert)** · 23 frames @ 25 fps · cast: Anais, Darwin, Gumball · folder: `production/scene-templates/gumball/scenes/gb211-treasure-sc122/`
+
+The sub-second insert: 23 frames (under one second at 25 fps) that exist only to hold a reaction inside a bigger sequence. Gumball and Darwin hang from a yellow cord at top-bunk height, rendered as blissful floating heads -- eyes closed, mouths cycling through a sung/spoken line, swaying slightly -- while Anais stands on the floor below looking up at them, delighted. The stage is a photographic bedroom plate; the puppets are flat vector. Nothing is chased, built or transformed: the scene teaches how little motion a cut-in needs when the staging (two heads dangling at bunk height, one small witness on the floor) is already the joke.
+
+### GB214 "The Words" — Sc054
+**The Words — Sc054: Darwin's hallway solo (one symbol, borrowed photo plate)** · 229 frames @ 25 fps · cast: Darwin · folder: `production/scene-templates/gumball/scenes/gb214-words-sc054/`
+
+A solo corridor scene with one actor, one plate and one master symbol: Darwin enters from behind a hallway pillar (clipped by a mask layer, not redrawn), then wanders the photographic corridor inside a single nested symbol -- 'DRW_marche + lente' ('walk + slow') -- cycling through an emotion tour: smug singing with clasped hands, an eyes-closed belted note, worry, pleading, annoyed explaining. Nobody else exists in the shot. The ending is a scale punch on the same plate: small distant figure (frame 172) to looming worried near-camera (frame 201) to a frame-filling bliss close-up (frame 229) -- a 'zoom' achieved purely by scaling the placement, no camera and no new background. Even the plate is borrowed: it is a crop of a GB110 'The Fight' background.
+
+### GB214 "The Words" — Sc055
+**The Words — Sc055: Darwin's pleading close-up, nested in one master symbol (94 frames)** · 94 frames @ 25 fps · cast: Darwin · folder: `production/scene-templates/gumball/scenes/gb214-words-sc055/`
+
+The nested-master pattern at its purest: the scene timeline is almost empty (one keyframe on the character layer, one on the background) and the whole 94-frame performance - a pleading, singing close-up that ends with Darwin falling out of frame - lives inside a single master symbol, 'DRW_marche + lente' (303 kf). Inside the nest, the face system does the acting: GB200_DRW_HEADCOMP carries 658 kf and the mouth comp 304 kf while the body barely moves. It also teaches name-vs-content discipline: the symbol is named for a slow walk, but the placed performance is a stationary emotional close-up - always trust the render over the filename.
+
+### GB214 "The Words" — Sc056
+**The Words — Sc056: Darwin performs on a ladder, nose-to-nose with the T-Rex (178 frames)** · 178 frames @ 25 fps · cast: Carrie, Darwin, Masami, Ocho, Tobias · folder: `production/scene-templates/gumball/scenes/gb214-words-sc056/`
+
+The scale-gag wide shot, built as a composite: a photorealistic T-Rex and the whole crowd exist only as the embedded layout/reference video, and the Flash production animates just five puppets against it. Darwin's entire ladder performance - meditating, preening, balancing, singing, all nose-to-nose with the dinosaur - is the reusable master symbol 'DRW_marche + lente' placed on two 'dwn' layers, while the four classmate reactors stay off or invisible for two-thirds of the shot and pop to full presence only for the final third, so the eye stays on the small fish performing at the giant's face. Lesson: when the environment and the giant are somebody else's render, your file's job is timing and eyelines, not redrawing their work.
+
+### GB214 "The Words" — Sc057
+**The Words — Sc057: the hallway dance — whole class advances on camera (198 frames)** · 198 frames @ 25 fps · cast: Carmen, Carrie, Darwin, Masami, Ocho, Tobias · folder: `production/scene-templates/gumball/scenes/gb214-words-sc057/`
+
+How to shoot a group dance number as a single advancing wide shot. One photographic corridor plate never changes; the entire class is layered - six finished puppets on named layers (Tobias's comp alone is an 805-kf nest of 7 puppets; Darwin's head comps run 566 kf) and seven white placeholder characters on '3d character ref' layers for the classmates other departments finish - and the whole ensemble scales/moves toward camera for 198 frames so a static background feels like a tracking shot. Two per-character mask layers keep the advancing dancers correctly occluded by the corridor. The mixed cast is the point: finished Flash puppets and unfinished white references share one choreography, timed together in one file, because the dance only works if every department hits the same beats.
+
+### GB214 "The Words" — Sc058
+**The Words — Sc058: Darwin backview whip-turn close-up (17 frames)** · 17 frames @ 25 fps · cast: Darwin · folder: `production/scene-templates/gumball/scenes/gb214-words-sc058/`
+
+How to stage a whip-turn reaction close-up with almost nothing: one backview puppet, one face-comp performance, one cropped background. The scene is 17 frames and a single scene-level placement - Darwin seen from behind for the first 5 frames (a dedicated GB200_DARWIN_PUPPET_BACKVIEW_v001), then turned to camera where the entire performance is face comps (1702 face kf vs 271 body kf in the census): closed-eye grin, open-mouth shock, blushing smile. The background is not repainted for the close-up - it is a crop (GB214_WORDS_SC057_LO_BG_crop.jpg) of the Sc057 wide hallway plate, so the close-up inherits the wide shot's photographic corridor for free.
+
+### GB214 "The Words" — Sc059
+**The Words — Sc059: Darwin's smug sway vs Masami's frozen smile (105 frames)** · 105 frames @ 25 fps · cast: Darwin, Masami · folder: `production/scene-templates/gumball/scenes/gb214-words-sc059/`
+
+The held-reaction two-shot: stage one character as a frozen smile and let the other do all the work. Masami's puppet is placed once and her happy face does not change for 90+ frames while Darwin slides in and runs a smug finger-up sway routine in the lower frame; her reaction - a worried grimace - is saved for the single final frame, after he has already exited, which is what makes it land as the punchline. Structurally the scene is two layers and two placements; the entire budget went into Darwin's face comps (2,758 kf in the census) and one saved expression swap.
+
+### GB214 "The Words" — Sc061
+**The Words — Sc061: Darwin peeks and points around the layout-video giant (100 frames)** · 100 frames @ 25 fps · cast: Darwin · folder: `production/scene-templates/gumball/scenes/gb214-words-sc061/`
+
+A Flash scene can be only half of the finished shot. Sc061's only puppet is Darwin (279 kf, with 2,415 kf of face comps), but the frame is dominated by a giant classmate who is not in the Flash file at all as artwork - she is a DOMVideoInstance on the 'layout mov' layer, a separately produced (3D-style) character embedded as reference so the Flash animator can puppeteer Darwin around her exact head positions: peeking right, peeking left, then stepping out front to point at her. The lesson for any mixed-pipeline production: animate the in-file character against the other pipeline's render, in the same file, frame-matched - never guess the composite positions later. The file also shows the failure mode to avoid: its fieldguide layer was left as a regular layer, so the safe-area guides render into the export.
+
+### GB214 "The Words" — Sc062
+**The Words — Sc062: Darwin's taunt-dance for a hallway audience (59 frames)** · 59 frames @ 25 fps · cast: Carmen, Carrie, Darwin, Masami, Ocho, Tobias · folder: `production/scene-templates/gumball/scenes/gb214-words-sc062/`
+
+How to stage a one-kid performance with a built-in audience: the performer (Darwin) gets the only fully animated puppet (196 kf plus 644+360 kf of head comps), placed centre on his own layer, while four classmates are parked on named layers around him as near-static reactors - Tobias's pointing-laugh comp (350 kf master symbol) does most of the audience's acting, Carmen, Ocho and Carrie hold poses. The comedy is in the performer's escalation (smug -> furious grimace-stomp -> bow -> splits), not in moving the crowd. One background, no cuts, 59 frames.
+
+### GB214 "The Words" — Sc063
+**The Words — Sc063: Darwin leans on Carrie — her smile falls last (109 frames)** · 109 frames @ 25 fps · cast: Carrie, Darwin · folder: `production/scene-templates/gumball/scenes/gb214-words-sc063/`
+
+A two-character scene built as a single nested placement: the scene timeline has one 'animation' layer with one puppet instance, and both performances - Darwin's (445 kf puppet, 1,226 kf in the largest head comp) and Carrie's ('car head' 189 kf plus her mouth/eye comps) - are choreographed inside it, including their position swap mid-shot. The scene also repeats the episode's signature reaction device: Carrie keeps her pleasant face for the entire exchange and drops it only in the last frame, after Darwin has exited - the audience gets her true reaction as a private final beat.
+
+### GB214 "The Words" — Sc099
+**The Words — Sc099: Darwin's about-to-explode rant (two-shot on white)** · 284 frames @ 25 fps · cast: Darwin, Gumball · folder: `production/scene-templates/gumball/gb214-words-sc099/`
+
+Dialogue two-shot construction: one scene layer per character (GUMBALL / DARWIN) over a WHITE layer and background, so each performance can be retimed independently. Uses an episode-specific costume head comp ('DRWAboutToExplode') swapped onto the standard Darwin puppet for one story beat.
+
+### GB218 "The Flakers" — Sc002
+**The Flakers — Sc002: panic run straight at the camera down the school hallway** · 42 frames @ 25 fps · cast: Darwin, Gumball · folder: `production/scene-templates/gumball/scenes/gb218-flakers-sc002/`
+
+Forced-perspective run straight at the camera: the camera never moves and the hallway background is a single locked plate for all 42 frames — the entire gag is placement scale. Darwin runs a library cycle ('Darwin Panic Run' / 'Panic Run Cycle', 318 kf) ramped from 0.33x at the far end of the hallway to 3.89x until his panicked face fills the frame and exits past camera; Gumball runs the same beat smaller and behind him. Because this is a KeyAnim (not clean) file, the production process is visible in the export: red timing charts are drawn over the middle frames and Darwin's legs are still red rough lines under his clean body.
+
+### GB218 "The Flakers" — Sc117
+**The Flakers — Sc117: the couch pile-on — phone, pile-on, face-off, laugh (312f, KeyAnim)** · 312 frames @ 25 fps · cast: Anais, Darwin, Gumball · folder: `production/scene-templates/gumball/scenes/gb218-flakers-sc117/`
+
+The longest scene in the archive is a single locked couch shot holding a full three-act mini-play for 312 frames: Anais alone, swooning and laughing over her phone (f1-40); Gumball and Darwin pile in on top of her in a three-head couch stack while she stays delighted underneath (f79-157); a standing confrontation (f195-234); then a shared laugh that settles into deadpan (f273-312). The stack is built for it: clean puppet layers (gb / dwn / anais) run parallel to DOMShape layers (GB / DRW / ANAIS / BRIEF) carrying the rough work, with a ROUGH layer, TEMP_PILLOWS and sofa-pillow props (GB218Flakers_Props_SophaPillows_v001.fxg) as separate items. In this KeyAnim export the heads are finished colour comps while every body is red rough lines.
+
+### GB219 "The Watch" — Sc075
+**The Watch — Sc075: giant smug Richard hogs the controller while Gumball melts down** · 78 frames @ 25 fps · cast: Darwin, Gumball, Richard · folder: `production/scene-templates/gumball/scenes/gb219-watch-sc075/`
+
+Three-character staging on one locked living-room plate, with the acting deliberately unbalanced: Richard sits huge and motionless centre-left, smug and half-lidded, holding the game controller for the full 78 frames, while the performance is pushed onto the smallest figure — Gumball's face comps cycle worried, grimacing, screaming and finally tongue-out disgust, and Darwin holds one flat side-eye as the timing foil. Construction is one scene layer per character (DAD / GB / Darwin) over a single background, so each reaction clock can be retimed independently; the controller is a reused library prop, not a scene-specific drawing.
+
+### GB219 "The Watch" — Sc076
+**The Watch — Sc076: two-shot crying escalation — both boys end up bawling on the floor** · 209 frames @ 25 fps · cast: Darwin, Gumball · folder: `production/scene-templates/gumball/scenes/gb219-watch-sc076/`
+
+A dialogue two-shot built as an escalation machine: locked camera, one living-room background, and two stock puppets on separate scene layers trading grief beats for 209 frames. Gumball leads — teary and wobbling from f1, open-mouthed wail at f27, collapsed to his knees sobbing by f131 — and Darwin answers each beat late (flat until f53, tear streaks at f79, his own floor collapse at f183) until both end bawling on the floor at f209. The face system does nearly all of it: GB_HEADCOMP alone holds 1,190 keyframes, the largest symbol in the file, and face comps total 4,699 kf against 1,505 body-puppet kf.
+
+### GB219 "The Watch" — Sc111
+**The Watch — Sc111: faces mashed flat against the glass pane (KeyAnim line art)** · 68 frames @ 25 fps · cast: Darwin, Gumball · folder: `production/scene-templates/gumball/scenes/gb219-watch-sc111/`
+
+The faces-on-glass gag is a layer trick: a translucent glass-pane prop (GB219Watch_Props_GlassPane_v001.fxg) sits on its own foreground 'glass' layer over the whole shot, and the characters — riding episode-specific mobility-scooter pose puppets — come up behind it and squash. For the first ~30 frames Gumball (top) and Darwin (below) are upright and worried with their palms on the glass; then the face comps flatten, cheeks balloon and features smear across the pane until both are pressed blobs (f43-68). This file is the KeyAnim export, so the render is pale line art with only accent colours (Gumball's ear, Darwin's legs) — the construction, not the finish, is what it teaches.
 
 ### GB2215 "The Apology" — Sc142
+**The Apology — Sc142: Gumball falls apart and reassembles (body-part gag)** · 75 frames @ 25 fps · cast: Gumball · folder: `production/scene-templates/gumball/gb2215-apology-sc142/`
 
-**The Apology — Sc142: Gumball falls apart and reassembles (body-part gag)**
+Transformation by puppet dissection: the joke is staged by breaking the puppet into separately-placed pieces. The scene opens on Gumball's legs walking in ALONE; head, torso and limbs are then placed as independent scene elements on the GB layer, splayed in impossible positions (multiple legs, head too big for the body, parts trailing behind), and the pieces progressively recombine until a strained, teeth-gritted whole Gumball stands at frame 75. No morphing — just per-part placement, scale and timing on a locked hallway background.
 
-- Cast: **Gumball** (solo — in several pieces).
-- Frames: 75 @ 25 fps · stage 1920x1080 · source FLA `GB2215APOLOGY_Sc142_V005_Clean_JA.fla`
+### GB2215 "The Apology" — Sc144
+**The Apology — Sc144: solo close-up — Gumball nurses a hurt arm, screams, drops out of frame** · 51 frames @ 25 fps · cast: Gumball · folder: `production/scene-templates/gumball/scenes/gb2215-apology-sc144/`
 
-**What it teaches:** Transformation by puppet dissection: the joke is staged by breaking the puppet into separately-placed pieces. The scene opens on Gumball's legs walking in ALONE; head, torso and limbs are then placed as independent scene elements, splayed in impossible positions (multiple legs, head too big for the body, parts trailing behind), and the pieces progressively recombine until a strained, teeth-gritted whole Gumball stands at frame 75. No morphing — just per-part placement, scale and timing on a locked hallway background.
+Solo close-up construction at its most economical: one puppet on one scene layer (GB) over a single locked background, and 51 frames carried almost entirely by the face-comp system. Gumball holds a gritted-teeth wince — eyes up, teeth clamped, rocking a hurt arm — for over 30 frames (head/mouth/eye comps: 1,112 kf vs the puppet's 655), and the release is punctuated in two steps: eyes slam shut at f39, a full open-mouth scream at f45, then he drops out of frame and the scene ends on the empty background. Pain, build and payoff are all face-comp poses; the body barely moves.
 
-**Scene notes:**
-- Frame 1 is only legs + tail: the scene trusts the audience to read dislocated parts as the character.
-- The head comp holds 805 keyframes — more than the body puppet (555): the giant gritted-teeth head is the visual anchor while the body is in pieces.
-- A 'Roughaurel' layer (rough pass by animator Laurel) ships inside the clean file — rough and clean coexist in production files.
-- Background is a locked school hallway (tile wall, red window frames): all motion is character-side, which makes the part chaos readable.
+### GB2215 "The Apology" — Sc146
+**The Apology — Sc146: Darwin bursts out of a locker — hop-in, face-off, make-up** · 86 frames @ 25 fps · cast: Darwin, Gumball · folder: `production/scene-templates/gumball/scenes/gb2215-apology-sc146/`
 
-### GB209 "The Banana" — crashed top shot (pose sheet)
+Entrance-and-confrontation staging on one locked photographic locker plate with no cuts and no background change: the scene opens on the empty lockers (f1), Gumball hops in from frame-right with his ankles strapped together (f12-22), a locker door pops open and Darwin emerges from inside the locker (f33), and the two play a complete arc — shock, a mutual shouting face-off (f43-65, both still hopping), then a calm make-up (f75-86). Separate GB and DWN scene layers carry the offset reactions, and the open locker door is the only piece of 'set' that ever moves.
 
-**The Banana — crashed top shot: dedicated overhead-angle puppets (approved pose sheet)**
+### GB222 "The Bumpkin" — Sc089
+**The Bumpkin — Sc089: top-shot tableau — Nicole, Anais and Darwin flat on the ground (KeyAnim)** · 177 frames @ 25 fps · cast: Anais, Darwin, Nicole · folder: `production/scene-templates/gumball/scenes/gb222-bumpkin-sc089/`
 
-- Cast: **Gumball, Darwin** (both crashed, seen from directly above).
-- Frames: 2 root frames (pose sheet) @ 24 fps · stage 2730x1625 (field-guide page) · source FLA `GB209_GB+DRW_CRASHED_TOP_SHOT_V002.fla`
+Top-shot staging in a KeyAnim file: the camera looks straight down at a grey ground plate (GB222_BUMPKIN_Sc089_LO_BG.jpg) and three characters lie flat in a diagonal row — Nicole centre, Anais lower-left, Darwin right — each on their own scene layer, for 177 frames. The export shows the production split honestly: the heads are finished colour face comps and carry a full dialogue scene (Anais talks through f23-89, Darwin answers f111-155, Nicole's shifting reactions carry f133-177) while every body below the neck is still red rough construction lines in every frame. Three head comps on a held overhead tableau are the whole scene.
 
-**What it teaches:** Camera-angle puppets: for the overhead crash shot the show did NOT rotate the stock puppets — it built dedicated GB209_*_CRASHED_TOP_SHOT puppets (187 + 149 kf) with their own eye comps, drawn already-flattened from above, bruises and all. The SWF is the approved pose sheet on the production field guide: each root frame is an approved pose with slate, scene/episode/model boxes and an APPROVED stamp box.
+## Also in the library (not counted in the 31)
 
-**Scene notes:**
-- Honest label: this file is a pose sheet, not a staged scene — 2 root frames, no background. The performance poses live in the puppet timelines inside the FLA (included in the anatomy JSON).
-- Angle-specific puppets (top shot here) are a standing technique in this production: new viewpoint = new puppet variant, not a transform trick.
-- The field-guide frame (4/3 SAFE / FULL guides, CN bug, slate) is part of every GB209 export — presentation and approval are built into the file.
+- **GB209 "The Banana" crashed top shot** (`gb209-banana-crashed-topshot/`) — an approved pose sheet (2 root frames) kept as a template because its FLA holds the dedicated overhead-angle puppets. Classified partial in the survey.
 
-## Survey — all 71 FLAs in CN-Leaks-001
+- **GB214 Sc057 + Sc059** are in the 31 (folders under `scenes/`) and are ALSO the Darwin dance: their frame-by-frame choreography lives in `production/dance-choreo/`.
+
+## Complete scenes that exist SWF-only (no FLA in this archive)
+
+- **GB222 "The Bumpkin" Sc035** (411f) — SWF only in archive, no FLA — SWF-tag extraction is future work.
+- **GB222 "The Bumpkin" Sc090** (444f) — SWF only in archive, no FLA — the kids-looking-up-at-the-giant shot.
+- **GB219 "The Watch" Sc077** (109f) — SWF only in archive, no FLA.
+- **GB219 "The Watch" Sc078** (181f) — SWF only in archive, no FLA.
+
+These were not counted in the 31 (the survey counts FLA-backed scenes). Pulling them in needs the SWF-tag extraction route — future work, stated plainly.
+
+---
+
+## Wave-1 survey — all 71 FLAs in CN-Leaks-001 (preserved)
 
 The owner asked what complete animated scenes actually exist in the holdings. Every `.fla` entry in the archive is classified below from file evidence: companion-SWF frame counts (measured), XFL symbol/layer scans, FLAs extracted and parsed in full (★ = deep-extracted as a wave-1 template above; ‡ = extracted by the dance-choreo lane, PR #275), and rendered sheets where noted. Classes: **Complete animated scene** · **Partial** (pose sheet, pass file, test or duplicate) · **Static — not a scene** (puppet library / model sheet / rig file) · **Unverified**.
 
@@ -237,63 +372,7 @@ Totals: **31 complete animated scenes · 11 partial · 28 static · 1 unverified
 
 **Not FLAs, but complete scenes that exist in the same archive as SWF only** (no FLA to dissect): GB222 "The Bumpkin" Sc035 (411f) and Sc090 (444f — the kids-looking-up-at-the-giant shot), GB219 "The Watch" Sc077 (109f) and Sc078 (181f). If the owner wants those as templates, the SWF-tag extraction route is the wave-2 job.
 
-## Honest gaps & surprises (verified from the files)
 
-- **The GB209 'FINAL' files are not scenes.** They are approved pose sheets: a field-guide page (slate, episode/model boxes, APPROVED stamp) whose root frames are approved poses. The bilboquet sheet (Sc162, 19 poses) and the face-kick sheet (GB209 Sc155) were rendered during selection and are documented here but not landed as templates this wave; the crashed top-shot sheet was landed because its FLA holds the dedicated angle puppets.
-- **Filename prefixes lie.** The 'GB200' HURT files are GB209 'The Banana' material per their own slates (GB200 is the puppet-block code), and Sc108's 'school run' is actually a forced-perspective speed-smear shot. Every deep-extracted scene above was verified by rendering it, not by its filename.
-- **Embedded reference videos:** Sc099's and Sc144's SWFs carry a 'layout mov' reference video (video character 1). FFDec cannot render those files on this VM (its bundled JNA/vlcj path fails), so sheets/videos for Sc099 — and the tail of Sc144 — were rendered from copies with the reference-video tag stripped. The reference movie is a layout guide, not scene content; no character or background data was touched. The anatomy JSONs come from the untouched FLAs.
-- **Bumpkin Sc089 is the giant-scale scene with an FLA** (177f, complete) but its FLA is 64 MB — left for wave 2's heavier pull. Sc090 (the famous looking-up shot) has no FLA in this archive at all.
-- Sc057/Sc059 (the Darwin dance) are deliberately excluded from the templates — already extracted in `production/dance-choreo/`, and surveyed above as complete scenes.
+## Honest gaps
 
-## Libraries & partials (logged 2026-11-02)
-
-The other two classes from the survey below are now logged to the same standard. The **28 statics are static puppet libraries** — the FLA character-sheet libraries the characters are built from (the owner's term, and the industry's). The **11 partials** are pose sheets, pass files, a test export and a recovery save. Full census records: [`libraries-catalog.json`](libraries-catalog.json); per-item records under [`libraries/`](libraries/) and [`partials/`](partials/). Media status for every item is in [`MEDIA-CHECKLIST.md`](MEDIA-CHECKLIST.md) — renders are staged, blocked by the sandbox write guard at logging time.
-
-### The 28 static puppet libraries
-
-| Library | Character(s) | Symbols | Completeness |
-|---|---|---|---|
-| [gb200-puppet-gumball-v008](libraries/gb200-puppet-gumball-v008/) | Gumball | 61 | Complete — assembles in full |
-| [gb200-puppet-gumball-v006](libraries/gb200-puppet-gumball-v006/) | Gumball | 61 | Complete — assembles in full (earlier save) |
-| [gb200-puppet-gumball-v004](libraries/gb200-puppet-gumball-v004/) | Gumball | 61 | Complete — assembles in full (earlier save) |
-| [gb200-puppet-gumball-v001-cs3](libraries/gb200-puppet-gumball-v001-cs3/) | Gumball | binary | Presumed complete (version-001 original) — census is strings-level only |
-| [gb200-puppet-darwin-v002](libraries/gb200-puppet-darwin-v002/) | Darwin | 34 | Complete — assembles in full |
-| [gb200-puppet-darwin-v002-dup9](libraries/gb200-puppet-darwin-v002-dup9/) | Darwin | 34 | Complete — assembles in full (duplicate copy) |
-| [gb200-puppet-darwin-v002-cs5](libraries/gb200-puppet-darwin-v002-cs5/) | Darwin | 34 | Complete — assembles in full (CS5 save) |
-| [gb200-puppet-mom-v002](libraries/gb200-puppet-mom-v002/) | Nicole (Mom) | 38 | Complete — assembles in full |
-| [gb200-puppet-mom-v002-dup10](libraries/gb200-puppet-mom-v002-dup10/) | Nicole (Mom) | 38 | Complete — assembles in full (duplicate copy) |
-| [gb200-puppet-dad-v004](libraries/gb200-puppet-dad-v004/) | Richard (Dad) | 46 | Complete — assembles in full (richest Dad save) |
-| [gb200-puppet-dad-v003](libraries/gb200-puppet-dad-v003/) | Richard (Dad) | 43 | Complete — assembles in full (earlier save) |
-| [gb200-puppet-anais-v002](libraries/gb200-puppet-anais-v002/) | Anais | 48 | Complete — assembles in full |
-| [gb200-puppet-anais-v002-dup8](libraries/gb200-puppet-anais-v002-dup8/) | Anais | 48 | Complete — assembles in full (duplicate copy) |
-| [gb200-puppet-hector-v001-cs3](libraries/gb200-puppet-hector-v001-cs3/) | Hector | binary | Documented shape-set library — full census needs the file opened in Flash/Animate |
-| [rig-carrie-ghost](libraries/rig-carrie-ghost/) | Carrie | binary | Rig present; part census partial — most symbol names not string-recoverable |
-| [rig-ocho-spider](libraries/rig-ocho-spider/) | Ocho | binary | Minimal rig — named parts only; completeness limited |
-| [rig-penny-peanutantlers](libraries/rig-penny-peanutantlers/) | Penny | binary | Complete minimal puppet — every part named and present |
-| [rig-tobias-sportypuff](libraries/rig-tobias-sportypuff/) | Tobias | binary | Head/face rig by name — body parts not name-recovered |
-| [fosters-turn-madam-foster](libraries/fosters-turn-madam-foster/) | Madame Foster | binary | Model-turn library — large symbol count behind generic names |
-| [fosters-turn-goo](libraries/fosters-turn-goo/) | Goo | binary | Model-turn library with special-pose extensions |
-| [fosters-goo-hair](libraries/fosters-goo-hair/) | Goo (hair only) | binary | Single-element sheet — hair comps only, NOT a character |
-| [fosters-turn-duchess](libraries/fosters-turn-duchess/) | Duchess | binary | Model-turn library with separately-kept hand/eyelash pieces |
-| [fosters-turn-ed](libraries/fosters-turn-ed/) | Ed (Eduardo) | binary | Model-turn library with performance comps (head turn/talk, mouth shapes, hair cycle) |
-| [fosters-turn-cheese](libraries/fosters-turn-cheese/) | Cheese | binary | Model-turn library with alternate heads/mouths and a numbered hand library |
-| [fosters-turn-frankie](libraries/fosters-turn-frankie/) | Frankie | binary | Full part-by-part character system (3/4-view set) — the deepest Foster's library in the archive |
-| [fosters-turn-terrence](libraries/fosters-turn-terrence/) | Terrence | binary | Model-turn library with dedicated mouth-shape sets |
-| [fosters-turn-coco](libraries/fosters-turn-coco/) | Coco | binary | Model-turn library with walk/run leg pieces and head comps |
-| [fosters-turn-wilt](libraries/fosters-turn-wilt/) | Wilt | binary | Model-turn library with a four-view set (front / 3-4 front / side / back) |
-
-### The 11 partials
-
-| Partial | Character(s) | Animated frames | What is missing |
-|---|---|---|---|
-| [gb209-banana-crashed-topshot](partials/gb209-banana-crashed-topshot/) | Gumball, Darwin | 2 root frames (pose sheet); puppet timelines inside run 187 + 149 keyframes | It is not a scene: no background, no staging, 2 root frames. Already deep-extracted as a wave-1 template (folder gb209-banana-crashed-topshot/) for the angle puppets — this partial record cross-links to that anatomy. |
-| [gb209-banana-bilboquet-sc162](partials/gb209-banana-bilboquet-sc162/) | Gumball, Darwin | 19 poses (pose sheet, rendered & verified in wave 1) | No scene, background or continuous animation — poses only. |
-| [gb209-banana-gumball-hurt-facekick-sc155](partials/gb209-banana-gumball-hurt-facekick-sc155/) | Gumball | 2 root frames (pose sheet, rendered & verified in wave 1) | Poses only; no scene or background. |
-| [gb209-banana-gumball-hurt-floor-sc160](partials/gb209-banana-gumball-hurt-floor-sc160/) | Gumball | 2f (companion SWF, INDEX-measured) | Poses only; no scene or background. |
-| [gb209-banana-gumball-hurt-himself-sc158](partials/gb209-banana-gumball-hurt-himself-sc158/) | Gumball | 18f of poses (companion SWF, INDEX-measured) | Poses only; no scene or background. |
-| [gb209-banana-darwin-hurt-backkick-sc159](partials/gb209-banana-darwin-hurt-backkick-sc159/) | Darwin | 2f (companion SWF, INDEX-measured) | Poses only; no scene or background. Darwin's sheet set is leaner than Gumball's (no separate body/ear/tail symbols — the body rides inside the puppet symbol). |
-| [gb209-banana-darwin-hurt-himself-sc161](partials/gb209-banana-darwin-hurt-himself-sc161/) | Darwin | 10f of poses (companion SWF, INDEX-measured) | Poses only; no scene or background. |
-| [gb209-banana-destroyed-face-gumball](partials/gb209-banana-destroyed-face-gumball/) | Gumball | 2f (companion SWF, INDEX-measured) | Poses only; no scene or background. |
-| [gb202-remote-sc160-recover](partials/gb202-remote-sc160-recover/) | Gumball, Darwin, Nicole, Richard | Recovery copy of the 31f Sc160 scene (clean file measured at 31f @25) | Nothing for the scene itself — but it is a duplicate of a complete scene, not new material; kept in the catalog as the safety copy and as evidence of the production's recovery-save habit. |
-| [gb214-words-sc060-sfx](partials/gb214-words-sc060-sfx/) | Gumball, Darwin (fragments) | 56f of effects (companion SWF, INDEX-measured) | The base scene itself: no clean Sc060 FLA exists in the archive, so the scene this pass belongs to is present only as this effects layer. What is missing is everything the pass would composite over. |
-| [gb2215-apology-test-export](partials/gb2215-apology-test-export/) | Gumball | Not measured (no companion SWF in the archive) | No scene timeline, background, or second character — it exists to prove the export path, and the INDEX classifies it partial for exactly that reason. |
+None for media: every scene has its sheet and video. (The sandbox write guard from wave 1 proved intermittent during this build — renders were verified frame-by-frame and retried through the bursts.)
