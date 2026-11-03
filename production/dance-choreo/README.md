@@ -111,3 +111,19 @@ layers literally named `twist` (32 keyframes, active frames 43–97) and `beat`.
   in full colour. Choreography data is unaffected.
 
 Full holdings inventory: `INVENTORY.md` in this folder.
+
+## Production science — how this scene works (2026-11-02)
+
+The measured anatomy of these two scenes lives in
+[`production/production-science/`](../production-science/README.md):
+
+- **AUDIO-MAP.md** — the sound: one mono breakdown track per shot, cut to
+  the exact frame count; tempo ≈112 BPM (beat = 13.4 frames); the twist
+  starts on an accent at frame 43; per-shot tracks are not phase-continuous.
+- **MOVEMENT-MATH.md** — the timing: everyone keyed on twos (83–92% of
+  keyframes); lead 11–12.4 authored poses/sec, onlookers 10–11, background
+  6–8; the twist is 27 strict-two keyframes, frames 43–97; the camera
+  approach is faked inside the puppet (head comp ×2.32, screen area ×10.3).
+- **GAPS-AND-STANDARDS.md** — dope/bar sheets, layout gate, puppet library,
+  color stage, compositing, retakes/QC, broadcast loudness: what's in the
+  files, and what Cape Jones adopts.
