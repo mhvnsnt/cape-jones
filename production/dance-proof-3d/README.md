@@ -58,6 +58,54 @@ Pelvis travel is 16.4 cm peak-to-peak across the loop. The cape passes the
 zoom checks (front, back, hem close-up at the deepest-dip frame): one
 continuous cloth, no slots, no separated ribbons.
 
+## v3 — the full song, the full world cycle, and v2's three fixes
+
+The owner's v3 ask: use the final approved song at full length, stretch
+the lighting cycle across the whole track, and fix v2's admitted
+shortfalls — he danced too small in frame, mild foot-skate in the widest
+plants, and the cape must stay one solid piece.
+
+1. **Song.** `song-full-v2-en.mp3` (the English version, owner-approved
+   final mix) at full length: the video is 1,819 frames at 24 fps =
+   75.79 s (1,824 frames rendered). The 2D version carries the Japanese
+   mix — the two versions rotate equally, scene by scene.
+2. **World cycle.** Five 384-frame sections across the song: day →
+   LED magenta (section h-flipped) → LED cyan → night (h-flipped) →
+   day return. Lighting hard-cuts as in v2; the 48-frame step-touch
+   loop tiles underneath.
+3. **Camera closer.** Moved from (0, −3.35, 0.60) / 35 mm to
+   (0, −2.45, 0.60) / 38 mm. On the final video the measured character
+   box spans ~73% of frame height (v2 read small in frame).
+4. **Foot-skate reduced.** Widest plant peaks narrowed (pelvis X
+   0.078/0.082 → 0.072/0.076; plant abduction 24/25° → 21/22°) and new
+   dwell-hold anchors keyed at loop offsets 11/23/35, so the pelvis
+   travels during the swings instead of during the plants. Dips and
+   weight shifts unchanged. This is FK animation with no IK pinning —
+   the skate is reduced, not eliminated.
+5. **Cape.** V2's one-piece parametric cloth sheet carried over
+   unchanged and re-verified at the motion extremes (below).
+
+Movement-spec verification (research doc §5 method, measured on the
+final video's first loop): **torso-band travel 10.3% of body width**
+(spec ≥ ~10%), **foot-band travel 17.7%**, foot/torso ratio **1.72**
+(spec ≥ 0.5), **48 of 48 frames distinct**, minimum frame step 0.61 —
+no frozen stretches. Zoomed crops at the deepest dip (frame 33, day;
+frame 1185, night) and the shrug (frame 1575) — both shoulders, the
+cape hem, and between the legs — all show one continuous cloth: no
+holes, no slits, no separated ribbons.
+
+Build deltas vs v2: same two scripts (`build_dance.py` saves
+`scene_v3.blend`; `render_frames.py` renders frames 1..1824). Assembly
+cuts 1–384 / 385–768 (hflip) / 769–1152 / 1153–1536 (hflip) /
+1537–1819 and muxes the song (AAC 160k, faststart) →
+`cj-dance-proof-3d-v3.mp4` (75.79 s, 960×540, 24 fps).
+
+Render hardening (stage B): every saved frame is verified on disk
+(size + JPEG end-marker) and re-rendered on a retry ladder if the save
+didn't land — this box's storage intermittently drops writes under
+load. Rendering runs EGL-surfaceless (Mesa llvmpipe via the local
+egl-stack vendor dir) instead of under Xvfb.
+
 ## Files
 
 - `build_dance.py` — stage A: loads the rig, repairs the cape, builds the

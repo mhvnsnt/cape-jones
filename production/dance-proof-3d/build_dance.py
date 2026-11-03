@@ -1,37 +1,30 @@
-"""Cape Jones dance proof 3D v2 - STAGE A: build the scene, save scene_v2.blend.
+"""Cape Jones dance proof 3D v3 - STAGE A: build the scene, save scene_v3.blend.
 
-Fixes vs v1 (owner critique, verbatim): "he's too still and reads unrigged,
-and has a tattered cap[e], and should be moving more naturally in this not so
-much like a snappy 2d stiff animation, but still some comedic snappiness to
-reference he's still a cartoon character even in his 3d form" + his standing
-dance ask: "more motion, more animations and frames, in a simple dance, that's
-repetitive, but actually looks like a animation, even if it's funny or comical
-or not a good dance."
-
-What this stage does:
-  - deletes the patch-soup slab object CapeJones_Cape (48+ islands, jagged
-    edges, NO armature modifier - it could never move at all) + MPFB refs
-  - adds a 3-bone cape chain (cape_1/2/3) to the rig, parented to chest
-  - render copy of the body: Decimate 0.35 then 0.30 APPLIED (about 0.105 of
-    the 1.76M-face scan) so per-frame rig evaluation is tractable, + Armature
-  - cape-zone verts get cape-bone weights added by height gradient, so the
-    body cape gains lagged sway/settle (secondary motion, gap G6)
-  - cape slot fill: thin see-through boundary loops in the cape zone are
-    closed with fan patches (separate skinned object, cape material), so the
-    cape reads as one whole cloth in every frame (gap G4)
-  - backyard set + section lighting adapted from v1's build_dance.py
-  - the dance: a 48-frame step-touch loop keyed on the rig with smooth
-    Bezier interpolation (accents snapped by timing, never CONSTANT keys),
-    tiled x10 = 480 frames: real steps, weight transfer, whole-body
-    gestures, cape follow-through lagged 3 frames.
-Run: blender -b cape_jones_mpfb_wired.blend --python build_scene.py
+v3 keeps v2's real keyed rig animation and its one-piece cape sheet, and
+answers the v2 lane's own admitted shortfalls plus the owner's new asks:
+  - NEW SONG, full length: the video runs the full 75.79 s English mix
+    (song-full-v2-en.mp3, owner-approved final), 1824 frames at 24 fps,
+    trimmed to 1819 on assembly. (The 2D version carries the Japanese
+    mix; the owner's rule: both versions used equally, alternating.)
+  - WORLD CYCLE stretched over the whole song: day -> LED magenta ->
+    LED cyan -> night -> day, 8 loops (384 frames) per section, the
+    dance loop tiling underneath, sections 2 and 4 mirrored on assembly
+    as before (flips land on loop boundaries).
+  - CAMERA CLOSER: v2 framed him small (his motion under-sold). Camera
+    moves in and the lens tightens so he reads bigger in frame.
+  - FOOT-SKATE reduced: the widest plants are narrowed (~15%) and each
+    big plant gains a dwell-hold anchor, so pelvis translation happens
+    while a foot is swinging, not while it is planted. Dips and weight
+    shifts are kept. (FK rig: no IK ground-lock, so the fix is in the
+    keys, per the v3 brief.)
+Run: blender -b cape_jones_mpfb_wired.blend --python build_dance_v3.py
 """
 import bpy, math, os, sys, time
 import numpy as np
 
 D = math.radians
-WORK = "/home/hatch/workspace/_cj-dance3d-v2"
-SCENE_OUT = os.path.join(WORK, "scene_v2.blend")
+WORK = "/home/hatch/workspace/_cj-dance3d-v3"
+SCENE_OUT = os.path.join(WORK, "scene_v3.blend")
 t00 = time.time()
 def log(*a):
     print("[stageA]", *a, round(time.time() - t00, 1), "s", flush=True)
@@ -64,7 +57,7 @@ for pb in rig.pose.bones:
 bpy.ops.object.mode_set(mode="OBJECT")
 if rig.animation_data:
     rig.animation_data_clear()
-act = bpy.data.actions.new("DanceV2")
+act = bpy.data.actions.new("DanceV3")
 rig.animation_data_create()
 rig.animation_data.action = act
 
@@ -425,24 +418,24 @@ led_l.data.energy = 0; led_l.data.color = (1.0, 0.15, 0.75)
 bpy.ops.object.light_add(type="POINT", location=(2.3, 0.9, 1.3))
 led_r = bpy.context.active_object; led_r.name = "LedR"
 led_r.data.energy = 0; led_r.data.color = (0.1, 0.75, 1.0)
-bpy.ops.object.camera_add(location=(0, -3.35, 0.62), rotation=(D(87), 0, 0))
-cam = bpy.context.active_object; cam.name = "MainCam"; cam.data.lens = 35
+bpy.ops.object.camera_add(location=(0, -2.45, 0.60), rotation=(D(87), 0, 0))
+cam = bpy.context.active_object; cam.name = "MainCam"; cam.data.lens = 38
 sc.camera = cam
 
 SECTIONS = [
     dict(f=1,   world=(0.45, 0.65, 0.95), ws=1.0, sunE=3.2, sunC=(1.0, 0.95, 0.85), fillE=260,
          ledL=0, ledR=0, ground=(0.09, 0.34, 0.09), canopy=(0.05, 0.27, 0.08),
          flower=(0.95, 0.25, 0.20), pole=0.0),
-    dict(f=97,  world=(0.15, 0.04, 0.24), ws=0.7, sunE=0.5, sunC=(1.0, 0.30, 0.80), fillE=110,
+    dict(f=385,  world=(0.15, 0.04, 0.24), ws=0.7, sunE=0.5, sunC=(1.0, 0.30, 0.80), fillE=110,
          ledL=60, ledR=10, ground=(0.20, 0.10, 0.26), canopy=(0.16, 0.08, 0.28),
          flower=(1.0, 0.30, 0.85), pole=3.0),
-    dict(f=193, world=(0.02, 0.11, 0.19), ws=0.7, sunE=0.5, sunC=(0.30, 0.80, 1.0), fillE=110,
+    dict(f=769, world=(0.02, 0.11, 0.19), ws=0.7, sunE=0.5, sunC=(0.30, 0.80, 1.0), fillE=110,
          ledL=10, ledR=60, ground=(0.05, 0.17, 0.24), canopy=(0.04, 0.16, 0.26),
          flower=(0.30, 0.95, 1.0), pole=3.0),
-    dict(f=289, world=(0.008, 0.015, 0.05), ws=0.5, sunE=0.35, sunC=(0.45, 0.60, 1.0), fillE=36,
+    dict(f=1153, world=(0.008, 0.015, 0.05), ws=0.5, sunE=0.35, sunC=(0.45, 0.60, 1.0), fillE=36,
          ledL=0, ledR=0, ground=(0.02, 0.05, 0.05), canopy=(0.015, 0.04, 0.04),
          flower=(0.10, 0.14, 0.35), pole=0.0),
-    dict(f=385, world=(0.45, 0.65, 0.95), ws=1.0, sunE=3.2, sunC=(1.0, 0.95, 0.85), fillE=260,
+    dict(f=1537, world=(0.45, 0.65, 0.95), ws=1.0, sunE=3.2, sunC=(1.0, 0.95, 0.85), fillE=260,
          ledL=0, ledR=0, ground=(0.09, 0.34, 0.09), canopy=(0.05, 0.27, 0.08),
          flower=(1.0, 0.55, 0.15), pole=0.0),
 ]
@@ -489,17 +482,17 @@ def vis_keys(ob, spans):
     f = 1
     state = any(a <= 1 <= b for a, b in spans)
     ob.hide_render = not state; ob.keyframe_insert("hide_render", frame=1)
-    changes = sorted({x for a, b in spans for x in (a, b + 1) if 1 < x <= 480})
+    changes = sorted({x for a, b in spans for x in (a, b + 1) if 1 < x <= 1824})
     for cf in changes:
         state = any(a <= cf <= b for a, b in spans)
         ob.hide_render = not state; ob.keyframe_insert("hide_render", frame=cf)
 
-vis_keys(sun_disc, [(1, 96), (385, 480)])
-vis_keys(moon_disc, [(289, 384)])
+vis_keys(sun_disc, [(1, 384), (1537, 1824)])
+vis_keys(moon_disc, [(1153, 1536)])
 for s in stars:
-    vis_keys(s, [(289, 384)])
+    vis_keys(s, [(1153, 1536)])
 for fl in flies:
-    vis_keys(fl, [(289, 384)])
+    vis_keys(fl, [(1153, 1536)])
 log("set + sections built")
 
 # ------------------------------------------------------- the dance
@@ -511,28 +504,37 @@ BASE = dict(PX=0.0, PD=0.004, PRY=0, PRZ=0, S2Y=0, S2Z=0, CX=2, CY=0, CZ=0,
             R_TX=0, R_TZ=6, R_SX=7, R_FX=0, R_UX=-38, R_UZ=-10, R_EX=-46, R_HZ=-6)
 ANCHORS = [
  (1,  dict(PX=0.00, PD=0.006, CY=4, HZ=2)),
- (5,  dict(PX=-0.070, PD=0.016, PRZ=-6, PRY=4, CY=-7, CZ=3, HY=-14, HZ=5,
+ (5,  dict(PX=-0.066, PD=0.016, PRZ=-6, PRY=4, CY=-7, CZ=3, HY=-14, HZ=5,
            R_TX=-20, R_TZ=4, R_SX=34, R_FX=18, L_TX=3, L_SX=10, L_FX=-6,
            L_UX=-30, R_UX=-48, L_UZ=-40, R_UZ=38, L_EX=-30, R_EX=-46)),
- (9,  dict(PX=0.078, PD=0.040, PRZ=8, PRY=-6, CY=9, CZ=-9, S2Z=-4, HX=9, HY=8, HZ=-5,
-           R_TX=-4, R_TZ=24, R_SX=12, R_FX=2, L_TX=8, L_TZ=9, L_SX=16, L_FX=22,
+ (9,  dict(PX=0.072, PD=0.040, PRZ=8, PRY=-6, CY=9, CZ=-9, S2Z=-4, HX=9, HY=8, HZ=-5,
+           R_TX=-4, R_TZ=21, R_SX=12, R_FX=2, L_TX=8, L_TZ=9, L_SX=16, L_FX=22,
            L_UX=-52, R_UX=-34, L_UZ=-38, R_UZ=44, L_EX=-48, R_EX=-32)),
- (13, dict(PX=0.048, PD=0.008, PRZ=2, CY=3, HY=4, HZ=2,
+ (11, dict(PX=0.070, PD=0.038, PRZ=8, PRY=-6, CY=8, CZ=-8, S2Z=-4, HX=9, HY=8, HZ=-5,
+           R_TX=-4, R_TZ=21, R_SX=12, R_FX=2, L_TX=8, L_TZ=9, L_SX=16, L_FX=22,
+           L_UX=-50, R_UX=-36, L_UZ=-38, R_UZ=42, L_EX=-48, R_EX=-32)),
+ (13, dict(PX=0.046, PD=0.008, PRZ=2, CY=3, HY=4, HZ=2,
            L_TX=-2, L_TZ=-4, L_SX=8, R_TX=0, R_TZ=8, R_SX=8,
            L_UX=-40, R_UX=-40, L_EX=-40, R_EX=-40)),
  (17, dict(PX=0.070, PD=0.016, PRZ=6, PRY=-4, CY=7, CZ=-3, HY=14, HZ=-5,
            L_TX=-20, L_TZ=-4, L_SX=34, L_FX=18, R_TX=3, R_SX=10, R_FX=-6,
            L_UX=-48, R_UX=-30, L_UZ=40, R_UZ=-38, L_EX=-46, R_EX=-30)),
- (21, dict(PX=-0.078, PD=0.040, PRZ=-8, PRY=6, CY=-9, CZ=9, S2Z=4, HX=7, HY=-8, HZ=5,
-           L_TX=-4, L_TZ=-24, L_SX=12, L_FX=2, R_TX=8, R_TZ=-9, R_SX=16, R_FX=22,
+ (21, dict(PX=-0.072, PD=0.040, PRZ=-8, PRY=6, CY=-9, CZ=9, S2Z=4, HX=7, HY=-8, HZ=5,
+           L_TX=-4, L_TZ=-21, L_SX=12, L_FX=2, R_TX=8, R_TZ=-9, R_SX=16, R_FX=22,
            L_UX=-34, R_UX=-52, L_UZ=44, R_UZ=-38, L_EX=-32, R_EX=-48)),
+ (23, dict(PX=-0.070, PD=0.038, PRZ=-8, PRY=6, CY=-8, CZ=8, S2Z=4, HX=7, HY=-8, HZ=5,
+           L_TX=-4, L_TZ=-21, L_SX=12, L_FX=2, R_TX=8, R_TZ=-9, R_SX=16, R_FX=22,
+           L_UX=-36, R_UX=-50, L_UZ=42, R_UZ=-38, L_EX=-32, R_EX=-48)),
  (25, dict(PX=-0.010, PD=0.008, CY=-2, HY=-3, HZ=-2, L_UX=-38, R_UX=-38)),
- (29, dict(PX=-0.074, PD=0.018, PRZ=-6, PRY=4, CY=-8, CZ=3, HY=-16, HZ=6,
+ (29, dict(PX=-0.068, PD=0.018, PRZ=-6, PRY=4, CY=-8, CZ=3, HY=-16, HZ=6,
            R_TX=-24, R_TZ=4, R_SX=38, R_FX=20, L_TX=3, L_SX=10,
            L_UX=-28, R_UX=-52, L_UZ=-46, R_UZ=42, L_EX=-26, R_EX=-52)),
- (33, dict(PX=0.082, PD=0.046, PRZ=8, PRY=-6, CY=10, CZ=-9, S2Z=-4, HX=12, HY=8, HZ=-6,
-           R_TX=-4, R_TZ=25, R_SX=13, R_FX=2, L_TX=8, L_TZ=9, L_SX=17, L_FX=22,
+ (33, dict(PX=0.076, PD=0.046, PRZ=8, PRY=-6, CY=10, CZ=-9, S2Z=-4, HX=12, HY=8, HZ=-6,
+           R_TX=-4, R_TZ=22, R_SX=13, R_FX=2, L_TX=8, L_TZ=9, L_SX=17, L_FX=22,
            L_UX=-56, R_UX=-32, L_UZ=-42, R_UZ=48, L_EX=-54, R_EX=-28)),
+ (35, dict(PX=0.074, PD=0.044, PRZ=8, PRY=-6, CY=9, CZ=-9, S2Z=-4, HX=12, HY=8, HZ=-6,
+           R_TX=-4, R_TZ=22, R_SX=13, R_FX=2, L_TX=8, L_TZ=9, L_SX=17, L_FX=22,
+           L_UX=-54, R_UX=-34, L_UZ=-42, R_UZ=46, L_EX=-54, R_EX=-28)),
  (37, dict(PX=0.012, PD=0.010, CY=2, HX=2, HY=0, HZ=0,
            L_TX=-2, L_TZ=-6, L_SX=9, R_TZ=10,
            L_UX=-16, R_UX=-16, L_UZ=14, R_UZ=-14, L_EX=-60, R_EX=-64)),
@@ -595,13 +597,13 @@ def apply_cape(f):
             flut += math.sin((f / 48.0) * 2 * math.pi * 2) * 1.5
         K(bn, f, rot=(flut, 0, px * CAPE_K[i]))
 
-for rep in range(10):
+for rep in range(38):
     base_f = rep * 48
     for off, p in FULL:
         apply_pose(base_f + off, p)
         apply_cape(base_f + off)
-apply_pose(481, FULL[0][1])
-apply_cape(481)
+apply_pose(1825, FULL[0][1])
+apply_cape(1825)
 bpy.ops.object.mode_set(mode="OBJECT")
 log("dance keyed")
 
@@ -636,7 +638,7 @@ except Exception:
 sc.view_settings.view_transform = "Filmic"
 sc.render.film_transparent = False
 sc.render.fps = 24
-sc.frame_start = 1; sc.frame_end = 480
+sc.frame_start = 1; sc.frame_end = 1824
 sc.render.resolution_x = 960; sc.render.resolution_y = 540
 sc.render.image_settings.file_format = "JPEG"
 sc.render.image_settings.quality = 90
