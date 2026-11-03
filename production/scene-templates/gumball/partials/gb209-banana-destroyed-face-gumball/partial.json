@@ -1,0 +1,54 @@
+{
+ "id": "gb209-banana-destroyed-face-gumball",
+ "kind": "partial",
+ "show": "The Amazing World of Gumball",
+ "collection": "GB209 'The Banana' approved pose sheets (field-guide exports)",
+ "characters": [
+  "Gumball"
+ ],
+ "source_file": "GB209_DESTROYED_FACE_GUMBALL_V002.fla",
+ "source_archive": "CN-Leaks-001-gumball.zip",
+ "archive_location": "mhvnsnt/cn-gigaleak-gumball, draft release untagged-1676e192ae8c72e95791",
+ "size_bytes": 2026552,
+ "format": "XFL (zip-based FLA, readable)",
+ "symbol_count": 14,
+ "symbols": [
+  "GB200_ASSETT_CONTAINER",
+  "GB209_DESTROYED_FACE_GUMBALL_BODYCOMP",
+  "GB209_DESTROYED_FACE_GUMBALL_EAR1",
+  "GB209_DESTROYED_FACE_GUMBALL_EAR2",
+  "GB209_DESTROYED_FACE_GUMBALL_EYESCOMP",
+  "GB209_DESTROYED_FACE_GUMBALL_HEAD",
+  "GB209_DESTROYED_FACE_GUMBALL_HEADCOMP",
+  "GB209_DESTROYED_FACE_GUMBALL_L_ARM",
+  "GB209_DESTROYED_FACE_GUMBALL_L_LEG",
+  "GB209_DESTROYED_FACE_GUMBALL_MOUTH",
+  "GB209_DESTROYED_FACE_GUMBALL_PUPPET_001",
+  "GB209_DESTROYED_FACE_GUMBALL_R_ARM",
+  "GB209_DESTROYED_FACE_GUMBALL_R_LEG",
+  "GB209_DESTROYED_FACE_GUMBALL_TAIL"
+ ],
+ "parts_census": {
+  "heads": 1,
+  "head_comps": 1,
+  "eye_comps": 1,
+  "mouths": 1,
+  "bodies": 1,
+  "arms_fins_hands": 2,
+  "legs": 2,
+  "ears": 2,
+  "tails": 1,
+  "puppet_assemblies": 1
+ },
+ "animated_frames": "2f (companion SWF, INDEX-measured)",
+ "what_exists": "Face-gag pose sheet: the Gumball set (14 symbols) built around the destroyed-face gag — head/face pieces carry the sheet.",
+ "whats_missing": "Poses only; no scene or background.",
+ "notes": [],
+ "media": {
+  "status": "blocked-write-guard",
+  "target_file": "sheet-gb209-banana-destroyed-face-gumball.png",
+  "delivery_dir": "~/workspace/your_files/scene-templates/",
+  "note": "Contact-sheet render staged in render_contact_sheets.sh; blocked by the sandbox write guard (EPERM/0 bytes) at catalog time."
+ },
+ "record_path": "production/scene-templates/gumball/partials/gb209-banana-destroyed-face-gumball/partial.json"
+}

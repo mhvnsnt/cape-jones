@@ -1,0 +1,36 @@
+{
+ "id": "fosters-turn-terrence",
+ "kind": "static-puppet-library",
+ "show": "Foster's Home for Imaginary Friends",
+ "collection": "Foster's Home for Imaginary Friends — FOSTERS MAIN MODEL TURNS/Flash (inside CN-Leaks-001's FOSTERS folder)",
+ "characters": [
+  "Terrence"
+ ],
+ "source_file": "Terrence_Turnaround.fla",
+ "source_archive": "CN-Leaks-001-gumball.zip",
+ "archive_location": "mhvnsnt/cn-gigaleak-gumball, draft release untagged-1676e192ae8c72e95791",
+ "size_bytes": 11807232,
+ "format": "Binary FLA (OLE2 compound, pre-XFL)",
+ "symbol_count": null,
+ "symbols": null,
+ "recovered_names": [
+  "Mouth shapes",
+  "terrance 34 mouths.fla (referenced)",
+  "terrance profile mouths.fla (referenced)"
+ ],
+ "parts_census": null,
+ "views": null,
+ "presentation_frames": "Not measured (no companion SWF in the archive)",
+ "completeness": "Model-turn library with dedicated mouth-shape sets",
+ "notes": [
+  "Binary FLA (OLE2 compound), 11,807,232 B. Named system: 'Mouth shapes', with referenced sibling files 'terrance 34 mouths.fla' and 'terrance profile mouths.fla' [sic — Terrance spelling inside the references].",
+  "Symbol numbering runs past 117."
+ ],
+ "media": {
+  "status": "blocked-write-guard",
+  "target_file": "sheet-fosters-turn-terrence.png",
+  "delivery_dir": "~/workspace/your_files/scene-templates/",
+  "note": "Model-sheet render staged in render_model_sheets.sh; the sandbox write guard currently refuses rendered-binary writes (EPERM/0 bytes). Census and catalog are unaffected."
+ },
+ "record_path": "production/scene-templates/gumball/libraries/fosters-turn-terrence/library.json"
+}
