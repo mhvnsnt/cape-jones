@@ -1,0 +1,42 @@
+{
+ "id": "gb200-puppet-hector-v001-cs3",
+ "kind": "static-puppet-library",
+ "show": "The Amazing World of Gumball",
+ "collection": "GB200 original puppet block (Gumball S2 rigs folder)",
+ "characters": [
+  "Hector"
+ ],
+ "source_file": "GB200_HECTOR_ORIGINAL_PUPPET_V001_CS3.fla",
+ "source_archive": "CN-Leaks-001-gumball.zip",
+ "archive_location": "mhvnsnt/cn-gigaleak-gumball, draft release untagged-1676e192ae8c72e95791",
+ "size_bytes": 1512448,
+ "format": "Binary FLA (OLE2 compound, pre-XFL)",
+ "symbol_count": null,
+ "symbols": null,
+ "recovered_names": [
+  "CRYING_EYES_01",
+  "CUTE_EYES_01",
+  "Crying_eyes",
+  "Cute_eyes",
+  "(annotation) Eyes shapes for standard head",
+  "(annotation) Mouth shapes for head with a big cheek",
+  "(annotation) Mouth shapes for lipsynch",
+  "(annotation) (for eating head shapes)"
+ ],
+ "parts_census": null,
+ "views": null,
+ "presentation_frames": "Not measured (no companion SWF in the archive)",
+ "completeness": "Documented shape-set library — full census needs the file opened in Flash/Animate",
+ "notes": [
+  "CS3-era binary FLA (OLE2 compound), XFL-unreadable; census recovered from the file's strings in-memory.",
+  "Carries the puppet block's annotation text verbatim: 'Eyes shapes for standard head', 'Mouth shapes for head with a big cheek', 'Mouth shapes for lipsynch', '(for eating head shapes)' — Hector's puppet is organized as documented shape sets (standard head / big-cheek head / eating head), each with its own eye and mouth shapes.",
+  "Recovered shape names include CRYING_EYES_01 / CUTE_EYES_01 families, shared with the Gumball v001 CS3 file."
+ ],
+ "media": {
+  "status": "blocked-write-guard",
+  "target_file": "sheet-gb200-puppet-hector-v001-cs3.png",
+  "delivery_dir": "~/workspace/your_files/scene-templates/",
+  "note": "Model-sheet render staged in render_model_sheets.sh; the sandbox write guard currently refuses rendered-binary writes (EPERM/0 bytes). Census and catalog are unaffected."
+ },
+ "record_path": "production/scene-templates/gumball/libraries/gb200-puppet-hector-v001-cs3/library.json"
+}

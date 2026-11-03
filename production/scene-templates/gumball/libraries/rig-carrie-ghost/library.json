@@ -1,0 +1,36 @@
+{
+ "id": "rig-carrie-ghost",
+ "kind": "static-puppet-library",
+ "show": "The Amazing World of Gumball",
+ "collection": "Gumball S2 single-character rigs",
+ "characters": [
+  "Carrie"
+ ],
+ "source_file": "Carrie_Ghost.fla",
+ "source_archive": "CN-Leaks-001-gumball.zip",
+ "archive_location": "mhvnsnt/cn-gigaleak-gumball, draft release untagged-1676e192ae8c72e95791",
+ "size_bytes": 968704,
+ "format": "Binary FLA (OLE2 compound, pre-XFL)",
+ "symbol_count": null,
+ "symbols": null,
+ "recovered_names": [
+  "CarrieEye",
+  "mouth"
+ ],
+ "parts_census": null,
+ "views": null,
+ "presentation_frames": "Not measured (no companion SWF in the archive)",
+ "completeness": "Rig present; part census partial — most symbol names not string-recoverable",
+ "notes": [
+  "Binary FLA (OLE2 compound), 968,704 B — twenty times Ocho's size, so the file holds substantial art; but its library names are mostly generic/numeric: strings recovery surfaces only CarrieEye and a mouth symbol by name.",
+  "Single-character rig for Carrie in her ghost form, saved loose in the S2 rigs folder (not part of the GB200 block).",
+  "Full census requires opening in Flash/Animate and re-saving as XFL."
+ ],
+ "media": {
+  "status": "blocked-write-guard",
+  "target_file": "sheet-rig-carrie-ghost.png",
+  "delivery_dir": "~/workspace/your_files/scene-templates/",
+  "note": "Model-sheet render staged in render_model_sheets.sh; the sandbox write guard currently refuses rendered-binary writes (EPERM/0 bytes). Census and catalog are unaffected."
+ },
+ "record_path": "production/scene-templates/gumball/libraries/rig-carrie-ghost/library.json"
+}

@@ -244,3 +244,56 @@ Totals: **31 complete animated scenes · 11 partial · 28 static · 1 unverified
 - **Embedded reference videos:** Sc099's and Sc144's SWFs carry a 'layout mov' reference video (video character 1). FFDec cannot render those files on this VM (its bundled JNA/vlcj path fails), so sheets/videos for Sc099 — and the tail of Sc144 — were rendered from copies with the reference-video tag stripped. The reference movie is a layout guide, not scene content; no character or background data was touched. The anatomy JSONs come from the untouched FLAs.
 - **Bumpkin Sc089 is the giant-scale scene with an FLA** (177f, complete) but its FLA is 64 MB — left for wave 2's heavier pull. Sc090 (the famous looking-up shot) has no FLA in this archive at all.
 - Sc057/Sc059 (the Darwin dance) are deliberately excluded from the templates — already extracted in `production/dance-choreo/`, and surveyed above as complete scenes.
+
+## Libraries & partials (logged 2026-11-02)
+
+The other two classes from the survey below are now logged to the same standard. The **28 statics are static puppet libraries** — the FLA character-sheet libraries the characters are built from (the owner's term, and the industry's). The **11 partials** are pose sheets, pass files, a test export and a recovery save. Full census records: [`libraries-catalog.json`](libraries-catalog.json); per-item records under [`libraries/`](libraries/) and [`partials/`](partials/). Media status for every item is in [`MEDIA-CHECKLIST.md`](MEDIA-CHECKLIST.md) — renders are staged, blocked by the sandbox write guard at logging time.
+
+### The 28 static puppet libraries
+
+| Library | Character(s) | Symbols | Completeness |
+|---|---|---|---|
+| [gb200-puppet-gumball-v008](libraries/gb200-puppet-gumball-v008/) | Gumball | 61 | Complete — assembles in full |
+| [gb200-puppet-gumball-v006](libraries/gb200-puppet-gumball-v006/) | Gumball | 61 | Complete — assembles in full (earlier save) |
+| [gb200-puppet-gumball-v004](libraries/gb200-puppet-gumball-v004/) | Gumball | 61 | Complete — assembles in full (earlier save) |
+| [gb200-puppet-gumball-v001-cs3](libraries/gb200-puppet-gumball-v001-cs3/) | Gumball | binary | Presumed complete (version-001 original) — census is strings-level only |
+| [gb200-puppet-darwin-v002](libraries/gb200-puppet-darwin-v002/) | Darwin | 34 | Complete — assembles in full |
+| [gb200-puppet-darwin-v002-dup9](libraries/gb200-puppet-darwin-v002-dup9/) | Darwin | binary | Complete — assembles in full (duplicate copy) |
+| [gb200-puppet-darwin-v002-cs5](libraries/gb200-puppet-darwin-v002-cs5/) | Darwin | 34 | Complete — assembles in full (CS5 save) |
+| [gb200-puppet-mom-v002](libraries/gb200-puppet-mom-v002/) | Nicole (Mom) | 38 | Complete — assembles in full |
+| [gb200-puppet-mom-v002-dup10](libraries/gb200-puppet-mom-v002-dup10/) | Nicole (Mom) | binary | Complete — assembles in full (duplicate copy) |
+| [gb200-puppet-dad-v004](libraries/gb200-puppet-dad-v004/) | Richard (Dad) | 46 | Complete — assembles in full (richest Dad save) |
+| [gb200-puppet-dad-v003](libraries/gb200-puppet-dad-v003/) | Richard (Dad) | 43 | Complete — assembles in full (earlier save) |
+| [gb200-puppet-anais-v002](libraries/gb200-puppet-anais-v002/) | Anais | 48 | Complete — assembles in full |
+| [gb200-puppet-anais-v002-dup8](libraries/gb200-puppet-anais-v002-dup8/) | Anais | binary | Complete — assembles in full (duplicate copy) |
+| [gb200-puppet-hector-v001-cs3](libraries/gb200-puppet-hector-v001-cs3/) | Hector | binary | Documented shape-set library — full census needs the file opened in Flash/Animate |
+| [rig-carrie-ghost](libraries/rig-carrie-ghost/) | Carrie | binary | Rig present; part census partial — most symbol names not string-recoverable |
+| [rig-ocho-spider](libraries/rig-ocho-spider/) | Ocho | binary | Minimal rig — named parts only; completeness limited |
+| [rig-penny-peanutantlers](libraries/rig-penny-peanutantlers/) | Penny | binary | Complete minimal puppet — every part named and present |
+| [rig-tobias-sportypuff](libraries/rig-tobias-sportypuff/) | Tobias | binary | Head/face rig by name — body parts not name-recovered |
+| [fosters-turn-madam-foster](libraries/fosters-turn-madam-foster/) | Madame Foster | binary | Model-turn library — large symbol count behind generic names |
+| [fosters-turn-goo](libraries/fosters-turn-goo/) | Goo | binary | Model-turn library with special-pose extensions |
+| [fosters-goo-hair](libraries/fosters-goo-hair/) | Goo (hair only) | binary | Single-element sheet — hair comps only, NOT a character |
+| [fosters-turn-duchess](libraries/fosters-turn-duchess/) | Duchess | binary | Model-turn library with separately-kept hand/eyelash pieces |
+| [fosters-turn-ed](libraries/fosters-turn-ed/) | Ed (Eduardo) | binary | Model-turn library with performance comps (head turn/talk, mouth shapes, hair cycle) |
+| [fosters-turn-cheese](libraries/fosters-turn-cheese/) | Cheese | binary | Model-turn library with alternate heads/mouths and a numbered hand library |
+| [fosters-turn-frankie](libraries/fosters-turn-frankie/) | Frankie | binary | Full part-by-part character system (3/4-view set) — the deepest Foster's library in the archive |
+| [fosters-turn-terrence](libraries/fosters-turn-terrence/) | Terrence | binary | Model-turn library with dedicated mouth-shape sets |
+| [fosters-turn-coco](libraries/fosters-turn-coco/) | Coco | binary | Model-turn library with walk/run leg pieces and head comps |
+| [fosters-turn-wilt](libraries/fosters-turn-wilt/) | Wilt | binary | Model-turn library with a four-view set (front / 3-4 front / side / back) |
+
+### The 11 partials
+
+| Partial | Character(s) | Animated frames | What is missing |
+|---|---|---|---|
+| [gb209-banana-crashed-topshot](partials/gb209-banana-crashed-topshot/) | Gumball, Darwin | 2 root frames (pose sheet); puppet timelines inside run 187 + 149 keyframes | It is not a scene: no background, no staging, 2 root frames. Already deep-extracted as a wave-1 template (folder gb209-banana-crashed-topshot/) for the angle puppets — this partial record cross-links to that anatomy. |
+| [gb209-banana-bilboquet-sc162](partials/gb209-banana-bilboquet-sc162/) | Gumball, Darwin | 19 poses (pose sheet, rendered & verified in wave 1) | No scene, background or continuous animation — poses only. |
+| [gb209-banana-gumball-hurt-facekick-sc155](partials/gb209-banana-gumball-hurt-facekick-sc155/) | Gumball | 2 root frames (pose sheet, rendered & verified in wave 1) | Poses only; no scene or background. |
+| [gb209-banana-gumball-hurt-floor-sc160](partials/gb209-banana-gumball-hurt-floor-sc160/) | Gumball | 2f (companion SWF, INDEX-measured) | Poses only; no scene or background. |
+| [gb209-banana-gumball-hurt-himself-sc158](partials/gb209-banana-gumball-hurt-himself-sc158/) | Gumball | 18f of poses (companion SWF, INDEX-measured) | Poses only; no scene or background. |
+| [gb209-banana-darwin-hurt-backkick-sc159](partials/gb209-banana-darwin-hurt-backkick-sc159/) | Darwin | 2f (companion SWF, INDEX-measured) | Poses only; no scene or background. Darwin's sheet set is leaner than Gumball's (no separate body/ear/tail symbols — the body rides inside the puppet symbol). |
+| [gb209-banana-darwin-hurt-himself-sc161](partials/gb209-banana-darwin-hurt-himself-sc161/) | Darwin | 10f of poses (companion SWF, INDEX-measured) | Poses only; no scene or background. |
+| [gb209-banana-destroyed-face-gumball](partials/gb209-banana-destroyed-face-gumball/) | Gumball | 2f (companion SWF, INDEX-measured) | Poses only; no scene or background. |
+| [gb202-remote-sc160-recover](partials/gb202-remote-sc160-recover/) | Gumball, Darwin, Nicole, Richard | Recovery copy of the 31f Sc160 scene (clean file measured at 31f @25) | Nothing for the scene itself — but it is a duplicate of a complete scene, not new material; kept in the catalog as the safety copy and as evidence of the production's recovery-save habit. |
+| [gb214-words-sc060-sfx](partials/gb214-words-sc060-sfx/) | Gumball, Darwin (fragments) | 56f of effects (companion SWF, INDEX-measured) | The base scene itself: no clean Sc060 FLA exists in the archive, so the scene this pass belongs to is present only as this effects layer. What is missing is everything the pass would composite over. |
+| [gb2215-apology-test-export](partials/gb2215-apology-test-export/) | Gumball | Not measured (no companion SWF in the archive) | No scene timeline, background, or second character — it exists to prove the export path, and the INDEX classifies it partial for exactly that reason. |
