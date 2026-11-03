@@ -1,5 +1,5 @@
 {
- "format": "cape-jones/scene-anatomy v1",
+ "format": "cape-jones/scene-anatomy v2 (library)",
  "title": "The Words \u2014 Sc099: Darwin's about-to-explode rant (two-shot on white)",
  "show": "The Amazing World of Gumball",
  "episode": {
@@ -146259,5 +146259,267 @@
   "Scene layers are literally named per character: GUMBALL, DARWIN, WHITE, background.",
   "The exploding-head variant is a separate library symbol (628 keyframes) \u2014 special story states get their own comp instead of redrawing the stock head.",
   "Mouth comps for both characters run 360-433 keyframes: lip sync is its own pass on its own timeline."
- ]
+ ],
+ "library": {
+  "slug": "gb214-words-sc099",
+  "class": "complete animated scene",
+  "episode_code": "GB214",
+  "folder": "gb214-words-sc099"
+ },
+ "cast": [
+  {
+   "character": "Darwin",
+   "puppets": [
+    "GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001",
+    "GB200_DRW_ORIGINAL_PUPPET_v001"
+   ],
+   "evidence": [
+    "puppet symbol 'GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001'",
+    "puppet symbol 'GB200_DRW_ORIGINAL_PUPPET_v001'",
+    "scene layer named 'DARWIN'",
+    "face comp 'GB214WORDS_Costume_DRWAboutToExplode_EYECOMP123'",
+    "face comp 'GB214WORDS_Costume_DRWAboutToExplode_HEAD'",
+    "face comp 'GB214WORDS_Costume_DRWAboutToExplode_HEADCOMP'",
+    "face comp 'GB214WORDS_Costume_DRWAboutToExplode_Mouth'",
+    "face comp 'GB200_DRW_EYECOMP_SC51'",
+    "face comp 'GB200_DRW_EYECOMP_SC54'",
+    "face comp 'GB200_DRW_HEAD'",
+    "face comp 'GB200_DRW_Mouth'",
+    "face comp 'GB200_DRW_EYECOMP'",
+    "face comp 'GB200_DRW_HEADCOMP'",
+    "puppet 'GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001/GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001' placed at scene level"
+   ]
+  },
+  {
+   "character": "Gumball",
+   "puppets": [
+    "GB200_GUMBALL_PUPPET_001"
+   ],
+   "evidence": [
+    "puppet symbol 'GB200_GUMBALL_PUPPET_001'",
+    "scene layer named 'GUMBALL'",
+    "face comp 'GB200_GB_EYESCOMP_SYMBOL'",
+    "face comp 'GB200_GB_HEAD'",
+    "face comp 'GB200_GB_HEADCOMP'",
+    "face comp 'GB200_GB_MOUTH'",
+    "face comp 'GB_DRW_HEADCOMP_SC54'",
+    "puppet 'Duplicate Items Folder/GB200_GUMBALL_PUPPET_001' placed at scene level"
+   ]
+  }
+ ],
+ "rigs": [
+  {
+   "symbol": "GB200_GUMBALL_PUPPET_001",
+   "library_path": "LIBRARY/Duplicate Items Folder/GB200_GUMBALL_PUPPET_001.xml",
+   "character": "Gumball",
+   "keyframes": 226,
+   "variant_tokens": []
+  },
+  {
+   "symbol": "GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001",
+   "library_path": "LIBRARY/GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001/GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001.xml",
+   "character": "Darwin",
+   "keyframes": 355,
+   "variant_tokens": [
+    "EXPLODE"
+   ]
+  },
+  {
+   "symbol": "GB200_DRW_ORIGINAL_PUPPET_v001",
+   "library_path": "LIBRARY/Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001.xml",
+   "character": "Darwin",
+   "keyframes": 235,
+   "variant_tokens": []
+  }
+ ],
+ "backgrounds": [
+  {
+   "item": "Scene atributes/BACKGROUNDS/GB214WORDS_Sc099_RENDERCAM.JPG",
+   "kind": "bitmap",
+   "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)",
+   "evidence": "bitmap item 'Scene atributes/BACKGROUNDS/GB214WORDS_Sc099_RENDERCAM.JPG' on background layer(s) ['background']",
+   "layers": [
+    "background"
+   ],
+   "first_frame": 0,
+   "last_frame": 284
+  }
+ ],
+ "animations_census": {
+  "total_keyframes_all_symbols": 5785,
+  "animated_symbols": 20,
+  "entries": [
+   {
+    "symbol": "GB214WORDS_Costume_DRWAboutToExplode_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 628,
+    "end_frame": 336
+   },
+   {
+    "symbol": "GB200_GB_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 433,
+    "end_frame": 280
+   },
+   {
+    "symbol": "GB200_GB_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 416,
+    "end_frame": 354
+   },
+   {
+    "symbol": "GB200_DRW_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 360,
+    "end_frame": 1472
+   },
+   {
+    "symbol": "GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001",
+    "kind": "puppet",
+    "keyframes": 355,
+    "end_frame": 284
+   },
+   {
+    "symbol": "GB214WORDS_Costume_DRWAboutToExplode_EYECOMP123",
+    "kind": "face-comp",
+    "keyframes": 337,
+    "end_frame": 586
+   },
+   {
+    "symbol": "GB214WORDS_Costume_DRWAboutToExplode_Mouth",
+    "kind": "face-comp",
+    "keyframes": 331,
+    "end_frame": 517
+   },
+   {
+    "symbol": "GB200_DRW_Mouth",
+    "kind": "face-comp",
+    "keyframes": 304,
+    "end_frame": 517
+   },
+   {
+    "symbol": "GB200_DRW_EYECOMP",
+    "kind": "face-comp",
+    "keyframes": 297,
+    "end_frame": 586
+   },
+   {
+    "symbol": "GB200_DRW_EYECOMP_SC51",
+    "kind": "face-comp",
+    "keyframes": 296,
+    "end_frame": 515
+   },
+   {
+    "symbol": "GB200_GB_EYESCOMP_SYMBOL",
+    "kind": "face-comp",
+    "keyframes": 288,
+    "end_frame": 445
+   },
+   {
+    "symbol": "GB200_DRW_EYECOMP_SC54",
+    "kind": "face-comp",
+    "keyframes": 262,
+    "end_frame": 544
+   },
+   {
+    "symbol": "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "kind": "puppet",
+    "keyframes": 235,
+    "end_frame": 195
+   },
+   {
+    "symbol": "GB200_GUMBALL_PUPPET_001",
+    "kind": "puppet",
+    "keyframes": 226,
+    "end_frame": 313
+   },
+   {
+    "symbol": "GB200_DRW_Mouth",
+    "kind": "face-comp",
+    "keyframes": 99,
+    "end_frame": 63
+   },
+   {
+    "symbol": "GB214WORDS_Costume_DRWAboutToExplode_HEAD",
+    "kind": "face-comp",
+    "keyframes": 57,
+    "end_frame": 17
+   },
+   {
+    "symbol": "GB_DRW_HEADCOMP_SC54",
+    "kind": "face-comp",
+    "keyframes": 53,
+    "end_frame": 556
+   },
+   {
+    "symbol": "GB200_DRW_HEAD",
+    "kind": "face-comp",
+    "keyframes": 37,
+    "end_frame": 10
+   },
+   {
+    "symbol": "GB200_DRW_HEAD",
+    "kind": "face-comp",
+    "keyframes": 24,
+    "end_frame": 8
+   },
+   {
+    "symbol": "GB200_GB_HEAD",
+    "kind": "face-comp",
+    "keyframes": 15,
+    "end_frame": 5
+   }
+  ]
+ },
+ "seams": {
+  "opens_with": [
+   "Duplicate Items Folder/GB200_GUMBALL_PUPPET_001",
+   "Field&Framecounter/Fieldguide_001",
+   "Field&Framecounter/framecounter1000",
+   "GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001/GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001",
+   "Scene atributes/BACKGROUNDS/GB214WORDS_Sc099_RENDERCAM.JPG"
+  ],
+  "closes_with": [
+   "Duplicate Items Folder/GB200_GUMBALL_PUPPET_001",
+   "Field&Framecounter/Fieldguide_001",
+   "Field&Framecounter/framecounter1000",
+   "GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001/GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001",
+   "Scene atributes/BACKGROUNDS/GB214WORDS_Sc099_RENDERCAM.JPG"
+  ],
+  "background_switch_frames": [
+   0
+  ],
+  "has_layout_mov_reference": true,
+  "frame_counter_overlay": true,
+  "field_guide_overlay": true
+ },
+ "tags": [
+  {
+   "tag": "costume-variant-puppet",
+   "evidence": "puppet 'GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001' carries variant token(s) ['EXPLODE']"
+  },
+  {
+   "tag": "head-comp-swap",
+   "evidence": "episode-specific face/head comp 'GB214WORDS_Costume_DRWAboutToExplode_EYECOMP123' (337 kf) swapped onto the stock puppet"
+  },
+  {
+   "tag": "layout-mov-reference",
+   "evidence": "scene carries a 'layout mov' reference-video layer"
+  },
+  {
+   "tag": "face-comp-driven",
+   "evidence": "face comps hold 4237 kf vs body puppets 816 kf \u2014 the face system carries the scene"
+  },
+  {
+   "tag": "dialogue-two-shot",
+   "evidence": "one scene layer per character (GUMBALL / DARWIN) over WHITE + background; a dialogue rant two-shot"
+  }
+ ],
+ "media": {
+  "contact_sheet": "done",
+  "video": "done",
+  "video_audio": "production audio muxed from SWF sound asset",
+  "frames_rendered": 284,
+  "frames_expected": 284
+ }
 }

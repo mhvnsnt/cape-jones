@@ -1,5 +1,5 @@
 {
- "format": "cape-jones/scene-anatomy v1",
+ "format": "cape-jones/scene-anatomy v2 (library)",
  "title": "The Remote \u2014 Sc144: kids burst in, Richard tackles them for the remote",
  "show": "The Amazing World of Gumball",
  "episode": {
@@ -111391,5 +111391,379 @@
   "Scene timeline is only 3 working layers: animation / white / background \u2014 all character work is nested in the 'animation' symbol (1,413 keyframes).",
   "Contains a nested 'gb run cycle' (375 kf) and Nicole's mouth comp (349 kf): cycles and face comps are shared library assets dropped into the nest.",
   "Highest motion sum of the wave (136,609) \u2014 this is the most physical scene in the set."
- ]
+ ],
+ "library": {
+  "slug": "gb202-remote-sc144",
+  "class": "complete animated scene",
+  "episode_code": "GB202",
+  "folder": "gb202-remote-sc144"
+ },
+ "cast": [
+  {
+   "character": "Darwin",
+   "puppets": [],
+   "evidence": [
+    "face comp 'GB200_DRW_HEADCOMP'",
+    "face comp 'GB200_DRW_L_EYE'",
+    "face comp 'GB200_DRW_L_EYEBROW'",
+    "face comp 'GB200_DRW_Mouth'",
+    "face comp 'GB200_DRW_R_EYE'",
+    "face comp 'GB200_DRW_R_EYEBROW'",
+    "character parts 'GB200_DRW_HEADCOMP' nested in 'animation'",
+    "character parts 'GB200_DRW_R_FIN' nested in 'animation'",
+    "character parts 'GB200_DRW_R_LEG' nested in 'animation'",
+    "character parts 'GB200_DRW_L_LEG' nested in 'animation'"
+   ]
+  },
+  {
+   "character": "Gumball",
+   "puppets": [],
+   "evidence": [
+    "face comp 'GB200_GB_MOUTH'",
+    "face comp 'GB_panic_run_head'",
+    "face comp 'GB200_GB_HEAD copy'",
+    "face comp 'GB200_GB_HEAD'",
+    "face comp 'GB200_GB_HEADCOMP'",
+    "face comp 'GB200_GB_L_EYE'",
+    "face comp 'GB200_GB_R_EYE'",
+    "face comp 'GB200_GB_L_EYEBROW'",
+    "face comp 'GB200_GB_R_EYEBROW'",
+    "character parts 'GB200_GB_HEADCOMP' nested in 'animation'",
+    "character parts 'GB200_GB_TAIL' nested in 'animation'",
+    "animated symbol 'gb run cycle' (375 kf)"
+   ]
+  },
+  {
+   "character": "Nicole",
+   "puppets": [
+    "GB200_MOM_ORIGINAL_PUPPET_V001"
+   ],
+   "evidence": [
+    "puppet symbol 'GB200_MOM_ORIGINAL_PUPPET_V001'",
+    "face comp 'GB200_MOM_MOUTH'",
+    "face comp 'GB200_MOM_EYEBROW'",
+    "face comp 'GB200_MOM_HEAD'",
+    "face comp 'GB200_MOM_HEADCOMP'",
+    "face comp 'GB200_MOM_L_EYE'",
+    "face comp 'GB200_MOM_R_EYE'",
+    "character parts 'GB200_MOM_HEADCOMP' nested in 'animation'",
+    "character parts 'GB200_MOM_L_LEG' nested in 'animation'",
+    "character parts 'GB200_MOM_L_ARM' nested in 'animation'",
+    "character parts 'GB200_MOM_TAIL' nested in 'animation'"
+   ]
+  },
+  {
+   "character": "Richard",
+   "puppets": [
+    "GB200_RICHARD_ORIGINAL_PUPPET_V001"
+   ],
+   "evidence": [
+    "puppet symbol 'GB200_RICHARD_ORIGINAL_PUPPET_V001'",
+    "face comp 'GB200_RICHARD_EYEBROW'",
+    "face comp 'GB200_RICHARD_HEAD'",
+    "face comp 'GB200_RICHARD_L_EYE'",
+    "face comp 'GB200_RICHARD_MOUTH'",
+    "face comp 'GB200_RICHARD_R_EYE copy'",
+    "face comp 'GB200_RICHARD_R_EYE'",
+    "animated symbol 'GB200_RICHARD_BODYCOMP' (300 kf)",
+    "character parts 'GB200_RICHARD_MOUTH' nested in 'GB200_RICHARD_BODYCOMP'",
+    "character parts 'GB200_RICHARD_EYEBROW' nested in 'GB200_RICHARD_BODYCOMP'",
+    "character parts 'GB200_RICHARD_R_EYE' nested in 'GB200_RICHARD_BODYCOMP'",
+    "character parts 'GB200_RICHARD_L_EYE' nested in 'GB200_RICHARD_BODYCOMP'",
+    "character parts 'GB200_RICHARD_R_EYE copy' nested in 'GB200_RICHARD_BODYCOMP'",
+    "character parts 'GB200_RICHARD_HEAD' nested in 'GB200_RICHARD_BODYCOMP'",
+    "character parts 'GB200_RICHARD_L_EAR' nested in 'GB200_RICHARD_BODYCOMP'",
+    "character parts 'GB200_RICHARD_R_EAR' nested in 'GB200_RICHARD_BODYCOMP'",
+    "character parts 'GB200_RICHARD_L_LEG' nested in 'animation'",
+    "character parts 'GB200_RICHARD_R_LEG' nested in 'animation'",
+    "character parts 'GB200_RICHARD_BODYCOMP' nested in 'animation'",
+    "character parts 'GB200_RICHARD_L_EAR' nested in 'animation'",
+    "character parts 'GB200_RICHARD_R_EAR' nested in 'animation'"
+   ]
+  }
+ ],
+ "rigs": [
+  {
+   "symbol": "GB200_RICHARD_ORIGINAL_PUPPET_V001",
+   "library_path": "LIBRARY/Scene atributes/CHARACTERS/GB200_DAD_ORIGINAL_PUPPET_V001/GB200_RICHARD_ORIGINAL_PUPPET_V001.xml",
+   "character": "Richard",
+   "keyframes": 63,
+   "variant_tokens": []
+  },
+  {
+   "symbol": "GB200_MOM_ORIGINAL_PUPPET_V001",
+   "library_path": "LIBRARY/Scene atributes/CHARACTERS/GB200_NICOLE_ORIGINAL_PUPPET_V001/GB200_MOM_ORIGINAL_PUPPET_V001.xml",
+   "character": "Nicole",
+   "keyframes": 60,
+   "variant_tokens": []
+  }
+ ],
+ "backgrounds": [
+  {
+   "item": "Scene atributes/BACKGROUNDS/GB202REMOTE_SC148_LO_BG.jpg",
+   "kind": "bitmap",
+   "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)",
+   "evidence": "bitmap item 'Scene atributes/BACKGROUNDS/GB202REMOTE_SC148_LO_BG.jpg' on background layer(s) ['background']",
+   "layers": [
+    "background"
+   ],
+   "first_frame": 0,
+   "last_frame": 262
+  }
+ ],
+ "animations_census": {
+  "total_keyframes_all_symbols": 5386,
+  "animated_symbols": 34,
+  "entries": [
+   {
+    "symbol": "animation",
+    "kind": "key-symbol",
+    "keyframes": 1413,
+    "end_frame": 293
+   },
+   {
+    "symbol": "GB200_GB_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 442,
+    "end_frame": 280
+   },
+   {
+    "symbol": "GB200_GB_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 442,
+    "end_frame": 280
+   },
+   {
+    "symbol": "gb run cycle",
+    "kind": "key-symbol",
+    "keyframes": 375,
+    "end_frame": 42
+   },
+   {
+    "symbol": "GB200_MOM_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 349,
+    "end_frame": 448
+   },
+   {
+    "symbol": "GB200_RICHARD_BODYCOMP",
+    "kind": "key-symbol",
+    "keyframes": 300,
+    "end_frame": 291
+   },
+   {
+    "symbol": "GB200_DRW_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 239,
+    "end_frame": 291
+   },
+   {
+    "symbol": "GB200_GB_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 188,
+    "end_frame": 281
+   },
+   {
+    "symbol": "GB200_MOM_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 187,
+    "end_frame": 291
+   },
+   {
+    "symbol": "GB200_GB_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 130,
+    "end_frame": 140
+   },
+   {
+    "symbol": "GB200_DRW_Mouth",
+    "kind": "face-comp",
+    "keyframes": 99,
+    "end_frame": 63
+   },
+   {
+    "symbol": "GB200_RICHARD_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 97,
+    "end_frame": 63
+   },
+   {
+    "symbol": "GB_panic_run_head",
+    "kind": "face-comp",
+    "keyframes": 81,
+    "end_frame": 291
+   },
+   {
+    "symbol": "GB200_RICHARD_ORIGINAL_PUPPET_V001",
+    "kind": "puppet",
+    "keyframes": 63,
+    "end_frame": 268
+   },
+   {
+    "symbol": "GB200_MOM_ORIGINAL_PUPPET_V001",
+    "kind": "puppet",
+    "keyframes": 60,
+    "end_frame": 269
+   },
+   {
+    "symbol": "GB200_RICHARD_HEAD",
+    "kind": "face-comp",
+    "keyframes": 44,
+    "end_frame": 11
+   },
+   {
+    "symbol": "GB200_RICHARD_R_EYE copy",
+    "kind": "face-comp",
+    "keyframes": 22,
+    "end_frame": 13
+   },
+   {
+    "symbol": "GB200_RICHARD_R_EYE",
+    "kind": "face-comp",
+    "keyframes": 22,
+    "end_frame": 13
+   },
+   {
+    "symbol": "GB200_RICHARD_L_EYE",
+    "kind": "face-comp",
+    "keyframes": 20,
+    "end_frame": 13
+   },
+   {
+    "symbol": "GB200_GB_HEAD copy",
+    "kind": "face-comp",
+    "keyframes": 18,
+    "end_frame": 6
+   },
+   {
+    "symbol": "GB200_GB_HEAD",
+    "kind": "face-comp",
+    "keyframes": 18,
+    "end_frame": 6
+   },
+   {
+    "symbol": "GB200_GB_L_EYE",
+    "kind": "face-comp",
+    "keyframes": 15,
+    "end_frame": 15
+   },
+   {
+    "symbol": "GB200_GB_R_EYE",
+    "kind": "face-comp",
+    "keyframes": 15,
+    "end_frame": 15
+   },
+   {
+    "symbol": "GB200_GB_R_EYEBROW",
+    "kind": "face-comp",
+    "keyframes": 15,
+    "end_frame": 15
+   },
+   {
+    "symbol": "GB200_GB_L_EYEBROW",
+    "kind": "face-comp",
+    "keyframes": 14,
+    "end_frame": 14
+   },
+   {
+    "symbol": "GB200_DRW_L_EYE",
+    "kind": "face-comp",
+    "keyframes": 11,
+    "end_frame": 11
+   },
+   {
+    "symbol": "GB200_DRW_R_EYE",
+    "kind": "face-comp",
+    "keyframes": 11,
+    "end_frame": 11
+   },
+   {
+    "symbol": "GB200_MOM_HEAD",
+    "kind": "face-comp",
+    "keyframes": 10,
+    "end_frame": 5
+   },
+   {
+    "symbol": "GB200_MOM_L_EYE",
+    "kind": "face-comp",
+    "keyframes": 10,
+    "end_frame": 50
+   },
+   {
+    "symbol": "GB200_MOM_R_EYE",
+    "kind": "face-comp",
+    "keyframes": 10,
+    "end_frame": 50
+   },
+   {
+    "symbol": "GB200_RICHARD_EYEBROW",
+    "kind": "face-comp",
+    "keyframes": 9,
+    "end_frame": 9
+   },
+   {
+    "symbol": "GB200_DRW_L_EYEBROW",
+    "kind": "face-comp",
+    "keyframes": 7,
+    "end_frame": 7
+   },
+   {
+    "symbol": "GB200_DRW_R_EYEBROW",
+    "kind": "face-comp",
+    "keyframes": 7,
+    "end_frame": 7
+   },
+   {
+    "symbol": "GB200_MOM_EYEBROW",
+    "kind": "face-comp",
+    "keyframes": 4,
+    "end_frame": 60
+   }
+  ]
+ },
+ "seams": {
+  "opens_with": [
+   "Field&Framecounter/Fieldguide_001",
+   "Field&Framecounter/framecounter1000",
+   "Scene atributes/BACKGROUNDS/GB202REMOTE_SC148_LO_BG.jpg",
+   "animation"
+  ],
+  "closes_with": [
+   "Field&Framecounter/Fieldguide_001",
+   "Field&Framecounter/framecounter1000",
+   "Scene atributes/BACKGROUNDS/GB202REMOTE_SC148_LO_BG.jpg",
+   "animation"
+  ],
+  "background_switch_frames": [
+   0
+  ],
+  "has_layout_mov_reference": true,
+  "frame_counter_overlay": true,
+  "field_guide_overlay": true
+ },
+ "tags": [
+  {
+   "tag": "nested-master-symbol",
+   "evidence": "symbol 'GB200_RICHARD_BODYCOMP' nests 8 puppets (300 kf)"
+  },
+  {
+   "tag": "run-cycle-library",
+   "evidence": "library cycle symbol 'gb run cycle' (375 kf)"
+  },
+  {
+   "tag": "layout-mov-reference",
+   "evidence": "scene carries a 'layout mov' reference-video layer"
+  },
+  {
+   "tag": "multi-character-staging",
+   "evidence": "four characters (Gumball, Darwin, Richard, Nicole) choreographed in one shot: entrances, run, tackle"
+  }
+ ],
+ "media": {
+  "contact_sheet": "done",
+  "video": "done",
+  "video_audio": "production audio muxed from SWF sound asset",
+  "frames_rendered": 262,
+  "frames_expected": 262
+ }
 }

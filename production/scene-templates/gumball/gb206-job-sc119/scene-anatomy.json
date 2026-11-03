@@ -1,5 +1,5 @@
 {
- "format": "cape-jones/scene-anatomy v1",
+ "format": "cape-jones/scene-anatomy v2 (library)",
  "title": "The Job \u2014 Sc119: Nicole close-up that punch-zooms into an extreme face shot",
  "show": "The Amazing World of Gumball",
  "episode": {
@@ -69282,5 +69282,198 @@
   "The two background layers are the before/after of the punch-in \u2014 no camera symbol, just a BG swap + puppet scale jump.",
   "Extreme expressions get their own symbol ('evil mum face', 76 kf) instead of being posed on the stock face comps.",
   "Mouth shapes in the extreme section cycle scream -> round 'o' -> clamped shut: the whole beat is lip-sync comps at wall size."
- ]
+ ],
+ "library": {
+  "slug": "gb206-job-sc119",
+  "class": "complete animated scene",
+  "episode_code": "GB206",
+  "folder": "gb206-job-sc119"
+ },
+ "cast": [
+  {
+   "character": "Nicole",
+   "puppets": [
+    "GB200_MOM_ORIGINAL_PUPPET_V001",
+    "GB200_MOM_ORIGINAL_PUPPET_V001"
+   ],
+   "evidence": [
+    "puppet symbol 'GB200_MOM_ORIGINAL_PUPPET_V001'",
+    "scene layer named 'MOM'",
+    "face comp 'GB200_MOM_EYECOMP'",
+    "face comp 'GB200_MOM_HEAD'",
+    "face comp 'GB200_MOM_HEADCOMP'",
+    "face comp 'GB200_MOM_MOUTH'",
+    "puppet 'Duplicate Items Folder/GB200_MOM_ORIGINAL_PUPPET_V001' placed at scene level"
+   ]
+  }
+ ],
+ "rigs": [
+  {
+   "symbol": "GB200_MOM_ORIGINAL_PUPPET_V001",
+   "library_path": "LIBRARY/Duplicate Items Folder/GB200_MOM_ORIGINAL_PUPPET_V001.xml",
+   "character": "Nicole",
+   "keyframes": 144,
+   "variant_tokens": []
+  },
+  {
+   "symbol": "GB200_MOM_ORIGINAL_PUPPET_V001",
+   "library_path": "LIBRARY/Scene atributes/CHARACTERS/GB200_NICOLE_ORIGINAL_PUPPET_V001/GB200_MOM_ORIGINAL_PUPPET_V001.xml",
+   "character": "Nicole",
+   "keyframes": 121,
+   "variant_tokens": []
+  }
+ ],
+ "backgrounds": [
+  {
+   "item": "Scene atributes/BACKGROUNDS/GB205JOB_SC119_LO_BG_crop_first.jpg",
+   "kind": "bitmap",
+   "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)",
+   "evidence": "bitmap item 'Scene atributes/BACKGROUNDS/GB205JOB_SC119_LO_BG_crop_first.jpg' on background layer(s) ['background 1st']",
+   "layers": [
+    "background 1st"
+   ],
+   "first_frame": 0,
+   "last_frame": 57
+  },
+  {
+   "item": "Scene atributes/BACKGROUNDS/GB205JOB_SC119_LO_BG_crop_last.jpg",
+   "kind": "bitmap",
+   "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)",
+   "evidence": "bitmap item 'Scene atributes/BACKGROUNDS/GB205JOB_SC119_LO_BG_crop_last.jpg' on background layer(s) ['background Last']",
+   "layers": [
+    "background Last"
+   ],
+   "first_frame": 0,
+   "last_frame": 57
+  }
+ ],
+ "animations_census": {
+  "total_keyframes_all_symbols": 1196,
+  "animated_symbols": 12,
+  "entries": [
+   {
+    "symbol": "GB200_MOM_EYECOMP",
+    "kind": "face-comp",
+    "keyframes": 155,
+    "end_frame": 121
+   },
+   {
+    "symbol": "GB200_MOM_ORIGINAL_PUPPET_V001",
+    "kind": "puppet",
+    "keyframes": 144,
+    "end_frame": 162
+   },
+   {
+    "symbol": "GB200_MOM_ORIGINAL_PUPPET_V001",
+    "kind": "puppet",
+    "keyframes": 121,
+    "end_frame": 159
+   },
+   {
+    "symbol": "GB200_MOM_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 120,
+    "end_frame": 154
+   },
+   {
+    "symbol": "GB200_MOM_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 120,
+    "end_frame": 154
+   },
+   {
+    "symbol": "GB200_MOM_EYECOMP",
+    "kind": "face-comp",
+    "keyframes": 112,
+    "end_frame": 60
+   },
+   {
+    "symbol": "evil mum face",
+    "kind": "face-comp",
+    "keyframes": 76,
+    "end_frame": 64
+   },
+   {
+    "symbol": "GB200_MOM_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 49,
+    "end_frame": 181
+   },
+   {
+    "symbol": "GB200_MOM_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 49,
+    "end_frame": 114
+   },
+   {
+    "symbol": "Mum_mouth_frontal",
+    "kind": "face-comp",
+    "keyframes": 38,
+    "end_frame": 153
+   },
+   {
+    "symbol": "GB200_MOM_HEAD",
+    "kind": "face-comp",
+    "keyframes": 10,
+    "end_frame": 5
+   },
+   {
+    "symbol": "GB200_MOM_HEAD",
+    "kind": "face-comp",
+    "keyframes": 10,
+    "end_frame": 5
+   }
+  ]
+ },
+ "seams": {
+  "opens_with": [
+   "Duplicate Items Folder/GB200_MOM_ORIGINAL_PUPPET_V001",
+   "Field&Framecounter/Fieldguide_001",
+   "Field&Framecounter/framecounter1000",
+   "Scene atributes/BACKGROUNDS/GB205JOB_SC119_LO_BG_crop_first.jpg",
+   "Scene atributes/BACKGROUNDS/GB205JOB_SC119_LO_BG_crop_last.jpg"
+  ],
+  "closes_with": [
+   "Duplicate Items Folder/GB200_MOM_ORIGINAL_PUPPET_V001",
+   "Field&Framecounter/Fieldguide_001",
+   "Field&Framecounter/framecounter1000",
+   "Scene atributes/BACKGROUNDS/GB205JOB_SC119_LO_BG_crop_first.jpg",
+   "Scene atributes/BACKGROUNDS/GB205JOB_SC119_LO_BG_crop_last.jpg"
+  ],
+  "background_switch_frames": [
+   0
+  ],
+  "has_layout_mov_reference": true,
+  "frame_counter_overlay": true,
+  "field_guide_overlay": true
+ },
+ "tags": [
+  {
+   "tag": "head-comp-swap",
+   "evidence": "episode-specific face/head comp 'evil mum face' (76 kf) swapped onto the stock puppet"
+  },
+  {
+   "tag": "layout-mov-reference",
+   "evidence": "scene carries a 'layout mov' reference-video layer"
+  },
+  {
+   "tag": "face-comp-driven",
+   "evidence": "face comps hold 739 kf vs body puppets 265 kf \u2014 the face system carries the scene"
+  },
+  {
+   "tag": "punch-zoom",
+   "evidence": "render-verified in wave 1: medium CU on background 1st, smash-zoom ~f15 to extreme CU on background Last, same MOM layer"
+  },
+  {
+   "tag": "solo-close-up",
+   "evidence": "single character (Nicole) fills the frame; face comps carry the scene"
+  }
+ ],
+ "media": {
+  "contact_sheet": "done",
+  "video": "done",
+  "video_audio": "production audio muxed from SWF sound asset",
+  "frames_rendered": 57,
+  "frames_expected": 57
+ }
 }

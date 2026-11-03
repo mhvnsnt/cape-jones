@@ -1,5 +1,5 @@
 {
- "format": "cape-jones/scene-anatomy v1",
+ "format": "cape-jones/scene-anatomy v2 (library)",
  "title": "The Apology \u2014 Sc142: Gumball falls apart and reassembles (body-part gag)",
  "show": "The Amazing World of Gumball",
  "episode": {
@@ -59265,5 +59265,135 @@
   "The head comp holds 805 keyframes \u2014 more than the body puppet (555): the giant gritted-teeth head is the visual anchor while the body is in pieces.",
   "A 'Roughaurel' layer (rough pass by animator Laurel) ships inside the clean file \u2014 rough and clean coexist in production files.",
   "Background is a locked school hallway (tile wall, red window frames): all motion is character-side, which makes the part chaos readable."
- ]
+ ],
+ "library": {
+  "slug": "gb2215-apology-sc142",
+  "class": "complete animated scene",
+  "episode_code": "GB2215",
+  "folder": "gb2215-apology-sc142"
+ },
+ "cast": [
+  {
+   "character": "Gumball",
+   "puppets": [
+    "GB200_GUMBALL_PUPPET_001"
+   ],
+   "evidence": [
+    "puppet symbol 'GB200_GUMBALL_PUPPET_001'",
+    "scene layer named 'GB'",
+    "face comp 'GB200_GB_EYESCOMP_SYMBOL'",
+    "face comp 'GB200_GB_HEAD'",
+    "face comp 'GB200_GB_HEADCOMP'",
+    "face comp 'GB200_GB_MOUTH'",
+    "puppet 'Scene atributes/COSTUME/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001' placed at scene level"
+   ]
+  }
+ ],
+ "rigs": [
+  {
+   "symbol": "GB200_GUMBALL_PUPPET_001",
+   "library_path": "LIBRARY/Scene atributes/COSTUME/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001.xml",
+   "character": "Gumball",
+   "keyframes": 555,
+   "variant_tokens": []
+  }
+ ],
+ "backgrounds": [
+  {
+   "item": "Symbol 2",
+   "kind": "symbol",
+   "type": "painted/vector symbol",
+   "evidence": "symbol 'Symbol 2' placed on background layer(s) ['background']",
+   "layers": [
+    "background"
+   ],
+   "first_frame": 0,
+   "last_frame": 75
+  }
+ ],
+ "animations_census": {
+  "total_keyframes_all_symbols": 2452,
+  "animated_symbols": 5,
+  "entries": [
+   {
+    "symbol": "GB200_GB_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 805,
+    "end_frame": 384
+   },
+   {
+    "symbol": "GB200_GUMBALL_PUPPET_001",
+    "kind": "puppet",
+    "keyframes": 555,
+    "end_frame": 228
+   },
+   {
+    "symbol": "GB200_GB_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 433,
+    "end_frame": 280
+   },
+   {
+    "symbol": "GB200_GB_EYESCOMP_SYMBOL",
+    "kind": "face-comp",
+    "keyframes": 300,
+    "end_frame": 445
+   },
+   {
+    "symbol": "GB200_GB_HEAD",
+    "kind": "face-comp",
+    "keyframes": 17,
+    "end_frame": 6
+   }
+  ]
+ },
+ "seams": {
+  "opens_with": [
+   "Field&Framecounter/Fieldguide_001",
+   "Field&Framecounter/framecounter1000",
+   "Scene atributes/COSTUME/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+   "Symbol 2"
+  ],
+  "closes_with": [
+   "Field&Framecounter/Fieldguide_001",
+   "Field&Framecounter/framecounter1000",
+   "Scene atributes/COSTUME/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+   "Symbol 2"
+  ],
+  "background_switch_frames": [
+   0
+  ],
+  "has_layout_mov_reference": true,
+  "frame_counter_overlay": true,
+  "field_guide_overlay": true
+ },
+ "tags": [
+  {
+   "tag": "rough-layer-shipped",
+   "evidence": "layer 'Roughaurel' ships inside the clean file"
+  },
+  {
+   "tag": "layout-mov-reference",
+   "evidence": "scene carries a 'layout mov' reference-video layer"
+  },
+  {
+   "tag": "face-comp-driven",
+   "evidence": "face comps hold 1555 kf vs body puppets 555 kf \u2014 the face system carries the scene"
+  },
+  {
+   "tag": "dissection-gag",
+   "evidence": "render-verified in wave 1: legs walk in alone at f1; head/torso/limbs placed as independent scene elements and recombine by f75"
+  },
+  {
+   "tag": "transformation-gag",
+   "evidence": "the fall-apart/reassemble transformation is staged by per-part placement and scale \u2014 no morph drawings"
+  }
+ ],
+ "media": {
+  "contact_sheet": "done",
+  "video": "done",
+  "video_audio": "production audio muxed from SWF sound asset",
+  "frames_rendered": 75,
+  "frames_expected": 75
+ }
 }

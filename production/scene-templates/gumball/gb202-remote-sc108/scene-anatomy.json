@@ -1,5 +1,5 @@
 {
- "format": "cape-jones/scene-anatomy v1",
+ "format": "cape-jones/scene-anatomy v2 (library)",
  "title": "The Remote \u2014 Sc108: forced-perspective run (giant Darwin FG, small Gumball BG)",
  "show": "The Amazing World of Gumball",
  "episode": {
@@ -31496,5 +31496,260 @@
   "The 'background' layer is a speed-line smear \u2014 at full run, location is deleted on purpose.",
   "Darwin's foreground leg overlaps Gumball's space on the swing: FG/BG characters share the frame's depth, staged by layer order (GB layer + Darwin over).",
   "40 frames total: just enough loops for the cut; the cycles do the rest."
- ]
+ ],
+ "library": {
+  "slug": "gb202-remote-sc108",
+  "class": "complete animated scene",
+  "episode_code": "GB202",
+  "folder": "gb202-remote-sc108"
+ },
+ "cast": [
+  {
+   "character": "Darwin",
+   "puppets": [
+    "GB200_DRW_ORIGINAL_PUPPET_v001"
+   ],
+   "evidence": [
+    "puppet symbol 'GB200_DRW_ORIGINAL_PUPPET_v001'",
+    "face comp 'GB200_DRW_EYECOMP'",
+    "face comp 'GB200_DRW_HEAD'",
+    "face comp 'GB200_DRW_HEADCOMP'",
+    "face comp 'GB200_DRW_L_EYE'",
+    "face comp 'GB200_DRW_L_EYEBROW'",
+    "face comp 'GB200_DRW_Mouth'",
+    "face comp 'GB200_DRW_R_EYE'",
+    "face comp 'GB200_DRW_R_EYEBROW'"
+   ]
+  },
+  {
+   "character": "Gumball",
+   "puppets": [
+    "GB200_GUMBALL_PUPPET_001"
+   ],
+   "evidence": [
+    "puppet symbol 'GB200_GUMBALL_PUPPET_001'",
+    "scene layer named 'GB'",
+    "face comp 'GB_panic_run_head'",
+    "face comp 'GB200_GB_EYESCOMP'",
+    "face comp 'GB200_GB_HEAD'",
+    "face comp 'GB200_GB_HEADCOMP'",
+    "face comp 'GB200_GB_L_EYE'",
+    "face comp 'GB200_GB_MOUTH'",
+    "face comp 'GB200_GB_R_EYE'",
+    "face comp 'GB200_GB_L_EYEBROW'",
+    "face comp 'GB200_GB_R_EYEBROW'",
+    "animated symbol 'gb run cycle' (410 kf)"
+   ]
+  }
+ ],
+ "rigs": [
+  {
+   "symbol": "GB200_DRW_ORIGINAL_PUPPET_v001",
+   "library_path": "LIBRARY/Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001.xml",
+   "character": "Darwin",
+   "keyframes": 15,
+   "variant_tokens": []
+  },
+  {
+   "symbol": "GB200_GUMBALL_PUPPET_001",
+   "library_path": "LIBRARY/Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001.xml",
+   "character": "Gumball",
+   "keyframes": 13,
+   "variant_tokens": []
+  }
+ ],
+ "backgrounds": [
+  {
+   "item": "Scene atributes/BACKGROUNDS/GB202REMOTE_SC108_LO_BG.JPEG",
+   "kind": "bitmap",
+   "type": "bitmap (painted or photo \u2014 name gives no evidence)",
+   "evidence": "bitmap item 'Scene atributes/BACKGROUNDS/GB202REMOTE_SC108_LO_BG.JPEG' placed on background layer(s)",
+   "layers": [
+    "background"
+   ],
+   "first_frame": 0,
+   "last_frame": 40
+  }
+ ],
+ "animations_census": {
+  "total_keyframes_all_symbols": 1587,
+  "animated_symbols": 20,
+  "entries": [
+   {
+    "symbol": "gb run cycle",
+    "kind": "key-symbol",
+    "keyframes": 410,
+    "end_frame": 43
+   },
+   {
+    "symbol": "GB200_GB_EYESCOMP",
+    "kind": "face-comp",
+    "keyframes": 141,
+    "end_frame": 217
+   },
+   {
+    "symbol": "GB200_GB_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 130,
+    "end_frame": 140
+   },
+   {
+    "symbol": "GB200_DRW_EYECOMP",
+    "kind": "face-comp",
+    "keyframes": 126,
+    "end_frame": 62
+   },
+   {
+    "symbol": "GB200_DRW_Mouth",
+    "kind": "face-comp",
+    "keyframes": 99,
+    "end_frame": 63
+   },
+   {
+    "symbol": "GB200_GB_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 52,
+    "end_frame": 330
+   },
+   {
+    "symbol": "GB_panic_run_head",
+    "kind": "face-comp",
+    "keyframes": 30,
+    "end_frame": 41
+   },
+   {
+    "symbol": "GB200_DRW_HEAD",
+    "kind": "face-comp",
+    "keyframes": 24,
+    "end_frame": 8
+   },
+   {
+    "symbol": "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "kind": "puppet",
+    "keyframes": 15,
+    "end_frame": 40
+   },
+   {
+    "symbol": "GB200_GB_HEAD",
+    "kind": "face-comp",
+    "keyframes": 15,
+    "end_frame": 5
+   },
+   {
+    "symbol": "GB200_GB_L_EYE",
+    "kind": "face-comp",
+    "keyframes": 15,
+    "end_frame": 15
+   },
+   {
+    "symbol": "GB200_GB_R_EYE",
+    "kind": "face-comp",
+    "keyframes": 15,
+    "end_frame": 15
+   },
+   {
+    "symbol": "GB200_GB_R_EYEBROW",
+    "kind": "face-comp",
+    "keyframes": 15,
+    "end_frame": 15
+   },
+   {
+    "symbol": "GB200_GB_L_EYEBROW",
+    "kind": "face-comp",
+    "keyframes": 14,
+    "end_frame": 14
+   },
+   {
+    "symbol": "GB200_GUMBALL_PUPPET_001",
+    "kind": "puppet",
+    "keyframes": 13,
+    "end_frame": 40
+   },
+   {
+    "symbol": "GB200_DRW_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 12,
+    "end_frame": 40
+   },
+   {
+    "symbol": "GB200_DRW_L_EYE",
+    "kind": "face-comp",
+    "keyframes": 11,
+    "end_frame": 11
+   },
+   {
+    "symbol": "GB200_DRW_R_EYE",
+    "kind": "face-comp",
+    "keyframes": 11,
+    "end_frame": 11
+   },
+   {
+    "symbol": "GB200_DRW_L_EYEBROW",
+    "kind": "face-comp",
+    "keyframes": 7,
+    "end_frame": 7
+   },
+   {
+    "symbol": "GB200_DRW_R_EYEBROW",
+    "kind": "face-comp",
+    "keyframes": 7,
+    "end_frame": 7
+   }
+  ]
+ },
+ "seams": {
+  "opens_with": [
+   "Field&Framecounter/Fieldguide_001",
+   "Field&Framecounter/framecounter1000",
+   "Scene atributes/BACKGROUNDS/GB202REMOTE_SC108_LO_BG.JPEG",
+   "dar run cycle",
+   "gb run cycle"
+  ],
+  "closes_with": [
+   "Field&Framecounter/Fieldguide_001",
+   "Field&Framecounter/framecounter1000",
+   "Scene atributes/BACKGROUNDS/GB202REMOTE_SC108_LO_BG.JPEG",
+   "dar run cycle",
+   "gb run cycle"
+  ],
+  "background_switch_frames": [
+   0
+  ],
+  "has_layout_mov_reference": true,
+  "frame_counter_overlay": true,
+  "field_guide_overlay": true
+ },
+ "tags": [
+  {
+   "tag": "run-cycle-library",
+   "evidence": "library cycle symbol 'gb run cycle' (410 kf)"
+  },
+  {
+   "tag": "layout-mov-reference",
+   "evidence": "scene carries a 'layout mov' reference-video layer"
+  },
+  {
+   "tag": "face-comp-driven",
+   "evidence": "face comps hold 724 kf vs body puppets 28 kf \u2014 the face system carries the scene"
+  },
+  {
+   "tag": "forced-perspective",
+   "evidence": "render-verified in wave 1: Darwin cycle placed huge/cropped in FG, Gumball cycle small in BG, same shot"
+  },
+  {
+   "tag": "speed-smear",
+   "evidence": "render-verified in wave 1: background layer is a horizontal speed smear, no location detail"
+  },
+  {
+   "tag": "cycle-multi-scale",
+   "evidence": "gb run cycle and dar run cycle placed at ~0.3x vs ~3x in one frame"
+  }
+ ],
+ "media": {
+  "contact_sheet": "done",
+  "video": "done",
+  "video_audio": "production audio muxed from SWF sound asset",
+  "frames_rendered": 40,
+  "frames_expected": 40
+ }
 }

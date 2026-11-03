@@ -1,5 +1,5 @@
 {
- "format": "cape-jones/scene-anatomy v1",
+ "format": "cape-jones/scene-anatomy v2 (library)",
  "title": "The Treasure \u2014 Sc105: the whole family in one bed, the duvet layer sandwich",
  "show": "The Amazing World of Gumball",
  "episode": {
@@ -106245,5 +106245,326 @@
   "Costume-variant puppets again: GB211_PYJAMAS_DAD_PUPPET and GB211_PYJAMAS_MOM_PUPPET \u2014 pyjama versions of the stock puppets, built for this episode.",
   "'DAD ANIMATION copy' (452 kf) and 'MOM ANIMATION copy' (370 kf): scene-specific copies are edited in place; library originals stay clean.",
   "In the production SWF export the bedroom background renders white \u2014 the visible architecture is the duvet sandwich itself; frame-counter and field-guide overlays are part of the export."
- ]
+ ],
+ "library": {
+  "slug": "gb211-treasure-sc105",
+  "class": "complete animated scene",
+  "episode_code": "GB211",
+  "folder": "gb211-treasure-sc105"
+ },
+ "cast": [
+  {
+   "character": "Gumball",
+   "puppets": [],
+   "evidence": [
+    "scene layer named 'DUVET GUMBALL'",
+    "scene layer named 'GUMBALL'",
+    "face comp 'GB200_GB_EYESCOMP_PYJAMAS'",
+    "face comp 'GB200_GB_HEADCOMP_PYJAMAS'",
+    "face comp 'GB200_GB_HEAD_PYJAMAS'",
+    "face comp 'GB200_GB_MOUTH_PYJAMAS'"
+   ]
+  },
+  {
+   "character": "Nicole",
+   "puppets": [
+    "GB211_PYJAMAS_MOM_PUPPET_V001"
+   ],
+   "evidence": [
+    "puppet symbol 'GB211_PYJAMAS_MOM_PUPPET_V001'",
+    "scene layer named 'MOM'",
+    "scene layer named 'MOM R ARM FRONT'",
+    "scene layer named 'DUVET MOM MASK'",
+    "scene layer named 'DUVET MOM SIDE'",
+    "face comp 'GB211_PYJAMAS_MOM_EYECOMP'",
+    "face comp 'GB211_PYJAMAS_MOM_HEAD'",
+    "face comp 'GB211_PYJAMAS_MOM_HEADCOMP'",
+    "face comp 'GB211_PYJAMAS_MOM_MOUTH'",
+    "face comp 'GB200_MOM_MOUTH'",
+    "animated symbol 'MOM ANIMATION copy' (370 kf)",
+    "character parts 'GB211_PYJAMAS_MOM_HEADCOMP' nested in 'MOM ANIMATION copy'",
+    "character parts 'MOM clean bodycomp' nested in 'MOM ANIMATION copy'",
+    "character parts 'GB211_PYJAMAS_MOM_BODYCOMP' nested in 'MOM ANIMATION copy'",
+    "puppet 'Scene atributes/COSTUME/GB211_PYJAMAS_MOM_PUPPET_V001/GB211_PYJAMAS_MOM_PUPPET_V001' placed at scene level"
+   ]
+  },
+  {
+   "character": "Richard",
+   "puppets": [
+    "GB211_PYJAMAS_DAD_PUPPET_V001"
+   ],
+   "evidence": [
+    "puppet symbol 'GB211_PYJAMAS_DAD_PUPPET_V001'",
+    "scene layer named 'DAD'",
+    "scene layer named 'DAD OVERLAY HANDS'",
+    "scene layer named 'DUVET DAD MASK'",
+    "scene layer named 'DUVET DAD SIDE'",
+    "face comp 'GB200_RICHARD_MOUTH'",
+    "face comp 'GB211_PYJAMAS_DAD_EYECOMP copy'",
+    "face comp 'GB211_PYJAMAS_DAD_EYECOMP'",
+    "face comp 'GB211_PYJAMAS_DAD_HEAD copy'",
+    "face comp 'GB211_PYJAMAS_DAD_HEAD'",
+    "face comp 'GB211_PYJAMAS_DAD_MOUTH'",
+    "animated symbol 'DAD ANIMATION copy' (452 kf)",
+    "character parts 'GB211_PYJAMAS_DAD_BODYCOMP' nested in 'DAD ANIMATION copy'",
+    "puppet 'Scene atributes/COSTUME/GB211_PYJAMAS_DAD_PUPPET_V001/GB211_PYJAMAS_DAD_PUPPET_V001' placed at scene level"
+   ]
+  }
+ ],
+ "rigs": [
+  {
+   "symbol": "GB211_PYJAMAS_DAD_PUPPET_V001",
+   "library_path": "LIBRARY/Scene atributes/COSTUME/GB211_PYJAMAS_DAD_PUPPET_V001/GB211_PYJAMAS_DAD_PUPPET_V001.xml",
+   "character": "Richard",
+   "keyframes": 158,
+   "variant_tokens": [
+    "PYJAMA"
+   ]
+  },
+  {
+   "symbol": "GB211_PYJAMAS_MOM_PUPPET_V001",
+   "library_path": "LIBRARY/Scene atributes/COSTUME/GB211_PYJAMAS_MOM_PUPPET_V001/GB211_PYJAMAS_MOM_PUPPET_V001.xml",
+   "character": "Nicole",
+   "keyframes": 195,
+   "variant_tokens": [
+    "PYJAMA"
+   ]
+  }
+ ],
+ "backgrounds": [],
+ "animations_census": {
+  "total_keyframes_all_symbols": 5555,
+  "animated_symbols": 27,
+  "entries": [
+   {
+    "symbol": "DAD ANIMATION copy",
+    "kind": "key-symbol",
+    "keyframes": 452,
+    "end_frame": 447
+   },
+   {
+    "symbol": "MOM ANIMATION copy",
+    "kind": "key-symbol",
+    "keyframes": 370,
+    "end_frame": 431
+   },
+   {
+    "symbol": "GB200_MOM_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 349,
+    "end_frame": 448
+   },
+   {
+    "symbol": "GB211_PYJAMAS_MOM_PUPPET_V001",
+    "kind": "puppet",
+    "keyframes": 195,
+    "end_frame": 376
+   },
+   {
+    "symbol": "GB200_RICHARD_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 191,
+    "end_frame": 300
+   },
+   {
+    "symbol": "GB200_RICHARD_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 191,
+    "end_frame": 300
+   },
+   {
+    "symbol": "GB211_PYJAMAS_DAD_PUPPET_V001",
+    "kind": "puppet",
+    "keyframes": 158,
+    "end_frame": 529
+   },
+   {
+    "symbol": "GB211_PYJAMAS_MOM_EYECOMP",
+    "kind": "face-comp",
+    "keyframes": 151,
+    "end_frame": 70
+   },
+   {
+    "symbol": "GB200_GB_EYESCOMP_PYJAMAS",
+    "kind": "face-comp",
+    "keyframes": 146,
+    "end_frame": 217
+   },
+   {
+    "symbol": "GB211_PYJAMAS_DAD_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 131,
+    "end_frame": 60
+   },
+   {
+    "symbol": "GB211_PYJAMAS_DAD_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 131,
+    "end_frame": 60
+   },
+   {
+    "symbol": "GB200_GB_MOUTH_PYJAMAS",
+    "kind": "face-comp",
+    "keyframes": 130,
+    "end_frame": 140
+   },
+   {
+    "symbol": "GB211_PYJAMAS_MOM_EYECOMP",
+    "kind": "face-comp",
+    "keyframes": 124,
+    "end_frame": 61
+   },
+   {
+    "symbol": "GB211_PYJAMAS_MOM_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 123,
+    "end_frame": 154
+   },
+   {
+    "symbol": "GB211_PYJAMAS_MOM_MOUTH",
+    "kind": "face-comp",
+    "keyframes": 123,
+    "end_frame": 154
+   },
+   {
+    "symbol": "GB211_PYJAMAS_DAD_EYECOMP copy",
+    "kind": "face-comp",
+    "keyframes": 120,
+    "end_frame": 60
+   },
+   {
+    "symbol": "GB211_PYJAMAS_DAD_EYECOMP",
+    "kind": "face-comp",
+    "keyframes": 120,
+    "end_frame": 60
+   },
+   {
+    "symbol": "GB211_PYJAMAS_DAD_EYECOMP",
+    "kind": "face-comp",
+    "keyframes": 120,
+    "end_frame": 60
+   },
+   {
+    "symbol": "GB200_GB_HEADCOMP_PYJAMAS",
+    "kind": "face-comp",
+    "keyframes": 110,
+    "end_frame": 385
+   },
+   {
+    "symbol": "GB211_PYJAMAS_MOM_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 91,
+    "end_frame": 179
+   },
+   {
+    "symbol": "GB211_PYJAMAS_MOM_HEADCOMP",
+    "kind": "face-comp",
+    "keyframes": 68,
+    "end_frame": 179
+   },
+   {
+    "symbol": "GB211_PYJAMAS_DAD_HEAD copy",
+    "kind": "face-comp",
+    "keyframes": 33,
+    "end_frame": 11
+   },
+   {
+    "symbol": "GB211_PYJAMAS_DAD_HEAD",
+    "kind": "face-comp",
+    "keyframes": 33,
+    "end_frame": 11
+   },
+   {
+    "symbol": "GB211_PYJAMAS_DAD_HEAD",
+    "kind": "face-comp",
+    "keyframes": 33,
+    "end_frame": 11
+   },
+   {
+    "symbol": "GB200_GB_HEAD_PYJAMAS",
+    "kind": "face-comp",
+    "keyframes": 15,
+    "end_frame": 5
+   },
+   {
+    "symbol": "GB211_PYJAMAS_MOM_HEAD",
+    "kind": "face-comp",
+    "keyframes": 10,
+    "end_frame": 5
+   },
+   {
+    "symbol": "GB211_PYJAMAS_MOM_HEAD",
+    "kind": "face-comp",
+    "keyframes": 10,
+    "end_frame": 5
+   }
+  ]
+ },
+ "seams": {
+  "opens_with": [
+   "Duplicate Items Folder/DAD ANIMATION ",
+   "Duplicate Items Folder/DAD DUVET",
+   "Duplicate Items Folder/DAD OVERLAY HANDS",
+   "Duplicate Items Folder/MOM ANIMATION",
+   "Duplicate Items Folder/MOM DUVET",
+   "Duplicate Items Folder/MOM R ARM FRONT",
+   "Field&Framecounter/Fieldguide_001",
+   "Field&Framecounter/framecounter1000",
+   "Scene atributes/COSTUME/GB200_GUMBALL_PYJAMAS_V001/GB200_GUMBALL_PYJAMAS_001",
+   "Scene atributes/COSTUME/GB211_PYJAMAS_DAD_PUPPET_V001/GB211_PYJAMAS_DAD_PUPPET_V001",
+   "Scene atributes/COSTUME/GB211_PYJAMAS_MOM_PUPPET_V001/GB211_PYJAMAS_MOM_PUPPET_V001",
+   "Symbol 3"
+  ],
+  "closes_with": [
+   "Duplicate Items Folder/DAD ANIMATION ",
+   "Duplicate Items Folder/DAD DUVET",
+   "Duplicate Items Folder/DAD OVERLAY HANDS",
+   "Duplicate Items Folder/MOM ANIMATION",
+   "Duplicate Items Folder/MOM DUVET",
+   "Duplicate Items Folder/MOM R ARM FRONT",
+   "Field&Framecounter/Fieldguide_001",
+   "Field&Framecounter/framecounter1000",
+   "Scene atributes/COSTUME/GB200_GUMBALL_PYJAMAS_V001/GB200_GUMBALL_PYJAMAS_001",
+   "Scene atributes/COSTUME/GB211_PYJAMAS_DAD_PUPPET_V001/GB211_PYJAMAS_DAD_PUPPET_V001",
+   "Scene atributes/COSTUME/GB211_PYJAMAS_MOM_PUPPET_V001/GB211_PYJAMAS_MOM_PUPPET_V001",
+   "Symbol 3"
+  ],
+  "background_switch_frames": [],
+  "has_layout_mov_reference": true,
+  "frame_counter_overlay": true,
+  "field_guide_overlay": true
+ },
+ "tags": [
+  {
+   "tag": "per-character-mask",
+   "evidence": "2 mask layers at scene level: DUVET MOM MASK, DUVET DAD MASK"
+  },
+  {
+   "tag": "rough-layer-shipped",
+   "evidence": "layer 'Roughs' ships inside the clean file"
+  },
+  {
+   "tag": "overlay-hands",
+   "evidence": "scene layer 'DAD OVERLAY HANDS'"
+  },
+  {
+   "tag": "costume-variant-puppet",
+   "evidence": "puppet 'GB211_PYJAMAS_DAD_PUPPET_V001' carries variant token(s) ['PYJAMA']"
+  },
+  {
+   "tag": "layout-mov-reference",
+   "evidence": "scene carries a 'layout mov' reference-video layer"
+  },
+  {
+   "tag": "face-comp-driven",
+   "evidence": "face comps hold 2553 kf vs body puppets 353 kf \u2014 the face system carries the scene"
+  }
+ ],
+ "media": {
+  "contact_sheet": "done",
+  "video": "done",
+  "video_audio": "production audio muxed from SWF sound asset",
+  "frames_rendered": 123,
+  "frames_expected": 123
+ }
 }
