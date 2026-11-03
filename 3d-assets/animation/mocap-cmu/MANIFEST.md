@@ -55,3 +55,10 @@ The BVH conversion adds no further restrictions (cgspeed release notes).
   set; pull more per-motion via the same URL pattern:
   `https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/master/data/XXX/XX_XX.bvh`
   with the index at `cmu-mocap-index-text.txt` in that repo.
+| `15_04.bvh` | dance / everyday moves (multi-activity trial) | **Dance loop — 3D dance proof v4**: window @ frame 12625 (front-facing, in-one-spot, seam-clean; see docs/production/AUTO-RIG-MOCAP-RESEARCH.md) | 22550 |
+
+**Added 2026-10-31 (v4 dance lane):** `15_04.bvh` pulled from the same
+CMU/cgspeed source under the same license above. Also pulled but NOT
+committed: subjects 60/61 (salsa — rejected for the v4 shot: the dancer
+faces ~-90° profile, partner work) and 05_03/05_11 (too short for the
+loop window); disposition logged in the research doc.
