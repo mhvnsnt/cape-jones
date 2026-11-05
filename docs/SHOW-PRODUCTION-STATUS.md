@@ -38,6 +38,12 @@ Harmony-format stub that is NOT a live Harmony scene: `cape-jones-rig/.../wire-u
 4. **The actual episode is the CJ-01..CJ-30 storyboard cut** (the one the owner called a slideshow) **WITH real in-between animation filled in.** That slideshow is the episode storyboard, missing the in-betweens.
 5. Written episode material for different segments already exists in the repos (e.g. `docs/story/`); use it. The job is to get the writing visually coming together, not to invent a different episode structure.
 
+## 3b. BINDING — Immortal Qombat fight casting/motion law (owner Nov 5, 2026, t90u)
+- **Pantera** must be the most updated, most corrected version, with the most moves and the latest animations (search Western Heart + Cape Jones; cite the chosen files in this doc when chosen). As of this snapshot no file has been chosen/cited here — OPEN.
+- **Cape Jones** must use his most updated 3D Cape Jones show rig that can pose and fight, with Alisa's full moveset, animations, and fight data attached to him in the cape-jones repo (and linked on the Western Heart side). In the fight he uses Alisa's moves and animations. As of this snapshot that attachment is not logged as done — OPEN.
+- **Never put the names Alisa, Western Heart, or Tekken on screen.**
+- Do not use an old Cape mesh or a clay/Blender chain proof as the fight.
+
 ## 4. What a real cartoon needs that the 90 s cut does not
 Owner asked for Metalocalypse-level "shred force" riffing on top of Space Ghost / Aqua Teen Hunger Force style: real animation, high drawings-per-second, not Ken Burns zooms on stills. Missing from the 90 s slideshow (named so nobody can pretend they are done):
 - Changing drawings on twos (12 dps at 24 fps) and on ones for hits/fast action — not 3-second still holds (72 identical frames)

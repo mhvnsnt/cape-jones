@@ -159,6 +159,7 @@ Read `docs/SHOW-PRODUCTION-STATUS.md` before claiming ANY show, episode, or Harm
 - No "the show is being made" / "Harmony rendered" / "this is an episode" without naming the exact file (path, res, fps, duration, sha256) and what it is: animatic / slideshow / rig recut / Harmony render.
 - `episode-cj01-cj30-clean-20261101.mp4` is a SLIDESHOW of stills, not animation. The episode = that CJ-01..CJ-30 storyboard WITH real drawn in-betweens, built from the existing written segment material. Dance V1 is a segment, not the episode.
 - Immortal Qombat 3D MUST come from the Western Heart game/repo. Standalone clay/Blender proofs (e.g. `ep1_chain_170_195.mp4`) are not the Immortal Qombat fight.
+- Immortal Qombat fight (t90u): latest/most-corrected Pantera (cite files); Cape = latest 3D show rig that poses/fights with Alisa's full moveset + fight data attached in cape-jones (linked from WH). Never show the names Alisa / Western Heart / Tekken on screen. No old Cape mesh, no clay chain proof.
 - Harmony runs on Linux but is NOT installed (`production/harmony/find_harmony.sh` → NOT_FOUND). Fallback output is "NOT Harmony." Account fmmg.mars@gmail.com only; no piracy.
 - Never synthesize Cape's voice or invent dialogue. Never claim a tool was used without its output. Study CN/Nick/Disney craft; never ingest leaked assets.
 - Commit author is always `mhvnsnt`: judge work by files, not by who claims it.
