@@ -20,3 +20,8 @@ Launch once installed: `/usr/local/ToonBoomAnimation/harmonyPremium_27/lnx86_64/
 - Owner's other machines: only an Android phone (offline). Muse's Ubuntu VM (where the .exe was downloaded) is not reachable from this box.
 - Result: `find_harmony.sh` -> `HARMONY_BIN=NOT_FOUND`. `harmony_stage.py` -> Cape Jones Toon fallback, exit 0 (19 nodes, 6 chains, round-trip exact).
 - Unblocker: download **Harmony 27 Premium — GNU/Linux** tarball from the Toon Boom account (fmmg.mars@gmail.com) to this box, then `sudo bash production/harmony/install_harmony_linux.sh <file>`, then LicenseWizard sign-in (owner).
+
+## Download attempt, 2026-11-05 (later)
+- Box browser attempts to open https://www.toonboom.com/ (account, homepage) and docs.toonboom.com failed with `net::ERR_TUNNEL_CONNECTION_FAILED`; Google sign-in (fmmg.mars@gmail.com) was never reached; nothing downloaded.
+- Shell `curl` to https://www.toonboom.com/ and https://docs.toonboom.com/ returned HTTP 200 — the box browser's proxy tunnel failed, not the site.
+- Still `HARMONY_BIN=NOT_FOUND`. See `docs/SHOW-PRODUCTION-STATUS.md` §5 before claiming any Harmony output.

@@ -66,3 +66,6 @@ Writing first, pictures last. Record the episode. Edit the sound into a funny ra
 - AWN, OLM Asia Launches New Pokemon Animation Series with the Help of Celsys' Clip Studio Paint. Producer Hiroyuki Kato: over 300 shots, 4,000 to 5,000 drawings per episode. https://www.awn.com/animationworld/olm-asia-launches-new-pok-mon-animation-series-help-celsys-clip-studio-paint
 - Mental Floss, 15 Things You Might Not Know About Space Ghost Coast to Coast. Five new pieces of animation for episode 1, plus budget and production notes. https://www.mentalfloss.com/entertainment/tv/15-things-you-might-not-know-about-space-ghost-coast-coast
 - Full research: Pokemon vs. Adult Swim production models, 2026-10-29 (AWN, Mental Floss, Creative Loafing, Nerdist, and the Home Movies and Squigglevision production accounts).
+
+
+> **Required:** read `docs/SHOW-PRODUCTION-STATUS.md` before claiming an episode, segment, or Harmony render (owner 2026-11-05).

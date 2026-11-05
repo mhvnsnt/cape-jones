@@ -38,6 +38,7 @@ The owner has Toon Boom Harmony and other paid, free, and production-level show 
 
 ## Related docs
 
+- `docs/SHOW-PRODUCTION-STATUS.md` — REQUIRED: what is actually true about the 2D show right now (read before claiming episode/Harmony progress).
 - `docs/SHOW-BIBLE.md` — show bible (this canon sits above it).
 - `docs/HANDOFF-CAPE-JONES-X-WESTERN-HEART.md` — Cape Jones 3D x Western Heart ("Immortal Qombat") tie-in.
 - `docs/production/CAPE-JONES-PRODUCTION-MODEL.md` — production model.
