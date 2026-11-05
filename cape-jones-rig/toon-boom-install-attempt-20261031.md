@@ -1,4 +1,6 @@
 # Toon Boom Harmony install attempt — Muse's side (Linux VM)
+
+> **CORRECTION 2026-11-05 (owner directive):** this note is incomplete. Harmony 27 DOES have a GNU/Linux workstation build (.tar.gz -> ./install STANDALONE -> LicenseWizard), per `toon-boom-10-ways-20261101/10-WAYS-REPORT-20261101.md`. Harmony runs on Linux — find the install (`production/harmony/find_harmony.sh`). Do not cite the "Windows/Mac only" lines below as law.
 Date checked: 2026-10-31 (Sat, America/Chicago), subagent report to parent.
 Account in scope: fmmg.mars@gmail.com ONLY. marquiswhitacre@gmail.com must NOT be used (rejected by Toon Boom, "unrecognized username or password").
 
