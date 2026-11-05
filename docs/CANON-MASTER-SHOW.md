@@ -31,7 +31,7 @@ No other game-to-segment mappings are canon yet. Do not create them without an o
 
 The owner has Toon Boom Harmony and other paid, free, and production-level show tools and material, including work with Adult Swim and other networks. Agents must put the tools the owner actually has legitimate access to into use, not leave them sitting unused.
 
-- Use licensed / owned / subscription tools (Toon Boom Harmony when a Windows or Mac machine exists).
+- Use licensed / owned / subscription tools (Toon Boom Harmony — it runs on Linux: Harmony 27 has a native GNU/Linux build; find the install with `production/harmony/find_harmony.sh` and never write "Linux unsupported").
 - Use the open-source tools already vendored that can actually run (Natron, Glaxnimate, Pencil2D, etc.).
 - Document anything present-but-unused: what it is, where it is, why it is not in the pipeline yet, and what would unblock it.
 - This law does not authorize pulling in leaked materials; tooling means licensed, owned, subscription, or open-source tools.
