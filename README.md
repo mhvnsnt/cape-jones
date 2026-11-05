@@ -10,4 +10,5 @@ Show repo for the Cape Jones series.
 
 - `animation-study/` — model sheets, rigs, style analysis for the Cape Jones look
 - `docs/` — show bible, canon notes
+- `docs/CANON-MASTER-SHOW.md` — master-show canon (owner 2026-11-05): Cape Jones = master show + test ground for every pipeline
 - `production/` — episode production files
