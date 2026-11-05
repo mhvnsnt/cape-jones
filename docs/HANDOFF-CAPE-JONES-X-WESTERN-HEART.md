@@ -62,3 +62,7 @@ See `docs/ANIM-GATE.md` — show clips can never play in FIGHT; crossover only v
 
 ## See also
 - `docs/CANON-MASTER-SHOW.md` — owner master-show canon (2026-11-05).
+
+
+## Owner correction 2026-11-05 (t89u)
+Immortal Qombat picture in Cape Jones MUST be pulled from the Western Heart game/repo — not a standalone clay/Blender 3D sketch (e.g. `ep1_chain_170_195.mp4`). See `docs/SHOW-PRODUCTION-STATUS.md` §3a.

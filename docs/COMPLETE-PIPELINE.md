@@ -425,3 +425,6 @@ wired into one studio. **`docs/STUDIO-ARCHITECTURE.md`** is the canonical doc.
 - `scene_final.blend` on release `sitting-final-20261023` (832MB, published, sha-verified) = recliner-mech scene + baked cape merged (split reconstructed positionally: 282,518 cape verts cut from the body, baked CapeJones_Cape appended with cache intact, frame-40 cape bbox identical post-merge, recline=0, action/placement untouched).
 - `FINAL_front_f40_v1.png` (960x540 @100%, 24 samples, strip-rendered + feather-composited over 70/23 overlap rows after hard-cut seams showed) — viewed by lane AND by me at full res: cape drapes with fold shading and pools beside the chair to the floor, chair closed, no seam lines, head/hands clean.
 - The full Oct-23 directive queue for this saga is closed: #156/#157 closed, #167 fixed+merged, placed3 recovered, recliner mechanism shipped, cape baked, final still rendered — every scene on a GitHub release (`sitcanon-anim-placed-20261020` / `recliner-mech-20261023` / `cape-bake-20261023` / `sitting-final-20261023`).
+
+
+> **Required:** read `docs/SHOW-PRODUCTION-STATUS.md` before claiming an episode, segment, or Harmony render (owner 2026-11-05).
