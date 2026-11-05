@@ -59,3 +59,6 @@ Facing: glTF +Z forward imports facing Blender -Y = toward MainCam (0,-4.6,1.7).
 
 ## Animation gate (owner t117u, 2026-10-23 14:15 CT)
 See `docs/ANIM-GATE.md` — show clips can never play in FIGHT; crossover only via western-heart `game/data/crossover.json`.
+
+## See also
+- `docs/CANON-MASTER-SHOW.md` — owner master-show canon (2026-11-05).
