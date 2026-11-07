@@ -5,6 +5,9 @@ Your operating manual for this workspace, written by you. Your main instructions
 ## NO-HAND-TOOLING LAW (owner 2026-10-16)
 "Stop hand-tooling and bullshitting and prototyping stuff. We have whole full systems we can wire up and put together. Use Ghidra and MCP, use all the stuff for reverse engineering and chimera building and game mixing and game modding, use it all together. Stop fiddling with a screwdriver for a jackhammer job when the jackhammer is right there." No more one-off Python scripts guessing at formats. Use the full systems: Ghidra for disassembly/decompilation, MCP servers to wire tools together, existing RE frameworks and pipelines already in the repos. Build production-grade tooling, not prototypes.
 
+## ARCHIVE-ORG-FIRST LAW (owner 2026-11-06)
+His words: "always just go to archive.org first." For ANY game acquisition or teardown pull, ARCHIVE.ORG IS CHECKED FIRST — before Steam, before stores, before torrents, before anywhere else. Only when archive.org verifiably does NOT have the game — checked LIVE via its search/metadata API with the item's actual files inspected (names, sizes, formats), never a title guess — do we move to another source. A stale "not on archive.org" note is NOT a check: catalogs change. Proof case: SCVI was recorded absent in Oct 2026 and was sitting on archive.org in Nov 2026 while lanes burned hours on the Steam route and a purchase decision got put in front of the owner. Every acquisition brief names the archive.org check and its date. Every lane, every game, every time.
+
 ## NO-DEFERRAL LAW (owner 2026-10-13)
 When the owner says to do teardowns and chimera builds, DO NOT DEFER. Get the full game, all files, whatever decryption/decompiling/reverse engineering is needed. Don't defer extraction until the game is fully torn down. This applies to every game used in builds and teardowns. No "we'll do it later," no "deferred due to disk/network" — figure it out and do it.
 
