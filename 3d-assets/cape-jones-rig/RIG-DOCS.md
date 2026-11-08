@@ -185,3 +185,30 @@ earlier.
 **Visual proof:** before/after renders in `deform-proofs/` (elbow_topdown, elbow_crease, jaw_side, head_turn).
 
 **Scripts:** `dump_pose.py` (pose→npz), `analyze.py` (defect metrics + corrective builder), `build_correctives.py` (applies keys/weights/drivers), `render_single.py` (pose renders).
+
+## Permanent Idle Rule — No H Pose (owner, 2026-11-07)
+
+**Natural idle = arms down, sitting and standing. The H pose (biceps
+up, arms pointed out, hands straight) may appear ONLY when the owner
+explicitly directs it (the robot, King Tut, a deliberate gag). Never
+naturally, in any idle, ever.**
+
+Why this is written here: this rig's REST pose is arms-out (upper
+arms 80° from hanging) because the mesh is bound that way — the rest
+pose is not an idle and must never be used as one. The historical
+`idle_heroic_breathe` action could not protect against it: in the
+sitting library it keys euler channels on quaternion-mode bones
+(completely inert), and in the w5r idle file its mirrored arm keys
+flip the right arm to 152° on the current rig.
+
+Going-forward defaults (originals untouched alongside):
+- Sitting: `sitting_pose_library_armsdown.blend` (breathe repaired,
+  live, arms 9.5–17.6° across the loop; the five poses unchanged).
+- w5r idle: `cape_jones_rigged_w5r_idle_armsdown.blend`.
+- Standing/dance: `cape_jones_standing_v6.blend` — its idle lead-in
+  measures 4.9° / 0.9° (FK) at frame 1.
+
+Any new idle for this character must be measured before delivery:
+upper-arm angle from hanging straight down ≤ ~15° at rest frames,
+with zoomed proof. Full audit + diagnoses:
+`production/dance-proof-3d-v6/README.md`.
