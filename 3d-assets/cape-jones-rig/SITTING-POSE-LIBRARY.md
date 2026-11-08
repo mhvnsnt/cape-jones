@@ -54,3 +54,38 @@ finger articulation.
 
 ## Canon
 Palette locked: suit #FFFFFF, cowl #3E1473, cape #000000. Scale 0.925m locked.
+
+## V6 update — 2026-11-07: the permanent no-H-pose rule + corrected default library
+
+**PERMANENT RULE (owner, 2026-11-07): Natural idle = arms down, sitting
+and standing. The H pose (biceps up, arms pointed out, hands straight)
+may appear ONLY when the owner explicitly directs it (the robot,
+King Tut, a deliberate gag). Never naturally, in any idle, ever.**
+
+Audit of this library (measured from the evaluated poses, upper-arm
+angle from hanging straight down):
+
+- All five sitting poses were already arms-down: sit_normal 8.3°,
+  sit_leg_folded 8.3°, sit_recline 9.2°, sit_lean_forward 22.8°
+  (elbows-on-knees lean — the pose itself), sit_shrug 23.0° with the
+  forearms folded to 158.8° (the shrug gesture itself — deliberate,
+  kept as authored).
+- The H carrier was `idle_heroic_breathe`: it keys `rotation_euler`
+  but all 85 pose bones are QUATERNION rotation mode, so the action
+  was completely inert — layered anywhere, it showed the rig's
+  arms-out rest pose (80°). In the older w5r idle file the same
+  action is live but its mirrored arm keys flip the right arm to
+  152° on the current rig.
+
+**Going-forward default: `sitting_pose_library_armsdown.blend`**
+(alongside the original in this folder). It is the same library with
+ONLY the breathe repaired: live channels, arms hanging 9.5–17.6°
+across the breathing loop (riding the breath, arms-down class),
+chest pitch variation 8.6° (the breathing is alive again). All five
+`pose_sit_*` actions are fcurve-identical to the original — seat
+translations, bent legs and recliner yaw are exactly as saved; only
+the idle changed. The original `sitting_pose_library.blend` stays
+untouched as the historical file. The w5r idle file got the same
+repair as `cape_jones_rigged_w5r_idle_armsdown.blend` (only its 12
+arm curves changed). Repair tool: `production/dance-proof-3d-v6/fix_breathe.py`.
+Full diagnosis: `production/dance-proof-3d-v6/README.md`.
