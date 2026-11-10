@@ -2,6 +2,16 @@
 
 Your operating manual for this workspace, written by you. Your main instructions cover how you work in general. This file is where you keep the specific, durable lessons and conventions you pick up as you work, the kind of thing you'd want a future session to know. It's not about the user (that goes in `USER.md` and your memory) or your personality (that's `SOUL.md`); it's about how you get work done here.
 
+## CHECKPOINT-AND-SAVE LAW (owner 2026-11-09 — "get it so where it's like checkpoints and saves so you don't have to keep restarting everything, bro. We covered this like months ago.")
+Every lane runs checkpointed, always — this was already the deal months ago and is now enforced in every brief:
+1. CHECKPOINT FILE FIRST: before any substantive work, the lane creates a CHECKPOINT.md (or PROGRESS.md) in its workdir and updates it after EVERY meaningful step — what's done, every artifact's path + size/hash, results/numbers computed, and the EXACT next step. A lane that dies leaves a resume point, not a mystery.
+2. THE REPO IS THE SAVE: payloads push to the PR branch INCREMENTALLY as each piece completes (WIP commits are the save system; pairs with CONTINUOUS-MIRROR + PUSH-AFTER-EVERY-TURN). Never one giant push at the end; never hold computed results only in process memory — write intermediate data to disk the moment it exists.
+3. RESUME, NEVER RESTART: a successor lane's first act is reading the checkpoint + branch + staged files and continuing from the exact next step. Re-deriving finished work because a predecessor died is a violation. Parents verify the checkpoint state on disk before every relaunch and brief the finisher at the checkpoint, not from the top.
+Proof case for why: 2026-11-09, waddle v4 died four times at/near bootstrap leaving ZERO v4 artifacts while glam's staged build survived two deaths intact — the difference was checkpointed staging.
+
+## PAID-TOOL EQUIVALENTS + CLEAN-ROOM REBUILD RULE (owner 2026-11-09 ~15:53–16:13 CST)
+For paywalled / vendor-account tools: NEVER bring the owner a purchase list. (1) Find the free top-level industry-standard equivalent and wire it up. (2) If it doesn't fully match, compose MORE free stack pieces until the gap closes. (3) Only if literally nothing free reaches the job: study how the paid tool works (public docs, published behavior, papers — clean-room study; the owner's settled scope since 2026-10-30: build our own free version, not steal theirs, not crack a subscription) and build OUR OWN version of that capability in original code, wired into the repo. No capability gap just sits open.
+
 ## NO-HAND-TOOLING LAW (owner 2026-10-16)
 "Stop hand-tooling and bullshitting and prototyping stuff. We have whole full systems we can wire up and put together. Use Ghidra and MCP, use all the stuff for reverse engineering and chimera building and game mixing and game modding, use it all together. Stop fiddling with a screwdriver for a jackhammer job when the jackhammer is right there." No more one-off Python scripts guessing at formats. Use the full systems: Ghidra for disassembly/decompilation, MCP servers to wire tools together, existing RE frameworks and pipelines already in the repos. Build production-grade tooling, not prototypes.
 
@@ -62,7 +72,7 @@ After every turn of work, push it. No PRs stay open. No work sits unmerged or ho
 ## CONTINUOUS RESEARCH + PULL-IN LAW (owner 2026-10-16 ~12:36 EDT)
 Keep doing deep research on EVERYTHING related to all our work, and keep pulling in what you find — open source, experimental, new, old, legacy, production-grade, 2026 cutting-edge. Keep branching vertically and horizontally and expanding everything.
 1. RESEARCH FIRST, real research (GitHub trending, 2026 roundups, HN, papers) — never guess from training data.
-2. Pull in open source first. For non-open-source: document the license status honestly. Some things get documented but NOT pulled (non-commercial / region-excluded licenses).
+2. Pull in open source first. For non-open-source: document the license status honestly — AND PULL IT ANYWAY (owner 2026-11-09, LICENCE-NOT-A-GATE LAW, restated ~15:45 CST "we don't give a fuck about licenses or no licenses bro wire it all up change that rule"): licence status NEVER gates pulling in, wiring up, or using anything that helps, in any lane, for anything missing or needed. There is NO "documented but NOT pulled" category anymore — the licence/source is logged honestly next to the item, and the item gets wired. This supersedes the old carve-out in this law and every licence hold elsewhere.
 3. Wire it up: install, test, document. Push via branch → PR → merge, ONLY when green and non-destructive. NEVER clobber anyone's work — conflicts keep both sides, red CI stays open with a comment naming the blocker.
 4. PULL-STRAIGHT-TO-STORE: clone into repo checkouts, wire up there, push. No local disk hoarding.
 5. Log everything pulled: what, where from, license, where it landed.
