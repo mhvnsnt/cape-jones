@@ -1,0 +1,9 @@
+PARTIAL / WIP — NOT the finished v3.
+/workspace/cape-jones-show-deliver/cape-jones-guard-stance-v3-cloth-PARTIAL-WIP-f51-162-20261110.mp4
+h264 1920x1080 24fps, 112 frames, 4.667 s, no audio; full decode OK; sha256 0edfa9730f73d84bacf74b897bd11f2a72349adddbac02737bc46201afccde12
+= rendered frames 51..162 of 51..288 (render job still running at 1:23 PM CDT: /workspace/cj3d/v2/fr_v3, log render_v3.log)
+Blend: /workspace/cj3d/v2/rig_v3_cloth_g.blend, cloth cache blendcache_rig_v3_cloth_g (288/288 frames baked).
+Cloth: 1,464-vert proxy, top pinned via chest/spine/clavicle weights; collision = 14 per-bone ellipsoids sized from the body mesh (tools/capsules.py), replacing the decimated fragment shell that pushed the cloth up/through; self-collision ON (0.0015); 266k hi-res cape fragments + CapeJones_Cape panel driven by Surface Deform.
+Grounding: pelvis shifted per frame so the lowest sole = floor z 0 (sole min after grounding 0.0000 on 14 sampled frames).
+Viewed: checkframes/v3-partial-checkframes-8-35-62-90pct.png, v2-v3/v2-vs-v3-matched-src-frames.png -> cape hangs full length behind and swings; feet on the floor; arms still forward in guard.
+LIMITS: cape silhouette narrower than the original wide cape; small shard/speck artifacts from the fused Tripo fragments; no penetration metric yet (visual only); cloth does not loop; motion is the CMU 13_17 STAND-IN, not Alisa; set NOT Jungle Outpost.

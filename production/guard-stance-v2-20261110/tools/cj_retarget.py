@@ -17,6 +17,11 @@ def import_src(path):
         if o.type=='MESH': o.hide_render=True; o.hide_viewport=True
     return src
 def prep_target(tgt):
+    # PERMANENT GUARD (owner pt98u): the raw w5r arm chain is one joint out ("H" arms). Refuse it unless the
+    # caller is the arm gate test itself (CJ_ALLOW_RAW_RIG=1). Fixed rigs carry rig.data["cj_arm_fix"] from build_rig_v2.py.
+    import os
+    if "cj_arm_fix" not in tgt.data.keys() and os.environ.get("CJ_ALLOW_RAW_RIG")!="1":
+        raise SystemExit("REFUSED: CapeJones_Rig lacks cj_arm_fix (raw w5r arm chain -> H arms). Run tools/guard_shot_pipeline.sh / build_rig_v2.py first.")
     for pb in tgt.pose.bones:
         for c in pb.constraints: c.mute=True
         pb.rotation_mode='QUATERNION'
