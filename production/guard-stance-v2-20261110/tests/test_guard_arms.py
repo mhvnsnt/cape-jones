@@ -2,9 +2,10 @@
 Measures, on sampled guard frames, the UPPER-ARM direction (shoulder->elbow) in CHEST coordinates for
  (a) source skeleton, (b) target bones, (c) the actual EVALUATED Cape body mesh (landmark rings picked on the
  rest mesh from its anatomy, independent of where the rig puts its joints). Exits 1 on failure."""
-import bpy, sys, json, numpy as np
+import bpy, sys, json, os, numpy as np
+os.environ["CJ_ALLOW_RAW_RIG"]="1"  # the gate must be able to measure (and fail) the raw rig
 from mathutils import Vector
-sys.path.insert(0,"/workspace/cj3d/v2"); import cj_retarget as R
+sys.path.insert(0,__import__("os").environ.get("CJ_TOOLS","/workspace/cj3d/v2")); import cj_retarget as R
 glb,out=sys.argv[-2],sys.argv[-1]
 tgt=bpy.data.objects["CapeJones_Rig"]; body=bpy.data.objects["CapeJones_Body"]
 src=R.import_src(glb); R.prep_target(tgt)

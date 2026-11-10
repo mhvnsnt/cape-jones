@@ -1,0 +1,193 @@
+{
+ "rows": [
+  {
+   "frame": 60,
+   "old_skin_cape_deep_frac": 6.754855052068675e-05,
+   "v3_cloth_cape_deep_frac": 0.0,
+   "old_per": {
+    "ColCap_pelvis": 18,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_spine_1": 0,
+    "ColCap_spine_2": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_pelvis": 0,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_spine_1": 0,
+    "ColCap_spine_2": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   }
+  },
+  {
+   "frame": 90,
+   "old_skin_cape_deep_frac": 4.503236701379116e-05,
+   "v3_cloth_cape_deep_frac": 0.0,
+   "old_per": {
+    "ColCap_pelvis": 12,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_spine_1": 0,
+    "ColCap_spine_2": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_pelvis": 0,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_spine_1": 0,
+    "ColCap_spine_2": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   }
+  },
+  {
+   "frame": 120,
+   "old_skin_cape_deep_frac": 9.381743127873159e-05,
+   "v3_cloth_cape_deep_frac": 0.0,
+   "old_per": {
+    "ColCap_pelvis": 11,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 14,
+    "ColCap_spine_1": 0,
+    "ColCap_spine_2": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_pelvis": 0,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_spine_1": 0,
+    "ColCap_spine_2": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   }
+  },
+  {
+   "frame": 150,
+   "old_skin_cape_deep_frac": 0.000855614973262032,
+   "v3_cloth_cape_deep_frac": 0.002221596772680364,
+   "old_per": {
+    "ColCap_pelvis": 10,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 218,
+    "ColCap_spine_1": 0,
+    "ColCap_spine_2": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_pelvis": 82,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_spine_1": 209,
+    "ColCap_spine_2": 301,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   }
+  },
+  {
+   "frame": 180,
+   "old_skin_cape_deep_frac": 6.379585326953749e-05,
+   "v3_cloth_cape_deep_frac": 0.0,
+   "old_per": {
+    "ColCap_pelvis": 17,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_spine_1": 0,
+    "ColCap_spine_2": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_pelvis": 0,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_spine_1": 0,
+    "ColCap_spine_2": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   }
+  },
+  {
+   "frame": 210,
+   "old_skin_cape_deep_frac": 4.12796697626419e-05,
+   "v3_cloth_cape_deep_frac": 0.0,
+   "old_per": {
+    "ColCap_pelvis": 11,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_spine_1": 0,
+    "ColCap_spine_2": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_pelvis": 0,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_spine_1": 0,
+    "ColCap_spine_2": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   }
+  },
+  {
+   "frame": 240,
+   "old_skin_cape_deep_frac": 0.0003377427526034337,
+   "v3_cloth_cape_deep_frac": 0.0,
+   "old_per": {
+    "ColCap_pelvis": 19,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 71,
+    "ColCap_spine_1": 0,
+    "ColCap_spine_2": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_pelvis": 0,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_spine_1": 0,
+    "ColCap_spine_2": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   }
+  },
+  {
+   "frame": 270,
+   "old_skin_cape_deep_frac": 0.001238390092879257,
+   "v3_cloth_cape_deep_frac": 0.0023904681489820808,
+   "old_per": {
+    "ColCap_pelvis": 11,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 319,
+    "ColCap_spine_1": 0,
+    "ColCap_spine_2": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_pelvis": 36,
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_spine_1": 0,
+    "ColCap_spine_2": 601,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   }
+  }
+ ],
+ "median_old": 8.068299089970917e-05,
+ "median_v3": 0.0,
+ "max_v3": 0.0023904681489820808,
+ "PASS": true,
+ "note": "ellipsoids = tools/capsules.py proxies shrunk to 0.9; deep-inside only"
+}

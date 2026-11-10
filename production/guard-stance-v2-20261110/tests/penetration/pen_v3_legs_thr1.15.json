@@ -1,0 +1,145 @@
+{
+ "rows": [
+  {
+   "frame": 60,
+   "old_skin_cape_deep_frac": 0.0,
+   "v3_cloth_cape_deep_frac": 0.0,
+   "old_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   }
+  },
+  {
+   "frame": 90,
+   "old_skin_cape_deep_frac": 7.130124777183601e-05,
+   "v3_cloth_cape_deep_frac": 0.0,
+   "old_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 19,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   }
+  },
+  {
+   "frame": 120,
+   "old_skin_cape_deep_frac": 0.0002776995965850455,
+   "v3_cloth_cape_deep_frac": 0.0,
+   "old_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 74,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   }
+  },
+  {
+   "frame": 150,
+   "old_skin_cape_deep_frac": 0.001951402570597617,
+   "v3_cloth_cape_deep_frac": 0.008034524814710573,
+   "old_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 520,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_thigh_L": 2141,
+    "ColCap_thigh_R": 0
+   }
+  },
+  {
+   "frame": 180,
+   "old_skin_cape_deep_frac": 0.0,
+   "v3_cloth_cape_deep_frac": 0.0,
+   "old_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   }
+  },
+  {
+   "frame": 210,
+   "old_skin_cape_deep_frac": 0.00024017262407355288,
+   "v3_cloth_cape_deep_frac": 0.0,
+   "old_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 64,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   }
+  },
+  {
+   "frame": 240,
+   "old_skin_cape_deep_frac": 0.0004953560371517028,
+   "v3_cloth_cape_deep_frac": 0.0,
+   "old_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 132,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   }
+  },
+  {
+   "frame": 270,
+   "old_skin_cape_deep_frac": 0.0023266722957125435,
+   "v3_cloth_cape_deep_frac": 0.00932545266910592,
+   "old_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 620,
+    "ColCap_thigh_L": 0,
+    "ColCap_thigh_R": 0
+   },
+   "v3_per": {
+    "ColCap_shin_L": 0,
+    "ColCap_shin_R": 0,
+    "ColCap_thigh_L": 2485,
+    "ColCap_thigh_R": 0
+   }
+  }
+ ],
+ "median_old": 0.00025893611032929917,
+ "median_v3": 0.0,
+ "max_v3": 0.00932545266910592,
+ "PASS": true,
+ "note": "ellipsoids = tools/capsules.py proxies shrunk to 0.9; deep-inside only"
+}

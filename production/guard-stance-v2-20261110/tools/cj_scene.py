@@ -5,7 +5,7 @@ def setup(view="front3q",res=(1920,1080),pct=100,samples=8,floor_z=None):
     if "BlenRigMdefCage" in bpy.data.objects: bpy.data.objects["BlenRigMdefCage"].hide_render=True
     bpy.ops.mesh.primitive_plane_add(size=30); fl=bpy.context.object; fl.name="SetFloor"
     m=bpy.data.materials.new("floor"); m.use_nodes=True; m.node_tree.nodes["Principled BSDF"].inputs[0].default_value=(0.12,0.12,0.14,1); fl.data.materials.append(m)
-    fl.location.z=floor_z if floor_z is not None else -0.013
+    fl.location.z=floor_z if floor_z is not None else float(sc.get("cj_floor_z",-0.013))
     wd=bpy.data.worlds.new("w"); sc.world=wd; wd.use_nodes=True; wd.node_tree.nodes["Background"].inputs[0].default_value=(0.05,0.05,0.08,1)
     for n,loc,e in (("key",(3,-4,5),900),("fill",(-4,-3,3),300),("rim",(0,5,4),700)):
         L=bpy.data.lights.new(n,'AREA'); L.energy=e; L.size=3; o=bpy.data.objects.new(n,L); sc.collection.objects.link(o); o.location=loc

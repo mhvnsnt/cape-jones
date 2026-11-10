@@ -54,3 +54,28 @@ The visible cape is about 156 Tripo fragment islands (266k verts) fused into `Ca
 Two full bakes (268 and 288 frames) ran. Both rode up and bunched at the shoulders during the guard
 (evidence/cloth-*-FAILED*.png; proxy z-min climbs from 0.06 to about 0.66). A thin-collision test held at rest (stable)
 but still rode up once he moved. I have not rendered any cloth into the video.
+
+## UPDATE 2026-11-10 ~1:45 PM CDT: v3 cloth + adoption status (evidence-based)
+**Arm-fix adoption**
+- Every consumer in this folder now refuses the raw rig. `tools/cj_retarget.py` `prep_target()` stops with `REFUSED` unless the rig carries `cj_arm_fix`, which `build_rig_v2.py` writes. `tools/render_guard.py` checks the same thing.
+- Verified: render_pose on the raw rig exits 1 (REFUSED). The arm gate exits 1 on the raw rig and 0 on the fixed rig.
+- `tools/guard_shot_pipeline.sh` is the gate-first entry point. Run with `STOP_AFTER_GATE=1` it passed end to end (raw rig FAIL, fixed rig PASS).
+- **NOT adopted repo-wide:** the repo blend `3d-assets/cape-jones-rig/cape_jones_rigged_w5r*.blend` is unchanged and still defective. Older scripts elsewhere in the repo that load it directly do not get this guard, and CI does not run Blender. See `3d-assets/cape-jones-rig/W5R-ARM-JOINTS-DEFECT-READ-FIRST.md`. The permanent repo-wide fix is still PENDING. It needs either the fixed blend committed (95 MB, over the 90 MB rule) or the other consumers moved onto this pipeline.
+
+**Cloth v3 (`tools/bake_v3.py` + `tools/capsules.py`)**
+- Collision now uses 14 per-bone ellipsoids sized from the body mesh, instead of the decimated fragment shell (that shell is what pushed the cape up and through him).
+- Self-collision ON. Friction 0. Time scale 1.
+- Grounding: the pelvis is shifted per frame so the lowest sole sits at the floor (z = 0). v1/v2 floated for the whole shot.
+- The bake covers 288/288 frames. It hangs full length and swings; see `evidence/cloth-v3-*.png`, `v2-v3/`, `checkframes/v3-*`.
+
+**Penetration (`tools/pen_test.py`, `tests/penetration/*.json`)** = share of cape verts inside the leg ellipsoids, on 8 frames:
+
+| test | old skin-bound cape (median / max) | v3 cloth (median / max) |
+|---|---|---|
+| inside 0.9× ellipsoid (legs+pelvis+torso) | 0.008% / 0.12% | 0.0% / 0.24% |
+| inside 1.15× ellipsoid (legs only) | 0.026% / 0.23% | 0.0% / 0.93% |
+
+v3 is clean on 6 of 8 frames, but WORSE than the old cape on the knee-raise frames 150 and 270 (same source frame).
+This metric also did NOT reproduce the reviewer's "heavy" thigh cut-through on v2, so it is too weak to prove a pass.
+Status: penetration NOT proven fixed.
+Other known v3 defects: the cape reads narrower than the original; small shard artifacts from the fused Tripo fragments; the cloth does not loop.

@@ -11,4 +11,4 @@ cd=bpy.data.cameras.new("c"); cam=bpy.data.objects.new("c",cd); sc.collection.ob
 cam.location=(2.6,0.3,0.5); cam.rotation_euler=(Vector((0,0,0.45))-cam.location).to_track_quat('-Z','Y').to_euler()
 for f in range(1,111):
     sc.frame_set(f)
-    if f in (1,30,50,80,110): sc.render.filepath=f"/workspace/cj3d/v2/probe/cl4_{f:03d}.png"; bpy.ops.render.render(write_still=True)
+    if f in (1,30,50,80,110): sc.render.filepath=f"/workspace/cj3d/v2/probe/cl5_{f:03d}.png"; bpy.ops.render.render(write_still=True)

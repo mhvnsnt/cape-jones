@@ -6,11 +6,11 @@ into CapeJones_Body (plus the static CapeJones_Cape panel) -> not simulatable di
  3 hi-res cape fragments separated (body copy) and driven by the proxy with SURFACE DEFORM; body hides them with a MASK.
 Usage: blender -b rig_v2_arms.blend --python build_cloth.py -- STANCE.glb OUT.blend [NLOOPMOTIONFRAMES]"""
 import bpy, bmesh, numpy as np, sys, math
-sys.path.insert(0,"/workspace/cj3d/v2"); import cj_retarget as R
+sys.path.insert(0,__import__("os").environ.get("CJ_TOOLS","/workspace/cj3d/v2")); import cj_retarget as R
 glb,OUT=sys.argv[-2],sys.argv[-1]
 sc=bpy.context.scene; rig=bpy.data.objects["CapeJones_Rig"]; body=bpy.data.objects["CapeJones_Body"]; me=body.data
 n=len(me.vertices); co=np.zeros(n*3); me.vertices.foreach_get("co",co); co=co.reshape(-1,3)
-lab=np.load("/workspace/cj3d/v2/body_islands.npy"); lum=np.load("/workspace/cj3d/v2/body_texcol.npy").mean(1)
+lab=np.load(__import__("os").environ.get("CJ_WORK","/workspace/cj3d/v2")+"/body_islands.npy"); lum=np.load(__import__("os").environ.get("CJ_WORK","/workspace/cj3d/v2")+"/body_texcol.npy").mean(1)
 cnt=np.bincount(lab); ml=np.bincount(lab,lum)/cnt; my=np.bincount(lab,co[:,1])/cnt
 capeisl=np.where((ml<0.15)&(my>0.02)&(cnt>=50))[0]; capev=np.isin(lab,capeisl)
 print("CAPE islands",len(capeisl),"verts",int(capev.sum()))
