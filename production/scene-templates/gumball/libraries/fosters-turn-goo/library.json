@@ -1,0 +1,35 @@
+{
+ "id": "fosters-turn-goo",
+ "kind": "static-puppet-library",
+ "show": "Foster's Home for Imaginary Friends",
+ "collection": "Foster's Home for Imaginary Friends — FOSTERS MAIN MODEL TURNS/Flash (inside CN-Leaks-001's FOSTERS folder)",
+ "characters": [
+  "Goo"
+ ],
+ "source_file": "Goo_Turnaround.fla",
+ "source_archive": "CN-Leaks-001-gumball.zip",
+ "archive_location": "mhvnsnt/cn-gigaleak-gumball, draft release untagged-1676e192ae8c72e95791",
+ "size_bytes": 4061184,
+ "format": "Binary FLA (OLE2 compound, pre-XFL)",
+ "symbol_count": null,
+ "symbols": null,
+ "recovered_names": [
+  "Goo Turnaround (title)",
+  "053-GooTurnaround-bedrooms.fla (referenced sibling)"
+ ],
+ "parts_census": null,
+ "views": null,
+ "presentation_frames": "Not measured (no companion SWF in the archive)",
+ "completeness": "Model-turn library with special-pose extensions",
+ "notes": [
+  "Binary FLA (OLE2 compound). References a bedroom special-poses sibling file ('053-GooTurnaround-bedrooms.fla') and cross-references the Frankie and Mac turnaround files — the Foster's turns were kept as one interlinked production folder, not standalone sheets.",
+  "Symbol numbering runs past 115."
+ ],
+ "media": {
+  "status": "blocked-write-guard",
+  "target_file": "sheet-fosters-turn-goo.png",
+  "delivery_dir": "~/workspace/your_files/scene-templates/",
+  "note": "Model-sheet render staged in render_model_sheets.sh; the sandbox write guard currently refuses rendered-binary writes (EPERM/0 bytes). Census and catalog are unaffected."
+ },
+ "record_path": "production/scene-templates/gumball/libraries/fosters-turn-goo/library.json"
+}

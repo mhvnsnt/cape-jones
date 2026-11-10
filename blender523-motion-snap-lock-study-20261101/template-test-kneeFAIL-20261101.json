@@ -1,0 +1,72 @@
+{
+ "template": "motion_template.py",
+ "locked_default": {
+  "snap_on": 13,
+  "cross_start": 14,
+  "cross_end": 36,
+  "snap_off": 37,
+  "snap_z": 0.11,
+  "torso_z": 0.08,
+  "head_z": 0.12
+ },
+ "gates": {
+  "snap_sooner": {
+   "status": "PASS",
+   "detail": {
+    "Draw-Arm_Front.png": {
+     "rest_z": 0.03,
+     "snap_on": 13,
+     "snap_off": 37,
+     "crossing_bad_frames": [],
+     "torso_z": 0.08,
+     "head_z": 0.12,
+     "snap_z": 0.11,
+     "above_torso_below_head": true
+    },
+    "Draw-Arm_Back.png": {
+     "rest_z": 0.035,
+     "snap_on": 13,
+     "snap_off": 37,
+     "crossing_bad_frames": [],
+     "torso_z": 0.08,
+     "head_z": 0.12,
+     "snap_z": 0.11,
+     "above_torso_below_head": true
+    }
+   },
+   "rule": "Snap ON at the last frame before crossing, held every frame through crossing, off only when arms are clear. Torso < arm < head for chest crossing."
+  },
+  "whole_chain": {
+   "status": "PASS",
+   "detail": {
+    "keyed_arm_objects": [
+     "Draw-Arm_Front.png",
+     "Draw-Arm_Back.png"
+    ],
+    "note": "Whole arm chain per object; no forearm/fist was keyed separately from its upper arm."
+   }
+  },
+  "knee_feet": {
+   "status": "FAIL",
+   "detail": {
+    "mismatches": [
+     "25:leg1"
+    ],
+    "exception_pose": null,
+    "rule": "Knee direction == toe direction, per frame, both legs; exception only for a Mars-named specific pose."
+   }
+  },
+  "grounded": {
+   "status": "PASS",
+   "detail": {
+    "floating_feet": [],
+    "rule": "Feet planted unless the shot is labelled airborne; planted foot within 5 px of ground."
+   }
+  },
+  "wrist": {
+   "status": "NOT_CHECKED",
+   "detail": "No armature object in this blend; wrist gate needs the rig's bone data."
+  }
+ },
+ "overall": "FAIL"
+}

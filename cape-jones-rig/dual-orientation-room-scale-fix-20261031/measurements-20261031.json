@@ -1,0 +1,86 @@
+{
+  "room_background": "STAND-IN batch-KKGuh, NOT canonical",
+  "lock": "2.5x standing, rig 950px, feet on floor, seated 2.3x",
+  "locked_preview_measured": {
+    "file": "showcase/layout-pass-room-scaled-25x-20261031.jpg",
+    "size": [
+      1168,
+      1060
+    ],
+    "head_top_y": 268,
+    "feet_bottom_y": 911,
+    "figure_height_preview_px": 643,
+    "preview_scale_vs_950": 0.677,
+    "height_ratio": 0.607
+  },
+  "old_dual": {
+    "figure_height_master": 709,
+    "head_master": 613,
+    "feet_master": 1322,
+    "feet_vs_rug_top_1371": -49,
+    "feet_vs_chair_feet_1518": -196,
+    "verdict": "FLOATING, too small"
+  },
+  "new_master": {
+    "figure_bbox": [
+      593,
+      385,
+      1327,
+      1550
+    ],
+    "height": 1165,
+    "head": 385,
+    "feet": 1550,
+    "waist_est": 1002,
+    "chair_back_top_est": 700,
+    "waist_minus_chair_back": 302,
+    "chair_back_check": "WARNING - contradiction, see report"
+  },
+  "protected_square": [
+    420,
+    420,
+    1500,
+    1500
+  ],
+  "centre_crop_consequence": {
+    "landscape_head_cut_px": 35,
+    "landscape_feet_cut_px": 50,
+    "portrait_whole": true,
+    "square_centre_crop_whole": false
+  },
+  "recommended": "PULL-BACK / TWO-FRAMING: portrait = centre crop from room-scale master (whole); landscape = dedicated 1920x1080 framing at same relative scale (figure 655px in 1080 frame, feet 924); square = pull-back resize of 1165x1165 master window (not centre crop)",
+  "new_landscape": {
+    "figure_bbox": [
+      754,
+      269,
+      1167,
+      924
+    ],
+    "height": 655,
+    "feet": 924
+  },
+  "new_portrait": {
+    "figure_bbox": [
+      173,
+      385,
+      907,
+      1550
+    ],
+    "whole": true
+  },
+  "gate": {
+    "alpha_height": 1165,
+    "height_ratio": 0.6068,
+    "target_ratio": 0.607,
+    "scale_ok": true,
+    "feet_y": 1550,
+    "feet_on_rug": true,
+    "rug_top_master": 1371,
+    "chair_feet_master": 1518,
+    "chair_back_top_master_est": 700,
+    "waist_y_est": 1002,
+    "chair_back_waist_diff_px": 302,
+    "chair_back_check": "WARNING - see report, not a pixel pass in this crop",
+    "hard_gate_scale_and_feet_pass": true
+  }
+}

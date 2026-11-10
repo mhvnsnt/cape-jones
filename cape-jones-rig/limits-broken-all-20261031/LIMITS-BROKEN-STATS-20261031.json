@@ -1,0 +1,52 @@
+{
+  "normal_v2": {
+    "left_mean": [
+      132.98124097357913,
+      130.82003440659247,
+      135.69631934415088
+    ],
+    "right_mean": [
+      101.12617109589779,
+      99.8999299229152,
+      103.1223060751442
+    ],
+    "left_minus_right_R": 31.855069877681345
+  },
+  "crisp_shafts": {
+    "row_y": 750,
+    "sharp_transitions_gt40": 47,
+    "frame": "1100x1500",
+    "blur_px": 0
+  },
+  "gold_split": {
+    "gold_sample_median": [
+      255.0,
+      180.0,
+      80.0
+    ],
+    "input_gold": [
+      255,
+      180,
+      80
+    ],
+    "seam": "opaque, 2px, no semi-transparent overlap"
+  },
+  "cowl_second_signal_accuracy": 1.0,
+  "cowl_cases": 6,
+  "running_frames": 6,
+  "flying_afterglow_frames": 4,
+  "angle_gate": [
+    {
+      "pose": "v7c-jump-COWL-SNAP",
+      "gate": "PASS"
+    },
+    {
+      "pose": "ginyu-03-COWL-SNAP",
+      "gate": "PASS"
+    },
+    {
+      "pose": "rendered_clip_no_angles",
+      "gate": "FAIL-missing-angles"
+    }
+  ]
+}

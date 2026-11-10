@@ -1,0 +1,186 @@
+{
+  "gates": {
+    "mapping": "IDENTITY 1:1, app x,y = top-left on 1400x1600 canvas, rotation about piece centre. Proof: starting pelvis 584,640 and head 635,195 match attachment-fix top-lefts exactly.",
+    "bbox": [
+      225,
+      195,
+      929,
+      1384
+    ],
+    "alpha_px": 408973,
+    "inside_canvas": true,
+    "alpha_bottom_overall": 1384,
+    "alpha_bottom_left_band_0_700": 1384,
+    "alpha_bottom_right_band_700_1400": 1227,
+    "feet_note": "Feet are at the measured alpha bottom of this saved pose, NOT at 1475: saved shin top-lefts (225,945 / 395,985) place the boots higher than the previous 1475-ground builds. No figure shift was applied to fake 1475, because the task was exact saved numbers.",
+    "hands": 2,
+    "fists_drawn": 0,
+    "hand_scale_final": "1.141875x native (1.0875 scaledown x 1.05 model scale), both hands, Mars 2026-11-01 01:09 CST",
+    "hand_centres": {
+      "handL": [
+        582,
+        816
+      ],
+      "handR": [
+        617,
+        831
+      ]
+    },
+    "hand_sizes_px": {
+      "handL": [
+        93,
+        134
+      ],
+      "handR": [
+        93,
+        134
+      ]
+    },
+    "pieces": [
+      {
+        "id": "cape",
+        "x": 360,
+        "y": 330,
+        "rotation": 0,
+        "z": 0,
+        "locked": true
+      },
+      {
+        "id": "upperArmL",
+        "x": 490,
+        "y": 390,
+        "rotation": 5,
+        "z": 1,
+        "locked": true
+      },
+      {
+        "id": "thighR",
+        "x": 590,
+        "y": 750,
+        "rotation": 6,
+        "z": 2,
+        "locked": true
+      },
+      {
+        "id": "thighL",
+        "x": 400,
+        "y": 710,
+        "rotation": 2,
+        "z": 3,
+        "locked": true
+      },
+      {
+        "id": "pelvis",
+        "x": 565,
+        "y": 650,
+        "rotation": 0,
+        "z": 4,
+        "locked": true
+      },
+      {
+        "id": "forearmL",
+        "x": 455,
+        "y": 580,
+        "rotation": -15,
+        "z": 4,
+        "locked": true
+      },
+      {
+        "id": "kneeL",
+        "x": 380,
+        "y": 885,
+        "rotation": 0,
+        "z": 4,
+        "locked": false
+      },
+      {
+        "id": "elbowCapL",
+        "x": 465,
+        "y": 580,
+        "rotation": 0,
+        "z": 5,
+        "locked": true
+      },
+      {
+        "id": "shinL",
+        "x": 225,
+        "y": 945,
+        "rotation": 0,
+        "z": 6,
+        "locked": false
+      },
+      {
+        "id": "shinR",
+        "x": 395,
+        "y": 985,
+        "rotation": -10,
+        "z": 6,
+        "locked": true
+      },
+      {
+        "id": "kneeR",
+        "x": 560,
+        "y": 950,
+        "rotation": 0,
+        "z": 7,
+        "locked": true
+      },
+      {
+        "id": "torso",
+        "x": 550,
+        "y": 370,
+        "rotation": 0,
+        "z": 8,
+        "locked": true
+      },
+      {
+        "id": "head",
+        "x": 635,
+        "y": 195,
+        "rotation": 0,
+        "z": 9,
+        "locked": false
+      },
+      {
+        "id": "upperArmR",
+        "x": 805,
+        "y": 420,
+        "rotation": 15,
+        "z": 10,
+        "locked": true
+      },
+      {
+        "id": "forearmR",
+        "x": 685,
+        "y": 650,
+        "rotation": 45,
+        "z": 11,
+        "locked": true
+      },
+      {
+        "id": "elbowCapR",
+        "x": 775,
+        "y": 610,
+        "rotation": 0,
+        "z": 12,
+        "locked": false
+      },
+      {
+        "id": "handL",
+        "x": 530,
+        "y": 740,
+        "rotation": -46,
+        "z": 13,
+        "locked": true
+      },
+      {
+        "id": "handR",
+        "x": 565,
+        "y": 755,
+        "rotation": 70,
+        "z": 13,
+        "locked": true
+      }
+    ]
+  }
+}

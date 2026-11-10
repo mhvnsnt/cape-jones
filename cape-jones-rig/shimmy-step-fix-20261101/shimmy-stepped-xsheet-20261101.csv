@@ -1,0 +1,98 @@
+frame,kind,from,to,t,eased,dy_rig,dx_rig,height_video_px,label
+0,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+1,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+2,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+3,inbetween,apose,shimmy centre both down,0.17,0.02,0,0,0,GROUNDED
+4,inbetween,apose,shimmy centre both down,0.33,0.15,1,0,0,GROUNDED
+5,BREAKDOWN arc +10deg largest-moving arm upper,apose,shimmy centre both down,0.5,0.5,6,0,0,GROUNDED
+6,inbetween,apose,shimmy centre both down,0.67,0.85,10,0,0,GROUNDED
+7,BREAKDOWN follow-through +8deg that arm lower,apose,shimmy centre both down,0.83,0.98,11,0,0,GROUNDED
+8,KEY hold,shimmy centre both down,shimmy centre both down,0,0,12,0,0,GROUNDED
+9,KEY hold,shimmy centre both down,shimmy centre both down,0,0,12,0,0,GROUNDED
+10,KEY hold,shimmy centre both down,shimmy centre both down,0,0,12,0,0,GROUNDED
+11,KEY hold,shimmy centre both down,shimmy centre both down,0,0,12,0,0,GROUNDED
+12,KEY hold,shimmy centre both down,shimmy centre both down,0,0,12,0,0,GROUNDED
+13,inbetween,shimmy centre both down,"step LEFT: Foot1 UP, Foot2 DOWN",0.17,0.02,12,0,0,GROUNDED
+14,inbetween,shimmy centre both down,"step LEFT: Foot1 UP, Foot2 DOWN",0.33,0.15,16,-2,0,GROUNDED
+15,BREAKDOWN arc +10deg largest-moving arm upper,shimmy centre both down,"step LEFT: Foot1 UP, Foot2 DOWN",0.5,0.5,28,-7,0,GROUNDED
+16,inbetween,shimmy centre both down,"step LEFT: Foot1 UP, Foot2 DOWN",0.67,0.85,39,-12,0,GROUNDED
+17,BREAKDOWN follow-through +8deg that arm lower,shimmy centre both down,"step LEFT: Foot1 UP, Foot2 DOWN",0.83,0.98,43,-14,0,GROUNDED
+18,KEY hold,"step LEFT: Foot1 UP, Foot2 DOWN","step LEFT: Foot1 UP, Foot2 DOWN",0,0,44,-15,0,GROUNDED
+19,KEY hold,"step LEFT: Foot1 UP, Foot2 DOWN","step LEFT: Foot1 UP, Foot2 DOWN",0,0,44,-15,0,GROUNDED
+20,KEY hold,"step LEFT: Foot1 UP, Foot2 DOWN","step LEFT: Foot1 UP, Foot2 DOWN",0,0,44,-15,0,GROUNDED
+21,KEY hold,"step LEFT: Foot1 UP, Foot2 DOWN","step LEFT: Foot1 UP, Foot2 DOWN",0,0,44,-15,0,GROUNDED
+22,inbetween,"step LEFT: Foot1 UP, Foot2 DOWN","step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN",0.17,0.02,43,-15,0,GROUNDED
+23,inbetween,"step LEFT: Foot1 UP, Foot2 DOWN","step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN",0.33,0.15,39,-17,0,GROUNDED
+24,BREAKDOWN arc +10deg largest-moving arm upper,"step LEFT: Foot1 UP, Foot2 DOWN","step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN",0.5,0.5,28,-22,0,GROUNDED
+25,inbetween,"step LEFT: Foot1 UP, Foot2 DOWN","step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN",0.67,0.85,16,-27,0,GROUNDED
+26,BREAKDOWN follow-through +8deg that arm lower,"step LEFT: Foot1 UP, Foot2 DOWN","step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN",0.83,0.98,12,-29,0,GROUNDED
+27,KEY hold,"step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN","step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN",0,0,12,-30,0,GROUNDED
+28,KEY hold,"step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN","step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN",0,0,12,-30,0,GROUNDED
+29,KEY hold,"step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN","step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN",0,0,12,-30,0,GROUNDED
+30,KEY hold,"step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN","step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN",0,0,12,-30,0,GROUNDED
+31,inbetween,"step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN","close LEFT: Foot2 UP, Foot1 DOWN",0.17,0.02,12,-29,0,GROUNDED
+32,inbetween,"step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN","close LEFT: Foot2 UP, Foot1 DOWN",0.33,0.15,12,-27,0,GROUNDED
+33,BREAKDOWN arc +10deg largest-moving arm upper,"step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN","close LEFT: Foot2 UP, Foot1 DOWN",0.5,0.5,12,-22,0,GROUNDED
+34,inbetween,"step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN","close LEFT: Foot2 UP, Foot1 DOWN",0.67,0.85,12,-17,0,GROUNDED
+35,BREAKDOWN follow-through +8deg that arm lower,"step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN","close LEFT: Foot2 UP, Foot1 DOWN",0.83,0.98,12,-15,0,GROUNDED
+36,KEY hold,"close LEFT: Foot2 UP, Foot1 DOWN","close LEFT: Foot2 UP, Foot1 DOWN",0,0,12,-15,0,GROUNDED
+37,KEY hold,"close LEFT: Foot2 UP, Foot1 DOWN","close LEFT: Foot2 UP, Foot1 DOWN",0,0,12,-15,0,GROUNDED
+38,KEY hold,"close LEFT: Foot2 UP, Foot1 DOWN","close LEFT: Foot2 UP, Foot1 DOWN",0,0,12,-15,0,GROUNDED
+39,KEY hold,"close LEFT: Foot2 UP, Foot1 DOWN","close LEFT: Foot2 UP, Foot1 DOWN",0,0,12,-15,0,GROUNDED
+40,inbetween,"close LEFT: Foot2 UP, Foot1 DOWN",shimmy centre both down,0.17,0.02,12,-14,0,GROUNDED
+41,inbetween,"close LEFT: Foot2 UP, Foot1 DOWN",shimmy centre both down,0.33,0.15,12,-12,0,GROUNDED
+42,BREAKDOWN arc +10deg largest-moving arm upper,"close LEFT: Foot2 UP, Foot1 DOWN",shimmy centre both down,0.5,0.5,12,-7,0,GROUNDED
+43,inbetween,"close LEFT: Foot2 UP, Foot1 DOWN",shimmy centre both down,0.67,0.85,12,-2,0,GROUNDED
+44,BREAKDOWN follow-through +8deg that arm lower,"close LEFT: Foot2 UP, Foot1 DOWN",shimmy centre both down,0.83,0.98,12,0,0,GROUNDED
+45,KEY hold,shimmy centre both down,shimmy centre both down,0,0,12,0,0,GROUNDED
+46,KEY hold,shimmy centre both down,shimmy centre both down,0,0,12,0,0,GROUNDED
+47,KEY hold,shimmy centre both down,shimmy centre both down,0,0,12,0,0,GROUNDED
+48,KEY hold,shimmy centre both down,shimmy centre both down,0,0,12,0,0,GROUNDED
+49,KEY hold,shimmy centre both down,shimmy centre both down,0,0,12,0,0,GROUNDED
+50,inbetween,shimmy centre both down,"step RIGHT: Foot2 UP, Foot1 DOWN",0.17,0.02,12,0,0,GROUNDED
+51,inbetween,shimmy centre both down,"step RIGHT: Foot2 UP, Foot1 DOWN",0.33,0.15,12,2,0,GROUNDED
+52,BREAKDOWN arc +10deg largest-moving arm upper,shimmy centre both down,"step RIGHT: Foot2 UP, Foot1 DOWN",0.5,0.5,12,7,0,GROUNDED
+53,inbetween,shimmy centre both down,"step RIGHT: Foot2 UP, Foot1 DOWN",0.67,0.85,12,12,0,GROUNDED
+54,BREAKDOWN follow-through +8deg that arm lower,shimmy centre both down,"step RIGHT: Foot2 UP, Foot1 DOWN",0.83,0.98,12,14,0,GROUNDED
+55,KEY hold,"step RIGHT: Foot2 UP, Foot1 DOWN","step RIGHT: Foot2 UP, Foot1 DOWN",0,0,12,15,0,GROUNDED
+56,KEY hold,"step RIGHT: Foot2 UP, Foot1 DOWN","step RIGHT: Foot2 UP, Foot1 DOWN",0,0,12,15,0,GROUNDED
+57,KEY hold,"step RIGHT: Foot2 UP, Foot1 DOWN","step RIGHT: Foot2 UP, Foot1 DOWN",0,0,12,15,0,GROUNDED
+58,KEY hold,"step RIGHT: Foot2 UP, Foot1 DOWN","step RIGHT: Foot2 UP, Foot1 DOWN",0,0,12,15,0,GROUNDED
+59,inbetween,"step RIGHT: Foot2 UP, Foot1 DOWN","step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN",0.17,0.02,12,15,0,GROUNDED
+60,inbetween,"step RIGHT: Foot2 UP, Foot1 DOWN","step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN",0.33,0.15,12,17,0,GROUNDED
+61,BREAKDOWN arc +10deg largest-moving arm upper,"step RIGHT: Foot2 UP, Foot1 DOWN","step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN",0.5,0.5,12,22,0,GROUNDED
+62,inbetween,"step RIGHT: Foot2 UP, Foot1 DOWN","step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN",0.67,0.85,12,27,0,GROUNDED
+63,BREAKDOWN follow-through +8deg that arm lower,"step RIGHT: Foot2 UP, Foot1 DOWN","step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN",0.83,0.98,12,29,0,GROUNDED
+64,KEY hold,"step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN","step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN",0,0,12,30,0,GROUNDED
+65,KEY hold,"step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN","step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN",0,0,12,30,0,GROUNDED
+66,KEY hold,"step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN","step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN",0,0,12,30,0,GROUNDED
+67,KEY hold,"step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN","step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN",0,0,12,30,0,GROUNDED
+68,inbetween,"step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN","close RIGHT: Foot1 UP, Foot2 DOWN",0.17,0.02,12,29,0,GROUNDED
+69,inbetween,"step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN","close RIGHT: Foot1 UP, Foot2 DOWN",0.33,0.15,16,27,0,GROUNDED
+70,BREAKDOWN arc +10deg largest-moving arm upper,"step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN","close RIGHT: Foot1 UP, Foot2 DOWN",0.5,0.5,28,22,0,GROUNDED
+71,inbetween,"step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN","close RIGHT: Foot1 UP, Foot2 DOWN",0.67,0.85,39,17,0,GROUNDED
+72,BREAKDOWN follow-through +8deg that arm lower,"step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN","close RIGHT: Foot1 UP, Foot2 DOWN",0.83,0.98,43,15,0,GROUNDED
+73,KEY hold,"close RIGHT: Foot1 UP, Foot2 DOWN","close RIGHT: Foot1 UP, Foot2 DOWN",0,0,44,15,0,GROUNDED
+74,KEY hold,"close RIGHT: Foot1 UP, Foot2 DOWN","close RIGHT: Foot1 UP, Foot2 DOWN",0,0,44,15,0,GROUNDED
+75,KEY hold,"close RIGHT: Foot1 UP, Foot2 DOWN","close RIGHT: Foot1 UP, Foot2 DOWN",0,0,44,15,0,GROUNDED
+76,KEY hold,"close RIGHT: Foot1 UP, Foot2 DOWN","close RIGHT: Foot1 UP, Foot2 DOWN",0,0,44,15,0,GROUNDED
+77,inbetween,"close RIGHT: Foot1 UP, Foot2 DOWN",shimmy centre both down,0.17,0.02,43,14,0,GROUNDED
+78,inbetween,"close RIGHT: Foot1 UP, Foot2 DOWN",shimmy centre both down,0.33,0.15,39,12,0,GROUNDED
+79,BREAKDOWN arc +10deg largest-moving arm upper,"close RIGHT: Foot1 UP, Foot2 DOWN",shimmy centre both down,0.5,0.5,28,7,0,GROUNDED
+80,inbetween,"close RIGHT: Foot1 UP, Foot2 DOWN",shimmy centre both down,0.67,0.85,16,2,0,GROUNDED
+81,BREAKDOWN follow-through +8deg that arm lower,"close RIGHT: Foot1 UP, Foot2 DOWN",shimmy centre both down,0.83,0.98,12,0,0,GROUNDED
+82,KEY hold,shimmy centre both down,shimmy centre both down,0,0,12,0,0,GROUNDED
+83,KEY hold,shimmy centre both down,shimmy centre both down,0,0,12,0,0,GROUNDED
+84,KEY hold,shimmy centre both down,shimmy centre both down,0,0,12,0,0,GROUNDED
+85,KEY hold,shimmy centre both down,shimmy centre both down,0,0,12,0,0,GROUNDED
+86,KEY hold,shimmy centre both down,shimmy centre both down,0,0,12,0,0,GROUNDED
+87,OVERSHOOT 5% beyond key,"close RIGHT: Foot1 UP, Foot2 DOWN",shimmy centre both down,1.05,1.05,12,0,0,GROUNDED
+88,SETTLE back to key,shimmy centre both down,shimmy centre both down,1.0,1.0,12,0,0,GROUNDED
+89,inbetween,shimmy centre both down,apose,0.17,0.02,11,0,0,GROUNDED
+90,inbetween,shimmy centre both down,apose,0.33,0.15,10,0,0,GROUNDED
+91,BREAKDOWN arc +10deg largest-moving arm upper,shimmy centre both down,apose,0.5,0.5,6,0,0,GROUNDED
+92,inbetween,shimmy centre both down,apose,0.67,0.85,1,0,0,GROUNDED
+93,BREAKDOWN follow-through +8deg that arm lower,shimmy centre both down,apose,0.83,0.98,0,0,0,GROUNDED
+94,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+95,KEY hold,apose,apose,0,0,0,0,0,GROUNDED
+96,KEY hold,apose,apose,0,0,0,0,0,GROUNDED

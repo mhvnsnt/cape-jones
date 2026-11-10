@@ -1,0 +1,206 @@
+{
+ "version": "effects-wiring-map-20261031",
+ "date": "2026-10-31",
+ "note": "COORDINATION, not rebuild: the 12 V2 proof systems in showcase/effects-v2-proof-20261031/ are NOT rebuilt here. This map only wires them to CJ shots from shot-specs-30-20261031.json + god-ray-placement-30-20261031.json. Shot specs carry no effect_systems field \u2014 where a system is only inferable (not named), it is PROPOSED, not counted as wired.",
+ "counts": {
+  "systems_total": 12,
+  "wired": 4,
+  "proposed": 5,
+  "unwired": 2,
+  "gate": 1,
+  "wired_systems": [
+   1,
+   2,
+   5,
+   6
+  ],
+  "proposed_systems": [
+   3,
+   4,
+   7,
+   9,
+   10
+  ],
+  "unwired_systems": [
+   8,
+   11
+  ],
+  "shots_with_at_least_one_wired_system": [
+   "CJ-03",
+   "CJ-11",
+   "CJ-12",
+   "CJ-13",
+   "CJ-14",
+   "CJ-19",
+   "CJ-22",
+   "CJ-28",
+   "CJ-29",
+   "CJ-30"
+  ],
+  "shots_with_no_wired_system": 20
+ },
+ "systems": [
+  {
+   "n": 1,
+   "system": "Volumetric god rays / light shafts",
+   "production": "Blender: Principled Volume cube (Density 0.02, Anisotropy 0.5) + Spot light; compositor Glare Sun Beams added back over original (Effects V2 \u00a71)",
+   "gate": "atmosphere + shadow (shaft pool on ground; character rim from shaft side)",
+   "status": "WIRED",
+   "shots": [
+    "CJ-11",
+    "CJ-12",
+    "CJ-13",
+    "CJ-14",
+    "CJ-19",
+    "CJ-22",
+    "CJ-28",
+    "CJ-29",
+    "CJ-30"
+   ],
+   "evidence": "god-ray-placement-30-20261031.json: 9 Level-3 placements; 21 explicit Level-2 no-god-ray decisions (CJ-01..CJ-10, CJ-15..CJ-18, CJ-20, CJ-21, CJ-23..CJ-27). Per-shot production frames still owed \u2014 the V2 proof frame is a generic arms-up proof, not a per-shot frame."
+  },
+  {
+   "n": 2,
+   "system": "Bloom / glow with light spill onto nearby surfaces",
+   "production": "Blender: emissive object (Strength >1) + real Point light at same position; compositor Glare Fog Glow, Threshold 0.8, Size 8, Mix ADD (Effects V2 \u00a72)",
+   "gate": "spill (glow must brighten ground + character near side, spill colour in key hue family)",
+   "status": "WIRED",
+   "shots": [
+    "CJ-03"
+   ],
+   "evidence": "CJ-03 shot spec: 'impact cue + gauntlet glow cue' and 'impact energy + gauntlet glow are Level 4 FX passes'. PROPOSED (not wired): CJ-30 neon glow, CJ-11 stage spotlight glow \u2014 not named in those specs."
+  },
+  {
+   "n": 3,
+   "system": "Atmospheric scattering / haze / fog that shifts with the grade",
+   "production": "Blender: World Volume or bounded Principled Volume cube, Noise Texture into Density 0.001\u20130.05; fog colour follows grade/shift (Effects V2 \u00a73)",
+   "gate": "atmosphere (distant silhouettes soften; air takes grade colour)",
+   "status": "PROPOSED",
+   "shots": [
+    "CJ-11",
+    "CJ-12",
+    "CJ-13",
+    "CJ-14",
+    "CJ-19",
+    "CJ-22",
+    "CJ-28",
+    "CJ-29",
+    "CJ-30"
+   ],
+   "evidence": "No shot spec names fog per shot. Proposed for the 9 god-ray shots because the V2 method ties haze to the same volume cube \u2014 but it is NOT wired until a shot spec names fog_type/density/colour."
+  },
+  {
+   "n": 4,
+   "system": "Particle systems: dust, sparks, embers, rain/snow",
+   "production": "Blender particle system, emissive icosphere instances, light-interacting (Effects V2 \u00a74)",
+   "gate": "atmosphere + shadow (particles inside a shaft sparkle; embers light ground beneath them)",
+   "status": "PROPOSED",
+   "shots": [
+    "CJ-03"
+   ],
+   "evidence": "CJ-03 impact implies the system-5 dust burst (120 particles, lifetime 12), but no shot spec names a particle system directly. Dance sparkle pops are flat markers, NOT production VFX \u2014 not counted as wired."
+  },
+  {
+   "n": 5,
+   "system": "Impact shockwave + ground dust + light flash (2\u20133 frames)",
+   "production": "Blender: expanding ring (scale 0.2\u21923.0, opacity 1\u21920) + dust burst + Point flash 1500\u21920 over 3 frames (Effects V2 \u00a75)",
+   "gate": "shadow + atmosphere (scene brightens 2\u20133f, shadows pop, dust ring lingers one beat)",
+   "status": "WIRED",
+   "shots": [
+    "CJ-03"
+   ],
+   "evidence": "CJ-03 is the locked impact frame; shot spec names 'impact energy' as a Level 4 FX pass. PROPOSED (not wired): CJ-22 jump landing dust \u2014 landing dust is not named in CJ-22's spec."
+  },
+  {
+   "n": 6,
+   "system": "Fire / energy aura with flickering light",
+   "production": "Blender: emissive aura geometry + flickering Point light (noise driver \u00b125%/frame) + Glare Fog Glow (Effects V2 \u00a76)",
+   "gate": "spill + shadow (near side + ground pool pulse with the aura)",
+   "status": "WIRED",
+   "shots": [
+    "CJ-03"
+   ],
+   "evidence": "CJ-03 'gauntlet glow / impact energy' FX pass. Shares its source with system 2 on this shot \u2014 one glow source, two system descriptions, not two separate glows."
+  },
+  {
+   "n": 7,
+   "system": "Water / reflection / wet-surface sheen",
+   "production": "Blender: ground Principled roughness 0.15 in puddle mask, 1.0 elsewhere; flipped darkened blurred subject copy at 0.35 opacity (Effects V2 \u00a77)",
+   "gate": "spill (lights stretch into streaks on wet ground)",
+   "status": "PROPOSED",
+   "shots": [
+    "CJ-08",
+    "CJ-30"
+   ],
+   "evidence": "Painted alley background (used by CJ-08/CJ-30) already paints puddle reflections, but no shot spec names a production wet-surface pass. Painted reflections are background art, not the V2 system."
+  },
+  {
+   "n": 8,
+   "system": "Smoke / steam with shadow and rim interaction",
+   "production": "Blender: second volume, Density 0.05, Anisotropy 0.3, rim Spot from behind (Effects V2 \u00a78)",
+   "gate": "shadow + atmosphere (smoke shadow side darkens ground; lit edge glows in key hue)",
+   "status": "UNWIRED",
+   "shots": [],
+   "evidence": "No CJ shot names smoke or steam. Listed as unwired, not hidden."
+  },
+  {
+   "n": 9,
+   "system": "Motion blur + speed lines following the action arc",
+   "production": "Blender compositor Vector Blur (samples 32) + speed lines ALONG the limb arc from pose joint path (Effects V2 \u00a79)",
+   "gate": "atmosphere (action reads fast without the character going soft)",
+   "status": "PROPOSED",
+   "shots": [
+    "CJ-02",
+    "CJ-14"
+   ],
+   "evidence": "Gap-audit punch exposure sheet has a PIL smear DRAFT only (explicitly not production) for the CJ-01/02 punch; CJ-14 is a dive. No shot spec names Vector Blur/speed lines \u2014 Blender pass owed before either counts as wired."
+  },
+  {
+   "n": 10,
+   "system": "Depth of field + lens effects (bokeh, anamorphic flare)",
+   "production": "Blender camera DOF (focus = character plane, f/2.8) + Defocus on background + Glare Streaks aligned to light source (Effects V2 \u00a710)",
+   "gate": "spill (flare axis points at the light source; bokeh from bright background points)",
+   "status": "PROPOSED",
+   "shots": [
+    "CJ-28",
+    "CJ-29"
+   ],
+   "evidence": "Rooftop sunset/night-city shots have bright background points (sun, city lights) that suit DOF/bokeh, but no shot spec names DOF or flare per shot."
+  },
+  {
+   "n": 11,
+   "system": "Electricity / lightning with scene-wide flash + shadow pop",
+   "production": "Blender: emissive jagged bolt + flash 0\u21924000\u21920 over 4 frames + shadow soft size 0.8\u21920.1\u21920.8 (Effects V2 \u00a711)",
+   "gate": "shadow (every shadow sharpens for one peak frame)",
+   "status": "UNWIRED",
+   "shots": [],
+   "evidence": "No CJ shot names lightning/electricity. Listed as unwired, not hidden."
+  },
+  {
+   "n": 12,
+   "system": "Shadow casting from effects (gate system)",
+   "production": "Blender: every effect light use_shadow on; soft size 0.5 (spot) / 0.8 (point); Eevee volumetric shadows on; ground receives (Effects V2 \u00a712)",
+   "gate": "shadow (an effect that casts no shadow is not production \u2014 it floats on top of the scene)",
+   "status": "GATE (applies to all WIRED shots)",
+   "shots": [
+    "CJ-03",
+    "CJ-11",
+    "CJ-12",
+    "CJ-13",
+    "CJ-14",
+    "CJ-19",
+    "CJ-22",
+    "CJ-28",
+    "CJ-29",
+    "CJ-30"
+   ],
+   "evidence": "Not a standalone shot effect: it is the pass/fail gate every wired system must pass on its shots. CJ-01..CJ-10 Level-2 shots etc. carry no effect light, so the gate is vacuous there, not failed."
+  }
+ ],
+ "mars_approval": 0,
+ "still_owed": [
+  "per-shot production VFX frames for every wired shot (V2 proof frame is generic, not per-shot)",
+  "shot-spec effect_systems fields naming the proposed systems before they count as wired",
+  "Mars approval of all wiring (0)"
+ ]
+}

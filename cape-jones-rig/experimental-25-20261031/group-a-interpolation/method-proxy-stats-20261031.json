@@ -1,0 +1,46 @@
+{
+  "rife_proxy": {
+    "mean_px": 2.18,
+    "median_px": 0.0,
+    "p90_px": 6.86,
+    "max_px": 69.49,
+    "pct_gt_20px": 3.2
+  },
+  "film_proxy": {
+    "mean_px": 2.9,
+    "median_px": 0.0,
+    "p90_px": 11.61,
+    "max_px": 143.57,
+    "pct_gt_20px": 3.9
+  },
+  "raft_proxy": {
+    "mean_px": 2.09,
+    "median_px": 0.0,
+    "p90_px": 7.48,
+    "max_px": 43.7,
+    "pct_gt_20px": 3.1
+  },
+  "tooncrafter_proxy": {
+    "mean_px": 2.32,
+    "median_px": 0.0,
+    "p90_px": 6.77,
+    "max_px": 61.25,
+    "pct_gt_20px": 4.6
+  },
+  "ebsynth_proxy": {
+    "mean_px": 2.35,
+    "median_px": 0.0,
+    "p90_px": 9.69,
+    "max_px": 55.23,
+    "pct_gt_20px": 2.1
+  },
+  "inputs": {
+    "rife": "jojo-01->jojo-02",
+    "film": "ginyu-01->ginyu-03 (large motion)",
+    "raft": "ginyu-01->ginyu-02",
+    "tooncrafter": "jojo-02->jojo-03",
+    "ebsynth": "dance-01-a->dance-13-b",
+    "size": "550x750 (2x downscale of 1100x1500)",
+    "method": "OpenCV Farneback dense flow + bidirectional warp + blend; EbSynth overlay separate layer"
+  }
+}

@@ -1,0 +1,99 @@
+{
+ "bg": [
+  139.0,
+  139.0,
+  139.0
+ ],
+ "pieces": [
+  {
+   "name": "Hand_1",
+   "file": "Hand_1.png",
+   "size": [
+    272,
+    385
+   ],
+   "opaque_px": 58899,
+   "sheet_bbox": [
+    33,
+    263,
+    305,
+    648
+   ]
+  },
+  {
+   "name": "Hand_2",
+   "file": "Hand_2.png",
+   "size": [
+    202,
+    203
+   ],
+   "opaque_px": 31191,
+   "sheet_bbox": [
+    364,
+    405,
+    566,
+    608
+   ]
+  },
+  {
+   "name": "Hand_3",
+   "file": "Hand_3.png",
+   "size": [
+    205,
+    207
+   ],
+   "opaque_px": 30268,
+   "sheet_bbox": [
+    623,
+    391,
+    828,
+    598
+   ]
+  },
+  {
+   "name": "Hand_4",
+   "file": "Hand_4.png",
+   "size": [
+    211,
+    223
+   ],
+   "opaque_px": 33422,
+   "sheet_bbox": [
+    898,
+    412,
+    1109,
+    635
+   ]
+  },
+  {
+   "name": "Hand_5",
+   "file": "Hand_5.png",
+   "size": [
+    351,
+    172
+   ],
+   "opaque_px": 38332,
+   "sheet_bbox": [
+    1137,
+    436,
+    1488,
+    608
+   ]
+  },
+  {
+   "name": "Hand_6",
+   "file": "Hand_6.png",
+   "size": [
+    192,
+    188
+   ],
+   "opaque_px": 29189,
+   "sheet_bbox": [
+    1548,
+    422,
+    1740,
+    610
+   ]
+  }
+ ]
+}

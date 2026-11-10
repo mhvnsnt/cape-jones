@@ -1,0 +1,422 @@
+[
+ {
+  "frame": 0,
+  "viseme": "rest",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 1,
+  "viseme": "rest",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 2,
+  "viseme": "rest",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 3,
+  "viseme": "rest",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 4,
+  "viseme": "rest",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 5,
+  "viseme": "rest",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 6,
+  "viseme": "ee",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 7,
+  "viseme": "ee",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 8,
+  "viseme": "ee",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 9,
+  "viseme": "ee",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 10,
+  "viseme": "ee",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 11,
+  "viseme": "ee",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 12,
+  "viseme": "eh",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 13,
+  "viseme": "eh",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 14,
+  "viseme": "eh",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 15,
+  "viseme": "eh",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 16,
+  "viseme": "eh",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 17,
+  "viseme": "eh",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 18,
+  "viseme": "ah",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 19,
+  "viseme": "ah",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 20,
+  "viseme": "ah",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 21,
+  "viseme": "ah",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 22,
+  "viseme": "ah",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 23,
+  "viseme": "ah",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 24,
+  "viseme": "oh",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 25,
+  "viseme": "oh",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 26,
+  "viseme": "oh",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 27,
+  "viseme": "oh",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 28,
+  "viseme": "oh",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 29,
+  "viseme": "oh",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 30,
+  "viseme": "oo",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 31,
+  "viseme": "oo",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 32,
+  "viseme": "oo",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 33,
+  "viseme": "oo",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 34,
+  "viseme": "oo",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 35,
+  "viseme": "oo",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 36,
+  "viseme": "mbp",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 37,
+  "viseme": "mbp",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 38,
+  "viseme": "mbp",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 39,
+  "viseme": "mbp",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 40,
+  "viseme": "mbp",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 41,
+  "viseme": "mbp",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 42,
+  "viseme": "fv",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 43,
+  "viseme": "fv",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 44,
+  "viseme": "fv",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 45,
+  "viseme": "fv",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 46,
+  "viseme": "fv",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 47,
+  "viseme": "fv",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 48,
+  "viseme": "l",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 49,
+  "viseme": "l",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 50,
+  "viseme": "l",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 51,
+  "viseme": "l",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 52,
+  "viseme": "l",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 53,
+  "viseme": "l",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 54,
+  "viseme": "sz",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 55,
+  "viseme": "sz",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 56,
+  "viseme": "sz",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 57,
+  "viseme": "sz",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 58,
+  "viseme": "sz",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 59,
+  "viseme": "sz",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 60,
+  "viseme": "th",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 61,
+  "viseme": "th",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 62,
+  "viseme": "th",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 63,
+  "viseme": "th",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 64,
+  "viseme": "th",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 65,
+  "viseme": "th",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 66,
+  "viseme": "r",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 67,
+  "viseme": "r",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 68,
+  "viseme": "r",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 69,
+  "viseme": "r",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 70,
+  "viseme": "r",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 71,
+  "viseme": "r",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 72,
+  "viseme": "w",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 73,
+  "viseme": "w",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 74,
+  "viseme": "w",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 75,
+  "viseme": "w",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 76,
+  "viseme": "w",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 77,
+  "viseme": "w",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 78,
+  "viseme": "gk",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 79,
+  "viseme": "gk",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 80,
+  "viseme": "gk",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 81,
+  "viseme": "gk",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 82,
+  "viseme": "gk",
+  "source": "chart-cycle"
+ },
+ {
+  "frame": 83,
+  "viseme": "gk",
+  "source": "chart-cycle"
+ }
+]

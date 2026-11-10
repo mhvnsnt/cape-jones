@@ -1,0 +1,7 @@
+frame,text_prompt,arm_L_deg,arm_R_deg
+0,a person stands still,0,0
+1,a person raises left arm,-70,0
+2,a person punches with right arm,0,-10
+3,a person dances, both arms up,-120,-120
+4,a person steps and swings arms,-40,40
+5,a person bows, arms down,60,60

@@ -1,0 +1,362 @@
+{
+  "01-daylight": {
+    "tint_key": "daylight",
+    "multiplier": [
+      1,
+      1,
+      1
+    ],
+    "lut33": "luts-33-upgraded/lut-33-daylight.cube",
+    "graded_image": "lut-approval/01-daylight.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "02-night-city": {
+    "tint_key": "rainy-night",
+    "multiplier": [
+      0.8,
+      0.85,
+      1.05
+    ],
+    "lut33": "luts-33-upgraded/lut-33-night-city.cube",
+    "graded_image": "lut-approval/02-night-city.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "03-warm-interior": {
+    "tint_key": "warm-lamp",
+    "multiplier": [
+      1.1,
+      0.95,
+      0.75
+    ],
+    "lut33": "luts-33-upgraded/lut-33-warm-interior.cube",
+    "graded_image": "lut-approval/03-warm-interior.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "04-purple": {
+    "tint_key": "neon-pink-cyan",
+    "multiplier": [
+      0.95,
+      0.85,
+      1.05
+    ],
+    "lut33": "luts-33-upgraded/lut-33-purple.cube",
+    "graded_image": "lut-approval/04-purple.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "05-blue-spotlight": {
+    "tint_key": "spotlight",
+    "multiplier": [
+      1.05,
+      1.05,
+      1.05
+    ],
+    "lut33": "luts-33-upgraded/lut-33-blue-spotlight.cube",
+    "graded_image": "lut-approval/05-blue-spotlight.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "06-golden-hour": {
+    "tint_key": "golden-hour",
+    "multiplier": [
+      1.1,
+      0.95,
+      0.7
+    ],
+    "lut33": "luts-33-upgraded/lut-33-golden-hour.cube",
+    "graded_image": "lut-approval/06-golden-hour.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "07-rainy-night": {
+    "tint_key": "rainy-night",
+    "multiplier": [
+      0.8,
+      0.85,
+      1.05
+    ],
+    "lut33": "luts-33-upgraded/lut-33-rainy-night.cube",
+    "graded_image": "lut-approval/07-rainy-night.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "08-warm-lamp": {
+    "tint_key": "warm-lamp",
+    "multiplier": [
+      1.1,
+      0.95,
+      0.75
+    ],
+    "lut33": "luts-33-upgraded/lut-33-warm-lamp.cube",
+    "graded_image": "lut-approval/08-warm-lamp.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "09-fluorescent": {
+    "tint_key": "fluorescent",
+    "multiplier": [
+      0.9,
+      1.0,
+      1.0
+    ],
+    "lut33": "luts-33-upgraded/lut-33-fluorescent.cube",
+    "graded_image": "lut-approval/09-fluorescent.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "10-spotlight": {
+    "tint_key": "spotlight",
+    "multiplier": [
+      1.05,
+      1.05,
+      1.05
+    ],
+    "lut33": "luts-33-upgraded/lut-33-spotlight.cube",
+    "graded_image": "lut-approval/10-spotlight.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "11-sunset-rooftop": {
+    "tint_key": "warm-sunset",
+    "multiplier": [
+      1.15,
+      0.8,
+      0.7
+    ],
+    "lut33": "luts-33-upgraded/lut-33-sunset-rooftop.cube",
+    "graded_image": "lut-approval/11-sunset-rooftop.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "12-neon-alley-pink-cyan": {
+    "tint_key": "neon-pink-cyan",
+    "multiplier": [
+      0.95,
+      0.85,
+      1.05
+    ],
+    "lut33": "luts-33-upgraded/lut-33-neon-alley-pink-cyan.cube",
+    "graded_image": "lut-approval/12-neon-alley-pink-cyan.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "13-kitchen-daylight": {
+    "tint_key": "daylight",
+    "multiplier": [
+      1,
+      1,
+      1
+    ],
+    "lut33": "luts-33-upgraded/lut-33-kitchen-daylight.cube",
+    "graded_image": "lut-approval/13-kitchen-daylight.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "14-purple-neon": {
+    "tint_key": "neon-pink-cyan",
+    "multiplier": [
+      0.95,
+      0.85,
+      1.05
+    ],
+    "lut33": "luts-33-upgraded/lut-33-purple-neon.cube",
+    "graded_image": "lut-approval/14-purple-neon.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "15-blue-warehouse": {
+    "tint_key": "cyan-cyber",
+    "multiplier": [
+      0.85,
+      1.05,
+      1.2
+    ],
+    "lut33": "luts-33-upgraded/lut-33-blue-warehouse.cube",
+    "graded_image": "lut-approval/15-blue-warehouse.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "16-overcast-storm": {
+    "tint_key": "foggy",
+    "multiplier": [
+      0.9,
+      0.95,
+      1.0
+    ],
+    "lut33": "luts-33-upgraded/lut-33-overcast-storm.cube",
+    "graded_image": "lut-approval/16-overcast-storm.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "17-fire": {
+    "tint_key": "fire",
+    "multiplier": [
+      1.15,
+      0.85,
+      0.6
+    ],
+    "lut33": "luts-33-upgraded/lut-33-fire.cube",
+    "graded_image": "lut-approval/17-fire.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "18-underwater": {
+    "tint_key": "underwater",
+    "multiplier": [
+      0.8,
+      0.95,
+      1.1
+    ],
+    "lut33": "luts-33-upgraded/lut-33-underwater.cube",
+    "graded_image": "lut-approval/18-underwater.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "19-red-alert": {
+    "tint_key": "red-alert",
+    "multiplier": [
+      1.2,
+      0.6,
+      0.6
+    ],
+    "lut33": "luts-33-upgraded/lut-33-red-alert.cube",
+    "graded_image": "lut-approval/19-red-alert.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "20-neutral": {
+    "tint_key": "daylight",
+    "multiplier": [
+      1,
+      1,
+      1
+    ],
+    "lut33": "luts-33-upgraded/lut-33-neutral.cube",
+    "graded_image": "lut-approval/20-neutral.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "21-desert-sun": {
+    "tint_key": "desert-sun",
+    "multiplier": [
+      1.15,
+      1.0,
+      0.65
+    ],
+    "lut33": "luts-33-upgraded/lut-33-desert-sun.cube",
+    "graded_image": "lut-approval/21-desert-sun.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "22-foggy-morning": {
+    "tint_key": "foggy",
+    "multiplier": [
+      0.9,
+      0.95,
+      1.0
+    ],
+    "lut33": "luts-33-upgraded/lut-33-foggy-morning.cube",
+    "graded_image": "lut-approval/22-foggy-morning.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "23-candlelight": {
+    "tint_key": "candlelight",
+    "multiplier": [
+      1.15,
+      0.9,
+      0.6
+    ],
+    "lut33": "luts-33-upgraded/lut-33-candlelight.cube",
+    "graded_image": "lut-approval/23-candlelight.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "24-green-night-vision": {
+    "tint_key": "green-night",
+    "multiplier": [
+      0.7,
+      1.15,
+      0.7
+    ],
+    "lut33": "luts-33-upgraded/lut-33-green-night-vision.cube",
+    "graded_image": "lut-approval/24-green-night-vision.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "25-warm-sunset": {
+    "tint_key": "warm-sunset",
+    "multiplier": [
+      1.15,
+      0.8,
+      0.7
+    ],
+    "lut33": "luts-33-upgraded/lut-33-warm-sunset.cube",
+    "graded_image": "lut-approval/25-warm-sunset.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "26-city-noon": {
+    "tint_key": "city-noon",
+    "multiplier": [
+      1,
+      1,
+      1
+    ],
+    "lut33": "luts-33-upgraded/lut-33-city-noon.cube",
+    "graded_image": "lut-approval/26-city-noon.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "27-stormy-night": {
+    "tint_key": "stormy-night",
+    "multiplier": [
+      0.8,
+      0.85,
+      1.0
+    ],
+    "lut33": "luts-33-upgraded/lut-33-stormy-night.cube",
+    "graded_image": "lut-approval/27-stormy-night.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "28-cozy-fire": {
+    "tint_key": "cozy-fire",
+    "multiplier": [
+      1.15,
+      0.9,
+      0.65
+    ],
+    "lut33": "luts-33-upgraded/lut-33-cozy-fire.cube",
+    "graded_image": "lut-approval/28-cozy-fire.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "29-cyan-cyber-light": {
+    "tint_key": "cyan-cyber",
+    "multiplier": [
+      0.85,
+      1.05,
+      1.2
+    ],
+    "lut33": "luts-33-upgraded/lut-33-cyan-cyber-light.cube",
+    "graded_image": "lut-approval/29-cyan-cyber-light.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  },
+  "30-natural-window-light": {
+    "tint_key": "natural-window",
+    "multiplier": [
+      1,
+      1,
+      1
+    ],
+    "lut33": "luts-33-upgraded/lut-33-natural-window-light.cube",
+    "graded_image": "lut-approval/30-natural-window-light.jpg",
+    "status": "APPROVED by Mars 2026-10-31 14:42 CDT - all 30 approved, likes all of them",
+    "approved_date": "2026-10-31"
+  }
+}

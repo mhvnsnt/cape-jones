@@ -1,0 +1,101 @@
+{
+  "shot_spec_version": 1,
+  "fields_required": [
+    "lut_or_grade",
+    "key_color",
+    "key_direction",
+    "rim_color",
+    "bleed_color",
+    "shadow_color"
+  ],
+  "fields_optional": [
+    "power_override",
+    "jojo_shift",
+    "dual_light"
+  ],
+  "example_default": {
+    "lut_or_grade": "golden-hour",
+    "gain": [
+      1.1,
+      0.95,
+      0.7
+    ],
+    "key_color": [
+      255,
+      180,
+      80
+    ],
+    "key_direction": "front",
+    "rim_color": [
+      255,
+      180,
+      80
+    ],
+    "bleed_color": [
+      255,
+      120,
+      0
+    ],
+    "shadow_color": "cool blue-violet",
+    "power_override": null,
+    "jojo_shift": null,
+    "dual_light": null
+  },
+  "example_jojo_combined": {
+    "lut_or_grade": "golden-hour",
+    "gain": [
+      1.1,
+      0.95,
+      0.7
+    ],
+    "key_color": "tension-shifted",
+    "rim_color": "magenta-rose family",
+    "bleed_color": "magenta-rose darker",
+    "jojo_shift": {
+      "name": "JOJO-TENSION",
+      "gain": [
+        1.2,
+        0.7,
+        1.3
+      ],
+      "trigger": "rising tension beat",
+      "scope": "character",
+      "return_to_base": true
+    }
+  },
+  "example_dual_light": {
+    "front_key": {
+      "color": [
+        255,
+        180,
+        80
+      ],
+      "direction": "front"
+    },
+    "back_source": {
+      "color": [
+        0,
+        200,
+        255
+      ],
+      "direction": "behind",
+      "rays": "god rays"
+    },
+    "rim_front": [
+      255,
+      180,
+      80
+    ],
+    "rim_back": [
+      0,
+      200,
+      255
+    ]
+  },
+  "example_power_override": {
+    "power_name": null,
+    "rim_color": null,
+    "note": "power name + rim + bleed must be filled when used; null means no override active"
+  },
+  "rule": "rim follows key/LUT hue family, or shifted key under a JoJo shift, or its own named source under dual-light. A spec missing rim or missing a named source for a second colour is incomplete and must not be rendered as final."
+}

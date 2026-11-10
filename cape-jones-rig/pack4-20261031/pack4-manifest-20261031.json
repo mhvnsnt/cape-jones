@@ -1,0 +1,217 @@
+{
+  "visemes": [
+    {
+      "file": "viseme-01-rest-20261031.png",
+      "phoneme": "rest",
+      "matrix_note": "resting / closed, matrix: resting",
+      "size": [
+        200,
+        120
+      ]
+    },
+    {
+      "file": "viseme-02-ee-20261031.png",
+      "phoneme": "EE",
+      "matrix_note": "E / I wide, matrix: E/I",
+      "size": [
+        200,
+        120
+      ]
+    },
+    {
+      "file": "viseme-03-eh-20261031.png",
+      "phoneme": "EH",
+      "matrix_note": "E open, matrix: E/I, E/O",
+      "size": [
+        200,
+        120
+      ]
+    },
+    {
+      "file": "viseme-04-ah-20261031.png",
+      "phoneme": "AH",
+      "matrix_note": "A / AH tall open, matrix: A/AH",
+      "size": [
+        200,
+        140
+      ]
+    },
+    {
+      "file": "viseme-05-oh-20261031.png",
+      "phoneme": "OH",
+      "matrix_note": "O / OO round, matrix: O/OO",
+      "size": [
+        200,
+        140
+      ]
+    },
+    {
+      "file": "viseme-06-oo-20261031.png",
+      "phoneme": "OO",
+      "matrix_note": "U tight round, matrix: U",
+      "size": [
+        200,
+        140
+      ]
+    },
+    {
+      "file": "viseme-07-mbp-20261031.png",
+      "phoneme": "M/B/P",
+      "matrix_note": "closed lips, matrix: M/B/P",
+      "size": [
+        200,
+        120
+      ]
+    },
+    {
+      "file": "viseme-08-fv-20261031.png",
+      "phoneme": "F/V",
+      "matrix_note": "upper teeth on lower lip, matrix: F",
+      "size": [
+        200,
+        120
+      ]
+    },
+    {
+      "file": "viseme-09-l-20261031.png",
+      "phoneme": "L",
+      "matrix_note": "tongue to upper teeth, matrix: L/Th",
+      "size": [
+        200,
+        120
+      ]
+    },
+    {
+      "file": "viseme-10-sz-20261031.png",
+      "phoneme": "S/Z",
+      "matrix_note": "teeth together, matrix: C/D/G/K/N/R/S/T/Y group",
+      "size": [
+        200,
+        120
+      ]
+    },
+    {
+      "file": "viseme-11-th-20261031.png",
+      "phoneme": "TH",
+      "matrix_note": "tongue between teeth, matrix: L/Th",
+      "size": [
+        200,
+        120
+      ]
+    },
+    {
+      "file": "viseme-12-r-20261031.png",
+      "phoneme": "R",
+      "matrix_note": "rounded, tongue curled, matrix: C/D/G/K/N/R/S/T/Y group",
+      "size": [
+        200,
+        120
+      ]
+    },
+    {
+      "file": "viseme-13-w-20261031.png",
+      "phoneme": "W",
+      "matrix_note": "puckered, matrix: W/Q",
+      "size": [
+        200,
+        140
+      ]
+    },
+    {
+      "file": "viseme-14-gk-20261031.png",
+      "phoneme": "G/K",
+      "matrix_note": "tongue back raised, matrix: C/D/G/K/N/R/S/T/Y group",
+      "size": [
+        200,
+        120
+      ]
+    }
+  ],
+  "eye_strips": [
+    {
+      "file": "eye-strip-01-determined-focused-20261031.png",
+      "expression": "1. Determined / Focused",
+      "size": [
+        240,
+        90
+      ]
+    },
+    {
+      "file": "eye-strip-02-angry-scowling-20261031.png",
+      "expression": "2. Angry / Scowling",
+      "size": [
+        240,
+        90
+      ]
+    },
+    {
+      "file": "eye-strip-03-intrigued-questioning-20261031.png",
+      "expression": "3. Intrigued / Questioning",
+      "size": [
+        240,
+        90
+      ]
+    },
+    {
+      "file": "eye-strip-04-squinting-flight-20261031.png",
+      "expression": "4. Squinting / High-speed flight",
+      "size": [
+        240,
+        90
+      ]
+    },
+    {
+      "file": "eye-strip-05-surprised-alarmed-20261031.png",
+      "expression": "5. Surprised / Alarmed",
+      "size": [
+        240,
+        90
+      ]
+    },
+    {
+      "file": "eye-strip-06-straining-grimacing-20261031.png",
+      "expression": "6. Straining / Grimacing",
+      "size": [
+        240,
+        90
+      ]
+    },
+    {
+      "file": "eye-strip-07-concentrating-20261031.png",
+      "expression": "7. Concentrating",
+      "size": [
+        240,
+        90
+      ]
+    },
+    {
+      "file": "eye-strip-08-unconscious-closed-20261031.png",
+      "expression": "8. Unconscious / Closed eyes",
+      "size": [
+        240,
+        90
+      ]
+    }
+  ],
+  "cape_states": [
+    {
+      "file": "cape-draped-20261031.png",
+      "state": "draped"
+    },
+    {
+      "file": "cape-lying-flat-20261031.png",
+      "state": "lying-flat"
+    },
+    {
+      "file": "cape-swinging-20261031.png",
+      "state": "swinging"
+    },
+    {
+      "file": "cape-billowing-20261031.png",
+      "state": "billowing"
+    }
+  ],
+  "foreshortened_forearm": "forearm-foreshortened-punch-front-20261031.png",
+  "head_34_derived": "head-34-front-derived-20261031.png",
+  "method": "visemes/eyes drawn original in existing palette (purple 90,39,114; skin 239,175,131); capes warped from Cape_Back_Main; forearm compressed/enlarged from Arm_Front_Lower; head34 squashed from Head_Front \u2014 derived, not a true hand-drawn 3/4"
+}

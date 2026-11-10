@@ -1,0 +1,65 @@
+{
+  "limb_rotate_160": {
+    "old_alpha": 20148,
+    "new_alpha": 20149,
+    "ref_alpha": 20153,
+    "lost_old": 5,
+    "lost_new": 4,
+    "gate_old": "PASS",
+    "gate_new": "PASS",
+    "edge_old": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "edge_new": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    }
+  },
+  "whole_rotate_shear": {
+    "old_alpha": 320919,
+    "new_alpha": 373813,
+    "ref_alpha": 373819,
+    "lost_old": 52900,
+    "lost_new": 6,
+    "gate_old": "FAIL",
+    "gate_new": "PASS",
+    "edge_old": {
+      "top": 0,
+      "bottom": 0,
+      "left": 461,
+      "right": 0
+    },
+    "edge_new": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    }
+  },
+  "offedge_paste": {
+    "old_alpha": 4242,
+    "new_alpha": 20151,
+    "ref_alpha": 20151,
+    "lost_old": 15909,
+    "lost_new": 0,
+    "gate_old": "FAIL",
+    "gate_new": "PASS",
+    "edge_old": {
+      "top": 0,
+      "bottom": 50,
+      "left": 99,
+      "right": 0
+    },
+    "edge_new": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    }
+  }
+}

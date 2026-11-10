@@ -1,0 +1,8 @@
+name,r,g,b,role
+Cape_Outer_Black,0,0,0,"outer cape, PMS BLACK"
+Cape_Inner_Yellow,255,225,82,"inner cape, PMS 115c"
+Eyes_White,255,255,255,"eyes, WHITE"
+Suit_Green_336c,0,105,80,"shirt/gloves/pants, PMS 336c (approx RGB; verify in-app)"
+Shadow_Purple,52,22,90,"coloured shadow, separate effect, NOT a rig"
+Rim_Warm_Amber,255,180,80,"rim default, L2 warm"
+Rim_Bleed_Orange,255,120,0,"bleed, L2 warm"

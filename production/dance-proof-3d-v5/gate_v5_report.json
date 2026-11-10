@@ -1,0 +1,29 @@
+{
+ "poses": {
+  "arms_down": {
+   "upperarm_L": 0.996,
+   "upperarm_R": 0.995
+  },
+  "arms_up": {
+   "upperarm_L": 0.985,
+   "upperarm_R": 0.984
+  },
+  "fwd_elbow": {
+   "upperarm_L": 0.985,
+   "forearm_L": 1.001,
+   "upperarm_R": 0.983
+  },
+  "crouch": {
+   "thigh_L": 1.001,
+   "shin_L": 1.006
+  }
+ },
+ "radii": {},
+ "radii_rest": {
+  "upperarm_L": 0.04149178890807829,
+  "upperarm_R": 0.04162527677827894,
+  "forearm_L": 0.034411419010882766,
+  "thigh_L": 0.06212122561448779,
+  "shin_L": 0.044330283538256805
+ }
+}

@@ -1,0 +1,247 @@
+{
+ "version": "lipsync-timeline-20261031",
+ "date": "2026-10-31",
+ "fps": 24,
+ "test_phrase": "PAH GO (test phrase only \u2014 not show dialogue)",
+ "viseme_source": "visemes-v2-20261031 (14 shapes, mask-first swap library)",
+ "note": "Frame-by-frame at 24 fps. Real dialogue timing comes from recorded audio when it exists; this strip is a timing test, not a dialogue performance.",
+ "segments": [
+  {
+   "frames": "1-2",
+   "phoneme": "\u2014 (silence)",
+   "viseme_id": "01",
+   "viseme_key": "rest"
+  },
+  {
+   "frames": "3-5",
+   "phoneme": "P",
+   "viseme_id": "07",
+   "viseme_key": "mbp"
+  },
+  {
+   "frames": "6-11",
+   "phoneme": "AH",
+   "viseme_id": "04",
+   "viseme_key": "ah"
+  },
+  {
+   "frames": "12-13",
+   "phoneme": "\u2014 (gap)",
+   "viseme_id": "01",
+   "viseme_key": "rest"
+  },
+  {
+   "frames": "14-16",
+   "phoneme": "G",
+   "viseme_id": "14",
+   "viseme_key": "gk"
+  },
+  {
+   "frames": "17-22",
+   "phoneme": "OH",
+   "viseme_id": "05",
+   "viseme_key": "oh"
+  },
+  {
+   "frames": "23-24",
+   "phoneme": "\u2014 (rest)",
+   "viseme_id": "01",
+   "viseme_key": "rest"
+  }
+ ],
+ "frames": [
+  {
+   "frame": 1,
+   "time_sec": 0.0,
+   "phoneme": "\u2014 (silence)",
+   "viseme_id": "01",
+   "viseme_key": "rest",
+   "viseme_label": "rest / Neutral"
+  },
+  {
+   "frame": 2,
+   "time_sec": 0.0417,
+   "phoneme": "\u2014 (silence)",
+   "viseme_id": "01",
+   "viseme_key": "rest",
+   "viseme_label": "rest / Neutral"
+  },
+  {
+   "frame": 3,
+   "time_sec": 0.0833,
+   "phoneme": "P",
+   "viseme_id": "07",
+   "viseme_key": "mbp",
+   "viseme_label": "M/B/P"
+  },
+  {
+   "frame": 4,
+   "time_sec": 0.125,
+   "phoneme": "P",
+   "viseme_id": "07",
+   "viseme_key": "mbp",
+   "viseme_label": "M/B/P"
+  },
+  {
+   "frame": 5,
+   "time_sec": 0.1667,
+   "phoneme": "P",
+   "viseme_id": "07",
+   "viseme_key": "mbp",
+   "viseme_label": "M/B/P"
+  },
+  {
+   "frame": 6,
+   "time_sec": 0.2083,
+   "phoneme": "AH",
+   "viseme_id": "04",
+   "viseme_key": "ah",
+   "viseme_label": "AH"
+  },
+  {
+   "frame": 7,
+   "time_sec": 0.25,
+   "phoneme": "AH",
+   "viseme_id": "04",
+   "viseme_key": "ah",
+   "viseme_label": "AH"
+  },
+  {
+   "frame": 8,
+   "time_sec": 0.2917,
+   "phoneme": "AH",
+   "viseme_id": "04",
+   "viseme_key": "ah",
+   "viseme_label": "AH"
+  },
+  {
+   "frame": 9,
+   "time_sec": 0.3333,
+   "phoneme": "AH",
+   "viseme_id": "04",
+   "viseme_key": "ah",
+   "viseme_label": "AH"
+  },
+  {
+   "frame": 10,
+   "time_sec": 0.375,
+   "phoneme": "AH",
+   "viseme_id": "04",
+   "viseme_key": "ah",
+   "viseme_label": "AH"
+  },
+  {
+   "frame": 11,
+   "time_sec": 0.4167,
+   "phoneme": "AH",
+   "viseme_id": "04",
+   "viseme_key": "ah",
+   "viseme_label": "AH"
+  },
+  {
+   "frame": 12,
+   "time_sec": 0.4583,
+   "phoneme": "\u2014 (gap)",
+   "viseme_id": "01",
+   "viseme_key": "rest",
+   "viseme_label": "rest / Neutral"
+  },
+  {
+   "frame": 13,
+   "time_sec": 0.5,
+   "phoneme": "\u2014 (gap)",
+   "viseme_id": "01",
+   "viseme_key": "rest",
+   "viseme_label": "rest / Neutral"
+  },
+  {
+   "frame": 14,
+   "time_sec": 0.5417,
+   "phoneme": "G",
+   "viseme_id": "14",
+   "viseme_key": "gk",
+   "viseme_label": "G/K"
+  },
+  {
+   "frame": 15,
+   "time_sec": 0.5833,
+   "phoneme": "G",
+   "viseme_id": "14",
+   "viseme_key": "gk",
+   "viseme_label": "G/K"
+  },
+  {
+   "frame": 16,
+   "time_sec": 0.625,
+   "phoneme": "G",
+   "viseme_id": "14",
+   "viseme_key": "gk",
+   "viseme_label": "G/K"
+  },
+  {
+   "frame": 17,
+   "time_sec": 0.6667,
+   "phoneme": "OH",
+   "viseme_id": "05",
+   "viseme_key": "oh",
+   "viseme_label": "OH"
+  },
+  {
+   "frame": 18,
+   "time_sec": 0.7083,
+   "phoneme": "OH",
+   "viseme_id": "05",
+   "viseme_key": "oh",
+   "viseme_label": "OH"
+  },
+  {
+   "frame": 19,
+   "time_sec": 0.75,
+   "phoneme": "OH",
+   "viseme_id": "05",
+   "viseme_key": "oh",
+   "viseme_label": "OH"
+  },
+  {
+   "frame": 20,
+   "time_sec": 0.7917,
+   "phoneme": "OH",
+   "viseme_id": "05",
+   "viseme_key": "oh",
+   "viseme_label": "OH"
+  },
+  {
+   "frame": 21,
+   "time_sec": 0.8333,
+   "phoneme": "OH",
+   "viseme_id": "05",
+   "viseme_key": "oh",
+   "viseme_label": "OH"
+  },
+  {
+   "frame": 22,
+   "time_sec": 0.875,
+   "phoneme": "OH",
+   "viseme_id": "05",
+   "viseme_key": "oh",
+   "viseme_label": "OH"
+  },
+  {
+   "frame": 23,
+   "time_sec": 0.9167,
+   "phoneme": "\u2014 (rest)",
+   "viseme_id": "01",
+   "viseme_key": "rest",
+   "viseme_label": "rest / Neutral"
+  },
+  {
+   "frame": 24,
+   "time_sec": 0.9583,
+   "phoneme": "\u2014 (rest)",
+   "viseme_id": "01",
+   "viseme_key": "rest",
+   "viseme_label": "rest / Neutral"
+  }
+ ],
+ "mars_approval": 0
+}

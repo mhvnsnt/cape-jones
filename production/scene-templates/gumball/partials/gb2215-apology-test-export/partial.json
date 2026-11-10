@@ -1,0 +1,68 @@
+{
+ "id": "gb2215-apology-test-export",
+ "kind": "partial",
+ "show": "The Amazing World of Gumball",
+ "collection": "Pass, test and recovery files",
+ "characters": [
+  "Gumball"
+ ],
+ "source_file": "GB2215APOLOGY_TEST_EXPORT.fla",
+ "source_archive": "CN-Leaks-001-gumball.zip",
+ "archive_location": "mhvnsnt/cn-gigaleak-gumball, draft release untagged-1676e192ae8c72e95791",
+ "size_bytes": 5627182,
+ "format": "XFL (zip-based FLA, readable)",
+ "symbol_count": 26,
+ "symbols": [
+  "BODY_FAST",
+  "Fieldguide_001",
+  "GB200_GB_BODYCOMP",
+  "GB200_GB_EAR1",
+  "GB200_GB_EAR2",
+  "GB200_GB_EYESCOMP_SYMBOL",
+  "GB200_GB_HEAD",
+  "GB200_GB_HEADCOMP",
+  "GB200_GB_L_ARM",
+  "GB200_GB_L_ARM copy",
+  "GB200_GB_L_LEG",
+  "GB200_GB_MOUTH",
+  "GB200_GB_R_ARM",
+  "GB200_GB_R_LEG",
+  "GB200_GB_TAIL",
+  "GB200_GUMBALL_PUPPET_001",
+  "LOW_BODY",
+  "Symbol 1",
+  "Symbol 2",
+  "arms_fast",
+  "framecount 001",
+  "framecount 002",
+  "framecount 003",
+  "framecounter001",
+  "framecounter001 copy",
+  "framecounter1000"
+ ],
+ "parts_census": {
+  "heads": 1,
+  "head_comps": 1,
+  "eye_comps": 1,
+  "mouths": 1,
+  "bodies": 3,
+  "arms_fins_hands": 4,
+  "legs": 2,
+  "ears": 2,
+  "tails": 1,
+  "puppet_assemblies": 1
+ },
+ "animated_frames": "Not measured (no companion SWF in the archive)",
+ "what_exists": "A pipeline test export: 26 symbols — one Gumball comp set (head, head comp, eye comp, mouth, bodies x3, arms x4, legs x2, ears x2, tail, puppet) with no staging.",
+ "whats_missing": "No scene timeline, background, or second character — it exists to prove the export path, and the INDEX classifies it partial for exactly that reason.",
+ "notes": [
+  "Even the test files keep the full comp structure — the body/face split is pipeline-wide, not per-scene."
+ ],
+ "media": {
+  "status": "blocked-write-guard",
+  "target_file": "sheet-gb2215-apology-test-export.png",
+  "delivery_dir": "~/workspace/your_files/scene-templates/",
+  "note": "Contact-sheet render staged in render_contact_sheets.sh; blocked by the sandbox write guard (EPERM/0 bytes) at catalog time."
+ },
+ "record_path": "production/scene-templates/gumball/partials/gb2215-apology-test-export/partial.json"
+}

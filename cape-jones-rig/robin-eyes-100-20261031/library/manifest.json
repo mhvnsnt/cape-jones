@@ -1,0 +1,374 @@
+[
+ {
+  "id": "01-day-front-neutral",
+  "label": "Day front neutral (v4 source)",
+  "source": "02_ROBIN_Day.jpg",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    94,
+    62
+   ],
+   [
+    64,
+    49
+   ]
+  ]
+ },
+ {
+  "id": "02-night-front-neutral",
+  "label": "Night front neutral (shadow grey)",
+  "source": "03_ROBIN_Night.jpg",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    97,
+    62
+   ],
+   [
+    66,
+    49
+   ]
+  ]
+ },
+ {
+  "id": "03-rbn01-front-neutral",
+  "label": "RBN01 front neutral (tall model)",
+  "source": "09_RBN01_CAMS_DCTTAS.png",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    32,
+    30
+   ],
+   [
+    50,
+    33
+   ]
+  ]
+ },
+ {
+  "id": "04-rbn02-side-profile",
+  "label": "RBN02 side profile",
+  "source": "10_RBN02_CAMS_DCTTAS.png",
+  "eyes": 1,
+  "eye_sizes": [
+   [
+    47,
+    34
+   ]
+  ]
+ },
+ {
+  "id": "05-ca01-action",
+  "label": "CA01 action",
+  "source": "23_RBN01_CA_DCTTAS.png",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    42,
+    69
+   ],
+   [
+    87,
+    54
+   ]
+  ]
+ },
+ {
+  "id": "06-ca02-action",
+  "label": "CA02 action",
+  "source": "26_RBN02_CA_DCTTAS.png",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    68,
+    62
+   ],
+   [
+    92,
+    60
+   ]
+  ]
+ },
+ {
+  "id": "07-ca03-action",
+  "label": "CA03 action",
+  "source": "24_RBN03_CA_DCTTAS.png",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    69,
+    42
+   ],
+   [
+    32,
+    57
+   ]
+  ]
+ },
+ {
+  "id": "08-rb01-action",
+  "label": "RB01 action (SG01)",
+  "source": "37_RB01_CA_DCTTA.png",
+  "eyes": 1,
+  "eye_sizes": [
+   [
+    55,
+    66
+   ]
+  ]
+ },
+ {
+  "id": "09-rb02-action",
+  "label": "RB02 action (SG01)",
+  "source": "40_RB02_CA_DCTTA.png",
+  "eyes": 1,
+  "eye_sizes": [
+   [
+    62,
+    91
+   ]
+  ]
+ },
+ {
+  "id": "10-rb03-action",
+  "label": "RB03 action (SG01)",
+  "source": "39_RB03_CA_DCTTA.png",
+  "eyes": 1,
+  "eye_sizes": [
+   [
+    46,
+    36
+   ]
+  ]
+ },
+ {
+  "id": "11-expres01-angry",
+  "label": "RBEXPRES01 angry shout",
+  "source": "51_RBEXPRES01_CA_DCTTAS.png",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    94,
+    82
+   ],
+   [
+    230,
+    96
+   ]
+  ]
+ },
+ {
+  "id": "12-expres02-determined",
+  "label": "RBEXPRES02 determined",
+  "source": "47_RBEXPRES02_CA_DCTTAS.png",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    153,
+    147
+   ],
+   [
+    121,
+    69
+   ]
+  ]
+ },
+ {
+  "id": "13-expres03-angry-point",
+  "label": "RBEXPRES03 angry point",
+  "source": "53_RBEXPRES03_CA_DCTTAS.png",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    160,
+    113
+   ],
+   [
+    141,
+    124
+   ]
+  ]
+ },
+ {
+  "id": "14-expres04-strain",
+  "label": "RBEXPRES04 strain",
+  "source": "50_RBEXPRES04_CA_DCTTAS.png",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    172,
+    121
+   ],
+   [
+    89,
+    103
+   ]
+  ]
+ },
+ {
+  "id": "15-expres05-grit",
+  "label": "RBEXPRES05 grit",
+  "source": "49_RBEXPRES05_CA_DCTTAS.png",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    221,
+    69
+   ],
+   [
+    204,
+    54
+   ]
+  ]
+ },
+ {
+  "id": "16-sg01-laugh-swirl",
+  "label": "SG01 laughing swirl (comedic)",
+  "source": "38_RBNEXPRES_CA_DCTTA.png",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    120,
+    161
+   ],
+   [
+    61,
+    68
+   ]
+  ]
+ },
+ {
+  "id": "17-dc-robin1-action",
+  "label": "DC ref Robin1 action",
+  "source": "58_Robin1.png",
+  "eyes": 1,
+  "eye_sizes": [
+   [
+    61,
+    91
+   ]
+  ]
+ },
+ {
+  "id": "18-dc-robin2-action",
+  "label": "DC ref Robin2 action",
+  "source": "59_Robin2.png",
+  "eyes": 1,
+  "eye_sizes": [
+   [
+    55,
+    66
+   ]
+  ]
+ },
+ {
+  "id": "19-dc-robin3-action",
+  "label": "DC ref Robin3 action",
+  "source": "57_Robin3.png",
+  "eyes": 1,
+  "eye_sizes": [
+   [
+    47,
+    37
+   ]
+  ]
+ },
+ {
+  "id": "20-cc-front-neutral",
+  "label": "CC front neutral",
+  "source": "05_Robin_CC.png",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    31,
+    21
+   ],
+   [
+    21,
+    16
+   ]
+  ]
+ },
+ {
+  "id": "21-robin1-neutral",
+  "label": "Robin 1.ai neutral (small figure)",
+  "source": "00_Robin_1.png",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    21,
+    15
+   ],
+   [
+    14,
+    11
+   ]
+  ]
+ },
+ {
+  "id": "22-robin2-34",
+  "label": "Robin 2.ai 3/4 close-up",
+  "source": "01_Robin_2.png",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    81,
+    63
+   ],
+   [
+    76,
+    79
+   ]
+  ]
+ },
+ {
+  "id": "23-headai-neutral",
+  "label": "Robin Head.ai neutral",
+  "source": "13_Robin_Head.png",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    20,
+    14
+   ],
+   [
+    14,
+    10
+   ]
+  ]
+ },
+ {
+  "id": "24-rbn01bw-front-neutral",
+  "label": "RBN01 B&W front neutral (same art as #03)",
+  "source": "15_RBN01_CAMSb_DCTTAS.png",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    48,
+    34
+   ],
+   [
+    50,
+    33
+   ]
+  ]
+ },
+ {
+  "id": "25-place-front-neutral",
+  "label": "place front neutral",
+  "source": "04_Robin_place.jpg",
+  "eyes": 2,
+  "eye_sizes": [
+   [
+    33,
+    21
+   ],
+   [
+    22,
+    16
+   ]
+  ]
+ }
+]

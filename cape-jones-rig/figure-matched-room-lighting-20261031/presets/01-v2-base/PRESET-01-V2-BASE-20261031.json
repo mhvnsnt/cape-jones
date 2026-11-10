@@ -1,0 +1,55 @@
+{
+  "preset_name": "SHAFTS V2 BASE",
+  "preset_id": "01-v2-base",
+  "saved": "2026-10-31",
+  "approval": "0/1 separately",
+  "merged": false,
+  "source_room_file": "shafts-only-cycles-v2-20261031.png",
+  "source_composite_file": "composite-shafts-behind-v2-20261031.png",
+  "room_size": [
+    1100,
+    1500
+  ],
+  "room_mean_RGB": [
+    28.9,
+    26.2,
+    25.3
+  ],
+  "measurements": {
+    "lights": "Sun down energy 4.0 colour (1.0,0.88,0.60) + 5 spots energy 6000 colour (1.0,0.88,0.62) spot 28deg blend 0.5",
+    "slats": 6,
+    "volume": "Principled Volume density 0.28 anisotropy 0.7 colour (1.0,0.85,0.55), CPU 32 samples",
+    "mid_columns": [
+      [
+        282,
+        379
+      ],
+      [
+        494,
+        604
+      ],
+      [
+        721,
+        816
+      ]
+    ],
+    "mid_peak_mean": 54.8,
+    "mid_valley_mean": 22.9,
+    "shaft_centre_mean_RGB": [
+      72.4,
+      62.8,
+      47.1
+    ],
+    "dark_corner_mean_RGB": [
+      22.9,
+      20.4,
+      18.8
+    ],
+    "defects": [
+      "Only 3 of 5 built gaps read clearly; outer 2 too dim",
+      "No ground light pools in v2 (floor removed)",
+      "Ceiling slats dominate top"
+    ]
+  },
+  "rule": "Shafts always behind figure; base art never recoloured; no-crop; do NOT claim 5 columns / Glare / Eevee unless measured file exists. This preset is SEPARATE \u2014 it does not merge into or overwrite the Environmental Depth and Lighting preset."
+}

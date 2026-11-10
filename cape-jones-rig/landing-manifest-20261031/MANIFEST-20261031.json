@@ -1,0 +1,614 @@
+{
+ "batch2": {
+  "on_disk_candidate_eligible": 369,
+  "on_disk_candidate_files_incl_blend1": 383,
+  "staged_files": 348,
+  "variance_note": "Re-verify staged list file-by-file; do not push stale copy.",
+  "verified_at_staging": 0
+ },
+ "files_in_this_folder": [
+  "MANIFEST-20261031.md",
+  "MANIFEST-20261031.json",
+  "per-folder-20261031.json",
+  "summary-counts-20261031.json",
+  "eligible-sha256-20261031.txt"
+ ],
+ "ground_rule": {
+  "airborne": [
+   "flying",
+   "floating",
+   "levitating",
+   "jumping",
+   "fight-motion-off-ground",
+   "chase-airborne"
+  ],
+  "grounded_default": "feet planted; gate FAILS if floating"
+ },
+ "landed_by_this_sweep": {
+  "files": 0,
+  "merge_shas": [],
+  "prs": [],
+  "verified_on_main": 0
+ },
+ "mars_blocked_reconciled": {
+  "minus_resolved_room_scale_pick": 1,
+  "plus_qc_rulings": 3,
+  "still_blocked_decisions": 27,
+  "total_mars_blocked_items": 30,
+  "unseen_picks_plus_mars_only": 28
+ },
+ "per_folder": {
+  "(root files)": {
+   "bytes": 11180281,
+   "files": 141
+  },
+  "afterglow-20261031": {
+   "bytes": 804457,
+   "files": 4
+  },
+  "afterglow-preset-20261031": {
+   "bytes": 804797,
+   "files": 4
+  },
+  "afterglow-videos-20261031": {
+   "bytes": 38910077,
+   "files": 679
+  },
+  "approval-pack-20261031": {
+   "bytes": 11525353,
+   "files": 22
+  },
+  "attachment-cleanup-20261031": {
+   "bytes": 21404636,
+   "files": 60
+  },
+  "blender-composite-fix-20261031": {
+   "bytes": 1614321,
+   "files": 24
+  },
+  "blender-composite-wrap-v2-20261031": {
+   "bytes": 2182138,
+   "files": 11
+  },
+  "blender-composite-wrap-v3-20261031": {
+   "bytes": 5639166,
+   "files": 25
+  },
+  "blender-composite-wrap-v4-20261031": {
+   "bytes": 13473041,
+   "files": 32
+  },
+  "cape-styles-v2-20261031": {
+   "bytes": 2974043,
+   "files": 19
+  },
+  "capegp-presets-20261031": {
+   "bytes": 2799903,
+   "files": 22
+  },
+  "clean-100-20261031": {
+   "bytes": 32906421,
+   "files": 129
+  },
+  "clips": {
+   "bytes": 10884063,
+   "files": 33
+  },
+  "clips-v7": {
+   "bytes": 2124089,
+   "files": 5
+  },
+  "clips-v7c": {
+   "bytes": 9791651,
+   "files": 23
+  },
+  "clips-v7c-clean-20261031": {
+   "bytes": 7348817,
+   "files": 17
+  },
+  "colored-invisible-line-work-20261031": {
+   "bytes": 3169044,
+   "files": 27
+  },
+  "coming-forward-walk-layer-fix-20261031": {
+   "bytes": 35704,
+   "files": 7
+  },
+  "crystal-cape-jones-v2-transformation-upgrade-20261031": {
+   "bytes": 16213669,
+   "files": 48
+  },
+  "crystallization-preset8-power-20261031": {
+   "bytes": 7087453,
+   "files": 47
+  },
+  "cut-limbs": {
+   "bytes": 312199,
+   "files": 8
+  },
+  "cut-limbs-superseded": {
+   "bytes": 35955,
+   "files": 1
+  },
+  "cut-limbs-v7": {
+   "bytes": 321922,
+   "files": 12
+  },
+  "cut-limbs-v7c": {
+   "bytes": 345645,
+   "files": 12
+  },
+  "cut-limbs-v7c-flex-final": {
+   "bytes": 77485,
+   "files": 2
+  },
+  "cut-limbs-v7c-flex-final2": {
+   "bytes": 81971,
+   "files": 2
+  },
+  "cut-limbs-v7c-flex-out": {
+   "bytes": 79375,
+   "files": 2
+  },
+  "cut-limbs-v7c-flex-out-roll": {
+   "bytes": 87451,
+   "files": 2
+  },
+  "cut-limbs-v7c-flex-out-roll2": {
+   "bytes": 59228,
+   "files": 2
+  },
+  "cut-limbs-v7c-gauntlet-out": {
+   "bytes": 74659,
+   "files": 2
+  },
+  "cut-limbs-v7c-gauntlet-out-fixed": {
+   "bytes": 77915,
+   "files": 2
+  },
+  "dance-arm-snap-20261031": {
+   "bytes": 34211150,
+   "files": 72
+  },
+  "dance-improved-20261031": {
+   "bytes": 31724282,
+   "files": 68
+  },
+  "dance-kneefeet-fix-20261031": {
+   "bytes": 33249691,
+   "files": 71
+  },
+  "dance-kneefeet-fix-correction-20261031": {
+   "bytes": 32655974,
+   "files": 73
+  },
+  "dance-recreation-20261031": {
+   "bytes": 232125974,
+   "files": 443
+  },
+  "depth-25d-blockers-broken-20261031": {
+   "bytes": 13303840,
+   "files": 35
+  },
+  "device-prop-v2-20261031": {
+   "bytes": 1087685,
+   "files": 4
+  },
+  "drawing-masters-upgrade-20261031": {
+   "bytes": 10061162,
+   "files": 34
+  },
+  "dual-landscape-scale-fix-20261031": {
+   "bytes": 5752266,
+   "files": 9
+  },
+  "dual-light-variants-20261031": {
+   "bytes": 1726813,
+   "files": 12
+  },
+  "dual-orientation-20261031": {
+   "bytes": 16483580,
+   "files": 15
+  },
+  "dual-orientation-room-scale-fix-20261031": {
+   "bytes": 19751165,
+   "files": 19
+  },
+  "dual-portrait-feet-planted-20261031": {
+   "bytes": 5641723,
+   "files": 10
+  },
+  "experimental-25-20261031": {
+   "bytes": 6800144,
+   "files": 82
+  },
+  "eyes-normal-superhero-v2-20261031": {
+   "bytes": 149728,
+   "files": 8
+  },
+  "eyes-normal-superhero-v3-20261031": {
+   "bytes": 343006,
+   "files": 13
+  },
+  "eyes-normal-superhero-v4-20261031": {
+   "bytes": 621152,
+   "files": 16
+  },
+  "face-cowl-snap-wire100-20261031": {
+   "bytes": 12411804,
+   "files": 44
+  },
+  "fight-and-sheets-20261031": {
+   "bytes": 63552839,
+   "files": 353
+  },
+  "fla-piece-labelling-top5-20261031": {
+   "bytes": 1745351,
+   "files": 29
+  },
+  "forearm-arm2-aligned-20261031": {
+   "bytes": 176882,
+   "files": 5
+  },
+  "forearm-fist-v3-20261031": {
+   "bytes": 368885,
+   "files": 6
+  },
+  "forearm-fist-v4-20261031": {
+   "bytes": 199966,
+   "files": 9
+  },
+  "forearm-fist-v5-20261031": {
+   "bytes": 850083,
+   "files": 15
+  },
+  "forearm-fist-v5-correction-20261031": {
+   "bytes": 604887,
+   "files": 10
+  },
+  "forearm-head34-v2-20261031": {
+   "bytes": 359741,
+   "files": 9
+  },
+  "gap-audit-critique-log-20261031": {
+   "bytes": 1412022,
+   "files": 12
+  },
+  "gap-close-color-20261031": {
+   "bytes": 16086462,
+   "files": 26
+  },
+  "gap-close-rig-20261031": {
+   "bytes": 5127123,
+   "files": 50
+  },
+  "gap-close-sound-edit-20261031": {
+   "bytes": 27214856,
+   "files": 155
+  },
+  "gap-close-tv-20261031": {
+   "bytes": 8438644,
+   "files": 68
+  },
+  "gaussian-splatting-20261031": {
+   "bytes": 12946355,
+   "files": 16
+  },
+  "gaussian-splatting-upgrade-20261031": {
+   "bytes": 21479706,
+   "files": 31
+  },
+  "ginyu-force-limits-broken-20261031": {
+   "bytes": 7847001,
+   "files": 20
+  },
+  "ginyu-force-poses-20261031": {
+   "bytes": 10537413,
+   "files": 30
+  },
+  "godray-level3-20261031": {
+   "bytes": 7171830,
+   "files": 34
+  },
+  "godray-level4-20261031": {
+   "bytes": 8767510,
+   "files": 17
+  },
+  "godray-level5-20261031": {
+   "bytes": 8970063,
+   "files": 30
+  },
+  "gold-split-rim-upgrade-20261031": {
+   "bytes": 12704846,
+   "files": 29
+  },
+  "gold-split-wire100-20261031": {
+   "bytes": 6859801,
+   "files": 20
+  },
+  "ground-feet-placement-wire100-20261031": {
+   "bytes": 1794439,
+   "files": 19
+  },
+  "hand-serve-move-up-20261031": {
+   "bytes": 2126554,
+   "files": 7
+  },
+  "hand-tpose-flatten-20261031": {
+   "bytes": 33619151,
+   "files": 72
+  },
+  "inbetween-20261031": {
+   "bytes": 49487202,
+   "files": 313
+  },
+  "invisible-power-v1-nocrop-fix-20261031": {
+   "bytes": 15702679,
+   "files": 47
+  },
+  "joint-cleanup-20261031": {
+   "bytes": 4071104,
+   "files": 17
+  },
+  "jojo-shift-variation-20261031": {
+   "bytes": 1686783,
+   "files": 5
+  },
+  "limits-broken-10x10-20261031": {
+   "bytes": 3532603,
+   "files": 11
+  },
+  "limits-broken-all-20261031": {
+   "bytes": 3915243,
+   "files": 14
+  },
+  "limits-broken-push2-20261031": {
+   "bytes": 251253,
+   "files": 2
+  },
+  "mars-sweep-G-20261031": {
+   "bytes": 426038,
+   "files": 3
+  },
+  "mochiichao-combine-build-20261031": {
+   "bytes": 55976671,
+   "files": 117
+  },
+  "mouth-jaw-movement-20261031": {
+   "bytes": 17791363,
+   "files": 74
+  },
+  "movements-interp-v2-20261031": {
+   "bytes": 30609362,
+   "files": 282
+  },
+  "multiplane-upgrade-20261031": {
+   "bytes": 15181237,
+   "files": 15
+  },
+  "no-crop-never-again-20261031": {
+   "bytes": 6622377,
+   "files": 158
+  },
+  "no-crop-window-20261031": {
+   "bytes": 23497109,
+   "files": 63
+  },
+  "pack1": {
+   "bytes": 888756,
+   "files": 26
+  },
+  "pack1-clean": {
+   "bytes": 1015168,
+   "files": 26
+  },
+  "pack4-20261031": {
+   "bytes": 1439151,
+   "files": 36
+  },
+  "pahgo-mouth-fix-20261031": {
+   "bytes": 7064594,
+   "files": 36
+  },
+  "parts-catalogue-20261031": {
+   "bytes": 14490090,
+   "files": 24
+  },
+  "picks-explained-20261031": {
+   "bytes": 4104709,
+   "files": 10
+  },
+  "pose-dialects-20261031": {
+   "bytes": 4510081,
+   "files": 13
+  },
+  "pose-dialects-fix-face-cowl-20261031": {
+   "bytes": 1773040,
+   "files": 7
+  },
+  "pose-dialects-video-20261031": {
+   "bytes": 3054211,
+   "files": 20
+  },
+  "poses-as-movements-20261031": {
+   "bytes": 33018816,
+   "files": 492
+  },
+  "presets": {
+   "bytes": 575166,
+   "files": 3
+  },
+  "production-ready-20261031": {
+   "bytes": 3448360,
+   "files": 14
+  },
+  "pseudo-turn-templates-20261031": {
+   "bytes": 58626510,
+   "files": 122
+  },
+  "reference": {
+   "bytes": 250087,
+   "files": 1
+  },
+  "repo-knowledge-package-20261031": {
+   "bytes": 83267,
+   "files": 12
+  },
+  "reposes": {
+   "bytes": 13944167,
+   "files": 32
+  },
+  "reposes-v7": {
+   "bytes": 2590352,
+   "files": 6
+  },
+  "reposes-v7c": {
+   "bytes": 2957098,
+   "files": 7
+  },
+  "reposes-v7c-clean": {
+   "bytes": 12869143,
+   "files": 34
+  },
+  "reshow-approval-pack-20261031": {
+   "bytes": 956672,
+   "files": 3
+  },
+  "robin-eyes-100-20261031": {
+   "bytes": 7716737,
+   "files": 228
+  },
+  "robin-eyes-limits-broken-20261031": {
+   "bytes": 940095,
+   "files": 19
+  },
+  "robin-eyes-refit-20261031": {
+   "bytes": 2944192,
+   "files": 55
+  },
+  "shading-lighting-effects-sweep-20261031": {
+   "bytes": 1302093,
+   "files": 2
+  },
+  "shading-preset-library-20261031": {
+   "bytes": 3359947,
+   "files": 47
+  },
+  "shading-sets-20261031": {
+   "bytes": 14589056,
+   "files": 31
+  },
+  "shading-upgrade-20261031": {
+   "bytes": 8601925,
+   "files": 23
+  },
+  "shafts-environmental-depth-lighting-upgrade-20261031": {
+   "bytes": 45998331,
+   "files": 29
+  },
+  "shafts-volumetric-upgrade-20261031": {
+   "bytes": 10882488,
+   "files": 21
+  },
+  "show-repo-animation-audit-20261031": {
+   "bytes": 301687,
+   "files": 4
+  },
+  "show-templates-world-interactions-20261031": {
+   "bytes": 13807,
+   "files": 7
+  },
+  "showcase": {
+   "bytes": 140974962,
+   "files": 435
+  },
+  "size-transformation-power-20261031": {
+   "bytes": 29753225,
+   "files": 111
+  },
+  "sliced": {
+   "bytes": 1109646,
+   "files": 32
+  },
+  "sliced-clean-20261031": {
+   "bytes": 125891776,
+   "files": 2994
+  },
+  "sliced-clean-20261031-contacts": {
+   "bytes": 189188,
+   "files": 1
+  },
+  "sliced-clean-test": {
+   "bytes": 991772,
+   "files": 29
+  },
+  "superhero-mouths-20261031": {
+   "bytes": 2162534,
+   "files": 28
+  },
+  "tv-production-stack-20261031": {
+   "bytes": 305871,
+   "files": 10
+  },
+  "unseen-unapproved-showpack-20261031": {
+   "bytes": 2912477,
+   "files": 10
+  },
+  "visemes-v2-20261031": {
+   "bytes": 4623043,
+   "files": 34
+  },
+  "wired-100-20261031": {
+   "bytes": 13621333,
+   "files": 105
+  },
+  "workstream-F-tv-readiness-audit-20261031": {
+   "bytes": 10629,
+   "files": 1
+  },
+  "workstream-h-audit-20261031": {
+   "bytes": 3747,
+   "files": 2
+  },
+  "wrist-attach-fix-20261031": {
+   "bytes": 14164523,
+   "files": 38
+  }
+ },
+ "production_gate_score": {
+  "gates": "P1 0 + P2 0.70 + P3 0.90 provisional + P4 0 + P5 0 + P6 0 + P7 0 + P8 0 + P9 0.76 + P10 0.13 + P11 1.00 + P12 0 = 3.49/12",
+  "percent": 29.1,
+  "shots_end_to_end": "0/30 = 0%"
+ },
+ "role": "manifest only, no push, no deletions, no force-push",
+ "room_scale_lock_20261031_2056_CDT": {
+  "landscape_B_3p0_file": "dual-landscape-scale-fix-20261031/landscape-up0p5-3p0x-1920x1080-20261031.png",
+  "portrait_B_3p0_file": "dual-portrait-feet-planted-20261031/portrait-3p0-planted-20261031.png",
+  "rejected": "655px landscape revert",
+  "room_use": "3.0x",
+  "superseded_for_room": "2.5x A versions (kept, not deleted)"
+ },
+ "scope": "~/workspace/cape-jones-rig/ only",
+ "shading_preset_library": {
+  "eligible_files": 101,
+  "owed": 0,
+  "status": "SAVED, paused, not owed"
+ },
+ "snapshot_totals": {
+  "all_bytes": 2969034427,
+  "all_files": 23470,
+  "eligible_bytes": 1753266024,
+  "eligible_files": 9867,
+  "held_bytes": 43053055,
+  "held_files": 93,
+  "tooling_bytes": 1172715348,
+  "tooling_files": 13510
+ },
+ "unseen_inventory": {
+  "mars_only": 13,
+  "picks": 15,
+  "shown_no_response": 26,
+  "total": 83,
+  "unseen": 29
+ }
+}

@@ -1,0 +1,6 @@
+LANDING LIST - neck v2 + sit-lean chat fix, Mars 2026-11-01 01:54 CST
+Include in repo landing, PR-only, 0 deletions, verify size+SHA on main:
+- rig-34-locked-default-sitting-neck-v2-20261101/ (all files: poses, contacts, animation, frames, animation-lean, chat-playable, builders, manifest)
+- anim-sit-locked-20261101/chat-playable/ (sit-lean original chat 700w MP4 + GIF)
+- rig-34-locked-default-sitting-20261101/animation/sit-idle-locked-20261101.* (APPROVED 1/1, SAVED, untouched)
+Do NOT claim landed until verified on main. Original locked pose is NOT approved as-is.

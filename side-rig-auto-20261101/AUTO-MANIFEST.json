@@ -1,0 +1,99 @@
+{
+  "global_scale_S": 0.9557,
+  "chain_heights_native": [
+    357.0,
+    243.05401957166836,
+    158.0,
+    348.0,
+    183.0,
+    176.0
+  ],
+  "depth_offset_px": 27.8,
+  "idle_bbox": [
+    429,
+    120,
+    796,
+    1450
+  ],
+  "bent_bbox": [
+    429,
+    120,
+    1039,
+    1450
+  ],
+  "ground": 1450,
+  "no_flips": true,
+  "overlaps_px": {
+    "torso_pelvis": 1887,
+    "pelvis_thigh_near": 6493,
+    "thigh_near_shin_near": 2763,
+    "thigh_far_shin_far": 20661,
+    "shin_far_boot_far": 264,
+    "neck_cape_collar": 10062,
+    "cape_collar_cape_long": 2343
+  },
+  "joints_px": {
+    "shoulder": [
+      617.0,
+      520.5
+    ],
+    "elbow_near_idle": [
+      605.1,
+      749.7
+    ],
+    "wrist_near_idle": [
+      606.8,
+      957.4
+    ],
+    "neck_top": [
+      662.8,
+      275.0
+    ],
+    "pelvis_top": [
+      662.7,
+      756.6
+    ],
+    "thigh_near_top": [
+      653.2,
+      895.4
+    ]
+  },
+  "layer_order_idle": [
+    "cape_long",
+    "thigh_far",
+    "shin_far",
+    "boot_far",
+    "upper_far",
+    "forearm_far_idle",
+    "fist_far_idle",
+    "shin_near",
+    "pelvis",
+    "torso",
+    "neck",
+    "head",
+    "thigh_near",
+    "upper_near",
+    "forearm_near_idle",
+    "fist_near_idle",
+    "cape_collar"
+  ],
+  "layer_order_bent": [
+    "cape_long",
+    "thigh_far",
+    "shin_far",
+    "boot_far",
+    "upper_far",
+    "forearm_far",
+    "fist_far",
+    "shin_near",
+    "pelvis",
+    "torso",
+    "neck",
+    "head",
+    "thigh_near",
+    "bent_near",
+    "cape_collar"
+  ],
+  "facing": "+x (head/torso/boots native, no flips)",
+  "PASS": true
+}

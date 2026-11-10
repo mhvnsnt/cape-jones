@@ -1,0 +1,7 @@
+{
+  "project": "Anime2Sketch",
+  "status": "METHOD-WIRED, model NOT run",
+  "proxy": "PIL FIND_EDGES + blur-difference; real Anime2Sketch is a learned GAN extractor (MIT) needing PyTorch + weights",
+  "cape_use": "Recover clean lineart from a coloured frame so it can be re-flatted / re-lit without redrawing; check line breaks by eye before use",
+  "base_art_recoloured": false
+}

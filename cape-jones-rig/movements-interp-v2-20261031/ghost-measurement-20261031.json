@@ -1,0 +1,23 @@
+{
+ "v1_mid_serve_guard": {
+  "silhouette": 78271,
+  "edge": 15072,
+  "double_edge_ratio": 1.32,
+  "wash_px": 25525,
+  "xor_px": 26532,
+  "wash_pct": 96.2
+ },
+ "v2_mid_serve_guard_breakdown": {
+  "silhouette": 86264,
+  "edge": 11462,
+  "double_edge_ratio": 1.01,
+  "wash_px": 4561,
+  "xor_px": 26532,
+  "wash_pct": 17.2
+ },
+ "rig_key_vs_original": {
+  "serve_iou": 0.996,
+  "guard_iou": 0.996,
+  "fight_iou_vs_approved_file": 0.782
+ }
+}

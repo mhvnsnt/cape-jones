@@ -1,0 +1,144 @@
+00:02.358  blend            | Read blend: "/home/hatch/workspace/cape-jones-rig/canonical-room-3d-2d-20261101/work/room-clone/3d-assets/living_room.blend"
+00:05.111  reports          | Read library: '/home/hatch/workspace/cape-jones-rig/canonical-room-3d-2d-20261101/work/room-clone/3d-assets/living-room/recliner/recliner_rigged.blend', '//living-room/recliner/recliner_rigged.blend', parent '<direct>'
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:35:05)
+BLENDER 5.2.3 LTS
+SCENE Scene
+FRAME 1 360 1
+CAMERAS ['MainCam']
+ACTIVE_CAM MainCam
+LIGHTS [('HallLight', 'LIGHT', 60.0, (1.0, 0.9139999747276306, 0.5879999995231628)), ('LampCone_Floor', 'LIGHT', 30.0, (1.0, 0.9139999747276306, 0.5879999995231628)), ('LampCone_Table', 'LIGHT', 18.0, (1.0, 0.9139999747276306, 0.5879999995231628)), ('RimLight', 'LIGHT', 60.0, (0.44999998807907104, 0.10000000149011612, 0.8999999761581421)), ('RoomLight', 'LIGHT', 300.0, (0.44999998807907104, 0.10000000149011612, 0.8999999761581421)), ('Sun', 'LIGHT', 1.5, (1.0, 1.0, 1.0)), ('TV_Glow', 'LIGHT', 14.0, (1.0, 0.9700000286102295, 0.9200000166893005)), ('WindowShaft', 'LIGHT', 160.0, (0.8500000238418579, 0.9200000166893005, 1.0))]
+RENDER_ENGINE CYCLES
+N_OBJECTS 129
+{'name': 'antenna_0', 'type': 'MESH', 'loc': [-0.96, 2.6, 1.49], 'hide_render': False}
+{'name': 'antenna_1', 'type': 'MESH', 'loc': [-0.84, 2.6, 1.49], 'hide_render': False}
+{'name': 'antenna_base', 'type': 'MESH', 'loc': [-0.9, 2.6, 1.28], 'hide_render': False}
+{'name': 'bookcaseClosed(Clone)', 'type': 'MESH', 'loc': [-2.95, -1.8, 0.0], 'hide_render': False}
+{'name': 'box_a', 'type': 'MESH', 'loc': [-0.68, 2.6, 0.525], 'hide_render': False}
+{'name': 'box_b', 'type': 'MESH', 'loc': [-1.1, 2.6, 0.205], 'hide_render': False}
+{'name': 'box_c', 'type': 'MESH', 'loc': [-1.1, 2.6, 0.335], 'hide_render': False}
+{'name': 'box_d', 'type': 'MESH', 'loc': [-0.75, 2.6, 0.185], 'hide_render': False}
+{'name': 'cabinetTelevision(Clone)', 'type': 'MESH', 'loc': [-0.9, 2.6, 0.0], 'hide_render': False}
+{'name': 'CamTarget', 'type': 'EMPTY', 'loc': [0.2, 0.8, 0.8], 'hide_render': False}
+{'name': 'CapeJones_Body', 'type': 'MESH', 'loc': [0.0, 0.0, 0.0], 'hide_render': False}
+{'name': 'CapeJones_Cape', 'type': 'MESH', 'loc': [0.0, 0.0, 0.0], 'hide_render': False}
+{'name': 'CapeJones_Rig', 'type': 'ARMATURE', 'loc': [0.0, 0.0, 0.0], 'hide_render': False}
+{'name': 'Ceiling', 'type': 'MESH', 'loc': [0.0, 0.0, 3.0], 'hide_render': False}
+{'name': 'crt_screen', 'type': 'MESH', 'loc': [-0.9, 2.388, 1.01], 'hide_render': False}
+{'name': 'crt_tv', 'type': 'MESH', 'loc': [-0.9, 2.6, 1.01], 'hide_render': False}
+{'name': 'door_jamb_L', 'type': 'MESH', 'loc': [-3.08, 3.0, 1.05], 'hide_render': False}
+{'name': 'door_jamb_R', 'type': 'MESH', 'loc': [-2.12, 3.0, 1.05], 'hide_render': False}
+{'name': 'door_lintel', 'type': 'MESH', 'loc': [-2.6, 3.0, 2.16], 'hide_render': False}
+{'name': 'ext_baffle_bot', 'type': 'MESH', 'loc': [4.4, 1.5, -0.15], 'hide_render': False}
+{'name': 'ext_baffle_L', 'type': 'MESH', 'loc': [4.4, -1.5, 1.7], 'hide_render': False}
+{'name': 'ext_baffle_R', 'type': 'MESH', 'loc': [4.4, 4.5, 1.7], 'hide_render': False}
+{'name': 'ext_baffle_top', 'type': 'MESH', 'loc': [4.4, 1.5, 3.6], 'hide_render': False}
+{'name': 'ext_sun', 'type': 'MESH', 'loc': [5.3, -0.1, 2.6], 'hide_render': False}
+{'name': 'exterior', 'type': 'EMPTY', 'loc': [4.4, 1.5, 1.5], 'hide_render': False}
+{'name': 'Floor', 'type': 'MESH', 'loc': [0.0, 0.0, -0.05], 'hide_render': False}
+{'name': 'ghost_body', 'type': 'MESH', 'loc': [0.5, 2.89, 1.88], 'hide_render': False}
+{'name': 'ghost_eye_0', 'type': 'MESH', 'loc': [0.465, 2.81, 2.04], 'hide_render': False}
+{'name': 'ghost_eye_1', 'type': 'MESH', 'loc': [0.535, 2.81, 2.04], 'hide_render': False}
+{'name': 'ghost_frame', 'type': 'MESH', 'loc': [0.5, 2.925, 1.9], 'hide_render': False}
+{'name': 'ghost_head', 'type': 'MESH', 'loc': [0.5, 2.89, 2.02], 'hide_render': False}
+{'name': 'ghost_paper', 'type': 'MESH', 'loc': [0.5, 2.92, 1.9], 'hide_render': False}
+{'name': 'ghost_wave_0', 'type': 'MESH', 'loc': [0.44, 2.89, 1.78], 'hide_render': False}
+{'name': 'ghost_wave_1', 'type': 'MESH', 'loc': [0.5, 2.89, 1.78], 'hide_render': False}
+{'name': 'ghost_wave_2', 'type': 'MESH', 'loc': [0.56, 2.89, 1.78], 'hide_render': False}
+{'name': 'hall_door', 'type': 'MESH', 'loc': [-2.6, 5.52, 1.0], 'hide_render': False}
+{'name': 'hall_end', 'type': 'MESH', 'loc': [-2.6, 5.6, 1.3], 'hide_render': False}
+{'name': 'hall_floor', 'type': 'MESH', 'loc': [-2.6, 4.3, -0.05], 'hide_render': False}
+{'name': 'hall_wall_L', 'type': 'MESH', 'loc': [-3.25, 4.3, 1.3], 'hide_render': False}
+{'name': 'hall_wall_R', 'type': 'MESH', 'loc': [-1.95, 4.3, 1.3], 'hide_render': False}
+{'name': 'HallLight', 'type': 'LIGHT', 'loc': [-2.6, 4.4, 2.2], 'hide_render': False}
+{'name': 'hallway', 'type': 'EMPTY', 'loc': [-2.6, 4.2, 0.0], 'hide_render': False}
+{'name': 'LampCone_Floor', 'type': 'LIGHT', 'loc': [3.0, 2.5, 0.1], 'hide_render': False}
+{'name': 'LampCone_Table', 'type': 'LIGHT', 'loc': [-0.35, 0.4, 0.33], 'hide_render': False}
+{'name': 'lampRoundFloor(Clone)', 'type': 'MESH', 'loc': [3.0, 2.5, 0.0], 'hide_render': False}
+{'name': 'lampSquareTable(Clone)', 'type': 'MESH', 'loc': [-0.35, 0.4, 0.23], 'hide_render': False}
+{'name': 'LED_Back', 'type': 'MESH', 'loc': [0.0, 2.9, 2.75], 'hide_render': False}
+{'name': 'LED_Left', 'type': 'MESH', 'loc': [-3.4, 0.0, 2.75], 'hide_render': False}
+{'name': 'LED_RemoteRig', 'type': 'EMPTY', 'loc': [0.0, 0.0, 0.0], 'hide_render': False}
+{'name': 'LED_Right', 'type': 'MESH', 'loc': [3.4, 0.0, 2.75], 'hide_render': False}
+{'name': 'LEDRemote', 'type': 'MESH', 'loc': [-0.32, 0.45, 0.245], 'hide_render': False}
+{'name': 'loungeChairRelax(Clone)', 'type': 'MESH', 'loc': [2.653, 2.312, 0.0], 'hide_render': True}
+{'name': 'loungeDesignSofa(Clone)', 'type': 'MESH', 'loc': [-2.9, -0.6, 0.0], 'hide_render': False}
+{'name': 'MainCam', 'type': 'CAMERA', 'loc': [0.0, -4.6, 1.7], 'hide_render': False}
+{'name': 'monster_body', 'type': 'MESH', 'loc': [-0.92, 2.58, 0.22], 'hide_render': False}
+{'name': 'monster_eye_0', 'type': 'MESH', 'loc': [-0.948, 2.525, 0.25], 'hide_render': False}
+{'name': 'monster_eye_1', 'type': 'MESH', 'loc': [-0.892, 2.525, 0.25], 'hide_render': False}
+{'name': 'monster_foot_0', 'type': 'MESH', 'loc': [-0.96, 2.58, 0.165], 'hide_render': False}
+{'name': 'monster_foot_1', 'type': 'MESH', 'loc': [-0.88, 2.58, 0.165], 'hide_render': False}
+{'name': 'mug_handle', 'type': 'MESH', 'loc': [-0.438, 1.6, 0.618], 'hide_render': False}
+{'name': 'mug_text', 'type': 'FONT', 'loc': [-0.5, 1.554, 0.618], 'hide_render': False}
+{'name': 'okayest_hero_mug', 'type': 'MESH', 'loc': [-0.5, 1.6, 0.618], 'hide_render': False}
+{'name': 'poster_backing', 'type': 'MESH', 'loc': [-1.7, 2.925, 1.9], 'hide_render': False}
+{'name': 'poster_paper', 'type': 'MESH', 'loc': [-1.7, 2.92, 1.9], 'hide_render': False}
+{'name': 'poster_text', 'type': 'FONT', 'loc': [-1.7, 2.912, 2.06], 'hide_render': False}
+{'name': 'RemoteBtn_0', 'type': 'MESH', 'loc': [-0.338, 0.52, 0.26], 'hide_render': False}
+{'name': 'RemoteBtn_1', 'type': 'MESH', 'loc': [-0.302, 0.52, 0.26], 'hide_render': False}
+{'name': 'RemoteBtn_2', 'type': 'MESH', 'loc': [-0.338, 0.485, 0.26], 'hide_render': False}
+{'name': 'RemoteBtn_3', 'type': 'MESH', 'loc': [-0.302, 0.485, 0.26], 'hide_render': False}
+{'name': 'RemoteBtn_4', 'type': 'MESH', 'loc': [-0.338, 0.45, 0.26], 'hide_render': False}
+{'name': 'RemoteBtn_5', 'type': 'MESH', 'loc': [-0.302, 0.45, 0.26], 'hide_render': False}
+{'name': 'RimLight', 'type': 'LIGHT', 'loc': [2.6, 3.4, 2.6], 'hide_render': False}
+{'name': 'RoomLight', 'type': 'LIGHT', 'loc': [0.0, 0.0, 2.4], 'hide_render': False}
+{'name': 'rugRound(Clone)', 'type': 'MESH', 'loc': [1.814, 0.964, 0.01], 'hide_render': False}
+{'name': 'shrimp_body', 'type': 'MESH', 'loc': [-1.7, 2.9, 1.78], 'hide_render': False}
+{'name': 'shrimp_tail', 'type': 'MESH', 'loc': [-1.6, 2.9, 1.78], 'hide_render': False}
+{'name': 'side_table', 'type': 'MESH', 'loc': [2.9, 0.95, 0.55], 'hide_render': False}
+{'name': 'side_table_leg_0', 'type': 'MESH', 'loc': [-0.5, 1.71, 0.27], 'hide_render': False}
+{'name': 'side_table_leg_1', 'type': 'MESH', 'loc': [-0.595, 1.545, 0.27], 'hide_render': False}
+{'name': 'side_table_leg_2', 'type': 'MESH', 'loc': [-0.405, 1.545, 0.27], 'hide_render': False}
+{'name': 'sky_backdrop', 'type': 'MESH', 'loc': [5.4, 1.5, 1.7], 'hide_render': False}
+{'name': 'squid_body', 'type': 'MESH', 'loc': [-0.9, 2.87, 2.02], 'hide_render': False}
+{'name': 'squid_eye_0', 'type': 'MESH', 'loc': [-0.935, 2.795, 2.05], 'hide_render': False}
+{'name': 'squid_eye_1', 'type': 'MESH', 'loc': [-0.865, 2.795, 2.05], 'hide_render': False}
+{'name': 'squid_fin_0', 'type': 'MESH', 'loc': [-0.97, 2.87, 2.12], 'hide_render': False}
+{'name': 'squid_fin_1', 'type': 'MESH', 'loc': [-0.83, 2.87, 2.12], 'hide_render': False}
+{'name': 'squid_string', 'type': 'MESH', 'loc': [-0.9, 2.9, 2.24], 'hide_render': False}
+{'name': 'squid_tent_0', 'type': 'MESH', 'loc': [-0.947, 2.87, 1.86], 'hide_render': False}
+{'name': 'squid_tent_1', 'type': 'MESH', 'loc': [-0.929, 2.87, 1.86], 'hide_render': False}
+{'name': 'squid_tent_2', 'type': 'MESH', 'loc': [-0.91, 2.87, 1.86], 'hide_render': False}
+{'name': 'squid_tent_3', 'type': 'MESH', 'loc': [-0.89, 2.87, 1.86], 'hide_render': False}
+{'name': 'squid_tent_4', 'type': 'MESH', 'loc': [-0.871, 2.87, 1.86], 'hide_render': False}
+{'name': 'squid_tent_5', 'type': 'MESH', 'loc': [-0.853, 2.87, 1.86], 'hide_render': False}
+{'name': 'stand_back', 'type': 'MESH', 'loc': [-0.9, 2.74, 0.375], 'hide_render': False}
+{'name': 'stand_shelf_low', 'type': 'MESH', 'loc': [-0.9, 2.6, 0.12], 'hide_render': False}
+{'name': 'stand_shelf_mid', 'type': 'MESH', 'loc': [-0.9, 2.6, 0.45], 'hide_render': False}
+{'name': 'stand_side_L', 'type': 'MESH', 'loc': [-1.285, 2.6, 0.375], 'hide_render': False}
+{'name': 'stand_side_R', 'type': 'MESH', 'loc': [-0.515, 2.6, 0.375], 'hide_render': False}
+{'name': 'stand_top', 'type': 'MESH', 'loc': [-0.9, 2.6, 0.73], 'hide_render': False}
+{'name': 'Sun', 'type': 'LIGHT', 'loc': [2.0, -4.0, 5.0], 'hide_render': False}
+{'name': 'tableCoffee(Clone)', 'type': 'MESH', 'loc': [-0.2, 0.4, 0.0], 'hide_render': False}
+{'name': 'tree_a_canopy', 'type': 'MESH', 'loc': [4.5, 0.8, 1.35], 'hide_render': False}
+{'name': 'tree_a_trunk', 'type': 'MESH', 'loc': [4.5, 0.8, 0.5], 'hide_render': False}
+{'name': 'tree_b_canopy', 'type': 'MESH', 'loc': [4.8, 2.4, 1.688], 'hide_render': False}
+{'name': 'tree_b_trunk', 'type': 'MESH', 'loc': [4.8, 2.4, 0.625], 'hide_render': False}
+{'name': 'TV_Glow', 'type': 'LIGHT', 'loc': [-0.08, 2.371, 1.05], 'hide_render': False}
+{'name': 'TVConsole_Yaw', 'type': 'EMPTY', 'loc': [-0.9, 2.45, 0.0], 'hide_render': False}
+{'name': 'vcr_dvd', 'type': 'MESH', 'loc': [-1.02, 2.6, 0.51], 'hide_render': False}
+{'name': 'VolumeBox_Room', 'type': 'MESH', 'loc': [0.0, 0.0, 0.0], 'hide_render': False}
+{'name': 'wall_decor', 'type': 'EMPTY', 'loc': [0.0, 2.9, 1.9], 'hide_render': False}
+{'name': 'WallBack', 'type': 'MESH', 'loc': [0.0, 3.0, 1.5], 'hide_render': False}
+{'name': 'WallLeft', 'type': 'MESH', 'loc': [-3.5, 0.0, 1.5], 'hide_render': False}
+{'name': 'WallRight', 'type': 'MESH', 'loc': [3.5, 0.0, 1.5], 'hide_render': False}
+{'name': 'win_head', 'type': 'MESH', 'loc': [3.5, 1.5, 2.185], 'hide_render': False}
+{'name': 'win_jamb_back', 'type': 'MESH', 'loc': [3.5, 2.23, 1.6], 'hide_render': False}
+{'name': 'win_jamb_front', 'type': 'MESH', 'loc': [3.5, 0.77, 1.6], 'hide_render': False}
+{'name': 'win_mullion_h', 'type': 'MESH', 'loc': [3.5, 1.5, 1.6], 'hide_render': False}
+{'name': 'win_mullion_v', 'type': 'MESH', 'loc': [3.5, 1.5, 1.6], 'hide_render': False}
+{'name': 'win_sill', 'type': 'MESH', 'loc': [3.5, 1.5, 1.015], 'hide_render': False}
+{'name': 'window_unit', 'type': 'EMPTY', 'loc': [3.5, 1.5, 1.6], 'hide_render': False}
+{'name': 'WindowShaft', 'type': 'LIGHT', 'loc': [3.3, 1.5, 2.0], 'hide_render': False}
+{'name': 'recliner_armrest_L', 'type': 'MESH', 'loc': [2.653, 2.312, 0.0], 'hide_render': False}
+{'name': 'recliner_armrest_R', 'type': 'MESH', 'loc': [2.653, 2.312, 0.0], 'hide_render': False}
+{'name': 'recliner_backrest', 'type': 'MESH', 'loc': [2.653, 2.312, 0.0], 'hide_render': False}
+{'name': 'recliner_base', 'type': 'MESH', 'loc': [2.653, 2.312, 0.0], 'hide_render': False}
+{'name': 'recliner_footrest_link', 'type': 'MESH', 'loc': [2.653, 2.312, 0.0], 'hide_render': False}
+{'name': 'recliner_footrest_pad', 'type': 'MESH', 'loc': [2.653, 2.312, 0.0], 'hide_render': False}
+{'name': 'recliner_legs', 'type': 'MESH', 'loc': [2.653, 2.312, 0.0], 'hide_render': False}
+{'name': 'recliner_rig', 'type': 'ARMATURE', 'loc': [2.653, 2.312, 0.0], 'hide_render': False}
+MATERIALS ['BtnMat_0', 'BtnMat_1', 'BtnMat_2', 'BtnMat_3', 'BtnMat_4', 'BtnMat_5', 'Cape_Black', 'FloorMat', 'LEDStripMat', 'RemoteMat', 'VolumeMat_Room', 'WallMat', 'canopyMat', 'carpet', 'carpet.001', 'carpetBlue', 'carpetDarker', 'lamp', 'lamp.001', 'metal', 'metal.001', 'metal.002', 'metal.003', 'skyMat', 'tripo_material_2cad1649-2fab-4c4f-9666-330ccaa37295.001', 'tvScreenMat', 'wood', 'wood.001', 'wood.002', 'wood.003']
+COLLECTIONS ['Collection', 'Recliner']
+
+Blender quit

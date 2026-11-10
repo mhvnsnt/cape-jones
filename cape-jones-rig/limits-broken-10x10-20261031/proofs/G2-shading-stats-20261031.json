@@ -1,0 +1,102 @@
+{
+  "I01 lambert L": {
+    "left_R": 127.2,
+    "right_R": 138.1,
+    "delta": -10.9
+  },
+  "I02 lambert R": {
+    "left_R": 137.1,
+    "right_R": 127.5,
+    "delta": 9.6
+  },
+  "I03 rim only": {
+    "left_R": 133.0,
+    "right_R": 133.8,
+    "delta": -0.8
+  },
+  "I04 distance norm": {
+    "left_R": 131.6,
+    "right_R": 135.6,
+    "delta": -4.0
+  },
+  "I05 side weight L": {
+    "left_R": 121.6,
+    "right_R": 139.8,
+    "delta": -18.2
+  },
+  "I06 side weight R": {
+    "left_R": 138.8,
+    "right_R": 121.5,
+    "delta": 17.2
+  },
+  "I07 soft normal": {
+    "left_R": 127.2,
+    "right_R": 137.2,
+    "delta": -10.0
+  },
+  "I08 hard normal": {
+    "left_R": 127.4,
+    "right_R": 138.1,
+    "delta": -10.7
+  },
+  "I09 top light": {
+    "left_R": 131.1,
+    "right_R": 132.0,
+    "delta": -1.0
+  },
+  "I10 bottom light": {
+    "left_R": 132.0,
+    "right_R": 132.7,
+    "delta": -0.7
+  },
+  "X01 pseudo-depth": {
+    "left_R": 124.4,
+    "right_R": 138.9,
+    "delta": -14.6
+  },
+  "X02 edge-aware": {
+    "left_R": 127.2,
+    "right_R": 137.7,
+    "delta": -10.6
+  },
+  "X03 faceting test": {
+    "left_R": 119.9,
+    "right_R": 121.1,
+    "delta": -1.2
+  },
+  "X04 dual light": {
+    "left_R": 132.1,
+    "right_R": 132.5,
+    "delta": -0.4
+  },
+  "X05 warm/cool split": {
+    "left_R": 127.2,
+    "right_R": 138.1,
+    "delta": -10.9
+  },
+  "X06 gradient mesh": {
+    "left_R": 130.2,
+    "right_R": 135.7,
+    "delta": -5.5
+  },
+  "X07 inverted depth": {
+    "left_R": 134.5,
+    "right_R": 130.9,
+    "delta": 3.6
+  },
+  "X08 high contrast": {
+    "left_R": 125.9,
+    "right_R": 132.1,
+    "delta": -6.1
+  },
+  "X09 blur relight": {
+    "left_R": 127.2,
+    "right_R": 136.8,
+    "delta": -9.5
+  },
+  "X10 no shade ctl": {
+    "left_R": 134.7,
+    "right_R": 135.5,
+    "delta": -0.8
+  }
+}

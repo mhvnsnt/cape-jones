@@ -1,0 +1,211 @@
+{
+ "back_head_cowl": {
+  "source_box": [
+   490,
+   0,
+   595,
+   150
+  ],
+  "size": [
+   105,
+   150
+  ],
+  "alpha_bbox_in_piece": [
+   0,
+   0,
+   105,
+   150
+  ],
+  "alpha_px": 13593
+ },
+ "back_cape": {
+  "source_box": [
+   260,
+   145,
+   830,
+   1004
+  ],
+  "size": [
+   570,
+   859
+  ],
+  "alpha_bbox_in_piece": [
+   0,
+   0,
+   570,
+   858
+  ],
+  "alpha_px": 262545
+ },
+ "back_belt_pelvis": {
+  "source_box": [
+   400,
+   465,
+   685,
+   650
+  ],
+  "size": [
+   285,
+   185
+  ],
+  "alpha_bbox_in_piece": [
+   27,
+   0,
+   258,
+   185
+  ],
+  "alpha_px": 34809
+ },
+ "back_upper_arm_L": {
+  "source_box": [
+   290,
+   170,
+   380,
+   280
+  ],
+  "size": [
+   90,
+   110
+  ],
+  "alpha_bbox_in_piece": [
+   0,
+   0,
+   90,
+   110
+  ],
+  "alpha_px": 6761
+ },
+ "back_forearm_hand_L": {
+  "source_box": [
+   50,
+   170,
+   290,
+   280
+  ],
+  "size": [
+   240,
+   110
+  ],
+  "alpha_bbox_in_piece": [
+   0,
+   9,
+   240,
+   99
+  ],
+  "alpha_px": 12712
+ },
+ "back_upper_arm_R": {
+  "source_box": [
+   705,
+   170,
+   800,
+   280
+  ],
+  "size": [
+   95,
+   110
+  ],
+  "alpha_bbox_in_piece": [
+   0,
+   0,
+   95,
+   110
+  ],
+  "alpha_px": 7068
+ },
+ "back_forearm_hand_R": {
+  "source_box": [
+   800,
+   170,
+   1035,
+   280
+  ],
+  "size": [
+   235,
+   110
+  ],
+  "alpha_bbox_in_piece": [
+   0,
+   9,
+   235,
+   99
+  ],
+  "alpha_px": 12453
+ },
+ "back_thigh_L": {
+  "source_box": [
+   405,
+   620,
+   550,
+   850
+  ],
+  "size": [
+   145,
+   230
+  ],
+  "alpha_bbox_in_piece": [
+   8,
+   0,
+   108,
+   230
+  ],
+  "alpha_px": 15601
+ },
+ "back_thigh_R": {
+  "source_box": [
+   540,
+   620,
+   680,
+   850
+  ],
+  "size": [
+   140,
+   230
+  ],
+  "alpha_bbox_in_piece": [
+   33,
+   0,
+   131,
+   230
+  ],
+  "alpha_px": 15566
+ },
+ "back_shin_boot_L": {
+  "source_box": [
+   400,
+   820,
+   505,
+   1004
+  ],
+  "size": [
+   105,
+   184
+  ],
+  "alpha_bbox_in_piece": [
+   0,
+   0,
+   105,
+   184
+  ],
+  "alpha_px": 9220
+ },
+ "back_shin_boot_R": {
+  "source_box": [
+   590,
+   820,
+   690,
+   1004
+  ],
+  "size": [
+   100,
+   184
+  ],
+  "alpha_bbox_in_piece": [
+   2,
+   0,
+   100,
+   184
+  ],
+  "alpha_px": 9410
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "bg": [
+  147.0,
+  147.0,
+  147.0
+ ],
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    173,
+    379
+   ],
+   "opaque_px": 24673,
+   "sheet_bbox": [
+    114,
+    36,
+    287,
+    415
+   ]
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    193,
+    288
+   ],
+   "opaque_px": 48799,
+   "sheet_bbox": [
+    494,
+    118,
+    687,
+    406
+   ]
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    350,
+    248
+   ],
+   "opaque_px": 58561,
+   "sheet_bbox": [
+    79,
+    457,
+    429,
+    705
+   ]
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    271,
+    194
+   ],
+   "opaque_px": 34447,
+   "sheet_bbox": [
+    468,
+    497,
+    739,
+    691
+   ]
+  },
+  {
+   "name": "Row2_3",
+   "file": "Row2_3.png",
+   "size": [
+    325,
+    296
+   ],
+   "opaque_px": 74591,
+   "sheet_bbox": [
+    780,
+    405,
+    1105,
+    701
+   ]
+  }
+ ]
+}

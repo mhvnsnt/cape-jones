@@ -1,0 +1,218 @@
+{
+  "base": {
+    "bbox": [
+      237,
+      359,
+      864,
+      1400
+    ],
+    "fcx": 550,
+    "fw": 627,
+    "gy": 1400,
+    "base_dx": 30
+  },
+  "frames_3f": [
+    {
+      "off": -6,
+      "term_x_expected": 538.0,
+      "term_x_measured_median": 538.0,
+      "selfcast_px": 47797,
+      "rim_px": 16622,
+      "form_px": 303798,
+      "alpha_unchanged": true,
+      "ground_cast_centroid_x": 550.0768886292835,
+      "ground_cast_px": 70328,
+      "feet_y": 1400,
+      "kind": "NEW-correlated"
+    },
+    {
+      "off": 0,
+      "term_x_expected": 550.0,
+      "term_x_measured_median": 550.0,
+      "selfcast_px": 45360,
+      "rim_px": 16419,
+      "form_px": 314023,
+      "alpha_unchanged": true,
+      "ground_cast_centroid_x": 550.499815034754,
+      "ground_cast_px": 70329,
+      "feet_y": 1400,
+      "kind": "NEW-correlated"
+    },
+    {
+      "off": 6,
+      "term_x_expected": 562.0,
+      "term_x_measured_median": 562.0,
+      "selfcast_px": 41693,
+      "rim_px": 16198,
+      "form_px": 323779,
+      "alpha_unchanged": true,
+      "ground_cast_centroid_x": 550.9365156618062,
+      "ground_cast_px": 70335,
+      "feet_y": 1400,
+      "kind": "NEW-correlated"
+    }
+  ],
+  "frames_5f": [
+    {
+      "off": -8,
+      "term_x_expected": 534.0,
+      "term_x_measured_median": 534.0,
+      "selfcast_px": 47451,
+      "rim_px": 16693,
+      "form_px": 300375,
+      "alpha_unchanged": true,
+      "ground_cast_centroid_x": 549.9433506650308,
+      "ground_cast_px": 70319,
+      "feet_y": 1400,
+      "kind": "NEW-correlated-5f"
+    },
+    {
+      "off": -4,
+      "term_x_expected": 542.0,
+      "term_x_measured_median": 542.0,
+      "selfcast_px": 47303,
+      "rim_px": 16551,
+      "form_px": 307229,
+      "alpha_unchanged": true,
+      "ground_cast_centroid_x": 550.2216099384688,
+      "ground_cast_px": 70324,
+      "feet_y": 1400,
+      "kind": "NEW-correlated-5f"
+    },
+    {
+      "off": 0,
+      "term_x_expected": 550.0,
+      "term_x_measured_median": 550.0,
+      "selfcast_px": 45360,
+      "rim_px": 16419,
+      "form_px": 314023,
+      "alpha_unchanged": true,
+      "ground_cast_centroid_x": 550.499815034754,
+      "ground_cast_px": 70329,
+      "feet_y": 1400,
+      "kind": "NEW-correlated-5f"
+    },
+    {
+      "off": 4,
+      "term_x_expected": 558.0,
+      "term_x_measured_median": 558.0,
+      "selfcast_px": 43155,
+      "rim_px": 16273,
+      "form_px": 320635,
+      "alpha_unchanged": true,
+      "ground_cast_centroid_x": 550.8062644785766,
+      "ground_cast_px": 70337,
+      "feet_y": 1400,
+      "kind": "NEW-correlated-5f"
+    },
+    {
+      "off": 8,
+      "term_x_expected": 566.0,
+      "term_x_measured_median": 566.0,
+      "selfcast_px": 40384,
+      "rim_px": 16112,
+      "form_px": 326751,
+      "alpha_unchanged": true,
+      "ground_cast_centroid_x": 551.0924858867043,
+      "ground_cast_px": 70338,
+      "feet_y": 1400,
+      "kind": "NEW-correlated-5f"
+    }
+  ],
+  "frames_old": [
+    {
+      "off": -6,
+      "term_x_expected": 550.0,
+      "term_x_measured_median": 550.0,
+      "selfcast_px": 45360,
+      "rim_px": 16419,
+      "form_px": 314023,
+      "alpha_unchanged": true,
+      "ground_cast_centroid_x": 550.0768886292835,
+      "ground_cast_px": 70328,
+      "feet_y": 1400,
+      "kind": "OLD-defect"
+    },
+    {
+      "off": 0,
+      "term_x_expected": 550.0,
+      "term_x_measured_median": 550.0,
+      "selfcast_px": 45360,
+      "rim_px": 16419,
+      "form_px": 314023,
+      "alpha_unchanged": true,
+      "ground_cast_centroid_x": 550.499815034754,
+      "ground_cast_px": 70329,
+      "feet_y": 1400,
+      "kind": "OLD-defect"
+    },
+    {
+      "off": 6,
+      "term_x_expected": 550.0,
+      "term_x_measured_median": 550.0,
+      "selfcast_px": 45360,
+      "rim_px": 16419,
+      "form_px": 314023,
+      "alpha_unchanged": true,
+      "ground_cast_centroid_x": 550.9365156618062,
+      "ground_cast_px": 70335,
+      "feet_y": 1400,
+      "kind": "OLD-defect"
+    }
+  ],
+  "gate_3f_new": {
+    "ground_centroids": [
+      550.0768886292835,
+      550.499815034754,
+      550.9365156618062
+    ],
+    "terminators": [
+      538.0,
+      550.0,
+      562.0
+    ],
+    "ground_monotonic_up": true,
+    "terminator_monotonic_up": true,
+    "ground_delta_total": 0.8596270325226669,
+    "terminator_delta_total": 24.0,
+    "PASS": true
+  },
+  "gate_3f_old": {
+    "ground_centroids": [
+      550.0768886292835,
+      550.499815034754,
+      550.9365156618062
+    ],
+    "terminators": [
+      550.0,
+      550.0,
+      550.0
+    ],
+    "ground_monotonic_up": true,
+    "terminator_monotonic_up": false,
+    "ground_delta_total": 0.8596270325226669,
+    "terminator_delta_total": 0.0,
+    "PASS": false
+  },
+  "gate_5f_new": {
+    "ground_centroids": [
+      549.9433506650308,
+      550.2216099384688,
+      550.499815034754,
+      550.8062644785766,
+      551.0924858867043
+    ],
+    "terminators": [
+      534.0,
+      542.0,
+      550.0,
+      558.0,
+      566.0
+    ],
+    "ground_monotonic_up": true,
+    "terminator_monotonic_up": true,
+    "ground_delta_total": 1.1491352216734185,
+    "terminator_delta_total": 32.0,
+    "PASS": true
+  }
+}

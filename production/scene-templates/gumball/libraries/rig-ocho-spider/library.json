@@ -1,0 +1,36 @@
+{
+ "id": "rig-ocho-spider",
+ "kind": "static-puppet-library",
+ "show": "The Amazing World of Gumball",
+ "collection": "Gumball S2 single-character rigs",
+ "characters": [
+  "Ocho"
+ ],
+ "source_file": "Ocho_Spider.fla",
+ "source_archive": "CN-Leaks-001-gumball.zip",
+ "archive_location": "mhvnsnt/cn-gigaleak-gumball, draft release untagged-1676e192ae8c72e95791",
+ "size_bytes": 50176,
+ "format": "Binary FLA (OLE2 compound, pre-XFL)",
+ "symbol_count": null,
+ "symbols": null,
+ "recovered_names": [
+  "Ochobody",
+  "OchoFoot",
+  "ochoeyes"
+ ],
+ "parts_census": null,
+ "views": null,
+ "presentation_frames": "Not measured (no companion SWF in the archive)",
+ "completeness": "Minimal rig — named parts only; completeness limited",
+ "notes": [
+  "Smallest library in the archive (50,176 B). Recovered named parts: Ochobody, OchoFoot, ochoeyes — a spider-form Ocho built from a body, a foot piece and an eye piece.",
+  "No mouth symbol recovered by name. This is a form-specific mini-rig, not a full puppet."
+ ],
+ "media": {
+  "status": "blocked-write-guard",
+  "target_file": "sheet-rig-ocho-spider.png",
+  "delivery_dir": "~/workspace/your_files/scene-templates/",
+  "note": "Model-sheet render staged in render_model_sheets.sh; the sandbox write guard currently refuses rendered-binary writes (EPERM/0 bytes). Census and catalog are unaffected."
+ },
+ "record_path": "production/scene-templates/gumball/libraries/rig-ocho-spider/library.json"
+}

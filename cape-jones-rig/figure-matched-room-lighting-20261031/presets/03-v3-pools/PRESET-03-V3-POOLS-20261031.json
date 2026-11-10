@@ -1,0 +1,32 @@
+{
+  "preset_name": "SHAFTS V3+POOLS IMPROVED FINAL",
+  "preset_id": "03-v3-pools",
+  "saved": "2026-10-31",
+  "approval": "0/1 separately",
+  "merged": false,
+  "source_room_file": "composite-environmental-depth-lighting-v3-pools-20261031.png",
+  "source_composite_file": "composite-environmental-depth-lighting-v3-pools-20261031.png",
+  "room_size": [
+    1100,
+    1500
+  ],
+  "room_mean_RGB": [
+    71.7,
+    65.9,
+    60.7
+  ],
+  "measurements": {
+    "lights": "V3 Cycles + ground pools: warm ellipses at feet_y 1282, centres 165/330/550/770/935, radii 150/110/70, alpha 90/120/140, blur 18, behind figure",
+    "mean_RGB_composite": [
+      71.7,
+      65.9,
+      60.7
+    ],
+    "defects": [
+      "Pools are a composite pass, not true in-scene floor pools",
+      "Centre columns merged (from V3)",
+      "Ceiling slats still dominate top"
+    ]
+  },
+  "rule": "Shafts always behind figure; base art never recoloured; no-crop; do NOT claim 5 columns / Glare / Eevee unless measured file exists. This preset is SEPARATE \u2014 it does not merge into or overwrite the Environmental Depth and Lighting preset."
+}

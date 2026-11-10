@@ -1,0 +1,322 @@
+import os
+
+os.environ.setdefault("DA3_LOG_LEVEL", "ERROR")
+
+import logging
+from concurrent.futures import ThreadPoolExecutor
+
+import numpy as np
+import torch
+
+from src.depth.backends._shared import DepthRunOutcome, videoDepthInputSize
+from src.infra.isCudaInit import CudaChecker
+from src.infra.progressBarLogic import ProgressBarLogic
+from src.io.ffmpegSettings import (
+    BuildBuffer,
+    WriteBuffer,
+)
+from src.model.download import resolveWeightPath
+from src.model.registry import modelsMap
+
+checker = CudaChecker()
+
+
+class VideoDepthAnythingCUDA(DepthRunOutcome):
+    def __init__(
+        self,
+        input,
+        output,
+        width,
+        height,
+        fps,
+        half,
+        inpoint=0,
+        outpoint=0,
+        encode_method="x264",
+        depth_method="og_video_small_v2",
+        benchmark=False,
+        totalFrames=0,
+        bitDepth: str = "16bit",
+        depthQuality: str = "high",
+        compileMode: str = "default",
+    ):
+        self.input = input
+        self.output = output
+        self.width = width
+        self.height = height
+        self.fps = fps
+        self.half = half
+        self.inpoint = inpoint
+        self.outpoint = outpoint
+        self.encode_method = encode_method
+        self.depth_method = depth_method
+        self.benchmark = benchmark
+        self.totalFrames = totalFrames
+        self.bitDepth = bitDepth
+        self.depthQuality = depthQuality
+        self.compileMode = compileMode
+        self.inputSize = videoDepthInputSize(width, height, depthQuality)
+
+        self.handleModels()
+        try:
+            self.readBuffer = BuildBuffer(
+                videoInput=self.input,
+                inpoint=self.inpoint,
+                outpoint=self.outpoint,
+                width=self.width,
+                height=self.height,
+                half=self.half,
+                resize=False,
+                toTorch=False,
+            )
+
+            self.writeBuffer = WriteBuffer(
+                self.input,
+                self.output,
+                self.encode_method,
+                self.width,
+                self.height,
+                self.fps,
+                grayscale=True,
+                benchmark=self.benchmark,
+                bitDepth=self.bitDepth,
+            )
+
+            with ThreadPoolExecutor(max_workers=3) as executor:
+                executor.submit(self.readBuffer)
+                executor.submit(self.writeBuffer)
+                executor.submit(self.guardedProcess, self.process_nelux)
+
+        except Exception as e:
+            self.recordFailure(e)
+            logging.exception(f"Something went wrong, {e}")
+
+        self.reportOutcome()
+
+    def handleModels(self):
+        from ..video_depth_anything.video_depth_stream import VideoDepthAnything
+
+        self.filename = modelsMap(
+            model=self.depth_method, modelType="pth", half=self.half
+        )
+
+        modelPath = resolveWeightPath(
+            self.depth_method,
+            self.filename,
+            half=self.half,
+            modelType="pth",
+        )
+
+        self.model = VideoDepthAnything(
+            encoder="vits",
+            features=64,
+            out_channels=[48, 96, 192, 384],
+        )
+
+        self.model.load_state_dict(
+            torch.load(modelPath, map_location="cpu"), strict=True
+        )
+
+        self.model = self.model.to(checker.device).eval()
+        # self.model.half() if self.half else self.model.float()
+        self.device = "cuda" if checker.cudaAvailable else "cpu"
+
+    def _resetVideoDepthState(self):
+        self.model.transform = None
+        self.model.frame_id_list = []
+        self.model.frame_cache_list = []
+        self.model.id = -1
+
+    def processFrame(self, frame):
+        try:
+            depth = self.model.infer_video_depth_one(
+                frame, self.inputSize, self.device, True
+            )
+            depth = torch.from_numpy(depth)
+            depth = (depth - depth.min()) / (depth.max() - depth.min() + 1e-6)
+            depth = depth.unsqueeze(0).unsqueeze(0)
+            self.writeBuffer.write(depth)
+        except Exception as e:
+            self._resetVideoDepthState()
+            self.recordFailure(e)
+            logging.exception(f"Something went wrong while processing the frame, {e}")
+
+    def process_nelux(self):
+        """Process using Nelux-backed BuildBuffer decoding."""
+        frameCount = 0
+        self._resetVideoDepthState()
+        with ProgressBarLogic(self.totalFrames, title="Depth") as bar:
+            while (frame := self.readBuffer.read()) is not None:
+                self.processFrame(frame)
+                frameCount += 1
+                bar(1)
+
+        logging.info(f"Processed {frameCount} frames")
+        self.writeBuffer.close()
+
+
+class VideoDepthAnythingTorch(DepthRunOutcome):
+    """Video Depth pipeline using Nelux-backed decoding and PyTorch for processing."""
+
+    def __init__(
+        self,
+        input,
+        output,
+        width,
+        height,
+        fps,
+        half,
+        inpoint=0,
+        outpoint=0,
+        encode_method="x264",
+        depth_method="video_small_v2",
+        benchmark=False,
+        totalFrames=0,
+        bitDepth: str = "16bit",
+        depthQuality: str = "high",
+        compileMode: str = "default",
+        depth_window: int = 32,
+    ):
+        self.input = input
+        self.output = output
+        self.width = width
+        self.height = height
+        self.fps = fps
+        self.half = half
+        self.inpoint = inpoint
+        self.outpoint = outpoint
+        self.encode_method = encode_method
+        self.depth_method = depth_method
+        self.benchmark = benchmark
+        self.totalFrames = totalFrames
+        self.bitDepth = bitDepth
+        self.depthQuality = depthQuality
+        self.compileMode = compileMode
+        self.depthWindow = depth_window
+        self.inputSize = videoDepthInputSize(width, height, depthQuality)
+
+        self.handleModels()
+        try:
+            self.readBuffer = BuildBuffer(
+                videoInput=self.input,
+                inpoint=self.inpoint,
+                outpoint=self.outpoint,
+                width=self.width,
+                height=self.height,
+                half=self.half,
+                resize=False,
+                toTorch=False,
+            )
+
+            self.writeBuffer = WriteBuffer(
+                self.input,
+                self.output,
+                self.encode_method,
+                self.width,
+                self.height,
+                self.fps,
+                grayscale=True,
+                benchmark=self.benchmark,
+                bitDepth=self.bitDepth,
+            )
+
+            with ThreadPoolExecutor(max_workers=3) as executor:
+                executor.submit(self.readBuffer)
+                executor.submit(self.writeBuffer)
+                executor.submit(self.guardedProcess, self.process_nelux)
+
+        except Exception as e:
+            self.recordFailure(e)
+            logging.exception(f"Something went wrong, {e}")
+
+        self.reportOutcome()
+
+    def handleModels(self):
+        from ..video_depth_anything.video_depth_stream import VideoDepthAnything
+
+        # Map video_small_v2 -> og_video_small_v2 weights
+        weights_model = self.depth_method.replace("video_", "og_video_")
+        self.filename = modelsMap(model=weights_model, modelType="pth", half=self.half)
+
+        modelPath = resolveWeightPath(
+            weights_model,
+            self.filename,
+            half=self.half,
+            modelType="pth",
+        )
+
+        self.model = VideoDepthAnything(
+            encoder="vits",
+            features=64,
+            out_channels=[48, 96, 192, 384],
+        )
+
+        self.model.load_state_dict(
+            torch.load(modelPath, map_location="cpu"), strict=True
+        )
+
+        self.model = self.model.to(checker.device).eval()
+
+        from ..video_depth_anything.optimizations import (
+            apply_optimizations,
+            keep_fp32_islands,
+        )
+
+        counts = apply_optimizations(self.model, window=self.depthWindow)
+        if self.half and checker.cudaAvailable:
+            self.model = self.model.half()
+            keep_fp32_islands(self.model)
+        logging.info(
+            f"VideoDepthAnything optimized ({counts}), "
+            f"window={self.depthWindow}, half={self.half}"
+        )
+
+        self.device = "cuda" if checker.cudaAvailable else "cpu"
+
+    def _resetVideoDepthState(self):
+        self.model.transform = None
+        self.model.frame_id_list = []
+        self.model.frame_cache_list = []
+        self.model.id = -1
+
+    @torch.inference_mode()
+    def processFrame(self, frame):
+        """Process a single frame - frame is a PyTorch tensor (C, H, W) or numpy array."""
+        try:
+            # If tensor, convert to numpy for the model (it expects numpy RGB)
+            if isinstance(frame, torch.Tensor):
+                if frame.dim() == 3:  # C, H, W
+                    frame = frame.permute(1, 2, 0).cpu().numpy()
+                elif frame.dim() == 4:  # B, C, H, W
+                    frame = frame.squeeze(0).permute(1, 2, 0).cpu().numpy()
+
+            # Ensure RGB format and uint8
+            if frame.dtype != np.uint8:
+                frame = (frame * 255).astype(np.uint8)
+
+            depth = self.model.infer_video_depth_one(
+                frame, self.inputSize, self.device, True
+            )
+            depth = torch.from_numpy(depth)
+            depth = (depth - depth.min()) / (depth.max() - depth.min() + 1e-6)
+            depth = depth.unsqueeze(0).unsqueeze(0)
+            self.writeBuffer.write(depth)
+        except Exception as e:
+            self._resetVideoDepthState()
+            self.recordFailure(e)
+            logging.exception(f"Something went wrong while processing the frame, {e}")
+
+    def process_nelux(self):
+        """Process using Nelux-backed BuildBuffer decoding."""
+        frameCount = 0
+
+        self._resetVideoDepthState()
+
+        with ProgressBarLogic(self.totalFrames, title="Depth") as bar:
+            while (frame := self.readBuffer.read()) is not None:
+                self.processFrame(frame)
+                frameCount += 1
+                bar(1)
+
+        logging.info(f"Processed {frameCount} frames")
+        self.writeBuffer.close()

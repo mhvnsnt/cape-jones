@@ -1,0 +1,263 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+from bpy.app.translations import pgettext_iface as iface_
+from bpy.types import Constraint, Context, Menu, PoseBone, UILayout
+
+from ..bs_utils.hotkeys import register_hotkey
+from ..generation import naming
+from ..generation.cloudrig import active_rig
+from ..utils.rig import get_pbone_of_active
+
+
+class POSE_MT_pie_bone_constraint_targets(Menu):
+    bl_label = "Constraint Targets"
+
+    @classmethod
+    def poll(cls, context: Context):
+        return get_pbone_of_active(context)
+
+    @staticmethod
+    def draw_select_bone(layout: UILayout, con: Constraint, subtarget: str, start_text=""):
+        icon = get_constraint_icon(con)
+        op = layout.operator(
+            'pose.select_bone_by_name',
+            text=start_text + con.name + ": " + subtarget,
+            icon=icon,
+        )
+        op.bone_name = subtarget
+
+    def draw(self, context: Context):
+        layout = self.layout
+        active_pb = get_pbone_of_active(context)
+
+        entries = get_target_bones(active_pb)
+
+        for con, subtarget in entries:
+            self.draw_select_bone(layout, con, subtarget)
+
+
+class POSE_MT_pie_constrained_bones(Menu):
+    bl_label = "Constrained Bones"
+
+    @classmethod
+    def poll(cls, context: Context):
+        return get_pbone_of_active(context)
+
+    @staticmethod
+    def draw_select_bone(layout: UILayout, con: Constraint, bone_name: str, start_text=""):
+        icon = get_constraint_icon(con)
+        op = layout.operator(
+            'pose.select_bone_by_name',
+            text=iface_("{start_text}{bone_name} ({con_name})").format(
+                start_text=start_text, bone_name=bone_name, con_name=con.name
+            ),
+            icon=icon,
+        )
+        op.bone_name = bone_name
+
+    def draw(self, context: Context):
+        layout = self.layout
+        active_pb = get_pbone_of_active(context)
+
+        entries = get_constrained_bones(active_pb)
+
+        for con, bone_name in entries:
+            self.draw_select_bone(layout, con, bone_name)
+
+
+class POSE_MT_pie_child_bones(Menu):
+    bl_label = "Child Bones"
+
+    @classmethod
+    def poll(cls, context: Context):
+        return get_pbone_of_active(context)
+
+    def draw(self, context: Context):
+        layout = self.layout
+        active_pb = get_pbone_of_active(context)
+
+        for child_pb in active_pb.children:
+            op = layout.operator('pose.select_bone_by_name', text=child_pb.name, icon='BONE_DATA')
+            op.bone_name = child_pb.name
+
+
+class CLOUDRIG_MT_pie_select_bone(Menu):
+    bl_label = iface_("Select Bone")
+
+    def draw(self, context: Context):
+        layout = self.layout
+        rig = active_rig(context)
+        active_pb = get_pbone_of_active(context)
+
+        pie = layout.menu_pie()
+
+        if not active_pb or not active_pb.bone:
+            for i in range(7):
+                pie.separator()
+
+            # 8) v> Search bone.
+            pie.operator('pose.select_by_name_search', icon='VIEWZOOM')
+            return
+
+        active_bone = active_pb.bone
+
+        # 1) < Parent Bone.
+        if active_bone.parent:
+            op = pie.operator(
+                'pose.cloudrig_select_parent_bone',
+                text="Parent: " + active_bone.parent.name,
+                icon='BONE_DATA',
+            )
+        else:
+            pie.separator()
+
+        # 2) > Child Bone(s).
+        if len(active_bone.children) == 1:
+            child = active_bone.children[0]
+            if child:
+                # Sometimes child can be none...? I don't get how.
+                op = pie.operator(
+                    'pose.select_bone_by_name',
+                    text="Child: " + child.name,
+                    icon='BONE_DATA',
+                )
+                op.bone_name = child.name
+        elif len(active_bone.children) > 1:
+            pie.menu('POSE_MT_pie_child_bones', icon='COLLAPSEMENU')
+        else:
+            pie.separator()
+
+        # 3) v Lower number bone
+        lower_bone = rig.pose.bones.get(naming.increment_name(active_bone.name, increment=-1))
+        if lower_bone:
+            op = pie.operator('pose.select_bone_by_name', text=lower_bone.name, icon='TRIA_DOWN')
+            op.bone_name = lower_bone.name
+        else:
+            pie.separator()
+
+        # 4) ^ Higher number bone
+        higher_bone = rig.pose.bones.get(naming.increment_name(active_bone.name, increment=1))
+        if higher_bone:
+            op = pie.operator('pose.select_bone_by_name', text=higher_bone.name, icon='TRIA_UP')
+            op.bone_name = higher_bone.name
+        else:
+            pie.separator()
+
+        # 5) ^> Bone(s) targeted by this bone's constraints.
+        target_bones = get_target_bones(active_pb)
+        if len(target_bones) == 1:
+            con, bone_name = target_bones[0]
+            POSE_MT_pie_bone_constraint_targets.draw_select_bone(pie, con, bone_name, start_text="Constraint Target: ")
+        elif len(target_bones) > 1:
+            pie.menu('POSE_MT_pie_bone_constraint_targets', icon='COLLAPSEMENU')
+        else:
+            pie.separator()
+
+        # 6) <^ Bone(s) with constraints that target this bone.
+        constrained_bones = get_constrained_bones(active_pb)
+        if len(constrained_bones) == 1:
+            con, bone_name = constrained_bones[0]
+            POSE_MT_pie_constrained_bones.draw_select_bone(pie, con, bone_name, start_text="Constrained Bone: ")
+        elif len(constrained_bones) > 1:
+            pie.menu('POSE_MT_pie_constrained_bones', icon='COLLAPSEMENU')
+        else:
+            pie.separator()
+
+        # 7) <v BBone Handle Start & End <OR> Corresponding Deform Bone.
+        start = active_bone.bbone_custom_handle_start
+        end = active_bone.bbone_custom_handle_end
+
+        _prefixes, base, suffixes = naming.slice_name(active_bone.name)
+        new_name = naming.make_name(["DEF"], base, suffixes)
+        def_bone = rig.pose.bones.get(new_name)
+        if start or end:
+            col = pie.column()
+            if start:
+                op = col.operator(
+                    'pose.select_bone_by_name',
+                    text="Start Handle: " + start.name,
+                    icon='OUTLINER_OB_CURVE',
+                )
+                op.bone_name = start.name
+            if end:
+                op = col.operator(
+                    'pose.select_bone_by_name',
+                    text="End Handle: " + end.name,
+                    icon='OUTLINER_OB_CURVE',
+                )
+                op.bone_name = end.name
+        elif def_bone and def_bone.name != active_bone.name:
+            op = pie.operator(
+                'pose.select_bone_by_name_relation',
+                text="Deform Bone: " + def_bone.name,
+                icon='BONE_DATA',
+            )
+            op.prefix = "DEF"
+        else:
+            pie.separator()
+
+        # 8) v> Search bone.
+        pie.operator('pose.select_by_name_search', icon='VIEWZOOM')
+
+
+def get_constraint_icon(constraint: Constraint) -> str:
+    """Return the icon string for a given constraint by looking up the UILayout icon enum."""
+    icons = UILayout.bl_rna.functions["prop"].parameters["icon"].enum_items.keys()
+    return icons[UILayout.icon(constraint)]
+
+
+def get_constrained_bones(pose_bone: PoseBone) -> list[tuple[Constraint, str]]:
+    """Return all (constraint, bone_name) pairs where the constraint targets the given pose bone."""
+    entries = []
+    rig = pose_bone.id_data
+    for pb in rig.pose.bones:
+        for con in pb.constraints:
+            if (
+                hasattr(con, 'target')
+                and hasattr(con, 'subtarget')
+                and con.target == rig
+                and con.subtarget == pose_bone.name
+            ):
+                entries.append((con, pb.name))
+                break
+
+            if con.type == 'ARMATURE':
+                for target in con.targets:
+                    if target.target == rig and target.subtarget == pose_bone.name:
+                        entries.append((con, pb.name))
+
+    return entries
+
+
+def get_target_bones(pose_bone: PoseBone) -> list[tuple[Constraint, str]]:
+    """Return all (constraint, bone_name) pairs that this pose bone's constraints point to."""
+    rig = pose_bone.id_data
+    entries = []
+    for con in pose_bone.constraints:
+        if con.type == 'ARMATURE':
+            for target in con.targets:
+                if target.target == rig and target.subtarget and target.subtarget in rig.data.bones:
+                    entries.append((con, target.subtarget))
+
+        if hasattr(con, 'subtarget') and con.target == rig and con.subtarget and con.subtarget in rig.data.bones:
+            entries.append((con, con.subtarget))
+
+    return entries
+
+
+registry = [
+    POSE_MT_pie_constrained_bones,
+    POSE_MT_pie_bone_constraint_targets,
+    POSE_MT_pie_child_bones,
+    CLOUDRIG_MT_pie_select_bone,
+]
+
+
+def register():
+    for keymap_name in ('Pose', 'Weight Paint', 'Armature'):
+        register_hotkey(
+            'wm.call_menu_pie',
+            hotkey_kwargs={'type': "D", 'value': "PRESS", 'alt': True},
+            keymap_name=keymap_name,
+            op_kwargs={'name': 'CLOUDRIG_MT_pie_select_bone'},
+        )

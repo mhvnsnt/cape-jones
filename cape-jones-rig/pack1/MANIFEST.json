@@ -1,0 +1,377 @@
+[
+ {
+  "name": "UpperArm_1",
+  "file": "UpperArm_1.png",
+  "size": [
+   150,
+   304
+  ],
+  "opaque_px": 30730,
+  "sheet_bbox": [
+   151,
+   55,
+   301,
+   359
+  ]
+ },
+ {
+  "name": "UpperArm_2",
+  "file": "UpperArm_2.png",
+  "size": [
+   251,
+   300
+  ],
+  "opaque_px": 40896,
+  "sheet_bbox": [
+   433,
+   60,
+   684,
+   360
+  ]
+ },
+ {
+  "name": "UpperArm_3",
+  "file": "UpperArm_3.png",
+  "size": [
+   142,
+   307
+  ],
+  "opaque_px": 31981,
+  "sheet_bbox": [
+   777,
+   57,
+   919,
+   364
+  ]
+ },
+ {
+  "name": "UpperArm_4",
+  "file": "UpperArm_4.png",
+  "size": [
+   292,
+   280
+  ],
+  "opaque_px": 43348,
+  "sheet_bbox": [
+   1034,
+   68,
+   1326,
+   348
+  ]
+ },
+ {
+  "name": "UpperArm_5",
+  "file": "UpperArm_5.png",
+  "size": [
+   278,
+   205
+  ],
+  "opaque_px": 32904,
+  "sheet_bbox": [
+   1361,
+   100,
+   1639,
+   305
+  ]
+ },
+ {
+  "name": "UpperArm_6",
+  "file": "UpperArm_6.png",
+  "size": [
+   265,
+   290
+  ],
+  "opaque_px": 34938,
+  "sheet_bbox": [
+   1663,
+   72,
+   1928,
+   362
+  ]
+ },
+ {
+  "name": "Gauntlet_1",
+  "file": "Gauntlet_1.png",
+  "size": [
+   119,
+   261
+  ],
+  "opaque_px": 22568,
+  "sheet_bbox": [
+   135,
+   432,
+   254,
+   693
+  ]
+ },
+ {
+  "name": "Gauntlet_2",
+  "file": "Gauntlet_2.png",
+  "size": [
+   159,
+   273
+  ],
+  "opaque_px": 24011,
+  "sheet_bbox": [
+   484,
+   436,
+   643,
+   709
+  ]
+ },
+ {
+  "name": "Gauntlet_3",
+  "file": "Gauntlet_3.png",
+  "size": [
+   122,
+   268
+  ],
+  "opaque_px": 23499,
+  "sheet_bbox": [
+   816,
+   429,
+   938,
+   697
+  ]
+ },
+ {
+  "name": "Gauntlet_4",
+  "file": "Gauntlet_4.png",
+  "size": [
+   121,
+   270
+  ],
+  "opaque_px": 23524,
+  "sheet_bbox": [
+   1128,
+   429,
+   1249,
+   699
+  ]
+ },
+ {
+  "name": "Gauntlet_5",
+  "file": "Gauntlet_5.png",
+  "size": [
+   195,
+   209
+  ],
+  "opaque_px": 22334,
+  "sheet_bbox": [
+   1409,
+   474,
+   1604,
+   683
+  ]
+ },
+ {
+  "name": "Gauntlet_6",
+  "file": "Gauntlet_6.png",
+  "size": [
+   122,
+   262
+  ],
+  "opaque_px": 22826,
+  "sheet_bbox": [
+   1781,
+   439,
+   1903,
+   701
+  ]
+ },
+ {
+  "name": "Hand_1",
+  "file": "Hand_1.png",
+  "size": [
+   96,
+   115
+  ],
+  "opaque_px": 8584,
+  "sheet_bbox": [
+   347,
+   796,
+   443,
+   911
+  ]
+ },
+ {
+  "name": "Hand_2",
+  "file": "Hand_2.png",
+  "size": [
+   102,
+   115
+  ],
+  "opaque_px": 8859,
+  "sheet_bbox": [
+   543,
+   794,
+   645,
+   909
+  ]
+ },
+ {
+  "name": "Hand_3",
+  "file": "Hand_3.png",
+  "size": [
+   102,
+   140
+  ],
+  "opaque_px": 10850,
+  "sheet_bbox": [
+   739,
+   781,
+   841,
+   921
+  ]
+ },
+ {
+  "name": "Hand_4",
+  "file": "Hand_4.png",
+  "size": [
+   124,
+   152
+  ],
+  "opaque_px": 11044,
+  "sheet_bbox": [
+   934,
+   771,
+   1058,
+   923
+  ]
+ },
+ {
+  "name": "Hand_5",
+  "file": "Hand_5.png",
+  "size": [
+   170,
+   91
+  ],
+  "opaque_px": 9652,
+  "sheet_bbox": [
+   1126,
+   805,
+   1296,
+   896
+  ]
+ },
+ {
+  "name": "Hand_6",
+  "file": "Hand_6.png",
+  "size": [
+   92,
+   160
+  ],
+  "opaque_px": 8764,
+  "sheet_bbox": [
+   1356,
+   764,
+   1448,
+   924
+  ]
+ },
+ {
+  "name": "Hand_7",
+  "file": "Hand_7.png",
+  "size": [
+   139,
+   101
+  ],
+  "opaque_px": 10241,
+  "sheet_bbox": [
+   1552,
+   799,
+   1691,
+   900
+  ]
+ },
+ {
+  "name": "Hand_8",
+  "file": "Hand_8.png",
+  "size": [
+   171,
+   85
+  ],
+  "opaque_px": 10456,
+  "sheet_bbox": [
+   422,
+   990,
+   593,
+   1075
+  ]
+ },
+ {
+  "name": "Hand_9",
+  "file": "Hand_9.png",
+  "size": [
+   137,
+   147
+  ],
+  "opaque_px": 10499,
+  "sheet_bbox": [
+   654,
+   952,
+   791,
+   1099
+  ]
+ },
+ {
+  "name": "Hand_10",
+  "file": "Hand_10.png",
+  "size": [
+   161,
+   110
+  ],
+  "opaque_px": 11379,
+  "sheet_bbox": [
+   866,
+   977,
+   1027,
+   1087
+  ]
+ },
+ {
+  "name": "Hand_11",
+  "file": "Hand_11.png",
+  "size": [
+   126,
+   129
+  ],
+  "opaque_px": 9745,
+  "sheet_bbox": [
+   1104,
+   952,
+   1230,
+   1081
+  ]
+ },
+ {
+  "name": "Hand_12",
+  "file": "Hand_12.png",
+  "size": [
+   125,
+   138
+  ],
+  "opaque_px": 10843,
+  "sheet_bbox": [
+   1323,
+   964,
+   1448,
+   1102
+  ]
+ },
+ {
+  "name": "Hand_13",
+  "file": "Hand_13.png",
+  "size": [
+   189,
+   157
+  ],
+  "opaque_px": 15448,
+  "sheet_bbox": [
+   1510,
+   940,
+   1699,
+   1097
+  ]
+ }
+]

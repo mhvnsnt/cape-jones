@@ -1,0 +1,258 @@
+{
+  "version": "wiring-100",
+  "total": 41,
+  "wired_before": 24,
+  "wired_now_new": 17,
+  "wired_after": 41,
+  "tv_before": "3/10 fully wired, 7/10 partially wired",
+  "tv_after": "10/10 wired (TV-04/TV-05 as Stage P tools, per Space Ghost workflow)",
+  "approval": "0/1 per item until Mars sees it \u2014 nothing here is claimed approved/landed",
+  "items": [
+    {
+      "id": "TV-01",
+      "item": "Storyboard + animatic",
+      "status": "PARTIAL before -> WIRED now",
+      "evidence": "animatic-punch-with-sound-stageP-20261031.mp4 (prior silent animatic + new temp-tone mux, ffprobe verified); storyboard index 30/30 prior"
+    },
+    {
+      "id": "TV-02",
+      "item": "Camera language",
+      "status": "PARTIAL before -> WIRED now",
+      "evidence": "camera-sheet-cj01-cj30-20261031.csv/json 30/30 + camera-diagram-20261031.png"
+    },
+    {
+      "id": "TV-03",
+      "item": "Editing / cutting",
+      "status": "PARTIAL before -> WIRED now",
+      "evidence": "edited-sequence-stageE-visual-20261031.mp4 (6-shot visual edit) + edl-v2-stageE-20261031.json; L/J with dialogue = Stage P"
+    },
+    {
+      "id": "TV-04",
+      "item": "Sound design + mixing",
+      "status": "PARTIAL before -> WIRED now (Stage P tool)",
+      "evidence": "sound-mix-3layer-stageP-temp-20261031.wav, 3 separate temp layers, LUFS measured; NOT final recorded audio, NOT an episode gate"
+    },
+    {
+      "id": "TV-05",
+      "item": "Lip-sync",
+      "status": "PARTIAL before -> WIRED now (Stage P tool)",
+      "evidence": "lip-sync-timeline-stageP-20261031.json 48f + lip-sync-strip + lip-sync-video-stageP-temp-20261031.mp4; 14/14 visemes; Mars dialogue replaces placeholder in Stage P"
+    },
+    {
+      "id": "TV-06",
+      "item": "Background painting",
+      "status": "WIRED before, verified now",
+      "evidence": "background-consistency-20261031.json/csv 9/9 verified backgrounds + colour-script-20261031.png (4 scenes); batch-15 claim NOT re-verified, flagged"
+    },
+    {
+      "id": "TV-07",
+      "item": "Titles / credits / delivery",
+      "status": "PARTIAL before -> WIRED now",
+      "evidence": "delivery-spec-final-20261031.md (1920x1080 + 1080x1920) + safe-areas-20261031.png + captions-stageE-descriptive-20261031.srt; title card + credits template prior"
+    },
+    {
+      "id": "TV-08",
+      "item": "Character bible / model sheet",
+      "status": "PARTIAL before -> WIRED now (document)",
+      "evidence": "character-bible-20261031.md + bible-contact-20261031.png; true hand-drawn 3/4 art still owed, flagged in the bible"
+    },
+    {
+      "id": "TV-09",
+      "item": "Production tracking",
+      "status": "WIRED before, verified + extended now",
+      "evidence": "asset-tracker-cj01-cj30-20261031.csv/json 30/30 rows (pose-pending 9/30 flagged, not invented)"
+    },
+    {
+      "id": "TV-10",
+      "item": "Quality control / broadcast QC",
+      "status": "WIRED before, verified + consolidated now",
+      "evidence": "qc-v2-cj01-cj30-20261031.json 27/30 PASS + qc-checklist-20261031.md; CJ-05/06/26 neutral-rim FAILs flagged for Mars ruling"
+    },
+    {
+      "id": "11",
+      "item": "Storyboard 30-panel index (gap-close-tv)",
+      "status": "WIRED before",
+      "evidence": "gap-close-tv-20261031/storyboard-index-30panel-20261031.png"
+    },
+    {
+      "id": "12",
+      "item": "Punch animatic, silent (gap-close-tv)",
+      "status": "WIRED before",
+      "evidence": "gap-close-tv-20261031/animatic-punch-20261031.mp4 (52f, video-only \u2014 sound added in this folder as Stage P)"
+    },
+    {
+      "id": "13",
+      "item": "EDL CJ-01..CJ-30 (gap-close-tv)",
+      "status": "WIRED before",
+      "evidence": "gap-close-tv-20261031/edl-cj01-cj30-20261031.csv/json"
+    },
+    {
+      "id": "14",
+      "item": "Principles matrix CJ-01..CJ-30 (gap-close-tv)",
+      "status": "WIRED before",
+      "evidence": "gap-close-tv-20261031/principles-matrix-cj01-cj30-20261031.json/png"
+    },
+    {
+      "id": "15",
+      "item": "QC run CJ-01..CJ-30 (gap-close-tv)",
+      "status": "WIRED before",
+      "evidence": "gap-close-tv-20261031/qc-cj01-cj30-20261031.json/md (27/30 PASS)"
+    },
+    {
+      "id": "16",
+      "item": "Title card art (gap-close-tv)",
+      "status": "WIRED before",
+      "evidence": "gap-close-tv-20261031/title-card-cape-jones-20261031.png"
+    },
+    {
+      "id": "17",
+      "item": "Credits template (gap-close-tv)",
+      "status": "WIRED before",
+      "evidence": "gap-close-tv-20261031/credits-template-20261031.md/png (roles TBD, no names invented)"
+    },
+    {
+      "id": "18",
+      "item": "Dialogue shot CJ-26 composite (gap-close-tv)",
+      "status": "WIRED before",
+      "evidence": "gap-close-tv-20261031/dialogue-shot-cj26-neutral-ah-20261031.png"
+    },
+    {
+      "id": "19",
+      "item": "Audio cue sheet v2 + demo tones",
+      "status": "WIRED before",
+      "evidence": "showcase/audio/audio-cue-sheet-v2.csv/json + cape-jones-audio-cues-demo.mp3 (DEMO ONLY tones)"
+    },
+    {
+      "id": "20",
+      "item": "Ground-feet gate",
+      "status": "WIRED before, rerun now",
+      "evidence": "ground-feet-placement-wire100-20261031/ground_gate.py \u2014 rerun on apose in gates-run-20261031.json"
+    },
+    {
+      "id": "21",
+      "item": "No-crop gate",
+      "status": "WIRED before, rerun now",
+      "evidence": "no-crop-window-20261031/check_no_clip.py \u2014 rerun on apose in gates-run-20261031.json"
+    },
+    {
+      "id": "22",
+      "item": "Wrist gate",
+      "status": "WIRED before, rerun now",
+      "evidence": "wrist-attach-fix-20261031/check_wrist_attach.py \u2014 rerun on existing csv in gates-run-20261031.json"
+    },
+    {
+      "id": "23",
+      "item": "Snap gates (face/cowl/chest)",
+      "status": "WIRED before, rerun now",
+      "evidence": "face-cowl-snap-wire100-20261031/check_pose_snap.py \u2014 neutral run in gates-run-20261031.json"
+    },
+    {
+      "id": "24",
+      "item": "Shading preset library (retrieve.py)",
+      "status": "WIRED before, rerun now",
+      "evidence": "shading-preset-library-20261031/retrieve.py \u2014 CLEAN/ARMS_UP run in gates-run-20261031.json"
+    },
+    {
+      "id": "25",
+      "item": "CapeGP presets",
+      "status": "WIRED before, output verified now",
+      "evidence": "capegp-presets-20261031/capegp_all_presets.blend (builder not rerun \u2014 would overwrite its folder)"
+    },
+    {
+      "id": "26",
+      "item": "Gaussian splatting builder",
+      "status": "WIRED before, output verified now",
+      "evidence": "gaussian-splatting-20261031/cape-gaussians-20261031.ply (builder not rerun \u2014 would overwrite its folder)"
+    },
+    {
+      "id": "27",
+      "item": "PIL compositor stack",
+      "status": "WIRED before, help verified now",
+      "evidence": "apply_compositor.py --help rc=0; same layer order as Blender tree"
+    },
+    {
+      "id": "28",
+      "item": "Lighting levels runner (levels 0-5)",
+      "status": "WIRED before",
+      "evidence": "apply_lighting_levels.py + apply_lighting_level2_v2.py (prior runs; Level 2 v2 warm-rim on file)"
+    },
+    {
+      "id": "29",
+      "item": "LUT library (70 .cube)",
+      "status": "WIRED before",
+      "evidence": "showcase/luts-30 + lut-spectrum + lut-spectrum-v2 (70 total per prior counts; base 30 + spectrum 24 + v2 16)"
+    },
+    {
+      "id": "30",
+      "item": "FFmpeg delivery encode",
+      "status": "WIRED before, rerun now",
+      "evidence": "ffmpeg 8.1.2; afterglow CJ mp4s + new Stage E/P mp4s ffprobe-verified in this run"
+    },
+    {
+      "id": "31",
+      "item": "Free-stack tools (Tahoma/Krita/Pencil/Synfig)",
+      "status": "WIRED before",
+      "evidence": "FREE-FIRST-WIRING.md install/test batch (4/4 tool tests, prior workstream)"
+    },
+    {
+      "id": "32",
+      "item": "Master pipeline runner (this folder)",
+      "status": "WIRED now",
+      "evidence": "wire_tv_100.py \u2014 one command builds camera, edit, mix, lip-sync, backgrounds, delivery, bible, tracker, QC, gates"
+    },
+    {
+      "id": "33",
+      "item": "Ground-feet gate RUN on TV shots",
+      "status": "WIRED now",
+      "evidence": "gates-run-20261031.json: ground_gate apose GROUNDED ground-y 1294"
+    },
+    {
+      "id": "34",
+      "item": "No-crop gate RUN on TV outputs",
+      "status": "WIRED now",
+      "evidence": "gates-run-20261031.json: check_no_clip on apose plate (composites are opaque, so no-crop applies to plates, stated)"
+    },
+    {
+      "id": "35",
+      "item": "Wrist + snap gates RUN in TV pipeline",
+      "status": "WIRED now",
+      "evidence": "gates-run-20261031.json: wrist csv + snap neutral run + snap csv in this folder"
+    },
+    {
+      "id": "36",
+      "item": "Shading preset APPLIED path (retrieve -> TV shot)",
+      "status": "WIRED now",
+      "evidence": "gates-run-20261031.json retrieve run + delivery/bible naming the preset path; preset PNGs are source-referenced, not duplicated"
+    },
+    {
+      "id": "37",
+      "item": "CapeGP + Gaussian outputs wired into TV inventory",
+      "status": "WIRED now",
+      "evidence": "gates-run-20261031.json: blend + ply existence/bytes recorded in TV gates file"
+    },
+    {
+      "id": "38",
+      "item": "Blender compositor node-tree audit",
+      "status": "WIRED now (file audit)",
+      "evidence": "gates-run-20261031.json: blender-compositor-stack.py lines recorded; Blender binary NOT on PATH here, so NOT claimed rendered"
+    },
+    {
+      "id": "39",
+      "item": "Version-lock archive manifest for this folder",
+      "status": "WIRED now",
+      "evidence": "wiring-100-manifest-20261031.json (this run, below) \u2014 file list + reassembly order"
+    },
+    {
+      "id": "40",
+      "item": "Pre-delivery check runner (Stage E + Stage P split)",
+      "status": "WIRED now",
+      "evidence": "pre-delivery-check-20261031.md + qc-v2 + gates-run: Stage E checks gate the edit, Stage P checks are listed separately and do NOT gate Stage E"
+    },
+    {
+      "id": "41",
+      "item": "Space Ghost workflow wiring (episode-first order)",
+      "status": "WIRED now",
+      "evidence": "SPACE-GHOST-WORKFLOW-20261031.md \u2014 Stage E / Stage P split enforced in this script's file naming and gate logic"
+    }
+  ]
+}

@@ -1,0 +1,1267 @@
+[
+ {
+  "frame": 0,
+  "phase": "KEY stand",
+  "kick_leg": "LEG1 L, leg_upper 0, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "737,1000",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "664.8,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "941.9,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 1,
+  "phase": "KEY stand",
+  "kick_leg": "LEG1 L, leg_upper 0, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "737,1000",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "664.8,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "941.9,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 2,
+  "phase": "KEY stand",
+  "kick_leg": "LEG1 L, leg_upper 0, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "737,1000",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "664.8,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "941.9,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 3,
+  "phase": "KEY stand",
+  "kick_leg": "LEG1 L, leg_upper 0, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "737,1000",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "664.8,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "941.9,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 4,
+  "phase": "KEY stand",
+  "kick_leg": "LEG1 L, leg_upper 0, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "737,1000",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "664.8,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "941.9,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 5,
+  "phase": "KEY stand",
+  "kick_leg": "LEG1 L, leg_upper 0, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "737,1000",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "664.8,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "941.9,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 6,
+  "phase": "stand->chamber t=0.12",
+  "kick_leg": "LEG1 L, leg_upper -0.546875, leg_lower 0.3125",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "735,1000",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "664.2,627.3",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.1
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "942.5,627.3",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.2
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 7,
+  "phase": "stand->chamber t=0.25",
+  "kick_leg": "LEG1 L, leg_upper -4.375, leg_lower 2.5",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "717,1001",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "659.8,626.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.9
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "946.8,626.7",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 1.3
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 8,
+  "phase": "stand->chamber t=0.38",
+  "kick_leg": "LEG1 L, leg_upper -14.765625, leg_lower 8.4375",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "670,996",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "648.1,625.2",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 2.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "958.5,624.6",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 4.1
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 9,
+  "phase": "stand->chamber t=0.50",
+  "kick_leg": "LEG1 L, leg_upper -35.0, leg_lower 20.0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "585,963",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "625.7,619.8",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 5.3
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "980.8,618.3",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 8.5
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 10,
+  "phase": "stand->chamber t=0.62",
+  "kick_leg": "LEG1 L, leg_upper -55.234375, leg_lower 31.5625",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "516,902",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "604.1,611.6",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 6.6
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1002.1,609.3",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 11.5
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 11,
+  "phase": "stand->chamber t=0.75",
+  "kick_leg": "LEG1 L, leg_upper -65.625, leg_lower 37.5",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "490,863",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "593.5,606.3",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 6.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1012.6,603.7",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 12.5
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 12,
+  "phase": "stand->chamber t=0.88",
+  "kick_leg": "LEG1 L, leg_upper -69.453125, leg_lower 39.6875",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "482,847",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "589.7,604.2",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 6.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1016.4,601.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 12.8
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 13,
+  "phase": "KEY chamber",
+  "kick_leg": "LEG1 L, leg_upper -70, leg_lower 40",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "589.1,603.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 6.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1016.9,601.1",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 12.8
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 14,
+  "phase": "KEY chamber",
+  "kick_leg": "LEG1 L, leg_upper -70, leg_lower 40",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "589.1,603.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 6.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1016.9,601.1",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 12.8
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 15,
+  "phase": "KEY chamber",
+  "kick_leg": "LEG1 L, leg_upper -70, leg_lower 40",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "589.1,603.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 6.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1016.9,601.1",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 12.8
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 16,
+  "phase": "KEY chamber",
+  "kick_leg": "LEG1 L, leg_upper -70, leg_lower 40",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "589.1,603.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 6.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1016.9,601.1",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 12.8
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 17,
+  "phase": "chamber->extension t=0.12",
+  "kick_leg": "LEG1 L, leg_upper -70.0, leg_lower 39.6875",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "588.5,603.5",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 7.0
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1017.3,600.8",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 13.1
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 18,
+  "phase": "chamber->extension t=0.25",
+  "kick_leg": "LEG1 L, leg_upper -70.0, leg_lower 37.5",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "584.0,600.8",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 9.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1020.3,598.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 15.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 19,
+  "phase": "chamber->extension t=0.38",
+  "kick_leg": "LEG1 L, leg_upper -70.0, leg_lower 31.5625",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "572.2,592.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 17.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1028.1,593.5",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 20.4
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 20,
+  "phase": "chamber->extension t=0.50",
+  "kick_leg": "LEG1 L, leg_upper -70.0, leg_lower 20.0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "551.1,575.0",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 35.6
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1042.5,581.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 32.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 21,
+  "phase": "chamber->extension t=0.62",
+  "kick_leg": "LEG1 L, leg_upper -70.0, leg_lower 8.4375",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "533.0,554.0",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 56.5
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1055.7,568.8",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 45.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 22,
+  "phase": "chamber->extension t=0.75",
+  "kick_leg": "LEG1 L, leg_upper -70.0, leg_lower 2.5",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "525.0,542.3",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 68.3
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1061.9,561.6",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 52.2
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 23,
+  "phase": "chamber->extension t=0.88",
+  "kick_leg": "LEG1 L, leg_upper -70.0, leg_lower 0.3125",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "522.2,537.8",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 72.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1064.1,558.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 55.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 24,
+  "phase": "KEY extension LEFT + boot VERTICAL, NO CROP",
+  "kick_leg": "LEG1 L, leg_upper -70, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "(78, 499, 594, 1042)",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "521.9,537.2",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 73.4
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1064.4,558.5",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 55.4
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 25,
+  "phase": "KEY extension LEFT + boot VERTICAL, NO CROP",
+  "kick_leg": "LEG1 L, leg_upper -70, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "(78, 499, 594, 1042)",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "521.9,537.2",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 73.4
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1064.4,558.5",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 55.4
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 26,
+  "phase": "KEY extension LEFT + boot VERTICAL, NO CROP",
+  "kick_leg": "LEG1 L, leg_upper -70, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "(78, 499, 594, 1042)",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "521.9,537.2",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 73.4
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1064.4,558.5",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 55.4
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 27,
+  "phase": "KEY extension LEFT + boot VERTICAL, NO CROP",
+  "kick_leg": "LEG1 L, leg_upper -70, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "(78, 499, 594, 1042)",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "521.9,537.2",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 73.4
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1064.4,558.5",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 55.4
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 28,
+  "phase": "KEY extension LEFT + boot VERTICAL, NO CROP",
+  "kick_leg": "LEG1 L, leg_upper -70, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "(78, 499, 594, 1042)",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "521.9,537.2",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 73.4
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1064.4,558.5",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 55.4
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 29,
+  "phase": "KEY extension LEFT + boot VERTICAL, NO CROP",
+  "kick_leg": "LEG1 L, leg_upper -70, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "(78, 499, 594, 1042)",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "521.9,537.2",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 73.4
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1064.4,558.5",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 55.4
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 30,
+  "phase": "KEY extension LEFT + boot VERTICAL, NO CROP",
+  "kick_leg": "LEG1 L, leg_upper -70, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "(78, 499, 594, 1042)",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "521.9,537.2",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 73.4
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1064.4,558.5",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 55.4
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 31,
+  "phase": "KEY extension LEFT + boot VERTICAL, NO CROP",
+  "kick_leg": "LEG1 L, leg_upper -70, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "(78, 499, 594, 1042)",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "521.9,537.2",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 73.4
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1064.4,558.5",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 55.4
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 32,
+  "phase": "extension->chamber t=0.12",
+  "kick_leg": "LEG1 L, leg_upper -70.0, leg_lower 0.3125",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "522.2,537.8",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 72.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1064.1,558.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 55.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 33,
+  "phase": "extension->chamber t=0.25",
+  "kick_leg": "LEG1 L, leg_upper -70.0, leg_lower 2.5",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "525.0,542.3",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 68.3
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1061.9,561.6",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 52.2
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 34,
+  "phase": "extension->chamber t=0.38",
+  "kick_leg": "LEG1 L, leg_upper -70.0, leg_lower 8.4375",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "533.0,554.0",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 56.5
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1055.7,568.8",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 45.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 35,
+  "phase": "extension->chamber t=0.50",
+  "kick_leg": "LEG1 L, leg_upper -70.0, leg_lower 20.0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "551.1,575.0",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 35.6
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1042.5,581.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 32.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 36,
+  "phase": "extension->chamber t=0.62",
+  "kick_leg": "LEG1 L, leg_upper -70.0, leg_lower 31.5625",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "572.2,592.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 17.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1028.1,593.5",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 20.4
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 37,
+  "phase": "extension->chamber t=0.75",
+  "kick_leg": "LEG1 L, leg_upper -70.0, leg_lower 37.5",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "584.0,600.8",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 9.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1020.3,598.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 15.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 38,
+  "phase": "extension->chamber t=0.88",
+  "kick_leg": "LEG1 L, leg_upper -70.0, leg_lower 39.6875",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "588.5,603.5",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 7.0
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1017.3,600.8",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 13.1
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 39,
+  "phase": "KEY chamber recover",
+  "kick_leg": "LEG1 L, leg_upper -70, leg_lower 40",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "589.1,603.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 6.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1016.9,601.1",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 12.8
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 40,
+  "phase": "KEY chamber recover",
+  "kick_leg": "LEG1 L, leg_upper -70, leg_lower 40",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "589.1,603.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 6.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1016.9,601.1",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 12.8
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 41,
+  "phase": "KEY chamber recover",
+  "kick_leg": "LEG1 L, leg_upper -70, leg_lower 40",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "481,845",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "589.1,603.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 6.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1016.9,601.1",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 12.8
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 42,
+  "phase": "chamber->stand t=0.12",
+  "kick_leg": "LEG1 L, leg_upper -69.453125, leg_lower 39.6875",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "482,847",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "589.7,604.2",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 6.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1016.4,601.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 12.8
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 43,
+  "phase": "chamber->stand t=0.25",
+  "kick_leg": "LEG1 L, leg_upper -65.625, leg_lower 37.5",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "490,863",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "593.5,606.3",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 6.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1012.6,603.7",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 12.5
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 44,
+  "phase": "chamber->stand t=0.38",
+  "kick_leg": "LEG1 L, leg_upper -55.234375, leg_lower 31.5625",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "516,902",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "604.1,611.6",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 6.6
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "1002.1,609.3",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 11.5
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 45,
+  "phase": "chamber->stand t=0.50",
+  "kick_leg": "LEG1 L, leg_upper -35.0, leg_lower 20.0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "585,963",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "625.7,619.8",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 5.3
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "980.8,618.3",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 8.5
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 46,
+  "phase": "chamber->stand t=0.62",
+  "kick_leg": "LEG1 L, leg_upper -14.765625, leg_lower 8.4375",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "670,996",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "648.1,625.2",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 2.7
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "958.5,624.6",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 4.1
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 47,
+  "phase": "chamber->stand t=0.75",
+  "kick_leg": "LEG1 L, leg_upper -4.375, leg_lower 2.5",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "717,1001",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "659.8,626.9",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.9
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "946.8,626.7",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 1.3
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 48,
+  "phase": "chamber->stand t=0.88",
+  "kick_leg": "LEG1 L, leg_upper -0.546875, leg_lower 0.3125",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "735,1000",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "664.2,627.3",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.1
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "942.5,627.3",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.2
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 49,
+  "phase": "KEY stand",
+  "kick_leg": "LEG1 L, leg_upper 0, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "737,1000",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "664.8,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "941.9,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 50,
+  "phase": "KEY stand",
+  "kick_leg": "LEG1 L, leg_upper 0, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "737,1000",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "664.8,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "941.9,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 51,
+  "phase": "KEY stand",
+  "kick_leg": "LEG1 L, leg_upper 0, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "737,1000",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "664.8,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "941.9,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 52,
+  "phase": "KEY stand",
+  "kick_leg": "LEG1 L, leg_upper 0, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "737,1000",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "664.8,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "941.9,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 53,
+  "phase": "KEY stand",
+  "kick_leg": "LEG1 L, leg_upper 0, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "737,1000",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "664.8,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "941.9,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ },
+ {
+  "frame": 54,
+  "phase": "KEY stand",
+  "kick_leg": "LEG1 L, leg_upper 0, leg_lower 0",
+  "planted_leg": "LEG2 R, leg_upper 0, leg_lower 0, unmoved",
+  "knee_L_rig_xy_wide_canvas": "737,1000",
+  "sole_bbox_rig_wide_canvas": "OFF",
+  "elbow_gap": [
+   {
+    "arm": "L",
+    "elbow_rig_xy_wide_canvas": "664.8,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   },
+   {
+    "arm": "R",
+    "elbow_rig_xy_wide_canvas": "941.9,627.4",
+    "upper_end_to_forearm_start_px": 0.0,
+    "old_buggy_gap_rig_px": 0.0
+   }
+  ],
+  "canvas": "1600x1500 transparent rig -> 800x750 -> centred on 1100x750 transparent, NO crop, NO window"
+ }
+]

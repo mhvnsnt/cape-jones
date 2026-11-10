@@ -1,0 +1,63 @@
+{
+ "template": "motion_template.py",
+ "locked_default": {
+  "snap_on": 13,
+  "cross_start": 14,
+  "cross_end": 36,
+  "snap_off": 37,
+  "snap_z": 0.05,
+  "torso_z": 0.08,
+  "head_z": 0.12
+ },
+ "gates": {
+  "snap_sooner": {
+   "status": "FAIL",
+   "detail": {
+    "Draw-Arm_Front.png": {
+     "rest_z": 0.03,
+     "snap_on": 13,
+     "snap_off": 37,
+     "crossing_bad_frames": [],
+     "torso_z": 0.08,
+     "head_z": 0.12,
+     "snap_z": 0.05,
+     "above_torso_below_head": false
+    },
+    "Draw-Arm_Back.png": {
+     "rest_z": 0.035,
+     "snap_on": 13,
+     "snap_off": 37,
+     "crossing_bad_frames": [],
+     "torso_z": 0.08,
+     "head_z": 0.12,
+     "snap_z": 0.05,
+     "above_torso_below_head": false
+    }
+   },
+   "rule": "Snap ON at the last frame before crossing, held every frame through crossing, off only when arms are clear. Torso < arm < head for chest crossing."
+  },
+  "whole_chain": {
+   "status": "PASS",
+   "detail": {
+    "keyed_arm_objects": [
+     "Draw-Arm_Front.png",
+     "Draw-Arm_Back.png"
+    ],
+    "note": "Whole arm chain per object; no forearm/fist was keyed separately from its upper arm."
+   }
+  },
+  "knee_feet": {
+   "status": "NOT_CHECKED",
+   "detail": "No POSE_JSON supplied; no knee-feet claim is made for this build."
+  },
+  "grounded": {
+   "status": "NOT_CHECKED",
+   "detail": "No POSE_JSON supplied; no grounded claim is made for this build."
+  },
+  "wrist": {
+   "status": "NOT_CHECKED",
+   "detail": "No armature object in this blend; wrist gate needs the rig's bone data."
+  }
+ },
+ "overall": "FAIL"
+}

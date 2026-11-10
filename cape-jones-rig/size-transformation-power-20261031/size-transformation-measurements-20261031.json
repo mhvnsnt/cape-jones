@@ -1,0 +1,1722 @@
+{
+  "power": "SIZE-TRANSFORMATION",
+  "templates": {
+    "size_transformation": {
+      "scales": [
+        0.5,
+        1.0,
+        2.0,
+        1.0
+      ],
+      "frames": 54,
+      "fps": 24,
+      "easing": "smoothstep slow-in/slow-out per segment",
+      "squash_x": "1.0 at keys, 0.95 mid-growth segment (Disney squash, feet unaffected)",
+      "canvas": [
+        1600,
+        1800
+      ],
+      "ground_y": 1500,
+      "hero_height_px": 700,
+      "gate": {
+        "template": "size_transformation",
+        "frames": 54,
+        "feet_y_min": 1500,
+        "feet_y_max": 1500,
+        "feet_y_spread_px": 0,
+        "feet_y_all": [
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500
+        ],
+        "touches_edge_frames": [],
+        "min_margin_px": 101,
+        "PASS": true
+      }
+    },
+    "coming_forward_walk": {
+      "keys": [
+        "CONTACT-L@0.70",
+        "PASSING@0.95",
+        "CONTACT-R@1.20",
+        "PASSING@1.40",
+        "CONTACT-L@1.60",
+        "CONTACT-L-HOLD@1.60"
+      ],
+      "frames": 44,
+      "fps": 24,
+      "easing": "smoothstep rig-angle interpolation between walk keys",
+      "canvas": [
+        1600,
+        1800
+      ],
+      "ground_y": 1500,
+      "hero_height_px": 700,
+      "gate": {
+        "template": "coming_forward_walk",
+        "frames": 44,
+        "feet_y_min": 1500,
+        "feet_y_max": 1500,
+        "feet_y_spread_px": 0,
+        "feet_y_all": [
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1500
+        ],
+        "touches_edge_frames": [],
+        "min_margin_px": 299,
+        "PASS": true
+      }
+    }
+  },
+  "feet_planted_rule": "Every frame anchored by its own alpha bbox bottom == ground_y; scaling grows upward from the feet, never from centre or plate bottom.",
+  "no_crop_rule": "Canvas 1600x1800 fits giant (2.0x) with margin; gate fails on edge touch.",
+  "background_note": "GIF/MP4 are on grey-128 video background for playback; the figure layer itself is transparent (see clean PNG plates). Ground-line red marker appears on proof images only, never on clean composites.",
+  "methods": [
+    {
+      "name": "Perspective scaling / depth cueing",
+      "source": "depth-by-scale test, scale=1.0+0.25*Z, extended to power scale 0.5-2.0",
+      "wired": "anchor_layer() scale parameter, measured feet_y per frame",
+      "run": "real"
+    },
+    {
+      "name": "Multiplane parallax",
+      "source": "depth test multiplane camera, far 0.3 / cape 1.0 / foreground 1.8",
+      "wired": "background() distant blocks drift at 0.3x figure scale change",
+      "run": "real (simple blocks, not a full multiplane render)"
+    },
+    {
+      "name": "Disney squash and stretch",
+      "source": "Disney 12 principles",
+      "wired": "width squash 0.95 mid-growth segment, feet anchor recomputed after squash",
+      "run": "real"
+    },
+    {
+      "name": "Walk-cycle contact / passing / down / up",
+      "source": "Williams, Animator's Survival Kit walk positions",
+      "wired": "walk keys CONTACT-L/PASSING/CONTACT-R + DOWN/UP phase labels in measurements",
+      "run": "real (rig-angle interpolation, not hand-drawn keys)"
+    },
+    {
+      "name": "2D foot-plant anchor (IK-style, not a solver)",
+      "source": "foot-locking / IK foot plant concept, 2D anchor method",
+      "wired": "bbox-bottom anchor to ground_y every frame; stance foot is bbox bottom",
+      "run": "real, labelled NOT a true IK solver"
+    }
+  ],
+  "honest_limits": [
+    "Walk keys are rig-angle configs written for this template, not measured from an existing walk clip; the walk clips on disk are RGB full-canvas, not transparent rig poses, so they could not be used as keys.",
+    "Coming-forward has no true walk-cycle keys from the sheets and no background parallax render beyond simple blocks; background parallax for a full scene is still owed.",
+    "MP4/GIF use a grey video background; only the figure layer and the two clean PNG plates are transparent."
+  ],
+  "size_measurements": [
+    {
+      "feet_y": 1500,
+      "bbox": [
+        724,
+        1150,
+        876,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 0,
+      "scale": 0.5,
+      "squash_x": 1.0,
+      "phase": "SMALL-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        724,
+        1150,
+        876,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 1,
+      "scale": 0.5,
+      "squash_x": 1.0,
+      "phase": "SMALL-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        724,
+        1150,
+        876,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 2,
+      "scale": 0.5,
+      "squash_x": 1.0,
+      "phase": "SMALL-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        724,
+        1150,
+        876,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 3,
+      "scale": 0.5,
+      "squash_x": 1.0,
+      "phase": "SMALL-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        724,
+        1150,
+        876,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 4,
+      "scale": 0.5,
+      "squash_x": 1.0,
+      "phase": "SMALL-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        724,
+        1150,
+        876,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 5,
+      "scale": 0.5,
+      "squash_x": 1.0,
+      "phase": "SMALL-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        724,
+        1144,
+        877,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 6,
+      "scale": 0.5098,
+      "squash_x": 0.9871,
+      "phase": "GROW-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        721,
+        1125,
+        880,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 7,
+      "scale": 0.537,
+      "squash_x": 0.975,
+      "phase": "GROW-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        716,
+        1096,
+        885,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 8,
+      "scale": 0.5781,
+      "squash_x": 0.9646,
+      "phase": "GROW-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        709,
+        1060,
+        892,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 9,
+      "scale": 0.6296,
+      "squash_x": 0.9567,
+      "phase": "GROW-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        701,
+        1019,
+        900,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 10,
+      "scale": 0.6881,
+      "squash_x": 0.9517,
+      "phase": "GROW-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        692,
+        975,
+        908,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 11,
+      "scale": 0.75,
+      "squash_x": 0.95,
+      "phase": "GROW-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        683,
+        933,
+        918,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 12,
+      "scale": 0.8119,
+      "squash_x": 0.9517,
+      "phase": "GROW-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        674,
+        892,
+        927,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 13,
+      "scale": 0.8704,
+      "squash_x": 0.9567,
+      "phase": "GROW-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        665,
+        855,
+        935,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 14,
+      "scale": 0.9219,
+      "squash_x": 0.9646,
+      "phase": "GROW-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        658,
+        827,
+        943,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 15,
+      "scale": 0.963,
+      "squash_x": 0.975,
+      "phase": "GROW-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        652,
+        808,
+        949,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 16,
+      "scale": 0.9902,
+      "squash_x": 0.9871,
+      "phase": "GROW-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        648,
+        800,
+        952,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 17,
+      "scale": 1.0,
+      "squash_x": 1.0,
+      "phase": "GROW-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        647,
+        787,
+        953,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 18,
+      "scale": 1.0197,
+      "squash_x": 0.9871,
+      "phase": "GROW-TO-GIANT"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        641,
+        750,
+        959,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 19,
+      "scale": 1.0741,
+      "squash_x": 0.975,
+      "phase": "GROW-TO-GIANT"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        631,
+        691,
+        969,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 20,
+      "scale": 1.1562,
+      "squash_x": 0.9646,
+      "phase": "GROW-TO-GIANT"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        617,
+        620,
+        983,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 21,
+      "scale": 1.2593,
+      "squash_x": 0.9567,
+      "phase": "GROW-TO-GIANT"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        601,
+        538,
+        999,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 22,
+      "scale": 1.3762,
+      "squash_x": 0.9517,
+      "phase": "GROW-TO-GIANT"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        584,
+        451,
+        1017,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 23,
+      "scale": 1.5,
+      "squash_x": 0.95,
+      "phase": "GROW-TO-GIANT"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        566,
+        365,
+        1035,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 24,
+      "scale": 1.6238,
+      "squash_x": 0.9517,
+      "phase": "GROW-TO-GIANT"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        547,
+        283,
+        1053,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 283,
+      "frame": 25,
+      "scale": 1.7407,
+      "squash_x": 0.9567,
+      "phase": "GROW-TO-GIANT"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        530,
+        211,
+        1071,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 211,
+      "frame": 26,
+      "scale": 1.8438,
+      "squash_x": 0.9646,
+      "phase": "GROW-TO-GIANT"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        515,
+        152,
+        1086,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 152,
+      "frame": 27,
+      "scale": 1.9259,
+      "squash_x": 0.975,
+      "phase": "GROW-TO-GIANT"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        503,
+        115,
+        1097,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 115,
+      "frame": 28,
+      "scale": 1.9803,
+      "squash_x": 0.9871,
+      "phase": "GROW-TO-GIANT"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        496,
+        101,
+        1104,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 101,
+      "frame": 29,
+      "scale": 2.0,
+      "squash_x": 1.0,
+      "phase": "GROW-TO-GIANT"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        496,
+        101,
+        1104,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 101,
+      "frame": 30,
+      "scale": 2.0,
+      "squash_x": 1.0,
+      "phase": "GIANT-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        496,
+        101,
+        1104,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 101,
+      "frame": 31,
+      "scale": 2.0,
+      "squash_x": 1.0,
+      "phase": "GIANT-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        496,
+        101,
+        1104,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 101,
+      "frame": 32,
+      "scale": 2.0,
+      "squash_x": 1.0,
+      "phase": "GIANT-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        496,
+        101,
+        1104,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 101,
+      "frame": 33,
+      "scale": 2.0,
+      "squash_x": 1.0,
+      "phase": "GIANT-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        496,
+        101,
+        1104,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 101,
+      "frame": 34,
+      "scale": 2.0,
+      "squash_x": 1.0,
+      "phase": "GIANT-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        496,
+        101,
+        1104,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 101,
+      "frame": 35,
+      "scale": 2.0,
+      "squash_x": 1.0,
+      "phase": "GIANT-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        503,
+        115,
+        1097,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 115,
+      "frame": 36,
+      "scale": 1.9803,
+      "squash_x": 0.9871,
+      "phase": "SHRINK-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        515,
+        152,
+        1086,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 152,
+      "frame": 37,
+      "scale": 1.9259,
+      "squash_x": 0.975,
+      "phase": "SHRINK-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        530,
+        211,
+        1071,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 211,
+      "frame": 38,
+      "scale": 1.8438,
+      "squash_x": 0.9646,
+      "phase": "SHRINK-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        547,
+        283,
+        1053,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 283,
+      "frame": 39,
+      "scale": 1.7407,
+      "squash_x": 0.9567,
+      "phase": "SHRINK-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        566,
+        365,
+        1035,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 40,
+      "scale": 1.6238,
+      "squash_x": 0.9517,
+      "phase": "SHRINK-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        584,
+        451,
+        1017,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 41,
+      "scale": 1.5,
+      "squash_x": 0.95,
+      "phase": "SHRINK-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        601,
+        538,
+        999,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 42,
+      "scale": 1.3762,
+      "squash_x": 0.9517,
+      "phase": "SHRINK-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        617,
+        620,
+        983,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 43,
+      "scale": 1.2593,
+      "squash_x": 0.9567,
+      "phase": "SHRINK-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        631,
+        691,
+        969,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 44,
+      "scale": 1.1562,
+      "squash_x": 0.9646,
+      "phase": "SHRINK-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        641,
+        750,
+        959,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 45,
+      "scale": 1.0741,
+      "squash_x": 0.975,
+      "phase": "SHRINK-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        647,
+        787,
+        953,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 46,
+      "scale": 1.0197,
+      "squash_x": 0.9871,
+      "phase": "SHRINK-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        648,
+        800,
+        952,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 47,
+      "scale": 1.0,
+      "squash_x": 1.0,
+      "phase": "SHRINK-TO-NORMAL"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        648,
+        800,
+        952,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 48,
+      "scale": 1.0,
+      "squash_x": 1.0,
+      "phase": "NORMAL-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        648,
+        800,
+        952,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 49,
+      "scale": 1.0,
+      "squash_x": 1.0,
+      "phase": "NORMAL-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        648,
+        800,
+        952,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 50,
+      "scale": 1.0,
+      "squash_x": 1.0,
+      "phase": "NORMAL-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        648,
+        800,
+        952,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 51,
+      "scale": 1.0,
+      "squash_x": 1.0,
+      "phase": "NORMAL-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        648,
+        800,
+        952,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 52,
+      "scale": 1.0,
+      "squash_x": 1.0,
+      "phase": "NORMAL-HOLD"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        648,
+        800,
+        952,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 53,
+      "scale": 1.0,
+      "squash_x": 1.0,
+      "phase": "NORMAL-HOLD"
+    }
+  ],
+  "walk_measurements": [
+    {
+      "feet_y": 1500,
+      "bbox": [
+        657,
+        1011,
+        944,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 0,
+      "scale": 0.7,
+      "phase": "CONTACT-L",
+      "from": "CONTACT-L",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        658,
+        1006,
+        943,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 1,
+      "scale": 0.707,
+      "phase": "INBETWEEN",
+      "from": "CONTACT-L",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        660,
+        993,
+        941,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 2,
+      "scale": 0.726,
+      "phase": "DOWN",
+      "from": "CONTACT-L",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        659,
+        973,
+        941,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 3,
+      "scale": 0.754,
+      "phase": "INBETWEEN",
+      "from": "CONTACT-L",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        658,
+        950,
+        943,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 4,
+      "scale": 0.788,
+      "phase": "INBETWEEN",
+      "from": "CONTACT-L",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        657,
+        923,
+        944,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 5,
+      "scale": 0.825,
+      "phase": "UP",
+      "from": "CONTACT-L",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        656,
+        897,
+        944,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 6,
+      "scale": 0.862,
+      "phase": "INBETWEEN",
+      "from": "CONTACT-L",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        656,
+        874,
+        945,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 7,
+      "scale": 0.896,
+      "phase": "INBETWEEN",
+      "from": "CONTACT-L",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        655,
+        854,
+        945,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 8,
+      "scale": 0.924,
+      "phase": "INBETWEEN",
+      "from": "CONTACT-L",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        655,
+        841,
+        945,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 9,
+      "scale": 0.943,
+      "phase": "INBETWEEN",
+      "from": "CONTACT-L",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        655,
+        836,
+        945,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 10,
+      "scale": 0.95,
+      "phase": "PASSING",
+      "from": "PASSING",
+      "to": "CONTACT-R"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        656,
+        831,
+        945,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 11,
+      "scale": 0.957,
+      "phase": "INBETWEEN",
+      "from": "PASSING",
+      "to": "CONTACT-R"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        653,
+        818,
+        947,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 12,
+      "scale": 0.976,
+      "phase": "DOWN",
+      "from": "PASSING",
+      "to": "CONTACT-R"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        648,
+        798,
+        952,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 13,
+      "scale": 1.004,
+      "phase": "INBETWEEN",
+      "from": "PASSING",
+      "to": "CONTACT-R"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        643,
+        774,
+        957,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 14,
+      "scale": 1.038,
+      "phase": "INBETWEEN",
+      "from": "PASSING",
+      "to": "CONTACT-R"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        637,
+        749,
+        964,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 15,
+      "scale": 1.075,
+      "phase": "UP",
+      "from": "PASSING",
+      "to": "CONTACT-R"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        631,
+        723,
+        970,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 16,
+      "scale": 1.112,
+      "phase": "INBETWEEN",
+      "from": "PASSING",
+      "to": "CONTACT-R"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        625,
+        698,
+        976,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 17,
+      "scale": 1.146,
+      "phase": "INBETWEEN",
+      "from": "PASSING",
+      "to": "CONTACT-R"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        620,
+        679,
+        981,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 18,
+      "scale": 1.174,
+      "phase": "INBETWEEN",
+      "from": "PASSING",
+      "to": "CONTACT-R"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        614,
+        666,
+        986,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 19,
+      "scale": 1.193,
+      "phase": "INBETWEEN",
+      "from": "PASSING",
+      "to": "CONTACT-R"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        612,
+        660,
+        988,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 20,
+      "scale": 1.2,
+      "phase": "CONTACT-R",
+      "from": "CONTACT-R",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        612,
+        657,
+        988,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 21,
+      "scale": 1.2056,
+      "phase": "INBETWEEN",
+      "from": "CONTACT-R",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        612,
+        646,
+        988,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 22,
+      "scale": 1.2208,
+      "phase": "DOWN",
+      "from": "CONTACT-R",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        610,
+        631,
+        991,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 23,
+      "scale": 1.2432,
+      "phase": "INBETWEEN",
+      "from": "CONTACT-R",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        607,
+        611,
+        994,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 24,
+      "scale": 1.2704,
+      "phase": "INBETWEEN",
+      "from": "CONTACT-R",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        603,
+        591,
+        998,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 25,
+      "scale": 1.3,
+      "phase": "UP",
+      "from": "CONTACT-R",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        599,
+        571,
+        1001,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 26,
+      "scale": 1.3296,
+      "phase": "INBETWEEN",
+      "from": "CONTACT-R",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        595,
+        551,
+        1005,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 27,
+      "scale": 1.3568,
+      "phase": "INBETWEEN",
+      "from": "CONTACT-R",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        592,
+        536,
+        1008,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 28,
+      "scale": 1.3792,
+      "phase": "INBETWEEN",
+      "from": "CONTACT-R",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        589,
+        525,
+        1012,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 29,
+      "scale": 1.3944,
+      "phase": "INBETWEEN",
+      "from": "CONTACT-R",
+      "to": "PASSING"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        586,
+        521,
+        1015,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 30,
+      "scale": 1.4,
+      "phase": "PASSING",
+      "from": "PASSING",
+      "to": "CONTACT-L"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        584,
+        518,
+        1016,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 31,
+      "scale": 1.4056,
+      "phase": "INBETWEEN",
+      "from": "PASSING",
+      "to": "CONTACT-L"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        577,
+        507,
+        1024,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 32,
+      "scale": 1.4208,
+      "phase": "DOWN",
+      "from": "PASSING",
+      "to": "CONTACT-L"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        566,
+        491,
+        1034,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 33,
+      "scale": 1.4432,
+      "phase": "INBETWEEN",
+      "from": "PASSING",
+      "to": "CONTACT-L"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        554,
+        473,
+        1046,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 34,
+      "scale": 1.4704,
+      "phase": "INBETWEEN",
+      "from": "PASSING",
+      "to": "CONTACT-L"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        539,
+        451,
+        1061,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 35,
+      "scale": 1.5,
+      "phase": "UP",
+      "from": "PASSING",
+      "to": "CONTACT-L"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        523,
+        430,
+        1077,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 36,
+      "scale": 1.5296,
+      "phase": "INBETWEEN",
+      "from": "PASSING",
+      "to": "CONTACT-L"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        509,
+        411,
+        1092,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 37,
+      "scale": 1.5568,
+      "phase": "INBETWEEN",
+      "from": "PASSING",
+      "to": "CONTACT-L"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        494,
+        397,
+        1106,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 38,
+      "scale": 1.5792,
+      "phase": "INBETWEEN",
+      "from": "PASSING",
+      "to": "CONTACT-L"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        479,
+        385,
+        1122,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 39,
+      "scale": 1.5944,
+      "phase": "INBETWEEN",
+      "from": "PASSING",
+      "to": "CONTACT-L"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        472,
+        383,
+        1128,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 40,
+      "scale": 1.6,
+      "phase": "CONTACT-L-HOLD",
+      "from": "CONTACT-L",
+      "to": "CONTACT-L"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        472,
+        383,
+        1128,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 41,
+      "scale": 1.6,
+      "phase": "CONTACT-L-HOLD",
+      "from": "CONTACT-L",
+      "to": "CONTACT-L"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        472,
+        383,
+        1128,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 42,
+      "scale": 1.6,
+      "phase": "CONTACT-L-HOLD",
+      "from": "CONTACT-L",
+      "to": "CONTACT-L"
+    },
+    {
+      "feet_y": 1500,
+      "bbox": [
+        472,
+        383,
+        1128,
+        1500
+      ],
+      "touches_edge": false,
+      "margin": 299,
+      "frame": 43,
+      "scale": 1.6,
+      "phase": "CONTACT-L-HOLD",
+      "from": "CONTACT-L",
+      "to": "CONTACT-L"
+    }
+  ]
+}

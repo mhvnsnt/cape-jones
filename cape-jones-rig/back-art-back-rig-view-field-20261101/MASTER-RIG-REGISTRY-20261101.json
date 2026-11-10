@@ -1,0 +1,26 @@
+{
+  "system": "MASTER RIG - one skeleton/system, many drawing sets",
+  "date": "2026-11-01",
+  "job": "back-art-back-rig-view-field-20261101",
+  "rule": "One skeleton/system: joints shoulder/elbow/wrist, hip/knee/ankle, spine pelvis->torso->head, cape. Rules shared across views: pivot = ball centre or saved pivot_xy, wrist = wrist end of forearm, knee-feet = knees and feet same direction, no-crop gate, whole pieces only (no square/rectangular crop of a piece), RIG-00 never edited in place. What changes per view is the DRAWING SET + layer order + pivots, switched as a group. Never warp, squash, or mirror one view's art into another view. Front art is never a back rig.",
+  "views": [
+    {"view": "front", "status": "BUILT", "rig": "RIG-00", "note": "Front-facing original rig, locked (v7c/v6). Untouched by this job."},
+    {"view": "3/4-front", "status": "BUILT", "rig": "RIG-06", "note": "3/4 sitting rig, finished this job from the locked default sitting pose (see 34-finish/)."},
+    {"view": "side", "status": "IN PROGRESS - PARALLEL JOB, NOT THIS JOB", "rig": "OWED (side job)", "note": "No side rig folder had landed at the time of this job. Source sheet exists (model-sheet-side-set2/Row1_1.png, 335x996) and a true-master side plate exists, but neither is a side rig. NOT claimed done here, NOT duplicated here."},
+    {"view": "3/4-back", "status": "SOURCE ONLY - RIG OWED", "rig": "OWED", "note": "Source sheet exists: sliced-clean-20261031/B-model/model-sheet-3quarter-back-set2/Row1_1.png (619x996). Pieces NOT cut, rig NOT built in this job."},
+    {"view": "back", "status": "BUILT THIS JOB", "rig": "RIG-07", "note": "Back rig, standing poseable, 11 pieces cut from model-sheet-back-set2 (not a mirror). Back sitting pose OWED (see below)."}
+  ],
+  "rigs": [
+    {"id": "RIG-00", "view": "front", "name": "DEFAULT ORIGINAL RIG", "status": "LOCKED, UNTOUCHED", "builder": "joint_locked_rig_v7c.py", "pieces": "sliced/ + cut-limbs-v7c/"},
+    {"id": "RIG-01", "view": "front", "name": "SITTING RIG (forward view)", "status": "BUILT (prior job)", "builder": "sitting-rig-20261101/build_sitting_rig.py", "note": "Sit-lotus (preset, saved), sit-chair-lap, sit-lean-forward (forward view). Distinct from RIG-06 3/4 sitting."},
+    {"id": "RIG-02", "view": "front", "name": "CAPE CONSUMED", "status": "BUILT (prior job)", "note": "Different rig, not a colourway. All-black form, white outline mandatory on self-crossing."},
+    {"id": "RIG-03", "view": "front", "name": "DREAM COLOURWAYS", "status": "BUILT (prior job)", "note": "Colourway variants of RIG-00, not new geometry."},
+    {"id": "RIG-04", "view": "front", "name": "GOLD V6 / DUAL CHARGE", "status": "BUILT (prior job)", "note": "Colourway + rim variant, not new geometry."},
+    {"id": "RIG-05", "view": "front", "name": "CapeGP (Blender Grease Pencil)", "status": "BUILT (prior job)", "note": "Layer rig, 10 layers, strokes traced from v7c, no new art."},
+    {"id": "RIG-06", "view": "3/4-front", "name": "3/4 SITTING RIG - FINISHED", "status": "FINISHED THIS JOB", "builder": "back-art-back-rig-view-field-20261101/34-finish/build_34_finish.py", "base": "rig-34-disassembled-wired-20261101 (APPROVED PERFECT 2026-11-01 01:21 CST) + rig-34-locked-default-sitting-20261101 v2", "pieces_drawn": 18, "pieces_manifest": 20, "note": "Fist layers OFF (toggleable, 2 layers not drawn). Neck: whole sliced/Neck.png, alpha>10 renders 101x82, drawn after arms before head. Knee/shin pivot gap STILL OPEN: L 71.2px, R 75.0px (see gates)."},
+    {"id": "RIG-07", "view": "back", "name": "BACK RIG (standing, poseable)", "status": "BUILT THIS JOB", "builder": "back-art-back-rig-view-field-20261101/build_back_rig.py", "pieces": 11, "poses": ["back-stand", "back-arms-down"], "note": "Pieces cut from model-sheet-back-set2, NOT mirrored front. No separate torso piece: cape IS the torso covering from the back, as drawn. Knee pads are line art on thigh pieces: knees are pivots, not pieces. Front Neck.png NOT used in back view (neck hidden by cowl + cape collar, as drawn). Back sitting pose OWED."}
+  ],
+  "effect_not_a_rig": {"name": "CRYSTAL / CRYSTALLIZATION", "view": "any (overlay)", "note": "Effect, not a rig, per Mars. Applies over any view rig."},
+  "view_switch_rule": "Switching view = switch piece set + layer order + pivot set as a group at a keyframe. Never rotate/squash/warp one view's drawing into another view. Layer orders are per-view (back order in build_back_rig.py differs from front order).",
+  "counts": {"view_rigs_built": "3/5 = 60% (front, 3/4-front, back)", "view_rigs_in_progress_elsewhere": "1/5 (side, parallel job)", "view_rigs_owed": "1/5 (3/4-back)", "back_pieces": "11/11 = 100%", "back_poses_built": "2/2 standing poses = 100% (back-stand, back-arms-down)", "back_sitting_poses": "0/1 = 0% (owed)", "rig_entries_total": "RIG-00..RIG-07 = 8 rigs + 1 effect"}
+}

@@ -1,0 +1,73 @@
+{
+  "deleted": "rig-34-locked-neck-v4-final-20261101 (V4 officials, Mars 2026-11-01 08:01 CST: delete V4 definitely, keep V5, keep V6)",
+  "date": "2026-11-01",
+  "v5_verification_before_deletion": "V5 pose 1400x1600 opened, V5 idle chat 48f, V5 lean chat 96f, V5 idle/lean MP4s 48f/96f verified - V5 is official replacement, V4 is not sole copy",
+  "count": 14,
+  "total_bytes": 10682639,
+  "files": [
+    {
+      "file": "DELETED-OTHER-VERSIONS-INVENTORY-20261101.json",
+      "bytes": 27732
+    },
+    {
+      "file": "MANIFEST-NECK-V4-20261101.json",
+      "bytes": 2529
+    },
+    {
+      "file": "OFFICIAL-V4-20261101.md",
+      "bytes": 5021
+    },
+    {
+      "file": "build_locked_neck_v4.py",
+      "bytes": 7464
+    },
+    {
+      "file": "poses/default-sitting-pose-locked-neck-v4-20261101-on-grey.png",
+      "bytes": 475613
+    },
+    {
+      "file": "poses/default-sitting-pose-locked-neck-v4-20261101.png",
+      "bytes": 555942
+    },
+    {
+      "file": "poses/neck-zoom-before-v3-after-v4-20261101.png",
+      "bytes": 101972
+    },
+    {
+      "file": "animation-idle/sit-idle-neck-v4-20261101.gif",
+      "bytes": 1637536
+    },
+    {
+      "file": "animation-lean/sit-lean-neck-v4-20261101.gif",
+      "bytes": 5559900
+    },
+    {
+      "file": "animation-lean/sit-lean-neck-v4-20261101.mp4",
+      "bytes": 149516
+    },
+    {
+      "file": "chat-playable/sit-idle-neck-v4-20261101-chat-700w.gif",
+      "bytes": 465927
+    },
+    {
+      "file": "chat-playable/sit-idle-neck-v4-20261101-chat-700w.mp4",
+      "bytes": 36023
+    },
+    {
+      "file": "chat-playable/sit-lean-neck-v4-20261101-chat-700w.gif",
+      "bytes": 1590629
+    },
+    {
+      "file": "chat-playable/sit-lean-neck-v4-20261101-chat-700w.mp4",
+      "bytes": 66835
+    }
+  ],
+  "method": "recoverable trash, not permanent rm; repo NOT touched",
+  "kept": [
+    "V5 official rig-34-locked-neck-v5-cape-fix-20261101 untouched",
+    "V6 collar-rearranged rig-34-locked-neck-v6-cape-collar-20261101 untouched (builder still running separately)"
+  ],
+  "trash_id": "20261101-140153-8e4236eb77094726bd42a05ff23b193b",
+  "trash_expiry": "2026-12-01T14:01:53Z",
+  "verified_after_deletion": "V4 folder no longer exists in working tree; V5 pose + idle 48f + lean 96f still present; V6 folder untouched"
+}

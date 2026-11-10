@@ -1,0 +1,40 @@
+{
+ "id": "fosters-goo-hair",
+ "kind": "static-puppet-library",
+ "show": "Foster's Home for Imaginary Friends",
+ "collection": "Foster's Home for Imaginary Friends — FOSTERS MAIN MODEL TURNS/Flash (inside CN-Leaks-001's FOSTERS folder)",
+ "characters": [
+  "Goo (hair only)"
+ ],
+ "source_file": "Goo_Hair.fla",
+ "source_archive": "CN-Leaks-001-gumball.zip",
+ "archive_location": "mhvnsnt/cn-gigaleak-gumball, draft release untagged-1676e192ae8c72e95791",
+ "size_bytes": 3128320,
+ "format": "Binary FLA (OLE2 compound, pre-XFL)",
+ "symbol_count": null,
+ "symbols": null,
+ "recovered_names": [
+  "st-goo-sv-hair comp-001",
+  "st-goo-sv-hair comp-002",
+  "st-goo-sv-hair comp-003",
+  "st-goo-sv-hair-001",
+  "st-goo-sv-hair-002",
+  "st-goo-sv-hair-003",
+  "ponytail"
+ ],
+ "parts_census": null,
+ "views": null,
+ "presentation_frames": "Not measured (no companion SWF in the archive)",
+ "completeness": "Single-element sheet — hair comps only, NOT a character",
+ "notes": [
+  "The archive's one single-element library: Goo's hair as its own file — st-goo-sv-hair comp 001-003, st-goo-sv-hair 001-003, ponytail.",
+  "Kept separate from the turnaround because the hair is a reusable comp across Goo files."
+ ],
+ "media": {
+  "status": "blocked-write-guard",
+  "target_file": "sheet-fosters-goo-hair.png",
+  "delivery_dir": "~/workspace/your_files/scene-templates/",
+  "note": "Model-sheet render staged in render_model_sheets.sh; the sandbox write guard currently refuses rendered-binary writes (EPERM/0 bytes). Census and catalog are unaffected."
+ },
+ "record_path": "production/scene-templates/gumball/libraries/fosters-goo-hair/library.json"
+}

@@ -1,0 +1,35 @@
+{
+ "id": "fosters-turn-madam-foster",
+ "kind": "static-puppet-library",
+ "show": "Foster's Home for Imaginary Friends",
+ "collection": "Foster's Home for Imaginary Friends — FOSTERS MAIN MODEL TURNS/Flash (inside CN-Leaks-001's FOSTERS folder)",
+ "characters": [
+  "Madame Foster"
+ ],
+ "source_file": "Madam_Foster_Turnaround.fla",
+ "source_archive": "CN-Leaks-001-gumball.zip",
+ "archive_location": "mhvnsnt/cn-gigaleak-gumball, draft release untagged-1676e192ae8c72e95791",
+ "size_bytes": 3271680,
+ "format": "Binary FLA (OLE2 compound, pre-XFL)",
+ "symbol_count": null,
+ "symbols": null,
+ "recovered_names": [
+  "Madame Foster Turnaround (title)",
+  "Hands"
+ ],
+ "parts_census": null,
+ "views": null,
+ "presentation_frames": "Not measured (no companion SWF in the archive)",
+ "completeness": "Model-turn library — large symbol count behind generic names",
+ "notes": [
+  "Binary FLA (OLE2 compound). Title string inside the file: 'Madame Foster Turnaround' [sic — file name says Madam, title says Madame]; a named Hands symbol survives.",
+  "Symbol numbering runs past 117, so the library holds 100+ symbols behind generic 'Symbol N' names — the part structure does not survive by name and needs an Animate open to census properly."
+ ],
+ "media": {
+  "status": "blocked-write-guard",
+  "target_file": "sheet-fosters-turn-madam-foster.png",
+  "delivery_dir": "~/workspace/your_files/scene-templates/",
+  "note": "Model-sheet render staged in render_model_sheets.sh; the sandbox write guard currently refuses rendered-binary writes (EPERM/0 bytes). Census and catalog are unaffected."
+ },
+ "record_path": "production/scene-templates/gumball/libraries/fosters-turn-madam-foster/library.json"
+}

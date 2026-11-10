@@ -1,0 +1,102 @@
+{
+  "I1_ffmpeg_pad": {
+    "status": "RUN",
+    "detail": "padded to (1900, 2300), edge {'top': 0, 'bottom': 0, 'left': 0, 'right': 0}",
+    "proof": "ffmpeg_padded.png"
+  },
+  "I2_imagemagick_extent": {
+    "status": "RUN",
+    "detail": "extent to (1900, 2300), alpha 373846",
+    "proof": "magick_extent.png"
+  },
+  "I3_krita_gimp_canvas": {
+    "status": "MAPPING",
+    "detail": "Krita/GIMP: Image > Canvas Size / Layer to Image Size -- mapping, GUI not run here",
+    "proof": null
+  },
+  "I4_resolve_premiere_safe_area": {
+    "status": "MAPPING",
+    "detail": "Resolve/Premiere safe-area + Auto Reframe subject tracking -- mapping, paid/trial-blocked, not run here",
+    "proof": null
+  },
+  "I5_after_effects_roi_overscan": {
+    "status": "MAPPING",
+    "detail": "After Effects ROI + overscan / continuous rasterization -- mapping, not run here",
+    "proof": null
+  },
+  "I6_spine_moho_mesh": {
+    "status": "MAPPING",
+    "detail": "Spine mesh / Moho bone warp canvas expansion -- mapping, proxy in pseudo-turn pack, not a Spine/Moho run here",
+    "proof": null
+  },
+  "I7_opentoonz_camera": {
+    "status": "MAPPING",
+    "detail": "OpenToonz/Tahoma2D camera + stage auto-fit -- mapping, Tahoma2D installed earlier, not run here",
+    "proof": null
+  },
+  "I8_harmony_camera_peg": {
+    "status": "MAPPING",
+    "detail": "Harmony camera peg / overscan -- mapping, trial blocked at card step, not run here",
+    "proof": null
+  },
+  "I9_animate_stage_safe": {
+    "status": "MAPPING",
+    "detail": "Animate stage + safe-area guides -- mapping, sign-in blocked, not run here",
+    "proof": null
+  },
+  "I10_svg_viewbox": {
+    "status": "RUN",
+    "detail": "viewBox = alpha bbox (248, 253, 876, 1295)",
+    "proof": "svg_viewbox.svg"
+  },
+  "E1_dynamic_canvas": {
+    "status": "RUN",
+    "detail": "trimmed to (708, 1122), bbox+40",
+    "proof": null
+  },
+  "E2_content_aware_expand": {
+    "status": "MAPPING",
+    "detail": "Inpaint/edge-extend margin -- mapping, NOT run; transparent pad is used instead, never invented pixels",
+    "proof": null
+  },
+  "E3_learned_bbox": {
+    "status": "MAPPING",
+    "detail": "MediaPipe/SAM subject bbox prediction -- mapping, no model run here",
+    "proof": null
+  },
+  "E4_depth_overscan": {
+    "status": "RUN",
+    "detail": "2.0x figure still trimmed with 40px margin (size-power giant margin 101px, prior folder)",
+    "proof": null
+  },
+  "E5_dilate_margin": {
+    "status": "RUN",
+    "detail": "dilated alpha count 563021 vs orig 373846",
+    "proof": null
+  },
+  "E6_union_bbox": {
+    "status": "RUN",
+    "detail": "union bbox over 23 fixed-canvas old frames: (0, 227, 1084, 1500) -- touches x=0 and y=1500, so a whole-clip canvas must be union+40 margin, not 1100x1500",
+    "proof": null
+  },
+  "E7_gpu_overscan": {
+    "status": "MAPPING",
+    "detail": "Blender Cycles overscan % -- mapping, no GPU render in this folder",
+    "proof": null
+  },
+  "E8_ai_outpaint": {
+    "status": "MAPPING",
+    "detail": "AI outpainting canvas extension -- mapping, no model run, never used to invent figure pixels",
+    "proof": null
+  },
+  "E9_pyramid_2x": {
+    "status": "RUN",
+    "detail": "2x render trimmed then downscaled x0.5 to (713, 1127), alpha 388394 (vs orig 373846, resampling difference, not clipping)",
+    "proof": null
+  },
+  "E10_ci_hook": {
+    "status": "RUN",
+    "detail": "gate_mandatory on edge-touch file exited 1 (1 = FAIL, correct)",
+    "proof": "edge_touch_test.png"
+  }
+}

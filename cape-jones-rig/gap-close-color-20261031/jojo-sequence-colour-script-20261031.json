@@ -1,0 +1,74 @@
+{
+  "sequence": "base -> tension -> power -> uncertainty -> return to base",
+  "fps": 24,
+  "total_frames": 216,
+  "mars_approved": false,
+  "beats": [
+    {
+      "beat": 1,
+      "name": "BASE",
+      "trigger": "Establishing, room. Canon palette.",
+      "palette": "BASE",
+      "scope": "both",
+      "duration_frames": 48,
+      "duration_s": 2.0,
+      "key": "warm gold front key",
+      "rim_under_shifted_key": "warm amber (255,180,80)",
+      "return_rule": "Already base"
+    },
+    {
+      "beat": 2,
+      "name": "TENSION",
+      "trigger": "Threat lands \u2014 the beat tightens.",
+      "palette": "TENSION",
+      "cape": "FULL magenta (255,20,120)",
+      "suit": "CHANGED to rose (255,110,180)",
+      "scope": "both",
+      "duration_frames": 36,
+      "duration_s": 1.5,
+      "key": "magenta-rose shifted key",
+      "rim_under_shifted_key": "magenta-rose (255,40,140)",
+      "return_rule": "Cut to POWER, never fade through base"
+    },
+    {
+      "beat": 3,
+      "name": "POWER",
+      "trigger": "Power lands \u2014 explosive beat.",
+      "palette": "POWER",
+      "cape": "FULL scarlet (220,30,50)",
+      "suit": "CHANGED to red-orange (255,80,50)",
+      "scope": "both",
+      "duration_frames": 48,
+      "duration_s": 2.0,
+      "key": "scarlet shifted key",
+      "rim_under_shifted_key": "scarlet/orange (255,80,50)",
+      "return_rule": "Cut to UNCERTAINTY on the doubt beat"
+    },
+    {
+      "beat": 4,
+      "name": "UNCERTAINTY",
+      "trigger": "Doubt \u2014 nothing is certain.",
+      "palette": "UNCERTAINTY",
+      "cape": "neutral (30,30,30) \u2014 monochromatic choice",
+      "suit": "CHANGED to near-white grey (230,230,230)",
+      "scope": "both",
+      "duration_frames": 36,
+      "duration_s": 1.5,
+      "key": "neutral grey shifted key",
+      "rim_under_shifted_key": "grey (230,230,230)",
+      "return_rule": "Hard cut to BASE on the decision beat"
+    },
+    {
+      "beat": 5,
+      "name": "RETURN TO BASE",
+      "trigger": "He decides \u2014 canon restored.",
+      "palette": "BASE",
+      "scope": "both",
+      "duration_frames": 48,
+      "duration_s": 2.0,
+      "key": "warm gold front key",
+      "rim_under_shifted_key": "warm amber (255,180,80)",
+      "return_rule": "RETURN RULE: hard palette cut on the decision beat, not a grade fade"
+    }
+  ]
+}

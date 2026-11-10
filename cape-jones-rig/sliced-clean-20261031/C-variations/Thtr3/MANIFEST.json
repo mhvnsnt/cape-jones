@@ -1,0 +1,174 @@
+{
+ "bg": [
+  124.0,
+  124.0,
+  124.0
+ ],
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    1148,
+    194
+   ],
+   "opaque_px": 222708,
+   "sheet_bbox": [
+    6,
+    73,
+    1154,
+    267
+   ]
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    100,
+    33
+   ],
+   "opaque_px": 2759,
+   "sheet_bbox": [
+    9,
+    8,
+    109,
+    41
+   ]
+  },
+  {
+   "name": "Row1_3",
+   "file": "Row1_3.png",
+   "size": [
+    96,
+    15
+   ],
+   "opaque_px": 1423,
+   "sheet_bbox": [
+    9,
+    49,
+    105,
+    64
+   ]
+  },
+  {
+   "name": "Row1_4",
+   "file": "Row1_4.png",
+   "size": [
+    77,
+    33
+   ],
+   "opaque_px": 2178,
+   "sheet_bbox": [
+    121,
+    8,
+    198,
+    41
+   ]
+  },
+  {
+   "name": "Row1_5",
+   "file": "Row1_5.png",
+   "size": [
+    45,
+    33
+   ],
+   "opaque_px": 1455,
+   "sheet_bbox": [
+    203,
+    8,
+    248,
+    41
+   ]
+  },
+  {
+   "name": "Row1_6",
+   "file": "Row1_6.png",
+   "size": [
+    67,
+    15
+   ],
+   "opaque_px": 1001,
+   "sheet_bbox": [
+    243,
+    49,
+    310,
+    64
+   ]
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    291,
+    344
+   ],
+   "opaque_px": 100101,
+   "sheet_bbox": [
+    6,
+    272,
+    297,
+    616
+   ]
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    668,
+    344
+   ],
+   "opaque_px": 229790,
+   "sheet_bbox": [
+    302,
+    272,
+    970,
+    616
+   ]
+  },
+  {
+   "name": "Row2_3",
+   "file": "Row2_3.png",
+   "size": [
+    178,
+    344
+   ],
+   "opaque_px": 61230,
+   "sheet_bbox": [
+    976,
+    272,
+    1154,
+    616
+   ]
+  },
+  {
+   "name": "Row3_1",
+   "file": "Row3_1.png",
+   "size": [
+    841,
+    145
+   ],
+   "opaque_px": 121939,
+   "sheet_bbox": [
+    6,
+    621,
+    847,
+    766
+   ]
+  },
+  {
+   "name": "Row3_2",
+   "file": "Row3_2.png",
+   "size": [
+    300,
+    144
+   ],
+   "opaque_px": 43198,
+   "sheet_bbox": [
+    854,
+    622,
+    1154,
+    766
+   ]
+  }
+ ]
+}

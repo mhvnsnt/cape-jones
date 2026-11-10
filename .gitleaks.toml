@@ -1,0 +1,22 @@
+# Gitleaks allowlist — cape-jones (added 2026-11-10 with the CJ #396 clobber revert, PR #397).
+# WHY: the revert restores 80,241 files deleted by a sparse-checkout commit. The cast
+# gitleaks scan flags 217 "leaks" in restored content that is NOT the owner's secrets:
+#   - production/tools/** — vendored upstream open-source tool code (ComfyUI, Flowblade,
+#     FModel, WebRTC test fixtures, Demucs, LTX-2, ...). Upstream test fixtures contain
+#     fake certs/keys (e.g. webrtc fakertccertificategenerator.h, sslidentity_unittest.cc);
+#     binary assets (.pgm wipe filters, .ai files) trip the AWS-key regex on binary data;
+#     data JSONs carry 64-hex content hashes ("sha" fields) that trip generic-api-key.
+#   - tools/pulled/** — pulled tool copies; same vendored-code situation (video-gif-studio
+#     generation job.json client_sha256 content hashes).
+#   - cape-jones-rig/** — rig test artifacts: generated repo-main-tree.json (hash listings)
+#     and binary .ai assets.
+# These paths hold no owner credentials; owner code lives outside them. If a real secret
+# is ever committed under these paths it will NOT be caught by this scan — that is the
+# accepted trade-off for vendored code, and upstreams carry their own fixtures.
+# Scoped narrowly to these three vendored/artifact dirs; everything else is still scanned.
+[allowlist]
+paths = [
+  '''production/tools/.*''',
+  '''tools/pulled/.*''',
+  '''cape-jones-rig/.*''',
+]

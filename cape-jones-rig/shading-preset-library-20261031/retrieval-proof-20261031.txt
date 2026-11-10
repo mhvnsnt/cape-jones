@@ -1,0 +1,125 @@
+CORE-V7 | form depth + side-weight LEFT | tier=CLEAN status=DEFINITELY WORKS — CLEANEST FIRST, USE ON APOSE
+  file: /home/hatch/workspace/cape-jones-rig/shading-upgrade-20261031/V7-form-depth-plus-sideweight-LEFT.png
+  half=17.4 edge=40.1 plate=APOSE light=LEFT finish=SMOOTHER run=PIL run
+  method: 50% normal diffuse + 50% figure-bbox-local side gradient (NOT canvas-global)
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+CORE-V10 | combined normal + side-weight + AO LEFT | tier=CLEAN status=DEFINITELY WORKS — CLEANEST FIRST, USE ON APOSE
+  file: /home/hatch/workspace/cape-jones-rig/shading-upgrade-20261031/V10-combined-normal-sideweight-AO-LEFT.png
+  half=17.7 edge=29.6 plate=APOSE light=LEFT finish=SMOOTHER run=PIL run
+  method: 40% normal diffuse + 60% figure-local side weight, times AO
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+CORE-V9 | Blender compositor Lambert LEFT | tier=CLEAN status=DEFINITELY WORKS — CLEANEST FIRST, SMOOTH, BLENDER RUN
+  file: /home/hatch/workspace/cape-jones-rig/shading-upgrade-20261031/V9-blender-compositor-lambert-LEFT-20261031.png
+  half=0.1 edge=27.6 plate=APOSE light=LEFT finish=SMOOTH run=Blender 5.2.3 run
+  method: Blender 5.2.3 compositor N.L, Math nodes, xvfb-run, NormalMap Non-Color (2nd run supersedes sRGB first run +25.7)
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+CORE-HERO | arms-up Lambert LEFT | tier=CLEAN status=DEFINITELY WORKS — CLEAN + STRONG, ARMS-UP ONLY PLATE
+  file: /home/hatch/workspace/cape-jones-rig/shading-upgrade-20261031/HERO-arms-up-lambert-LEFT-20261031.png
+  half=52.0 edge=78.0 plate=ARMS_UP light=LEFT finish=CLEAN/STRONG run=PIL run
+  method: V2 Lambert left applied to approved arms-up plate
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+CONT-X01-ARMS | edge-aware ARMS-UP | tier=CLEAN status=DEFINITELY WORKS — CLEAN ON ARMS-UP
+  file: /home/hatch/workspace/cape-jones-rig/shading-sets-20261031/new-variants/X01-edge-aware-ARMS.png
+  half=51.4 edge=75.3 plate=ARMS_UP light=LEFT finish=CLEAN run=PIL run
+  method: Arms-up check of X01 edge-aware
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+CONT-X07-ARMS | multiscale ARMS-UP | tier=CLEAN status=DEFINITELY WORKS — CLEAN ON ARMS-UP
+  file: /home/hatch/workspace/cape-jones-rig/shading-sets-20261031/new-variants/X07-multiscale-ARMS.png
+  half=51.6 edge=75.9 plate=ARMS_UP light=LEFT finish=CLEAN run=PIL run
+  method: Arms-up check of X07 multiscale
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+RETURNED 6 preset(s).
+exit=0
+CORE-HERO | arms-up Lambert LEFT | tier=CLEAN status=DEFINITELY WORKS — CLEAN + STRONG, ARMS-UP ONLY PLATE
+  file: /home/hatch/workspace/cape-jones-rig/shading-upgrade-20261031/HERO-arms-up-lambert-LEFT-20261031.png
+  half=52.0 edge=78.0 plate=ARMS_UP light=LEFT finish=CLEAN/STRONG run=PIL run
+  method: V2 Lambert left applied to approved arms-up plate
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+CONT-X01-ARMS | edge-aware ARMS-UP | tier=CLEAN status=DEFINITELY WORKS — CLEAN ON ARMS-UP
+  file: /home/hatch/workspace/cape-jones-rig/shading-sets-20261031/new-variants/X01-edge-aware-ARMS.png
+  half=51.4 edge=75.3 plate=ARMS_UP light=LEFT finish=CLEAN run=PIL run
+  method: Arms-up check of X01 edge-aware
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+CONT-X07-ARMS | multiscale ARMS-UP | tier=CLEAN status=DEFINITELY WORKS — CLEAN ON ARMS-UP
+  file: /home/hatch/workspace/cape-jones-rig/shading-sets-20261031/new-variants/X07-multiscale-ARMS.png
+  half=51.6 edge=75.9 plate=ARMS_UP light=LEFT finish=CLEAN run=PIL run
+  method: Arms-up check of X07 multiscale
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+RETURNED 3 preset(s).
+NO MATCH — try --tier CLEAN, --pose ARMS_UP, --light LEFT, or --query smooth
+CORE-V9 | Blender compositor Lambert LEFT | tier=CLEAN status=DEFINITELY WORKS — CLEANEST FIRST, SMOOTH, BLENDER RUN
+  file: /home/hatch/workspace/cape-jones-rig/shading-upgrade-20261031/V9-blender-compositor-lambert-LEFT-20261031.png
+  half=0.1 edge=27.6 plate=APOSE light=LEFT finish=SMOOTH run=Blender 5.2.3 run
+  method: Blender 5.2.3 compositor N.L, Math nodes, xvfb-run, NormalMap Non-Color (2nd run supersedes sRGB first run +25.7)
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+RETURNED 1 preset(s).
+CONT-X10 | inverse TEST ONLY | tier=TEST_ONLY status=TEST ONLY — DO NOT SHIP
+  file: /home/hatch/workspace/cape-jones-rig/shading-sets-20261031/new-variants/X10-inverse-TEST-ONLY.png
+  half=-8.6 edge=-72.0 plate=APOSE light=RIGHT finish=INVERSE run=PIL run
+  method: INVERSE TEST ONLY: light from right while labelled left. Expected edge delta negative.
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+RETURNED 1 preset(s).
+REFUSED for production: the following are TEST_ONLY/ARCHIVE and are shown for reference only (use --allow-test to list them, or --id for one record):
+  CONT-X10 inverse TEST ONLY tier=TEST_ONLY
+test-refusal-exit=2
+CONT-N05 | SSS approx LEFT | tier=EXPERIMENTAL status=DEFINITELY WORKS — APPROXIMATION ONLY, TRUE VOLUMETRIC SSS STILL OWED
+  file: /home/hatch/workspace/cape-jones-rig/shading-sets-20261031/new-variants/N05-sss-approx-LEFT.png
+  half=2.4 edge=47.7 plate=APOSE light=LEFT finish=SSS_PROXY run=PIL run
+  method: SSS APPROXIMATION in PIL: blurred diffuse + edge bleed. True volumetric SSS (3D mesh) NOT claimed.
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+RETURNED 1 preset(s).
+=== QUERY 7: --finish CEL (corrects Q3: no RIGHT-facing cel exists in library) ===
+CORE-V4 | toon cel LEFT 3-band | tier=STRONG status=DEFINITELY WORKS — FACETED ON APOSE, DO NOT SHIP AS CLEAN APOSE RELIGHT
+  file: /home/hatch/workspace/cape-jones-rig/shading-upgrade-20261031/V4-toon-cel-LEFT-3band.png
+  half=3.3 edge=75.6 plate=APOSE light=LEFT finish=FACETED/CEL run=PIL run
+  method: Cel/toon: Lambert quantized to 3 bands (0.40/0.68/1.00)
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+CONT-N01 | half-Lambert LEFT | tier=STRONG status=DEFINITELY WORKS — FACETED WARNING ON APOSE
+  file: /home/hatch/workspace/cape-jones-rig/shading-sets-20261031/new-variants/N01-half-lambert-LEFT.png
+  half=4.0 edge=75.6 plate=APOSE light=LEFT finish=CEL/SOFT run=PIL run
+  method: Half-Lambert (Valve): diffuse^0.5, soft terminator
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+CONT-N04 | cel 5-band LEFT | tier=STRONG status=DEFINITELY WORKS — FACETED WARNING ON APOSE
+  file: /home/hatch/workspace/cape-jones-rig/shading-sets-20261031/new-variants/N04-cel-5band-LEFT.png
+  half=4.2 edge=81.9 plate=APOSE light=LEFT finish=CEL run=PIL run
+  method: Cel/toon 5-band quantised Lambert
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+RETURNED 3 preset(s).
+=== QUERY 8: --light RIGHT ===
+REFUSED for production: the following are TEST_ONLY/ARCHIVE and are shown for reference only (use --allow-test to list them, or --id for one record):
+  S1-I02 Set One I02 lambert R tier=ARCHIVE
+  S1-I06 Set One I06 side weight R tier=ARCHIVE
+  CONT-X10 inverse TEST ONLY tier=TEST_ONLY
+CORE-V3 | Lambert RIGHT strong (mirror) | tier=STRONG status=DEFINITELY WORKS — FACETED ON APOSE, MIRROR OF V2
+  file: /home/hatch/workspace/cape-jones-rig/shading-upgrade-20261031/V3-lambert-RIGHT-strong.png
+  half=-8.4 edge=-72.4 plate=APOSE light=RIGHT finish=FACETED run=PIL run
+  method: Lambert N.L, light (0.80,-0.20,0.56), mirror of V2
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+RETURNED 1 preset(s).
+=== QUERY 9: --tier SOFT ===
+CORE-V5 | three-point LEFT warm / RIGHT cool | tier=SOFT status=DEFINITELY WORKS
+  file: /home/hatch/workspace/cape-jones-rig/shading-upgrade-20261031/V5-three-point-LEFT-warm-RIGHT-cool.png
+  half=1.3 edge=51.3 plate=APOSE light=LEFT finish=MILDER run=PIL run
+  method: Three-point lighting, per-pixel normals + edge rim
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+CORE-V8 | top light | tier=SOFT status=DEFINITELY WORKS — TOP LIGHT, LEFT/RIGHT DELTA EXPECTED SMALL
+  file: /home/hatch/workspace/cape-jones-rig/shading-upgrade-20261031/V8-top-light.png
+  half=-1.8 edge=-1.1 plate=APOSE light=TOP finish=SOFT run=PIL run
+  method: Lambert, light from above
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+CONT-N02 | wrap light LEFT | tier=SOFT status=DEFINITELY WORKS
+  file: /home/hatch/workspace/cape-jones-rig/shading-sets-20261031/new-variants/N02-wrap-light-LEFT.png
+  half=1.9 edge=55.3 plate=APOSE light=LEFT finish=SOFT run=PIL run
+  method: Wrap lighting: (N.L+wrap)/(1+wrap), wrap 0.35
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+CONT-N03 | rim only LEFT | tier=SOFT status=DEFINITELY WORKS
+  file: /home/hatch/workspace/cape-jones-rig/shading-sets-20261031/new-variants/N03-rim-only-LEFT.png
+  half=0.3 edge=43.9 plate=APOSE light=LEFT finish=RIM run=PIL run
+  method: Rim light: silhouette edge band bright, interior Lambert
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+CONT-N08 | hemisphere ambient | tier=SOFT status=DEFINITELY WORKS
+  file: /home/hatch/workspace/cape-jones-rig/shading-sets-20261031/new-variants/N08-hemisphere-ambient.png
+  half=0.4 edge=37.5 plate=APOSE light=LEFT finish=AMBIENT run=PIL run
+  method: Hemisphere ambient: sky/ground ambient + Lambert
+  ESTIMATED from distance transform, NOT a true 3D mesh pass. Shading preset, NOT a lighting level L0-L5, NOT a lighting pack V5/V6, NOT a gold preset.
+RETURNED 5 preset(s).

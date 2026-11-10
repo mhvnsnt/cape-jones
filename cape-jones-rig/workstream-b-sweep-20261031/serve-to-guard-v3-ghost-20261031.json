@@ -1,0 +1,20 @@
+{
+ "serve_key_frame": 12,
+ "guard_key_frame": 26,
+ "mid_frame": 19,
+ "mid_silhouette_px": 356707,
+ "mid_edge_px": 27207,
+ "key_edge_mean": 26017.5,
+ "double_edge_ratio": 1.0457192274430671,
+ "xor_px": 169336,
+ "wash_px": 29612,
+ "wash_pct": 17.48712618698918,
+ "v1_quoted_from_v2_report": {
+  "double_edge_ratio": 1.32,
+  "wash_pct": 96.2
+ },
+ "v2_quoted_from_v2_report": {
+  "double_edge_ratio": 1.01,
+  "wash_pct": 17.2
+ }
+}

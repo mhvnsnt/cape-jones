@@ -1,0 +1,26 @@
+{
+  "plate_alpha_px": 373846,
+  "splat_alpha_px": 344687,
+  "iou_alpha": 0.8815,
+  "version": "V3",
+  "label": "V3 PIXEL-GRID",
+  "gaussians": 10389,
+  "stride": 6,
+  "sigma": 3.0,
+  "opacity": 1.0,
+  "kernel": "box",
+  "palette": 16,
+  "depth_max_px": 83.2,
+  "frames": 9,
+  "angles": [
+    -40,
+    -25,
+    -10,
+    0,
+    10,
+    25,
+    40,
+    25,
+    10
+  ]
+}

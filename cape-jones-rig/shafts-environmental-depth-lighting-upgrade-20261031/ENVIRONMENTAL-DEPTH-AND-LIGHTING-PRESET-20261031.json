@@ -1,0 +1,135 @@
+{
+  "base_v2": {
+    "composite": "shafts-volumetric-upgrade-20261031/composite-shafts-behind-v2-20261031.png",
+    "dark_corner_mean_RGB": [
+      22.9,
+      20.4,
+      18.8
+    ],
+    "dust": "50 motes radius 0.015 inside gap columns only",
+    "figure_alpha_bbox": [
+      222,
+      240,
+      879,
+      1282
+    ],
+    "figure_occlusion_max_diff": 0.0,
+    "file": "shafts-volumetric-upgrade-20261031/shafts-only-cycles-v2-20261031.png",
+    "gaps": [
+      -3.0,
+      -1.5,
+      0.0,
+      1.5,
+      3.0
+    ],
+    "lights": "Sun down energy 4.0 colour (1.0,0.88,0.60) + 5 spots energy 6000 colour (1.0,0.88,0.62) spot 28deg blend 0.5",
+    "mid_columns_measured": [
+      [
+        282,
+        379
+      ],
+      [
+        494,
+        604
+      ],
+      [
+        721,
+        816
+      ]
+    ],
+    "mid_peak_mean": 54.8,
+    "mid_valley_mean": 22.9,
+    "no_crop_gate": "PASS edge alpha max 0",
+    "shaft_centre_mean_RGB": [
+      72.4,
+      62.8,
+      47.1
+    ],
+    "slats": 6,
+    "volume": "Principled Volume density 0.28 anisotropy 0.7 colour (1.0,0.85,0.55), CPU 32 samples, volume_step_rate 1.0, 1100x1500, ~11 min"
+  },
+  "defects_carried_forward": [
+    "Ceiling slats dominate top of frame (large black blocks)",
+    "Only 3 of 5 built gaps read clearly in v2; outer 2 too dim; top height only 1 column passes",
+    "No ground light pools in v2 (floor removed, not fixed)",
+    "CPU Cycles only, 32 samples, ~11 min for 1100x1500 v2",
+    "Dust corrected in v2 radius 0.015 / 50 motes (v1 dust looked like glowing balls)",
+    "Blender/Natron Glare attempted NOT completed in v2 (Blender 5.2 API changes, 3 attempts failed, no Glare file existed then)",
+    "Eevee method only NOT run in v2",
+    "AE CC Light Rays PROXY only (PIL, labelled) in v2",
+    "Natron Sun Beams mapping only in v2"
+  ],
+  "improved_preset_approval": "0_of_1",
+  "improvements_20261031": {
+    "experimental": [
+      "X1 Depth gradient: shaft brightness 1.0 top to 0.55 bottom, cool shift (0.85,0.95,1.15)",
+      "X2 Flicker sweep: outer columns x1.35, centre x0.85, one sweep frame",
+      "X3 Dust streaks: 120 vertical streaks inside columns, seed 7, blurred",
+      "X4 Caustic pools: noise-dappled pools (gaussian noise sigma 4) at feet, blur 6",
+      "X5 Edge softened: shafts gaussian sigma (3,3,0) then re-masked behind figure"
+    ],
+    "industry": [
+      "I1 Cycles v3 re-render: narrower slats 0.35, thinner 0.15, wider volume, outer spots 12000, centre 8000, spot 32deg, Sun 5.0, samples 24, Cycles denoising ON",
+      "I2 Eevee volumetric render: engine BLENDER_EEVEE in 5.2, same scene, xvfb-run (see report for outcome)",
+      "I3 Ground light pools: warm ellipses at feet_y 1282, centres 165/330/550/770/935, blur 18, behind figure, never over figure",
+      "I4 Blender Glare Fog Glow file: 5.2 API fix (compositing_node_group + file_output_items.new('RGBA','Image') + directory/file_name), Threshold 0.6 Strength 0.5 Size 6 Quality High, xvfb-run, output EXR + PNG conversion",
+      "I5 Faster/cleaner pass: Cycles denoising ON in v3 + PIL gaussian sigma 1.0 denoise proxy on v2"
+    ]
+  },
+  "preset_name": "ENVIRONMENTAL DEPTH AND LIGHTING",
+  "preset_version": "v2-base + v3-improvement-20261031",
+  "rules": [
+    "Shafts are ALWAYS behind figure: shafts multiplied by (1 - figure_alpha), figure pasted on top at full opacity",
+    "Base art never recoloured",
+    "No-crop: canvas fits figure, edge alpha 0",
+    "Do NOT claim 5 distinct columns unless measured mid-height runs = 5",
+    "Do NOT claim a Blender Glare file unless the file exists on disk; do NOT claim Eevee unless the Eevee render file exists"
+  ],
+  "source": "shafts-volumetric-upgrade-20261031, Blender 5.2.3 Cycles CPU, lights ABOVE shine straight DOWN through ceiling slat gaps, warm columns BEHIND Cape, Cape in front",
+  "status": "preset_approved_1_of_1_as_preset_not_production_ready",
+  "v3_v3b_eevee_outcomes": {
+    "v3_mid_runs": [
+      [
+        172,
+        232
+      ],
+      [
+        298,
+        800
+      ],
+      [
+        866,
+        927
+      ]
+    ],
+    "v3_verdict": "partial, centre merged, NOT 5-column separation",
+    "v3b_mid_runs": [
+      [
+        313,
+        377
+      ],
+      [
+        497,
+        601
+      ],
+      [
+        723,
+        781
+      ]
+    ],
+    "v3b_outer_profile_x126_x974": [
+      27.5,
+      28.0
+    ],
+    "v3b_verdict": "3 runs by v2 gate, outer low shoulders only, NOT 5-column separation",
+    "eevee_verdict": "ATTEMPTED NOT RUN, no file: full-res timeout 180s, half-res timeout 280s, xvfb-run, engine BLENDER_EEVEE in 5.2",
+    "glare_verdict": "FIXED, file exists: shafts-glare-blender.exr (26MB) + shafts-glare-blender-20261031.png (1.5MB), Fog Glow Threshold 0.6 Strength 0.5 Size 6, effect subtle"
+  },
+  "still_owed": [
+    "5-column separation (v2=3, v3=3 merged, v3b=3)",
+    "Eevee render on GPU/display route",
+    "True in-scene ground pools (Blender floor receiving light)",
+    "Per-shot shafts 0/30",
+    "Full GPU volumetric sequence"
+  ]
+}

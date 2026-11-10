@@ -1,0 +1,26 @@
+# cape-jones editor defaults. Matches existing repo style
+# (4-space Python, 2-space YAML/JSON/Markdown, LF everywhere).
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.py]
+indent_style = space
+indent_size = 4
+
+[*.{js,ts,json,yml,yaml,md,html,css}]
+indent_style = space
+indent_size = 2
+
+[*.{sh,bash}]
+indent_style = space
+indent_size = 2
+
+# Binary Blender files: never normalize line endings on save.
+[*.{blend,blend1}]
+insert_final_newline = false
+trim_trailing_whitespace = false

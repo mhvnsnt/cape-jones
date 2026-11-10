@@ -1,0 +1,337 @@
+{
+ "version": "principles-matrix-cj01-cj30-20261031",
+ "statement": "Per-shot principles checks move from 0/30 to 30/30 AS A MATRIX. Visual proof exists for CJ-01 only (its exposure sheet in gap-audit-critique-log-20261031, reused here, not rebuilt). For CJ-02..CJ-30 this file is a matrix assignment + gate, not visual proof \u2014 say so plainly. CJ-01 itself is not rebuilt.",
+ "cj01_visual_proof_reused": "gap-audit-critique-log-20261031/punch-cj01-exposure-smear-20261031.png + silhouette-readability-20261031.png",
+ "entries": [
+  {
+   "shot_id": "CJ-01",
+   "slug": "punch-windup",
+   "primary_principles": [
+    "Anticipation",
+    "Timing",
+    "Staging"
+   ],
+   "gate": "Silhouette readability (gap-audit sheet, reused)",
+   "evidence": "visual proof (reused)"
+  },
+  {
+   "shot_id": "CJ-02",
+   "slug": "punch-extend-snap",
+   "primary_principles": [
+    "Timing",
+    "Exaggeration",
+    "Arcs"
+   ],
+   "gate": "Punch exposure / smear frame (gap-audit sheet, reused)",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-03",
+   "slug": "punch-impact-locked",
+   "primary_principles": [
+    "Exaggeration",
+    "Staging",
+    "Timing"
+   ],
+   "gate": "Impact lock: Arm2 diagonal UP, fist at upper chest",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-04",
+   "slug": "punch-recover",
+   "primary_principles": [
+    "Follow Through and Overlapping Action",
+    "Slow In and Slow Out",
+    "Timing"
+   ],
+   "gate": "Cape follow-through (gap-audit sheet, reused)",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-05",
+   "slug": "punch-across-down-placement",
+   "primary_principles": [
+    "Staging",
+    "Solid Drawing",
+    "Appeal"
+   ],
+   "gate": "Arm2 across-DOWN placement \u2014 must not be mistaken for impact",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-06",
+   "slug": "walk-street-contact",
+   "primary_principles": [
+    "Arcs",
+    "Timing",
+    "Pose to Pose"
+   ],
+   "gate": "Knee-feet rule: knee direction = foot direction",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-07",
+   "slug": "walk-town-passing",
+   "primary_principles": [
+    "Arcs",
+    "Timing",
+    "Follow Through and Overlapping Action"
+   ],
+   "gate": "Knee-feet rule",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-08",
+   "slug": "walk-alley-night",
+   "primary_principles": [
+    "Staging",
+    "Timing",
+    "Secondary Action"
+   ],
+   "gate": "Knee-feet rule",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-09",
+   "slug": "dance-a",
+   "primary_principles": [
+    "Timing",
+    "Exaggeration",
+    "Appeal"
+   ],
+   "gate": "Knee-feet rule (dance fix)",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-10",
+   "slug": "dance-b",
+   "primary_principles": [
+    "Timing",
+    "Secondary Action",
+    "Appeal"
+   ],
+   "gate": "Knee-feet rule",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-11",
+   "slug": "dance-combined-finale",
+   "primary_principles": [
+    "Timing",
+    "Secondary Action",
+    "Exaggeration"
+   ],
+   "gate": "Beat grid on twos",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-12",
+   "slug": "flying-hover",
+   "primary_principles": [
+    "Slow In and Slow Out",
+    "Staging",
+    "Appeal"
+   ],
+   "gate": "Silhouette readability",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-13",
+   "slug": "flying-soar",
+   "primary_principles": [
+    "Arcs",
+    "Exaggeration",
+    "Staging"
+   ],
+   "gate": "Silhouette readability",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-14",
+   "slug": "flying-dive",
+   "primary_principles": [
+    "Arcs",
+    "Timing",
+    "Exaggeration"
+   ],
+   "gate": "Cape follow-through",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-15",
+   "slug": "flying-forward-foreshortened",
+   "primary_principles": [
+    "Solid Drawing",
+    "Staging",
+    "Exaggeration"
+   ],
+   "gate": "BLOCKED: foreshortened forearm piece owed \u2014 gate cannot pass yet",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-16",
+   "slug": "flex-anticipation-before-tighten",
+   "primary_principles": [
+    "Anticipation",
+    "Slow In and Slow Out",
+    "Squash and Stretch"
+   ],
+   "gate": "Flex anticipation frame",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-17",
+   "slug": "arms-up-reference",
+   "primary_principles": [
+    "Staging",
+    "Solid Drawing",
+    "Appeal"
+   ],
+   "gate": "Arms-up pose is NOT a flex \u2014 do not label it one",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-18",
+   "slug": "true-flex-double-bicep",
+   "primary_principles": [
+    "Squash and Stretch",
+    "Exaggeration",
+    "Appeal"
+   ],
+   "gate": "BLOCKED: seam-fix rebuild owed; failed file must not be used",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-19",
+   "slug": "fighting-pose-forward-bicep-curl",
+   "primary_principles": [
+    "Staging",
+    "Exaggeration",
+    "Solid Drawing"
+   ],
+   "gate": "Gauntlet-out-fixed + dual-light rim ownership",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-20",
+   "slug": "fighting-stance-arms-up-high",
+   "primary_principles": [
+    "Staging",
+    "Exaggeration",
+    "Appeal"
+   ],
+   "gate": "Arms-up reference pose family",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-21",
+   "slug": "jump-crouch-takeoff",
+   "primary_principles": [
+    "Anticipation",
+    "Squash and Stretch",
+    "Timing"
+   ],
+   "gate": "Squash-and-stretch jump (wired sheet, reused)",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-22",
+   "slug": "jump-tuck-landing",
+   "primary_principles": [
+    "Follow Through and Overlapping Action",
+    "Timing",
+    "Arcs"
+   ],
+   "gate": "Cape wind + landing",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-23",
+   "slug": "lounge-seated-room",
+   "primary_principles": [
+    "Staging",
+    "Secondary Action",
+    "Appeal"
+   ],
+   "gate": "Room scale 2.3x seated, room-only",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-24",
+   "slug": "desk-seated",
+   "primary_principles": [
+    "Staging",
+    "Secondary Action",
+    "Appeal"
+   ],
+   "gate": "Room scale 2.3x seated; desk background owed",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-25",
+   "slug": "room-standing-device-gag",
+   "primary_principles": [
+    "Secondary Action",
+    "Staging",
+    "Appeal"
+   ],
+   "gate": "Room scale 2.5x standing + prop scale",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-26",
+   "slug": "dialogue-neutral-unsure",
+   "primary_principles": [
+    "Timing",
+    "Staging",
+    "Appeal"
+   ],
+   "gate": "Lipsync strip: viseme mid-shape (visual only \u2014 no recorded audio)",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-27",
+   "slug": "dialogue-shout-angry",
+   "primary_principles": [
+    "Exaggeration",
+    "Timing",
+    "Staging"
+   ],
+   "gate": "Expression swap / lipsync \u2014 dialogue shot owed",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-28",
+   "slug": "rooftop-sunset",
+   "primary_principles": [
+    "Staging",
+    "Slow In and Slow Out",
+    "Appeal"
+   ],
+   "gate": "God-ray placement (Level 3)",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-29",
+   "slug": "rooftop-night-city",
+   "primary_principles": [
+    "Staging",
+    "Secondary Action",
+    "Appeal"
+   ],
+   "gate": "God-ray placement (Level 3)",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  },
+  {
+   "shot_id": "CJ-30",
+   "slug": "alley-neon-dual-light",
+   "primary_principles": [
+    "Staging",
+    "Exaggeration",
+    "Appeal"
+   ],
+   "gate": "Dual-light rim ownership (pink front / cyan back)",
+   "evidence": "matrix assignment only \u2014 visual proof owed"
+  }
+ ]
+}

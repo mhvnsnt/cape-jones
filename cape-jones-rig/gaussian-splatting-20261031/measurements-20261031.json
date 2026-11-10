@@ -1,0 +1,12 @@
+{
+  "plate": "1100x1500",
+  "gaussians": 5846,
+  "stride": 8,
+  "scaffold_anchors": 1949,
+  "plate_alpha_px": 373846,
+  "splat_alpha_px": 250408,
+  "iou_alpha": 0.6472211814003072,
+  "front_mse_on_plate": 1789.5888757575758,
+  "depth_proxy": "distance-transform bulge, max 81.9 px, NOT a true multi-view reconstruction",
+  "torch_cuda": "absent on this VM (no torch, no gsplat module) -- vendor CUDA libs are mappings"
+}

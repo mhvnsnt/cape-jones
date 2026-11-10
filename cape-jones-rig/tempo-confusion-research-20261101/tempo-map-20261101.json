@@ -1,0 +1,276 @@
+{
+  "fps": 24,
+  "tempos": {
+    "picture_current_BPM": 107,
+    "song_BPM": 152
+  },
+  "beat": {
+    "107_BPM": {
+      "seconds": 0.5607,
+      "frames": 13.458
+    },
+    "152_BPM": {
+      "seconds": 0.3947,
+      "frames": 9.474
+    }
+  },
+  "bar_4beats": {
+    "107_frames": 53.83,
+    "152_frames": 37.89
+  },
+  "stretch": {
+    "152_to_107_duration_factor": 1.42056,
+    "152_to_107_speed": 0.70395,
+    "107_to_152_duration_factor": 0.70395
+  },
+  "existing_mixes": {
+    "107_BPM": {
+      "duration_s": 17.94,
+      "frames_at_24fps": 430.6
+    },
+    "152_BPM": {
+      "duration_s": 12.63,
+      "frames_at_24fps": 303.1
+    },
+    "ratio_107_over_152": 1.4204,
+    "LUFS": "-14.0 PASS both"
+  },
+  "animatic": {
+    "frames": 332,
+    "seconds": 13.833
+  },
+  "rule": "Hit points are locked to SMPTE/time (seconds+frames), NOT to bars/beats. Changing tempo moves bars/beats, hit points stay put. That is why a tempo change forces either picture re-time, song re-time, or decoupling.",
+  "beat_grid_32_beats": [
+    {
+      "beat": 0,
+      "time_107_s": 0.0,
+      "frame_107": 0.0,
+      "time_152_s": 0.0,
+      "frame_152": 0.0
+    },
+    {
+      "beat": 1,
+      "time_107_s": 0.561,
+      "frame_107": 13.46,
+      "time_152_s": 0.395,
+      "frame_152": 9.47
+    },
+    {
+      "beat": 2,
+      "time_107_s": 1.121,
+      "frame_107": 26.92,
+      "time_152_s": 0.789,
+      "frame_152": 18.95
+    },
+    {
+      "beat": 3,
+      "time_107_s": 1.682,
+      "frame_107": 40.37,
+      "time_152_s": 1.184,
+      "frame_152": 28.42
+    },
+    {
+      "beat": 4,
+      "time_107_s": 2.243,
+      "frame_107": 53.83,
+      "time_152_s": 1.579,
+      "frame_152": 37.89
+    },
+    {
+      "beat": 5,
+      "time_107_s": 2.804,
+      "frame_107": 67.29,
+      "time_152_s": 1.974,
+      "frame_152": 47.37
+    },
+    {
+      "beat": 6,
+      "time_107_s": 3.364,
+      "frame_107": 80.75,
+      "time_152_s": 2.368,
+      "frame_152": 56.84
+    },
+    {
+      "beat": 7,
+      "time_107_s": 3.925,
+      "frame_107": 94.21,
+      "time_152_s": 2.763,
+      "frame_152": 66.32
+    },
+    {
+      "beat": 8,
+      "time_107_s": 4.486,
+      "frame_107": 107.66,
+      "time_152_s": 3.158,
+      "frame_152": 75.79
+    },
+    {
+      "beat": 9,
+      "time_107_s": 5.047,
+      "frame_107": 121.12,
+      "time_152_s": 3.553,
+      "frame_152": 85.26
+    },
+    {
+      "beat": 10,
+      "time_107_s": 5.607,
+      "frame_107": 134.58,
+      "time_152_s": 3.947,
+      "frame_152": 94.74
+    },
+    {
+      "beat": 11,
+      "time_107_s": 6.168,
+      "frame_107": 148.04,
+      "time_152_s": 4.342,
+      "frame_152": 104.21
+    },
+    {
+      "beat": 12,
+      "time_107_s": 6.729,
+      "frame_107": 161.5,
+      "time_152_s": 4.737,
+      "frame_152": 113.68
+    },
+    {
+      "beat": 13,
+      "time_107_s": 7.29,
+      "frame_107": 174.95,
+      "time_152_s": 5.132,
+      "frame_152": 123.16
+    },
+    {
+      "beat": 14,
+      "time_107_s": 7.85,
+      "frame_107": 188.41,
+      "time_152_s": 5.526,
+      "frame_152": 132.63
+    },
+    {
+      "beat": 15,
+      "time_107_s": 8.411,
+      "frame_107": 201.87,
+      "time_152_s": 5.921,
+      "frame_152": 142.11
+    },
+    {
+      "beat": 16,
+      "time_107_s": 8.972,
+      "frame_107": 215.33,
+      "time_152_s": 6.316,
+      "frame_152": 151.58
+    },
+    {
+      "beat": 17,
+      "time_107_s": 9.533,
+      "frame_107": 228.79,
+      "time_152_s": 6.711,
+      "frame_152": 161.05
+    },
+    {
+      "beat": 18,
+      "time_107_s": 10.093,
+      "frame_107": 242.24,
+      "time_152_s": 7.105,
+      "frame_152": 170.53
+    },
+    {
+      "beat": 19,
+      "time_107_s": 10.654,
+      "frame_107": 255.7,
+      "time_152_s": 7.5,
+      "frame_152": 180.0
+    },
+    {
+      "beat": 20,
+      "time_107_s": 11.215,
+      "frame_107": 269.16,
+      "time_152_s": 7.895,
+      "frame_152": 189.47
+    },
+    {
+      "beat": 21,
+      "time_107_s": 11.776,
+      "frame_107": 282.62,
+      "time_152_s": 8.289,
+      "frame_152": 198.95
+    },
+    {
+      "beat": 22,
+      "time_107_s": 12.336,
+      "frame_107": 296.07,
+      "time_152_s": 8.684,
+      "frame_152": 208.42
+    },
+    {
+      "beat": 23,
+      "time_107_s": 12.897,
+      "frame_107": 309.53,
+      "time_152_s": 9.079,
+      "frame_152": 217.89
+    },
+    {
+      "beat": 24,
+      "time_107_s": 13.458,
+      "frame_107": 322.99,
+      "time_152_s": 9.474,
+      "frame_152": 227.37
+    },
+    {
+      "beat": 25,
+      "time_107_s": 14.019,
+      "frame_107": 336.45,
+      "time_152_s": 9.868,
+      "frame_152": 236.84
+    },
+    {
+      "beat": 26,
+      "time_107_s": 14.579,
+      "frame_107": 349.91,
+      "time_152_s": 10.263,
+      "frame_152": 246.32
+    },
+    {
+      "beat": 27,
+      "time_107_s": 15.14,
+      "frame_107": 363.36,
+      "time_152_s": 10.658,
+      "frame_152": 255.79
+    },
+    {
+      "beat": 28,
+      "time_107_s": 15.701,
+      "frame_107": 376.82,
+      "time_152_s": 11.053,
+      "frame_152": 265.26
+    },
+    {
+      "beat": 29,
+      "time_107_s": 16.262,
+      "frame_107": 390.28,
+      "time_152_s": 11.447,
+      "frame_152": 274.74
+    },
+    {
+      "beat": 30,
+      "time_107_s": 16.822,
+      "frame_107": 403.74,
+      "time_152_s": 11.842,
+      "frame_152": 284.21
+    },
+    {
+      "beat": 31,
+      "time_107_s": 17.383,
+      "frame_107": 417.2,
+      "time_152_s": 12.237,
+      "frame_152": 293.68
+    },
+    {
+      "beat": 32,
+      "time_107_s": 17.944,
+      "frame_107": 430.65,
+      "time_152_s": 12.632,
+      "frame_152": 303.16
+    }
+  ]
+}

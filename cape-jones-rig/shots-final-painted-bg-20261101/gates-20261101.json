@@ -1,0 +1,1152 @@
+[
+ {
+  "shot": "CJ-01",
+  "slug": "punch-windup",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   641,
+   70,
+   1279,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-01-bg-street-painted-new-20261031.png",
+  "diff_px": 1817369,
+  "diff_pct": 87.64,
+  "fig_interior_mismatch": 81,
+  "rim": [
+   255,
+   178,
+   229
+  ],
+  "bleed": [
+   230,
+   80,
+   170
+  ],
+  "level": "Level 2",
+  "effect": "wind-streaks",
+  "red_cleaned": 8360,
+  "old_final_touchup_px": 82,
+  "builder_rerun_vs_new_fig_interior_mismatch": 0,
+  "fig_note": "Figure = builder-exact (0px interior deviation vs original-builder rerun). Deviation vs OLD final is solely the old finals undocumented label-inpaint touch-up (not in build_shots.py); new version is cleaner (no pink leader streak, no legible text).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-02",
+  "slug": "punch-extend-snap",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   599,
+   70,
+   1321,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-02-bg-street-painted-new-20261031.png",
+  "diff_px": 1815067,
+  "diff_pct": 87.53,
+  "fig_interior_mismatch": 81,
+  "rim": [
+   255,
+   178,
+   229
+  ],
+  "bleed": [
+   230,
+   80,
+   170
+  ],
+  "level": "Level 2",
+  "effect": "snap-lines",
+  "red_cleaned": 8426,
+  "old_final_touchup_px": 83,
+  "builder_rerun_vs_new_fig_interior_mismatch": 0,
+  "fig_note": "Figure = builder-exact (0px interior deviation vs original-builder rerun). Deviation vs OLD final is solely the old finals undocumented label-inpaint touch-up (not in build_shots.py); new version is cleaner (no pink leader streak, no legible text).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-03",
+  "slug": "punch-impact-locked",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   632,
+   70,
+   1288,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-03-bg-street-painted-new-20261031.png",
+  "diff_px": 1825356,
+  "diff_pct": 88.03,
+  "fig_interior_mismatch": 370,
+  "rim": [
+   255,
+   120,
+   115
+  ],
+  "bleed": [
+   220,
+   60,
+   50
+  ],
+  "level": "Level 2",
+  "effect": "impact-burst + gauntlet-glow",
+  "red_cleaned": 8426,
+  "old_final_touchup_px": 594,
+  "builder_rerun_vs_new_fig_interior_mismatch": 0,
+  "fig_note": "Figure = builder-exact (0px interior deviation vs original-builder rerun). Deviation vs OLD final is solely the old finals undocumented label-inpaint touch-up (not in build_shots.py); new version is cleaner (no pink leader streak, no legible text).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-04",
+  "slug": "punch-recover",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   698,
+   70,
+   1221,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-04-bg-street-painted-new-20261031.png",
+  "diff_px": 1814693,
+  "diff_pct": 87.51,
+  "fig_interior_mismatch": 213,
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "bleed": [
+   255,
+   120,
+   0
+  ],
+  "level": "Level 2",
+  "effect": "afterglow-faint",
+  "red_cleaned": 8360,
+  "old_final_touchup_px": 218,
+  "builder_rerun_vs_new_fig_interior_mismatch": 0,
+  "fig_note": "Figure = builder-exact (0px interior deviation vs original-builder rerun). Deviation vs OLD final is solely the old finals undocumented label-inpaint touch-up (not in build_shots.py); new version is cleaner (no pink leader streak, no legible text).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-05",
+  "slug": "punch-across-down-placement",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   632,
+   70,
+   1288,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-05-bg-town-painted-new-20261031.png",
+  "diff_px": 1824520,
+  "diff_pct": 87.99,
+  "fig_interior_mismatch": 10,
+  "rim": [
+   255,
+   255,
+   255
+  ],
+  "bleed": [
+   255,
+   255,
+   255
+  ],
+  "level": "Level 2",
+  "effect": "placement-glow",
+  "red_cleaned": 8426,
+  "old_final_touchup_px": 14,
+  "builder_rerun_vs_new_fig_interior_mismatch": 0,
+  "fig_note": "Figure = builder-exact (0px interior deviation vs original-builder rerun). Deviation vs OLD final is solely the old finals undocumented label-inpaint touch-up (not in build_shots.py); new version is cleaner (no pink leader streak, no legible text).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-06",
+  "slug": "walk-street-contact",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   694,
+   70,
+   1225,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-06-bg-street-painted-new-20261031.png",
+  "diff_px": 1810890,
+  "diff_pct": 87.33,
+  "fig_interior_mismatch": 0,
+  "rim": [
+   255,
+   255,
+   255
+  ],
+  "bleed": [
+   255,
+   255,
+   255
+  ],
+  "level": "Level 2",
+  "effect": "dust-puffs",
+  "red_cleaned": 0,
+  "fig_note": "Figure interior identical to old final (0px).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-07",
+  "slug": "walk-town-passing",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   697,
+   70,
+   1222,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-07-bg-town-painted-new-20261031.png",
+  "diff_px": 1816479,
+  "diff_pct": 87.6,
+  "fig_interior_mismatch": 0,
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "bleed": [
+   255,
+   120,
+   0
+  ],
+  "level": "Level 2",
+  "effect": "dust-puffs",
+  "red_cleaned": 0,
+  "fig_note": "Figure interior identical to old final (0px).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-08",
+  "slug": "walk-alley-night",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   691,
+   70,
+   1228,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": false,
+  "bg_file": "clean-100-20261031/layouts/bg-alley-painted-20261031.jpg",
+  "diff_px": 0,
+  "diff_pct": 0.0,
+  "fig_interior_mismatch": null,
+  "rim": [
+   160,
+   185,
+   255
+  ],
+  "bleed": [
+   80,
+   120,
+   255
+  ],
+  "level": "Level 2",
+  "effect": "dust-puffs-night",
+  "red_cleaned": 0,
+  "fig_note": "Full frame pixel-identical to old final (prior BG kept).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-09",
+  "slug": "dance-a",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   717,
+   70,
+   1202,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-09-bg-stage-painted-new-20261031.png",
+  "diff_px": 1889810,
+  "diff_pct": 91.14,
+  "fig_interior_mismatch": 0,
+  "rim": [
+   255,
+   178,
+   229
+  ],
+  "bleed": [
+   230,
+   80,
+   180
+  ],
+  "level": "Level 2",
+  "effect": "stage-sparkles",
+  "red_cleaned": 0,
+  "fig_note": "Figure interior identical to old final (0px).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-10",
+  "slug": "dance-b",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   732,
+   70,
+   1188,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-10-bg-stage-painted-new-20261031.png",
+  "diff_px": 1889184,
+  "diff_pct": 91.11,
+  "fig_interior_mismatch": 0,
+  "rim": [
+   255,
+   190,
+   220
+  ],
+  "bleed": [
+   235,
+   110,
+   185
+  ],
+  "level": "Level 2",
+  "effect": "stage-sparkles",
+  "red_cleaned": 0,
+  "fig_note": "Figure interior identical to old final (0px).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-11",
+  "slug": "dance-combined-finale",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   717,
+   70,
+   1202,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-11-bg-stage-painted-new-20261031.png",
+  "diff_px": 1889775,
+  "diff_pct": 91.13,
+  "fig_interior_mismatch": 0,
+  "rim": [
+   220,
+   150,
+   255
+  ],
+  "bleed": [
+   170,
+   80,
+   235
+  ],
+  "level": "Level 3",
+  "effect": "stage-sparkles",
+  "red_cleaned": 0,
+  "fig_note": "Figure interior identical to old final (0px).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-12",
+  "slug": "flying-hover",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1170
+  ],
+  "ground": 1040,
+  "feet": 920,
+  "bbox": [
+   698,
+   40,
+   1222,
+   920
+  ],
+  "clipped": false,
+  "bg_swapped": false,
+  "bg_file": "clean-100-20261031/layouts/bg-flying-painted-20261031.jpg",
+  "diff_px": 0,
+  "diff_pct": 0.0,
+  "fig_interior_mismatch": null,
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "bleed": [
+   255,
+   120,
+   0
+  ],
+  "level": "Level 3",
+  "effect": "hover-rings",
+  "red_cleaned": 0,
+  "fig_note": "Full frame pixel-identical to old final (prior BG kept).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-13",
+  "slug": "flying-soar",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1220
+  ],
+  "ground": 1090,
+  "feet": 920,
+  "bbox": [
+   504,
+   40,
+   1416,
+   920
+  ],
+  "clipped": false,
+  "bg_swapped": false,
+  "bg_file": "clean-100-20261031/layouts/bg-flying-painted-20261031.jpg",
+  "diff_px": 0,
+  "diff_pct": 0.0,
+  "fig_interior_mismatch": null,
+  "rim": [
+   255,
+   200,
+   110
+  ],
+  "bleed": [
+   255,
+   150,
+   40
+  ],
+  "level": "Level 3",
+  "effect": "speed-lines",
+  "red_cleaned": 0,
+  "fig_note": "Full frame pixel-identical to old final (prior BG kept).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-14",
+  "slug": "flying-dive",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1200
+  ],
+  "ground": 1070,
+  "feet": 920,
+  "bbox": [
+   713,
+   40,
+   1206,
+   920
+  ],
+  "clipped": false,
+  "bg_swapped": false,
+  "bg_file": "clean-100-20261031/layouts/bg-flying-painted-20261031.jpg",
+  "diff_px": 0,
+  "diff_pct": 0.0,
+  "fig_interior_mismatch": null,
+  "rim": [
+   255,
+   155,
+   75
+  ],
+  "bleed": [
+   255,
+   100,
+   20
+  ],
+  "level": "Level 3",
+  "effect": "dive-streaks",
+  "red_cleaned": 0,
+  "fig_note": "Full frame pixel-identical to old final (prior BG kept).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-15",
+  "slug": "flying-forward-foreshortened",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1190
+  ],
+  "ground": 1060,
+  "feet": 920,
+  "bbox": [
+   698,
+   40,
+   1222,
+   920
+  ],
+  "clipped": false,
+  "bg_swapped": false,
+  "bg_file": "clean-100-20261031/layouts/bg-flying-painted-20261031.jpg",
+  "diff_px": 0,
+  "diff_pct": 0.0,
+  "fig_interior_mismatch": null,
+  "rim": [
+   140,
+   200,
+   255
+  ],
+  "bleed": [
+   70,
+   140,
+   255
+  ],
+  "level": "Level 2",
+  "effect": "speed-lines",
+  "red_cleaned": 0,
+  "fig_note": "Full frame pixel-identical to old final (prior BG kept).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-16",
+  "slug": "flex-anticipation-before-tighten",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   681,
+   70,
+   1239,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-16-bg-plaza-painted-new-20261031.png",
+  "diff_px": 1813013,
+  "diff_pct": 87.43,
+  "fig_interior_mismatch": 0,
+  "rim": [
+   255,
+   180,
+   90
+  ],
+  "bleed": [
+   255,
+   120,
+   30
+  ],
+  "level": "Level 2",
+  "effect": "power-aura",
+  "red_cleaned": 0,
+  "fig_note": "Figure interior identical to old final (0px).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-17",
+  "slug": "arms-up-reference",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   682,
+   70,
+   1237,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-17-bg-plaza-painted-new-20261031.png",
+  "diff_px": 1831717,
+  "diff_pct": 88.34,
+  "fig_interior_mismatch": 0,
+  "rim": [
+   255,
+   230,
+   140
+  ],
+  "bleed": [
+   255,
+   200,
+   60
+  ],
+  "level": "Level 2",
+  "effect": "aura-soft",
+  "red_cleaned": 0,
+  "fig_note": "Figure interior identical to old final (0px).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-18",
+  "slug": "true-flex-double-bicep",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   684,
+   70,
+   1235,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-18-bg-plaza-painted-new-20261031.png",
+  "diff_px": 1814559,
+  "diff_pct": 87.51,
+  "fig_interior_mismatch": 0,
+  "rim": [
+   255,
+   165,
+   95
+  ],
+  "bleed": [
+   255,
+   110,
+   30
+  ],
+  "level": "Level 2",
+  "effect": "power-aura",
+  "red_cleaned": 0,
+  "fig_note": "Figure interior identical to old final (0px).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-19",
+  "slug": "fighting-pose-forward-bicep-curl",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   736,
+   70,
+   1183,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-19-bg-plaza-painted-new-20261031.png",
+  "diff_px": 1824338,
+  "diff_pct": 87.98,
+  "fig_interior_mismatch": 0,
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "bleed": [
+   255,
+   120,
+   0
+  ],
+  "level": "Level 3",
+  "effect": "gauntlet-glow",
+  "red_cleaned": 0,
+  "fig_note": "Figure interior identical to old final (0px).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-20",
+  "slug": "fighting-stance-arms-up-high",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   682,
+   70,
+   1237,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-20-bg-plaza-painted-new-20261031.png",
+  "diff_px": 1831431,
+  "diff_pct": 88.32,
+  "fig_interior_mismatch": 0,
+  "rim": [
+   255,
+   150,
+   60
+  ],
+  "bleed": [
+   255,
+   100,
+   20
+  ],
+  "level": "Level 2",
+  "effect": "aura-soft",
+  "red_cleaned": 0,
+  "fig_note": "Figure interior identical to old final (0px).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-21",
+  "slug": "jump-crouch-takeoff",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1150
+  ],
+  "ground": 1020,
+  "feet": 920,
+  "bbox": [
+   713,
+   40,
+   1206,
+   920
+  ],
+  "clipped": false,
+  "bg_swapped": false,
+  "bg_file": "clean-100-20261031/layouts/bg-rooftop-painted-20261031.jpg",
+  "diff_px": 0,
+  "diff_pct": 0.0,
+  "fig_interior_mismatch": null,
+  "rim": [
+   140,
+   220,
+   210
+  ],
+  "bleed": [
+   60,
+   180,
+   170
+  ],
+  "level": "Level 2",
+  "effect": "takeoff-dust",
+  "red_cleaned": 0,
+  "fig_note": "Full frame pixel-identical to old final (prior BG kept).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-22",
+  "slug": "jump-tuck-landing",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   698,
+   70,
+   1221,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": false,
+  "bg_file": "clean-100-20261031/layouts/bg-rooftop-painted-20261031.jpg",
+  "diff_px": 0,
+  "diff_pct": 0.0,
+  "fig_interior_mismatch": null,
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "bleed": [
+   255,
+   120,
+   0
+  ],
+  "level": "Level 3",
+  "effect": "landing-dust + cape-streaks",
+  "red_cleaned": 0,
+  "fig_note": "Full frame pixel-identical to old final (prior BG kept).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-23",
+  "slug": "lounge-seated-room",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1280
+  ],
+  "ground": 1180,
+  "feet": 1180,
+  "bbox": [
+   603,
+   146,
+   1316,
+   1180
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-23-bg-room-painted-new-20261031.png",
+  "diff_px": 2012813,
+  "diff_pct": 81.9,
+  "fig_interior_mismatch": 0,
+  "rim": [
+   255,
+   185,
+   95
+  ],
+  "bleed": [
+   255,
+   125,
+   20
+  ],
+  "level": "Level 2",
+  "effect": "lamp-halo",
+  "red_cleaned": 0,
+  "fig_note": "Figure interior identical to old final (0px).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-24",
+  "slug": "desk-seated",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1280
+  ],
+  "ground": 1180,
+  "feet": 1180,
+  "bbox": [
+   603,
+   146,
+   1316,
+   1180
+  ],
+  "clipped": false,
+  "bg_swapped": false,
+  "bg_file": "clean-100-20261031/layouts/bg-desk-painted-20261031.jpg",
+  "diff_px": 0,
+  "diff_pct": 0.0,
+  "fig_interior_mismatch": null,
+  "rim": [
+   255,
+   185,
+   95
+  ],
+  "bleed": [
+   255,
+   125,
+   20
+  ],
+  "level": "Level 2",
+  "effect": "lamp-halo",
+  "red_cleaned": 0,
+  "fig_note": "Full frame pixel-identical to old final (prior BG kept).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-25",
+  "slug": "room-standing-device-gag",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1280
+  ],
+  "ground": 1180,
+  "feet": 1180,
+  "bbox": [
+   616,
+   40,
+   1303,
+   1180
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-25-bg-room-painted-new-20261031.png",
+  "diff_px": 2036415,
+  "diff_pct": 82.86,
+  "fig_interior_mismatch": 0,
+  "rim": [
+   255,
+   185,
+   95
+  ],
+  "bleed": [
+   255,
+   125,
+   20
+  ],
+  "level": "Level 2",
+  "effect": "device-glow",
+  "red_cleaned": 0,
+  "fig_note": "Figure interior identical to old final (0px).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-26",
+  "slug": "dialogue-neutral-unsure",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1280
+  ],
+  "ground": 1180,
+  "feet": 1180,
+  "bbox": [
+   616,
+   40,
+   1303,
+   1180
+  ],
+  "clipped": false,
+  "bg_swapped": false,
+  "bg_file": "gap-close-color-20261031/room-proof-bg-canvas-20261031.png",
+  "diff_px": 0,
+  "diff_pct": 0.0,
+  "fig_interior_mismatch": null,
+  "rim": [
+   240,
+   240,
+   240
+  ],
+  "bleed": [
+   180,
+   180,
+   180
+  ],
+  "level": "Level 2",
+  "effect": "beat-halo",
+  "red_cleaned": 0,
+  "fig_note": "Full frame pixel-identical to old final (prior BG kept).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-27",
+  "slug": "dialogue-shout-angry",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1280
+  ],
+  "ground": 1180,
+  "feet": 1180,
+  "bbox": [
+   616,
+   40,
+   1303,
+   1180
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-27-bg-room-painted-new-20261031.png",
+  "diff_px": 2035472,
+  "diff_pct": 82.82,
+  "fig_interior_mismatch": 0,
+  "rim": [
+   255,
+   130,
+   120
+  ],
+  "bleed": [
+   220,
+   50,
+   40
+  ],
+  "level": "Level 2",
+  "effect": "shout-burst",
+  "red_cleaned": 0,
+  "fig_note": "Figure interior identical to old final (0px).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-28",
+  "slug": "rooftop-sunset",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   695,
+   70,
+   1225,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": false,
+  "bg_file": "clean-100-20261031/layouts/bg-rooftop-painted-20261031.jpg",
+  "diff_px": 0,
+  "diff_pct": 0.0,
+  "fig_interior_mismatch": null,
+  "rim": [
+   255,
+   155,
+   75
+  ],
+  "bleed": [
+   255,
+   100,
+   20
+  ],
+  "level": "Level 3",
+  "effect": "sun-flare",
+  "red_cleaned": 0,
+  "fig_note": "Full frame pixel-identical to old final (prior BG kept).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-29",
+  "slug": "rooftop-night-city",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   695,
+   70,
+   1225,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": true,
+  "bg_file": "art-owed-backgrounds-20261031/per-shot/CJ-29-bg-night-city-painted-new-20261031.png",
+  "diff_px": 1824417,
+  "diff_pct": 87.98,
+  "fig_interior_mismatch": 0,
+  "rim": [
+   160,
+   185,
+   255
+  ],
+  "bleed": [
+   80,
+   120,
+   255
+  ],
+  "level": "Level 3",
+  "effect": "city-bokeh",
+  "red_cleaned": 0,
+  "fig_note": "Figure interior identical to old final (0px).",
+  "gate": "PASS"
+ },
+ {
+  "shot": "CJ-30",
+  "slug": "alley-neon-dual-light",
+  "spec_same": true,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "ground": 950,
+  "feet": 950,
+  "bbox": [
+   695,
+   70,
+   1225,
+   950
+  ],
+  "clipped": false,
+  "bg_swapped": false,
+  "bg_file": "clean-100-20261031/layouts/bg-alley-painted-20261031.jpg",
+  "diff_px": 0,
+  "diff_pct": 0.0,
+  "fig_interior_mismatch": null,
+  "rim": [
+   255,
+   178,
+   229
+  ],
+  "bleed": [
+   230,
+   80,
+   170
+  ],
+  "level": "Level 3",
+  "effect": "neon-rings",
+  "red_cleaned": 0,
+  "fig_note": "Full frame pixel-identical to old final (prior BG kept).",
+  "gate": "PASS"
+ }
+]

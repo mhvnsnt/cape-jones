@@ -1,0 +1,97 @@
+[
+  {
+    "file": "eye-normal-v3-01-neutral-20261031.png",
+    "expression": "neutral",
+    "dark_segment_x": [
+      41,
+      79
+    ],
+    "dark_segment_side": "image-LEFT (x38-79), Arm1 side as Mars sees it in the proof - FLIPPED from v2 image-RIGHT x385-426",
+    "white_eye_clusters": [
+      [
+        104,
+        176
+      ],
+      [
+        297,
+        369
+      ]
+    ]
+  },
+  {
+    "file": "eye-normal-v3-02-determined-focused-20261031.png",
+    "expression": "determined-focused",
+    "dark_segment_x": [
+      41,
+      79
+    ],
+    "dark_segment_side": "image-LEFT (x38-79), Arm1 side as Mars sees it in the proof - FLIPPED from v2 image-RIGHT x385-426",
+    "white_eye_clusters": [
+      [
+        104,
+        176
+      ],
+      [
+        297,
+        369
+      ]
+    ]
+  },
+  {
+    "file": "eye-normal-v3-03-angry-scowling-20261031.png",
+    "expression": "angry-scowling",
+    "dark_segment_x": [
+      41,
+      79
+    ],
+    "dark_segment_side": "image-LEFT (x38-79), Arm1 side as Mars sees it in the proof - FLIPPED from v2 image-RIGHT x385-426",
+    "white_eye_clusters": [
+      [
+        104,
+        175
+      ],
+      [
+        297,
+        368
+      ]
+    ]
+  },
+  {
+    "file": "eye-normal-v3-04-surprised-alarmed-20261031.png",
+    "expression": "surprised-alarmed",
+    "dark_segment_x": [
+      41,
+      79
+    ],
+    "dark_segment_side": "image-LEFT (x38-79), Arm1 side as Mars sees it in the proof - FLIPPED from v2 image-RIGHT x385-426",
+    "white_eye_clusters": [
+      [
+        103,
+        176
+      ],
+      [
+        296,
+        369
+      ]
+    ]
+  },
+  {
+    "file": "eye-normal-v3-05-concentrating-20261031.png",
+    "expression": "concentrating",
+    "dark_segment_x": [
+      41,
+      79
+    ],
+    "dark_segment_side": "image-LEFT (x38-79), Arm1 side as Mars sees it in the proof - FLIPPED from v2 image-RIGHT x385-426",
+    "white_eye_clusters": [
+      [
+        104,
+        175
+      ],
+      [
+        297,
+        368
+      ]
+    ]
+  }
+]

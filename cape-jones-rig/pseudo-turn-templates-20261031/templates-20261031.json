@@ -1,0 +1,79 @@
+{
+  "base_figure_cropped_px": [
+    463,
+    1056
+  ],
+  "results": {
+    "pseudo-turn": {
+      "name": "pseudo-turn",
+      "frames": 13,
+      "fps": 12,
+      "canvas": [
+        652,
+        1110
+      ],
+      "edge_alpha_px": 0
+    },
+    "stretch-power": {
+      "name": "stretch-power",
+      "frames": 13,
+      "fps": 12,
+      "canvas": [
+        512,
+        1526
+      ],
+      "edge_alpha_px": 0
+    },
+    "thin-power": {
+      "name": "thin-power",
+      "frames": 13,
+      "fps": 12,
+      "canvas": [
+        512,
+        1156
+      ],
+      "edge_alpha_px": 0
+    },
+    "invisible-power": {
+      "name": "invisible-power",
+      "frames": 17,
+      "fps": 12,
+      "canvas": [
+        512,
+        1104
+      ],
+      "edge_alpha_px": 0
+    },
+    "cheat-turn-a-depth-dark": {
+      "name": "cheat-turn-a-depth-dark",
+      "frames": 13,
+      "fps": 12,
+      "canvas": [
+        652,
+        1108
+      ],
+      "edge_alpha_px": 0
+    },
+    "cheat-turn-b-bend-mirror": {
+      "name": "cheat-turn-b-bend-mirror",
+      "frames": 13,
+      "fps": 12,
+      "canvas": [
+        652,
+        1110
+      ],
+      "edge_alpha_px": 0
+    },
+    "sheet-animated-turn-attempt": {
+      "name": "sheet-animated-turn-attempt",
+      "frames": 15,
+      "fps": 12,
+      "canvas": [
+        512,
+        1110
+      ],
+      "edge_alpha_px": 0
+    }
+  },
+  "note": "CHEAT and POWER templates are NOT true turns. No true side torso/head piece exists; true hand-drawn turn master still owed."
+}

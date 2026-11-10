@@ -1,0 +1,42 @@
+{
+ "clip_id": "blender523-rig-fixed-test-48f",
+ "fps": 24,
+ "frames": [
+  {
+   "frame": 1,
+   "pose": "rest arms down",
+   "arm1": "Arm_Front viewer-left",
+   "arm2": "Arm_Back viewer-right",
+   "leg1": "Leg_Front viewer-left",
+   "leg2": "Leg_Back viewer-right",
+   "knee_dir": "straight",
+   "foot_dir": "straight",
+   "arm_front_snap": false,
+   "grounded": true
+  },
+  {
+   "frame": 25,
+   "pose": "arms crossed chest snap ON",
+   "arm1": "Arm_Front viewer-left",
+   "arm2": "Arm_Back viewer-right",
+   "forearm_vs_torso_overlap_px": 12295,
+   "arm_front_snap": true,
+   "snap_z": 0.11,
+   "torso_z": 0.08,
+   "head_z": 0.12
+  },
+  {
+   "frame": 37,
+   "pose": "flex obtuse wide-out",
+   "flex_spread_deg": 120,
+   "arm_front_snap": false
+  },
+  {
+   "frame": 48,
+   "pose": "shuffle Leg1 lifted Leg2 planted",
+   "lifted_leg": "leg1",
+   "leg1": "Leg_Front",
+   "leg2": "Leg_Back"
+  }
+ ]
+}

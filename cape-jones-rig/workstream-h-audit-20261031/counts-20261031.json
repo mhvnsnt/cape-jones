@@ -1,0 +1,37 @@
+{
+ "gaussian-splatting-20261031/cape-gaussians-20261031.ply": 5846,
+ "gaussian-splatting-upgrade-20261031/8BIT-V2/cape-gaussians-V2-20261031.ply": 23391,
+ "gaussian-splatting-upgrade-20261031/8BIT-V3/cape-gaussians-V3-20261031.ply": 10389,
+ "gaussian-splatting-upgrade-20261031/8BIT-V4/cape-gaussians-V4-20261031.ply": 5846,
+ "capegp_strokes": {
+  "NORMAL": 19,
+  "APOSE_FLEX": 19,
+  "FACE_SNAP": 19,
+  "COWL_SNAP": 19,
+  "CHEST_SNAP": 19,
+  "JOINT_SMOOTH": 19
+ },
+ "capegp_total_strokes": 114,
+ "gaussian-splatting-20261031/splat-turn-sequence-20261031.gif": 9,
+ "gaussian-splatting-upgrade-20261031/8BIT-V2/8bit-V2-turn-sequence-20261031.gif": 9,
+ "gaussian-splatting-upgrade-20261031/8BIT-V3/8bit-V3-turn-sequence-20261031.gif": 9,
+ "gaussian-splatting-upgrade-20261031/8BIT-V4/8bit-V4-turn-sequence-20261031.gif": 9,
+ "invisible-power-v1-nocrop-fix-20261031/invisible-power-v1-NOCROP-FIXED-20261031.gif": 14,
+ "invisible_fixed_masters": 17,
+ "invisible_draft_masters": 17,
+ "pack_two_effects": [
+  "BLACK-SILHOUETTE-S1-pure-black.png",
+  "BLACK-SILHOUETTE-S2-black-plus-cyan-rim.png",
+  "BLACK-SILHOUETTE-S3-black-plus-lineart-outline.png",
+  "LINEART-INVISIBLE-L1-faint-1px-a70.png",
+  "LINEART-INVISIBLE-L2-medium-2px-a120.png",
+  "LINEART-INVISIBLE-L3-visible-3px-a180.png",
+  "LINEART-INVISIBLE-Ldepth-weight-by-depth.png",
+  "LINEART-INVISIBLE-Sobel-crosscheck.png"
+ ],
+ "colored_variants": 12,
+ "colored_blends": 6,
+ "capegp_single_blends": 6,
+ "capegp_proofs": 6,
+ "methods": 10
+}

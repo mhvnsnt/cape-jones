@@ -1,0 +1,17 @@
+MediaPipe Pose — honest attempt log, 2026-10-31 (Group B, Cape Jones)
+====================================================================
+1. System pip install mediapipe -> refused, PEP 668 externally-managed environment.
+2. /tmp venv -> "No space left on device" (/tmp is a 512 MB tmpfs).
+3. Home-disk venv (group folder .work/mp-venv) -> SUCCESS: "mediapipe OK 1.2.0".
+4. Legacy API mp.solutions.pose -> AttributeError: module 'mediapipe' has no
+   attribute 'solutions' (deprecated March 2023, removed in current builds).
+5. Rewrote for Tasks API: mp.tasks.vision.PoseLandmarker, IMAGE mode, num_poses=1.
+6. Downloaded pose_landmarker_heavy.task, 30,664,242 bytes, from the official
+   Google storage URL quoted in search results (storage.googleapis.com/mediapipe-models/
+   pose_landmarker/pose_landmarker_heavy/float16/1/pose_landmarker_heavy.task).
+7. Inference FAILED before any frame: OSError: libEGL.so.1: cannot open shared
+   object file. VM has libGL.so.1 but no libEGL.so.1; no sudo/apt route for this
+   subagent. No detection ran; no MediaPipe output is claimed anywhere in GROUP-B.md.
+8. Scratch venv + model deleted after logging (folder kept clean); the rerun needs
+   only: venv + pip install mediapipe + the .task file + libegl1 on the host.
+   The by-eye keypoints in pose_angle_tool.py are the fallback until then.

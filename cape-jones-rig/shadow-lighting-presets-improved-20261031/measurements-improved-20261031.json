@@ -1,0 +1,213 @@
+{
+  "base": {
+    "bbox": [
+      237,
+      359,
+      864,
+      1400
+    ],
+    "figure_alpha_px": 373846,
+    "feet_y": 1400,
+    "canvas": [
+      1100,
+      1500
+    ]
+  },
+  "improved": {
+    "I1v2-contact-core": {
+      "fig_mean": [
+        135.1,
+        133.3,
+        137.8
+      ]
+    },
+    "I2v2-cast-taper": {
+      "fig_mean": [
+        135.1,
+        133.3,
+        137.8
+      ]
+    },
+    "I3v2-ao-graded": {
+      "fig_mean": [
+        115.2,
+        113.3,
+        117.1
+      ]
+    },
+    "I4v2-form-wrap": {
+      "fig_mean": [
+        123.7,
+        121.9,
+        126.1
+      ]
+    },
+    "I5v2-soft-core-taper": {
+      "fig_mean": [
+        135.1,
+        133.3,
+        137.8
+      ]
+    },
+    "X1v2-shaft-dapple": {
+      "fig_mean": [
+        118.9,
+        117.1,
+        121.2
+      ]
+    },
+    "X2v2-depth-fade-blur": {
+      "fig_mean": [
+        135.1,
+        133.3,
+        137.8
+      ]
+    },
+    "X3v2-colour-bleed-bounce": {
+      "fig_mean": [
+        128.9,
+        124.7,
+        127.2
+      ]
+    },
+    "X4v2-flicker-sway-5f": {
+      "frames": 5
+    },
+    "X5v2-ground-texture-graded": {
+      "fig_mean": [
+        135.1,
+        133.3,
+        137.8
+      ]
+    }
+  },
+  "directions": {
+    "underlight": {
+      "fig_mean": [
+        98.6,
+        97.3,
+        100.4
+      ]
+    },
+    "underlight-darkness": {
+      "fig_mean": [
+        51.2,
+        50.6,
+        52.2
+      ]
+    },
+    "underlight-left": {
+      "fig_mean": [
+        100.8,
+        99.5,
+        102.7
+      ]
+    },
+    "underlight-right": {
+      "fig_mean": [
+        100.8,
+        99.5,
+        102.7
+      ]
+    },
+    "low-back-rim": {
+      "fig_mean": [
+        95.3,
+        93.7,
+        97.0
+      ]
+    },
+    "spot-dramatic": {
+      "fig_mean": [
+        76.9,
+        75.5,
+        78.1
+      ]
+    },
+    "AO-plus-uplight-combined": {
+      "fig_mean": [
+        90.0,
+        88.7,
+        91.6
+      ]
+    }
+  },
+  "new_methods": {
+    "NI1-three-point": {
+      "fig_mean": [
+        121.8,
+        119.9,
+        124.0
+      ]
+    },
+    "NI2-chiaroscuro-rembrandt": {
+      "fig_mean": [
+        97.0,
+        95.3,
+        98.6
+      ]
+    },
+    "NI3-kicker-edge": {
+      "fig_mean": [
+        134.5,
+        137.4,
+        147.6
+      ]
+    },
+    "NI4-spotlight-cone": {
+      "fig_mean": [
+        135.1,
+        133.3,
+        137.8
+      ]
+    },
+    "NI5-temperature-split": {
+      "fig_mean": [
+        142.6,
+        138.7,
+        143.1
+      ]
+    },
+    "NX1-halftone-shadow": {
+      "fig_mean": [
+        135.1,
+        133.3,
+        137.8
+      ]
+    },
+    "NX2-ink-outline-shadow-side": {
+      "fig_mean": [
+        105.5,
+        102.4,
+        104.7
+      ]
+    },
+    "NX3-glow-underlight": {
+      "fig_mean": [
+        100.4,
+        99.0,
+        102.2
+      ]
+    },
+    "NX4-shadow-breathing-4f": {
+      "frames": 4
+    },
+    "NX5-mood-purple-shadow": {
+      "fig_mean": [
+        135.1,
+        133.3,
+        137.8
+      ]
+    }
+  },
+  "gates": {
+    "canvas": [
+      1100,
+      1500
+    ],
+    "feet_y": 1400,
+    "figure_alpha_unchanged": "character layers are black-alpha overlays; ground behind figure; no figure pixel erased by construction (same CANVAS paste in every composite)",
+    "no_crop": "all composites 1100x1500, figure bbox inside canvas",
+    "ground_pass": "feet 1400 = Gy 1400 in all direction composites"
+  }
+}

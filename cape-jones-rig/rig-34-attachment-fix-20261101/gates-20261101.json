@@ -1,0 +1,180 @@
+{
+  "gates": {
+    "bbox": [
+      431,
+      195,
+      955,
+      1475
+    ],
+    "alpha_px": 434319,
+    "inside_canvas": true,
+    "arm1_shoulder": {
+      "old": [
+        580,
+        410
+      ],
+      "new": [
+        580,
+        385
+      ],
+      "dy": -25,
+      "elbow": [
+        495.3,
+        591.1
+      ],
+      "wrist": [
+        412.3,
+        773.7
+      ],
+      "hand": [
+        384.6,
+        834.6
+      ],
+      "layer": "BEHIND torso (drawn before torso)"
+    },
+    "arm2_right_perfect_unchanged": {
+      "shoulder": [
+        815,
+        403
+      ],
+      "elbow": [
+        878.4,
+        635.5
+      ],
+      "wrist": [
+        856.3,
+        829.7
+      ],
+      "hand": [
+        851.3,
+        896.0
+      ],
+      "moved": [
+        0,
+        0
+      ]
+    },
+    "pelvis_torso_join": {
+      "pelvis_bbox": [
+        584,
+        640,
+        802,
+        820
+      ],
+      "torso_bbox": [
+        555,
+        350,
+        845,
+        664
+      ],
+      "overlap_px": 25,
+      "centre_column_x700_runs_600_900": [
+        [
+          195,
+          1157
+        ]
+      ],
+      "gap": null,
+      "clean": true
+    },
+    "hips": {
+      "L": [
+        625,
+        780
+      ],
+      "R": [
+        745,
+        780
+      ],
+      "inside_pelvis_y_range": [
+        640,
+        821
+      ],
+      "inside_pelvis_x_range": [
+        584,
+        802
+      ]
+    },
+    "knees": {
+      "L": [
+        590.1,
+        1028.6
+      ],
+      "R": [
+        774.7,
+        1062.4
+      ]
+    },
+    "kneecaps_pivots": {
+      "L": [
+        580.1,
+        1023.6
+      ],
+      "R": [
+        764.7,
+        1057.4
+      ]
+    },
+    "feet_end": {
+      "L": [
+        590.1,
+        1422.6
+      ],
+      "R": [
+        774.7,
+        1461.4
+      ]
+    },
+    "feet_alpha_bottom": {
+      "L": 1475,
+      "R": 1475
+    },
+    "cape_shoulder_join": {
+      "cape_bbox": [
+        444,
+        340,
+        956,
+        1239
+      ],
+      "shoulders_covered_x": [
+        580,
+        815
+      ],
+      "cape_top_above_shoulders_px": [
+        45,
+        63
+      ],
+      "collar": "locked, fused into torso piece, NOT moved, NOT redrawn, no separate collar piece exists in this pack"
+    },
+    "knee_feet": "PASS by construction: thigh angles L -8 / R +6 (outward), shins vertical, feet/toes outward, same direction as knees; no FootIn substitution needed.",
+    "offsets_kept": {
+      "pelvis": [
+        -7,
+        0
+      ],
+      "thigh": [
+        -15,
+        0
+      ],
+      "kneecap": [
+        -10,
+        -5
+      ],
+      "shin": [
+        -15,
+        0
+      ],
+      "arm1_upper": [
+        -5,
+        -7
+      ],
+      "arm1_forearm": [
+        -7,
+        -5
+      ]
+    },
+    "offset_changed_for_attachment": {
+      "arm1_shoulder_dy": -25
+    }
+  }
+}

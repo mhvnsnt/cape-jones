@@ -1,0 +1,122 @@
+{
+  "L1_wrap": {
+    "wrap_w": 0.5,
+    "gain_lit_side": 0.982,
+    "gain_away_side": 0.557,
+    "alpha_px": 373846,
+    "mean_rgb": [
+      105.3,
+      103.6,
+      107.2
+    ]
+  },
+  "L2_specular": {
+    "model": "Blinn-Phong proxy for a 2D front plate: specular on flat, light-coloured interior surfaces (white>180, EDT>0.35, since white-suit EDT max is only 0.56 \u2014 thickest figure part is the black cape at EDT 1.0), NOT a true 3D half-vector, stated plainly",
+    "spec_px_over_0.1": 4528,
+    "alpha_px": 373846
+  },
+  "L3_subsurface": {
+    "edge_px": 175406,
+    "bleed_px": 82334,
+    "alpha_px": 373846,
+    "mean_rgb": [
+      151.6,
+      129.6,
+      127.5
+    ]
+  },
+  "L4_falloff": {
+    "near_gain": 1.001,
+    "far_gain": 0.705,
+    "alpha_px": 373846,
+    "mean_rgb": [
+      115.4,
+      113.7,
+      117.6
+    ]
+  },
+  "L5_hemisphere": {
+    "top_mean": [
+      148.4,
+      144.0,
+      159.2
+    ],
+    "bottom_mean": [
+      155.4,
+      140.8,
+      124.5
+    ],
+    "alpha_px": 373846,
+    "mean_rgb": [
+      153.5,
+      147.4,
+      144.6
+    ]
+  },
+  "S1_selfcast": {
+    "self_px": 24156,
+    "method": "side caster (arms/cape y<1000, x outside 400-700) shifted +40, intersect torso/legs only",
+    "alpha_px": 373846
+  },
+  "S2_contact_hardening": {
+    "ground_px": 66621,
+    "feet_y": 1400,
+    "gy": 1400,
+    "alpha_px": 373846,
+    "mean_rgb": [
+      133.6,
+      131.7,
+      135.5
+    ]
+  },
+  "S3_perspective": {
+    "shadow_px_blurred": 94437,
+    "method": "per-pixel map x+0.35*(GY-y), y=GY-0.18*(GY-y), closing+blur8",
+    "feet_y": 1400,
+    "gy": 1400
+  },
+  "S4_dual_light": {
+    "warm_px": 65589,
+    "cyan_px": 64152,
+    "feet_y": 1400,
+    "gy": 1400,
+    "alpha_px": 373846,
+    "mean_rgb": [
+      133.6,
+      131.7,
+      135.5
+    ]
+  },
+  "S5_dappled": {
+    "ground_band_px": 71551,
+    "method": "ground shadow restricted to y>=1340 band, between shaft columns; figure bright in columns / dark between",
+    "feet_y": 1400,
+    "gy": 1400
+  },
+  "gates": {
+    "ground_feet_y": 1400,
+    "gy": 1400,
+    "diff": 0,
+    "figure_alpha_unchanged_lighting": true,
+    "no_crop": "figure bbox inside 1100x1500, ground methods behind figure, occlusion 0 by construction (ground layers behind, character layers darken RGB only)"
+  },
+  "audit_old": {
+    "lighting_old": [
+      "LUTs 70, rim dilate6, cel bands 1.12/0.92/0.72, ink band 80%, sheen 14px/38%, ground bounce 45% bottom28%, dual-light rim, shafts, Glare"
+    ],
+    "shadow_old_I": [
+      "I1 contact ellipse",
+      "I2 cast squash+shear",
+      "I3 AO interior band <12px 25%",
+      "I4 form cel gradient",
+      "I5 soft PCF blurred union"
+    ],
+    "shadow_old_X": [
+      "X1 shaft-column mask on cast",
+      "X2 depth alpha fade 1.0-0.25",
+      "X3 warm colour-bleed variant of form",
+      "X4 flicker sway -6/0/+6",
+      "X5 pool-bright cast reduction 30%"
+    ]
+  }
+}

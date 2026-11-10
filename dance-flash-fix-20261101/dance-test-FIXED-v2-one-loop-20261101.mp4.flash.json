@@ -1,0 +1,21 @@
+{
+  "input": "/home/hatch/workspace/cape-jones-rig/dance-flash-fix-20261101/dance-test-FIXED-v2-one-loop-20261101.mp4",
+  "frames": 127,
+  "fps": 24.0,
+  "general_flashes": 0,
+  "general_max_per_sec": 0,
+  "red_flashes": 0,
+  "red_max_per_sec": 0,
+  "forearm_flips": 3,
+  "forearm_flips_max_per_sec": 1,
+  "max_frame_mean_jump": 70.4,
+  "general_frames": [],
+  "red_frames": [],
+  "forearm_flip_frames": [
+    42,
+    82,
+    123
+  ],
+  "verdict": "PASS",
+  "forearm_flip_frac_max": 0.237
+}

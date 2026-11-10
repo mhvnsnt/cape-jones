@@ -1,0 +1,1322 @@
+[
+ {
+  "shot_id": "CJ-01",
+  "slug": "punch-windup",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-01-punch-windup-shafts-20261031.png",
+  "rim": [
+   255,
+   178,
+   229
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   99,
+   251,
+   870,
+   1314
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-02",
+  "slug": "punch-extend-snap",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-02-punch-extend-snap-shafts-20261031.png",
+  "rim": [
+   255,
+   178,
+   229
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   0,
+   251,
+   870,
+   1311
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-03",
+  "slug": "punch-impact-locked",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-03-punch-impact-locked-shafts-20261031.png",
+  "rim": [
+   255,
+   120,
+   115
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   0,
+   251,
+   791,
+   1311
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-04",
+  "slug": "punch-recover",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-04-punch-recover-shafts-20261031.png",
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   246,
+   251,
+   878,
+   1314
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-05",
+  "slug": "punch-across-down-placement",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-05-punch-across-down-placement-shafts-20261031.png",
+  "rim": [
+   255,
+   255,
+   255
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   0,
+   251,
+   791,
+   1311
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-06",
+  "slug": "walk-street-contact",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-06-walk-street-contact-shafts-20261031.png",
+  "rim": [
+   255,
+   255,
+   255
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   213,
+   251,
+   845,
+   1298
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-07",
+  "slug": "walk-town-passing",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-07-walk-town-passing-shafts-20261031.png",
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   246,
+   251,
+   878,
+   1308
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-08",
+  "slug": "walk-alley-night",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-08-walk-alley-night-shafts-20261031.png",
+  "rim": [
+   160,
+   185,
+   255
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   281,
+   251,
+   912,
+   1284
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-09",
+  "slug": "dance-a",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-09-dance-a-shafts-20261031.png",
+  "rim": [
+   255,
+   178,
+   229
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   181,
+   46,
+   878,
+   1310
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-10",
+  "slug": "dance-b",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-10-dance-b-shafts-20261031.png",
+  "rim": [
+   255,
+   190,
+   220
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   246,
+   34,
+   898,
+   1290
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-11",
+  "slug": "dance-combined-finale",
+  "level": "Level 3",
+  "mode": "GROUNDED",
+  "file": "CJ-11-dance-combined-finale-shafts-20261031.png",
+  "rim": [
+   220,
+   150,
+   255
+  ],
+  "intensity": 1.0,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   181,
+   46,
+   878,
+   1310
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-12",
+  "slug": "flying-hover",
+  "level": "Level 3",
+  "mode": "AIRBORNE",
+  "file": "CJ-12-flying-hover-shafts-20261031.png",
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "intensity": 1.0,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   246,
+   251,
+   878,
+   1312
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-13",
+  "slug": "flying-soar",
+  "level": "Level 3",
+  "mode": "AIRBORNE",
+  "file": "CJ-13-flying-soar-shafts-20261031.png",
+  "rim": [
+   255,
+   200,
+   110
+  ],
+  "intensity": 1.0,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   0,
+   251,
+   1100,
+   1312
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-14",
+  "slug": "flying-dive",
+  "level": "Level 3",
+  "mode": "AIRBORNE",
+  "file": "CJ-14-flying-dive-shafts-20261031.png",
+  "rim": [
+   255,
+   155,
+   75
+  ],
+  "intensity": 1.0,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   181,
+   34,
+   898,
+   1312
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-15",
+  "slug": "flying-forward-foreshortened",
+  "level": "Level 2",
+  "mode": "AIRBORNE",
+  "file": "CJ-15-flying-forward-foreshortened-shafts-20261031.png",
+  "rim": [
+   140,
+   200,
+   255
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   246,
+   251,
+   878,
+   1312
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-16",
+  "slug": "flex-anticipation-before-tighten",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-16-flex-anticipation-before-tighten-shafts-20261031.png",
+  "rim": [
+   255,
+   180,
+   90
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   220,
+   251,
+   881,
+   1292
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-17",
+  "slug": "arms-up-reference",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-17-arms-up-reference-shafts-20261031.png",
+  "rim": [
+   255,
+   230,
+   140
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   222,
+   239,
+   880,
+   1283
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-18",
+  "slug": "true-flex-double-bicep",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-18-true-flex-double-bicep-shafts-20261031.png",
+  "rim": [
+   255,
+   165,
+   95
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   220,
+   238,
+   881,
+   1292
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-19",
+  "slug": "fighting-pose-forward-bicep-curl",
+  "level": "Level 3",
+  "mode": "GROUNDED",
+  "file": "CJ-19-fighting-pose-forward-bicep-curl-shafts-20261031.png",
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "intensity": 1.0,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   302,
+   251,
+   834,
+   1296
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-20",
+  "slug": "fighting-stance-arms-up-high",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-20-fighting-stance-arms-up-high-shafts-20261031.png",
+  "rim": [
+   255,
+   150,
+   60
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   222,
+   239,
+   880,
+   1283
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-21",
+  "slug": "jump-crouch-takeoff",
+  "level": "Level 2",
+  "mode": "AIRBORNE",
+  "file": "CJ-21-jump-crouch-takeoff-shafts-20261031.png",
+  "rim": [
+   140,
+   220,
+   210
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   181,
+   35,
+   899,
+   1314
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-22",
+  "slug": "jump-tuck-landing",
+  "level": "Level 3",
+  "mode": "GROUNDED",
+  "file": "CJ-22-jump-tuck-landing-shafts-20261031.png",
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "intensity": 1.0,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   246,
+   251,
+   878,
+   1314
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-23",
+  "slug": "lounge-seated-room",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-23-lounge-seated-room-shafts-20261031.png",
+  "rim": [
+   255,
+   185,
+   95
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   223,
+   251,
+   878,
+   1200
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-24",
+  "slug": "desk-seated",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-24-desk-seated-shafts-20261031.png",
+  "rim": [
+   255,
+   185,
+   95
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   223,
+   251,
+   878,
+   1200
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-25",
+  "slug": "room-standing-device-gag",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-25-room-standing-device-gag-shafts-20261031.png",
+  "rim": [
+   255,
+   185,
+   95
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   248,
+   253,
+   876,
+   1295
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-26",
+  "slug": "dialogue-neutral-unsure",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-26-dialogue-neutral-unsure-shafts-20261031.png",
+  "rim": [
+   240,
+   240,
+   240
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   248,
+   253,
+   876,
+   1295
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-27",
+  "slug": "dialogue-shout-angry",
+  "level": "Level 2",
+  "mode": "GROUNDED",
+  "file": "CJ-27-dialogue-shout-angry-shafts-20261031.png",
+  "rim": [
+   255,
+   130,
+   120
+  ],
+  "intensity": 0.85,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   248,
+   253,
+   876,
+   1295
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-28",
+  "slug": "rooftop-sunset",
+  "level": "Level 3",
+  "mode": "GROUNDED",
+  "file": "CJ-28-rooftop-sunset-shafts-20261031.png",
+  "rim": [
+   255,
+   155,
+   75
+  ],
+  "intensity": 1.0,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   248,
+   253,
+   876,
+   1295
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-29",
+  "slug": "rooftop-night-city",
+  "level": "Level 3",
+  "mode": "GROUNDED",
+  "file": "CJ-29-rooftop-night-city-shafts-20261031.png",
+  "rim": [
+   160,
+   185,
+   255
+  ],
+  "intensity": 1.0,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   248,
+   253,
+   876,
+   1295
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ },
+ {
+  "shot_id": "CJ-30",
+  "slug": "alley-neon-dual-light",
+  "level": "Level 3",
+  "mode": "GROUNDED",
+  "file": "CJ-30-alley-neon-dual-light-shafts-20261031.png",
+  "rim": [
+   255,
+   178,
+   229
+  ],
+  "intensity": 1.0,
+  "shaft_runs_tinted": [
+   [
+    58,
+    212
+   ],
+   [
+    267,
+    418
+   ],
+   [
+    474,
+    622
+   ],
+   [
+    679,
+    832
+   ],
+   [
+    887,
+    1041
+   ]
+  ],
+  "figure_bbox": [
+   248,
+   253,
+   876,
+   1295
+  ],
+  "figure_inside_canvas": true,
+  "occlusion_max_diff": 0.0,
+  "pass_occlusion": true
+ }
+]

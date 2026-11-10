@@ -1,0 +1,9 @@
+/home/hatch/workspace/cape-jones-rig/godray-level3-20261031/blender_godray_v2.py:18: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new("W"); w.use_nodes = True
+/home/hatch/workspace/cape-jones-rig/godray-level3-20261031/blender_godray_v2.py:27: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat = bpy.data.materials.new("Vol"); mat.use_nodes = True
+/home/hatch/workspace/cape-jones-rig/godray-level3-20261031/blender_godray_v2.py:53: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  pm = bpy.data.materials.new("Dark"); pm.use_nodes = True
+/home/hatch/workspace/cape-jones-rig/godray-level3-20261031/blender_godray_v2.py:57: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  dm = bpy.data.materials.new("Dust"); dm.use_nodes = True
+Couldn't open libEGL.so.1: libEGL.so.1: cannot open shared object file: No such file or directory

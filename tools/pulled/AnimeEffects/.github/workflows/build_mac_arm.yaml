@@ -1,0 +1,60 @@
+name: MacOS Latest - ARM
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+permissions:
+  contents: read
+jobs:
+  buildMacOS:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+      - name: Setup Brew
+        shell: bash
+        run: |
+          export HOMEBREW_NO_AUTO_UPDATE=1
+          export HOMEBREW_NO_INSTALL_CLEANUP=1
+          export HOMEBREW_VERBOSE_USING_DOTS=1
+      - name: Get Qt 6.9.*
+        uses: jurplel/install-qt-action@v3
+        with:
+          aqtversion: "==3.3.*"
+          version: "6.9.3"
+          host: "mac"
+          target: "desktop"
+          arch: "clang_64"
+          modules: "qtimageformats qtmultimedia qt5compat"
+          install-deps: "nosudo"
+          tools: "tools_cmake tools_ninja"
+      - name: Get dependencies
+        shell: bash
+        run: |
+          brew install ninja vulkan-headers
+      - name: Build AnimeEffects
+        shell: bash
+        run: |
+          echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+          cmake -S . -B build -G "Ninja Multi-Config"
+          cmake --build build --config Release
+          cd build/src/gui/Release
+          mkdir -p appdir/usr/lib
+          cp -R AnimeEffects.app appdir/AnimeEffects.app
+          cp -R ../../../../data appdir/data
+          cp -R ../../../../dist appdir/dist
+          find appdir/
+          cd appdir
+          macdeployqt AnimeEffects.app
+          cp ../../../../../scripts/RemoveQuarantine.command AnimeEffects.command
+          cp -R ../../../../../data AnimeEffects.app/Contents/MacOS/data
+          chmod +x AnimeEffects.command
+          zip -r AnimeEffects.zip AnimeEffects.app AnimeEffects.command 
+          echo "artifactPath=$(realpath AnimeEffects.zip)`"
+          echo "artifactPath=$(realpath AnimeEffects.zip)`" >> $GITHUB_ENV
+      - name: Github Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: AnimeEffects-MacOS
+          path: ${{ env.artifactPath }}
+          compression-level: 0

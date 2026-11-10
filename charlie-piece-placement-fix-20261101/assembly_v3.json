@@ -1,0 +1,93 @@
+{
+  "offsets": {
+    "back_arm": [
+      32,
+      336
+    ],
+    "legs": [
+      0,
+      0
+    ],
+    "body_back": [
+      42,
+      361
+    ],
+    "head": [
+      17,
+      435
+    ],
+    "body": [
+      0,
+      0
+    ],
+    "front_arm": [
+      214,
+      287
+    ]
+  },
+  "order": [
+    "back_arm",
+    "legs",
+    "body_back",
+    "head",
+    "body",
+    "front_arm"
+  ],
+  "layers": {
+    "back_arm": {
+      "bbox": [
+        149,
+        880,
+        360,
+        1302
+      ]
+    },
+    "legs": {
+      "bbox": [
+        308,
+        1169,
+        940,
+        1696
+      ]
+    },
+    "body_back": {
+      "bbox": [
+        595,
+        787,
+        849,
+        915
+      ]
+    },
+    "head": {
+      "bbox": [
+        56,
+        475,
+        746,
+        1057
+      ]
+    },
+    "body": {
+      "bbox": [
+        321,
+        887,
+        946,
+        1298
+      ]
+    },
+    "front_arm": {
+      "bbox": [
+        750,
+        927,
+        972,
+        1272
+      ]
+    }
+  },
+  "thingies": "OMITTED - body_thingies masked by body_mask, 0/285 geometry points inside mask polygon, so in Animate it is invisible in this frame; NOT moved to mouth/torso/head",
+  "assembled_bbox": [
+    56,
+    475,
+    972,
+    1696
+  ]
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<canvas version="1.5" width="550" height="750" xres="2834.64" yres="2834.64" view-box="-2.75 3.75 2.75 -3.75" bgcolor="0.50196 0.50196 0.50196 1" fps="24" begin-time="0f" end-time="24f" antialias="1">
+<name>cape-jones-synfig-character-rig-wired</name>
+<desc>Character-piece rig: the clean apose plate imported as one piece, animated in Synfig (origin slide + slight rotation) over 24 frames. This replaces the old circle-only tween.</desc>
+<layer type="import" active="true" version="0.2" exclude_from_rendering="false">
+<param name="z_depth"><real value="0.0000000000"/></param>
+<param name="amount"><real value="1.0000000000"/></param>
+<param name="blend_method"><integer value="0"/></param>
+<param name="filename"><string>/home/hatch/workspace/cape-jones-rig/rig-apose-v7c-clean-transparent.png</string></param>
+<param name="tl"><vector><x>-2.7500000000</x><y>3.7500000000</y></vector></param>
+<param name="br"><vector><x>2.7500000000</x><y>-3.7500000000</y></vector></param>
+<param name="origin"><animated type="vector">
+<waypoint time="0f" before="clamped" after="clamped"><vector><x>0.0000000000</x><y>0.0000000000</y></vector></waypoint>
+<waypoint time="12f" before="clamped" after="clamped"><vector><x>0.2000000000</x><y>0.0000000000</y></vector></waypoint>
+<waypoint time="24f" before="clamped" after="clamped"><vector><x>-0.2000000000</x><y>0.0000000000</y></vector></waypoint>
+</animated></param>
+<param name="rotation"><animated type="angle">
+<waypoint time="0f" before="clamped" after="clamped"><angle value="0.0000000000"/></waypoint>
+<waypoint time="12f" before="clamped" after="clamped"><angle value="3.0000000000"/></waypoint>
+<waypoint time="24f" before="clamped" after="clamped"><angle value="0.0000000000"/></waypoint>
+</animated></param>
+</layer>
+</canvas>

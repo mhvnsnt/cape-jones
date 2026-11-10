@@ -1,0 +1,230 @@
+{
+  "facing": 1,
+  "head_face_vec": [
+    1,
+    0
+  ],
+  "torso_front_vec": [
+    1,
+    0
+  ],
+  "boot_toe_vec": [
+    1,
+    0
+  ],
+  "ground": 1450,
+  "pieces": [
+    {
+      "name": "cape_long",
+      "x": 410,
+      "y": 380,
+      "w": 270,
+      "h": 785,
+      "kind": "cape",
+      "flipped": false
+    },
+    {
+      "name": "cape_drape",
+      "x": 430,
+      "y": 350,
+      "w": 249,
+      "h": 187,
+      "kind": "cape",
+      "flipped": false
+    },
+    {
+      "name": "thigh_far",
+      "x": 610,
+      "y": 930,
+      "w": 157,
+      "h": 325,
+      "kind": "thigh",
+      "flipped": false
+    },
+    {
+      "name": "shin_far",
+      "x": 610,
+      "y": 1130,
+      "w": 111,
+      "h": 316,
+      "kind": "shin",
+      "flipped": false
+    },
+    {
+      "name": "boot_far",
+      "x": 540,
+      "y": 1248,
+      "w": 193,
+      "h": 202,
+      "kind": "boot",
+      "flipped": false
+    },
+    {
+      "name": "thigh_near",
+      "x": 560,
+      "y": 930,
+      "w": 166,
+      "h": 335,
+      "kind": "thigh",
+      "flipped": false
+    },
+    {
+      "name": "shin_boot_near",
+      "x": 560,
+      "y": 1092,
+      "w": 193,
+      "h": 358,
+      "kind": "shin",
+      "flipped": false
+    },
+    {
+      "name": "pelvis",
+      "x": 570,
+      "y": 790,
+      "w": 242,
+      "h": 209,
+      "kind": "pelvis",
+      "flipped": false
+    },
+    {
+      "name": "torso",
+      "x": 560,
+      "y": 360,
+      "w": 333,
+      "h": 474,
+      "kind": "torso",
+      "flipped": false
+    },
+    {
+      "name": "neck",
+      "x": 600,
+      "y": 280,
+      "w": 188,
+      "h": 242,
+      "kind": "neck",
+      "flipped": false
+    },
+    {
+      "name": "head",
+      "x": 600,
+      "y": 120,
+      "w": 225,
+      "h": 251,
+      "kind": "head",
+      "flipped": false
+    },
+    {
+      "name": "upper_arm_far",
+      "x": 570,
+      "y": 410,
+      "w": 166,
+      "h": 306,
+      "kind": "upper_arm",
+      "flipped": false
+    },
+    {
+      "name": "forearm_far",
+      "x": 640,
+      "y": 680,
+      "w": 257,
+      "h": 118,
+      "kind": "forearm",
+      "flipped": false
+    },
+    {
+      "name": "fist_far",
+      "x": 890,
+      "y": 680,
+      "w": 143,
+      "h": 113,
+      "kind": "fist",
+      "flipped": false
+    },
+    {
+      "name": "bent_arm_near",
+      "x": 660,
+      "y": 420,
+      "w": 491,
+      "h": 233,
+      "kind": "bent_arm",
+      "flipped": false
+    }
+  ],
+  "arms": [
+    {
+      "name": "far_bent",
+      "pose": "bent",
+      "elbow_xy": [
+        660,
+        720
+      ],
+      "hand_xy": [
+        960,
+        735
+      ]
+    },
+    {
+      "name": "near_bent",
+      "pose": "bent",
+      "elbow_xy": [
+        800,
+        600
+      ],
+      "hand_xy": [
+        1060,
+        610
+      ]
+    }
+  ],
+  "layer_order": [
+    "cape_long",
+    "cape_drape",
+    "thigh_far",
+    "shin_far",
+    "boot_far",
+    "thigh_near",
+    "shin_boot_near",
+    "pelvis",
+    "torso",
+    "neck",
+    "head",
+    "upper_arm_far",
+    "forearm_far",
+    "fist_far",
+    "bent_arm_near"
+  ],
+  "joints": [
+    [
+      "torso",
+      "upper_arm_far"
+    ],
+    [
+      "upper_arm_far",
+      "forearm_far"
+    ],
+    [
+      "forearm_far",
+      "fist_far"
+    ],
+    [
+      "torso",
+      "bent_arm_near"
+    ],
+    [
+      "pelvis",
+      "thigh_near"
+    ],
+    [
+      "thigh_near",
+      "shin_boot_near"
+    ],
+    [
+      "pelvis",
+      "thigh_far"
+    ],
+    [
+      "thigh_far",
+      "shin_far"
+    ]
+  ]
+}

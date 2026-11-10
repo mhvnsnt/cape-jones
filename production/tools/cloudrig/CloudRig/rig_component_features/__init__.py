@@ -1,0 +1,40 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+from . import (
+    bone_gizmos,
+    bone_info,
+    bone_set,
+    constraint_relinking,
+    custom_props,
+    generate_animation,
+    mechanism,
+    object,
+    overlay_painter,
+    params_ui_utils,
+    parenting,
+    properties_ui,
+    widgets,
+)
+
+modules = [
+    bone_gizmos,
+    bone_info,
+    bone_set,
+    constraint_relinking,
+    custom_props,
+    generate_animation,
+    mechanism,
+    object,
+    parenting,
+    properties_ui,
+    params_ui_utils,
+    widgets,
+    overlay_painter,
+]
+
+# Dictionary of modules that have a Params class, and want to register
+# parameters.
+component_feature_modules = {
+    'parenting': parenting,
+    'custom_props': custom_props,
+}

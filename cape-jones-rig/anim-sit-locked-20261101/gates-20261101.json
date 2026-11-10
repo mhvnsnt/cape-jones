@@ -1,0 +1,158 @@
+{
+  "canvas": [
+    1400,
+    1600
+  ],
+  "frames": 96,
+  "fps": 24,
+  "duration_s": 4.0,
+  "bbox_frame0": [
+    225,
+    195,
+    901,
+    1410
+  ],
+  "neck_alpha_bbox_frame0": [
+    647,
+    329,
+    752,
+    414
+  ],
+  "neck_rendered_alpha_size": [
+    106,
+    86
+  ],
+  "neck_centre_x_frame0": 699.5,
+  "neck_top_frame0": 329,
+  "shinR_bottom_frame0": 1411,
+  "shinR_bottom_frame65_lean": 1411,
+  "legs_static": true,
+  "hands": 2,
+  "fists_drawn": 0,
+  "joint_locks": [
+    "SHOULDER_TORSO",
+    "ELBOW_BICEP",
+    "ELBOW_FOREARM",
+    "FOREARM_WRIST_HAND",
+    "HIP_PELVIS",
+    "HIP_KNEE_TURN",
+    "KNEE_SHIN",
+    "CAPE_BACK",
+    "NECK_HEAD",
+    "LAYERS"
+  ],
+  "checks": {
+    "frame_000": {
+      "lean_t": 0.0,
+      "bob": 0,
+      "neck_bbox": [
+        647,
+        329,
+        752,
+        414
+      ],
+      "head_bbox": [
+        635,
+        195,
+        765,
+        391
+      ],
+      "torso_bbox": [
+        550,
+        370,
+        841,
+        685
+      ],
+      "shinR_bbox": [
+        461,
+        975,
+        664,
+        1411
+      ]
+    },
+    "frame_047": {
+      "lean_t": 0.703,
+      "bob": 0,
+      "neck_bbox": [
+        647,
+        342,
+        752,
+        427
+      ],
+      "head_bbox": [
+        634,
+        211,
+        766,
+        409
+      ],
+      "torso_bbox": [
+        550,
+        380,
+        841,
+        695
+      ],
+      "shinR_bbox": [
+        461,
+        975,
+        664,
+        1411
+      ]
+    },
+    "frame_065": {
+      "lean_t": 1.0,
+      "bob": 1,
+      "neck_bbox": [
+        647,
+        348,
+        752,
+        433
+      ],
+      "head_bbox": [
+        634,
+        219,
+        767,
+        417
+      ],
+      "torso_bbox": [
+        550,
+        385,
+        841,
+        700
+      ],
+      "shinR_bbox": [
+        461,
+        975,
+        664,
+        1411
+      ]
+    },
+    "frame_095": {
+      "lean_t": 0.0051,
+      "bob": 0,
+      "neck_bbox": [
+        647,
+        329,
+        752,
+        414
+      ],
+      "head_bbox": [
+        634,
+        194,
+        766,
+        392
+      ],
+      "torso_bbox": [
+        550,
+        370,
+        841,
+        685
+      ],
+      "shinR_bbox": [
+        461,
+        975,
+        664,
+        1411
+      ]
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "old_portrait": {
+    "file": "portrait-room-scale-1080x1920-20261031.png",
+    "diff_bbox": [
+      172,
+      386,
+      906,
+      1548
+    ],
+    "height_diff": 1162,
+    "height_claimed": 1165,
+    "feet": 1548,
+    "rug_far_edge": 1421,
+    "rug_near_edge": 1868,
+    "rug_position": 0.284,
+    "rug_in_front_px": 320,
+    "chair_ratio": 1.424,
+    "verdict": "scale locked, feet NOT planted (mid-rug, no contact shadow)"
+  },
+  "A_locked_2p5_planted": {
+    "file": "portrait-2p5-planted-20261031.png",
+    "bbox": [
+      172,
+      535,
+      906,
+      1700
+    ],
+    "height": 1165,
+    "width": 734,
+    "head": 535,
+    "feet": 1700,
+    "centre_x": 539,
+    "frame_ratio": 0.6068,
+    "chair_height_portrait": 818,
+    "figure_chair_ratio": 1.4242,
+    "rug_far_edge": 1421,
+    "rug_near_edge": 1868,
+    "rug_position": 0.624,
+    "rug_in_front_px": 168,
+    "shadow_clusters": 2
+  },
+  "B_up0p5_candidate_3p0_planted": {
+    "file": "portrait-3p0-planted-20261031.png",
+    "bbox": [
+      99,
+      302,
+      980,
+      1700
+    ],
+    "height": 1398,
+    "width": 881,
+    "head": 302,
+    "feet": 1700,
+    "centre_x": 539,
+    "frame_ratio": 0.7281,
+    "chair_height_portrait": 818,
+    "figure_chair_ratio": 1.709,
+    "rug_far_edge": 1421,
+    "rug_near_edge": 1868,
+    "rug_position": 0.624,
+    "rug_in_front_px": 168,
+    "shadow_clusters": 2
+  },
+  "chair_back_warning": "waist A ~1152, B ~1043, chair back ~700 \u2014 WARNING, not a pass",
+  "background": "STAND-IN batch-KKGuh, NOT canonical"
+}

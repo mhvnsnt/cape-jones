@@ -1,0 +1,204 @@
+{
+ "bg": [
+  126.0,
+  126.0,
+  126.0
+ ],
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    124,
+    201
+   ],
+   "opaque_px": 20055,
+   "sheet_bbox": [
+    377,
+    119,
+    501,
+    320
+   ]
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    170,
+    449
+   ],
+   "opaque_px": 36337,
+   "sheet_bbox": [
+    69,
+    349,
+    239,
+    798
+   ]
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    274,
+    324
+   ],
+   "opaque_px": 65538,
+   "sheet_bbox": [
+    296,
+    329,
+    570,
+    653
+   ]
+  },
+  {
+   "name": "Row2_3",
+   "file": "Row2_3.png",
+   "size": [
+    625,
+    579
+   ],
+   "opaque_px": 177756,
+   "sheet_bbox": [
+    556,
+    277,
+    1181,
+    856
+   ]
+  },
+  {
+   "name": "Row2_4",
+   "file": "Row2_4.png",
+   "size": [
+    119,
+    197
+   ],
+   "opaque_px": 16575,
+   "sheet_bbox": [
+    1018,
+    352,
+    1137,
+    549
+   ]
+  },
+  {
+   "name": "Row3_1",
+   "file": "Row3_1.png",
+   "size": [
+    90,
+    248
+   ],
+   "opaque_px": 17857,
+   "sheet_bbox": [
+    196,
+    667,
+    286,
+    915
+   ]
+  },
+  {
+   "name": "Row3_2",
+   "file": "Row3_2.png",
+   "size": [
+    101,
+    216
+   ],
+   "opaque_px": 14837,
+   "sheet_bbox": [
+    968,
+    729,
+    1069,
+    945
+   ]
+  },
+  {
+   "name": "Row4_1",
+   "file": "Row4_1.png",
+   "size": [
+    121,
+    148
+   ],
+   "opaque_px": 12252,
+   "sheet_bbox": [
+    137,
+    1003,
+    258,
+    1151
+   ]
+  },
+  {
+   "name": "Row4_2",
+   "file": "Row4_2.png",
+   "size": [
+    133,
+    290
+   ],
+   "opaque_px": 27294,
+   "sheet_bbox": [
+    400,
+    845,
+    533,
+    1135
+   ]
+  },
+  {
+   "name": "Row4_3",
+   "file": "Row4_3.png",
+   "size": [
+    130,
+    291
+   ],
+   "opaque_px": 27027,
+   "sheet_bbox": [
+    656,
+    844,
+    786,
+    1135
+   ]
+  },
+  {
+   "name": "Row4_4",
+   "file": "Row4_4.png",
+   "size": [
+    114,
+    148
+   ],
+   "opaque_px": 12173,
+   "sheet_bbox": [
+    941,
+    1007,
+    1055,
+    1155
+   ]
+  },
+  {
+   "name": "Row5_1",
+   "file": "Row5_1.png",
+   "size": [
+    191,
+    324
+   ],
+   "opaque_px": 26730,
+   "sheet_bbox": [
+    272,
+    1173,
+    463,
+    1497
+   ]
+  },
+  {
+   "name": "Row5_2",
+   "file": "Row5_2.png",
+   "size": [
+    196,
+    329
+   ],
+   "opaque_px": 27096,
+   "sheet_bbox": [
+    732,
+    1168,
+    928,
+    1497
+   ]
+  }
+ ]
+}

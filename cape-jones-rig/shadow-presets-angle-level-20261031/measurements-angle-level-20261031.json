@@ -1,0 +1,1276 @@
+{
+  "presets": [
+    {
+      "code": "I1",
+      "slug": "contact-shadow",
+      "kind": "industry",
+      "name": "Contact shadow",
+      "description": "Dark ellipse at the feet, wider than feet (1.16x), blur 10. Ground only, behind figure.",
+      "parameters": {
+        "width_factor": 1.16,
+        "blur": 10,
+        "alpha": 200
+      },
+      "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+      "sample": "sample.png",
+      "status": "preset saved, approval 0/1"
+    },
+    {
+      "code": "I2",
+      "slug": "cast-shadow",
+      "kind": "industry",
+      "name": "Cast / projected shadow",
+      "description": "Figure alpha squashed to 28% height, sheared by light dx, placed from ground line, recoloured to shadow tint. Ground only.",
+      "parameters": {
+        "squash": 0.28,
+        "cast_alpha": 190,
+        "blur": 12
+      },
+      "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+      "sample": "sample.png",
+      "status": "preset saved, approval 0/1"
+    },
+    {
+      "code": "I3",
+      "slug": "ambient-occlusion",
+      "kind": "industry",
+      "name": "Ambient occlusion",
+      "description": "Interior band, distance <12px inside figure, darkened 25%. Character only, RGB darkening, alpha unchanged.",
+      "parameters": {
+        "band_px": 12,
+        "darken": 0.25
+      },
+      "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+      "sample": "sample.png",
+      "status": "preset saved, approval 0/1"
+    },
+    {
+      "code": "I4",
+      "slug": "form-shadow",
+      "kind": "industry",
+      "name": "Form / cel shadow",
+      "description": "Gradient across light axis, 1.0 lit side to 0.72 side light / 0.78 overhead. Character only.",
+      "parameters": {
+        "lit": 1.0,
+        "side_dark": 0.72,
+        "overhead_dark": 0.78
+      },
+      "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+      "sample": "sample.png",
+      "status": "preset saved, approval 0/1"
+    },
+    {
+      "code": "I5",
+      "slug": "soft-shadow",
+      "kind": "industry",
+      "name": "Soft / PCF-like shadow",
+      "description": "Blurred union of contact + cast, blur 12, penumbra falloff. This is the ground shadow used in FULL composites, not triple-stacked with I1+I2.",
+      "parameters": {
+        "blur": 12
+      },
+      "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+      "sample": "sample.png",
+      "status": "preset saved, approval 0/1"
+    },
+    {
+      "code": "X1",
+      "slug": "shaft-aligned-shadow",
+      "kind": "experimental",
+      "name": "Shaft-aligned shadow",
+      "description": "Cast shadow masked to the 5 v4 shaft columns [58,212],[267,418],[474,622],[679,832],[887,1041]. Ground only.",
+      "parameters": {
+        "columns": [
+          [
+            58,
+            212
+          ],
+          [
+            267,
+            418
+          ],
+          [
+            474,
+            622
+          ],
+          [
+            679,
+            832
+          ],
+          [
+            887,
+            1041
+          ]
+        ]
+      },
+      "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+      "sample": "sample.png",
+      "status": "preset saved, approval 0/1"
+    },
+    {
+      "code": "X2",
+      "slug": "depth-gradient-shadow",
+      "kind": "experimental",
+      "name": "Depth-gradient shadow",
+      "description": "Cast alpha fades 1.0 to 0.25 with distance below feet. Ground only.",
+      "parameters": {
+        "fade_start": 1.0,
+        "fade_end": 0.25
+      },
+      "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+      "sample": "sample.png",
+      "status": "preset saved, approval 0/1"
+    },
+    {
+      "code": "X3",
+      "slug": "colour-bleed-shadow",
+      "kind": "experimental",
+      "name": "Colour-bleed shadow",
+      "description": "Away-side shadow tinted warm (60,30,10) instead of neutral black. Variant of form, NOT stacked on top of I4.",
+      "parameters": {
+        "warm_tint": [
+          60,
+          30,
+          10
+        ]
+      },
+      "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+      "sample": "sample.png",
+      "status": "preset saved, approval 0/1"
+    },
+    {
+      "code": "X4",
+      "slug": "flicker-sway-shadow",
+      "kind": "experimental",
+      "name": "Flicker / sway shadow",
+      "description": "3-frame sequence, cast offset -6 / 0 / +6 px. Motion variant, not a static preset.",
+      "parameters": {
+        "offsets": [
+          -6,
+          0,
+          6
+        ],
+        "duration_ms": 400
+      },
+      "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+      "sample": "sample.png",
+      "status": "preset saved, approval 0/1"
+    },
+    {
+      "code": "X5",
+      "slug": "ground-texture-shadow",
+      "kind": "experimental",
+      "name": "Ground-texture shadow",
+      "description": "Cast alpha reduced 30% where floor pools band is bright (room mean >110 in y1400-1500), so shadow follows floor light.",
+      "parameters": {
+        "reduction": 0.3,
+        "pool_threshold": 110
+      },
+      "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+      "sample": "sample.png",
+      "status": "preset saved, approval 0/1"
+    }
+  ],
+  "angles": [
+    "overhead",
+    "front",
+    "back",
+    "left",
+    "right",
+    "low",
+    "high"
+  ],
+  "levels": [
+    "darkness",
+    "dim",
+    "normal",
+    "bright",
+    "intense"
+  ],
+  "cells": [
+    {
+      "angle": "overhead",
+      "angle_label": "Overhead",
+      "axis": "above",
+      "light_dx": 30,
+      "dark_end": 0.78,
+      "level": "darkness",
+      "level_label": "Darkness",
+      "room_gain": 0.35,
+      "shadow_scale": 0.55,
+      "rim_strength": 0.4,
+      "file": "overhead-darkness.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 62910,
+      "figure_mean_rgb": [
+        41.8,
+        41.0,
+        42.5
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "overhead",
+      "angle_label": "Overhead",
+      "axis": "above",
+      "light_dx": 30,
+      "dark_end": 0.78,
+      "level": "dim",
+      "level_label": "Dim",
+      "room_gain": 0.55,
+      "shadow_scale": 0.75,
+      "rim_strength": 0.6,
+      "file": "overhead-dim.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 66880,
+      "figure_mean_rgb": [
+        65.8,
+        64.8,
+        67.0
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "overhead",
+      "angle_label": "Overhead",
+      "axis": "above",
+      "light_dx": 30,
+      "dark_end": 0.78,
+      "level": "normal",
+      "level_label": "Normal",
+      "room_gain": 0.85,
+      "shadow_scale": 1.0,
+      "rim_strength": 1.0,
+      "file": "overhead-normal.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 70329,
+      "figure_mean_rgb": [
+        102.5,
+        100.8,
+        104.2
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "overhead",
+      "angle_label": "Overhead",
+      "axis": "above",
+      "light_dx": 30,
+      "dark_end": 0.78,
+      "level": "bright",
+      "level_label": "Bright",
+      "room_gain": 1.15,
+      "shadow_scale": 1.25,
+      "rim_strength": 1.2,
+      "file": "overhead-bright.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 72968,
+      "figure_mean_rgb": [
+        129.1,
+        127.0,
+        131.7
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "overhead",
+      "angle_label": "Overhead",
+      "axis": "above",
+      "light_dx": 30,
+      "dark_end": 0.78,
+      "level": "intense",
+      "level_label": "Intense",
+      "room_gain": 1.35,
+      "shadow_scale": 1.45,
+      "rim_strength": 1.4,
+      "file": "overhead-intense.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 71357,
+      "figure_mean_rgb": [
+        140.2,
+        138.1,
+        143.5
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "front",
+      "angle_label": "Front",
+      "axis": "front",
+      "light_dx": 0,
+      "dark_end": 0.92,
+      "level": "darkness",
+      "level_label": "Darkness",
+      "room_gain": 0.35,
+      "shadow_scale": 0.55,
+      "rim_strength": 0.4,
+      "file": "front-darkness.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 62902,
+      "figure_mean_rgb": [
+        45.9,
+        45.1,
+        46.7
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "front",
+      "angle_label": "Front",
+      "axis": "front",
+      "light_dx": 0,
+      "dark_end": 0.92,
+      "level": "dim",
+      "level_label": "Dim",
+      "room_gain": 0.55,
+      "shadow_scale": 0.75,
+      "rim_strength": 0.6,
+      "file": "front-dim.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 66887,
+      "figure_mean_rgb": [
+        72.5,
+        71.2,
+        73.7
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "front",
+      "angle_label": "Front",
+      "axis": "front",
+      "light_dx": 0,
+      "dark_end": 0.92,
+      "level": "normal",
+      "level_label": "Normal",
+      "room_gain": 0.85,
+      "shadow_scale": 1.0,
+      "rim_strength": 1.0,
+      "file": "front-normal.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 70332,
+      "figure_mean_rgb": [
+        112.7,
+        110.8,
+        114.6
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "front",
+      "angle_label": "Front",
+      "axis": "front",
+      "light_dx": 0,
+      "dark_end": 0.92,
+      "level": "bright",
+      "level_label": "Bright",
+      "room_gain": 1.15,
+      "shadow_scale": 1.25,
+      "rim_strength": 1.2,
+      "file": "front-bright.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 72962,
+      "figure_mean_rgb": [
+        136.3,
+        134.2,
+        139.3
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "front",
+      "angle_label": "Front",
+      "axis": "front",
+      "light_dx": 0,
+      "dark_end": 0.92,
+      "level": "intense",
+      "level_label": "Intense",
+      "room_gain": 1.35,
+      "shadow_scale": 1.45,
+      "rim_strength": 1.4,
+      "file": "front-intense.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 71349,
+      "figure_mean_rgb": [
+        144.8,
+        142.4,
+        148.3
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "back",
+      "angle_label": "Back (rim/backlight)",
+      "axis": "back",
+      "light_dx": 0,
+      "dark_end": 0.55,
+      "level": "darkness",
+      "level_label": "Darkness",
+      "room_gain": 0.35,
+      "shadow_scale": 0.55,
+      "rim_strength": 0.4,
+      "file": "back-darkness.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 62902,
+      "figure_mean_rgb": [
+        37.0,
+        36.4,
+        37.6
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "back",
+      "angle_label": "Back (rim/backlight)",
+      "axis": "back",
+      "light_dx": 0,
+      "dark_end": 0.55,
+      "level": "dim",
+      "level_label": "Dim",
+      "room_gain": 0.55,
+      "shadow_scale": 0.75,
+      "rim_strength": 0.6,
+      "file": "back-dim.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 66887,
+      "figure_mean_rgb": [
+        58.5,
+        57.5,
+        59.4
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "back",
+      "angle_label": "Back (rim/backlight)",
+      "axis": "back",
+      "light_dx": 0,
+      "dark_end": 0.55,
+      "level": "normal",
+      "level_label": "Normal",
+      "room_gain": 0.85,
+      "shadow_scale": 1.0,
+      "rim_strength": 1.0,
+      "file": "back-normal.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 70332,
+      "figure_mean_rgb": [
+        91.1,
+        89.6,
+        92.6
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "back",
+      "angle_label": "Back (rim/backlight)",
+      "axis": "back",
+      "light_dx": 0,
+      "dark_end": 0.55,
+      "level": "bright",
+      "level_label": "Bright",
+      "room_gain": 1.15,
+      "shadow_scale": 1.25,
+      "rim_strength": 1.2,
+      "file": "back-bright.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 72962,
+      "figure_mean_rgb": [
+        120.5,
+        118.5,
+        122.5
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "back",
+      "angle_label": "Back (rim/backlight)",
+      "axis": "back",
+      "light_dx": 0,
+      "dark_end": 0.55,
+      "level": "intense",
+      "level_label": "Intense",
+      "room_gain": 1.35,
+      "shadow_scale": 1.45,
+      "rim_strength": 1.4,
+      "file": "back-intense.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 71349,
+      "figure_mean_rgb": [
+        132.2,
+        130.1,
+        134.8
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "left",
+      "angle_label": "Left",
+      "axis": "left",
+      "light_dx": 120,
+      "dark_end": 0.72,
+      "level": "darkness",
+      "level_label": "Darkness",
+      "room_gain": 0.35,
+      "shadow_scale": 0.55,
+      "rim_strength": 0.4,
+      "file": "left-darkness.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 63012,
+      "figure_mean_rgb": [
+        41.3,
+        40.6,
+        42.0
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "left",
+      "angle_label": "Left",
+      "axis": "left",
+      "light_dx": 120,
+      "dark_end": 0.72,
+      "level": "dim",
+      "level_label": "Dim",
+      "room_gain": 0.55,
+      "shadow_scale": 0.75,
+      "rim_strength": 0.6,
+      "file": "left-dim.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 66991,
+      "figure_mean_rgb": [
+        65.1,
+        64.1,
+        66.2
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "left",
+      "angle_label": "Left",
+      "axis": "left",
+      "light_dx": 120,
+      "dark_end": 0.72,
+      "level": "normal",
+      "level_label": "Normal",
+      "room_gain": 0.85,
+      "shadow_scale": 1.0,
+      "rim_strength": 1.0,
+      "file": "left-normal.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 70449,
+      "figure_mean_rgb": [
+        101.3,
+        99.7,
+        103.1
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "left",
+      "angle_label": "Left",
+      "axis": "left",
+      "light_dx": 120,
+      "dark_end": 0.72,
+      "level": "bright",
+      "level_label": "Bright",
+      "room_gain": 1.15,
+      "shadow_scale": 1.25,
+      "rim_strength": 1.2,
+      "file": "left-bright.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 73099,
+      "figure_mean_rgb": [
+        128.0,
+        125.9,
+        130.6
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "left",
+      "angle_label": "Left",
+      "axis": "left",
+      "light_dx": 120,
+      "dark_end": 0.72,
+      "level": "intense",
+      "level_label": "Intense",
+      "room_gain": 1.35,
+      "shadow_scale": 1.45,
+      "rim_strength": 1.4,
+      "file": "left-intense.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 71414,
+      "figure_mean_rgb": [
+        139.6,
+        137.4,
+        142.7
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "right",
+      "angle_label": "Right",
+      "axis": "right",
+      "light_dx": -120,
+      "dark_end": 0.72,
+      "level": "darkness",
+      "level_label": "Darkness",
+      "room_gain": 0.35,
+      "shadow_scale": 0.55,
+      "rim_strength": 0.4,
+      "file": "right-darkness.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 63070,
+      "figure_mean_rgb": [
+        41.1,
+        40.4,
+        41.8
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "right",
+      "angle_label": "Right",
+      "axis": "right",
+      "light_dx": -120,
+      "dark_end": 0.72,
+      "level": "dim",
+      "level_label": "Dim",
+      "room_gain": 0.55,
+      "shadow_scale": 0.75,
+      "rim_strength": 0.6,
+      "file": "right-dim.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 67041,
+      "figure_mean_rgb": [
+        64.8,
+        63.8,
+        65.9
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "right",
+      "angle_label": "Right",
+      "axis": "right",
+      "light_dx": -120,
+      "dark_end": 0.72,
+      "level": "normal",
+      "level_label": "Normal",
+      "room_gain": 0.85,
+      "shadow_scale": 1.0,
+      "rim_strength": 1.0,
+      "file": "right-normal.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 70498,
+      "figure_mean_rgb": [
+        100.9,
+        99.3,
+        102.6
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "right",
+      "angle_label": "Right",
+      "axis": "right",
+      "light_dx": -120,
+      "dark_end": 0.72,
+      "level": "bright",
+      "level_label": "Bright",
+      "room_gain": 1.15,
+      "shadow_scale": 1.25,
+      "rim_strength": 1.2,
+      "file": "right-bright.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 73168,
+      "figure_mean_rgb": [
+        127.7,
+        125.6,
+        130.2
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "right",
+      "angle_label": "Right",
+      "axis": "right",
+      "light_dx": -120,
+      "dark_end": 0.72,
+      "level": "intense",
+      "level_label": "Intense",
+      "room_gain": 1.35,
+      "shadow_scale": 1.45,
+      "rim_strength": 1.4,
+      "file": "right-intense.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 71322,
+      "figure_mean_rgb": [
+        139.3,
+        137.2,
+        142.4
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "low",
+      "angle_label": "Low (from below)",
+      "axis": "below",
+      "light_dx": 60,
+      "dark_end": 0.78,
+      "level": "darkness",
+      "level_label": "Darkness",
+      "room_gain": 0.35,
+      "shadow_scale": 0.55,
+      "rim_strength": 0.4,
+      "file": "low-darkness.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 62924,
+      "figure_mean_rgb": [
+        43.5,
+        42.8,
+        44.2
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "low",
+      "angle_label": "Low (from below)",
+      "axis": "below",
+      "light_dx": 60,
+      "dark_end": 0.78,
+      "level": "dim",
+      "level_label": "Dim",
+      "room_gain": 0.55,
+      "shadow_scale": 0.75,
+      "rim_strength": 0.6,
+      "file": "low-dim.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 66913,
+      "figure_mean_rgb": [
+        68.6,
+        67.6,
+        69.8
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "low",
+      "angle_label": "Low (from below)",
+      "axis": "below",
+      "light_dx": 60,
+      "dark_end": 0.78,
+      "level": "normal",
+      "level_label": "Normal",
+      "room_gain": 0.85,
+      "shadow_scale": 1.0,
+      "rim_strength": 1.0,
+      "file": "low-normal.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 70365,
+      "figure_mean_rgb": [
+        106.8,
+        105.1,
+        108.6
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "low",
+      "angle_label": "Low (from below)",
+      "axis": "below",
+      "light_dx": 60,
+      "dark_end": 0.78,
+      "level": "bright",
+      "level_label": "Bright",
+      "room_gain": 1.15,
+      "shadow_scale": 1.25,
+      "rim_strength": 1.2,
+      "file": "low-bright.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 72998,
+      "figure_mean_rgb": [
+        131.9,
+        129.7,
+        134.5
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "low",
+      "angle_label": "Low (from below)",
+      "axis": "below",
+      "light_dx": 60,
+      "dark_end": 0.78,
+      "level": "intense",
+      "level_label": "Intense",
+      "room_gain": 1.35,
+      "shadow_scale": 1.45,
+      "rim_strength": 1.4,
+      "file": "low-intense.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 71364,
+      "figure_mean_rgb": [
+        142.4,
+        140.2,
+        145.6
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "high",
+      "angle_label": "High (steep top)",
+      "axis": "above",
+      "light_dx": 15,
+      "dark_end": 0.7,
+      "level": "darkness",
+      "level_label": "Darkness",
+      "room_gain": 0.35,
+      "shadow_scale": 0.55,
+      "rim_strength": 0.4,
+      "file": "high-darkness.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 62908,
+      "figure_mean_rgb": [
+        39.5,
+        38.8,
+        40.2
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "high",
+      "angle_label": "High (steep top)",
+      "axis": "above",
+      "light_dx": 15,
+      "dark_end": 0.7,
+      "level": "dim",
+      "level_label": "Dim",
+      "room_gain": 0.55,
+      "shadow_scale": 0.75,
+      "rim_strength": 0.6,
+      "file": "high-dim.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 66877,
+      "figure_mean_rgb": [
+        62.4,
+        61.3,
+        63.4
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "high",
+      "angle_label": "High (steep top)",
+      "axis": "above",
+      "light_dx": 15,
+      "dark_end": 0.7,
+      "level": "normal",
+      "level_label": "Normal",
+      "room_gain": 0.85,
+      "shadow_scale": 1.0,
+      "rim_strength": 1.0,
+      "file": "high-normal.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 70321,
+      "figure_mean_rgb": [
+        97.1,
+        95.4,
+        98.6
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "high",
+      "angle_label": "High (steep top)",
+      "axis": "above",
+      "light_dx": 15,
+      "dark_end": 0.7,
+      "level": "bright",
+      "level_label": "Bright",
+      "room_gain": 1.15,
+      "shadow_scale": 1.25,
+      "rim_strength": 1.2,
+      "file": "high-bright.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 72965,
+      "figure_mean_rgb": [
+        125.1,
+        123.0,
+        127.5
+      ],
+      "gate": "PASS"
+    },
+    {
+      "angle": "high",
+      "angle_label": "High (steep top)",
+      "axis": "above",
+      "light_dx": 15,
+      "dark_end": 0.7,
+      "level": "intense",
+      "level_label": "Intense",
+      "room_gain": 1.35,
+      "shadow_scale": 1.45,
+      "rim_strength": 1.4,
+      "file": "high-intense.png",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "figure_bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "figure_alpha_px": 373846,
+      "figure_alpha_unchanged": true,
+      "ground_shadow_px": 71354,
+      "figure_mean_rgb": [
+        136.9,
+        134.8,
+        139.9
+      ],
+      "gate": "PASS"
+    }
+  ]
+}

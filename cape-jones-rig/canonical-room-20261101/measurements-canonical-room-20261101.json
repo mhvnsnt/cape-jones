@@ -1,0 +1,60 @@
+{
+  "canonical_file": "~/workspace/cape-jones-rig/canonical-room-20261101.jpg",
+  "canonical_size": [
+    2048,
+    1152
+  ],
+  "mode": "RGB",
+  "chair_bbox": [
+    1518,
+    447,
+    1929,
+    1000
+  ],
+  "chair_w": 411,
+  "chair_h": 553,
+  "chair_h_pct_room_h": 48.0,
+  "chair_w_pct_room_w": 20.1,
+  "seated_figure_bbox": [
+    1507,
+    543,
+    1862,
+    1000
+  ],
+  "seated_h": 457,
+  "seated_w": 355,
+  "seated_over_chair_h": 0.826,
+  "feet_bbox": [
+    1507,
+    902,
+    1720,
+    1000
+  ],
+  "crt_tv_bbox": [
+    252,
+    627,
+    522,
+    775
+  ],
+  "window_bbox": [
+    1255,
+    353,
+    1516,
+    562
+  ],
+  "coffee_table_bbox": [
+    764,
+    947,
+    1036,
+    1152
+  ],
+  "seated_scale_locked": "2.8x (Mars 2026-11-01 00:01 CDT, '2.8 lock'), 2.3x REJECTED, do not re-ask",
+  "seated_2p8_vs_2p3_height_ratio": 0.821,
+  "standing_room_lock": "3.0x was locked FOR OLD ROOM USE; in canonical room use furniture-relative scale, seated 2.8x locked, standing height must be re-derived against chair height, not pasted at old pixel height",
+  "gates": {
+    "no_crop_canonical": true,
+    "chair_inside_canvas": true,
+    "feet_on_floor_plane": true,
+    "original_untouched": true
+  }
+}

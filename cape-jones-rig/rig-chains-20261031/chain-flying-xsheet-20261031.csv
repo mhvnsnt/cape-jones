@@ -1,0 +1,76 @@
+frame,kind,from,to,t,eased,dy_rig,dx_rig,height_video_px,label
+0,KEY hold,apose,apose,0,0,0,0,0,AIRBORNE
+1,KEY hold,apose,apose,0,0,0,0,0,AIRBORNE
+2,KEY hold,apose,apose,0,0,0,0,0,AIRBORNE
+3,inbetween,apose,flying hover,0.12,0.01,0,0,0,AIRBORNE
+4,inbetween,apose,flying hover,0.25,0.06,0,0,4,AIRBORNE
+5,BREAKDOWN arc +10deg largest-moving arm upper,apose,flying hover,0.38,0.21,-2,0,13,AIRBORNE
+6,inbetween,apose,flying hover,0.5,0.5,-6,0,30,AIRBORNE
+7,BREAKDOWN follow-through +8deg that arm lower,apose,flying hover,0.62,0.79,-9,0,47,AIRBORNE
+8,inbetween,apose,flying hover,0.75,0.94,-11,0,56,AIRBORNE
+9,inbetween,apose,flying hover,0.88,0.99,-11,0,60,AIRBORNE
+10,KEY hold,flying hover,flying hover,0,0,-12,0,60,AIRBORNE
+11,KEY hold,flying hover,flying hover,0,0,-12,0,60,AIRBORNE
+12,KEY hold,flying hover,flying hover,0,0,-12,0,60,AIRBORNE
+13,KEY hold,flying hover,flying hover,0,0,-12,0,60,AIRBORNE
+14,KEY hold,flying hover,flying hover,0,0,-12,0,60,AIRBORNE
+15,inbetween,flying hover,flying soar,0.12,0.01,-12,0,60,AIRBORNE
+16,inbetween,flying hover,flying soar,0.25,0.06,-17,0,62,AIRBORNE
+17,BREAKDOWN arc +10deg largest-moving arm upper,flying hover,flying soar,0.38,0.21,-28,0,68,AIRBORNE
+18,inbetween,flying hover,flying soar,0.5,0.5,-52,0,80,AIRBORNE
+19,BREAKDOWN follow-through +8deg that arm lower,flying hover,flying soar,0.62,0.79,-75,0,92,AIRBORNE
+20,inbetween,flying hover,flying soar,0.75,0.94,-87,0,98,AIRBORNE
+21,inbetween,flying hover,flying soar,0.88,0.99,-91,0,100,AIRBORNE
+22,KEY hold,flying soar,flying soar,0,0,-92,0,100,AIRBORNE
+23,KEY hold,flying soar,flying soar,0,0,-92,0,100,AIRBORNE
+24,KEY hold,flying soar,flying soar,0,0,-92,0,100,AIRBORNE
+25,KEY hold,flying soar,flying soar,0,0,-92,0,100,AIRBORNE
+26,KEY hold,flying soar,flying soar,0,0,-92,0,100,AIRBORNE
+27,inbetween,flying soar,flying dive,0.12,0.01,-91,0,100,AIRBORNE
+28,inbetween,flying soar,flying dive,0.25,0.06,-90,0,96,AIRBORNE
+29,BREAKDOWN arc +10deg largest-moving arm upper,flying soar,flying dive,0.38,0.21,-86,0,87,AIRBORNE
+30,inbetween,flying soar,flying dive,0.5,0.5,-80,0,70,AIRBORNE
+31,BREAKDOWN follow-through +8deg that arm lower,flying soar,flying dive,0.62,0.79,-73,0,53,AIRBORNE
+32,inbetween,flying soar,flying dive,0.75,0.94,-69,0,44,AIRBORNE
+33,inbetween,flying soar,flying dive,0.88,0.99,-68,0,40,AIRBORNE
+34,KEY hold,flying dive,flying dive,0,0,-68,0,40,AIRBORNE
+35,KEY hold,flying dive,flying dive,0,0,-68,0,40,AIRBORNE
+36,KEY hold,flying dive,flying dive,0,0,-68,0,40,AIRBORNE
+37,KEY hold,flying dive,flying dive,0,0,-68,0,40,AIRBORNE
+38,KEY hold,flying dive,flying dive,0,0,-68,0,40,AIRBORNE
+39,inbetween,flying dive,flying forward foreshortened,0.12,0.01,-67,0,40,AIRBORNE
+40,inbetween,flying dive,flying forward foreshortened,0.25,0.06,-67,0,42,AIRBORNE
+41,BREAKDOWN arc +10deg largest-moving arm upper,flying dive,flying forward foreshortened,0.38,0.21,-64,0,48,AIRBORNE
+42,inbetween,flying dive,flying forward foreshortened,0.5,0.5,-60,0,60,AIRBORNE
+43,BREAKDOWN follow-through +8deg that arm lower,flying dive,flying forward foreshortened,0.62,0.79,-55,0,72,AIRBORNE
+44,inbetween,flying dive,flying forward foreshortened,0.75,0.94,-53,0,78,AIRBORNE
+45,inbetween,flying dive,flying forward foreshortened,0.88,0.99,-52,0,80,AIRBORNE
+46,KEY hold,flying forward foreshortened,flying forward foreshortened,0,0,-52,0,80,AIRBORNE
+47,KEY hold,flying forward foreshortened,flying forward foreshortened,0,0,-52,0,80,AIRBORNE
+48,KEY hold,flying forward foreshortened,flying forward foreshortened,0,0,-52,0,80,AIRBORNE
+49,KEY hold,flying forward foreshortened,flying forward foreshortened,0,0,-52,0,80,AIRBORNE
+50,KEY hold,flying forward foreshortened,flying forward foreshortened,0,0,-52,0,80,AIRBORNE
+51,inbetween,flying forward foreshortened,flying hover return,0.12,0.01,-51,0,80,AIRBORNE
+52,inbetween,flying forward foreshortened,flying hover return,0.25,0.06,-49,0,79,AIRBORNE
+53,BREAKDOWN arc +10deg largest-moving arm upper,flying forward foreshortened,flying hover return,0.38,0.21,-43,0,76,AIRBORNE
+54,inbetween,flying forward foreshortened,flying hover return,0.5,0.5,-32,0,70,AIRBORNE
+55,BREAKDOWN follow-through +8deg that arm lower,flying forward foreshortened,flying hover return,0.62,0.79,-20,0,64,AIRBORNE
+56,inbetween,flying forward foreshortened,flying hover return,0.75,0.94,-14,0,61,AIRBORNE
+57,inbetween,flying forward foreshortened,flying hover return,0.88,0.99,-12,0,60,AIRBORNE
+58,KEY hold,flying hover return,flying hover return,0,0,-12,0,60,AIRBORNE
+59,KEY hold,flying hover return,flying hover return,0,0,-12,0,60,AIRBORNE
+60,KEY hold,flying hover return,flying hover return,0,0,-12,0,60,AIRBORNE
+61,KEY hold,flying hover return,flying hover return,0,0,-12,0,60,AIRBORNE
+62,KEY hold,flying hover return,flying hover return,0,0,-12,0,60,AIRBORNE
+63,OVERSHOOT 5% beyond key,flying forward foreshortened,flying hover return,1.05,1.05,-12,0,60,AIRBORNE
+64,SETTLE back to key,flying hover return,flying hover return,1.0,1.0,-12,0,60,AIRBORNE
+65,inbetween,flying hover return,apose,0.12,0.01,-11,0,60,AIRBORNE
+66,inbetween,flying hover return,apose,0.25,0.06,-11,0,56,AIRBORNE
+67,BREAKDOWN arc +10deg largest-moving arm upper,flying hover return,apose,0.38,0.21,-9,0,47,AIRBORNE
+68,inbetween,flying hover return,apose,0.5,0.5,-6,0,30,AIRBORNE
+69,BREAKDOWN follow-through +8deg that arm lower,flying hover return,apose,0.62,0.79,-2,0,13,AIRBORNE
+70,inbetween,flying hover return,apose,0.75,0.94,0,0,4,AIRBORNE
+71,inbetween,flying hover return,apose,0.88,0.99,0,0,0,AIRBORNE
+72,KEY hold,apose,apose,0,0,0,0,0,AIRBORNE
+73,KEY hold,apose,apose,0,0,0,0,0,AIRBORNE
+74,KEY hold,apose,apose,0,0,0,0,0,AIRBORNE

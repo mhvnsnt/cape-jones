@@ -1,0 +1,15 @@
+{
+  "total_ways": 10,
+  "wired_documented_with_steps": 10,
+  "wired_pct": 100,
+  "live_verified_harmony_run": 0,
+  "live_pct": 0,
+  "free_first": 6,
+  "paid_or_trial_then_paid": 4,
+  "needs_mars": 8,
+  "blocked_on_this_vm_alone": 4,
+  "recommended_first": "Way 1 Native Linux tar.gz on Rocky/CentOS, then Way 9 separate Windows machine, Way 10 Cape Jones Toon today",
+  "not_claimed": ["Harmony installed on Linux", "Harmony installed on Windows", "Harmony launched", "Harmony activated", "Subscription confirmed"],
+  "paid_runs_started": 0,
+  "cracking_or_bypass": false
+}

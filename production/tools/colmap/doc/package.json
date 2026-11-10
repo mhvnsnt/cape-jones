@@ -1,0 +1,23 @@
+{
+  "name": "colmap-documentation-viewer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "vite build",
+    "pretest": "vite build",
+    "test": "vitest run",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@types/node": "26.6.4",
+    "@types/three": "0.186.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.3",
+    "vitest": "5.0.3"
+  }
+}

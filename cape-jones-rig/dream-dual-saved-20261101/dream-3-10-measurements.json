@@ -1,0 +1,386 @@
+{
+  "3": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-dual-saved-20261101/presets/dream-3/dream-3-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 3",
+      "name": "Dream 3 \u2014 Cyan Cape",
+      "status": "PRESET, approval 0/1 separately",
+      "cape": [
+        0,
+        200,
+        255
+      ],
+      "cowl_helm": [
+        255,
+        60,
+        180
+      ],
+      "suit": [
+        255,
+        255,
+        255
+      ],
+      "suit_shadow": [
+        178,
+        186,
+        199
+      ],
+      "skin": [
+        255,
+        200,
+        180
+      ],
+      "rim_6px": [
+        0,
+        200,
+        255
+      ],
+      "method": "nearest-base-colour recolour, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ]
+    }
+  },
+  "4": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-dual-saved-20261101/presets/dream-4/dream-4-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 4",
+      "name": "Dream 4 \u2014 Red Cape, Violet Helm",
+      "status": "PRESET, approval 0/1 separately",
+      "cape": [
+        255,
+        60,
+        60
+      ],
+      "cowl_helm": [
+        140,
+        80,
+        220
+      ],
+      "suit": [
+        200,
+        210,
+        220
+      ],
+      "suit_shadow": [
+        150,
+        160,
+        175
+      ],
+      "skin": [
+        255,
+        200,
+        180
+      ],
+      "rim_6px": [
+        255,
+        60,
+        60
+      ],
+      "method": "nearest-base-colour recolour, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ]
+    }
+  },
+  "5": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-dual-saved-20261101/presets/dream-5/dream-5-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 5",
+      "name": "Dream 5 \u2014 Green Cape, Orange Helm",
+      "status": "PRESET, approval 0/1 separately",
+      "cape": [
+        60,
+        220,
+        120
+      ],
+      "cowl_helm": [
+        255,
+        140,
+        40
+      ],
+      "suit": [
+        255,
+        255,
+        255
+      ],
+      "suit_shadow": [
+        178,
+        186,
+        199
+      ],
+      "skin": [
+        255,
+        200,
+        180
+      ],
+      "rim_6px": [
+        60,
+        220,
+        120
+      ],
+      "method": "nearest-base-colour recolour, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ]
+    }
+  },
+  "6": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-dual-saved-20261101/presets/dream-6/dream-6-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 6",
+      "name": "Dream 6 \u2014 Purple Cape, Gold Suit",
+      "status": "PRESET, approval 0/1 separately",
+      "cape": [
+        140,
+        60,
+        255
+      ],
+      "cowl_helm": [
+        40,
+        200,
+        210
+      ],
+      "suit": [
+        255,
+        205,
+        90
+      ],
+      "suit_shadow": [
+        200,
+        150,
+        70
+      ],
+      "skin": [
+        255,
+        200,
+        180
+      ],
+      "rim_6px": [
+        140,
+        60,
+        255
+      ],
+      "method": "nearest-base-colour recolour, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ]
+    }
+  },
+  "7": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-dual-saved-20261101/presets/dream-7/dream-7-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 7",
+      "name": "Dream 7 \u2014 White Cape, Black Suit",
+      "status": "PRESET, approval 0/1 separately",
+      "cape": [
+        255,
+        255,
+        255
+      ],
+      "cowl_helm": [
+        255,
+        60,
+        180
+      ],
+      "suit": [
+        20,
+        20,
+        30
+      ],
+      "suit_shadow": [
+        60,
+        60,
+        75
+      ],
+      "skin": [
+        255,
+        200,
+        180
+      ],
+      "rim_6px": [
+        255,
+        255,
+        255
+      ],
+      "method": "nearest-base-colour recolour, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ]
+    }
+  },
+  "8": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-dual-saved-20261101/presets/dream-8/dream-8-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 8",
+      "name": "Dream 8 \u2014 Teal Cape, Lavender Suit",
+      "status": "PRESET, approval 0/1 separately",
+      "cape": [
+        0,
+        180,
+        180
+      ],
+      "cowl_helm": [
+        255,
+        205,
+        90
+      ],
+      "suit": [
+        200,
+        180,
+        255
+      ],
+      "suit_shadow": [
+        160,
+        140,
+        210
+      ],
+      "skin": [
+        255,
+        200,
+        180
+      ],
+      "rim_6px": [
+        0,
+        180,
+        180
+      ],
+      "method": "nearest-base-colour recolour, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ]
+    }
+  },
+  "9": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-dual-saved-20261101/presets/dream-9/dream-9-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 9",
+      "name": "Dream 9 \u2014 Orange Cape, Blue Helm",
+      "status": "PRESET, approval 0/1 separately",
+      "cape": [
+        255,
+        120,
+        40
+      ],
+      "cowl_helm": [
+        40,
+        100,
+        255
+      ],
+      "suit": [
+        255,
+        255,
+        255
+      ],
+      "suit_shadow": [
+        178,
+        186,
+        199
+      ],
+      "skin": [
+        255,
+        200,
+        180
+      ],
+      "rim_6px": [
+        255,
+        120,
+        40
+      ],
+      "method": "nearest-base-colour recolour, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ]
+    }
+  },
+  "10": {
+    "file": "/home/hatch/workspace/cape-jones-rig/dream-dual-saved-20261101/presets/dream-10/dream-10-20261101.png",
+    "size": [
+      1100,
+      1500
+    ],
+    "spec": {
+      "preset": "Dream 10",
+      "name": "Dream 10 \u2014 Light Pink Cape, Cyan Suit",
+      "status": "PRESET, approval 0/1 separately",
+      "cape": [
+        255,
+        120,
+        220
+      ],
+      "cowl_helm": [
+        60,
+        220,
+        120
+      ],
+      "suit": [
+        180,
+        240,
+        255
+      ],
+      "suit_shadow": [
+        140,
+        190,
+        210
+      ],
+      "skin": [
+        255,
+        200,
+        180
+      ],
+      "rim_6px": [
+        255,
+        120,
+        220
+      ],
+      "method": "nearest-base-colour recolour, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim",
+      "source_base": "rig-apose-v7c-clean-transparent.png",
+      "size": [
+        1100,
+        1500
+      ]
+    }
+  }
+}

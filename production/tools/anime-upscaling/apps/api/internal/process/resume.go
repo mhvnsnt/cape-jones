@@ -1,0 +1,281 @@
+package process
+
+import (
+	"path/filepath"
+	"sort"
+
+	"anime-upscaling/internal/config"
+	"anime-upscaling/internal/files"
+	"anime-upscaling/internal/pipeline"
+	"anime-upscaling/internal/runner"
+)
+
+// FilePlan describes where a single file enters a custom pipeline: the step it
+// starts on and the directory that step reads from.
+type FilePlan struct {
+	Name      string
+	StartStep int
+	InputDir  string
+}
+
+// RemainingSteps is how many steps this file still has to run. It is the file's
+// contribution to a job's progress total.
+func (p FilePlan) RemainingSteps(steps []pipeline.PipelineStep) int {
+	if p.StartStep >= len(steps) {
+		return 0
+	}
+	return len(steps) - p.StartStep
+}
+
+// StageDir maps a canonical stage folder name to its absolute path, or "" if
+// the name is not a known stage.
+func StageDir(cfg config.Config, stage string) string {
+	switch stage {
+	case "input":
+		return cfg.InputDir
+	case "output":
+		return cfg.OutputDir
+	case "interpolated":
+		return cfg.InterpolatedDir
+	case "optimized":
+		return cfg.OptimizedDir
+	}
+	return ""
+}
+
+// QueueKind identifies which worker pool a pipeline step contends for.
+type QueueKind int
+
+const (
+	QueueNone QueueKind = iota
+	QueueGPU
+	QueueFFmpeg
+)
+
+// optimizeUsesGPU centralises the condition for routing an optimize step to the
+// GPU pool, so the admission planner and the executor cannot drift apart about
+// which queue a given file will block on.
+func optimizeUsesGPU(cfg config.Config, step pipeline.PipelineStep) bool {
+	return step.UseGPU && cfg.GPUVendor != "" && step.Codec != "copy" && step.Codec != "libvpx-vp9"
+}
+
+// firstAcquire finds the first step at or after startStep that contends for a
+// worker pool, returning that pool and the step's index. Returns (QueueNone, -1)
+// when the file never acquires one (only cleanups left).
+func firstAcquire(cfg config.Config, steps []pipeline.PipelineStep, startStep int) (QueueKind, int) {
+	for i := startStep; i < len(steps); i++ {
+		switch steps[i].Operation {
+		case "upscale", "interpolate":
+			return QueueGPU, i
+		case "optimize":
+			if optimizeUsesGPU(cfg, steps[i]) {
+				return QueueGPU, i
+			}
+			return QueueFFmpeg, i
+		}
+	}
+	return QueueNone, -1
+}
+
+// FirstQueue reports which worker pool a file first blocks on when it resumes
+// at startStep, or QueueNone when it never acquires one (only cleanups left).
+func FirstQueue(cfg config.Config, steps []pipeline.PipelineStep, startStep int) QueueKind {
+	kind, _ := firstAcquire(cfg, steps, startStep)
+	return kind
+}
+
+// GroupForAdmission partitions plan indices by the worker pool each file first
+// blocks on, ordering every pool by the same rule the queues use to pick among
+// waiters: files further along the pipeline first, then natural order.
+//
+// The ordering matters because a pool with free slots hands them out on
+// Acquire's fast path, which ignores priority entirely — whoever is admitted
+// first simply wins. Admitting in plan order would therefore give the GPUs to
+// fresh step-0 files while files resumed at a later step, which the priority
+// comparator is meant to favour, waited behind all of them.
+func GroupForAdmission(cfg config.Config, steps []pipeline.PipelineStep, plans []FilePlan) map[QueueKind][]int {
+	groups := make(map[QueueKind][]int, 3)
+	acquireStep := make([]int, len(plans))
+	for i, p := range plans {
+		kind, step := firstAcquire(cfg, steps, p.StartStep)
+		acquireStep[i] = step
+		groups[kind] = append(groups[kind], i)
+	}
+	// priority mirrors what the file will pass to Acquire on its first step, so
+	// admission order and waiter order agree.
+	for _, idxs := range groups {
+		sort.SliceStable(idxs, func(a, b int) bool {
+			ia, ib := idxs[a], idxs[b]
+			return pipelinePriority(acquireStep[ia], ia+1) > pipelinePriority(acquireStep[ib], ib+1)
+		})
+	}
+	return groups
+}
+
+// producer is a pipeline step that writes a stage folder, paired with it.
+type producer struct {
+	stepIdx int
+	dir     string
+}
+
+// stageProducers lists the producing steps in pipeline order.
+func stageProducers(cfg config.Config, steps []pipeline.PipelineStep) []producer {
+	var out []producer
+	for i, s := range steps {
+		stage := pipeline.StepOutputStage(s.Operation)
+		if stage == "" {
+			continue
+		}
+		if dir := StageDir(cfg, stage); dir != "" {
+			out = append(out, producer{stepIdx: i, dir: dir})
+		}
+	}
+	return out
+}
+
+// StrandedStatus says where a file stands in a pipeline's stage folders.
+type StrandedStatus int
+
+const (
+	// StrandedMissing: no stage folder this pipeline writes holds the file.
+	StrandedMissing StrandedStatus = iota
+	// StrandedResumable: the file sits mid-pipeline and has work left.
+	StrandedResumable
+	// StrandedFinished: the file already went through the last producing step.
+	StrandedFinished
+)
+
+// LocateStranded plans a file the user picked that is absent from the run's
+// source folder. The file picker lists every stage at once, so an episode that
+// was upscaled (and cleaned out of the source) by an earlier run is right there
+// to be picked — and it should resume, not be refused. Like an adopted orphan,
+// it resumes at the step after the furthest producing step whose output folder
+// still holds it.
+func LocateStranded(cfg config.Config, steps []pipeline.PipelineStep, name string) (FilePlan, StrandedStatus) {
+	producers := stageProducers(cfg, steps)
+	var found *producer
+	for i := range producers {
+		if files.FileExists(filepath.Join(producers[i].dir, name)) {
+			found = &producers[i] // later stages overwrite earlier ones
+		}
+	}
+	if found == nil {
+		return FilePlan{}, StrandedMissing
+	}
+	if found.stepIdx >= producers[len(producers)-1].stepIdx {
+		return FilePlan{}, StrandedFinished
+	}
+	return FilePlan{Name: name, StartStep: found.stepIdx + 1, InputDir: found.dir}, StrandedResumable
+}
+
+// WithStranded adds picked stranded files to a plan, skipping any the planner
+// already adopted as orphans, and restores the plan's natural order (see
+// PlanPipelineFiles for why the order matters).
+func WithStranded(plans, stranded []FilePlan) []FilePlan {
+	have := make(map[string]bool, len(plans))
+	for _, p := range plans {
+		have[p.Name] = true
+	}
+	for _, p := range stranded {
+		if !have[p.Name] {
+			have[p.Name] = true
+			plans = append(plans, p)
+		}
+	}
+	sort.SliceStable(plans, func(i, j int) bool { return files.NaturalLess(plans[i].Name, plans[j].Name) })
+	return plans
+}
+
+// PlanPipelineFiles builds the execution plan for a custom-pipeline run.
+//
+// Files handed in via sourceFiles always start at step 0: their presence in the
+// source folder is unambiguous intent to run the whole pipeline, and re-running
+// a step is safe where trusting a possibly-partial intermediate file is not.
+//
+// On top of those it adopts orphans — files sitting in a stage folder the
+// pipeline writes to that are absent from the source set. A pipeline whose
+// cleanup steps delete each file from the earlier stages as it advances strands
+// everything that was mid-flight when a run is cancelled: re-running from the
+// source folder alone silently drops those files, because cleanup already
+// removed them from it. An orphan resumes at the step after the furthest
+// producing step whose output folder still holds it.
+//
+// An orphan is only adopted when real processing work remains. A file that has
+// reached the last producing step has finished the pipeline — at most some
+// trailing cleanup did not run — so it is left alone rather than re-listed on
+// every subsequent run.
+//
+// scope is the run's subfolder, relative to a stage root (the request's path,
+// "" for a whole-library run). Adoption is confined to it, because a run is
+// responsible for one folder: adopting a stray from a folder the user did not
+// pick would resume it mid-pipeline, and the very next step of a pipeline like
+// upscale/cleanup/interpolate is the cleanup that deletes that episode's master
+// from input/ — for a series this run was never asked to touch.
+func PlanPipelineFiles(cfg config.Config, steps []pipeline.PipelineStep, sourceDir, scope string, sourceFiles []string) []FilePlan {
+	ordered := make([]string, len(sourceFiles))
+	copy(ordered, sourceFiles)
+	files.SortNatural(ordered)
+
+	plans := make([]FilePlan, 0, len(ordered))
+	inSource := make(map[string]bool, len(ordered))
+	for _, f := range ordered {
+		inSource[f] = true
+		plans = append(plans, FilePlan{Name: f, StartStep: 0, InputDir: sourceDir})
+	}
+
+	producers := stageProducers(cfg, steps)
+	if len(producers) == 0 {
+		return plans
+	}
+	lastProducer := producers[len(producers)-1].stepIdx
+
+	// Walk each producing stage folder once, recording per filename the
+	// furthest producer that still holds a copy. Visiting producers in pipeline
+	// order means a later stage simply overwrites an earlier one.
+	furthest := make(map[string]producer)
+	for _, p := range producers {
+		found, err := files.WalkVideos(filepath.Join(p.dir, scope), cfg.VideoExts)
+		if err != nil {
+			continue
+		}
+		for rel := range found {
+			// WalkVideos returns paths relative to the directory it walked, so
+			// re-attach the scope: every other name here — sourceFiles, FilePlan
+			// names, the cleanup lookups — is relative to the stage root.
+			if scope != "" {
+				rel = filepath.ToSlash(filepath.Join(scope, rel))
+			}
+			if inSource[rel] || runner.IsSanitizeArtifact(rel) {
+				continue
+			}
+			furthest[rel] = p
+		}
+	}
+
+	orphans := make([]string, 0, len(furthest))
+	for name, p := range furthest {
+		if p.stepIdx >= lastProducer {
+			continue // already through the pipeline
+		}
+		orphans = append(orphans, name)
+	}
+	// Not sorted here: the whole plan is sorted below, and furthest's keys are
+	// unique, so the comparator is a total order and this order cannot survive.
+
+	for _, name := range orphans {
+		p := furthest[name]
+		plans = append(plans, FilePlan{Name: name, StartStep: p.stepIdx + 1, InputDir: p.dir})
+	}
+
+	// One natural sort over the whole plan, source files and adopted orphans
+	// together. A plan index is not just a label: it is the tiebreak every queue
+	// uses to pick among files waiting on the same step (pipelinePriority), and
+	// it is the order the dashboard lists the job's files in. Appending orphans
+	// after the source files makes that index disagree with the alphabetical
+	// order the file picker shows, and gives every adopted file a worse tiebreak
+	// than every source file — so an episode that resumed one step from the end
+	// loses its pool slot, over and over, to freshly started episodes that catch
+	// up to the same step later.
+	sort.SliceStable(plans, func(i, j int) bool { return files.NaturalLess(plans[i].Name, plans[j].Name) })
+	return plans
+}

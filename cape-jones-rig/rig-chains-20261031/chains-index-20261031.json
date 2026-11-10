@@ -1,0 +1,491 @@
+{
+ "chain-punch": {
+  "frames": 75,
+  "fps": 24,
+  "seconds": 3.12,
+  "label": "GROUNDED",
+  "flight": "",
+  "keys": [
+   {
+    "name": "apose",
+    "src": "v2 builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "punch windup",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 2,
+    "height_video_px": 0
+   },
+   {
+    "name": "punch extend/snap",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 2,
+    "height_video_px": 0
+   },
+   {
+    "name": "punch impact locked",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 2,
+    "height_video_px": 0
+   },
+   {
+    "name": "punch recover / fight",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 2,
+    "height_video_px": 0
+   },
+   {
+    "name": "punch across-down placement",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 2,
+    "height_video_px": 0
+   }
+  ]
+ },
+ "chain-walk": {
+  "frames": 67,
+  "fps": 24,
+  "seconds": 2.79,
+  "label": "GROUNDED",
+  "flight": "",
+  "keys": [
+   {
+    "name": "walk contact A",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 34,
+    "height_video_px": 0
+   },
+   {
+    "name": "walk passing A",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": -8,
+    "height_video_px": 0
+   },
+   {
+    "name": "walk contact B",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 54,
+    "height_video_px": 0
+   },
+   {
+    "name": "walk passing B",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 14,
+    "height_video_px": 0
+   },
+   {
+    "name": "walk contact A",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 34,
+    "height_video_px": 0
+   },
+   {
+    "name": "walk passing A",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": -8,
+    "height_video_px": 0
+   },
+   {
+    "name": "walk contact B",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 54,
+    "height_video_px": 0
+   },
+   {
+    "name": "walk passing B",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 14,
+    "height_video_px": 0
+   },
+   {
+    "name": "walk contact A",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 34,
+    "height_video_px": 0
+   }
+  ]
+ },
+ "chain-dance": {
+  "frames": 93,
+  "fps": 24,
+  "seconds": 3.88,
+  "label": "GROUNDED",
+  "flight": "",
+  "keys": [
+   {
+    "name": "apose",
+    "src": "v2 builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "dance A",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 20,
+    "height_video_px": 0
+   },
+   {
+    "name": "shimmy centre",
+    "src": "Ginyu builder exact (Ginyu 03)",
+    "dy_rig": 12,
+    "height_video_px": 0
+   },
+   {
+    "name": "shimmy sway left",
+    "src": "Ginyu builder exact + rig dx sway, single render",
+    "dy_rig": 12,
+    "height_video_px": 0
+   },
+   {
+    "name": "shimmy sway right",
+    "src": "Ginyu builder exact + rig dx sway, single render",
+    "dy_rig": 12,
+    "height_video_px": 0
+   },
+   {
+    "name": "shimmy centre",
+    "src": "Ginyu builder exact (Ginyu 03)",
+    "dy_rig": 12,
+    "height_video_px": 0
+   },
+   {
+    "name": "dance B",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 30,
+    "height_video_px": 0
+   },
+   {
+    "name": "dance combined finale",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 48,
+    "height_video_px": 0
+   }
+  ]
+ },
+ "chain-flying": {
+  "frames": 75,
+  "fps": 24,
+  "seconds": 3.12,
+  "label": "AIRBORNE",
+  "flight": "flight line: ground->hover 60px->soar 100px->dive 40px->forward 80px->hover 60px->land",
+  "keys": [
+   {
+    "name": "apose",
+    "src": "v2 builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "flying hover",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": -12,
+    "height_video_px": 60
+   },
+   {
+    "name": "flying soar",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": -92,
+    "height_video_px": 100
+   },
+   {
+    "name": "flying dive",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": -68,
+    "height_video_px": 40
+   },
+   {
+    "name": "flying forward foreshortened",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": -52,
+    "height_video_px": 80
+   },
+   {
+    "name": "flying hover return",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": -12,
+    "height_video_px": 60
+   }
+  ]
+ },
+ "chain-flex-fight": {
+  "frames": 75,
+  "fps": 24,
+  "seconds": 3.12,
+  "label": "GROUNDED",
+  "flight": "",
+  "keys": [
+   {
+    "name": "apose",
+    "src": "v2 builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "flex anticipation",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 6,
+    "height_video_px": 0
+   },
+   {
+    "name": "arms up reference",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 2,
+    "height_video_px": 0
+   },
+   {
+    "name": "true flex double bicep (NO 28px dip, labelled)",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact); dip missing as in v2",
+    "dy_rig": 6,
+    "height_video_px": 0
+   },
+   {
+    "name": "fighting forward bicep curl",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 2,
+    "height_video_px": 0
+   },
+   {
+    "name": "fighting stance arms up high",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 2,
+    "height_video_px": 0
+   }
+  ]
+ },
+ "chain-jump": {
+  "frames": 62,
+  "fps": 24,
+  "seconds": 2.58,
+  "label": "AIRBORNE",
+  "flight": "flight line: crouch 0px->takeoff 30px->tuck apex 100px->land 0px",
+  "keys": [
+   {
+    "name": "apose",
+    "src": "v2 builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "jump crouch",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 108,
+    "height_video_px": 0
+   },
+   {
+    "name": "jump takeoff",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 10,
+    "height_video_px": 30
+   },
+   {
+    "name": "jump tuck apex",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": -92,
+    "height_video_px": 100
+   },
+   {
+    "name": "jump land (crouch)",
+    "src": "MEASURED-ESTIMATE +/-15deg (labelled, not builder-exact)",
+    "dy_rig": 108,
+    "height_video_px": 0
+   }
+  ]
+ },
+ "successor-shimmy": {
+  "frames": 61,
+  "fps": 24,
+  "seconds": 2.54,
+  "label": "GROUNDED",
+  "flight": "",
+  "keys": [
+   {
+    "name": "apose",
+    "src": "v2 builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "shimmy centre",
+    "src": "Ginyu builder exact (Ginyu 03)",
+    "dy_rig": 12,
+    "height_video_px": 0
+   },
+   {
+    "name": "shimmy sway left",
+    "src": "Ginyu builder exact + rig dx sway",
+    "dy_rig": 12,
+    "height_video_px": 0
+   },
+   {
+    "name": "shimmy sway right",
+    "src": "Ginyu builder exact + rig dx sway",
+    "dy_rig": 12,
+    "height_video_px": 0
+   },
+   {
+    "name": "shimmy centre",
+    "src": "Ginyu builder exact (Ginyu 03)",
+    "dy_rig": 12,
+    "height_video_px": 0
+   }
+  ]
+ },
+ "successor-ginyu-force": {
+  "frames": 87,
+  "fps": 24,
+  "seconds": 3.62,
+  "label": "GROUNDED",
+  "flight": "",
+  "keys": [
+   {
+    "name": "apose",
+    "src": "v2 builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "Recoome rollcall",
+    "src": "Ginyu builder exact",
+    "dy_rig": 76,
+    "height_video_px": 0
+   },
+   {
+    "name": "Burter rollcall",
+    "src": "Ginyu builder exact",
+    "dy_rig": 30,
+    "height_video_px": 0
+   },
+   {
+    "name": "Jeice rollcall",
+    "src": "Ginyu builder exact",
+    "dy_rig": 2,
+    "height_video_px": 0
+   },
+   {
+    "name": "Guldo rollcall",
+    "src": "Ginyu builder exact",
+    "dy_rig": 108,
+    "height_video_px": 0
+   },
+   {
+    "name": "Captain rollcall",
+    "src": "Ginyu builder exact",
+    "dy_rig": 42,
+    "height_video_px": 0
+   },
+   {
+    "name": "Captain spread",
+    "src": "Ginyu builder exact",
+    "dy_rig": 30,
+    "height_video_px": 0
+   }
+  ]
+ },
+ "successor-pose-dialects": {
+  "frames": 134,
+  "fps": 24,
+  "seconds": 5.58,
+  "label": "GROUNDED",
+  "flight": "",
+  "keys": [
+   {
+    "name": "apose",
+    "src": "v2 builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "JoJo 01 contrapposto",
+    "src": "Ginyu builder exact",
+    "dy_rig": 26,
+    "height_video_px": 0
+   },
+   {
+    "name": "apose neutral between",
+    "src": "v2 builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "JoJo 02 fashion twist",
+    "src": "Ginyu builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "apose neutral between",
+    "src": "v2 builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "JoJo 03 menacing lean",
+    "src": "Ginyu builder exact",
+    "dy_rig": 2,
+    "height_video_px": 0
+   },
+   {
+    "name": "apose neutral between",
+    "src": "v2 builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "Ginyu 01 chest out",
+    "src": "Ginyu builder exact",
+    "dy_rig": 12,
+    "height_video_px": 0
+   },
+   {
+    "name": "apose neutral between",
+    "src": "v2 builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "Ginyu 02 squat",
+    "src": "Ginyu builder exact",
+    "dy_rig": 84,
+    "height_video_px": 0
+   },
+   {
+    "name": "apose neutral between",
+    "src": "v2 builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "Ginyu 03 shimmy",
+    "src": "Ginyu builder exact",
+    "dy_rig": 12,
+    "height_video_px": 0
+   },
+   {
+    "name": "apose neutral between",
+    "src": "v2 builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "Stand 01 user figure only (stand figure omitted, labelled)",
+    "src": "Ginyu builder exact",
+    "dy_rig": 8,
+    "height_video_px": 0
+   },
+   {
+    "name": "apose neutral between",
+    "src": "v2 builder exact",
+    "dy_rig": 0,
+    "height_video_px": 0
+   },
+   {
+    "name": "Stand 02 user figure only (stand figure omitted, labelled)",
+    "src": "Ginyu builder exact",
+    "dy_rig": 38,
+    "height_video_px": 0
+   }
+  ]
+ }
+}

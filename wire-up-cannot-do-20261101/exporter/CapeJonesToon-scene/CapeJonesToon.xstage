@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<xstage version="prototype-1" name="CapeJonesToon" resolution="1100x1500" fps="24" frames="48">
+  <note>PROTOTYPE ONLY. Built from public docs, not from Toon Boom code. Harmony import is UNVERIFIED until a real Harmony binary opens it.</note>
+  <pegs>
+    <peg name="Root" parent=""/>
+    <peg name="Pelvis-P" parent="Root"/>
+    <peg name="Torso-P" parent="Pelvis-P"/>
+    <peg name="Neck-P" parent="Torso-P"/>
+    <peg name="Head-P" parent="Neck-P"/>
+    <peg name="Cape-P" parent="Root"/>
+    <peg name="CapeCollar-P" parent="Torso-P"/>
+    <peg name="Arm1-Upper-P" parent="Torso-P"/>
+    <peg name="Arm1-Forearm-P" parent="Arm1-Upper-P"/>
+    <peg name="Arm1-Hand-P" parent="Arm1-Forearm-P"/>
+    <peg name="Arm2-Upper-P" parent="Torso-P"/>
+    <peg name="Arm2-Forearm-P" parent="Arm2-Upper-P"/>
+    <peg name="Arm2-Hand-P" parent="Arm2-Forearm-P"/>
+    <peg name="Leg1-Thigh-P" parent="Pelvis-P"/>
+    <peg name="Leg1-Knee-P" parent="Leg1-Thigh-P"/>
+    <peg name="Leg2-Thigh-P" parent="Pelvis-P"/>
+    <peg name="Leg2-Knee-P" parent="Leg2-Thigh-P"/>
+  </pegs>
+  <elements>
+    <element name="CapeBack" drawing="elements/CapeBack/drawing-1.png"/>
+    <element name="LegBack" drawing="elements/LegBack/drawing-1.png"/>
+    <element name="LegFront" drawing="elements/LegFront/drawing-1.png"/>
+    <element name="ArmBack" drawing="elements/ArmBack/drawing-1.png"/>
+    <element name="Pelvis" drawing="elements/Pelvis/drawing-1.png"/>
+    <element name="Torso" drawing="elements/Torso/drawing-1.png"/>
+    <element name="CapeCollar" drawing="elements/CapeCollar/drawing-1.png"/>
+    <element name="Neck" drawing="elements/Neck/drawing-1.png"/>
+    <element name="Head" drawing="elements/Head/drawing-1.png"/>
+    <element name="ArmFront" drawing="elements/ArmFront/drawing-1.png"/>
+  </elements>
+  <timings>
+    <frame number="1" exposure="drawing-1"/>
+    <frame number="2" exposure="drawing-1"/>
+    <frame number="3" exposure="drawing-1"/>
+    <frame number="4" exposure="drawing-1"/>
+    <frame number="5" exposure="drawing-1"/>
+    <frame number="6" exposure="drawing-1"/>
+    <frame number="7" exposure="drawing-1"/>
+    <frame number="8" exposure="drawing-1"/>
+    <frame number="9" exposure="drawing-1"/>
+    <frame number="10" exposure="drawing-1"/>
+    <frame number="11" exposure="drawing-1"/>
+    <frame number="12" exposure="drawing-1"/>
+    <frame number="13" exposure="drawing-1"/>
+    <frame number="14" exposure="drawing-1"/>
+    <frame number="15" exposure="drawing-1"/>
+    <frame number="16" exposure="drawing-1"/>
+    <frame number="17" exposure="drawing-1"/>
+    <frame number="18" exposure="drawing-1"/>
+    <frame number="19" exposure="drawing-1"/>
+    <frame number="20" exposure="drawing-1"/>
+    <frame number="21" exposure="drawing-1"/>
+    <frame number="22" exposure="drawing-1"/>
+    <frame number="23" exposure="drawing-1"/>
+    <frame number="24" exposure="drawing-1"/>
+    <frame number="25" exposure="drawing-1"/>
+    <frame number="26" exposure="drawing-1"/>
+    <frame number="27" exposure="drawing-1"/>
+    <frame number="28" exposure="drawing-1"/>
+    <frame number="29" exposure="drawing-1"/>
+    <frame number="30" exposure="drawing-1"/>
+    <frame number="31" exposure="drawing-1"/>
+    <frame number="32" exposure="drawing-1"/>
+    <frame number="33" exposure="drawing-1"/>
+    <frame number="34" exposure="drawing-1"/>
+    <frame number="35" exposure="drawing-1"/>
+    <frame number="36" exposure="drawing-1"/>
+    <frame number="37" exposure="drawing-1"/>
+    <frame number="38" exposure="drawing-1"/>
+    <frame number="39" exposure="drawing-1"/>
+    <frame number="40" exposure="drawing-1"/>
+    <frame number="41" exposure="drawing-1"/>
+    <frame number="42" exposure="drawing-1"/>
+    <frame number="43" exposure="drawing-1"/>
+    <frame number="44" exposure="drawing-1"/>
+    <frame number="45" exposure="drawing-1"/>
+    <frame number="46" exposure="drawing-1"/>
+    <frame number="47" exposure="drawing-1"/>
+    <frame number="48" exposure="drawing-1"/>
+  </timings>
+  <palettes>
+    <palette file="palette-library/CapeJones.plt"/>
+  </palettes>
+</xstage>

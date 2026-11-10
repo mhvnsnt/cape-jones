@@ -1,0 +1,2268 @@
+[
+ {
+  "shot_id": "CJ-01",
+  "slug": "punch-windup",
+  "file": "CJ-01-punch-windup-endtoend-20261031.png",
+  "proof": "CJ-01-punch-windup-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7__punch__punch-01-windup-v7.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (street family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "lut_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "char_gain": [
+   1.2,
+   0.7,
+   1.3
+  ],
+  "rim": [
+   255,
+   178,
+   229
+  ],
+  "bleed": [
+   230,
+   80,
+   170
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   641,
+   70,
+   1279,
+   950
+  ],
+  "char_size": [
+   638,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 641,
+   "right": 641,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 19146,
+  "bleed_px": 29122,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "wind-streaks",
+  "effect_px": 3728,
+  "note": "JOJO-TENSION demo-only; char gain = tension gain, BG = base golden-hour | DEBUG-CLEAN: baked red joint dots converted to white joint balls (plate red px cleaned, see red_debug_px_cleaned); baked red label text inpainted in final (CJ-03 residual 13px faint leader-line remnant, CJ-04 10px, not legible text \u2014 true clean punch plates still owed by the plate lane).",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A01 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 8360
+ },
+ {
+  "shot_id": "CJ-02",
+  "slug": "punch-extend-snap",
+  "file": "CJ-02-punch-extend-snap-endtoend-20261031.png",
+  "proof": "CJ-02-punch-extend-snap-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7__punch__punch-07-extend-snap-v7.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (street family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "lut_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "char_gain": [
+   1.2,
+   0.7,
+   1.3
+  ],
+  "rim": [
+   255,
+   178,
+   229
+  ],
+  "bleed": [
+   230,
+   80,
+   170
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   599,
+   70,
+   1321,
+   950
+  ],
+  "char_size": [
+   722,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 599,
+   "right": 599,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 18828,
+  "bleed_px": 28930,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "snap-lines",
+  "effect_px": 4086,
+  "note": "JOJO-TENSION continued demo-only | DEBUG-CLEAN: baked red joint dots converted to white joint balls (plate red px cleaned, see red_debug_px_cleaned); baked red label text inpainted in final (CJ-03 residual 13px faint leader-line remnant, CJ-04 10px, not legible text \u2014 true clean punch plates still owed by the plate lane).",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A02 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 8426
+ },
+ {
+  "shot_id": "CJ-03",
+  "slug": "punch-impact-locked",
+  "file": "CJ-03-punch-impact-locked-endtoend-20261031.png",
+  "proof": "CJ-03-punch-impact-locked-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7c__punch-impact-locked-v7c.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (street family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "lut_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "char_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "rim": [
+   255,
+   120,
+   115
+  ],
+  "bleed": [
+   220,
+   60,
+   50
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   632,
+   70,
+   1288,
+   950
+  ],
+  "char_size": [
+   656,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 632,
+   "right": 632,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 18268,
+  "bleed_px": 27723,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "impact-burst + gauntlet-glow",
+  "effect_px": 16370,
+  "note": "JOJO-POWER demo-only; locked impact plate; FX passes, not god rays | DEBUG-CLEAN: baked red joint dots converted to white joint balls (plate red px cleaned, see red_debug_px_cleaned); baked red label text inpainted in final (CJ-03 residual 13px faint leader-line remnant, CJ-04 10px, not legible text \u2014 true clean punch plates still owed by the plate lane).",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A03 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 8426
+ },
+ {
+  "shot_id": "CJ-04",
+  "slug": "punch-recover",
+  "file": "CJ-04-punch-recover-endtoend-20261031.png",
+  "proof": "CJ-04-punch-recover-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7__punch__punch-21-recover-v7.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (street family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "lut_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "char_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "bleed": [
+   255,
+   120,
+   0
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   698,
+   70,
+   1221,
+   950
+  ],
+  "char_size": [
+   523,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 698,
+   "right": 699,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 20066,
+  "bleed_px": 30426,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "afterglow-faint",
+  "effect_px": 29848,
+  "note": "Return-to-base: tension/power beats closed here | DEBUG-CLEAN: baked red joint dots converted to white joint balls (plate red px cleaned, see red_debug_px_cleaned); baked red label text inpainted in final (CJ-03 residual 13px faint leader-line remnant, CJ-04 10px, not legible text \u2014 true clean punch plates still owed by the plate lane).",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A04 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 8360
+ },
+ {
+  "shot_id": "CJ-05",
+  "slug": "punch-across-down-placement",
+  "file": "CJ-05-punch-across-down-placement-endtoend-20261031.png",
+  "proof": "CJ-05-punch-across-down-placement-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7c__punch-arm2-variants__punch-impact-a2l-minus70-across-down-v7c.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (town family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1,
+   1,
+   1
+  ],
+  "lut_gain": [
+   1,
+   1,
+   1
+  ],
+  "char_gain": [
+   1,
+   1,
+   1
+  ],
+  "rim": [
+   255,
+   255,
+   255
+  ],
+  "bleed": [
+   255,
+   255,
+   255
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   632,
+   70,
+   1288,
+   950
+  ],
+  "char_size": [
+   656,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 632,
+   "right": 632,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 18153,
+  "bleed_px": 27500,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "placement-glow",
+  "effect_px": 18464,
+  "note": "Across-down placement frame, NOT the impact frame. QC CJ-05 is post-episode per Space Ghost workflow, not a hold. | DEBUG-CLEAN: baked red joint dots converted to white joint balls (plate red px cleaned, see red_debug_px_cleaned); baked red label text inpainted in final (CJ-03 residual 13px faint leader-line remnant, CJ-04 10px, not legible text \u2014 true clean punch plates still owed by the plate lane).",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A05 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 8426
+ },
+ {
+  "shot_id": "CJ-06",
+  "slug": "walk-street-contact",
+  "file": "CJ-06-walk-street-contact-endtoend-20261031.png",
+  "proof": "CJ-06-walk-street-contact-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7c-clean-20261031__walk__walk-01-contact-v7c-clean.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (street family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1,
+   1,
+   1
+  ],
+  "lut_gain": [
+   1,
+   1,
+   1
+  ],
+  "char_gain": [
+   1,
+   1,
+   1
+  ],
+  "rim": [
+   255,
+   255,
+   255
+  ],
+  "bleed": [
+   255,
+   255,
+   255
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   694,
+   70,
+   1225,
+   950
+  ],
+  "char_size": [
+   531,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 694,
+   "right": 695,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 17055,
+  "bleed_px": 26194,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "dust-puffs",
+  "effect_px": 5806,
+  "note": "QC CJ-06 is post-episode per Space Ghost workflow, not a hold.",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A06 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-07",
+  "slug": "walk-town-passing",
+  "file": "CJ-07-walk-town-passing-endtoend-20261031.png",
+  "proof": "CJ-07-walk-town-passing-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7c-clean-20261031__walk__walk-13-passing-v7c-clean.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (town family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "lut_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "char_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "bleed": [
+   255,
+   120,
+   0
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   697,
+   70,
+   1222,
+   950
+  ],
+  "char_size": [
+   525,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 697,
+   "right": 698,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 18162,
+  "bleed_px": 28403,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "dust-puffs",
+  "effect_px": 5806,
+  "note": "",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A07 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-08",
+  "slug": "walk-alley-night",
+  "file": "CJ-08-walk-alley-night-endtoend-20261031.png",
+  "proof": "CJ-08-walk-alley-night-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7c-clean-20261031__walk__walk-25-contact-v7c-clean.png",
+  "bg_kind": "painted",
+  "bg_source": "clean-100-20261031/layouts/bg-alley-painted-20261031.jpg",
+  "level": "Level 2",
+  "lut": [
+   0.8,
+   0.85,
+   1.05
+  ],
+  "lut_gain": [
+   0.8,
+   0.85,
+   1.05
+  ],
+  "char_gain": [
+   0.8,
+   0.85,
+   1.05
+  ],
+  "rim": [
+   160,
+   185,
+   255
+  ],
+  "bleed": [
+   80,
+   120,
+   255
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   691,
+   70,
+   1228,
+   950
+  ],
+  "char_size": [
+   537,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 691,
+   "right": 692,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 16539,
+  "bleed_px": 25277,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "dust-puffs-night",
+  "effect_px": 5806,
+  "note": "Painted alley plate",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A08 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-09",
+  "slug": "dance-a",
+  "file": "CJ-09-dance-a-endtoend-20261031.png",
+  "proof": "CJ-09-dance-a-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7c-clean-20261031__dance__dance-01-a-v7c-clean.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (stage family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1.25,
+   0.75,
+   1.15
+  ],
+  "lut_gain": [
+   1.25,
+   0.75,
+   1.15
+  ],
+  "char_gain": [
+   1.25,
+   0.75,
+   1.15
+  ],
+  "rim": [
+   255,
+   178,
+   229
+  ],
+  "bleed": [
+   230,
+   80,
+   180
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   717,
+   70,
+   1202,
+   950
+  ],
+  "char_size": [
+   485,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 717,
+   "right": 718,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 16868,
+  "bleed_px": 26010,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "stage-sparkles",
+  "effect_px": 5560,
+  "note": "Song tempo is post-episode per Space Ghost workflow, not a hold.",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A09 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-10",
+  "slug": "dance-b",
+  "file": "CJ-10-dance-b-endtoend-20261031.png",
+  "proof": "CJ-10-dance-b-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7c-clean-20261031__dance__dance-13-b-v7c-clean.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (stage family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1.25,
+   0.85,
+   1.05
+  ],
+  "lut_gain": [
+   1.25,
+   0.85,
+   1.05
+  ],
+  "char_gain": [
+   1.25,
+   0.85,
+   1.05
+  ],
+  "rim": [
+   255,
+   190,
+   220
+  ],
+  "bleed": [
+   235,
+   110,
+   185
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   732,
+   70,
+   1188,
+   950
+  ],
+  "char_size": [
+   456,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 732,
+   "right": 732,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 15923,
+  "bleed_px": 24637,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "stage-sparkles",
+  "effect_px": 5522,
+  "note": "",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A10 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-11",
+  "slug": "dance-combined-finale",
+  "file": "CJ-11-dance-combined-finale-endtoend-20261031.png",
+  "proof": "CJ-11-dance-combined-finale-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7c-clean-20261031__dance__dance-25-a-v7c-clean.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (stage family; final painted BG owed)",
+  "level": "Level 3",
+  "lut": [
+   1.05,
+   0.75,
+   1.2
+  ],
+  "lut_gain": [
+   1.05,
+   0.75,
+   1.2
+  ],
+  "char_gain": [
+   1.05,
+   0.75,
+   1.2
+  ],
+  "rim": [
+   220,
+   150,
+   255
+  ],
+  "bleed": [
+   170,
+   80,
+   235
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   717,
+   70,
+   1202,
+   950
+  ],
+  "char_size": [
+   485,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 717,
+   "right": 718,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 16868,
+  "bleed_px": 26010,
+  "shaft_count": 6,
+  "shaft_colours": [
+   [
+    220,
+    150,
+    255
+   ]
+  ],
+  "effect": "stage-sparkles",
+  "effect_px": 5560,
+  "note": "L3 spotlight shafts",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A11 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-12",
+  "slug": "flying-hover",
+  "file": "CJ-12-flying-hover-endtoend-20261031.png",
+  "proof": "CJ-12-flying-hover-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7c-clean-20261031__flying__flying-01-hover-v7c-clean.png",
+  "bg_kind": "painted",
+  "bg_source": "clean-100-20261031/layouts/bg-flying-painted-20261031.jpg",
+  "level": "Level 3",
+  "lut": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "lut_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "char_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "bleed": [
+   255,
+   120,
+   0
+  ],
+  "dual_light": null,
+  "mode": "AIRBORNE",
+  "height_px": 120,
+  "ground_y": 1040,
+  "feet_y": 920,
+  "flight_line_y": 920,
+  "char_bbox": [
+   698,
+   40,
+   1222,
+   920
+  ],
+  "char_size": [
+   524,
+   880
+  ],
+  "canvas": [
+   1920,
+   1170
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 698,
+   "right": 698,
+   "top": 40,
+   "bottom": 250
+  },
+  "rim_px": 18251,
+  "bleed_px": 28509,
+  "shaft_count": 6,
+  "shaft_colours": [
+   [
+    255,
+    180,
+    80
+   ]
+  ],
+  "effect": "hover-rings",
+  "effect_px": 31080,
+  "note": "AIRBORNE flying: hover, 120px above ground line in final canvas, flight line at feet level",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A12 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-13",
+  "slug": "flying-soar",
+  "file": "CJ-13-flying-soar-endtoend-20261031.png",
+  "proof": "CJ-13-flying-soar-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7c-clean-20261031__flying__flying-13-soar-v7c-clean.png",
+  "bg_kind": "painted",
+  "bg_source": "clean-100-20261031/layouts/bg-flying-painted-20261031.jpg",
+  "level": "Level 3",
+  "lut": [
+   1.15,
+   1.0,
+   0.65
+  ],
+  "lut_gain": [
+   1.15,
+   1.0,
+   0.65
+  ],
+  "char_gain": [
+   1.15,
+   1.0,
+   0.65
+  ],
+  "rim": [
+   255,
+   200,
+   110
+  ],
+  "bleed": [
+   255,
+   150,
+   40
+  ],
+  "dual_light": null,
+  "mode": "AIRBORNE",
+  "height_px": 170,
+  "ground_y": 1090,
+  "feet_y": 920,
+  "flight_line_y": 920,
+  "char_bbox": [
+   504,
+   40,
+   1416,
+   920
+  ],
+  "char_size": [
+   912,
+   880
+  ],
+  "canvas": [
+   1920,
+   1220
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 504,
+   "right": 504,
+   "top": 40,
+   "bottom": 300
+  },
+  "rim_px": 19638,
+  "bleed_px": 30181,
+  "shaft_count": 6,
+  "shaft_colours": [
+   [
+    255,
+    200,
+    110
+   ]
+  ],
+  "effect": "speed-lines",
+  "effect_px": 8544,
+  "note": "AIRBORNE flying: soar, 170px above ground line, flight line at feet level",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A13 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-14",
+  "slug": "flying-dive",
+  "file": "CJ-14-flying-dive-endtoend-20261031.png",
+  "proof": "CJ-14-flying-dive-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7c-clean-20261031__flying__flying-25-dive-v7c-clean.png",
+  "bg_kind": "painted",
+  "bg_source": "clean-100-20261031/layouts/bg-flying-painted-20261031.jpg",
+  "level": "Level 3",
+  "lut": [
+   1.15,
+   0.8,
+   0.7
+  ],
+  "lut_gain": [
+   1.15,
+   0.8,
+   0.7
+  ],
+  "char_gain": [
+   1.15,
+   0.8,
+   0.7
+  ],
+  "rim": [
+   255,
+   155,
+   75
+  ],
+  "bleed": [
+   255,
+   100,
+   20
+  ],
+  "dual_light": null,
+  "mode": "AIRBORNE",
+  "height_px": 150,
+  "ground_y": 1070,
+  "feet_y": 920,
+  "flight_line_y": 920,
+  "char_bbox": [
+   713,
+   40,
+   1206,
+   920
+  ],
+  "char_size": [
+   493,
+   880
+  ],
+  "canvas": [
+   1920,
+   1200
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 713,
+   "right": 714,
+   "top": 40,
+   "bottom": 280
+  },
+  "rim_px": 17334,
+  "bleed_px": 26701,
+  "shaft_count": 6,
+  "shaft_colours": [
+   [
+    255,
+    155,
+    75
+   ]
+  ],
+  "effect": "dive-streaks",
+  "effect_px": 8544,
+  "note": "AIRBORNE flying: dive, 150px above ground line, flight line at feet level",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A14 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-15",
+  "slug": "flying-forward-foreshortened",
+  "file": "CJ-15-flying-forward-foreshortened-endtoend-20261031.png",
+  "proof": "CJ-15-flying-forward-foreshortened-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7c-clean-20261031__flying__flying-37-hover-v7c-clean.png",
+  "bg_kind": "painted",
+  "bg_source": "clean-100-20261031/layouts/bg-flying-painted-20261031.jpg",
+  "level": "Level 2",
+  "lut": [
+   0.7,
+   1.0,
+   1.25
+  ],
+  "lut_gain": [
+   0.7,
+   1.0,
+   1.25
+  ],
+  "char_gain": [
+   0.7,
+   1.0,
+   1.25
+  ],
+  "rim": [
+   140,
+   200,
+   255
+  ],
+  "bleed": [
+   70,
+   140,
+   255
+  ],
+  "dual_light": null,
+  "mode": "AIRBORNE",
+  "height_px": 140,
+  "ground_y": 1060,
+  "feet_y": 920,
+  "flight_line_y": 920,
+  "char_bbox": [
+   698,
+   40,
+   1222,
+   920
+  ],
+  "char_size": [
+   524,
+   880
+  ],
+  "canvas": [
+   1920,
+   1190
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 698,
+   "right": 698,
+   "top": 40,
+   "bottom": 270
+  },
+  "rim_px": 18251,
+  "bleed_px": 28509,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "speed-lines",
+  "effect_px": 8544,
+  "note": "AIRBORNE flying: forward flight, 140px above ground line. PLATE STAND-IN: true foreshortened forearm piece still owed \u2014 this is a hover plate, grade/BG/shafts/effects are final-pattern, pose swap is a later asset swap, not a hold on the other 29.",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A15 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-16",
+  "slug": "flex-anticipation-before-tighten",
+  "file": "CJ-16-flex-anticipation-before-tighten-endtoend-20261031.png",
+  "proof": "CJ-16-flex-anticipation-before-tighten-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/reposes-v7c-clean__flex-anticipation-before-tighten-v7c-clean.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (any family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1.25,
+   0.95,
+   0.65
+  ],
+  "lut_gain": [
+   1.25,
+   0.95,
+   0.65
+  ],
+  "char_gain": [
+   1.25,
+   0.95,
+   0.65
+  ],
+  "rim": [
+   255,
+   180,
+   90
+  ],
+  "bleed": [
+   255,
+   120,
+   30
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   681,
+   70,
+   1239,
+   950
+  ],
+  "char_size": [
+   558,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 681,
+   "right": 681,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 17677,
+  "bleed_px": 27024,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "power-aura",
+  "effect_px": 38016,
+  "note": "",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A16 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-17",
+  "slug": "arms-up-reference",
+  "file": "CJ-17-arms-up-reference-endtoend-20261031.png",
+  "proof": "CJ-17-arms-up-reference-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/dual-light-variants-20261031/base-arms-up-transparent-20261031.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (any family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1.2,
+   1.15,
+   0.7
+  ],
+  "lut_gain": [
+   1.2,
+   1.15,
+   0.7
+  ],
+  "char_gain": [
+   1.2,
+   1.15,
+   0.7
+  ],
+  "rim": [
+   255,
+   230,
+   140
+  ],
+  "bleed": [
+   255,
+   200,
+   60
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   682,
+   70,
+   1237,
+   950
+  ],
+  "char_size": [
+   555,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 682,
+   "right": 683,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 23541,
+  "bleed_px": 44667,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "aura-soft",
+  "effect_px": 37936,
+  "note": "Arms-up reference pose, NOT a flex",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A17 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-18",
+  "slug": "true-flex-double-bicep",
+  "file": "CJ-18-true-flex-double-bicep-endtoend-20261031.png",
+  "proof": "CJ-18-true-flex-double-bicep-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/reposes-v7c-clean__true-flex-double-bicep-v7c-clean.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (any family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1.25,
+   0.85,
+   0.65
+  ],
+  "lut_gain": [
+   1.25,
+   0.85,
+   0.65
+  ],
+  "char_gain": [
+   1.25,
+   0.85,
+   0.65
+  ],
+  "rim": [
+   255,
+   165,
+   95
+  ],
+  "bleed": [
+   255,
+   110,
+   30
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   684,
+   70,
+   1235,
+   950
+  ],
+  "char_size": [
+   551,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 684,
+   "right": 685,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 18344,
+  "bleed_px": 27918,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "power-aura",
+  "effect_px": 37832,
+  "note": "Base double-bicep plate used; the FAILED fists-in file is NOT used. Pose-space seam candidate exists separately; Mars look decides.",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A18 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-19",
+  "slug": "fighting-pose-forward-bicep-curl",
+  "file": "CJ-19-fighting-pose-forward-bicep-curl-endtoend-20261031.png",
+  "proof": "CJ-19-fighting-pose-forward-bicep-curl-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/reposes-v7c-clean__fighting-pose-forward-bicep-curl-gauntlet-out-fixed-v7c-clean.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (any family; final painted BG owed)",
+  "level": "Level 3",
+  "lut": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "lut_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "char_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "bleed": [
+   255,
+   120,
+   0
+  ],
+  "dual_light": [
+   [
+    255,
+    180,
+    80
+   ],
+   [
+    0,
+    200,
+    255
+   ],
+   [
+    255,
+    120,
+    0
+   ],
+   [
+    0,
+    140,
+    200
+   ]
+  ],
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   736,
+   70,
+   1183,
+   950
+  ],
+  "char_size": [
+   447,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 736,
+   "right": 737,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 14631,
+  "bleed_px": 22381,
+  "shaft_count": 6,
+  "shaft_colours": [
+   [
+    255,
+    180,
+    80
+   ],
+   [
+    0,
+    200,
+    255
+   ]
+  ],
+  "effect": "gauntlet-glow",
+  "effect_px": 3912,
+  "note": "DUAL-LIGHT: front rim warm amber 255,180,80 (front warm gold key) + back rim cyan 0,200,255 (back cyan source); front bleed 255,120,0, back bleed 0,140,200. Rim split left=front, right=back.",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A19 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-20",
+  "slug": "fighting-stance-arms-up-high",
+  "file": "CJ-20-fighting-stance-arms-up-high-endtoend-20261031.png",
+  "proof": "CJ-20-fighting-stance-arms-up-high-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/dual-light-variants-20261031/base-arms-up-transparent-20261031.png",
+  "bg_kind": "script",
+  "bg_source": "colour-script multiplane (any family; final painted BG owed)",
+  "level": "Level 2",
+  "lut": [
+   1.15,
+   0.85,
+   0.6
+  ],
+  "lut_gain": [
+   1.15,
+   0.85,
+   0.6
+  ],
+  "char_gain": [
+   1.15,
+   0.85,
+   0.6
+  ],
+  "rim": [
+   255,
+   150,
+   60
+  ],
+  "bleed": [
+   255,
+   100,
+   20
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   682,
+   70,
+   1237,
+   950
+  ],
+  "char_size": [
+   555,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 682,
+   "right": 683,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 23541,
+  "bleed_px": 44667,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "aura-soft",
+  "effect_px": 37936,
+  "note": "Same arms-up plate as CJ-17, different shot spec (grade/BG/effect differ)",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A20 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-21",
+  "slug": "jump-crouch-takeoff",
+  "file": "CJ-21-jump-crouch-takeoff-endtoend-20261031.png",
+  "proof": "CJ-21-jump-crouch-takeoff-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7c-clean-20261031__jump__jump-07-takeoff-v7c-clean.png",
+  "bg_kind": "painted",
+  "bg_source": "clean-100-20261031/layouts/bg-rooftop-painted-20261031.jpg",
+  "level": "Level 2",
+  "lut": [
+   0.7,
+   1.1,
+   1.05
+  ],
+  "lut_gain": [
+   0.7,
+   1.1,
+   1.05
+  ],
+  "char_gain": [
+   0.7,
+   1.1,
+   1.05
+  ],
+  "rim": [
+   140,
+   220,
+   210
+  ],
+  "bleed": [
+   60,
+   180,
+   170
+  ],
+  "dual_light": null,
+  "mode": "AIRBORNE",
+  "height_px": 100,
+  "ground_y": 1020,
+  "feet_y": 920,
+  "flight_line_y": 920,
+  "char_bbox": [
+   713,
+   40,
+   1206,
+   920
+  ],
+  "char_size": [
+   493,
+   880
+  ],
+  "canvas": [
+   1920,
+   1150
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 713,
+   "right": 714,
+   "top": 40,
+   "bottom": 230
+  },
+  "rim_px": 17284,
+  "bleed_px": 26335,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "takeoff-dust",
+  "effect_px": 5806,
+  "note": "AIRBORNE jumping: takeoff, 100px above ground line, flight line at feet level. Hero = takeoff frame; crouch frame (grounded) is movement frame A of the same shot.",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A21 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-22",
+  "slug": "jump-tuck-landing",
+  "file": "CJ-22-jump-tuck-landing-endtoend-20261031.png",
+  "proof": "CJ-22-jump-tuck-landing-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/clips-v7c-clean-20261031__jump__jump-25-land-v7c-clean.png",
+  "bg_kind": "painted",
+  "bg_source": "clean-100-20261031/layouts/bg-rooftop-painted-20261031.jpg",
+  "level": "Level 3",
+  "lut": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "lut_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "char_gain": [
+   1.1,
+   0.95,
+   0.7
+  ],
+  "rim": [
+   255,
+   180,
+   80
+  ],
+  "bleed": [
+   255,
+   120,
+   0
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   698,
+   70,
+   1221,
+   950
+  ],
+  "char_size": [
+   523,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 698,
+   "right": 699,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 18398,
+  "bleed_px": 28482,
+  "shaft_count": 6,
+  "shaft_colours": [
+   [
+    255,
+    180,
+    80
+   ]
+  ],
+  "effect": "landing-dust + cape-streaks",
+  "effect_px": 5806,
+  "note": "Hero = landing frame (grounded); tuck frame is AIRBORNE jumping 110px above ground line in the same shot movement. L3 god rays.",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A22 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-23",
+  "slug": "lounge-seated-room",
+  "file": "CJ-23-lounge-seated-room-endtoend-20261031.png",
+  "proof": "CJ-23-lounge-seated-room-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/reposes-v7c-clean__joint-seated-v7c-clean.png",
+  "bg_kind": "painted",
+  "bg_source": "gap-close-color-20261031/room-proof-bg-canvas-20261031.png",
+  "level": "Level 2",
+  "lut": [
+   1.1,
+   0.95,
+   0.75
+  ],
+  "lut_gain": [
+   1.1,
+   0.95,
+   0.75
+  ],
+  "char_gain": [
+   1.1,
+   0.95,
+   0.75
+  ],
+  "rim": [
+   255,
+   185,
+   95
+  ],
+  "bleed": [
+   255,
+   125,
+   20
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 1180,
+  "feet_y": 1180,
+  "flight_line_y": null,
+  "char_bbox": [
+   603,
+   146,
+   1316,
+   1180
+  ],
+  "char_size": [
+   713,
+   1034
+  ],
+  "canvas": [
+   1920,
+   1280
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 603,
+   "right": 604,
+   "top": 146,
+   "bottom": 100
+  },
+  "rim_px": 15731,
+  "bleed_px": 24207,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "lamp-halo",
+  "effect_px": 5788,
+  "note": "ROOM 3.0x seated (derived seated 2.8x equivalent: seated height = standing 1140 x seated/standing bbox ratio). Clean room plate = gap-close room-proof canvas; batch-KKGuh green room has no clean plate (baked character), so KKGuh painting swap is BG-only later.",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A23 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-24",
+  "slug": "desk-seated",
+  "file": "CJ-24-desk-seated-endtoend-20261031.png",
+  "proof": "CJ-24-desk-seated-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/transparent-plates-sweep-20261031/plates/reposes-v7c-clean__joint-seated-v7c-clean.png",
+  "bg_kind": "painted",
+  "bg_source": "clean-100-20261031/layouts/bg-desk-painted-20261031.jpg",
+  "level": "Level 2",
+  "lut": [
+   1.1,
+   0.95,
+   0.75
+  ],
+  "lut_gain": [
+   1.1,
+   0.95,
+   0.75
+  ],
+  "char_gain": [
+   1.1,
+   0.95,
+   0.75
+  ],
+  "rim": [
+   255,
+   185,
+   95
+  ],
+  "bleed": [
+   255,
+   125,
+   20
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 1180,
+  "feet_y": 1180,
+  "flight_line_y": null,
+  "char_bbox": [
+   603,
+   146,
+   1316,
+   1180
+  ],
+  "char_size": [
+   713,
+   1034
+  ],
+  "canvas": [
+   1920,
+   1280
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 603,
+   "right": 604,
+   "top": 146,
+   "bottom": 100
+  },
+  "rim_px": 15731,
+  "bleed_px": 24207,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "lamp-halo",
+  "effect_px": 5788,
+  "note": "ROOM 3.0x seated (same seated plate as CJ-23, desk BG/grade differ). Final painted desk: layouts desk-painted used.",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A24 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-25",
+  "slug": "room-standing-device-gag",
+  "file": "CJ-25-room-standing-device-gag-endtoend-20261031.png",
+  "proof": "CJ-25-room-standing-device-gag-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/rig-apose-v7c-clean-transparent.png",
+  "bg_kind": "painted",
+  "bg_source": "gap-close-color-20261031/room-proof-bg-canvas-20261031.png",
+  "level": "Level 2",
+  "lut": [
+   1.1,
+   0.95,
+   0.75
+  ],
+  "lut_gain": [
+   1.1,
+   0.95,
+   0.75
+  ],
+  "char_gain": [
+   1.1,
+   0.95,
+   0.75
+  ],
+  "rim": [
+   255,
+   185,
+   95
+  ],
+  "bleed": [
+   255,
+   125,
+   20
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 1180,
+  "feet_y": 1180,
+  "flight_line_y": null,
+  "char_bbox": [
+   616,
+   40,
+   1303,
+   1180
+  ],
+  "char_size": [
+   687,
+   1140
+  ],
+  "canvas": [
+   1920,
+   1280
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 616,
+   "right": 617,
+   "top": 40,
+   "bottom": 100
+  },
+  "rim_px": 30739,
+  "bleed_px": 85427,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "device-glow",
+  "effect_px": 21668,
+  "note": "ROOM 3.0x standing: char 1140px tall, feet on floor. Device-glow is a prop glow proxy; device prop sheet itself is a separate prop asset.",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A25 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-26",
+  "slug": "dialogue-neutral-unsure",
+  "file": "CJ-26-dialogue-neutral-unsure-endtoend-20261031.png",
+  "proof": "CJ-26-dialogue-neutral-unsure-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/rig-apose-v7c-clean-transparent.png",
+  "bg_kind": "painted",
+  "bg_source": "gap-close-color-20261031/room-proof-bg-canvas-20261031.png",
+  "level": "Level 2",
+  "lut": [
+   1,
+   1,
+   1
+  ],
+  "lut_gain": [
+   1,
+   1,
+   1
+  ],
+  "char_gain": [
+   1,
+   1,
+   1
+  ],
+  "rim": [
+   240,
+   240,
+   240
+  ],
+  "bleed": [
+   180,
+   180,
+   180
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 1180,
+  "feet_y": 1180,
+  "flight_line_y": null,
+  "char_bbox": [
+   616,
+   40,
+   1303,
+   1180
+  ],
+  "char_size": [
+   687,
+   1140
+  ],
+  "canvas": [
+   1920,
+   1280
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 616,
+   "right": 617,
+   "top": 40,
+   "bottom": 100
+  },
+  "rim_px": 30739,
+  "bleed_px": 85427,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "beat-halo",
+  "effect_px": 5788,
+  "note": "ROOM 3.0x standing. JOJO-UNCERTAINTY demo-only: char desaturated near-B&W (contrast), rim 240 grey. Dialogue/visemes are POST-EPISODE per Space Ghost workflow \u2014 Mars fills dialogue after, not a hold. QC CJ-26 likewise post-episode.",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A26 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-27",
+  "slug": "dialogue-shout-angry",
+  "file": "CJ-27-dialogue-shout-angry-endtoend-20261031.png",
+  "proof": "CJ-27-dialogue-shout-angry-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/rig-apose-v7c-clean-transparent.png",
+  "bg_kind": "painted",
+  "bg_source": "gap-close-color-20261031/room-proof-bg-canvas-20261031.png",
+  "level": "Level 2",
+  "lut": [
+   1.2,
+   0.6,
+   0.6
+  ],
+  "lut_gain": [
+   1.2,
+   0.6,
+   0.6
+  ],
+  "char_gain": [
+   1.2,
+   0.6,
+   0.6
+  ],
+  "rim": [
+   255,
+   130,
+   120
+  ],
+  "bleed": [
+   220,
+   50,
+   40
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 1180,
+  "feet_y": 1180,
+  "flight_line_y": null,
+  "char_bbox": [
+   616,
+   40,
+   1303,
+   1180
+  ],
+  "char_size": [
+   687,
+   1140
+  ],
+  "canvas": [
+   1920,
+   1280
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 616,
+   "right": 617,
+   "top": 40,
+   "bottom": 100
+  },
+  "rim_px": 30739,
+  "bleed_px": 85427,
+  "shaft_count": 0,
+  "shaft_colours": [],
+  "effect": "shout-burst",
+  "effect_px": 12988,
+  "note": "ROOM 3.0x standing. Red-alert LUT key, NOT a JoJo shift. Dialogue post-episode per Space Ghost workflow.",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A27 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-28",
+  "slug": "rooftop-sunset",
+  "file": "CJ-28-rooftop-sunset-endtoend-20261031.png",
+  "proof": "CJ-28-rooftop-sunset-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/rig-apose-v7c-clean-transparent.png",
+  "bg_kind": "painted",
+  "bg_source": "clean-100-20261031/layouts/bg-rooftop-painted-20261031.jpg",
+  "level": "Level 3",
+  "lut": [
+   1.15,
+   0.8,
+   0.7
+  ],
+  "lut_gain": [
+   1.15,
+   0.8,
+   0.7
+  ],
+  "char_gain": [
+   1.15,
+   0.8,
+   0.7
+  ],
+  "rim": [
+   255,
+   155,
+   75
+  ],
+  "bleed": [
+   255,
+   100,
+   20
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   695,
+   70,
+   1225,
+   950
+  ],
+  "char_size": [
+   530,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 695,
+   "right": 695,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 21464,
+  "bleed_px": 48603,
+  "shaft_count": 6,
+  "shaft_colours": [
+   [
+    255,
+    155,
+    75
+   ]
+  ],
+  "effect": "sun-flare",
+  "effect_px": 7960,
+  "note": "JOJO-ATMOSPHERE environment-only palette (approved 15:36 for environment); shot itself still pending Mars look.",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A28 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-29",
+  "slug": "rooftop-night-city",
+  "file": "CJ-29-rooftop-night-city-endtoend-20261031.png",
+  "proof": "CJ-29-rooftop-night-city-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/rig-apose-v7c-clean-transparent.png",
+  "bg_kind": "painted",
+  "bg_source": "clean-100-20261031/layouts/bg-rooftop-painted-20261031.jpg",
+  "level": "Level 3",
+  "lut": [
+   0.8,
+   0.85,
+   1.05
+  ],
+  "lut_gain": [
+   0.8,
+   0.85,
+   1.05
+  ],
+  "char_gain": [
+   0.8,
+   0.85,
+   1.05
+  ],
+  "rim": [
+   160,
+   185,
+   255
+  ],
+  "bleed": [
+   80,
+   120,
+   255
+  ],
+  "dual_light": null,
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   695,
+   70,
+   1225,
+   950
+  ],
+  "char_size": [
+   530,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 695,
+   "right": 695,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 21464,
+  "bleed_px": 48603,
+  "shaft_count": 6,
+  "shaft_colours": [
+   [
+    160,
+    185,
+    255
+   ]
+  ],
+  "effect": "city-bokeh",
+  "effect_px": 10325,
+  "note": "Night-city painting owed; rooftop-painted graded night used as stand-in (BG-only swap later).",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A29 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ },
+ {
+  "shot_id": "CJ-30",
+  "slug": "alley-neon-dual-light",
+  "file": "CJ-30-alley-neon-dual-light-endtoend-20261031.png",
+  "proof": "CJ-30-alley-neon-dual-light-proof-20261031.png",
+  "plate": "/home/hatch/workspace/cape-jones-rig/rig-apose-v7c-clean-transparent.png",
+  "bg_kind": "painted",
+  "bg_source": "clean-100-20261031/layouts/bg-alley-painted-20261031.jpg",
+  "level": "Level 3",
+  "lut": [
+   0.95,
+   0.85,
+   1.05
+  ],
+  "lut_gain": [
+   0.95,
+   0.85,
+   1.05
+  ],
+  "char_gain": [
+   0.95,
+   0.85,
+   1.05
+  ],
+  "rim": [
+   255,
+   178,
+   229
+  ],
+  "bleed": [
+   230,
+   80,
+   170
+  ],
+  "dual_light": [
+   [
+    255,
+    178,
+    229
+   ],
+   [
+    0,
+    200,
+    255
+   ],
+   [
+    230,
+    80,
+    170
+   ],
+   [
+    0,
+    140,
+    200
+   ]
+  ],
+  "mode": "GROUNDED",
+  "height_px": 0,
+  "ground_y": 950,
+  "feet_y": 950,
+  "flight_line_y": null,
+  "char_bbox": [
+   695,
+   70,
+   1225,
+   950
+  ],
+  "char_size": [
+   530,
+   880
+  ],
+  "canvas": [
+   1920,
+   1080
+  ],
+  "clipped": false,
+  "margins": {
+   "left": 695,
+   "right": 695,
+   "top": 70,
+   "bottom": 130
+  },
+  "rim_px": 21464,
+  "bleed_px": 48603,
+  "shaft_count": 6,
+  "shaft_colours": [
+   [
+    255,
+    178,
+    229
+   ],
+   [
+    0,
+    200,
+    255
+   ]
+  ],
+  "effect": "neon-rings",
+  "effect_px": 31476,
+  "note": "DUAL-LIGHT: front rim magenta-rose 255,178,229 (front pink source) + back rim cyan 0,200,255 (back cyan source); front bleed 230,80,170, back bleed 0,140,200. Rim split left=front, right=back.",
+  "approval": "0/1 PENDING Mars look",
+  "audio_cue": "CJ-A30 (cue ID only; no audio claimed)",
+  "red_debug_px_cleaned": 0
+ }
+]

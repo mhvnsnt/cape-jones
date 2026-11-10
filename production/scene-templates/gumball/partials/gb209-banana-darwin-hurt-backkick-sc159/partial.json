@@ -1,0 +1,51 @@
+{
+ "id": "gb209-banana-darwin-hurt-backkick-sc159",
+ "kind": "partial",
+ "show": "The Amazing World of Gumball",
+ "collection": "GB209 'The Banana' approved pose sheets (field-guide exports)",
+ "characters": [
+  "Darwin"
+ ],
+ "source_file": "GB200_DARWIN_HURT_BACK_KICK_SC159_FINAL.fla",
+ "source_archive": "CN-Leaks-001-gumball.zip",
+ "archive_location": "mhvnsnt/cn-gigaleak-gumball, draft release untagged-1676e192ae8c72e95791",
+ "size_bytes": 2492914,
+ "format": "XFL (zip-based FLA, readable)",
+ "symbol_count": 11,
+ "symbols": [
+  "GB200_ASSETT_CONTAINER",
+  "GB200_DRW_EYECOMP",
+  "GB200_DRW_HEAD",
+  "GB200_DRW_HEADCOMP",
+  "GB200_DRW_L_FIN",
+  "GB200_DRW_L_LEG",
+  "GB200_DRW_Mouth",
+  "GB200_DRW_ORIGINAL_PUPPET_v001",
+  "GB200_DRW_R_FIN",
+  "GB200_DRW_R_LEG",
+  "LINES"
+ ],
+ "parts_census": {
+  "heads": 1,
+  "head_comps": 1,
+  "eye_comps": 1,
+  "mouths": 1,
+  "bodies": 0,
+  "arms_fins_hands": 2,
+  "legs": 2,
+  "ears": 0,
+  "tails": 0,
+  "puppet_assemblies": 1
+ },
+ "animated_frames": "2f (companion SWF, INDEX-measured)",
+ "what_exists": "Darwin gag-puppet set (11 symbols: puppet, head, head comp, eye comp, mouth, fins x2, legs x2) posed for the back-kick gag, field-guide sheet.",
+ "whats_missing": "Poses only; no scene or background. Darwin's sheet set is leaner than Gumball's (no separate body/ear/tail symbols — the body rides inside the puppet symbol).",
+ "notes": [],
+ "media": {
+  "status": "blocked-write-guard",
+  "target_file": "sheet-gb209-banana-darwin-hurt-backkick-sc159.png",
+  "delivery_dir": "~/workspace/your_files/scene-templates/",
+  "note": "Contact-sheet render staged in render_contact_sheets.sh; blocked by the sandbox write guard (EPERM/0 bytes) at catalog time."
+ },
+ "record_path": "production/scene-templates/gumball/partials/gb209-banana-darwin-hurt-backkick-sc159/partial.json"
+}

@@ -1,0 +1,2921 @@
+{
+  "count": 60,
+  "changes": [
+    {
+      "piece_id": "fla-front/Row1_1.png",
+      "from": [
+        "capejones_cape_collar_front",
+        "proposed"
+      ],
+      "to": [
+        "capejones_leg1_foot_front",
+        "proposed"
+      ],
+      "action": "rename"
+    },
+    {
+      "piece_id": "fla-front/Row1_10.png",
+      "from": [
+        "capejones_torso_chest_front",
+        "proposed"
+      ],
+      "to": [
+        "capejones_pelvis_front",
+        "proposed"
+      ],
+      "action": "rename"
+    },
+    {
+      "piece_id": "fla-front/Row1_11.png",
+      "from": [
+        "capejones_belt_front",
+        "proposed"
+      ],
+      "to": [
+        "capejones_leg2_shin_front",
+        "proposed"
+      ],
+      "action": "rename"
+    },
+    {
+      "piece_id": "fla-front/Row1_12.png",
+      "from": [
+        "capejones_cape_collar_front",
+        "proposed"
+      ],
+      "to": [
+        "capejones_leg2_foot_front",
+        "proposed"
+      ],
+      "action": "rename"
+    },
+    {
+      "piece_id": "fla-front/Row1_13.png",
+      "from": [
+        "capejones_cape_collar_front",
+        "proposed"
+      ],
+      "to": [
+        "capejones_leg1_foot_front",
+        "proposed"
+      ],
+      "action": "rename"
+    },
+    {
+      "piece_id": "fla-front/Row1_14.png",
+      "from": [
+        "capejones_eyes_angry_strip",
+        "proposed"
+      ],
+      "to": [
+        "capejones_leg1_front",
+        "proposed"
+      ],
+      "action": "rename"
+    },
+    {
+      "piece_id": "fla-front/Row1_15.png",
+      "from": [
+        "capejones_eyes_angry_strip",
+        "proposed"
+      ],
+      "to": [
+        "capejones_arm1_front",
+        "proposed"
+      ],
+      "action": "rename"
+    },
+    {
+      "piece_id": "fla-front/Row1_16.png",
+      "from": [
+        "capejones_mouth_shout",
+        "proposed"
+      ],
+      "to": [
+        "capejones_ball_joint_or_circular_eye_front",
+        "proposed"
+      ],
+      "action": "rename"
+    },
+    {
+      "piece_id": "fla-front/Row1_24.png",
+      "from": [
+        "capejones_mouth_shout",
+        "proposed"
+      ],
+      "to": [
+        "capejones_ball_joint_or_circular_eye_front",
+        "proposed"
+      ],
+      "action": "rename"
+    },
+    {
+      "piece_id": "fla-front/Row1_25.png",
+      "from": [
+        "capejones_cape_collar_front",
+        "proposed"
+      ],
+      "to": [
+        "capejones_leg1_foot_front",
+        "proposed"
+      ],
+      "action": "rename"
+    },
+    {
+      "piece_id": "fla-front/Row1_26.png",
+      "from": [
+        "capejones_eyes_angry_strip",
+        "proposed"
+      ],
+      "to": [
+        "capejones_arm2_front",
+        "proposed"
+      ],
+      "action": "rename"
+    },
+    {
+      "piece_id": "fla-front/Row1_27.png",
+      "from": [
+        "capejones_eyes_angry_strip",
+        "proposed"
+      ],
+      "to": [
+        "capejones_leg2_front",
+        "proposed"
+      ],
+      "action": "rename"
+    },
+    {
+      "piece_id": "fla-front/Row1_28.png",
+      "from": [
+        "capejones_mouth_shout",
+        "proposed"
+      ],
+      "to": [
+        "capejones_ball_joint_or_circular_eye_front",
+        "proposed"
+      ],
+      "action": "rename"
+    },
+    {
+      "piece_id": "fla-front/Row1_29.png",
+      "from": [
+        "capejones_cape_collar_front",
+        "proposed"
+      ],
+      "to": [
+        "capejones_leg1_foot_front",
+        "proposed"
+      ],
+      "action": "rename"
+    },
+    {
+      "piece_id": "fla-front/Row1_3.png",
+      "from": [
+        "capejones_hand_point2_front",
+        "proposed"
+      ],
+      "to": [
+        "capejones_hand1_front",
+        "proposed"
+      ],
+      "action": "rename"
+    },
+    {
+      "piece_id": "fla-front/Row1_30.png",
+      "from": [
+        "capejones_eyes_angry_strip",
+        "proposed"
+      ],
+      "to": [
+        "capejones_arm2_front",
+        "proposed"
+      ],
+      "action": "rename"
+    }
+  ],
+  "proposals": [
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_1.png",
+      "piece_id": "fla-front/Row1_1.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Cape_Collar.png",
+        "mirrored": false,
+        "distance": 0.1143,
+        "confidence": 0.9,
+        "second": {
+          "template": "Eye_White_R.png",
+          "distance": 0.1324,
+          "mirrored": true,
+          "template_size": [
+            91,
+            49
+          ]
+        },
+        "piece_size": [
+          65,
+          93
+        ],
+        "reason": "Hu-moment shape distance 0.1143 to Cape_Collar.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.1443,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_6_Relaxed.png",
+          "distance": 0.188
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1443"
+      },
+      "agree": false,
+      "proposed_template": "Cape_Collar.png",
+      "canonical": "capejones_leg1_foot_front",
+      "description": "cape collar, neck/shoulders",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_10.png",
+      "piece_id": "fla-front/Row1_10.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Torso_Chest.png",
+        "mirrored": false,
+        "distance": 0.0732,
+        "confidence": 0.9,
+        "second": {
+          "template": "Pelvis.png",
+          "distance": 0.0793,
+          "mirrored": false,
+          "template_size": [
+            230,
+            130
+          ]
+        },
+        "piece_size": [
+          158,
+          108
+        ],
+        "reason": "Hu-moment shape distance 0.0732 to Torso_Chest.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Pelvis.png",
+        "distance": 0.3517,
+        "confidence": 0.9,
+        "second": {
+          "template": "Torso_Chest.png",
+          "distance": 0.5051
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.3517"
+      },
+      "agree": false,
+      "proposed_template": "Torso_Chest.png",
+      "canonical": "capejones_pelvis_front",
+      "description": "torso/chest, white suit",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_11.png",
+      "piece_id": "fla-front/Row1_11.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Belt_Overlay.png",
+        "mirrored": false,
+        "distance": 0.2855,
+        "confidence": 0.6,
+        "second": {
+          "template": "Eyes_AngryStrip.png",
+          "distance": 0.4277,
+          "mirrored": false,
+          "template_size": [
+            213,
+            84
+          ]
+        },
+        "piece_size": [
+          59,
+          182
+        ],
+        "reason": "Hu-moment shape distance 0.2855 to Belt_Overlay.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Leg_Front.png",
+        "distance": 0.2809,
+        "confidence": 0.9,
+        "second": {
+          "template": "Arm_Front.png",
+          "distance": 0.2836
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2809"
+      },
+      "agree": false,
+      "proposed_template": "Belt_Overlay.png",
+      "canonical": "capejones_leg2_shin_front",
+      "description": "belt overlay, waist",
+      "warnings": [],
+      "confidence": 0.55,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_12.png",
+      "piece_id": "fla-front/Row1_12.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Cape_Collar.png",
+        "mirrored": true,
+        "distance": 0.036,
+        "confidence": 0.9,
+        "second": {
+          "template": "Cape_Back_Main.png",
+          "distance": 0.1271,
+          "mirrored": true,
+          "template_size": [
+            490,
+            833
+          ]
+        },
+        "piece_size": [
+          62,
+          93
+        ],
+        "reason": "Hu-moment shape distance 0.036 to Cape_Collar.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.1587,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_4_Point.png",
+          "distance": 0.2057
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1587"
+      },
+      "agree": false,
+      "proposed_template": "Cape_Collar.png",
+      "canonical": "capejones_leg2_foot_front",
+      "description": "cape collar, neck/shoulders",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_13.png",
+      "piece_id": "fla-front/Row1_13.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Cape_Collar.png",
+        "mirrored": false,
+        "distance": 0.0872,
+        "confidence": 0.9,
+        "second": {
+          "template": "Eye_White_R.png",
+          "distance": 0.1694,
+          "mirrored": true,
+          "template_size": [
+            91,
+            49
+          ]
+        },
+        "piece_size": [
+          73,
+          105
+        ],
+        "reason": "Hu-moment shape distance 0.0872 to Cape_Collar.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.1542,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_6_Relaxed.png",
+          "distance": 0.1993
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1542"
+      },
+      "agree": false,
+      "proposed_template": "Cape_Collar.png",
+      "canonical": "capejones_leg1_foot_front",
+      "description": "cape collar, neck/shoulders",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_14.png",
+      "piece_id": "fla-front/Row1_14.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Eyes_AngryStrip.png",
+        "mirrored": true,
+        "distance": 1.2681,
+        "confidence": 0.3,
+        "second": {
+          "template": "Arm_Front.png",
+          "distance": 1.3229,
+          "mirrored": false,
+          "template_size": [
+            153,
+            511
+          ]
+        },
+        "piece_size": [
+          81,
+          341
+        ],
+        "reason": "Hu-moment shape distance 1.2681 to Eyes_AngryStrip.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Leg_Front.png",
+        "distance": 0.3149,
+        "confidence": 0.9,
+        "second": {
+          "template": "Arm_Front.png",
+          "distance": 0.3275
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.3149"
+      },
+      "agree": false,
+      "proposed_template": "Eyes_AngryStrip.png",
+      "canonical": "capejones_leg1_front",
+      "description": "eyes, angry strip",
+      "warnings": [],
+      "confidence": 0.4,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_15.png",
+      "piece_id": "fla-front/Row1_15.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Eyes_AngryStrip.png",
+        "mirrored": false,
+        "distance": 0.5499,
+        "confidence": 0.3,
+        "second": {
+          "template": "Belt_Overlay.png",
+          "distance": 1.1245,
+          "mirrored": false,
+          "template_size": [
+            215,
+            78
+          ]
+        },
+        "piece_size": [
+          107,
+          266
+        ],
+        "reason": "Hu-moment shape distance 0.5499 to Eyes_AngryStrip.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Arm_Front.png",
+        "distance": 0.1742,
+        "confidence": 0.9,
+        "second": {
+          "template": "Arm_Back.png",
+          "distance": 0.2005
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1742"
+      },
+      "agree": false,
+      "proposed_template": "Eyes_AngryStrip.png",
+      "canonical": "capejones_arm1_front",
+      "description": "eyes, angry strip",
+      "warnings": [],
+      "confidence": 0.4,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_16.png",
+      "piece_id": "fla-front/Row1_16.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Mouth_Shout.png",
+        "mirrored": false,
+        "distance": 0.0435,
+        "confidence": 0.9,
+        "second": {
+          "template": "Torso_Chest.png",
+          "distance": 0.0885,
+          "mirrored": false,
+          "template_size": [
+            315,
+            319
+          ]
+        },
+        "piece_size": [
+          36,
+          37
+        ],
+        "reason": "Hu-moment shape distance 0.0435 to Mouth_Shout.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Torso_Chest.png",
+        "distance": 0.1995,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.3041
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1995"
+      },
+      "agree": false,
+      "proposed_template": "Mouth_Shout.png",
+      "canonical": "capejones_ball_joint_or_circular_eye_front",
+      "description": "mouth, shout",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_17.png",
+      "piece_id": "fla-front/Row1_17.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Cape_Collar.png",
+        "mirrored": false,
+        "distance": 0.0727,
+        "confidence": 0.9,
+        "second": {
+          "template": "Cape_Back_Main.png",
+          "distance": 0.164,
+          "mirrored": true,
+          "template_size": [
+            490,
+            833
+          ]
+        },
+        "piece_size": [
+          75,
+          104
+        ],
+        "reason": "Hu-moment shape distance 0.0727 to Cape_Collar.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.1542,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.191
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1542"
+      },
+      "agree": false,
+      "proposed_template": "Cape_Collar.png",
+      "canonical": "capejones_cape_collar_front",
+      "description": "cape collar, neck/shoulders",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_18.png",
+      "piece_id": "fla-front/Row1_18.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Eyes_AngryStrip.png",
+        "mirrored": true,
+        "distance": 1.1595,
+        "confidence": 0.3,
+        "second": {
+          "template": "Arm_Front.png",
+          "distance": 1.4314,
+          "mirrored": false,
+          "template_size": [
+            153,
+            511
+          ]
+        },
+        "piece_size": [
+          94,
+          354
+        ],
+        "reason": "Hu-moment shape distance 1.1595 to Eyes_AngryStrip.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Arm_Front.png",
+        "distance": 0.272,
+        "confidence": 0.9,
+        "second": {
+          "template": "Leg_Front.png",
+          "distance": 0.2722
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.272"
+      },
+      "agree": false,
+      "proposed_template": "Eyes_AngryStrip.png",
+      "canonical": "capejones_eyes_angry_strip",
+      "description": "eyes, angry strip",
+      "warnings": [],
+      "confidence": 0.4,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_19.png",
+      "piece_id": "fla-front/Row1_19.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Hand_1_Fist.png",
+        "mirrored": false,
+        "distance": 0.066,
+        "confidence": 0.9,
+        "second": {
+          "template": "Neck.png",
+          "distance": 0.0739,
+          "mirrored": false,
+          "template_size": [
+            104,
+            83
+          ]
+        },
+        "piece_size": [
+          211,
+          178
+        ],
+        "reason": "Hu-moment shape distance 0.066 to Hand_1_Fist.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Torso_Chest.png",
+        "distance": 0.2676,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.4996
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2676"
+      },
+      "agree": false,
+      "proposed_template": "Hand_1_Fist.png",
+      "canonical": "capejones_hand_fist_front",
+      "description": "hand, fist",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_2.png",
+      "piece_id": "fla-front/Row1_2.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Mouth_Closed.png",
+        "mirrored": true,
+        "distance": 0.0301,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_4_Point.png",
+          "distance": 0.033,
+          "mirrored": false,
+          "template_size": [
+            83,
+            148
+          ]
+        },
+        "piece_size": [
+          60,
+          103
+        ],
+        "reason": "Hu-moment shape distance 0.0301 to Mouth_Closed.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.2646,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_4_Point.png",
+          "distance": 0.3061
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2646"
+      },
+      "agree": false,
+      "proposed_template": "Mouth_Closed.png",
+      "canonical": "capejones_mouth_closed",
+      "description": "mouth, closed",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_20.png",
+      "piece_id": "fla-front/Row1_20.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Belt_Overlay.png",
+        "mirrored": true,
+        "distance": 0.11,
+        "confidence": 0.9,
+        "second": {
+          "template": "Eye_White_R.png",
+          "distance": 0.2421,
+          "mirrored": false,
+          "template_size": [
+            91,
+            49
+          ]
+        },
+        "piece_size": [
+          159,
+          60
+        ],
+        "reason": "Hu-moment shape distance 0.11 to Belt_Overlay.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Belt_Overlay.png",
+        "distance": 0.2462,
+        "confidence": 0.9,
+        "second": {
+          "template": "Eyes_AngryStrip.png",
+          "distance": 0.7286
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2462"
+      },
+      "agree": true,
+      "proposed_template": "Belt_Overlay.png",
+      "canonical": "capejones_belt_front",
+      "description": "belt overlay, waist",
+      "warnings": [],
+      "confidence": 0.95,
+      "band": "HIGH",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_21.png",
+      "piece_id": "fla-front/Row1_21.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Pelvis.png",
+        "mirrored": true,
+        "distance": 0.0599,
+        "confidence": 0.9,
+        "second": {
+          "template": "Torso_Chest.png",
+          "distance": 0.0784,
+          "mirrored": true,
+          "template_size": [
+            315,
+            319
+          ]
+        },
+        "piece_size": [
+          153,
+          176
+        ],
+        "reason": "Hu-moment shape distance 0.0599 to Pelvis.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Head_Front.png",
+        "distance": 0.2528,
+        "confidence": 0.9,
+        "second": {
+          "template": "Head_Profile.png",
+          "distance": 0.3107
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2528"
+      },
+      "agree": false,
+      "proposed_template": "Pelvis.png",
+      "canonical": "capejones_pelvis_front",
+      "description": "pelvis/briefs, white",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_22.png",
+      "piece_id": "fla-front/Row1_22.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Mouth_Shout.png",
+        "mirrored": false,
+        "distance": 0.0493,
+        "confidence": 0.9,
+        "second": {
+          "template": "Torso_Chest.png",
+          "distance": 0.0884,
+          "mirrored": false,
+          "template_size": [
+            315,
+            319
+          ]
+        },
+        "piece_size": [
+          36,
+          37
+        ],
+        "reason": "Hu-moment shape distance 0.0493 to Mouth_Shout.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Torso_Chest.png",
+        "distance": 0.2008,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.3044
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2008"
+      },
+      "agree": false,
+      "proposed_template": "Mouth_Shout.png",
+      "canonical": "capejones_mouth_shout",
+      "description": "mouth, shout",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_23.png",
+      "piece_id": "fla-front/Row1_23.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Eyes_AngryStrip.png",
+        "mirrored": true,
+        "distance": 1.1624,
+        "confidence": 0.3,
+        "second": {
+          "template": "Arm_Front.png",
+          "distance": 1.4285,
+          "mirrored": false,
+          "template_size": [
+            153,
+            511
+          ]
+        },
+        "piece_size": [
+          92,
+          354
+        ],
+        "reason": "Hu-moment shape distance 1.1624 to Eyes_AngryStrip.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Leg_Front.png",
+        "distance": 0.2536,
+        "confidence": 0.9,
+        "second": {
+          "template": "Leg_Back.png",
+          "distance": 0.2883
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2536"
+      },
+      "agree": false,
+      "proposed_template": "Eyes_AngryStrip.png",
+      "canonical": "capejones_eyes_angry_strip",
+      "description": "eyes, angry strip",
+      "warnings": [],
+      "confidence": 0.4,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_24.png",
+      "piece_id": "fla-front/Row1_24.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Mouth_Shout.png",
+        "mirrored": false,
+        "distance": 0.0042,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_1_Fist.png",
+          "distance": 0.0336,
+          "mirrored": true,
+          "template_size": [
+            90,
+            108
+          ]
+        },
+        "piece_size": [
+          36,
+          36
+        ],
+        "reason": "Hu-moment shape distance 0.0042 to Mouth_Shout.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Torso_Chest.png",
+        "distance": 0.2092,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.3288
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2092"
+      },
+      "agree": false,
+      "proposed_template": "Mouth_Shout.png",
+      "canonical": "capejones_ball_joint_or_circular_eye_front",
+      "description": "mouth, shout",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_25.png",
+      "piece_id": "fla-front/Row1_25.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Cape_Collar.png",
+        "mirrored": false,
+        "distance": 0.0597,
+        "confidence": 0.9,
+        "second": {
+          "template": "Cape_Back_Main.png",
+          "distance": 0.1509,
+          "mirrored": true,
+          "template_size": [
+            490,
+            833
+          ]
+        },
+        "piece_size": [
+          74,
+          104
+        ],
+        "reason": "Hu-moment shape distance 0.0597 to Cape_Collar.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.156,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.214
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.156"
+      },
+      "agree": false,
+      "proposed_template": "Cape_Collar.png",
+      "canonical": "capejones_leg1_foot_front",
+      "description": "cape collar, neck/shoulders",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_26.png",
+      "piece_id": "fla-front/Row1_26.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Eyes_AngryStrip.png",
+        "mirrored": false,
+        "distance": 0.5557,
+        "confidence": 0.3,
+        "second": {
+          "template": "Belt_Overlay.png",
+          "distance": 1.1199,
+          "mirrored": false,
+          "template_size": [
+            215,
+            78
+          ]
+        },
+        "piece_size": [
+          101,
+          266
+        ],
+        "reason": "Hu-moment shape distance 0.5557 to Eyes_AngryStrip.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Arm_Back.png",
+        "distance": 0.1768,
+        "confidence": 0.9,
+        "second": {
+          "template": "Arm_Front.png",
+          "distance": 0.1844
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1768"
+      },
+      "agree": false,
+      "proposed_template": "Eyes_AngryStrip.png",
+      "canonical": "capejones_arm2_front",
+      "description": "eyes, angry strip",
+      "warnings": [],
+      "confidence": 0.4,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_27.png",
+      "piece_id": "fla-front/Row1_27.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Eyes_AngryStrip.png",
+        "mirrored": true,
+        "distance": 1.2254,
+        "confidence": 0.3,
+        "second": {
+          "template": "Arm_Front.png",
+          "distance": 1.3655,
+          "mirrored": false,
+          "template_size": [
+            153,
+            511
+          ]
+        },
+        "piece_size": [
+          87,
+          344
+        ],
+        "reason": "Hu-moment shape distance 1.2254 to Eyes_AngryStrip.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Leg_Front.png",
+        "distance": 0.2656,
+        "confidence": 0.9,
+        "second": {
+          "template": "Leg_Back.png",
+          "distance": 0.301
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2656"
+      },
+      "agree": false,
+      "proposed_template": "Eyes_AngryStrip.png",
+      "canonical": "capejones_leg2_front",
+      "description": "eyes, angry strip",
+      "warnings": [],
+      "confidence": 0.4,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_28.png",
+      "piece_id": "fla-front/Row1_28.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Mouth_Shout.png",
+        "mirrored": false,
+        "distance": 0.0418,
+        "confidence": 0.9,
+        "second": {
+          "template": "Torso_Chest.png",
+          "distance": 0.0881,
+          "mirrored": false,
+          "template_size": [
+            315,
+            319
+          ]
+        },
+        "piece_size": [
+          36,
+          37
+        ],
+        "reason": "Hu-moment shape distance 0.0418 to Mouth_Shout.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Torso_Chest.png",
+        "distance": 0.199,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.304
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.199"
+      },
+      "agree": false,
+      "proposed_template": "Mouth_Shout.png",
+      "canonical": "capejones_ball_joint_or_circular_eye_front",
+      "description": "mouth, shout",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_29.png",
+      "piece_id": "fla-front/Row1_29.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Cape_Collar.png",
+        "mirrored": false,
+        "distance": 0.0526,
+        "confidence": 0.9,
+        "second": {
+          "template": "Cape_Back_Main.png",
+          "distance": 0.1439,
+          "mirrored": true,
+          "template_size": [
+            490,
+            833
+          ]
+        },
+        "piece_size": [
+          73,
+          103
+        ],
+        "reason": "Hu-moment shape distance 0.0526 to Cape_Collar.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.156,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.2191
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.156"
+      },
+      "agree": false,
+      "proposed_template": "Cape_Collar.png",
+      "canonical": "capejones_leg1_foot_front",
+      "description": "cape collar, neck/shoulders",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_3.png",
+      "piece_id": "fla-front/Row1_3.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Hand_5_Point2.png",
+        "mirrored": true,
+        "distance": 0.0384,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_4_Point.png",
+          "distance": 0.048,
+          "mirrored": false,
+          "template_size": [
+            83,
+            148
+          ]
+        },
+        "piece_size": [
+          72,
+          108
+        ],
+        "reason": "Hu-moment shape distance 0.0384 to Hand_5_Point2.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.1168,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_4_Point.png",
+          "distance": 0.1653
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1168"
+      },
+      "agree": false,
+      "proposed_template": "Hand_5_Point2.png",
+      "canonical": "capejones_hand1_front",
+      "description": "hand, point variant",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_30.png",
+      "piece_id": "fla-front/Row1_30.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Eyes_AngryStrip.png",
+        "mirrored": false,
+        "distance": 0.4683,
+        "confidence": 0.3,
+        "second": {
+          "template": "Belt_Overlay.png",
+          "distance": 1.0505,
+          "mirrored": false,
+          "template_size": [
+            215,
+            78
+          ]
+        },
+        "piece_size": [
+          106,
+          265
+        ],
+        "reason": "Hu-moment shape distance 0.4683 to Eyes_AngryStrip.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Arm_Back.png",
+        "distance": 0.1761,
+        "confidence": 0.9,
+        "second": {
+          "template": "Arm_Front.png",
+          "distance": 0.1949
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1761"
+      },
+      "agree": false,
+      "proposed_template": "Eyes_AngryStrip.png",
+      "canonical": "capejones_arm2_front",
+      "description": "eyes, angry strip",
+      "warnings": [],
+      "confidence": 0.4,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed",
+      "mars_corrected": true
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_31.png",
+      "piece_id": "fla-front/Row1_31.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Mouth_Shout.png",
+        "mirrored": false,
+        "distance": 0.0041,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_1_Fist.png",
+          "distance": 0.0335,
+          "mirrored": true,
+          "template_size": [
+            90,
+            108
+          ]
+        },
+        "piece_size": [
+          36,
+          36
+        ],
+        "reason": "Hu-moment shape distance 0.0041 to Mouth_Shout.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Torso_Chest.png",
+        "distance": 0.2117,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.331
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2117"
+      },
+      "agree": false,
+      "proposed_template": "Mouth_Shout.png",
+      "canonical": "capejones_mouth_shout",
+      "description": "mouth, shout",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_32.png",
+      "piece_id": "fla-front/Row1_32.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Hand_7_Grip.png",
+        "mirrored": false,
+        "distance": 0.0428,
+        "confidence": 0.9,
+        "second": {
+          "template": "Head_Front.png",
+          "distance": 0.0458,
+          "mirrored": false,
+          "template_size": [
+            119,
+            172
+          ]
+        },
+        "piece_size": [
+          450,
+          628
+        ],
+        "reason": "Hu-moment shape distance 0.0428 to Hand_7_Grip.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Cape_Back_Main.png",
+        "distance": 0.1502,
+        "confidence": 0.9,
+        "second": {
+          "template": "Head_Front.png",
+          "distance": 0.6814
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1502"
+      },
+      "agree": false,
+      "proposed_template": "Hand_7_Grip.png",
+      "canonical": "capejones_hand_grip_front",
+      "description": "hand, grip",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_33.png",
+      "piece_id": "fla-front/Row1_33.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Cape_Collar.png",
+        "mirrored": false,
+        "distance": 0.1811,
+        "confidence": 0.6,
+        "second": {
+          "template": "Eye_White_R.png",
+          "distance": 0.2079,
+          "mirrored": false,
+          "template_size": [
+            91,
+            49
+          ]
+        },
+        "piece_size": [
+          267,
+          147
+        ],
+        "reason": "Hu-moment shape distance 0.1811 to Cape_Collar.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Eye_White_R.png",
+        "distance": 0.3907,
+        "confidence": 0.9,
+        "second": {
+          "template": "Eye_White_L.png",
+          "distance": 0.5023
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.3907"
+      },
+      "agree": false,
+      "proposed_template": "Cape_Collar.png",
+      "canonical": "capejones_cape_collar_front",
+      "description": "cape collar, neck/shoulders",
+      "warnings": [],
+      "confidence": 0.55,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_4.png",
+      "piece_id": "fla-front/Row1_4.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Cape_Collar.png",
+        "mirrored": false,
+        "distance": 0.0929,
+        "confidence": 0.9,
+        "second": {
+          "template": "Eye_White_R.png",
+          "distance": 0.1675,
+          "mirrored": true,
+          "template_size": [
+            91,
+            49
+          ]
+        },
+        "piece_size": [
+          67,
+          93
+        ],
+        "reason": "Hu-moment shape distance 0.0929 to Cape_Collar.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.1481,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.1867
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1481"
+      },
+      "agree": false,
+      "proposed_template": "Cape_Collar.png",
+      "canonical": "capejones_cape_collar_front",
+      "description": "cape collar, neck/shoulders",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_5.png",
+      "piece_id": "fla-front/Row1_5.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Hand_5_Point2.png",
+        "mirrored": true,
+        "distance": 0.0391,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_4_Point.png",
+          "distance": 0.0546,
+          "mirrored": false,
+          "template_size": [
+            83,
+            148
+          ]
+        },
+        "piece_size": [
+          72,
+          108
+        ],
+        "reason": "Hu-moment shape distance 0.0391 to Hand_5_Point2.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.1103,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_6_Relaxed.png",
+          "distance": 0.1471
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1103"
+      },
+      "agree": false,
+      "proposed_template": "Hand_5_Point2.png",
+      "canonical": "capejones_hand_point2_front",
+      "description": "hand, point variant",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_6.png",
+      "piece_id": "fla-front/Row1_6.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Mouth_Closed.png",
+        "mirrored": true,
+        "distance": 0.0279,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_4_Point.png",
+          "distance": 0.0439,
+          "mirrored": false,
+          "template_size": [
+            83,
+            148
+          ]
+        },
+        "piece_size": [
+          59,
+          103
+        ],
+        "reason": "Hu-moment shape distance 0.0279 to Mouth_Closed.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.2743,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_4_Point.png",
+          "distance": 0.3117
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2743"
+      },
+      "agree": false,
+      "proposed_template": "Mouth_Closed.png",
+      "canonical": "capejones_mouth_closed",
+      "description": "mouth, closed",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_7.png",
+      "piece_id": "fla-front/Row1_7.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Cape_Collar.png",
+        "mirrored": false,
+        "distance": 0.0411,
+        "confidence": 0.9,
+        "second": {
+          "template": "Cape_Back_Main.png",
+          "distance": 0.1324,
+          "mirrored": true,
+          "template_size": [
+            490,
+            833
+          ]
+        },
+        "piece_size": [
+          68,
+          94
+        ],
+        "reason": "Hu-moment shape distance 0.0411 to Cape_Collar.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.1444,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.1793
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1444"
+      },
+      "agree": false,
+      "proposed_template": "Cape_Collar.png",
+      "canonical": "capejones_cape_collar_front",
+      "description": "cape collar, neck/shoulders",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_8.png",
+      "piece_id": "fla-front/Row1_8.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Belt_Overlay.png",
+        "mirrored": false,
+        "distance": 0.2527,
+        "confidence": 0.6,
+        "second": {
+          "template": "Eyes_AngryStrip.png",
+          "distance": 0.4482,
+          "mirrored": false,
+          "template_size": [
+            213,
+            84
+          ]
+        },
+        "piece_size": [
+          60,
+          181
+        ],
+        "reason": "Hu-moment shape distance 0.2527 to Belt_Overlay.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Arm_Front.png",
+        "distance": 0.2818,
+        "confidence": 0.9,
+        "second": {
+          "template": "Leg_Front.png",
+          "distance": 0.2887
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2818"
+      },
+      "agree": false,
+      "proposed_template": "Belt_Overlay.png",
+      "canonical": "capejones_belt_front",
+      "description": "belt overlay, waist",
+      "warnings": [],
+      "confidence": 0.55,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-front/Row1_9.png",
+      "piece_id": "fla-front/Row1_9.png",
+      "folder": "fla-front",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Neck.png",
+        "mirrored": true,
+        "distance": 0.1019,
+        "confidence": 0.9,
+        "second": {
+          "template": "Head_Front.png",
+          "distance": 0.1044,
+          "mirrored": false,
+          "template_size": [
+            119,
+            172
+          ]
+        },
+        "piece_size": [
+          161,
+          152
+        ],
+        "reason": "Hu-moment shape distance 0.1019 to Neck.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Torso_Chest.png",
+        "distance": 0.1584,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.3717
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1584"
+      },
+      "agree": false,
+      "proposed_template": "Neck.png",
+      "canonical": "capejones_neck_front",
+      "description": "neck cylinder, purple",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_1.png",
+      "piece_id": "fla-back/Row1_1.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Eye_White_L.png",
+        "mirrored": true,
+        "distance": 0.0794,
+        "confidence": 0.9,
+        "second": {
+          "template": "Eye_White_R.png",
+          "distance": 0.0902,
+          "mirrored": false,
+          "template_size": [
+            91,
+            49
+          ]
+        },
+        "piece_size": [
+          56,
+          122
+        ],
+        "reason": "Hu-moment shape distance 0.0794 to Eye_White_L.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_4_Point.png",
+        "distance": 0.2734,
+        "confidence": 0.9,
+        "second": {
+          "template": "Leg_Front_CLEAN.png",
+          "distance": 0.3425
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2734"
+      },
+      "agree": false,
+      "proposed_template": "Eye_White_L.png",
+      "canonical": "capejones_eye_white_left",
+      "description": "eye white, left",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_10.png",
+      "piece_id": "fla-back/Row1_10.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Hand_6_Relaxed.png",
+        "mirrored": false,
+        "distance": 0.0937,
+        "confidence": 0.9,
+        "second": {
+          "template": "Head_Front.png",
+          "distance": 0.1046,
+          "mirrored": false,
+          "template_size": [
+            119,
+            172
+          ]
+        },
+        "piece_size": [
+          162,
+          222
+        ],
+        "reason": "Hu-moment shape distance 0.0937 to Hand_6_Relaxed.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.2104,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.2798
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2104"
+      },
+      "agree": false,
+      "proposed_template": "Hand_6_Relaxed.png",
+      "canonical": "capejones_hand_relaxed_front",
+      "description": "hand, relaxed",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_11.png",
+      "piece_id": "fla-back/Row1_11.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Mouth_Shout.png",
+        "mirrored": false,
+        "distance": 0.0035,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_1_Fist.png",
+          "distance": 0.0328,
+          "mirrored": true,
+          "template_size": [
+            90,
+            108
+          ]
+        },
+        "piece_size": [
+          32,
+          32
+        ],
+        "reason": "Hu-moment shape distance 0.0035 to Mouth_Shout.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Mouth_Open.png",
+        "distance": 0.472,
+        "confidence": 0.9,
+        "second": {
+          "template": "Mouth_Shout.png",
+          "distance": 0.4792
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.472"
+      },
+      "agree": false,
+      "proposed_template": "Mouth_Shout.png",
+      "canonical": "capejones_mouth_shout",
+      "description": "mouth, shout",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_12.png",
+      "piece_id": "fla-back/Row1_12.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Head_Front.png",
+        "mirrored": true,
+        "distance": 0.0365,
+        "confidence": 0.9,
+        "second": {
+          "template": "Mouth_Smile.png",
+          "distance": 0.0476,
+          "mirrored": false,
+          "template_size": [
+            96,
+            63
+          ]
+        },
+        "piece_size": [
+          111,
+          80
+        ],
+        "reason": "Hu-moment shape distance 0.0365 to Head_Front.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Torso_Chest.png",
+        "distance": 0.4779,
+        "confidence": 0.9,
+        "second": {
+          "template": "Pelvis.png",
+          "distance": 0.5225
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.4779"
+      },
+      "agree": false,
+      "proposed_template": "Head_Front.png",
+      "canonical": "capejones_head_front",
+      "description": "head, front view, purple cowl+face",
+      "warnings": [
+        "source folder says back, proposal says front \u2014 Mars eye-check required"
+      ],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_13.png",
+      "piece_id": "fla-back/Row1_13.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Hand_4_Point.png",
+        "mirrored": false,
+        "distance": 0.0288,
+        "confidence": 0.9,
+        "second": {
+          "template": "Torso_Chest.png",
+          "distance": 0.038,
+          "mirrored": false,
+          "template_size": [
+            315,
+            319
+          ]
+        },
+        "piece_size": [
+          119,
+          73
+        ],
+        "reason": "Hu-moment shape distance 0.0288 to Hand_4_Point.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Pelvis.png",
+        "distance": 0.2632,
+        "confidence": 0.9,
+        "second": {
+          "template": "Mouth_Teeth.png",
+          "distance": 0.4572
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2632"
+      },
+      "agree": false,
+      "proposed_template": "Hand_4_Point.png",
+      "canonical": "capejones_hand_point_front",
+      "description": "hand, point",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_14.png",
+      "piece_id": "fla-back/Row1_14.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Mouth_Shout.png",
+        "mirrored": false,
+        "distance": 0.005,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_1_Fist.png",
+          "distance": 0.0344,
+          "mirrored": true,
+          "template_size": [
+            90,
+            108
+          ]
+        },
+        "piece_size": [
+          34,
+          33
+        ],
+        "reason": "Hu-moment shape distance 0.005 to Mouth_Shout.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Mouth_Open.png",
+        "distance": 0.4442,
+        "confidence": 0.9,
+        "second": {
+          "template": "Mouth_Shout.png",
+          "distance": 0.4573
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.4442"
+      },
+      "agree": false,
+      "proposed_template": "Mouth_Shout.png",
+      "canonical": "capejones_mouth_shout",
+      "description": "mouth, shout",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_15.png",
+      "piece_id": "fla-back/Row1_15.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Mouth_Shout.png",
+        "mirrored": false,
+        "distance": 0.0058,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_1_Fist.png",
+          "distance": 0.0351,
+          "mirrored": true,
+          "template_size": [
+            90,
+            108
+          ]
+        },
+        "piece_size": [
+          33,
+          33
+        ],
+        "reason": "Hu-moment shape distance 0.0058 to Mouth_Shout.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Mouth_Open.png",
+        "distance": 0.4608,
+        "confidence": 0.9,
+        "second": {
+          "template": "Mouth_Shout.png",
+          "distance": 0.4772
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.4608"
+      },
+      "agree": false,
+      "proposed_template": "Mouth_Shout.png",
+      "canonical": "capejones_mouth_shout",
+      "description": "mouth, shout",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_16.png",
+      "piece_id": "fla-back/Row1_16.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Torso_Chest.png",
+        "mirrored": true,
+        "distance": 0.0764,
+        "confidence": 0.9,
+        "second": {
+          "template": "Mouth_Open.png",
+          "distance": 0.1026,
+          "mirrored": true,
+          "template_size": [
+            105,
+            95
+          ]
+        },
+        "piece_size": [
+          257,
+          196
+        ],
+        "reason": "Hu-moment shape distance 0.0764 to Torso_Chest.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Torso_Chest.png",
+        "distance": 0.3554,
+        "confidence": 0.9,
+        "second": {
+          "template": "Pelvis.png",
+          "distance": 0.488
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.3554"
+      },
+      "agree": true,
+      "proposed_template": "Torso_Chest.png",
+      "canonical": "capejones_torso_chest_front",
+      "description": "torso/chest, white suit",
+      "warnings": [],
+      "confidence": 0.95,
+      "band": "HIGH",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_17.png",
+      "piece_id": "fla-back/Row1_17.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Eye_White_R.png",
+        "mirrored": false,
+        "distance": 0.0866,
+        "confidence": 0.9,
+        "second": {
+          "template": "Eye_White_L.png",
+          "distance": 0.0905,
+          "mirrored": false,
+          "template_size": [
+            93,
+            49
+          ]
+        },
+        "piece_size": [
+          149,
+          63
+        ],
+        "reason": "Hu-moment shape distance 0.0866 to Eye_White_R.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Belt_Overlay.png",
+        "distance": 0.4485,
+        "confidence": 0.9,
+        "second": {
+          "template": "Pelvis.png",
+          "distance": 0.7066
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.4485"
+      },
+      "agree": false,
+      "proposed_template": "Eye_White_R.png",
+      "canonical": "capejones_eye_white_right_FLAG",
+      "description": "eye white, right \u2014 SHADOW-vs-REJECT exception pending Mars",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_18.png",
+      "piece_id": "fla-back/Row1_18.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Eye_White_L.png",
+        "mirrored": true,
+        "distance": 0.1714,
+        "confidence": 0.6,
+        "second": {
+          "template": "Eye_White_R.png",
+          "distance": 0.1744,
+          "mirrored": false,
+          "template_size": [
+            91,
+            49
+          ]
+        },
+        "piece_size": [
+          83,
+          196
+        ],
+        "reason": "Hu-moment shape distance 0.1714 to Eye_White_L.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_4_Point.png",
+        "distance": 0.2554,
+        "confidence": 0.9,
+        "second": {
+          "template": "Arm_Front.png",
+          "distance": 0.2851
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2554"
+      },
+      "agree": false,
+      "proposed_template": "Eye_White_L.png",
+      "canonical": "capejones_eye_white_left",
+      "description": "eye white, left",
+      "warnings": [],
+      "confidence": 0.55,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_19.png",
+      "piece_id": "fla-back/Row1_19.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Torso_Chest.png",
+        "mirrored": true,
+        "distance": 0.0717,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_5_Point2.png",
+          "distance": 0.0726,
+          "mirrored": false,
+          "template_size": [
+            97,
+            148
+          ]
+        },
+        "piece_size": [
+          114,
+          130
+        ],
+        "reason": "Hu-moment shape distance 0.0717 to Torso_Chest.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Head_Profile.png",
+        "distance": 0.3291,
+        "confidence": 0.9,
+        "second": {
+          "template": "Head_Front.png",
+          "distance": 0.3523
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.3291"
+      },
+      "agree": false,
+      "proposed_template": "Torso_Chest.png",
+      "canonical": "capejones_torso_chest_front",
+      "description": "torso/chest, white suit",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_2.png",
+      "piece_id": "fla-back/Row1_2.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Cape_Collar.png",
+        "mirrored": true,
+        "distance": 0.0791,
+        "confidence": 0.9,
+        "second": {
+          "template": "Eye_White_R.png",
+          "distance": 0.1055,
+          "mirrored": true,
+          "template_size": [
+            91,
+            49
+          ]
+        },
+        "piece_size": [
+          62,
+          109
+        ],
+        "reason": "Hu-moment shape distance 0.0791 to Cape_Collar.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_4_Point.png",
+        "distance": 0.1622,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_2_FistBack.png",
+          "distance": 0.2283
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1622"
+      },
+      "agree": false,
+      "proposed_template": "Cape_Collar.png",
+      "canonical": "capejones_cape_collar_front",
+      "description": "cape collar, neck/shoulders",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_20.png",
+      "piece_id": "fla-back/Row1_20.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Eye_White_R.png",
+        "mirrored": true,
+        "distance": 0.1904,
+        "confidence": 0.6,
+        "second": {
+          "template": "Eye_White_L.png",
+          "distance": 0.1929,
+          "mirrored": false,
+          "template_size": [
+            93,
+            49
+          ]
+        },
+        "piece_size": [
+          79,
+          196
+        ],
+        "reason": "Hu-moment shape distance 0.1904 to Eye_White_R.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_4_Point.png",
+        "distance": 0.2684,
+        "confidence": 0.9,
+        "second": {
+          "template": "Arm_Front.png",
+          "distance": 0.2842
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2684"
+      },
+      "agree": false,
+      "proposed_template": "Eye_White_R.png",
+      "canonical": "capejones_eye_white_right_FLAG",
+      "description": "eye white, right \u2014 SHADOW-vs-REJECT exception pending Mars",
+      "warnings": [],
+      "confidence": 0.55,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_21.png",
+      "piece_id": "fla-back/Row1_21.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Mouth_Shout.png",
+        "mirrored": false,
+        "distance": 0.0455,
+        "confidence": 0.9,
+        "second": {
+          "template": "Torso_Chest.png",
+          "distance": 0.0878,
+          "mirrored": false,
+          "template_size": [
+            315,
+            319
+          ]
+        },
+        "piece_size": [
+          34,
+          33
+        ],
+        "reason": "Hu-moment shape distance 0.0455 to Mouth_Shout.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Mouth_Open.png",
+        "distance": 0.4489,
+        "confidence": 0.9,
+        "second": {
+          "template": "Mouth_Shout.png",
+          "distance": 0.4602
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.4489"
+      },
+      "agree": false,
+      "proposed_template": "Mouth_Shout.png",
+      "canonical": "capejones_mouth_shout",
+      "description": "mouth, shout",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_22.png",
+      "piece_id": "fla-back/Row1_22.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Eye_White_R.png",
+        "mirrored": true,
+        "distance": 0.0692,
+        "confidence": 0.9,
+        "second": {
+          "template": "Eye_White_L.png",
+          "distance": 0.0786,
+          "mirrored": false,
+          "template_size": [
+            93,
+            49
+          ]
+        },
+        "piece_size": [
+          171,
+          80
+        ],
+        "reason": "Hu-moment shape distance 0.0692 to Eye_White_R.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Pelvis.png",
+        "distance": 0.4301,
+        "confidence": 0.9,
+        "second": {
+          "template": "Mouth_Teeth.png",
+          "distance": 0.5224
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.4301"
+      },
+      "agree": false,
+      "proposed_template": "Eye_White_R.png",
+      "canonical": "capejones_eye_white_right_FLAG",
+      "description": "eye white, right \u2014 SHADOW-vs-REJECT exception pending Mars",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_23.png",
+      "piece_id": "fla-back/Row1_23.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Head_Front.png",
+        "mirrored": false,
+        "distance": 0.0136,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.0433,
+          "mirrored": true,
+          "template_size": [
+            103,
+            129
+          ]
+        },
+        "piece_size": [
+          59,
+          80
+        ],
+        "reason": "Hu-moment shape distance 0.0136 to Head_Front.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.2443,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.3091
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2443"
+      },
+      "agree": false,
+      "proposed_template": "Head_Front.png",
+      "canonical": "capejones_head_front",
+      "description": "head, front view, purple cowl+face",
+      "warnings": [
+        "source folder says back, proposal says front \u2014 Mars eye-check required"
+      ],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_24.png",
+      "piece_id": "fla-back/Row1_24.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Belt_Overlay.png",
+        "mirrored": true,
+        "distance": 0.1592,
+        "confidence": 0.6,
+        "second": {
+          "template": "Eye_White_L.png",
+          "distance": 0.3012,
+          "mirrored": true,
+          "template_size": [
+            93,
+            49
+          ]
+        },
+        "piece_size": [
+          76,
+          196
+        ],
+        "reason": "Hu-moment shape distance 0.1592 to Belt_Overlay.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_4_Point.png",
+        "distance": 0.2869,
+        "confidence": 0.9,
+        "second": {
+          "template": "Arm_Front.png",
+          "distance": 0.2878
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2869"
+      },
+      "agree": false,
+      "proposed_template": "Belt_Overlay.png",
+      "canonical": "capejones_belt_front",
+      "description": "belt overlay, waist",
+      "warnings": [],
+      "confidence": 0.55,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_25.png",
+      "piece_id": "fla-back/Row1_25.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Mouth_Shout.png",
+        "mirrored": false,
+        "distance": 0.0438,
+        "confidence": 0.9,
+        "second": {
+          "template": "Torso_Chest.png",
+          "distance": 0.0877,
+          "mirrored": false,
+          "template_size": [
+            315,
+            319
+          ]
+        },
+        "piece_size": [
+          32,
+          33
+        ],
+        "reason": "Hu-moment shape distance 0.0438 to Mouth_Shout.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Mouth_Open.png",
+        "distance": 0.4715,
+        "confidence": 0.9,
+        "second": {
+          "template": "Mouth_Shout.png",
+          "distance": 0.4829
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.4715"
+      },
+      "agree": false,
+      "proposed_template": "Mouth_Shout.png",
+      "canonical": "capejones_mouth_shout",
+      "description": "mouth, shout",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_26.png",
+      "piece_id": "fla-back/Row1_26.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Belt_Overlay.png",
+        "mirrored": true,
+        "distance": 0.1803,
+        "confidence": 0.6,
+        "second": {
+          "template": "Eye_White_L.png",
+          "distance": 0.2805,
+          "mirrored": true,
+          "template_size": [
+            93,
+            49
+          ]
+        },
+        "piece_size": [
+          77,
+          196
+        ],
+        "reason": "Hu-moment shape distance 0.1803 to Belt_Overlay.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_4_Point.png",
+        "distance": 0.2877,
+        "confidence": 0.9,
+        "second": {
+          "template": "Leg_Front.png",
+          "distance": 0.2956
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2877"
+      },
+      "agree": false,
+      "proposed_template": "Belt_Overlay.png",
+      "canonical": "capejones_belt_front",
+      "description": "belt overlay, waist",
+      "warnings": [],
+      "confidence": 0.55,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_27.png",
+      "piece_id": "fla-back/Row1_27.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Hand_4_Point.png",
+        "mirrored": true,
+        "distance": 0.0321,
+        "confidence": 0.9,
+        "second": {
+          "template": "Mouth_Closed.png",
+          "distance": 0.0397,
+          "mirrored": false,
+          "template_size": [
+            101,
+            59
+          ]
+        },
+        "piece_size": [
+          129,
+          77
+        ],
+        "reason": "Hu-moment shape distance 0.0321 to Hand_4_Point.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Pelvis.png",
+        "distance": 0.213,
+        "confidence": 0.9,
+        "second": {
+          "template": "Mouth_Teeth.png",
+          "distance": 0.3594
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.213"
+      },
+      "agree": false,
+      "proposed_template": "Hand_4_Point.png",
+      "canonical": "capejones_hand_point_front",
+      "description": "hand, point",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_28.png",
+      "piece_id": "fla-back/Row1_28.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Head_Front.png",
+        "mirrored": true,
+        "distance": 0.0147,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.0364,
+          "mirrored": true,
+          "template_size": [
+            103,
+            129
+          ]
+        },
+        "piece_size": [
+          60,
+          81
+        ],
+        "reason": "Hu-moment shape distance 0.0147 to Head_Front.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.2373,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_7_Grip.png",
+          "distance": 0.3001
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2373"
+      },
+      "agree": false,
+      "proposed_template": "Head_Front.png",
+      "canonical": "capejones_head_front",
+      "description": "head, front view, purple cowl+face",
+      "warnings": [
+        "source folder says back, proposal says front \u2014 Mars eye-check required"
+      ],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_29.png",
+      "piece_id": "fla-back/Row1_29.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Mouth_Shout.png",
+        "mirrored": false,
+        "distance": 0.0063,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_1_Fist.png",
+          "distance": 0.0357,
+          "mirrored": true,
+          "template_size": [
+            90,
+            108
+          ]
+        },
+        "piece_size": [
+          34,
+          34
+        ],
+        "reason": "Hu-moment shape distance 0.0063 to Mouth_Shout.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Mouth_Open.png",
+        "distance": 0.4444,
+        "confidence": 0.9,
+        "second": {
+          "template": "Mouth_Shout.png",
+          "distance": 0.4651
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.4444"
+      },
+      "agree": false,
+      "proposed_template": "Mouth_Shout.png",
+      "canonical": "capejones_mouth_shout",
+      "description": "mouth, shout",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_3.png",
+      "piece_id": "fla-back/Row1_3.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Eye_White_L.png",
+        "mirrored": false,
+        "distance": 0.0451,
+        "confidence": 0.9,
+        "second": {
+          "template": "Eye_White_R.png",
+          "distance": 0.0469,
+          "mirrored": false,
+          "template_size": [
+            91,
+            49
+          ]
+        },
+        "piece_size": [
+          70,
+          141
+        ],
+        "reason": "Hu-moment shape distance 0.0451 to Eye_White_L.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_4_Point.png",
+        "distance": 0.2277,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_2_FistBack.png",
+          "distance": 0.2779
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2277"
+      },
+      "agree": false,
+      "proposed_template": "Eye_White_L.png",
+      "canonical": "capejones_eye_white_left",
+      "description": "eye white, left",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_30.png",
+      "piece_id": "fla-back/Row1_30.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Torso_Chest.png",
+        "mirrored": true,
+        "distance": 0.0639,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_5_Point2.png",
+          "distance": 0.0838,
+          "mirrored": false,
+          "template_size": [
+            97,
+            148
+          ]
+        },
+        "piece_size": [
+          448,
+          666
+        ],
+        "reason": "Hu-moment shape distance 0.0639 to Torso_Chest.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Cape_Back_Main.png",
+        "distance": 0.0907,
+        "confidence": 0.9,
+        "second": {
+          "template": "Head_Front.png",
+          "distance": 0.6796
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.0907"
+      },
+      "agree": false,
+      "proposed_template": "Torso_Chest.png",
+      "canonical": "capejones_torso_chest_front",
+      "description": "torso/chest, white suit",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_4.png",
+      "piece_id": "fla-back/Row1_4.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Mouth_Closed.png",
+        "mirrored": true,
+        "distance": 0.0576,
+        "confidence": 0.9,
+        "second": {
+          "template": "Cape_Back_Main.png",
+          "distance": 0.0609,
+          "mirrored": false,
+          "template_size": [
+            490,
+            833
+          ]
+        },
+        "piece_size": [
+          61,
+          102
+        ],
+        "reason": "Hu-moment shape distance 0.0576 to Mouth_Closed.png (mirrored)"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_4_Point.png",
+        "distance": 0.1919,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_2_FistBack.png",
+          "distance": 0.2188
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1919"
+      },
+      "agree": false,
+      "proposed_template": "Mouth_Closed.png",
+      "canonical": "capejones_mouth_closed",
+      "description": "mouth, closed",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_5.png",
+      "piece_id": "fla-back/Row1_5.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Head_Profile.png",
+        "mirrored": false,
+        "distance": 0.0583,
+        "confidence": 0.9,
+        "second": {
+          "template": "Cape_Back_Main.png",
+          "distance": 0.0659,
+          "mirrored": true,
+          "template_size": [
+            490,
+            833
+          ]
+        },
+        "piece_size": [
+          61,
+          103
+        ],
+        "reason": "Hu-moment shape distance 0.0583 to Head_Profile.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_4_Point.png",
+        "distance": 0.1991,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_6_Relaxed.png",
+          "distance": 0.2085
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.1991"
+      },
+      "agree": false,
+      "proposed_template": "Head_Profile.png",
+      "canonical": "capejones_head_profile",
+      "description": "head, side/profile view",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    },
+    {
+      "piece": "../sliced-clean-20261031/D-xray-angle-ref/fla-back/Row1_6.png",
+      "piece_id": "fla-back/Row1_6.png",
+      "folder": "fla-back",
+      "tool1_shape": {
+        "tool": "opencv_shape",
+        "best": "Neck.png",
+        "mirrored": false,
+        "distance": 0.0543,
+        "confidence": 0.9,
+        "second": {
+          "template": "Hand_1_Fist.png",
+          "distance": 0.0603,
+          "mirrored": false,
+          "template_size": [
+            90,
+            108
+          ]
+        },
+        "piece_size": [
+          148,
+          180
+        ],
+        "reason": "Hu-moment shape distance 0.0543 to Neck.png"
+      },
+      "tool2_knn": {
+        "tool": "embedding_knn",
+        "best": "Hand_2_FistBack.png",
+        "distance": 0.2056,
+        "confidence": 0.9,
+        "second": {
+          "template": "Torso_Chest.png",
+          "distance": 0.2064
+        },
+        "reason": "nearest template in colour+proportion space, distance 0.2056"
+      },
+      "agree": false,
+      "proposed_template": "Neck.png",
+      "canonical": "capejones_neck_front",
+      "description": "neck cylinder, purple",
+      "warnings": [],
+      "confidence": 0.7,
+      "band": "NEEDS-MARS-EYE",
+      "status": "proposed"
+    }
+  ]
+}

@@ -1,0 +1,1484 @@
+{
+ "version": "shot-specs-30-20261031",
+ "date": "2026-10-31",
+ "supersedes": "SHOT-SPECS-V6-20261031.md where it conflicts with v7c locks (see notes)",
+ "standing_rules": "new dated files only; labels debug only; never recolour base art; shot spec must name every colour source or it must not render as final; rim follows key/LUT hue +/-20 deg (dual-light exception only when BOTH sources named + which rim belongs to which); room scale locked 2.5x room-only (seated 2.5x -> 2.3x); LUTs approved 70/70; Level 2 v2 warm-rim approved; JOJO-ATMOSPHERE approved, tension/power/uncertainty demo-only NOT canon until Mars approves each; audio delivered as LINKS never in chat; new filename per image version; version-lock never overwrite a version Mars has seen",
+ "mars_shot_approval": "NONE claimed for any of the 30 shots - all PENDING Mars look",
+ "shots": [
+  {
+   "shot_id": "CJ-01",
+   "slug": "punch-windup",
+   "pose_clip": "Punch windup, hold 6f (v6 timing, v7c clean build)",
+   "pose_ref": "clips-v7c/punch/ (windup frame; v7c clean re-render required, labelled versions debug-only)",
+   "background": "street (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2",
+   "lut": "golden-hour",
+   "lut_gain": [
+    1.1,
+    0.95,
+    0.7
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-golden-hour.cube",
+   "key_color": "warm gold front key",
+   "key_hue_deg": 35,
+   "rim_color": "magenta-rose 255,178,229 (rim under shift, NOT base warm)",
+   "rim_hue_deg": 325,
+   "bleed_color": [
+    230,
+    80,
+    170
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "JOJO-TENSION",
+   "shift_status": "DEMO-ONLY - NOT canon until Mars approves each palette for canon use; demo palette only here",
+   "return_to_base": "Tension beat closes at CJ-04 recover: base golden-hour restored",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A01",
+   "audio_note": "impact/windup cue, -14 LUFS, delivered as LINK never in chat",
+   "notes": "Tension gain (1.20,0.70,1.30) character only. Rim follows SHIFTED key, not base key.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-01-punch-windup-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "shifted_key_hue_deg": 325,
+   "rim_rule_basis": "rim follows SHIFTED key (magenta-rose ~325 deg), not base key - diff 0 deg"
+  },
+  {
+   "shot_id": "CJ-02",
+   "slug": "punch-extend-snap",
+   "pose_clip": "Punch extend-snap, hold 2f",
+   "pose_ref": "clips-v7c/punch/ (extend frame; v7c clean required)",
+   "background": "street (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2",
+   "lut": "golden-hour",
+   "lut_gain": [
+    1.1,
+    0.95,
+    0.7
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-golden-hour.cube",
+   "key_color": "warm gold front key",
+   "key_hue_deg": 35,
+   "rim_color": "magenta-rose 255,178,229 (rim under shift)",
+   "rim_hue_deg": 325,
+   "bleed_color": [
+    230,
+    80,
+    170
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "JOJO-TENSION (continued from CJ-01)",
+   "shift_status": "DEMO-ONLY - NOT canon",
+   "return_to_base": "Closes at CJ-04 recover: base restored",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A02",
+   "audio_note": "snap cue, -14 LUFS, link delivery",
+   "notes": "Same tension shift continued across the snap; no new shift invented.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-02-punch-extend-snap-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "shifted_key_hue_deg": 325,
+   "rim_rule_basis": "rim follows SHIFTED key (magenta-rose ~325 deg), not base key - diff 0 deg"
+  },
+  {
+   "shot_id": "CJ-03",
+   "slug": "punch-impact-locked",
+   "pose_clip": "Punch impact-hold, hold 12f - LOCKED impact frame (Arm2 forearm diagonal UP across upper chest, fist near centre upper chest)",
+   "pose_ref": "clips-v7c/punch-impact-locked-v7c.png (locked copy)",
+   "background": "street (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2 (+ separate FX passes, not god rays)",
+   "lut": "golden-hour",
+   "lut_gain": [
+    1.1,
+    0.95,
+    0.7
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-golden-hour.cube",
+   "key_color": "warm gold front key",
+   "key_hue_deg": 35,
+   "rim_color": "red family 255,120,115 (rim under shift)",
+   "rim_hue_deg": 5,
+   "bleed_color": [
+    220,
+    60,
+    50
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "JOJO-POWER",
+   "shift_status": "DEMO-ONLY - NOT canon until Mars approves each palette for canon use",
+   "return_to_base": "Power beat closes at CJ-04 recover: base golden-hour restored",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A03",
+   "audio_note": "impact cue + gauntlet glow cue, -14 LUFS, link delivery",
+   "notes": "Pose/frame locked by Mars 15:33; SHOT itself PENDING Mars look (no shot approval claimed). Power_override is null: JOJO-POWER is a shift, NOT a named power override - do not conflate. Effects: impact energy + gauntlet glow are Level 4 FX passes, not god rays.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-03-punch-impact-locked-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "shifted_key_hue_deg": 5,
+   "rim_rule_basis": "rim follows SHIFTED key (red ~5 deg), not base key - diff 0 deg"
+  },
+  {
+   "shot_id": "CJ-04",
+   "slug": "punch-recover",
+   "pose_clip": "Punch recover, hold 6f",
+   "pose_ref": "clips-v7c/punch/ (recover frame; v7c clean required)",
+   "background": "street (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2",
+   "lut": "golden-hour",
+   "lut_gain": [
+    1.1,
+    0.95,
+    0.7
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-golden-hour.cube",
+   "key_color": "warm gold front key",
+   "key_hue_deg": 35,
+   "rim_color": [
+    255,
+    180,
+    80
+   ],
+   "rim_hue_deg": 35,
+   "bleed_color": [
+    255,
+    120,
+    0
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift active - base restored",
+   "return_to_base": "RETURN-TO-BASE CONFIRMED: tension (CJ-01/02) and power (CJ-03) demo beats closed here, base golden-hour rim/bleed restored",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A04",
+   "audio_note": "recover cue (light), -14 LUFS, link delivery",
+   "notes": "Return-to-base is recorded, not assumed: this shot's rim is base warm amber again.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-04-punch-recover-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 35 deg, rim 35 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-05",
+   "slug": "punch-across-down-placement",
+   "pose_clip": "Punch Arm2 across-down placement frame (forearm diagonal DOWN across lower chest/belly, fist lower centre) - scene placement during/before/after punch, NOT the impact frame",
+   "pose_ref": "clips-v7c/punch-arm2-variants/punch-impact-a2l-minus70-across-down-v7c.png",
+   "background": "street / town (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2",
+   "lut": "daylight",
+   "lut_gain": [
+    1,
+    1,
+    1
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-daylight.cube",
+   "key_color": "neutral daylight",
+   "key_hue_deg": null,
+   "rim_color": [
+    255,
+    255,
+    255
+   ],
+   "rim_hue_deg": null,
+   "bleed_color": [
+    255,
+    255,
+    255
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base - no return needed",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A05",
+   "audio_note": "placement cue (light, if used), -14 LUFS, link delivery",
+   "notes": "Approved as a scene placement 15:33, NOT as the impact frame; shot PENDING Mars look. Neutral rim/white is the neutral exception, not a hue mismatch.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-05-punch-across-down-placement-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "neutral exception: neutral key, white rim"
+  },
+  {
+   "shot_id": "CJ-06",
+   "slug": "walk-street-contact",
+   "pose_clip": "Walk contact LEG1, hold 12f, loop",
+   "pose_ref": "clips-v7c-clean-20261031/walk/walk-01-contact-v7c-clean.png",
+   "background": "street",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2",
+   "lut": "daylight",
+   "lut_gain": [
+    1,
+    1,
+    1
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-daylight.cube",
+   "key_color": "neutral daylight",
+   "key_hue_deg": null,
+   "rim_color": [
+    255,
+    255,
+    255
+   ],
+   "rim_hue_deg": null,
+   "bleed_color": [
+    255,
+    255,
+    255
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A06",
+   "audio_note": "footstep cue, -14 LUFS, link delivery",
+   "notes": "Labels: ARM1=our left, ARM2=our right, LEG1=our left, LEG2=our right - debug labels only, never in final.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-06-walk-street-contact-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "neutral exception: neutral key, white rim"
+  },
+  {
+   "shot_id": "CJ-07",
+   "slug": "walk-town-passing",
+   "pose_clip": "Walk passing, hold 12f, loop (LEG2 contact / passing cycle)",
+   "pose_ref": "clips-v7c-clean-20261031/walk/walk-13-passing-v7c-clean.png, walk-25-contact, walk-37-passing",
+   "background": "town",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2",
+   "lut": "golden-hour",
+   "lut_gain": [
+    1.1,
+    0.95,
+    0.7
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-golden-hour.cube",
+   "key_color": "warm gold evening key",
+   "key_hue_deg": 35,
+   "rim_color": [
+    255,
+    180,
+    80
+   ],
+   "rim_hue_deg": 35,
+   "bleed_color": [
+    255,
+    120,
+    0
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A07",
+   "audio_note": "footstep cue, -14 LUFS, link delivery",
+   "notes": "Evening town variant; walk cycle timing per v6 (contact/passing 12f holds).",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-07-walk-town-passing-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 35 deg, rim 35 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-08",
+   "slug": "walk-alley-night",
+   "pose_clip": "Walk cycle on alley background (contact/passing loop)",
+   "pose_ref": "walk clip on alley background (v7c clean required)",
+   "background": "alley (stand-in; final painted alley owed)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2",
+   "lut": "night-city",
+   "lut_gain": [
+    0.8,
+    0.85,
+    1.05
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-night-city.cube",
+   "key_color": "cool night key",
+   "key_hue_deg": 220,
+   "rim_color": [
+    160,
+    185,
+    255
+   ],
+   "rim_hue_deg": 220,
+   "bleed_color": [
+    80,
+    120,
+    255
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A08",
+   "audio_note": "footstep + night ambience cue, -14 LUFS, link delivery",
+   "notes": "Single cool key: rim follows cool key (hue ~220), NOT warm amber. No second source named, so no second rim colour.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-08-walk-alley-night-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 220 deg, rim 220 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-09",
+   "slug": "dance-a",
+   "pose_clip": "Dance-a, hold 12f, loop",
+   "pose_ref": "clips-v7c-clean-20261031/dance/ (dance-a; v7c clean required)",
+   "background": "stage / street (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2",
+   "lut": "magenta-normal",
+   "lut_gain": [
+    1.25,
+    0.75,
+    1.15
+   ],
+   "lut_file": "showcase/lut-spectrum/ (approved spectrum sheet 4)",
+   "key_color": "magenta key",
+   "key_hue_deg": 320,
+   "rim_color": [
+    255,
+    178,
+    229
+   ],
+   "rim_hue_deg": 325,
+   "bleed_color": [
+    230,
+    80,
+    180
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift - dance energy is choreography, not a JoJo shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A09",
+   "audio_note": "dance beat cue (Darwin beat grid, on twos), -14 LUFS, link delivery",
+   "notes": "Choreography principles only; no character art/names/dialogue/logos copied.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-09-dance-a-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 320 deg, rim 325 deg, diff 5 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-10",
+   "slug": "dance-b",
+   "pose_clip": "Dance-b, hold 12f, loop",
+   "pose_ref": "clips-v7c-clean-20261031/dance/ (dance-b; v7c clean required)",
+   "background": "stage / street (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2",
+   "lut": "pink-normal",
+   "lut_gain": [
+    1.25,
+    0.85,
+    1.05
+   ],
+   "lut_file": "showcase/lut-spectrum/ (approved spectrum sheet 4)",
+   "key_color": "pink key",
+   "key_hue_deg": 335,
+   "rim_color": [
+    255,
+    190,
+    220
+   ],
+   "rim_hue_deg": 335,
+   "bleed_color": [
+    235,
+    110,
+    185
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A10",
+   "audio_note": "dance beat cue, -14 LUFS, link delivery",
+   "notes": "Dance-b is the second half of the dance-a/b loop.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-10-dance-b-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 335 deg, rim 335 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-11",
+   "slug": "dance-combined-finale",
+   "pose_clip": "Dance repeat / combined finale (Mochiichao + Cape Jones dance combine, beat grid on twos)",
+   "pose_ref": "dance combine spec (MOCHIICHAO-COMBINE-20261031.md); combined clip owed as a rendered shot, spec only here",
+   "background": "stage (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 3",
+   "lut": "violet-magenta-normal",
+   "lut_gain": [
+    1.05,
+    0.75,
+    1.2
+   ],
+   "lut_file": "showcase/luts-spectrum-v2/lut-33-violet-magenta-normal.cube",
+   "key_color": "violet-magenta stage key",
+   "key_hue_deg": 275,
+   "rim_color": [
+    220,
+    150,
+    255
+   ],
+   "rim_hue_deg": 275,
+   "bleed_color": [
+    170,
+    80,
+    235
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "GOD RAYS - see god-ray file CJ-11",
+   "audio_cue_id": "CJ-A11",
+   "audio_note": "dance finale cue, -14 LUFS, link delivery",
+   "notes": "Spotlight shafts are Level 3 volume passes; canon rule intact (Cape Jones canon kept distinct from Mochiichao canon).",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-11-dance-combined-finale-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 275 deg, rim 275 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-12",
+   "slug": "flying-hover",
+   "pose_clip": "Flying hovering, hold 12f",
+   "pose_ref": "clips-v7c-clean-20261031/flying/ (hover; v7c clean required)",
+   "background": "skyline (stand-in; final painted flying background owed)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 3",
+   "lut": "golden-hour",
+   "lut_gain": [
+    1.1,
+    0.95,
+    0.7
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-golden-hour.cube",
+   "key_color": "sun behind, upper-right (primary source)",
+   "key_hue_deg": 35,
+   "rim_color": [
+    255,
+    180,
+    80
+   ],
+   "rim_hue_deg": 35,
+   "bleed_color": [
+    255,
+    120,
+    0
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "GOD RAYS - see god-ray file CJ-12",
+   "audio_cue_id": "CJ-A12",
+   "audio_note": "wind/hover cue, -14 LUFS, link delivery",
+   "notes": "Single sun source: rim belongs to that sun source (warm family). Front fill is same warm family, NOT a second rim colour.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-12-flying-hover-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 35 deg, rim 35 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-13",
+   "slug": "flying-soar",
+   "pose_clip": "Flying soaring, arms out, hold 12f",
+   "pose_ref": "clips-v7c-clean-20261031/flying/ (soar; v7c clean required)",
+   "background": "skyline / sky (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 3",
+   "lut": "desert-sun",
+   "lut_gain": [
+    1.15,
+    1.0,
+    0.65
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-desert-sun.cube",
+   "key_color": "sun directly behind (primary source)",
+   "key_hue_deg": 40,
+   "rim_color": [
+    255,
+    200,
+    110
+   ],
+   "rim_hue_deg": 40,
+   "bleed_color": [
+    255,
+    150,
+    40
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "GOD RAYS - see god-ray file CJ-13",
+   "audio_cue_id": "CJ-A13",
+   "audio_note": "soar/wind cue, -14 LUFS, link delivery",
+   "notes": "Radial sun fan behind character; rim is sun's warm family.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-13-flying-soar-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 40 deg, rim 40 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-14",
+   "slug": "flying-dive",
+   "pose_clip": "Flying diving, arms up, hold 12f",
+   "pose_ref": "clips-v7c-clean-20261031/flying/ (dive; v7c clean required)",
+   "background": "sky (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 3",
+   "lut": "warm-sunset",
+   "lut_gain": [
+    1.15,
+    0.8,
+    0.7
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-warm-sunset.cube",
+   "key_color": "sun high behind (primary source)",
+   "key_hue_deg": 27,
+   "rim_color": [
+    255,
+    155,
+    75
+   ],
+   "rim_hue_deg": 27,
+   "bleed_color": [
+    255,
+    100,
+    20
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "GOD RAYS - see god-ray file CJ-14",
+   "audio_cue_id": "CJ-A14",
+   "audio_note": "dive/wind cue, -14 LUFS, link delivery",
+   "notes": "Dive pose: arms-up check per gauntlet rule (hand orientation decides piece, frame by frame).",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-14-flying-dive-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 27 deg, rim 27 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-15",
+   "slug": "flying-forward-foreshortened",
+   "pose_clip": "Flying forward-flight, fists toward camera (foreshortened forearm)",
+   "pose_ref": "foreshortened forearm piece OWED - no source file yet",
+   "background": "sky (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2",
+   "lut": "cyan-blue-normal",
+   "lut_gain": [
+    0.7,
+    1.0,
+    1.25
+   ],
+   "lut_file": "showcase/luts-spectrum-v2/lut-33-cyan-blue-normal.cube",
+   "key_color": "cool sky key",
+   "key_hue_deg": 205,
+   "rim_color": [
+    140,
+    200,
+    255
+   ],
+   "rim_hue_deg": 205,
+   "bleed_color": [
+    70,
+    140,
+    255
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A15",
+   "audio_note": "forward-flight wind cue, -14 LUFS, link delivery",
+   "notes": "SPEC ONLY - MUST NOT RENDER AS FINAL: forward-flight foreshortened forearm piece owed (v6 missing, not faked). Rim/colour recorded so the piece, when built, is graded without guessing.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-15-flying-forward-foreshortened-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 205 deg, rim 205 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-16",
+   "slug": "flex-anticipation-before-tighten",
+   "pose_clip": "Flex anticipation / before-tighten frame (Roll2: fists outward) - in-between before tightening the flex",
+   "pose_ref": "reposes-v7c-clean/flex-anticipation-before-tighten-v7c-clean.png",
+   "background": "any (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2",
+   "lut": "orange-normal",
+   "lut_gain": [
+    1.25,
+    0.95,
+    0.65
+   ],
+   "lut_file": "showcase/lut-spectrum/ (approved spectrum)",
+   "key_color": "orange key",
+   "key_hue_deg": 35,
+   "rim_color": [
+    255,
+    180,
+    90
+   ],
+   "rim_hue_deg": 35,
+   "bleed_color": [
+    255,
+    120,
+    30
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A16",
+   "audio_note": "anticipation cue (light, if used), -14 LUFS, link delivery",
+   "notes": "Anticipation frame, NOT the final flex. Hand-first check recorded in pose log before build.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-16-flex-anticipation-before-tighten-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 35 deg, rim 35 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-17",
+   "slug": "arms-up-reference",
+   "pose_clip": "Arms-up reference pose (demo-pass pose reclassified: good arms-up / weird fighting stance / pre-flex reference, NOT a flex)",
+   "pose_ref": "showcase/demo-pass-flex-level2-20261031/ (pose reference; demo pass, not a final shot)",
+   "background": "any (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2",
+   "lut": "yellow-normal",
+   "lut_gain": [
+    1.2,
+    1.15,
+    0.7
+   ],
+   "lut_file": "showcase/lut-spectrum/ (approved spectrum)",
+   "key_color": "yellow key",
+   "key_hue_deg": 50,
+   "rim_color": [
+    255,
+    230,
+    140
+   ],
+   "rim_hue_deg": 50,
+   "bleed_color": [
+    255,
+    200,
+    60
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A17",
+   "audio_note": "none (reference pose; no cue unless cut into a shot), -14 LUFS if audio added, link delivery",
+   "notes": "Do NOT call this image a flex in future lists (Mars 15:43). Uses: arms-up-high fighting stance, or right before a flex, or body-movement reference.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-17-arms-up-reference-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 50 deg, rim 50 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-18",
+   "slug": "true-flex-double-bicep",
+   "pose_clip": "True flex, double-bicep (upper arms out wide, forearms up beside head, fists toward head + down toward shoulders)",
+   "pose_ref": "true-flex-double-bicep-final-fists-in-v7c-clean.png is FAILED visually - do not use; seam-fix rebuild owed",
+   "background": "any (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2",
+   "lut": "red-orange-normal",
+   "lut_gain": [
+    1.25,
+    0.85,
+    0.65
+   ],
+   "lut_file": "showcase/luts-spectrum-v2/lut-33-red-orange-normal.cube",
+   "key_color": "red-orange key",
+   "key_hue_deg": 20,
+   "rim_color": [
+    255,
+    165,
+    95
+   ],
+   "rim_hue_deg": 20,
+   "bleed_color": [
+    255,
+    110,
+    30
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A18",
+   "audio_note": "flex/power cue, -14 LUFS, link delivery",
+   "notes": "SPEC ONLY - MUST NOT RENDER AS FINAL: final flex 0/1 - 75-degree fist-roll attempts detached at the wrist; seam fix owed (pose-space rotation + wrist cap/overlap). Detached-fist version is NOT shipped. Distinct from fighting pose (upper -70/70, lower 150/-150 vs fighting -25/25, 160/-160).",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-18-true-flex-double-bicep-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 20 deg, rim 20 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-19",
+   "slug": "fighting-pose-forward-bicep-curl",
+   "pose_clip": "Fighting pose, forward bicep curl, arms up in front, fists near shoulders, gauntlet panels OUTWARD",
+   "pose_ref": "reposes-v7c-clean/fighting-pose-forward-bicep-curl-gauntlet-out-fixed-v7c-clean.png (locked pose reference)",
+   "background": "any (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 3 (dual-light)",
+   "lut": "golden-hour",
+   "lut_gain": [
+    1.1,
+    0.95,
+    0.7
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-golden-hour.cube",
+   "key_color": "warm gold front key",
+   "key_hue_deg": 35,
+   "rim_color": "FRONT rim warm amber 255,180,80 (belongs to front warm gold key); BACK rim cyan 0,200,255 (belongs to back cyan source)",
+   "rim_hue_deg": 35,
+   "bleed_color": "front bleed orange 255,120,0; back bleed cyan-dark 0,140,200",
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": {
+    "front_key": {
+     "color": [
+      255,
+      180,
+      80
+     ],
+     "direction": "front",
+     "temperature": "warm gold"
+    },
+    "back_source": {
+     "color": [
+      0,
+      200,
+      255
+     ],
+     "direction": "behind",
+     "temperature": "cool cyan",
+     "rays": "god rays"
+    },
+    "rim_front": [
+     255,
+     180,
+     80
+    ],
+    "rim_back": [
+     0,
+     200,
+     255
+    ]
+   },
+   "god_ray_decision": "GOD RAYS - see god-ray file CJ-19",
+   "audio_cue_id": "CJ-A19",
+   "audio_note": "fighting-stance cue, -14 LUFS, link delivery",
+   "notes": "DUAL-LIGHT EXCEPTION: both sources named + which rim belongs to which, so cyan rim is NOT a mismatch here. Pose reference approved 15:00 ('perfect'); SHOT PENDING Mars look. Gauntlet: OutFixed pieces (pose-driven swap, |arm_lower|>=120 + forearm in front of torso).",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-19-fighting-pose-forward-bicep-curl-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "dual-light exception: BOTH sources named + which rim belongs to which"
+  },
+  {
+   "shot_id": "CJ-20",
+   "slug": "fighting-stance-arms-up-high",
+   "pose_clip": "Fighting stance, arms up really high (arms-up pose use 1)",
+   "pose_ref": "arms-up reference pose family (see CJ-17)",
+   "background": "any (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2",
+   "lut": "fire",
+   "lut_gain": [
+    1.15,
+    0.85,
+    0.6
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-fire.cube",
+   "key_color": "fire/warm key",
+   "key_hue_deg": 25,
+   "rim_color": [
+    255,
+    150,
+    60
+   ],
+   "rim_hue_deg": 25,
+   "bleed_color": [
+    255,
+    100,
+    20
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A20",
+   "audio_note": "stance cue, -14 LUFS, link delivery",
+   "notes": "Arms-up-high stance use of the CJ-17 reference pose family; hand orientation checked frame by frame.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-20-fighting-stance-arms-up-high-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 25 deg, rim 25 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-21",
+   "slug": "jump-crouch-takeoff",
+   "pose_clip": "Jump crouch + takeoff, hold 6f / 2f",
+   "pose_ref": "clips-v7c-clean-20261031/jump/ (crouch/takeoff; v7c clean required)",
+   "background": "rooftop (stand-in; final painted rooftop owed)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 2",
+   "lut": "teal-normal",
+   "lut_gain": [
+    0.7,
+    1.1,
+    1.05
+   ],
+   "lut_file": "showcase/lut-spectrum/ (approved spectrum)",
+   "key_color": "teal key",
+   "key_hue_deg": 175,
+   "rim_color": [
+    140,
+    220,
+    210
+   ],
+   "rim_hue_deg": 175,
+   "bleed_color": [
+    60,
+    180,
+    170
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A21",
+   "audio_note": "takeoff cue, -14 LUFS, link delivery",
+   "notes": "v7c clean build required; v6 jump frames are not to be reused for bent joints.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-21-jump-crouch-takeoff-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 175 deg, rim 175 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-22",
+   "slug": "jump-tuck-landing",
+   "pose_clip": "Jump tuck + landing, hold 12f / 6f, cape wind",
+   "pose_ref": "clips-v7c-clean-20261031/jump/ (tuck/land; v7c clean required)",
+   "background": "skyline / rooftop (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 3",
+   "lut": "golden-hour",
+   "lut_gain": [
+    1.1,
+    0.95,
+    0.7
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-golden-hour.cube",
+   "key_color": "sun low behind skyline (primary source)",
+   "key_hue_deg": 35,
+   "rim_color": [
+    255,
+    180,
+    80
+   ],
+   "rim_hue_deg": 35,
+   "bleed_color": [
+    255,
+    120,
+    0
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "GOD RAYS - see god-ray file CJ-22",
+   "audio_cue_id": "CJ-A22",
+   "audio_note": "landing cue, -14 LUFS, link delivery",
+   "notes": "v6 knee square-crop blocker is closed only by using the v7c joint-locked build (pivot at ball centre, circular cap); v6 tuck frame must not be used.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-22-jump-tuck-landing-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 35 deg, rim 35 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-23",
+   "slug": "lounge-seated-room",
+   "pose_clip": "Lounge / seated pose in room",
+   "pose_ref": "reposes-v7c-clean/joint-seated-v7c-clean.png (seated pose, clean)",
+   "background": "room (batch-KKGuh room)",
+   "scale": "2.3x seated, room-only (2.5x - 0.2, approximate per Mars 2026-10-31 15:34, verify on seated pose)",
+   "lighting_level": "Level 2",
+   "lut": "warm-interior",
+   "lut_gain": [
+    1.1,
+    0.95,
+    0.75
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-warm-interior.cube",
+   "key_color": "warm lamp key",
+   "key_hue_deg": 36,
+   "rim_color": [
+    255,
+    185,
+    95
+   ],
+   "rim_hue_deg": 36,
+   "bleed_color": [
+    255,
+    125,
+    20
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A23",
+   "audio_note": "room ambience cue (light, if used), -14 LUFS, link delivery",
+   "notes": "ROOM-ONLY scale: seated 2.3x. LUT multiplies room colour (room wall warm brown shifts result); judge LUT alone on grey-128 control, judge shot on room.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-23-lounge-seated-room-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 36 deg, rim 36 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-24",
+   "slug": "desk-seated",
+   "pose_clip": "Desk shot, seated at desk",
+   "pose_ref": "showcase/layout-pass-desk-single-20261031.jpg (layout stand-in, scale ~0.35 layout - final shot uses 2.3x seated room rule for the character)",
+   "background": "desk (STAND-IN; final painted desk background owed)",
+   "scale": "2.3x seated, room-only (2.5x - 0.2, approximate per Mars 2026-10-31 15:34, verify on seated pose)",
+   "lighting_level": "Level 2",
+   "lut": "warm-lamp",
+   "lut_gain": [
+    1.1,
+    0.95,
+    0.75
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-warm-lamp.cube",
+   "key_color": "warm lamp key",
+   "key_hue_deg": 36,
+   "rim_color": [
+    255,
+    185,
+    95
+   ],
+   "rim_hue_deg": 36,
+   "bleed_color": [
+    255,
+    125,
+    20
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A24",
+   "audio_note": "desk ambience cue (light, if used), -14 LUFS, link delivery",
+   "notes": "Background is stand-in only; shot cannot be called final on a painted-desk basis until final desk background is built.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-24-desk-seated-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 36 deg, rim 36 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-25",
+   "slug": "room-standing-device-gag",
+   "pose_clip": "Room standing shot with handheld gag device (Mochiichao handheld: Game Boy Advance + Tamagotchi mix, always in his pocket though he has NO visible pockets)",
+   "pose_ref": "mochiichao-combine-build-20261031/device-prop-sheet-20261031.png; device-in-final-shot-room-20261031.png (reference, not this shot's final)",
+   "background": "room (batch-KKGuh room)",
+   "scale": "2.5x standing, room-only (rig 950px tall, feet on floor; room scale does NOT apply to other backgrounds)",
+   "lighting_level": "Level 2",
+   "lut": "warm-interior",
+   "lut_gain": [
+    1.1,
+    0.95,
+    0.75
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-warm-interior.cube",
+   "key_color": "warm lamp key",
+   "key_hue_deg": 36,
+   "rim_color": [
+    255,
+    185,
+    95
+   ],
+   "rim_hue_deg": 36,
+   "bleed_color": [
+    255,
+    125,
+    20
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift - gag is a prop, not a colour shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A25",
+   "audio_note": "device gag cue (light, if used), -14 LUFS, link delivery",
+   "notes": "ROOM-ONLY scale: standing 2.5x. Device prop sheet exists; device-in-final-shot-room render is a separate implementation step, spec only here.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-25-room-standing-device-gag-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 36 deg, rim 36 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-26",
+   "slug": "dialogue-neutral-unsure",
+   "pose_clip": "Dialogue, neutral / unsure beat",
+   "pose_ref": "viseme/eye-strip pieces OWED - no dialogue shot yet (v6 template only)",
+   "background": "room (batch-KKGuh room)",
+   "scale": "2.5x standing, room-only (rig 950px tall, feet on floor; room scale does NOT apply to other backgrounds)",
+   "lighting_level": "Level 2",
+   "lut": "natural-window-light",
+   "lut_gain": [
+    1,
+    1,
+    1
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-natural-window-light.cube",
+   "key_color": "neutral window key",
+   "key_hue_deg": null,
+   "rim_color": [
+    255,
+    255,
+    255
+   ],
+   "rim_hue_deg": null,
+   "bleed_color": [
+    255,
+    255,
+    255
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "JOJO-UNCERTAINTY",
+   "shift_status": "DEMO-ONLY - NOT canon until Mars approves each palette for canon use",
+   "return_to_base": "Uncertainty beat closes after the line: base natural-window restored in next dialogue shot",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A26",
+   "audio_note": "dialogue cue (no recorded dialogue claimed), -14 LUFS, link delivery",
+   "notes": "SPEC ONLY - MUST NOT RENDER AS FINAL: visemes 0/14 sliced + eye strips 0/8 owed. Uncertainty = near black-and-white high contrast, character only; rim under shift 240,240,240, bleed 180,180,180 (recorded here because rim follows shifted key).",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-26-dialogue-neutral-unsure-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "near black-and-white uncertainty shift: rim is neutral grey 240,240,240, hue N/A by design (not a hue mismatch)"
+  },
+  {
+   "shot_id": "CJ-27",
+   "slug": "dialogue-shout-angry",
+   "pose_clip": "Dialogue, shout / angry beat",
+   "pose_ref": "viseme/eye-strip pieces OWED",
+   "background": "room (batch-KKGuh room)",
+   "scale": "2.5x standing, room-only (rig 950px tall, feet on floor; room scale does NOT apply to other backgrounds)",
+   "lighting_level": "Level 2",
+   "lut": "red-alert",
+   "lut_gain": [
+    1.2,
+    0.6,
+    0.6
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-red-alert.cube",
+   "key_color": "red-alert key",
+   "key_hue_deg": 5,
+   "rim_color": [
+    255,
+    130,
+    120
+   ],
+   "rim_hue_deg": 5,
+   "bleed_color": [
+    220,
+    50,
+    40
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift - anger is viseme/pose, not a JoJo shift; red here is LUT key, not JOJO-POWER",
+   "return_to_base": "Already base (LUT key, not a shift)",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+   "audio_cue_id": "CJ-A27",
+   "audio_note": "dialogue shout cue (no recorded dialogue claimed), -14 LUFS, link delivery",
+   "notes": "SPEC ONLY - MUST NOT RENDER AS FINAL: visemes/eye strips owed (see CJ-26). Red-alert LUT is Dialect 1 lighting-motivated colour, not Dialect 2; do not relabel it as JOJO-POWER.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-27-dialogue-shout-angry-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 5 deg, rim 5 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-28",
+   "slug": "rooftop-sunset",
+   "pose_clip": "Rooftop shot, sunset",
+   "pose_ref": "showcase/layout-pass-rooftop-single-20261031.jpg (layout stand-in)",
+   "background": "rooftop (stand-in; final painted rooftop owed)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 3",
+   "lut": "sunset-rooftop",
+   "lut_gain": [
+    1.15,
+    0.8,
+    0.7
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-sunset-rooftop.cube",
+   "key_color": "sun low behind (primary source)",
+   "key_hue_deg": 27,
+   "rim_color": [
+    255,
+    155,
+    75
+   ],
+   "rim_hue_deg": 27,
+   "bleed_color": [
+    255,
+    100,
+    20
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "JOJO-ATMOSPHERE (environment only)",
+   "shift_status": "PALETTE APPROVED by Mars 2026-10-31 15:36 (environment-only shift); THIS SHOT PENDING Mars look",
+   "return_to_base": "Atmosphere is environment-only: character stays base palette (gain 1,1,1 on character); background gain recorded separately in god-ray file. No character return needed because character never left base.",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "GOD RAYS - see god-ray file CJ-28",
+   "audio_cue_id": "CJ-A28",
+   "audio_note": "rooftop ambience cue, -14 LUFS, link delivery",
+   "notes": "Character rim follows sunset LUT (warm), NOT the atmosphere background shift - atmosphere does not recolour the character.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-28-rooftop-sunset-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 27 deg, rim 27 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-29",
+   "slug": "rooftop-night-city",
+   "pose_clip": "Rooftop shot, night city",
+   "pose_ref": "showcase/layout-pass-rooftop-single-20261031.jpg (layout stand-in); composited-night-city reference",
+   "background": "rooftop / night city (stand-in)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 3",
+   "lut": "night-city",
+   "lut_gain": [
+    0.8,
+    0.85,
+    1.05
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-night-city.cube",
+   "key_color": "city glow behind (primary source)",
+   "key_hue_deg": 220,
+   "rim_color": [
+    160,
+    185,
+    255
+   ],
+   "rim_hue_deg": 220,
+   "bleed_color": [
+    80,
+    120,
+    255
+   ],
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": null,
+   "god_ray_decision": "GOD RAYS - see god-ray file CJ-29",
+   "audio_cue_id": "CJ-A29",
+   "audio_note": "night-city ambience cue, -14 LUFS, link delivery",
+   "notes": "Single cool family: rim belongs to back city-glow source; no warm front rim added without naming a warm front source.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-29-rooftop-night-city-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "rim follows key/LUT hue: key 220 deg, rim 220 deg, diff 0 deg (<=20)"
+  },
+  {
+   "shot_id": "CJ-30",
+   "slug": "alley-neon-dual-light",
+   "pose_clip": "Alley shot, neon dual-light",
+   "pose_ref": "showcase/layout-pass-alley-single-20261031.jpg (layout stand-in); composited-neon-alley reference",
+   "background": "alley (stand-in; final painted alley owed)",
+   "scale": "rig canvas 1100x1500, layout scale ~0.35 (room 2.5x rule does NOT apply - room-only)",
+   "lighting_level": "Level 3 (dual-light)",
+   "lut": "neon-alley-pink-cyan",
+   "lut_gain": [
+    0.95,
+    0.85,
+    1.05
+   ],
+   "lut_file": "showcase/luts-33-upgraded/lut-33-neon-alley-pink-cyan.cube",
+   "key_color": "pink/magenta front + cyan back (dual - see dual_light)",
+   "key_hue_deg": null,
+   "rim_color": "FRONT rim magenta-rose 255,178,229 (belongs to front pink source); BACK rim cyan 0,200,255 (belongs to back cyan source)",
+   "rim_hue_deg": null,
+   "bleed_color": "front bleed pink-dark 230,80,170; back bleed cyan-dark 0,140,200",
+   "shadow_color": "cool blue-violet",
+   "shift": "none",
+   "shift_status": "No shift",
+   "return_to_base": "Already base",
+   "power_override": null,
+   "dual_light": {
+    "front_key": {
+     "color": [
+      255,
+      178,
+      229
+     ],
+     "direction": "front",
+     "temperature": "pink/magenta neon"
+    },
+    "back_source": {
+     "color": [
+      0,
+      200,
+      255
+     ],
+     "direction": "behind",
+     "temperature": "cool cyan",
+     "rays": "god rays"
+    },
+    "rim_front": [
+     255,
+     178,
+     229
+    ],
+    "rim_back": [
+     0,
+     200,
+     255
+    ]
+   },
+   "god_ray_decision": "GOD RAYS - see god-ray file CJ-30",
+   "audio_cue_id": "CJ-A30",
+   "audio_note": "alley neon ambience cue, -14 LUFS, link delivery",
+   "notes": "DUAL-LIGHT EXCEPTION: both sources named + which rim belongs to which. Single-source version of this shot would be a mismatch if it kept the other source's rim - the record is what makes it valid.",
+   "gate_checklist": {
+    "labels_0_clean_build_labels_false": true,
+    "base_art_untouched_light_layers_only": true,
+    "version_locked_filename_new_dated_never_overwrite_mars_seen": "CJ-30-alley-neon-dual-light-20261031-v1.png",
+    "colour_sources_named": true,
+    "rim_rule_checked": true,
+    "mars_shot_approval": "PENDING - not claimed"
+   },
+   "rim_rule_basis": "dual-light exception: BOTH sources named + which rim belongs to which"
+  }
+ ]
+}

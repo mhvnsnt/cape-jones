@@ -1,0 +1,21 @@
+{
+  "fps": 24,
+  "key_a": "locked sitting pose",
+  "key_b": "sit-idle bob +3px, head +2deg",
+  "frames_A_to_B": 24,
+  "mid_frame_12_head": [
+    635.0,
+    196.5,
+    1.0
+  ],
+  "end_frame_24_head": [
+    635.0,
+    198.0,
+    2.0
+  ],
+  "legs_static": true,
+  "onion_weights_frame_12": {
+    "0": 0.35,
+    "24": 0.35
+  }
+}

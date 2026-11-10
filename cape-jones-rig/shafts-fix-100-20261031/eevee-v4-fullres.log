@@ -1,0 +1,12 @@
+/home/hatch/workspace/cape-jones-rig/shafts-fix-100-20261031/build_eevee_v4_fullres.py:18: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w = bpy.data.worlds.new("W"); w.use_nodes = True
+/home/hatch/workspace/cape-jones-rig/shafts-fix-100-20261031/build_eevee_v4_fullres.py:28: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat = bpy.data.materials.new(f"VolCol_{i}"); mat.use_nodes = True
+/home/hatch/workspace/cape-jones-rig/shafts-fix-100-20261031/build_eevee_v4_fullres.py:37: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  fm = bpy.data.materials.new("FloorMat"); fm.use_nodes = True
+00:09.689  render           | Saved: '/home/hatch/workspace/cape-jones-rig/shafts-fix-100-20261031/shafts-eevee-v4-fullres-20261031.png'
+EEVEE_SETTINGS_OK
+EEVEE_V4_DONE /home/hatch/workspace/cape-jones-rig/shafts-fix-100-20261031/shafts-eevee-v4-fullres-20261031.png
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:35:05)
+
+Blender quit

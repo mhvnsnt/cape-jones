@@ -1,0 +1,57 @@
+{
+  "fps": 24,
+  "size": [
+    1920,
+    1080
+  ],
+  "total_frames": 1819,
+  "duration_s": 75.789,
+  "v1_lang": "EN",
+  "v1_cuts": [
+    [
+      "Johnny flex dance - fists up at chest, knees bent, bouncing on 2s",
+      "room",
+      432
+    ],
+    [
+      "Richard arms-up legs-apart bouncing dance - arms up, legs apart, high bounce",
+      "stage",
+      504
+    ],
+    [
+      "Scooby gang stepping - arms up/swinging in sync, alternating steps [rec_b DISCARDED: opaque grey-backed, replaced by transparent rec_a stepping]",
+      "night",
+      432
+    ],
+    [
+      "Johnny punch + finger snap + arms up hands open chest out + karate kick",
+      "plaza",
+      432
+    ]
+  ],
+  "v2_lang": "JP",
+  "v2_cuts": [
+    [
+      "Gumball/Darwin 'The Words' stride->groove - beat ~14f, 107 BPM, solo Cape Jones version",
+      "plaza",
+      432
+    ],
+    [
+      "Foster's Frankie pose-swap gestures - pose-swap libraries, arms/legs swaps, flexes",
+      "room",
+      504
+    ],
+    [
+      "Smiling Friends pose-swap stepping - legs/arms pose swaps, stepping, holds [rec_b DISCARDED: opaque grey-backed, replaced by transparent rec_a stepping]",
+      "stage",
+      432
+    ],
+    [
+      "Gumball kick->split stance->twist + fight movements - kick, split, twist, punch steps",
+      "night",
+      432
+    ]
+  ],
+  "v1_frames": 1819,
+  "v2_frames": 1819
+}

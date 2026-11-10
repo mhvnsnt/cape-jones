@@ -1,0 +1,109 @@
+{
+ "version": "edited-sequences-20261031",
+ "date": "2026-10-31",
+ "fps": 24,
+ "codec": "libx264, yuv420p",
+ "punch_sequence": {
+  "source_order": "Stream H edit order: windup 6f / snap 2f / impact hold 12f / recover 6f = 26 frames (1.08 s)",
+  "beats": [
+   {
+    "beat": "windup",
+    "source": "fighting-pose-forward-bicep-curl-v7c-clean.png",
+    "hold_frames": 6
+   },
+   {
+    "beat": "snap",
+    "source": "joint-punch-v7c-clean.png",
+    "hold_frames": 2
+   },
+   {
+    "beat": "impact hold",
+    "source": "punch-09-impact-hold-v7c-clean.png",
+    "hold_frames": 12
+   },
+   {
+    "beat": "recover",
+    "source": "rig-apose-v7c-clean-transparent.png",
+    "hold_frames": 6
+   }
+  ],
+  "total_frames": 26,
+  "file": "punch-sequence-edited-20261031.mp4",
+  "note": "Only one clean punch frame exists (impact hold); windup uses the clean fighting-pose plate, snap the clean joint-punch plate, recover the clean apose plate. Holds, not new poses \u2014 a re-posed windup/snap/recover pass is still owed.",
+  "ffprobe": {
+   "codec": "h264",
+   "width": 550,
+   "height": 750,
+   "fps": "24/1",
+   "pix_fmt": "yuv420p",
+   "frames": 26,
+   "duration_sec": 1.083333
+  }
+ },
+ "dance_sequence": {
+  "source": "dance-improved-20261031/frames (beat-held: each beat-start frame held to the next beat)",
+  "beats": [
+   {
+    "beat": 1,
+    "beat_start_frame": 1,
+    "hold_frames": 14,
+    "source": "dance-improved-f001.png"
+   },
+   {
+    "beat": 2,
+    "beat_start_frame": 15,
+    "hold_frames": 13,
+    "source": "dance-improved-f015.png"
+   },
+   {
+    "beat": 3,
+    "beat_start_frame": 28,
+    "hold_frames": 14,
+    "source": "dance-improved-f028.png"
+   },
+   {
+    "beat": 4,
+    "beat_start_frame": 42,
+    "hold_frames": 14,
+    "source": "dance-improved-f042.png"
+   },
+   {
+    "beat": 5,
+    "beat_start_frame": 56,
+    "hold_frames": 13,
+    "source": "dance-improved-f056.png"
+   },
+   {
+    "beat": 6,
+    "beat_start_frame": 69,
+    "hold_frames": 14,
+    "source": "dance-improved-f069.png"
+   },
+   {
+    "beat": 7,
+    "beat_start_frame": 83,
+    "hold_frames": 14,
+    "source": "dance-improved-f083.png"
+   },
+   {
+    "beat": 8,
+    "beat_start_frame": 97,
+    "hold_frames": 13,
+    "source": "dance-improved-f097.png"
+   }
+  ],
+  "total_frames": 109,
+  "file": "dance-sequence-edited-20261031.mp4",
+  "note": "Beat starts from dance-improved BEAT-SHEET.md (107 BPM grid, beats 1,15,28,42,56,69,83,97). Known defects carry over: weak kick frame, twist is an arms/legs stand-in \u2014 see beat sheet.",
+  "ffprobe": {
+   "codec": "h264",
+   "width": 550,
+   "height": 750,
+   "fps": "24/1",
+   "pix_fmt": "yuv420p",
+   "frames": 109,
+   "duration_sec": 4.541667
+  }
+ },
+ "mars_approval": 0
+}

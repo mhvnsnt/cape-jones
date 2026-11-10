@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video GIF Studio"
+  short_description: "Scripts, music cues, animation, sprites and video editing"
+  default_prompt: "Use $video-gif-studio to plan or create animation assets, or edit supplied media; choose suitable settings for my goal and verify the requested deliverable."

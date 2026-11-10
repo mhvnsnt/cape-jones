@@ -1,0 +1,14 @@
+{
+  "project": "Natron",
+  "status": "METHOD-WIRED, Natron binary NOT run",
+  "reason": "No Natron binary installed on this VM; upstream is community-maintained (GPL-2.0, Qt5-era; FreeBSD port expired 2026-09-30 for Qt5 WebEngine; 2026 community fork adds Qt6/Cycles, Windows-only, self-described vibe-coded - NOT adopted sight-unseen)",
+  "nodes": [
+    "Read",
+    "Grade(warm L2)",
+    "Rim(amber 255,180,80, edge glow)",
+    "Merge over background",
+    "Write"
+  ],
+  "cape_use": "Free node compositor alternative to Blender compositor for rim/wrap/glow passes; adopt only after a real Natron/Blender A-B test",
+  "base_art_recoloured": false
+}

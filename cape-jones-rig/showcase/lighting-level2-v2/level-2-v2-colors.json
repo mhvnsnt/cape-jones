@@ -1,0 +1,41 @@
+{
+  "rule": "rim follows key/LUT hue family; power override is shot-only",
+  "colored": {
+    "gain": [
+      1.1,
+      0.95,
+      0.7
+    ],
+    "rim": [
+      255,
+      180,
+      80
+    ],
+    "bleed": [
+      255,
+      120,
+      0
+    ]
+  },
+  "noncolored": {
+    "gain": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "rim": [
+      255,
+      255,
+      255
+    ],
+    "bleed": [
+      255,
+      255,
+      255
+    ]
+  },
+  "power_override": {
+    "name": null,
+    "rim": null
+  }
+}

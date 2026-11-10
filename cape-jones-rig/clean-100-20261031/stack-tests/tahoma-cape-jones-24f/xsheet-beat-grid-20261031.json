@@ -1,0 +1,22 @@
+{
+  "project": "cape-jones-24f",
+  "fps": 24,
+  "frames": 24,
+  "beat_markers": [
+    1,
+    7,
+    13,
+    19
+  ],
+  "columns": [
+    {
+      "column": 1,
+      "level": "inputs/frame-##.png",
+      "frames": "1-24",
+      "note": "xsheet-style: one level, 24 cells, beat every 6 frames"
+    }
+  ],
+  "source_plate": "rig-apose-v7c-clean-transparent.png",
+  "limb_piece": "cut-limbs-v7c/Arm_Front_Lower.png",
+  "status": "level folder ready; Tahoma GUI scene open + render NOT run in this batch (see log)"
+}

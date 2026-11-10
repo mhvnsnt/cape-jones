@@ -1,0 +1,84 @@
+{
+ "bg": [
+  138.0,
+  138.0,
+  138.0
+ ],
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    259,
+    417
+   ],
+   "opaque_px": 74310,
+   "sheet_bbox": [
+    74,
+    224,
+    333,
+    641
+   ]
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    262,
+    410
+   ],
+   "opaque_px": 73212,
+   "sheet_bbox": [
+    408,
+    231,
+    670,
+    641
+   ]
+  },
+  {
+   "name": "Row1_3",
+   "file": "Row1_3.png",
+   "size": [
+    266,
+    402
+   ],
+   "opaque_px": 68784,
+   "sheet_bbox": [
+    753,
+    236,
+    1019,
+    638
+   ]
+  },
+  {
+   "name": "Row1_4",
+   "file": "Row1_4.png",
+   "size": [
+    278,
+    391
+   ],
+   "opaque_px": 72695,
+   "sheet_bbox": [
+    1106,
+    248,
+    1384,
+    639
+   ]
+  },
+  {
+   "name": "Row1_5",
+   "file": "Row1_5.png",
+   "size": [
+    280,
+    400
+   ],
+   "opaque_px": 68266,
+   "sheet_bbox": [
+    1451,
+    239,
+    1731,
+    639
+   ]
+  }
+ ]
+}

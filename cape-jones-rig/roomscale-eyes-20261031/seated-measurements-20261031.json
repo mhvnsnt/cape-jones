@@ -1,0 +1,65 @@
+{
+  "standing_alpha_bbox": [
+    222,
+    239,
+    880,
+    1283
+  ],
+  "standing_alpha_h": 1044,
+  "seated_alpha_bbox": [
+    223,
+    251,
+    878,
+    1200
+  ],
+  "seated_alpha_h": 949,
+  "standing_scene_h_3p0_portrait": 1398,
+  "feet_anchor": 1700,
+  "centre_x": 539,
+  "rug_far": 1421,
+  "rug_near": 1868,
+  "versions": {
+    "2.8_lock_consistent_3p0_minus_0p2": {
+      "file": "seated-2p8-lock-consistent-portrait-20261031.png",
+      "scale": 2.8,
+      "bbox": [
+        130,
+        514,
+        948,
+        1700
+      ],
+      "height": 1186,
+      "width": 818,
+      "head": 514,
+      "feet": 1700,
+      "centre_x": 539,
+      "rug_position": 0.624,
+      "rug_in_front_px": 168,
+      "whole": true,
+      "shadow_clusters": 2,
+      "rug_band_pass": true
+    },
+    "2.3_absolute_old_derivation": {
+      "file": "seated-2p3-absolute-portrait-20261031.png",
+      "scale": 2.3,
+      "bbox": [
+        203,
+        726,
+        875,
+        1700
+      ],
+      "height": 974,
+      "width": 672,
+      "head": 726,
+      "feet": 1700,
+      "centre_x": 539,
+      "rug_position": 0.624,
+      "rug_in_front_px": 168,
+      "whole": true,
+      "shadow_clusters": 2,
+      "rug_band_pass": true
+    }
+  },
+  "formula": "scene_bbox_h = 1398 * (scale/3.0) * (949/1044)",
+  "mars_pick_owed": "2.8x (standing-0.2 under new 3.0x lock) vs 2.3x absolute (old derivation). Both built+viewed; neither claimed approved."
+}

@@ -1,0 +1,61 @@
+{
+  "apose": {
+    "rebuilt_with_cape_alpha": 374816,
+    "rebuilt_with_cape_bbox": [
+      248,
+      254,
+      876,
+      1295
+    ],
+    "rebuilt_capeless_alpha": 247825,
+    "rebuilt_capeless_bbox": [
+      248,
+      254,
+      876,
+      1295
+    ],
+    "visible_cape_piece_px_removed": 126991,
+    "old_rectangle_erase_px": 85752,
+    "symbol_white_px_with_cape": 1524,
+    "symbol_white_px_capeless": 1524,
+    "original_plate_alpha": 373846,
+    "original_plate_bbox": [
+      248,
+      253,
+      876,
+      1295
+    ]
+  },
+  "animation": {
+    "frames": 16,
+    "fps_note": "6fps in MP4, 160ms in GIF",
+    "cape_scale": "1.0 f00-f01, smoothstep to 0 f02-f12, 0 f13-f15",
+    "cape_centre_moves_to": "back (550,805)->(550,560), collar (550,458)->(550,500)",
+    "method": "scale + move behind body, alpha stays 255 until gone \u2014 absorbed, NOT a fade",
+    "final_frame_equals_capeless": true,
+    "final_frame_note": "f13-f15 replaced with the exact capeless still after the first build differed by 409 colour px (alpha identical) from compositing rounding; final GIF/MP4 regenerated, final==capeless verified True"
+  },
+  "crossed": {
+    "config": "v7c arm_upper L40/R-40, arm_lower L120/R-120, legs apose",
+    "front_forearm_alpha_px": 34956,
+    "front_over_behind_overlap_px": 23839,
+    "white_crossing_ring_px_width4": 3458,
+    "full_ring_px_width4_for_reference": 5542,
+    "ring_colour": [
+      255,
+      255,
+      255
+    ],
+    "ring_applies_to": "forearm lower pieces only (caps excluded); outline only where the ring touches the behind body",
+    "symbol_white_px": 1524,
+    "crossed_alpha": 202620,
+    "crossed_bbox": [
+      304,
+      254,
+      832,
+      1295
+    ],
+    "elbow_cap_note": "Elbow caps excluded from the front mask; one elbow cap lands centre-chest in the crossed pose and reads as a dark disc on the torso (visible in the detail crop). It is NOT white-outlined. Outlining or removing caps is a follow-up if Mars wants it."
+  },
+  "rebuilt_stack_note": "Rebuilt v7c stack with-cape alpha 374816 vs original clean plate 373846 (+970 px, 0.26%), bbox y 254 vs 253 (1 px) \u2014 rebuilt stack uses sliced/cut pieces, not the clean-plate pieces, so a small difference is expected and stated, not hidden"
+}

@@ -1,0 +1,41 @@
+{
+ "id": "fosters-turn-coco",
+ "kind": "static-puppet-library",
+ "show": "Foster's Home for Imaginary Friends",
+ "collection": "Foster's Home for Imaginary Friends — FOSTERS MAIN MODEL TURNS/Flash (inside CN-Leaks-001's FOSTERS folder)",
+ "characters": [
+  "Coco"
+ ],
+ "source_file": "Coco_Turnaround.fla",
+ "source_archive": "CN-Leaks-001-gumball.zip",
+ "archive_location": "mhvnsnt/cn-gigaleak-gumball, draft release untagged-1676e192ae8c72e95791",
+ "size_bytes": 10676224,
+ "format": "Binary FLA (OLE2 compound, pre-XFL)",
+ "symbol_count": null,
+ "symbols": null,
+ "recovered_names": [
+  "Coco Turnaround (title)",
+  "001-coco-turn body -001",
+  "001-st-coco-walk-foot",
+  "30s test-244-coco head movie-001",
+  "30s test-274-coco mouth-002",
+  "30s test-274-coco top mouth-001..003",
+  "test-coco-eyelash-001..003",
+  "Coco run bv (legs only).fla (referenced)"
+ ],
+ "parts_census": null,
+ "views": null,
+ "presentation_frames": "Not measured (no companion SWF in the archive)",
+ "completeness": "Model-turn library with walk/run leg pieces and head comps",
+ "notes": [
+  "Binary FLA (OLE2 compound), 10,676,224 B. Recovered: 'Coco Turnaround' title, coco-turn body (001-coco-turn body -001), walk foot (001-st-coco-walk-foot), head and mouth comps from a '30s test' series (coco head movie, coco mouth / top mouth sets), eyelash comps (test-coco-eyelash-001..003).",
+  "References Coco sub-folders (Coco-head, Coco-run with a legs-only run file) and the shared reuse folder — Coco's locomotion pieces live beside the turn."
+ ],
+ "media": {
+  "status": "blocked-write-guard",
+  "target_file": "sheet-fosters-turn-coco.png",
+  "delivery_dir": "~/workspace/your_files/scene-templates/",
+  "note": "Model-sheet render staged in render_model_sheets.sh; the sandbox write guard currently refuses rendered-binary writes (EPERM/0 bytes). Census and catalog are unaffected."
+ },
+ "record_path": "production/scene-templates/gumball/libraries/fosters-turn-coco/library.json"
+}

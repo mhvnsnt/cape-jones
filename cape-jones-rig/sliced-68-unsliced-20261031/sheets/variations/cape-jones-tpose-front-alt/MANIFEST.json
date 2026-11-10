@@ -1,0 +1,136 @@
+{
+ "source": "variations/references/cape-jones-tpose-front-alt.png",
+ "group": "variations",
+ "plate": "variations/cape-jones-tpose-front-alt.png",
+ "plate_md5": "11b99672ea4fd9b35d952fd639e16a43",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    71,
+    27
+   ],
+   "opaque_px": 1291,
+   "sheet_bbox": [
+    42,
+    36,
+    113,
+    63
+   ],
+   "area_px": 1291,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    94,
+    95
+   ],
+   "opaque_px": 7111,
+   "sheet_bbox": [
+    46,
+    107,
+    140,
+    202
+   ],
+   "area_px": 7111,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_3",
+   "file": "Row1_3.png",
+   "size": [
+    73,
+    34
+   ],
+   "opaque_px": 1570,
+   "sheet_bbox": [
+    860,
+    32,
+    933,
+    66
+   ],
+   "area_px": 1570,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    620,
+    553
+   ],
+   "opaque_px": 143549,
+   "sheet_bbox": [
+    194,
+    45,
+    814,
+    598
+   ],
+   "area_px": 143549,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_1",
+   "file": "Row3_1.png",
+   "size": [
+    1004,
+    1490
+   ],
+   "opaque_px": 1181912,
+   "sheet_bbox": [
+    1,
+    551,
+    1005,
+    2041
+   ],
+   "area_px": 1181912,
+   "provisional_class": "full_figure_tpose",
+   "grid_split": false
+  },
+  {
+   "name": "Row4_1",
+   "file": "Row4_1.png",
+   "size": [
+    40,
+    41
+   ],
+   "opaque_px": 1350,
+   "sheet_bbox": [
+    483,
+    2160,
+    523,
+    2201
+   ],
+   "area_px": 1350,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row4_2",
+   "file": "Row4_2.png",
+   "size": [
+    42,
+    40
+   ],
+   "opaque_px": 1550,
+   "sheet_bbox": [
+    759,
+    2161,
+    801,
+    2201
+   ],
+   "area_px": 1550,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  }
+ ]
+}

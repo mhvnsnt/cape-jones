@@ -1,0 +1,1511 @@
+{
+  "model": "MediaPipe Tasks PoseLandmarker heavy (pose_landmarker_heavy, float16, mediapipe 1.2.0)",
+  "min_pose_detection_confidence": 0.3,
+  "note": "Cartoon rig figure on grey canvas; detection rate is reported honestly, not used to override alpha L/R feet.",
+  "results": [
+    {
+      "shot": "CJ-01",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 641.3,
+          "y_px": 944.8,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 545.9,
+          "y_px": 949.0,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 624.2,
+          "y_px": 965.3,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 561.7,
+          "y_px": 966.3,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 683.5,
+          "y_px": 989.7,
+          "conf": 0.999
+        },
+        "right_heel": {
+          "x_px": 515.9,
+          "y_px": 991.8,
+          "conf": 0.999
+        },
+        "left_hip": {
+          "x_px": 627.8,
+          "y_px": 663.7,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 556.3,
+          "y_px": 665.3,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-02",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 671.2,
+          "y_px": 941.9,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 577.6,
+          "y_px": 946.6,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 652.7,
+          "y_px": 960.7,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 595.4,
+          "y_px": 967.2,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 713.2,
+          "y_px": 989.8,
+          "conf": 0.999
+        },
+        "right_heel": {
+          "x_px": 546.5,
+          "y_px": 995.8,
+          "conf": 0.999
+        },
+        "left_hip": {
+          "x_px": 662.1,
+          "y_px": 664.2,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 588.8,
+          "y_px": 665.5,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-03",
+      "detected": true,
+      "overall_ankle_conf": 0.999,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 695.2,
+          "y_px": 942.0,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 600.7,
+          "y_px": 944.4,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 677.8,
+          "y_px": 960.8,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 616.9,
+          "y_px": 963.8,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 732.6,
+          "y_px": 988.9,
+          "conf": 0.999
+        },
+        "right_heel": {
+          "x_px": 572.5,
+          "y_px": 994.8,
+          "conf": 0.998
+        },
+        "left_hip": {
+          "x_px": 685.0,
+          "y_px": 664.4,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 613.1,
+          "y_px": 664.0,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-04",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 594.0,
+          "y_px": 944.0,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 501.8,
+          "y_px": 949.1,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 573.8,
+          "y_px": 966.1,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 520.7,
+          "y_px": 969.1,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 634.7,
+          "y_px": 989.1,
+          "conf": 1.0
+        },
+        "right_heel": {
+          "x_px": 469.3,
+          "y_px": 991.8,
+          "conf": 0.999
+        },
+        "left_hip": {
+          "x_px": 586.2,
+          "y_px": 667.6,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 506.2,
+          "y_px": 666.9,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-05",
+      "detected": true,
+      "overall_ankle_conf": 0.999,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 695.3,
+          "y_px": 940.9,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 600.9,
+          "y_px": 947.1,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 677.1,
+          "y_px": 961.8,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 619.1,
+          "y_px": 969.0,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 738.1,
+          "y_px": 991.5,
+          "conf": 0.999
+        },
+        "right_heel": {
+          "x_px": 570.9,
+          "y_px": 992.2,
+          "conf": 0.998
+        },
+        "left_hip": {
+          "x_px": 687.5,
+          "y_px": 662.1,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 616.5,
+          "y_px": 663.3,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-06",
+      "detected": true,
+      "overall_ankle_conf": 0.999,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 620.4,
+          "y_px": 939.7,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 473.7,
+          "y_px": 952.6,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 599.3,
+          "y_px": 961.8,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 488.3,
+          "y_px": 973.2,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 655.1,
+          "y_px": 991.2,
+          "conf": 0.999
+        },
+        "right_heel": {
+          "x_px": 436.0,
+          "y_px": 992.3,
+          "conf": 0.998
+        },
+        "left_hip": {
+          "x_px": 604.0,
+          "y_px": 676.8,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 525.9,
+          "y_px": 675.9,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-07",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 591.5,
+          "y_px": 954.7,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 502.7,
+          "y_px": 956.7,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 579.0,
+          "y_px": 977.0,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 514.4,
+          "y_px": 978.2,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 635.3,
+          "y_px": 988.8,
+          "conf": 0.999
+        },
+        "right_heel": {
+          "x_px": 477.1,
+          "y_px": 993.2,
+          "conf": 0.999
+        },
+        "left_hip": {
+          "x_px": 583.4,
+          "y_px": 684.7,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 506.2,
+          "y_px": 684.0,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-08",
+      "detected": true,
+      "overall_ankle_conf": 0.999,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 512.3,
+          "y_px": 946.1,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 490.2,
+          "y_px": 936.3,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 505.2,
+          "y_px": 964.4,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 495.8,
+          "y_px": 954.3,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 547.4,
+          "y_px": 982.9,
+          "conf": 0.999
+        },
+        "right_heel": {
+          "x_px": 470.8,
+          "y_px": 973.3,
+          "conf": 0.998
+        },
+        "left_hip": {
+          "x_px": 550.8,
+          "y_px": 687.9,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 484.5,
+          "y_px": 683.0,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-09",
+      "detected": true,
+      "overall_ankle_conf": 0.998,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 616.8,
+          "y_px": 947.5,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 516.5,
+          "y_px": 939.8,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 598.2,
+          "y_px": 967.8,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 537.0,
+          "y_px": 957.6,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 662.6,
+          "y_px": 988.9,
+          "conf": 0.997
+        },
+        "right_heel": {
+          "x_px": 492.4,
+          "y_px": 984.9,
+          "conf": 0.997
+        },
+        "left_hip": {
+          "x_px": 605.4,
+          "y_px": 665.1,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 529.0,
+          "y_px": 662.2,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-10",
+      "detected": true,
+      "overall_ankle_conf": 0.999,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 499.3,
+          "y_px": 952.4,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 568.9,
+          "y_px": 948.5,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 504.3,
+          "y_px": 975.3,
+          "conf": 0.999
+        },
+        "right_ankle": {
+          "x_px": 566.8,
+          "y_px": 975.2,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 464.0,
+          "y_px": 985.8,
+          "conf": 0.998
+        },
+        "right_heel": {
+          "x_px": 554.7,
+          "y_px": 987.9,
+          "conf": 0.998
+        },
+        "left_hip": {
+          "x_px": 567.9,
+          "y_px": 674.6,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 507.4,
+          "y_px": 673.3,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-11",
+      "detected": true,
+      "overall_ankle_conf": 0.998,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 616.8,
+          "y_px": 947.5,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 516.5,
+          "y_px": 939.8,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 598.2,
+          "y_px": 967.8,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 537.0,
+          "y_px": 957.6,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 662.6,
+          "y_px": 988.9,
+          "conf": 0.997
+        },
+        "right_heel": {
+          "x_px": 492.4,
+          "y_px": 984.9,
+          "conf": 0.997
+        },
+        "left_hip": {
+          "x_px": 605.4,
+          "y_px": 665.1,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 529.0,
+          "y_px": 662.2,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-12",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 593.8,
+          "y_px": 768.4,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 503.1,
+          "y_px": 772.2,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 577.8,
+          "y_px": 791.3,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 520.1,
+          "y_px": 794.3,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 635.5,
+          "y_px": 808.2,
+          "conf": 1.0
+        },
+        "right_heel": {
+          "x_px": 468.8,
+          "y_px": 813.1,
+          "conf": 1.0
+        },
+        "left_hip": {
+          "x_px": 582.0,
+          "y_px": 494.6,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 505.1,
+          "y_px": 494.8,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-13",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 600.2,
+          "y_px": 690.6,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 509.8,
+          "y_px": 693.2,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 582.3,
+          "y_px": 709.4,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 521.1,
+          "y_px": 709.7,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 642.9,
+          "y_px": 728.1,
+          "conf": 1.0
+        },
+        "right_heel": {
+          "x_px": 479.6,
+          "y_px": 732.2,
+          "conf": 0.999
+        },
+        "left_hip": {
+          "x_px": 591.1,
+          "y_px": 401.1,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 517.0,
+          "y_px": 398.6,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-14",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 604.3,
+          "y_px": 730.7,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 518.4,
+          "y_px": 734.6,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 594.2,
+          "y_px": 748.8,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 530.1,
+          "y_px": 751.6,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 645.4,
+          "y_px": 768.3,
+          "conf": 0.999
+        },
+        "right_heel": {
+          "x_px": 488.0,
+          "y_px": 769.7,
+          "conf": 0.999
+        },
+        "left_hip": {
+          "x_px": 599.7,
+          "y_px": 443.6,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 525.6,
+          "y_px": 445.5,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-15",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 593.7,
+          "y_px": 746.8,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 501.8,
+          "y_px": 756.3,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 577.3,
+          "y_px": 766.8,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 516.3,
+          "y_px": 772.1,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 634.4,
+          "y_px": 788.3,
+          "conf": 1.0
+        },
+        "right_heel": {
+          "x_px": 475.7,
+          "y_px": 793.6,
+          "conf": 1.0
+        },
+        "left_hip": {
+          "x_px": 584.7,
+          "y_px": 470.0,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 506.4,
+          "y_px": 470.9,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-16",
+      "detected": true,
+      "overall_ankle_conf": 0.999,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 660.6,
+          "y_px": 951.4,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 446.1,
+          "y_px": 957.5,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 652.8,
+          "y_px": 977.9,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 454.9,
+          "y_px": 981.6,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 715.6,
+          "y_px": 980.8,
+          "conf": 0.998
+        },
+        "right_heel": {
+          "x_px": 406.3,
+          "y_px": 989.1,
+          "conf": 0.997
+        },
+        "left_hip": {
+          "x_px": 588.3,
+          "y_px": 674.5,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 516.3,
+          "y_px": 674.4,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-17",
+      "detected": true,
+      "overall_ankle_conf": 0.999,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 672.4,
+          "y_px": 950.6,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 436.4,
+          "y_px": 958.6,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 668.7,
+          "y_px": 977.5,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 444.8,
+          "y_px": 982.3,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 726.9,
+          "y_px": 977.7,
+          "conf": 0.999
+        },
+        "right_heel": {
+          "x_px": 391.4,
+          "y_px": 988.8,
+          "conf": 0.998
+        },
+        "left_hip": {
+          "x_px": 588.9,
+          "y_px": 678.7,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 516.2,
+          "y_px": 678.2,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-18",
+      "detected": true,
+      "overall_ankle_conf": 0.999,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 660.5,
+          "y_px": 953.1,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 446.6,
+          "y_px": 957.4,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 654.0,
+          "y_px": 977.5,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 455.1,
+          "y_px": 982.5,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 715.2,
+          "y_px": 978.5,
+          "conf": 0.998
+        },
+        "right_heel": {
+          "x_px": 408.7,
+          "y_px": 989.9,
+          "conf": 0.997
+        },
+        "left_hip": {
+          "x_px": 590.3,
+          "y_px": 673.3,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 518.4,
+          "y_px": 675.4,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-19",
+      "detected": true,
+      "overall_ankle_conf": 0.998,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 600.3,
+          "y_px": 944.3,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 507.6,
+          "y_px": 948.4,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 583.8,
+          "y_px": 965.7,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 525.0,
+          "y_px": 969.8,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 644.6,
+          "y_px": 989.6,
+          "conf": 0.996
+        },
+        "right_heel": {
+          "x_px": 475.4,
+          "y_px": 992.3,
+          "conf": 0.994
+        },
+        "left_hip": {
+          "x_px": 588.4,
+          "y_px": 668.9,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 514.3,
+          "y_px": 667.6,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-20",
+      "detected": true,
+      "overall_ankle_conf": 0.999,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 672.4,
+          "y_px": 950.6,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 436.4,
+          "y_px": 958.6,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 668.7,
+          "y_px": 977.5,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 444.8,
+          "y_px": 982.3,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 726.9,
+          "y_px": 977.7,
+          "conf": 0.999
+        },
+        "right_heel": {
+          "x_px": 391.4,
+          "y_px": 988.8,
+          "conf": 0.998
+        },
+        "left_hip": {
+          "x_px": 588.9,
+          "y_px": 678.7,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 516.2,
+          "y_px": 678.2,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-21a",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 582.5,
+          "y_px": 933.4,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 505.7,
+          "y_px": 943.6,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 560.6,
+          "y_px": 949.7,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 528.9,
+          "y_px": 957.8,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 616.1,
+          "y_px": 989.4,
+          "conf": 0.999
+        },
+        "right_heel": {
+          "x_px": 484.8,
+          "y_px": 996.9,
+          "conf": 0.999
+        },
+        "left_hip": {
+          "x_px": 585.6,
+          "y_px": 683.7,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 504.9,
+          "y_px": 684.5,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-21b",
+      "detected": true,
+      "overall_ankle_conf": 0.998,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 607.6,
+          "y_px": 822.6,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 513.9,
+          "y_px": 829.6,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 586.8,
+          "y_px": 845.2,
+          "conf": 0.999
+        },
+        "right_ankle": {
+          "x_px": 531.8,
+          "y_px": 851.1,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 641.1,
+          "y_px": 866.8,
+          "conf": 0.997
+        },
+        "right_heel": {
+          "x_px": 482.7,
+          "y_px": 872.8,
+          "conf": 0.997
+        },
+        "left_hip": {
+          "x_px": 588.0,
+          "y_px": 541.4,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 526.5,
+          "y_px": 545.4,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-22a",
+      "detected": true,
+      "overall_ankle_conf": 0.999,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 562.8,
+          "y_px": 784.7,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 558.5,
+          "y_px": 786.7,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 546.5,
+          "y_px": 786.1,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 567.2,
+          "y_px": 788.0,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 559.3,
+          "y_px": 847.1,
+          "conf": 0.998
+        },
+        "right_heel": {
+          "x_px": 570.4,
+          "y_px": 845.6,
+          "conf": 0.999
+        },
+        "left_hip": {
+          "x_px": 593.1,
+          "y_px": 550.3,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 523.3,
+          "y_px": 551.7,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-22b",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 594.2,
+          "y_px": 944.6,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 501.5,
+          "y_px": 949.3,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 576.3,
+          "y_px": 965.6,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 518.4,
+          "y_px": 969.1,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 637.9,
+          "y_px": 989.5,
+          "conf": 1.0
+        },
+        "right_heel": {
+          "x_px": 470.8,
+          "y_px": 991.6,
+          "conf": 0.999
+        },
+        "left_hip": {
+          "x_px": 583.5,
+          "y_px": 668.8,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 505.6,
+          "y_px": 670.1,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-23",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 594.3,
+          "y_px": 823.0,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 507.0,
+          "y_px": 837.3,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 570.8,
+          "y_px": 813.4,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 533.1,
+          "y_px": 822.4,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 571.1,
+          "y_px": 881.7,
+          "conf": 1.0
+        },
+        "right_heel": {
+          "x_px": 536.6,
+          "y_px": 892.5,
+          "conf": 1.0
+        },
+        "left_hip": {
+          "x_px": 596.3,
+          "y_px": 740.6,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 520.3,
+          "y_px": 746.9,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-24",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 594.3,
+          "y_px": 823.0,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 507.0,
+          "y_px": 837.3,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 570.8,
+          "y_px": 813.4,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 533.1,
+          "y_px": 822.4,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 571.1,
+          "y_px": 881.7,
+          "conf": 1.0
+        },
+        "right_heel": {
+          "x_px": 536.6,
+          "y_px": 892.5,
+          "conf": 1.0
+        },
+        "left_hip": {
+          "x_px": 596.3,
+          "y_px": 740.6,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 520.3,
+          "y_px": 746.9,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-25",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 644.4,
+          "y_px": 954.2,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 453.7,
+          "y_px": 957.5,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 636.3,
+          "y_px": 979.1,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 462.8,
+          "y_px": 979.2,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 691.6,
+          "y_px": 979.5,
+          "conf": 1.0
+        },
+        "right_heel": {
+          "x_px": 415.1,
+          "y_px": 990.6,
+          "conf": 1.0
+        },
+        "left_hip": {
+          "x_px": 585.9,
+          "y_px": 678.1,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 506.2,
+          "y_px": 677.8,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-26",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 644.4,
+          "y_px": 954.2,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 453.7,
+          "y_px": 957.5,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 636.3,
+          "y_px": 979.1,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 462.8,
+          "y_px": 979.2,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 691.6,
+          "y_px": 979.5,
+          "conf": 1.0
+        },
+        "right_heel": {
+          "x_px": 415.1,
+          "y_px": 990.6,
+          "conf": 1.0
+        },
+        "left_hip": {
+          "x_px": 585.9,
+          "y_px": 678.1,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 506.2,
+          "y_px": 677.8,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-27",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 644.4,
+          "y_px": 954.2,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 453.7,
+          "y_px": 957.5,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 636.3,
+          "y_px": 979.1,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 462.8,
+          "y_px": 979.2,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 691.6,
+          "y_px": 979.5,
+          "conf": 1.0
+        },
+        "right_heel": {
+          "x_px": 415.1,
+          "y_px": 990.6,
+          "conf": 1.0
+        },
+        "left_hip": {
+          "x_px": 585.9,
+          "y_px": 678.1,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 506.2,
+          "y_px": 677.8,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-28",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 644.4,
+          "y_px": 954.2,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 453.7,
+          "y_px": 957.5,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 636.3,
+          "y_px": 979.1,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 462.8,
+          "y_px": 979.2,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 691.6,
+          "y_px": 979.5,
+          "conf": 1.0
+        },
+        "right_heel": {
+          "x_px": 415.1,
+          "y_px": 990.6,
+          "conf": 1.0
+        },
+        "left_hip": {
+          "x_px": 585.9,
+          "y_px": 678.1,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 506.2,
+          "y_px": 677.8,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-29",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 644.4,
+          "y_px": 954.2,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 453.7,
+          "y_px": 957.5,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 636.3,
+          "y_px": 979.1,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 462.8,
+          "y_px": 979.2,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 691.6,
+          "y_px": 979.5,
+          "conf": 1.0
+        },
+        "right_heel": {
+          "x_px": 415.1,
+          "y_px": 990.6,
+          "conf": 1.0
+        },
+        "left_hip": {
+          "x_px": 585.9,
+          "y_px": 678.1,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 506.2,
+          "y_px": 677.8,
+          "conf": 1.0
+        }
+      }
+    },
+    {
+      "shot": "CJ-30",
+      "detected": true,
+      "overall_ankle_conf": 1.0,
+      "keypoints": {
+        "left_knee": {
+          "x_px": 644.4,
+          "y_px": 954.2,
+          "conf": 1.0
+        },
+        "right_knee": {
+          "x_px": 453.7,
+          "y_px": 957.5,
+          "conf": 1.0
+        },
+        "left_ankle": {
+          "x_px": 636.3,
+          "y_px": 979.1,
+          "conf": 1.0
+        },
+        "right_ankle": {
+          "x_px": 462.8,
+          "y_px": 979.2,
+          "conf": 1.0
+        },
+        "left_heel": {
+          "x_px": 691.6,
+          "y_px": 979.5,
+          "conf": 1.0
+        },
+        "right_heel": {
+          "x_px": 415.1,
+          "y_px": 990.6,
+          "conf": 1.0
+        },
+        "left_hip": {
+          "x_px": 585.9,
+          "y_px": 678.1,
+          "conf": 1.0
+        },
+        "right_hip": {
+          "x_px": 506.2,
+          "y_px": 677.8,
+          "conf": 1.0
+        }
+      }
+    }
+  ]
+}

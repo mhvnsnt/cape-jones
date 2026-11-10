@@ -1,0 +1,514 @@
+{
+ "staging_root": "/var/tmp/elbow-sole-20261101",
+ "intended_workspace_root": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101",
+ "file_count": 101,
+ "total_bytes": 14016288,
+ "files": [
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/REPORT-20261101.md",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/REPORT-20261101.md",
+   "bytes": 16304
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/build_native_sole.py",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/build_native_sole.py",
+   "bytes": 16915
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender.py",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender.py",
+   "bytes": 6961
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_pil.log",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_pil.log",
+   "bytes": 2127
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_pil.py",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_pil.py",
+   "bytes": 8413
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_pil_rerun.log",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_pil_rerun.log",
+   "bytes": 0
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/measure_blender.py",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/measure_blender.py",
+   "bytes": 2413
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/move-to-workspace.sh",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/move-to-workspace.sh",
+   "bytes": 655
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole_build.log",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole_build.log",
+   "bytes": 0
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole_build2.log",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole_build2.log",
+   "bytes": 1012
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow/elbow-contact-sheet-20261101.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow/elbow-contact-sheet-20261101.png",
+   "bytes": 179041
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow/elbow_Back_00_minus.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow/elbow_Back_00_minus.png",
+   "bytes": 72032
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow/elbow_Back_00_plus.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow/elbow_Back_00_plus.png",
+   "bytes": 72032
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow/elbow_Back_45_minus.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow/elbow_Back_45_minus.png",
+   "bytes": 82194
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow/elbow_Back_45_plus.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow/elbow_Back_45_plus.png",
+   "bytes": 81968
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow/elbow_Back_90_minus.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow/elbow_Back_90_minus.png",
+   "bytes": 67534
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow/elbow_Back_90_plus.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow/elbow_Back_90_plus.png",
+   "bytes": 66738
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow/elbow_Front_00_minus.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow/elbow_Front_00_minus.png",
+   "bytes": 73457
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow/elbow_Front_00_plus.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow/elbow_Front_00_plus.png",
+   "bytes": 73457
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow/elbow_Front_45_minus.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow/elbow_Front_45_minus.png",
+   "bytes": 83909
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow/elbow_Front_45_plus.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow/elbow_Front_45_plus.png",
+   "bytes": 84279
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow/elbow_Front_90_minus.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow/elbow_Front_90_minus.png",
+   "bytes": 69576
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow/elbow_Front_90_plus.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow/elbow_Front_90_plus.png",
+   "bytes": 69681
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow/elbow_pil_measurements.json",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow/elbow_pil_measurements.json",
+   "bytes": 9938
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow/elbow_pil_measurements_FIRST-RUN-BUGGY-GAP.json",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow/elbow_pil_measurements_FIRST-RUN-BUGGY-GAP.json",
+   "bytes": 9934
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_Back_00_cap.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_Back_00_cap.png",
+   "bytes": 687850
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_Back_00_nocap.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_Back_00_nocap.png",
+   "bytes": 689067
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_Back_45_cap.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_Back_45_cap.png",
+   "bytes": 684619
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_Back_45_nocap.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_Back_45_nocap.png",
+   "bytes": 685918
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_Back_90_cap.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_Back_90_cap.png",
+   "bytes": 661804
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_Back_90_nocap.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_Back_90_nocap.png",
+   "bytes": 663274
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_Front_00_cap.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_Front_00_cap.png",
+   "bytes": 683813
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_Front_00_nocap.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_Front_00_nocap.png",
+   "bytes": 684499
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_Front_45_cap.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_Front_45_cap.png",
+   "bytes": 681879
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_Front_45_nocap.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_Front_45_nocap.png",
+   "bytes": 682632
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_Front_90_cap.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_Front_90_cap.png",
+   "bytes": 663647
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_Front_90_nocap.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_Front_90_nocap.png",
+   "bytes": 664581
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_blender_joints.json",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_blender_joints.json",
+   "bytes": 1972
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_blender_measurements.json",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_blender_measurements.json",
+   "bytes": 3484
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_isolated_Back.blend",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_isolated_Back.blend",
+   "bytes": 94104
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/elbow_blender/elbow_isolated_Front.blend",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/elbow_blender/elbow_isolated_Front.blend",
+   "bytes": 91727
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/sole-native-extension-master-20261101.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/sole-native-extension-master-20261101.png",
+   "bytes": 559307
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/sole-native-extension-still-20261101.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/sole-native-extension-still-20261101.png",
+   "bytes": 166329
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/sole-native-extension-under-torso-20261101.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/sole-native-extension-under-torso-20261101.png",
+   "bytes": 166551
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/sole-native-extension-under-torso-master-20261101.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/sole-native-extension-under-torso-master-20261101.png",
+   "bytes": 561479
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/sole-native-frames.txt",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/sole-native-frames.txt",
+   "bytes": 3264
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/sole-native-kick-20261101.gif",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/sole-native-kick-20261101.gif",
+   "bytes": 320270
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/sole-native-kick-20261101.mp4",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/sole-native-kick-20261101.mp4",
+   "bytes": 83705
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/sole-native-kick-xsheet-20261101.csv",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/sole-native-kick-xsheet-20261101.csv",
+   "bytes": 6483
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/sole-native-measurements.json",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/sole-native-measurements.json",
+   "bytes": 1574
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/sole-native-meta.json",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/sole-native-meta.json",
+   "bytes": 481
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/sole-native-stand-still-20261101.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/sole-native-stand-still-20261101.png",
+   "bytes": 135622
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-000.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-000.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-001.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-001.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-002.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-002.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-003.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-003.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-004.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-004.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-005.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-005.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-006.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-006.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-007.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-007.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-008.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-008.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-009.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-009.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-010.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-010.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-011.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-011.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-012.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-012.jpg",
+   "bytes": 49313
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-013.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-013.jpg",
+   "bytes": 49637
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-014.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-014.jpg",
+   "bytes": 49388
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-015.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-015.jpg",
+   "bytes": 48894
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-016.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-016.jpg",
+   "bytes": 48627
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-017.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-017.jpg",
+   "bytes": 49182
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-018.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-018.jpg",
+   "bytes": 49175
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-019.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-019.jpg",
+   "bytes": 49156
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-020.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-020.jpg",
+   "bytes": 55280
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-021.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-021.jpg",
+   "bytes": 55280
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-022.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-022.jpg",
+   "bytes": 55280
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-023.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-023.jpg",
+   "bytes": 55280
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-024.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-024.jpg",
+   "bytes": 55280
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-025.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-025.jpg",
+   "bytes": 55280
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-026.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-026.jpg",
+   "bytes": 55280
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-027.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-027.jpg",
+   "bytes": 55280
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-028.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-028.jpg",
+   "bytes": 55280
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-029.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-029.jpg",
+   "bytes": 55280
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-030.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-030.jpg",
+   "bytes": 55280
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-031.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-031.jpg",
+   "bytes": 55280
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-032.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-032.jpg",
+   "bytes": 51054
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-033.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-033.jpg",
+   "bytes": 50882
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-034.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-034.jpg",
+   "bytes": 50417
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-035.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-035.jpg",
+   "bytes": 48722
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-036.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-036.jpg",
+   "bytes": 49131
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-037.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-037.jpg",
+   "bytes": 49793
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-038.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-038.jpg",
+   "bytes": 49450
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-039.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-039.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-040.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-040.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-041.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-041.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-042.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-042.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-043.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-043.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-044.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-044.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-045.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-045.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-046.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-046.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/frames/sole-native-047.jpg",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/frames/sole-native-047.jpg",
+   "bytes": 48958
+  },
+  {
+   "staging": "/var/tmp/elbow-sole-20261101/sole/rig-pieces/Sole_Boot_Native_L.png",
+   "intended_workspace": "~/workspace/cape-jones-rig/production-extensions-elbow-sole-20261101/sole/rig-pieces/Sole_Boot_Native_L.png",
+   "bytes": 101484
+  }
+ ],
+ "note": "Staging only: home-directory writes fail with EDQUOT (disk quota). Run move-to-workspace.sh after the quota is freed/raised. Do NOT cite elbow_pil_measurements_FIRST-RUN-BUGGY-GAP.json."
+}

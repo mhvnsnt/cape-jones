@@ -1,0 +1,70 @@
+{
+  "move_up_px": 19,
+  "move_direction": "pure vertical, dx=0, dy=-19, no sideways, no flip, no scale change (scale 1.0, angle 164.8, Arm1 mirror unchanged)",
+  "old_hand_centre": [
+    314,
+    530
+  ],
+  "new_hand_centre": [
+    314,
+    511
+  ],
+  "old_wrist": [
+    331.6,
+    474.6
+  ],
+  "new_wrist": [
+    331.5,
+    455.6
+  ],
+  "old_tip": [
+    300.2,
+    595.2
+  ],
+  "new_tip": [
+    300.2,
+    576.2
+  ],
+  "cuff_bottom_y": 474,
+  "erase_rect": "x200-365 y475-610",
+  "gap_before_by_column": {
+    "x290": 19,
+    "x300": 6,
+    "x310": -12,
+    "x320": -12,
+    "x330": -10,
+    "x340": -7,
+    "x350": -2
+  },
+  "gap_after_by_column_note": "recomputed in script output above; x290 gap 19->0",
+  "fist_pixels_remaining_outside_hand": 0,
+  "torso_cape_diff_x_ge_380_plain_vs_prev_grey": 0,
+  "ball_centre_old": [
+    314,
+    530
+  ],
+  "ball_centre_new": [
+    314,
+    511
+  ],
+  "ball_colours": "(255,230,110) with (255,250,220) centre, radii 70/48/18, same as previous",
+  "no_crop_plain": {
+    "pass": true,
+    "bbox": [
+      259,
+      237,
+      884,
+      1296
+    ]
+  },
+  "no_crop_ball": {
+    "pass": true,
+    "bbox": [
+      244,
+      237,
+      884,
+      1296
+    ]
+  },
+  "approval": "0/1, NOT perfect until Mars sees it"
+}

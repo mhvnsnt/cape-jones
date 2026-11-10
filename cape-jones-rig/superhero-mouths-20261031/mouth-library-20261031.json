@@ -1,0 +1,248 @@
+[
+ {
+  "id": "01",
+  "key": "shout-ah",
+  "label": "SHOUT / AH - wide open, teeth top, tongue",
+  "source": "51_RBEXPRES01_CA_DCTTAS.EPS",
+  "render": "51_RBEXPRES01_CA_DCTTAS.png",
+  "box": [
+   200,
+   755,
+   600,
+   945
+  ],
+  "viseme": "AH",
+  "patch": "mouths/01_shout-ah_patch.png",
+  "raw": "raw/01_shout-ah_raw.png",
+  "patch_px": 54560,
+  "patch_bbox": [
+   3,
+   0,
+   400,
+   190
+  ],
+  "components": [
+   53689,
+   714,
+   157
+  ],
+  "status": "usable",
+  "fitted": "fitted/01_shout-ah_on_cape_head.png",
+  "fitted_scale": 0.701,
+  "fitted_size": [
+   281,
+   134
+  ]
+ },
+ {
+  "id": "02",
+  "key": "closed-mbp",
+  "label": "CLOSED / MBP - thin closed line",
+  "source": "47_RBEXPRES02_CA_DCTTAS.EPS",
+  "render": "47_RBEXPRES02_CA_DCTTAS.png",
+  "box": [
+   330,
+   1225,
+   480,
+   1250
+  ],
+  "viseme": "MBP",
+  "patch": "mouths/02_closed-mbp_patch.png",
+  "raw": "raw/02_closed-mbp_raw.png",
+  "patch_px": 307,
+  "patch_bbox": [
+   0,
+   0,
+   150,
+   10
+  ],
+  "components": [
+   199,
+   108
+  ],
+  "status": "usable",
+  "fitted": "fitted/02_closed-mbp_on_cape_head.png",
+  "fitted_scale": 1.861,
+  "fitted_size": [
+   281,
+   48
+  ]
+ },
+ {
+  "id": "03",
+  "key": "open-smile-eh",
+  "label": "OPEN SMILE / EH - wide open, tongue, no teeth",
+  "source": "53_RBEXPRES03_CA_DCTTAS.EPS",
+  "render": "53_RBEXPRES03_CA_DCTTAS.png",
+  "box": [
+   270,
+   1085,
+   565,
+   1182
+  ],
+  "viseme": "EH",
+  "drop_costume": true,
+  "patch": "mouths/03_open-smile-eh_patch.png",
+  "raw": "raw/03_open-smile-eh_raw.png",
+  "patch_px": 12239,
+  "patch_bbox": [
+   0,
+   0,
+   295,
+   97
+  ],
+  "components": [
+   9265,
+   5287,
+   1299,
+   450,
+   301
+  ],
+  "status": "usable",
+  "fitted": "fitted/03_open-smile-eh_on_cape_head.png",
+  "fitted_scale": 0.949,
+  "fitted_size": [
+   281,
+   93
+  ]
+ },
+ {
+  "id": "04",
+  "key": "smile-ee",
+  "label": "SMILE / EE - closed curved smile line",
+  "source": "50_RBEXPRES04_CA_DCTTAS.EPS",
+  "render": "50_RBEXPRES04_CA_DCTTAS.png",
+  "box": [
+   470,
+   1180,
+   630,
+   1270
+  ],
+  "viseme": "EE",
+  "patch": "mouths/04_smile-ee_patch.png",
+  "raw": "raw/04_smile-ee_raw.png",
+  "patch_px": 1678,
+  "patch_bbox": [
+   0,
+   0,
+   155,
+   85
+  ],
+  "components": [
+   1210,
+   468
+  ],
+  "status": "usable",
+  "fitted": "fitted/04_smile-ee_on_cape_head.png",
+  "fitted_scale": 1.659,
+  "fitted_size": [
+   267,
+   151
+  ]
+ },
+ {
+  "id": "05",
+  "key": "grit-teeth",
+  "label": "GRIT / teeth grin, wide",
+  "source": "49_RBEXPRES05_CA_DCTTAS.EPS",
+  "render": "49_RBEXPRES05_CA_DCTTAS.png",
+  "box": [
+   135,
+   1110,
+   665,
+   1190
+  ],
+  "viseme": "GK",
+  "patch": "mouths/05_grit-teeth_patch.png",
+  "raw": "raw/05_grit-teeth_raw.png",
+  "patch_px": 16124,
+  "patch_bbox": [
+   64,
+   0,
+   530,
+   80
+  ],
+  "components": [
+   16124
+  ],
+  "status": "usable",
+  "fitted": "fitted/05_grit-teeth_on_cape_head.png",
+  "fitted_scale": 0.529,
+  "fitted_size": [
+   281,
+   43
+  ]
+ },
+ {
+  "id": "06",
+  "key": "rbn01-open-smile",
+  "label": "OPEN SMILE (model) - teeth top, tongue",
+  "source": "23_RBN01_CA_DCTTAS.EPS",
+  "render": "23_RBN01_CA_DCTTAS.png",
+  "box": [
+   525,
+   695,
+   660,
+   780
+  ],
+  "viseme": "AH-alt",
+  "drop_costume": true,
+  "patch": "mouths/06_rbn01-open-smile_patch.png",
+  "raw": "raw/06_rbn01-open-smile_raw.png",
+  "patch_px": 6821,
+  "patch_bbox": [
+   0,
+   0,
+   135,
+   85
+  ],
+  "components": [
+   3557,
+   3200,
+   138
+  ],
+  "status": "usable",
+  "fitted": "fitted/06_rbn01-open-smile_on_cape_head.png",
+  "fitted_scale": 1.756,
+  "fitted_size": [
+   239,
+   151
+  ]
+ },
+ {
+  "id": "07",
+  "key": "day-neutral-closed",
+  "label": "NEUTRAL CLOSED - straight line (Day head close-up)",
+  "source": "02_ROBIN_Day.jpg",
+  "render": null,
+  "box": [
+   890,
+   765,
+   940,
+   775
+  ],
+  "viseme": "rest",
+  "black_only": true,
+  "patch": "mouths/07_day-neutral-closed_patch.png",
+  "raw": "raw/07_day-neutral-closed_raw.png",
+  "patch_px": 211,
+  "patch_bbox": [
+   0,
+   0,
+   48,
+   10
+  ],
+  "components": [
+   144,
+   67
+  ],
+  "status": "rejected-not-cleanly-extractable",
+  "reject_reason": "Day JPG neutral line is faint/compressed and mixed with nose shading; fitted proof shows smudge + angular fragment, not a clean line. EXPRES02 closed line is used for rest/MBP instead.",
+  "fitted": "fitted/07_day-neutral-closed_on_cape_head.png",
+  "fitted_scale": 5.51,
+  "fitted_size": [
+   281,
+   61
+  ]
+ }
+]

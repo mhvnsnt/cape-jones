@@ -1,0 +1,901 @@
+{
+  "base_alpha": 373846,
+  "base_bbox": [
+    248,
+    253,
+    876,
+    1295
+  ],
+  "g5": [
+    {
+      "variant": "I01-Arm1-minus10",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        720,
+        1139
+      ],
+      "old_alpha": 373844,
+      "new_alpha": 373845,
+      "padded_truth_alpha": 373860,
+      "old_lost_vs_truth": 16,
+      "new_lost_vs_truth": 15,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        217,
+        259,
+        857,
+        1318
+      ],
+      "new_bbox": [
+        40,
+        40,
+        680,
+        1099
+      ]
+    },
+    {
+      "variant": "I02-Arm1-minus18",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        772,
+        1140
+      ],
+      "old_alpha": 373807,
+      "new_alpha": 373816,
+      "padded_truth_alpha": 373866,
+      "old_lost_vs_truth": 59,
+      "new_lost_vs_truth": 50,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        153,
+        274,
+        845,
+        1334
+      ],
+      "new_bbox": [
+        40,
+        40,
+        732,
+        1100
+      ]
+    },
+    {
+      "variant": "I03-Arm1-plus10",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        734,
+        1141
+      ],
+      "old_alpha": 373865,
+      "new_alpha": 373862,
+      "padded_truth_alpha": 373876,
+      "old_lost_vs_truth": 11,
+      "new_lost_vs_truth": 14,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        262,
+        259,
+        916,
+        1320
+      ],
+      "new_bbox": [
+        40,
+        40,
+        694,
+        1101
+      ]
+    },
+    {
+      "variant": "I04-lean-shear-015",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        719,
+        1122
+      ],
+      "old_alpha": 373846,
+      "new_alpha": 373846,
+      "padded_truth_alpha": 373846,
+      "old_lost_vs_truth": 0,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        113,
+        253,
+        752,
+        1295
+      ],
+      "new_bbox": [
+        40,
+        40,
+        679,
+        1082
+      ]
+    },
+    {
+      "variant": "I05-run-lean-030",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        792,
+        1122
+      ],
+      "old_alpha": 369852,
+      "new_alpha": 373846,
+      "padded_truth_alpha": 373846,
+      "old_lost_vs_truth": 3994,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 177,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        0,
+        253,
+        633,
+        1290
+      ],
+      "new_bbox": [
+        40,
+        40,
+        752,
+        1082
+      ]
+    },
+    {
+      "variant": "I06-fly-tilt-15",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        773,
+        1141
+      ],
+      "old_alpha": 373815,
+      "new_alpha": 373810,
+      "padded_truth_alpha": 373869,
+      "old_lost_vs_truth": 54,
+      "new_lost_vs_truth": 59,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        262,
+        268,
+        955,
+        1329
+      ],
+      "new_bbox": [
+        40,
+        40,
+        733,
+        1101
+      ]
+    },
+    {
+      "variant": "I07-grip-L",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        708,
+        1122
+      ],
+      "old_alpha": 373846,
+      "new_alpha": 373846,
+      "padded_truth_alpha": 373846,
+      "old_lost_vs_truth": 0,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        248,
+        253,
+        876,
+        1295
+      ],
+      "new_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ]
+    },
+    {
+      "variant": "I08-grip-R-mirror",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        708,
+        1122
+      ],
+      "old_alpha": 373846,
+      "new_alpha": 373846,
+      "padded_truth_alpha": 373846,
+      "old_lost_vs_truth": 0,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        224,
+        253,
+        852,
+        1295
+      ],
+      "new_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ]
+    },
+    {
+      "variant": "I09-cycle-6f",
+      "old_size": [
+        990,
+        1350
+      ],
+      "new_size": [
+        646,
+        1019
+      ],
+      "old_alpha": 309557,
+      "new_alpha": 309557,
+      "padded_truth_alpha": 309557,
+      "old_lost_vs_truth": 0,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        223,
+        227,
+        789,
+        1166
+      ],
+      "new_bbox": [
+        40,
+        40,
+        606,
+        979
+      ]
+    },
+    {
+      "variant": "I10-cycle-12f",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        708,
+        1122
+      ],
+      "old_alpha": 373846,
+      "new_alpha": 373846,
+      "padded_truth_alpha": 373846,
+      "old_lost_vs_truth": 0,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        248,
+        253,
+        876,
+        1295
+      ],
+      "new_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ]
+    },
+    {
+      "variant": "X01-squash-run",
+      "old_size": [
+        1100,
+        1350
+      ],
+      "new_size": [
+        708,
+        1019
+      ],
+      "old_alpha": 339795,
+      "new_alpha": 339795,
+      "padded_truth_alpha": 339795,
+      "old_lost_vs_truth": 0,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        248,
+        227,
+        876,
+        1166
+      ],
+      "new_bbox": [
+        40,
+        40,
+        668,
+        979
+      ]
+    },
+    {
+      "variant": "X02-stretch-fly",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        708,
+        1122
+      ],
+      "old_alpha": 373846,
+      "new_alpha": 373846,
+      "padded_truth_alpha": 373846,
+      "old_lost_vs_truth": 0,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        248,
+        253,
+        876,
+        1295
+      ],
+      "new_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ]
+    },
+    {
+      "variant": "X03-shear-run-minus020",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        758,
+        1122
+      ],
+      "old_alpha": 373846,
+      "new_alpha": 373846,
+      "padded_truth_alpha": 373846,
+      "old_lost_vs_truth": 0,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        406,
+        253,
+        1084,
+        1295
+      ],
+      "new_bbox": [
+        40,
+        40,
+        718,
+        1082
+      ]
+    },
+    {
+      "variant": "X04-bounce",
+      "old_size": [
+        1045,
+        1425
+      ],
+      "new_size": [
+        678,
+        1071
+      ],
+      "old_alpha": 344388,
+      "new_alpha": 344388,
+      "padded_truth_alpha": 344388,
+      "old_lost_vs_truth": 0,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        235,
+        240,
+        833,
+        1231
+      ],
+      "new_bbox": [
+        40,
+        40,
+        638,
+        1031
+      ]
+    },
+    {
+      "variant": "X05-afterglow-blur",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        718,
+        1132
+      ],
+      "old_alpha": 407419,
+      "new_alpha": 407419,
+      "padded_truth_alpha": 407419,
+      "old_lost_vs_truth": 0,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        243,
+        248,
+        881,
+        1300
+      ],
+      "new_bbox": [
+        40,
+        40,
+        678,
+        1092
+      ]
+    },
+    {
+      "variant": "X06-mirrored-run",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        708,
+        1122
+      ],
+      "old_alpha": 373846,
+      "new_alpha": 373846,
+      "padded_truth_alpha": 373846,
+      "old_lost_vs_truth": 0,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        224,
+        253,
+        852,
+        1295
+      ],
+      "new_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ]
+    },
+    {
+      "variant": "X07-double-exposure",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        714,
+        1136
+      ],
+      "old_alpha": 415277,
+      "new_alpha": 415275,
+      "padded_truth_alpha": 415275,
+      "old_lost_vs_truth": -2,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        248,
+        253,
+        882,
+        1309
+      ],
+      "new_bbox": [
+        40,
+        40,
+        674,
+        1096
+      ]
+    },
+    {
+      "variant": "X08-speed-lines",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        708,
+        1122
+      ],
+      "old_alpha": 373846,
+      "new_alpha": 373846,
+      "padded_truth_alpha": 373846,
+      "old_lost_vs_truth": 0,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        248,
+        253,
+        876,
+        1295
+      ],
+      "new_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ]
+    },
+    {
+      "variant": "X09-device-lap",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        708,
+        1122
+      ],
+      "old_alpha": 373846,
+      "new_alpha": 373846,
+      "padded_truth_alpha": 373846,
+      "old_lost_vs_truth": 0,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        248,
+        253,
+        876,
+        1295
+      ],
+      "new_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ]
+    },
+    {
+      "variant": "X10-device-grip",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        708,
+        1122
+      ],
+      "old_alpha": 373846,
+      "new_alpha": 373846,
+      "padded_truth_alpha": 373846,
+      "old_lost_vs_truth": 0,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "old_bbox": [
+        248,
+        253,
+        876,
+        1295
+      ],
+      "new_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ]
+    }
+  ],
+  "lean_tests": [
+    {
+      "variant": "L1-lean-shear-040",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        853,
+        1122
+      ],
+      "old_alpha": 334712,
+      "new_alpha": 373846,
+      "padded_truth_alpha": 373846,
+      "old_lost_vs_truth": 39134,
+      "new_lost_vs_truth": 0,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 402,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      }
+    },
+    {
+      "variant": "L2-compound-lean-rot-20-shear-035",
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        1000,
+        1137
+      ],
+      "old_alpha": 339033,
+      "new_alpha": 373813,
+      "padded_truth_alpha": 373863,
+      "old_lost_vs_truth": 34830,
+      "new_lost_vs_truth": 50,
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 339,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      }
+    },
+    {
+      "variant": "L3-piece-paste-offedge",
+      "piece_alpha": 23687,
+      "old_alpha": 7996,
+      "new_alpha": 23687,
+      "old_lost": 15691,
+      "new_lost": 0,
+      "paste_shift": [
+        50,
+        0
+      ],
+      "old_size": [
+        1100,
+        1500
+      ],
+      "new_size": [
+        1150,
+        1723
+      ],
+      "old_edge_touch": {
+        "top": 0,
+        "bottom": 91,
+        "left": 46,
+        "right": 0
+      },
+      "new_edge_touch": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      }
+    }
+  ]
+}

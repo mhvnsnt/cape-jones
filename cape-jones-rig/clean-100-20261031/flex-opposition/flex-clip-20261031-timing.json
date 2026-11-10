@@ -1,0 +1,81 @@
+{
+  "clip": "flex-clip-20261031",
+  "fps": 24,
+  "rig": "joint_locked_rig_v7c, labels=False",
+  "source_timing": "beat ~14f @25fps (~107 BPM), on twos; retargeted to 24fps = 13.46f/beat",
+  "beat_grid_ideal_24fps": [
+    1,
+    14.5,
+    27.9,
+    41.4,
+    54.8
+  ],
+  "keyframes_twos_snapped": [
+    {
+      "frame": 1,
+      "pose": "pre-flex (approved arms-up)",
+      "roll_deg": 0
+    },
+    {
+      "frame": 15,
+      "pose": "tighten in-between",
+      "roll_deg": 25
+    },
+    {
+      "frame": 21,
+      "pose": "tighten in-between",
+      "roll_deg": 50
+    },
+    {
+      "frame": 29,
+      "pose": "TRUE FLEX peak",
+      "roll_deg": 75
+    },
+    {
+      "frame": 37,
+      "pose": "TRUE FLEX hold (same drawing as f29)",
+      "roll_deg": 75
+    },
+    {
+      "frame": 43,
+      "pose": "release in-between",
+      "roll_deg": 50
+    },
+    {
+      "frame": 51,
+      "pose": "release to pre-flex",
+      "roll_deg": 0
+    }
+  ],
+  "note": "Timing only is retargeted. No show character art, names, dialogue or logos are used. This is NOT the old fighting-pose flex clip: pose is the double-bicep true flex (upper -70/70, lower 150/-150), not the fighting pose (upper -25/25, lower 160/-160, fists in front of chest).",
+  "arms_up": {
+    "arm_upper": {
+      "L": -70,
+      "R": 70
+    },
+    "arm_lower": {
+      "L": 150,
+      "R": -150
+    },
+    "elbows": {
+      "L": [
+        253,
+        493
+      ],
+      "R": [
+        849,
+        487
+      ]
+    }
+  },
+  "legs": {
+    "leg_upper": {
+      "L": -15,
+      "R": 15
+    },
+    "leg_lower": {
+      "L": -10,
+      "R": 10
+    }
+  }
+}

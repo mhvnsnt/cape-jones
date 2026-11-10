@@ -1,0 +1,800 @@
+{
+ "old_sliced_clean": {
+  "files": 2854,
+  "blank": 0,
+  "tiny_lt800": 0,
+  "corrupt": 0,
+  "total_opaque_px": 88596328,
+  "aspect_outliers": 69,
+  "single_colour": 0,
+  "huge": 28,
+  "per_top_folder": {
+   "A-root": 471,
+   "B-model": 7,
+   "C-variations": 1238,
+   "D-xray-angle-ref": 302,
+   "E-exposure": 110,
+   "F-fla-packs": 648,
+   "G-props": 78
+  },
+  "aspect_outlier_files": [
+   {
+    "file": "sliced-clean-20261031/A-root/03-color-lighting-vfx-key/Row1_16.png",
+    "bbox": [
+     323,
+     37
+    ],
+    "aspect": 8.73,
+    "opaque": 10181
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/04-action-flight-vfx-reference/Row6_32.png",
+    "bbox": [
+     838,
+     91
+    ],
+    "aspect": 9.209,
+    "opaque": 40840
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/05-expression-eye-dart-matrix/Row5_40.png",
+    "bbox": [
+     247,
+     30
+    ],
+    "aspect": 8.233,
+    "opaque": 6049
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/05-expression-eye-dart-matrix/Row5_41.png",
+    "bbox": [
+     247,
+     28
+    ],
+    "aspect": 8.821,
+    "opaque": 6016
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/07-character-parts-expressions/Row1_1.png",
+    "bbox": [
+     291,
+     31
+    ],
+    "aspect": 9.387,
+    "opaque": 7357
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/07-character-parts-expressions/Row1_23.png",
+    "bbox": [
+     461,
+     14
+    ],
+    "aspect": 32.929,
+    "opaque": 2130
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/07-character-parts-expressions/Row1_25.png",
+    "bbox": [
+     425,
+     2
+    ],
+    "aspect": 212.5,
+    "opaque": 850
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/07-character-parts-expressions/Row1_31.png",
+    "bbox": [
+     266,
+     33
+    ],
+    "aspect": 8.061,
+    "opaque": 7799
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/07-character-parts-expressions/Row1_6.png",
+    "bbox": [
+     755,
+     4
+    ],
+    "aspect": 188.75,
+    "opaque": 3020
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/08-body-parts-limbs-capes/Row1_1.png",
+    "bbox": [
+     1522,
+     3
+    ],
+    "aspect": 507.333,
+    "opaque": 4566
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/08-body-parts-limbs-capes/Row3_1.png",
+    "bbox": [
+     690,
+     2
+    ],
+    "aspect": 345.0,
+    "opaque": 1380
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/08-body-parts-limbs-capes/Row3_3.png",
+    "bbox": [
+     690,
+     2
+    ],
+    "aspect": 345.0,
+    "opaque": 1380
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/08-body-parts-limbs-capes/Row5_1.png",
+    "bbox": [
+     682,
+     3
+    ],
+    "aspect": 227.333,
+    "opaque": 2046
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/08-body-parts-limbs-capes/Row5_12.png",
+    "bbox": [
+     684,
+     3
+    ],
+    "aspect": 228.0,
+    "opaque": 2052
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/08-body-parts-limbs-capes/Row5_13.png",
+    "bbox": [
+     682,
+     2
+    ],
+    "aspect": 341.0,
+    "opaque": 1364
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/08-body-parts-limbs-capes/Row5_2.png",
+    "bbox": [
+     685,
+     3
+    ],
+    "aspect": 228.333,
+    "opaque": 2055
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/08-body-parts-limbs-capes/Row7_1.png",
+    "bbox": [
+     681,
+     2
+    ],
+    "aspect": 340.5,
+    "opaque": 1362
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/08-body-parts-limbs-capes/Row7_3.png",
+    "bbox": [
+     721,
+     2
+    ],
+    "aspect": 360.5,
+    "opaque": 1442
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/08-body-parts-limbs-capes/Row7_7.png",
+    "bbox": [
+     720,
+     3
+    ],
+    "aspect": 240.0,
+    "opaque": 2160
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/08-body-parts-limbs-capes/Row7_8.png",
+    "bbox": [
+     681,
+     2
+    ],
+    "aspect": 340.5,
+    "opaque": 1362
+   },
+   {
+    "file": "sliced-clean-20261031/C-variations/6TXRQ/Row3_7.png",
+    "bbox": [
+     2,
+     1004
+    ],
+    "aspect": 0.002,
+    "opaque": 2008
+   },
+   {
+    "file": "sliced-clean-20261031/C-variations/9dc2Q/Row4_20.png",
+    "bbox": [
+     644,
+     76
+    ],
+    "aspect": 8.474,
+    "opaque": 25977
+   },
+   {
+    "file": "sliced-clean-20261031/C-variations/AKqzs/Row1_1.png",
+    "bbox": [
+     1129,
+     3
+    ],
+    "aspect": 376.333,
+    "opaque": 3387
+   },
+   {
+    "file": "sliced-clean-20261031/C-variations/AKqzs/Row1_2.png",
+    "bbox": [
+     1128,
+     3
+    ],
+    "aspect": 376.0,
+    "opaque": 3384
+   },
+   {
+    "file": "sliced-clean-20261031/C-variations/AKqzs/Row1_3.png",
+    "bbox": [
+     568,
+     4
+    ],
+    "aspect": 142.0,
+    "opaque": 2272
+   },
+   {
+    "file": "sliced-clean-20261031/C-variations/AKqzs/Row1_4.png",
+    "bbox": [
+     567,
+     2
+    ],
+    "aspect": 283.5,
+    "opaque": 1134
+   },
+   {
+    "file": "sliced-clean-20261031/C-variations/AKqzs/Row1_7.png",
+    "bbox": [
+     122,
+     15
+    ],
+    "aspect": 8.133,
+    "opaque": 1801
+   },
+   {
+    "file": "sliced-clean-20261031/C-variations/CgfRw/Row1_1.png",
+    "bbox": [
+     420,
+     2
+    ],
+    "aspect": 210.0,
+    "opaque": 840
+   },
+   {
+    "file": "sliced-clean-20261031/C-variations/CgfRw/Row1_2.png",
+    "bbox": [
+     1167,
+     3
+    ],
+    "aspect": 389.0,
+    "opaque": 3501
+   },
+   {
+    "file": "sliced-clean-20261031/C-variations/CgfRw/Row1_39.png",
+    "bbox": [
+     418,
+     2
+    ],
+    "aspect": 209.0,
+    "opaque": 836
+   }
+  ],
+  "single_colour_files": [],
+  "huge_files": [
+   {
+    "file": "sliced-clean-20261031/A-root/01-tpose-turnaround/Row1_1.png",
+    "bbox": [
+     1198,
+     1111
+    ],
+    "opaque": 492465
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/03-color-lighting-vfx-key/Row2_23.png",
+    "bbox": [
+     743,
+     1006
+    ],
+    "opaque": 559229
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/09-hero-shot-black/Row1_1.png",
+    "bbox": [
+     775,
+     1296
+    ],
+    "opaque": 511498
+   },
+   {
+    "file": "sliced-clean-20261031/A-root/10-hero-in-space/Row2_1.png",
+    "bbox": [
+     917,
+     1968
+    ],
+    "opaque": 1307274
+   },
+   {
+    "file": "sliced-clean-20261031/B-model/model-sheet-back-set1/Row1_1.png",
+    "bbox": [
+     1085,
+     1000
+    ],
+    "opaque": 399906
+   },
+   {
+    "file": "sliced-clean-20261031/B-model/model-sheet-back-set2/Row1_1.png",
+    "bbox": [
+     1086,
+     1004
+    ],
+    "opaque": 406474
+   },
+   {
+    "file": "sliced-clean-20261031/B-model/model-sheet-front-set2/Row1_1.png",
+    "bbox": [
+     1106,
+     1014
+    ],
+    "opaque": 416418
+   },
+   {
+    "file": "sliced-clean-20261031/C-variations/hGsDr/Row3_2.png",
+    "bbox": [
+     1311,
+     750
+    ],
+    "opaque": 590869
+   },
+   {
+    "file": "sliced-clean-20261031/D-xray-angle-ref/tpose-front-alt/Row3_1.png",
+    "bbox": [
+     1002,
+     1488
+    ],
+    "opaque": 1179360
+   },
+   {
+    "file": "sliced-clean-20261031/D-xray-angle-ref/tpose-front/Row1_1.png",
+    "bbox": [
+     979,
+     1058
+    ],
+    "opaque": 387110
+   },
+   {
+    "file": "sliced-clean-20261031/E-exposure/exposure-sheet-1-walk/Row3_1.png",
+    "bbox": [
+     776,
+     1417
+    ],
+    "opaque": 960725
+   },
+   {
+    "file": "sliced-clean-20261031/E-exposure/exposure-sheet-10-flex/Row4_1.png",
+    "bbox": [
+     1121,
+     1617
+    ],
+    "opaque": 557782
+   },
+   {
+    "file": "sliced-clean-20261031/E-exposure/exposure-sheet-2-jump/Row1_1.png",
+    "bbox": [
+     1193,
+     1495
+    ],
+    "opaque": 1783535
+   },
+   {
+    "file": "sliced-clean-20261031/E-exposure/exposure-sheet-3-punch/Row1_1.png",
+    "bbox": [
+     1118,
+     1675
+    ],
+    "opaque": 1872650
+   },
+   {
+    "file": "sliced-clean-20261031/E-exposure/exposure-sheet-4-flight/Row1_1.png",
+    "bbox": [
+     1142,
+     1708
+    ],
+    "opaque": 1938101
+   },
+   {
+    "file": "sliced-clean-20261031/E-exposure/exposure-sheet-5-reaction/Row2_1.png",
+    "bbox": [
+     1112,
+     1582
+    ],
+    "opaque": 1759184
+   },
+   {
+    "file": "sliced-clean-20261031/E-exposure/exposure-sheet-6-sit/Row2_2.png",
+    "bbox": [
+     1311,
+     891
+    ],
+    "opaque": 1167924
+   },
+   {
+    "file": "sliced-clean-20261031/E-exposure/exposure-sheet-7-cape/Row2_1.png",
+    "bbox": [
+     1224,
+     1421
+    ],
+    "opaque": 1049579
+   },
+   {
+    "file": "sliced-clean-20261031/E-exposure/exposure-sheet-8-turnaround/Row1_1.png",
+    "bbox": [
+     1764,
+     965
+    ],
+    "opaque": 1702260
+   },
+   {
+    "file": "sliced-clean-20261031/G-props/prop-8LjQY/Row1_1.png",
+    "bbox": [
+     1164,
+     780
+    ],
+    "opaque": 895369
+   },
+   {
+    "file": "sliced-clean-20261031/G-props/prop-HeTHP/Row2_1.png",
+    "bbox": [
+     1123,
+     780
+    ],
+    "opaque": 610302
+   },
+   {
+    "file": "sliced-clean-20261031/G-props/prop-Nr2it/Row1_2.png",
+    "bbox": [
+     1134,
+     780
+    ],
+    "opaque": 595337
+   },
+   {
+    "file": "sliced-clean-20261031/G-props/prop-YAhuI/Row1_1.png",
+    "bbox": [
+     1164,
+     780
+    ],
+    "opaque": 861284
+   },
+   {
+    "file": "sliced-clean-20261031/G-props/prop-ZG2Bt/Row1_1.png",
+    "bbox": [
+     1164,
+     734
+    ],
+    "opaque": 814998
+   },
+   {
+    "file": "sliced-clean-20261031/G-props/prop-fi3j8/Row1_1.png",
+    "bbox": [
+     1164,
+     780
+    ],
+    "opaque": 667667
+   },
+   {
+    "file": "sliced-clean-20261031/G-props/prop-izNQ9/Row1_1.png",
+    "bbox": [
+     1164,
+     780
+    ],
+    "opaque": 829660
+   },
+   {
+    "file": "sliced-clean-20261031/G-props/prop-oCpSw/Row1_1.png",
+    "bbox": [
+     1164,
+     780
+    ],
+    "opaque": 907525
+   },
+   {
+    "file": "sliced-clean-20261031/G-props/prop-rY6iH/Row1_1.png",
+    "bbox": [
+     1164,
+     780
+    ],
+    "opaque": 907920
+   }
+  ]
+ },
+ "new_sliced_68_sheets": {
+  "files": 964,
+  "blank": 0,
+  "tiny_lt800": 0,
+  "corrupt": 0,
+  "total_opaque_px": 50119035,
+  "aspect_outliers": 0,
+  "single_colour": 0,
+  "huge": 6,
+  "per_top_folder": {
+   "sheets": 964
+  },
+  "aspect_outlier_files": [],
+  "single_colour_files": [],
+  "huge_files": [
+   {
+    "file": "sliced-68-unsliced-20261031/sheets/props/prop-JmGUv/Row1_1.png",
+    "bbox": [
+     1166,
+     770
+    ],
+    "opaque": 618329
+   },
+   {
+    "file": "sliced-68-unsliced-20261031/sheets/props/prop-bfSpz/Row2_1.png",
+    "bbox": [
+     1166,
+     737
+    ],
+    "opaque": 741617
+   },
+   {
+    "file": "sliced-68-unsliced-20261031/sheets/props/prop-jPaPG/Row2_1.png",
+    "bbox": [
+     1166,
+     545
+    ],
+    "opaque": 504211
+   },
+   {
+    "file": "sliced-68-unsliced-20261031/sheets/props/prop-xyug7/Row1_1.png",
+    "bbox": [
+     1166,
+     782
+    ],
+    "opaque": 911812
+   },
+   {
+    "file": "sliced-68-unsliced-20261031/sheets/variations/cape-jones-tpose-front-alt/Row3_1.png",
+    "bbox": [
+     1004,
+     1490
+    ],
+    "opaque": 1181912
+   },
+   {
+    "file": "sliced-68-unsliced-20261031/sheets/variations/cape-jones-tpose-front/Row1_1.png",
+    "bbox": [
+     981,
+     1060
+    ],
+    "opaque": 387156
+   }
+  ]
+ },
+ "new_manifest": {
+  "sheets": 68,
+  "pieces": 964,
+  "named": 114,
+  "mixed": 850,
+  "named_check_sum": 114,
+  "mixed_check_sum": 850
+ },
+ "duplicates": {
+  "groups": 398,
+  "extra_copies": 398,
+  "groups_detail": {
+   "fe0d67a7af3de1422885b765381b21c00bf695392103d968876aace61ced9d6c": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-DGb2j/Row1_1.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-DGb2j/Row1_1.png"
+   ],
+   "b9a94cadfd403042033c1c5a00dc0cb12a1bb4515401705a2bb5a9bdd1047862": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-DGb2j/Row2_1.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-DGb2j/Row2_1.png"
+   ],
+   "96b1c586f52747a6a8bf8a350561c6bdd8c1a54f7058ffd4631af685855584e0": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-DGb2j/Row2_2.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-DGb2j/Row2_2.png"
+   ],
+   "c8ed11715d6db2b7cc74a4aef823b421521b454a091cdad74e525fa096dcf765": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-DGb2j/Row2_3.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-DGb2j/Row2_3.png"
+   ],
+   "f88b7917d02e562c2601b921e96ee57b0f3c53d44706cd47b4ab620d53ab7c11": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-DGb2j/Row2_4.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-DGb2j/Row2_4.png"
+   ],
+   "9b4fd1ecf6813896f2b1507a984f358c71065fc21e64be09f5d986c0043beea1": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-DGb2j/Row2_5.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-DGb2j/Row2_5.png"
+   ],
+   "17ea169b631a7c815e140c57f7d05c555ddc5123e25e4b03c25199d232b00d11": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-DGb2j/Row2_6.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-DGb2j/Row2_6.png"
+   ],
+   "31118ad82d8e9fca940f97e97118082daeb48772df195ce1007b84f956784bae": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-DGb2j/Row3_1.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-DGb2j/Row3_1.png"
+   ],
+   "321b589b0b87139f22a43b27fde5903e87a3acf43c29a09baedef022c6139cd6": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-DGb2j/Row3_2.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-DGb2j/Row3_2.png"
+   ],
+   "43eea6c1d7ffe75858e30802e0348e1bf190367d5d3c656d29dad3bdd28449c3": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-DGb2j/Row3_3.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-DGb2j/Row3_3.png"
+   ],
+   "7be42dae6ce0e335525fd766d32a383fb536e4299e21b5f9df490dd81fcabc1b": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-DGb2j/Row3_4.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-DGb2j/Row3_4.png"
+   ],
+   "9c0b7607e5cf29f3b34bbf939c71da5bb6a94c5bb37b9b222494a147d27c8e9d": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-F72A5/Row1_1.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-F72A5/Row1_1.png"
+   ],
+   "3325144ea763f61eb8d5b679023ca16b7e5d7615f275b7837d0f89e3eb80be14": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-F72A5/Row2_1.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-F72A5/Row2_1.png"
+   ],
+   "82d82029d64f41b9adcdfbcb7ecda559e7064ed32e1786896eb0f2de7e7f1ac8": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-F72A5/Row2_2.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-F72A5/Row2_2.png"
+   ],
+   "957a84d80e3423fff20f288303b5b2c7419ce1144be97bdff40096f24f1870cd": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-F72A5/Row2_3.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-F72A5/Row2_3.png"
+   ],
+   "8d04e6d32a75b78b97abf64416951600428c93dd3e9ca27e14349de8fb498ec7": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-F72A5/Row2_4.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-F72A5/Row2_4.png"
+   ],
+   "be6fb9bb72b37bfff365bc2dee41f5f9cd94a144580b3a8fbd0894bd214e3408": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-F72A5/Row2_5.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-F72A5/Row2_5.png"
+   ],
+   "98c6a6812fc9f5eb67de7ce078d11d95f51f11889e805db41231fb992f5e6c8f": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-F72A5/Row3_1.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-F72A5/Row3_1.png"
+   ],
+   "55a78b538b5f14b77a14230b754f5a037ec94ba46bb07a6a1ac1cef28c1c49f0": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-F72A5/Row3_2.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-F72A5/Row3_2.png"
+   ],
+   "8e4af3258589809dafd063d33f88008fbcd53aa2a2cd8c9ec2b3ff9acd499138": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-F72A5/Row3_3.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-F72A5/Row3_3.png"
+   ],
+   "d66ab153d8396044337612ef5141a65d67a8e2772775a0fa3f30ffb6f4c7a845": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-F72A5/Row3_4.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-F72A5/Row3_4.png"
+   ],
+   "f98951e0b2bde1dea46b1ac40e30dc67fbb3d1ce936f7d7353d2f98d2515e4b8": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-F72A5/Row3_5.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-F72A5/Row3_5.png"
+   ],
+   "a4198771fe9222a137acb97c9285d51e4ec0fa477ccdb9e756b694254ab309a6": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row1_1.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row1_1.png"
+   ],
+   "7c5ea6e0dfed225a38e739e208f9487c61a3ac4e56f45eb2ef825f1dea0259e2": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row2_1.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row2_1.png"
+   ],
+   "629300d1695e9a0e85c68b2fb36f1d68c33decef5542640e0684c88422b836cd": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row2_2.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row2_2.png"
+   ],
+   "5f2748bb0b9b3b94d84770c031b57292616666635bf9e73b6f69047bd21e8261": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row2_3.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row2_3.png"
+   ],
+   "6fc65edb61d97c6f7b3004dd72cbfcd4fe8b156c6fb87c9b1aedddf889598576": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row2_4.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row2_4.png"
+   ],
+   "ffebcdc6d12b6050cb778308a7b807c400c9a956b51dd2a5b744b28cbce40900": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row2_5.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row2_5.png"
+   ],
+   "191fa5d8c34ed90e3384473b3a33b7bac5781ca93d311bca7c72f81acf6a9504": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row3_1.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row3_1.png"
+   ],
+   "23d5ad7132738763d7fba67a6cbeebc750eb3ba1d96e37ab5e15563835d71ab5": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row3_10.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row3_10.png"
+   ],
+   "64d1461023603c3d8dcf7aa97598791e5e6d6488f6b586ccdb6e06a948b10c6a": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row3_11.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row3_11.png"
+   ],
+   "3d6f40b014efd211ba3882beb35ef21afe4b8ae9a4e216d6f7ee06988c54160c": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row3_2.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row3_2.png"
+   ],
+   "80ba31501334558a3dee2405ae20bca2a0f4fc531811b3a2958594561f018164": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row3_3.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row3_3.png"
+   ],
+   "62d80658e5a181c0b51784e3abf988e0013f3b6f2a713aeb8b7d1779d315585a": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row3_4.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row3_4.png"
+   ],
+   "db6e005d64f0b2626e6df7d3e4b90ddfe573c631cd9643e350cf544422ed6e28": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row3_5.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row3_5.png"
+   ],
+   "9596895eebadbbcffd9757fa991f672e80b49c4bd882e7df2d0bb72305ea3af7": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row3_6.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row3_6.png"
+   ],
+   "cfe6c8d93a330c8a4ee1bde971abb647891d17b30c2f47996cddbc5b9dc0dcfa": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row3_7.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row3_7.png"
+   ],
+   "975ae04d3a60e9b62a6befda7adc41dcf609d62cc1fbe1f5d330435065c4f491": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row3_8.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row3_8.png"
+   ],
+   "172729bb087bbcb07f0b616c5d77cbb0b717cdfce9a4f2c32efaabaadb5044f1": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row3_9.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row3_9.png"
+   ],
+   "5f7d63d313ff54ccf897d3c19a31c1d34910867d2d84b627dace4c16a58e6be9": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row4_1.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row4_1.png"
+   ],
+   "896243125282423898b3cb670040d6dd2029823edbc9b51881340c5bcf296dc3": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row4_2.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row4_2.png"
+   ],
+   "ea112683615f0699bb5c161b9ffa7fa5627560b199b5299a1b1dce4b3564284a": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row4_3.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row4_3.png"
+   ],
+   "f1a77e8fc7df12a3a8ecdebcabc55c81ebdf2b17ff01c3af431b49ca97d39b47": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row4_4.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row4_4.png"
+   ],
+   "d46cd628b20e3150a584470b30b0e59cab08d2bb5de52d93cdc68e23420b81d6": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IUUgX/Row4_5.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IUUgX/Row4_5.png"
+   ],
+   "7517855e6fb133d45f7017af7597c4d9df76aa07d790d2abe237506b5c8e35b3": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IowZk/Row1_1.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IowZk/Row1_1.png"
+   ],
+   "1f619e90980615ad6be343e788e016a42d0712d0e8a3111954c2c7a272bb2d17": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IowZk/Row2_1.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IowZk/Row2_1.png"
+   ],
+   "abc9b4046736e4ea5652e4b4f9eb5efdadc61287ae87613216471f4f0849a912": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IowZk/Row2_2.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IowZk/Row2_2.png"
+   ],
+   "26b17ec1228a982f1867c3872b494e0010ea081e435794399d36106c7d0b4f74": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IowZk/Row2_3.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IowZk/Row2_3.png"
+   ],
+   "d1da901a65497b3f3888f7dd3251238a0999d6039a50e64159f792af40b0d9c1": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IowZk/Row2_4.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IowZk/Row2_4.png"
+   ],
+   "d0bf7459bb54224da4113f82c89588a9fedaac5b63740a49c0bd3037aa88218e": [
+    "sliced-68-unsliced-20261031/sheets/fla-packs/clean-IowZk/Row2_5.png",
+    "sliced-68-unsliced-20261031/sheets/fla-packs/lounge-IowZk/Row2_5.png"
+   ]
+  }
+ },
+ "total_files": 3818
+}

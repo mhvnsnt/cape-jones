@@ -1,0 +1,7 @@
+{
+  "parts": 10,
+  "gdino_boxes": 4,
+  "motion_poses": 6,
+  "animate_frames": 12,
+  "sam_head_mask_px": 9009
+}

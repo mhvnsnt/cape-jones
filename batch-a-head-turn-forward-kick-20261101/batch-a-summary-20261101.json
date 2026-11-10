@@ -1,0 +1,26 @@
+{
+  "head_turn": {
+    "frames": 42,
+    "fps": 24,
+    "duration_s": 1.75,
+    "front_frames_0indexed": "0-11 and 30-41",
+    "profile_frames_0indexed": "12-29",
+    "profile_seconds": "0.50-1.25",
+    "mp4": "/home/hatch/workspace/cape-jones-rig/batch-a-head-turn-forward-kick-20261101/head-turn-true-20261101.mp4",
+    "bottom_px_all": [
+      652
+    ]
+  },
+  "kick": {
+    "frames": 55,
+    "fps": 24,
+    "duration_s": 2.29,
+    "stand": "0-5, 49-54",
+    "chamber": "13-16, 39-41",
+    "extension_piece_ON": "24-31",
+    "mp4": "/home/hatch/workspace/cape-jones-rig/batch-a-head-turn-forward-kick-20261101/forward-kick-true-20261101.mp4",
+    "bottom_px_all": [
+      652
+    ]
+  }
+}

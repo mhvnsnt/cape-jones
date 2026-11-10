@@ -1,0 +1,60 @@
+{
+  "schema": {
+    "pose": "<name>",
+    "angles": {
+      "upperL": 0,
+      "lowerL": 0,
+      "upperR": 0,
+      "lowerR": 0,
+      "head": 0
+    },
+    "applied": {
+      "L": "none",
+      "R": "none"
+    },
+    "eye_check": "<note or null>",
+    "source": "builder | rendered_clip"
+  },
+  "configs": [
+    {
+      "pose": "v7c-jump-COWL-SNAP",
+      "angles": {
+        "upperL": -70,
+        "lowerL": 150,
+        "upperR": 70,
+        "lowerR": -150,
+        "head": 0
+      },
+      "applied": {
+        "L": "cowl-upper",
+        "R": "cowl-upper"
+      },
+      "eye_check": "both biceps over collar, viewed",
+      "source": "builder"
+    },
+    {
+      "pose": "ginyu-03-COWL-SNAP",
+      "angles": {
+        "upperL": -60,
+        "lowerL": 120,
+        "upperR": 60,
+        "lowerR": -120,
+        "head": 0
+      },
+      "applied": {
+        "L": "cowl-upper",
+        "R": "cowl-upper"
+      },
+      "eye_check": "both biceps over collar, viewed",
+      "source": "builder"
+    },
+    {
+      "pose": "rendered_clip_no_angles",
+      "angles": null,
+      "applied": null,
+      "eye_check": null,
+      "source": "rendered_clip"
+    }
+  ],
+  "gate": "pass iff angles present AND applied matches gate, else fail"
+}
