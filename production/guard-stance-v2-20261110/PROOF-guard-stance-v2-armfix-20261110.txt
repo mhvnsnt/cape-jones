@@ -1,0 +1,13 @@
+cape-jones-guard-stance-v2-armfix-20261110.mp4  (path /workspace/cape-jones-show-deliver/, v1 kept untouched)
+1920x1080 h264 yuv420p, 24/1 fps, 238 frames, 9.917 s, NO AUDIO, 5,657,451 bytes
+sha256 ae064d38352e270c79f884405b743e2ddbe2863e08dace2978ffa0ec2708498c ; full ffmpeg decode OK (no errors)
+Checkframes 19/83/148/214 (8/35/62/90%) viewed, before vs after: checkframes/before-after-video-checkframes-8-35-62-90pct.png
+ v1: upper arms out sideways (worst at frame 148, arms spread wide). v2: upper arms forward/in, fists up at the head in guard, every frame. Cape Jones 3D show rig (white suit, purple hood/mask, black cape). Not Zen, not clay.
+Matched-frame stills (same source frame, same camera, v1 rig vs v2 rig): evidence/before-after-src-frame20-front-side.png, evidence/before-after-src-frame60-front-side.png
+Regression gate: tests/test_guard_arms.py -> v1 rig exit 1 (FAIL), v2 rig exit 0 (PASS); tests/*.json
+Render: Blender 5.2.0 (/workspace/dcc/blender-5.2.0-linux-x64), EEVEE 8 samples, tools/render_arms_only.py on rig_v2_arms.blend; 119 frames rendered once, played twice (loop seam may pop).
+Sources: rig cape_jones_rigged_w5r_clean.blend sha256 c7b578fc8c27e60e8f7d134d86b3681e4e9a6561eb014dc20146b6e4e564ced5 (unmodified);
+ fixed rig rig_v2_arms.blend sha256 5ed1ff8b48a5706309d87dfeb21c1f2b911df17b76404c61a4bd0204db085bd3 (box only, /workspace/cj3d/v2; regenerate with tools/build_rig_v2.py);
+ motion fight/guard_stance/stance.glb sha256 19ee11b67ce5d2f38b69dd9805d9448715f779b0f7dc9320b343b17a3b845049 = Cyborg X FIGHT stance, CMU 13_17 boxing, STAND-IN, NOT decoded Alisa.
+LIMITS: cape in this video is still the old skin-bound cape (NO cloth sim) -> owner's cloth ask NOT met yet. Big gloves come up to/over the face and clip the hood on some frames (source guard is tight to the head). Feet hover slightly at times (no foot IK); thighs widened +0.22 as in v1; fingers not animated. Set = plain grey floor, NOT Jungle Outpost.
+CLOTH: proxy+pins+collision+self-collision+surface-deform pipeline built (tools/build_cloth.py); bakes of 268 and 288 frames rode up/bunched -> rejected (evidence/cloth-*FAILED*). Lead: thin collision (0.0015), friction 0, no self-collision, stiffer/heavier settings stayed lower over 110 frames (evidence/cloth-try4-...LEAD-not-final.png). Not baked full-length or rendered yet.
