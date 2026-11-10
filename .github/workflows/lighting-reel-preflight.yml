@@ -21,7 +21,9 @@ jobs:
   static-preflight:
     name: Validate lighting reel notebook
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    # 15 min: the 80k-file tree checkout alone exceeds the old 2-min cap
+    # (CJ #397 revert timed out at checkout); validation itself is seconds.
+    timeout-minutes: 15
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
