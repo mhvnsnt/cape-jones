@@ -1,0 +1,21 @@
+{"_doc":"Inventory of repo scripts that open a cape_jones_rigged_w5r* blend (scan 2026-11-10 of 802 .py/.sh outside production/tools/ via GitHub API; tree listing was TRUNCATED at 53,455 entries and production/tools/ (3,606 scripts) was NOT scanned -> inventory INCOMPLETE).",
+ "migrated":[
+  {"path":"production/dance-proof-3d-v6/fix_breathe.py","kind":"dance/show idle-breathe fixer (rig COPY in, copy out)","note":"calls cj_arm_guard.ensure_arm_fix() before any arm work; NOT run end-to-end here (its w5r_idle input blend was not downloaded: disk/no-download rule) - if that blend lacks the known signature it now REFUSES loudly instead of animating H arms"},
+  {"path":"production/guard-stance-v2-20261110/tools/cj_retarget.py","kind":"guard/fight retarget (shared)","note":"prep_target() auto-repairs raw w5r via cj_arm_guard (CJ_AUTO_ARM_FIX=1 default) or refuses"},
+  {"path":"production/guard-stance-v2-20261110/tools/render_guard.py","kind":"guard render","note":"refuses rigs without cj_arm_fix"},
+  {"path":"production/guard-stance-v2-20261110/tools/build_rig_v2.py","kind":"fixed-rig writer","note":"now a thin wrapper over cj_arm_guard"}],
+ "excluded_by_owner_rule_sitting_rig":["3d-assets/cape-jones-rig/tools/render_sitting_redo.py","3d-assets/cape-jones-rig/tools/sit_pose_builder.py","3d-assets/cape-jones-rig/tools/assemble_library.py","3d-assets/living-room/sit-targets/place_sitter.py","3d-assets/living-room/sit-targets/verify_all_poses.py"],
+ "remaining_bypasses_not_migrated":[
+  {"path":"3d-assets/cape-jones-rig/spine-lane/spine_build.py","why":"rig-construction lane (re-skins torso of w5r); changing its input changes its product - needs its own owner/lane review"},
+  {"path":"3d-assets/cape-jones-rig/spine-lane/spine_proof_render.py","why":"proof renders of spine lane"},
+  {"path":"3d-assets/cape-jones-rig/spine-lane/spine_verify.py","why":"spine lane verification"},
+  {"path":"3d-assets/cape-jones-rig/spine-lane/spine_stiffness.py","why":"spine lane"},
+  {"path":"3d-assets/cape-jones-rig/deform-wave2/dump_wave2.py","why":"deformation AUDIT of the raw rig (diagnostic, measures the defect)"},
+  {"path":"3d-assets/cape-jones-rig/cape_build_sheet.py","why":"cape mesh build lane (no arm posing)"},
+  {"path":"3d-assets/cape-jones-rig/cape_merge_final.py","why":"cape build lane"},
+  {"path":"3d-assets/cape-jones-rig/cape_rebuild_inspect.py","why":"cape inspect"},
+  {"path":"3d-assets/cape-jones-rig/cape_sim_bake.py","why":"older cape sim on w5r_idle_cape (arms posed? not audited)"},
+  {"path":"3d-assets/cape-jones-rig/.scratch/lane3/*.py (39 files)","why":"historical scratch lane scripts"},
+  {"path":"production/tools/** (3,606 scripts)","why":"NOT SCANNED"},
+  {"path":"any GUI/manual Blender use of the repo blend","why":"repo blend on disk is still the defective file"}],
+ "unverified":["w5r.blend / w5r_idle.blend / w5r_idle_cape*.blend share the same arm-chain defect signature - only w5r_clean was measured"]}

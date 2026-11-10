@@ -1,0 +1,24 @@
+/workspace/cape-jones-show-deliver/cape-jones-guard-stance-v3-cloth-20261110.mp4  (v1, v2 and the partial WIP clip kept)
+h264 1920x1080 yuv420p 24/1 fps, 238 frames, 9.917 s, no audio, 5,816,716 bytes; full decode OK
+sha256 3d83c6b5d8f8994cb8be70f2331c353b157fbd6de43b857cbd86707e557b0d88
+Frames = rig_v3_cloth_g.blend frames 51..288 (guard stance x2, continuous cloth), EEVEE 8 samples, tools/render_guard.py
+Viewed: checkframes/v2-vs-v3-video-checkframes-8-35-62-90pct.png (frames 19/83/148/214, v2 vs v3, same source frames)
+ v3: arms forward in guard (same as v2); cape hangs from the shoulders and swings with his motion; feet on the floor.
+DEFECTS (visible): cape narrower/thinner than the original wide cape; loose dark shard specks at the shoulder (frame 148); cloth does not loop.
+Penetration: tests/penetration/*.json — not proven fixed (v3 worse than the old cape on knee-raise frames 150/270; the metric did not reproduce the reviewer's v2 cut).
+Arms: tests/test_guard_arms.py raw FAIL / fixed PASS; consumers in tools/ refuse the raw rig (REFUSED, exit 1).
+STATUS: cloth IMPROVED but NOT final; permanent repo-wide arm fix PENDING (repo blend still defective; only guarded consumers are safe).
+
+=== INDEPENDENT VIDEO REVIEW (parent, 2026-11-10 ~1:54 PM CST) — supersedes the visual claims above ===
+CONFIRMED: upper arms forward in guard for the whole clip.
+FAIL, visual: FLOOR CONTACT. He reads as floating for the whole clip. The "lowest sole = 0" number is NOT proof of visible contact.
+ Investigated (floorchk.py): SetFloor z=0.0; whole-body evaluated min z = 0.0000 at frames 100/150/200, but only a TOE-TIP patch
+ (~3 cm, 700-1,350 verts) of ONE foot reaches the floor; the heel is up and the other foot is lifted.
+ Hypotheses (not proven): (a) stance on the balls of the feet, so the visible contact is tiny; (b) 3 m area lights at 4-6 m give a
+ soft, offset shadow with no contact darkening (EEVEE 8 samples, no AO/contact shadow); (c) camera near foot height.
+FAIL: CAPE COLLISION. The cape clips through the left thigh/buttocks/calf/knee around 2-4 s and 7-9 s. pen_test.py did not catch it.
+ Hypotheses: the collision ellipsoids (85th percentile) sit inside the visible thigh surface; the hi-res fragments keep cm-scale offsets
+ from the proxy under Surface Deform, so they cut through even where the proxy does not; the proxy sheet is too narrow.
+FAIL: CAPE LOOK. Narrow and bunched, with detached shards.
+FAIL: LOOP. Hard reset around 4-5 s at frame 170. The 119-frame CMU source is not a loop and plays twice; the continuous cloth makes the jump obvious.
+STATUS: v3 = arms PASS; cloth / floor / loop FAIL. Not final.

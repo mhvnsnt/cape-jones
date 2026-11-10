@@ -20,6 +20,8 @@ def prep_target(tgt):
     # PERMANENT GUARD (owner pt98u): the raw w5r arm chain is one joint out ("H" arms). Refuse it unless the
     # caller is the arm gate test itself (CJ_ALLOW_RAW_RIG=1). Fixed rigs carry rig.data["cj_arm_fix"] from build_rig_v2.py.
     import os
+    if "cj_arm_fix" not in tgt.data.keys() and os.environ.get("CJ_ALLOW_RAW_RIG")!="1" and os.environ.get("CJ_AUTO_ARM_FIX","1")=="1":
+        import cj_arm_guard; cj_arm_guard.ensure_arm_fix(tgt.name)   # shared guarded loader: repair raw w5r in memory
     if "cj_arm_fix" not in tgt.data.keys() and os.environ.get("CJ_ALLOW_RAW_RIG")!="1":
         raise SystemExit("REFUSED: CapeJones_Rig lacks cj_arm_fix (raw w5r arm chain -> H arms). Run tools/guard_shot_pipeline.sh / build_rig_v2.py first.")
     for pb in tgt.pose.bones:

@@ -79,3 +79,26 @@ v3 is clean on 6 of 8 frames, but WORSE than the old cape on the knee-raise fram
 This metric also did NOT reproduce the reviewer's "heavy" thigh cut-through on v2, so it is too weak to prove a pass.
 Status: penetration NOT proven fixed.
 Other known v3 defects: the cape reads narrower than the original; small shard artifacts from the fused Tripo fragments; the cloth does not loop.
+
+## UPDATE 2026-11-10 ~2:15 PM CDT: shared guarded loader + consumer migration (coverage INCOMPLETE)
+- `tools/cj_arm_guard.py` is the single shared loader. `ensure_arm_fix()` does one of three things:
+  - no-op if the rig is already marked fixed;
+  - repairs the rig **in memory** if it shows the measured w5r signature (upperarm head |x|≈0.243, forearm head ≈0.376). The file on disk is untouched;
+  - **refuses** anything else.
+  `build_rig_v2.py` is now a thin wrapper over it. `cj_retarget.prep_target()` auto-repairs through it (`CJ_AUTO_ARM_FIX=1` default; set 0 to refuse instead, verified REFUSED).
+- Migrated consumers: see `tests/CONSUMERS.json`. These are `production/dance-proof-3d-v6/fix_breathe.py` and this folder's retarget/render tools.
+  `fix_breathe.py` was NOT run end to end: its w5r_idle input was not downloaded (disk rule), so it is unverified whether that blend has the same signature. If it doesn't, the loader now refuses loudly.
+- Tests:
+  - `tests/test_consumers.py` (static): PASS. The unmigrated `fix_breathe.py` fails it (negative fixture).
+  - `tests/test_guard_arms.py` on the raw rig: exit 1.
+  - `tests/test_guard_arms.py` with `CJ_PRE_GUARD=1` (cold start through the shared loader): exit 0, with values identical to the saved v2 rig (`tests/consumer-runs/*.json`).
+- **Remaining bypasses (NOT migrated):**
+  - spine-lane (4 scripts; a rig-construction lane);
+  - deform-wave2 audit;
+  - cape build/sim lane scripts;
+  - 39 `.scratch/lane3` scripts;
+  - sitting-rig scripts (excluded by owner rule);
+  - `production/tools/**` (3,606 scripts, NOT scanned; the repo tree listing was truncated);
+  - any manual or GUI use of the repo blend, which is still the defective file.
+  - Also unverified: whether `w5r.blend` / `w5r_idle*.blend` share the same signature.
+- => The permanent fix covers the guard/fight pipeline in this folder plus `fix_breathe.py`. It is **NOT global**.

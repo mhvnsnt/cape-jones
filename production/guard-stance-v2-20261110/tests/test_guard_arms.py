@@ -8,6 +8,8 @@ from mathutils import Vector
 sys.path.insert(0,__import__("os").environ.get("CJ_TOOLS","/workspace/cj3d/v2")); import cj_retarget as R
 glb,out=sys.argv[-2],sys.argv[-1]
 tgt=bpy.data.objects["CapeJones_Rig"]; body=bpy.data.objects["CapeJones_Body"]
+if os.environ.get("CJ_PRE_GUARD")=="1":   # cold-start: repair the raw rig with the shared loader, then measure
+    import cj_arm_guard; print("PREGUARD",cj_arm_guard.ensure_arm_fix())
 src=R.import_src(glb); R.prep_target(tgt)
 f0,f1=src.animation_data.action.frame_range; SF=[int(f0)+k for k in range(0,int(f1-f0),10)]
 R.bake(tgt,src,SF,list(range(1,len(SF)+1)))
