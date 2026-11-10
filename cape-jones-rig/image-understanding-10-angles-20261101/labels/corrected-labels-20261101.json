@@ -1,0 +1,246 @@
+{
+  "rule": "Mars 2026-11-01 00:58 CDT: all 10 are 3/4 angles, just higher/lower perspective. No angle in this set is true front. True front = 1 wall, no corner line, furniture flat to camera \u2014 0/10 meet it.",
+  "angles": [
+    {
+      "id": "angle-01",
+      "claimed_angle": "front (TV-facing)",
+      "true_angle": "3/4 corner",
+      "walls_visible": 2,
+      "corner_line": true,
+      "furniture_shows_side": true,
+      "camera": "eye-level, wide, from chair side",
+      "furniture_present": "CRT TV + oak stand, PET OM UP poster, blue mask, pink creature poster, pink wingback chair (small, centre-right), round pink rug, floor lamp, blue side table + steaming mug, sunset 4-pane window, pink coffee table + lamp, 2 neon tubes",
+      "furniture_absent_or_out_of_frame": "sofa, doorway",
+      "crop_flags": "PET OM UP poster cropped at left edge (text legible); coffee table cropped at bottom",
+      "duplicate_flag": false,
+      "person_present": false,
+      "note": "Closest to a 'TV-facing' framing, but room is still a 2-wall corner \u2014 NOT flat front."
+    },
+    {
+      "id": "angle-02",
+      "claimed_angle": "front (chair-facing)",
+      "true_angle": "3/4 corner",
+      "walls_visible": 2,
+      "corner_line": true,
+      "furniture_shows_side": true,
+      "camera": "eye-level, chair as subject, closer",
+      "furniture_present": "same room set as 01, chair LARGE foreground right on rug, side table right, floor lamp, window large right wall, TV left, posters left full, coffee table foreground bottom",
+      "furniture_absent_or_out_of_frame": "sofa, doorway",
+      "crop_flags": "coffee table cropped at bottom",
+      "duplicate_flag": false,
+      "person_present": false,
+      "note": "Chair-facing FRAMING, not a front ANGLE \u2014 corner line still centre, walls converge."
+    },
+    {
+      "id": "angle-03",
+      "claimed_angle": "from TV side",
+      "true_angle": "3/4 corner",
+      "walls_visible": 2,
+      "corner_line": true,
+      "furniture_shows_side": true,
+      "camera": "eye-level, camera toward TV side",
+      "furniture_present": "TV foreground left, oak stand, posters left, chair small centre-right, window right, coffee table bottom centre, rug, side table, floor lamp",
+      "furniture_absent_or_out_of_frame": "sofa, doorway",
+      "crop_flags": "TV + stand cropped at left edge; coffee table cropped at bottom",
+      "duplicate_flag": false,
+      "person_present": false,
+      "note": "Near-duplicate framing of 01, TV larger, chair smaller/distant."
+    },
+    {
+      "id": "angle-04",
+      "claimed_angle": "from window side",
+      "true_angle": "3/4 corner",
+      "walls_visible": 3,
+      "corner_line": true,
+      "furniture_shows_side": true,
+      "camera": "eye-level, wide, from window side",
+      "furniture_present": "sunset window foreground left (cropped), chair centre-left on rug (rug cropped bottom), blue side table left, floor lamp, coffee table centre, TV + oak stand right wall, posters right wall",
+      "furniture_absent_or_out_of_frame": "sofa, doorway",
+      "crop_flags": "window cropped at left edge; rug cropped at bottom",
+      "duplicate_flag": false,
+      "person_present": false,
+      "note": "Only angle with 3 walls visible \u2014 still a corner perspective, NOT flat front."
+    },
+    {
+      "id": "angle-05",
+      "claimed_angle": "from doorway",
+      "true_angle": "3/4 corner",
+      "walls_visible": 2,
+      "corner_line": true,
+      "furniture_shows_side": true,
+      "camera": "eye-level, through doorway frame",
+      "furniture_present": "dark doorway frame foreground left+right, TV left, posters left (PET poster animal reads capybara-like here, drift vs pig-like in 01), chair small centre-right, window right, coffee table bottom, rug, side table",
+      "furniture_absent_or_out_of_frame": "sofa",
+      "crop_flags": "coffee table cropped at bottom",
+      "duplicate_flag": false,
+      "person_present": false,
+      "note": "Same corner room, framed by hallway \u2014 framing change only."
+    },
+    {
+      "id": "angle-06",
+      "claimed_angle": "low angle",
+      "true_angle": "3/4 corner, LOW",
+      "walls_visible": 2,
+      "corner_line": true,
+      "furniture_shows_side": true,
+      "camera": "LOW, near floor, looking slightly up",
+      "furniture_present": "TV left, posters left, coffee table centre large, floor lamp, chair centre-right on rug, blue side table, window right, rug foreground arc",
+      "furniture_absent_or_out_of_frame": "sofa, doorway",
+      "crop_flags": "large chair foreground right cropped at right edge",
+      "duplicate_flag": "DUPLICATE: 2 pink wingback chairs \u2014 large foreground right + small centre-right (grounding count 2, points 916,545 and 668,689)",
+      "person_present": false,
+      "note": "LOW is camera height, not a different angle type. Duplicate chair is a generative defect, not two canon chairs."
+    },
+    {
+      "id": "angle-07",
+      "claimed_angle": "high angle",
+      "true_angle": "3/4 corner, HIGH oblique",
+      "walls_visible": 2,
+      "corner_line": true,
+      "furniture_shows_side": true,
+      "camera": "HIGH oblique, looking down (not strict top-down)",
+      "furniture_present": "TV left, posters left tilted, chair small centre-right on rug, side table, window right tilted, coffee table small centre bottom, floor large",
+      "furniture_absent_or_out_of_frame": "sofa, doorway",
+      "crop_flags": [],
+      "duplicate_flag": false,
+      "person_present": false,
+      "note": "High oblique, not top-down. Floor dominates, furniture small/distant."
+    },
+    {
+      "id": "angle-08",
+      "claimed_angle": "rug + chair closeup",
+      "true_angle": "3/4 corner, closeup",
+      "walls_visible": 2,
+      "corner_line": true,
+      "furniture_shows_side": true,
+      "camera": "eye-level, closeup on chair/window corner",
+      "furniture_present": "pink wingback chair centre on round rug, floor lamp, blue side table + mug, sunset window large right wall, neon tubes (cropped)",
+      "furniture_absent_or_out_of_frame": "TV, posters, coffee table, sofa (all out of frame)",
+      "crop_flags": "neon tubes cropped at top edges",
+      "duplicate_flag": false,
+      "person_present": false,
+      "note": "Chair closeup framing \u2014 window wall is still at an angle, corner line centre, NOT flat front."
+    },
+    {
+      "id": "angle-09",
+      "claimed_angle": "coffee-table foreground",
+      "true_angle": "3/4 corner",
+      "walls_visible": 2,
+      "corner_line": true,
+      "furniture_shows_side": true,
+      "camera": "eye-level, coffee table foreground",
+      "furniture_present": "coffee table + lamp foreground centre, TV left, posters left, chair small centre-right, window right, rug, side table, floor lamp",
+      "furniture_absent_or_out_of_frame": "sofa, doorway",
+      "crop_flags": [],
+      "duplicate_flag": false,
+      "person_present": false,
+      "note": "Framing variant of 01/03 \u2014 coffee table prominence is the only real difference."
+    },
+    {
+      "id": "angle-10",
+      "claimed_angle": "TV stand closeup",
+      "true_angle": "3/4 corner, closeup",
+      "walls_visible": 2,
+      "corner_line": true,
+      "furniture_shows_side": true,
+      "camera": "eye-level, closeup on TV wall",
+      "furniture_present": "CRT TV large left-centre (side of CRT visible = 3/4, not flat), oak stand, PET poster, blue mask, pink poster, right wall blank",
+      "furniture_absent_or_out_of_frame": "window, chair, rug, coffee table, side table (all out of frame)",
+      "crop_flags": "PET poster cropped at left edge; TV stand cropped at bottom edge (grounding stand bbox y to 1000)",
+      "duplicate_flag": false,
+      "person_present": false,
+      "note": "TV closeup \u2014 TV itself is drawn at an angle, proving 3/4, not front-on."
+    }
+  ],
+  "approved": [
+    {
+      "id": "canonical-approved-2d",
+      "claimed_angle": "canonical main room 2D",
+      "true_angle": "3/4 corner",
+      "walls_visible": 2,
+      "corner_line": true,
+      "furniture_shows_side": true,
+      "camera": "eye-level, wide (approved picture, not a front-angle claim)",
+      "furniture_present": "full room set: posters, mask, CRT TV + stand, chair, rug, side table, window, coffee table, lamps, neon",
+      "furniture_absent_or_out_of_frame": "sofa, doorway, seated figure (empty plate)",
+      "crop_flags": "none claimed as front",
+      "duplicate_flag": "DUPLICATE? No",
+      "person_present": false,
+      "note": "APPROVED PERFECT 1/1 by Mars 2026-11-01 00:43 CDT as canonical main room. Its approval is as the room picture, NOT as a flat-front angle."
+    }
+  ],
+  "grounding_verified": {
+    "angle-01": {
+      "chair": [
+        588,
+        530,
+        664,
+        692
+      ],
+      "tv": [
+        136,
+        463,
+        263,
+        691
+      ],
+      "window": [
+        623,
+        301,
+        762,
+        532
+      ],
+      "coffee_table": [
+        375,
+        856,
+        521,
+        1000
+      ]
+    },
+    "angle-06": {
+      "chair_count": 2,
+      "chair_points": [
+        [
+          916,
+          545
+        ],
+        [
+          668,
+          689
+        ]
+      ]
+    },
+    "angle-10": {
+      "tv": [
+        192,
+        510,
+        363,
+        811
+      ],
+      "tv_stand": [
+        187,
+        797,
+        384,
+        1000
+      ]
+    }
+  },
+  "qa_summary": {
+    "claimed_front": 2,
+    "true_front": 0,
+    "three_quarter_corner": 10,
+    "duplicate_flagged": [
+      "angle-06"
+    ],
+    "cropped_flagged": [
+      "angle-01",
+      "angle-02",
+      "angle-03",
+      "angle-04",
+      "angle-05",
+      "angle-06",
+      "angle-08",
+      "angle-10"
+    ],
+    "empty_person": 11
+  }
+}

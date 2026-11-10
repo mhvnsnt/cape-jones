@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="640" viewBox="0 0 920 640" font-family="Verdana, Geneva, sans-serif">
+  <rect x="0" y="0" width="920" height="640" fill="#ffffff"/>
+  <text x="40" y="30" font-size="17" font-weight="bold" fill="#222">Gumball "The Words" (GB214) — Sc057 + Sc059, measured</text>
+  <text x="40" y="50" font-size="11" fill="#666">Production science chart · 25 fps · all values measured from the production FLA/SWF files, 2026-11-02</text>
+
+  <!-- PANEL A -->
+  <text x="40" y="82" font-size="13" font-weight="bold" fill="#333">A · Authored pose changes per second, per character (new part poses keyed by the animator)</text>
+  <!-- scale: 13/s = 560px, x0=210 -->
+  <g font-size="11" fill="#333">
+    <text x="200" y="106" text-anchor="end">Darwin — Sc059</text>
+    <text x="200" y="130" text-anchor="end">Darwin — Sc057</text>
+    <text x="200" y="154" text-anchor="end">Tobias — Sc057</text>
+    <text x="200" y="178" text-anchor="end">Carrie — Sc057</text>
+    <text x="200" y="202" text-anchor="end">Carmen — Sc057</text>
+    <text x="200" y="226" text-anchor="end">Masami — Sc057</text>
+    <text x="200" y="250" text-anchor="end">Ocho — Sc057</text>
+  </g>
+  <g fill="#e07b26">
+    <rect x="210" y="94" width="534" height="15"/>
+    <rect x="210" y="118" width="490" height="15" fill="#e89a4e"/>
+    <rect x="210" y="142" width="474" height="15" fill="#5b84dd"/>
+    <rect x="210" y="166" width="430" height="15" fill="#5b84dd"/>
+    <rect x="210" y="190" width="425" height="15" fill="#5b84dd"/>
+    <rect x="210" y="214" width="327" height="15" fill="#8aa86b"/>
+    <rect x="210" y="238" width="261" height="15" fill="#8aa86b"/>
+  </g>
+  <g font-size="11" fill="#222" font-weight="bold">
+    <text x="752" y="106">12.4/s</text>
+    <text x="708" y="130">11.4/s</text>
+    <text x="692" y="154">11.0/s</text>
+    <text x="648" y="178">10.0/s</text>
+    <text x="643" y="202">9.9/s</text>
+    <text x="545" y="226">7.6/s</text>
+    <text x="479" y="250">6.1/s</text>
+  </g>
+  <text x="210" y="272" font-size="10" fill="#666">Every character is keyed on twos (83–92% of all keyframes are 2-frame holds). The composite rate differs because layers are staggered and background cast members hold.</text>
+
+  <!-- PANEL B -->
+  <text x="40" y="312" font-size="13" font-weight="bold" fill="#333">B · Darwin's approach to camera in Sc057 — his size on screen (orange area, rendered pixels)</text>
+  <line x1="70" y1="420" x2="880" y2="420" stroke="#999"/>
+  <line x1="70" y1="260" x2="880" y2="260" stroke="#ddd"/>
+  <text x="62" y="424" font-size="10" fill="#666" text-anchor="end">0</text>
+  <text x="62" y="264" font-size="10" fill="#666" text-anchor="end">47k</text>
+  <polyline points="70,404.6 164.6,393.0 263.3,391.6 362,380.3 460.6,332.8 559.3,304.4 658,301.8 756.6,266.0 855.3,260.0 880,261.5" fill="none" stroke="#e07b26" stroke-width="2.5"/>
+  <g fill="#e07b26">
+    <circle cx="70" cy="404.6" r="3.5"/><circle cx="263.3" cy="391.6" r="3.5"/><circle cx="460.6" cy="332.8" r="3.5"/>
+    <circle cx="658" cy="301.8" r="3.5"/><circle cx="880" cy="261.5" r="3.5"/>
+  </g>
+  <g font-size="10" fill="#666">
+    <text x="70" y="438">frame 1</text>
+    <text x="440" y="438">frame 99</text>
+    <text x="838" y="438">frame 198</text>
+  </g>
+  <text x="480" y="290" font-size="11" fill="#333">grows ×10.3 across the shot — his scene placement never moves;</text>
+  <text x="480" y="306" font-size="11" fill="#333">the parts scale up inside the puppet (head comp ×2.32)</text>
+
+  <!-- PANEL C -->
+  <text x="40" y="482" font-size="13" font-weight="bold" fill="#333">C · Sc057 audio accents vs the beat grid (~112 BPM, one beat = 13.4 frames)</text>
+  <g stroke="#c9d6f2" stroke-width="1">
+    <line x1="85.1" y1="500" x2="85.1" y2="560"/><line x1="139.9" y1="500" x2="139.9" y2="560"/><line x1="194.7" y1="500" x2="194.7" y2="560"/>
+    <line x1="249.6" y1="500" x2="249.6" y2="560"/><line x1="304.4" y1="500" x2="304.4" y2="560"/><line x1="359.2" y1="500" x2="359.2" y2="560"/>
+    <line x1="414.0" y1="500" x2="414.0" y2="560"/><line x1="468.9" y1="500" x2="468.9" y2="560"/><line x1="523.7" y1="500" x2="523.7" y2="560"/>
+    <line x1="578.5" y1="500" x2="578.5" y2="560"/><line x1="633.3" y1="500" x2="633.3" y2="560"/><line x1="688.2" y1="500" x2="688.2" y2="560"/>
+    <line x1="743.0" y1="500" x2="743.0" y2="560"/><line x1="797.8" y1="500" x2="797.8" y2="560"/><line x1="852.6" y1="500" x2="852.6" y2="560"/>
+  </g>
+  <line x1="70" y1="560" x2="880" y2="560" stroke="#999"/>
+  <g stroke="#c0392b" stroke-width="2.5">
+    <line x1="86" y1="560" x2="86" y2="546"/><line x1="223.4" y1="560" x2="223.4" y2="520"/><line x1="248.4" y1="560" x2="248.4" y2="530"/>
+    <line x1="360.4" y1="560" x2="360.4" y2="552"/><line x1="388.2" y1="560" x2="388.2" y2="549.2"/><line x1="444.2" y1="560" x2="444.2" y2="521.6"/>
+    <line x1="469.2" y1="560" x2="469.2" y2="526.4"/><line x1="524.4" y1="560" x2="524.4" y2="549.2"/><line x1="607.0" y1="560" x2="607.0" y2="550.8"/>
+    <line x1="665.1" y1="560" x2="665.1" y2="524.4"/><line x1="690.0" y1="560" x2="690.0" y2="530.4"/><line x1="743.2" y1="560" x2="743.2" y2="548"/>
+    <line x1="826.2" y1="560" x2="826.2" y2="550"/>
+  </g>
+  <g font-size="10" fill="#666">
+    <text x="70" y="578">frame 0</text>
+    <text x="440" y="578">frame 99</text>
+    <text x="838" y="578">frame 198</text>
+    <text x="210" y="512" fill="#c0392b">red ticks = measured audio hits (taller = stronger)</text>
+    <text x="620" y="512" fill="#7a93c4">pale lines = the beat grid</text>
+  </g>
+  <text x="40" y="608" font-size="10.5" fill="#333">The hits form a two-hit phrase figure — a strong hit, then a second hit ~6 frames later, sitting on the grid — repeating every 54 frames (4 beats).</text>
+  <text x="40" y="626" font-size="10.5" fill="#333">In Sc059 the twist starts within half a frame of an accent (frame 43) and accents land once per beat through the twist.</text>
+</svg>

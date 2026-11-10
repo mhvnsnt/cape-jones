@@ -1,0 +1,164 @@
+{
+ "pipelines": [
+  {
+   "id": "P01",
+   "name": "GENERAL mouth-clean",
+   "folder": "mouth-clean-pipeline-general-20261031",
+   "status": "APPROVED 1/1 PERFECT 2026-10-31 23:22, SAVED for future use",
+   "what_for": "Cleaning ANY mouth patch",
+   "used_for": "Default cleaner for all mouth packs before fitting, movement, or lip-sync",
+   "tools": "mouth_pipeline_general.py: clean() M1+M2+M3; gate_mouth_general.py G1-G4",
+   "layman": "Remove all the stuff around the mouth without erasing the mouth",
+   "technical": "Colour decontamination + connected-component garbage matte / rotoscope matte, anchor rule (dark touches EVERY anchor within 2px dilation, else ANY, else CHAIN)"
+  },
+  {
+   "id": "P02",
+   "name": "CLEAN-LINE vector",
+   "folder": "mouth-packs-clean-pipeline-20261031",
+   "status": "0/1 clean-line, FRONT-4, THREEQUARTER-3, LINECLEAN-PAHGO",
+   "what_for": "Making a thin-line mouth into a clean SVG-like line",
+   "used_for": "Thin-line mouths only (MBP, EE)",
+   "tools": "mouth_pipeline.py spline->Bezier SVG->8x raster; gate_mouth.py; build_packs.py; packs/mbp-clean-line.svg, ee-clean-line.svg",
+   "layman": "Turn a broken thin line into one clean smooth line, like a pen line",
+   "technical": "Spline centreline extraction -> Bezier vectorisation -> supersampled rasterisation, line-continuity gate"
+  },
+  {
+   "id": "P03",
+   "name": "AH/SMILE anchor clean",
+   "folder": "mouth-ah-smile34-clean-20261031",
+   "status": "AH APPROVED 1/1, SMILE34 APPROVED 1/1, 2026-10-31 23:14, locked",
+   "what_for": "AH front spike and SMILE34 jaw/black removal",
+   "used_for": "AH front and SMILE34 specifically; proof of the anchor rule",
+   "tools": "build_clean.py M1+M2+M4 LANCZOS fit; patches/ah-clean_clean_patch.png, smile34-clean_clean_patch.png",
+   "layman": "Cut the spike off AH and cut the jaw off Smile, without cutting the mouth itself",
+   "technical": "Per-patch garbage matte, ALL-anchor rule"
+  },
+  {
+   "id": "P04",
+   "name": "PAH GO 5-methods",
+   "folder": "mouth-jaw-cleanup-5-methods-20261031",
+   "status": "PAH GO cleaned movement APPROVED 1/1, 2026-10-31 22:24, 30f @24fps, locked",
+   "what_for": "The approved PAH GO movement itself",
+   "used_for": "Show PAH GO movement as approved; do not edit, build new versions beside it",
+   "tools": "build_clean_movement.py; Harmony substitution, garbage matte, line repair, decontamination, FACS jaw-hinge",
+   "layman": "The approved PAH GO talking movement, cleaned",
+   "technical": "5-method movement cleanup, smoothstep 3f keys, jaw drops 0/16/8/10/0"
+  },
+  {
+   "id": "P05",
+   "name": "PAH GO v2 cleanup",
+   "folder": "pahgo-mouth-cleanup-v2-20261031",
+   "status": "0/1 v2 set, 0/1 expanded library",
+   "what_for": "First clean pass, 7 clean mouths at one target",
+   "used_for": "Source for P01 inputs; v2 is NOT the approved movement (P04 is)",
+   "tools": "build_v2.py; fitted-v2; measurements-v2 JSON",
+   "layman": "First clean-up of the PAH GO mouths, one size, one spot",
+   "technical": "Colour-material filter + connected-component selection + LANCZOS resize halo fix alpha>=128"
+  },
+  {
+   "id": "P06",
+   "name": "PAH GO fix (tight)",
+   "folder": "pahgo-mouth-fix-20261031",
+   "status": "Superseded by P04; do NOT use for new work",
+   "what_for": "Early PAH GO fix, tight-fitted mouths",
+   "used_for": "Historical only",
+   "tools": "build_pahgo_fixed.py",
+   "layman": "Early tight PAH GO fix, before the approved clean",
+   "technical": "Tight-fit mouth placement, pre-5-method"
+  },
+  {
+   "id": "P07",
+   "name": "MOUTH-JAW movement system",
+   "folder": "mouth-jaw-movement-20261031",
+   "status": "System built, movement superseded by P04",
+   "what_for": "Building a mouth + jaw movement from keys",
+   "used_for": "Building NEW movements, using P01-cleaned mouths as inputs",
+   "tools": "build_movement.py; jaw drops MBP 0, AH 16, GK 8, GAP 10, REST 0; clean head 476x688, target (231.5,504.5)",
+   "layman": "Make the mouth move and the jaw drop, like talking, from key mouth shapes",
+   "technical": "Keyframe lip/jaw interpolation, smoothstep inbetweens, jaw-drop proxy"
+  },
+  {
+   "id": "P08",
+   "name": "LIPSYNC production chart",
+   "folder": "lipsync-production-20261031",
+   "status": "0/1 chart, AH, MBP, OH/OO, phrase, audio-demo system",
+   "what_for": "Full 14-viseme front chart for lip-sync",
+   "used_for": "Lip-sync production, post-episode per Space Ghost workflow",
+   "tools": "build_chart.py, build_composites.py, build_fitted.py, build_gifs_audio.py; mouths/*.png",
+   "layman": "All the mouth shapes for talking, front view, so any word can be lip-synced",
+   "technical": "Viseme chart 14 slots (5 verbatim, 9 pulled-pixel composites), phoneme timeline -> 24fps"
+  },
+  {
+   "id": "P09",
+   "name": "SUPERHERO mouths library",
+   "folder": "superhero-mouths-20261031",
+   "status": "Source library, NOT a cleaner; all Robin, 0 Batman/Superman verified",
+   "what_for": "Finding and listing source mouths",
+   "used_for": "Source audit only; clean pulled mouths with P01, do not ship raw",
+   "tools": "build_library.py; mouth-library-20261031.json",
+   "layman": "The pile of mouth pictures to pick from, before cleaning",
+   "technical": "Source mouth inventory, model-sheet extraction, name-count audit"
+  },
+  {
+   "id": "P10",
+   "name": "EYES-MOUTHS production",
+   "folder": "eyes-mouths-production-20261031",
+   "status": "0/1 production readiness",
+   "what_for": "Clean front MBP + phrase proof on the production head",
+   "used_for": "MBP clean-front reference and phrase proof",
+   "tools": "build_production.py; mbp-clean-front-09_patch.png",
+   "layman": "Clean front MBP and a talking phrase, production-ready check",
+   "technical": "Production head fitting, mouth-zone proof, clean-front MBP patch"
+  },
+  {
+   "id": "P11",
+   "name": "VISEMES v2",
+   "folder": "visemes-v2-20261031",
+   "status": "Draft base only, NOT approved",
+   "what_for": "Early viseme set on the v2 head",
+   "used_for": "Draft / base reference only; production chart is P08",
+   "tools": "build_visemes_v2.py; clean-head-base-20261031.png (used by P01/P07)",
+   "layman": "Early mouth shapes on the clean head, draft only",
+   "technical": "Viseme draft set, clean-head base plate"
+  },
+  {
+   "id": "P12",
+   "name": "IMPROVED (this folder)",
+   "folder": "mouth-pipelines-labelled-improved-20261031",
+   "status": "0/1 improved pipelines, 0/1 registry",
+   "what_for": "P01, improved, without changing its rule",
+   "used_for": "Future use: run instead of P01 when you want the improved matte; P01 stays approved untouched",
+   "tools": "improve_mouth_pipelines.py general_clean()+improve() H1-H5; measurements-improved-20261031.json",
+   "layman": "Same mouth clean as P01, plus fill the tiny see-through holes inside the mouth, without changing its outline",
+   "technical": "Hole-fill matte repair (<=100px) + speck purge (<15px) + adaptive anchor recovery (>=50px) + thin-line spline bridge (<=20 cols, CHAIN only) + edge-extend fit (TRIED, NOT APPLIED)"
+  }
+ ],
+ "improved_counts": {
+  "total": 37,
+  "changed": 19,
+  "unchanged": 18,
+  "general_total_px": 583651,
+  "improved_total_px": 591591,
+  "diff_px": 7940,
+  "H5": {
+   "AH": {
+    "naive_halo_px": 3,
+    "edge_extend_halo_px": 20,
+    "applied": false,
+    "verdict": "tried, not applied - enlarges dark area, naive halo already small"
+   },
+   "GK": {
+    "naive_halo_px": 18,
+    "edge_extend_halo_px": 23,
+    "applied": false,
+    "verdict": "tried, not applied - enlarges dark area, naive halo already small"
+   },
+   "MBP": {
+    "naive_halo_px": -2,
+    "edge_extend_halo_px": -3,
+    "applied": false,
+    "verdict": "tried, not applied - enlarges dark area, naive halo already small"
+   }
+  }
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "source": "props/prop-xyug7.jpg",
+ "group": "props",
+ "plate": "props/prop-xyug7.png",
+ "plate_md5": "f1b40567495551505dc1991eaeddcf4d",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    1166,
+    782
+   ],
+   "opaque_px": 911812,
+   "sheet_bbox": [
+    1,
+    1,
+    1167,
+    783
+   ],
+   "area_px": 911812,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  }
+ ]
+}

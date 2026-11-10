@@ -1,0 +1,1122 @@
+{
+ "01-tpose-turnaround.jpg": {
+  "pieces": 1,
+  "bg": [
+   255.0,
+   255.0,
+   255.0
+  ]
+ },
+ "02-model-sheet-orthographic-turnaround.jpg": {
+  "pieces": 5,
+  "bg": [
+   194.0,
+   194.0,
+   194.0
+  ]
+ },
+ "03-color-lighting-vfx-key.jpg": {
+  "pieces": 97,
+  "bg": [
+   190.5,
+   190.5,
+   190.5
+  ]
+ },
+ "04-action-flight-vfx-reference.jpg": {
+  "pieces": 87,
+  "bg": [
+   193.0,
+   193.0,
+   193.0
+  ]
+ },
+ "05-expression-eye-dart-matrix.jpg": {
+  "pieces": 89,
+  "bg": [
+   193.0,
+   193.0,
+   193.0
+  ]
+ },
+ "06-viseme-phoneme-mouth-matrix.jpg": {
+  "pieces": 66,
+  "bg": [
+   189.0,
+   189.0,
+   189.0
+  ]
+ },
+ "07-character-parts-expressions.jpg": {
+  "pieces": 48,
+  "bg": [
+   193.0,
+   193.0,
+   193.0
+  ]
+ },
+ "08-body-parts-limbs-capes.jpg": {
+  "pieces": 72,
+  "bg": [
+   196.0,
+   196.0,
+   196.0
+  ]
+ },
+ "09-hero-shot-black.png": {
+  "pieces": 2,
+  "bg": [
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "10-hero-in-space.jpg": {
+  "pieces": 4,
+  "bg": [
+   1.0,
+   6.0,
+   9.0
+  ]
+ },
+ "exposure-sheets/exposure-sheet-1-walk.jpg": {
+  "pieces": 12,
+  "bg": [
+   162.0,
+   162.0,
+   162.0
+  ]
+ },
+ "exposure-sheets/exposure-sheet-10-flex.jpg": {
+  "pieces": 14,
+  "bg": [
+   160.5,
+   162.0,
+   161.0
+  ]
+ },
+ "exposure-sheets/exposure-sheet-2-jump.jpg": {
+  "pieces": 1,
+  "bg": [
+   122.5,
+   122.5,
+   122.5
+  ]
+ },
+ "exposure-sheets/exposure-sheet-3-punch.jpg": {
+  "pieces": 1,
+  "bg": [
+   175.0,
+   175.0,
+   175.0
+  ]
+ },
+ "exposure-sheets/exposure-sheet-4-flight.jpg": {
+  "pieces": 1,
+  "bg": [
+   109.5,
+   109.0,
+   110.5
+  ]
+ },
+ "exposure-sheets/exposure-sheet-5-reaction.jpg": {
+  "pieces": 13,
+  "bg": [
+   184.5,
+   184.5,
+   184.5
+  ]
+ },
+ "exposure-sheets/exposure-sheet-6-sit.jpg": {
+  "pieces": 28,
+  "bg": [
+   196.0,
+   196.0,
+   196.0
+  ]
+ },
+ "exposure-sheets/exposure-sheet-7-cape.jpg": {
+  "pieces": 8,
+  "bg": [
+   164.0,
+   164.0,
+   164.0
+  ]
+ },
+ "exposure-sheets/exposure-sheet-8-turnaround.jpg": {
+  "pieces": 1,
+  "bg": [
+   162.0,
+   162.5,
+   162.5
+  ]
+ },
+ "exposure-sheets/exposure-sheet-9-run.jpg": {
+  "pieces": 31,
+  "bg": [
+   159.0,
+   159.0,
+   159.0
+  ]
+ },
+ "fla-packs/action-packs/action-1vU75.jpg": {
+  "pieces": 17,
+  "bg": [
+   126.0,
+   126.5,
+   126.5
+  ]
+ },
+ "fla-packs/action-packs/action-60rw7.jpg": {
+  "pieces": 5,
+  "bg": [
+   128.5,
+   128.5,
+   128.0
+  ]
+ },
+ "fla-packs/action-packs/action-9NXQv.jpg": {
+  "pieces": 5,
+  "bg": [
+   127.0,
+   127.0,
+   127.0
+  ]
+ },
+ "fla-packs/action-packs/action-EBPJX.jpg": {
+  "pieces": 15,
+  "bg": [
+   123.0,
+   123.5,
+   124.0
+  ]
+ },
+ "fla-packs/action-packs/action-HJUwB.jpg": {
+  "pieces": 13,
+  "bg": [
+   125.0,
+   125.0,
+   126.0
+  ]
+ },
+ "fla-packs/action-packs/action-Ne4dq.jpg": {
+  "pieces": 8,
+  "bg": [
+   130.0,
+   130.0,
+   129.0
+  ]
+ },
+ "fla-packs/action-packs/action-Nk9xR.jpg": {
+  "pieces": 12,
+  "bg": [
+   127.0,
+   127.0,
+   127.0
+  ]
+ },
+ "fla-packs/action-packs/action-QjT3b.jpg": {
+  "pieces": 23,
+  "bg": [
+   126.0,
+   126.0,
+   126.0
+  ]
+ },
+ "fla-packs/action-packs/action-RTpXF.jpg": {
+  "pieces": 5,
+  "bg": [
+   131.0,
+   131.0,
+   131.0
+  ]
+ },
+ "fla-packs/action-packs/action-TatNd.jpg": {
+  "pieces": 11,
+  "bg": [
+   126.0,
+   126.0,
+   126.0
+  ]
+ },
+ "fla-packs/action-packs/action-WUwKS.jpg": {
+  "pieces": 36,
+  "bg": [
+   127.0,
+   127.0,
+   127.0
+  ]
+ },
+ "fla-packs/action-packs/action-Wtv8t.jpg": {
+  "pieces": 14,
+  "bg": [
+   125.5,
+   125.5,
+   125.5
+  ]
+ },
+ "fla-packs/action-packs/action-cJWaN.jpg": {
+  "pieces": 6,
+  "bg": [
+   127.0,
+   127.0,
+   127.0
+  ]
+ },
+ "fla-packs/action-packs/action-f5Q6Z.jpg": {
+  "pieces": 5,
+  "bg": [
+   126.0,
+   126.0,
+   126.0
+  ]
+ },
+ "fla-packs/action-packs/action-wdNk1.jpg": {
+  "pieces": 5,
+  "bg": [
+   129.0,
+   129.0,
+   129.0
+  ]
+ },
+ "fla-packs/angle-sheets/fla-3quarter-back.jpg": {
+  "pieces": 16,
+  "bg": [
+   152.0,
+   152.0,
+   152.0
+  ]
+ },
+ "fla-packs/angle-sheets/fla-3quarter-front.jpg": {
+  "pieces": 9,
+  "bg": [
+   153.5,
+   153.5,
+   153.5
+  ]
+ },
+ "fla-packs/angle-sheets/fla-back.jpg": {
+  "pieces": 41,
+  "bg": [
+   155.0,
+   155.0,
+   155.0
+  ]
+ },
+ "fla-packs/angle-sheets/fla-front.jpg": {
+  "pieces": 33,
+  "bg": [
+   153.0,
+   153.0,
+   153.0
+  ]
+ },
+ "fla-packs/dance-packs/dance-2e9kj.jpg": {
+  "pieces": 24,
+  "bg": [
+   126.0,
+   126.0,
+   126.0
+  ]
+ },
+ "fla-packs/dance-packs/dance-D3pmc.jpg": {
+  "pieces": 19,
+  "bg": [
+   127.0,
+   127.0,
+   127.0
+  ]
+ },
+ "fla-packs/dance-packs/dance-MAHyh.jpg": {
+  "pieces": 24,
+  "bg": [
+   125.0,
+   126.0,
+   126.0
+  ]
+ },
+ "fla-packs/dance-packs/dance-UgepP.jpg": {
+  "pieces": 11,
+  "bg": [
+   126.0,
+   126.0,
+   126.0
+  ]
+ },
+ "fla-packs/dance-packs/dance-ZxEwS.jpg": {
+  "pieces": 25,
+  "bg": [
+   126.0,
+   126.0,
+   126.0
+  ]
+ },
+ "fla-packs/dance-packs/dance-a3jha.jpg": {
+  "pieces": 17,
+  "bg": [
+   126.0,
+   126.0,
+   126.0
+  ]
+ },
+ "fla-packs/dance-packs/dance-etaPY.jpg": {
+  "pieces": 32,
+  "bg": [
+   126.0,
+   126.0,
+   126.0
+  ]
+ },
+ "fla-packs/dance-packs/dance-mANuo.jpg": {
+  "pieces": 16,
+  "bg": [
+   127.0,
+   127.0,
+   127.0
+  ]
+ },
+ "fla-packs/dance-packs/dance-qIxLo.jpg": {
+  "pieces": 20,
+  "bg": [
+   126.5,
+   126.5,
+   126.5
+  ]
+ },
+ "fla-packs/dance-packs/dance-smAFI.jpg": {
+  "pieces": 11,
+  "bg": [
+   126.0,
+   126.0,
+   126.0
+  ]
+ },
+ "fla-packs/dance-packs/dance-w2Zh1.jpg": {
+  "pieces": 17,
+  "bg": [
+   126.5,
+   126.5,
+   126.5
+  ]
+ },
+ "fla-packs/jojo-packs/recent-3N1l4.jpg": {
+  "pieces": 26,
+  "bg": [
+   125.0,
+   125.0,
+   125.0
+  ]
+ },
+ "fla-packs/jojo-packs/recent-8chi3.jpg": {
+  "pieces": 27,
+  "bg": [
+   126.0,
+   126.0,
+   126.0
+  ]
+ },
+ "fla-packs/jojo-packs/recent-HXbRz.jpg": {
+  "pieces": 13,
+  "bg": [
+   126.0,
+   126.0,
+   125.5
+  ]
+ },
+ "fla-packs/jojo-packs/recent-J9hos.jpg": {
+  "pieces": 17,
+  "bg": [
+   126.0,
+   126.0,
+   126.0
+  ]
+ },
+ "fla-packs/jojo-packs/recent-PL6xL.jpg": {
+  "pieces": 15,
+  "bg": [
+   122.0,
+   122.0,
+   122.0
+  ]
+ },
+ "fla-packs/jojo-packs/recent-TdvUD.jpg": {
+  "pieces": 29,
+  "bg": [
+   127.0,
+   127.0,
+   127.0
+  ]
+ },
+ "fla-packs/jojo-packs/recent-XcaBI.jpg": {
+  "pieces": 12,
+  "bg": [
+   126.0,
+   126.0,
+   126.0
+  ]
+ },
+ "fla-packs/jojo-packs/recent-XkboO.jpg": {
+  "pieces": 19,
+  "bg": [
+   127.0,
+   127.0,
+   127.0
+  ]
+ },
+ "fla-packs/jojo-packs/recent-akfZy.jpg": {
+  "pieces": 30,
+  "bg": [
+   125.0,
+   125.0,
+   125.0
+  ]
+ },
+ "fla-packs/jojo-packs/recent-chKT5.jpg": {
+  "pieces": 19,
+  "bg": [
+   127.0,
+   127.0,
+   127.0
+  ]
+ },
+ "fla-packs/jojo-packs/recent-l3Ch8.jpg": {
+  "pieces": 18,
+  "bg": [
+   126.0,
+   126.0,
+   126.0
+  ]
+ },
+ "fla-packs/jojo-packs/recent-lHT9s.jpg": {
+  "pieces": 13,
+  "bg": [
+   126.0,
+   126.0,
+   126.0
+  ]
+ },
+ "fla-packs/jojo-packs/recent-nh3HD.jpg": {
+  "pieces": 14,
+  "bg": [
+   126.5,
+   126.5,
+   126.5
+  ]
+ },
+ "fla-packs/references/tpose-front-alt.png": {
+  "pieces": 7,
+  "bg": [
+   74.0,
+   74.0,
+   74.0
+  ]
+ },
+ "fla-packs/references/tpose-front.png": {
+  "pieces": 1,
+  "bg": [
+   128.0,
+   128.0,
+   128.0
+  ]
+ },
+ "fla-packs/xray-vision/hands/xray-hand-sheet-1.jpg": {
+  "pieces": 6,
+  "bg": [
+   139.0,
+   139.0,
+   139.0
+  ]
+ },
+ "fla-packs/xray-vision/hands/xray-hand-sheet-2.jpg": {
+  "pieces": 6,
+  "bg": [
+   138.0,
+   138.0,
+   138.0
+  ]
+ },
+ "fla-packs/xray-vision/hands/xray-hand-sheet-3.jpg": {
+  "pieces": 7,
+  "bg": [
+   138.0,
+   138.5,
+   138.5
+  ]
+ },
+ "fla-packs/xray-vision/heads/xray-head-sheet-1.jpg": {
+  "pieces": 5,
+  "bg": [
+   137.0,
+   137.0,
+   137.0
+  ]
+ },
+ "fla-packs/xray-vision/heads/xray-head-sheet-2.jpg": {
+  "pieces": 5,
+  "bg": [
+   138.0,
+   138.0,
+   138.0
+  ]
+ },
+ "fla-packs/xray-vision/heads/xray-head-sheet-3.jpg": {
+  "pieces": 5,
+  "bg": [
+   138.0,
+   138.0,
+   138.0
+  ]
+ },
+ "fla-packs/xray-vision/heads/xray-head-sheet-4.jpg": {
+  "pieces": 5,
+  "bg": [
+   137.0,
+   137.0,
+   137.0
+  ]
+ },
+ "fla-packs/xray-vision/heads/xray-head-sheet-5.jpg": {
+  "pieces": 5,
+  "bg": [
+   138.0,
+   138.0,
+   138.0
+  ]
+ },
+ "fla-packs/xray-vision/xray-fla-3quarter-back.jpg": {
+  "pieces": 38,
+  "bg": [
+   137.5,
+   137.5,
+   137.5
+  ]
+ },
+ "fla-packs/xray-vision/xray-fla-3quarter-front.jpg": {
+  "pieces": 35,
+  "bg": [
+   137.5,
+   137.5,
+   137.5
+  ]
+ },
+ "fla-packs/xray-vision/xray-fla-back.jpg": {
+  "pieces": 26,
+  "bg": [
+   137.0,
+   137.0,
+   137.0
+  ]
+ },
+ "fla-packs/xray-vision/xray-fla-front.jpg": {
+  "pieces": 47,
+  "bg": [
+   135.0,
+   135.0,
+   135.0
+  ]
+ },
+ "fla-packs/xray-vision/xray-turnaround.jpg": {
+  "pieces": 5,
+  "bg": [
+   141.0,
+   141.0,
+   141.0
+  ]
+ },
+ "model-sheets/model-sheet-3quarter-back-set1.jpg": {
+  "pieces": 1,
+  "bg": [
+   146.5,
+   146.5,
+   146.5
+  ]
+ },
+ "model-sheets/model-sheet-3quarter-back-set2.jpg": {
+  "pieces": 1,
+  "bg": [
+   160.0,
+   160.0,
+   160.0
+  ]
+ },
+ "model-sheets/model-sheet-3quarter-front-set2.jpg": {
+  "pieces": 1,
+  "bg": [
+   149.5,
+   149.5,
+   149.5
+  ]
+ },
+ "model-sheets/model-sheet-back-set1.jpg": {
+  "pieces": 1,
+  "bg": [
+   157.5,
+   157.5,
+   157.5
+  ]
+ },
+ "model-sheets/model-sheet-back-set2.jpg": {
+  "pieces": 1,
+  "bg": [
+   150.0,
+   150.0,
+   150.0
+  ]
+ },
+ "model-sheets/model-sheet-front-set2.jpg": {
+  "pieces": 1,
+  "bg": [
+   151.0,
+   151.0,
+   151.0
+  ]
+ },
+ "model-sheets/model-sheet-side-set2.jpg": {
+  "pieces": 1,
+  "bg": [
+   152.5,
+   152.5,
+   152.5
+  ]
+ },
+ "prop-scale-sheets/prop-scale-electronics-furniture.jpg": {
+  "pieces": 9,
+  "bg": [
+   163.0,
+   163.5,
+   163.0
+  ]
+ },
+ "prop-scale-sheets/prop-scale-outdoor-furniture.jpg": {
+  "pieces": 21,
+  "bg": [
+   146.0,
+   146.0,
+   146.0
+  ]
+ },
+ "props/prop-8LjQY.jpg": {
+  "pieces": 1,
+  "bg": [
+   154.5,
+   86.0,
+   47.0
+  ]
+ },
+ "props/prop-BBvxs.jpg": {
+  "pieces": 5,
+  "bg": [
+   147.0,
+   147.0,
+   147.0
+  ]
+ },
+ "props/prop-HeTHP.jpg": {
+  "pieces": 4,
+  "bg": [
+   0.0,
+   2.0,
+   11.5
+  ]
+ },
+ "props/prop-IApiu.jpg": {
+  "pieces": 5,
+  "bg": [
+   149.0,
+   149.0,
+   149.0
+  ]
+ },
+ "props/prop-Nr2it.jpg": {
+  "pieces": 4,
+  "bg": [
+   15.0,
+   45.0,
+   30.0
+  ]
+ },
+ "props/prop-SNnYp.jpg": {
+  "pieces": 5,
+  "bg": [
+   149.5,
+   149.0,
+   149.0
+  ]
+ },
+ "props/prop-YAhuI.jpg": {
+  "pieces": 1,
+  "bg": [
+   80.5,
+   82.5,
+   87.5
+  ]
+ },
+ "props/prop-ZG2Bt.jpg": {
+  "pieces": 1,
+  "bg": [
+   95.0,
+   107.0,
+   152.0
+  ]
+ },
+ "props/prop-fi3j8.jpg": {
+  "pieces": 2,
+  "bg": [
+   12.0,
+   6.0,
+   55.0
+  ]
+ },
+ "props/prop-hvZmi.jpg": {
+  "pieces": 7,
+  "bg": [
+   3.0,
+   18.0,
+   61.0
+  ]
+ },
+ "props/prop-izNQ9.jpg": {
+  "pieces": 1,
+  "bg": [
+   224.0,
+   143.0,
+   71.5
+  ]
+ },
+ "props/prop-luSwX.jpg": {
+  "pieces": 5,
+  "bg": [
+   139.0,
+   139.5,
+   139.5
+  ]
+ },
+ "props/prop-nFMhU.jpg": {
+  "pieces": 5,
+  "bg": [
+   156.0,
+   156.0,
+   157.5
+  ]
+ },
+ "props/prop-oCpSw.jpg": {
+  "pieces": 1,
+  "bg": [
+   243.5,
+   204.0,
+   131.0
+  ]
+ },
+ "props/prop-rY6iH.jpg": {
+  "pieces": 1,
+  "bg": [
+   35.5,
+   139.5,
+   146.5
+  ]
+ },
+ "variations/action/6KSNq.jpg": {
+  "pieces": 43,
+  "bg": [
+   147.0,
+   147.0,
+   146.0
+  ]
+ },
+ "variations/action/6TXRQ.jpg": {
+  "pieces": 36,
+  "bg": [
+   155.0,
+   155.0,
+   155.0
+  ]
+ },
+ "variations/action/9A7pl.jpg": {
+  "pieces": 17,
+  "bg": [
+   147.0,
+   147.5,
+   147.5
+  ]
+ },
+ "variations/action/9AuKw.jpg": {
+  "pieces": 30,
+  "bg": [
+   150.0,
+   150.0,
+   150.0
+  ]
+ },
+ "variations/action/FPEeg.jpg": {
+  "pieces": 25,
+  "bg": [
+   140.5,
+   141.0,
+   141.5
+  ]
+ },
+ "variations/action/GCQ03.jpg": {
+  "pieces": 39,
+  "bg": [
+   140.5,
+   141.0,
+   141.0
+  ]
+ },
+ "variations/action/I2t0d.jpg": {
+  "pieces": 17,
+  "bg": [
+   150.5,
+   150.5,
+   149.5
+  ]
+ },
+ "variations/action/KRuoB.jpg": {
+  "pieces": 19,
+  "bg": [
+   147.0,
+   147.0,
+   147.0
+  ]
+ },
+ "variations/action/Lf8uW.jpg": {
+  "pieces": 42,
+  "bg": [
+   157.0,
+   157.5,
+   157.5
+  ]
+ },
+ "variations/action/N39Xr.jpg": {
+  "pieces": 14,
+  "bg": [
+   163.0,
+   163.0,
+   163.0
+  ]
+ },
+ "variations/action/SWiWT.jpg": {
+  "pieces": 20,
+  "bg": [
+   141.5,
+   141.5,
+   141.5
+  ]
+ },
+ "variations/action/T2SRf.jpg": {
+  "pieces": 13,
+  "bg": [
+   142.0,
+   143.0,
+   143.0
+  ]
+ },
+ "variations/action/TwyB6.jpg": {
+  "pieces": 46,
+  "bg": [
+   153.0,
+   153.0,
+   153.0
+  ]
+ },
+ "variations/action/URmgB.jpg": {
+  "pieces": 9,
+  "bg": [
+   151.5,
+   151.5,
+   151.5
+  ]
+ },
+ "variations/action/V9r14.jpg": {
+  "pieces": 8,
+  "bg": [
+   155.0,
+   155.0,
+   155.0
+  ]
+ },
+ "variations/action/adOmH.jpg": {
+  "pieces": 25,
+  "bg": [
+   144.0,
+   146.0,
+   145.5
+  ]
+ },
+ "variations/action/aqMG1.jpg": {
+  "pieces": 7,
+  "bg": [
+   146.0,
+   146.0,
+   146.0
+  ]
+ },
+ "variations/action/cDeSs.jpg": {
+  "pieces": 27,
+  "bg": [
+   146.0,
+   146.0,
+   146.0
+  ]
+ },
+ "variations/action/dAvtg.jpg": {
+  "pieces": 39,
+  "bg": [
+   146.5,
+   146.5,
+   146.5
+  ]
+ },
+ "variations/action/hJsrN.jpg": {
+  "pieces": 17,
+  "bg": [
+   135.0,
+   136.0,
+   136.0
+  ]
+ },
+ "variations/action/rzhOh.jpg": {
+  "pieces": 11,
+  "bg": [
+   146.0,
+   146.0,
+   146.0
+  ]
+ },
+ "variations/action/sODBO.jpg": {
+  "pieces": 3,
+  "bg": [
+   148.5,
+   148.5,
+   148.5
+  ]
+ },
+ "variations/action/tMEvT.jpg": {
+  "pieces": 27,
+  "bg": [
+   152.5,
+   152.5,
+   152.5
+  ]
+ },
+ "variations/action/uU0ry.jpg": {
+  "pieces": 17,
+  "bg": [
+   155.5,
+   155.5,
+   155.0
+  ]
+ },
+ "variations/action/wZf6q.jpg": {
+  "pieces": 48,
+  "bg": [
+   155.5,
+   155.5,
+   155.5
+  ]
+ },
+ "variations/flying/9dc2Q.jpg": {
+  "pieces": 50,
+  "bg": [
+   167.0,
+   167.0,
+   167.0
+  ]
+ },
+ "variations/flying/AKqzs.jpg": {
+  "pieces": 40,
+  "bg": [
+   98.0,
+   98.5,
+   98.0
+  ]
+ },
+ "variations/flying/CgfRw.jpg": {
+  "pieces": 106,
+  "bg": [
+   195.0,
+   195.0,
+   195.0
+  ]
+ },
+ "variations/flying/GQCnK.jpg": {
+  "pieces": 24,
+  "bg": [
+   153.5,
+   154.0,
+   154.0
+  ]
+ },
+ "variations/flying/RbAEI.jpg": {
+  "pieces": 61,
+  "bg": [
+   193.0,
+   193.0,
+   193.0
+  ]
+ },
+ "variations/flying/Thtr3.jpg": {
+  "pieces": 11,
+  "bg": [
+   124.0,
+   124.0,
+   124.0
+  ]
+ },
+ "variations/flying/VRwDb.jpg": {
+  "pieces": 37,
+  "bg": [
+   161.5,
+   161.5,
+   161.5
+  ]
+ },
+ "variations/flying/abfwV.jpg": {
+  "pieces": 78,
+  "bg": [
+   193.0,
+   193.0,
+   193.0
+  ]
+ },
+ "variations/flying/ekuiT.jpg": {
+  "pieces": 20,
+  "bg": [
+   180.0,
+   180.0,
+   180.0
+  ]
+ },
+ "variations/flying/hGsDr.jpg": {
+  "pieces": 33,
+  "bg": [
+   124.5,
+   125.5,
+   125.0
+  ]
+ },
+ "variations/flying/lQzUV.jpg": {
+  "pieces": 96,
+  "bg": [
+   197.0,
+   197.0,
+   197.0
+  ]
+ },
+ "variations/flying/qGZGX.jpg": {
+  "pieces": 63,
+  "bg": [
+   193.0,
+   193.0,
+   193.0
+  ]
+ },
+ "variations/flying/ydJQP.jpg": {
+  "pieces": 20,
+  "bg": [
+   141.5,
+   142.0,
+   142.0
+  ]
+ }
+}

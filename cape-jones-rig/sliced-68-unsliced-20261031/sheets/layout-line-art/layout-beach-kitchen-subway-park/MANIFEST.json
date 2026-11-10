@@ -1,0 +1,82 @@
+{
+ "source": "layout-line-art/layout-beach-kitchen-subway-park.jpg",
+ "group": "layout-line-art",
+ "plate": "layout-line-art/layout-beach-kitchen-subway-park.png",
+ "plate_md5": "a3f602589bb97b4a190d436318056275",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    869,
+    471
+   ],
+   "opaque_px": 408323,
+   "sheet_bbox": [
+    16,
+    15,
+    885,
+    486
+   ],
+   "area_px": 408323,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    870,
+    471
+   ],
+   "opaque_px": 408791,
+   "sheet_bbox": [
+    904,
+    15,
+    1774,
+    486
+   ],
+   "area_px": 408791,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    869,
+    460
+   ],
+   "opaque_px": 398666,
+   "sheet_bbox": [
+    16,
+    501,
+    885,
+    961
+   ],
+   "area_px": 398666,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    870,
+    460
+   ],
+   "opaque_px": 398683,
+   "sheet_bbox": [
+    904,
+    501,
+    1774,
+    961
+   ],
+   "area_px": 398683,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  }
+ ]
+}

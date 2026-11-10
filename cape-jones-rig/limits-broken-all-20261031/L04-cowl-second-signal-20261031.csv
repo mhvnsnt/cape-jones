@@ -1,0 +1,7 @@
+case,edge_interruption,predicted,truth,correct
+normal_shoulder,0.12,normal,normal,True
+cowl_crossing,0.78,candidate,candidate,True
+jojo02_false_positive_fist_beside_head,0.18,normal,normal,True
+stand02_shadow_flat,0.05,normal,normal,True
+ginyu01_original,0.71,candidate,candidate,True
+v7c_jump,0.74,candidate,candidate,True

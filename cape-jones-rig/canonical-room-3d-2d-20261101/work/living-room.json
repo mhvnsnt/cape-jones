@@ -1,0 +1,354 @@
+[
+ {
+  "name": "INTEGRATION.md",
+  "path": "3d-assets/living-room/INTEGRATION.md",
+  "sha": "55e08d0ccfffc0fc0a551c867674a1687afdde99",
+  "size": 7985,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/INTEGRATION.md?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/INTEGRATION.md",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/55e08d0ccfffc0fc0a551c867674a1687afdde99",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/INTEGRATION.md",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/INTEGRATION.md?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/55e08d0ccfffc0fc0a551c867674a1687afdde99",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/INTEGRATION.md"
+  }
+ },
+ {
+  "name": "SCENE-CANON.md",
+  "path": "3d-assets/living-room/SCENE-CANON.md",
+  "sha": "01cb36cbb2b963dc580116e98e339747bfc9b7e2",
+  "size": 14142,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/SCENE-CANON.md?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/SCENE-CANON.md",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/01cb36cbb2b963dc580116e98e339747bfc9b7e2",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/SCENE-CANON.md",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/SCENE-CANON.md?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/01cb36cbb2b963dc580116e98e339747bfc9b7e2",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/SCENE-CANON.md"
+  }
+ },
+ {
+  "name": "apply_furniture_position.py",
+  "path": "3d-assets/living-room/apply_furniture_position.py",
+  "sha": "da8d03e8ad7e8048f22b8cc27e0eacd508d6047a",
+  "size": 3608,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/apply_furniture_position.py?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/apply_furniture_position.py",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/da8d03e8ad7e8048f22b8cc27e0eacd508d6047a",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/apply_furniture_position.py",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/apply_furniture_position.py?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/da8d03e8ad7e8048f22b8cc27e0eacd508d6047a",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/apply_furniture_position.py"
+  }
+ },
+ {
+  "name": "colorway-reference.png",
+  "path": "3d-assets/living-room/colorway-reference.png",
+  "sha": "3acfaab677f6b283b9b3975c32d2df138b4ca660",
+  "size": 360578,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/colorway-reference.png?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/colorway-reference.png",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/3acfaab677f6b283b9b3975c32d2df138b4ca660",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/colorway-reference.png",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/colorway-reference.png?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/3acfaab677f6b283b9b3975c32d2df138b4ca660",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/colorway-reference.png"
+  }
+ },
+ {
+  "name": "fixup_frame1.py",
+  "path": "3d-assets/living-room/fixup_frame1.py",
+  "sha": "13b02e22f0b77636f0f3ca242014f3873821fa04",
+  "size": 2713,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/fixup_frame1.py?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/fixup_frame1.py",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/13b02e22f0b77636f0f3ca242014f3873821fa04",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/fixup_frame1.py",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/fixup_frame1.py?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/13b02e22f0b77636f0f3ca242014f3873821fa04",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/fixup_frame1.py"
+  }
+ },
+ {
+  "name": "furniture_positions.json",
+  "path": "3d-assets/living-room/furniture_positions.json",
+  "sha": "fcfe1f74f80618d8966b31ef037211e1838e68c5",
+  "size": 2380,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/furniture_positions.json?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/furniture_positions.json",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/fcfe1f74f80618d8966b31ef037211e1838e68c5",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/furniture_positions.json",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/furniture_positions.json?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/fcfe1f74f80618d8966b31ef037211e1838e68c5",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/furniture_positions.json"
+  }
+ },
+ {
+  "name": "integrate_scene.py",
+  "path": "3d-assets/living-room/integrate_scene.py",
+  "sha": "8696ce4457bad7e9eead6090953e32dc96e10c2b",
+  "size": 12512,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/integrate_scene.py?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/integrate_scene.py",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/8696ce4457bad7e9eead6090953e32dc96e10c2b",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/integrate_scene.py",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/integrate_scene.py?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/8696ce4457bad7e9eead6090953e32dc96e10c2b",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/integrate_scene.py"
+  }
+ },
+ {
+  "name": "lighting",
+  "path": "3d-assets/living-room/lighting",
+  "sha": "352b51ec7561bbe9948a2e47e48e8b6cb3e41efd",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/lighting?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/3d-assets/living-room/lighting",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/352b51ec7561bbe9948a2e47e48e8b6cb3e41efd",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/lighting?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/352b51ec7561bbe9948a2e47e48e8b6cb3e41efd",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/3d-assets/living-room/lighting"
+  }
+ },
+ {
+  "name": "proof_shots.py",
+  "path": "3d-assets/living-room/proof_shots.py",
+  "sha": "f0911a4ed93e9c3059dbd14d18c8cb96ffc9c237",
+  "size": 6045,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/proof_shots.py?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/proof_shots.py",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/f0911a4ed93e9c3059dbd14d18c8cb96ffc9c237",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/proof_shots.py",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/proof_shots.py?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/f0911a4ed93e9c3059dbd14d18c8cb96ffc9c237",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/proof_shots.py"
+  }
+ },
+ {
+  "name": "props",
+  "path": "3d-assets/living-room/props",
+  "sha": "786887ddc549d2b628c3b9e7a74b54a0aebd632f",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/props?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/3d-assets/living-room/props",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/786887ddc549d2b628c3b9e7a74b54a0aebd632f",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/props?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/786887ddc549d2b628c3b9e7a74b54a0aebd632f",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/3d-assets/living-room/props"
+  }
+ },
+ {
+  "name": "recliner",
+  "path": "3d-assets/living-room/recliner",
+  "sha": "37895f21abf4973d16fa4bdf927e55a21ad5339b",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/recliner?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/3d-assets/living-room/recliner",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/37895f21abf4973d16fa4bdf927e55a21ad5339b",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/recliner?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/37895f21abf4973d16fa4bdf927e55a21ad5339b",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/3d-assets/living-room/recliner"
+  }
+ },
+ {
+  "name": "render_sitting_preview.py",
+  "path": "3d-assets/living-room/render_sitting_preview.py",
+  "sha": "0702114b5eed582bfe18e7d9969a7532644934a9",
+  "size": 7668,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/render_sitting_preview.py?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/render_sitting_preview.py",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/0702114b5eed582bfe18e7d9969a7532644934a9",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/render_sitting_preview.py",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/render_sitting_preview.py?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/0702114b5eed582bfe18e7d9969a7532644934a9",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/render_sitting_preview.py"
+  }
+ },
+ {
+  "name": "renders",
+  "path": "3d-assets/living-room/renders",
+  "sha": "4b68e41310f134d3aa8eaad7fc16ac88ba51f87d",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/renders?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/3d-assets/living-room/renders",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/4b68e41310f134d3aa8eaad7fc16ac88ba51f87d",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/renders?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/4b68e41310f134d3aa8eaad7fc16ac88ba51f87d",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/3d-assets/living-room/renders"
+  }
+ },
+ {
+  "name": "scene-overview.png",
+  "path": "3d-assets/living-room/scene-overview.png",
+  "sha": "818a0ccb17190d42b6022464c3aec278f037414b",
+  "size": 390307,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/scene-overview.png?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/scene-overview.png",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/818a0ccb17190d42b6022464c3aec278f037414b",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/scene-overview.png",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/scene-overview.png?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/818a0ccb17190d42b6022464c3aec278f037414b",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/scene-overview.png"
+  }
+ },
+ {
+  "name": "scene-relayout-v2.png",
+  "path": "3d-assets/living-room/scene-relayout-v2.png",
+  "sha": "e23c07c94ad3378f56c7a9d403bc47ce6a11ab7b",
+  "size": 586449,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/scene-relayout-v2.png?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/scene-relayout-v2.png",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/e23c07c94ad3378f56c7a9d403bc47ce6a11ab7b",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/scene-relayout-v2.png",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/scene-relayout-v2.png?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/e23c07c94ad3378f56c7a9d403bc47ce6a11ab7b",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/scene-relayout-v2.png"
+  }
+ },
+ {
+  "name": "scene-rev2-capejones-front.png",
+  "path": "3d-assets/living-room/scene-rev2-capejones-front.png",
+  "sha": "b55b67a3197bcd2b336d75c5e0de2a481608751e",
+  "size": 393451,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/scene-rev2-capejones-front.png?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/scene-rev2-capejones-front.png",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/b55b67a3197bcd2b336d75c5e0de2a481608751e",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/scene-rev2-capejones-front.png",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/scene-rev2-capejones-front.png?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/b55b67a3197bcd2b336d75c5e0de2a481608751e",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/scene-rev2-capejones-front.png"
+  }
+ },
+ {
+  "name": "scene-rev2-mug-closeup.png",
+  "path": "3d-assets/living-room/scene-rev2-mug-closeup.png",
+  "sha": "001b9090e0784613205f61fb1740c8fac51abcb5",
+  "size": 222616,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/scene-rev2-mug-closeup.png?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/scene-rev2-mug-closeup.png",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/001b9090e0784613205f61fb1740c8fac51abcb5",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/scene-rev2-mug-closeup.png",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/scene-rev2-mug-closeup.png?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/001b9090e0784613205f61fb1740c8fac51abcb5",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/scene-rev2-mug-closeup.png"
+  }
+ },
+ {
+  "name": "scene-rev2-window-wall.png",
+  "path": "3d-assets/living-room/scene-rev2-window-wall.png",
+  "sha": "6319add183b8638391fffdf4c4b19082bde08999",
+  "size": 400594,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/scene-rev2-window-wall.png?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/scene-rev2-window-wall.png",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/6319add183b8638391fffdf4c4b19082bde08999",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/scene-rev2-window-wall.png",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/scene-rev2-window-wall.png?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/6319add183b8638391fffdf4c4b19082bde08999",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/scene-rev2-window-wall.png"
+  }
+ },
+ {
+  "name": "scene-rev3-lamp-closeup.png",
+  "path": "3d-assets/living-room/scene-rev3-lamp-closeup.png",
+  "sha": "83d9eba88404c040c363ac53855a2bef11a93e89",
+  "size": 365747,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/scene-rev3-lamp-closeup.png?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/scene-rev3-lamp-closeup.png",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/83d9eba88404c040c363ac53855a2bef11a93e89",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/scene-rev3-lamp-closeup.png",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/scene-rev3-lamp-closeup.png?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/83d9eba88404c040c363ac53855a2bef11a93e89",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/scene-rev3-lamp-closeup.png"
+  }
+ },
+ {
+  "name": "scene-rev3-window-wall.png",
+  "path": "3d-assets/living-room/scene-rev3-window-wall.png",
+  "sha": "64afff0bb13b2728644d051ffe38ed65d838ad47",
+  "size": 408153,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/scene-rev3-window-wall.png?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/scene-rev3-window-wall.png",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/64afff0bb13b2728644d051ffe38ed65d838ad47",
+  "download_url": "https://raw.githubusercontent.com/mhvnsnt/cape-jones/main/3d-assets/living-room/scene-rev3-window-wall.png",
+  "type": "file",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/scene-rev3-window-wall.png?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/blobs/64afff0bb13b2728644d051ffe38ed65d838ad47",
+   "html": "https://github.com/mhvnsnt/cape-jones/blob/main/3d-assets/living-room/scene-rev3-window-wall.png"
+  }
+ },
+ {
+  "name": "sit-targets",
+  "path": "3d-assets/living-room/sit-targets",
+  "sha": "f4d839742d2a821797ee9171844fa4ac36a07ae7",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/sit-targets?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/3d-assets/living-room/sit-targets",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/f4d839742d2a821797ee9171844fa4ac36a07ae7",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/sit-targets?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/f4d839742d2a821797ee9171844fa4ac36a07ae7",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/3d-assets/living-room/sit-targets"
+  }
+ },
+ {
+  "name": "tv",
+  "path": "3d-assets/living-room/tv",
+  "sha": "78f310e899530dfbd1f9e1152082a3e8da6ad56f",
+  "size": 0,
+  "url": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/tv?ref=main",
+  "html_url": "https://github.com/mhvnsnt/cape-jones/tree/main/3d-assets/living-room/tv",
+  "git_url": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/78f310e899530dfbd1f9e1152082a3e8da6ad56f",
+  "download_url": null,
+  "type": "dir",
+  "_links": {
+   "self": "https://api.github.com/repos/mhvnsnt/cape-jones/contents/3d-assets/living-room/tv?ref=main",
+   "git": "https://api.github.com/repos/mhvnsnt/cape-jones/git/trees/78f310e899530dfbd1f9e1152082a3e8da6ad56f",
+   "html": "https://github.com/mhvnsnt/cape-jones/tree/main/3d-assets/living-room/tv"
+  }
+ }
+]

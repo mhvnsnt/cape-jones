@@ -1,0 +1,572 @@
+[
+ {
+  "shot_id": "CJ-01",
+  "slug": "punch-windup",
+  "rim_input_rgb": [
+   255,
+   178,
+   229
+  ],
+  "moving": false,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   18,
+   18,
+   28
+  ],
+  "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)"
+ },
+ {
+  "shot_id": "CJ-02",
+  "slug": "punch-extend-snap",
+  "rim_input_rgb": [
+   255,
+   178,
+   229
+  ],
+  "moving": true,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   197,
+   137,
+   177
+  ],
+  "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift"
+ },
+ {
+  "shot_id": "CJ-03",
+  "slug": "punch-impact-locked",
+  "rim_input_rgb": [
+   255,
+   120,
+   115
+  ],
+  "moving": false,
+  "frames": 12,
+  "lighting_level": "Level 2 (+ separate FX passes, not god rays)",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   18,
+   18,
+   28
+  ],
+  "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)"
+ },
+ {
+  "shot_id": "CJ-04",
+  "slug": "punch-recover",
+  "rim_input_rgb": [
+   255,
+   180,
+   80
+  ],
+  "moving": true,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   197,
+   139,
+   63
+  ],
+  "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift"
+ },
+ {
+  "shot_id": "CJ-05",
+  "slug": "punch-across-down-placement",
+  "rim_input_rgb": [
+   255,
+   255,
+   255
+  ],
+  "moving": true,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   197,
+   197,
+   197
+  ],
+  "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift"
+ },
+ {
+  "shot_id": "CJ-06",
+  "slug": "walk-street-contact",
+  "rim_input_rgb": [
+   255,
+   255,
+   255
+  ],
+  "moving": true,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   197,
+   197,
+   197
+  ],
+  "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift"
+ },
+ {
+  "shot_id": "CJ-07",
+  "slug": "walk-town-passing",
+  "rim_input_rgb": [
+   255,
+   180,
+   80
+  ],
+  "moving": true,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   197,
+   139,
+   63
+  ],
+  "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift"
+ },
+ {
+  "shot_id": "CJ-08",
+  "slug": "walk-alley-night",
+  "rim_input_rgb": [
+   160,
+   185,
+   255
+  ],
+  "moving": true,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   123,
+   142,
+   197
+  ],
+  "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift"
+ },
+ {
+  "shot_id": "CJ-09",
+  "slug": "dance-a",
+  "rim_input_rgb": [
+   255,
+   178,
+   229
+  ],
+  "moving": true,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   197,
+   137,
+   177
+  ],
+  "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift"
+ },
+ {
+  "shot_id": "CJ-10",
+  "slug": "dance-b",
+  "rim_input_rgb": [
+   255,
+   190,
+   220
+  ],
+  "moving": true,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   197,
+   146,
+   170
+  ],
+  "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift"
+ },
+ {
+  "shot_id": "CJ-11",
+  "slug": "dance-combined-finale",
+  "rim_input_rgb": [
+   220,
+   150,
+   255
+  ],
+  "moving": true,
+  "frames": 12,
+  "lighting_level": "Level 3",
+  "god_ray_decision": "GOD RAYS - see god-ray file CJ-11",
+  "on_screen_sample_rgb": [
+   170,
+   115,
+   197
+  ],
+  "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift"
+ },
+ {
+  "shot_id": "CJ-12",
+  "slug": "flying-hover",
+  "rim_input_rgb": [
+   255,
+   180,
+   80
+  ],
+  "moving": true,
+  "frames": 12,
+  "lighting_level": "Level 3",
+  "god_ray_decision": "GOD RAYS - see god-ray file CJ-12",
+  "on_screen_sample_rgb": [
+   197,
+   139,
+   63
+  ],
+  "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift"
+ },
+ {
+  "shot_id": "CJ-13",
+  "slug": "flying-soar",
+  "rim_input_rgb": [
+   255,
+   200,
+   110
+  ],
+  "moving": true,
+  "frames": 12,
+  "lighting_level": "Level 3",
+  "god_ray_decision": "GOD RAYS - see god-ray file CJ-13",
+  "on_screen_sample_rgb": [
+   197,
+   154,
+   85
+  ],
+  "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift"
+ },
+ {
+  "shot_id": "CJ-14",
+  "slug": "flying-dive",
+  "rim_input_rgb": [
+   255,
+   155,
+   75
+  ],
+  "moving": true,
+  "frames": 12,
+  "lighting_level": "Level 3",
+  "god_ray_decision": "GOD RAYS - see god-ray file CJ-14",
+  "on_screen_sample_rgb": [
+   197,
+   119,
+   59
+  ],
+  "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift"
+ },
+ {
+  "shot_id": "CJ-15",
+  "slug": "flying-forward-foreshortened",
+  "rim_input_rgb": [
+   140,
+   200,
+   255
+  ],
+  "moving": true,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   108,
+   154,
+   197
+  ],
+  "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift"
+ },
+ {
+  "shot_id": "CJ-16",
+  "slug": "flex-anticipation-before-tighten",
+  "rim_input_rgb": [
+   255,
+   180,
+   90
+  ],
+  "moving": false,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   18,
+   18,
+   28
+  ],
+  "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)"
+ },
+ {
+  "shot_id": "CJ-17",
+  "slug": "arms-up-reference",
+  "rim_input_rgb": [
+   255,
+   230,
+   140
+  ],
+  "moving": false,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   18,
+   18,
+   28
+  ],
+  "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)"
+ },
+ {
+  "shot_id": "CJ-18",
+  "slug": "true-flex-double-bicep",
+  "rim_input_rgb": [
+   255,
+   165,
+   95
+  ],
+  "moving": false,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   18,
+   18,
+   28
+  ],
+  "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)"
+ },
+ {
+  "shot_id": "CJ-19",
+  "slug": "fighting-pose-forward-bicep-curl",
+  "rim_input_rgb": [
+   255,
+   180,
+   80
+  ],
+  "moving": false,
+  "frames": 12,
+  "lighting_level": "Level 3 (dual-light)",
+  "god_ray_decision": "GOD RAYS - see god-ray file CJ-19",
+  "on_screen_sample_rgb": [
+   18,
+   18,
+   28
+  ],
+  "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)"
+ },
+ {
+  "shot_id": "CJ-20",
+  "slug": "fighting-stance-arms-up-high",
+  "rim_input_rgb": [
+   255,
+   150,
+   60
+  ],
+  "moving": false,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   18,
+   18,
+   28
+  ],
+  "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)"
+ },
+ {
+  "shot_id": "CJ-21",
+  "slug": "jump-crouch-takeoff",
+  "rim_input_rgb": [
+   140,
+   220,
+   210
+  ],
+  "moving": true,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   108,
+   170,
+   162
+  ],
+  "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift"
+ },
+ {
+  "shot_id": "CJ-22",
+  "slug": "jump-tuck-landing",
+  "rim_input_rgb": [
+   255,
+   180,
+   80
+  ],
+  "moving": true,
+  "frames": 12,
+  "lighting_level": "Level 3",
+  "god_ray_decision": "GOD RAYS - see god-ray file CJ-22",
+  "on_screen_sample_rgb": [
+   197,
+   139,
+   63
+  ],
+  "mix_cause": "Standard view, no Glare: trail colour preserved; on-screen sample is input colour blended over dark bg at trail factor, no AgX shift"
+ },
+ {
+  "shot_id": "CJ-23",
+  "slug": "lounge-seated-room",
+  "rim_input_rgb": [
+   255,
+   185,
+   95
+  ],
+  "moving": false,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   18,
+   18,
+   28
+  ],
+  "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)"
+ },
+ {
+  "shot_id": "CJ-24",
+  "slug": "desk-seated",
+  "rim_input_rgb": [
+   255,
+   185,
+   95
+  ],
+  "moving": false,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   18,
+   18,
+   28
+  ],
+  "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)"
+ },
+ {
+  "shot_id": "CJ-25",
+  "slug": "room-standing-device-gag",
+  "rim_input_rgb": [
+   255,
+   185,
+   95
+  ],
+  "moving": false,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   18,
+   18,
+   28
+  ],
+  "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)"
+ },
+ {
+  "shot_id": "CJ-26",
+  "slug": "dialogue-neutral-unsure",
+  "rim_input_rgb": [
+   255,
+   255,
+   255
+  ],
+  "moving": false,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   18,
+   18,
+   28
+  ],
+  "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)"
+ },
+ {
+  "shot_id": "CJ-27",
+  "slug": "dialogue-shout-angry",
+  "rim_input_rgb": [
+   255,
+   130,
+   120
+  ],
+  "moving": false,
+  "frames": 12,
+  "lighting_level": "Level 2",
+  "god_ray_decision": "none - Level 2: god rays NEVER in Level 2",
+  "on_screen_sample_rgb": [
+   18,
+   18,
+   28
+  ],
+  "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)"
+ },
+ {
+  "shot_id": "CJ-28",
+  "slug": "rooftop-sunset",
+  "rim_input_rgb": [
+   255,
+   155,
+   75
+  ],
+  "moving": false,
+  "frames": 12,
+  "lighting_level": "Level 3",
+  "god_ray_decision": "GOD RAYS - see god-ray file CJ-28",
+  "on_screen_sample_rgb": [
+   18,
+   18,
+   28
+  ],
+  "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)"
+ },
+ {
+  "shot_id": "CJ-29",
+  "slug": "rooftop-night-city",
+  "rim_input_rgb": [
+   160,
+   185,
+   255
+  ],
+  "moving": false,
+  "frames": 12,
+  "lighting_level": "Level 3",
+  "god_ray_decision": "GOD RAYS - see god-ray file CJ-29",
+  "on_screen_sample_rgb": [
+   18,
+   18,
+   28
+  ],
+  "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)"
+ },
+ {
+  "shot_id": "CJ-30",
+  "slug": "alley-neon-dual-light",
+  "rim_input_rgb": [
+   255,
+   178,
+   229
+  ],
+  "moving": false,
+  "frames": 12,
+  "lighting_level": "Level 3 (dual-light)",
+  "god_ray_decision": "GOD RAYS - see god-ray file CJ-30",
+  "on_screen_sample_rgb": [
+   18,
+   18,
+   28
+  ],
+  "mix_cause": "Hold shot: no trail generated while still; on-screen sample is background only (zero at rest)"
+ }
+]

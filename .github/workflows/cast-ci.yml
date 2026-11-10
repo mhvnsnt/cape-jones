@@ -1,0 +1,42 @@
+name: Cast CI
+
+# Additive PR gate (owner t118u #3): validate the shared cast JSON, check it is in sync with
+# western-heart (the canonical source), and run gitleaks.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  cast:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate cast JSON
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          d = json.load(open('shared/cast/cast.json'))
+          ents = d.get('cast')
+          assert isinstance(ents, dict) and ents, 'no cast entries'
+          assert d.get('count') == len(ents), f"count {d.get('count')} != {len(ents)} entries"
+          assert all(isinstance(v, dict) for v in ents.values()), 'cast entry is not an object'
+          print(f'cast.json OK: {len(ents)} entries')
+          PY
+          for f in $(git ls-files '*.json' | grep -E '^(shared|anims)/' || true); do python3 -m json.tool "$f" > /dev/null || { echo "bad json: $f"; exit 1; }; done
+      - name: Sync check against western-heart
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/mhvnsnt/western-heart/main/shared/cast/cast.json -o /tmp/wh_cast.json
+          python3 -c "import json,sys; a=json.load(open('shared/cast/cast.json')); b=json.load(open('/tmp/wh_cast.json')); sys.exit(0 if a==b else 'shared/cast/cast.json is out of sync with western-heart — run shared/cast/sync_cast.sh')"
+          echo "in sync with western-heart"
+      - name: gitleaks
+        run: |
+          curl -fsSL https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/gitleaks_8.18.4_linux_x64.tar.gz | tar -xz gitleaks
+          if [ -n "${{ github.base_ref }}" ]; then RANGE="origin/${{ github.base_ref }}..HEAD"; else RANGE="${{ github.event.before }}..${{ github.sha }}"; fi
+          echo "scanning commits $RANGE"
+          ./gitleaks detect --source . --log-opts="$RANGE" --no-banner --redact -v

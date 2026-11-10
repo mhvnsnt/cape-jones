@@ -1,0 +1,537 @@
+{
+  "title": "ケープ・ジョーンズ・ダンス (Cape Jones Dance)",
+  "kind": "anime-intro song for the Cape Jones dance scene",
+  "bpm": 152,
+  "key": "C major",
+  "bars": 48,
+  "duration_sec": 75.789,
+  "sample_rate": 44100,
+  "built_from": "Tamagotchi loop (music-pullin proof-track) extended to full song; FluidR3_GM + FluidSynth render chain",
+  "master_chain": "repo pedalboard_master.py (HP30 -> comp -18dB 2:1 10/120ms -> limiter) then loudnorm verify/trim to -14 LUFS, TP -1.0",
+  "vocal_chain": "digital_fairy_chain Avanna bus (HPF150, presence +3@3k, comp 3:1, limiter -1) -> build_vocal_mix_v19 ffmpeg stack (mud -5@300, +6@3k/5k/8k, shelf +4@12k, deesser, comp 4:1) + bit-crush parallel (acrusher 10-bit mix .2) + slapback/echo wet; layers: harmony x0.5 (human bus), octave HP250+chorus x0.35 (chorus B + outro)",
+  "sections": [
+    {
+      "name": "intro",
+      "bars": [
+        1,
+        4
+      ],
+      "start_sec": 0.0,
+      "end_sec": 6.316
+    },
+    {
+      "name": "verseA",
+      "bars": [
+        5,
+        12
+      ],
+      "start_sec": 6.316,
+      "end_sec": 18.947
+    },
+    {
+      "name": "chorusA",
+      "bars": [
+        13,
+        20
+      ],
+      "start_sec": 18.947,
+      "end_sec": 31.579
+    },
+    {
+      "name": "verseB",
+      "bars": [
+        21,
+        28
+      ],
+      "start_sec": 31.579,
+      "end_sec": 44.211
+    },
+    {
+      "name": "bridge",
+      "bars": [
+        29,
+        34
+      ],
+      "start_sec": 44.211,
+      "end_sec": 53.684
+    },
+    {
+      "name": "chorusB",
+      "bars": [
+        35,
+        42
+      ],
+      "start_sec": 53.684,
+      "end_sec": 66.316
+    },
+    {
+      "name": "outro",
+      "bars": [
+        43,
+        48
+      ],
+      "start_sec": 66.316,
+      "end_sec": 75.789
+    }
+  ],
+  "tracks": [
+    {
+      "name": "lyrics",
+      "type": "lyrics",
+      "file": "lyrics.md",
+      "note": "separate named track per owner order: Japanese + romaji + English, timed lines below"
+    },
+    {
+      "name": "vocal-lead+layers",
+      "type": "stem",
+      "file": "song-vocal-stem.wav",
+      "role": "sung vocal bus (lead, harmony, octave, wet)"
+    },
+    {
+      "name": "inst-lead",
+      "type": "stem",
+      "file": "stem-lead (in repo build set)",
+      "role": "GM80 square lead; intro riff + chorus-B octave double; ducked x0.45 under vocal bars 5-42"
+    },
+    {
+      "name": "inst-arp",
+      "type": "stem",
+      "role": "GM80 square arp 16ths",
+      "gain": 0.85
+    },
+    {
+      "name": "inst-bass",
+      "type": "stem",
+      "role": "GM38 synth bass",
+      "gain": 1.0
+    },
+    {
+      "name": "inst-sparkle",
+      "type": "stem",
+      "role": "GM112 tinkle bell",
+      "gain": 0.8
+    },
+    {
+      "name": "inst-pad",
+      "type": "stem",
+      "role": "GM89 warm pad, bridge + choruses",
+      "gain": 0.7
+    },
+    {
+      "name": "inst-drums",
+      "type": "stem",
+      "role": "GM kit; crashes at chorus heads",
+      "gain": 1.0
+    },
+    {
+      "name": "instrumental-mix",
+      "type": "mix",
+      "file": "song-instrumental.mp3"
+    },
+    {
+      "name": "full-mix",
+      "type": "mix",
+      "file": "song-full.mp3"
+    },
+    {
+      "name": "full-mix-v2-jp",
+      "type": "mix",
+      "file": "song-full-v2-jp.mp3",
+      "note": "v2 remix (same JP vocal take, new balance architecture) — supersedes song-full.mp3"
+    },
+    {
+      "name": "full-mix-v2-en",
+      "type": "mix",
+      "file": "song-full-v2-en.mp3",
+      "note": "English-sung version, same session/melody, syllable-adapted lyrics, same v2 mix"
+    },
+    {
+      "name": "vocal-stem-v2-jp",
+      "type": "stem",
+      "file": "song-vocal-stem-v2-jp.wav",
+      "role": "v2 vocal bus (premaster, section gains applied)"
+    },
+    {
+      "name": "vocal-stem-v2-en",
+      "type": "stem",
+      "file": "song-vocal-stem-v2-en.wav",
+      "role": "v2 English vocal bus (premaster, section gains applied)"
+    },
+    {
+      "name": "instrumental-mix-v2",
+      "type": "mix",
+      "file": "song-instrumental-v2.mp3",
+      "note": "v2 backing (carved + spectral-ducked stems, section architecture), no vocal"
+    },
+    {
+      "name": "excerpt-vocal-entry",
+      "type": "excerpt",
+      "file": "excerpt-vocal-entry-v1.mp3 / excerpt-vocal-entry-v2-jp.mp3 / excerpt-vocal-entry-v2-en.mp3",
+      "note": "3.0-10.5 s: end of intro into the first sung line — the moment the owner flagged"
+    }
+  ],
+  "lyrics_track": [
+    {
+      "start_sec": 6.316,
+      "end_sec": 9.474,
+      "section": "verseA",
+      "japanese": "あさのにわでひとりおどる",
+      "romaji": "Asa no niwa de hitori odoru",
+      "english": "In the morning yard, he dances alone"
+    },
+    {
+      "start_sec": 9.474,
+      "end_sec": 12.632,
+      "section": "verseA",
+      "japanese": "まんとひらりかおわまじめ",
+      "romaji": "Manto hirari, kao wa majime",
+      "english": "Cape fluttering — his face dead serious"
+    },
+    {
+      "start_sec": 12.632,
+      "end_sec": 15.789,
+      "section": "verseA",
+      "japanese": "せかいがかわってもかわらない",
+      "romaji": "Sekai ga kawattemo kawaranai",
+      "english": "Even if the world changes, he never does"
+    },
+    {
+      "start_sec": 15.789,
+      "end_sec": 18.947,
+      "section": "verseA",
+      "japanese": "あしもとだけがびいとをきざむ",
+      "romaji": "Ashimoto dake ga biito wo kizamu",
+      "english": "Only his feet keep the beat"
+    },
+    {
+      "start_sec": 18.947,
+      "end_sec": 22.105,
+      "section": "chorusA",
+      "japanese": "けえぷじょおんずおどれおどれ",
+      "romaji": "Keepu Joonzu, odore odore!",
+      "english": "Cape Jones, dance, dance!"
+    },
+    {
+      "start_sec": 22.105,
+      "end_sec": 25.263,
+      "section": "chorusA",
+      "japanese": "いろがかわればそらもかわる",
+      "romaji": "Iro ga kawareba sora mo kawaru",
+      "english": "When the colors change, the sky changes too"
+    },
+    {
+      "start_sec": 25.263,
+      "end_sec": 28.421,
+      "section": "chorusA",
+      "japanese": "けえぷじょおんずまわれまわれ",
+      "romaji": "Keepu Joonzu, maware maware!",
+      "english": "Cape Jones, spin, spin!"
+    },
+    {
+      "start_sec": 28.421,
+      "end_sec": 31.579,
+      "section": "chorusA",
+      "japanese": "あしたもここでおなじだんす",
+      "romaji": "Ashita mo koko de onaji dansu",
+      "english": "Tomorrow, same place, same dance"
+    },
+    {
+      "start_sec": 31.579,
+      "end_sec": 34.737,
+      "section": "verseB",
+      "japanese": "ぽけっとのなかぴぴっとないて",
+      "romaji": "Poketto no naka, pipitto naite",
+      "english": "In his pocket, a little pet beeps"
+    },
+    {
+      "start_sec": 34.737,
+      "end_sec": 37.895,
+      "section": "verseB",
+      "japanese": "でんちがへってもきにしない",
+      "romaji": "Denchi ga hettemo ki ni shinai",
+      "english": "Battery running low — he doesn't care"
+    },
+    {
+      "start_sec": 37.895,
+      "end_sec": 41.053,
+      "section": "verseB",
+      "japanese": "ゆうごはんのまえもそのあとも",
+      "romaji": "Yuugohan no mae mo, sono ato mo",
+      "english": "Before dinner, and after dinner too"
+    },
+    {
+      "start_sec": 41.053,
+      "end_sec": 44.211,
+      "section": "verseB",
+      "japanese": "おなじすてっぷゆめのすてっぷ",
+      "romaji": "Onaji suteppu, yume no suteppu",
+      "english": "The same step, the dream step"
+    },
+    {
+      "start_sec": 44.211,
+      "end_sec": 47.368,
+      "section": "bridge",
+      "japanese": "ひるがよるによるがあさに",
+      "romaji": "Hiru ga yoru ni, yoru ga asa ni",
+      "english": "Day into night, night into morning"
+    },
+    {
+      "start_sec": 47.368,
+      "end_sec": 50.526,
+      "section": "bridge",
+      "japanese": "えるいいでぃいあおぴんくみどり",
+      "romaji": "Eru-ii-dii, ao, pinku, midori",
+      "english": "LED — blue, pink, green"
+    },
+    {
+      "start_sec": 50.526,
+      "end_sec": 53.684,
+      "section": "bridge",
+      "japanese": "かわるのわせかいだけ",
+      "romaji": "Kawaru no wa sekai dake",
+      "english": "The only thing that changes is the world"
+    },
+    {
+      "start_sec": 53.684,
+      "end_sec": 56.842,
+      "section": "chorusB",
+      "japanese": "けえぷじょおんずおどれおどれ",
+      "romaji": "Keepu Joonzu, odore odore!",
+      "english": "Cape Jones, dance, dance!"
+    },
+    {
+      "start_sec": 56.842,
+      "end_sec": 60.0,
+      "section": "chorusB",
+      "japanese": "いろがかわればそらもかわる",
+      "romaji": "Iro ga kawareba sora mo kawaru",
+      "english": "When the colors change, the sky changes too"
+    },
+    {
+      "start_sec": 60.0,
+      "end_sec": 63.158,
+      "section": "chorusB",
+      "japanese": "けえぷじょおんずまわれまわれ",
+      "romaji": "Keepu Joonzu, maware maware!",
+      "english": "Cape Jones, spin, spin!"
+    },
+    {
+      "start_sec": 63.158,
+      "end_sec": 66.316,
+      "section": "chorusB",
+      "japanese": "あしたもここでおなじだんす",
+      "romaji": "Ashita mo koko de onaji dansu",
+      "english": "Tomorrow, same place, same dance"
+    },
+    {
+      "start_sec": 66.316,
+      "end_sec": 69.474,
+      "section": "outro",
+      "japanese": "かれわずっとここ",
+      "romaji": "Kare wa zutto koko",
+      "english": "He is always right here"
+    },
+    {
+      "start_sec": 69.474,
+      "end_sec": 72.632,
+      "section": "outro",
+      "japanese": "けえぷじょおんずおどれ",
+      "romaji": "Keepu Joonzu, odore",
+      "english": "Cape Jones, dance"
+    },
+    {
+      "start_sec": 72.632,
+      "end_sec": 75.789,
+      "section": "outro",
+      "japanese": "らららららららあ",
+      "romaji": "La la la la la la laa",
+      "english": "La la la la la la laa"
+    }
+  ],
+  "vocal_production_honest_note": "Sung by a Japanese guide voice (espeak-ng ja+f5, ~345 Hz) transformed with the Mochiichao repo's own v19 rubberband method: per-note Rubber Band pitch placement on the written melody (hard autotune by construction) + decoupled formant lift x1.7. Avanna is an English Vocaloid voicebank; VOCALOID5 cannot run on this Linux box and no voicebank/installer/project files exist in either repo (verified by full-tree search). The real Avanna/VOCALOID5 assets wait for the owner's Windows/Mac seat; the stack + method now live in production/vocal-stack/.",
+  "lyrics_track_en": [
+    {
+      "start_sec": 6.316,
+      "end_sec": 9.474,
+      "section": "verseA",
+      "english_sung": "In the morning yard he is dancing all alone"
+    },
+    {
+      "start_sec": 9.474,
+      "end_sec": 12.632,
+      "section": "verseA",
+      "english_sung": "Cape is fluttering, his face so dead serious"
+    },
+    {
+      "start_sec": 12.632,
+      "end_sec": 15.789,
+      "section": "verseA",
+      "english_sung": "Even if the whole world changes, he never, ever does"
+    },
+    {
+      "start_sec": 15.789,
+      "end_sec": 18.947,
+      "section": "verseA",
+      "english_sung": "Only his feet keep the beat, and the beat goes all day long"
+    },
+    {
+      "start_sec": 18.947,
+      "end_sec": 22.105,
+      "section": "chorusA",
+      "english_sung": "Cape Jones, dance and dance, everybody come and dance, dance!"
+    },
+    {
+      "start_sec": 22.105,
+      "end_sec": 25.263,
+      "section": "chorusA",
+      "english_sung": "And when the colors change, you know the sky changes too"
+    },
+    {
+      "start_sec": 25.263,
+      "end_sec": 28.421,
+      "section": "chorusA",
+      "english_sung": "Cape Jones, spin and spin, everybody come and spin, spin!"
+    },
+    {
+      "start_sec": 28.421,
+      "end_sec": 31.579,
+      "section": "chorusA",
+      "english_sung": "Tomorrow, same old place, and the same old dance again"
+    },
+    {
+      "start_sec": 31.579,
+      "end_sec": 34.737,
+      "section": "verseB",
+      "english_sung": "In his pocket there's a little pet and it beeps all day"
+    },
+    {
+      "start_sec": 34.737,
+      "end_sec": 37.895,
+      "section": "verseB",
+      "english_sung": "Battery's running low and he doesn't care at all"
+    },
+    {
+      "start_sec": 37.895,
+      "end_sec": 41.053,
+      "section": "verseB",
+      "english_sung": "Before dinner time and after dinner time, he dances"
+    },
+    {
+      "start_sec": 41.053,
+      "end_sec": 44.211,
+      "section": "verseB",
+      "english_sung": "The same old step, the dream step, the same old step every day"
+    },
+    {
+      "start_sec": 44.211,
+      "end_sec": 47.368,
+      "section": "bridge",
+      "english_sung": "Day turns into night and the night turns to morning"
+    },
+    {
+      "start_sec": 47.368,
+      "end_sec": 50.526,
+      "section": "bridge",
+      "english_sung": "L-E-D lights are shining blue and pink and green tonight"
+    },
+    {
+      "start_sec": 50.526,
+      "end_sec": 53.684,
+      "section": "bridge",
+      "english_sung": "The only thing that changes is the world"
+    },
+    {
+      "start_sec": 53.684,
+      "end_sec": 56.842,
+      "section": "chorusB",
+      "english_sung": "Cape Jones, dance and dance, everybody come and dance, dance!"
+    },
+    {
+      "start_sec": 56.842,
+      "end_sec": 60.0,
+      "section": "chorusB",
+      "english_sung": "And when the colors change, you know the sky changes too"
+    },
+    {
+      "start_sec": 60.0,
+      "end_sec": 63.158,
+      "section": "chorusB",
+      "english_sung": "Cape Jones, spin and spin, everybody come and spin, spin!"
+    },
+    {
+      "start_sec": 63.158,
+      "end_sec": 66.316,
+      "section": "chorusB",
+      "english_sung": "Tomorrow, same old place, and the same old dance again"
+    },
+    {
+      "start_sec": 66.316,
+      "end_sec": 69.474,
+      "section": "outro",
+      "english_sung": "He is always standing right here"
+    },
+    {
+      "start_sec": 69.474,
+      "end_sec": 72.632,
+      "section": "outro",
+      "english_sung": "Cape Jones, dance, everybody, Cape Jones, dance"
+    },
+    {
+      "start_sec": 72.632,
+      "end_sec": 75.789,
+      "section": "outro",
+      "english_sung": "La la la la la la laa"
+    }
+  ],
+  "v2_remix": {
+    "date": "2026-10-29",
+    "owner_complaint": "as soon as the lyrics vocals drop then the beat is almost unhearable",
+    "measured_v1_problem": {
+      "vocal_bus_minus_instrumental_LUFS_while_singing": "+11.3 to +14.8 dB (hit-song median is ~0 dB)",
+      "beat_body_40_250Hz_drop_intro_to_verseA_in_delivered_master_dB": 7.8,
+      "mechanism": "the over-hot vocal bus ate the shared master compressor/limiter budget, so the beat was pumped down exactly when the vocal entered; the tinkle-bell sparkle also sits 99% inside the vocal's 2-5 kHz presence band"
+    },
+    "architecture": [
+      "per-section vocal gains solved to LUFS targets (verses +1.0, choruses +0.5, bridge +1.5, outro +1.5)",
+      "static carve -2 dB @ 3 kHz on square lead + arp; sparkle trimmed 0.8 -> 0.7",
+      "TrackSpacer-style spectral ducking (custom STFT, Mid channel only): vocal key dips only clashing bins of arp/lead/sparkle, max ~4 dB, fast attack / ~150 ms release; drums+bass never ducked",
+      "stereo: vocal lead centre-focused (Haas 0.30 -> 0.18), arp widened +2 dB side",
+      "instrumental section gains: intro 0, verses -0.5, choruses 0, bridge -2, outro -1 dB",
+      "master unchanged: pedalboard_master house chain + loudnorm to the locked -14 LUFS / -1 dBTP spine"
+    ],
+    "measured_v2_jp": {
+      "LUFS": -14.2,
+      "TP": -1.3,
+      "beat_body_drop_intro_to_verseA_dB": 0.5,
+      "offsets_LUFS": {
+        "verseA": 1.0,
+        "chorusA": 0.5,
+        "verseB": 1.0,
+        "bridge": 1.5,
+        "chorusB": 0.5,
+        "outro": 1.5
+      }
+    },
+    "measured_v2_en": {
+      "LUFS": -14.3,
+      "TP": -1.4,
+      "beat_body_drop_intro_to_verseA_dB": 0.2,
+      "offsets_LUFS": {
+        "verseA": 0.9,
+        "chorusA": 0.7,
+        "verseB": 1.1,
+        "bridge": 1.9,
+        "chorusB": 0.8,
+        "outro": 0.2
+      }
+    },
+    "english_vocal_note": "Sung with the same repo v19 method as the JP take: espeak-ng en+f5 guide voice, one syllable at a time, Rubber Band pitch placement on the same written melody, formant lift x1.7, then the same Digital Fairy Avanna bus + v19 layers. English lines were syllable-adapted to the JP note grid (counts asserted in build_vocal_en.py). Avanna herself still cannot sing here (English Vocaloid voicebank; editor lives on the owner's Windows/Mac seat).",
+    "scripts": [
+      "measure_v1.py",
+      "mix_v2.py",
+      "build_vocal_en.py",
+      "verify_v2.py"
+    ],
+    "notes_file": "MIX-NOTES.md"
+  }
+}

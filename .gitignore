@@ -1,0 +1,8 @@
+__pycache__/
+
+# aider session junk (transient; never commit).
+# NOTE: keep this targeted — .aider.conf.yml and .aiderignore are TRACKED repo files.
+.aider.chat.history.md
+.aider.tags.cache.v4/
+.aider.input.history
+.rig_tmp/

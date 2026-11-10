@@ -1,0 +1,109 @@
+[
+  {
+    "beats": 1,
+    "frames_at_107": 13.5,
+    "frames_at_152": 9.5,
+    "frames_saved_going_107_to_152": 4.0,
+    "seconds_at_107": 0.56,
+    "seconds_at_152": 0.39
+  },
+  {
+    "beats": 2,
+    "frames_at_107": 26.9,
+    "frames_at_152": 18.9,
+    "frames_saved_going_107_to_152": 8.0,
+    "seconds_at_107": 1.12,
+    "seconds_at_152": 0.79
+  },
+  {
+    "beats": 4,
+    "frames_at_107": 53.8,
+    "frames_at_152": 37.9,
+    "frames_saved_going_107_to_152": 15.9,
+    "seconds_at_107": 2.24,
+    "seconds_at_152": 1.58
+  },
+  {
+    "beats": 8,
+    "frames_at_107": 107.7,
+    "frames_at_152": 75.8,
+    "frames_saved_going_107_to_152": 31.9,
+    "seconds_at_107": 4.49,
+    "seconds_at_152": 3.16
+  },
+  {
+    "beats": 12,
+    "frames_at_107": 161.5,
+    "frames_at_152": 113.7,
+    "frames_saved_going_107_to_152": 47.8,
+    "seconds_at_107": 6.73,
+    "seconds_at_152": 4.74
+  },
+  {
+    "beats": 16,
+    "frames_at_107": 215.3,
+    "frames_at_152": 151.6,
+    "frames_saved_going_107_to_152": 63.7,
+    "seconds_at_107": 8.97,
+    "seconds_at_152": 6.32
+  },
+  {
+    "beats": 24,
+    "frames_at_107": 323.0,
+    "frames_at_152": 227.4,
+    "frames_saved_going_107_to_152": 95.6,
+    "seconds_at_107": 13.46,
+    "seconds_at_152": 9.47
+  },
+  {
+    "beats": 32,
+    "frames_at_107": 430.7,
+    "frames_at_152": 303.2,
+    "frames_saved_going_107_to_152": 127.5,
+    "seconds_at_107": 17.94,
+    "seconds_at_152": 12.63
+  },
+  {
+    "beats": 48,
+    "frames_at_107": 646.0,
+    "frames_at_152": 454.7,
+    "frames_saved_going_107_to_152": 191.2,
+    "seconds_at_107": 26.92,
+    "seconds_at_152": 18.95
+  },
+  {
+    "picture_frames": 24,
+    "beats_at_107": 1.78,
+    "beats_at_152": 2.53
+  },
+  {
+    "picture_frames": 48,
+    "beats_at_107": 3.57,
+    "beats_at_152": 5.07
+  },
+  {
+    "picture_frames": 96,
+    "beats_at_107": 7.13,
+    "beats_at_152": 10.13
+  },
+  {
+    "picture_frames": 132,
+    "beats_at_107": 9.81,
+    "beats_at_152": 13.93
+  },
+  {
+    "picture_frames": 200,
+    "beats_at_107": 14.86,
+    "beats_at_152": 21.11
+  },
+  {
+    "picture_frames": 332,
+    "beats_at_107": 24.67,
+    "beats_at_152": 35.04
+  },
+  {
+    "picture_frames": 430,
+    "beats_at_107": 31.95,
+    "beats_at_152": 45.39
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "version": "joint-locked-v4",
+  "date": "2026-10-31",
+  "shoulder_joints": {
+    "L": [
+      430,
+      445
+    ],
+    "R": [
+      670,
+      445
+    ]
+  },
+  "hip_joints": {
+    "L": [
+      495,
+      760
+    ],
+    "R": [
+      585,
+      760
+    ]
+  },
+  "changes_vs_v3": [
+    "HR hip 605->585 (20px left, screen-right hip was off right)",
+    "R leg uses Leg_Back pieces, L leg uses Leg_Front pieces",
+    "Jump legs tuck IN: lower +45/-45, not -90/+90 split",
+    "Jump/arms-up use whole Arm_Front pinned at shoulder, no forearm-only bend",
+    "Flex keeps cut-limb elbow bend (true bend pose)"
+  ],
+  "rotation_rule": "end = joint + length*(sin(angle), cos(angle)), 0=down, positive=screen-right"
+}

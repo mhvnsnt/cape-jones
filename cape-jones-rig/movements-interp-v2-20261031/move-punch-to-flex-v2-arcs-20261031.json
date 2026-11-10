@@ -1,0 +1,242 @@
+[
+ {
+  "transition": "apose->punch impact (MEASURED-ESTIMATE +/-15deg)",
+  "j": 1,
+  "elbow_L": [
+   389.1013203332171,
+   623.4043104902846
+  ],
+  "elbow_R": [
+   696.5584382557712,
+   626.7741231787802
+  ]
+ },
+ {
+  "transition": "apose->punch impact (MEASURED-ESTIMATE +/-15deg)",
+  "j": 2,
+  "elbow_L": [
+   329.55876222885547,
+   598.0109726620951
+  ],
+  "elbow_R": [
+   708.2449989326708,
+   624.6788873425033
+  ]
+ },
+ {
+  "transition": "apose->punch impact (MEASURED-ESTIMATE +/-15deg)",
+  "j": 3,
+  "elbow_L": [
+   258.26566206605645,
+   508.3096925785465
+  ],
+  "elbow_R": [
+   723.1914770097649,
+   620.8347214674043
+  ]
+ },
+ {
+  "transition": "apose->punch impact (MEASURED-ESTIMATE +/-15deg)",
+  "j": 4,
+  "elbow_L": [
+   247.36066805638254,
+   456.9864267898779
+  ],
+  "elbow_R": [
+   737.7625498107071,
+   615.7495807993432
+  ]
+ },
+ {
+  "transition": "apose->punch impact (MEASURED-ESTIMATE +/-15deg)",
+  "j": 5,
+  "elbow_L": [
+   254.61022123025344,
+   392.6623892110143
+  ],
+  "elbow_R": [
+   748.6509030952903,
+   611.0157159497113
+  ]
+ },
+ {
+  "transition": "punch impact (MEASURED-ESTIMATE +/-15deg)->fighting pose (MEASURED-ESTIMATE +/-15deg)",
+  "j": 1,
+  "elbow_L": [
+   259.6221220908634,
+   378.1256497663017
+  ],
+  "elbow_R": [
+   762.3079712608762,
+   603.8282750070064
+  ]
+ },
+ {
+  "transition": "punch impact (MEASURED-ESTIMATE +/-15deg)->fighting pose (MEASURED-ESTIMATE +/-15deg)",
+  "j": 2,
+  "elbow_L": [
+   251.7288093843059,
+   403.5249159559279
+  ],
+  "elbow_R": [
+   784.3526275457722,
+   588.7729427721986
+  ]
+ },
+ {
+  "transition": "punch impact (MEASURED-ESTIMATE +/-15deg)->fighting pose (MEASURED-ESTIMATE +/-15deg)",
+  "j": 3,
+  "elbow_L": [
+   248.633726169465,
+   469.638886274087
+  ],
+  "elbow_R": [
+   809.3371636783976,
+   564.7177401977644
+  ]
+ },
+ {
+  "transition": "punch impact (MEASURED-ESTIMATE +/-15deg)->fighting pose (MEASURED-ESTIMATE +/-15deg)",
+  "j": 4,
+  "elbow_L": [
+   249.01125437095507,
+   472.27405279060775
+  ],
+  "elbow_R": [
+   829.3551855872258,
+   536.3953353648906
+  ]
+ },
+ {
+  "transition": "punch impact (MEASURED-ESTIMATE +/-15deg)->fighting pose (MEASURED-ESTIMATE +/-15deg)",
+  "j": 5,
+  "elbow_L": [
+   254.8750781418748,
+   498.217118901586
+  ],
+  "elbow_R": [
+   840.9187518302382,
+   512.3347070446841
+  ]
+ },
+ {
+  "transition": "fighting pose (MEASURED-ESTIMATE +/-15deg)->true-final flex angles, NO 28px dip (labelled deviation)",
+  "j": 1,
+  "elbow_L": [
+   256.68626791542533,
+   503.84853669307563
+  ],
+  "elbow_R": [
+   845.9673843288895,
+   497.7509445645184
+  ]
+ },
+ {
+  "transition": "fighting pose (MEASURED-ESTIMATE +/-15deg)->true-final flex angles, NO 28px dip (labelled deviation)",
+  "j": 2,
+  "elbow_L": [
+   253.24681517914888,
+   492.53011314615225
+  ],
+  "elbow_R": [
+   849.007409733792,
+   486.2738386923038
+  ]
+ },
+ {
+  "transition": "fighting pose (MEASURED-ESTIMATE +/-15deg)->true-final flex angles, NO 28px dip (labelled deviation)",
+  "j": 3,
+  "elbow_L": [
+   246.96931977830124,
+   445.7550480661783
+  ],
+  "elbow_R": [
+   851.8400668506162,
+   471.10311452228365
+  ]
+ },
+ {
+  "transition": "fighting pose (MEASURED-ESTIMATE +/-15deg)->true-final flex angles, NO 28px dip (labelled deviation)",
+  "j": 4,
+  "elbow_L": [
+   247.7865554626667,
+   462.29336953401963
+  ],
+  "elbow_R": [
+   853.389365723807,
+   455.7481644674688
+  ]
+ },
+ {
+  "transition": "fighting pose (MEASURED-ESTIMATE +/-15deg)->true-final flex angles, NO 28px dip (labelled deviation)",
+  "j": 5,
+  "elbow_L": [
+   247.05002172173664,
+   450.48684317098207
+  ],
+  "elbow_R": [
+   853.7006440861558,
+   443.8793473635781
+  ]
+ },
+ {
+  "transition": "true-final flex angles, NO 28px dip (labelled deviation)->apose",
+  "j": 1,
+  "elbow_L": [
+   248.15615844100702,
+   465.82347922581255
+  ],
+  "elbow_R": [
+   853.1464618804935,
+   459.3023075290993
+  ]
+ },
+ {
+  "transition": "true-final flex angles, NO 28px dip (labelled deviation)->apose",
+  "j": 2,
+  "elbow_L": [
+   260.62456366579386,
+   514.3740698431141
+  ],
+  "elbow_R": [
+   842.3983026795343,
+   508.45082925554016
+  ]
+ },
+ {
+  "transition": "true-final flex angles, NO 28px dip (labelled deviation)->apose",
+  "j": 3,
+  "elbow_L": [
+   319.17700146118347,
+   590.6676456693986
+  ],
+  "elbow_R": [
+   809.3371636783976,
+   564.7177401977644
+  ]
+ },
+ {
+  "transition": "true-final flex angles, NO 28px dip (labelled deviation)->apose",
+  "j": 4,
+  "elbow_L": [
+   347.4729395408251,
+   608.3710019922987
+  ],
+  "elbow_R": [
+   758.6912214895918,
+   605.875882998926
+  ]
+ },
+ {
+  "transition": "true-final flex angles, NO 28px dip (labelled deviation)->apose",
+  "j": 5,
+  "elbow_L": [
+   394.8878668517251,
+   624.6327868340794
+  ],
+  "elbow_R": [
+   711.7220206595251,
+   623.903480938986
+  ]
+ }
+]

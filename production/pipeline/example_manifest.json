@@ -1,0 +1,11 @@
+{
+  "title": "Cape Jones — Episode 01",
+  "fps": 24,
+  "scenes": [
+    {"file": "scenes/intro.mp4", "transition": "cut"},
+    {"file": "scenes/living_room_led.mp4", "transition": "crossfade"},
+    {"file": "scenes/punchline.mp4", "transition": "cut"}
+  ],
+  "audio": "audio/theme.mp3",
+  "audio_volume": 0.6
+}

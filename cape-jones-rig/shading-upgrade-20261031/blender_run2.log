@@ -1,0 +1,8 @@
+/home/hatch/workspace/cape-jones-rig/shading-upgrade-20261031/blender_compositor_shading.py:39: DeprecationWarning: 'Scene.use_nodes' is expected to be removed in Blender 6.0
+  scene.use_nodes = True; scene.render.use_compositing = True
+00:50.579  render           | Saved: '/home/hatch/workspace/cape-jones-rig/shading-upgrade-20261031/V9-blender-compositor-lambert-LEFT-20261031.png'
+Info: Saved as "blender-compositor-shading-20261031.blend"
+RENDERED /home/hatch/workspace/cape-jones-rig/shading-upgrade-20261031/V9-blender-compositor-lambert-LEFT-20261031.png
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:35:05)
+
+Blender quit

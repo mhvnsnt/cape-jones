@@ -1,0 +1,6 @@
+Tahoma2D / OpenToonz import (wired, not a GUI render claim):
+1. Open Tahoma2D 1.6.3 (~/workspace/tools-industry/tahoma2d-1.6.3/).
+2. File > Load Level > select frames-dialects/f001.jpg .. f070.jpg as an image sequence level (24fps).
+3. In the Xsheet, the timing JSON (dialects-timing.json, copied here) maps each frame to KEY / inbetween / BREAKDOWN / hold / overshoot.
+4. Onion skin: View > Onion Skin, turn on previous/next frames to check the inbetween path against the keys.
+5. To tween in Tahoma2D instead of using our renders: keyframe the level's position/rotation at the key frames, set Ease In/Out on the tween, and compare its interpolated frames against ours — that comparison is the Harmony/Animate-style tween test, still owed as a viewed side-by-side.

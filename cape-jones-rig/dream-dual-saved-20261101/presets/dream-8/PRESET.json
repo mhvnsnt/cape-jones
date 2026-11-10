@@ -1,0 +1,41 @@
+{
+  "preset": "Dream 8",
+  "name": "Dream 8 \u2014 Teal Cape, Lavender Suit",
+  "status": "PRESET, approval 0/1 separately",
+  "cape": [
+    0,
+    180,
+    180
+  ],
+  "cowl_helm": [
+    255,
+    205,
+    90
+  ],
+  "suit": [
+    200,
+    180,
+    255
+  ],
+  "suit_shadow": [
+    160,
+    140,
+    210
+  ],
+  "skin": [
+    255,
+    200,
+    180
+  ],
+  "rim_6px": [
+    0,
+    180,
+    180
+  ],
+  "method": "nearest-base-colour recolour, dist>110 untouched, outline never reassigned; rim dilate(6)-alpha, plate after rim",
+  "source_base": "rig-apose-v7c-clean-transparent.png",
+  "size": [
+    1100,
+    1500
+  ]
+}

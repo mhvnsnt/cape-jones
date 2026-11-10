@@ -1,0 +1,114 @@
+{
+  "versions": {
+    "blender": [
+      "Blender 5.2.3 LTS",
+      "\tbuild date: 2026-10-22"
+    ],
+    "ffmpeg": [
+      "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+      "built with gcc 13 (Ubuntu 13.3.0-6ubuntu2~24.04.1)"
+    ],
+    "python_pil": [
+      "10.2.0"
+    ],
+    "krita": [
+      "1:5.2.2+dfsg-2build8 (dpkg ii)"
+    ],
+    "pencil2d": [
+      "Pencil2D 0.6.6 (dpkg ii)"
+    ],
+    "synfig": [
+      "synfig 1.5.1"
+    ],
+    "tahoma2d": [
+      "Tahoma2D v1.6.3 (extracted AppImage -version)"
+    ],
+    "cavalry": [
+      "NOT INSTALLED: no binary, no apt package found"
+    ],
+    "opentoonz": [
+      "NOT INSTALLED separately: only Tahoma2D fork tarball present"
+    ]
+  },
+  "pil": {
+    "output": "/home/hatch/workspace/cape-jones-rig/clean-100-20261031/stack-tests/pil-outfixed-vs-original-20261031.png",
+    "size_bytes": 47543,
+    "rows_compared": 289,
+    "rows_same_span": 289,
+    "operation": "PIL composite: original lower + OutFixed lower side by side; per-row alpha-span check"
+  },
+  "gauntlet_regression": {
+    "rc": 0,
+    "ok": true,
+    "stdout": "PASS OutFixed exists Arm_Front_Lower.png \nPASS per-row x-range preserved Arm_Front_Lower.png \nPASS OutFixed exists Arm_Back_Lower.png \nPASS per-row x-range preserved Arm_Back_Lower.png \nPASS approved fixed pose exists \nPASS v1 files listed superseded count=3\nPASS diff confined to gauntlet zone bbox x323-775 y433-565 diff=17082\nALL PASS\n",
+    "stderr": ""
+  },
+  "ffmpeg_lut": {
+    "rc": 0,
+    "ok": true,
+    "stdout": "",
+    "stderr": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.3.0-6ubuntu2~24.04.1)\n  configuration: --prefix=/usr --extra-version= --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d ",
+    "output": "/home/hatch/workspace/cape-jones-rig/clean-100-20261031/stack-tests/ffmpeg-lut-neutral-apose-20261031.png",
+    "exists": true
+  },
+  "ffmpeg_mp4": {
+    "rc": 0,
+    "ok": true,
+    "stdout": "",
+    "stderr": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.3.0-6ubuntu2~24.04.1)\n  configuration: --prefix=/usr --extra-version= --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d ",
+    "output": "/home/hatch/workspace/cape-jones-rig/clean-100-20261031/stack-tests/ffmpeg-24f-beat-20261031.mp4"
+  },
+  "ffprobe_mp4": {
+    "rc": 0,
+    "ok": true,
+    "stdout": "r_frame_rate=24/1\nnb_read_frames=24\n",
+    "stderr": ""
+  },
+  "synfig": {
+    "rc": 0,
+    "ok": true,
+    "stdout": "synfig(24382) [21:01:20] info: rendering threads 4\nsynfig(24382) [21:01:20] info: Loading lyr_std..\nsynfig(24382) [21:01:20] info: Loading lyr_freetype..\nsynfig(24382) [21:01:20] info: Loading mod_geometry..\nsynfig(24382) [21:01:20] info: Loading mod_gradient..\nsynfig(24382) [21:01:20] info: Loading mod_particle..\nsynfig(24382) [21:01:20] info: Loading mod_example..\nsynfig(24382) [21:01:20] info: Loading mod_gif..\nsynfig(24382) [21:01:20] info: Loading mod_imagemagick..\nsynfig(24382) [21:01:20] ",
+    "stderr": "No LADSPA plugins were found!\n\nCheck your LADSPA_PATH environment variable.\n\n/home/hatch/workspace/cape-jones-rig/showcase/free-stack-tests/synfig-cape-jones-tween-20261031.sif ==> /home/hatch/workspace/cape-jones-rig/clean-100-20261031/stack-tests/synfig-tween-frame12-20261031.png: DONE\n",
+    "output": "/home/hatch/workspace/cape-jones-rig/clean-100-20261031/stack-tests/synfig-tween-frame12-20261031.png",
+    "exists": true
+  },
+  "krita": {
+    "rc": 0,
+    "ok": true,
+    "stdout": "QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'\nQStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'\nQStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'\nQStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'\nQStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'\nkrita.lib.pigment: Replacing color space factory \"LABA\" \"L*a*b* (16-bit integer/channel, unmanaged)\" with \"LABA\" \"L*a*b*/Alph",
+    "stderr": "",
+    "output": "/home/hatch/workspace/cape-jones-rig/clean-100-20261031/stack-tests/krita-apose-export-20261031.png",
+    "exists": true
+  },
+  "tahoma_project": {
+    "folder": "/home/hatch/workspace/cape-jones-rig/clean-100-20261031/stack-tests/tahoma-cape-jones-24f",
+    "frames_copied": 24
+  },
+  "tahoma_appimage": {
+    "rc": 127,
+    "ok": false,
+    "stdout": "Error: No suitable fusermount binary found on the $PATH\nfuse: device not found, try 'modprobe fuse' first\n\nCannot mount AppImage, please check your FUSE setup.\nYou might still be able to extract the contents of this AppImage \nif you run it with the --appimage-extract option. \nSee https://github.com/AppImage/AppImageKit/wiki/FUSE \nfor more information\nopen dir error: No such file or directory\n",
+    "stderr": ""
+  },
+  "blender": {
+    "output": "/home/hatch/workspace/cape-jones-rig/clean-100-20261031/stack-tests/blender-compositor-apose-20261031.png",
+    "size_bytes": 887145,
+    "dims": "1100x1100 RGBA (scene resolution; source plate 1100x1500)",
+    "operation": "Blender 5.2.3 compositor: Image node -> group output, headless render, viewed",
+    "note": "Blender 5.2 API: scene.compositing_node_group (not scene.node_tree); CompositorNodeComposite undefined in 5.2, group-output pattern used per blender-compositor-stack.py"
+  },
+  "tahoma_gui": {
+    "process": "alive under Xvfb (Tahoma2D)",
+    "screenshot": "/home/hatch/workspace/cape-jones-rig/clean-100-20261031/stack-tests/tahoma-gui-launch-20261031.png",
+    "screenshot_note": "295 bytes, black/blank - window did NOT paint in 15s; GUI launch NOT counted as viewed",
+    "appimage_note": "Direct AppImage run fails: no fusermount/FUSE device; --appimage-extract workaround used, extracted to ~/workspace/tools-industry/tahoma2d-1.6.3/"
+  },
+  "pencil2d_gui": {
+    "process": "alive under Xvfb (pencil2d)",
+    "screenshot": "/home/hatch/workspace/cape-jones-rig/clean-100-20261031/stack-tests/pencil2d-gui-launch-20261031.png",
+    "screenshot_note": "VIEWED: full Pencil2D UI, Bitmap/Vector/Camera layers, timeline",
+    "export_note": "Cape Jones .pclx import/export NOT achieved - no sample project on disk, crafted format not verified; export is owed, not claimed"
+  },
+  "wick_editor": "PENDING-BROWSER: web-only, no local install; subagent cannot use live browser",
+  "brinimate": "PENDING-BROWSER: web-only, no local install; subagent cannot use live browser"
+}

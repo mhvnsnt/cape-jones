@@ -1,0 +1,231 @@
+{
+ "piece": {
+  "source": "cut-limbs-v7c/Arm_Front_Lower.png (read only)",
+  "source_alpha_bbox": [
+   4,
+   0,
+   123,
+   285
+  ],
+  "source_size": [
+   153,
+   289
+  ],
+  "split_y_in_crop": 208,
+  "gauntlet_resize": [
+   [
+    119,
+    180
+   ],
+   [
+    155,
+    85
+   ]
+  ],
+  "gauntlet_width_scale": 1.303,
+  "gauntlet_height_scale": 0.472,
+  "fist_source_size": [
+   86,
+   89
+  ],
+  "fist_resize": [
+   145,
+   150
+  ],
+  "fist_width_scale": 1.686,
+  "fist_to_gauntlet_width_ratio": 0.935,
+  "piece_canvas": [
+   340,
+   300
+  ],
+  "piece_alpha_bbox": [
+   92,
+   15,
+   242,
+   205
+  ],
+  "piece_cropped_size": [
+   150,
+   190
+  ],
+  "foreshortening_ratio": "piece height vs same-width unshortened piece: 0.529",
+  "method": "resize-only reassembly (LANCZOS). No smear, no blur-stretch, no recolour on disk. CJ-15 LUT gain applied at composite only, as with every plate."
+ },
+ "cj15": {
+  "canvas": [
+   1920,
+   1190
+  ],
+  "ground_y": 1060,
+  "feet_y": 920,
+  "height_px": 140,
+  "char_bbox": [
+   698,
+   40,
+   1220,
+   920
+  ],
+  "char_size": [
+   522,
+   880
+  ],
+  "margins": {
+   "left": 698,
+   "right": 700,
+   "top": 40,
+   "bottom": 270
+  },
+  "clipped": false,
+  "grounded": false,
+  "airborne": true,
+  "feet_above_ground_px": 140,
+  "rim_px": 19937,
+  "bleed_px": 31038,
+  "effect": "speed-lines",
+  "effect_px": 8544,
+  "shaft_count": 0,
+  "piece_overlap_over_char_px": 2618,
+  "residual_old_arm_px": 88,
+  "piece_paste": [
+   1061,
+   376
+  ],
+  "piece_size": [
+   176,
+   210
+  ],
+  "elbow_ball_final": [
+   1149.0,
+   366.8
+  ]
+ },
+ "cj18": {
+  "A-keep-seam": {
+   "file": "CJ-18-true-flex-double-bicep-A-keep-seam-20261031.png",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "ground_y": 950,
+   "feet_y": 950,
+   "char_bbox": [
+    684,
+    70,
+    1235,
+    950
+   ],
+   "margins": {
+    "left": 684,
+    "right": 685,
+    "top": 70,
+    "bottom": 130
+   },
+   "clipped": false,
+   "rim_px": 18344,
+   "bleed_px": 27918,
+   "effect": "power-aura",
+   "effect_px": 37832,
+   "shaft_count": 0
+  },
+  "B-blend-seam": {
+   "file": "CJ-18-true-flex-double-bicep-B-blend-seam-20261031.png",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "ground_y": 950,
+   "feet_y": 950,
+   "char_bbox": [
+    684,
+    70,
+    1235,
+    950
+   ],
+   "margins": {
+    "left": 684,
+    "right": 685,
+    "top": 70,
+    "bottom": 130
+   },
+   "clipped": false,
+   "rim_px": 18344,
+   "bleed_px": 27918,
+   "effect": "power-aura",
+   "effect_px": 37832,
+   "shaft_count": 0
+  },
+  "C-half-blend-seam": {
+   "file": "CJ-18-true-flex-double-bicep-C-half-blend-seam-20261031.png",
+   "canvas": [
+    1920,
+    1080
+   ],
+   "ground_y": 950,
+   "feet_y": 950,
+   "char_bbox": [
+    684,
+    70,
+    1235,
+    950
+   ],
+   "margins": {
+    "left": 684,
+    "right": 685,
+    "top": 70,
+    "bottom": 130
+   },
+   "clipped": false,
+   "rim_px": 18344,
+   "bleed_px": 27918,
+   "effect": "power-aura",
+   "effect_px": 37832,
+   "shaft_count": 0
+  }
+ },
+ "seams_plate": [
+  [
+   [
+    255,
+    428
+   ],
+   [
+    375,
+    478
+   ]
+  ],
+  [
+   [
+    715,
+    432
+   ],
+   [
+    840,
+    482
+   ]
+  ]
+ ],
+ "seams_final": [
+  [
+   [
+    [
+     712.3419062027232,
+     227.7988614800759
+    ],
+    [
+     812.3721633888049,
+     269.5445920303605
+    ]
+   ],
+   [
+    [
+     1095.7912254160362,
+     231.13851992409866
+    ],
+    [
+     1199.9894099848714,
+     272.8842504743833
+    ]
+   ]
+  ]
+ ]
+}

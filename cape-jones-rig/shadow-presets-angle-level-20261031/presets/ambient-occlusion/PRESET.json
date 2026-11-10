@@ -1,0 +1,14 @@
+{
+  "code": "I3",
+  "slug": "ambient-occlusion",
+  "kind": "industry",
+  "name": "Ambient occlusion",
+  "description": "Interior band, distance <12px inside figure, darkened 25%. Character only, RGB darkening, alpha unchanged.",
+  "parameters": {
+    "band_px": 12,
+    "darken": 0.25
+  },
+  "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+  "sample": "sample.png",
+  "status": "preset saved, approval 0/1"
+}

@@ -1,0 +1,63 @@
+{
+  "move": "palm/ball centre (314,476); total from original (314,530): dx=0, dy=-54; from up2 (314,479): dy=-3",
+  "angle": 164.8,
+  "scale": 1.0,
+  "mirror": "Arm1 horizontal in place, unchanged",
+  "revert_base": "ginyu-force-limits-broken-20261031/jei-01-base-for-swap-20261031.png, full body+cape, no erase circle",
+  "old_erase_circle_px_total": 10173,
+  "old_erase_under_new_hand_px": 2225,
+  "old_erase_outside_hand_px": 7948,
+  "old_erase_outside_hand_restored_px": 7948,
+  "previously_notched_zone": "x332-472 y502-665",
+  "interior_hole_px_in_notch_zone": 0,
+  "base_vs_fixed_diff_outside_new_hand_mask_px": 73,
+  "old_fist_pixels_visible_outside_new_hand_px": 73,
+  "centre_paste_new": [
+    303.0,
+    494.3
+  ],
+  "palm_ball_centre_new": [
+    314,
+    476
+  ],
+  "palm_ball_centre_measured_yellow": [
+    314.0,
+    476.0
+  ],
+  "wrist_registry_new": [
+    320.6,
+    438.9
+  ],
+  "tip_registry_new": [
+    289.2,
+    559.5
+  ],
+  "d_wrist_registry_to_forearm_end_F": 78.4,
+  "cuff_bottom_y": 474,
+  "wrist_registry_above_cuff_bottom_px": 35.1,
+  "hand_bbox_new": [
+    248,
+    427,
+    354,
+    558
+  ],
+  "no_crop_plain": {
+    "pass": true,
+    "bbox": [
+      248,
+      237,
+      884,
+      1296
+    ]
+  },
+  "no_crop_ball": {
+    "pass": true,
+    "bbox": [
+      244,
+      237,
+      884,
+      1296
+    ]
+  },
+  "approval": "0/1, NOT approved until Mars sees it and says perfect; up2 was real real close and Mars would accept it but wants perfect, so up2 is NOT approved; previous right5 with notch is NOT approved"
+}

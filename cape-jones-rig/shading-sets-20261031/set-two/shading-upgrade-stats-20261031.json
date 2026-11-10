@@ -1,0 +1,307 @@
+{
+  "base": "rig-apose-v7c-clean-transparent.png (1100x1500)",
+  "figure_bbox": [
+    248,
+    875,
+    253,
+    1294
+  ],
+  "figure_centre_x": 561.5,
+  "L02_baseline_delta_R": 31.9,
+  "old_G2_best_delta_R": -18.2,
+  "variants": {
+    "V0-control-no-shade": {
+      "left_R": 133.5,
+      "right_R": 137.0,
+      "delta_R": -3.4,
+      "left_lum": 133.5,
+      "right_lum": 137.5,
+      "delta_lum": -3.9,
+      "left_facing_R": 133.4,
+      "right_facing_R": 131.6,
+      "edge_delta_R": 1.8,
+      "figure_centre_x": 561.5,
+      "mask_px": 373846,
+      "light": "none (control)",
+      "method": "Original plate, no shading. Expected delta ~0.",
+      "note": ""
+    },
+    "V1-old-G2-gradient-reproduced": {
+      "left_R": 126.4,
+      "right_R": 139.6,
+      "delta_R": -13.3,
+      "left_lum": 126.3,
+      "right_lum": 140.2,
+      "delta_lum": -13.8,
+      "left_facing_R": 130.2,
+      "right_facing_R": 129.7,
+      "edge_delta_R": 0.5,
+      "figure_centre_x": 561.5,
+      "mask_px": 373846,
+      "light": "canvas gradient, left bright",
+      "method": "Old G2 shade(): whole-canvas linear gradient, strength 0.5. REPRODUCED to show the flaw.",
+      "note": ""
+    },
+    "V2-lambert-LEFT-strong": {
+      "left_R": 87.0,
+      "right_R": 83.2,
+      "delta_R": 3.8,
+      "left_lum": 86.9,
+      "right_lum": 83.7,
+      "delta_lum": 3.2,
+      "left_facing_R": 121.6,
+      "right_facing_R": 47.7,
+      "edge_delta_R": 73.9,
+      "figure_centre_x": 561.5,
+      "mask_px": 373846,
+      "light": "KEY LEFT, slightly above; shadow RIGHT",
+      "method": "Lambert N.L, light (-0.80,-0.20,0.56), ambient 0.35, diffuse 0.65. Per-pixel normals.",
+      "note": ""
+    },
+    "V3-lambert-RIGHT-strong": {
+      "left_R": 80.8,
+      "right_R": 89.2,
+      "delta_R": -8.4,
+      "left_lum": 80.9,
+      "right_lum": 89.3,
+      "delta_lum": -8.4,
+      "left_facing_R": 48.2,
+      "right_facing_R": 120.7,
+      "edge_delta_R": -72.4,
+      "figure_centre_x": 561.5,
+      "mask_px": 373846,
+      "light": "KEY RIGHT, slightly above; shadow LEFT",
+      "method": "Lambert N.L, light (0.80,-0.20,0.56), ambient 0.35, diffuse 0.65. Mirror of V2.",
+      "note": ""
+    },
+    "V4-toon-cel-LEFT-3band": {
+      "left_R": 90.3,
+      "right_R": 87.0,
+      "delta_R": 3.3,
+      "left_lum": 90.2,
+      "right_lum": 87.5,
+      "delta_lum": 2.7,
+      "left_facing_R": 127.8,
+      "right_facing_R": 52.2,
+      "edge_delta_R": 75.6,
+      "figure_centre_x": 561.5,
+      "mask_px": 373846,
+      "light": "KEY LEFT; shadow RIGHT, stepped bands",
+      "method": "Cel/toon shading: Lambert diffuse quantized to 3 bands (0.40 / 0.68 / 1.00).",
+      "note": ""
+    },
+    "V5-three-point-LEFT-warm-RIGHT-cool": {
+      "left_R": 104.6,
+      "right_R": 103.3,
+      "delta_R": 1.3,
+      "left_lum": 100.4,
+      "right_lum": 99.8,
+      "delta_lum": 0.6,
+      "left_facing_R": 128.3,
+      "right_facing_R": 77.0,
+      "edge_delta_R": 51.3,
+      "figure_centre_x": 561.5,
+      "mask_px": 373846,
+      "light": "KEY LEFT warm, FILL RIGHT cool, warm rim",
+      "method": "Three-point lighting, per-pixel normals + edge rim."
+    },
+    "V6-AO-plus-lambert-LEFT": {
+      "left_R": 71.7,
+      "right_R": 68.2,
+      "delta_R": 3.5,
+      "left_lum": 71.4,
+      "right_lum": 68.4,
+      "delta_lum": 3.0,
+      "left_facing_R": 101.1,
+      "right_facing_R": 39.4,
+      "edge_delta_R": 61.8,
+      "figure_centre_x": 561.5,
+      "mask_px": 373846,
+      "light": "KEY LEFT; edges + creases darkened",
+      "method": "Ambient occlusion from distance-to-edge (0 at edge, 1 deep) + Lambert left + crease darkening x0.70.",
+      "note": ""
+    },
+    "V7-form-depth-plus-sideweight-LEFT": {
+      "left_R": 96.7,
+      "right_R": 79.4,
+      "delta_R": 17.4,
+      "left_lum": 96.7,
+      "right_lum": 79.7,
+      "delta_lum": 17.0,
+      "left_facing_R": 107.4,
+      "right_facing_R": 67.3,
+      "edge_delta_R": 40.1,
+      "figure_centre_x": 561.5,
+      "mask_px": 373846,
+      "light": "KEY LEFT; form depth + figure-local side weight",
+      "method": "Depth/form shading: 50% normal diffuse + 50% figure-bbox-local side gradient (NOT canvas-global).",
+      "note": ""
+    },
+    "V8-top-light": {
+      "left_R": 77.1,
+      "right_R": 78.9,
+      "delta_R": -1.8,
+      "left_lum": 77.0,
+      "right_lum": 79.2,
+      "delta_lum": -2.2,
+      "left_facing_R": 73.7,
+      "right_facing_R": 74.8,
+      "edge_delta_R": -1.1,
+      "figure_centre_x": 561.5,
+      "mask_px": 373846,
+      "light": "KEY ABOVE; shadow BELOW (left/right delta expected small)",
+      "method": "Lambert, light from above. Included so left/right delta is NOT misread: top light must NOT move left/right much.",
+      "note": ""
+    },
+    "V10-combined-normal-sideweight-AO-LEFT": {
+      "left_R": 87.2,
+      "right_R": 69.5,
+      "delta_R": 17.7,
+      "left_lum": 87.0,
+      "right_lum": 69.7,
+      "delta_lum": 17.4,
+      "left_facing_R": 92.9,
+      "right_facing_R": 63.3,
+      "edge_delta_R": 29.6,
+      "figure_centre_x": 561.5,
+      "mask_px": 373846,
+      "light": "KEY LEFT, side-weighted + AO",
+      "method": "Combined: 40% normal diffuse + 60% figure-local side weight, times AO. Side-weight is what moves half-mean delta.",
+      "note": ""
+    },
+    "V9-blender-compositor-lambert-LEFT": {
+      "left_R": 92.8,
+      "right_R": 92.7,
+      "delta_R": 0.1,
+      "left_lum": 93.0,
+      "right_lum": 93.1,
+      "delta_lum": -0.2,
+      "left_facing_R": 104.1,
+      "right_facing_R": 76.5,
+      "edge_delta_R": 27.6,
+      "figure_centre_x": 561.5,
+      "mask_px": 373846,
+      "light": "KEY LEFT",
+      "method": "Blender 5.2.3 compositor N.L, Math nodes, xvfb-run, NormalMap Non-Color (fixed after first run)."
+    }
+  },
+  "hero_arms_up": {
+    "left_R": 111.6,
+    "right_R": 59.6,
+    "delta_R": 52.0,
+    "left_lum": 111.8,
+    "right_lum": 59.9,
+    "delta_lum": 51.9,
+    "left_facing_R": 128.5,
+    "right_facing_R": 50.5,
+    "edge_delta_R": 78.0,
+    "figure_centre_x": 550.0,
+    "mask_px": 369712,
+    "light": "KEY LEFT",
+    "method": "V2 Lambert left applied to approved arms-up plate."
+  },
+  "no_crop": {
+    "V0-control-no-shade": {
+      "size": [
+        1100,
+        1500
+      ],
+      "mask_identical_to_base": true,
+      "pixels_lost": 0,
+      "edge_alpha_px": 0
+    },
+    "V1-old-G2-gradient-reproduced": {
+      "size": [
+        1100,
+        1500
+      ],
+      "mask_identical_to_base": true,
+      "pixels_lost": 0,
+      "edge_alpha_px": 0
+    },
+    "V2-lambert-LEFT-strong": {
+      "size": [
+        1100,
+        1500
+      ],
+      "mask_identical_to_base": true,
+      "pixels_lost": 0,
+      "edge_alpha_px": 0
+    },
+    "V3-lambert-RIGHT-strong": {
+      "size": [
+        1100,
+        1500
+      ],
+      "mask_identical_to_base": true,
+      "pixels_lost": 0,
+      "edge_alpha_px": 0
+    },
+    "V4-toon-cel-LEFT-3band": {
+      "size": [
+        1100,
+        1500
+      ],
+      "mask_identical_to_base": true,
+      "pixels_lost": 0,
+      "edge_alpha_px": 0
+    },
+    "V5-three-point-LEFT-warm-RIGHT-cool": {
+      "size": [
+        1100,
+        1500
+      ],
+      "mask_identical_to_base": true,
+      "pixels_lost": 0,
+      "edge_alpha_px": 0
+    },
+    "V6-AO-plus-lambert-LEFT": {
+      "size": [
+        1100,
+        1500
+      ],
+      "mask_identical_to_base": true,
+      "pixels_lost": 0,
+      "edge_alpha_px": 0
+    },
+    "V7-form-depth-plus-sideweight-LEFT": {
+      "size": [
+        1100,
+        1500
+      ],
+      "mask_identical_to_base": true,
+      "pixels_lost": 0,
+      "edge_alpha_px": 0
+    },
+    "V8-top-light": {
+      "size": [
+        1100,
+        1500
+      ],
+      "mask_identical_to_base": true,
+      "pixels_lost": 0,
+      "edge_alpha_px": 0
+    },
+    "V10-combined-normal-sideweight-AO-LEFT": {
+      "size": [
+        1100,
+        1500
+      ],
+      "mask_identical_to_base": true,
+      "pixels_lost": 0,
+      "edge_alpha_px": 0
+    },
+    "V9-blender-compositor-lambert-LEFT": {
+      "size": [
+        1100,
+        1500
+      ],
+      "mask_identical_to_base": true,
+      "pixels_lost": 0
+    }
+  },
+  "blender_run": {
+    "tool": "Blender 5.2.3 LTS, xvfb-run -a, compositor Math nodes, render saved, script blender_compositor_shading.py, blend blender-compositor-shading-20261031.blend, bare headless failed on missing libEGL (noted, xvfb is the working route)",
+    "first_run_note": "First V9 run (sRGB normal map) edge_delta +25.7, weaker than PIL V2 +73.9; second run with Non-Color normal map supersedes it."
+  }
+}

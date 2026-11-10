@@ -1,0 +1,112 @@
+{
+  "bare": {
+    "cape_mode": "none",
+    "cape_back_main_present": false,
+    "cape_collar_present": false,
+    "alpha_px": 247825,
+    "bbox": [
+      248,
+      254,
+      876,
+      1295
+    ],
+    "symbol_white_px": 1524,
+    "body_colour": [
+      18,
+      18,
+      22
+    ],
+    "symbol_colour": [
+      255,
+      255,
+      255
+    ]
+  },
+  "upper_only": {
+    "cape_mode": "collar",
+    "cape_back_main_present": false,
+    "cape_collar_present": true,
+    "alpha_px": 257910,
+    "bbox": [
+      248,
+      254,
+      876,
+      1295
+    ],
+    "symbol_white_px": 1524,
+    "body_colour": [
+      18,
+      18,
+      22
+    ],
+    "symbol_colour": [
+      255,
+      255,
+      255
+    ]
+  },
+  "reference_rebuilt_with_cape": {
+    "cape_back_main_present": true,
+    "cape_collar_present": true,
+    "alpha_px": 374816,
+    "bbox": [
+      248,
+      254,
+      876,
+      1295
+    ],
+    "symbol_white_px": 1524,
+    "source": "future-symbiote-capeless-white-outline-20261031 measurements"
+  },
+  "upper_only_vs_bare": {
+    "visible_collar_px_added": 10085,
+    "pixels_removed_vs_bare": 0,
+    "note": "Visible collar pixels = alpha present in upper-only but not in bare. The collar sits behind torso/neck, so only its visible fringe counts here; the full collar piece is 360x185 original (342x176 at 0.95 build scale)."
+  },
+  "piece_original_sizes": {
+    "Cape_Collar.png": [
+      360,
+      185
+    ],
+    "Cape_Back_Main.png": [
+      490,
+      833
+    ]
+  },
+  "crossed_white_outline": {
+    "bare": {
+      "config": "v7c arm_upper L40/R-40, arm_lower L120/R-120, legs apose",
+      "cape_back_main_present": false,
+      "cape_collar_present": false,
+      "crossed_alpha_px": 202620,
+      "crossed_bbox": [
+        304,
+        254,
+        832,
+        1295
+      ],
+      "front_forearm_alpha_px": 34956,
+      "front_over_behind_overlap_px": 23839,
+      "white_crossing_ring_px_width4": 3458,
+      "full_ring_px_width4_for_reference": 5542,
+      "symbol_white_px": 1524
+    },
+    "upper_only": {
+      "config": "v7c arm_upper L40/R-40, arm_lower L120/R-120, legs apose",
+      "cape_back_main_present": false,
+      "cape_collar_present": true,
+      "crossed_alpha_px": 211523,
+      "crossed_bbox": [
+        304,
+        254,
+        832,
+        1295
+      ],
+      "front_forearm_alpha_px": 34956,
+      "front_over_behind_overlap_px": 23965,
+      "white_crossing_ring_px_width4": 3559,
+      "full_ring_px_width4_for_reference": 5542,
+      "symbol_white_px": 1524
+    }
+  }
+}

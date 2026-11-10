@@ -1,0 +1,1398 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+import os
+import sys
+import traceback
+from collections import OrderedDict, defaultdict
+from collections.abc import Iterator
+from datetime import datetime
+from time import time
+from types import ModuleType
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from ..rig_components.cloud_base import Component_Base
+from math import pi
+
+import bpy
+from bpy.app.translations import pgettext_iface as iface_
+from bpy.app.translations import pgettext_rpt as rpt_
+from bpy.props import (
+    BoolProperty,
+    CollectionProperty,
+    FloatProperty,
+    IntProperty,
+    PointerProperty,
+    StringProperty,
+)
+from bpy.types import (
+    Action,
+    Bone,
+    Collection,
+    Context,
+    EditBone,
+    Object,
+    Operator,
+    PoseBone,
+    PropertyGroup,
+    Text,
+)
+from mathutils import Matrix
+
+from ..bs_utils.hotkeys import register_hotkey
+from ..bs_utils.prefs import get_addon_prefs
+from ..bs_utils.properties import (
+    copy_all_runtime_properties,
+    copy_property_group,
+)
+from ..rig_component_features.bone_gizmos import auto_initialize_gizmos
+from ..rig_component_features.bone_info import BoneInfo
+from ..rig_component_features.bone_set import BoneSet
+from ..rig_component_features.mechanism import relink_real_driver
+from ..rig_component_features.object import EnsureVisible
+from ..rig_component_features.overlay_painter import no_overlay
+from ..rig_component_features.widgets.widgets import (
+    ensure_widget,
+    ensure_widgets,
+    get_custom_shape_rig_data,
+    set_pbone_custom_shape_data,
+    widget_name,
+)
+from ..rig_components.cloud_base import Component_Base
+from ..utils.collections import assign_to_collection, ensure_collection
+from ..utils.mechanism import refresh_all_drivers
+from ..utils.misc import (
+    check_addon,
+    load_script,
+)
+from ..utils.rig import get_armature_dimensions, get_pbone_of_active
+from . import naming
+from .actions_component import ActionConstraintComponent, ActionConstraintSetup
+from .cloudrig import (
+    is_active_cloud_metarig,
+    is_active_cloudrig,
+    is_cloud_metarig,
+    reset_armature,
+)
+from .generate_test_animation import TestAnimationGeneratorMixin
+from .troubleshooting import CloudLogManager, CloudRigLogEntry
+
+
+class GeneratorProperties(PropertyGroup):
+    """RNA data used by the CloudRig Generator."""
+
+    ########################################
+    ### General params #####################
+    ########################################
+
+    target_rig: PointerProperty(
+        name="Target Rig",
+        description="Rig to re-generate based on this metarig when the Generate button is used",
+        type=Object,
+    )
+    custom_script: PointerProperty(
+        name="Post-Generation Script",
+        type=Text,
+        description="Execute a python script after the rig is generated",
+    )
+    generate_test_action: BoolProperty(
+        name="Generate Test Action",
+        description="Whether to create/update the deform test action or not. Enabling this enables the Animation parameter category on FK chain components",
+        default=False,
+    )
+    test_action: PointerProperty(
+        name="Test Action",
+        type=Action,
+        description="Action which will be generated with the keyframes necessary to test the rig's deformations",
+    )
+    ensure_root: StringProperty(
+        name="Root Bone",
+        description="Bones that would otherwise be orphaned will be parented to this bone. This bone is also considered the root for FK Hinge set-ups. If the this root bone doesn't exist, it will be created, also in the metarig. This root bone does not have to be the true root: It is allowed to have parents!",
+        default='root',
+    )
+    properties_bone: StringProperty(
+        name="Properties Bone",
+        description="Bone to use as the default custom property storage. Can be the same as the root bone. If it doesn't exist and is required, a bone named 'Properties' will be created on the metarig",
+        default='Properties',
+    )
+    auto_setup_gizmos: BoolProperty(
+        name="Auto Setup Gizmos (EXPERIMENTAL)",
+        description="Experiment with the initial BoneGizmo addon integration",
+        default=False,
+    )
+    allow_quats: BoolProperty(
+        name="Allow Quaternions",
+        description=(
+            "Quaternion rotation mode on bones prevents gimbal-locks, in exchange for making it difficult to edit rotation curves.\n"
+            "Blender uses Quaternion rotation mode by default, but many users do not like this.\n"
+            "If this is disabled, CloudRig will swap Quaternion to Euler XYZ, or warn you."
+        ),
+        default=False,
+    )
+    show_only_nondefaults: BoolProperty(
+        name="Show Only Non-Defaults",
+        description="Hide parameters which are on their default values",
+        default=False,
+    )
+
+    ########################################
+    ### Log params #########################
+    ########################################
+
+    logs: CollectionProperty(type=CloudRigLogEntry)
+    active_log_index: IntProperty(min=0)
+
+    def remove_active_log(self):
+        logs = self.logs
+
+        active_index = self.active_log_index
+        # This behaviour is inconsistent with other UILists in Blender, but I am right and they are wrong!
+        to_index = active_index
+        to_index = min(to_index, len(logs) - 2)
+
+        self.logs.remove(active_index)
+        self.active_log_index = to_index
+
+    @property
+    def active_log(self) -> CloudRigLogEntry | None:
+        return self.logs[self.active_log_index] if len(self.logs) > 0 else None
+
+    ########################################
+    ### Custom Shape params ################
+    ########################################
+
+    widget_collection: PointerProperty(
+        name="Custom Shape Collection",
+        type=Collection,
+        description="Collection dedicated to storing nothing but the custom shapes used by this rig. Additional objects will result in warnings, and missing custom shapes will be re-linked during generation",
+    )
+    reload_widgets: BoolProperty(
+        name="Overwrite Custom Shapes",
+        description="Reload custom shapes, discarding any local modifications to them. This has some cost to generation time.",
+        default=False,
+    )
+
+    def mark_all_dirty(self, _context: Context):
+        for pb in self.id_data.pose.bones:
+            if pb.cloudrig_component.component_class:
+                pb.cloudrig_component.overlay_is_dirty = True
+
+    preserve_shapes_properties: BoolProperty(
+        name="Preserve Shape Properties",
+        description="Preserve custom shape properties on the Target Rig, if available",
+        default=False,
+        update=mark_all_dirty,
+    )
+    preserve_custom_shapes: BoolProperty(
+        name="Preserve Custom Shapes",
+        description="Preserve custom shapes on the Target Rig, if available. If this is disabled, only other properties will be preserved, but not the shape object",
+        default=True,
+        update=mark_all_dirty,
+    )
+    base_wire_width: FloatProperty(
+        name="Base Wire Width",
+        description="Additional wire width to apply to all generated bones",
+        default=0.5,
+        min=0.0,
+        max=3.0,
+        update=mark_all_dirty,
+    )
+
+    ########################################
+    ### Actions params #####################
+    ########################################
+
+    action_setups: CollectionProperty(type=ActionConstraintSetup)
+    active_action_index: IntProperty(min=0)
+
+    @property
+    def active_action_setup(self) -> ActionConstraintSetup | None:
+        if len(self.action_setups) > 0:
+            return self.action_setups[self.active_action_index]
+
+
+class CloudGeneratorError(Exception):
+    """Exception raised for errors."""
+
+    def __init__(self, message: str):
+        super().__init__(message)
+        self.message = message
+        self.traceback = traceback.format_exc()
+
+    def __str__(self) -> str:
+        return repr(self.message)
+
+
+class CloudRig_Generator(TestAnimationGeneratorMixin):
+    """
+    This class is instantiated by the Generate operator.
+    It instantiates the rig components and calls their rig generation functions.
+    """
+
+    def __init__(self, context: Context, metarig: Object, painter=None):
+        self.metarig = metarig
+        self.target_rig = None
+        self.params = metarig.cloudrig.generator
+        self.painter = painter
+
+        self.custom_script_failure = False
+
+        # Reset the metarig; This will be un-done when generation ends (even if it fails).
+        self.loc_bkp = metarig.matrix_world.to_translation()
+        self.rot_bkp = metarig.matrix_world.to_euler()
+        self.scale_bkp = metarig.matrix_world.to_scale()
+
+        self.metarig_pose_bkp = metarig.data.pose_position
+
+        # Used to calculate sizes and distances in a rig-size-agnostic way.
+        self.scale = max(get_armature_dimensions(metarig)) / 10
+        self.naming = naming
+
+        # Default kwargs that are passed in to every created BoneInfo.
+        self.defaults = {}
+        if not self.params.allow_quats:
+            self.defaults['rotation_mode'] = 'XYZ'
+
+        self.logger = CloudLogManager(self)
+
+        # Set flag to handle Bone Gizmos.
+        self.use_gizmos = check_addon(context, 'bone_gizmos') and self.params.auto_setup_gizmos
+
+    ### Helper functions/properties.
+    @no_overlay
+    def raise_generation_error(self, description_short="Generation Error", description="", **kwargs):
+        """For raising non-bug errors that should be fixable by the user."""
+        errmsg = description or description_short
+        self.logger.log_fatal_error(
+            description_short, description=description, display_stack_trace='ADVANCED', **kwargs
+        )
+        base_bone_name = kwargs.get('base_bone_name', "")
+        if base_bone_name:
+            errmsg = base_bone_name + ": " + rpt_(errmsg)
+        raise CloudGeneratorError(message=errmsg)
+
+    def find_bone_info(self, name: str) -> BoneInfo | None:
+        """Find a BoneInfo by name across all component bone sets."""
+        for bone_set in self.bone_sets:
+            if len(bone_set) == 0:
+                continue
+            exists = bone_set.get(name)
+            if exists:
+                return exists
+
+    def ensure_widget(self, context: Context, widget_name: str, overwrite=False):
+        self.ensure_widget_collection(context)
+        try:
+            wgt = ensure_widget(
+                widget_name,
+                overwrite=overwrite,
+            )
+            if wgt is None:
+                raise ValueError("Widget failed to load: " + widget_name)
+        except ValueError as exc:
+            self.raise_generation_error(
+                rpt_("Failed to load custom shape"),
+                description=str(exc),
+            )
+        coll = self.params.widget_collection or context.scene.collection
+        assign_to_collection(wgt, coll)
+        return wgt
+
+    def ensure_all_widgets(self, context: Context):
+        """Load all custom shapes used by the generated bones in bulk, and reload
+        existing ones if the Overwrite Custom Shapes option is enabled.
+        """
+        coll = self.ensure_widget_collection(context)
+        bones_of_widget = self.get_rig_widget_names()
+
+        widget_map = ensure_widgets(bones_of_widget.keys(), overwrite=self.params.reload_widgets)
+
+        coll_objs = set(coll.objects)
+        for wgt in widget_map.values():
+            if wgt not in coll_objs:
+                coll.objects.link(wgt)
+
+        missing_lines = [
+            f'"{name}", used by: {", ".join(bone_names)}'
+            for name, bone_names in bones_of_widget.items()
+            if name not in widget_map
+        ]
+        if missing_lines:
+            self.raise_generation_error(
+                rpt_("Failed to load custom shape"),
+                description=rpt_("Custom shapes not found:\n{widgets}").format(widgets="\n".join(missing_lines)),
+            )
+
+    def get_rig_widget_names(self) -> dict[str, list[str]]:
+        """Return the names of custom shapes used by the rig (without "WGT-" prefix),
+        mapped to the names of bones using them.
+        """
+        bones_of_widget: dict[str, list[str]] = defaultdict(list)
+        for bone_info in self.bone_infos:
+            if bone_info.preserve and bone_info.custom_shape_name:
+                bones_of_widget[widget_name(bone_info.custom_shape_name)].append(bone_info.name)
+        return bones_of_widget
+
+    @property
+    def all_components(self) -> Iterator[Component_Base]:
+        """Yield all rig component instances."""
+        yield from self.component_map.values()
+
+    @property
+    def bone_sets(self) -> Iterator[BoneSet]:
+        """Yield all bone sets across all rig components."""
+        for rig_component in self.component_map.values():
+            yield from rig_component.bone_sets.values()
+
+    @property
+    def bone_infos(self) -> Iterator[BoneInfo]:
+        """Yield all BoneInfo instances across all bone sets."""
+        for bone_set in self.bone_sets:
+            yield from bone_set
+
+    @property
+    def root_bone_info(self) -> BoneInfo | None:
+        """Return the BoneInfo for the root bone, or None if it doesn't exist."""
+        return self.find_bone_info(self.params.ensure_root)
+
+    @property
+    def root_components(self) -> Iterator[Component_Base]:
+        """Yield all rig components that have no parent component."""
+        for component in self.component_map.values():
+            if not component.parent_component:
+                yield component
+
+    ### Main generation function.
+    def generate(self, context: Context):
+        """This is called by the Generate CloudRig operator."""
+        bpy.ops.object.mode_set(mode='OBJECT')
+
+        metarig = self.metarig
+        metarig.data.pose_position = 'REST'
+        metarig.matrix_world = Matrix.Identity(4)
+
+        # Needed to make sure we get the correct scale - TODO: Still needed?
+        context.view_layer.update()
+
+        # Wipe the generation log.
+        self.logger.clear()
+
+        metarig.data.name = self.metarig.name
+        current_metarig_version = get_addon_prefs(context).cloud_metarig_version
+        if metarig.cloudrig.metarig_version > current_metarig_version:
+            self.logger.log(
+                rpt_("Outdated CloudRig"),
+                description=rpt_(
+                    "This metarig was generated with a newer version of CloudRig.\nYou should update CloudRig in Edit->Preferences->Get Extensions."
+                ),
+                operator='object.cloudrig_dismiss_warning',
+                op_text=iface_('Dismiss Warning'),
+            )
+        else:
+            metarig.cloudrig.metarig_version = current_metarig_version
+        self.driver_map = map_pbones_to_drivers(self.metarig)
+
+        # If the previous generation failed, delete the failed rig.
+        if 'failed_rig' in metarig:
+            if metarig['failed_rig']:
+                bpy.data.objects.remove(metarig['failed_rig'])
+            del metarig['failed_rig']
+
+        self.target_rig = create_target_rig_obj(context, metarig)
+        if 'ui_data' in self.metarig.data:
+            self.target_rig.data['ui_data'] = self.metarig.data['ui_data']
+        self.defaults['rig'] = self.target_rig
+
+        if self.params.ensure_root:
+            self.ensure_root_bone_component(context, self.metarig, self.params.ensure_root)
+            parent_orphans(metarig, self.params.ensure_root)
+
+        self.generate_abstraction_layer(context)
+        focus_select_obj(context, self.target_rig)
+
+        bpy.ops.object.mode_set(mode='EDIT')
+
+        self.components_create_interactions(context)
+        if self.root_bone_info:
+            self.parent_orphan_bone_infos_to_root()
+        self.components_create_real_bones()
+        self.components_write_ebone_data()
+
+        bpy.ops.object.mode_set(mode='OBJECT')
+
+        self.components_create_helper_objs(context)
+        self.ensure_all_widgets(context)
+        self.components_write_pbone_data(context, self.target_rig)
+
+        if self.params.generate_test_action:
+            self.components_create_test_animation()
+
+        if self.params.action_setups:
+            action_con_component = ActionConstraintComponent(self)
+            for action_side_map in action_con_component.action_setup_side_map.values():
+                if not action_side_map:
+                    continue
+                for action_setup_side in action_side_map.values():
+                    action_setup_side.generate()
+
+        ensure_cloudrig_ui(self.target_rig)
+
+        if self.params.auto_setup_gizmos and self.use_gizmos:
+            auto_initialize_gizmos(self.target_rig, self.bone_infos)
+
+        old_rig = self.params.target_rig
+        self.execute_custom_script(context, old_rig, self.target_rig)
+
+        if old_rig:
+            self.replace_old_with_new_rig(
+                context,
+                old_rig=old_rig,
+                new_rig=self.target_rig,
+            )
+        else:
+            self.target_rig.name = self.target_rig.name.replace("NEW-", "")
+            # First generation: Let the Target Rig generate wherever the Metarig is.
+            self.target_rig.matrix_world = Matrix.LocRotScale(self.loc_bkp, self.rot_bkp, self.scale_bkp)
+
+        # This comes after custom script because the script might mess with widgets.
+        # And it comes after rig replacement so the object name doesn't get stored with the "NEW-" prefix.
+        self.log_minor_issues(context)
+
+        # NOTE: Any errors arising after replacing the rigs is really bad,
+        # because then the user gets an error even though their old rig has been
+        # overwritten. They can't be sure if their rig is in a clean state or not.
+        # So, keep these final pieces of generation code simple!
+
+        # Set the param as the Target Rig.
+        # Important for first generation.
+        self.params.target_rig = self.target_rig
+
+        self.target_rig.data.name = self.target_rig.name
+
+        self.restore_rig_states(context)
+
+    @staticmethod
+    def build_component_pbone_order(
+        metarig: Object,
+        pbone_subset: list[PoseBone] | None = None,
+    ) -> list[PoseBone]:
+        """Return those Pose Bones of a metarig which have Rig Components assigned,
+        ordered in the desired generation order."""
+
+        metarig.cloudrig.refresh_generation_order(pbone_subset)
+        if not pbone_subset:
+            pbone_subset = metarig.pose.bones[:]
+
+        return [
+            pb
+            for pb in sorted(metarig.pose.bones, key=lambda pb: pb.cloudrig_component.order)
+            if (
+                pb in pbone_subset
+                and (
+                    (pb.cloudrig_component.component_type and pb.cloudrig_component.is_enabled_component)
+                    or not pb.cloudrig_component.inherited_component
+                )
+            )
+        ]
+
+    def generate_abstraction_layer(
+        self,
+        context: Context,
+        *,
+        comp_pbone_subset: list[PoseBone] | None = None,
+    ):
+        """Generate the virtual bones by instantiating the rig components of passed Pose Bones,
+        and calling their create_bone_infos() function.
+        Note: This function can be called from pretty much any context!!
+        That's very deliberate, as this is used by the overlay drawing code!!
+        """
+        self.component_map = self.instantiate_rig_components(comp_pbone_subset)
+        self.components_load_bone_infos(self.component_map, self.metarig)
+        self.components_create_bone_infos(context)
+        self.preserve_custom_shape_props()
+
+    def preserve_custom_shape_props(self):
+        old_rig = self.params.target_rig
+        if not (self.params.preserve_shapes_properties and old_rig):
+            return
+        custom_shape_data = get_custom_shape_rig_data(old_rig)
+        if not self.params.preserve_custom_shapes:
+            for value in custom_shape_data.values():
+                del value['custom_shape']
+
+        for comp in self.all_components:
+            for bi in comp.all_bone_infos:
+                if bi.name in custom_shape_data:
+                    shape_data = custom_shape_data[bi.name]
+                    if 'custom_shape' in shape_data:
+                        # Also preserve having no custom shape, which set_pbone_custom_shape_data() would skip.
+                        bi.custom_shape = shape_data['custom_shape']
+                    set_pbone_custom_shape_data(bi, **shape_data)
+
+    ### Early generation steps.
+    def ensure_widget_collection(self, context: Context) -> Collection:
+        """Create the collection where bone shapes will be linked to."""
+        if not self.params.widget_collection:
+            wgts_group_name = self.target_rig.name.replace("NEW-RIG-", "") + "-custom_shapes"
+            self.params.widget_collection = ensure_collection(context, wgts_group_name, hidden=True)
+
+        return self.params.widget_collection
+
+    def instantiate_rig_components(
+        self,
+        comp_pbone_subset: list[PoseBone] | None = None,
+    ) -> OrderedDict[str, "Component_Base"]:
+        """Refresh the generation order stored in each rig component, then create rig instances based on that order."""
+
+        pbones_ordered = self.build_component_pbone_order(self.metarig, comp_pbone_subset)
+
+        comp_map = OrderedDict()
+        for pb in pbones_ordered:
+            parent_component_rna = pb.cloudrig_component.parent
+            parent_component = None
+            if parent_component_rna:
+                parent_component = comp_map.get(parent_component_rna.base_bone_name)
+                if not self.painter:
+                    assert parent_component, (
+                        "Error: Parent should've been instantiated already! Are we not looping hierarchically?"
+                    )
+
+            comp_instance = pb.cloudrig_component.instantiate(generator=self, parent_component=parent_component)
+            if not comp_instance:
+                self.logger.log(
+                    rpt_("Invalid Component Type"),
+                    note=pb.cloudrig_component.component_type,
+                    base_bone_name=pb.name,
+                    description=rpt_(
+                        "This component type no longer exists in CloudRig. Perhaps it's been renamed or removed. Please re-assign a valid component type."
+                    ),
+                    operator='pose.cloudrig_assign_component_type',
+                    op_kwargs={'bone_name': pb.name, 'remove_active_log': True},
+                    op_text=iface_("Assign Component"),
+                )
+                continue
+            comp_map[pb.name] = comp_instance
+
+        return comp_map
+
+    def ensure_root_bone_component(self, context: Context, metarig: Object, root_name='root'):
+        # Note: The root bone MAY have a parent! It doesn't have to be the true root.
+        # It is merely the bone to which:
+        # - Orphan bones are automatically parented.
+        # - IK pole targets are parented to when "IK Pole Follow" set-ups are generated, but not currently in use.
+        # - FK Hinge bones are parented to when hinge is enabled.
+        if root_name in metarig.data.bones:
+            return metarig.pose.bones[root_name]
+
+        bpy.ops.object.mode_set(mode='EDIT')
+        edit_bone = ensure_ebone(metarig, root_name)
+        edit_bone.use_deform = False
+        edit_bone.color.palette = 'THEME04'
+        name = edit_bone.name
+        bpy.ops.object.mode_set(mode='OBJECT')
+
+        pose_bone = metarig.pose.bones[name]
+        pose_bone.rotation_mode = 'XYZ'
+        pose_bone.cloudrig_component.component_type = 'Raw Copy'
+        pose_bone.custom_shape = self.ensure_widget(context, "Root")
+        pose_bone.custom_shape_wire_width = 2.0
+        pose_bone.custom_shape_rotation_euler.x += pi / 2
+        return pose_bone
+
+    ### Main generation steps.
+    def components_load_bone_infos(self, component_map: dict[str, Component_Base], metarig: Object):
+        """Let all rig components populate their initial BoneInfo instances."""
+
+        bone_infos = {}
+
+        for bone_name, component in component_map.items():
+            bone_infos.update(component.base__load_metarig_bones())
+
+        # Parent has to be stored in a separate loop, after all BoneInfos are loaded.
+        for bone_name, bone_info in bone_infos.items():
+            bone = metarig.data.bones.get(bone_name)
+            if bone.parent:
+                parent_bone_info = bone_infos.get(bone.parent.name)
+                if parent_bone_info:
+                    bone_info.parent = parent_bone_info
+                else:
+                    # This can happen during overlay drawing, when only generating
+                    # a sub-set of the whole armature.
+                    bone_info.parent = None
+
+    def components_create_bone_infos(self, context: Context):
+        """Create BoneInfos that will get turned into real bones later."""
+
+        for component in self.all_components:
+            component.create_bone_infos(context)
+
+    def components_create_interactions(self, context: Context):
+        """Once all rig components have created their BoneInfos, we can safely
+        create relationships between components, since all bones exist.
+        Having this be a separate step is really important for a lenient and flexible
+        parent switching system, allowing users to select any bone as a parent.
+        """
+
+        for component in self.all_components:
+            component.create_component_interactions(context)
+
+    def components_create_real_bones(self):
+        """Create real bones from all BoneInfos.
+        No bone data is written yet beside the name.
+        This function should be called before components_write_ebone_data()
+        so that setting the parents can be done without worrying about creation order.
+        """
+
+        # We need to nuke original bone constraints and collection assignments,
+        # since those will be re-created via BoneInfo API.
+        # XXX: These steps should arguably be done at bone write time instead.
+        for pb in self.target_rig.pose.bones:
+            for con in reversed(pb.constraints):
+                pb.constraints.remove(con)
+            for coll in pb.bone.collections:
+                coll.unassign(self.target_rig.data.edit_bones[pb.name])
+
+        # Remove all non-preserved BoneInfos' real bones first, to prevent
+        # avoidable name collisions.
+        for bone_info in self.bone_infos:
+            if not bone_info.preserve:
+                eb = self.target_rig.data.edit_bones.get(bone_info.name)
+                if eb:
+                    self.target_rig.data.edit_bones.remove(eb)
+
+        # Check for name collisions between the remaining (preserved) BoneInfos.
+        bone_infos_by_name: dict[str, list[BoneInfo]] = defaultdict(list)
+        for bone_info in self.bone_infos:
+            if bone_info.preserve:
+                bone_infos_by_name[bone_info.name].append(bone_info)
+        for name, colliding_bone_infos in bone_infos_by_name.items():
+            if len(colliding_bone_infos) > 1:
+                components = sorted(
+                    {bi.bone_set.rig_component.base_bone_name for bi in colliding_bone_infos if bi.bone_set}
+                )
+                self.raise_generation_error(
+                    description=rpt_(
+                        "Bone name `{bone}` is wanted by more than one component ({components}). "
+                        "Bone names must be unique; please rename one of them."
+                    ).format(bone=name, components=", ".join(components))
+                )
+
+        for bone_info in self.bone_infos:
+            if not bone_info.preserve:
+                continue
+            if bone_info.name in self.target_rig.data.edit_bones:
+                # This happens for ORG bones that we load into BoneInfo objects,
+                # since they already got created by create_target_rig_obj()'s armature copy.
+                continue
+
+            edit_bone = ensure_ebone(self.target_rig, bone_info.name)
+            bone_info.name = edit_bone.name
+            assert bone_info.name == edit_bone.name, "Bone names clash. Should have been caught already."
+
+    def parent_orphan_bone_infos_to_root(self):
+        """Parent any bone infos with no parent (orphans) to the root bone info."""
+        for bone_info in self.bone_infos:
+            if bone_info == self.root_bone_info or self.root_bone_info in bone_info.children_recursive:
+                continue
+            if bone_info.is_orphan:
+                bone_info.parent = self.root_bone_info
+
+    def components_write_ebone_data(self):
+        """Write edit bone data for BoneInfos.
+        This function does not create EditBones.
+        That should be done earlier by calling components_create_real_bones(),
+        so that parenting can be done without worrying about order.
+        """
+
+        for bone_info in self.bone_infos:
+            edit_bone = self.target_rig.data.edit_bones.get(bone_info.name)
+            bone_info.write_edit_data(self, edit_bone)
+
+    @no_overlay
+    def components_create_helper_objs(self, context: Context):
+        """Called in Object mode once bones have been created and placed."""
+        for component in self.all_components:
+            component.create_helper_objects(context)
+
+        # Delete original bones that we don't need.
+        for bone_info in self.bone_infos:
+            if not bone_info.preserve:
+                ebone = self.target_rig.data.edit_bones.get(bone_info.name)
+                if ebone:
+                    self.target_rig.data.edit_bones.remove(ebone)
+
+    def components_write_pbone_data(self, context: Context, target_rig: Object):
+        for bone_info in self.bone_infos:
+            if not bone_info.preserve:
+                continue
+            # Ensure bone collections in both the Metarig and the Target Rig.
+            # TODO: Is this still needed?
+            for collection_name in bone_info.collections:
+                meta_coll = self.metarig.data.collections_all.get(collection_name)
+                if not meta_coll:
+                    meta_coll = self.metarig.data.collections.new(collection_name)
+                    meta_coll.cloudrig_info.name = meta_coll.name
+                    meta_coll.is_visible = True
+
+                target_coll = target_rig.data.collections_all.get(collection_name)
+                if not target_coll:
+                    target_coll = target_rig.data.collections.new(collection_name)
+                    target_coll.cloudrig_info.name = target_coll.name
+                    target_coll.is_visible = meta_coll.is_visible
+
+            pose_bone = target_rig.pose.bones.get(bone_info.name)
+            if not pose_bone:
+                # TODO: This should never happen. Should probably be treated as a bug.
+                self.logger.log(
+                    rpt_("Bone creation failed"),
+                    base_bone_name=bone_info.owner_component.base_bone_name,
+                    trouble_bone=bone_info.name,
+                    description=rpt_('BoneInfo "{bone}" was not created for some reason.').format(bone=bone_info.name),
+                )
+                continue
+
+            # Scale bone shape based on B-Bone scale
+            bone_info.write_pose_data(context, self.metarig, pose_bone)
+
+    ### Final generation steps.
+    def execute_custom_script(self, context: Context, old_rig: Object | None, new_rig: Object):
+        """Execute a text datablock to be executed after rig generation."""
+        # This is a bit hacky, but we need the rig name to be the "original" so that
+        # post-gen script authors can get a reference to the rig easily.
+        # (Since we don't want to move execution of the post-gen script after replace_old_with_new_rig)
+        script = self.params.custom_script
+        if not script:
+            return
+        if old_rig:
+            old_rig.name = "OLD-" + old_rig.name
+        new_rig.name = new_rig.name.replace("NEW-", "")
+        try:
+            script.as_module()
+        except Exception as exc:
+            self.logger.log_fatal_error(
+                rpt_("Post-Generation Script failed."),
+                description=rpt_(
+                    'Execution of post-generation script in text datablock "{script}" failed, see stack trace below.'
+                ).format(script=script.name),
+                note=str(exc),
+                display_stack_trace='ALWAYS',
+            )
+            self.custom_script_failure = True
+            raise
+        finally:
+            new_rig.name = "NEW-" + new_rig.name
+            if old_rig:
+                old_rig.name = old_rig.name.replace("OLD-", "")
+            if context.active_object != new_rig:
+                # In case user made some other object active...
+                context.view_layer.objects.active = new_rig
+            if context.mode != 'OBJECT':
+                # In case user didn't go back to Object mode...
+                bpy.ops.object.mode_set(mode='OBJECT')
+
+    def replace_old_with_new_rig(self, context: Context, old_rig: Object, new_rig: Object, preserve_custom_props=True):
+        """Preserve useful user-inputted information from the previous rig,
+        then delete it and remap users to the new rig.
+        """
+        # TODO: Document what properties are and aren't preserved.
+
+        # If cloudrig.py is linked, save that reference. This will be checked for
+        # later, in ensure_cloudrig_ui.
+        if 'cloudrig_ui' in old_rig.data and old_rig.data['cloudrig_ui'] and old_rig.data['cloudrig_ui'].library:
+            new_rig.data['cloudrig_ui'] = old_rig.data['cloudrig_ui']
+
+        if preserve_custom_props:
+            # Preserve all custom properties and add-on properties.
+            # Selection Sets, Bone Gizmos, Asset Pipeline, etc...
+            copy_all_runtime_properties(old_rig, new_rig)
+
+        old_data_name = old_rig.data.name
+        old_rig.data.name += "_old"
+
+        # Preserve parenting information of previous rig.
+        new_rig.parent = old_rig.parent
+        new_rig.parent_type = old_rig.parent_type
+        new_rig.parent_bone = old_rig.parent_bone
+        new_rig.parent_vertices = old_rig.parent_vertices
+        new_rig.matrix_parent_inverse = old_rig.matrix_parent_inverse.copy()
+
+        # Preserve transform matrix of previous rig.
+        new_rig.matrix_world = old_rig.matrix_world.copy()
+
+        # Preserve assigned action of previous rig.
+        if old_rig.animation_data and old_rig.animation_data.action:
+            if not new_rig.animation_data:
+                new_rig.animation_data_create()
+            new_rig.animation_data.action = old_rig.animation_data.action
+            if hasattr(new_rig.animation_data, 'action_slot'):
+                new_rig.animation_data.action_slot = old_rig.animation_data.action_slot
+
+        # Preserve Armature display settings.
+        new_rig.display_type = old_rig.display_type
+        new_rig.show_in_front = old_rig.show_in_front
+        new_rig.data.display_type = old_rig.data.display_type
+        new_rig.data.show_axes = old_rig.data.show_axes
+
+        # Preserve Pose Mode x-mirror
+        new_rig.pose.use_mirror_x = old_rig.pose.use_mirror_x
+
+        # Preserve bone collections which are marked with preserve_on_regenerate.
+        for old_idx, old_coll in enumerate(old_rig.data.collections_all):
+            if not old_coll.cloudrig_info.preserve_on_regenerate:
+                continue
+            new_coll = new_rig.data.collections.get(old_coll.name)
+            if not new_coll:
+                parent = None
+                if old_coll.parent:
+                    parent = new_rig.data.collections_all.get(old_coll.parent.name)
+                new_coll = new_rig.data.collections.new(old_coll.name, parent=parent)
+                new_coll.name = old_coll.name
+            copy_property_group(old_coll.cloudrig_info, new_coll.cloudrig_info)
+            new_coll.is_visible = old_coll.is_visible
+            for old_bone in old_coll.bones:
+                new_bone = new_rig.data.bones.get(old_bone.name)
+                if new_bone:
+                    new_coll.assign(new_bone)
+            for old_child in old_coll.children:
+                new_child = new_rig.data.collections_all.get(old_child.name)
+                if new_child:
+                    new_child.parent = new_coll
+            new_coll_idx = new_rig.data.collections_all.find(new_coll.name)
+            max_idx = len(new_rig.data.collections)
+            try:
+                new_rig.data.collections.move(new_coll_idx, min(old_idx, max_idx))
+            except RuntimeError:
+                # Shouldn't really happen anymore...
+                pass
+        new_rig.data.collections.active_index = 0
+
+        # Select and make active the new rig.
+        new_rig.select_set(True)
+        context.view_layer.objects.active = new_rig
+
+        # Remove old rig from all of its collections, and link the new rig to them.
+        for coll in new_rig.users_collection:
+            coll.objects.unlink(new_rig)
+        for coll in old_rig.users_collection:
+            coll.objects.unlink(old_rig)
+            coll.objects.link(new_rig)
+
+        # Swap all references pointing at the old rig to the new rig.
+        old_rig.id_data.user_remap(new_rig)
+        old_name = old_rig.name
+
+        # Delete the old rig.
+        bpy.data.objects.remove(old_rig)
+
+        # Preserve object/data name of previous rig.
+        new_rig.name = old_name
+        new_rig.data.name = old_data_name
+
+    def restore_rig_states(self, context: Context):
+        """Restore transforms after generation has either failed or succeeded."""
+        self.metarig.data.pose_position = self.metarig_pose_bkp
+        if self.target_rig:
+            self.target_rig.data.pose_position = 'POSE'
+        self.metarig.location = self.loc_bkp.copy()
+        self.metarig.rotation_euler = self.rot_bkp.copy()
+        self.metarig.scale = self.scale_bkp.copy()
+
+        refresh_all_drivers()
+        refresh_constraints(self.target_rig)
+        context.view_layer.update()
+
+    def log_minor_issues(self, context: Context):
+        if self.params.widget_collection:
+            self.logger.report_widgets(self.params.widget_collection)
+        self.logger.report_sus_obj_name(self.metarig)
+        self.logger.report_sus_modifier_order(self.target_rig)
+        self.logger.report_sus_bone_collections(self.metarig, self.target_rig)
+        self.logger.report_invalid_drivers_on_object_hierarchy(self.metarig)
+        self.logger.report_invalid_drivers_on_object_hierarchy(self.target_rig)
+        self.logger.report_sus_constraints(self.target_rig)
+        self.logger.report_actions()
+        self.logger.report_metarig_children(self.metarig)
+        self.logger.report_bad_bone_colors(context)
+        self.logger.report_old_cloudrig_props(self.metarig)
+
+
+def parent_orphans(rig: Object, root_name: str):
+    """Parent all top-level bones (which are not ancestors of the root) to the root bone."""
+    root_bone = rig.data.bones[root_name]
+    # The root bone and its ancestors are not considered orphans.
+    root_lineage = {root_bone.name} | {parent.name for parent in root_bone.parent_recursive}
+
+    def is_orphan(bone: Bone):
+        if bone.parent or bone.name in root_lineage:
+            return False
+        pbone = rig.pose.bones[bone.name]
+        return not any(con for con in pbone.constraints if con.type in ('ARMATURE', 'CHILD_OF'))
+
+    orphan_names = [bone.name for bone in rig.data.bones if is_orphan(bone)]
+    if not orphan_names:
+        return
+
+    bpy.ops.object.mode_set(mode='EDIT')
+    root_ebone = rig.data.edit_bones[root_name]
+    for orphan_name in orphan_names:
+        rig.data.edit_bones[orphan_name].parent = root_ebone
+    bpy.ops.object.mode_set(mode='OBJECT')
+
+
+def ensure_cloudrig_ui(rig: Object):
+    """Load and execute cloudrig.py rig UI script."""
+    if 'cloudrig_ui' in rig.data:
+        # If the rig UI script is linked, it's been preserved in
+        # replace_old_with_new_rig().
+        # This also allows the post-generation script to assign a custom script.
+        return
+    rig.data['cloudrig_ui'] = load_script(
+        file_path=os.path.dirname(os.path.realpath(__file__)), file_name="cloudrig.py"
+    )
+
+
+def ensure_ebone(rig_ob: Object, bone_name: str) -> EditBone:
+    """Adds a new bone to the active Armature object.
+    Must be in edit mode.
+    Returns the resulting Edit Bone.
+    """
+    existing = rig_ob.data.edit_bones.get(bone_name)
+    if existing:
+        return existing
+    edit_bone = rig_ob.data.edit_bones.new(bone_name)
+    edit_bone.tail = (0, 1, 0)
+    return edit_bone
+
+
+def create_target_rig_obj(context: Context, metarig: Object) -> Object:
+    """Create a new empty Armature object that will get populated throughout
+    the generation process.
+    We start with a duplicate of the Metarig object, but a blank Armature datablock.
+    This means that object-level data on the Metarig such as custom properties and constraints, will be preserved.
+    """
+    metaname = metarig.name
+    final_name = metaname.replace("META", "RIG")
+    if 'META' not in metaname:
+        final_name = "RIG-" + metaname
+
+    rig_name = "NEW-" + final_name
+
+    armature = metarig.data.copy()
+    target_rig = metarig.copy()
+    reset_armature(target_rig)
+
+    # Nuke drivers targetting the Pose. (ie. PoseBone drivers).
+    if target_rig.animation_data:
+        for fc in target_rig.animation_data.drivers[:]:
+            if fc.data_path.startswith('pose'):
+                target_rig.animation_data.drivers.remove(fc)
+
+    # Remove duplicated CloudRig data to clear ID references used by the metarig.
+    target_rig.property_unset('cloudrig')
+
+    target_rig.name = rig_name
+    target_rig.data = armature
+
+    context.scene.collection.objects.link(target_rig)
+    # Mark rig for cloudrig.py compatibility checks.
+    target_rig.data['is_generated_cloudrig'] = True
+
+    # Wipe selection sets.
+    target_rig.selection_sets.clear()
+
+    # Save generation timestamp to a custom property.
+    now = datetime.now().astimezone()
+    date = f"{now.year}-{now.month}-{now.day}"
+    timestamp = f"{str(now.hour).zfill(2)}:{str(now.minute).zfill(2)}:{str(now.second).zfill(2)}"
+    target_rig.data['generation_date'] = date
+    target_rig.data['generation_time'] = timestamp
+
+    # Copy debug viewport display settings from the metarig, usually used for debugging.
+    target_rig.data.show_names = metarig.data.show_names
+    target_rig.show_in_front = metarig.show_in_front
+    target_rig.data.show_axes = metarig.data.show_axes
+
+    target_rig.data.pose_position = 'REST'
+
+    metarig.cloudrig_prefs.sync_collection_names()
+
+    # Relink any drivers.
+    if target_rig.data.animation_data:
+        for src_driver in target_rig.data.animation_data.drivers:
+            relink_real_driver(metarig, target_rig, src_driver)
+            relink_real_driver(metarig.data, target_rig.data, src_driver)
+
+    # Disable X-Mirror.
+    target_rig.data.use_mirror_x = False
+
+    return target_rig
+
+
+def map_pbones_to_drivers(armature_ob: Object) -> dict[str, list[tuple[str, int]]]:
+    """Create a dictionary matching bone names to full data paths of drivers
+    that belong to those bones. This is to speed up loading drivers into BoneInfos."""
+    driver_map = {}
+    if not armature_ob.animation_data:
+        return driver_map
+    for fc in armature_ob.animation_data.drivers:
+        data_path = fc.data_path
+        if "pose.bones" not in data_path:
+            continue
+        bone_name = data_path.split('pose.bones["')[1].split('"]')[0]
+        if bone_name not in driver_map:
+            driver_map[bone_name] = []
+        driver_map[bone_name].append((data_path, fc.array_index))
+    return driver_map
+
+
+def refresh_constraints(rig: Object):
+    """Force-reassign all bone constraint targets to trigger dependency graph updates."""
+    if not rig:
+        return
+    for pb in rig.pose.bones:
+        for con in pb.constraints:
+            if hasattr(con, 'target'):
+                con.target = con.target
+            if con.type == 'ARMATURE':
+                for target in con.targets:
+                    target.target = target.target
+
+
+def focus_select_obj(context: Context, obj: Object | None):
+    """Deselect all objects and make obj the sole selection and active object."""
+    if not obj:
+        return
+    bpy.ops.object.mode_set(mode='OBJECT')
+    bpy.ops.object.select_all(action='DESELECT')
+    obj.select_set(True)
+    context.view_layer.objects.active = obj
+
+
+class CLOUDRIG_OT_generate(Operator):
+    bl_idname = "pose.cloudrig_generate"
+    bl_label = iface_("Generate CloudRig")
+    bl_options = {'REGISTER', 'UNDO'}
+    bl_description = "Generates the Target Rig based on the active Metarig"
+
+    focus_generated: BoolProperty(
+        name="Focus Generated",
+        default=True,
+        description="After a successful generation, hide the Metarig, and unhide and select the Target Rig",
+    )
+    preserve_state: BoolProperty(
+        name="Preserve State",
+        default=True,
+        description="Preserve bone selection, bone visibility, and bone collection visibility",
+    )
+
+    @staticmethod
+    def get_metarig_to_generate(context: Context) -> Object | None:
+        """Finds the metarig the user wants to generate.
+        If there are more than one metarigs in the scene, use the active one,
+        or the one referencing the active one.
+        If there is only one metarig in the scene, just use that one.
+        If there are multiple metarigs and neither they or their target rig is active,
+        this returns None.
+        """
+        if is_active_cloud_metarig(context):
+            return context.active_object
+        elif is_active_cloudrig(context):
+            # Find the metarig referencing this rig
+            for obj in context.scene.objects:
+                if obj.type == 'ARMATURE' and obj.cloudrig.generator.target_rig == context.active_object:
+                    return obj
+
+        metarigs = [obj for obj in context.scene.objects if is_cloud_metarig(obj)]
+        if len(metarigs) == 1:
+            return metarigs[0]
+
+    @classmethod
+    def poll(cls, context: Context):
+        """This operator is available when we can deduce from the context which
+        metarig the user wants to generate."""
+        metarig = cls.get_metarig_to_generate(context)
+        if not metarig:
+            cls.poll_message_set("Could not find a metarig in the current context.")
+            return False
+        return True
+
+    def draw(self, _context: Context):
+        # XXX: Re-doing the generation process crashes Blender,
+        # so, just don't draw the operator properties, and therefore don't support re-do for now.
+        return
+
+    def execute(self, context: Context):
+        start_time = time()
+        metarig = self.get_metarig_to_generate(context)
+        prev_generated_rig = metarig.cloudrig.generator.target_rig
+
+        if len(metarig.data.bones) == 0:
+            self.report({'ERROR'}, "The metarig has no bones.")
+            return {'CANCELLED'}
+
+        # If the old rig isn't part of the scene, it needs to be.
+        # The generation process works fine without this,
+        # but it could confuse users if the Target Rig isn't focused.
+        if prev_generated_rig and prev_generated_rig not in set(context.view_layer.objects):
+            self.report(
+                {'ERROR'},
+                rpt_("Target rig '{rig}' cannot be re-generated because it is not in the current view layer.").format(
+                    rig=prev_generated_rig.name
+                ),
+            )
+            return {'CANCELLED'}
+
+        # Save state so it can be restored for convenience.
+        state_mode = 'OBJECT'
+        if metarig is context.active_object:
+            state_mode = metarig.mode
+        elif prev_generated_rig and prev_generated_rig is context.active_object:
+            state_mode = prev_generated_rig.mode
+        active_pb = get_pbone_of_active(context)
+        state_active_bone = active_pb.name if active_pb else ""
+        if prev_generated_rig:
+            if prev_generated_rig.mode == 'EDIT':
+                ebones = prev_generated_rig.data.edit_bones
+                state_selection = {ebone.name: (ebone.select, ebone.select_head, ebone.select_tail) for ebone in ebones}
+                state_hide = {ebone.name: ebone.hide for ebone in ebones}
+            else:
+                pbones = prev_generated_rig.pose.bones
+                state_selection = {pbone.name: (pbone.select, pbone.select, pbone.select) for pbone in pbones}
+                state_hide = {pbone.name: pbone.hide for pbone in pbones}
+
+            state_collections = {coll.name: coll.is_visible for coll in prev_generated_rig.data.collections_all}
+        else:
+            self.preserve_state = False
+
+        # Ensure required visibility and active states.
+        meta_visible = EnsureVisible(context, metarig)
+        rig_visible = None
+        if prev_generated_rig:
+            rig_visible = EnsureVisible(context, prev_generated_rig)
+        context.view_layer.objects.active = metarig
+
+        # Try to generate a rig based on the metarig.
+        new_rig = self.generate_rig(context, metarig)
+
+        # Restore states.
+        meta_visible.restore(context)
+        if rig_visible:
+            rig_visible.restore(context)
+
+        if not new_rig:
+            # if 'failed_rig' in metarig and metarig['failed_rig']:
+            #     metarig['failed_rig'].select_set(False)
+            #     metarig.select_set(True)
+
+            # This means an error has occurred. It was already handled in generate_rig().
+            self.report(
+                {'ERROR'},
+                rpt_("Generation of {metarig} has failed. See the Generation Log for more info.").format(
+                    metarig=metarig.name
+                ),
+            )
+            return {'FINISHED'}
+        elif self.focus_generated:
+            self.focus_generated_rig(context, metarig, state_mode)
+
+        if self.preserve_state and new_rig:
+            self.restore_state(
+                new_rig,
+                mode=state_mode,
+                active_bone_name=state_active_bone,
+                state_selection=state_selection,
+                state_hide=state_hide,
+                state_collections=state_collections,
+            )
+        duration = time() - start_time
+        if len(metarig.cloudrig.generator.logs) > 0:
+            self.report(
+                {'WARNING'},
+                rpt_("Generation of {new_rig} successful with {num_warnings} warnings. ({seconds}s)").format(
+                    new_rig=new_rig.name, num_warnings=len(metarig.cloudrig.generator.logs), seconds=f"{duration:.2f}"
+                ),
+            )
+        else:
+            self.report(
+                {'INFO'},
+                rpt_("Generation of {new_rig} successful. ({seconds}s)").format(
+                    new_rig=new_rig.name, seconds=f"{duration:.2f}"
+                ),
+            )
+
+        return {'FINISHED'}
+
+    def generate_rig(self, context: Context, metarig: Object) -> Object | None:
+        """Generates a rig from a metarig.
+
+        Encountering a rig generation error will not halt the execution of the operator.
+        This is important because the user can make mistakes in the MetaRig setup,
+        which cannot be detected until the rig is attempted to be fully generated.
+        Such errors must be accounted for and handled gracefully.
+        """
+
+        generator_properties = metarig.cloudrig.generator
+        generator = CloudRig_Generator(context, metarig)
+        try:
+            generator.generate(context)
+        except Exception as exception:
+            generator.restore_rig_states(context)
+
+            focus_select_obj(context, generator.target_rig)
+
+            if generator.target_rig:
+                generator.target_rig.name = "FAILED-" + generator.target_rig.name
+                generator.target_rig.name = generator.target_rig.name.replace("NEW-", "")
+                metarig['failed_rig'] = generator.target_rig
+                # Leave a reference to the Metarig, so the Toggle Metarig operator
+                # can find its way back to it.
+                generator.target_rig['metarig'] = metarig
+
+            if type(exception) is CloudGeneratorError:
+                # A MetaRig error means the user created an invalid metarig setup.
+                # Importantly, this is not a bug.
+                self.report({'ERROR'}, exception.message)
+            else:
+                if generator.custom_script_failure:
+                    # The error occurred in the user's post-generation script.
+                    # execute_custom_script() has already created the log entry for us,
+                    # so we just want to keep raising the exception.
+                    raise
+
+                exception_module = get_exception_module(exception)
+                operator = 'wm.cloudrig_report_bug'
+                op_kwargs = {}
+                if exception_module:
+                    exc_mod_name = exception_module.__name__
+                    is_cloudrig_bug = (
+                        'rig_components' not in exc_mod_name or "." not in exc_mod_name.split("rig_components.")[-1]
+                    )
+                    if is_cloudrig_bug:
+                        operator = 'wm.cloudrig_report_bug'
+                    elif (
+                        hasattr(exception_module, 'RIG_COMPONENT_CLASS')
+                        and hasattr(exception_module.RIG_COMPONENT_CLASS, 'bug_report_url')
+                        and exception_module.RIG_COMPONENT_CLASS.bug_report_url
+                    ):
+                        operator = 'wm.url_open'
+                        op_kwargs = {'url': exception_module.RIG_COMPONENT_CLASS.bug_report_url}
+
+                # Any other exception type is a bug.
+                # We give the user a button to report the error.
+                generator.logger.log_fatal_error(
+                    rpt_("Generation Failed!"),
+                    description=rpt_("Generation failed unexpectedly."),
+                    note=str(exception),
+                    operator=operator,
+                    op_kwargs=op_kwargs,
+                    op_text=iface_("Report Bug"),
+                    op_icon='URL',
+                    display_stack_trace='ALWAYS',
+                )
+
+                self.report(
+                    {'ERROR'},
+                    rpt_(
+                        "A bug has occurred. You can report it through the Generation Log interface.{traceback}"
+                    ).format(traceback=f"\n{traceback.format_exc()}"),
+                )
+
+            return
+
+        return generator_properties.target_rig
+
+    def focus_generated_rig(self, context: Context, metarig: Object, mode='OBJECT'):
+        """Focus the Target Rig for convenient generation and re-generation workflow:
+        - Hide the metarig.
+        - Reveal the Target Rig and set it as selected and active.
+        - Enter the same mode as before.
+        """
+
+        # Hide metarig.
+        metarig.hide_set(True)
+        target_rig = metarig.cloudrig.generator.target_rig
+        target_rig.hide_set(False)
+
+        # Make Target Rig visible, selected, active.
+        if target_rig in context.view_layer.objects[:]:
+            context.view_layer.objects.active = target_rig
+            target_rig.select_set(True)
+
+        # Restore object's mode.
+        if target_rig.mode != mode:
+            bpy.ops.object.mode_set(mode=mode)
+
+    def restore_state(
+        self,
+        target_rig: Object,
+        mode: str,
+        active_bone_name: str,
+        state_selection: dict,
+        state_hide: dict,
+        state_collections: dict,
+    ):
+        """Restore rig state for convenient re-generation workflow:
+        - Preserve bone active, selected, and hidden states where possible.
+        - Preserve collection visibility states where possible.
+        """
+
+        # Bones initialize with their tail selected, so deselect them.
+        if mode == 'EDIT':
+            for ebone in target_rig.data.edit_bones:
+                ebone.select_tail = False
+
+        # Restore active bone.
+        if active_bone_name in target_rig.pose.bones:
+            target_rig.data.bones.active = target_rig.data.bones[active_bone_name]
+
+        # Restore bone selection states (including head/tail).
+        for bone_name, select_state in state_selection.items():
+            if bone_name in target_rig.data.bones:
+                if mode == 'EDIT':
+                    ebone = target_rig.data.edit_bones[bone_name]
+                    ebone.select, ebone.select_head, ebone.select_tail = (
+                        select_state[0],
+                        select_state[1],
+                        select_state[2],
+                    )
+                else:
+                    pbone = target_rig.pose.bones[bone_name]
+                    pbone.select = select_state[0]
+
+        # Restore bone visibility states.
+        for bone_name, hide in state_hide.items():
+            bone = target_rig.data.bones.get(bone_name)
+            if not bone:
+                continue
+            bone.hide = hide
+
+        # Restore collection visibility states.
+        for coll_name, is_visible in state_collections.items():
+            coll = target_rig.data.collections_all.get(coll_name)
+            if not coll:
+                continue
+            coll.is_visible = is_visible
+
+
+def get_exception_module(exc: Exception) -> ModuleType | None:
+    """Return the module in which the exception was raised, or None if it cannot be determined."""
+    tb = exc.__traceback__
+    while tb.tb_next:
+        tb = tb.tb_next
+    frame = tb.tb_frame
+    module_name = frame.f_globals.get("__name__")
+    return sys.modules.get(module_name)
+
+
+registry = [
+    GeneratorProperties,
+    CLOUDRIG_OT_generate,
+]
+
+
+def register():
+    register_hotkey(
+        CLOUDRIG_OT_generate.bl_idname,
+        hotkey_kwargs={'type': "R", 'value': "PRESS", 'ctrl': True, 'alt': True},
+        keymap_name="3D View",
+    )

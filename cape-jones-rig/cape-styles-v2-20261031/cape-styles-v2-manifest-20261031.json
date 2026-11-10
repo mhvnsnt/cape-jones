@@ -1,0 +1,212 @@
+[
+  {
+    "file": "cape-01-draped-20261031.png",
+    "size": [
+      490,
+      833
+    ],
+    "form": "draped",
+    "direction": "down, vertical",
+    "wind": "none",
+    "weight": "heavy hem",
+    "folds": "9 vertical, gravity",
+    "movement": "idle, standing",
+    "method": "warp + fold shading"
+  },
+  {
+    "file": "cape-02-lying-flat-20261031.png",
+    "size": [
+      833,
+      490
+    ],
+    "form": "lying-flat",
+    "direction": "horizontal, spread",
+    "wind": "none",
+    "weight": "flat, pooled",
+    "folds": "8 horizontal",
+    "movement": "resting, knocked down",
+    "method": "rotate + fold shading"
+  },
+  {
+    "file": "cape-03-swinging-20261031.png",
+    "size": [
+      490,
+      833
+    ],
+    "form": "swinging",
+    "direction": "S-curve, side to side",
+    "wind": "moderate",
+    "weight": "medium",
+    "folds": "8 vertical following curve",
+    "movement": "walk, turn",
+    "method": "sine warp + folds"
+  },
+  {
+    "file": "cape-04-billowing-20261031.png",
+    "size": [
+      490,
+      833
+    ],
+    "form": "billowing",
+    "direction": "outward, flared hem",
+    "wind": "strong from behind",
+    "weight": "light, lifted",
+    "folds": "10 vertical, flared",
+    "movement": "run, fly, wind",
+    "method": "flare warp + folds"
+  },
+  {
+    "file": "cape-05-wind-left-20261031.png",
+    "size": [
+      490,
+      833
+    ],
+    "form": "wind-blown left",
+    "direction": "hem swept left",
+    "wind": "strong right-to-left",
+    "weight": "light",
+    "folds": "9 diagonal-leaning",
+    "movement": "run, storm, fly",
+    "method": "shear warp + folds"
+  },
+  {
+    "file": "cape-06-wind-right-20261031.png",
+    "size": [
+      490,
+      833
+    ],
+    "form": "wind-blown right",
+    "direction": "hem swept right",
+    "wind": "strong left-to-right",
+    "weight": "light",
+    "folds": "9 diagonal-leaning",
+    "movement": "run, storm, fly",
+    "method": "shear warp + folds"
+  },
+  {
+    "file": "cape-07-lifted-up-20261031.png",
+    "size": [
+      490,
+      833
+    ],
+    "form": "lifted up",
+    "direction": "up, gathered",
+    "wind": "updraft / jump",
+    "weight": "lifted",
+    "folds": "8 vertical, gathered",
+    "movement": "jump, punch, flex",
+    "method": "lift warp + folds"
+  },
+  {
+    "file": "cape-08-hanging-heavy-20261031.png",
+    "size": [
+      416,
+      874
+    ],
+    "form": "hanging heavy",
+    "direction": "straight down, weighted",
+    "wind": "none",
+    "weight": "very heavy hem",
+    "folds": "11 tight vertical",
+    "movement": "idle, dramatic stand",
+    "method": "taper + heavy hem + folds"
+  },
+  {
+    "file": "cape-09-twisted-20261031.png",
+    "size": [
+      490,
+      833
+    ],
+    "form": "twisted",
+    "direction": "spiral, torso turn",
+    "wind": "spin",
+    "weight": "medium",
+    "folds": "9 following twist",
+    "movement": "spin, dance twist, dodge",
+    "method": "double-sine warp + folds"
+  },
+  {
+    "file": "cape-10-over-shoulder-20261031.png",
+    "size": [
+      824,
+      599
+    ],
+    "form": "folded over shoulder",
+    "direction": "diagonal up-left, shortened",
+    "wind": "none",
+    "weight": "folded, thick",
+    "folds": "7 diagonal",
+    "movement": "walk, talk, casual",
+    "method": "rotate + crop + folds"
+  },
+  {
+    "file": "cape-11-wrapped-front-20261031.png",
+    "size": [
+      303,
+      833
+    ],
+    "form": "wrapped in front",
+    "direction": "narrow, centred, closed",
+    "wind": "none",
+    "weight": "closed, warm",
+    "folds": "10 tight vertical",
+    "movement": "cold, hiding, stealth",
+    "method": "narrow + folds"
+  },
+  {
+    "file": "cape-12-trailing-behind-20261031.png",
+    "size": [
+      900,
+      959
+    ],
+    "form": "trailing behind",
+    "direction": "back-diagonal, running",
+    "wind": "strong forward motion",
+    "weight": "streaming",
+    "folds": "9 streaming",
+    "movement": "run, chase",
+    "method": "rotate + folds"
+  },
+  {
+    "file": "cape-13-flying-spread-20261031.png",
+    "size": [
+      490,
+      833
+    ],
+    "form": "flying spread",
+    "direction": "wide, both sides, lifted",
+    "wind": "strong airflow",
+    "weight": "light, spread",
+    "folds": "12 wide",
+    "movement": "fly, dive, superhero landing",
+    "method": "wide flare + folds"
+  },
+  {
+    "file": "cape-14-sitting-pooled-20261031.png",
+    "size": [
+      612,
+      599
+    ],
+    "form": "sitting pooled",
+    "direction": "outward on ground",
+    "wind": "none",
+    "weight": "pooled, heavy hem",
+    "folds": "10 ground folds",
+    "movement": "sit, rest",
+    "method": "wide + short + ground folds"
+  },
+  {
+    "file": "cape-15-raised-high-20261031.png",
+    "size": [
+      490,
+      833
+    ],
+    "form": "raised high",
+    "direction": "V, both sides up",
+    "wind": "dramatic reveal",
+    "weight": "lifted",
+    "folds": "10 V-following",
+    "movement": "reveal, dance accent, fight stance",
+    "method": "V warp + folds"
+  }
+]

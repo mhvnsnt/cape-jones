@@ -1,0 +1,1259 @@
+{
+  "base": "SQUAT SQUAT SHUFFLE OOGA BOOGA THREE QUARTER TURN AND THEN FORWARD FACE (Mars-named, pseudo-turn base)",
+  "frames": 37,
+  "fps": 12,
+  "duration_s": 3.08,
+  "keys": 7,
+  "inbetweens_total": 30,
+  "inbetweens_per_interval": 5,
+  "hands_used": [
+    "Hand_1_Fist.png",
+    "Hand_7_Grip.png",
+    "Hand_5_Point2.png",
+    "Hand_3_Open.png",
+    "Hand_4_Point.png",
+    "Hand_6_Relaxed.png",
+    "Hand_2_FistBack.png"
+  ],
+  "frame_table": [
+    {
+      "frame": 0,
+      "kind": "KEY",
+      "interval": "K0 SQUAT 1 -> K1 SQUAT 2 (deeper)",
+      "hand": "Hand_1_Fist.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 25.0,
+        "R": -25.0
+      },
+      "squash": 1.0,
+      "t_smooth": 0.0
+    },
+    {
+      "frame": 1,
+      "kind": "INBETWEEN",
+      "interval": "K0 SQUAT 1 -> K1 SQUAT 2 (deeper)",
+      "hand": "Hand_1_Fist.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 20.6,
+        "R": -20.6
+      },
+      "squash": 1.0,
+      "t_smooth": 0.074
+    },
+    {
+      "frame": 2,
+      "kind": "INBETWEEN",
+      "interval": "K0 SQUAT 1 -> K1 SQUAT 2 (deeper)",
+      "hand": "Hand_1_Fist.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 9.4,
+        "R": -9.4
+      },
+      "squash": 1.0,
+      "t_smooth": 0.259
+    },
+    {
+      "frame": 3,
+      "kind": "INBETWEEN",
+      "interval": "K0 SQUAT 1 -> K1 SQUAT 2 (deeper)",
+      "hand": "Hand_1_Fist.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -5.0,
+        "R": 5.0
+      },
+      "squash": 1.0,
+      "t_smooth": 0.5
+    },
+    {
+      "frame": 4,
+      "kind": "INBETWEEN",
+      "interval": "K0 SQUAT 1 -> K1 SQUAT 2 (deeper)",
+      "hand": "Hand_1_Fist.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -19.4,
+        "R": 19.4
+      },
+      "squash": 1.0,
+      "t_smooth": 0.741
+    },
+    {
+      "frame": 5,
+      "kind": "INBETWEEN",
+      "interval": "K0 SQUAT 1 -> K1 SQUAT 2 (deeper)",
+      "hand": "Hand_1_Fist.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -30.6,
+        "R": 30.6
+      },
+      "squash": 1.0,
+      "t_smooth": 0.926
+    },
+    {
+      "frame": 6,
+      "kind": "KEY",
+      "interval": "K1 SQUAT 2 (deeper) -> K2 SHUFFLE",
+      "hand": "Hand_7_Grip.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -35.0,
+        "R": 35.0
+      },
+      "squash": 1.0,
+      "t_smooth": 0.0
+    },
+    {
+      "frame": 7,
+      "kind": "INBETWEEN",
+      "interval": "K1 SQUAT 2 (deeper) -> K2 SHUFFLE",
+      "hand": "Hand_7_Grip.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -28.3,
+        "R": 27.2
+      },
+      "squash": 1.0,
+      "t_smooth": 0.074
+    },
+    {
+      "frame": 8,
+      "kind": "INBETWEEN",
+      "interval": "K1 SQUAT 2 (deeper) -> K2 SHUFFLE",
+      "hand": "Hand_7_Grip.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -11.7,
+        "R": 7.8
+      },
+      "squash": 1.0,
+      "t_smooth": 0.259
+    },
+    {
+      "frame": 9,
+      "kind": "INBETWEEN",
+      "interval": "K1 SQUAT 2 (deeper) -> K2 SHUFFLE",
+      "hand": "Hand_7_Grip.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 10.0,
+        "R": -17.5
+      },
+      "squash": 1.0,
+      "t_smooth": 0.5
+    },
+    {
+      "frame": 10,
+      "kind": "INBETWEEN",
+      "interval": "K1 SQUAT 2 (deeper) -> K2 SHUFFLE",
+      "hand": "Hand_7_Grip.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 31.7,
+        "R": -42.8
+      },
+      "squash": 1.0,
+      "t_smooth": 0.741
+    },
+    {
+      "frame": 11,
+      "kind": "INBETWEEN",
+      "interval": "K1 SQUAT 2 (deeper) -> K2 SHUFFLE",
+      "hand": "Hand_7_Grip.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 48.3,
+        "R": -62.2
+      },
+      "squash": 1.0,
+      "t_smooth": 0.926
+    },
+    {
+      "frame": 12,
+      "kind": "KEY",
+      "interval": "K2 SHUFFLE -> K3 OOGA BOOGA",
+      "hand": "Hand_5_Point2.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 55.0,
+        "R": -70.0
+      },
+      "squash": 1.0,
+      "t_smooth": 0.0
+    },
+    {
+      "frame": 13,
+      "kind": "INBETWEEN",
+      "interval": "K2 SHUFFLE -> K3 OOGA BOOGA",
+      "hand": "Hand_5_Point2.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 45.0,
+        "R": -58.9
+      },
+      "squash": 1.0,
+      "t_smooth": 0.074
+    },
+    {
+      "frame": 14,
+      "kind": "INBETWEEN",
+      "interval": "K2 SHUFFLE -> K3 OOGA BOOGA",
+      "hand": "Hand_5_Point2.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 20.0,
+        "R": -31.1
+      },
+      "squash": 1.0,
+      "t_smooth": 0.259
+    },
+    {
+      "frame": 15,
+      "kind": "INBETWEEN",
+      "interval": "K2 SHUFFLE -> K3 OOGA BOOGA",
+      "hand": "Hand_5_Point2.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -12.5,
+        "R": 5.0
+      },
+      "squash": 1.0,
+      "t_smooth": 0.5
+    },
+    {
+      "frame": 16,
+      "kind": "INBETWEEN",
+      "interval": "K2 SHUFFLE -> K3 OOGA BOOGA",
+      "hand": "Hand_5_Point2.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -45.0,
+        "R": 41.1
+      },
+      "squash": 1.0,
+      "t_smooth": 0.741
+    },
+    {
+      "frame": 17,
+      "kind": "INBETWEEN",
+      "interval": "K2 SHUFFLE -> K3 OOGA BOOGA",
+      "hand": "Hand_5_Point2.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -70.0,
+        "R": 68.9
+      },
+      "squash": 1.0,
+      "t_smooth": 0.926
+    },
+    {
+      "frame": 18,
+      "kind": "KEY",
+      "interval": "K3 OOGA BOOGA -> K4 THREE QUARTER TURN",
+      "hand": "Hand_3_Open.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -80.0,
+        "R": 80.0
+      },
+      "squash": 1.0,
+      "t_smooth": 0.0
+    },
+    {
+      "frame": 19,
+      "kind": "INBETWEEN",
+      "interval": "K3 OOGA BOOGA -> K4 THREE QUARTER TURN",
+      "hand": "Hand_3_Open.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -70.7,
+        "R": 70.7
+      },
+      "squash": 0.902,
+      "t_smooth": 0.074
+    },
+    {
+      "frame": 20,
+      "kind": "INBETWEEN",
+      "interval": "K3 OOGA BOOGA -> K4 THREE QUARTER TURN",
+      "hand": "Hand_3_Open.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -47.6,
+        "R": 47.6
+      },
+      "squash": 0.81,
+      "t_smooth": 0.259
+    },
+    {
+      "frame": 21,
+      "kind": "INBETWEEN",
+      "interval": "K3 OOGA BOOGA -> K4 THREE QUARTER TURN",
+      "hand": "Hand_3_Open.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -17.5,
+        "R": 17.5
+      },
+      "squash": 0.731,
+      "t_smooth": 0.5
+    },
+    {
+      "frame": 22,
+      "kind": "INBETWEEN",
+      "interval": "K3 OOGA BOOGA -> K4 THREE QUARTER TURN",
+      "hand": "Hand_3_Open.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 12.6,
+        "R": -12.6
+      },
+      "squash": 0.671,
+      "t_smooth": 0.741
+    },
+    {
+      "frame": 23,
+      "kind": "INBETWEEN",
+      "interval": "K3 OOGA BOOGA -> K4 THREE QUARTER TURN",
+      "hand": "Hand_3_Open.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 35.7,
+        "R": -35.7
+      },
+      "squash": 0.633,
+      "t_smooth": 0.926
+    },
+    {
+      "frame": 24,
+      "kind": "KEY",
+      "interval": "K4 THREE QUARTER TURN -> K5 BOOGA BOUNCE",
+      "hand": "Hand_4_Point.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 45.0,
+        "R": -45.0
+      },
+      "squash": 0.62,
+      "t_smooth": 0.0
+    },
+    {
+      "frame": 25,
+      "kind": "INBETWEEN",
+      "interval": "K4 THREE QUARTER TURN -> K5 BOOGA BOUNCE",
+      "hand": "Hand_4_Point.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 40.2,
+        "R": -37.2
+      },
+      "squash": 0.633,
+      "t_smooth": 0.074
+    },
+    {
+      "frame": 26,
+      "kind": "INBETWEEN",
+      "interval": "K4 THREE QUARTER TURN -> K5 BOOGA BOUNCE",
+      "hand": "Hand_4_Point.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 28.1,
+        "R": -17.8
+      },
+      "squash": 0.671,
+      "t_smooth": 0.259
+    },
+    {
+      "frame": 27,
+      "kind": "INBETWEEN",
+      "interval": "K4 THREE QUARTER TURN -> K5 BOOGA BOUNCE",
+      "hand": "Hand_4_Point.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 12.5,
+        "R": 7.5
+      },
+      "squash": 0.731,
+      "t_smooth": 0.5
+    },
+    {
+      "frame": 28,
+      "kind": "INBETWEEN",
+      "interval": "K4 THREE QUARTER TURN -> K5 BOOGA BOUNCE",
+      "hand": "Hand_4_Point.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -3.1,
+        "R": 32.8
+      },
+      "squash": 0.81,
+      "t_smooth": 0.741
+    },
+    {
+      "frame": 29,
+      "kind": "INBETWEEN",
+      "interval": "K4 THREE QUARTER TURN -> K5 BOOGA BOUNCE",
+      "hand": "Hand_4_Point.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -15.2,
+        "R": 52.2
+      },
+      "squash": 0.902,
+      "t_smooth": 0.926
+    },
+    {
+      "frame": 30,
+      "kind": "KEY",
+      "interval": "K5 BOOGA BOUNCE -> K6 FORWARD FACE",
+      "hand": "Hand_6_Relaxed.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -20.0,
+        "R": 60.0
+      },
+      "squash": 1.0,
+      "t_smooth": 0.0
+    },
+    {
+      "frame": 31,
+      "kind": "INBETWEEN",
+      "interval": "K5 BOOGA BOUNCE -> K6 FORWARD FACE",
+      "hand": "Hand_6_Relaxed.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -17.4,
+        "R": 54.4
+      },
+      "squash": 1.0,
+      "t_smooth": 0.074
+    },
+    {
+      "frame": 32,
+      "kind": "INBETWEEN",
+      "interval": "K5 BOOGA BOUNCE -> K6 FORWARD FACE",
+      "hand": "Hand_6_Relaxed.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -10.9,
+        "R": 40.6
+      },
+      "squash": 1.0,
+      "t_smooth": 0.259
+    },
+    {
+      "frame": 33,
+      "kind": "INBETWEEN",
+      "interval": "K5 BOOGA BOUNCE -> K6 FORWARD FACE",
+      "hand": "Hand_6_Relaxed.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": -2.5,
+        "R": 22.5
+      },
+      "squash": 1.0,
+      "t_smooth": 0.5
+    },
+    {
+      "frame": 34,
+      "kind": "INBETWEEN",
+      "interval": "K5 BOOGA BOUNCE -> K6 FORWARD FACE",
+      "hand": "Hand_6_Relaxed.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 5.9,
+        "R": 4.4
+      },
+      "squash": 1.0,
+      "t_smooth": 0.741
+    },
+    {
+      "frame": 35,
+      "kind": "INBETWEEN",
+      "interval": "K5 BOOGA BOUNCE -> K6 FORWARD FACE",
+      "hand": "Hand_6_Relaxed.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 12.4,
+        "R": -9.4
+      },
+      "squash": 1.0,
+      "t_smooth": 0.926
+    },
+    {
+      "frame": 36,
+      "kind": "KEY",
+      "interval": "END",
+      "hand": "Hand_2_FistBack.png",
+      "hand_flipped": true,
+      "hand_angle": {
+        "L": 15,
+        "R": -15
+      },
+      "squash": 1.0,
+      "t_smooth": 1.0
+    }
+  ],
+  "key_wrist_gates": {
+    "K0 SQUAT 1": {
+      "L": {
+        "arm": "Arm1",
+        "mirror": true,
+        "angle": 25.0,
+        "scale": 1.275,
+        "flipped": true,
+        "wrist": [
+          259.0,
+          612.8
+        ],
+        "tip": [
+          296.4,
+          724.2
+        ],
+        "d_wrist": 20.0,
+        "d_tip": 115.2,
+        "pass": true,
+        "verdict": "PASS",
+        "forearm_end": [
+          241.7,
+          622.8
+        ]
+      },
+      "R": {
+        "arm": "Arm2",
+        "mirror": false,
+        "angle": -25.0,
+        "scale": 1.275,
+        "flipped": true,
+        "wrist": [
+          1144.3,
+          607.0
+        ],
+        "tip": [
+          1106.9,
+          718.4
+        ],
+        "d_wrist": 20.0,
+        "d_tip": 115.2,
+        "pass": true,
+        "verdict": "PASS",
+        "forearm_end": [
+          1161.7,
+          617.0
+        ]
+      }
+    },
+    "K1 SQUAT 2 (deeper)": {
+      "L": {
+        "arm": "Arm1",
+        "mirror": true,
+        "angle": -35.0,
+        "scale": 1.275,
+        "flipped": true,
+        "wrist": [
+          282.4,
+          599.2
+        ],
+        "tip": [
+          209.4,
+          723.2
+        ],
+        "d_wrist": 20.0,
+        "d_tip": 124.2,
+        "pass": true,
+        "verdict": "PASS",
+        "forearm_end": [
+          269.5,
+          614.5
+        ]
+      },
+      "R": {
+        "arm": "Arm2",
+        "mirror": false,
+        "angle": 35.0,
+        "scale": 1.275,
+        "flipped": true,
+        "wrist": [
+          1118.8,
+          592.7
+        ],
+        "tip": [
+          1191.8,
+          716.7
+        ],
+        "d_wrist": 20.0,
+        "d_tip": 124.2,
+        "pass": true,
+        "verdict": "PASS",
+        "forearm_end": [
+          1131.7,
+          608.0
+        ]
+      }
+    },
+    "K2 SHUFFLE": {
+      "L": {
+        "arm": "Arm1",
+        "mirror": true,
+        "angle": 55.0,
+        "scale": 1.275,
+        "flipped": true,
+        "wrist": [
+          583.8,
+          430.0
+        ],
+        "tip": [
+          712.8,
+          537.8
+        ],
+        "d_wrist": 20.0,
+        "d_tip": 148.9,
+        "pass": true,
+        "verdict": "PASS",
+        "forearm_end": [
+          601.9,
+          438.5
+        ]
+      },
+      "R": {
+        "arm": "Arm2",
+        "mirror": false,
+        "angle": -70.0,
+        "scale": 1.275,
+        "flipped": true,
+        "wrist": [
+          824.8,
+          423.5
+        ],
+        "tip": [
+          672.2,
+          494.2
+        ],
+        "d_wrist": 20.0,
+        "d_tip": 151.1,
+        "pass": true,
+        "verdict": "PASS",
+        "forearm_end": [
+          804.9,
+          421.7
+        ]
+      }
+    },
+    "K3 OOGA BOOGA": {
+      "L": {
+        "arm": "Arm1",
+        "mirror": true,
+        "angle": -80.0,
+        "scale": 1.275,
+        "flipped": true,
+        "wrist": [
+          309.7,
+          610.2
+        ],
+        "tip": [
+          153.0,
+          636.0
+        ],
+        "d_wrist": 20.0,
+        "d_tip": 139.1,
+        "pass": true,
+        "verdict": "PASS",
+        "forearm_end": [
+          289.8,
+          610.8
+        ]
+      },
+      "R": {
+        "arm": "Arm2",
+        "mirror": false,
+        "angle": 80.0,
+        "scale": 1.275,
+        "flipped": true,
+        "wrist": [
+          1045.5,
+          434.8
+        ],
+        "tip": [
+          1202.2,
+          460.7
+        ],
+        "d_wrist": 20.0,
+        "d_tip": 151.3,
+        "pass": true,
+        "verdict": "PASS",
+        "forearm_end": [
+          1056.9,
+          418.5
+        ]
+      }
+    },
+    "K4 THREE QUARTER TURN": {
+      "L": {
+        "arm": "Arm1",
+        "mirror": true,
+        "angle": 45.0,
+        "scale": 1.275,
+        "flipped": true,
+        "wrist": [
+          630.6,
+          575.0
+        ],
+        "tip": [
+          748.8,
+          694.1
+        ],
+        "d_wrist": 20.0,
+        "d_tip": 154.4,
+        "pass": true,
+        "verdict": "PASS",
+        "forearm_end": [
+          650.6,
+          575.0
+        ]
+      },
+      "R": {
+        "arm": "Arm2",
+        "mirror": false,
+        "angle": -45.0,
+        "scale": 1.275,
+        "flipped": true,
+        "wrist": [
+          820.2,
+          455.9
+        ],
+        "tip": [
+          702.0,
+          575.0
+        ],
+        "d_wrist": 20.0,
+        "d_tip": 160.4,
+        "pass": true,
+        "verdict": "PASS",
+        "forearm_end": [
+          801.4,
+          449.0
+        ]
+      }
+    },
+    "K5 BOOGA BOUNCE": {
+      "L": {
+        "arm": "Arm1",
+        "mirror": true,
+        "angle": -20.0,
+        "scale": 1.275,
+        "flipped": true,
+        "wrist": [
+          237.7,
+          491.9
+        ],
+        "tip": [
+          201.6,
+          648.9
+        ],
+        "d_wrist": 20.0,
+        "d_tip": 161.3,
+        "pass": true,
+        "verdict": "PASS",
+        "forearm_end": [
+          218.0,
+          488.4
+        ]
+      },
+      "R": {
+        "arm": "Arm2",
+        "mirror": false,
+        "angle": 60.0,
+        "scale": 1.275,
+        "flipped": true,
+        "wrist": [
+          1165.7,
+          486.1
+        ],
+        "tip": [
+          1294.2,
+          583.2
+        ],
+        "d_wrist": 20.0,
+        "d_tip": 148.2,
+        "pass": true,
+        "verdict": "PASS",
+        "forearm_end": [
+          1185.4,
+          482.6
+        ]
+      }
+    },
+    "K6 FORWARD FACE": {
+      "L": {
+        "arm": "Arm1",
+        "mirror": false,
+        "angle": 15,
+        "scale": 1.275,
+        "flipped": true,
+        "wrist": [
+          564.8,
+          806.9
+        ],
+        "tip": [
+          617.0,
+          943.9
+        ],
+        "d_wrist": 20.0,
+        "d_tip": 128.1,
+        "pass": true,
+        "verdict": "PASS",
+        "forearm_end": [
+          564.8,
+          826.9
+        ]
+      },
+      "R": {
+        "arm": "Arm2",
+        "mirror": true,
+        "angle": -15,
+        "scale": 1.275,
+        "flipped": true,
+        "wrist": [
+          841.9,
+          806.9
+        ],
+        "tip": [
+          789.7,
+          943.9
+        ],
+        "d_wrist": 20.0,
+        "d_tip": 128.1,
+        "pass": true,
+        "verdict": "PASS",
+        "forearm_end": [
+          841.9,
+          826.9
+        ]
+      }
+    }
+  },
+  "nocrop": [
+    {
+      "frame": 0,
+      "pass": true,
+      "bbox": [
+        222,
+        253,
+        1179,
+        1311
+      ]
+    },
+    {
+      "frame": 1,
+      "pass": true,
+      "bbox": [
+        219,
+        253,
+        1183,
+        1311
+      ]
+    },
+    {
+      "frame": 2,
+      "pass": true,
+      "bbox": [
+        210,
+        253,
+        1191,
+        1310
+      ]
+    },
+    {
+      "frame": 3,
+      "pass": true,
+      "bbox": [
+        199,
+        253,
+        1199,
+        1307
+      ]
+    },
+    {
+      "frame": 4,
+      "pass": true,
+      "bbox": [
+        189,
+        253,
+        1212,
+        1302
+      ]
+    },
+    {
+      "frame": 5,
+      "pass": true,
+      "bbox": [
+        182,
+        253,
+        1218,
+        1295
+      ]
+    },
+    {
+      "frame": 6,
+      "pass": true,
+      "bbox": [
+        187,
+        253,
+        1213,
+        1293
+      ]
+    },
+    {
+      "frame": 7,
+      "pass": true,
+      "bbox": [
+        215,
+        253,
+        1176,
+        1292
+      ]
+    },
+    {
+      "frame": 8,
+      "pass": true,
+      "bbox": [
+        294,
+        253,
+        1075,
+        1296
+      ]
+    },
+    {
+      "frame": 9,
+      "pass": true,
+      "bbox": [
+        365,
+        253,
+        1034,
+        1301
+      ]
+    },
+    {
+      "frame": 10,
+      "pass": true,
+      "bbox": [
+        377,
+        253,
+        1034,
+        1306
+      ]
+    },
+    {
+      "frame": 11,
+      "pass": true,
+      "bbox": [
+        386,
+        253,
+        1034,
+        1308
+      ]
+    },
+    {
+      "frame": 12,
+      "pass": true,
+      "bbox": [
+        390,
+        253,
+        1034,
+        1309
+      ]
+    },
+    {
+      "frame": 13,
+      "pass": true,
+      "bbox": [
+        380,
+        253,
+        1034,
+        1309
+      ]
+    },
+    {
+      "frame": 14,
+      "pass": true,
+      "bbox": [
+        367,
+        253,
+        1031,
+        1309
+      ]
+    },
+    {
+      "frame": 15,
+      "pass": true,
+      "bbox": [
+        291,
+        253,
+        1130,
+        1306
+      ]
+    },
+    {
+      "frame": 16,
+      "pass": true,
+      "bbox": [
+        165,
+        253,
+        1274,
+        1303
+      ]
+    },
+    {
+      "frame": 17,
+      "pass": true,
+      "bbox": [
+        132,
+        253,
+        1256,
+        1303
+      ]
+    },
+    {
+      "frame": 18,
+      "pass": true,
+      "bbox": [
+        152,
+        253,
+        1202,
+        1303
+      ]
+    },
+    {
+      "frame": 19,
+      "pass": true,
+      "bbox": [
+        159,
+        253,
+        1244,
+        1303
+      ]
+    },
+    {
+      "frame": 20,
+      "pass": true,
+      "bbox": [
+        221,
+        253,
+        1269,
+        1305
+      ]
+    },
+    {
+      "frame": 21,
+      "pass": true,
+      "bbox": [
+        383,
+        253,
+        1110,
+        1306
+      ]
+    },
+    {
+      "frame": 22,
+      "pass": true,
+      "bbox": [
+        429,
+        253,
+        1009,
+        1307
+      ]
+    },
+    {
+      "frame": 23,
+      "pass": true,
+      "bbox": [
+        422,
+        253,
+        1016,
+        1308
+      ]
+    },
+    {
+      "frame": 24,
+      "pass": true,
+      "bbox": [
+        420,
+        253,
+        1019,
+        1308
+      ]
+    },
+    {
+      "frame": 25,
+      "pass": true,
+      "bbox": [
+        416,
+        253,
+        1019,
+        1308
+      ]
+    },
+    {
+      "frame": 26,
+      "pass": true,
+      "bbox": [
+        408,
+        253,
+        1019,
+        1307
+      ]
+    },
+    {
+      "frame": 27,
+      "pass": true,
+      "bbox": [
+        368,
+        253,
+        1037,
+        1306
+      ]
+    },
+    {
+      "frame": 28,
+      "pass": true,
+      "bbox": [
+        225,
+        253,
+        1215,
+        1305
+      ]
+    },
+    {
+      "frame": 29,
+      "pass": true,
+      "bbox": [
+        161,
+        253,
+        1304,
+        1303
+      ]
+    },
+    {
+      "frame": 30,
+      "pass": true,
+      "bbox": [
+        151,
+        253,
+        1302,
+        1303
+      ]
+    },
+    {
+      "frame": 31,
+      "pass": true,
+      "bbox": [
+        160,
+        253,
+        1293,
+        1305
+      ]
+    },
+    {
+      "frame": 32,
+      "pass": true,
+      "bbox": [
+        198,
+        253,
+        1248,
+        1309
+      ]
+    },
+    {
+      "frame": 33,
+      "pass": true,
+      "bbox": [
+        284,
+        253,
+        1156,
+        1310
+      ]
+    },
+    {
+      "frame": 34,
+      "pass": true,
+      "bbox": [
+        392,
+        253,
+        1025,
+        1309
+      ]
+    },
+    {
+      "frame": 35,
+      "pass": true,
+      "bbox": [
+        470,
+        253,
+        928,
+        1306
+      ]
+    },
+    {
+      "frame": 36,
+      "pass": true,
+      "bbox": [
+        470,
+        253,
+        928,
+        1305
+      ]
+    }
+  ],
+  "nocrop_pass": 37,
+  "wrist_gate_pass": 14,
+  "wrist_gate_total": 14,
+  "known_mismatches": [
+    "Hand 3 open, flipped: palm creases still visible -- same palm drawing upside-down, NOT a back-of-hand drawing; no back-of-open-hand piece exists in the canon 7.",
+    "Hand 4 point, flipped: thumb ends on the BOTTOM, not the top, because hand 4 native thumb is opposite hand 5's; flipping again would restore the original."
+  ],
+  "v1_official": "ghoul-shuffle-lastframe-handswap-20261031.gif (OFFICIAL V1, untouched)",
+  "v2_hand_angles_deg_PIL_CCW": {
+    "K0 SQUAT 1": {
+      "L": 25,
+      "R": -25
+    },
+    "K1 SQUAT 2 (deeper)": {
+      "L": -35,
+      "R": 35
+    },
+    "K2 SHUFFLE": {
+      "L": 55,
+      "R": -70
+    },
+    "K3 OOGA BOOGA": {
+      "L": -80,
+      "R": 80
+    },
+    "K4 THREE QUARTER TURN": {
+      "L": 45,
+      "R": -45
+    },
+    "K5 BOOGA BOUNCE": {
+      "L": -20,
+      "R": 60
+    },
+    "K6 FORWARD FACE": {
+      "L": 15,
+      "R": -15
+    }
+  },
+  "f36_hand_swap_kept_from_v1": {
+    "L_before": "Hand_2_FistBack mirrored (Arm1 version)",
+    "R_before": "Hand_2_FistBack unmirrored (Arm2 version)",
+    "L_after": "Hand_2_FistBack unmirrored (piece previously on R)",
+    "R_after": "Hand_2_FistBack mirrored (piece previously on L)",
+    "vertical_flip_kept": true,
+    "scope": "f36 only; f00-f35, other poses, other dances, T-pose library unchanged"
+  },
+  "approval": "0/1",
+  "repo_push": false
+}

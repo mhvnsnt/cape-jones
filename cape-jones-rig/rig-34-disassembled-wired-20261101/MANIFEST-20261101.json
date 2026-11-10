@@ -1,0 +1,592 @@
+{
+  "name": "rig-34-disassembled-wired-20261101",
+  "source_pose": "Cape Jones Rig Drag saved layout 2026-11-01 01:06 CST, 18 pieces, arm2Locked=true",
+  "source_rebuild": "rig-34-literal-widget-rebuild-20261101 (literal widget renderer)",
+  "canvas": [
+    1400,
+    1600
+  ],
+  "piece_count": 20,
+  "pieces": [
+    {
+      "id": "cape",
+      "file": "pieces/cape.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/sitting-rig-34-20261101/pieces/cape_back.png",
+      "display_size": [
+        514,
+        900
+      ],
+      "x": 360,
+      "y": 330,
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pivot_xy": [
+        617.0,
+        780.0
+      ],
+      "z": 0,
+      "defs_order": 0,
+      "locked": true,
+      "flip": false,
+      "visible": true,
+      "chain": "cape",
+      "joint": "shoulders-back"
+    },
+    {
+      "id": "upperArmL",
+      "file": "pieces/upperArmL.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/sitting-rig-34-20261101/pieces/upper_arm_L_socket.png",
+      "display_size": [
+        125,
+        237
+      ],
+      "x": 490,
+      "y": 390,
+      "rotation": 5,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "pivot_xy": [
+        552.5,
+        390
+      ],
+      "z": 1,
+      "defs_order": 1,
+      "locked": true,
+      "flip": false,
+      "visible": true,
+      "chain": "arm1",
+      "joint": "shoulderL"
+    },
+    {
+      "id": "thighR",
+      "file": "pieces/thighR.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/sitting-rig-34-20261101/pieces/thigh_bent_R.png",
+      "display_size": [
+        218,
+        299
+      ],
+      "x": 590,
+      "y": 750,
+      "rotation": 6,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "pivot_xy": [
+        699.0,
+        750
+      ],
+      "z": 2,
+      "defs_order": 2,
+      "locked": true,
+      "flip": false,
+      "visible": true,
+      "chain": "leg2",
+      "joint": "hipR"
+    },
+    {
+      "id": "thighL",
+      "file": "pieces/thighL.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/sitting-rig-34-20261101/pieces/thigh_bent_L.png",
+      "display_size": [
+        230,
+        267
+      ],
+      "x": 400,
+      "y": 710,
+      "rotation": 2,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "pivot_xy": [
+        515.0,
+        710
+      ],
+      "z": 3,
+      "defs_order": 3,
+      "locked": false,
+      "flip": false,
+      "visible": true,
+      "chain": "leg1",
+      "joint": "hipL"
+    },
+    {
+      "id": "forearmL",
+      "file": "pieces/forearm_no_fist_L.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/cut-limbs-v7c/Arm_Front_Lower.png",
+      "display_size": [
+        145,
+        275
+      ],
+      "forearm_no_fist_size": [
+        145,
+        206
+      ],
+      "x": 455,
+      "y": 580,
+      "rotation": -15,
+      "pivot": [
+        0.39,
+        0.11
+      ],
+      "pivot_xy": [
+        511.6,
+        610.2
+      ],
+      "z": 4,
+      "defs_order": 4,
+      "locked": true,
+      "flip": false,
+      "visible": true,
+      "chain": "arm1",
+      "joint": "elbowL",
+      "note": "Forearm layer only; fist is a separate toggleable layer below, split at wrist line 75% of height, no pixels lost in total (forearm+fist = original)."
+    },
+    {
+      "id": "fistL",
+      "file": "pieces/fist_L.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/cut-limbs-v7c/Arm_Front_Lower.png",
+      "display_size": [
+        145,
+        275
+      ],
+      "fist_size": [
+        145,
+        69
+      ],
+      "x": 455,
+      "y": 786,
+      "rotation": -15,
+      "pivot": [
+        0.39,
+        0.11
+      ],
+      "pivot_xy": [
+        511.6,
+        610.2
+      ],
+      "z": 4,
+      "defs_order": 4,
+      "locked": true,
+      "flip": false,
+      "visible": false,
+      "chain": "arm1",
+      "joint": "elbowL-fist",
+      "note": "TOGGLEABLE fist layer, NOT drawn in reassembled open-hand version (visible=false). Set visible=true to draw it, in same z/rotation as forearm."
+    },
+    {
+      "id": "pelvis",
+      "file": "pieces/pelvis.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/sitting-rig-34-20261101/pieces/pelvis_belt.png",
+      "display_size": [
+        218,
+        181
+      ],
+      "x": 565,
+      "y": 650,
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pivot_xy": [
+        674.0,
+        740.5
+      ],
+      "z": 4,
+      "defs_order": 5,
+      "locked": true,
+      "flip": false,
+      "visible": true,
+      "chain": "spine",
+      "joint": "pelvis"
+    },
+    {
+      "id": "kneeL",
+      "file": "pieces/kneeL.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/sitting-rig-34-20261101/pieces/knee_ball_spare.png",
+      "display_size": [
+        74,
+        94
+      ],
+      "x": 380,
+      "y": 885,
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pivot_xy": [
+        417.0,
+        932.0
+      ],
+      "z": 4,
+      "defs_order": 6,
+      "locked": false,
+      "flip": false,
+      "visible": true,
+      "chain": "leg1",
+      "joint": "kneeL-pivot"
+    },
+    {
+      "id": "elbowCapL",
+      "file": "pieces/elbowCapL.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/cut-limbs-v7c/Arm_Front_Cap.png",
+      "display_size": [
+        63,
+        63
+      ],
+      "x": 465,
+      "y": 580,
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pivot_xy": [
+        496.5,
+        611.5
+      ],
+      "z": 5,
+      "defs_order": 7,
+      "locked": true,
+      "flip": false,
+      "visible": true,
+      "chain": "arm1",
+      "joint": "elbowL-cap"
+    },
+    {
+      "id": "shinL",
+      "file": "pieces/shinL.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/sitting-rig-34-20261101/pieces/shin_boot_L.png",
+      "display_size": [
+        244,
+        410
+      ],
+      "x": 225,
+      "y": 945,
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "pivot_xy": [
+        347.0,
+        945
+      ],
+      "z": 6,
+      "defs_order": 8,
+      "locked": false,
+      "flip": false,
+      "visible": true,
+      "chain": "leg1",
+      "joint": "ankleL"
+    },
+    {
+      "id": "shinR",
+      "file": "pieces/shinR.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/sitting-rig-34-20261101/pieces/shin_boot_mid.png",
+      "display_size": [
+        256,
+        415
+      ],
+      "x": 395,
+      "y": 985,
+      "rotation": -10,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "pivot_xy": [
+        523.0,
+        985
+      ],
+      "z": 6,
+      "defs_order": 9,
+      "locked": true,
+      "flip": false,
+      "visible": true,
+      "chain": "leg2",
+      "joint": "ankleR"
+    },
+    {
+      "id": "kneeR",
+      "file": "pieces/kneeR.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/sitting-rig-34-20261101/pieces/knee_ball_spare.png",
+      "display_size": [
+        74,
+        94
+      ],
+      "x": 560,
+      "y": 950,
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pivot_xy": [
+        597.0,
+        997.0
+      ],
+      "z": 7,
+      "defs_order": 10,
+      "locked": true,
+      "flip": false,
+      "visible": true,
+      "chain": "leg2",
+      "joint": "kneeR-pivot"
+    },
+    {
+      "id": "torso",
+      "file": "pieces/torso.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/sitting-rig-34-20261101/pieces/torso.png",
+      "display_size": [
+        291,
+        315
+      ],
+      "x": 550,
+      "y": 370,
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "pivot_xy": [
+        695.5,
+        370
+      ],
+      "z": 8,
+      "defs_order": 11,
+      "locked": true,
+      "flip": false,
+      "visible": true,
+      "chain": "spine",
+      "joint": "torso"
+    },
+    {
+      "id": "head",
+      "file": "pieces/head.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/sitting-rig-34-20261101/pieces/head_cowl.png",
+      "display_size": [
+        130,
+        196
+      ],
+      "x": 635,
+      "y": 195,
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pivot_xy": [
+        700.0,
+        293.0
+      ],
+      "z": 9,
+      "defs_order": 12,
+      "locked": false,
+      "flip": false,
+      "visible": true,
+      "chain": "spine",
+      "joint": "neck/head"
+    },
+    {
+      "id": "upperArmR",
+      "file": "pieces/upperArmR.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/sitting-rig-34-20261101/pieces/upper_arm_R.png",
+      "display_size": [
+        112,
+        256
+      ],
+      "x": 805,
+      "y": 420,
+      "rotation": 15,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "pivot_xy": [
+        861.0,
+        420
+      ],
+      "z": 10,
+      "defs_order": 13,
+      "locked": true,
+      "flip": false,
+      "visible": true,
+      "chain": "arm2",
+      "joint": "shoulderR"
+    },
+    {
+      "id": "forearmR",
+      "file": "pieces/forearm_no_fist_R.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/cut-limbs-v7c/Arm_Back_Lower.png",
+      "display_size": [
+        150,
+        274
+      ],
+      "forearm_no_fist_size": [
+        150,
+        206
+      ],
+      "x": 685,
+      "y": 650,
+      "rotation": 45,
+      "pivot": [
+        0.63,
+        0.11
+      ],
+      "pivot_xy": [
+        779.5,
+        680.1
+      ],
+      "z": 11,
+      "defs_order": 14,
+      "locked": true,
+      "flip": false,
+      "visible": true,
+      "chain": "arm2",
+      "joint": "elbowR",
+      "note": "Forearm layer only; fist is a separate toggleable layer below, split at wrist line 75% of height, no pixels lost in total (forearm+fist = original)."
+    },
+    {
+      "id": "fistR",
+      "file": "pieces/fist_R.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/cut-limbs-v7c/Arm_Back_Lower.png",
+      "display_size": [
+        150,
+        274
+      ],
+      "fist_size": [
+        150,
+        68
+      ],
+      "x": 685,
+      "y": 856,
+      "rotation": 45,
+      "pivot": [
+        0.63,
+        0.11
+      ],
+      "pivot_xy": [
+        779.5,
+        680.1
+      ],
+      "z": 11,
+      "defs_order": 14,
+      "locked": true,
+      "flip": false,
+      "visible": false,
+      "chain": "arm2",
+      "joint": "elbowR-fist",
+      "note": "TOGGLEABLE fist layer, NOT drawn in reassembled open-hand version (visible=false). Set visible=true to draw it, in same z/rotation as forearm."
+    },
+    {
+      "id": "elbowCapR",
+      "file": "pieces/elbowCapR.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/cut-limbs-v7c/Arm_Back_Cap.png",
+      "display_size": [
+        63,
+        63
+      ],
+      "x": 775,
+      "y": 610,
+      "rotation": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pivot_xy": [
+        806.5,
+        641.5
+      ],
+      "z": 12,
+      "defs_order": 15,
+      "locked": false,
+      "flip": false,
+      "visible": true,
+      "chain": "arm2",
+      "joint": "elbowR-cap"
+    },
+    {
+      "id": "handL",
+      "file": "pieces/handL.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/sitting-rig-34-20261101/pieces/hand_spare_L.png",
+      "display_size": [
+        117,
+        170
+      ],
+      "x": 530,
+      "y": 740,
+      "rotation": -46,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pivot_xy": [
+        588.5,
+        825.0
+      ],
+      "z": 13,
+      "defs_order": 16,
+      "locked": true,
+      "flip": false,
+      "visible": true,
+      "chain": "arm1",
+      "joint": "wristL"
+    },
+    {
+      "id": "handR",
+      "file": "pieces/handR.png",
+      "source": "/home/hatch/workspace/cape-jones-rig/sitting-rig-34-20261101/pieces/hand_spare_L.png",
+      "display_size": [
+        117,
+        170
+      ],
+      "x": 565,
+      "y": 755,
+      "rotation": 70,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pivot_xy": [
+        623.5,
+        840.0
+      ],
+      "z": 13,
+      "defs_order": 17,
+      "locked": true,
+      "flip": true,
+      "visible": true,
+      "chain": "arm2",
+      "joint": "wristR"
+    }
+  ],
+  "hand_scale": {
+    "widget_display": "117x170 (1.45x native, for widget match)",
+    "real_rig": "93x134 = 1.141875x native = 1.0875 scaledown x 1.05 model scale, files handL_realrig_1141875.png / handR_realrig_1141875.png, NOT used in reassembled widget-match figure"
+  },
+  "chains": {
+    "arm1": "shoulderL upperArmL -> elbowL forearmL -> wristL handL (Arm1 behind torso, z<torso)",
+    "arm2": "shoulderR upperArmR -> elbowR forearmR -> wristR handR mirrored thumb opposite (Arm2 in front, z>torso)",
+    "leg1": "hipL thighL -> kneeL pivot -> ankleL shinL",
+    "leg2": "hipR thighR -> kneeR pivot -> ankleR shinR",
+    "spine": "pelvis -> torso (collar fused, locked, NOT moved) -> head",
+    "cape": "cape back, backmost, shoulders back"
+  },
+  "rules": {
+    "layer_order": "DEFS-stable z order, equal z in DEFS order: forearmL before pelvis before kneeL",
+    "knee_feet": "thighs outward, shins vertical, feet outward, same direction as knees; kneecaps are rotation pivots, NOT secondary knees",
+    "wrist": "hand wrist end at forearm wrist end, Arm1 as-is, Arm2 mirrored",
+    "ground": "feet as saved; widget ground y=1475, reassembled bottom measured in gates, no figure shift to fake planted",
+    "fist_toggle": "fistL/fistR visible=false in reassembled open-hand version; set visible=true to draw fists, same x/y/rotation/z as forearm"
+  },
+  "fist_separation_note": "Forearm PNGs ship NO separate fist file; fist is bottom 25% of the front lower drawing. Split at wrist line 75% of height (the builder wrist point used in all earlier builds) into forearm+fist layers. Total pixels = original, no pixels erased, no hand cropped. This is layer separation, stated plainly; a truly native separate fist file does not exist in the source pack."
+}

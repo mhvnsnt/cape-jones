@@ -1,0 +1,185 @@
+"""
+Logging and Print Utilities
+
+Provides unified functions for both console output and file logging.
+Ensures consistent message formatting and logging throughout the application.
+"""
+
+import logging
+import os
+import sys
+
+# On legacy Windows code pages (e.g. cp1252) the default stdout/stderr encoding
+# raises UnicodeEncodeError on the Unicode we print (box-draw glyphs, arrows).
+# That exception can bubble up and abort real work -- e.g. a cosmetic input-shape
+# log killing a TensorRT engine build. Force UTF-8 with replacement so a print
+# can never crash a caller. main.py does the same for the CLI entry point; doing
+# it here also covers non-CLI entry points (AE server, tests, direct module use)
+# and adds errors="replace" as a last-resort guard.
+if sys.platform == "win32":
+    for _stream in (sys.stdout, sys.stderr):
+        _reconfigure = getattr(_stream, "reconfigure", None)
+        if _reconfigure is not None:
+            try:
+                _reconfigure(encoding="utf-8", errors="replace")
+            except Exception:
+                pass
+
+# ANSI escape codes - works on modern terminals (Windows 10+, Linux, macOS)
+_RESET = "\033[0m"
+
+_COLORS = {
+    "red": "\033[91m",
+    "green": "\033[92m",
+    "yellow": "\033[93m",
+    "blue": "\033[94m",
+    "magenta": "\033[95m",
+    "cyan": "\033[96m",
+    "light_blue": "\033[94m",
+}
+
+
+# Detect whether the output supports ANSI colors
+def _supportsColor():
+    if os.environ.get("NO_COLOR"):
+        return False
+    if os.environ.get("FORCE_COLOR"):
+        return True
+    if not hasattr(sys.stdout, "isatty") or not sys.stdout.isatty():
+        return False
+    if sys.platform == "win32":
+        # Windows 10 build 14393+ supports ANSI natively
+        try:
+            ver = sys.getwindowsversion()
+            return ver.major >= 10 and ver.build >= 14393
+        except Exception:
+            return False
+    return True
+
+
+_COLOR_ENABLED = _supportsColor()
+
+_LOG_ICONS = {"INFO": "i", "WARNING": "!", "ERROR": "x", "SUCCESS": "+", "DEBUG": "?"}
+
+
+def _ansi(text, color_code):
+    if not _COLOR_ENABLED:
+        return str(text)
+    return f"{color_code}{text}{_RESET}"
+
+
+def logAndPrint(message: str, colorFunc: str = "cyan", level: str = "INFO") -> None:
+    """
+    Print a colored message to console and log it to file.
+
+    Args:
+        message (str): Message to display and log
+        colorFunc (str): Color function name ('cyan', 'red', 'yellow', 'green')
+        level (str): Log level ('INFO', 'WARNING', 'ERROR', 'SUCCESS', 'DEBUG')
+    """
+    icon = _LOG_ICONS.get(level.upper(), "i")
+    formatted_message = f"{icon} {message}"
+    if colorFunc in _COLOR_FUNCS:
+        print(_COLOR_FUNCS[colorFunc](formatted_message))
+    else:
+        print(formatted_message)
+
+    if level.upper() == "ERROR":
+        logging.error(message)
+    elif level.upper() == "WARNING":
+        logging.warning(message)
+    else:
+        logging.info(message)
+
+
+def logInfo(message: str) -> None:
+    """Log informational message."""
+    logAndPrint(message, "cyan", "INFO")
+
+
+def logSuccess(message: str) -> None:
+    """Log success message."""
+    logAndPrint(message, "green", "SUCCESS")
+
+
+def logWarning(message: str) -> None:
+    """Log warning message."""
+    logAndPrint(message, "yellow", "WARNING")
+
+
+def logError(message: str) -> None:
+    """Log error message."""
+    logAndPrint(message, "red", "ERROR")
+
+
+def printSectionHeader(title: str, char: str = "=") -> None:
+    """
+    Print a formatted section header for better visual organization.
+
+    Args:
+        title (str): Section title
+        char (str): Character to use for the border (default: '=')
+    """
+    width = 80
+    border = char * width
+    print(cyan(border))
+    print(cyan(f"{title.center(width)}"))
+    print(cyan(border))
+
+    logging.info(f"\n{border}")
+    logging.info(f"{title.center(width)}")
+    logging.info(f"{border}\n")
+
+
+def printSubsectionHeader(title: str) -> None:
+    """
+    Print a formatted subsection header.
+
+    Args:
+        title (str): Subsection title
+    """
+    print(cyan(f"\n{'─' * 80}"))
+    print(cyan(f"  {title}"))
+    print(cyan(f"{'─' * 80}"))
+
+    logging.info(f"\n{'─' * 80}")
+    logging.info(f"  {title}")
+    logging.info(f"{'─' * 80}")
+
+
+def coloredPrint(message: str, colorFunc: str = "cyan") -> None:
+    """
+    Print a colored message to console only (no logging).
+
+    Args:
+        message (str): Message to display
+        colorFunc (str): Color function name ('cyan', 'red', 'yellow', 'green')
+    """
+    if colorFunc in _COLOR_FUNCS:
+        print(_COLOR_FUNCS[colorFunc](message))
+    else:
+        print(message)
+
+
+def green(text):
+    """Format text in green color."""
+    return _ansi(text, _COLORS["green"])
+
+
+def red(text):
+    """Format text in red color."""
+    return _ansi(text, _COLORS["red"])
+
+
+def yellow(text):
+    """Format text in yellow color."""
+    return _ansi(text, _COLORS["yellow"])
+
+
+def cyan(text):
+    """Format text in cyan color."""
+    return _ansi(text, _COLORS["cyan"])
+
+
+# Defined last: the color functions above must exist before this dict is built.
+_COLOR_FUNCS = {"cyan": cyan, "red": red, "yellow": yellow, "green": green}

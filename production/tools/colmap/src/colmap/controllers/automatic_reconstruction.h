@@ -1,0 +1,142 @@
+// SPDX-License-Identifier: BSD-3-Clause
+
+#pragma once
+
+#include "colmap/controllers/option_manager.h"
+#include "colmap/estimators/bundle_adjustment.h"
+#include "colmap/scene/reconstruction_manager.h"
+#include "colmap/util/enum_utils.h"
+#include "colmap/util/threading.h"
+
+#include <filesystem>
+#include <memory>
+#include <string>
+
+namespace colmap {
+
+class AutomaticReconstructionController : public Thread {
+ public:
+  MAKE_ENUM_CLASS(DataType, 0, INDIVIDUAL, VIDEO, INTERNET);
+  MAKE_ENUM_CLASS(Quality, 0, LOW, MEDIUM, HIGH, EXTREME);
+  MAKE_ENUM_CLASS(Feature, 0, SIFT, ALIKED, LOMA, LOMA128);
+  MAKE_ENUM_CLASS(Mapper, 0, INCREMENTAL, HIERARCHICAL, GLOBAL);
+  MAKE_ENUM_CLASS(Mesher, 0, POISSON, DELAUNAY, ADVANCING_FRONT);
+
+  struct Options {
+    // The path to the workspace folder in which all results are stored.
+    std::filesystem::path workspace_path;
+
+    // The path to the image folder which are used as input.
+    std::filesystem::path image_path;
+
+    // Optional list of image names to reconstruct. The list must contain the
+    // relative path of the images with respect to the image_path.
+    std::vector<std::string> image_names;
+
+    // The path to the mask folder which are used as input.
+    std::filesystem::path mask_path;
+
+    // The path to the vocabulary tree for feature matching.
+    std::filesystem::path vocab_tree_path;
+
+    // The type of input data used to choose optimal mapper settings.
+    DataType data_type = DataType::INDIVIDUAL;
+
+    // Whether to perform low- or high-quality reconstruction.
+    Quality quality = Quality::HIGH;
+
+    // Whether to use shared intrinsics or not.
+    bool single_camera = false;
+
+    // Whether to use shared intrinsics or not for all images in the same
+    // sub-folder.
+    bool single_camera_per_folder = false;
+
+    // Which camera model to use for images.
+    std::string camera_model = "SIMPLE_RADIAL";
+
+    // Initial camera params for all images.
+    std::string camera_params;
+
+    // Whether to perform feature extraction.
+    bool extraction = true;
+
+    // Whether to perform learned single-view calibration after feature
+    // extraction, replacing EXIF-based intrinsics before matching and mapping.
+    // Ignored if explicit `camera_params` are provided, which always take
+    // precedence.
+    bool single_view_calibration = false;
+
+    // Whether to perform feature matching.
+    bool matching = true;
+
+    // Whether to perform sparse mapping.
+    bool sparse = true;
+
+// Whether to perform dense mapping.
+#if (defined(COLMAP_CUDA_ENABLED) || defined(COLMAP_HIP_ENABLED)) && \
+    defined(COLMAP_MVS_ENABLED)
+    bool dense = true;
+#else
+    bool dense = false;
+#endif
+
+    // The feature extraction/matching algorithm to be used.
+    Feature feature = Feature::SIFT;
+
+    // The mapping algorithm to be used.
+    Mapper mapper = Mapper::INCREMENTAL;
+
+    // The meshing algorithm to be used.
+    Mesher mesher = Mesher::POISSON;
+
+    // The number of threads to use in all stages.
+    int num_threads = -1;
+
+    // The random seed to use in all stages.
+    int random_seed = -1;
+
+    // Whether to use the GPU in feature extraction, feature matching, and
+    // bundle adjustment.
+    bool use_gpu = true;
+
+    // Index of the GPU used for GPU stages. For multi-GPU computation in
+    // feature extraction/matching, you should separate multiple GPU indices by
+    // comma, e.g., "0,1,2,3". For single-GPU stages only the first GPU will be
+    // used. By default, all available GPUs will be used in all stages.
+    std::string gpu_index = "-1";
+
+    // Bundle adjustment solver backend for local and global BA.
+    BundleAdjustmentBackend ba_backend = BundleAdjustmentBackend::CERES;
+  };
+
+  AutomaticReconstructionController(
+      const Options& options,
+      std::shared_ptr<ReconstructionManager> reconstruction_manager);
+
+  // Whether any of the selected reconstruction stages requires OpenGL.
+  bool RequiresOpenGL() const;
+
+  void Setup();
+  void Stop() override;
+
+ private:
+  void Run() override;
+  void RunFeatureExtraction();
+  void RunSingleViewCalibration();
+  void RunFeatureMatching();
+  void RunSparseMapper();
+  void RunDenseMapper();
+
+  const Options options_;
+  OptionManager option_manager_;
+  std::shared_ptr<ReconstructionManager> reconstruction_manager_;
+  Thread* active_thread_;
+  std::unique_ptr<Thread> feature_extractor_;
+  std::unique_ptr<Thread> single_view_calibrator_;
+  std::unique_ptr<Thread> exhaustive_matcher_;
+  std::unique_ptr<Thread> sequential_matcher_;
+  std::unique_ptr<Thread> vocab_tree_matcher_;
+};
+
+}  // namespace colmap

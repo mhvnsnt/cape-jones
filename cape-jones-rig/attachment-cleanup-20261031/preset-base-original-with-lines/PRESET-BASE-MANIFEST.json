@@ -1,0 +1,181 @@
+{
+  "preset": "attachment-cleanup preset base, originals with lines, untouched",
+  "rule": "NEVER overwrite this folder. Cleanup outputs go in ../cleaned. Revert = copy preset-base back over cleaned.",
+  "files": [
+    {
+      "file": "bur-01-twist-segment-20261031.png",
+      "bytes": 514230,
+      "sha256": "d5202a18080f693baa2a799e608ff7c6ccddf98ccc3b92f66c2f3c45cd7fc708",
+      "source": "ginyu-force-limits-broken-20261031/bur-01-twist-segment-20261031.png"
+    },
+    {
+      "file": "bur-02-hurricane-swirl-effect-20261031.png",
+      "bytes": 690534,
+      "sha256": "96debd50031cc34915bb2a2b1ec42f26bc5c9a2ba4ec3893d35275bfc0f4d564",
+      "source": "ginyu-force-limits-broken-20261031/bur-02-hurricane-swirl-effect-20261031.png"
+    },
+    {
+      "file": "bur-03-mach-kick-extended-20261031.png",
+      "bytes": 510801,
+      "sha256": "592286d5c461e44cd0ed49154404088703a9572d4465ece6367e525327412f76",
+      "source": "ginyu-force-limits-broken-20261031/bur-03-mach-kick-extended-20261031.png"
+    },
+    {
+      "file": "cap-01-twist-segment-20261031.png",
+      "bytes": 512126,
+      "sha256": "7c1e13ca7ac108d56d5f2d102c316b132bdbdab4e39dcc54affe33e91eb155aa",
+      "source": "ginyu-force-limits-broken-20261031/cap-01-twist-segment-20261031.png"
+    },
+    {
+      "file": "cap-02-swap-beam-effect-20261031.png",
+      "bytes": 589256,
+      "sha256": "abee58d5bee92f61938a810b50b57f4468fa4589f87488062ebbea51aa1834b6",
+      "source": "ginyu-force-limits-broken-20261031/cap-02-swap-beam-effect-20261031.png"
+    },
+    {
+      "file": "gul-02-time-freeze-effect-20261031.png",
+      "bytes": 597916,
+      "sha256": "9cb790313a42f535bea41d1f9da0dea9a40b9ced6cf4f193aaf9514f740755b3",
+      "source": "ginyu-force-limits-broken-20261031/gul-02-time-freeze-effect-20261031.png"
+    },
+    {
+      "file": "jei-01-base-for-swap-20261031.png",
+      "bytes": 503458,
+      "sha256": "6ff25f9dec2ef5aca5262b48672d08b91a39a968eca4f35b5a569200d02b84f4",
+      "source": "ginyu-force-limits-broken-20261031/jei-01-base-for-swap-20261031.png"
+    },
+    {
+      "file": "jei-01-crusher-ball-effect-20261031.png",
+      "bytes": 528485,
+      "sha256": "e081086ada805e471f488ff24512056437223335795fddebcaa396197ba51e4b",
+      "source": "ginyu-force-limits-broken-20261031/jei-01-crusher-ball-effect-20261031.png"
+    },
+    {
+      "file": "jei-01-crusher-serve-open-palm-20261031.png",
+      "bytes": 516575,
+      "sha256": "e536c81cb836a52edebb9bffa67216a183e90a55cea36c0868755cbad0f9a55f",
+      "source": "ginyu-force-limits-broken-20261031/jei-01-crusher-serve-open-palm-20261031.png"
+    },
+    {
+      "file": "jei-03-base-for-swap-20261031.png",
+      "bytes": 501339,
+      "sha256": "2ffba97e813dec968e1cb6d1a9f297546fa4ca0f76bc8ac51cf0af16cba390fa",
+      "source": "ginyu-force-limits-broken-20261031/jei-03-base-for-swap-20261031.png"
+    },
+    {
+      "file": "jei-03x-point-variant-20261031.png",
+      "bytes": 534377,
+      "sha256": "2cd68dfcad875cea8e8a96ca06812d944abd5aa2c9915a21093000b9af877cf3",
+      "source": "ginyu-force-limits-broken-20261031/jei-03x-point-variant-20261031.png"
+    },
+    {
+      "file": "jei-03x-point-variant-base-20261031.png",
+      "bytes": 525531,
+      "sha256": "f4a1745a0e4a817bb765238ad36dfcdb99bacb96cc1a8373f00b52de95985e9a",
+      "source": "ginyu-force-limits-broken-20261031/jei-03x-point-variant-base-20261031.png"
+    },
+    {
+      "file": "limits-broken-before-after-contact-20261031.png",
+      "bytes": 335629,
+      "sha256": "7186e27420d739eb91dc67430a5fc55b73b84a25e69b7bfca7b6fb705bc092ce",
+      "source": "ginyu-force-limits-broken-20261031/limits-broken-before-after-contact-20261031.png"
+    },
+    {
+      "file": "limits-broken-contact-20261031.png",
+      "bytes": 416686,
+      "sha256": "a42321eb8fc4dc633bb178b3b3d5181759a6d47c001cde040741e29cce57dc67",
+      "source": "ginyu-force-limits-broken-20261031/limits-broken-contact-20261031.png"
+    },
+    {
+      "file": "rec-02-eraser-blast-effect-20261031.png",
+      "bytes": 545593,
+      "sha256": "3d835eb6783c2cf85f138cce50b33708ca5859b111a074bfb1b11ae21418cf46",
+      "source": "ginyu-force-limits-broken-20261031/rec-02-eraser-blast-effect-20261031.png"
+    },
+    {
+      "file": "LIMITS-BROKEN-20261031.md",
+      "bytes": 8306,
+      "sha256": "466d0c7a1eb0f8c1c29eed62d909cd2d80a044e7f1d1618d4146ebf9f047482a",
+      "source": "ginyu-force-limits-broken-20261031/LIMITS-BROKEN-20261031.md"
+    },
+    {
+      "file": "GINYU-FORCE-PRESET-UPDATE-20261031.json",
+      "bytes": 2710,
+      "sha256": "2f7f186b3bd7135abffd7a26d9d3cede69aaec5d8cefecb4b4dcdfe4f13ba8ee",
+      "source": "ginyu-force-limits-broken-20261031/GINYU-FORCE-PRESET-UPDATE-20261031.json"
+    },
+    {
+      "file": "v7c-Arm_Front_Upper.png",
+      "bytes": 42749,
+      "sha256": "891eb858ba0d2f5c57208d6a491f36d6bace937376494d0a1839beebd1f3c65c",
+      "source": "cut-limbs-v7c/Arm_Front_Upper.png"
+    },
+    {
+      "file": "v7c-Arm_Front_Lower.png",
+      "bytes": 37807,
+      "sha256": "edfbd32179488d0635fd5b7ad5976cdde6fa921f4cfb1972ffdf06238ceb46ce",
+      "source": "cut-limbs-v7c/Arm_Front_Lower.png"
+    },
+    {
+      "file": "v7c-Arm_Back_Upper.png",
+      "bytes": 42070,
+      "sha256": "c2a21f32ef7d9c832a26b0522a6552d4ca01f000b53774d5e0a096fe1a2a67c3",
+      "source": "cut-limbs-v7c/Arm_Back_Upper.png"
+    },
+    {
+      "file": "v7c-Arm_Back_Lower.png",
+      "bytes": 36769,
+      "sha256": "3c5879cbb11353aab5e6f91ff4fea791e88b4f0c76f99a230dfba7733b10730e",
+      "source": "cut-limbs-v7c/Arm_Back_Lower.png"
+    },
+    {
+      "file": "v7c-Arm_Front_Cap.png",
+      "bytes": 7094,
+      "sha256": "dbf8c99b38f6b6329796235c7ae02530da85e6907368ba86ccb8985d4a42ac68",
+      "source": "cut-limbs-v7c/Arm_Front_Cap.png"
+    },
+    {
+      "file": "v7c-Arm_Back_Cap.png",
+      "bytes": 7198,
+      "sha256": "c3487792eda7aa2cd3e257b154406aae73a36b05677e4f0d4248db584ed32dac",
+      "source": "cut-limbs-v7c/Arm_Back_Cap.png"
+    },
+    {
+      "file": "v7c-Leg_Front_Upper.png",
+      "bytes": 41955,
+      "sha256": "f0fb3320fbbf67ce70c04eff522477a27a1f51204d7555040591a630fce33ca1",
+      "source": "cut-limbs-v7c/Leg_Front_Upper.png"
+    },
+    {
+      "file": "v7c-Leg_Back_Upper.png",
+      "bytes": 47879,
+      "sha256": "f83d372143330a347a7a37de082dd74a69b3adac2c3f121ee36c2bbc2ca29da7",
+      "source": "cut-limbs-v7c/Leg_Back_Upper.png"
+    },
+    {
+      "file": "sliced-Torso_Chest.png",
+      "bytes": 92771,
+      "sha256": "3fe3bc825a6fb51ff4e2252b28b3d53c62839747a464ac22c54a9980c5b5ccfa",
+      "source": "sliced/Torso_Chest.png"
+    },
+    {
+      "file": "sliced-Cape_Collar.png",
+      "bytes": 37365,
+      "sha256": "961ac88186186c1dd2dccddecb61e2aecaea00c99a849cfda4a31f99fce84946",
+      "source": "sliced/Cape_Collar.png"
+    },
+    {
+      "file": "sliced-Arm_Front.png",
+      "bytes": 66222,
+      "sha256": "e4447c0690ca11cc732b3515862ab17c949c256053324049210bd723348a4156",
+      "source": "sliced/Arm_Front.png"
+    },
+    {
+      "file": "sliced-Arm_Back.png",
+      "bytes": 64985,
+      "sha256": "287b100ee8a190945a5cc92454a25a7f1dd05f714ed2f28cd93e7dfd6672ac61",
+      "source": "sliced/Arm_Back.png"
+    }
+  ],
+  "count": 29
+}

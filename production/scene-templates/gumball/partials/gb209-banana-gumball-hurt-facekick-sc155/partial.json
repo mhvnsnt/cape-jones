@@ -1,0 +1,58 @@
+{
+ "id": "gb209-banana-gumball-hurt-facekick-sc155",
+ "kind": "partial",
+ "show": "The Amazing World of Gumball",
+ "collection": "GB209 'The Banana' approved pose sheets (field-guide exports)",
+ "characters": [
+  "Gumball"
+ ],
+ "source_file": "GB200_GUMBALL_HURT_FACEKICK_SC155_FINAL.fla",
+ "source_archive": "CN-Leaks-001-gumball.zip",
+ "archive_location": "mhvnsnt/cn-gigaleak-gumball, draft release untagged-1676e192ae8c72e95791",
+ "size_bytes": 687674,
+ "format": "XFL (zip-based FLA, readable)",
+ "symbol_count": 16,
+ "symbols": [
+  "GB200_ASSETT_CONTAINER",
+  "GB200_GB_BODYCOMP",
+  "GB200_GB_CHEEK_HURT_OL",
+  "GB200_GB_EAR1",
+  "GB200_GB_EAR2",
+  "GB200_GB_EYESCOMP",
+  "GB200_GB_HEAD",
+  "GB200_GB_HEADCOMP",
+  "GB200_GB_L_ARM",
+  "GB200_GB_L_LEG",
+  "GB200_GB_MOUTH",
+  "GB200_GB_R_ARM",
+  "GB200_GB_R_LEG",
+  "GB200_GB_TAIL",
+  "GB200_GUMBALL_PUPPET_001",
+  "LINES"
+ ],
+ "parts_census": {
+  "heads": 1,
+  "head_comps": 1,
+  "eye_comps": 1,
+  "mouths": 1,
+  "bodies": 1,
+  "arms_fins_hands": 2,
+  "legs": 2,
+  "ears": 2,
+  "tails": 1,
+  "puppet_assemblies": 1
+ },
+ "animated_frames": "2 root frames (pose sheet, rendered & verified in wave 1)",
+ "what_exists": "A full single-view Gumball part set (16 symbols: head, head comp, eye comp, mouth, body, arms x2, legs x2, ears x2, tail, puppet) posed for the face-kick gag, on the field-guide sheet. Slate inside the file says GB209 'The Banana' — the GB200 filename prefix is the puppet-block code, not the episode.",
+ "whats_missing": "Poses only; no scene or background.",
+ "notes": [
+  "Wave-1 rendered frames of this sheet exist in workspace (frames_full); the sheet PNG for this folder is on the media checklist."
+ ],
+ "media": {
+  "status": "blocked-write-guard",
+  "target_file": "sheet-gb209-banana-gumball-hurt-facekick-sc155.png",
+  "delivery_dir": "~/workspace/your_files/scene-templates/",
+  "note": "Contact-sheet render staged in render_contact_sheets.sh; blocked by the sandbox write guard (EPERM/0 bytes) at catalog time."
+ },
+ "record_path": "production/scene-templates/gumball/partials/gb209-banana-gumball-hurt-facekick-sc155/partial.json"
+}

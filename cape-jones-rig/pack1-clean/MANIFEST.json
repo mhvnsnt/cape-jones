@@ -1,0 +1,384 @@
+{
+ "bg": [
+  148.0,
+  148.0,
+  148.0
+ ],
+ "pieces": [
+  {
+   "name": "UpperArm_1",
+   "file": "UpperArm_1.png",
+   "size": [
+    151,
+    304
+   ],
+   "opaque_px": 32354,
+   "sheet_bbox": [
+    151,
+    55,
+    302,
+    359
+   ]
+  },
+  {
+   "name": "UpperArm_2",
+   "file": "UpperArm_2.png",
+   "size": [
+    251,
+    300
+   ],
+   "opaque_px": 42951,
+   "sheet_bbox": [
+    433,
+    60,
+    684,
+    360
+   ]
+  },
+  {
+   "name": "UpperArm_3",
+   "file": "UpperArm_3.png",
+   "size": [
+    143,
+    307
+   ],
+   "opaque_px": 33574,
+   "sheet_bbox": [
+    776,
+    57,
+    919,
+    364
+   ]
+  },
+  {
+   "name": "UpperArm_4",
+   "file": "UpperArm_4.png",
+   "size": [
+    292,
+    280
+   ],
+   "opaque_px": 45453,
+   "sheet_bbox": [
+    1034,
+    68,
+    1326,
+    348
+   ]
+  },
+  {
+   "name": "UpperArm_5",
+   "file": "UpperArm_5.png",
+   "size": [
+    278,
+    205
+   ],
+   "opaque_px": 34605,
+   "sheet_bbox": [
+    1361,
+    100,
+    1639,
+    305
+   ]
+  },
+  {
+   "name": "UpperArm_6",
+   "file": "UpperArm_6.png",
+   "size": [
+    265,
+    290
+   ],
+   "opaque_px": 36809,
+   "sheet_bbox": [
+    1663,
+    72,
+    1928,
+    362
+   ]
+  },
+  {
+   "name": "Gauntlet_1",
+   "file": "Gauntlet_1.png",
+   "size": [
+    119,
+    261
+   ],
+   "opaque_px": 23919,
+   "sheet_bbox": [
+    135,
+    432,
+    254,
+    693
+   ]
+  },
+  {
+   "name": "Gauntlet_2",
+   "file": "Gauntlet_2.png",
+   "size": [
+    159,
+    273
+   ],
+   "opaque_px": 25480,
+   "sheet_bbox": [
+    484,
+    436,
+    643,
+    709
+   ]
+  },
+  {
+   "name": "Gauntlet_3",
+   "file": "Gauntlet_3.png",
+   "size": [
+    123,
+    268
+   ],
+   "opaque_px": 24884,
+   "sheet_bbox": [
+    815,
+    429,
+    938,
+    697
+   ]
+  },
+  {
+   "name": "Gauntlet_4",
+   "file": "Gauntlet_4.png",
+   "size": [
+    122,
+    270
+   ],
+   "opaque_px": 24917,
+   "sheet_bbox": [
+    1128,
+    429,
+    1250,
+    699
+   ]
+  },
+  {
+   "name": "Gauntlet_5",
+   "file": "Gauntlet_5.png",
+   "size": [
+    195,
+    209
+   ],
+   "opaque_px": 23666,
+   "sheet_bbox": [
+    1409,
+    474,
+    1604,
+    683
+   ]
+  },
+  {
+   "name": "Gauntlet_6",
+   "file": "Gauntlet_6.png",
+   "size": [
+    122,
+    262
+   ],
+   "opaque_px": 24111,
+   "sheet_bbox": [
+    1781,
+    439,
+    1903,
+    701
+   ]
+  },
+  {
+   "name": "Hand_1",
+   "file": "Hand_1.png",
+   "size": [
+    96,
+    115
+   ],
+   "opaque_px": 9256,
+   "sheet_bbox": [
+    347,
+    796,
+    443,
+    911
+   ]
+  },
+  {
+   "name": "Hand_2",
+   "file": "Hand_2.png",
+   "size": [
+    102,
+    115
+   ],
+   "opaque_px": 9571,
+   "sheet_bbox": [
+    543,
+    794,
+    645,
+    909
+   ]
+  },
+  {
+   "name": "Hand_3",
+   "file": "Hand_3.png",
+   "size": [
+    102,
+    141
+   ],
+   "opaque_px": 11650,
+   "sheet_bbox": [
+    739,
+    780,
+    841,
+    921
+   ]
+  },
+  {
+   "name": "Hand_4",
+   "file": "Hand_4.png",
+   "size": [
+    124,
+    152
+   ],
+   "opaque_px": 12362,
+   "sheet_bbox": [
+    934,
+    771,
+    1058,
+    923
+   ]
+  },
+  {
+   "name": "Hand_5",
+   "file": "Hand_5.png",
+   "size": [
+    171,
+    92
+   ],
+   "opaque_px": 10601,
+   "sheet_bbox": [
+    1125,
+    804,
+    1296,
+    896
+   ]
+  },
+  {
+   "name": "Hand_6",
+   "file": "Hand_6.png",
+   "size": [
+    92,
+    160
+   ],
+   "opaque_px": 9627,
+   "sheet_bbox": [
+    1356,
+    764,
+    1448,
+    924
+   ]
+  },
+  {
+   "name": "Hand_7",
+   "file": "Hand_7.png",
+   "size": [
+    140,
+    101
+   ],
+   "opaque_px": 11062,
+   "sheet_bbox": [
+    1552,
+    799,
+    1692,
+    900
+   ]
+  },
+  {
+   "name": "Hand_8",
+   "file": "Hand_8.png",
+   "size": [
+    171,
+    85
+   ],
+   "opaque_px": 11439,
+   "sheet_bbox": [
+    422,
+    990,
+    593,
+    1075
+   ]
+  },
+  {
+   "name": "Hand_9",
+   "file": "Hand_9.png",
+   "size": [
+    137,
+    147
+   ],
+   "opaque_px": 11898,
+   "sheet_bbox": [
+    654,
+    952,
+    791,
+    1099
+   ]
+  },
+  {
+   "name": "Hand_10",
+   "file": "Hand_10.png",
+   "size": [
+    161,
+    110
+   ],
+   "opaque_px": 12509,
+   "sheet_bbox": [
+    866,
+    977,
+    1027,
+    1087
+   ]
+  },
+  {
+   "name": "Hand_11",
+   "file": "Hand_11.png",
+   "size": [
+    126,
+    129
+   ],
+   "opaque_px": 10616,
+   "sheet_bbox": [
+    1104,
+    952,
+    1230,
+    1081
+   ]
+  },
+  {
+   "name": "Hand_12",
+   "file": "Hand_12.png",
+   "size": [
+    125,
+    138
+   ],
+   "opaque_px": 11945,
+   "sheet_bbox": [
+    1323,
+    964,
+    1448,
+    1102
+   ]
+  },
+  {
+   "name": "Hand_13",
+   "file": "Hand_13.png",
+   "size": [
+    189,
+    157
+   ],
+   "opaque_px": 16681,
+   "sheet_bbox": [
+    1510,
+    940,
+    1699,
+    1097
+   ]
+  }
+ ]
+}

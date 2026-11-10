@@ -1,0 +1,251 @@
+{
+ "source": "workspace/user/files/1000179526_1_cyk3.jpg",
+ "source_size": [
+  2048,
+  1143
+ ],
+ "bg": [
+  152,
+  152,
+  152
+ ],
+ "method": "clean-cut contour, distance>30 from grey bg, NO morphological closing (closing merged stacked pieces), NO rembg, NO square crop, NO erase, 1px feather + fringe decontamination",
+ "pieces": [
+  {
+   "name": "back_cowl_head",
+   "file": "back_cowl_head.png",
+   "desc": "Back cowl head, purple, back of head",
+   "size": [
+    167,
+    207
+   ],
+   "opaque_px": 22326,
+   "sheet_bbox": [
+    196,
+    52,
+    363,
+    259
+   ]
+  },
+  {
+   "name": "back_torso",
+   "file": "back_torso.png",
+   "desc": "Back torso, white, back muscles, shoulder caps",
+   "size": [
+    362,
+    296
+   ],
+   "opaque_px": 69512,
+   "sheet_bbox": [
+    840,
+    70,
+    1202,
+    366
+   ]
+  },
+  {
+   "name": "back_cape_full_SECONDARY",
+   "file": "back_cape_full_SECONDARY.png",
+   "desc": "Back cape full hanging, black - SECONDARY choice only",
+   "size": [
+    468,
+    766
+   ],
+   "opaque_px": 278893,
+   "sheet_bbox": [
+    1197,
+    107,
+    1665,
+    873
+   ]
+  },
+  {
+   "name": "back_cape_drape_top",
+   "file": "back_cape_drape_top.png",
+   "desc": "Back cape drape top, black",
+   "size": [
+    283,
+    188
+   ],
+   "opaque_px": 38804,
+   "sheet_bbox": [
+    1668,
+    107,
+    1951,
+    295
+   ]
+  },
+  {
+   "name": "back_cowl_neck",
+   "file": "back_cowl_neck.png",
+   "desc": "Back cowl neck, purple, no face",
+   "size": [
+    165,
+    142
+   ],
+   "opaque_px": 14966,
+   "sheet_bbox": [
+    426,
+    117,
+    591,
+    259
+   ]
+  },
+  {
+   "name": "back_upper_arm_left",
+   "file": "back_upper_arm_left.png",
+   "desc": "Back upper arm, left in sheet",
+   "size": [
+    126,
+    213
+   ],
+   "opaque_px": 18406,
+   "sheet_bbox": [
+    137,
+    296,
+    263,
+    509
+   ]
+  },
+  {
+   "name": "back_upper_arm_right",
+   "file": "back_upper_arm_right.png",
+   "desc": "Back upper arm, right in sheet",
+   "size": [
+    126,
+    213
+   ],
+   "opaque_px": 18409,
+   "sheet_bbox": [
+    520,
+    296,
+    646,
+    509
+   ]
+  },
+  {
+   "name": "back_belt_pelvis",
+   "file": "back_belt_pelvis.png",
+   "desc": "Back belt + pelvis/briefs, white, belt with two side rectangles",
+   "size": [
+    192,
+    160
+   ],
+   "opaque_px": 28007,
+   "sheet_bbox": [
+    927,
+    390,
+    1119,
+    550
+   ]
+  },
+  {
+   "name": "back_forearm_gauntlet_hand_left",
+   "file": "back_forearm_gauntlet_hand_left.png",
+   "desc": "Back forearm + gauntlet + palm hand, left in sheet, fused",
+   "size": [
+    103,
+    273
+   ],
+   "opaque_px": 19459,
+   "sheet_bbox": [
+    93,
+    512,
+    196,
+    785
+   ]
+  },
+  {
+   "name": "back_forearm_gauntlet_hand_right",
+   "file": "back_forearm_gauntlet_hand_right.png",
+   "desc": "Back forearm + gauntlet + palm hand, right in sheet, fused",
+   "size": [
+    103,
+    273
+   ],
+   "opaque_px": 19490,
+   "sheet_bbox": [
+    587,
+    512,
+    690,
+    785
+   ]
+  },
+  {
+   "name": "back_thigh_left",
+   "file": "back_thigh_left.png",
+   "desc": "Back thigh, left",
+   "size": [
+    116,
+    242
+   ],
+   "opaque_px": 21897,
+   "sheet_bbox": [
+    899,
+    579,
+    1015,
+    821
+   ]
+  },
+  {
+   "name": "back_thigh_right",
+   "file": "back_thigh_right.png",
+   "desc": "Back thigh, right",
+   "size": [
+    115,
+    242
+   ],
+   "opaque_px": 21856,
+   "sheet_bbox": [
+    1034,
+    579,
+    1149,
+    821
+   ]
+  },
+  {
+   "name": "back_shin_boot_left",
+   "file": "back_shin_boot_left.png",
+   "desc": "Back shin + boot, left",
+   "size": [
+    114,
+    301
+   ],
+   "opaque_px": 21736,
+   "sheet_bbox": [
+    879,
+    824,
+    993,
+    1125
+   ]
+  },
+  {
+   "name": "back_shin_boot_right",
+   "file": "back_shin_boot_right.png",
+   "desc": "Back shin + boot, right",
+   "size": [
+    113,
+    301
+   ],
+   "opaque_px": 21695,
+   "sheet_bbox": [
+    1056,
+    824,
+    1169,
+    1125
+   ]
+  }
+ ],
+ "cape_hierarchy": {
+  "primary": "A08 Row4_1.png 247x398 hanging, file here back_cape_PRIMARY_Row4_1_CONTACTSHEET.png 215x348 contact-sheet-scale copy, native file not located on disc in this task",
+  "secondary": "back_cape_full_SECONDARY.png from this sheet",
+  "tertiary": "back_cape_drape_top.png"
+ },
+ "pack_hierarchy": {
+  "base": "this new back sheet, 14 pieces",
+  "secondary_tertiary": "Row1_7, Row1_16, Row1_12, Row1_13, Row1_18/20, Row2_10/11, Row1_3"
+ },
+ "belt_note": "Fused belt+pelvis: centre plain, NO middle rectangle; two side strap rectangles. Separate single-rectangle belt still owed if separate layer needed.",
+ "palm_hands": "Solved for back view in fused forearm+hand pieces; separate palm-hand piece still owed if hand-only swap needed.",
+ "assembled_rig": "back-rig-assembled-20261101.png, 1400x1600, bbox 380,70-1020,1561, proof only, NOT approved/locked, FK pivots + back sitting + gates owed"
+}

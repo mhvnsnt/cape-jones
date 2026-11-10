@@ -1,0 +1,254 @@
+[
+ {
+  "name": "Arm_Back",
+  "file": "Arm_Back.png",
+  "size": [
+   158,
+   510
+  ],
+  "opaque_px": 40215
+ },
+ {
+  "name": "Arm_Front",
+  "file": "Arm_Front.png",
+  "size": [
+   153,
+   511
+  ],
+  "opaque_px": 41384
+ },
+ {
+  "name": "Belt_Overlay",
+  "file": "Belt_Overlay.png",
+  "size": [
+   215,
+   78
+  ],
+  "opaque_px": 13381
+ },
+ {
+  "name": "Cape_Back_Main",
+  "file": "Cape_Back_Main.png",
+  "size": [
+   490,
+   833
+  ],
+  "opaque_px": 295238
+ },
+ {
+  "name": "Cape_Collar",
+  "file": "Cape_Collar.png",
+  "size": [
+   360,
+   185
+  ],
+  "opaque_px": 42790
+ },
+ {
+  "name": "Eye_White_L",
+  "file": "Eye_White_L.png",
+  "size": [
+   93,
+   49
+  ],
+  "opaque_px": 2319
+ },
+ {
+  "name": "Eye_White_R",
+  "file": "Eye_White_R.png",
+  "size": [
+   91,
+   49
+  ],
+  "opaque_px": 2296
+ },
+ {
+  "name": "Eyes_AngryStrip",
+  "file": "Eyes_AngryStrip.png",
+  "size": [
+   213,
+   84
+  ],
+  "opaque_px": 11683
+ },
+ {
+  "name": "Face_Angry",
+  "file": "Face_Angry.png",
+  "size": [
+   103,
+   86
+  ],
+  "opaque_px": 5083
+ },
+ {
+  "name": "Hand_1_Fist",
+  "file": "Hand_1_Fist.png",
+  "size": [
+   90,
+   108
+  ],
+  "opaque_px": 6562
+ },
+ {
+  "name": "Hand_2_FistBack",
+  "file": "Hand_2_FistBack.png",
+  "size": [
+   94,
+   131
+  ],
+  "opaque_px": 8362
+ },
+ {
+  "name": "Hand_3_Open",
+  "file": "Hand_3_Open.png",
+  "size": [
+   103,
+   141
+  ],
+  "opaque_px": 9077
+ },
+ {
+  "name": "Hand_4_Point",
+  "file": "Hand_4_Point.png",
+  "size": [
+   83,
+   148
+  ],
+  "opaque_px": 7498
+ },
+ {
+  "name": "Hand_5_Point2",
+  "file": "Hand_5_Point2.png",
+  "size": [
+   97,
+   148
+  ],
+  "opaque_px": 7642
+ },
+ {
+  "name": "Hand_6_Relaxed",
+  "file": "Hand_6_Relaxed.png",
+  "size": [
+   101,
+   142
+  ],
+  "opaque_px": 8716
+ },
+ {
+  "name": "Hand_7_Grip",
+  "file": "Hand_7_Grip.png",
+  "size": [
+   103,
+   129
+  ],
+  "opaque_px": 8304
+ },
+ {
+  "name": "Head_Front",
+  "file": "Head_Front.png",
+  "size": [
+   119,
+   172
+  ],
+  "opaque_px": 15400
+ },
+ {
+  "name": "Head_Profile",
+  "file": "Head_Profile.png",
+  "size": [
+   149,
+   249
+  ],
+  "opaque_px": 26736
+ },
+ {
+  "name": "Leg_Back",
+  "file": "Leg_Back.png",
+  "size": [
+   168,
+   637
+  ],
+  "opaque_px": 58092
+ },
+ {
+  "name": "Leg_Front",
+  "file": "Leg_Front.png",
+  "size": [
+   155,
+   637
+  ],
+  "opaque_px": 55893
+ },
+ {
+  "name": "Mouth_Closed",
+  "file": "Mouth_Closed.png",
+  "size": [
+   101,
+   59
+  ],
+  "opaque_px": 3793
+ },
+ {
+  "name": "Mouth_Open",
+  "file": "Mouth_Open.png",
+  "size": [
+   105,
+   95
+  ],
+  "opaque_px": 6404
+ },
+ {
+  "name": "Mouth_Shout",
+  "file": "Mouth_Shout.png",
+  "size": [
+   89,
+   80
+  ],
+  "opaque_px": 5213
+ },
+ {
+  "name": "Mouth_Smile",
+  "file": "Mouth_Smile.png",
+  "size": [
+   96,
+   63
+  ],
+  "opaque_px": 3870
+ },
+ {
+  "name": "Mouth_Teeth",
+  "file": "Mouth_Teeth.png",
+  "size": [
+   101,
+   55
+  ],
+  "opaque_px": 3631
+ },
+ {
+  "name": "Neck",
+  "file": "Neck.png",
+  "size": [
+   104,
+   83
+  ],
+  "opaque_px": 6649
+ },
+ {
+  "name": "Pelvis",
+  "file": "Pelvis.png",
+  "size": [
+   230,
+   130
+  ],
+  "opaque_px": 18610
+ },
+ {
+  "name": "Torso_Chest",
+  "file": "Torso_Chest.png",
+  "size": [
+   315,
+   319
+  ],
+  "opaque_px": 70316
+ }
+]

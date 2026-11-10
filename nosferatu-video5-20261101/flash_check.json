@@ -1,0 +1,11 @@
+{
+  "frames": 5064,
+  "fps": 24,
+  "whole_mean_min": 65.69286265432099,
+  "whole_mean_max": 134.81708333333333,
+  "whole_max_jump": 65.88179783950618,
+  "forearm_max_jump": 68.8042,
+  "forearm_black_white_flips": 0,
+  "max_large_jumps_per_sec": 1,
+  "verdict": "PASS"
+}

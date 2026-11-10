@@ -1,0 +1,944 @@
+"""
+Standalone processing drivers that bypass the main frame loop.
+Each function receives the VideoProcessor instance and runs its own
+read/process/write pipeline to completion.
+"""
+
+
+def objectDetection(self):
+    if "directml" in self.objDetectMethod or "openvino" in self.objDetectMethod:
+        from src.objectDetection.objectDetection import ObjectDetectionDML
+
+        driver = ObjectDetectionDML(
+            self.input,
+            self.output,
+            self.width,
+            self.height,
+            self.fps,
+            self.inpoint,
+            self.outpoint,
+            self.encodeMethod,
+            self.benchmark,
+            self.half,
+            self.objDetectMethod,
+            self.totalFrames,
+            self.objDetectDisableAnnotations,
+        )
+    elif "tensorrt" in self.objDetectMethod:
+        from src.objectDetection.objectDetection import ObjectDetectionTensorRT
+
+        driver = ObjectDetectionTensorRT(
+            self.input,
+            self.output,
+            self.width,
+            self.height,
+            self.fps,
+            self.inpoint,
+            self.outpoint,
+            self.encodeMethod,
+            self.benchmark,
+            self.half,
+            self.objDetectMethod,
+            self.totalFrames,
+            self.objDetectDisableAnnotations,
+        )
+    else:
+        from src.objectDetection.objectDetection import ObjectDetection
+
+        driver = ObjectDetection(
+            self.input,
+            self.output,
+            self.width,
+            self.height,
+            self.fps,
+            self.inpoint,
+            self.outpoint,
+            self.encodeMethod,
+            self.benchmark,
+            self.totalFrames,
+            self.half,
+        )
+
+    # These drivers swallow their own pipeline exception, and this path never
+    # reaches start(), so this is what lets main.py count the video as failed
+    # instead of trusting the size of a half-written output file.
+    self.processingError = driver.processingError
+
+
+def autoClip(self):
+    if self.autoclipMethod == "pyscenedetect":
+        from src.autoclip.autoclip import AutoClip
+
+        AutoClip(
+            self.input,
+            self.output,
+            self.autoclipSens,
+            self.inpoint,
+            self.outpoint,
+        )
+    elif self.autoclipMethod in ("maxxvit-directml", "maxxvit-tensorrt"):
+        from src.autoclip.autoclipMaxxvit import AutoClipMaxxvit
+
+        AutoClipMaxxvit(
+            self.input,
+            self.output,
+            self.autoclipMethod,
+            self.autoclipSens,
+            self.inpoint,
+            self.outpoint,
+            self.half,
+        )
+    elif self.autoclipMethod == "transnetv2":
+        from src.autoclip.autoclipTransnetv2 import AutoClipTransnetv2
+
+        AutoClipTransnetv2(
+            self.input,
+            self.output,
+            self.autoclipSens,
+            self.inpoint,
+            self.outpoint,
+            self.half,
+        )
+    elif self.autoclipMethod == "transnetv2-rocm":
+        # Same TransNetV2 weights/arch as CUDA; torch.cuda (HIP) is selected
+        # inside AutoClipTransnetv2 via torch.cuda.is_available().
+        from src.autoclip.autoclipTransnetv2 import AutoClipTransnetv2
+
+        AutoClipTransnetv2(
+            self.input,
+            self.output,
+            self.autoclipSens,
+            self.inpoint,
+            self.outpoint,
+            self.half,
+        )
+    else:
+        raise ValueError(f"Unknown autoclip_method: {self.autoclipMethod}")
+
+
+def segment(self):
+    # self.fps, not self.outputFPS: segment bypasses the interpolating frame
+    # loop and emits exactly one frame per decoded frame, so the interpolated
+    # rate would stamp the container with 2x (or interpolateFactor x) the rate
+    # it actually wrote -- a matte that plays fast and drifts off its audio.
+    # Every other standalone driver already passes self.fps.
+    if self.segmentMethod == "anime":
+        from src.segment.animeSegment import AnimeSegment
+
+        driver = AnimeSegment(
+            self.input,
+            self.output,
+            self.width,
+            self.height,
+            self.fps,
+            self.inpoint,
+            self.outpoint,
+            self.encodeMethod,
+            self.benchmark,
+            self.totalFrames,
+            segment_batch=self.segmentBatch,
+        )
+    elif self.segmentMethod == "anime-tensorrt":
+        from src.segment.animeSegment import AnimeSegmentTensorRT
+
+        driver = AnimeSegmentTensorRT(
+            self.input,
+            self.output,
+            self.width,
+            self.height,
+            self.fps,
+            self.inpoint,
+            self.outpoint,
+            self.encodeMethod,
+            self.benchmark,
+            self.totalFrames,
+            segment_batch=self.segmentBatch,
+        )
+    elif self.segmentMethod == "anime-directml":
+        from src.segment.animeSegment import AnimeSegmentDirectML
+
+        driver = AnimeSegmentDirectML(
+            self.input,
+            self.output,
+            self.width,
+            self.height,
+            self.fps,
+            self.inpoint,
+            self.outpoint,
+            self.encodeMethod,
+            self.benchmark,
+            self.totalFrames,
+        )
+    elif self.segmentMethod == "anime-rocm":
+        from src.segment.animeSegment import AnimeSegmentROCm
+
+        driver = AnimeSegmentROCm(
+            self.input,
+            self.output,
+            self.width,
+            self.height,
+            self.fps,
+            self.inpoint,
+            self.outpoint,
+            self.encodeMethod,
+            self.benchmark,
+            self.totalFrames,
+            segment_batch=self.segmentBatch,
+        )
+    elif self.segmentMethod == "anime-openvino":
+        from src.segment.animeSegment import AnimeSegmentOpenVino
+
+        driver = AnimeSegmentOpenVino(
+            self.input,
+            self.output,
+            self.width,
+            self.height,
+            self.fps,
+            self.inpoint,
+            self.outpoint,
+            self.encodeMethod,
+            self.benchmark,
+            self.totalFrames,
+        )
+    elif self.segmentMethod in ("birefnet", "birefnet-rocm"):
+        from src.segment.birefnetSegment import BiRefNetSegment
+
+        driver = BiRefNetSegment(
+            self.input,
+            self.output,
+            self.width,
+            self.height,
+            self.fps,
+            self.inpoint,
+            self.outpoint,
+            self.encodeMethod,
+            self.benchmark,
+            self.totalFrames,
+            segment_batch=self.segmentBatch,
+        )
+    else:
+        raise ValueError(
+            f"No segmentation backend is wired up for method '{self.segmentMethod}'."
+        )
+
+    # These drivers swallow their own pipeline exception, and this path never
+    # reaches start(), so this is what lets main.py count the video as failed
+    # instead of trusting the size of a half-written output file.
+    self.processingError = driver.processingError
+
+
+def depth(self):
+    match self.depthMethod:
+        case "small_v2":
+            from src.depth.backends.cuda import DepthCuda
+
+            driver = DepthCuda(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_batch=self.depthBatch,
+            )
+
+        case "small_v2-mps":
+            from src.depth.backends.mps import DepthMPS
+
+            driver = DepthMPS(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_batch=self.depthBatch,
+            )
+
+        case "small_v2-tensorrt":
+            from src.depth.backends.tensorrt import DepthTensorRTV2
+
+            driver = DepthTensorRTV2(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                depth_batch=self.depthBatch,
+            )
+
+        case "small_v2-directml" | "small_v2-openvino":
+            from src.depth.backends.directml import DepthDirectMLV2
+
+            driver = DepthDirectMLV2(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+            )
+
+        case "og_small_v2":
+            from src.depth.backends.cuda import OGDepthV2CUDA
+
+            driver = OGDepthV2CUDA(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_batch=self.depthBatch,
+            )
+
+        case "og_small_v2-mps":
+            from src.depth.backends.mps import OGDepthV2MPS
+
+            driver = OGDepthV2MPS(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_batch=self.depthBatch,
+            )
+
+        case "og_video_small_v2":
+            from src.depth.backends.video import VideoDepthAnythingCUDA
+
+            driver = VideoDepthAnythingCUDA(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+            )
+
+        case "video_small_v2":
+            from src.depth.backends.video import VideoDepthAnythingTorch
+
+            driver = VideoDepthAnythingTorch(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_window=self.depthWindow,
+            )
+
+        case (
+            "video_small_v3"
+            | "video_base_v3"
+            | "video_limbo"
+            | "video_limbo_v2"
+            | "video_limbo-tensorrt"
+            | "video_limbo_v2-tensorrt"
+        ):
+            from src.depth.backends.da3_streaming import (
+                DA3StreamingCuda,
+                LimboStreamingCuda,
+            )
+
+            streamingClass = (
+                LimboStreamingCuda
+                if self.depthMethod.startswith("video_limbo")
+                else DA3StreamingCuda
+            )
+            if self.depthMethod.endswith("-tensorrt"):
+                from src.depth.backends.limbo_streaming_trt import (
+                    LimboStreamingTensorRT,
+                )
+
+                streamingClass = LimboStreamingTensorRT
+            driver = streamingClass(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_window=self.depthWindow,
+            )
+
+        case "og_small_v2-tensorrt" | "video_small_v2-tensorrt":
+            from src.depth.backends.tensorrt import OGDepthV2TensorRT
+
+            driver = OGDepthV2TensorRT(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                depth_batch=self.depthBatch,
+            )
+
+        case "og_small_v2-openvino":
+            from src.depth.backends.directml import OGDepthV2DirectML
+
+            driver = OGDepthV2DirectML(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+            )
+
+        case "small_v3" | "base_v3" | "large_v3" | "og_large_v3":
+            from src.depth.backends.cuda import OGDepthV3Cuda
+
+            driver = OGDepthV3Cuda(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_batch=self.depthBatch,
+            )
+
+        case "small_v3-mps" | "base_v3-mps" | "large_v3-mps" | "og_large_v3-mps":
+            from src.depth.backends.mps import OGDepthV3MPS
+
+            driver = OGDepthV3MPS(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_batch=self.depthBatch,
+            )
+
+        case "limbo":
+            from src.depth.backends.cuda import LimboCuda
+
+            driver = LimboCuda(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_batch=self.depthBatch,
+            )
+
+        case "limbo_v2":
+            from src.depth.backends.cuda import LimboCuda
+
+            driver = LimboCuda(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_batch=self.depthBatch,
+            )
+
+        case "limbo-mps":
+            from src.depth.backends.mps import LimboMPS
+
+            driver = LimboMPS(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_batch=self.depthBatch,
+            )
+
+        case "limbo_v2-mps":
+            from src.depth.backends.mps import LimboMPS
+
+            driver = LimboMPS(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_batch=self.depthBatch,
+            )
+
+        case "limbo-tensorrt":
+            from src.depth.backends.tensorrt import LimboTensorRT
+
+            driver = LimboTensorRT(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                depth_batch=self.depthBatch,
+            )
+
+        case "limbo_v2-tensorrt":
+            from src.depth.backends.tensorrt import LimboTensorRT
+
+            driver = LimboTensorRT(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                depth_batch=self.depthBatch,
+            )
+
+        case "limbo-openvino":
+            from src.depth.backends.directml import LimboOpenVino
+
+            driver = LimboOpenVino(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+            )
+
+        case "limbo_v2-openvino":
+            from src.depth.backends.directml import LimboOpenVino
+
+            driver = LimboOpenVino(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+            )
+
+        case "small_v2-rocm":
+            from src.depth.backends.rocm import DepthROCm
+
+            driver = DepthROCm(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_batch=self.depthBatch,
+            )
+
+        case "og_small_v2-rocm":
+            from src.depth.backends.rocm import OGDepthV2ROCm
+
+            driver = OGDepthV2ROCm(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_batch=self.depthBatch,
+            )
+
+        case "og_video_small_v2-rocm":
+            from src.depth.backends.rocm import VideoDepthAnythingROCm
+
+            driver = VideoDepthAnythingROCm(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+            )
+
+        case "video_small_v2-rocm":
+            from src.depth.backends.rocm import VideoDepthTorchROCm
+
+            driver = VideoDepthTorchROCm(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_window=self.depthWindow,
+            )
+
+        case "video_small_v3-rocm" | "video_base_v3-rocm":
+            from src.depth.backends.rocm import DA3StreamingROCm
+
+            driver = DA3StreamingROCm(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_window=self.depthWindow,
+            )
+
+        case "video_limbo-rocm" | "video_limbo_v2-rocm":
+            from src.depth.backends.rocm import LimboStreamingROCm
+
+            driver = LimboStreamingROCm(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_window=self.depthWindow,
+            )
+
+        case "small_v3-rocm" | "base_v3-rocm" | "large_v3-rocm" | "og_large_v3-rocm":
+            from src.depth.backends.rocm import OGDepthV3ROCm
+
+            driver = OGDepthV3ROCm(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_batch=self.depthBatch,
+            )
+
+        case "limbo-rocm" | "limbo_v2-rocm":
+            from src.depth.backends.rocm import LimboROCm
+
+            driver = LimboROCm(
+                self.input,
+                self.output,
+                self.width,
+                self.height,
+                self.fps,
+                self.half,
+                self.inpoint,
+                self.outpoint,
+                self.encodeMethod,
+                self.depthMethod,
+                self.benchmark,
+                self.totalFrames,
+                self.bitDepth,
+                self.depthQuality,
+                compileMode=self.compileMode,
+                depth_batch=self.depthBatch,
+            )
+
+        case _:
+            raise ValueError(
+                f"Unsupported depth_method: {self.depthMethod}. "
+                f"This value is accepted by the CLI but has no model wired up "
+                f"in initializeModels.depth()."
+            )
+
+    # Same contract as segment()/objectDetection()/stabilize(): without it
+    # main.py decides a depth run's outcome purely from the size of a possibly
+    # half-written file, so a failed inference reported success and exited 0.
+    self.processingError = driver.processingError
+
+
+def motionBlur(self):
+    from src.motionBlur import MotionBlurPipeline
+
+    MotionBlurPipeline(
+        self.input,
+        self.output,
+        self.width,
+        self.height,
+        self.fps,
+        half=self.half,
+        inpoint=self.inpoint,
+        outpoint=self.outpoint,
+        encode_method=self.encodeMethod,
+        benchmark=self.benchmark,
+        totalFrames=self.totalFrames,
+        bitDepth=self.bitDepth,
+        interpolate_method=self.moblurMethod,
+        interpolate_factor=self.moblurFactor,
+        moblur_strength=self.moblurStrength,
+        moblur_shutter_angle=self.moblurShutterAngle,
+        moblur_gamma=self.moblurLinearBlend,
+        mask=self.maskPath,
+        ensemble=self.ensemble,
+        dynamic_scale=self.dynamicScale,
+        static_step=self.staticStep,
+        compile_mode=self.compileMode,
+        decode_method=self.decodeMethod,
+    )
+    # No processingError read-back: MotionBlurPipeline re-raises, so this line
+    # would be unreachable on failure and always None on success. main()'s
+    # per-video handler catches the raise and counts the run as failed.
+
+
+def stabilize(self):
+    if self.stabilizeMethod in ("dut", "dut-rocm"):
+        from src.stabilize.dutStabilizer import VideoStabilizeDUT as VideoStabilize
+    else:
+        from src.stabilize.stabilize import VideoStabilize
+
+    stabilizer = VideoStabilize(
+        self.input,
+        self.output,
+        self.width,
+        self.height,
+        self.fps,
+        self.inpoint,
+        self.outpoint,
+        self.encodeMethod,
+        self.benchmark,
+        self.totalFrames,
+        self.bitDepth,
+    )
+    # VideoStabilize swallows its own pipeline exception, and this path never
+    # reaches start(), so this is what lets main.py count the video as failed.
+    self.processingError = stabilizer.processingError

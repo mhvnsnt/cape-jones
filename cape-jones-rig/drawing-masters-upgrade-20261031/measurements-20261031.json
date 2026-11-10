@@ -1,0 +1,829 @@
+{
+  "individual_and_effects": {
+    "I01-foreshorten-072": {
+      "file": "I01-foreshorten-072.png",
+      "size": [
+        537,
+        1122
+      ],
+      "alpha_px": 277711,
+      "alpha_bbox": [
+        40,
+        40,
+        497,
+        1082
+      ],
+      "edge_touch": false
+    },
+    "I02-foreshorten-045": {
+      "file": "I02-foreshorten-045.png",
+      "size": [
+        368,
+        1122
+      ],
+      "alpha_px": 176414,
+      "alpha_bbox": [
+        40,
+        40,
+        328,
+        1082
+      ],
+      "edge_touch": false
+    },
+    "I03-mirror-flip": {
+      "file": "I03-mirror-flip.png",
+      "size": [
+        708,
+        1122
+      ],
+      "alpha_px": 373846,
+      "alpha_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ],
+      "edge_touch": false
+    },
+    "I04-far-side-dark-grad": {
+      "file": "I04-far-side-dark-grad.png",
+      "size": [
+        708,
+        1122
+      ],
+      "alpha_px": 373846,
+      "alpha_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ],
+      "edge_touch": false
+    },
+    "I05-vertical-flip-NOT-A-TURN": {
+      "file": "I05-vertical-flip-NOT-A-TURN.png",
+      "size": [
+        708,
+        1122
+      ],
+      "alpha_px": 373846,
+      "alpha_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ],
+      "edge_touch": false
+    },
+    "I06-skew-turn-approx": {
+      "file": "I06-skew-turn-approx.png",
+      "size": [
+        709,
+        1122
+      ],
+      "alpha_px": 373846,
+      "alpha_bbox": [
+        40,
+        40,
+        669,
+        1082
+      ],
+      "edge_touch": false
+    },
+    "I07-perspective-quad-NOT-A-TURN": {
+      "file": "I07-perspective-quad-NOT-A-TURN.png",
+      "size": [
+        951,
+        937
+      ],
+      "alpha_px": 415467,
+      "alpha_bbox": [
+        40,
+        40,
+        911,
+        897
+      ],
+      "edge_touch": false
+    },
+    "I08-torso-twist-segment-approx": {
+      "file": "I08-torso-twist-segment-approx.png",
+      "size": [
+        708,
+        1139
+      ],
+      "alpha_px": 381405,
+      "alpha_bbox": [
+        40,
+        40,
+        668,
+        1099
+      ],
+      "edge_touch": false
+    },
+    "I09-chest-counter-rot-approx": {
+      "file": "I09-chest-counter-rot-approx.png",
+      "size": [
+        707,
+        1133
+      ],
+      "alpha_px": 381381,
+      "alpha_bbox": [
+        40,
+        40,
+        667,
+        1093
+      ],
+      "edge_touch": false
+    },
+    "I10-silhouette-ref-grey": {
+      "file": "I10-silhouette-ref-grey.png",
+      "size": [
+        708,
+        1122
+      ],
+      "alpha_px": 373846,
+      "alpha_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ],
+      "edge_touch": false
+    },
+    "X01-depth-by-scale-085": {
+      "file": "X01-depth-by-scale-085.png",
+      "size": [
+        619,
+        970
+      ],
+      "alpha_px": 280866,
+      "alpha_bbox": [
+        40,
+        40,
+        579,
+        930
+      ],
+      "edge_touch": false
+    },
+    "X02-scale-plus-dark": {
+      "file": "X02-scale-plus-dark.png",
+      "size": [
+        619,
+        970
+      ],
+      "alpha_px": 280866,
+      "alpha_bbox": [
+        40,
+        40,
+        579,
+        930
+      ],
+      "edge_touch": false
+    },
+    "X03-shear-turn-approx": {
+      "file": "X03-shear-turn-approx.png",
+      "size": [
+        715,
+        1122
+      ],
+      "alpha_px": 373846,
+      "alpha_bbox": [
+        40,
+        40,
+        675,
+        1082
+      ],
+      "edge_touch": false
+    },
+    "X05-blur-plus-sharpen": {
+      "file": "X05-blur-plus-sharpen.png",
+      "size": [
+        711,
+        1126
+      ],
+      "alpha_px": 387364,
+      "alpha_bbox": [
+        40,
+        40,
+        671,
+        1086
+      ],
+      "edge_touch": false
+    },
+    "X06-posterize-approx": {
+      "file": "X06-posterize-approx.png",
+      "size": [
+        708,
+        1122
+      ],
+      "alpha_px": 373846,
+      "alpha_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ],
+      "edge_touch": false
+    },
+    "X07-contrast-approx": {
+      "file": "X07-contrast-approx.png",
+      "size": [
+        708,
+        1122
+      ],
+      "alpha_px": 373846,
+      "alpha_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ],
+      "edge_touch": false
+    },
+    "X09-flip-plus-dark": {
+      "file": "X09-flip-plus-dark.png",
+      "size": [
+        708,
+        1122
+      ],
+      "alpha_px": 373846,
+      "alpha_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ],
+      "edge_touch": false
+    },
+    "X10-quad-back-NOT-A-TURN": {
+      "file": "X10-quad-back-NOT-A-TURN.png",
+      "size": [
+        959,
+        1257
+      ],
+      "alpha_px": 571058,
+      "alpha_bbox": [
+        40,
+        40,
+        919,
+        1217
+      ],
+      "edge_touch": false
+    },
+    "LINEART-INVISIBLE-L1-faint-1px-a70": {
+      "file": "LINEART-INVISIBLE-L1-faint-1px-a70.png",
+      "size": [
+        709,
+        1123
+      ],
+      "alpha_px": 47514,
+      "alpha_bbox": [
+        40,
+        40,
+        669,
+        1083
+      ],
+      "edge_touch": false
+    },
+    "LINEART-INVISIBLE-L2-medium-2px-a120": {
+      "file": "LINEART-INVISIBLE-L2-medium-2px-a120.png",
+      "size": [
+        711,
+        1125
+      ],
+      "alpha_px": 125004,
+      "alpha_bbox": [
+        40,
+        40,
+        671,
+        1085
+      ],
+      "edge_touch": false
+    },
+    "LINEART-INVISIBLE-L3-visible-3px-a180": {
+      "file": "LINEART-INVISIBLE-L3-visible-3px-a180.png",
+      "size": [
+        713,
+        1127
+      ],
+      "alpha_px": 167388,
+      "alpha_bbox": [
+        40,
+        40,
+        673,
+        1087
+      ],
+      "edge_touch": false
+    },
+    "LINEART-INVISIBLE-Ldepth-weight-by-depth": {
+      "file": "LINEART-INVISIBLE-Ldepth-weight-by-depth.png",
+      "size": [
+        711,
+        1126
+      ],
+      "alpha_px": 118906,
+      "alpha_bbox": [
+        40,
+        40,
+        671,
+        1086
+      ],
+      "edge_touch": false
+    },
+    "LINEART-INVISIBLE-Sobel-crosscheck": {
+      "file": "LINEART-INVISIBLE-Sobel-crosscheck.png",
+      "size": [
+        708,
+        1122
+      ],
+      "alpha_px": 32952,
+      "alpha_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ],
+      "edge_touch": false
+    },
+    "BLACK-SILHOUETTE-S1-pure-black": {
+      "file": "BLACK-SILHOUETTE-S1-pure-black.png",
+      "size": [
+        708,
+        1122
+      ],
+      "alpha_px": 373846,
+      "alpha_bbox": [
+        40,
+        40,
+        668,
+        1082
+      ],
+      "edge_touch": false
+    },
+    "BLACK-SILHOUETTE-S2-black-plus-cyan-rim": {
+      "file": "BLACK-SILHOUETTE-S2-black-plus-cyan-rim.png",
+      "size": [
+        714,
+        1128
+      ],
+      "alpha_px": 397753,
+      "alpha_bbox": [
+        40,
+        40,
+        674,
+        1088
+      ],
+      "edge_touch": false
+    },
+    "BLACK-SILHOUETTE-S3-black-plus-lineart-outline": {
+      "file": "BLACK-SILHOUETTE-S3-black-plus-lineart-outline.png",
+      "size": [
+        709,
+        1123
+      ],
+      "alpha_px": 380509,
+      "alpha_bbox": [
+        40,
+        40,
+        669,
+        1083
+      ],
+      "edge_touch": false
+    }
+  },
+  "lineart_stats": {
+    "LINEART-INVISIBLE-L1-faint-1px-a70": {
+      "line_px": 47514,
+      "mean_line_alpha": 70.0,
+      "coverage_pct_of_silhouette": 12.71
+    },
+    "LINEART-INVISIBLE-L2-medium-2px-a120": {
+      "line_px": 125004,
+      "mean_line_alpha": 120.0,
+      "coverage_pct_of_silhouette": 33.44
+    },
+    "LINEART-INVISIBLE-L3-visible-3px-a180": {
+      "line_px": 167388,
+      "mean_line_alpha": 180.0,
+      "coverage_pct_of_silhouette": 44.77
+    },
+    "LINEART-INVISIBLE-Ldepth-weight-by-depth": {
+      "line_px": 118906,
+      "mean_line_alpha": 140.0,
+      "coverage_pct_of_silhouette": 31.81
+    },
+    "LINEART-INVISIBLE-Sobel-crosscheck": {
+      "line_px": 32952,
+      "mean_line_alpha": 120.0,
+      "coverage_pct_of_silhouette": 8.81
+    }
+  },
+  "silhouette_stats": {
+    "silhouette_px": 373846,
+    "S2_rim_px": 23907,
+    "S3_line_px": 47514
+  },
+  "base_alpha_px": 373846,
+  "base_alpha_bbox": [
+    248,
+    253,
+    876,
+    1295
+  ],
+  "gate": {
+    "checked": 26,
+    "edge_touch_failures": [],
+    "all_individual_and_effects": {
+      "I01-foreshorten-072": {
+        "file": "I01-foreshorten-072.png",
+        "size": [
+          537,
+          1122
+        ],
+        "alpha_px": 277711,
+        "alpha_bbox": [
+          40,
+          40,
+          497,
+          1082
+        ],
+        "edge_touch": false
+      },
+      "I02-foreshorten-045": {
+        "file": "I02-foreshorten-045.png",
+        "size": [
+          368,
+          1122
+        ],
+        "alpha_px": 176414,
+        "alpha_bbox": [
+          40,
+          40,
+          328,
+          1082
+        ],
+        "edge_touch": false
+      },
+      "I03-mirror-flip": {
+        "file": "I03-mirror-flip.png",
+        "size": [
+          708,
+          1122
+        ],
+        "alpha_px": 373846,
+        "alpha_bbox": [
+          40,
+          40,
+          668,
+          1082
+        ],
+        "edge_touch": false
+      },
+      "I04-far-side-dark-grad": {
+        "file": "I04-far-side-dark-grad.png",
+        "size": [
+          708,
+          1122
+        ],
+        "alpha_px": 373846,
+        "alpha_bbox": [
+          40,
+          40,
+          668,
+          1082
+        ],
+        "edge_touch": false
+      },
+      "I05-vertical-flip-NOT-A-TURN": {
+        "file": "I05-vertical-flip-NOT-A-TURN.png",
+        "size": [
+          708,
+          1122
+        ],
+        "alpha_px": 373846,
+        "alpha_bbox": [
+          40,
+          40,
+          668,
+          1082
+        ],
+        "edge_touch": false
+      },
+      "I06-skew-turn-approx": {
+        "file": "I06-skew-turn-approx.png",
+        "size": [
+          709,
+          1122
+        ],
+        "alpha_px": 373846,
+        "alpha_bbox": [
+          40,
+          40,
+          669,
+          1082
+        ],
+        "edge_touch": false
+      },
+      "I07-perspective-quad-NOT-A-TURN": {
+        "file": "I07-perspective-quad-NOT-A-TURN.png",
+        "size": [
+          951,
+          937
+        ],
+        "alpha_px": 415467,
+        "alpha_bbox": [
+          40,
+          40,
+          911,
+          897
+        ],
+        "edge_touch": false
+      },
+      "I08-torso-twist-segment-approx": {
+        "file": "I08-torso-twist-segment-approx.png",
+        "size": [
+          708,
+          1139
+        ],
+        "alpha_px": 381405,
+        "alpha_bbox": [
+          40,
+          40,
+          668,
+          1099
+        ],
+        "edge_touch": false
+      },
+      "I09-chest-counter-rot-approx": {
+        "file": "I09-chest-counter-rot-approx.png",
+        "size": [
+          707,
+          1133
+        ],
+        "alpha_px": 381381,
+        "alpha_bbox": [
+          40,
+          40,
+          667,
+          1093
+        ],
+        "edge_touch": false
+      },
+      "I10-silhouette-ref-grey": {
+        "file": "I10-silhouette-ref-grey.png",
+        "size": [
+          708,
+          1122
+        ],
+        "alpha_px": 373846,
+        "alpha_bbox": [
+          40,
+          40,
+          668,
+          1082
+        ],
+        "edge_touch": false
+      },
+      "X01-depth-by-scale-085": {
+        "file": "X01-depth-by-scale-085.png",
+        "size": [
+          619,
+          970
+        ],
+        "alpha_px": 280866,
+        "alpha_bbox": [
+          40,
+          40,
+          579,
+          930
+        ],
+        "edge_touch": false
+      },
+      "X02-scale-plus-dark": {
+        "file": "X02-scale-plus-dark.png",
+        "size": [
+          619,
+          970
+        ],
+        "alpha_px": 280866,
+        "alpha_bbox": [
+          40,
+          40,
+          579,
+          930
+        ],
+        "edge_touch": false
+      },
+      "X03-shear-turn-approx": {
+        "file": "X03-shear-turn-approx.png",
+        "size": [
+          715,
+          1122
+        ],
+        "alpha_px": 373846,
+        "alpha_bbox": [
+          40,
+          40,
+          675,
+          1082
+        ],
+        "edge_touch": false
+      },
+      "X05-blur-plus-sharpen": {
+        "file": "X05-blur-plus-sharpen.png",
+        "size": [
+          711,
+          1126
+        ],
+        "alpha_px": 387364,
+        "alpha_bbox": [
+          40,
+          40,
+          671,
+          1086
+        ],
+        "edge_touch": false
+      },
+      "X06-posterize-approx": {
+        "file": "X06-posterize-approx.png",
+        "size": [
+          708,
+          1122
+        ],
+        "alpha_px": 373846,
+        "alpha_bbox": [
+          40,
+          40,
+          668,
+          1082
+        ],
+        "edge_touch": false
+      },
+      "X07-contrast-approx": {
+        "file": "X07-contrast-approx.png",
+        "size": [
+          708,
+          1122
+        ],
+        "alpha_px": 373846,
+        "alpha_bbox": [
+          40,
+          40,
+          668,
+          1082
+        ],
+        "edge_touch": false
+      },
+      "X09-flip-plus-dark": {
+        "file": "X09-flip-plus-dark.png",
+        "size": [
+          708,
+          1122
+        ],
+        "alpha_px": 373846,
+        "alpha_bbox": [
+          40,
+          40,
+          668,
+          1082
+        ],
+        "edge_touch": false
+      },
+      "X10-quad-back-NOT-A-TURN": {
+        "file": "X10-quad-back-NOT-A-TURN.png",
+        "size": [
+          959,
+          1257
+        ],
+        "alpha_px": 571058,
+        "alpha_bbox": [
+          40,
+          40,
+          919,
+          1217
+        ],
+        "edge_touch": false
+      },
+      "LINEART-INVISIBLE-L1-faint-1px-a70": {
+        "file": "LINEART-INVISIBLE-L1-faint-1px-a70.png",
+        "size": [
+          709,
+          1123
+        ],
+        "alpha_px": 47514,
+        "alpha_bbox": [
+          40,
+          40,
+          669,
+          1083
+        ],
+        "edge_touch": false
+      },
+      "LINEART-INVISIBLE-L2-medium-2px-a120": {
+        "file": "LINEART-INVISIBLE-L2-medium-2px-a120.png",
+        "size": [
+          711,
+          1125
+        ],
+        "alpha_px": 125004,
+        "alpha_bbox": [
+          40,
+          40,
+          671,
+          1085
+        ],
+        "edge_touch": false
+      },
+      "LINEART-INVISIBLE-L3-visible-3px-a180": {
+        "file": "LINEART-INVISIBLE-L3-visible-3px-a180.png",
+        "size": [
+          713,
+          1127
+        ],
+        "alpha_px": 167388,
+        "alpha_bbox": [
+          40,
+          40,
+          673,
+          1087
+        ],
+        "edge_touch": false
+      },
+      "LINEART-INVISIBLE-Ldepth-weight-by-depth": {
+        "file": "LINEART-INVISIBLE-Ldepth-weight-by-depth.png",
+        "size": [
+          711,
+          1126
+        ],
+        "alpha_px": 118906,
+        "alpha_bbox": [
+          40,
+          40,
+          671,
+          1086
+        ],
+        "edge_touch": false
+      },
+      "LINEART-INVISIBLE-Sobel-crosscheck": {
+        "file": "LINEART-INVISIBLE-Sobel-crosscheck.png",
+        "size": [
+          708,
+          1122
+        ],
+        "alpha_px": 32952,
+        "alpha_bbox": [
+          40,
+          40,
+          668,
+          1082
+        ],
+        "edge_touch": false
+      },
+      "BLACK-SILHOUETTE-S1-pure-black": {
+        "file": "BLACK-SILHOUETTE-S1-pure-black.png",
+        "size": [
+          708,
+          1122
+        ],
+        "alpha_px": 373846,
+        "alpha_bbox": [
+          40,
+          40,
+          668,
+          1082
+        ],
+        "edge_touch": false
+      },
+      "BLACK-SILHOUETTE-S2-black-plus-cyan-rim": {
+        "file": "BLACK-SILHOUETTE-S2-black-plus-cyan-rim.png",
+        "size": [
+          714,
+          1128
+        ],
+        "alpha_px": 397753,
+        "alpha_bbox": [
+          40,
+          40,
+          674,
+          1088
+        ],
+        "edge_touch": false
+      },
+      "BLACK-SILHOUETTE-S3-black-plus-lineart-outline": {
+        "file": "BLACK-SILHOUETTE-S3-black-plus-lineart-outline.png",
+        "size": [
+          709,
+          1123
+        ],
+        "alpha_px": 380509,
+        "alpha_bbox": [
+          40,
+          40,
+          669,
+          1083
+        ],
+        "edge_touch": false
+      }
+    }
+  }
+}

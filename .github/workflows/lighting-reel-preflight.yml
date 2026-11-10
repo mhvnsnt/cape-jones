@@ -1,0 +1,33 @@
+name: Lighting Reel Static Preflight
+
+on:
+  pull_request:
+    paths:
+      - "production/colab/cape_jones_lighting_reel_colab.ipynb"
+      - "production/colab/validate_lighting_reel_notebook.py"
+      - ".github/workflows/lighting-reel-preflight.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "production/colab/cape_jones_lighting_reel_colab.ipynb"
+      - "production/colab/validate_lighting_reel_notebook.py"
+      - ".github/workflows/lighting-reel-preflight.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  static-preflight:
+    name: Validate lighting reel notebook
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run static preflight
+        run: python production/colab/validate_lighting_reel_notebook.py

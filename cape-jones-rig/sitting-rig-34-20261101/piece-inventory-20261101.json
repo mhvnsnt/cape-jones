@@ -1,0 +1,268 @@
+{
+  "source": "workspace/user/files/1000179383_25_yh27.jpg",
+  "md5": "4dc11a3dc88b9bd0cba55bc156971ecb",
+  "size": [
+    1200,
+    1648
+  ],
+  "background": [
+    126,
+    126,
+    126
+  ],
+  "method": "clean-cut, distance>30, holes filled, no rembg",
+  "pieces": {
+    "head_cowl": {
+      "component": 1,
+      "area": 12442,
+      "bbox": [
+        559,
+        241,
+        659,
+        392
+      ],
+      "w": 100,
+      "h": 151
+    },
+    "upper_arm_L_socket": {
+      "component": 5,
+      "area": 11836,
+      "bbox": [
+        352,
+        382,
+        448,
+        564
+      ],
+      "w": 96,
+      "h": 182
+    },
+    "torso": {
+      "component": 10,
+      "area": 41465,
+      "bbox": [
+        500,
+        406,
+        724,
+        648
+      ],
+      "w": 224,
+      "h": 242
+    },
+    "upper_arm_R": {
+      "component": 14,
+      "area": 13407,
+      "bbox": [
+        776,
+        439,
+        862,
+        636
+      ],
+      "w": 86,
+      "h": 197
+    },
+    "upper_arm_spare": {
+      "component": 27,
+      "area": 13092,
+      "bbox": [
+        952,
+        462,
+        1044,
+        657
+      ],
+      "w": 92,
+      "h": 195
+    },
+    "forearm_hand_L": {
+      "component": 34,
+      "area": 11910,
+      "bbox": [
+        116,
+        534,
+        249,
+        739
+      ],
+      "w": 133,
+      "h": 205
+    },
+    "forearm_hand_mid": {
+      "component": 37,
+      "area": 12181,
+      "bbox": [
+        267,
+        588,
+        393,
+        800
+      ],
+      "w": 126,
+      "h": 212
+    },
+    "forearm_hand_R": {
+      "component": 40,
+      "area": 14311,
+      "bbox": [
+        714,
+        671,
+        853,
+        900
+      ],
+      "w": 139,
+      "h": 229
+    },
+    "pelvis_belt": {
+      "component": 41,
+      "area": 16499,
+      "bbox": [
+        498,
+        677,
+        666,
+        816
+      ],
+      "w": 168,
+      "h": 139
+    },
+    "cape_back": {
+      "component": 44,
+      "area": 179249,
+      "bbox": [
+        743,
+        723,
+        1138,
+        1415
+      ],
+      "w": 395,
+      "h": 692
+    },
+    "hand_spare_L": {
+      "component": 46,
+      "area": 6123,
+      "bbox": [
+        68,
+        777,
+        149,
+        894
+      ],
+      "w": 81,
+      "h": 117
+    },
+    "thigh_bent_L": {
+      "component": 52,
+      "area": 19252,
+      "bbox": [
+        311,
+        785,
+        488,
+        990
+      ],
+      "w": 177,
+      "h": 205
+    },
+    "hand_spare_mid": {
+      "component": 58,
+      "area": 6388,
+      "bbox": [
+        181,
+        800,
+        260,
+        916
+      ],
+      "w": 79,
+      "h": 116
+    },
+    "thigh_bent_R": {
+      "component": 59,
+      "area": 20367,
+      "bbox": [
+        508,
+        833,
+        676,
+        1063
+      ],
+      "w": 168,
+      "h": 230
+    },
+    "hand_spare_R": {
+      "component": 60,
+      "area": 7244,
+      "bbox": [
+        734,
+        910,
+        827,
+        1030
+      ],
+      "w": 93,
+      "h": 120
+    },
+    "piece_ambiguous_scoop_top": {
+      "component": 66,
+      "area": 8538,
+      "bbox": [
+        142,
+        959,
+        231,
+        1077
+      ],
+      "w": 89,
+      "h": 118
+    },
+    "shin_boot_L": {
+      "component": 72,
+      "area": 22957,
+      "bbox": [
+        190,
+        1028,
+        378,
+        1343
+      ],
+      "w": 188,
+      "h": 315
+    },
+    "knee_ball_spare": {
+      "component": 73,
+      "area": 3184,
+      "bbox": [
+        648,
+        1068,
+        705,
+        1140
+      ],
+      "w": 57,
+      "h": 72
+    },
+    "shin_boot_mid": {
+      "component": 74,
+      "area": 22654,
+      "bbox": [
+        350,
+        1097,
+        547,
+        1416
+      ],
+      "w": 197,
+      "h": 319
+    },
+    "boot_spare": {
+      "component": 75,
+      "area": 9368,
+      "bbox": [
+        54,
+        1159,
+        196,
+        1278
+      ],
+      "w": 142,
+      "h": 119
+    },
+    "shin_boot_R": {
+      "component": 77,
+      "area": 21977,
+      "bbox": [
+        539,
+        1180,
+        695,
+        1511
+      ],
+      "w": 156,
+      "h": 331
+    }
+  }
+}

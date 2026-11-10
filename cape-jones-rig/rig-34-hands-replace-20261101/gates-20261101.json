@@ -1,0 +1,100 @@
+{
+  "base": "rig-34-attachment-fix-20261101/sit-chair-attachment-fix-20261101.png",
+  "base_md5": "e32cde61f8ab3540f480c268b924b1a1",
+  "fist_centres_measured_from_piece_geometry": {
+    "L": [
+      479,
+      791
+    ],
+    "R": [
+      909,
+      827
+    ]
+  },
+  "old_computed_wrist_REJECTED": {
+    "L": [
+      412.3,
+      773.7
+    ],
+    "R": [
+      856.3,
+      829.7
+    ],
+    "note": "computed wrist formula was ~60px left of actual fist centre; NOT used here"
+  },
+  "arm1_left": {
+    "source": "hand_spare_L.png, as-is",
+    "scale": 1.45,
+    "angle_pil_rotate": 6,
+    "centred_on_fist": [
+      479,
+      791
+    ],
+    "hand_bbox": [
+      421,
+      705,
+      536,
+      877
+    ]
+  },
+  "arm2_right": {
+    "source": "hand_spare_L.png MIRRORED left-right, thumb opposite Arm 1",
+    "scale": 1.45,
+    "angle_pil_rotate": 0,
+    "centred_on_fist": [
+      909,
+      827
+    ],
+    "hand_bbox": [
+      850,
+      742,
+      966,
+      910
+    ]
+  },
+  "hands_total": 2,
+  "bbox": [
+    421,
+    195,
+    966,
+    1475
+  ],
+  "feet_alpha_bottom": {
+    "L": 1475,
+    "R": 1475
+  },
+  "knee_shin_gap_still_present": "NOT silently fixed; re-measured same columns as attachment fix",
+  "knee_shin_centre_columns": {
+    "x590_runs_1000_1250": [
+      [
+        658,
+        1089
+      ],
+      [
+        1091,
+        1091
+      ],
+      [
+        1146,
+        1407
+      ]
+    ],
+    "x775_runs_1000_1250": [
+      [
+        342,
+        1124
+      ],
+      [
+        1162,
+        1167
+      ],
+      [
+        1169,
+        1426
+      ]
+    ]
+  },
+  "attachment_joins_kept": "Arm1 behind torso, raised shoulder (580,385); Arm2 perfect; pelvis-torso clean; hips-pelvis clean; kneecaps as rotation pivots; shins on knees; cape on shoulders back",
+  "method_note": "No crop, no erase, no square crop, no split. Hand centred on fist centre, larger than fist, so fist is covered by hand layer. A gauntlet-only front forearm file does not exist.",
+  "remaining_defect": "At zoom, a ~10px fist sliver still peeks at one edge per hand (Arm1 lower-right edge, Arm2 lower-left edge), where the open hand's finger shape is narrower than the round fist. At full-figure scale it reads as one open hand per arm. A truly clean version needs a gauntlet-only forearm piece; NOT faked by cropping/erasing or by scaling the hand further."
+}

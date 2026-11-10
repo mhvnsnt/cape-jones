@@ -1,0 +1,15 @@
+[
+  "FFmpeg lut3d: /home/hatch/workspace/cape-jones-rig/wired-100-20261031/wired-ffmpeg-lut3d-fighting-20261031.png exists=True size=419850",
+  "walk clean frames: ['walk-01-contact-v7c-clean.png', 'walk-13-passing-v7c-clean.png', 'walk-25-contact-v7c-clean.png', 'walk-37-passing-v7c-clean.png']",
+  "walk MP4: /home/hatch/workspace/cape-jones-rig/wired-100-20261031/wired-walk-clean-clips-20261031.mp4 exists=True size=32211",
+  "audio loudnorm measured: {'input_i': '-14.72', 'input_tp': '-1.24', 'input_lra': '0.50', 'input_thresh': '-24.88', 'output_i': '-24.01', 'output_tp': '-10.41', 'output_lra': '1.10', 'output_thresh': '-34.09', 'normalization_type': 'dynamic', 'target_offset': '0.01'}",
+  "CMD FAILED ['/usr/bin/python3', '/home/hatch/workspace/cape-jones-rig/apply_lighting_level2_v2.py', '/home/hatch/workspace/cape-jones-rig/clips-v7c/punch-impact-locked-v7c.png']: REFUSED: plate carries 8420 red debug-label pixels. Use a clean plate.\n",
+  "CJ-01 Level2: outdir=/home/hatch/workspace/cape-jones-rig/wired-100-20261031/wired-shot-cj01-punch-level2 files=[] rc=1 REFUSED: plate carries 8420 red debug-label pixels. Use a clean plate.\n",
+  "fighting bbox x 0-1099 y 0-1499",
+  "Blender masks written: shadow ellipse+pads, line light, fade",
+  "B-model dir: /home/hatch/workspace/cape-jones-rig/sliced-clean-20261031/B-model/model-sheet-front-set2 exists=True",
+  "B-model pieces: ['/home/hatch/workspace/cape-jones-rig/sliced-clean-20261031/B-model/model-sheet-front-set2/Row1_1.png'] count=1",
+  "sliced-clean layout shot written from /home/hatch/workspace/cape-jones-rig/sliced-clean-20261031/B-model/model-sheet-front-set2/Row1_1.png",
+  "punch clip keyframes: 4 clip keys: ['clip', 'fps', 'rig', 'angle_rule', 'labels', 'keyframes']",
+  "XFL verified: layers=15 frames=60 (JSFL logic, Animate run still blocked)"
+]

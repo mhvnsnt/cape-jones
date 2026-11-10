@@ -1,0 +1,82 @@
+{
+ "source": "layout-line-art/layout-warehouse-forest-skyline.jpg",
+ "group": "layout-line-art",
+ "plate": "layout-line-art/layout-warehouse-forest-skyline.png",
+ "plate_md5": "53f613afb61085156701de598a797d08",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    871,
+    475
+   ],
+   "opaque_px": 411977,
+   "sheet_bbox": [
+    16,
+    16,
+    887,
+    491
+   ],
+   "area_px": 411977,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    865,
+    475
+   ],
+   "opaque_px": 409315,
+   "sheet_bbox": [
+    903,
+    16,
+    1768,
+    491
+   ],
+   "area_px": 409315,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    871,
+    474
+   ],
+   "opaque_px": 412330,
+   "sheet_bbox": [
+    16,
+    508,
+    887,
+    982
+   ],
+   "area_px": 412330,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    864,
+    475
+   ],
+   "opaque_px": 409539,
+   "sheet_bbox": [
+    904,
+    507,
+    1768,
+    982
+   ],
+   "area_px": 409539,
+   "provisional_class": "layout_panel",
+   "grid_split": false
+  }
+ ]
+}

@@ -1,0 +1,314 @@
+[
+ {
+  "frame": 0,
+  "viseme": "oh",
+  "phase": "hold",
+  "jaw": 12
+ },
+ {
+  "frame": 1,
+  "viseme": "oh",
+  "phase": "hold",
+  "jaw": 12
+ },
+ {
+  "frame": 2,
+  "viseme": "oh",
+  "phase": "hold",
+  "jaw": 12
+ },
+ {
+  "frame": 3,
+  "viseme": "oh->w",
+  "phase": "transition",
+  "jaw": 12.0,
+  "width": 110.0
+ },
+ {
+  "frame": 4,
+  "viseme": "oh->w",
+  "phase": "transition",
+  "jaw": 10.44,
+  "width": 98.1
+ },
+ {
+  "frame": 5,
+  "viseme": "oh->w",
+  "phase": "transition",
+  "jaw": 7.56,
+  "width": 75.9
+ },
+ {
+  "frame": 6,
+  "viseme": "w",
+  "phase": "hold",
+  "jaw": 6
+ },
+ {
+  "frame": 7,
+  "viseme": "w",
+  "phase": "hold",
+  "jaw": 6
+ },
+ {
+  "frame": 8,
+  "viseme": "w",
+  "phase": "hold",
+  "jaw": 6
+ },
+ {
+  "frame": 9,
+  "viseme": "w->fv",
+  "phase": "transition",
+  "jaw": 6.0,
+  "width": 64.0
+ },
+ {
+  "frame": 10,
+  "viseme": "w->fv",
+  "phase": "transition",
+  "jaw": 4.96,
+  "width": 91.5
+ },
+ {
+  "frame": 11,
+  "viseme": "w->fv",
+  "phase": "transition",
+  "jaw": 3.04,
+  "width": 142.5
+ },
+ {
+  "frame": 12,
+  "viseme": "fv",
+  "phase": "hold",
+  "jaw": 2
+ },
+ {
+  "frame": 13,
+  "viseme": "fv",
+  "phase": "hold",
+  "jaw": 2
+ },
+ {
+  "frame": 14,
+  "viseme": "fv",
+  "phase": "hold",
+  "jaw": 2
+ },
+ {
+  "frame": 15,
+  "viseme": "fv->l",
+  "phase": "transition",
+  "jaw": 2.0,
+  "width": 170.0
+ },
+ {
+  "frame": 16,
+  "viseme": "fv->l",
+  "phase": "transition",
+  "jaw": 3.04,
+  "width": 159.6
+ },
+ {
+  "frame": 17,
+  "viseme": "fv->l",
+  "phase": "transition",
+  "jaw": 4.96,
+  "width": 140.4
+ },
+ {
+  "frame": 18,
+  "viseme": "l",
+  "phase": "hold",
+  "jaw": 6
+ },
+ {
+  "frame": 19,
+  "viseme": "l",
+  "phase": "hold",
+  "jaw": 6
+ },
+ {
+  "frame": 20,
+  "viseme": "l",
+  "phase": "hold",
+  "jaw": 6
+ },
+ {
+  "frame": 21,
+  "viseme": "l->sz",
+  "phase": "transition",
+  "jaw": 6.0,
+  "width": 130.0
+ },
+ {
+  "frame": 22,
+  "viseme": "l->sz",
+  "phase": "transition",
+  "jaw": 4.96,
+  "width": 135.2
+ },
+ {
+  "frame": 23,
+  "viseme": "l->sz",
+  "phase": "transition",
+  "jaw": 3.04,
+  "width": 144.8
+ },
+ {
+  "frame": 24,
+  "viseme": "sz",
+  "phase": "hold",
+  "jaw": 2
+ },
+ {
+  "frame": 25,
+  "viseme": "sz",
+  "phase": "hold",
+  "jaw": 2
+ },
+ {
+  "frame": 26,
+  "viseme": "sz",
+  "phase": "hold",
+  "jaw": 2
+ },
+ {
+  "frame": 27,
+  "viseme": "sz->th",
+  "phase": "transition",
+  "jaw": 2.0,
+  "width": 150.0
+ },
+ {
+  "frame": 28,
+  "viseme": "sz->th",
+  "phase": "transition",
+  "jaw": 2.52,
+  "width": 150.0
+ },
+ {
+  "frame": 29,
+  "viseme": "sz->th",
+  "phase": "transition",
+  "jaw": 3.48,
+  "width": 150.0
+ },
+ {
+  "frame": 30,
+  "viseme": "th",
+  "phase": "hold",
+  "jaw": 4
+ },
+ {
+  "frame": 31,
+  "viseme": "th",
+  "phase": "hold",
+  "jaw": 4
+ },
+ {
+  "frame": 32,
+  "viseme": "th",
+  "phase": "hold",
+  "jaw": 4
+ },
+ {
+  "frame": 33,
+  "viseme": "th->ah",
+  "phase": "transition",
+  "jaw": 4.0,
+  "width": 150.0
+ },
+ {
+  "frame": 34,
+  "viseme": "th->ah",
+  "phase": "transition",
+  "jaw": 7.11,
+  "width": 162.4
+ },
+ {
+  "frame": 35,
+  "viseme": "th->ah",
+  "phase": "transition",
+  "jaw": 12.89,
+  "width": 185.6
+ },
+ {
+  "frame": 36,
+  "viseme": "ah",
+  "phase": "hold",
+  "jaw": 16
+ },
+ {
+  "frame": 37,
+  "viseme": "ah",
+  "phase": "hold",
+  "jaw": 16
+ },
+ {
+  "frame": 38,
+  "viseme": "ah",
+  "phase": "hold",
+  "jaw": 16
+ },
+ {
+  "frame": 39,
+  "viseme": "ah->mbp",
+  "phase": "transition",
+  "jaw": 16.0,
+  "width": 198.0
+ },
+ {
+  "frame": 40,
+  "viseme": "ah->mbp",
+  "phase": "transition",
+  "jaw": 11.85,
+  "width": 192.8
+ },
+ {
+  "frame": 41,
+  "viseme": "ah->mbp",
+  "phase": "transition",
+  "jaw": 4.15,
+  "width": 183.2
+ },
+ {
+  "frame": 42,
+  "viseme": "mbp",
+  "phase": "hold",
+  "jaw": 0
+ },
+ {
+  "frame": 43,
+  "viseme": "mbp",
+  "phase": "hold",
+  "jaw": 0
+ },
+ {
+  "frame": 44,
+  "viseme": "mbp",
+  "phase": "hold",
+  "jaw": 0
+ },
+ {
+  "frame": 45,
+  "viseme": "mbp->oh",
+  "phase": "transition",
+  "jaw": 0.0,
+  "width": 178.0
+ },
+ {
+  "frame": 46,
+  "viseme": "mbp->oh",
+  "phase": "transition",
+  "jaw": 3.11,
+  "width": 160.4
+ },
+ {
+  "frame": 47,
+  "viseme": "mbp->oh",
+  "phase": "transition",
+  "jaw": 8.89,
+  "width": 127.6
+ }
+]

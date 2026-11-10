@@ -1,0 +1,18 @@
+{
+ "mesh": "CapeJones_Body",
+ "zmin": -3.314593755021633e-07,
+ "zmax": 0.9248054623603821,
+ "head_verts": 117637,
+ "head_dominant": {
+  "clavicle_R": 18720,
+  "neck_1": 20885,
+  "chest": 6444,
+  "jaw": 12306,
+  "neck_2": 63,
+  "head": 44754,
+  "clavicle_L": 14465
+ },
+ "suspect": [],
+ "suspect_fraction": 0.0,
+ "verdict": "PASS"
+}

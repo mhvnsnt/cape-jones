@@ -1,0 +1,358 @@
+{
+  "scenarios": [
+    {
+      "id": "S1-v2-warm-overhead",
+      "room": "shafts-v2",
+      "direction": "overhead",
+      "gain": [
+        1.1,
+        0.95,
+        0.7
+      ],
+      "rim": [
+        255,
+        180,
+        80
+      ],
+      "shadow": [
+        40,
+        50,
+        90
+      ],
+      "lit_mean_RGB": [
+        161.3,
+        132.7,
+        94.5
+      ],
+      "base_mean_RGB": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "figure_alpha_px": 374127,
+      "line_band_px": 49849,
+      "rim_px": 34446,
+      "line_band_mean_light_factor": 0.633,
+      "no_crop_padded_edge_alpha_max": 0.0,
+      "canvas": [
+        1260,
+        1660
+      ]
+    },
+    {
+      "id": "S2-v3-warm-overhead-strong",
+      "room": "shafts-v3",
+      "direction": "overhead_centre",
+      "gain": [
+        1.15,
+        0.98,
+        0.72
+      ],
+      "rim": [
+        255,
+        190,
+        90
+      ],
+      "shadow": [
+        40,
+        50,
+        90
+      ],
+      "lit_mean_RGB": [
+        169.8,
+        140.0,
+        99.9
+      ],
+      "base_mean_RGB": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "figure_alpha_px": 374127,
+      "line_band_px": 49849,
+      "rim_px": 34446,
+      "line_band_mean_light_factor": 0.652,
+      "no_crop_padded_edge_alpha_max": 0.0,
+      "canvas": [
+        1260,
+        1660
+      ]
+    },
+    {
+      "id": "S3-v3pools-warm-overhead-bounce",
+      "room": "shafts-v3pools",
+      "direction": "overhead_centre",
+      "gain": [
+        1.12,
+        0.96,
+        0.71
+      ],
+      "rim": [
+        255,
+        185,
+        85
+      ],
+      "shadow": [
+        42,
+        52,
+        92
+      ],
+      "lit_mean_RGB": [
+        171.7,
+        140.1,
+        98.2
+      ],
+      "base_mean_RGB": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "figure_alpha_px": 374127,
+      "line_band_px": 49849,
+      "rim_px": 34446,
+      "line_band_mean_light_factor": 0.652,
+      "no_crop_padded_edge_alpha_max": 0.0,
+      "canvas": [
+        1260,
+        1660
+      ]
+    },
+    {
+      "id": "S4-glare-warm-overhead-glow",
+      "room": "shafts-glare",
+      "direction": "overhead",
+      "gain": [
+        1.1,
+        0.95,
+        0.7
+      ],
+      "rim": [
+        255,
+        180,
+        80
+      ],
+      "shadow": [
+        40,
+        50,
+        90
+      ],
+      "lit_mean_RGB": [
+        156.9,
+        128.8,
+        91.4
+      ],
+      "base_mean_RGB": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "figure_alpha_px": 374127,
+      "line_band_px": 49849,
+      "rim_px": 34446,
+      "line_band_mean_light_factor": 0.633,
+      "no_crop_padded_edge_alpha_max": 0.0,
+      "canvas": [
+        1260,
+        1660
+      ]
+    },
+    {
+      "id": "S5-colour-magenta-rose",
+      "room": "colour-magenta",
+      "direction": "front",
+      "gain": [
+        1.25,
+        0.7,
+        0.9
+      ],
+      "rim": [
+        255,
+        178,
+        229
+      ],
+      "shadow": [
+        60,
+        30,
+        70
+      ],
+      "lit_mean_RGB": [
+        214.6,
+        127.1,
+        166.6
+      ],
+      "base_mean_RGB": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "figure_alpha_px": 374127,
+      "line_band_px": 49849,
+      "rim_px": 34446,
+      "line_band_mean_light_factor": 0.935,
+      "no_crop_padded_edge_alpha_max": 0.0,
+      "canvas": [
+        1260,
+        1660
+      ]
+    },
+    {
+      "id": "S6-colour-cyan-dual-backlight",
+      "room": "colour-cyan-dual",
+      "direction": "back",
+      "gain": [
+        0.9,
+        1.05,
+        1.15
+      ],
+      "rim": [
+        0,
+        200,
+        255
+      ],
+      "shadow": [
+        20,
+        40,
+        70
+      ],
+      "lit_mean_RGB": [
+        94.9,
+        149.5,
+        175.5
+      ],
+      "base_mean_RGB": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "figure_alpha_px": 374127,
+      "line_band_px": 49849,
+      "rim_px": 34446,
+      "line_band_mean_light_factor": 0.744,
+      "no_crop_padded_edge_alpha_max": 0.0,
+      "canvas": [
+        1260,
+        1660
+      ]
+    },
+    {
+      "id": "S7-colour-golden-hour-front",
+      "room": "colour-gold",
+      "direction": "front",
+      "gain": [
+        1.1,
+        0.95,
+        0.7
+      ],
+      "rim": [
+        255,
+        180,
+        80
+      ],
+      "shadow": [
+        40,
+        50,
+        90
+      ],
+      "lit_mean_RGB": [
+        195.5,
+        159.2,
+        109.1
+      ],
+      "base_mean_RGB": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "figure_alpha_px": 374127,
+      "line_band_px": 49849,
+      "rim_px": 34446,
+      "line_band_mean_light_factor": 0.935,
+      "no_crop_padded_edge_alpha_max": 0.0,
+      "canvas": [
+        1260,
+        1660
+      ]
+    },
+    {
+      "id": "S8-colour-cool-blue-night",
+      "room": "colour-blue-night",
+      "direction": "cool_front",
+      "gain": [
+        0.85,
+        0.95,
+        1.2
+      ],
+      "rim": [
+        160,
+        200,
+        255
+      ],
+      "shadow": [
+        15,
+        25,
+        55
+      ],
+      "lit_mean_RGB": [
+        143.1,
+        163.2,
+        210.7
+      ],
+      "base_mean_RGB": [
+        134.2,
+        132.4,
+        136.8
+      ],
+      "figure_alpha_px": 374127,
+      "line_band_px": 49849,
+      "rim_px": 34446,
+      "line_band_mean_light_factor": 0.914,
+      "no_crop_padded_edge_alpha_max": 0.0,
+      "canvas": [
+        1260,
+        1660
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "id": "01-v2-base",
+      "name": "SHAFTS V2 BASE",
+      "room_mean_RGB": [
+        28.9,
+        26.2,
+        25.3
+      ],
+      "approval": "0/1"
+    },
+    {
+      "id": "02-v3-cycles",
+      "name": "SHAFTS V3 CYCLES",
+      "room_mean_RGB": [
+        56.0,
+        49.0,
+        40.3
+      ],
+      "approval": "0/1"
+    },
+    {
+      "id": "03-v3-pools",
+      "name": "SHAFTS V3+POOLS IMPROVED FINAL",
+      "room_mean_RGB": [
+        71.7,
+        65.9,
+        60.7
+      ],
+      "approval": "0/1"
+    },
+    {
+      "id": "04-glare-composite",
+      "name": "SHAFTS GLARE COMPOSITE",
+      "room_mean_RGB": [
+        23.1,
+        20.4,
+        19.1
+      ],
+      "approval": "0/1"
+    }
+  ]
+}

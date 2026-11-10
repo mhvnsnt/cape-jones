@@ -1,0 +1,86 @@
+{
+  "move": "dx=-10, dy=-10 from move-up version; total from original dx=-10, dy=-29; 10px is builder interpretation, Mars gave direction + equal amounts, not a pixel number",
+  "angle": 164.8,
+  "scale": 1.0,
+  "mirror": "Arm1 horizontal in place, unchanged",
+  "centre_paste_original": [
+    303.0,
+    548.3
+  ],
+  "centre_paste_moveup": [
+    303.0,
+    529.3
+  ],
+  "centre_paste_new": [
+    293.0,
+    519.3
+  ],
+  "palm_ball_centre_moveup": [
+    314,
+    511
+  ],
+  "palm_ball_centre_new": [
+    304,
+    501
+  ],
+  "palm_ball_centre_measured_yellow": [
+    304.0,
+    501.0
+  ],
+  "wrist_registry_new": [
+    310.6,
+    463.9
+  ],
+  "tip_registry_new": [
+    279.2,
+    584.5
+  ],
+  "d_wrist_registry_to_forearm_end_F": 53.2,
+  "cuff_bottom_y": 474,
+  "wrist_registry_above_cuff_bottom_px": 10.1,
+  "column_gaps_moveup": {
+    "x290": 3,
+    "x300": -12,
+    "x310": -13,
+    "x320": -11,
+    "x330": -7,
+    "x340": -1,
+    "x350": 34
+  },
+  "column_gaps_new": {
+    "x290": -22,
+    "x300": -23,
+    "x310": -21,
+    "x320": -17,
+    "x330": -11,
+    "x340": 24,
+    "x350": null
+  },
+  "hand_bbox_new": [
+    238,
+    452,
+    344,
+    583
+  ],
+  "fist_pixels_remaining_outside_hand": 0,
+  "torso_cape_diff_x_ge_380_new_vs_moveup": 0,
+  "no_crop_plain": {
+    "pass": true,
+    "bbox": [
+      238,
+      237,
+      884,
+      1296
+    ]
+  },
+  "no_crop_ball": {
+    "pass": true,
+    "bbox": [
+      234,
+      237,
+      884,
+      1296
+    ]
+  },
+  "approval": "0/1, NOT perfect until Mars sees it"
+}

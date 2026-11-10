@@ -1,0 +1,38 @@
+{
+  "version": "joint-locked-v5",
+  "date": "2026-10-31",
+  "shoulder_joints": {
+    "L": [
+      430,
+      445
+    ],
+    "R": [
+      670,
+      445
+    ]
+  },
+  "hip_joints": {
+    "L": [
+      485,
+      740
+    ],
+    "R": [
+      615,
+      740
+    ]
+  },
+  "changes_vs_v3": [
+    "HR hip 605->585 (20px left, screen-right hip was off right)",
+    "R leg uses Leg_Back pieces, L leg uses Leg_Front pieces",
+    "Jump legs tuck IN: lower +45/-45, not -90/+90 split",
+    "Jump/arms-up use whole Arm_Front pinned at shoulder, no forearm-only bend",
+    "Flex keeps cut-limb elbow bend (true bend pose)"
+  ],
+  "rotation_rule": "end = joint + length*(sin(angle), cos(angle)), 0=down, positive=screen-right",
+  "changes_vs_v4": [
+    "LOCKED, unchanged: Head (550,250), Neck (550,360, scale 1.05), Torso (550,400), Pelvis (550,680), ARM 1 (our left, Arm_Front, good)",
+    "ARM 2 (our right) FIXED: Arm_Back pieces, not flipped Arm_Front \u2014 gauntlet/bicep/fist orientation restored, no flip",
+    "HIPS spread wider + higher into pelvis divots: Leg1 (485,740), Leg2 (615,740) \u2014 was (495,760)/(585,760), spread 90 -> 130, up 20",
+    "Labels: ARM 1 = our left, ARM 2 = our right, LEG 1 = our left, LEG 2 = our right, drawn on every v5 pose"
+  ]
+}

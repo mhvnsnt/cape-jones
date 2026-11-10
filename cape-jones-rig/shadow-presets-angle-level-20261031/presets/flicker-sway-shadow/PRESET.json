@@ -1,0 +1,18 @@
+{
+  "code": "X4",
+  "slug": "flicker-sway-shadow",
+  "kind": "experimental",
+  "name": "Flicker / sway shadow",
+  "description": "3-frame sequence, cast offset -6 / 0 / +6 px. Motion variant, not a static preset.",
+  "parameters": {
+    "offsets": [
+      -6,
+      0,
+      6
+    ],
+    "duration_ms": 400
+  },
+  "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+  "sample": "sample.png",
+  "status": "preset saved, approval 0/1"
+}

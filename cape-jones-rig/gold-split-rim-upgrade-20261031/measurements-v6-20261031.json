@@ -1,0 +1,162 @@
+{
+  "v6-thin-outer-only-6px-seam550": {
+    "file": "v6-thin-outer-only-6px-seam550-20261031.png",
+    "rim_width_px": 6,
+    "seam_x": 550,
+    "halo": false,
+    "gold_rim_px": 18430,
+    "cyan_rim_px": 15874,
+    "rim_inside_plate_px": 0,
+    "rim_outside_plate_px": 34304,
+    "gold_exact_px_in_final_outside": 16905,
+    "cyan_exact_px_in_final_outside": 14858,
+    "gold_median": [
+      255,
+      180,
+      80
+    ],
+    "black_interior_preserved_pct": 96.72752731649373,
+    "black_interior_opaque_preserved_pct": 100.0,
+    "black_interior_total": 127121
+  },
+  "v6-medium-outer-only-12px-seam550": {
+    "file": "v6-medium-outer-only-12px-seam550-20261031.png",
+    "rim_width_px": 12,
+    "seam_x": 550,
+    "halo": false,
+    "gold_rim_px": 31106,
+    "cyan_rim_px": 28832,
+    "rim_inside_plate_px": 0,
+    "rim_outside_plate_px": 59938,
+    "gold_exact_px_in_final_outside": 29581,
+    "cyan_exact_px_in_final_outside": 27816,
+    "gold_median": [
+      255,
+      180,
+      80
+    ],
+    "black_interior_preserved_pct": 96.72752731649373,
+    "black_interior_opaque_preserved_pct": 100.0,
+    "black_interior_total": 127121
+  },
+  "v6-medium-halo-under-opaque-12px-seam550": {
+    "file": "v6-medium-halo-under-opaque-12px-seam550-20261031.png",
+    "rim_width_px": 12,
+    "seam_x": 550,
+    "halo": true,
+    "gold_rim_px": 31106,
+    "cyan_rim_px": 28832,
+    "rim_inside_plate_px": 0,
+    "rim_outside_plate_px": 59938,
+    "gold_exact_px_in_final_outside": 29581,
+    "cyan_exact_px_in_final_outside": 27816,
+    "gold_median": [
+      255,
+      180,
+      80
+    ],
+    "black_interior_preserved_pct": 96.72752731649373,
+    "black_interior_opaque_preserved_pct": 100.0,
+    "black_interior_total": 127121
+  },
+  "v6-heavy-outer-only-20px-seam550": {
+    "file": "v6-heavy-outer-only-20px-seam550-20261031.png",
+    "rim_width_px": 20,
+    "seam_x": 550,
+    "halo": false,
+    "gold_rim_px": 47811,
+    "cyan_rim_px": 45786,
+    "rim_inside_plate_px": 0,
+    "rim_outside_plate_px": 93597,
+    "gold_exact_px_in_final_outside": 46286,
+    "cyan_exact_px_in_final_outside": 44770,
+    "gold_median": [
+      255,
+      180,
+      80
+    ],
+    "black_interior_preserved_pct": 96.72752731649373,
+    "black_interior_opaque_preserved_pct": 100.0,
+    "black_interior_total": 127121
+  },
+  "v6-medium-seam-offset-650": {
+    "file": "v6-medium-seam-offset-650-20261031.png",
+    "rim_width_px": 12,
+    "seam_x": 650,
+    "halo": true,
+    "gold_rim_px": 35047,
+    "cyan_rim_px": 24891,
+    "rim_inside_plate_px": 0,
+    "rim_outside_plate_px": 59938,
+    "gold_exact_px_in_final_outside": 33360,
+    "cyan_exact_px_in_final_outside": 24037,
+    "gold_median": [
+      255,
+      180,
+      80
+    ],
+    "black_interior_preserved_pct": 96.72752731649373,
+    "black_interior_opaque_preserved_pct": 100.0,
+    "black_interior_total": 127121
+  },
+  "v6-power-candidate-1-dual-charge-thin-halo": {
+    "file": "v6-power-candidate-1-dual-charge-20261031.png",
+    "rim_width_px": 6,
+    "seam_x": 550,
+    "halo": true,
+    "gold_rim_px": 18430,
+    "cyan_rim_px": 15874,
+    "rim_inside_plate_px": 0,
+    "rim_outside_plate_px": 34304,
+    "gold_exact_px_in_final_outside": 16905,
+    "cyan_exact_px_in_final_outside": 14858,
+    "gold_median": [
+      255,
+      180,
+      80
+    ],
+    "black_interior_preserved_pct": 96.72752731649373,
+    "black_interior_opaque_preserved_pct": 100.0,
+    "black_interior_total": 127121
+  },
+  "v6-power-candidate-2-dual-aura-medium-halo": {
+    "file": "v6-power-candidate-2-dual-aura-20261031.png",
+    "rim_width_px": 12,
+    "seam_x": 550,
+    "halo": true,
+    "gold_rim_px": 31106,
+    "cyan_rim_px": 28832,
+    "rim_inside_plate_px": 0,
+    "rim_outside_plate_px": 59938,
+    "gold_exact_px_in_final_outside": 29581,
+    "cyan_exact_px_in_final_outside": 27816,
+    "gold_median": [
+      255,
+      180,
+      80
+    ],
+    "black_interior_preserved_pct": 96.72752731649373,
+    "black_interior_opaque_preserved_pct": 100.0,
+    "black_interior_total": 127121
+  },
+  "v6-power-candidate-3-split-overlay-heavy-darkbg": {
+    "file": "v6-power-candidate-3-split-overlay-20261031.png",
+    "rim_width_px": 20,
+    "seam_x": 550,
+    "halo": true,
+    "gold_rim_px": 47811,
+    "cyan_rim_px": 45786,
+    "rim_inside_plate_px": 0,
+    "rim_outside_plate_px": 93597,
+    "gold_exact_px_in_final_outside": 46286,
+    "cyan_exact_px_in_final_outside": 44770,
+    "gold_median": [
+      255,
+      180,
+      80
+    ],
+    "black_interior_preserved_pct": 97.10512031843676,
+    "black_interior_opaque_preserved_pct": 100.0,
+    "black_interior_total": 127121
+  }
+}

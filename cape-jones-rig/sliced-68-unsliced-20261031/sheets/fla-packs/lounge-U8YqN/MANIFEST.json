@@ -1,0 +1,173 @@
+{
+ "source": "fla-packs/lounge-packs/lounge-U8YqN.jpg",
+ "group": "fla-packs",
+ "plate": "fla-packs/lounge-U8YqN.png",
+ "plate_md5": "42c4db3d40de7fcd192598099e79bcc4",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    125,
+    188
+   ],
+   "opaque_px": 18952,
+   "sheet_bbox": [
+    527,
+    97,
+    652,
+    285
+   ],
+   "area_px": 18952,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    232,
+    331
+   ],
+   "opaque_px": 23682,
+   "sheet_bbox": [
+    171,
+    368,
+    403,
+    699
+   ],
+   "area_px": 23682,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    92,
+    134
+   ],
+   "opaque_px": 8295,
+   "sheet_bbox": [
+    226,
+    716,
+    318,
+    850
+   ],
+   "area_px": 8295,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_3",
+   "file": "Row2_3.png",
+   "size": [
+    182,
+    146
+   ],
+   "opaque_px": 18994,
+   "sheet_bbox": [
+    393,
+    606,
+    575,
+    752
+   ],
+   "area_px": 18994,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_4",
+   "file": "Row2_4.png",
+   "size": [
+    286,
+    315
+   ],
+   "opaque_px": 61642,
+   "sheet_bbox": [
+    429,
+    281,
+    715,
+    596
+   ],
+   "area_px": 61642,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_5",
+   "file": "Row2_5.png",
+   "size": [
+    103,
+    372
+   ],
+   "opaque_px": 24116,
+   "sheet_bbox": [
+    717,
+    444,
+    820,
+    816
+   ],
+   "area_px": 24116,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_6",
+   "file": "Row2_6.png",
+   "size": [
+    132,
+    257
+   ],
+   "opaque_px": 17739,
+   "sheet_bbox": [
+    877,
+    516,
+    1009,
+    773
+   ],
+   "area_px": 17739,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_1",
+   "file": "Row3_1.png",
+   "size": [
+    140,
+    671
+   ],
+   "opaque_px": 59481,
+   "sheet_bbox": [
+    409,
+    765,
+    549,
+    1436
+   ],
+   "area_px": 59481,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_2",
+   "file": "Row3_2.png",
+   "size": [
+    431,
+    695
+   ],
+   "opaque_px": 209348,
+   "sheet_bbox": [
+    645,
+    846,
+    1076,
+    1541
+   ],
+   "area_px": 209348,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  }
+ ],
+ "duplicate_md5_of": "fla-packs/lounge-3quarter-packs/clean-U8YqN.jpg"
+}

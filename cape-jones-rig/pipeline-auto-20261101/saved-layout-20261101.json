@@ -1,0 +1,185 @@
+{
+  "arm2Locked": true,
+  "pieces": [
+    {
+      "flipX": false,
+      "id": "cape",
+      "locked": true,
+      "rotation": 0,
+      "visible": true,
+      "x": 360,
+      "y": 330,
+      "z": 0
+    },
+    {
+      "flipX": false,
+      "id": "upperArmL",
+      "locked": true,
+      "rotation": 5,
+      "visible": true,
+      "x": 490,
+      "y": 390,
+      "z": 1
+    },
+    {
+      "flipX": false,
+      "id": "forearmL",
+      "locked": true,
+      "rotation": -15,
+      "visible": true,
+      "x": 455,
+      "y": 580,
+      "z": 4
+    },
+    {
+      "flipX": false,
+      "id": "elbowCapL",
+      "locked": true,
+      "rotation": 0,
+      "visible": true,
+      "x": 465,
+      "y": 580,
+      "z": 5
+    },
+    {
+      "flipX": false,
+      "id": "pelvis",
+      "locked": true,
+      "rotation": 0,
+      "visible": true,
+      "x": 565,
+      "y": 650,
+      "z": 4
+    },
+    {
+      "flipX": false,
+      "id": "thighL",
+      "locked": false,
+      "rotation": 2,
+      "visible": true,
+      "x": 400,
+      "y": 710,
+      "z": 3
+    },
+    {
+      "flipX": false,
+      "id": "thighR",
+      "locked": true,
+      "rotation": 6,
+      "visible": true,
+      "x": 590,
+      "y": 750,
+      "z": 2
+    },
+    {
+      "flipX": false,
+      "id": "kneeL",
+      "locked": false,
+      "rotation": 0,
+      "visible": true,
+      "x": 380,
+      "y": 885,
+      "z": 4
+    },
+    {
+      "flipX": false,
+      "id": "kneeR",
+      "locked": true,
+      "rotation": 0,
+      "visible": true,
+      "x": 560,
+      "y": 950,
+      "z": 7
+    },
+    {
+      "flipX": false,
+      "id": "shinL",
+      "locked": false,
+      "rotation": 0,
+      "visible": true,
+      "x": 225,
+      "y": 945,
+      "z": 6
+    },
+    {
+      "flipX": false,
+      "id": "shinR",
+      "locked": true,
+      "rotation": -10,
+      "visible": true,
+      "x": 395,
+      "y": 985,
+      "z": 6
+    },
+    {
+      "flipX": false,
+      "id": "torso",
+      "locked": true,
+      "rotation": 0,
+      "visible": true,
+      "x": 550,
+      "y": 370,
+      "z": 8
+    },
+    {
+      "flipX": false,
+      "id": "head",
+      "locked": false,
+      "rotation": 0,
+      "visible": true,
+      "x": 635,
+      "y": 195,
+      "z": 9
+    },
+    {
+      "flipX": false,
+      "id": "upperArmR",
+      "locked": true,
+      "rotation": 15,
+      "visible": true,
+      "x": 805,
+      "y": 420,
+      "z": 10
+    },
+    {
+      "flipX": false,
+      "id": "forearmR",
+      "locked": true,
+      "rotation": 45,
+      "visible": true,
+      "x": 685,
+      "y": 650,
+      "z": 11
+    },
+    {
+      "flipX": false,
+      "id": "elbowCapR",
+      "locked": false,
+      "rotation": 0,
+      "visible": true,
+      "x": 775,
+      "y": 610,
+      "z": 12
+    },
+    {
+      "flipX": false,
+      "id": "handL",
+      "locked": true,
+      "rotation": -46,
+      "visible": true,
+      "x": 530,
+      "y": 740,
+      "z": 13
+    },
+    {
+      "flipX": false,
+      "id": "handR",
+      "locked": true,
+      "rotation": 70,
+      "visible": true,
+      "x": 565,
+      "y": 755,
+      "z": 13
+    }
+  ]
+}

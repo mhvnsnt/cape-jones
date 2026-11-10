@@ -1,0 +1,2101 @@
+{
+ "library": "Gumball production scene templates \u2014 complete animated scenes",
+ "source_archive": "CN-Leaks-001-gumball.zip (mhvnsnt/cn-gigaleak-gumball)",
+ "count_complete_scenes": 31,
+ "tag_vocabulary": {
+  "angle-variant-puppet": "A puppet drawn/built for one specific camera angle (top shot, extreme close-up) instead of transforming the stock puppet.",
+  "beat-layer": "The scene or a puppet carries a layer named for the beat/music grid; animation is timed against it.",
+  "costume-variant-puppet": "A puppet variant built for a costume/state (pyjamas, hurt, sporty) rather than redressing the stock puppet.",
+  "cycle-multi-scale": "The same library cycle is placed at two or more very different scales in one scene.",
+  "dialogue-two-shot": "Two characters staged in one shot for dialogue, typically one scene layer per character over a shared background.",
+  "dissection-gag": "A character is staged as separately placed puppet parts (limbs/head/torso as independent scene elements).",
+  "face-comp-driven": "Face-comp keyframes outnumber body-puppet keyframes \u2014 the face system carries the performance.",
+  "forced-perspective": "The same item is placed at scale ratios >= 2.5x inside one scene to fake depth.",
+  "head-comp-swap": "An episode-specific head/face comp is swapped onto the stock puppet for one story beat.",
+  "layout-mov-reference": "The scene file embeds a layout/reference video layer (a guide, not scene content).",
+  "mask-layer": "The scene solves occlusion with a mask layer.",
+  "multi-character-staging": "Three or more characters staged and choreographed in one shot.",
+  "nested-master-symbol": "The whole scene performance is nested inside one master symbol placed over background layers.",
+  "overlay-hands": "A dedicated overlay layer puts hands on top of an occluding element (covers, props).",
+  "per-character-mask": "Two or more mask layers, one per character, solve shared-occlusion staging.",
+  "photo-plate": "The background is a photographic plate composited under the vector puppets.",
+  "punch-zoom": "An in-scene camera punch: puppet scale jump + background swap inside one scene file, no cut.",
+  "rough-layer-shipped": "Animator rough layers ship inside the clean production file.",
+  "run-cycle-library": "Locomotion is a reusable library cycle symbol, not scene-specific drawings.",
+  "solo-close-up": "A single character fills the shot; performance is carried by face comps and scale.",
+  "speed-smear": "Background or limbs are reduced to speed smears/lines at full motion.",
+  "transformation-gag": "A transformation is staged by placement/scale/part swaps \u2014 no morph drawings."
+ },
+ "shared_backgrounds": {
+  "GB214_WORDS_SC057_LO_BG.jpg": [
+   "gb214-words-sc057",
+   "gb214-words-sc062"
+  ],
+  "GB214_WORDS_SC057_LO_BG_crop.jpg": [
+   "gb214-words-sc058",
+   "gb214-words-sc061"
+  ]
+ },
+ "scenes": [
+  {
+   "id": "gb202-remote-sc094",
+   "episode_code": "GB202",
+   "episode": "The Remote",
+   "scene": "Sc094",
+   "title": "The Remote \u2014 Sc094: Nicole dives over the car (photo-plate garage stunt)",
+   "frames": 56,
+   "fps": 25,
+   "frames_anatomy": 56,
+   "cast": [
+    "Nicole"
+   ],
+   "backgrounds": [
+    {
+     "item": "bg",
+     "type": "painted/vector symbol"
+    }
+   ],
+   "rigs": [
+    "GB200_MOM_ORIGINAL_PUPPET_V001",
+    "GB200_MOM_ORIGINAL_PUPPET_V001"
+   ],
+   "animations_count": 11,
+   "animations_keyframes_total": 3533,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "bg"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Mom angry run rough",
+     "bg"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "nested-master-symbol",
+    "layout-mov-reference",
+    "photo-plate"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb202-remote-sc094"
+  },
+  {
+   "id": "gb202-remote-sc103",
+   "episode_code": "GB202",
+   "episode": "The Remote",
+   "scene": "Sc103",
+   "title": "The Remote \u2014 Sc103: Richard hogs the remote (three run cycles, one garage)",
+   "frames": 141,
+   "fps": 25,
+   "frames_anatomy": 141,
+   "cast": [
+    "Darwin",
+    "Gumball",
+    "Richard"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB202_REMOTE_SC103_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_RICHARD_ORIGINAL_PUPPET_V001",
+    "GB200_RICHARD_ORIGINAL_PUPPET_V001",
+    "GB200_ORIGINAL_PUPPET_FRONTVIEW_v001",
+    "GB200_RICHARD_ORIGINAL_PUPPET_V001",
+    "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "GB200_GUMBALL_PUPPET_001"
+   ],
+   "animations_count": 45,
+   "animations_keyframes_total": 7105,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB202_REMOTE_SC103_LO_BG.jpg",
+     "dad_run",
+     "dar run cycle",
+     "gb run cycle"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB202_REMOTE_SC103_LO_BG.jpg",
+     "dad_run"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "run-cycle-library",
+    "layout-mov-reference",
+    "face-comp-driven",
+    "multi-character-staging"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb202-remote-sc103"
+  },
+  {
+   "id": "gb202-remote-sc108",
+   "episode_code": "GB202",
+   "episode": "The Remote",
+   "scene": "Sc108",
+   "title": "The Remote \u2014 Sc108: forced-perspective run (giant Darwin FG, small Gumball BG)",
+   "frames": 40,
+   "fps": 25,
+   "frames_anatomy": 40,
+   "cast": [
+    "Darwin",
+    "Gumball"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB202REMOTE_SC108_LO_BG.JPEG",
+     "type": "bitmap (painted or photo \u2014 name gives no evidence)"
+    }
+   ],
+   "rigs": [
+    "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "GB200_GUMBALL_PUPPET_001"
+   ],
+   "animations_count": 20,
+   "animations_keyframes_total": 1587,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB202REMOTE_SC108_LO_BG.JPEG",
+     "dar run cycle",
+     "gb run cycle"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB202REMOTE_SC108_LO_BG.JPEG",
+     "dar run cycle",
+     "gb run cycle"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "run-cycle-library",
+    "layout-mov-reference",
+    "face-comp-driven",
+    "forced-perspective",
+    "speed-smear",
+    "cycle-multi-scale"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/gb202-remote-sc108"
+  },
+  {
+   "id": "gb202-remote-sc144",
+   "episode_code": "GB202",
+   "episode": "The Remote",
+   "scene": "Sc144",
+   "title": "The Remote \u2014 Sc144: kids burst in, Richard tackles them for the remote",
+   "frames": 262,
+   "fps": 25,
+   "frames_anatomy": 262,
+   "cast": [
+    "Darwin",
+    "Gumball",
+    "Nicole",
+    "Richard"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB202REMOTE_SC148_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_RICHARD_ORIGINAL_PUPPET_V001",
+    "GB200_MOM_ORIGINAL_PUPPET_V001"
+   ],
+   "animations_count": 34,
+   "animations_keyframes_total": 5386,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB202REMOTE_SC148_LO_BG.jpg",
+     "animation"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB202REMOTE_SC148_LO_BG.jpg",
+     "animation"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "nested-master-symbol",
+    "run-cycle-library",
+    "layout-mov-reference",
+    "multi-character-staging"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/gb202-remote-sc144"
+  },
+  {
+   "id": "gb202-remote-sc147",
+   "episode_code": "GB202",
+   "episode": "The Remote",
+   "scene": "Sc147",
+   "title": "The Remote \u2014 Sc147: family pile on the sidewalk, neighbour rants back (in-file cut)",
+   "frames": 147,
+   "fps": 25,
+   "frames_anatomy": 147,
+   "cast": [
+    "Darwin",
+    "Gumball",
+    "Nicole",
+    "Richard"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB202REMOTE_Sc147_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [],
+   "animations_count": 32,
+   "animations_keyframes_total": 1452,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB202REMOTE_Sc147_LO_BG.jpg",
+     "animation"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB202REMOTE_Sc147_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/crowd/CROWD_GUY_01_FV_COMP"
+    ],
+    "background_switch_frames": [
+     0,
+     42
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "layout-mov-reference",
+    "face-comp-driven",
+    "photo-plate",
+    "multi-character-staging"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb202-remote-sc147"
+  },
+  {
+   "id": "gb202-remote-sc160",
+   "episode_code": "GB202",
+   "episode": "The Remote",
+   "scene": "Sc160",
+   "title": "The Remote \u2014 Sc160: Richard erupts at the family (31-frame punctuation shot)",
+   "frames": 31,
+   "fps": 25,
+   "frames_anatomy": 31,
+   "cast": [
+    "Darwin",
+    "Gumball",
+    "Nicole",
+    "Richard"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB202REMOTE_Sc160_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_RICHARD_ORIGINAL_PUPPET_V001",
+    "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "GB200_GUMBALL_PUPPET_001",
+    "GB200_MOM_ORIGINAL_PUPPET_V001"
+   ],
+   "animations_count": 25,
+   "animations_keyframes_total": 2767,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB202REMOTE_Sc160_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DAD_ORIGINAL_PUPPET_V001/GB200_RICHARD_ORIGINAL_PUPPET_V001",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+     "Scene atributes/CHARACTERS/GB200_NICOLE_ORIGINAL_PUPPET_V001/GB200_MOM_ORIGINAL_PUPPET_V001"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB202REMOTE_Sc160_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DAD_ORIGINAL_PUPPET_V001/GB200_RICHARD_ORIGINAL_PUPPET_V001",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+     "Scene atributes/CHARACTERS/GB200_NICOLE_ORIGINAL_PUPPET_V001/GB200_MOM_ORIGINAL_PUPPET_V001"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "layout-mov-reference",
+    "face-comp-driven",
+    "multi-character-staging"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb202-remote-sc160"
+  },
+  {
+   "id": "gb204-phone-sc154",
+   "episode_code": "GB204",
+   "episode": "The Phone",
+   "scene": "Sc154",
+   "title": "The Phone \u2014 Sc154: tug-of-war over the phone (photo street, one held grapple)",
+   "frames": 184,
+   "fps": 25,
+   "frames_anatomy": 184,
+   "cast": [
+    "Darwin",
+    "Gumball"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB204_PHONE_SC154_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "GB200_GUMBALL_PUPPET_001",
+    "GB200_GUMBALL_PUPPET_002"
+   ],
+   "animations_count": 13,
+   "animations_keyframes_total": 4608,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_002",
+     "Scene atributes/BACKGROUNDS/GB204_PHONE_SC154_LO_BG.jpg"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_002",
+     "Scene atributes/BACKGROUNDS/GB204_PHONE_SC154_LO_BG.jpg"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "rough-layer-shipped",
+    "layout-mov-reference",
+    "face-comp-driven",
+    "photo-plate",
+    "dialogue-two-shot"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb204-phone-sc154"
+  },
+  {
+   "id": "gb206-job-sc019",
+   "episode_code": "GB206",
+   "episode": "The Job",
+   "scene": "Sc019",
+   "title": "The Job \u2014 Sc019: amazed two-shot on a photographic background plate",
+   "frames": 56,
+   "fps": 25,
+   "frames_anatomy": 56,
+   "cast": [
+    "Darwin",
+    "Gumball"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB206JOB_SC019_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "GB200_GUMBALL_PUPPET_001",
+    "GB200_GUMBALL_PUPPET_001"
+   ],
+   "animations_count": 11,
+   "animations_keyframes_total": 2075,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB206JOB_SC019_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001 copy/GB200_GUMBALL_PUPPET_001"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB206JOB_SC019_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001 copy/GB200_GUMBALL_PUPPET_001"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "layout-mov-reference",
+    "photo-plate",
+    "dialogue-two-shot"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/gb206-job-sc019"
+  },
+  {
+   "id": "gb206-job-sc119",
+   "episode_code": "GB206",
+   "episode": "The Job",
+   "scene": "Sc119",
+   "title": "The Job \u2014 Sc119: Nicole close-up that punch-zooms into an extreme face shot",
+   "frames": 57,
+   "fps": 25,
+   "frames_anatomy": 57,
+   "cast": [
+    "Nicole"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB205JOB_SC119_LO_BG_crop_first.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    },
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB205JOB_SC119_LO_BG_crop_last.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_MOM_ORIGINAL_PUPPET_V001",
+    "GB200_MOM_ORIGINAL_PUPPET_V001"
+   ],
+   "animations_count": 12,
+   "animations_keyframes_total": 1196,
+   "seams": {
+    "opens_with": [
+     "Duplicate Items Folder/GB200_MOM_ORIGINAL_PUPPET_V001",
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB205JOB_SC119_LO_BG_crop_first.jpg",
+     "Scene atributes/BACKGROUNDS/GB205JOB_SC119_LO_BG_crop_last.jpg"
+    ],
+    "closes_with": [
+     "Duplicate Items Folder/GB200_MOM_ORIGINAL_PUPPET_V001",
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB205JOB_SC119_LO_BG_crop_first.jpg",
+     "Scene atributes/BACKGROUNDS/GB205JOB_SC119_LO_BG_crop_last.jpg"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "head-comp-swap",
+    "layout-mov-reference",
+    "face-comp-driven",
+    "punch-zoom",
+    "solo-close-up"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/gb206-job-sc119"
+  },
+  {
+   "id": "gb211-treasure-sc105",
+   "episode_code": "GB211",
+   "episode": "The Treasure",
+   "scene": "Sc105",
+   "title": "The Treasure \u2014 Sc105: the whole family in one bed, the duvet layer sandwich",
+   "frames": 123,
+   "fps": 25,
+   "frames_anatomy": 123,
+   "cast": [
+    "Gumball",
+    "Nicole",
+    "Richard"
+   ],
+   "backgrounds": [],
+   "rigs": [
+    "GB211_PYJAMAS_DAD_PUPPET_V001",
+    "GB211_PYJAMAS_MOM_PUPPET_V001"
+   ],
+   "animations_count": 27,
+   "animations_keyframes_total": 5555,
+   "seams": {
+    "opens_with": [
+     "Duplicate Items Folder/DAD ANIMATION ",
+     "Duplicate Items Folder/DAD DUVET",
+     "Duplicate Items Folder/DAD OVERLAY HANDS",
+     "Duplicate Items Folder/MOM ANIMATION",
+     "Duplicate Items Folder/MOM DUVET",
+     "Duplicate Items Folder/MOM R ARM FRONT",
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/COSTUME/GB200_GUMBALL_PYJAMAS_V001/GB200_GUMBALL_PYJAMAS_001",
+     "Scene atributes/COSTUME/GB211_PYJAMAS_DAD_PUPPET_V001/GB211_PYJAMAS_DAD_PUPPET_V001",
+     "Scene atributes/COSTUME/GB211_PYJAMAS_MOM_PUPPET_V001/GB211_PYJAMAS_MOM_PUPPET_V001",
+     "Symbol 3"
+    ],
+    "closes_with": [
+     "Duplicate Items Folder/DAD ANIMATION ",
+     "Duplicate Items Folder/DAD DUVET",
+     "Duplicate Items Folder/DAD OVERLAY HANDS",
+     "Duplicate Items Folder/MOM ANIMATION",
+     "Duplicate Items Folder/MOM DUVET",
+     "Duplicate Items Folder/MOM R ARM FRONT",
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/COSTUME/GB200_GUMBALL_PYJAMAS_V001/GB200_GUMBALL_PYJAMAS_001",
+     "Scene atributes/COSTUME/GB211_PYJAMAS_DAD_PUPPET_V001/GB211_PYJAMAS_DAD_PUPPET_V001",
+     "Scene atributes/COSTUME/GB211_PYJAMAS_MOM_PUPPET_V001/GB211_PYJAMAS_MOM_PUPPET_V001",
+     "Symbol 3"
+    ],
+    "background_switch_frames": [],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "per-character-mask",
+    "rough-layer-shipped",
+    "overlay-hands",
+    "costume-variant-puppet",
+    "layout-mov-reference",
+    "face-comp-driven"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/gb211-treasure-sc105"
+  },
+  {
+   "id": "gb211-treasure-sc117",
+   "episode_code": "GB211",
+   "episode": "The Treasure",
+   "scene": "Sc117",
+   "title": "The Treasure \u2014 Sc117: Anais makes her case (Darwin in the fishbowl)",
+   "frames": 136,
+   "fps": 25,
+   "frames_anatomy": 136,
+   "cast": [
+    "Anais",
+    "Darwin",
+    "Gumball"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB211TREASURE_SC117_LO_AE.JPG",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_ANAIS_ORIGINAL_PUPPET_V001",
+    "GB200_GUMBALL_PUPPET_001",
+    "GB211_DARWIN_IN_BOWL_SHOT125_PUPPET_v001",
+    "GB211_DARWIN_IN_BOWL_SHOT125_PUPPET_v002"
+   ],
+   "animations_count": 17,
+   "animations_keyframes_total": 4814,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB211TREASURE_SC117_LO_AE.JPG",
+     "Scene atributes/CHARACTERS/GB200_ANA_ORIGINAL_PUPPET_V001/GB200_ANAIS_ORIGINAL_PUPPET_V001",
+     "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+     "Scene atributes/CHARACTERS/GB211_DARWIN_IN_BOWL_SHOT125_v001/GB211_DARWIN_IN_BOWL_SHOT125_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB211_DARWIN_IN_BOWL_SHOT125_v001/GB211_DARWIN_IN_BOWL_SHOT125_PUPPET_v002",
+     "Scene atributes/PROPS/GB202Remote_Props_FishBowl_v002.fxg"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB211TREASURE_SC117_LO_AE.JPG",
+     "Scene atributes/CHARACTERS/GB200_ANA_ORIGINAL_PUPPET_V001/GB200_ANAIS_ORIGINAL_PUPPET_V001",
+     "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+     "Scene atributes/CHARACTERS/GB211_DARWIN_IN_BOWL_SHOT125_v001/GB211_DARWIN_IN_BOWL_SHOT125_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB211_DARWIN_IN_BOWL_SHOT125_v001/GB211_DARWIN_IN_BOWL_SHOT125_PUPPET_v002",
+     "Scene atributes/PROPS/GB202Remote_Props_FishBowl_v002.fxg"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "layout-mov-reference",
+    "face-comp-driven",
+    "photo-plate",
+    "multi-character-staging"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb211-treasure-sc117"
+  },
+  {
+   "id": "gb211-treasure-sc122",
+   "episode_code": "GB211",
+   "episode": "The Treasure",
+   "scene": "Sc122",
+   "title": "The Treasure \u2014 Sc122: heads on a string (23-frame bedroom insert)",
+   "frames": 23,
+   "fps": 25,
+   "frames_anatomy": 23,
+   "cast": [
+    "Anais",
+    "Darwin",
+    "Gumball"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB211TREASURE_SC122_LO_AE.JPG",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_ANAIS_ORIGINAL_PUPPET_V001",
+    "GB200_GUMBALL_PUPPET_001",
+    "GB211_DARWIN_IN_BOWL_SHOT125_PUPPET_v001"
+   ],
+   "animations_count": 17,
+   "animations_keyframes_total": 4839,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB211TREASURE_SC122_LO_AE.JPG",
+     "Scene atributes/CHARACTERS/GB200_ANA_ORIGINAL_PUPPET_V001/GB200_ANAIS_ORIGINAL_PUPPET_V001",
+     "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+     "Scene atributes/CHARACTERS/GB211_DARWIN_IN_BOWL_SHOT125_v001/GB211_DARWIN_IN_BOWL_SHOT125_PUPPET_v001"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB211TREASURE_SC122_LO_AE.JPG",
+     "Scene atributes/CHARACTERS/GB200_ANA_ORIGINAL_PUPPET_V001/GB200_ANAIS_ORIGINAL_PUPPET_V001",
+     "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+     "Scene atributes/CHARACTERS/GB211_DARWIN_IN_BOWL_SHOT125_v001/GB211_DARWIN_IN_BOWL_SHOT125_PUPPET_v001"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "layout-mov-reference",
+    "face-comp-driven",
+    "photo-plate",
+    "multi-character-staging"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb211-treasure-sc122"
+  },
+  {
+   "id": "gb214-words-sc054",
+   "episode_code": "GB214",
+   "episode": "The Words",
+   "scene": "Sc054",
+   "title": "The Words \u2014 Sc054: Darwin's hallway solo (one symbol, borrowed photo plate)",
+   "frames": 229,
+   "fps": 25,
+   "frames_anatomy": 229,
+   "cast": [
+    "Darwin"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB110FIGHT_SC143_crop.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [],
+   "animations_count": 12,
+   "animations_keyframes_total": 2547,
+   "seams": {
+    "opens_with": [
+     "DRW_marche + lente",
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB110FIGHT_SC143_crop.jpg"
+    ],
+    "closes_with": [
+     "DRW_marche + lente",
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB110FIGHT_SC143_crop.jpg"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "mask-layer",
+    "nested-master-symbol",
+    "layout-mov-reference",
+    "photo-plate",
+    "solo-close-up"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb214-words-sc054"
+  },
+  {
+   "id": "gb214-words-sc055",
+   "episode_code": "GB214",
+   "episode": "The Words",
+   "scene": "Sc055",
+   "title": "The Words \u2014 Sc055: Darwin's pleading close-up, nested in one master symbol (94 frames)",
+   "frames": 94,
+   "fps": 25,
+   "frames_anatomy": 94,
+   "cast": [
+    "Darwin"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB214_WORDS_SC055_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [],
+   "animations_count": 10,
+   "animations_keyframes_total": 1424,
+   "seams": {
+    "opens_with": [
+     "DRW_marche + lente",
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB214_WORDS_SC055_LO_BG.jpg"
+    ],
+    "closes_with": [
+     "DRW_marche + lente",
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB214_WORDS_SC055_LO_BG.jpg"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "nested-master-symbol",
+    "layout-mov-reference",
+    "face-comp-driven",
+    "solo-close-up",
+    "photo-plate"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb214-words-sc055"
+  },
+  {
+   "id": "gb214-words-sc056",
+   "episode_code": "GB214",
+   "episode": "The Words",
+   "scene": "Sc056",
+   "title": "The Words \u2014 Sc056: Darwin performs on a ladder, nose-to-nose with the T-Rex (178 frames)",
+   "frames": 178,
+   "fps": 25,
+   "frames_anatomy": 178,
+   "cast": [
+    "Carrie",
+    "Darwin",
+    "Masami",
+    "Ocho",
+    "Tobias"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB214_WORDS_SC056_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "GB200_MASAMI_PUPPET_BODYCOMP_V002",
+    "GB200_MASAMI_PUPPET_EYES_V002",
+    "GB200_MASAMI_PUPPET_LINE1_V002",
+    "GB200_MASAMI_PUPPET_LINE2_V002",
+    "GB200_MASAMI_PUPPET_MOUTH_V002",
+    "GB200_MASAMI_PUPPET_V002"
+   ],
+   "animations_count": 46,
+   "animations_keyframes_total": 3839,
+   "seams": {
+    "opens_with": [
+     "DRW_marche + lente",
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB214_WORDS_SC056_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_CARRIE_ORIGINAL_PUPPET_V002/GB200_CARRIE_COMP_V002",
+     "Scene atributes/CHARACTERS/GB200_MASAMI_ORIGINAL_PUPPET_V002/GB200_MASAMI_PUPPET_V002",
+     "Scene atributes/CHARACTERS/GB200_TOBIAS_ORIGINAL_PUPPET_V002/GB200_TOBIAS_ORIGINAL_P_COMP_V002"
+    ],
+    "closes_with": [
+     "DRW_marche + lente",
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB214_WORDS_SC056_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_CARRIE_ORIGINAL_PUPPET_V002/GB200_CARRIE_COMP_V002",
+     "Scene atributes/CHARACTERS/GB200_MASAMI_ORIGINAL_PUPPET_V002/GB200_MASAMI_PUPPET_V002",
+     "Scene atributes/CHARACTERS/GB200_OCHO_ORIGINAL_PUPPET_V001/OCHO_FV_COMP",
+     "Scene atributes/CHARACTERS/GB200_TOBIAS_ORIGINAL_PUPPET_V002/GB200_TOBIAS_ORIGINAL_P_COMP_V002"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "nested-master-symbol",
+    "layout-mov-reference",
+    "multi-character-staging"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb214-words-sc056"
+  },
+  {
+   "id": "gb214-words-sc057",
+   "episode_code": "GB214",
+   "episode": "The Words",
+   "scene": "Sc057",
+   "title": "The Words \u2014 Sc057: the hallway dance \u2014 whole class advances on camera (198 frames)",
+   "frames": 198,
+   "fps": 25,
+   "frames_anatomy": 198,
+   "cast": [
+    "Carmen",
+    "Carrie",
+    "Darwin",
+    "Masami",
+    "Ocho",
+    "Tobias"
+   ],
+   "backgrounds": [
+    {
+     "item": "GB214_WORDS_SC057_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)",
+     "shared_with": [
+      "gb214-words-sc062"
+     ]
+    }
+   ],
+   "rigs": [
+    "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "GB200_OCHO_ORIGINAL_PUPPET_V001",
+    "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "GB200_MASAMI_PUPPET_BODYCOMP_V002",
+    "GB200_MASAMI_PUPPET_EYES_V002",
+    "GB200_MASAMI_PUPPET_LINE1_V002",
+    "GB200_MASAMI_PUPPET_LINE2_V002",
+    "GB200_MASAMI_PUPPET_MOUTH_V002",
+    "GB200_MASAMI_PUPPET_V002"
+   ],
+   "animations_count": 65,
+   "animations_keyframes_total": 7811,
+   "seams": {
+    "opens_with": [
+     "Duplicate Items Folder/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB200_CARMEN_34_V001/GB200_CARMEN_34_COMP",
+     "GB200_OCHO_ORIGINAL_PUPPET_V001/GB200_OCHO_ORIGINAL_PUPPET_V001",
+     "GB214_WORDS_SC057_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_CARRIE_ORIGINAL_PUPPET_V002/GB200_CARRIE_COMP_V002",
+     "Scene atributes/CHARACTERS/GB200_MASAMI_ORIGINAL_PUPPET_V002/GB200_MASAMI_PUPPET_V002",
+     "Scene atributes/CHARACTERS/GB200_TOBIAS_ORIGINAL_PUPPET_V002/GB200_TOBIAS_ORIGINAL_P_COMP_V002"
+    ],
+    "closes_with": [
+     "Duplicate Items Folder/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB200_CARMEN_34_V001/GB200_CARMEN_34_COMP",
+     "GB200_OCHO_ORIGINAL_PUPPET_V001/GB200_OCHO_ORIGINAL_PUPPET_V001",
+     "GB214_WORDS_SC057_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_CARRIE_ORIGINAL_PUPPET_V002/GB200_CARRIE_COMP_V002",
+     "Scene atributes/CHARACTERS/GB200_MASAMI_ORIGINAL_PUPPET_V002/GB200_MASAMI_PUPPET_V002",
+     "Scene atributes/CHARACTERS/GB200_TOBIAS_ORIGINAL_PUPPET_V002/GB200_TOBIAS_ORIGINAL_P_COMP_V002",
+     "c10",
+     "c2",
+     "c3",
+     "c5",
+     "c6",
+     "c7",
+     "c9"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "per-character-mask",
+    "nested-master-symbol",
+    "layout-mov-reference",
+    "multi-character-staging",
+    "photo-plate"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb214-words-sc057"
+  },
+  {
+   "id": "gb214-words-sc058",
+   "episode_code": "GB214",
+   "episode": "The Words",
+   "scene": "Sc058",
+   "title": "The Words \u2014 Sc058: Darwin backview whip-turn close-up (17 frames)",
+   "frames": 17,
+   "fps": 25,
+   "frames_anatomy": 17,
+   "cast": [
+    "Darwin"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB214_WORDS_SC057_LO_BG_crop.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)",
+     "shared_with": [
+      "gb214-words-sc061"
+     ]
+    }
+   ],
+   "rigs": [
+    "GB200_DARWIN_PUPPET_BACKVIEW_v001",
+    "GB200_DRW_ORIGINAL_PUPPET_v001"
+   ],
+   "animations_count": 13,
+   "animations_keyframes_total": 2126,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_PUPPET_BACKVIEW_v001/GB200_DARWIN_PUPPET_BACKVIEW_v001",
+     "Scene atributes/BACKGROUNDS/GB214_WORDS_SC057_LO_BG_crop.jpg"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_PUPPET_BACKVIEW_v001/GB200_DARWIN_PUPPET_BACKVIEW_v001",
+     "Scene atributes/BACKGROUNDS/GB214_WORDS_SC057_LO_BG_crop.jpg"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": false,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "face-comp-driven",
+    "angle-variant-puppet",
+    "solo-close-up",
+    "photo-plate"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb214-words-sc058"
+  },
+  {
+   "id": "gb214-words-sc059",
+   "episode_code": "GB214",
+   "episode": "The Words",
+   "scene": "Sc059",
+   "title": "The Words \u2014 Sc059: Darwin's smug sway vs Masami's frozen smile (105 frames)",
+   "frames": 105,
+   "fps": 25,
+   "frames_anatomy": 105,
+   "cast": [
+    "Darwin",
+    "Masami"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB214_WORDS_SC059_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "GB200_MASAMI_PUPPET_BODYCOMP_V002",
+    "GB200_MASAMI_PUPPET_EYES_V002",
+    "GB200_MASAMI_PUPPET_LINE1_V002",
+    "GB200_MASAMI_PUPPET_LINE2_V002",
+    "GB200_MASAMI_PUPPET_MOUTH_V002",
+    "GB200_MASAMI_PUPPET_V002"
+   ],
+   "animations_count": 22,
+   "animations_keyframes_total": 3616,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB214_WORDS_SC059_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB200_MASAMI_ORIGINAL_PUPPET_V002/GB200_MASAMI_PUPPET_V002"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB214_WORDS_SC059_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB200_MASAMI_ORIGINAL_PUPPET_V002/GB200_MASAMI_PUPPET_V002"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "layout-mov-reference",
+    "face-comp-driven",
+    "dialogue-two-shot",
+    "photo-plate"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb214-words-sc059"
+  },
+  {
+   "id": "gb214-words-sc061",
+   "episode_code": "GB214",
+   "episode": "The Words",
+   "scene": "Sc061",
+   "title": "The Words \u2014 Sc061: Darwin peeks and points around the layout-video giant (100 frames)",
+   "frames": 100,
+   "fps": 25,
+   "frames_anatomy": 100,
+   "cast": [
+    "Darwin"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB214_WORDS_SC057_LO_BG_crop.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)",
+     "shared_with": [
+      "gb214-words-sc058"
+     ]
+    }
+   ],
+   "rigs": [
+    "GB200_DRW_ORIGINAL_PUPPET_v001"
+   ],
+   "animations_count": 11,
+   "animations_keyframes_total": 2884,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB214_WORDS_SC057_LO_BG_crop.jpg",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB214_WORDS_SC057_LO_BG_crop.jpg",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "layout-mov-reference",
+    "face-comp-driven"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb214-words-sc061"
+  },
+  {
+   "id": "gb214-words-sc062",
+   "episode_code": "GB214",
+   "episode": "The Words",
+   "scene": "Sc062",
+   "title": "The Words \u2014 Sc062: Darwin's taunt-dance for a hallway audience (59 frames)",
+   "frames": 59,
+   "fps": 25,
+   "frames_anatomy": 59,
+   "cast": [
+    "Carmen",
+    "Carrie",
+    "Darwin",
+    "Masami",
+    "Ocho",
+    "Tobias"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB214_WORDS_SC057_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)",
+     "shared_with": [
+      "gb214-words-sc057"
+     ]
+    }
+   ],
+   "rigs": [
+    "GB200_OCHO_ORIGINAL_PUPPET_V001",
+    "GB200_CARMEN_PUPPET_COMP_V001",
+    "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "GB200_MASAMI_PUPPET_BODYCOMP_V002",
+    "GB200_MASAMI_PUPPET_EYES_V002",
+    "GB200_MASAMI_PUPPET_LINE1_V002",
+    "GB200_MASAMI_PUPPET_LINE2_V002",
+    "GB200_MASAMI_PUPPET_MOUTH_V002",
+    "GB200_MASAMI_PUPPET_V002"
+   ],
+   "animations_count": 55,
+   "animations_keyframes_total": 4567,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB200_CARMEN_34_V001/GB200_CARMEN_34_COMP",
+     "GB200_OCHO_ORIGINAL_PUPPET_V001/GB200_OCHO_ORIGINAL_PUPPET_V001",
+     "Scene atributes/BACKGROUNDS/GB214_WORDS_SC057_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_CARRIE_ORIGINAL_PUPPET_V002/GB200_CARRIE_COMP_V002",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB200_TOBIAS_ORIGINAL_PUPPET_V002/GB200_TOBIAS_ORIGINAL_P_COMP_V002"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB200_CARMEN_34_V001/GB200_CARMEN_34_COMP",
+     "GB200_OCHO_ORIGINAL_PUPPET_V001/GB200_OCHO_ORIGINAL_PUPPET_V001",
+     "Scene atributes/BACKGROUNDS/GB214_WORDS_SC057_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_CARRIE_ORIGINAL_PUPPET_V002/GB200_CARRIE_COMP_V002",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB200_TOBIAS_ORIGINAL_PUPPET_V002/GB200_TOBIAS_ORIGINAL_P_COMP_V002"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "nested-master-symbol",
+    "layout-mov-reference",
+    "multi-character-staging",
+    "photo-plate"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb214-words-sc062"
+  },
+  {
+   "id": "gb214-words-sc063",
+   "episode_code": "GB214",
+   "episode": "The Words",
+   "scene": "Sc063",
+   "title": "The Words \u2014 Sc063: Darwin leans on Carrie \u2014 her smile falls last (109 frames)",
+   "frames": 109,
+   "fps": 25,
+   "frames_anatomy": 109,
+   "cast": [
+    "Carrie",
+    "Darwin"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB214_WORDS_SC063_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_DRW_ORIGINAL_PUPPET_v001"
+   ],
+   "animations_count": 16,
+   "animations_keyframes_total": 3545,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB214_WORDS_SC063_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB214_WORDS_SC063_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "layout-mov-reference",
+    "face-comp-driven",
+    "dialogue-two-shot",
+    "photo-plate"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb214-words-sc063"
+  },
+  {
+   "id": "gb214-words-sc099",
+   "episode_code": "GB214",
+   "episode": "The Words",
+   "scene": "Sc099",
+   "title": "The Words \u2014 Sc099: Darwin's about-to-explode rant (two-shot on white)",
+   "frames": 284,
+   "fps": 25,
+   "frames_anatomy": 284,
+   "cast": [
+    "Darwin",
+    "Gumball"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB214WORDS_Sc099_RENDERCAM.JPG",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_GUMBALL_PUPPET_001",
+    "GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001",
+    "GB200_DRW_ORIGINAL_PUPPET_v001"
+   ],
+   "animations_count": 20,
+   "animations_keyframes_total": 5785,
+   "seams": {
+    "opens_with": [
+     "Duplicate Items Folder/GB200_GUMBALL_PUPPET_001",
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001/GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001",
+     "Scene atributes/BACKGROUNDS/GB214WORDS_Sc099_RENDERCAM.JPG"
+    ],
+    "closes_with": [
+     "Duplicate Items Folder/GB200_GUMBALL_PUPPET_001",
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001/GB214WORDS_Costume_DRWAboutToExplode_PUPPET_v001",
+     "Scene atributes/BACKGROUNDS/GB214WORDS_Sc099_RENDERCAM.JPG"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "costume-variant-puppet",
+    "head-comp-swap",
+    "layout-mov-reference",
+    "face-comp-driven",
+    "dialogue-two-shot"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/gb214-words-sc099"
+  },
+  {
+   "id": "gb218-flakers-sc002",
+   "episode_code": "GB218",
+   "episode": "The Flakers",
+   "scene": "Sc002",
+   "title": "The Flakers \u2014 Sc002: panic run straight at the camera down the school hallway",
+   "frames": 42,
+   "fps": 25,
+   "frames_anatomy": 42,
+   "cast": [
+    "Darwin",
+    "Gumball"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB218_FLAKERS_SC002_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_GUMBALL_PUPPET_001",
+    "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "GB200_GUMBALL_PUPPET_001"
+   ],
+   "animations_count": 22,
+   "animations_keyframes_total": 4757,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB218_FLAKERS_SC002_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/Darwin Panic Run"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB218_FLAKERS_SC002_LO_BG.jpg"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "forced-perspective",
+    "run-cycle-library",
+    "layout-mov-reference",
+    "face-comp-driven",
+    "cycle-multi-scale",
+    "photo-plate"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb218-flakers-sc002"
+  },
+  {
+   "id": "gb218-flakers-sc117",
+   "episode_code": "GB218",
+   "episode": "The Flakers",
+   "scene": "Sc117",
+   "title": "The Flakers \u2014 Sc117: the couch pile-on \u2014 phone, pile-on, face-off, laugh (312f, KeyAnim)",
+   "frames": 312,
+   "fps": 25,
+   "frames_anatomy": 312,
+   "cast": [
+    "Anais",
+    "Darwin",
+    "Gumball"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB218_Flakers_Sc117_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_ANAIS_ORIGINAL_PUPPET_V001",
+    "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "GB200_GUMBALL_PUPPET_001"
+   ],
+   "animations_count": 15,
+   "animations_keyframes_total": 7296,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB200_ANA_ORIGINAL_PUPPET_V001/GB200_ANAIS_ORIGINAL_PUPPET_V001",
+     "GB218Flakers_Props_SophaPillows_v001.fxg",
+     "Scene atributes/BACKGROUNDS/GB218_Flakers_Sc117_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB200_ANA_ORIGINAL_PUPPET_V001/GB200_ANAIS_ORIGINAL_PUPPET_V001",
+     "Scene atributes/BACKGROUNDS/GB218_Flakers_Sc117_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+     "pillow2"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "rough-layer-shipped",
+    "layout-mov-reference",
+    "face-comp-driven",
+    "multi-character-staging"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb218-flakers-sc117"
+  },
+  {
+   "id": "gb219-watch-sc075",
+   "episode_code": "GB219",
+   "episode": "The Watch",
+   "scene": "Sc075",
+   "title": "The Watch \u2014 Sc075: giant smug Richard hogs the controller while Gumball melts down",
+   "frames": 78,
+   "fps": 25,
+   "frames_anatomy": 78,
+   "cast": [
+    "Darwin",
+    "Gumball",
+    "Richard"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB219_WATCH_SC075_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_GUMBALL_PUPPET_001",
+    "GB200_RICHARD_ORIGINAL_PUPPET_V001",
+    "GB200_DRW_ORIGINAL_PUPPET_v001"
+   ],
+   "animations_count": 21,
+   "animations_keyframes_total": 5944,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+     "Scene atributes/BACKGROUNDS/GB219_WATCH_SC075_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DAD_ORIGINAL_PUPPET_V001/GB200_RICHARD_ORIGINAL_PUPPET_V001",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/PROPS/GB118GOONS_PROPS_GAME_CONTROLLER_FINAL.fxg"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+     "Scene atributes/BACKGROUNDS/GB219_WATCH_SC075_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DAD_ORIGINAL_PUPPET_V001/GB200_RICHARD_ORIGINAL_PUPPET_V001",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/PROPS/GB118GOONS_PROPS_GAME_CONTROLLER_FINAL.fxg"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "layout-mov-reference",
+    "face-comp-driven",
+    "multi-character-staging"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb219-watch-sc075"
+  },
+  {
+   "id": "gb219-watch-sc076",
+   "episode_code": "GB219",
+   "episode": "The Watch",
+   "scene": "Sc076",
+   "title": "The Watch \u2014 Sc076: two-shot crying escalation \u2014 both boys end up bawling on the floor",
+   "frames": 209,
+   "fps": 25,
+   "frames_anatomy": 209,
+   "cast": [
+    "Darwin",
+    "Gumball"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB219_WATCH_SC076_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_GUMBALL_PUPPET_001",
+    "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "GB200_GUMBALL_PUPPET_001"
+   ],
+   "animations_count": 35,
+   "animations_keyframes_total": 6718,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+     "Scene atributes/BACKGROUNDS/GB219_WATCH_SC076_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+     "Scene atributes/BACKGROUNDS/GB219_WATCH_SC076_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "layout-mov-reference",
+    "face-comp-driven",
+    "dialogue-two-shot"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb219-watch-sc076"
+  },
+  {
+   "id": "gb219-watch-sc111",
+   "episode_code": "GB219",
+   "episode": "The Watch",
+   "scene": "Sc111",
+   "title": "The Watch \u2014 Sc111: faces mashed flat against the glass pane (KeyAnim line art)",
+   "frames": 68,
+   "fps": 25,
+   "frames_anatomy": 68,
+   "cast": [
+    "Darwin",
+    "Gumball"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB219WATCH_Sc111_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_GUMBALL_ORIGINAL_PUPPET_BACKVIEW_v001",
+    "GB200_GUMBALL_FLOPPED_ORIGINAL_PUPPET_v001",
+    "GB200_GUMBALL_PUPPET_001",
+    "GB200_ORIGINAL_PUPPET_FRONTVIEW_v001",
+    "GB219WATCH_Costume_MobiltyScooterPoses_DRW_ORIGINAL_PUPPET_v001",
+    "GB219WATCH_Costume_MobiltyScooterPoses_GUMBALL_PUPPET_001",
+    "GB200_DRW_ORIGINAL_PUPPET_v001"
+   ],
+   "animations_count": 32,
+   "animations_keyframes_total": 5081,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB219WATCH_Costume_MobiltyScooterPoses_DRW_ORIGINAL_PUPPET_v001/GB219WATCH_Costume_MobiltyScooterPoses_DRW_ORIGINAL_PUPPET_v001",
+     "GB219WATCH_Costume_MobiltyScooterPoses_GB_ORIGINAL_PUPPET_V001/GB219WATCH_Costume_MobiltyScooterPoses_GUMBALL_PUPPET_001",
+     "GB219Watch_Props_GlassPane_v001.fxg",
+     "Scene atributes/BACKGROUNDS/GB219WATCH_Sc111_LO_BG.jpg"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "GB219Watch_Props_GlassPane_v001.fxg",
+     "Scene atributes/BACKGROUNDS/GB219WATCH_Sc111_LO_BG.jpg"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "rough-layer-shipped",
+    "layout-mov-reference",
+    "face-comp-driven",
+    "costume-variant-puppet"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb219-watch-sc111"
+  },
+  {
+   "id": "gb2215-apology-sc142",
+   "episode_code": "GB2215",
+   "episode": "The Apology",
+   "scene": "Sc142",
+   "title": "The Apology \u2014 Sc142: Gumball falls apart and reassembles (body-part gag)",
+   "frames": 75,
+   "fps": 25,
+   "frames_anatomy": 75,
+   "cast": [
+    "Gumball"
+   ],
+   "backgrounds": [
+    {
+     "item": "Symbol 2",
+     "type": "painted/vector symbol"
+    }
+   ],
+   "rigs": [
+    "GB200_GUMBALL_PUPPET_001"
+   ],
+   "animations_count": 5,
+   "animations_keyframes_total": 2452,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/COSTUME/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+     "Symbol 2"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/COSTUME/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+     "Symbol 2"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "rough-layer-shipped",
+    "layout-mov-reference",
+    "face-comp-driven",
+    "dissection-gag",
+    "transformation-gag"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/gb2215-apology-sc142"
+  },
+  {
+   "id": "gb2215-apology-sc144",
+   "episode_code": "GB2215",
+   "episode": "The Apology",
+   "scene": "Sc144",
+   "title": "The Apology \u2014 Sc144: solo close-up \u2014 Gumball nurses a hurt arm, screams, drops out of frame",
+   "frames": 51,
+   "fps": 25,
+   "frames_anatomy": 51,
+   "cast": [
+    "Gumball"
+   ],
+   "backgrounds": [
+    {
+     "item": "Symbol 2",
+     "type": "painted/vector symbol"
+    }
+   ],
+   "rigs": [
+    "GB200_GUMBALL_PUPPET_001"
+   ],
+   "animations_count": 5,
+   "animations_keyframes_total": 1995,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+     "Symbol 2"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001",
+     "Symbol 2"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "layout-mov-reference",
+    "face-comp-driven",
+    "solo-close-up"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb2215-apology-sc144"
+  },
+  {
+   "id": "gb2215-apology-sc146",
+   "episode_code": "GB2215",
+   "episode": "The Apology",
+   "scene": "Sc146",
+   "title": "The Apology \u2014 Sc146: Darwin bursts out of a locker \u2014 hop-in, face-off, make-up",
+   "frames": 86,
+   "fps": 25,
+   "frames_anatomy": 86,
+   "cast": [
+    "Darwin",
+    "Gumball"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB215_Apology_SC146_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "GB200_GUMBALL_PUPPET_001"
+   ],
+   "animations_count": 16,
+   "animations_keyframes_total": 5411,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB215_Apology_SC146_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB215_Apology_SC146_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB200_GB_ORIGINAL_PUPPET_V001/GB200_GUMBALL_PUPPET_001"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "layout-mov-reference",
+    "face-comp-driven",
+    "photo-plate",
+    "dialogue-two-shot"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb2215-apology-sc146"
+  },
+  {
+   "id": "gb222-bumpkin-sc089",
+   "episode_code": "GB222",
+   "episode": "The Bumpkin",
+   "scene": "Sc089",
+   "title": "The Bumpkin \u2014 Sc089: top-shot tableau \u2014 Nicole, Anais and Darwin flat on the ground (KeyAnim)",
+   "frames": 177,
+   "fps": 25,
+   "frames_anatomy": 177,
+   "cast": [
+    "Anais",
+    "Darwin",
+    "Nicole"
+   ],
+   "backgrounds": [
+    {
+     "item": "Scene atributes/BACKGROUNDS/GB222_BUMPKIN_Sc089_LO_BG.jpg",
+     "type": "bitmap plate (layout/BG art as bitmap; photographic only if render-verified)"
+    }
+   ],
+   "rigs": [
+    "GB200_ANAIS_ORIGINAL_PUPPET_V001",
+    "GB200_DRW_ORIGINAL_PUPPET_v001",
+    "GB200_MOM_ORIGINAL_PUPPET_V001"
+   ],
+   "animations_count": 15,
+   "animations_keyframes_total": 4503,
+   "seams": {
+    "opens_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB222_BUMPKIN_Sc089_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_ANA_ORIGINAL_PUPPET_V001/GB200_ANAIS_ORIGINAL_PUPPET_V001",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB200_NICOLE_ORIGINAL_PUPPET_V001/GB200_MOM_ORIGINAL_PUPPET_V001"
+    ],
+    "closes_with": [
+     "Field&Framecounter/Fieldguide_001",
+     "Field&Framecounter/framecounter1000",
+     "Scene atributes/BACKGROUNDS/GB222_BUMPKIN_Sc089_LO_BG.jpg",
+     "Scene atributes/CHARACTERS/GB200_ANA_ORIGINAL_PUPPET_V001/GB200_ANAIS_ORIGINAL_PUPPET_V001",
+     "Scene atributes/CHARACTERS/GB200_DRW_ORIGINAL_PUPPET_v001/GB200_DRW_ORIGINAL_PUPPET_v001",
+     "Scene atributes/CHARACTERS/GB200_NICOLE_ORIGINAL_PUPPET_V001/GB200_MOM_ORIGINAL_PUPPET_V001"
+    ],
+    "background_switch_frames": [
+     0
+    ],
+    "has_layout_mov_reference": true,
+    "frame_counter_overlay": true,
+    "field_guide_overlay": true
+   },
+   "tags": [
+    "layout-mov-reference",
+    "face-comp-driven",
+    "multi-character-staging"
+   ],
+   "deconstructed": true,
+   "anatomy_error": null,
+   "media": {
+    "contact_sheet": "done",
+    "video": "done",
+    "video_audio": "production audio muxed from SWF sound asset"
+   },
+   "folder": "production/scene-templates/gumball/scenes/gb222-bumpkin-sc089"
+  }
+ ],
+ "bonus_not_in_31": [
+  {
+   "id": "gb209-banana-crashed-topshot",
+   "class": "partial \u2014 approved pose sheet (2 root frames, dedicated angle puppets)",
+   "folder": "production/scene-templates/gumball/gb209-banana-crashed-topshot",
+   "cast": [
+    "Gumball",
+    "Darwin"
+   ],
+   "tags": [
+    "angle-variant-puppet",
+    "costume-variant-puppet",
+    "face-comp-driven"
+   ]
+  }
+ ],
+ "not_in_31_swf_only": [
+  {
+   "scene": "GB222 \"The Bumpkin\" Sc035",
+   "frames": 411,
+   "note": "SWF only in archive, no FLA \u2014 SWF-tag extraction is future work"
+  },
+  {
+   "scene": "GB222 \"The Bumpkin\" Sc090",
+   "frames": 444,
+   "note": "SWF only in archive, no FLA \u2014 the kids-looking-up-at-the-giant shot"
+  },
+  {
+   "scene": "GB219 \"The Watch\" Sc077",
+   "frames": 109,
+   "note": "SWF only in archive, no FLA"
+  },
+  {
+   "scene": "GB219 \"The Watch\" Sc078",
+   "frames": 181,
+   "note": "SWF only in archive, no FLA"
+  }
+ ]
+}

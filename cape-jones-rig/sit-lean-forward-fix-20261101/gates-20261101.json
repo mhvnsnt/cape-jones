@@ -1,0 +1,59 @@
+{
+ "v1": {
+  "leg_upper": {
+   "L": -50,
+   "R": 50
+  },
+  "leg_lower": {
+   "L": 65,
+   "R": -65
+  },
+  "bbox": [
+   273,
+   253,
+   872,
+   1198
+  ],
+  "foot_bottoms": {
+   "L": 1125,
+   "R": 1117
+  },
+  "note": "lower-leg-only bbox; feet tucked/crossed, not planted"
+ },
+ "v2": {
+  "leg_upper": {
+   "L": -50,
+   "R": 50
+  },
+  "leg_lower": {
+   "L": 20,
+   "R": -20
+  },
+  "bbox": [
+   269,
+   253,
+   873,
+   1233
+  ],
+  "foot_bottoms_per_leg": {
+   "L": 1233,
+   "R": 1213
+  },
+  "foot_bottom_gap_px": 20,
+  "knees": {
+   "L": [
+    301.6,
+    920.4
+   ],
+   "R": [
+    844.2,
+    895.7
+   ]
+  },
+  "inside_canvas": true,
+  "note": "20px gap is inherent: R lower piece is shorter and R knee sits 24px higher (896 vs 920) at symmetric thigh angles; no lower angle reaches 1233 for R (max 1213 at -20). Not fixed by shifting a leg in post (would break knee joint). Soles are flat/down and outward in v2, vs tucked/crossed in v1."
+ },
+ "torso_arms_unchanged": "arm_upper -30/30, arm_lower 45/-45, torso shift +20, hands to knees, same as v1",
+ "knee_feet": "knees outward L/R, feet/toes outward L/R, same direction, PASS by eye; no FootIn substitution needed (thighs splayed outward, not inward)",
+ "chair_composite": "NOT built as a measured canonical composite: chair in approved empty 2D plate is small/distant (~150px tall), a seated figure there would be unreadable, and canonical-room scale is a separate measured job. v2 is a rig pose, seat anchor = chair seat, feet to floor in chair use."
+}

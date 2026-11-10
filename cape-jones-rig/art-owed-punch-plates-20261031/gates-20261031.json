@@ -1,0 +1,429 @@
+{
+ "gates": [
+  {
+   "shot": "CJ-01",
+   "slug": "punch-windup",
+   "ground": {
+    "mode": "GROUNDED",
+    "feet_y": 950,
+    "ground_y": 950,
+    "char_bbox_bottom": 950,
+    "pass": true
+   },
+   "no_crop": {
+    "clipped": false,
+    "canvas": [
+     1920,
+     1080
+    ],
+    "char_bbox": [
+     641,
+     70,
+     1279,
+     950
+    ],
+    "margins": {
+     "left": 641,
+     "right": 641,
+     "top": 70,
+     "bottom": 130
+    },
+    "pass": true
+   },
+   "occlusion": {
+    "fg_strip_top_y": 950,
+    "char_bbox_bottom": 950,
+    "fg_strip_covers_body": false,
+    "clean_plate_red_px": 0,
+    "pass": true
+   },
+   "figure_alpha": {
+    "plate_mode": "RGBA",
+    "plate_size": [
+     1100,
+     1500
+    ],
+    "plate_alpha_min": 0,
+    "plate_alpha_max": 255,
+    "plate_alpha_px": 386867,
+    "plate_bbox": [
+     100,
+     252,
+     868,
+     1312
+    ],
+    "rerender_char_size": [
+     638,
+     880
+    ],
+    "pass": true
+   },
+   "plate_swap_diff_vs_old_final": {
+    "diff_px": 30216,
+    "diff_outside_expanded_char_union": 0,
+    "expanded_union": [
+     501,
+     0,
+     1419,
+     1080
+    ],
+    "old_char": [
+     638,
+     880
+    ],
+    "new_char": [
+     638,
+     880
+    ],
+    "old_rim": 19146,
+    "new_rim": 18204,
+    "old_bleed": 29122,
+    "new_bleed": 27956,
+    "old_effect": 3728,
+    "new_effect": 3728,
+    "pass": true
+   },
+   "all_pass": true
+  },
+  {
+   "shot": "CJ-02",
+   "slug": "punch-extend-snap",
+   "ground": {
+    "mode": "GROUNDED",
+    "feet_y": 950,
+    "ground_y": 950,
+    "char_bbox_bottom": 950,
+    "pass": true
+   },
+   "no_crop": {
+    "clipped": false,
+    "canvas": [
+     1920,
+     1080
+    ],
+    "char_bbox": [
+     599,
+     70,
+     1321,
+     950
+    ],
+    "margins": {
+     "left": 599,
+     "right": 599,
+     "top": 70,
+     "bottom": 130
+    },
+    "pass": true
+   },
+   "occlusion": {
+    "fg_strip_top_y": 950,
+    "char_bbox_bottom": 950,
+    "fg_strip_covers_body": false,
+    "clean_plate_red_px": 0,
+    "pass": true
+   },
+   "figure_alpha": {
+    "plate_mode": "RGBA",
+    "plate_size": [
+     1100,
+     1500
+    ],
+    "plate_alpha_min": 0,
+    "plate_alpha_max": 255,
+    "plate_alpha_px": 391055,
+    "plate_bbox": [
+     1,
+     252,
+     868,
+     1309
+    ],
+    "rerender_char_size": [
+     722,
+     880
+    ],
+    "pass": true
+   },
+   "plate_swap_diff_vs_old_final": {
+    "diff_px": 29798,
+    "diff_outside_expanded_char_union": 0,
+    "expanded_union": [
+     459,
+     0,
+     1461,
+     1080
+    ],
+    "old_char": [
+     722,
+     880
+    ],
+    "new_char": [
+     722,
+     880
+    ],
+    "old_rim": 18828,
+    "new_rim": 18763,
+    "old_bleed": 28930,
+    "new_bleed": 28930,
+    "old_effect": 4086,
+    "new_effect": 4086,
+    "pass": true
+   },
+   "all_pass": true
+  },
+  {
+   "shot": "CJ-03",
+   "slug": "punch-impact-locked",
+   "ground": {
+    "mode": "GROUNDED",
+    "feet_y": 950,
+    "ground_y": 950,
+    "char_bbox_bottom": 950,
+    "pass": true
+   },
+   "no_crop": {
+    "clipped": false,
+    "canvas": [
+     1920,
+     1080
+    ],
+    "char_bbox": [
+     634,
+     70,
+     1286,
+     950
+    ],
+    "margins": {
+     "left": 634,
+     "right": 634,
+     "top": 70,
+     "bottom": 130
+    },
+    "pass": true
+   },
+   "occlusion": {
+    "fg_strip_top_y": 950,
+    "char_bbox_bottom": 950,
+    "fg_strip_covers_body": false,
+    "clean_plate_red_px": 0,
+    "pass": true
+   },
+   "figure_alpha": {
+    "plate_mode": "RGBA",
+    "plate_size": [
+     1100,
+     1500
+    ],
+    "plate_alpha_min": 0,
+    "plate_alpha_max": 255,
+    "plate_alpha_px": 375861,
+    "plate_bbox": [
+     1,
+     252,
+     784,
+     1309
+    ],
+    "rerender_char_size": [
+     652,
+     880
+    ],
+    "pass": true
+   },
+   "plate_swap_diff_vs_old_final": {
+    "diff_px": 195587,
+    "diff_outside_expanded_char_union": 0,
+    "expanded_union": [
+     492,
+     0,
+     1428,
+     1080
+    ],
+    "old_char": [
+     656,
+     880
+    ],
+    "new_char": [
+     652,
+     880
+    ],
+    "old_rim": 18268,
+    "new_rim": 17236,
+    "old_bleed": 27723,
+    "new_bleed": 26526,
+    "old_effect": 16370,
+    "new_effect": 16370,
+    "pass": true
+   },
+   "all_pass": true
+  },
+  {
+   "shot": "CJ-04",
+   "slug": "punch-recover",
+   "ground": {
+    "mode": "GROUNDED",
+    "feet_y": 950,
+    "ground_y": 950,
+    "char_bbox_bottom": 950,
+    "pass": true
+   },
+   "no_crop": {
+    "clipped": false,
+    "canvas": [
+     1920,
+     1080
+    ],
+    "char_bbox": [
+     698,
+     70,
+     1221,
+     950
+    ],
+    "margins": {
+     "left": 698,
+     "right": 699,
+     "top": 70,
+     "bottom": 130
+    },
+    "pass": true
+   },
+   "occlusion": {
+    "fg_strip_top_y": 950,
+    "char_bbox_bottom": 950,
+    "fg_strip_covers_body": false,
+    "clean_plate_red_px": 0,
+    "pass": true
+   },
+   "figure_alpha": {
+    "plate_mode": "RGBA",
+    "plate_size": [
+     1100,
+     1500
+    ],
+    "plate_alpha_min": 0,
+    "plate_alpha_max": 255,
+    "plate_alpha_px": 390283,
+    "plate_bbox": [
+     247,
+     252,
+     876,
+     1312
+    ],
+    "rerender_char_size": [
+     523,
+     880
+    ],
+    "pass": true
+   },
+   "plate_swap_diff_vs_old_final": {
+    "diff_px": 32814,
+    "diff_outside_expanded_char_union": 0,
+    "expanded_union": [
+     558,
+     0,
+     1361,
+     1080
+    ],
+    "old_char": [
+     523,
+     880
+    ],
+    "new_char": [
+     523,
+     880
+    ],
+    "old_rim": 20066,
+    "new_rim": 18398,
+    "old_bleed": 30426,
+    "new_bleed": 28482,
+    "old_effect": 29848,
+    "new_effect": 29848,
+    "pass": true
+   },
+   "all_pass": true
+  },
+  {
+   "shot": "CJ-05",
+   "slug": "punch-across-down-placement",
+   "ground": {
+    "mode": "GROUNDED",
+    "feet_y": 950,
+    "ground_y": 950,
+    "char_bbox_bottom": 950,
+    "pass": true
+   },
+   "no_crop": {
+    "clipped": false,
+    "canvas": [
+     1920,
+     1080
+    ],
+    "char_bbox": [
+     634,
+     70,
+     1286,
+     950
+    ],
+    "margins": {
+     "left": 634,
+     "right": 634,
+     "top": 70,
+     "bottom": 130
+    },
+    "pass": true
+   },
+   "occlusion": {
+    "fg_strip_top_y": 950,
+    "char_bbox_bottom": 950,
+    "fg_strip_covers_body": false,
+    "clean_plate_red_px": 0,
+    "pass": true
+   },
+   "figure_alpha": {
+    "plate_mode": "RGBA",
+    "plate_size": [
+     1100,
+     1500
+    ],
+    "plate_alpha_min": 0,
+    "plate_alpha_max": 255,
+    "plate_alpha_px": 376482,
+    "plate_bbox": [
+     1,
+     252,
+     784,
+     1309
+    ],
+    "rerender_char_size": [
+     652,
+     880
+    ],
+    "pass": true
+   },
+   "plate_swap_diff_vs_old_final": {
+    "diff_px": 211758,
+    "diff_outside_expanded_char_union": 0,
+    "expanded_union": [
+     492,
+     0,
+     1428,
+     1080
+    ],
+    "old_char": [
+     656,
+     880
+    ],
+    "new_char": [
+     652,
+     880
+    ],
+    "old_rim": 18153,
+    "new_rim": 17130,
+    "old_bleed": 27500,
+    "new_bleed": 26315,
+    "old_effect": 18464,
+    "new_effect": 18372,
+    "pass": true
+   },
+   "all_pass": true
+  }
+ ]
+}

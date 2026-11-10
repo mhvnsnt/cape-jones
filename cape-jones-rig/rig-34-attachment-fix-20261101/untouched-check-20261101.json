@@ -1,0 +1,9 @@
+{
+  "front_rig_untouched": {
+    "sliced/Torso_Chest.png": "51954b611d45eace4f868738cf739e92",
+    "sliced/Head_Front.png": "01495fb3c71abd230e955e7d445cceda"
+  },
+  "old_rig_untouched": {
+    "front-forearm pose": "2f07d3a2adb5a8963371011d5a12746d"
+  }
+}

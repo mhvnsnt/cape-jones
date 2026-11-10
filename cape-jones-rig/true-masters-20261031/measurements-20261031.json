@@ -1,0 +1,89 @@
+{
+ "masters": {
+  "01-true-master-3quarter-front-20261031.png": {
+   "size": [
+    603,
+    1103
+   ],
+   "bbox": [
+    40,
+    40,
+    562,
+    1062
+   ],
+   "alpha_px": 340433
+  },
+  "02-true-master-side-20261031.png": {
+   "size": [
+    415,
+    1076
+   ],
+   "bbox": [
+    40,
+    40,
+    374,
+    1035
+   ],
+   "alpha_px": 208749
+  },
+  "03-true-master-back-20261031.png": {
+   "size": [
+    1166,
+    1084
+   ],
+   "bbox": [
+    40,
+    40,
+    1125,
+    1043
+   ],
+   "alpha_px": 406474
+  },
+  "04-true-master-torso-twist-20261031.png": {
+   "size": [
+    1186,
+    1094
+   ],
+   "bbox": [
+    332,
+    40,
+    852,
+    1053
+   ],
+   "alpha_px": 307495
+  }
+ },
+ "twist_params": {
+  "scale": 0.9912023460410557,
+  "shift_x": 294,
+  "shift_y": -9,
+  "front_waist": 478,
+  "q_waist_native": 492,
+  "leg_col_composited": [
+   393,
+   710
+  ]
+ },
+ "twist_params_v2": {
+  "shift_x": 294,
+  "shift_y": -9,
+  "front_col": [
+   395,
+   715
+  ],
+  "front_col_top": 513,
+  "q_feet_cut_y": 930
+ },
+ "twist_params_v3": {
+  "method": "q upper + q dark cape + q arms below waist; front pelvis/legs pasted waist-10 down, black-cape dropped, outlines kept via 3px dilation"
+ },
+ "twist_params_v4": {
+  "method": "v3 + source alpha hard-thresholded at 128 to kill sheet fringe ghosts"
+ },
+ "twist_params_v5": {
+  "method": "v4 + dark mask opened (erode2/dilate2) so solid cape survives, thin leg/foot outlines below waist are dropped"
+ },
+ "twist_params_v6": {
+  "method": "v5 + armzone narrowed to x<355 / x>705, y<690; below y=920 keep front-paste (feet) only"
+ }
+}

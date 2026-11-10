@@ -1,0 +1,54 @@
+{
+ "knee_L_EXT": [
+  720.5,
+  813.0
+ ],
+ "cuff_anchor_native_px": [
+  284,
+  80
+ ],
+ "cuff_anchor_scaled_1.2": [
+  340.8,
+  96.0
+ ],
+ "cuff_anchor_old_px": [
+  290,
+  72
+ ],
+ "cuff_old_vs_measured_px": 10.0,
+ "sole_paste_xy": [
+  379,
+  717
+ ],
+ "cuff_lands_at_knee": [
+  719.8,
+  813.0
+ ],
+ "canvas_alpha_at_knee": true,
+ "knee_to_nearest_sole_alpha_px": 0.0,
+ "thigh_sole_overlap_r80_px": 7154,
+ "sole_torso_overlap_px": 0,
+ "sole_bbox": [
+  383,
+  798,
+  721,
+  1061
+ ],
+ "sole_alpha_px": 83432,
+ "torso_occluded_sole_px_under_variant": 23010,
+ "stand_mean_abs_diff_vs_old": 0.079,
+ "under_variant_occlusion_note": "torso_occluded_sole_px_under_variant=23010 is the CANVAS-DIFF count (pixels whose final colour changes between top-slot and under-leg-pass variants, within the sole bbox). It is NOT the sum of mask overlaps: mask overlaps are upper bounds that double-count shared pixels and include white-on-white overlaps that do not change colour. Mask overlaps with sole: leg-R thigh 21176, leg-R lower 3098, leg-R cap 2477, arm-L lower 3660, arm-R lower 7738, pelvis 969, belt 72, torso_chest 0, cape_collar 0, neck 0, head 0. Conclusion stands: in the leg-pass (under) variant a large part of the boot is covered by later-drawn pieces (planted leg, arms, pelvis); the top slot is required for the toward-camera kick.",
+ "under_variant_occluders_px": {
+  "leg_R_thigh": 21176,
+  "leg_R_lower": 3098,
+  "leg_R_cap": 2477,
+  "arm_L_lower": 3660,
+  "arm_R_lower": 7738,
+  "pelvis": 969,
+  "belt": 72,
+  "torso_chest": 0,
+  "cape_collar": 0,
+  "neck": 0,
+  "head": 0
+ }
+}

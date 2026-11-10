@@ -1,0 +1,1066 @@
+{
+  "results": [
+    {
+      "set": "grounded-main",
+      "id": "MAIN",
+      "rim": [
+        255,
+        180,
+        80
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "diff": 0,
+      "bbox": [
+        237,
+        359,
+        864,
+        1400
+      ],
+      "ground_shadow_px": 70000,
+      "char_form_px": 373846,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-01",
+      "slug": "punch-windup",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        178,
+        229
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        100,
+        252,
+        868,
+        1312
+      ],
+      "ground_shadow_px": 99552,
+      "char_form_px": 383706,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-02",
+      "slug": "punch-extend-snap",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        178,
+        229
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        1,
+        252,
+        868,
+        1309
+      ],
+      "ground_shadow_px": 114903,
+      "char_form_px": 385049,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-03",
+      "slug": "punch-impact-locked",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        120,
+        115
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        1,
+        252,
+        789,
+        1309
+      ],
+      "ground_shadow_px": 103653,
+      "char_form_px": 370063,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-04",
+      "slug": "punch-recover",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        180,
+        80
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        247,
+        252,
+        876,
+        1312
+      ],
+      "ground_shadow_px": 81513,
+      "char_form_px": 387633,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-05",
+      "slug": "punch-across-down-placement",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        255,
+        255
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        1,
+        252,
+        789,
+        1309
+      ],
+      "ground_shadow_px": 103653,
+      "char_form_px": 370724,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-06",
+      "slug": "walk-street-contact",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        255,
+        255
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        214,
+        252,
+        843,
+        1296
+      ],
+      "ground_shadow_px": 77339,
+      "char_form_px": 378785,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-07",
+      "slug": "walk-town-passing",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        180,
+        80
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        247,
+        252,
+        876,
+        1306
+      ],
+      "ground_shadow_px": 77293,
+      "char_form_px": 381355,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-08",
+      "slug": "walk-alley-night",
+      "mode": "GROUNDED",
+      "rim": [
+        160,
+        185,
+        255
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        282,
+        252,
+        910,
+        1282
+      ],
+      "ground_shadow_px": 77305,
+      "char_form_px": 370182,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-09",
+      "slug": "dance-a",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        178,
+        229
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        182,
+        47,
+        876,
+        1308
+      ],
+      "ground_shadow_px": 87169,
+      "char_form_px": 365702,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-10",
+      "slug": "dance-b",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        190,
+        220
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        247,
+        35,
+        896,
+        1288
+      ],
+      "ground_shadow_px": 82162,
+      "char_form_px": 362760,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-11",
+      "slug": "dance-combined-finale",
+      "mode": "GROUNDED",
+      "rim": [
+        220,
+        150,
+        255
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        182,
+        47,
+        876,
+        1308
+      ],
+      "ground_shadow_px": 87169,
+      "char_form_px": 365702,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-12",
+      "slug": "flying-hover",
+      "mode": "AIRBORNE",
+      "rim": [
+        255,
+        180,
+        80
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1310,
+      "ground_line": 1400,
+      "feet_minus_ground": -90,
+      "bbox": [
+        247,
+        252,
+        876,
+        1310
+      ],
+      "ground_shadow_px": 77293,
+      "char_form_px": 381637,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS-AIRBORNE"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-13",
+      "slug": "flying-soar",
+      "mode": "AIRBORNE",
+      "rim": [
+        255,
+        200,
+        110
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1310,
+      "ground_line": 1400,
+      "feet_minus_ground": -90,
+      "bbox": [
+        1,
+        252,
+        1098,
+        1310
+      ],
+      "ground_shadow_px": 138642,
+      "char_form_px": 388084,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS-AIRBORNE"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-14",
+      "slug": "flying-dive",
+      "mode": "AIRBORNE",
+      "rim": [
+        255,
+        155,
+        75
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1310,
+      "ground_line": 1400,
+      "feet_minus_ground": -90,
+      "bbox": [
+        182,
+        35,
+        896,
+        1310
+      ],
+      "ground_shadow_px": 92162,
+      "char_form_px": 350338,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS-AIRBORNE"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-15",
+      "slug": "flying-forward-foreshortened",
+      "mode": "AIRBORNE",
+      "rim": [
+        140,
+        200,
+        255
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1310,
+      "ground_line": 1400,
+      "feet_minus_ground": -90,
+      "bbox": [
+        247,
+        252,
+        876,
+        1310
+      ],
+      "ground_shadow_px": 77293,
+      "char_form_px": 381637,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS-AIRBORNE"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-16",
+      "slug": "flex-anticipation-before-tighten",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        180,
+        90
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        221,
+        252,
+        879,
+        1290
+      ],
+      "ground_shadow_px": 89830,
+      "char_form_px": 372931,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-17",
+      "slug": "arms-up-reference",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        230,
+        140
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        222,
+        240,
+        879,
+        1282
+      ],
+      "ground_shadow_px": 89745,
+      "char_form_px": 361129,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-18",
+      "slug": "true-flex-double-bicep",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        165,
+        95
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        221,
+        239,
+        879,
+        1290
+      ],
+      "ground_shadow_px": 89832,
+      "char_form_px": 374225,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-19",
+      "slug": "fighting-pose-forward-bicep-curl",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        180,
+        80
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        303,
+        252,
+        832,
+        1294
+      ],
+      "ground_shadow_px": 68774,
+      "char_form_px": 357878,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-20",
+      "slug": "fighting-stance-arms-up-high",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        150,
+        60
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        222,
+        240,
+        879,
+        1282
+      ],
+      "ground_shadow_px": 89745,
+      "char_form_px": 361129,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-21",
+      "slug": "jump-crouch-takeoff",
+      "mode": "AIRBORNE",
+      "rim": [
+        140,
+        220,
+        210
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1312,
+      "ground_line": 1400,
+      "feet_minus_ground": -88,
+      "bbox": [
+        182,
+        36,
+        897,
+        1312
+      ],
+      "ground_shadow_px": 92178,
+      "char_form_px": 350444,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS-AIRBORNE"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-22",
+      "slug": "jump-tuck-landing",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        180,
+        80
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        247,
+        252,
+        876,
+        1312
+      ],
+      "ground_shadow_px": 77293,
+      "char_form_px": 381763,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-23",
+      "slug": "lounge-seated-room",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        185,
+        95
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        224,
+        252,
+        876,
+        1198
+      ],
+      "ground_shadow_px": 79728,
+      "char_form_px": 378667,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-24",
+      "slug": "desk-seated",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        185,
+        95
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        224,
+        252,
+        876,
+        1198
+      ],
+      "ground_shadow_px": 79728,
+      "char_form_px": 378667,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-25",
+      "slug": "room-standing-device-gag",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        185,
+        95
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        248,
+        253,
+        875,
+        1294
+      ],
+      "ground_shadow_px": 77119,
+      "char_form_px": 370616,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-26",
+      "slug": "dialogue-neutral-unsure",
+      "mode": "GROUNDED",
+      "rim": [
+        240,
+        240,
+        240
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        248,
+        253,
+        875,
+        1294
+      ],
+      "ground_shadow_px": 77119,
+      "char_form_px": 370616,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-27",
+      "slug": "dialogue-shout-angry",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        130,
+        120
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        248,
+        253,
+        875,
+        1294
+      ],
+      "ground_shadow_px": 77119,
+      "char_form_px": 370616,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-28",
+      "slug": "rooftop-sunset",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        155,
+        75
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        248,
+        253,
+        875,
+        1294
+      ],
+      "ground_shadow_px": 77119,
+      "char_form_px": 370616,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-29",
+      "slug": "rooftop-night-city",
+      "mode": "GROUNDED",
+      "rim": [
+        160,
+        185,
+        255
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        248,
+        253,
+        875,
+        1294
+      ],
+      "ground_shadow_px": 77119,
+      "char_form_px": 370616,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "per-shot",
+      "id": "CJ-30",
+      "slug": "alley-neon-dual-light",
+      "mode": "GROUNDED",
+      "rim": [
+        255,
+        178,
+        229
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1400,
+      "ground_line": 1400,
+      "feet_minus_ground": 0,
+      "bbox": [
+        248,
+        253,
+        875,
+        1294
+      ],
+      "ground_shadow_px": 77119,
+      "char_form_px": 370616,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "figure-matched-preset",
+      "id": "S1-v2-warm-overhead",
+      "rim": [
+        255,
+        180,
+        80
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1368,
+      "ground_line": 1368,
+      "diff": 0,
+      "bbox": [
+        296,
+        314,
+        965,
+        1368
+      ],
+      "ground_shadow_px": 189998,
+      "char_form_px": 392858,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "figure-matched-preset",
+      "id": "S2-v3-warm-overhead-strong",
+      "rim": [
+        255,
+        190,
+        90
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1368,
+      "ground_line": 1368,
+      "diff": 0,
+      "bbox": [
+        296,
+        314,
+        965,
+        1368
+      ],
+      "ground_shadow_px": 189998,
+      "char_form_px": 392858,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "figure-matched-preset",
+      "id": "S3-v3pools-warm-overhead-bounce",
+      "rim": [
+        255,
+        185,
+        85
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1368,
+      "ground_line": 1368,
+      "diff": 0,
+      "bbox": [
+        296,
+        314,
+        965,
+        1368
+      ],
+      "ground_shadow_px": 189998,
+      "char_form_px": 392858,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "figure-matched-preset",
+      "id": "S4-glare-warm-overhead-glow",
+      "rim": [
+        255,
+        180,
+        80
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1368,
+      "ground_line": 1368,
+      "diff": 0,
+      "bbox": [
+        291,
+        310,
+        970,
+        1368
+      ],
+      "ground_shadow_px": 191160,
+      "char_form_px": 392858,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "figure-matched-preset",
+      "id": "S5-colour-magenta-rose",
+      "rim": [
+        255,
+        178,
+        229
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1368,
+      "ground_line": 1368,
+      "diff": 0,
+      "bbox": [
+        296,
+        314,
+        965,
+        1368
+      ],
+      "ground_shadow_px": 190699,
+      "char_form_px": 402641,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "figure-matched-preset",
+      "id": "S6-colour-cyan-dual-backlight",
+      "rim": [
+        0,
+        200,
+        255
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1368,
+      "ground_line": 1368,
+      "diff": 0,
+      "bbox": [
+        296,
+        314,
+        965,
+        1368
+      ],
+      "ground_shadow_px": 190854,
+      "char_form_px": 402786,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "figure-matched-preset",
+      "id": "S7-colour-golden-hour-front",
+      "rim": [
+        255,
+        180,
+        80
+      ],
+      "light_dx": 120,
+      "light_side": "left",
+      "feet_y": 1368,
+      "ground_line": 1368,
+      "diff": 0,
+      "bbox": [
+        296,
+        314,
+        965,
+        1368
+      ],
+      "ground_shadow_px": 192607,
+      "char_form_px": 405241,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    },
+    {
+      "set": "figure-matched-preset",
+      "id": "S8-colour-cool-blue-night",
+      "rim": [
+        160,
+        200,
+        255
+      ],
+      "light_dx": 30,
+      "light_side": "above",
+      "feet_y": 1368,
+      "ground_line": 1368,
+      "diff": 0,
+      "bbox": [
+        296,
+        314,
+        965,
+        1368
+      ],
+      "ground_shadow_px": 190699,
+      "char_form_px": 402641,
+      "figure_inside_canvas": true,
+      "figure_alpha_unchanged": true,
+      "gate": "PASS"
+    }
+  ],
+  "counts": {
+    "grounded_main": 1,
+    "per_shot": 30,
+    "presets": 8,
+    "total": 39
+  },
+  "methods": {
+    "industry": [
+      "I1 contact shadow",
+      "I2 cast/projected shadow",
+      "I3 ambient occlusion",
+      "I4 form/cel shadow",
+      "I5 soft/PCF-like blur"
+    ],
+    "experimental": [
+      "X1 shaft-aligned shadow",
+      "X2 depth-gradient shadow",
+      "X3 colour-bleed shadow",
+      "X4 flicker/sway sequence",
+      "X5 ground-texture interaction"
+    ],
+    "mapping_only": [
+      "Blender Cycles true 3D shadow pass",
+      "Ray-traced shadow map",
+      "True volumetric shadow"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "exit": 0,
+  "nodes": 19,
+  "palette_colours": 7,
+  "chains": {
+    "chains": 6,
+    "members": 17,
+    "missing": [],
+    "ok": true
+  },
+  "roundtrip": {
+    "nodes_in": 19,
+    "nodes_out": 19,
+    "count_ok": true,
+    "values_exact": true,
+    "json_bytes": 6119
+  },
+  "ground": {
+    "stage_ground_y": 1475,
+    "locked_pose_bottom_carried": 1410,
+    "planted_at_1475": false,
+    "note": "Planting is a further drag in the widget, not a builder shift."
+  },
+  "harmony_check_script_lines": 42,
+  "animation_test": "PASS: smoothstep mid = 0.5, end = key B, legs static, onion 0.35/0.35",
+  "what_this_proves": "Own version loads, validates, inbetweens, and round-trips the sitting pose with numbers only, no Harmony installed.",
+  "what_this_does_NOT_prove": "In-Harmony execution of harmony_check.js, .tpl/.plt export, and in-app rendering \u2014 those still need Harmony activation on Windows/Mac."
+}

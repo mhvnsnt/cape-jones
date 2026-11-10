@@ -1,0 +1,57 @@
+{
+ "neck_before": {
+  "face_mean": 3.3,
+  "face_min": -3,
+  "face_max": 18,
+  "face_n": 33,
+  "centre_mean": 3.7,
+  "back_mean": 64.5,
+  "back_max": 166
+ },
+ "neck_after": {
+  "face_mean": -6.7,
+  "face_min": -13,
+  "face_max": 8,
+  "face_n": 33,
+  "centre_mean": -6.3,
+  "back_mean": 54.5,
+  "back_max": 156
+ },
+ "side_waist": {
+  "760": 188,
+  "790": 194,
+  "820": 199
+ },
+ "row7": {
+  "w_side": 196.9,
+  "w_back": 247.2,
+  "h_side": 78.4,
+  "h_back": 98.4
+ },
+ "palm": {
+  "fused_w": 116.4,
+  "fused_h": 136.8,
+  "row5": 145.2,
+  "hand10_w": 193.2,
+  "hand10_h": 132.0
+ },
+ "render_back-rig-standing-v2-20261101.png": [
+  379,
+  1020,
+  13,
+  1586
+ ],
+ "render_side-open-hand-bent-20261101.png": [
+  473,
+  1028,
+  26,
+  1560
+ ],
+ "render_side-open-hand-rest-20261101.png": [
+  473,
+  805,
+  26,
+  1560
+ ],
+ "fk_frames": 9
+}

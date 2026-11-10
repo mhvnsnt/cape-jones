@@ -1,0 +1,163 @@
+{
+  "assumption_mile": "READ AS MODEL: whole figure scaled UP 1.05x, feet planted at 1475. If Mars meant a different piece, only that scale needs redoing.",
+  "model_scale": 1.05,
+  "paste_offset": [
+    -35,
+    -74
+  ],
+  "pelvis": {
+    "old_cx": 693,
+    "new_cx": 673,
+    "dx": -20,
+    "bbox_base": [
+      564,
+      640,
+      782,
+      820
+    ],
+    "bbox_final": [
+      557,
+      598,
+      786,
+      787
+    ]
+  },
+  "shins": {
+    "dx_from_knee": -30,
+    "note": "Shin tops now sit 30px left of knee centres by order - join offset, not hidden."
+  },
+  "kneecaps": {
+    "old_off_from_knee": [
+      -10,
+      -5
+    ],
+    "move": [
+      -15,
+      -10
+    ],
+    "new_off_from_knee": [
+      -25,
+      -15
+    ],
+    "caps_base": {
+      "L": [
+        565.1,
+        1013.6
+      ],
+      "R": [
+        749.7,
+        1047.4
+      ]
+    },
+    "caps_final": {
+      "L": [
+        558.3,
+        990.2
+      ],
+      "R": [
+        752.2,
+        1025.8
+      ]
+    }
+  },
+  "knees_base": {
+    "L": [
+      590.1,
+      1028.6
+    ],
+    "R": [
+      774.7,
+      1062.4
+    ]
+  },
+  "fists": {
+    "drawn": 0,
+    "method": "Fist treated as its own layer at the wrist line (75% of lower-piece height); that layer was NOT composited. Fist audit files in pieces/fist_OMITTED_L.png and _R.png are the omitted layers, saved for audit, not drawn.",
+    "source_note": "v7c lower PNGs ship no separate fist file; the fist is the bottom portion of that drawing. No pixels were erased from the final figure, no hand was cropped/split, no fist is drawn underneath the open hand."
+  },
+  "hands": {
+    "count": 2,
+    "scale_before_model": 1.0875,
+    "scale_after_model": 1.141875,
+    "centres_base": {
+      "L": [
+        479,
+        791
+      ],
+      "R": [
+        909,
+        827
+      ]
+    },
+    "centres_final": {
+      "L": [
+        468.0,
+        756.6
+      ],
+      "R": [
+        919.5,
+        794.4
+      ]
+    },
+    "bboxes_base": {
+      "L": [
+        436,
+        726,
+        522,
+        855
+      ],
+      "R": [
+        865,
+        763,
+        952,
+        889
+      ]
+    },
+    "bboxes_final": {
+      "L": [
+        422,
+        688,
+        513,
+        823
+      ],
+      "R": [
+        873,
+        727,
+        964,
+        859
+      ]
+    },
+    "arm1_left": "hand_spare_L as-is, rotate +6, thumb east/right",
+    "arm2_right": "hand_spare_L MIRRORED, rotate 0, thumb west/left, opposite Arm 1"
+  },
+  "arm2_right_perfect": {
+    "shoulder": [
+      815,
+      403
+    ],
+    "moved_except_ordered": "Arm2 hand fist removal applies; Arm2 arm itself unchanged."
+  },
+  "arm1_left": {
+    "shoulder": [
+      580,
+      385
+    ],
+    "layer": "BEHIND torso"
+  },
+  "bbox_final": [
+    417,
+    130,
+    968,
+    1475
+  ],
+  "feet_alpha_bottom": {
+    "L": 1475,
+    "R": 1469
+  },
+  "ground": 1475,
+  "inside_canvas": true,
+  "knee_shin_gap_note": "Pre-existing knee/shin centre-column gap from the attachment fix is unchanged in kind; shin move -30 shifts it left, it does not close it. Not silently fixed.",
+  "prev_untouched": {
+    "scaledown_pose_md5": "c82485f8e4d550ffd5a534c47ade3300"
+  }
+}

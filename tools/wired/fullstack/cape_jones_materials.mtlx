@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<materialx version="1.39">
+  <standard_surface name="cape_suit_white_surface" type="surfaceshader">
+    <input name="base_color" type="color3" value="0.92, 0.92, 0.92" />
+  </standard_surface>
+  <surfacematerial name="cape_suit_white" type="material">
+    <input name="surfaceshader" type="surfaceshader" nodename="cape_suit_white_surface" />
+  </surfacematerial>
+  <standard_surface name="cape_black_surface" type="surfaceshader">
+    <input name="base_color" type="color3" value="0.05, 0.05, 0.06" />
+  </standard_surface>
+  <surfacematerial name="cape_black" type="material">
+    <input name="surfaceshader" type="surfaceshader" nodename="cape_black_surface" />
+  </surfacematerial>
+  <standard_surface name="cape_cowl_violet_surface" type="surfaceshader">
+    <input name="base_color" type="color3" value="0.45, 0.11, 0.9" />
+  </standard_surface>
+  <surfacematerial name="cape_cowl_violet" type="material">
+    <input name="surfaceshader" type="surfaceshader" nodename="cape_cowl_violet_surface" />
+  </surfacematerial>
+</materialx>

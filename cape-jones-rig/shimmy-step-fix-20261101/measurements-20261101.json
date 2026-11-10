@@ -1,0 +1,67 @@
+{
+ "frames": 97,
+ "fps": 24,
+ "seconds": 4.04,
+ "keys": [
+  {
+   "name": "apose",
+   "foot1": null,
+   "foot2": null,
+   "dx": 0
+  },
+  {
+   "name": "shimmy centre both down",
+   "foot1": "DOWN",
+   "foot2": "DOWN",
+   "dx": 0
+  },
+  {
+   "name": "step LEFT: Foot1 UP, Foot2 DOWN",
+   "foot1": "UP",
+   "foot2": "DOWN",
+   "dx": -15
+  },
+  {
+   "name": "step LEFT: Foot1 DOWN (stepped left), Foot2 DOWN",
+   "foot1": "DOWN",
+   "foot2": "DOWN",
+   "dx": -30
+  },
+  {
+   "name": "close LEFT: Foot2 UP, Foot1 DOWN",
+   "foot1": "DOWN",
+   "foot2": "UP",
+   "dx": -15
+  },
+  {
+   "name": "shimmy centre both down",
+   "foot1": "DOWN",
+   "foot2": "DOWN",
+   "dx": 0
+  },
+  {
+   "name": "step RIGHT: Foot2 UP, Foot1 DOWN",
+   "foot1": "DOWN",
+   "foot2": "UP",
+   "dx": 15
+  },
+  {
+   "name": "step RIGHT: Foot2 DOWN (stepped right), Foot1 DOWN",
+   "foot1": "DOWN",
+   "foot2": "DOWN",
+   "dx": 30
+  },
+  {
+   "name": "close RIGHT: Foot1 UP, Foot2 DOWN",
+   "foot1": "UP",
+   "foot2": "DOWN",
+   "dx": 15
+  },
+  {
+   "name": "shimmy centre both down",
+   "foot1": "DOWN",
+   "foot2": "DOWN",
+   "dx": 0
+  }
+ ]
+}

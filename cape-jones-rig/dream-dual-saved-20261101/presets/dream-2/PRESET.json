@@ -1,0 +1,40 @@
+{
+  "preset": "Dream 2",
+  "name": "DREAM B \u2014 cape FULL magenta-pink, suit GOLD",
+  "cape": [
+    255,
+    60,
+    180
+  ],
+  "cowl_helm": [
+    40,
+    200,
+    210
+  ],
+  "suit": [
+    255,
+    205,
+    90
+  ],
+  "suit_shadow": [
+    200,
+    150,
+    70
+  ],
+  "skin": [
+    255,
+    200,
+    180
+  ],
+  "eye": [
+    220,
+    250,
+    255
+  ],
+  "source": "jojo-shift-variation-20261031/jojo-dream-dream-b-cape-full-suit-gold-20261031.png",
+  "status": "PRESET, approval 0/1 separately",
+  "size": [
+    1100,
+    1500
+  ]
+}

@@ -1,0 +1,536 @@
+import os
+
+import torch
+
+from src.constants import ADOBE
+from src.infra.isCudaInit import CudaChecker
+from src.infra.logAndPrint import logAndPrint
+from src.model.download import resolveWeightPath
+from src.model.registry import modelsMap
+
+if ADOBE:
+    from src.server.aeComms import progressState
+
+checker = CudaChecker()
+
+torch.set_float32_matmul_precision("medium")
+
+
+def _tensorRTBuildFailureMessage(modelPath: str) -> str:
+    return (
+        f"Failed to build TensorRT engine for {modelPath}. "
+        "This is commonly caused by insufficient free VRAM during TensorRT engine "
+        "generation or an incompatible NVIDIA driver/CUDA/TensorRT stack. "
+        "Close GPU-heavy apps, update the NVIDIA driver, use --static, or choose a "
+        "non-TensorRT backend such as CUDA, DirectML, or OpenVINO."
+    )
+
+
+class UniversalTensorRT:
+    def __init__(
+        self,
+        upscaleMethod: str = "shufflecugan-tensorrt",
+        upscaleFactor: int = 2,
+        half: bool = False,
+        width: int = 1920,
+        height: int = 1080,
+        customModel: str = None,
+        forceStatic: bool = False,
+    ):
+        """
+        Initialize the upscaler with the desired model
+
+        Args:
+            upscaleMethod (str): The method to use for upscaling
+            upscaleFactor (int): The factor to upscale by
+            half (bool): Whether to use half precision
+            width (int): The width of the input frame
+            height (int): The height of the input frame
+            customModel (str): The path to a custom model file
+        """
+        from src.model.trtHandler import (
+            tensorRTEngineCreator,
+            tensorRTEngineLoader,
+            tensorRTEngineNameHandler,
+        )
+        from src.utils.tensorrt_import import trt
+
+        self.trt = trt
+        self.tensorRTEngineCreator = tensorRTEngineCreator
+        self.tensorRTEngineLoader = tensorRTEngineLoader
+        self.tensorRTEngineNameHandler = tensorRTEngineNameHandler
+
+        self.upscaleMethod = upscaleMethod
+        self.upscaleFactor = upscaleFactor
+        self.half = half
+        self.width = width
+        self.height = height
+        self.customModel = customModel
+        self.forceStatic = forceStatic
+
+        self.handleModel()
+
+    def _detectRequiredMultiple(self) -> int:
+        """Look up the arch's input multiple; probe a CPU session for unknowns.
+
+        The table hit avoids building a throwaway ort.InferenceSession, which
+        costs ~90-130ms of startup per run for the shipped models.
+        """
+        from src.upscale._shared import lookupRequiredMultiple, smallestValidMultiple
+
+        if not self.customModel:
+            known = lookupRequiredMultiple(self.upscaleMethod)
+            if known is not None:
+                return known
+
+        import numpy as np
+        import onnxruntime as ort
+
+        probe = ort.InferenceSession(self.modelPath, providers=["CPUExecutionProvider"])
+        inputName = probe.get_inputs()[0].name
+        npDType = np.float16 if self.half else np.float32
+
+        def runOK(h, w):
+            try:
+                probe.run(None, {inputName: np.zeros((1, 3, h, w), npDType)})
+                return True
+            except Exception:
+                return False
+
+        return smallestValidMultiple(runOK)
+
+    def _createEngineWithStaticRetry(self, enginePath: str):
+        inputShape = [1, 3, self.paddedHeight, self.paddedWidth]
+        self.engine, self.context = self.tensorRTEngineCreator(
+            modelPath=self.modelPath,
+            enginePath=enginePath,
+            fp16=self.half,
+            inputsMin=[1, 3, 8, 8],
+            inputsOpt=inputShape,
+            inputsMax=[1, 3, 1080, 1920],
+            forceStatic=self.forceStatic,
+        )
+        if self.engine is not None and self.context is not None:
+            return
+
+        if self.forceStatic:
+            raise RuntimeError(_tensorRTBuildFailureMessage(self.modelPath))
+
+        logAndPrint(
+            "TensorRT dynamic engine build failed; retrying with a static input "
+            f"profile for {self.height}x{self.width} to reduce build VRAM usage.",
+            "yellow",
+        )
+        self.engine, self.context = self.tensorRTEngineCreator(
+            modelPath=self.modelPath,
+            enginePath=enginePath,
+            fp16=self.half,
+            inputsMin=inputShape,
+            inputsOpt=inputShape,
+            inputsMax=inputShape,
+            forceStatic=True,
+        )
+        if self.engine is None or self.context is None:
+            raise RuntimeError(_tensorRTBuildFailureMessage(self.modelPath))
+
+    def handleModel(self):
+        if ADOBE:
+            progressState.update(
+                {"status": f"Loading TensorRT upscale model: {self.upscaleMethod}..."}
+            )
+
+        if self.width > 1920 or self.height > 1080:
+            self.forceStatic = True
+            logAndPrint(
+                message="Forcing static engine due to resolution higher than 1920x1080p",
+                colorFunc="yellow",
+            )
+
+        if not self.customModel:
+            self.filename = modelsMap(
+                self.upscaleMethod,
+                self.upscaleFactor,
+                modelType="onnx",
+                half=self.half,
+            )
+            folderName = self.upscaleMethod.replace("-tensorrt", "-onnx")
+            self.modelPath = resolveWeightPath(
+                folderName,
+                self.filename,
+                downloadModel=self.upscaleMethod,
+                upscaleFactor=self.upscaleFactor,
+                half=self.half,
+                modelType="onnx",
+            )
+        else:
+            self.modelPath = self.customModel
+            if not os.path.exists(self.customModel):
+                raise FileNotFoundError(
+                    f"Custom model file {self.customModel} not found"
+                )
+
+        self.dtype = torch.float16 if self.half else torch.float32
+
+        # RealCUGAN-family archs (fallin_*, shufflecugan, aniscale2) need both
+        # input dims divisible by 4; the engine is built for the padded shape and
+        # the input is reflect-padded to it, cropping the surplus off the output.
+        # Fully-conv archs report 1, so padding stays zero (bit-identical path).
+        self.requiredMultiple = self._detectRequiredMultiple()
+        from src.upscale._shared import calculatePadding
+
+        self.padding = calculatePadding(self.width, self.height, self.requiredMultiple)
+        self.paddedWidth = self.width + self.padding[1]
+        self.paddedHeight = self.height + self.padding[3]
+
+        enginePath = self.tensorRTEngineNameHandler(
+            modelPath=self.modelPath,
+            fp16=self.half,
+            optInputShape=[1, 3, self.paddedHeight, self.paddedWidth],
+        )
+
+        self.engine, self.context = self.tensorRTEngineLoader(enginePath)
+        if (
+            self.engine is None
+            or self.context is None
+            or not os.path.exists(enginePath)
+        ):
+            self._createEngineWithStaticRetry(enginePath)
+
+        self.stream = torch.cuda.Stream()
+        self.dummyInput = torch.zeros(
+            (1, 3, self.paddedHeight, self.paddedWidth),
+            device=checker.device,
+            dtype=torch.float16 if self.half else torch.float32,
+        )
+
+        self.dummyOutput = torch.zeros(
+            (
+                1,
+                3,
+                self.paddedHeight * self.upscaleFactor,
+                self.paddedWidth * self.upscaleFactor,
+            ),
+            device=checker.device,
+            dtype=torch.float16 if self.half else torch.float32,
+        )
+
+        self.bindings = [self.dummyInput.data_ptr(), self.dummyOutput.data_ptr()]
+
+        for i in range(self.engine.num_io_tensors):
+            self.context.set_tensor_address(
+                self.engine.get_tensor_name(i), self.bindings[i]
+            )
+            tensor_name = self.engine.get_tensor_name(i)
+            if self.engine.get_tensor_mode(tensor_name) == self.trt.TensorIOMode.INPUT:
+                self.context.set_input_shape(tensor_name, self.dummyInput.shape)
+
+        with torch.cuda.stream(self.stream):
+            for _ in range(5):
+                self.context.execute_async_v3(stream_handle=self.stream.cuda_stream)
+                self.stream.synchronize()
+
+        self.normStream = torch.cuda.Stream()
+        self.outputStream = torch.cuda.Stream()
+
+        self.cudaGraph = torch.cuda.CUDAGraph()
+        self.initTorchCudaGraph()
+
+    @torch.inference_mode()
+    def initTorchCudaGraph(self):
+        with torch.cuda.graph(self.cudaGraph, stream=self.stream):
+            self.context.execute_async_v3(stream_handle=self.stream.cuda_stream)
+        self.stream.synchronize()
+
+    @torch.inference_mode()
+    def processFrame(self, frame):
+        with torch.cuda.stream(self.normStream):
+            if self.padding[1] or self.padding[3]:
+                frame = torch.nn.functional.pad(frame, self.padding, mode="reflect")
+            self.dummyInput.copy_(
+                frame.to(dtype=self.dtype),
+                non_blocking=True,
+            )
+        self.normStream.synchronize()
+
+    @torch.inference_mode()
+    def __call__(self, frame, nextFrame: None) -> torch.tensor:
+        self.processFrame(frame)
+
+        with torch.cuda.stream(self.stream):
+            self.cudaGraph.replay()
+            output = self.dummyOutput.clone()
+        self.stream.synchronize()
+
+        if self.padding[1] or self.padding[3]:
+            output = output[
+                :,
+                :,
+                : self.height * self.upscaleFactor,
+                : self.width * self.upscaleFactor,
+            ].contiguous()
+
+        return output
+
+
+# NVIDIA Works Notice (required by NVIDIA Software License Agreement
+# AI Product-Specific Terms §1.7.1 for distributed source files using
+# the NVIDIA Video Effects SDK / Maxine VSR):
+#
+#   This software contains source code provided by NVIDIA Corporation.
+#
+
+
+class AnimeSRTensorRT:
+    # Recurrent arch: needs the next source frame handed to it. The previous
+    # frame is cached internally (padded), so it is not requested here.
+    temporalWindow = (0, 1)
+
+    def __init__(
+        self,
+        upscaleFactor: int = 2,
+        half: bool = False,
+        width: int = 1920,
+        height: int = 1080,
+    ):
+        """
+        Initialize the upscaler with the desired model
+
+        Args:
+            upscaleFactor (int): The factor to upscale by
+            half (bool): Whether to use half precision
+            width (int): The width of the input frame
+            height (int): The height of the input frame
+        """
+        from src.model.trtHandler import (
+            tensorRTEngineCreator,
+            tensorRTEngineLoader,
+            tensorRTEngineNameHandler,
+        )
+        from src.utils.tensorrt_import import trt
+
+        self.trt = trt
+        self.tensorRTEngineCreator = tensorRTEngineCreator
+        self.tensorRTEngineLoader = tensorRTEngineLoader
+        self.tensorRTEngineNameHandler = tensorRTEngineNameHandler
+
+        self.upscaleFactor = upscaleFactor
+        self.half = half
+        self.width = width
+        self.height = height
+
+        self.handleModel()
+
+    def handleModel(self):
+        """
+        Load the desired model
+        """
+
+        if self.width > 1920 or self.height > 1080:
+            self.forceStatic = True
+            logAndPrint(
+                message="Forcing static engine due to resolution higher than 1920x1080p",
+                colorFunc="yellow",
+            )
+
+        self.filename = modelsMap(
+            "animesr-tensorrt",
+            self.upscaleFactor,
+            modelType="onnx",
+            half=self.half,
+        )
+        self.modelPath = resolveWeightPath(
+            "animesr-onnx",
+            self.filename,
+            downloadModel="animesr-tensorrt",
+            upscaleFactor=self.upscaleFactor,
+            half=self.half,
+            modelType="onnx",
+        )
+
+        self.dtype = torch.float16 if self.half else torch.float32
+        enginePath = self.tensorRTEngineNameHandler(
+            modelPath=self.modelPath,
+            fp16=self.half,
+            optInputShape=[1, 3, self.height, self.width],
+        )
+
+        ph = (4 - self.height % 4) % 4
+        pw = (4 - self.width % 4) % 4
+        self.padding = (0, pw, 0, ph)
+
+        # Padded dimensions for x and fb
+        self.paddedHeight = self.padding[3] + self.height + self.padding[2]
+        self.paddedWidth = self.padding[1] + self.width + self.padding[0]
+
+        self.engine, self.context = self.tensorRTEngineLoader(enginePath)
+        if (
+            self.engine is None
+            or self.context is None
+            or not os.path.exists(enginePath)
+        ):
+            # 3 separate frame inputs instead of concatenated x (9 channels)
+            # This allows TensorRT to fuse the concatenation operation
+            inputs = [
+                [1, 3, self.paddedHeight, self.paddedWidth],  # prev_frame
+                [1, 3, self.paddedHeight, self.paddedWidth],  # curr_frame
+                [1, 3, self.paddedHeight, self.paddedWidth],  # next_frame
+                [1, 3, self.paddedHeight * 4, self.paddedWidth * 4],  # fb
+                # Padded, like every other binding: MSRSWVSR concatenates state
+                # onto the frames, so a raw-sized state is a shape mismatch at
+                # any resolution that is not a multiple of 4. Identical to the
+                # old profile when the input already is one, so cached engines
+                # stay valid (the engine name is derived from the raw dims).
+                [1, 64, self.paddedHeight, self.paddedWidth],  # state
+            ]
+
+            inputsMin = inputsOpt = inputsMax = inputs
+            inputNames = ["prev_frame", "curr_frame", "next_frame", "fb", "state"]
+
+            self.engine, self.context = self.tensorRTEngineCreator(
+                modelPath=self.modelPath,
+                enginePath=enginePath,
+                fp16=self.half,
+                inputsMin=inputsMin,
+                inputsOpt=inputsOpt,
+                inputsMax=inputsMax,
+                inputName=inputNames,
+                isMultiInput=True,
+            )
+            if self.engine is None or self.context is None:
+                raise RuntimeError(_tensorRTBuildFailureMessage(self.modelPath))
+
+        self.prevFrame = torch.zeros(
+            (1, 3, self.paddedHeight, self.paddedWidth),
+            device=checker.device,
+            dtype=torch.float16 if self.half else torch.float32,
+        ).contiguous()
+        self.currFrame = torch.zeros(
+            (1, 3, self.paddedHeight, self.paddedWidth),
+            device=checker.device,
+            dtype=torch.float16 if self.half else torch.float32,
+        ).contiguous()
+        self.nextFrame = torch.zeros(
+            (1, 3, self.paddedHeight, self.paddedWidth),
+            device=checker.device,
+            dtype=torch.float16 if self.half else torch.float32,
+        ).contiguous()
+
+        self.dummyOutput = torch.zeros(
+            (1, 3, self.paddedHeight * 4, self.paddedWidth * 4),
+            device=checker.device,
+            dtype=torch.float16 if self.half else torch.float32,
+        ).contiguous()
+
+        self.state = torch.zeros(
+            (1, 64, self.paddedHeight, self.paddedWidth),
+            device=checker.device,
+            dtype=torch.float16 if self.half else torch.float32,
+        )
+        self.stateOutput = torch.zeros(
+            (1, 64, self.paddedHeight, self.paddedWidth),
+            device=checker.device,
+            dtype=torch.float16 if self.half else torch.float32,
+        )
+
+        self.bindings = {
+            "prev_frame": self.prevFrame.data_ptr(),
+            "curr_frame": self.currFrame.data_ptr(),
+            "next_frame": self.nextFrame.data_ptr(),
+            "fb": self.dummyOutput.data_ptr(),
+            "state": self.state.data_ptr(),
+            "out_img": self.dummyOutput.data_ptr(),
+            "out_state": self.stateOutput.data_ptr(),
+        }
+
+        for i in range(self.engine.num_io_tensors):
+            tensor_name = self.engine.get_tensor_name(i)
+
+            if tensor_name == "prev_frame":
+                self.context.set_tensor_address(
+                    tensor_name, self.bindings["prev_frame"]
+                )
+                self.context.set_input_shape(tensor_name, self.prevFrame.shape)
+            elif tensor_name == "curr_frame":
+                self.context.set_tensor_address(
+                    tensor_name, self.bindings["curr_frame"]
+                )
+                self.context.set_input_shape(tensor_name, self.currFrame.shape)
+            elif tensor_name == "next_frame":
+                self.context.set_tensor_address(
+                    tensor_name, self.bindings["next_frame"]
+                )
+                self.context.set_input_shape(tensor_name, self.nextFrame.shape)
+            elif tensor_name == "fb":
+                self.context.set_tensor_address(tensor_name, self.bindings["fb"])
+                self.context.set_input_shape(tensor_name, self.dummyOutput.shape)
+            elif tensor_name == "state":
+                self.context.set_tensor_address(tensor_name, self.bindings["state"])
+                self.context.set_input_shape(tensor_name, self.state.shape)
+            elif tensor_name == "out_img":
+                self.context.set_tensor_address(tensor_name, self.bindings["out_img"])
+            elif tensor_name == "out_state":
+                self.context.set_tensor_address(tensor_name, self.bindings["out_state"])
+
+        self.stream = torch.cuda.Stream()
+        self.normStream = torch.cuda.Stream()
+        self.outputStream = torch.cuda.Stream()
+
+        self.firstRun = True
+
+    def padFrame(self, frame: torch.tensor) -> torch.tensor:
+        return torch.nn.functional.pad(frame, self.padding, mode="reflect")
+
+    @torch.inference_mode()
+    def __call__(self, frame: torch.tensor, nextFrame: torch.tensor) -> torch.tensor:
+        with torch.cuda.stream(self.normStream):
+            paddedFrame = self.padFrame(frame)
+            # Copy current frame to currFrame buffer
+            self.currFrame.copy_(
+                paddedFrame.to(dtype=self.dtype),
+                non_blocking=False,
+            )
+
+            if self.firstRun:
+                # On first run, prevFrame = currFrame
+                self.prevFrame.copy_(
+                    paddedFrame.to(dtype=self.dtype),
+                    non_blocking=False,
+                )
+                self.firstRun = False
+
+            if nextFrame is None:
+                self.nextFrame.copy_(
+                    paddedFrame.to(dtype=self.dtype),
+                    non_blocking=False,
+                )
+            else:
+                paddedNextFrame = self.padFrame(nextFrame)
+                self.nextFrame.copy_(
+                    paddedNextFrame.to(dtype=self.dtype),
+                    non_blocking=False,
+                )
+        self.normStream.synchronize()
+
+        # TensorRT execution - no torch.cat needed, TRT receives separate buffers
+        with torch.cuda.stream(self.outputStream):
+            self.context.execute_async_v3(stream_handle=self.outputStream.cuda_stream)
+        self.outputStream.synchronize()
+
+        with torch.cuda.stream(self.normStream):
+            self.state.copy_(self.stateOutput, non_blocking=False)
+            self.prevFrame.copy_(paddedFrame, non_blocking=False)
+        self.normStream.synchronize()
+
+        with torch.cuda.stream(self.outputStream):
+            # Crop the reflect-padded border before resizing; resizing the
+            # padded frame whole squeezes the content and leaves a mirrored
+            # edge strip. No-op at multiple-of-4 inputs.
+            output = torch.nn.functional.interpolate(
+                self.dummyOutput[:, :, : self.height * 4, : self.width * 4],
+                size=(self.height * 2, self.width * 2),
+                mode="bicubic",
+                align_corners=False,
+            )
+        self.outputStream.synchronize()
+
+        return output

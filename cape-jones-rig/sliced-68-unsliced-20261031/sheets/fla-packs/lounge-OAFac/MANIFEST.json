@@ -1,0 +1,281 @@
+{
+ "source": "fla-packs/lounge-packs/lounge-OAFac.jpg",
+ "group": "fla-packs",
+ "plate": "fla-packs/lounge-OAFac.png",
+ "plate_md5": "a26f3e351fb76e37a748e44a039f171d",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    107,
+    158
+   ],
+   "opaque_px": 14158,
+   "sheet_bbox": [
+    534,
+    140,
+    641,
+    298
+   ],
+   "area_px": 14158,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    93,
+    312
+   ],
+   "opaque_px": 21692,
+   "sheet_bbox": [
+    130,
+    314,
+    223,
+    626
+   ],
+   "area_px": 21692,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    289,
+    349
+   ],
+   "opaque_px": 74367,
+   "sheet_bbox": [
+    443,
+    324,
+    732,
+    673
+   ],
+   "area_px": 74367,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_3",
+   "file": "Row2_3.png",
+   "size": [
+    86,
+    313
+   ],
+   "opaque_px": 21797,
+   "sheet_bbox": [
+    805,
+    315,
+    891,
+    628
+   ],
+   "area_px": 21797,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_4",
+   "file": "Row2_4.png",
+   "size": [
+    86,
+    310
+   ],
+   "opaque_px": 21066,
+   "sheet_bbox": [
+    967,
+    318,
+    1053,
+    628
+   ],
+   "area_px": 21066,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_1",
+   "file": "Row3_1.png",
+   "size": [
+    113,
+    137
+   ],
+   "opaque_px": 8968,
+   "sheet_bbox": [
+    136,
+    671,
+    249,
+    808
+   ],
+   "area_px": 8968,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_2",
+   "file": "Row3_2.png",
+   "size": [
+    112,
+    136
+   ],
+   "opaque_px": 9020,
+   "sheet_bbox": [
+    361,
+    669,
+    473,
+    805
+   ],
+   "area_px": 9020,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_3",
+   "file": "Row3_3.png",
+   "size": [
+    110,
+    134
+   ],
+   "opaque_px": 8853,
+   "sheet_bbox": [
+    669,
+    664,
+    779,
+    798
+   ],
+   "area_px": 8853,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row4_1",
+   "file": "Row4_1.png",
+   "size": [
+    116,
+    257
+   ],
+   "opaque_px": 23605,
+   "sheet_bbox": [
+    131,
+    839,
+    247,
+    1096
+   ],
+   "area_px": 23605,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row4_2",
+   "file": "Row4_2.png",
+   "size": [
+    114,
+    255
+   ],
+   "opaque_px": 23223,
+   "sheet_bbox": [
+    342,
+    840,
+    456,
+    1095
+   ],
+   "area_px": 23223,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row4_3",
+   "file": "Row4_3.png",
+   "size": [
+    115,
+    256
+   ],
+   "opaque_px": 23258,
+   "sheet_bbox": [
+    528,
+    840,
+    643,
+    1096
+   ],
+   "area_px": 23258,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row4_4",
+   "file": "Row4_4.png",
+   "size": [
+    419,
+    784
+   ],
+   "opaque_px": 240980,
+   "sheet_bbox": [
+    729,
+    716,
+    1148,
+    1500
+   ],
+   "area_px": 240980,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row5_1",
+   "file": "Row5_1.png",
+   "size": [
+    146,
+    329
+   ],
+   "opaque_px": 24247,
+   "sheet_bbox": [
+    92,
+    1176,
+    238,
+    1505
+   ],
+   "area_px": 24247,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row5_2",
+   "file": "Row5_2.png",
+   "size": [
+    131,
+    329
+   ],
+   "opaque_px": 23024,
+   "sheet_bbox": [
+    305,
+    1178,
+    436,
+    1507
+   ],
+   "area_px": 23024,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row5_3",
+   "file": "Row5_3.png",
+   "size": [
+    139,
+    326
+   ],
+   "opaque_px": 22926,
+   "sheet_bbox": [
+    538,
+    1178,
+    677,
+    1504
+   ],
+   "area_px": 22926,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  }
+ ],
+ "duplicate_md5_of": "fla-packs/lounge-3quarter-packs/clean-OAFac.jpg"
+}

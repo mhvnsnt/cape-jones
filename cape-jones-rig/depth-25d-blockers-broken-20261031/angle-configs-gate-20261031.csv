@@ -1,0 +1,7 @@
+pose,side,gate_output,applied,eye_check,result
+fighting-pose-est,L,NO SNAP,"L:none,R:none","fists near head, not over face; elbows out, upper at side, not eaten; viewed",PASS
+fighting-pose-est,R,NO SNAP,"L:none,R:none","fists near head, not over face; elbows out, upper at side, not eaten; viewed",PASS
+true-final-flex-doc,L,NO SNAP,"L:none,R:none","documented angles; fists above shoulders, not over face; viewed",PASS
+true-final-flex-doc,R,NO SNAP,"L:none,R:none","documented angles; fists above shoulders, not over face; viewed",PASS
+punch-impact-est,L,COWL-CANDIDATE: raised arm + collar overlap — EYE-CHECK bicep interruption before snapping,"L:none,R:none","extended arm horizontal, other arm crossed chest below head; labelled debug render, labels are debug only",PASS
+punch-impact-est,R,"CHEST-SNAP: whole chain above torso, below head (torso < arm < head)","L:none,R:none","extended arm horizontal, other arm crossed chest below head; labelled debug render, labels are debug only",PASS

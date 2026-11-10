@@ -1,0 +1,82 @@
+[
+ {
+  "n": 1,
+  "method": "Toon Boom Harmony morphing / deformation inbetweening",
+  "source": "Toon Boom Harmony docs (morphing, deformation) - method reference, trial platform chosen Windows 2026-10-31, trial download result still pending, Harmony did NOT run here",
+  "principle": "Vector morph between drawings + bone/deformation inbetweening, not whole-image blending",
+  "wiring": "methods10.py contour-point morph (serve/guard silhouette points lerped, drawn as a test frame, tile 1)",
+  "status": "FAILED PROXY - silhouette point morph by angle sorting produces a starburst scribble on a non-convex cutout figure, NOT a usable morph; do NOT use tile 1 as an inbetween. Harmony software itself did NOT run."
+ },
+ {
+  "n": 2,
+  "method": "Adobe Animate classic tween / shape tween with easing curves",
+  "source": "Adobe Animate classic/shape tween docs - method reference, Animate sign-in still pending, Animate did NOT run here",
+  "principle": "Tween between keyframes with a custom easing curve (easeInOutCubic, easeOutBack overshoot)",
+  "wiring": "methods10.py ease_cubic / ease_back functions; v2 builder uses smoothstep (slow-in/slow-out) with the same curve family, easing values in timing JSON",
+  "status": "PARAMETER - Animate software did NOT run"
+ },
+ {
+  "n": 3,
+  "method": "OpenToonz / Tahoma2D plastic tool mesh-deformation inbetweening",
+  "source": "OpenToonz/Tahoma2D plastic tool docs - free stack installed locally, GUI NOT run in this task",
+  "principle": "Mesh grid deformed between keys, vertices interpolated",
+  "wiring": "methods10.py sinusoidal grid warp of the rig mid frame, tile 3",
+  "status": "PROXY - OpenToonz GUI did NOT run"
+ },
+ {
+  "n": 4,
+  "method": "Blender Grease Pencil interpolate strokes between key drawings",
+  "source": "Blender 5.2.3 Grease Pencil interpolate - GP rig workstream delivered 2026-10-31, GP fills not yet built",
+  "principle": "Stroke points interpolated between key drawings, layer order preserved",
+  "wiring": "methods10.py traced outline points serve->guard lerped and drawn, tile 4; GP layer tree from the GP package is the same layer logic",
+  "status": "FAILED PROXY - angle-sorted outline interpolation produces a starburst scribble on a non-convex figure, NOT a usable stroke inbetween; do NOT use tile 4 as an inbetween. GP interpolate was NOT run on serve/guard keys."
+ },
+ {
+  "n": 5,
+  "method": "Spine bone + mesh interpolation with curve easing",
+  "source": "Spine bone/mesh interpolation docs - method reference, Spine (paid) NOT run here",
+  "principle": "Each bone/mesh vertex interpolated with its own easing curve",
+  "wiring": "build_interp_v2.py interpolates each joint group separately (arm_upper/arm_lower/leg_upper/leg_lower); tile 5 records the per-bone parameter set",
+  "status": "PARAMETER - Spine software did NOT run"
+ },
+ {
+  "n": 6,
+  "method": "Moho Smart Bones / switch-layer interpolation",
+  "source": "Moho Smart Bones / switch layers docs - method reference, Moho NOT run here",
+  "principle": "A bone angle drives a morph/switch; layer switches at a threshold angle",
+  "wiring": "build_interp_v2.py top_arms union (raised arm switches to top layer); switch condition recorded: arm_upper L < -100 -> top layer, tile 6",
+  "status": "PARAMETER - Moho software did NOT run"
+ },
+ {
+  "n": 7,
+  "method": "TVPaint light-table inbetweening workflow",
+  "source": "TVPaint light-table / onion skin workflow - method reference, TVPaint NOT run here",
+  "principle": "Neighbour frames shown faintly over the current frame to check the inbetween by eye",
+  "wiring": "move-serve-to-guard-v2-onion-skin-20261031.png (serve key + 5 inbetweens over guard key, alpha 50-140), tile 7",
+  "status": "CHECK - TVPaint software did NOT run, onion method itself DID run in PIL"
+ },
+ {
+  "n": 8,
+  "method": "Synfig tweening / waypoint interpolation (TCB spline)",
+  "source": "Synfig waypoint/TCB docs - method reference, Synfig (free stack) GUI NOT run in this task",
+  "principle": "Waypoints with tension/continuity/bias spline interpolation between keys",
+  "wiring": "methods10.py TCB Catmull-Rom note (t=0,c=0,b=0); waypoint table: keys at frames 0,8,18,28,40 with inbetweens between, tile 8",
+  "status": "PARAMETER - Synfig software did NOT run"
+ },
+ {
+  "n": 9,
+  "method": "RIFE optical-flow frame interpolation (CHECK ONLY)",
+  "source": "RIFE, Huang et al. ECCV 2022, from experimental-25 group A - RIFE did NOT run here (no GPU, no PyTorch)",
+  "principle": "Learned intermediate flow warps frames to a middle frame; still ghosts on large pose jumps / disocclusion",
+  "wiring": "methods10.py Farneback optical-flow warp (OpenCV) as a CHECK, tile 9; Farneback flow warp (OpenCV), CHECK ONLY - RIFE itself did NOT run (no GPU/PyTorch here).",
+  "status": "CHECK ONLY - RIFE itself did NOT run; Farneback is a different algorithm, not a RIFE result"
+ },
+ {
+  "n": 10,
+  "method": "FILM frame interpolation (CHECK ONLY)",
+  "source": "FILM, Reda et al. ECCV 2022 (Google), Apache 2.0, from experimental-25 group A - FILM did NOT run here (no GPU, model not downloaded)",
+  "principle": "Scale-agnostic single-network interpolation for large motion / wide disocclusion; still a picture blend, not a rig pose",
+  "wiring": "methods10.py multi-scale blend proxy, tile 10; Multi-scale blend proxy, CHECK ONLY - FILM itself did NOT run (no GPU, model not downloaded; next gate Kaggle/Colab).",
+  "status": "CHECK ONLY - FILM itself did NOT run"
+ }
+]

@@ -1,0 +1,200 @@
+{
+ "side-stand-left": {
+  "boot_n_bottom": 1601,
+  "boot_n_on_ground": true,
+  "boot_f_bottom": 1601,
+  "boot_f_on_ground": true,
+  "knee_n_offset": 0.0,
+  "knee_f_offset": 0.0,
+  "knee_feet_match_n": true,
+  "knee_feet_match_f": true,
+  "wrist_n": [
+   563.7,
+   978.4
+  ],
+  "wrist_f": [
+   615.7,
+   978.4
+  ],
+  "wrist_rule_by_construction": true,
+  "all_inside_canvas": true,
+  "canvas": [
+   1200,
+   1800
+  ],
+  "ground_y": 1600,
+  "joints": {
+   "waist": [
+    600,
+    920
+   ],
+   "torso_joint": [
+    565,
+    920
+   ],
+   "neck": [
+    600,
+    400
+   ],
+   "shoulder_n": [
+    600,
+    460
+   ],
+   "shoulder_f": [
+    652,
+    460
+   ],
+   "hip_n": [
+    600,
+    1000
+   ],
+   "hip_f": [
+    616,
+    1000
+   ],
+   "elbow_n": [
+    590.9,
+    719.8
+   ],
+   "wrist_n": [
+    563.7,
+    978.4
+   ],
+   "elbow_f": [
+    642.9,
+    719.8
+   ],
+   "wrist_f": [
+    615.7,
+    978.4
+   ],
+   "knee_n": [
+    600.0,
+    1280.0
+   ],
+   "ankle_n": [
+    600.0,
+    1542.0
+   ],
+   "knee_f": [
+    616.0,
+    1280.0
+   ],
+   "ankle_f": [
+    616.0,
+    1542.0
+   ]
+  },
+  "figure_alpha_bbox": [
+   436,
+   110,
+   781,
+   1601
+  ]
+ },
+ "side-walk-step-left": {
+  "boot_n_bottom": 1569,
+  "boot_n_on_ground": false,
+  "boot_f_bottom": 1601,
+  "boot_f_on_ground": true,
+  "swing_boot_raised": true,
+  "planted_boot_on_ground": true,
+  "knee_n_offset": -88.6,
+  "knee_f_offset": 0.0,
+  "knee_feet_match_n": true,
+  "knee_feet_match_f": true,
+  "wrist_n": [
+   699.1,
+   969.7
+  ],
+  "wrist_f": [
+   500.2,
+   956.6
+  ],
+  "wrist_rule_by_construction": true,
+  "all_inside_canvas": true,
+  "canvas": [
+   1200,
+   1800
+  ],
+  "ground_y": 1600,
+  "joints": {
+   "waist": [
+    600,
+    920
+   ],
+   "torso_joint": [
+    565,
+    920
+   ],
+   "neck": [
+    600,
+    400
+   ],
+   "shoulder_n": [
+    600,
+    460
+   ],
+   "shoulder_f": [
+    652,
+    460
+   ],
+   "hip_n": [
+    600,
+    1000
+   ],
+   "hip_f": [
+    616,
+    1000
+   ],
+   "elbow_n": [
+    662.9,
+    712.3
+   ],
+   "wrist_n": [
+    699.1,
+    969.7
+   ],
+   "elbow_f": [
+    589.1,
+    712.3
+   ],
+   "wrist_f": [
+    500.2,
+    956.6
+   ],
+   "knee_n": [
+    486.1,
+    1255.8
+   ],
+   "ankle_n": [
+    549.5,
+    1510.0
+   ],
+   "knee_f": [
+    616.0,
+    1280.0
+   ],
+   "ankle_f": [
+    616.0,
+    1542.0
+   ]
+  },
+  "figure_alpha_bbox": [
+   397,
+   110,
+   781,
+   1601
+  ]
+ },
+ "side-stand-right": {
+  "method": "horizontal mirror of side-stand-left (stated, not a new draw)",
+  "figure_alpha_bbox": [
+   419,
+   110,
+   764,
+   1601
+  ],
+  "all_inside_canvas": true
+ }
+}

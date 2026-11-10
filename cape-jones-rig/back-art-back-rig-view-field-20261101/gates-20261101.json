@@ -1,0 +1,263 @@
+{
+ "back-stand": {
+  "back_cape": {
+   "xy": [
+    338,
+    356
+   ],
+   "size": [
+    730,
+    1100
+   ]
+  },
+  "back_belt_pelvis": {
+   "xy": [
+    517,
+    765
+   ],
+   "size": [
+    365,
+    237
+   ]
+  },
+  "back_thigh_L": {
+   "xy": [
+    523,
+    964
+   ],
+   "size": [
+    186,
+    294
+   ]
+  },
+  "back_thigh_R": {
+   "xy": [
+    696,
+    964
+   ],
+   "size": [
+    179,
+    294
+   ]
+  },
+  "back_shin_boot_L": {
+   "xy": [
+    517,
+    1220
+   ],
+   "size": [
+    134,
+    236
+   ]
+  },
+  "back_shin_boot_R": {
+   "xy": [
+    760,
+    1220
+   ],
+   "size": [
+    128,
+    236
+   ]
+  },
+  "back_head_cowl": {
+   "xy": [
+    632,
+    170
+   ],
+   "size": [
+    134,
+    192
+   ]
+  },
+  "back_upper_arm_L": {
+   "xy": [
+    376,
+    388
+   ],
+   "size": [
+    115,
+    141
+   ]
+  },
+  "back_upper_arm_R": {
+   "xy": [
+    907,
+    388
+   ],
+   "size": [
+    122,
+    141
+   ]
+  },
+  "back_forearm_hand_L": {
+   "xy": [
+    69,
+    388
+   ],
+   "size": [
+    307,
+    141
+   ]
+  },
+  "back_forearm_hand_R": {
+   "xy": [
+    1029,
+    388
+   ],
+   "size": [
+    301,
+    141
+   ]
+  },
+  "shoulder_L": [
+   485.0,
+   461.84000000000003
+  ],
+  "shoulder_R": [
+   913.8000000000001,
+   461.84000000000003
+  ],
+  "bbox": [
+   69,
+   170,
+   1330,
+   1456
+  ],
+  "alpha_px": 648578,
+  "inside_canvas": true
+ },
+ "back-arms-down": {
+  "back_cape": {
+   "xy": [
+    338,
+    356
+   ],
+   "size": [
+    730,
+    1100
+   ]
+  },
+  "back_belt_pelvis": {
+   "xy": [
+    517,
+    765
+   ],
+   "size": [
+    365,
+    237
+   ]
+  },
+  "back_thigh_L": {
+   "xy": [
+    523,
+    964
+   ],
+   "size": [
+    186,
+    294
+   ]
+  },
+  "back_thigh_R": {
+   "xy": [
+    696,
+    964
+   ],
+   "size": [
+    179,
+    294
+   ]
+  },
+  "back_shin_boot_L": {
+   "xy": [
+    517,
+    1220
+   ],
+   "size": [
+    134,
+    236
+   ]
+  },
+  "back_shin_boot_R": {
+   "xy": [
+    760,
+    1220
+   ],
+   "size": [
+    128,
+    236
+   ]
+  },
+  "back_head_cowl": {
+   "xy": [
+    632,
+    170
+   ],
+   "size": [
+    134,
+    192
+   ]
+  },
+  "back_upper_arm_L": {
+   "pivot": [
+    485,
+    462
+   ],
+   "clockwise_deg": -90
+  },
+  "back_forearm_hand_L": {
+   "pivot": [
+    485,
+    577
+   ],
+   "clockwise_deg": -90
+  },
+  "shoulder_L": [
+   485.0,
+   461.84000000000003
+  ],
+  "elbow_L": [
+   485.0,
+   577.0400000000001
+  ],
+  "back_upper_arm_R": {
+   "pivot": [
+    914,
+    462
+   ],
+   "clockwise_deg": 90
+  },
+  "back_forearm_hand_R": {
+   "pivot": [
+    914,
+    583
+   ],
+   "clockwise_deg": 90
+  },
+  "shoulder_R": [
+   913.8000000000001,
+   461.84000000000003
+  ],
+  "elbow_R": [
+   913.8000000000001,
+   583.44
+  ],
+  "bbox": [
+   338,
+   170,
+   1068,
+   1456
+  ],
+  "alpha_px": 610134,
+  "inside_canvas": true
+ },
+ "reassembly": {
+  "source_alpha_px": 666666,
+  "stand_alpha_px": 648578,
+  "only_source": 18133,
+  "only_stand": 45,
+  "note": "Final: stand reassembled from the 11 cut pieces covers 648578/666666 = 97.3% of the source sheet alpha. Missing 18133px (2.7%) = thin slice edges + LANCZOS resampling edge loss, diffuse across bands, worst band 13.3% at rig y270-370 (head/neck/shoulder slice edges); no missing body part. Only 45px of stand alpha fall outside the sheet (resize edge AA). No pixel invented, no mirror.",
+  "coverage_pct": 97.3
+ },
+ "arms_down_elbow_asymmetry_note": "Elbow y differs L/R by 6.4px (577.0 vs 583.4) because the sheet's own upper-arm pieces differ in width (L 90px, R 95px) - sheet asymmetry carried, not corrected."
+}

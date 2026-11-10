@@ -1,0 +1,158 @@
+{
+ "nmp-01-hero-land-crouch": {
+  "title": "HERO-LAND CROUCH (grounded landing, feet planted)",
+  "frames": 27,
+  "fps": 24,
+  "seconds": 1.12,
+  "canvas": [
+   670,
+   1142
+  ],
+  "edge_alpha_px": 0,
+  "grounded_y_translation_all_zero": true,
+  "method": "RIG-ANGLE snap.figure, easeInOutCubic, 7 inbetweens/transition, 2 breakdowns/transition, overshoot+settle real frames",
+  "angles": {
+   "arm_upper": {
+    "L": 30,
+    "R": -70
+   },
+   "arm_lower": {
+    "L": 20,
+    "R": 60
+   },
+   "leg_upper": {
+    "L": -35,
+    "R": 60
+   },
+   "leg_lower": {
+    "L": 20,
+    "R": -40
+   }
+  },
+  "head": 8,
+  "snap": {
+   "L": "chest"
+  },
+  "distinct_from": "L fist down-forward over torso (chest pass), R arm swept back, deep asymmetric crouch. Not jump-land (arms-up) and not gul-01 compact crouch (both hands out).",
+  "classification": "ADDITIVE / EXTRA \u2014 not a production blocker",
+  "approval": "0/1",
+  "contact": "nmp-01-hero-land-crouch-movement-20261031-contact-20261031.png",
+  "xsheet": "nmp-01-hero-land-crouch-movement-20261031-xsheet-20261031.csv"
+ },
+ "nmp-02-sky-point-salute": {
+  "title": "SKY-POINT SALUTE (grounded standing)",
+  "frames": 27,
+  "fps": 24,
+  "seconds": 1.12,
+  "canvas": [
+   928,
+   1162
+  ],
+  "edge_alpha_px": 0,
+  "grounded_y_translation_all_zero": true,
+  "method": "RIG-ANGLE snap.figure, easeInOutCubic, 7 inbetweens/transition, 2 breakdowns/transition, overshoot+settle real frames",
+  "angles": {
+   "arm_upper": {
+    "L": -170,
+    "R": 60
+   },
+   "arm_lower": {
+    "L": 10,
+    "R": 120
+   },
+   "leg_upper": {
+    "L": -15,
+    "R": 25
+   },
+   "leg_lower": {
+    "L": 10,
+    "R": -10
+   }
+  },
+  "head": -12,
+  "snap": {},
+  "distinct_from": "L arm straight up pointing at the sky, R hand on hip, head tilted up to the pointing hand. Not jei-03 side-point (sideways) and not cap-01 entrance.",
+  "classification": "ADDITIVE / EXTRA \u2014 not a production blocker",
+  "approval": "0/1",
+  "contact": "nmp-02-sky-point-salute-movement-20261031-contact-20261031.png",
+  "xsheet": "nmp-02-sky-point-salute-movement-20261031-xsheet-20261031.csv"
+ },
+ "nmp-03-prowl-step": {
+  "title": "PROWL STEP (grounded low crouch, moving forward)",
+  "frames": 27,
+  "fps": 24,
+  "seconds": 1.12,
+  "canvas": [
+   964,
+   1142
+  ],
+  "edge_alpha_px": 0,
+  "grounded_y_translation_all_zero": true,
+  "method": "RIG-ANGLE snap.figure, easeInOutCubic, 7 inbetweens/transition, 2 breakdowns/transition, overshoot+settle real frames",
+  "angles": {
+   "arm_upper": {
+    "L": -90,
+    "R": 40
+   },
+   "arm_lower": {
+    "L": 30,
+    "R": 90
+   },
+   "leg_upper": {
+    "L": -70,
+    "R": 30
+   },
+   "leg_lower": {
+    "L": 70,
+    "R": -20
+   }
+  },
+  "head": 6,
+  "snap": {
+   "L": "chest"
+  },
+  "distinct_from": "Asymmetric prowl: L arm reaching forward low over torso, R arm back, deep step-crouch. Not gul-02 focus (symmetric hands out) and not bur-01 dash (upright lean).",
+  "classification": "ADDITIVE / EXTRA \u2014 not a production blocker",
+  "approval": "0/1",
+  "contact": "nmp-03-prowl-step-movement-20261031-contact-20261031.png",
+  "xsheet": "nmp-03-prowl-step-movement-20261031-xsheet-20261031.csv"
+ },
+ "nmp-04-overhead-smash-windup": {
+  "title": "OVERHEAD SMASH WINDUP (grounded braced)",
+  "frames": 27,
+  "fps": 24,
+  "seconds": 1.12,
+  "canvas": [
+   774,
+   1142
+  ],
+  "edge_alpha_px": 0,
+  "grounded_y_translation_all_zero": true,
+  "method": "RIG-ANGLE snap.figure, easeInOutCubic, 7 inbetweens/transition, 2 breakdowns/transition, overshoot+settle real frames",
+  "angles": {
+   "arm_upper": {
+    "L": -170,
+    "R": 170
+   },
+   "arm_lower": {
+    "L": 20,
+    "R": -20
+   },
+   "leg_upper": {
+    "L": -45,
+    "R": 45
+   },
+   "leg_lower": {
+    "L": 30,
+    "R": -30
+   }
+  },
+  "head": 6,
+  "snap": {},
+  "distinct_from": "Both arms overhead and slightly inward (clasped-smash windup), legs braced wide, head forward-down. Not cap-02 spread (arms sideways) and not flex (arms bent at sides).",
+  "classification": "ADDITIVE / EXTRA \u2014 not a production blocker",
+  "approval": "0/1",
+  "contact": "nmp-04-overhead-smash-windup-movement-20261031-contact-20261031.png",
+  "xsheet": "nmp-04-overhead-smash-windup-movement-20261031-xsheet-20261031.csv"
+ }
+}

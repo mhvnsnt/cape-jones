@@ -1,0 +1,272 @@
+{
+  "01-daylight": {
+    "tint_key": "daylight",
+    "multiplier": [
+      1,
+      1,
+      1
+    ],
+    "status": "template, not final approved"
+  },
+  "02-night-city": {
+    "tint_key": "rainy-night",
+    "multiplier": [
+      0.8,
+      0.85,
+      1.05
+    ],
+    "status": "template, not final approved"
+  },
+  "03-warm-interior": {
+    "tint_key": "warm-lamp",
+    "multiplier": [
+      1.1,
+      0.95,
+      0.75
+    ],
+    "status": "template, not final approved"
+  },
+  "04-purple": {
+    "tint_key": "neon-pink-cyan",
+    "multiplier": [
+      0.95,
+      0.85,
+      1.05
+    ],
+    "status": "template, not final approved"
+  },
+  "05-blue-spotlight": {
+    "tint_key": "spotlight",
+    "multiplier": [
+      1.05,
+      1.05,
+      1.05
+    ],
+    "status": "template, not final approved"
+  },
+  "06-golden-hour": {
+    "tint_key": "golden-hour",
+    "multiplier": [
+      1.1,
+      0.95,
+      0.7
+    ],
+    "status": "template, not final approved"
+  },
+  "07-rainy-night": {
+    "tint_key": "rainy-night",
+    "multiplier": [
+      0.8,
+      0.85,
+      1.05
+    ],
+    "status": "template, not final approved"
+  },
+  "08-warm-lamp": {
+    "tint_key": "warm-lamp",
+    "multiplier": [
+      1.1,
+      0.95,
+      0.75
+    ],
+    "status": "template, not final approved"
+  },
+  "09-fluorescent": {
+    "tint_key": "fluorescent",
+    "multiplier": [
+      0.9,
+      1.0,
+      1.0
+    ],
+    "status": "template, not final approved"
+  },
+  "10-spotlight": {
+    "tint_key": "spotlight",
+    "multiplier": [
+      1.05,
+      1.05,
+      1.05
+    ],
+    "status": "template, not final approved"
+  },
+  "11-sunset-rooftop": {
+    "tint_key": "warm-sunset",
+    "multiplier": [
+      1.15,
+      0.8,
+      0.7
+    ],
+    "status": "template, not final approved"
+  },
+  "12-neon-alley-pink-cyan": {
+    "tint_key": "neon-pink-cyan",
+    "multiplier": [
+      0.95,
+      0.85,
+      1.05
+    ],
+    "status": "template, not final approved"
+  },
+  "13-kitchen-daylight": {
+    "tint_key": "daylight",
+    "multiplier": [
+      1,
+      1,
+      1
+    ],
+    "status": "template, not final approved"
+  },
+  "14-purple-neon": {
+    "tint_key": "neon-pink-cyan",
+    "multiplier": [
+      0.95,
+      0.85,
+      1.05
+    ],
+    "status": "template, not final approved"
+  },
+  "15-blue-warehouse": {
+    "tint_key": "cyan-cyber",
+    "multiplier": [
+      0.85,
+      1.05,
+      1.2
+    ],
+    "status": "template, not final approved"
+  },
+  "16-overcast-storm": {
+    "tint_key": "foggy",
+    "multiplier": [
+      0.9,
+      0.95,
+      1.0
+    ],
+    "status": "template, not final approved"
+  },
+  "17-fire": {
+    "tint_key": "fire",
+    "multiplier": [
+      1.15,
+      0.85,
+      0.6
+    ],
+    "status": "template, not final approved"
+  },
+  "18-underwater": {
+    "tint_key": "underwater",
+    "multiplier": [
+      0.8,
+      0.95,
+      1.1
+    ],
+    "status": "template, not final approved"
+  },
+  "19-red-alert": {
+    "tint_key": "red-alert",
+    "multiplier": [
+      1.2,
+      0.6,
+      0.6
+    ],
+    "status": "template, not final approved"
+  },
+  "20-neutral": {
+    "tint_key": "daylight",
+    "multiplier": [
+      1,
+      1,
+      1
+    ],
+    "status": "template, not final approved"
+  },
+  "21-desert-sun": {
+    "tint_key": "desert-sun",
+    "multiplier": [
+      1.15,
+      1.0,
+      0.65
+    ],
+    "status": "template, not final approved"
+  },
+  "22-foggy-morning": {
+    "tint_key": "foggy",
+    "multiplier": [
+      0.9,
+      0.95,
+      1.0
+    ],
+    "status": "template, not final approved"
+  },
+  "23-candlelight": {
+    "tint_key": "candlelight",
+    "multiplier": [
+      1.15,
+      0.9,
+      0.6
+    ],
+    "status": "template, not final approved"
+  },
+  "24-green-night-vision": {
+    "tint_key": "green-night",
+    "multiplier": [
+      0.7,
+      1.15,
+      0.7
+    ],
+    "status": "template, not final approved"
+  },
+  "25-warm-sunset": {
+    "tint_key": "warm-sunset",
+    "multiplier": [
+      1.15,
+      0.8,
+      0.7
+    ],
+    "status": "template, not final approved"
+  },
+  "26-city-noon": {
+    "tint_key": "city-noon",
+    "multiplier": [
+      1,
+      1,
+      1
+    ],
+    "status": "template, not final approved"
+  },
+  "27-stormy-night": {
+    "tint_key": "stormy-night",
+    "multiplier": [
+      0.8,
+      0.85,
+      1.0
+    ],
+    "status": "template, not final approved"
+  },
+  "28-cozy-fire": {
+    "tint_key": "cozy-fire",
+    "multiplier": [
+      1.15,
+      0.9,
+      0.65
+    ],
+    "status": "template, not final approved"
+  },
+  "29-cyan-cyber-light": {
+    "tint_key": "cyan-cyber",
+    "multiplier": [
+      0.85,
+      1.05,
+      1.2
+    ],
+    "status": "template, not final approved"
+  },
+  "30-natural-window-light": {
+    "tint_key": "natural-window",
+    "multiplier": [
+      1,
+      1,
+      1
+    ],
+    "status": "template, not final approved"
+  }
+}

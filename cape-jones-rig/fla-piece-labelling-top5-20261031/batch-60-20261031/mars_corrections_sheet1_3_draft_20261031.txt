@@ -1,0 +1,22 @@
+# MARS EYE CORRECTIONS - DRAFT from Mars voice labels 2026-10-31 19:09 CDT, sheets 1 and 3 ONLY.
+# NOT yet applied to mars_corrections.txt. View = FRONT for all pieces in these two sheets, per Mars 19:09 CDT follow-up.
+# Format: piece_id = canonical_name | status
+# Dual-use circles: ball joint OR circular eye, either use - recorded as one dual-use name, NOT forced to one use.
+# Sheet 1
+fla-front/Row1_1.png = capejones_leg1_foot_front | rename
+fla-front/Row1_10.png = capejones_pelvis_front | rename
+fla-front/Row1_11.png = capejones_leg2_shin_front | rename
+fla-front/Row1_12.png = capejones_leg2_foot_front | rename
+# fla-front/Row1_13.png = UNKNOWN - Mars did not clearly name bottom-row first piece on sheet 1 in this message. DO NOT GUESS. Visually a foot, same shape family as Row1_1.
+fla-front/Row1_14.png = capejones_leg1_front | rename
+fla-front/Row1_15.png = capejones_arm1_front | rename
+fla-front/Row1_16.png = capejones_ball_joint_or_circular_eye_front | rename
+# Sheet 3
+fla-front/Row1_24.png = capejones_ball_joint_or_circular_eye_front | rename
+fla-front/Row1_25.png = capejones_leg1_foot_front | rename
+fla-front/Row1_26.png = capejones_arm2_front | rename
+fla-front/Row1_27.png = capejones_leg2_front | rename
+fla-front/Row1_28.png = capejones_ball_joint_or_circular_eye_front | rename
+fla-front/Row1_29.png = capejones_leg1_foot_front | rename
+fla-front/Row1_3.png = capejones_hand1_front | rename
+fla-front/Row1_30.png = capejones_arm2_front | rename

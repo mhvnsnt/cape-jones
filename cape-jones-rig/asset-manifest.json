@@ -1,0 +1,2663 @@
+{
+  "generated": "2026-10-31",
+  "default_lock": "joint-locked-v6",
+  "branch_assets": {
+    "total_files": 251,
+    "image_files": 245,
+    "unique_images": 184
+  },
+  "note": "Branch assets are on feature/character-parts-expansions-20261031, NOT on main yet. Main rig is in cape-jones-rig/ on main. Do not treat branch paths as main paths.",
+  "branch_entries": [
+    {
+      "path": "characters/sheets/01-tpose-turnaround.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "01-tpose-turnaround.jpg",
+      "size": 113433,
+      "sha256": "4a6ac958c46f9ed266b428d5cc4669e8989bfebca776fe654a850fba1941bcd2",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/02-model-sheet-orthographic-turnaround.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "02-model-sheet-orthographic-turnaround.jpg",
+      "size": 113691,
+      "sha256": "bd609f7d5ab4958e0a98fa23c241fe83c8de31671b483b467d792a93b8c07711",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/03-color-lighting-vfx-key.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "03-color-lighting-vfx-key.jpg",
+      "size": 421396,
+      "sha256": "ada028be4a128dc7252d46fe25bd87c4b789465839a3abb3e2057f5127eda3a3",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/04-action-flight-vfx-reference.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "04-action-flight-vfx-reference.jpg",
+      "size": 433309,
+      "sha256": "05cae02e9d27adcfed6a04766a3bca7d4621601d123f3c333c4ad3c270b583f0",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/05-expression-eye-dart-matrix.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "05-expression-eye-dart-matrix.jpg",
+      "size": 340439,
+      "sha256": "900de997776a5bebfcc117720382923bdc42fa0d98afabb7d432f4b140555bf2",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/06-viseme-phoneme-mouth-matrix.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "06-viseme-phoneme-mouth-matrix.jpg",
+      "size": 351622,
+      "sha256": "397cd7600c987c13d78b82c6270dbb84c81ba97563850462aeb085d88b191d31",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/07-character-parts-expressions.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "07-character-parts-expressions.jpg",
+      "size": 158394,
+      "sha256": "06b31061f055ebec437eaebe92e46a77024a18cff38a53f9dff7f652fd7bf115",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/08-body-parts-limbs-capes.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "08-body-parts-limbs-capes.jpg",
+      "size": 392881,
+      "sha256": "671bce2949ecdb91c43ae15127f2a1025b9a76ae535ba2ce133ba4d98df3c80e",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/09-hero-shot-black.png",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "09-hero-shot-black.png",
+      "size": 84648,
+      "sha256": "d4e310bc7bda33f5a71b1b75c6333e9b0bfd20eb440f1083a8a313dbfb8a8815",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/10-hero-in-space.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "10-hero-in-space.jpg",
+      "size": 182541,
+      "sha256": "f625ecc842c4052ef2c75306b7bf5d1097a3aba263628c54172694938f2dc94a",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/README.md",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "README.md",
+      "size": 2570,
+      "sha256": null,
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/README.md",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 285,
+      "sha256": null,
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/batch-Auzjk.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 132806,
+      "sha256": "98f09939a94703ed7834878f5c4c590ff7baeb20fa876eb7679bc32982a40782",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/batch-JmGUv.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 149563,
+      "sha256": "d0e120ff8901f6d4a709ea6ffc01c149ca706708436d290e781fac60dec718c0",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/batch-KKGuh.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 219081,
+      "sha256": "3c8fbae1ac845c8d18a546a413ab3a4f1bef2ca1a03be7ec633c47c77efd14a5",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/batch-MvYdV.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 224151,
+      "sha256": "9bbb06d5d51fd9593a63f138658c52062c7708e269f68cf7cbb147baf239ea18",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/batch-RjoBx.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 194348,
+      "sha256": "2143b0a95dfff4f25e928b50f3d5d3f35d22064bfbba1034845a46445169b7b7",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/batch-WEqVc.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 160369,
+      "sha256": "560a8827786acd95a63265834d8a1bca386ceb74c4c31bb5f898c31262111656",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/batch-bfSpz.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 243330,
+      "sha256": "65e307ade25b0eb3932781465777f9231cf77841b6dceb8c4535feb88f081841",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/batch-giKK3.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 346820,
+      "sha256": "e361e694a1a50d61aa5986a4d828f8d7fcce2205c68875299a35953b048f3c43",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/batch-h4Un3.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 217439,
+      "sha256": "7a661d76a2df2f604c571a47251e9fd125432e8f7b38487e3383c398b4d33a6e",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/batch-jPaPG.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 145634,
+      "sha256": "5fa2c4018986388a327edacc7f04bab85d57b52e8660e49dc1a0161b36b663e5",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/batch-rzOMM.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 349475,
+      "sha256": "b1c0bfea885cedd4384b35a98e53c3beced345a3fd717fe51dbbb3c7bd7c5b8d",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/batch-s2Iq5.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 236305,
+      "sha256": "74f9deb5a328fd9cdc6aa4ca988f9b2ec439f542ad6d79a3a0752aaaf305d56a",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/batch-xyug7.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 159231,
+      "sha256": "3fb67287a59b2241b7d43180ea8b09a65c1768179386d9fab7b1c9bb0a77ccfc",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/batch-yFJdx.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 127807,
+      "sha256": "3af206f966193b576c9ef9ac0304653f552e0a4ab6d8238cfb741f993694f38b",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/batch-ywOUG.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 174271,
+      "sha256": "68b3e2a22e152daabe0493843e103f16471dcc66a0d0a5e7f8277d416a5cbc30",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/bg-DGb2j.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 215091,
+      "sha256": "f497103d24519f2e36e51d750fa1a318788340e91bdf8811602751eff3ca78cf",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/bg-F72A5.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 253763,
+      "sha256": "cb92be8e2c0aef35671620e99c75b1c2a99b0ea8b9d6efd7adbb4a32710b2017",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/bg-IUUgX.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 261351,
+      "sha256": "fcb675464ebda12a54fc755d271849e9f19cf89f9cc2d5a6f6b7767810c43666",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/bg-IowZk.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 243002,
+      "sha256": "cac96b1480a8d5e1c3a0dae1a61930c51e5bfdfa38d748403e4ad096992f921f",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/bg-N3ies.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 267097,
+      "sha256": "19db7ab6dd495a8ae6179880efcfd5405699924f573a743c8bdd69d0128f2c7c",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/bg-OAFac.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 243049,
+      "sha256": "1d147b14ea442f48fcbcfe5e92a28e7658f66057ef45e177b63516440486e04f",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/bg-U8YqN.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 215235,
+      "sha256": "4b123006c7944d395cc8816eb9f2e71c016e9b4506eccc1ae84924b5156bdd32",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/bg-ZdzDG.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 254076,
+      "sha256": "e76ce0519769ffb0714608e57e9a172309231fc37988fa0b11d37b91d4ba3b4a",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/bg-jvqhV.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 248621,
+      "sha256": "98226520a7bdec48a8e1a2be63756c98c4ad94bc7777b74ba93c6dc90839721b",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/bg-wDheK.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 227178,
+      "sha256": "4cc15037d6c8e4f9f0a395b5078652295d10eefc2b7d41aa05ee5a5c401d44de",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/bg-zxxqO.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 334202,
+      "sha256": "5e708a50372380ad59ecc8b10f5b619dc199ce5f05f346ae64263d4b0ee4cef3",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/backgrounds/style-JmGUv.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 149563,
+      "sha256": "d0e120ff8901f6d4a709ea6ffc01c149ca706708436d290e781fac60dec718c0",
+      "duplicate_of": "backgrounds/batch-JmGUv.jpg"
+    },
+    {
+      "path": "characters/sheets/backgrounds/style-MvYdV.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 224151,
+      "sha256": "9bbb06d5d51fd9593a63f138658c52062c7708e269f68cf7cbb147baf239ea18",
+      "duplicate_of": "backgrounds/batch-MvYdV.jpg"
+    },
+    {
+      "path": "characters/sheets/backgrounds/style-WEqVc.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 160369,
+      "sha256": "560a8827786acd95a63265834d8a1bca386ceb74c4c31bb5f898c31262111656",
+      "duplicate_of": "backgrounds/batch-WEqVc.jpg"
+    },
+    {
+      "path": "characters/sheets/backgrounds/style-bfSpz.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 243330,
+      "sha256": "65e307ade25b0eb3932781465777f9231cf77841b6dceb8c4535feb88f081841",
+      "duplicate_of": "backgrounds/batch-bfSpz.jpg"
+    },
+    {
+      "path": "characters/sheets/backgrounds/style-giKK3.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 346820,
+      "sha256": "e361e694a1a50d61aa5986a4d828f8d7fcce2205c68875299a35953b048f3c43",
+      "duplicate_of": "backgrounds/batch-giKK3.jpg"
+    },
+    {
+      "path": "characters/sheets/backgrounds/style-h4Un3.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 217439,
+      "sha256": "7a661d76a2df2f604c571a47251e9fd125432e8f7b38487e3383c398b4d33a6e",
+      "duplicate_of": "backgrounds/batch-h4Un3.jpg"
+    },
+    {
+      "path": "characters/sheets/backgrounds/style-jPaPG.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 145634,
+      "sha256": "5fa2c4018986388a327edacc7f04bab85d57b52e8660e49dc1a0161b36b663e5",
+      "duplicate_of": "backgrounds/batch-jPaPG.jpg"
+    },
+    {
+      "path": "characters/sheets/backgrounds/style-rzOMM.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 349475,
+      "sha256": "b1c0bfea885cedd4384b35a98e53c3beced345a3fd717fe51dbbb3c7bd7c5b8d",
+      "duplicate_of": "backgrounds/batch-rzOMM.jpg"
+    },
+    {
+      "path": "characters/sheets/backgrounds/style-s2Iq5.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 236305,
+      "sha256": "74f9deb5a328fd9cdc6aa4ca988f9b2ec439f542ad6d79a3a0752aaaf305d56a",
+      "duplicate_of": "backgrounds/batch-s2Iq5.jpg"
+    },
+    {
+      "path": "characters/sheets/backgrounds/style-xyug7.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 159231,
+      "sha256": "3fb67287a59b2241b7d43180ea8b09a65c1768179386d9fab7b1c9bb0a77ccfc",
+      "duplicate_of": "backgrounds/batch-xyug7.jpg"
+    },
+    {
+      "path": "characters/sheets/backgrounds/style-yFJdx.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "backgrounds",
+      "size": 127807,
+      "sha256": "3af206f966193b576c9ef9ac0304653f552e0a4ab6d8238cfb741f993694f38b",
+      "duplicate_of": "backgrounds/batch-yFJdx.jpg"
+    },
+    {
+      "path": "characters/sheets/color-keys/color-key-lighting-conditions.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "color-keys",
+      "size": 412049,
+      "sha256": "c12915f28d3ec4226dcea97bd2db08a1e8c8c9bc21a384bdffb9c911f860fb10",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/color-keys/color-key-sheet-1.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "color-keys",
+      "size": 494536,
+      "sha256": "cea2969f0494ec6634920c83a008bf1568dcf42d1111e6a82e0406b8569b4b79",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/color-keys/color-key-sheet-2.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "color-keys",
+      "size": 509049,
+      "sha256": "84c9eecfcbff5c5063dcb2d85e0cbaa32c373c22d6f928b3115edb74ffe6aeb4",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/color-keys/color-key-sheet-3.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "color-keys",
+      "size": 455015,
+      "sha256": "5dfa0901092bdbef8aba99963bdb2ed79a6cb50f65178cbf6acc5224ce711686",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/color-keys/color-key-sheet-4.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "color-keys",
+      "size": 380751,
+      "sha256": "a45e07fa01fbeeea84ead3fc38efe8d8c4bc376174f97a12f9f4d2eb5397006f",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/color-keys/color-key-sheet-5.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "color-keys",
+      "size": 383292,
+      "sha256": "9db58c16af998a462684204ada9659ab6680cb641dcb496f1ec1fccd8bf4741f",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/exposure-sheets/exposure-sheet-1-walk.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "exposure-sheets",
+      "size": 300446,
+      "sha256": "52b4dac84b81c4e7bbeed21f72ff7091cf050919bfb3856e17b071924caf0287",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/exposure-sheets/exposure-sheet-10-flex.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "exposure-sheets",
+      "size": 370574,
+      "sha256": "0ae4544a7666ccb84b0fd6bf4c2257b1f6a738adee044443bdbe55fb2a8162a5",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/exposure-sheets/exposure-sheet-2-jump.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "exposure-sheets",
+      "size": 369968,
+      "sha256": "8bdd885c1716316ea99557289b5b259b890e52883cbe5a1b5a3c14615aaf6471",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/exposure-sheets/exposure-sheet-3-punch.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "exposure-sheets",
+      "size": 344173,
+      "sha256": "a365b79fd355f40427b5879e0731eeab27a48927eaa451d88a173aea181c161c",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/exposure-sheets/exposure-sheet-4-flight.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "exposure-sheets",
+      "size": 518304,
+      "sha256": "07f9519b6e8bdf35c1d192734cb95e2942fd6c2405f158dbffd999ca661cf551",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/exposure-sheets/exposure-sheet-5-reaction.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "exposure-sheets",
+      "size": 328402,
+      "sha256": "c1f0b4b04d0646bd2cc604caef110acd6b2f007c5caae9968a66aabdaeeb87f8",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/exposure-sheets/exposure-sheet-6-sit.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "exposure-sheets",
+      "size": 410892,
+      "sha256": "5c86e2794b80f2b01def94c8ca8e26b8254faf5667c1b33a0441adc41c99a7c7",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/exposure-sheets/exposure-sheet-7-cape.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "exposure-sheets",
+      "size": 328756,
+      "sha256": "d51070fe03363e4024baf6157b1a1a375e055f248d33bb267e7fccef4086e8a1",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/exposure-sheets/exposure-sheet-8-turnaround.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "exposure-sheets",
+      "size": 340927,
+      "sha256": "9e0548fc4923005222183724bac50fc72a6100d592e0f08d80253eec9ed443c5",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/exposure-sheets/exposure-sheet-9-run.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "exposure-sheets",
+      "size": 294434,
+      "sha256": "00eb6061aff42430b614eecca324f2d04c2298375c843fccf376415a7d1bbbea",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/PACK-4-HEADS-NECKS-EYES-MOUTHS.md",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 4233,
+      "sha256": null,
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/README.md",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 919,
+      "sha256": null,
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/action-packs/action-1vU75.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 370072,
+      "sha256": "c947e15d5a6e8f6247205eeb3f376acda4ebe901379d48c95e761c3836797648",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/action-packs/action-60rw7.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 171072,
+      "sha256": "9c9e86fa15e3f719b0954890cd3e687696a7f2cfa514978dee8e9c6e0aeef2c3",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/action-packs/action-9NXQv.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 204272,
+      "sha256": "3bfcb33aa4f5c9ec36a30050377a65a887d41bb25e44993a76cb1da9c96df1cf",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/action-packs/action-EBPJX.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 277165,
+      "sha256": "abc573774e58b4206e1c555d363806993069cb24410cff07df6aa94b7139771d",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/action-packs/action-HJUwB.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 242728,
+      "sha256": "395badfc04b61001a380586c2b9dd095eec9d612afa470ace5c6e0004e371d8f",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/action-packs/action-Ne4dq.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 238760,
+      "sha256": "c21caaaa872c23bdc3cde429ce407e837d9f8e1987af72e54876f898a0f9aae9",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/action-packs/action-Nk9xR.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 176039,
+      "sha256": "8358370afd3e37e41faeb16973df6f3987f693ff65bbc9df73813d896560221f",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/action-packs/action-QjT3b.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 231871,
+      "sha256": "fc905ee3d82878cc85298485f8194c02b023af919bceb3bb72ea96cb7a3e09d6",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/action-packs/action-RTpXF.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 187190,
+      "sha256": "510567716ab49101d84de30d3e17283da92989452b8d51d3fa7b588da5688930",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/action-packs/action-TatNd.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 225354,
+      "sha256": "7b7b92df1522d6c67622554b01f40b4eda08bf37b69b3ecb2ea01068ef550f96",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/action-packs/action-WUwKS.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 233077,
+      "sha256": "3a0f17fad4591ce8adf01c1d6ae402c61a6ba712076e08cba11ad112beb086c5",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/action-packs/action-Wtv8t.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 246676,
+      "sha256": "10f7d0f78060c5c7175724cf6a2b9275f95a6ff000503752dd9957912fa93af9",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/action-packs/action-cJWaN.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 433826,
+      "sha256": "a39648212727a5aad5354b3f2d2a7c7106b006678e96cbb283ebfe3a524f0664",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/action-packs/action-f5Q6Z.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 221653,
+      "sha256": "b1a17d35a81726b283b4dcbc57ed5c7a4d93aab7417fa883247909b4a1ff538a",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/action-packs/action-wdNk1.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 180574,
+      "sha256": "22fc754b4dcfa7302f31464f62b4af80a6e0e294072438a5d7939633d3aae32d",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/angle-sheets/fla-3quarter-back.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 236811,
+      "sha256": "ac7d32f85cf40c1377efabf4e978e4d52206f55e094886410f707958673bb95f",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/angle-sheets/fla-3quarter-front.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 204764,
+      "sha256": "350125e7898ba83cb570f7df614d352c72c787cdd4f529a6fe6fe448168068f8",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/angle-sheets/fla-back.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 294778,
+      "sha256": "96b9a1692ba5a1ace2afbbe33b1267bd9b3c98c50a2b9706f58a670e2ddb8fd0",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/angle-sheets/fla-front.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 295133,
+      "sha256": "696b9527b052b18423daada7fdd55d1984c4244b4b76b49491837bce5b60718e",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/dance-packs/dance-2e9kj.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 296473,
+      "sha256": "83cf2e7650b7677b5245e632432f3500f91056a5e289b752345ebbc67facaed7",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/dance-packs/dance-D3pmc.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 266236,
+      "sha256": "02579e32514c5ee3f7503564d9566501eb4249fd7e3079ddd6bd6f00ae054c1f",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/dance-packs/dance-MAHyh.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 276351,
+      "sha256": "6aed9caeb2ef0b5bf2d9f0a04234e1fd00478eec6abb1a220148787ee8bd6f89",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/dance-packs/dance-UgepP.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 303813,
+      "sha256": "1d0ac5228803fd468fa7690347ec7a366416e3c37ab840b1c773d2f2a9cf9a1b",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/dance-packs/dance-ZxEwS.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 264882,
+      "sha256": "e50675644462d6379eb4cfd835872b190bc92f33ebc86697486c05531d1750a6",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/dance-packs/dance-a3jha.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 262130,
+      "sha256": "eb0804ef9c1d71cc195b45ad4c0db80dbb35f0a6926aaa2b4cc174776477e779",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/dance-packs/dance-etaPY.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 244286,
+      "sha256": "5c16de6e37cea26a3bde7c3b636a91c830b3b21f8ff9c6f725e3e450d0ad476f",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/dance-packs/dance-mANuo.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 209557,
+      "sha256": "622eab1c0c0d14f04c9b00b737a412ab84a2eaf389a30ef2d18b151c0512071e",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/dance-packs/dance-qIxLo.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 229156,
+      "sha256": "0a75567ec1b088aba44021dc46062fd3a84905b4e461ba41b4711f35dcb9eaf7",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/dance-packs/dance-smAFI.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 257251,
+      "sha256": "d317a95c2a00ca03e4b4c0571352d73add07db9fa6c92c649cb4ced65f18c71b",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/dance-packs/dance-w2Zh1.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 291861,
+      "sha256": "b4a14df6d0cde2380e1fdd86bd06d7c6ba96aede434e1ceb4f5112ed8f6026be",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-2e9kj.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 296473,
+      "sha256": "83cf2e7650b7677b5245e632432f3500f91056a5e289b752345ebbc67facaed7",
+      "duplicate_of": "fla-packs/dance-packs/dance-2e9kj.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-3N1l4.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 319182,
+      "sha256": "f0b518c7a97591e15122dc490fd491499152431767228d0b7e61a24fae3c03cb",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-8chi3.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 262919,
+      "sha256": "c6c12b896cd29aa2b608528fc2a1871a7780ac53edcbea59fcc79c795487c9b7",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-D3pmc.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 266236,
+      "sha256": "02579e32514c5ee3f7503564d9566501eb4249fd7e3079ddd6bd6f00ae054c1f",
+      "duplicate_of": "fla-packs/dance-packs/dance-D3pmc.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-HXbRz.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 316533,
+      "sha256": "d3bec1382470c00676a54eab4533a118e96a1f41a1e1adb3308e2df0b5dcc3e8",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-J9hos.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 274365,
+      "sha256": "40a6b0189447dcffed030058a249b3bc4127fd0bf1dec5e2d4e5fb4c6efcb139",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-MAHyh.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 276351,
+      "sha256": "6aed9caeb2ef0b5bf2d9f0a04234e1fd00478eec6abb1a220148787ee8bd6f89",
+      "duplicate_of": "fla-packs/dance-packs/dance-MAHyh.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-PL6xL.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 375124,
+      "sha256": "b2fd141b9c72b3b9dd267c56aa8f3287ba87b78ae53e063a838b7ae6ccd096a2",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-TdvUD.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 318406,
+      "sha256": "8ddc511f37f85a2eaa456f54303d61ba675dfb4cdb481b43f97364195969ace6",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-UgepP.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 303813,
+      "sha256": "1d0ac5228803fd468fa7690347ec7a366416e3c37ab840b1c773d2f2a9cf9a1b",
+      "duplicate_of": "fla-packs/dance-packs/dance-UgepP.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-XcaBI.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 289491,
+      "sha256": "a80b4f0b19512e9f49c450157ccd629b0a9eafa3b704f5c10112b4a96f228d77",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-XkboO.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 272832,
+      "sha256": "d45a8e5975e7ef9d9152b61156c34f63de25371e29ded9618e123d4784850eab",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-ZxEwS.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 264882,
+      "sha256": "e50675644462d6379eb4cfd835872b190bc92f33ebc86697486c05531d1750a6",
+      "duplicate_of": "fla-packs/dance-packs/dance-ZxEwS.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-a3jha.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 262130,
+      "sha256": "eb0804ef9c1d71cc195b45ad4c0db80dbb35f0a6926aaa2b4cc174776477e779",
+      "duplicate_of": "fla-packs/dance-packs/dance-a3jha.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-akfZy.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 403713,
+      "sha256": "1e0873a26622ee1ff2964f671ea0aa7bfc6bb88483b992186d25aadf17b9b4af",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-chKT5.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 237675,
+      "sha256": "7335dd28104b416fcd841cee9a388811c19f7879ec3601dc71d68e6e8cb777e8",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-etaPY.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 244286,
+      "sha256": "5c16de6e37cea26a3bde7c3b636a91c830b3b21f8ff9c6f725e3e450d0ad476f",
+      "duplicate_of": "fla-packs/dance-packs/dance-etaPY.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-l3Ch8.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 272440,
+      "sha256": "779b77173956988f78597301c6dc16155fcfd648a1b8a791b1b8b5fafbf74b9f",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-lHT9s.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 263981,
+      "sha256": "59d215b1d31fd7c515c5b8ab5f2e9cec259e40cf77a39499c7d3c9174ecea2db",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-mANuo.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 209557,
+      "sha256": "622eab1c0c0d14f04c9b00b737a412ab84a2eaf389a30ef2d18b151c0512071e",
+      "duplicate_of": "fla-packs/dance-packs/dance-mANuo.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-nh3HD.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 246509,
+      "sha256": "776e8db43ba2bb44b47ffa3120f0aa38433ed861310efb824549ac24d22d7060",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-qIxLo.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 229156,
+      "sha256": "0a75567ec1b088aba44021dc46062fd3a84905b4e461ba41b4711f35dcb9eaf7",
+      "duplicate_of": "fla-packs/dance-packs/dance-qIxLo.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-smAFI.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 257251,
+      "sha256": "d317a95c2a00ca03e4b4c0571352d73add07db9fa6c92c649cb4ced65f18c71b",
+      "duplicate_of": "fla-packs/dance-packs/dance-smAFI.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs/recent-w2Zh1.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 291861,
+      "sha256": "b4a14df6d0cde2380e1fdd86bd06d7c6ba96aede434e1ceb4f5112ed8f6026be",
+      "duplicate_of": "fla-packs/dance-packs/dance-w2Zh1.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs-2/recent-2e9kj.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 296473,
+      "sha256": "83cf2e7650b7677b5245e632432f3500f91056a5e289b752345ebbc67facaed7",
+      "duplicate_of": "fla-packs/dance-packs/dance-2e9kj.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs-2/recent-D3pmc.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 266236,
+      "sha256": "02579e32514c5ee3f7503564d9566501eb4249fd7e3079ddd6bd6f00ae054c1f",
+      "duplicate_of": "fla-packs/dance-packs/dance-D3pmc.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs-2/recent-MAHyh.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 276351,
+      "sha256": "6aed9caeb2ef0b5bf2d9f0a04234e1fd00478eec6abb1a220148787ee8bd6f89",
+      "duplicate_of": "fla-packs/dance-packs/dance-MAHyh.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs-2/recent-UgepP.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 303813,
+      "sha256": "1d0ac5228803fd468fa7690347ec7a366416e3c37ab840b1c773d2f2a9cf9a1b",
+      "duplicate_of": "fla-packs/dance-packs/dance-UgepP.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs-2/recent-ZxEwS.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 264882,
+      "sha256": "e50675644462d6379eb4cfd835872b190bc92f33ebc86697486c05531d1750a6",
+      "duplicate_of": "fla-packs/dance-packs/dance-ZxEwS.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs-2/recent-a3jha.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 262130,
+      "sha256": "eb0804ef9c1d71cc195b45ad4c0db80dbb35f0a6926aaa2b4cc174776477e779",
+      "duplicate_of": "fla-packs/dance-packs/dance-a3jha.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs-2/recent-etaPY.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 244286,
+      "sha256": "5c16de6e37cea26a3bde7c3b636a91c830b3b21f8ff9c6f725e3e450d0ad476f",
+      "duplicate_of": "fla-packs/dance-packs/dance-etaPY.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs-2/recent-mANuo.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 209557,
+      "sha256": "622eab1c0c0d14f04c9b00b737a412ab84a2eaf389a30ef2d18b151c0512071e",
+      "duplicate_of": "fla-packs/dance-packs/dance-mANuo.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs-2/recent-qIxLo.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 229156,
+      "sha256": "0a75567ec1b088aba44021dc46062fd3a84905b4e461ba41b4711f35dcb9eaf7",
+      "duplicate_of": "fla-packs/dance-packs/dance-qIxLo.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs-2/recent-smAFI.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 257251,
+      "sha256": "d317a95c2a00ca03e4b4c0571352d73add07db9fa6c92c649cb4ced65f18c71b",
+      "duplicate_of": "fla-packs/dance-packs/dance-smAFI.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/jojo-packs-2/recent-w2Zh1.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 291861,
+      "sha256": "b4a14df6d0cde2380e1fdd86bd06d7c6ba96aede434e1ceb4f5112ed8f6026be",
+      "duplicate_of": "fla-packs/dance-packs/dance-w2Zh1.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-DGb2j.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 215091,
+      "sha256": "f497103d24519f2e36e51d750fa1a318788340e91bdf8811602751eff3ca78cf",
+      "duplicate_of": "backgrounds/bg-DGb2j.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-F72A5.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 253763,
+      "sha256": "cb92be8e2c0aef35671620e99c75b1c2a99b0ea8b9d6efd7adbb4a32710b2017",
+      "duplicate_of": "backgrounds/bg-F72A5.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-IUUgX.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 261351,
+      "sha256": "fcb675464ebda12a54fc755d271849e9f19cf89f9cc2d5a6f6b7767810c43666",
+      "duplicate_of": "backgrounds/bg-IUUgX.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-IowZk.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 243002,
+      "sha256": "cac96b1480a8d5e1c3a0dae1a61930c51e5bfdfa38d748403e4ad096992f921f",
+      "duplicate_of": "backgrounds/bg-IowZk.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-N3ies.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 267097,
+      "sha256": "19db7ab6dd495a8ae6179880efcfd5405699924f573a743c8bdd69d0128f2c7c",
+      "duplicate_of": "backgrounds/bg-N3ies.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-OAFac.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 243049,
+      "sha256": "1d147b14ea442f48fcbcfe5e92a28e7658f66057ef45e177b63516440486e04f",
+      "duplicate_of": "backgrounds/bg-OAFac.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-U8YqN.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 215235,
+      "sha256": "4b123006c7944d395cc8816eb9f2e71c016e9b4506eccc1ae84924b5156bdd32",
+      "duplicate_of": "backgrounds/bg-U8YqN.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-ZdzDG.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 254076,
+      "sha256": "e76ce0519769ffb0714608e57e9a172309231fc37988fa0b11d37b91d4ba3b4a",
+      "duplicate_of": "backgrounds/bg-ZdzDG.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-jvqhV.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 248621,
+      "sha256": "98226520a7bdec48a8e1a2be63756c98c4ad94bc7777b74ba93c6dc90839721b",
+      "duplicate_of": "backgrounds/bg-jvqhV.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-wDheK.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 227178,
+      "sha256": "4cc15037d6c8e4f9f0a395b5078652295d10eefc2b7d41aa05ee5a5c401d44de",
+      "duplicate_of": "backgrounds/bg-wDheK.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-3quarter-packs/clean-zxxqO.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 334202,
+      "sha256": "5e708a50372380ad59ecc8b10f5b619dc199ce5f05f346ae64263d4b0ee4cef3",
+      "duplicate_of": "backgrounds/bg-zxxqO.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-packs/lounge-DGb2j.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 215091,
+      "sha256": "f497103d24519f2e36e51d750fa1a318788340e91bdf8811602751eff3ca78cf",
+      "duplicate_of": "backgrounds/bg-DGb2j.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-packs/lounge-F72A5.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 253763,
+      "sha256": "cb92be8e2c0aef35671620e99c75b1c2a99b0ea8b9d6efd7adbb4a32710b2017",
+      "duplicate_of": "backgrounds/bg-F72A5.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-packs/lounge-IUUgX.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 261351,
+      "sha256": "fcb675464ebda12a54fc755d271849e9f19cf89f9cc2d5a6f6b7767810c43666",
+      "duplicate_of": "backgrounds/bg-IUUgX.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-packs/lounge-IowZk.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 243002,
+      "sha256": "cac96b1480a8d5e1c3a0dae1a61930c51e5bfdfa38d748403e4ad096992f921f",
+      "duplicate_of": "backgrounds/bg-IowZk.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-packs/lounge-N3ies.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 267097,
+      "sha256": "19db7ab6dd495a8ae6179880efcfd5405699924f573a743c8bdd69d0128f2c7c",
+      "duplicate_of": "backgrounds/bg-N3ies.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-packs/lounge-OAFac.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 243049,
+      "sha256": "1d147b14ea442f48fcbcfe5e92a28e7658f66057ef45e177b63516440486e04f",
+      "duplicate_of": "backgrounds/bg-OAFac.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-packs/lounge-U8YqN.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 215235,
+      "sha256": "4b123006c7944d395cc8816eb9f2e71c016e9b4506eccc1ae84924b5156bdd32",
+      "duplicate_of": "backgrounds/bg-U8YqN.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-packs/lounge-ZdzDG.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 254076,
+      "sha256": "e76ce0519769ffb0714608e57e9a172309231fc37988fa0b11d37b91d4ba3b4a",
+      "duplicate_of": "backgrounds/bg-ZdzDG.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-packs/lounge-jvqhV.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 248621,
+      "sha256": "98226520a7bdec48a8e1a2be63756c98c4ad94bc7777b74ba93c6dc90839721b",
+      "duplicate_of": "backgrounds/bg-jvqhV.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-packs/lounge-wDheK.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 227178,
+      "sha256": "4cc15037d6c8e4f9f0a395b5078652295d10eefc2b7d41aa05ee5a5c401d44de",
+      "duplicate_of": "backgrounds/bg-wDheK.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/lounge-packs/lounge-zxxqO.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 334202,
+      "sha256": "5e708a50372380ad59ecc8b10f5b619dc199ce5f05f346ae64263d4b0ee4cef3",
+      "duplicate_of": "backgrounds/bg-zxxqO.jpg"
+    },
+    {
+      "path": "characters/sheets/fla-packs/references/tpose-front-alt.png",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 71490,
+      "sha256": "d14e382cf22b43b48b442d5ec730ff027d9bc93e52e16af474ee73ad7b41c2dc",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/references/tpose-front.png",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 75666,
+      "sha256": "4ae29021d9d95e1c21800cda22b75bbab5cef2352ee27425b2c8f4108c78bea3",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/xray-vision/hands/xray-hand-sheet-1.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 258717,
+      "sha256": "f5cb812e0a8e0136745a78fddfe01443504d8e1cbf29552ed16ee80d9e468f37",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/xray-vision/hands/xray-hand-sheet-2.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 267049,
+      "sha256": "bc9d7b7e8c81f90edd58893abe5c6048b5dbfc562febc269d3363c45abe43228",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/xray-vision/hands/xray-hand-sheet-3.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 357975,
+      "sha256": "06364df1ed056763a692db7cdacb2308abb0be0e72ea38ab3e18b53cb3718536",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/xray-vision/heads/xray-head-sheet-1.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 234664,
+      "sha256": "0ee3761cf099b7145f4f933109d80f350d5658272bb9da1077bfed2ab931ab85",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/xray-vision/heads/xray-head-sheet-2.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 255466,
+      "sha256": "0cac8872c4ca981f107f2d55d57d7b698a84a675c451b4a30ec4ba4c8b8a74c9",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/xray-vision/heads/xray-head-sheet-3.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 234057,
+      "sha256": "035198e45098cd240b3937989192fb061d5f6e6b5dc653ff04fb760effbaf54d",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/xray-vision/heads/xray-head-sheet-4.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 285419,
+      "sha256": "5ec65f85e679e3cf9a665c5ddefbc5aa4620c2fdf17ff2ecb68f4a2181f3bc3d",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/xray-vision/heads/xray-head-sheet-5.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 256619,
+      "sha256": "9e74622c41a96aeeeaf6199fc107258ad7704a889b2139b9984eb376532a64f6",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/xray-vision/xray-fla-3quarter-back.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 347852,
+      "sha256": "750d7f78c26c9b9dc9c784743e96b0ab660d4ddb15e2dae181543611d4105c80",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/xray-vision/xray-fla-3quarter-front.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 358391,
+      "sha256": "bea0c99753d0363c4089e23c2c5fda53c984b3094df385c34f395fe78aaa90e9",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/xray-vision/xray-fla-back.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 292646,
+      "sha256": "d5fc304040aef60d3f14bc0cd5fb5854e02393a6677ecb71813870976d38ce34",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/xray-vision/xray-fla-front.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 333972,
+      "sha256": "c6bf6e6a6d3e24b7378251c564fcbde36b7d9c696b6245ffabd96e72cc388009",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/fla-packs/xray-vision/xray-turnaround.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "fla-packs",
+      "size": 325688,
+      "sha256": "efd7c725e9d6d7de24f6432468b4402c04a6e56e039f7693a87163882d6b67b8",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/layout-line-art/layout-beach-kitchen-subway-park.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "layout-line-art",
+      "size": 627406,
+      "sha256": "7003b466a1fcd89db0164a05abca175a3bc3abc712870388f07e83f2f8111c3b",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/layout-line-art/layout-bedroom-garage-mountain-hallway.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "layout-line-art",
+      "size": 398137,
+      "sha256": "1381e9d38ca4db670b0feda33341263d7d814405dc1c14d198331243e2bddc9b",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/layout-line-art/layout-rooftop-office-desert-street.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "layout-line-art",
+      "size": 423365,
+      "sha256": "00966f41e5349e7fc59765c14d7890edc6c34d83d37137eeca06a80c4102b258",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/layout-line-art/layout-urban-interior.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "layout-line-art",
+      "size": 519303,
+      "sha256": "9bc07f58c2075e80d7b2329957ae5077791fad396e86ba337e2f328828a10b11",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/layout-line-art/layout-warehouse-forest-skyline.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "layout-line-art",
+      "size": 537127,
+      "sha256": "aa1de3a5d6241c9fffa976e47bd9db968ae66f183edf43cf947c27771a5129dd",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/model-sheets/model-sheet-3quarter-back-set1.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "model-sheets",
+      "size": 195048,
+      "sha256": "a3f7e26c671eb51d1800f7237f12f3c114be25a59029e2be75406822260f261b",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/model-sheets/model-sheet-3quarter-back-set2.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "model-sheets",
+      "size": 186815,
+      "sha256": "e769150f79aedc335196750eb8ba33d929312fb265e1d62ab9ef835705ff64d8",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/model-sheets/model-sheet-3quarter-front-set2.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "model-sheets",
+      "size": 213658,
+      "sha256": "0b48c94e7ceb4e5d45dce81078d0078d5ac82e01fccca378718b083751706d78",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/model-sheets/model-sheet-back-set1.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "model-sheets",
+      "size": 183239,
+      "sha256": "2d02d28f50fc682bcde89d9a95d24b4675d18da0182173663ddb7c21995db985",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/model-sheets/model-sheet-back-set2.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "model-sheets",
+      "size": 212515,
+      "sha256": "ffe26657d6bd427651f92532709afa079b92b84854706fa583d8d63a513dd38a",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/model-sheets/model-sheet-front-set2.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "model-sheets",
+      "size": 231517,
+      "sha256": "8abcc251f562d1c5ba400c601fdb475d2b11af00cfc29869aff63974b72a281f",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/model-sheets/model-sheet-side-set2.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "model-sheets",
+      "size": 176574,
+      "sha256": "6a66a314016b867bc1077b86eb38397328602497485f392a1c7cecdcfee45068",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/prop-scale-sheets/prop-scale-electronics-furniture.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "prop-scale-sheets",
+      "size": 219818,
+      "sha256": "a676d98889322ec203a23a0842b1c78d15aeaf2fba88418aec1236576e83f5c0",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/prop-scale-sheets/prop-scale-outdoor-furniture.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "prop-scale-sheets",
+      "size": 375917,
+      "sha256": "0c7af47d11782d322bc35dfd1451e86e25d998357189b83206de548368a141aa",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-8LjQY.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 242542,
+      "sha256": "c85df3a31272c7b57c6c1d48b0bc81be93afdeb0b7fc56d767a2adc7f5a3b147",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-BBvxs.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 134528,
+      "sha256": "2099a603a018667f8118f230fba6a1dcfcfbd1e89a36f59c40f2674e31b208de",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-HeTHP.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 156654,
+      "sha256": "f6a2f554af3fc48cb832b2b09a3abc8be1e5475c31c066dfd69f827a8164ddfe",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-IApiu.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 145691,
+      "sha256": "7c7029bf3bb47024e548be1fc81ad1ed2e248b8ed90e6645a840b332b4c09edc",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-JmGUv.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 149563,
+      "sha256": "d0e120ff8901f6d4a709ea6ffc01c149ca706708436d290e781fac60dec718c0",
+      "duplicate_of": "backgrounds/batch-JmGUv.jpg"
+    },
+    {
+      "path": "characters/sheets/props/prop-Nr2it.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 149609,
+      "sha256": "12646fb3cb297389d530013454ef980880e33f064c7623139a387d65d08feb89",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-SNnYp.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 120766,
+      "sha256": "9db8729f4927808c97f9362d6deef1721ded6cb0f524a7962067f20b60306cd8",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-YAhuI.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 196271,
+      "sha256": "a56f054face9583b57c8692808cf9859e9a8e92bff80cf1fe59d7902d23693ba",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-ZG2Bt.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 220044,
+      "sha256": "895685029ac768cb8fb7d12d1b363003327955536f287f2f55c562e71dc67ea7",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-bfSpz.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 243330,
+      "sha256": "65e307ade25b0eb3932781465777f9231cf77841b6dceb8c4535feb88f081841",
+      "duplicate_of": "backgrounds/batch-bfSpz.jpg"
+    },
+    {
+      "path": "characters/sheets/props/prop-fi3j8.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 294348,
+      "sha256": "2583fb0c23d3b76a0c28194a541386f353173a83f3d05ac1fd746c057be3eee4",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-hvZmi.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 166348,
+      "sha256": "9e64183aa96ba0c8395f43b23c752189b23c17e907cd6fa4528962ac5f4a4ffb",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-izNQ9.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 178154,
+      "sha256": "98d7bb16c19e5fccfa22c7c8df75d060b6a7cb4a91122dcc6c736c975933fd02",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-jPaPG.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 145634,
+      "sha256": "5fa2c4018986388a327edacc7f04bab85d57b52e8660e49dc1a0161b36b663e5",
+      "duplicate_of": "backgrounds/batch-jPaPG.jpg"
+    },
+    {
+      "path": "characters/sheets/props/prop-luSwX.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 148385,
+      "sha256": "0cca267b344f42a2d7542d44f73fb7b3d458906683aef556a42ac794d1363f38",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-nFMhU.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 190817,
+      "sha256": "823a3e7f3a43805c8b5a10e7b12017f3beca726789ac889cac767e992323c35c",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-oCpSw.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 298989,
+      "sha256": "25afbd3fd3f35023f77dd073f585b7b9d7ac041c223eae3ca1398cc77841eb2c",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-rY6iH.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 162310,
+      "sha256": "a2ea3d239fd11335ed48ed944a2b6f0b289dfbda6770146dbd2713017f846fbd",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/props/prop-xyug7.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "props",
+      "size": 159231,
+      "sha256": "3fb67287a59b2241b7d43180ea8b09a65c1768179386d9fab7b1c9bb0a77ccfc",
+      "duplicate_of": "backgrounds/batch-xyug7.jpg"
+    },
+    {
+      "path": "characters/sheets/storyboards/storyboard-sheet-1.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "storyboards",
+      "size": 297699,
+      "sha256": "e062a4b85609bc2a8035f0ce7418b37bb667944426871d14884c8005af3af8de",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/storyboards/storyboard-sheet-2.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "storyboards",
+      "size": 418665,
+      "sha256": "8b9136c708f47fcb7e28109b5c8cac453bcc2ab3477eff09621e2dd275b14918",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/storyboards/storyboard-sheet-3.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "storyboards",
+      "size": 402461,
+      "sha256": "241bbd0b2425527bdb4ec899ace30b51e170679c20f65faea01de9cbb133ccda",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/storyboards/storyboard-sheet-4.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "storyboards",
+      "size": 420999,
+      "sha256": "713eb1d6c2912d8e388405e530053c20b52de1557aec9da742fa6796d56c7837",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/storyboards/storyboard-sheet-5.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "storyboards",
+      "size": 360895,
+      "sha256": "7f53c5659c3cc53b1defe2c5be861cfe7f8983e7b394f557cee1e8ece8c624c9",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/NOTE.md",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 247,
+      "sha256": null,
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/README.md",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 701,
+      "sha256": null,
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/6KSNq.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 357878,
+      "sha256": "12b60ede512188cb401e020728b80924c6107271ff0b6b713f2b22840a5050ca",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/6TXRQ.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 376812,
+      "sha256": "1f583868bf5c1fb4fc4bcb8b8d45b6cbb2a5396cfd0085c1f883aaea3c2fe8a8",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/9A7pl.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 319920,
+      "sha256": "7fa5234b128fa198936c941d852d345709e351d7491c6e436bcbfad3e5403c3a",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/9AuKw.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 331854,
+      "sha256": "892b7673b62234d56fb70dba34561a353d59ffa0db6858c87bd9090b3939b4f6",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/FPEeg.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 370249,
+      "sha256": "07ac32778861177d3d1d8d5eb3006895af03fcb4d4ae68e1de184b00fa4d058e",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/GCQ03.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 398182,
+      "sha256": "3af49f9af6a9ffa6635ee8caf6c700e93a6408e89c6047571ec61adeaf7ecf50",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/I2t0d.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 309395,
+      "sha256": "4d1c0bae0459bdae8711531799fc384875220d511b201b0a52dd56d0a8a2618c",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/KRuoB.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 323962,
+      "sha256": "dbc37e859d42dc894aeb90c3edb7f3d6df526a61258562948794e579cd01281e",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/Lf8uW.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 267266,
+      "sha256": "899dfa2a85ad5023e4452190351e07ca7ed9222fffa63280d76d19bf5893b2b7",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/N39Xr.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 312637,
+      "sha256": "3db2e7854347854d441893fdbb099796618d98735eb2aa55419eb6845cdae917",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/SWiWT.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 369141,
+      "sha256": "7e4d996b0ebfebeb85ae065376f6e4f2a8b7d0cabe0e9b36ca566a8619c719b1",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/T2SRf.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 321905,
+      "sha256": "cdacdc5007df3ad0bcd9bb6caa43f6bf584694c767d47fc0ebd25ab25857a397",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/TwyB6.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 357543,
+      "sha256": "362207d9d9b5db841be5bfae96ca27e12e60f53f33443b1d32552594121107e0",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/URmgB.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 308301,
+      "sha256": "ca74a177116d708d0505d134901c09ca7b80b968525955ae68df594737092415",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/V9r14.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 192316,
+      "sha256": "46eedb5f9c0ea95de66c3e0ca21cf5d226841489d6297a6d7141b3f535d68c65",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/adOmH.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 344601,
+      "sha256": "3e18266cb22cf30eba6b493401c5accc569b7197e58705ae166833c8ddc41e2e",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/aqMG1.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 257473,
+      "sha256": "74a696ee09d23814b5b9f0dfd385b703677512c3a5a4d6df7d0607f7903c493d",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/cDeSs.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 285323,
+      "sha256": "847aa9035e056d0c82922f5f172a348cbab11cff8205a8acc04d03b2bb289520",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/dAvtg.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 334976,
+      "sha256": "8576914d30bdad97673e97d4cbf2c626c5ca063add01fde4efb62159820f8c53",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/hJsrN.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 393832,
+      "sha256": "e94c07dd52df53884946280d2e61aee4f617d222cc9bc680bff05998a40b3885",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/rzhOh.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 313751,
+      "sha256": "651392cc3b388f866a355eb70031b6d9fe2ddfb7f486d80383dcec298468f578",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/sODBO.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 257508,
+      "sha256": "bd9cfe25d81efdb10bce971ab2b6d9c6a0516336622f0e6674c850ece3188948",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/tMEvT.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 287808,
+      "sha256": "8b0badbd7274decba8aaa4e0a0c3ba33b35849e97d082dcea8fb7f0e5df834c8",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/uU0ry.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 228316,
+      "sha256": "c503e21c2642a22624970de15630d8cf21ba526bf6c72c91eebf1cd068eab6a8",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/action/wZf6q.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 316582,
+      "sha256": "0e760aed6b585392a45126584847aa03c9c8d78f74aff4df1371e9dfde86e4ab",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/flying/9dc2Q.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 534585,
+      "sha256": "d68ab3bcadc2938cf0d660a48c8379a0e6534296c65fd7b7221bab8be2d9fb1c",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/flying/AKqzs.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 271815,
+      "sha256": "a79c93fda6fbd42e3a8be6aaddb568b7f6c44c9de8677cb907e5e16e623c90b1",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/flying/CgfRw.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 505428,
+      "sha256": "4151435eaa83dc5f3a585b61f3f12cb089e52b664f1e23cbbea58793a44ed0ab",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/flying/GQCnK.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 480203,
+      "sha256": "7c04fc14c3b317ff6f3fb461df8f54a8e96e86d9694017b98d55376ffacb19cd",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/flying/RbAEI.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 464956,
+      "sha256": "09ee31244d56b9e801c20737296cda7b83d7e9d7dd0d12d2f4809168ba28f021",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/flying/Thtr3.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 260116,
+      "sha256": "1084b4e7efd44588281abe25ea5026c33f0a6474b0bb74b86e2300172403f21b",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/flying/VRwDb.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 393352,
+      "sha256": "03a05cdef60e74a0ff63b3547713d8f2a0fdf78c45380abfef6e7b7349e3cbf6",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/flying/abfwV.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 474583,
+      "sha256": "874991e237c0fbb19f2b0bcca536f1320a4b8808c19804073338faf04b8c63d1",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/flying/ekuiT.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 284984,
+      "sha256": "7326afad72e11337c0ed5c619714122ce04de6d56581dbe5b8d869892ff983c6",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/flying/hGsDr.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 487513,
+      "sha256": "b20658cbc869ad67f20cea4732b601307f0c6dbee56f01cf31cd28b06c1fa523",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/flying/lQzUV.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 527954,
+      "sha256": "d52526ead6e130900f1e712b77a913b1549370674ed2d3b2fa63f03b62e47af2",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/flying/qGZGX.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 458181,
+      "sha256": "13d8728d638922044c49e80ec608959f0104d1a2ad3354bdaef7f8fb51379765",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/flying/ydJQP.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 443002,
+      "sha256": "26d81da56ed9e30f4f0ad3c7641d9e62045c3b20e304b4a6198410306fc2c30e",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/variations/references/cape-jones-tpose-front-alt.png",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 71490,
+      "sha256": "d14e382cf22b43b48b442d5ec730ff027d9bc93e52e16af474ee73ad7b41c2dc",
+      "duplicate_of": "fla-packs/references/tpose-front-alt.png"
+    },
+    {
+      "path": "characters/sheets/variations/references/cape-jones-tpose-front.png",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "variations",
+      "size": 75666,
+      "sha256": "4ae29021d9d95e1c21800cda22b75bbab5cef2352ee27425b2c8f4108c78bea3",
+      "duplicate_of": "fla-packs/references/tpose-front.png"
+    },
+    {
+      "path": "characters/sheets/viseme-charts/viseme-chart-happy-angry.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "viseme-charts",
+      "size": 443885,
+      "sha256": "8cd1e63fca9b9020882bd889625c30d60096ff3a464d8ab423ce84527e4711a9",
+      "duplicate_of": null
+    },
+    {
+      "path": "characters/sheets/viseme-charts/viseme-chart-neutral-phonemes.jpg",
+      "branch": "feature/character-parts-expansions-20261031",
+      "category": "viseme-charts",
+      "size": 286307,
+      "sha256": "4d6246fae4d62aee7ff3f918697e8354f5c9d7814d00c1e50da36f14ea576bd4",
+      "duplicate_of": null
+    }
+  ],
+  "main_rig_entries_count": 128,
+  "main_rig_entries": [
+    {
+      "path": "cape-jones-rig/sliced/Arm_Back.png",
+      "source": "main",
+      "size": 64985
+    },
+    {
+      "path": "cape-jones-rig/sliced/Arm_Front.png",
+      "source": "main",
+      "size": 66222
+    },
+    {
+      "path": "cape-jones-rig/sliced/Belt_Overlay.png",
+      "source": "main",
+      "size": 14171
+    },
+    {
+      "path": "cape-jones-rig/sliced/Cape_Back_Main.png",
+      "source": "main",
+      "size": 103706
+    },
+    {
+      "path": "cape-jones-rig/sliced/Cape_Collar.png",
+      "source": "main",
+      "size": 37365
+    },
+    {
+      "path": "cape-jones-rig/sliced/Eye_White_L.png",
+      "source": "main",
+      "size": 5023
+    },
+    {
+      "path": "cape-jones-rig/sliced/Eye_White_R.png",
+      "source": "main",
+      "size": 4979
+    },
+    {
+      "path": "cape-jones-rig/sliced/Eyes_AngryStrip.png",
+      "source": "main",
+      "size": 29373
+    },
+    {
+      "path": "cape-jones-rig/sliced/Face_Angry.png",
+      "source": "main",
+      "size": 14494
+    },
+    {
+      "path": "cape-jones-rig/sliced/Hand_1_Fist.png",
+      "source": "main",
+      "size": 17091
+    },
+    {
+      "path": "cape-jones-rig/sliced/Hand_2_FistBack.png",
+      "source": "main",
+      "size": 13314
+    },
+    {
+      "path": "cape-jones-rig/sliced/Hand_3_Open.png",
+      "source": "main",
+      "size": 17648
+    },
+    {
+      "path": "cape-jones-rig/sliced/Hand_4_Point.png",
+      "source": "main",
+      "size": 13423
+    },
+    {
+      "path": "cape-jones-rig/sliced/Hand_5_Point2.png",
+      "source": "main",
+      "size": 19231
+    },
+    {
+      "path": "cape-jones-rig/sliced/Hand_6_Relaxed.png",
+      "source": "main",
+      "size": 16704
+    },
+    {
+      "path": "cape-jones-rig/sliced/Hand_7_Grip.png",
+      "source": "main",
+      "size": 14869
+    },
+    {
+      "path": "cape-jones-rig/sliced/Head_Front.png",
+      "source": "main",
+      "size": 28980
+    },
+    {
+      "path": "cape-jones-rig/sliced/Head_Profile.png",
+      "source": "main",
+      "size": 46882
+    },
+    {
+      "path": "cape-jones-rig/sliced/Leg_Back.png",
+      "source": "main",
+      "size": 73433
+    },
+    {
+      "path": "cape-jones-rig/sliced/Leg_Back_CLEAN.png",
+      "source": "main",
+      "size": 90011
+    },
+    {
+      "path": "cape-jones-rig/sliced/Leg_Back_GRAFTED.png",
+      "source": "main",
+      "size": 71806
+    },
+    {
+      "path": "cape-jones-rig/sliced/Leg_Front.png",
+      "source": "main",
+      "size": 68771
+    },
+    {
+      "path": "cape-jones-rig/sliced/Leg_Front_CLEAN.png",
+      "source": "main",
+      "size": 88559
+    },
+    {
+      "path": "cape-jones-rig/sliced/MANIFEST.json",
+      "source": "main",
+      "size": 3150
+    },
+    {
+      "path": "cape-jones-rig/sliced/Mouth_Closed.png",
+      "source": "main",
+      "size": 9374
+    },
+    {
+      "path": "cape-jones-rig/sliced/Mouth_Open.png",
+      "source": "main",
+      "size": 16814
+    },
+    {
+      "path": "cape-jones-rig/sliced/Mouth_Shout.png",
+      "source": "main",
+      "size": 13150
+    },
+    {
+      "path": "cape-jones-rig/sliced/Mouth_Smile.png",
+      "source": "main",
+      "size": 10284
+    },
+    {
+      "path": "cape-jones-rig/sliced/Mouth_Teeth.png",
+      "source": "main",
+      "size": 10260
+    },
+    {
+      "path": "cape-jones-rig/sliced/Neck.png",
+      "source": "main",
+      "size": 9198
+    },
+    {
+      "path": "cape-jones-rig/sliced/Pelvis.png",
+      "source": "main",
+      "size": 23605
+    },
+    {
+      "path": "cape-jones-rig/sliced/Torso_Chest.png",
+      "source": "main",
+      "size": 92771
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Gauntlet_1.png",
+      "source": "main",
+      "size": 42551
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Gauntlet_2.png",
+      "source": "main",
+      "size": 55734
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Gauntlet_3.png",
+      "source": "main",
+      "size": 42942
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Gauntlet_4.png",
+      "source": "main",
+      "size": 42419
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Gauntlet_5.png",
+      "source": "main",
+      "size": 52788
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Gauntlet_6.png",
+      "source": "main",
+      "size": 44429
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Hand_1.png",
+      "source": "main",
+      "size": 23934
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Hand_10.png",
+      "source": "main",
+      "size": 25834
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Hand_11.png",
+      "source": "main",
+      "size": 21908
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Hand_12.png",
+      "source": "main",
+      "size": 33024
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Hand_13.png",
+      "source": "main",
+      "size": 45184
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Hand_2.png",
+      "source": "main",
+      "size": 17684
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Hand_3.png",
+      "source": "main",
+      "size": 19737
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Hand_4.png",
+      "source": "main",
+      "size": 28748
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Hand_5.png",
+      "source": "main",
+      "size": 25783
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Hand_6.png",
+      "source": "main",
+      "size": 23219
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Hand_7.png",
+      "source": "main",
+      "size": 24167
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Hand_8.png",
+      "source": "main",
+      "size": 27385
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/Hand_9.png",
+      "source": "main",
+      "size": 31048
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/MANIFEST.json",
+      "source": "main",
+      "size": 4506
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/UpperArm_1.png",
+      "source": "main",
+      "size": 48760
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/UpperArm_2.png",
+      "source": "main",
+      "size": 71559
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/UpperArm_3.png",
+      "source": "main",
+      "size": 49917
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/UpperArm_4.png",
+      "source": "main",
+      "size": 84774
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/UpperArm_5.png",
+      "source": "main",
+      "size": 63438
+    },
+    {
+      "path": "cape-jones-rig/pack1-clean/UpperArm_6.png",
+      "source": "main",
+      "size": 63696
+    },
+    {
+      "path": "cape-jones-rig/cut-limbs/Arm_Back_Lower.png",
+      "source": "main",
+      "size": 30982
+    },
+    {
+      "path": "cape-jones-rig/cut-limbs/Arm_Back_Upper.png",
+      "source": "main",
+      "size": 42127
+    },
+    {
+      "path": "cape-jones-rig/cut-limbs/Arm_Front_Lower.png",
+      "source": "main",
+      "size": 31924
+    },
+    {
+      "path": "cape-jones-rig/cut-limbs/Arm_Front_Upper.png",
+      "source": "main",
+      "size": 42852
+    },
+    {
+      "path": "cape-jones-rig/cut-limbs/Leg_Back_Lower.png",
+      "source": "main",
+      "size": 36967
+    },
+    {
+      "path": "cape-jones-rig/cut-limbs/Leg_Back_Upper.png",
+      "source": "main",
+      "size": 47926
+    },
+    {
+      "path": "cape-jones-rig/cut-limbs/Leg_Front_Lower.png",
+      "source": "main",
+      "size": 37474
+    },
+    {
+      "path": "cape-jones-rig/cut-limbs/Leg_Front_Upper.png",
+      "source": "main",
+      "size": 41947
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-apose-v3-20261031.png",
+      "source": "main",
+      "size": 425396
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-apose-v4-20261031.png",
+      "source": "main",
+      "size": 432919
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-apose-v5-20261031.png",
+      "source": "main",
+      "size": 432611
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-apose-v6-20261031.png",
+      "source": "main",
+      "size": 433580
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-dance-v3-20261031.png",
+      "source": "main",
+      "size": 462139
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-dance-v4-20261031.png",
+      "source": "main",
+      "size": 462247
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-dance-v5-20261031.png",
+      "source": "main",
+      "size": 455102
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-dance-v6-20261031.png",
+      "source": "main",
+      "size": 458124
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-flex-v3-20261031.png",
+      "source": "main",
+      "size": 405948
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-flex-v4-20261031.png",
+      "source": "main",
+      "size": 413318
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-flex-v5-20261031.png",
+      "source": "main",
+      "size": 407093
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-flex-v6-20261031.png",
+      "source": "main",
+      "size": 408055
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-jump-v3-20261031.png",
+      "source": "main",
+      "size": 464409
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-jump-v4-20261031.png",
+      "source": "main",
+      "size": 461408
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-jump-v5-20261031.png",
+      "source": "main",
+      "size": 454026
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-jump-v6-20261031.png",
+      "source": "main",
+      "size": 455311
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-punch-v3-20261031.png",
+      "source": "main",
+      "size": 442681
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-punch-v4-20261031.png",
+      "source": "main",
+      "size": 442911
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-punch-v5-20261031.png",
+      "source": "main",
+      "size": 440588
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-punch-v6-20261031.png",
+      "source": "main",
+      "size": 443605
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-seated-v3-20261031.png",
+      "source": "main",
+      "size": 411172
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-seated-v4-20261031.png",
+      "source": "main",
+      "size": 435468
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-seated-v5-20261031.png",
+      "source": "main",
+      "size": 440186
+    },
+    {
+      "path": "cape-jones-rig/reposes/joint-seated-v6-20261031.png",
+      "source": "main",
+      "size": 443572
+    },
+    {
+      "path": "cape-jones-rig/reposes/repose-apose-v1-20261031.png",
+      "source": "main",
+      "size": 418455
+    },
+    {
+      "path": "cape-jones-rig/reposes/repose-armsup-v1-20261031.png",
+      "source": "main",
+      "size": 439002
+    },
+    {
+      "path": "cape-jones-rig/reposes/repose-dance-v1-20261031.png",
+      "source": "main",
+      "size": 434544
+    },
+    {
+      "path": "cape-jones-rig/reposes/repose-flex-v1-20261031.png",
+      "source": "main",
+      "size": 446446
+    },
+    {
+      "path": "cape-jones-rig/reposes/repose-flex-v2-20261031.png",
+      "source": "main",
+      "size": 388108
+    },
+    {
+      "path": "cape-jones-rig/reposes/repose-jump-v1-20261031.png",
+      "source": "main",
+      "size": 416523
+    },
+    {
+      "path": "cape-jones-rig/reposes/repose-lounge-v1-20261031.png",
+      "source": "main",
+      "size": 441147
+    },
+    {
+      "path": "cape-jones-rig/reposes/repose-punch-v1-20261031.png",
+      "source": "main",
+      "size": 428073
+    },
+    {
+      "path": "cape-jones-rig/clips/dance/dance-01-dance-a.png",
+      "source": "main",
+      "size": 451406
+    },
+    {
+      "path": "cape-jones-rig/clips/dance/dance-13-dance-b.png",
+      "source": "main",
+      "size": 429665
+    },
+    {
+      "path": "cape-jones-rig/clips/dance/dance-25-dance-a-repeat.png",
+      "source": "main",
+      "size": 451406
+    },
+    {
+      "path": "cape-jones-rig/clips/dance-clip.json",
+      "source": "main",
+      "size": 1163
+    },
+    {
+      "path": "cape-jones-rig/clips/flex/flex-01-apose.png",
+      "source": "main",
+      "size": 435908
+    },
+    {
+      "path": "cape-jones-rig/clips/flex/flex-07-flex-hold.png",
+      "source": "main",
+      "size": 405203
+    },
+    {
+      "path": "cape-jones-rig/clips/flex/flex-31-apose.png",
+      "source": "main",
+      "size": 435908
+    },
+    {
+      "path": "cape-jones-rig/clips/flex-clip.json",
+      "source": "main",
+      "size": 1146
+    },
+    {
+      "path": "cape-jones-rig/clips/flying/flying-01-hovering.png",
+      "source": "main",
+      "size": 432936
+    },
+    {
+      "path": "cape-jones-rig/clips/flying/flying-13-soaring-arms-out.png",
+      "source": "main",
+      "size": 422952
+    },
+    {
+      "path": "cape-jones-rig/clips/flying/flying-25-diving-arms-up.png",
+      "source": "main",
+      "size": 452242
+    },
+    {
+      "path": "cape-jones-rig/clips/flying/flying-37-hovering.png",
+      "source": "main",
+      "size": 432936
+    },
+    {
+      "path": "cape-jones-rig/clips/flying-clip.json",
+      "source": "main",
+      "size": 1427
+    },
+    {
+      "path": "cape-jones-rig/clips/frame-proof-manifest.json",
+      "source": "main",
+      "size": 2586
+    },
+    {
+      "path": "cape-jones-rig/clips/jump/jump-01-crouch.png",
+      "source": "main",
+      "size": 438705
+    },
+    {
+      "path": "cape-jones-rig/clips/jump/jump-07-takeoff-arms-whole-up.png",
+      "source": "main",
+      "size": 455391
+    },
+    {
+      "path": "cape-jones-rig/clips/jump/jump-13-tuck-in.png",
+      "source": "main",
+      "size": 461408
+    },
+    {
+      "path": "cape-jones-rig/clips/jump/jump-25-land-apose.png",
+      "source": "main",
+      "size": 430514
+    },
+    {
+      "path": "cape-jones-rig/clips/jump-clip.json",
+      "source": "main",
+      "size": 753
+    },
+    {
+      "path": "cape-jones-rig/clips/punch/punch-01-windup.png",
+      "source": "main",
+      "size": 421536
+    },
+    {
+      "path": "cape-jones-rig/clips/punch/punch-07-extend-snap.png",
+      "source": "main",
+      "size": 423594
+    },
+    {
+      "path": "cape-jones-rig/clips/punch/punch-09-impact-hold.png",
+      "source": "main",
+      "size": 423594
+    },
+    {
+      "path": "cape-jones-rig/clips/punch/punch-21-recover-apose.png",
+      "source": "main",
+      "size": 435908
+    },
+    {
+      "path": "cape-jones-rig/clips/punch-clip.json",
+      "source": "main",
+      "size": 1432
+    },
+    {
+      "path": "cape-jones-rig/clips/shot-spec.yaml",
+      "source": "main",
+      "size": 2042
+    },
+    {
+      "path": "cape-jones-rig/clips/walk/walk-01-contact-leg1-forward.png",
+      "source": "main",
+      "size": 435678
+    },
+    {
+      "path": "cape-jones-rig/clips/walk/walk-13-passing-legs-together.png",
+      "source": "main",
+      "size": 431843
+    },
+    {
+      "path": "cape-jones-rig/clips/walk/walk-25-contact-leg2-forward.png",
+      "source": "main",
+      "size": 416696
+    },
+    {
+      "path": "cape-jones-rig/clips/walk/walk-37-passing-legs-together.png",
+      "source": "main",
+      "size": 431843
+    },
+    {
+      "path": "cape-jones-rig/clips/walk-clip.json",
+      "source": "main",
+      "size": 1479
+    }
+  ]
+}

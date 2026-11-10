@@ -1,0 +1,334 @@
+{
+  "format": "cjstage",
+  "format_version": 1,
+  "tool": "Cape Jones Toon (own version, interoperable, NOT Toon Boom)",
+  "stage": {
+    "width": 1400,
+    "height": 1600,
+    "ground_y": 1475,
+    "fps": 24
+  },
+  "source_pose": "ORIGINAL DEFAULT SITTING POSE, AUTHORED BY MARS HIMSELF",
+  "source_layout": "01:06 CST 2026-11-01 saved widget layout, 18 pieces + neck = 19 nodes",
+  "nodes": [
+    {
+      "z": 0.0,
+      "piece_id": "cape",
+      "drawing_node": "Cape",
+      "peg_node": "Cape-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.5,
+      "saved_x": 360.0,
+      "saved_y": 330.0,
+      "saved_rotation": 0.0,
+      "chain_note": "backmost, shoulders-back, collar fused in torso"
+    },
+    {
+      "z": 1.0,
+      "piece_id": "upperArmL",
+      "drawing_node": "Arm1-Upper",
+      "peg_node": "Arm1-Upper-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.0,
+      "saved_x": 490.0,
+      "saved_y": 390.0,
+      "saved_rotation": 5.0,
+      "chain_note": "LEFT arm, behind torso"
+    },
+    {
+      "z": 2.0,
+      "piece_id": "thighR",
+      "drawing_node": "Leg2-Thigh",
+      "peg_node": "Leg2-Thigh-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.0,
+      "saved_x": 590.0,
+      "saved_y": 750.0,
+      "saved_rotation": 6.0,
+      "chain_note": "RIGHT leg"
+    },
+    {
+      "z": 3.0,
+      "piece_id": "thighL",
+      "drawing_node": "Leg1-Thigh",
+      "peg_node": "Leg1-Thigh-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.0,
+      "saved_x": 400.0,
+      "saved_y": 710.0,
+      "saved_rotation": 2.0,
+      "chain_note": "LEFT leg"
+    },
+    {
+      "z": 4.0,
+      "piece_id": "forearmL",
+      "drawing_node": "Arm1-Forearm",
+      "peg_node": "Arm1-Forearm-P",
+      "pivot_ox": 0.39,
+      "pivot_oy": 0.11,
+      "saved_x": 455.0,
+      "saved_y": 580.0,
+      "saved_rotation": -15.0,
+      "chain_note": "LEFT forearm, whole, fist attached"
+    },
+    {
+      "z": 4.0,
+      "piece_id": "pelvis",
+      "drawing_node": "Pelvis",
+      "peg_node": "Pelvis-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.5,
+      "saved_x": 565.0,
+      "saved_y": 650.0,
+      "saved_rotation": 0.0,
+      "chain_note": "ASSUMED centre pivot \u2014 verify in-app"
+    },
+    {
+      "z": 4.0,
+      "piece_id": "kneeL",
+      "drawing_node": "Leg1-Knee",
+      "peg_node": "Leg1-Knee-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.5,
+      "saved_x": 380.0,
+      "saved_y": 885.0,
+      "saved_rotation": 0.0,
+      "chain_note": "knee pivot, NOT a secondary knee"
+    },
+    {
+      "z": 5.0,
+      "piece_id": "elbowCapL",
+      "drawing_node": "Arm1-ElbowCap",
+      "peg_node": "Arm1-ElbowCap-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.5,
+      "saved_x": 465.0,
+      "saved_y": 580.0,
+      "saved_rotation": 0.0,
+      "chain_note": "LEFT elbow cap"
+    },
+    {
+      "z": 6.0,
+      "piece_id": "shinL",
+      "drawing_node": "Leg1-Shin",
+      "peg_node": "Leg1-Shin-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.0,
+      "saved_x": 225.0,
+      "saved_y": 945.0,
+      "saved_rotation": 0.0,
+      "chain_note": "LEFT shin"
+    },
+    {
+      "z": 6.0,
+      "piece_id": "shinR",
+      "drawing_node": "Leg2-Shin",
+      "peg_node": "Leg2-Shin-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.0,
+      "saved_x": 395.0,
+      "saved_y": 985.0,
+      "saved_rotation": -10.0,
+      "chain_note": "RIGHT shin"
+    },
+    {
+      "z": 7.0,
+      "piece_id": "kneeR",
+      "drawing_node": "Leg2-Knee",
+      "peg_node": "Leg2-Knee-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.5,
+      "saved_x": 560.0,
+      "saved_y": 950.0,
+      "saved_rotation": 0.0,
+      "chain_note": "knee pivot"
+    },
+    {
+      "z": 8.0,
+      "piece_id": "torso",
+      "drawing_node": "Torso",
+      "peg_node": "Torso-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.0,
+      "saved_x": 550.0,
+      "saved_y": 370.0,
+      "saved_rotation": 0.0,
+      "chain_note": "collar fused, locked"
+    },
+    {
+      "z": 8.5,
+      "piece_id": "neck",
+      "drawing_node": "Neck",
+      "peg_node": "Neck-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.5,
+      "saved_x": 650.0,
+      "saved_y": 330.0,
+      "saved_rotation": 0.0,
+      "chain_note": "front-view neck, 101x82 rendered, 1.05x, NOT squashed"
+    },
+    {
+      "z": 9.0,
+      "piece_id": "head",
+      "drawing_node": "Head",
+      "peg_node": "Head-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.5,
+      "saved_x": 635.0,
+      "saved_y": 195.0,
+      "saved_rotation": 0.0,
+      "chain_note": "ASSUMED centre pivot \u2014 verify in-app"
+    },
+    {
+      "z": 10.0,
+      "piece_id": "upperArmR",
+      "drawing_node": "Arm2-Upper",
+      "peg_node": "Arm2-Upper-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.0,
+      "saved_x": 805.0,
+      "saved_y": 420.0,
+      "saved_rotation": 15.0,
+      "chain_note": "RIGHT arm, PERFECT, do not move"
+    },
+    {
+      "z": 11.0,
+      "piece_id": "forearmR",
+      "drawing_node": "Arm2-Forearm",
+      "peg_node": "Arm2-Forearm-P",
+      "pivot_ox": 0.63,
+      "pivot_oy": 0.11,
+      "saved_x": 685.0,
+      "saved_y": 650.0,
+      "saved_rotation": 45.0,
+      "chain_note": "RIGHT forearm, whole, fist attached"
+    },
+    {
+      "z": 12.0,
+      "piece_id": "elbowCapR",
+      "drawing_node": "Arm2-ElbowCap",
+      "peg_node": "Arm2-ElbowCap-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.5,
+      "saved_x": 775.0,
+      "saved_y": 610.0,
+      "saved_rotation": 0.0,
+      "chain_note": "RIGHT elbow cap"
+    },
+    {
+      "z": 13.0,
+      "piece_id": "handL",
+      "drawing_node": "Arm1-Hand",
+      "peg_node": "Arm1-Hand-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.5,
+      "saved_x": 530.0,
+      "saved_y": 740.0,
+      "saved_rotation": -46.0,
+      "chain_note": "LEFT hand, as-is, thumb east"
+    },
+    {
+      "z": 13.0,
+      "piece_id": "handR",
+      "drawing_node": "Arm2-Hand",
+      "peg_node": "Arm2-Hand-P",
+      "pivot_ox": 0.5,
+      "pivot_oy": 0.5,
+      "saved_x": 565.0,
+      "saved_y": 755.0,
+      "saved_rotation": 70.0,
+      "chain_note": "RIGHT hand, mirrored whole, thumb west"
+    }
+  ],
+  "chains": {
+    "arm1": [
+      "upperArmL",
+      "forearmL",
+      "handL"
+    ],
+    "arm2": [
+      "upperArmR",
+      "forearmR",
+      "handR"
+    ],
+    "leg1": [
+      "thighL",
+      "kneeL",
+      "shinL"
+    ],
+    "leg2": [
+      "thighR",
+      "kneeR",
+      "shinR"
+    ],
+    "spine": [
+      "pelvis",
+      "torso",
+      "neck",
+      "head"
+    ],
+    "cape": [
+      "cape"
+    ]
+  },
+  "palette": [
+    {
+      "name": "Cape_Outer_Black",
+      "r": "0",
+      "g": "0",
+      "b": "0",
+      "role": "outer cape, PMS BLACK"
+    },
+    {
+      "name": "Cape_Inner_Yellow",
+      "r": "255",
+      "g": "225",
+      "b": "82",
+      "role": "inner cape, PMS 115c"
+    },
+    {
+      "name": "Eyes_White",
+      "r": "255",
+      "g": "255",
+      "b": "255",
+      "role": "eyes, WHITE"
+    },
+    {
+      "name": "Suit_Green_336c",
+      "r": "0",
+      "g": "105",
+      "b": "80",
+      "role": "shirt/gloves/pants, PMS 336c (approx RGB; verify in-app)"
+    },
+    {
+      "name": "Shadow_Purple",
+      "r": "52",
+      "g": "22",
+      "b": "90",
+      "role": "coloured shadow, separate effect, NOT a rig"
+    },
+    {
+      "name": "Rim_Warm_Amber",
+      "r": "255",
+      "g": "180",
+      "b": "80",
+      "role": "rim default, L2 warm"
+    },
+    {
+      "name": "Rim_Bleed_Orange",
+      "r": "255",
+      "g": "120",
+      "b": "0",
+      "role": "bleed, L2 warm"
+    }
+  ],
+  "rules": [
+    "Whole pieces only: no square/rectangular crop, no split, no erase.",
+    "Rotation about peg pivot, never in-place inside a piece rectangle.",
+    "Joints locked together (FK chains), NOT frozen in space.",
+    "Real inbetweening = smoothstep key interpolation, NOT crossfade.",
+    "Ground reported, never shifted to fake planting.",
+    "Arm1 = LEFT behind torso, Arm2 = RIGHT in front, perfect, do not move.",
+    "Cape backmost, collar fused in torso, NOT moved/redrawn/invented."
+  ]
+}

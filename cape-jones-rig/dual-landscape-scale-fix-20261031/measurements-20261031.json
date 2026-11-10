@@ -1,0 +1,113 @@
+{
+  "room_background": "STAND-IN batch-KKGuh, NOT canonical",
+  "lock": "2.5x standing, rig 950px, feet on floor, seated 2.3x; 3.0x is a CANDIDATE (2.5+0.5), not confirmed as lock",
+  "revert_measured": {
+    "reverted_landscape_figure_bbox": [
+      754,
+      269,
+      1167,
+      924
+    ],
+    "reverted_landscape_figure_height": 655,
+    "master_figure_height": 1165,
+    "absolute_shrink_px": 510,
+    "absolute_shrink_pct": -43.8,
+    "figure_scale_vs_source_master": 0.562,
+    "room_scale_landscape_vs_master": 0.671,
+    "figure_to_room_ratio_change": -16.2,
+    "chair_height_landscape_est": 549,
+    "figure_to_chair_ratio_reverted": 1.193,
+    "figure_to_chair_ratio_master": 1.424,
+    "cause": "Fresh 1080-height composition: figure set to 60.7% of 1080 (655px) while room was cover-scaled 1.644 vs master 2.449. Figure and room were NOT scaled together in scene terms; the % -of-frame argument hid a scene-scale revert.",
+    "verdict": "REJECTED, approval 0/1, do not reuse as a delivery"
+  },
+  "whole_figure_fit": {
+    "2.5x_scene_height": 1165,
+    "2.5x_excess_over_1080": 85,
+    "3.0x_scene_height": 1398,
+    "3.0x_excess_over_1080": 318,
+    "master_centre_crop_cut": "head 35px (385->420), feet 50px (1550->1500)"
+  },
+  "chair_back_at_waist": {
+    "chair_back_top_scene": 700,
+    "waist_master": 1002,
+    "diff_px": 302,
+    "forcing_height_px": 1809,
+    "forcing_head_y": -161,
+    "check": "WARNING - contradiction in this KKGuh arms-up crop, never faked as PASS"
+  },
+  "versions": {
+    "2.5x_lock": {
+      "file": "landscape-locked-2p5x-1920x1080-20261031.png",
+      "scale_label": "2.5x lock",
+      "scene_figure_bbox": [
+        1063,
+        385,
+        1797,
+        1550
+      ],
+      "scene_figure_height": 1165,
+      "scene_figure_width": 734,
+      "scene_feet_y": 1550,
+      "scene_head_y": 385,
+      "pullback_window_scene": [
+        324,
+        345,
+        2537,
+        1590
+      ],
+      "pullback_factor": 0.8676,
+      "final_figure_bbox": [
+        641,
+        35,
+        1278,
+        1045
+      ],
+      "final_figure_height": 1010,
+      "final_figure_width": 637,
+      "final_feet_y": 1045,
+      "final_head_y": 35,
+      "final_head_margin": 35,
+      "final_feet_margin": 35,
+      "chair_height_final": 709.7,
+      "figure_to_chair_ratio": 1.423,
+      "whole": true
+    },
+    "3.0x_candidate": {
+      "file": "landscape-up0p5-3p0x-1920x1080-20261031.png",
+      "scale_label": "3.0x candidate (2.5+0.5, NOT confirmed as lock)",
+      "scene_figure_bbox": [
+        990,
+        152,
+        1871,
+        1550
+      ],
+      "scene_figure_height": 1398,
+      "scene_figure_width": 881,
+      "scene_feet_y": 1550,
+      "scene_head_y": 152,
+      "pullback_window_scene": [
+        116,
+        112,
+        2744,
+        1590
+      ],
+      "pullback_factor": 0.7306,
+      "final_figure_bbox": [
+        639,
+        29,
+        1282,
+        1051
+      ],
+      "final_figure_height": 1022,
+      "final_figure_width": 643,
+      "final_feet_y": 1051,
+      "final_head_y": 29,
+      "final_head_margin": 29,
+      "final_feet_margin": 29,
+      "chair_height_final": 597.6,
+      "figure_to_chair_ratio": 1.71,
+      "whole": true
+    }
+  }
+}

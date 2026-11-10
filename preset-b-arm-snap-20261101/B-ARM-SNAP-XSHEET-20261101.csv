@@ -1,0 +1,165 @@
+output_frame,output_time_s,segment,segment_frame,kind,from,to,snap_L,snap_R,snap_L_px,snap_R_px,chest_top,face_top,arm_upper_L,arm_upper_R,arm_lower_L,arm_lower_R
+0,0.0,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+1,0.0417,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+2,0.0833,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+3,0.125,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+4,0.1667,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+5,0.2083,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+6,0.25,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+7,0.2917,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+8,0.3333,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+9,0.375,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+10,0.4167,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+11,0.4583,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+12,0.5,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+13,0.5417,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+14,0.5833,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+15,0.625,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+16,0.6667,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+17,0.7083,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+18,0.75,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+19,0.7917,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+20,0.8333,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+21,0.875,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+22,0.9167,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+23,0.9583,stand,0,"frozen stand, first move frame",apose,apose,False,False,0,0,,,0,0,0,0
+24,1.0,punch,0,KEY hold,apose,apose,False,False,0,0,,,0,0,0,0
+25,1.0417,punch,1,KEY hold,apose,apose,False,False,0,0,,,0,0,0,0
+26,1.0833,punch,2,KEY hold,apose,apose,False,False,0,0,,,0,0,0,0
+27,1.125,punch,3,inbetween,apose,punch windup,False,False,0,0,,,-0.3125,0.3125,0.46875,-0.46875
+28,1.1667,punch,4,inbetween,apose,punch windup,False,False,0,0,,,-2.5,2.5,3.75,-3.75
+29,1.2083,punch,5,BREAKDOWN arc +10deg largest-moving arm upper,apose,punch windup,False,False,0,0,,,-18.4375,8.4375,12.65625,-12.65625
+30,1.25,punch,6,inbetween,apose,punch windup,False,False,0,0,,,-20.0,20.0,30.0,-30.0
+31,1.2917,punch,7,BREAKDOWN follow-through +8deg that arm lower,apose,punch windup,True,False,2488,0,L,,-31.5625,31.5625,55.34375,-47.34375
+32,1.3333,punch,8,inbetween,apose,punch windup,True,True,3202,1586,"L,R",,-37.5,37.5,56.25,-56.25
+33,1.375,punch,9,inbetween,apose,punch windup,True,True,4646,2841,"L,R",,-39.6875,39.6875,59.53125,-59.53125
+34,1.4167,punch,10,KEY hold,punch windup,punch windup,True,True,4904,3081,"L,R",,-40,40,60,-60
+35,1.4583,punch,11,KEY hold,punch windup,punch windup,True,True,4904,3081,"L,R",,-40,40,60,-60
+36,1.5,punch,12,KEY hold,punch windup,punch windup,True,True,4904,3081,"L,R",,-40,40,60,-60
+37,1.5417,punch,13,KEY hold,punch windup,punch windup,True,True,4904,3081,"L,R",,-40,40,60,-60
+38,1.5833,punch,14,KEY hold,punch windup,punch windup,True,True,4904,3081,"L,R",,-40,40,60,-60
+39,1.625,punch,15,inbetween,punch windup,punch extend/snap,True,True,4760,3187,"L,R",,-40.9375,39.84375,59.53125,-60.390625
+40,1.6667,punch,16,inbetween,punch windup,punch extend/snap,True,True,3777,4054,"L,R",,-47.5,38.75,56.25,-63.125
+41,1.7083,punch,17,BREAKDOWN arc +10deg largest-moving arm upper,punch windup,punch extend/snap,True,True,1002,6459,"L,R",,-75.3125,35.78125,47.34375,-70.546875
+42,1.75,punch,18,inbetween,punch windup,punch extend/snap,False,True,0,8769,R,,-100.0,30.0,30.0,-85.0
+43,1.7917,punch,19,BREAKDOWN follow-through +8deg that arm lower,punch windup,punch extend/snap,False,True,0,10855,R,,-134.6875,24.21875,4.65625,-99.453125
+44,1.8333,punch,20,inbetween,punch windup,punch extend/snap,True,True,1437,11756,"L,R",,-152.5,21.25,3.75,-106.875
+45,1.875,punch,21,inbetween,punch windup,punch extend/snap,True,True,2249,11980,"L,R",,-159.0625,20.15625,0.46875,-109.609375
+46,1.9167,punch,22,KEY hold,punch extend/snap,punch extend/snap,True,True,2270,12012,"L,R",,-160,20,0,-110
+47,1.9583,punch,23,KEY hold,punch extend/snap,punch extend/snap,True,True,2270,12012,"L,R",,-160,20,0,-110
+48,2.0,punch,24,KEY hold,punch extend/snap,punch extend/snap,True,True,2270,12012,"L,R",,-160,20,0,-110
+49,2.0417,punch,25,KEY hold,punch extend/snap,punch extend/snap,True,True,2270,12012,"L,R",,-160,20,0,-110
+50,2.0833,punch,26,KEY hold,punch extend/snap,punch extend/snap,True,True,2270,12012,"L,R",,-160,20,0,-110
+51,2.125,punch,27,inbetween,punch extend/snap,punch impact locked,True,True,2166,12012,"L,R",,-159.609375,20.0,0.078125,-110.0
+52,2.1667,punch,28,inbetween,punch extend/snap,punch impact locked,True,True,1538,12012,"L,R",,-156.875,20.0,0.625,-110.0
+53,2.2083,punch,29,BREAKDOWN arc +10deg largest-moving arm upper,punch extend/snap,punch impact locked,False,True,0,12012,R,,-139.453125,20.0,2.109375,-110.0
+54,2.25,punch,30,inbetween,punch extend/snap,punch impact locked,False,True,0,12012,R,,-135.0,20.0,5.0,-110.0
+55,2.2917,punch,31,BREAKDOWN follow-through +8deg that arm lower,punch extend/snap,punch impact locked,False,True,0,12012,R,,-120.546875,20.0,15.890625,-110.0
+56,2.3333,punch,32,inbetween,punch extend/snap,punch impact locked,False,True,0,12012,R,,-113.125,20.0,9.375,-110.0
+57,2.375,punch,33,inbetween,punch extend/snap,punch impact locked,False,True,0,12012,R,,-110.390625,20.0,9.921875,-110.0
+58,2.4167,punch,34,KEY hold,punch impact locked,punch impact locked,False,True,0,12012,R,,-110,20,10,-110
+59,2.4583,punch,35,KEY hold,punch impact locked,punch impact locked,False,True,0,12012,R,,-110,20,10,-110
+60,2.5,punch,36,KEY hold,punch impact locked,punch impact locked,False,True,0,12012,R,,-110,20,10,-110
+61,2.5417,punch,37,KEY hold,punch impact locked,punch impact locked,False,True,0,12012,R,,-110,20,10,-110
+62,2.5833,punch,38,KEY hold,punch impact locked,punch impact locked,False,True,0,12012,R,,-110,20,10,-110
+63,2.625,punch,39,inbetween,punch impact locked,punch recover / fight,False,True,0,12007,R,,-109.6484375,20.3515625,11.015625,-110.234375
+64,2.6667,punch,40,inbetween,punch impact locked,punch recover / fight,False,True,0,11665,R,,-107.1875,22.8125,18.125,-111.875
+65,2.7083,punch,41,BREAKDOWN arc +10deg largest-moving arm upper,punch impact locked,punch recover / fight,False,True,101,10769,R,,-90.5078125,29.4921875,37.421875,-116.328125
+66,2.75,punch,42,inbetween,punch impact locked,punch recover / fight,True,True,6681,7107,"L,R",,-87.5,42.5,75.0,-125.0
+67,2.7917,punch,43,BREAKDOWN follow-through +8deg that arm lower,punch impact locked,punch recover / fight,False,False,1,642,,,-74.4921875,55.5078125,120.578125,-133.671875
+68,2.8333,punch,44,inbetween,punch impact locked,punch recover / fight,False,False,0,0,,,-67.8125,62.1875,131.875,-138.125
+69,2.875,punch,45,inbetween,punch impact locked,punch recover / fight,False,False,0,0,,,-65.3515625,64.6484375,138.984375,-139.765625
+70,2.9167,punch,46,KEY hold,punch recover / fight,punch recover / fight,False,False,0,0,,,-65,65,140,-140
+71,2.9583,punch,47,KEY hold,punch recover / fight,punch recover / fight,False,False,0,0,,,-65,65,140,-140
+72,3.0,punch,48,KEY hold,punch recover / fight,punch recover / fight,False,False,0,0,,,-65,65,140,-140
+73,3.0417,punch,49,KEY hold,punch recover / fight,punch recover / fight,False,False,0,0,,,-65,65,140,-140
+74,3.0833,punch,50,KEY hold,punch recover / fight,punch recover / fight,False,False,0,0,,,-65,65,140,-140
+75,3.125,punch,51,inbetween,punch recover / fight,punch across-down placement,False,False,0,0,,,-65.0390625,64.8046875,139.53125,-139.21875
+76,3.1667,punch,52,inbetween,punch recover / fight,punch across-down placement,False,False,0,0,,,-65.3125,63.4375,136.25,-133.75
+77,3.2083,punch,53,BREAKDOWN arc +10deg largest-moving arm upper,punch recover / fight,punch across-down placement,False,True,20,6799,R,,-66.0546875,49.7265625,127.34375,-118.90625
+78,3.25,punch,54,inbetween,punch recover / fight,punch across-down placement,True,True,3648,7676,"L,R",,-67.5,52.5,110.0,-90.0
+79,3.2917,punch,55,BREAKDOWN follow-through +8deg that arm lower,punch recover / fight,punch across-down placement,True,True,7179,1179,"L,R",,-68.9453125,45.2734375,92.65625,-53.09375
+80,3.3333,punch,56,inbetween,punch recover / fight,punch across-down placement,True,False,7101,0,L,,-69.6875,41.5625,83.75,-46.25
+81,3.375,punch,57,inbetween,punch recover / fight,punch across-down placement,True,False,6930,0,L,,-69.9609375,40.1953125,80.46875,-40.78125
+82,3.4167,punch,58,KEY hold,punch across-down placement,punch across-down placement,True,False,6919,0,L,,-70,40,80,-40
+83,3.4583,punch,59,KEY hold,punch across-down placement,punch across-down placement,True,False,6919,0,L,,-70,40,80,-40
+84,3.5,punch,60,KEY hold,punch across-down placement,punch across-down placement,True,False,6919,0,L,,-70,40,80,-40
+85,3.5417,punch,61,KEY hold,punch across-down placement,punch across-down placement,True,False,6919,0,L,,-70,40,80,-40
+86,3.5833,punch,62,KEY hold,punch across-down placement,punch across-down placement,True,False,6919,0,L,,-70,40,80,-40
+87,3.625,punch,63,OVERSHOOT 5% beyond key,punch recover / fight,punch across-down placement,True,False,6716,0,L,,-70.25,38.75,77.0,-35.0
+88,3.6667,punch,64,SETTLE back to key,punch across-down placement,punch across-down placement,True,False,6919,0,L,,-70,40,80,-40
+89,3.7083,punch,65,inbetween,punch across-down placement,apose,True,False,6837,0,L,,-69.453125,39.6875,79.375,-39.6875
+90,3.75,punch,66,inbetween,punch across-down placement,apose,True,False,6588,0,L,,-65.625,37.5,75.0,-37.5
+91,3.7917,punch,67,BREAKDOWN arc +10deg largest-moving arm upper,punch across-down placement,apose,True,False,5584,0,L,,-45.234375,31.5625,63.125,-31.5625
+92,3.8333,punch,68,inbetween,punch across-down placement,apose,False,False,0,0,,,-35.0,20.0,40.0,-20.0
+93,3.875,punch,69,BREAKDOWN follow-through +8deg that arm lower,punch across-down placement,apose,False,False,0,0,,,-14.765625,8.4375,8.875,-8.4375
+94,3.9167,punch,70,inbetween,punch across-down placement,apose,False,False,0,0,,,-4.375,2.5,5.0,-2.5
+95,3.9583,punch,71,inbetween,punch across-down placement,apose,False,False,0,0,,,-0.546875,0.3125,0.625,-0.3125
+96,4.0,punch,72,KEY hold,apose,apose,False,False,0,0,,,0,0,0,0
+97,4.0417,punch,73,KEY hold,apose,apose,False,False,0,0,,,0,0,0,0
+98,4.0833,walk,0,KEY hold,walk contact A,walk contact A,True,True,5076,4218,"L,R",,30,-30,-20,20
+99,4.125,walk,1,KEY hold,walk contact A,walk contact A,True,True,5076,4218,"L,R",,30,-30,-20,20
+100,4.1667,walk,2,KEY hold,walk contact A,walk contact A,True,True,5076,4218,"L,R",,30,-30,-20,20
+101,4.2083,walk,3,inbetween,walk contact A,walk passing A,True,True,5031,4094,"L,R",,29.72222222222222,-29.72222222222222,-19.814814814814813,19.814814814814813
+102,4.25,walk,4,inbetween,walk contact A,walk passing A,True,True,4476,3677,"L,R",,27.77777777777778,-27.77777777777778,-18.51851851851852,18.51851851851852
+103,4.2917,walk,5,BREAKDOWN arc +10deg largest-moving arm upper,walk contact A,walk passing A,False,True,916,2545,R,,12.5,-22.5,-15.0,15.0
+104,4.3333,walk,6,inbetween,walk contact A,walk passing A,True,True,2143,1418,"L,R",,17.22222222222222,-17.22222222222222,-11.481481481481481,11.481481481481481
+105,4.375,walk,7,BREAKDOWN follow-through +8deg that arm lower,walk contact A,walk passing A,True,True,2136,1056,"L,R",,15.277777777777777,-15.277777777777777,-2.185185185185185,10.185185185185185
+106,4.4167,walk,8,KEY hold,walk passing A,walk passing A,True,True,1643,1005,"L,R",,15,-15,-10,10
+107,4.4583,walk,9,KEY hold,walk passing A,walk passing A,True,True,1643,1005,"L,R",,15,-15,-10,10
+108,4.5,walk,10,KEY hold,walk passing A,walk passing A,True,True,1643,1005,"L,R",,15,-15,-10,10
+109,4.5417,walk,11,inbetween,walk passing A,walk contact B,True,False,1475,833,L,,14.166666666666666,-14.166666666666666,-9.444444444444445,9.444444444444445
+110,4.5833,walk,12,inbetween,walk passing A,walk contact B,False,False,499,94,,,8.333333333333334,-8.333333333333334,-5.555555555555555,5.555555555555555
+111,4.625,walk,13,BREAKDOWN arc +10deg largest-moving arm upper,walk passing A,walk contact B,False,False,0,0,,,-17.5,7.5,5.0,-5.0
+112,4.6667,walk,14,inbetween,walk passing A,walk contact B,False,False,0,0,,,-23.333333333333336,23.333333333333336,15.555555555555557,-15.555555555555557
+113,4.7083,walk,15,BREAKDOWN follow-through +8deg that arm lower,walk passing A,walk contact B,False,False,0,0,,,-29.16666666666667,29.16666666666667,27.444444444444446,-19.444444444444446
+114,4.75,walk,16,KEY hold,walk contact B,walk contact B,False,False,0,0,,,-30,30,20,-20
+115,4.7917,walk,17,KEY hold,walk contact B,walk contact B,False,False,0,0,,,-30,30,20,-20
+116,4.8333,walk,18,KEY hold,walk contact B,walk contact B,False,False,0,0,,,-30,30,20,-20
+117,4.875,walk,19,inbetween,walk contact B,walk passing B,False,False,0,0,,,-29.72222222222222,29.72222222222222,19.814814814814813,-19.814814814814813
+118,4.9167,walk,20,inbetween,walk contact B,walk passing B,False,False,0,0,,,-27.77777777777778,27.77777777777778,18.51851851851852,-18.51851851851852
+119,4.9583,walk,21,BREAKDOWN arc +10deg largest-moving arm upper,walk contact B,walk passing B,False,False,0,0,,,-12.5,22.5,15.0,-15.0
+120,5.0,walk,22,inbetween,walk contact B,walk passing B,False,False,0,0,,,-17.22222222222222,17.22222222222222,11.481481481481481,-11.481481481481481
+121,5.0417,walk,23,BREAKDOWN follow-through +8deg that arm lower,walk contact B,walk passing B,False,False,0,0,,,-15.277777777777777,15.277777777777777,2.185185185185185,-10.185185185185185
+122,5.0833,walk,24,KEY hold,walk passing B,walk passing B,False,False,0,0,,,-15,15,10,-10
+123,5.125,walk,25,KEY hold,walk passing B,walk passing B,False,False,0,0,,,-15,15,10,-10
+124,5.1667,walk,26,KEY hold,walk passing B,walk passing B,False,False,0,0,,,-15,15,10,-10
+125,5.2083,walk,27,inbetween,walk passing B,walk contact A,False,False,0,0,,,-14.166666666666666,14.166666666666666,9.444444444444445,-9.444444444444445
+126,5.25,walk,28,inbetween,walk passing B,walk contact A,False,False,0,0,,,-8.333333333333334,8.333333333333334,5.555555555555555,-5.555555555555555
+127,5.2917,walk,29,BREAKDOWN arc +10deg largest-moving arm upper,walk passing B,walk contact A,True,False,2519,53,L,,17.5,-7.5,-5.0,5.0
+128,5.3333,walk,30,inbetween,walk passing B,walk contact A,True,True,3517,2730,"L,R",,23.333333333333336,-23.333333333333336,-15.555555555555557,15.555555555555557
+129,5.375,walk,31,BREAKDOWN follow-through +8deg that arm lower,walk passing B,walk contact A,True,True,4515,3997,"L,R",,29.16666666666667,-29.16666666666667,-27.444444444444446,19.444444444444446
+130,5.4167,walk,32,KEY hold,walk contact A,walk contact A,True,True,5076,4218,"L,R",,30,-30,-20,20
+131,5.4583,walk,33,KEY hold,walk contact A,walk contact A,True,True,5076,4218,"L,R",,30,-30,-20,20
+132,5.5,walk,34,KEY hold,walk contact A,walk contact A,True,True,5076,4218,"L,R",,30,-30,-20,20
+133,5.5417,walk,35,inbetween,walk contact A,walk passing A,True,True,5031,4094,"L,R",,29.72222222222222,-29.72222222222222,-19.814814814814813,19.814814814814813
+134,5.5833,walk,36,inbetween,walk contact A,walk passing A,True,True,4476,3677,"L,R",,27.77777777777778,-27.77777777777778,-18.51851851851852,18.51851851851852
+135,5.625,walk,37,BREAKDOWN arc +10deg largest-moving arm upper,walk contact A,walk passing A,False,True,916,2545,R,,12.5,-22.5,-15.0,15.0
+136,5.6667,walk,38,inbetween,walk contact A,walk passing A,True,True,2143,1418,"L,R",,17.22222222222222,-17.22222222222222,-11.481481481481481,11.481481481481481
+137,5.7083,walk,39,BREAKDOWN follow-through +8deg that arm lower,walk contact A,walk passing A,True,True,2136,1056,"L,R",,15.277777777777777,-15.277777777777777,-2.185185185185185,10.185185185185185
+138,5.75,walk,40,KEY hold,walk passing A,walk passing A,True,True,1643,1005,"L,R",,15,-15,-10,10
+139,5.7917,walk,41,KEY hold,walk passing A,walk passing A,True,True,1643,1005,"L,R",,15,-15,-10,10
+140,5.8333,walk,42,KEY hold,walk passing A,walk passing A,True,True,1643,1005,"L,R",,15,-15,-10,10
+141,5.875,walk,43,inbetween,walk passing A,walk contact B,True,False,1475,833,L,,14.166666666666666,-14.166666666666666,-9.444444444444445,9.444444444444445
+142,5.9167,walk,44,inbetween,walk passing A,walk contact B,False,False,499,94,,,8.333333333333334,-8.333333333333334,-5.555555555555555,5.555555555555555
+143,5.9583,walk,45,BREAKDOWN arc +10deg largest-moving arm upper,walk passing A,walk contact B,False,False,0,0,,,-17.5,7.5,5.0,-5.0
+144,6.0,walk,46,inbetween,walk passing A,walk contact B,False,False,0,0,,,-23.333333333333336,23.333333333333336,15.555555555555557,-15.555555555555557
+145,6.0417,walk,47,BREAKDOWN follow-through +8deg that arm lower,walk passing A,walk contact B,False,False,0,0,,,-29.16666666666667,29.16666666666667,27.444444444444446,-19.444444444444446
+146,6.0833,walk,48,KEY hold,walk contact B,walk contact B,False,False,0,0,,,-30,30,20,-20
+147,6.125,walk,49,KEY hold,walk contact B,walk contact B,False,False,0,0,,,-30,30,20,-20
+148,6.1667,walk,50,KEY hold,walk contact B,walk contact B,False,False,0,0,,,-30,30,20,-20
+149,6.2083,walk,51,inbetween,walk contact B,walk passing B,False,False,0,0,,,-29.72222222222222,29.72222222222222,19.814814814814813,-19.814814814814813
+150,6.25,walk,52,inbetween,walk contact B,walk passing B,False,False,0,0,,,-27.77777777777778,27.77777777777778,18.51851851851852,-18.51851851851852
+151,6.2917,walk,53,BREAKDOWN arc +10deg largest-moving arm upper,walk contact B,walk passing B,False,False,0,0,,,-12.5,22.5,15.0,-15.0
+152,6.3333,walk,54,inbetween,walk contact B,walk passing B,False,False,0,0,,,-17.22222222222222,17.22222222222222,11.481481481481481,-11.481481481481481
+153,6.375,walk,55,BREAKDOWN follow-through +8deg that arm lower,walk contact B,walk passing B,False,False,0,0,,,-15.277777777777777,15.277777777777777,2.185185185185185,-10.185185185185185
+154,6.4167,walk,56,KEY hold,walk passing B,walk passing B,False,False,0,0,,,-15,15,10,-10
+155,6.4583,walk,57,KEY hold,walk passing B,walk passing B,False,False,0,0,,,-15,15,10,-10
+156,6.5,walk,58,KEY hold,walk passing B,walk passing B,False,False,0,0,,,-15,15,10,-10
+157,6.5417,walk,59,inbetween,walk passing B,walk contact A,False,False,0,0,,,-14.166666666666666,14.166666666666666,9.444444444444445,-9.444444444444445
+158,6.5833,walk,60,inbetween,walk passing B,walk contact A,False,False,0,0,,,-8.333333333333334,8.333333333333334,5.555555555555555,-5.555555555555555
+159,6.625,walk,61,BREAKDOWN arc +10deg largest-moving arm upper,walk passing B,walk contact A,True,False,2519,53,L,,17.5,-7.5,-5.0,5.0
+160,6.6667,walk,62,inbetween,walk passing B,walk contact A,True,True,3517,2730,"L,R",,23.333333333333336,-23.333333333333336,-15.555555555555557,15.555555555555557
+161,6.7083,walk,63,BREAKDOWN follow-through +8deg that arm lower,walk passing B,walk contact A,True,True,4515,3997,"L,R",,29.16666666666667,-29.16666666666667,-27.444444444444446,19.444444444444446
+162,6.75,walk,64,KEY hold,walk contact A,walk contact A,True,True,5076,4218,"L,R",,30,-30,-20,20
+163,6.7917,walk,65,KEY hold,walk contact A,walk contact A,True,True,5076,4218,"L,R",,30,-30,-20,20

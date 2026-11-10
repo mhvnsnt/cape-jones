@@ -1,0 +1,7 @@
+{
+  "project": "Style2Paints",
+  "status": "METHOD-WIRED, model NOT run",
+  "workflow_mirrored": "lineart -> sparse colour hints -> flat fill -> (real V4 would return layered PSD)",
+  "cape_use": "Colourisation REFERENCE for a new flat pass; approved flats are repainted by hand, base art is never recoloured in place",
+  "base_art_recoloured": false
+}

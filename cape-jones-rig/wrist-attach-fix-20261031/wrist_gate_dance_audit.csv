@@ -1,0 +1,4 @@
+item,hand,centre,angle,scale,forearm_end,d_wrist,d_tip,verdict
+jei-01-serve-OLD,Hand_3_Open,"(314, 530)",-20,1.0,"(314.0, 517.0)",70.6,54.9,FAIL
+jei-01-serve-FIXED,Hand_3_Open,"(307.6, 549.6)",164.7,1.0,"(314.0, 517.0)",25.0,99.6,PASS
+jei-01-serve-MOVE-ONLY-CONTROL,Hand_3_Open,"(331.6, 461.6)",-20,1.0,"(314.0, 517.0)",0.0,124.6,"PASS (numeric only; hand overlaps gauntlet, see crop)"

@@ -1,0 +1,142 @@
+# Video GIF Studio
+
+[![CI](https://github.com/miles990/video-gif-studio/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/miles990/video-gif-studio/actions/workflows/test.yml) · [![Release](https://img.shields.io/github/v/release/miles990/video-gif-studio)](https://github.com/miles990/video-gif-studio/releases/latest)
+
+**English** | [繁體中文](README.zh-TW.md)
+
+## Examples
+
+**Seated leg switch** — Reference image → Grok video → transparent GIF.
+
+![Seated leg switch](examples/seated-leg-switch/final.gif)
+
+[GIF](examples/seated-leg-switch/final.gif) · [Reference, prompt and production record](examples/seated-leg-switch/README.md)
+
+**Original robot wave** — Created without a reference image.
+
+![Original robot wave](examples/robot-wave-no-reference/final.gif)
+
+[GIF](examples/robot-wave-no-reference/final.gif) · [Production record](examples/robot-wave-no-reference/README.md)
+
+**Chibi dash attack** — Running steps, sword trails and recovery. Full-speed loop review remains pending.
+
+![Chibi dash attack](examples/chibi-running-dash/final.gif)
+
+[GIF](examples/chibi-running-dash/final.gif) · [APNG](examples/chibi-running-dash/final.apng) · [Sprite pack](examples/chibi-running-dash/sprites.zip) · [Production record](examples/chibi-running-dash/README.md)
+
+**NEON ZEN** — 30-second music PV assembled from five Grok clips. Full-speed music sync review remains pending.
+
+![NEON ZEN excerpt](examples/neon-zen-pv/preview.gif)
+
+[MP4 with music](examples/neon-zen-pv/final.mp4) · [Story and production record](examples/neon-zen-pv/README.md)
+
+## Purpose
+
+A **Codex skill for AI animation, transparent GIF creation, game sprite sheets and video editing**, with script/storyboard planning and music beat analysis.
+
+**Turn a simple description into the animation or related assets you want.** Provide text, reference images, video or music, and let the skill plan the script, motion, effects, editing and export—or handle just one step. Create GIFs, videos, APNGs and game sprites with less manual coordination. Complex results may still need review and refinement.
+
+## Main workflow
+
+```mermaid
+flowchart TD
+    A["Reference image or original character"] --> B["Plan motion and timing"]
+    B --> C{"Generation route"}
+    C -->|"Default"| D["Grok video: motion and effects"]
+    C -->|"Grok unavailable or explicitly skipped"| E["Available image-generated keyframes"]
+    C -->|"Selected alternative"| K["fal.ai / MiniMax H3 Max or another video tool"]
+    K --> F
+    D --> F["Background removal when needed and frame processing"]
+    E --> F
+    V["Existing video or frames"] --> F
+    F --> G["Check timing, motion, loop joins and transparency"]
+    G --> H["GIF by default"]
+    G --> I["Optional: APNG, RGBA PNG or sprites"]
+    G --> J["Optional: alpha MOV/WebM or opaque MP4"]
+```
+
+Codex coordinates the workflow. Available image tools create characters or explicitly requested repairs; use GPT-Image-2.5 when exposed by the environment. **Grok is the default for new motion and unspecified effects.** Preserve source frames, plausible anatomy, weight transfer and complete effect framing.
+
+**Other generative video tools can replace Grok:** use an available tool or import its generated video into the same processing workflow. **Grok and fal.ai MiniMax H3 Max are built in.** Select H3 Max for fast iteration, first/last-frame control or multimodal references; other services require their own access or integration. [fal setup](references/fal.md). Image-generated keyframes and existing media are also options. See [fallback options](references/fallback.md).
+
+**Why Grok:** Grok is the default to achieve natural animation with strong motion continuity. Codex then processes the frames, checks the result and exports it. Results still need review; GIF generation also works without Grok.
+
+## Installation
+
+The AI checks and downloads missing tools, including Python, required packages, FFmpeg/ffprobe and the Grok CLI for OAuth, then verifies readiness. You complete any required Grok login authorization.
+
+Give this request to your AI assistant:
+
+> Install the Codex skill from https://github.com/miles990/video-gif-studio. Follow references/install.md, preserve existing data, install dependencies and run the doctor check. Report local tools and Grok readiness separately.
+
+See [installation instructions](references/install.md). Then invoke `$video-gif-studio` in Codex.
+
+## Requirements
+
+- **Codex**, plus an available image-generation tool when creating character images or keyframes.
+- **Grok** — default but optional. Sign in to [Grok Imagine](https://grok.com/imagine) to generate video on the website, then import the downloaded video; no API key or CLI is needed for website use. Account access and limits apply. The bundled automatic client uses separate CLI OAuth or API-key authentication. [Connection setup](references/grok.md).
+- **fal.ai / MiniMax H3 Max** — optional built-in alternative; requires `FAL_KEY` and available account credit. No Grok login or external project required. [Connection and limits](references/fal.md).
+- **Python 3.11+** — the installer manages Python packages and missing FFmpeg/ffprobe on supported platforms. [Dependencies](references/dependencies.md).
+
+## Usage
+
+Describe what you want; let the skill choose the script, motion, duration, camera, effects and export settings based on your intended use. Defaults are Grok generation and GIF output. It asks only for essential missing information or additional spending authorization.
+
+> Use $video-gif-studio to create a character animation. Decide the script, motion, duration, camera, effects and output format for me.
+
+> Use $video-gif-studio to create a transparent character GIF from this image, with natural motion and a seamless loop.
+
+> Use $video-gif-studio to create an original chibi swordswoman performing a dash attack with elaborate sword effects. Export APNG and a sprite sheet.
+
+| Option | Choices |
+| --- | --- |
+| Video source | Grok (default), built-in fal.ai / MiniMax H3 Max, or another available provider |
+| Input | Reference image, original character, existing video or frames |
+| Background | Auto (default), preserve artwork, explicitly requested AI repair |
+| Output | **GIF (default)**, APNG, PNG frames, sprite sheets, MOV, WebM, MP4 |
+| Editing | Trim, reorder, retime, timed stills, timed loops, music and beat alignment |
+| Continuation | Selected keyframes, last frame + consistency references, or last frame only; subject to provider support |
+
+**GIF has binary transparency.** Use RGBA PNG/APNG for soft edges and fading effects, or alpha-capable MOV/WebM. **MP4 is opaque.** Game assets favor PNG frames and sprite sheets; pixel art preserves its logical grid and nearest-neighbor scaling.
+
+### Reusable agent characters
+
+Generate actions once, then reuse transparent sprites through entry, loop and exit states. Shared poses, pivots and reviewed transitions help natural continuity; state machines do not automatically repair motion. [Action-library guidance](references/animation-states.md).
+
+> Use $video-gif-studio with fal.ai MiniMax H3 Max to create a transparent full-body agent character, with reusable idle and greeting animations.
+
+### Script and storyboard planning
+
+Provide a theme or mood and let the skill plan the story, shots, durations, camera angles, character actions, effects, transitions and generation prompts. Music accents can be planned when relevant; precise beat timing needs the audio. **You can request only a script and storyboard, without generating video.**
+
+> Use $video-gif-studio to plan a 30-second anime PV about saying goodbye and starting again. Decide the creative details; output only the script and storyboard.
+
+### Find animation cues in music
+
+Provide an audio file to estimate BPM, detect beat and onset candidates, and list timestamps with suggested uses for cuts, attacks, transitions or effect bursts. **You can request music analysis only, without generating video.** Automatic cues need listening review; sync the actual action event, not just the clip boundary.
+
+> Use $video-gif-studio to analyze this music, find suitable animation cue points, and list timestamps with suggested uses. Do not generate video yet.
+
+See [music analysis and beat alignment](references/music.md).
+
+### Simple video editing
+
+Trim, split and reorder clips, adjust speed or duration, join segments, insert stills, repeat loops for a set time, and add music with beat-aligned editing. **These edits run locally without Grok or new video generation.** Codex operates the tools; there is no graphical editor, and music sync needs playback review.
+
+> Use $video-gif-studio to trim these videos, arrange the clips, hold the last frame for 2 seconds, add this music and export an MP4. Decide the pacing for me.
+
+See [timeline editing](references/timeline.md) and [music and beat alignment](references/music.md).
+
+### Special use: continuously extend a video
+
+**In principle, repeated generation and stitching can keep extending a video without a fixed total-duration ceiling.** Use the last frame and suitable consistency references to generate the next segment, review the join, then append and repeat. This uses multiple generation requests, not one unlimited-length request.
+
+Each task needs a target duration, segment count or budget. Actual length is constrained by quota, cost, compute/storage and accumulated continuity drift. Codex coordinates the process; automatic chain execution and edit/extend CLI modes are not bundled. The fal client supports multi-reference generation. See [continuation workflow](references/chain.md).
+
+Details: [Skill](SKILL.md) · [Transparency](references/transparency.md) · [Pixel art](references/pixel-art.md) · [Sprites](references/sprites.md) · [Video export](references/video-export.md) · [Timeline](references/timeline.md) · [Music](references/music.md) · [Continuation](references/chain.md)
+
+License: [MIT](LICENSE)
+
+## Character video editing and original-audio delivery
+
+Use the [character replacement workflow](references/character-video-edit.md) and `scripts/assemble_edit.py` for frame-based assembly, explicit FPS conform, time-bounded source-region restoration, and complete original-audio stream verification. This local tool does not guarantee generated identity or choreography; its report keeps visual review pending.

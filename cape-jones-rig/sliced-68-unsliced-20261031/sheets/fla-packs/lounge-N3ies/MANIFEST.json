@@ -1,0 +1,407 @@
+{
+ "source": "fla-packs/lounge-packs/lounge-N3ies.jpg",
+ "group": "fla-packs",
+ "plate": "fla-packs/lounge-N3ies.png",
+ "plate_md5": "9726c3bc540eca854a1ca5354510aa97",
+ "duplicate_of": null,
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    105,
+    132
+   ],
+   "opaque_px": 8476,
+   "sheet_bbox": [
+    161,
+    272,
+    266,
+    404
+   ],
+   "area_px": 8476,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    105,
+    133
+   ],
+   "opaque_px": 8439,
+   "sheet_bbox": [
+    326,
+    271,
+    431,
+    404
+   ],
+   "area_px": 8439,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_3",
+   "file": "Row1_3.png",
+   "size": [
+    99,
+    151
+   ],
+   "opaque_px": 12794,
+   "sheet_bbox": [
+    549,
+    194,
+    648,
+    345
+   ],
+   "area_px": 12794,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_4",
+   "file": "Row1_4.png",
+   "size": [
+    106,
+    133
+   ],
+   "opaque_px": 8457,
+   "sheet_bbox": [
+    772,
+    270,
+    878,
+    403
+   ],
+   "area_px": 8457,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_5",
+   "file": "Row1_5.png",
+   "size": [
+    106,
+    132
+   ],
+   "opaque_px": 8481,
+   "sheet_bbox": [
+    929,
+    270,
+    1035,
+    402
+   ],
+   "area_px": 8481,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    98,
+    300
+   ],
+   "opaque_px": 18166,
+   "sheet_bbox": [
+    100,
+    444,
+    198,
+    744
+   ],
+   "area_px": 18166,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    106,
+    316
+   ],
+   "opaque_px": 20110,
+   "sheet_bbox": [
+    292,
+    443,
+    398,
+    759
+   ],
+   "area_px": 20110,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_3",
+   "file": "Row2_3.png",
+   "size": [
+    273,
+    311
+   ],
+   "opaque_px": 62675,
+   "sheet_bbox": [
+    464,
+    381,
+    737,
+    692
+   ],
+   "area_px": 62675,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_4",
+   "file": "Row2_4.png",
+   "size": [
+    97,
+    187
+   ],
+   "opaque_px": 12504,
+   "sheet_bbox": [
+    798,
+    445,
+    895,
+    632
+   ],
+   "area_px": 12504,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_5",
+   "file": "Row2_5.png",
+   "size": [
+    106,
+    299
+   ],
+   "opaque_px": 18880,
+   "sheet_bbox": [
+    1027,
+    445,
+    1133,
+    744
+   ],
+   "area_px": 18880,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_1",
+   "file": "Row3_1.png",
+   "size": [
+    104,
+    120
+   ],
+   "opaque_px": 7649,
+   "sheet_bbox": [
+    100,
+    765,
+    204,
+    885
+   ],
+   "area_px": 7649,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_2",
+   "file": "Row3_2.png",
+   "size": [
+    105,
+    135
+   ],
+   "opaque_px": 8652,
+   "sheet_bbox": [
+    107,
+    1103,
+    212,
+    1238
+   ],
+   "area_px": 8652,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_3",
+   "file": "Row3_3.png",
+   "size": [
+    64,
+    155
+   ],
+   "opaque_px": 8461,
+   "sheet_bbox": [
+    108,
+    890,
+    172,
+    1045
+   ],
+   "area_px": 8461,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_4",
+   "file": "Row3_4.png",
+   "size": [
+    105,
+    135
+   ],
+   "opaque_px": 8629,
+   "sheet_bbox": [
+    248,
+    1103,
+    353,
+    1238
+   ],
+   "area_px": 8629,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_5",
+   "file": "Row3_5.png",
+   "size": [
+    64,
+    160
+   ],
+   "opaque_px": 8486,
+   "sheet_bbox": [
+    294,
+    888,
+    358,
+    1048
+   ],
+   "area_px": 8486,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_6",
+   "file": "Row3_6.png",
+   "size": [
+    80,
+    81
+   ],
+   "opaque_px": 5032,
+   "sheet_bbox": [
+    303,
+    778,
+    383,
+    859
+   ],
+   "area_px": 5032,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_7",
+   "file": "Row3_7.png",
+   "size": [
+    138,
+    601
+   ],
+   "opaque_px": 45419,
+   "sheet_bbox": [
+    429,
+    856,
+    567,
+    1457
+   ],
+   "area_px": 45419,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_8",
+   "file": "Row3_8.png",
+   "size": [
+    183,
+    121
+   ],
+   "opaque_px": 15474,
+   "sheet_bbox": [
+    510,
+    730,
+    693,
+    851
+   ],
+   "area_px": 15474,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_9",
+   "file": "Row3_9.png",
+   "size": [
+    139,
+    601
+   ],
+   "opaque_px": 45508,
+   "sheet_bbox": [
+    638,
+    856,
+    777,
+    1457
+   ],
+   "area_px": 45508,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row3_10",
+   "file": "Row3_10.png",
+   "size": [
+    327,
+    668
+   ],
+   "opaque_px": 169478,
+   "sheet_bbox": [
+    806,
+    745,
+    1133,
+    1413
+   ],
+   "area_px": 169478,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row4_1",
+   "file": "Row4_1.png",
+   "size": [
+    104,
+    134
+   ],
+   "opaque_px": 8497,
+   "sheet_bbox": [
+    89,
+    1298,
+    193,
+    1432
+   ],
+   "area_px": 8497,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row4_2",
+   "file": "Row4_2.png",
+   "size": [
+    105,
+    135
+   ],
+   "opaque_px": 8536,
+   "sheet_bbox": [
+    246,
+    1297,
+    351,
+    1432
+   ],
+   "area_px": 8536,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  }
+ ],
+ "duplicate_md5_of": "fla-packs/lounge-3quarter-packs/clean-N3ies.jpg"
+}

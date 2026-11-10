@@ -1,0 +1,184 @@
+Blender 4.0.2 (hash 9be62e85b727 built 2023-12-05 08:48:50)
+Read prefs: "/home/hatch/.config/blender/4.0/config/userpref.blend"
+Read blend: "/home/hatch/workspace/wt-autoseat/production/tools/auto-seat/proof_sitting.blend"
+Info: Read library:  '/home/hatch/workspace/wt-autoseat/3d-assets/living-room/recliner/recliner_rigged.blend', '//../../../3d-assets/living-room/recliner/recliner_rigged.blend', parent '<direct>'
+Fra:1 Mem:615.56M (Peak 732.90M) | Time:00:14.72 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Floor
+Fra:1 Mem:615.56M (Peak 732.90M) | Time:00:14.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | WallBack
+Fra:1 Mem:615.56M (Peak 732.90M) | Time:00:14.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | WallLeft
+Fra:1 Mem:615.56M (Peak 732.90M) | Time:00:14.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | WallRight
+Fra:1 Mem:615.56M (Peak 732.90M) | Time:00:14.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | LED_Back
+Fra:1 Mem:615.57M (Peak 732.90M) | Time:00:14.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | LED_Left
+Fra:1 Mem:615.57M (Peak 732.90M) | Time:00:14.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | LED_Right
+Fra:1 Mem:615.57M (Peak 732.90M) | Time:00:14.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | LEDRemote
+Fra:1 Mem:615.57M (Peak 732.90M) | Time:00:14.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | RemoteBtn_0
+Fra:1 Mem:615.57M (Peak 732.90M) | Time:00:14.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | RemoteBtn_1
+Fra:1 Mem:615.58M (Peak 732.90M) | Time:00:14.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | RemoteBtn_2
+Fra:1 Mem:615.59M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | RemoteBtn_3
+Fra:1 Mem:615.60M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | RemoteBtn_4
+Fra:1 Mem:615.60M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | RemoteBtn_5
+Fra:1 Mem:615.61M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | stand_side_L
+Fra:1 Mem:615.61M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | cabinetTelevision(Clone)
+Fra:1 Mem:615.61M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | stand_side_R
+Fra:1 Mem:615.61M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | stand_top
+Fra:1 Mem:615.61M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | stand_shelf_mid
+Fra:1 Mem:615.62M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | stand_shelf_low
+Fra:1 Mem:615.62M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | stand_back
+Fra:1 Mem:615.62M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | crt_tv
+Fra:1 Mem:615.62M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | crt_screen
+Fra:1 Mem:615.62M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | antenna_0
+Fra:1 Mem:615.62M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | antenna_1
+Fra:1 Mem:615.62M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | antenna_base
+Fra:1 Mem:615.68M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | vcr_dvd
+Fra:1 Mem:615.68M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | box_a
+Fra:1 Mem:615.68M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | mug_text
+Fra:1 Mem:615.75M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | box_b
+Fra:1 Mem:615.75M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | box_c
+Fra:1 Mem:615.76M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | box_d
+Fra:1 Mem:615.76M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | monster_body
+Fra:1 Mem:615.81M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | monster_eye_0
+Fra:1 Mem:615.86M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | monster_foot_0
+Fra:1 Mem:615.91M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | monster_eye_1
+Fra:1 Mem:615.97M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | monster_foot_1
+Fra:1 Mem:616.02M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | side_table
+Fra:1 Mem:616.02M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | side_table_leg_0
+Fra:1 Mem:616.03M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | side_table_leg_1
+Fra:1 Mem:616.03M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | side_table_leg_2
+Fra:1 Mem:616.03M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | okayest_hero_mug
+Fra:1 Mem:616.04M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | mug_handle
+Fra:1 Mem:616.05M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | door_jamb_L
+Fra:1 Mem:616.05M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | door_jamb_R
+Fra:1 Mem:616.05M (Peak 732.90M) | Time:00:14.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | door_lintel
+Fra:1 Mem:616.05M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hall_floor
+Fra:1 Mem:616.05M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hall_wall_L
+Fra:1 Mem:616.05M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hall_wall_R
+Fra:1 Mem:616.05M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hall_end
+Fra:1 Mem:616.05M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hall_door
+Fra:1 Mem:616.05M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | win_jamb_front
+Fra:1 Mem:616.05M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | win_jamb_back
+Fra:1 Mem:616.05M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | win_head
+Fra:1 Mem:616.06M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | win_sill
+Fra:1 Mem:616.06M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | win_mullion_v
+Fra:1 Mem:616.06M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | win_mullion_h
+Fra:1 Mem:616.06M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | sky_backdrop
+Fra:1 Mem:616.06M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ext_sun
+Fra:1 Mem:616.06M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tree_a_trunk
+Fra:1 Mem:616.06M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tree_a_canopy
+Fra:1 Mem:616.06M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tree_b_trunk
+Fra:1 Mem:616.07M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tree_b_canopy
+Fra:1 Mem:616.07M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ext_baffle_top
+Fra:1 Mem:616.07M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ext_baffle_bot
+Fra:1 Mem:616.07M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ext_baffle_L
+Fra:1 Mem:616.07M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ext_baffle_R
+Fra:1 Mem:616.07M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | poster_backing
+Fra:1 Mem:616.07M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | poster_paper
+Fra:1 Mem:616.10M (Peak 732.90M) | Time:00:14.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | CapeJones_Body
+Fra:1 Mem:696.82M (Peak 732.90M) | Time:00:14.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | shrimp_body
+Fra:1 Mem:696.88M (Peak 732.90M) | Time:00:14.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | shrimp_tail
+Fra:1 Mem:696.88M (Peak 732.90M) | Time:00:14.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | squid_body
+Fra:1 Mem:696.93M (Peak 732.90M) | Time:00:14.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | squid_fin_0
+Fra:1 Mem:696.98M (Peak 732.90M) | Time:00:14.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | squid_fin_1
+Fra:1 Mem:697.04M (Peak 732.90M) | Time:00:14.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | squid_tent_0
+Fra:1 Mem:697.04M (Peak 732.90M) | Time:00:14.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | squid_tent_1
+Fra:1 Mem:697.04M (Peak 732.90M) | Time:00:14.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | squid_tent_2
+Fra:1 Mem:697.04M (Peak 732.90M) | Time:00:14.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | squid_tent_3
+Fra:1 Mem:697.04M (Peak 732.90M) | Time:00:14.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | squid_tent_4
+Fra:1 Mem:697.04M (Peak 732.90M) | Time:00:14.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | squid_tent_5
+Fra:1 Mem:697.05M (Peak 732.90M) | Time:00:14.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | squid_eye_0
+Fra:1 Mem:697.10M (Peak 732.90M) | Time:00:14.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | squid_eye_1
+Fra:1 Mem:697.15M (Peak 732.90M) | Time:00:14.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | squid_string
+Fra:1 Mem:697.15M (Peak 732.90M) | Time:00:14.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ghost_frame
+Fra:1 Mem:697.15M (Peak 732.90M) | Time:00:14.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ghost_paper
+Fra:1 Mem:697.15M (Peak 732.90M) | Time:00:14.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ghost_head
+Fra:1 Mem:697.20M (Peak 732.90M) | Time:00:14.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ghost_body
+Fra:1 Mem:697.21M (Peak 732.90M) | Time:00:14.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ghost_wave_0
+Fra:1 Mem:697.26M (Peak 732.90M) | Time:00:14.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ghost_wave_1
+Fra:1 Mem:697.31M (Peak 732.90M) | Time:00:14.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ghost_wave_2
+Fra:1 Mem:697.36M (Peak 732.90M) | Time:00:14.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ghost_eye_0
+Fra:1 Mem:697.42M (Peak 732.90M) | Time:00:14.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ghost_eye_1
+Fra:1 Mem:697.47M (Peak 732.90M) | Time:00:14.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Ceiling
+Fra:1 Mem:697.47M (Peak 732.90M) | Time:00:14.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | recliner_legs
+Fra:1 Mem:699.48M (Peak 732.90M) | Time:00:14.78 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | recliner_backrest
+Fra:1 Mem:699.48M (Peak 732.90M) | Time:00:14.78 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | recliner_footrest_link
+Fra:1 Mem:699.48M (Peak 732.90M) | Time:00:14.78 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | recliner_footrest_pad
+Fra:1 Mem:699.49M (Peak 732.90M) | Time:00:14.78 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | recliner_armrest_L
+Fra:1 Mem:699.49M (Peak 732.90M) | Time:00:14.78 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | recliner_armrest_R
+Fra:1 Mem:699.49M (Peak 732.90M) | Time:00:14.78 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | recliner_base
+Fra:1 Mem:699.50M (Peak 732.90M) | Time:00:14.78 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | loungeDesignSofa(Clone)
+Fra:1 Mem:699.52M (Peak 732.90M) | Time:00:14.78 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tableCoffee(Clone)
+Fra:1 Mem:699.54M (Peak 732.90M) | Time:00:14.81 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | bookcaseClosed(Clone)
+Fra:1 Mem:699.61M (Peak 732.90M) | Time:00:14.81 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lampRoundFloor(Clone)
+Fra:1 Mem:699.62M (Peak 732.90M) | Time:00:14.81 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lampSquareTable(Clone)
+Fra:1 Mem:699.63M (Peak 732.90M) | Time:00:14.82 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | rugRound(Clone)
+Fra:1 Mem:699.66M (Peak 732.90M) | Time:00:14.82 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | VolumeBox_Room
+Fra:1 Mem:896.90M (Peak 1154.21M) | Time:00:49.98 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:773.95M (Peak 1154.21M) | Time:00:50.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading NormalGL_2cad1649-2fab-4c4f-9666-330ccaa37295.001
+Fra:1 Mem:773.95M (Peak 1154.21M) | Time:00:50.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Color_2cad1649-2fab-4c4f-9666-330ccaa37295.001
+Fra:1 Mem:901.96M (Peak 1154.21M) | Time:00:51.81 | Mem:64.00M, Peak:64.00M | Scene, ViewLayer | Updating Images | Loading ORM_2cad1649-2fab-4c4f-9666-330ccaa37295.001
+Fra:1 Mem:898.19M (Peak 1154.21M) | Time:00:53.61 | Mem:192.00M, Peak:192.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:898.19M (Peak 1154.21M) | Time:00:53.61 | Mem:192.00M, Peak:192.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:898.19M (Peak 1154.21M) | Time:00:53.61 | Mem:192.00M, Peak:192.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:898.19M (Peak 1154.21M) | Time:00:53.61 | Mem:192.00M, Peak:192.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:898.29M (Peak 1154.21M) | Time:00:53.64 | Mem:192.02M, Peak:192.02M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:898.29M (Peak 1154.21M) | Time:00:53.64 | Mem:192.02M, Peak:192.02M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:898.29M (Peak 1154.21M) | Time:00:53.64 | Mem:192.02M, Peak:192.02M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:898.29M (Peak 1154.21M) | Time:00:53.64 | Mem:192.02M, Peak:192.02M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:898.29M (Peak 1154.21M) | Time:00:53.64 | Mem:192.02M, Peak:192.02M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:898.29M (Peak 1154.21M) | Time:00:53.64 | Mem:192.02M, Peak:192.02M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:898.32M (Peak 1154.21M) | Time:00:53.64 | Mem:192.05M, Peak:192.05M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:898.32M (Peak 1154.21M) | Time:00:53.64 | Mem:192.05M, Peak:192.05M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:898.32M (Peak 1154.21M) | Time:00:53.64 | Mem:192.05M, Peak:192.05M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:898.32M (Peak 1154.21M) | Time:00:53.64 | Mem:192.05M, Peak:192.05M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:925.48M (Peak 1154.21M) | Time:00:54.14 | Mem:192.05M, Peak:192.05M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:1065.96M (Peak 1154.21M) | Time:00:55.00 | Mem:192.05M, Peak:192.05M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:55.01 | Mem:332.51M, Peak:332.51M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:55.01 | Mem:332.51M, Peak:332.51M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:55.22 | Mem:386.83M, Peak:386.83M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:55.99 | Mem:390.83M, Peak:390.83M | Scene, ViewLayer | Updating Scene BVH | Building BVH 1%
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:56.24 | Mem:418.83M, Peak:418.83M | Scene, ViewLayer | Updating Scene BVH | Building BVH 26%
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:56.49 | Mem:428.83M, Peak:428.83M | Scene, ViewLayer | Updating Scene BVH | Building BVH 34%
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:56.75 | Mem:440.83M, Peak:440.83M | Scene, ViewLayer | Updating Scene BVH | Building BVH 45%
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:57.00 | Mem:450.83M, Peak:450.83M | Scene, ViewLayer | Updating Scene BVH | Building BVH 54%
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:57.25 | Mem:458.83M, Peak:458.83M | Scene, ViewLayer | Updating Scene BVH | Building BVH 60%
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:57.52 | Mem:464.83M, Peak:464.83M | Scene, ViewLayer | Updating Scene BVH | Building BVH 66%
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:57.77 | Mem:468.83M, Peak:468.83M | Scene, ViewLayer | Updating Scene BVH | Building BVH 70%
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:58.02 | Mem:474.83M, Peak:474.83M | Scene, ViewLayer | Updating Scene BVH | Building BVH 74%
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:58.27 | Mem:478.83M, Peak:478.83M | Scene, ViewLayer | Updating Scene BVH | Building BVH 79%
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:58.53 | Mem:490.83M, Peak:490.83M | Scene, ViewLayer | Updating Scene BVH | Building BVH 89%
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:58.79 | Mem:450.51M, Peak:504.83M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:1065.94M (Peak 1154.21M) | Time:00:58.79 | Mem:450.51M, Peak:504.83M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:1152.55M (Peak 1154.21M) | Time:00:59.61 | Mem:450.51M, Peak:504.83M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:1152.55M (Peak 1154.21M) | Time:00:59.61 | Mem:537.12M, Peak:537.12M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:1152.55M (Peak 1154.21M) | Time:00:59.61 | Mem:537.12M, Peak:537.12M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:1152.55M (Peak 1154.21M) | Time:00:59.61 | Mem:537.12M, Peak:537.12M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:1152.55M (Peak 1154.21M) | Time:00:59.61 | Mem:537.12M, Peak:537.12M | Scene, ViewLayer | Updating Images | Loading tv_show_0048.png
+Fra:1 Mem:1152.85M (Peak 1154.21M) | Time:00:59.64 | Mem:537.41M, Peak:537.41M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:1152.85M (Peak 1154.21M) | Time:00:59.64 | Mem:537.41M, Peak:537.41M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:1152.85M (Peak 1154.21M) | Time:00:59.64 | Mem:537.50M, Peak:537.50M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:1152.85M (Peak 1154.21M) | Time:00:59.64 | Mem:537.50M, Peak:537.50M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:1 Mem:1152.85M (Peak 1154.21M) | Time:00:59.64 | Mem:537.50M, Peak:537.50M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:1153.00M (Peak 1154.21M) | Time:00:59.67 | Mem:537.65M, Peak:537.65M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:1154.00M (Peak 1154.21M) | Time:00:59.68 | Mem:538.65M, Peak:538.65M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:1154.00M (Peak 1154.21M) | Time:00:59.68 | Mem:538.56M, Peak:538.65M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:1154.00M (Peak 1154.21M) | Time:00:59.68 | Mem:538.65M, Peak:538.65M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:1154.00M (Peak 1154.21M) | Time:00:59.68 | Mem:538.65M, Peak:538.65M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:1154.00M (Peak 1154.21M) | Time:00:59.68 | Mem:538.65M, Peak:538.65M | Scene, ViewLayer | Sample 0/16
+Fra:1 Mem:1158.19M (Peak 1158.19M) | Time:01:02.52 | Remaining:00:42.55 | Mem:542.84M, Peak:542.84M | Scene, ViewLayer | Sample 1/16
+Fra:1 Mem:1158.19M (Peak 1158.19M) | Time:01:25.19 | Remaining:00:19.83 | Mem:542.84M, Peak:542.84M | Scene, ViewLayer | Sample 9/16
+Fra:1 Mem:1159.95M (Peak 1162.59M) | Time:01:58.22 | Mem:542.84M, Peak:542.84M | Scene, ViewLayer | Sample 16/16
+Fra:1 Mem:1159.95M (Peak 1162.59M) | Time:01:58.25 | Mem:542.84M, Peak:542.84M | Scene, ViewLayer | Finished
+Saved: '/tmp/tpose_test.png'
+Time: 02:01.16 (Saving: 00:01.49)
+
+multiple addons with the same name:
+  '/home/hatch/workspace/tools/blender/blender-4.0.2-linux-x64/4.0/scripts/addons/DragonFF/__init__.py'
+  '/home/hatch/.config/blender/4.0/scripts/addons/DragonFF/__init__.py'
+multiple addons with the same name:
+  '/home/hatch/workspace/tools/blender/blender-4.0.2-linux-x64/4.0/scripts/addons/SourceIO/__init__.py'
+  '/home/hatch/.config/blender/4.0/scripts/addons/SourceIO/__init__.py'
+multiple addons with the same name:
+  '/home/hatch/workspace/tools/blender/blender-4.0.2-linux-x64/4.0/scripts/addons/fspy_blender/__init__.py'
+  '/home/hatch/.config/blender/4.0/scripts/addons/fspy_blender/__init__.py'
+TPOSE RENDERED
+
+Blender quit
+EXIT: 0

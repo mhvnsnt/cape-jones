@@ -1,0 +1,509 @@
+{
+ "mbp_patch": {
+  "px": 71,
+  "bbox": [
+   213,
+   690,
+   246,
+   694
+  ],
+  "size": [
+   34,
+   5
+  ],
+  "components": 1
+ },
+ "fitted": [
+  {
+   "label": "mbp-clean-front-09",
+   "scale": 5.2353,
+   "resized": [
+    178,
+    26
+   ],
+   "alpha_bbox": [
+    0,
+    0,
+    177,
+    25,
+    3301
+   ],
+   "alpha_px": 3301,
+   "target": [
+    231.5,
+    504.5
+   ]
+  },
+  {
+   "label": "ah-front-03 open smile, NOT shout",
+   "scale": 0.6568,
+   "resized": [
+    194,
+    64
+   ],
+   "alpha_bbox": [
+    0,
+    3,
+    179,
+    63,
+    5935
+   ],
+   "alpha_px": 5935,
+   "target": [
+    231.5,
+    504.5
+   ]
+  },
+  {
+   "label": "gk-front-05 teeth band",
+   "scale": 0.3812,
+   "resized": [
+    202,
+    31
+   ],
+   "alpha_bbox": [
+    22,
+    0,
+    201,
+    28,
+    2995
+   ],
+   "alpha_px": 2995,
+   "target": [
+    231.5,
+    504.5
+   ]
+  },
+  {
+   "label": "ee-front-04 smile, small upper mark defect carried",
+   "scale": 1.141,
+   "resized": [
+    184,
+    104
+   ],
+   "alpha_bbox": [
+    0,
+    0,
+    180,
+    100,
+    3276
+   ],
+   "alpha_px": 3276,
+   "target": [
+    231.5,
+    504.5
+   ]
+  }
+ ],
+ "old_mbp": {
+  "label": "OLD mbp-front-09 (jaw fragment included)",
+  "scale": 2.6176,
+  "resized": [
+   225,
+   26
+  ],
+  "alpha_bbox": [
+   15,
+   0,
+   204,
+   23,
+   1508
+  ],
+  "alpha_px": 1508,
+  "target": [
+   231.5,
+   504.5
+  ]
+ },
+ "phrase_timeline": [
+  {
+   "frame": 0,
+   "slot": 0,
+   "viseme": "MBP",
+   "phoneme": "P",
+   "gap": false
+  },
+  {
+   "frame": 1,
+   "slot": 0,
+   "viseme": "MBP",
+   "phoneme": "P",
+   "gap": false
+  },
+  {
+   "frame": 2,
+   "slot": 0,
+   "viseme": "MBP",
+   "phoneme": "P",
+   "gap": false
+  },
+  {
+   "frame": 3,
+   "slot": 0,
+   "viseme": "MBP",
+   "phoneme": "P",
+   "gap": false
+  },
+  {
+   "frame": 4,
+   "slot": 0,
+   "viseme": "MBP",
+   "phoneme": "P",
+   "gap": false
+  },
+  {
+   "frame": 5,
+   "slot": 0,
+   "viseme": "MBP",
+   "phoneme": "P",
+   "gap": false
+  },
+  {
+   "frame": 6,
+   "slot": 1,
+   "viseme": "AH",
+   "phoneme": "AH",
+   "gap": false
+  },
+  {
+   "frame": 7,
+   "slot": 1,
+   "viseme": "AH",
+   "phoneme": "AH",
+   "gap": false
+  },
+  {
+   "frame": 8,
+   "slot": 1,
+   "viseme": "AH",
+   "phoneme": "AH",
+   "gap": false
+  },
+  {
+   "frame": 9,
+   "slot": 1,
+   "viseme": "AH",
+   "phoneme": "AH",
+   "gap": false
+  },
+  {
+   "frame": 10,
+   "slot": 1,
+   "viseme": "AH",
+   "phoneme": "AH",
+   "gap": false
+  },
+  {
+   "frame": 11,
+   "slot": 1,
+   "viseme": "AH",
+   "phoneme": "AH",
+   "gap": false
+  },
+  {
+   "frame": 12,
+   "slot": 2,
+   "viseme": "GK",
+   "phoneme": "G",
+   "gap": false
+  },
+  {
+   "frame": 13,
+   "slot": 2,
+   "viseme": "GK",
+   "phoneme": "G",
+   "gap": false
+  },
+  {
+   "frame": 14,
+   "slot": 2,
+   "viseme": "GK",
+   "phoneme": "G",
+   "gap": false
+  },
+  {
+   "frame": 15,
+   "slot": 2,
+   "viseme": "GK",
+   "phoneme": "G",
+   "gap": false
+  },
+  {
+   "frame": 16,
+   "slot": 2,
+   "viseme": "GK",
+   "phoneme": "G",
+   "gap": false
+  },
+  {
+   "frame": 17,
+   "slot": 2,
+   "viseme": "GK",
+   "phoneme": "G",
+   "gap": false
+  },
+  {
+   "frame": 18,
+   "slot": 3,
+   "viseme": "OH",
+   "phoneme": "OH - GAP",
+   "gap": true
+  },
+  {
+   "frame": 19,
+   "slot": 3,
+   "viseme": "OH",
+   "phoneme": "OH - GAP",
+   "gap": true
+  },
+  {
+   "frame": 20,
+   "slot": 3,
+   "viseme": "OH",
+   "phoneme": "OH - GAP",
+   "gap": true
+  },
+  {
+   "frame": 21,
+   "slot": 3,
+   "viseme": "OH",
+   "phoneme": "OH - GAP",
+   "gap": true
+  },
+  {
+   "frame": 22,
+   "slot": 3,
+   "viseme": "OH",
+   "phoneme": "OH - GAP",
+   "gap": true
+  },
+  {
+   "frame": 23,
+   "slot": 3,
+   "viseme": "OH",
+   "phoneme": "OH - GAP",
+   "gap": true
+  },
+  {
+   "frame": 24,
+   "slot": 4,
+   "viseme": "SZ",
+   "phoneme": "S - GAP",
+   "gap": true
+  },
+  {
+   "frame": 25,
+   "slot": 4,
+   "viseme": "SZ",
+   "phoneme": "S - GAP",
+   "gap": true
+  },
+  {
+   "frame": 26,
+   "slot": 4,
+   "viseme": "SZ",
+   "phoneme": "S - GAP",
+   "gap": true
+  },
+  {
+   "frame": 27,
+   "slot": 4,
+   "viseme": "SZ",
+   "phoneme": "S - GAP",
+   "gap": true
+  },
+  {
+   "frame": 28,
+   "slot": 4,
+   "viseme": "SZ",
+   "phoneme": "S - GAP",
+   "gap": true
+  },
+  {
+   "frame": 29,
+   "slot": 4,
+   "viseme": "SZ",
+   "phoneme": "S - GAP",
+   "gap": true
+  },
+  {
+   "frame": 30,
+   "slot": 5,
+   "viseme": "EE",
+   "phoneme": "EE",
+   "gap": false
+  },
+  {
+   "frame": 31,
+   "slot": 5,
+   "viseme": "EE",
+   "phoneme": "EE",
+   "gap": false
+  },
+  {
+   "frame": 32,
+   "slot": 5,
+   "viseme": "EE",
+   "phoneme": "EE",
+   "gap": false
+  },
+  {
+   "frame": 33,
+   "slot": 5,
+   "viseme": "EE",
+   "phoneme": "EE",
+   "gap": false
+  },
+  {
+   "frame": 34,
+   "slot": 5,
+   "viseme": "EE",
+   "phoneme": "EE",
+   "gap": false
+  },
+  {
+   "frame": 35,
+   "slot": 5,
+   "viseme": "EE",
+   "phoneme": "EE",
+   "gap": false
+  },
+  {
+   "frame": 36,
+   "slot": 6,
+   "viseme": "MBP",
+   "phoneme": "P",
+   "gap": false
+  },
+  {
+   "frame": 37,
+   "slot": 6,
+   "viseme": "MBP",
+   "phoneme": "P",
+   "gap": false
+  },
+  {
+   "frame": 38,
+   "slot": 6,
+   "viseme": "MBP",
+   "phoneme": "P",
+   "gap": false
+  },
+  {
+   "frame": 39,
+   "slot": 6,
+   "viseme": "MBP",
+   "phoneme": "P",
+   "gap": false
+  },
+  {
+   "frame": 40,
+   "slot": 6,
+   "viseme": "MBP",
+   "phoneme": "P",
+   "gap": false
+  },
+  {
+   "frame": 41,
+   "slot": 6,
+   "viseme": "MBP",
+   "phoneme": "P",
+   "gap": false
+  },
+  {
+   "frame": 42,
+   "slot": 7,
+   "viseme": "AH",
+   "phoneme": "AH",
+   "gap": false
+  },
+  {
+   "frame": 43,
+   "slot": 7,
+   "viseme": "AH",
+   "phoneme": "AH",
+   "gap": false
+  },
+  {
+   "frame": 44,
+   "slot": 7,
+   "viseme": "AH",
+   "phoneme": "AH",
+   "gap": false
+  },
+  {
+   "frame": 45,
+   "slot": 7,
+   "viseme": "AH",
+   "phoneme": "AH",
+   "gap": false
+  },
+  {
+   "frame": 46,
+   "slot": 7,
+   "viseme": "AH",
+   "phoneme": "AH",
+   "gap": false
+  },
+  {
+   "frame": 47,
+   "slot": 7,
+   "viseme": "AH",
+   "phoneme": "AH",
+   "gap": false
+  }
+ ],
+ "phrase": {
+  "slots": [
+   [
+    "MBP",
+    "P"
+   ],
+   [
+    "AH",
+    "AH"
+   ],
+   [
+    "GK",
+    "G"
+   ],
+   [
+    "OH",
+    "OH - GAP"
+   ],
+   [
+    "SZ",
+    "S - GAP"
+   ],
+   [
+    "EE",
+    "EE"
+   ],
+   [
+    "MBP",
+    "P"
+   ],
+   [
+    "AH",
+    "AH"
+   ]
+  ],
+  "frames": 48,
+  "fps": 24,
+  "pulled_slots": 6,
+  "gap_slots": 2
+ },
+ "archive_counts": {
+  "total": 970,
+  "robin_name": 61,
+  "batman": 0,
+  "superman": 0,
+  "cyborg": 65,
+  "starfire": 61,
+  "raven": 63,
+  "beast": 65,
+  "slade": 16
+ },
+ "audio_driven": false,
+ "rhubarb_available": false
+}

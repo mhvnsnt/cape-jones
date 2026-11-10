@@ -1,0 +1,281 @@
+{
+ "CJ-01-punch-windup-pose-20261031.png": {
+  "size": [
+   810,
+   1099
+  ],
+  "alpha_bbox_canvas": [
+   99,
+   253,
+   869,
+   1312
+  ],
+  "cfg": {
+   "arm_upper": {
+    "L": -20,
+    "R": 20
+   },
+   "arm_lower": {
+    "L": -120,
+    "R": 160
+   },
+   "leg_upper": {
+    "L": -10,
+    "R": 10
+   },
+   "leg_lower": {
+    "L": 10,
+    "R": -10
+   }
+  },
+  "head": "normal"
+ },
+ "CJ-02-punch-extend-snap-pose-20261031.png": {
+  "size": [
+   889,
+   1096
+  ],
+  "alpha_bbox_canvas": [
+   0,
+   253,
+   869,
+   1309
+  ],
+  "cfg": {
+   "arm_upper": {
+    "L": -90,
+    "R": 20
+   },
+   "arm_lower": {
+    "L": -90,
+    "R": 160
+   },
+   "leg_upper": {
+    "L": -15,
+    "R": 15
+   },
+   "leg_lower": {
+    "L": 15,
+    "R": -15
+   }
+  },
+  "head": "normal"
+ },
+ "CJ-04-punch-recover-pose-20261031.png": {
+  "size": [
+   669,
+   1099
+  ],
+  "alpha_bbox_canvas": [
+   248,
+   253,
+   877,
+   1312
+  ],
+  "cfg": {
+   "arm_upper": {
+    "L": -20,
+    "R": 20
+   },
+   "arm_lower": {
+    "L": -20,
+    "R": 20
+   },
+   "leg_upper": {
+    "L": -10,
+    "R": 10
+   },
+   "leg_lower": {
+    "L": 10,
+    "R": -10
+   }
+  },
+  "head": "normal"
+ },
+ "CJ-11-dance-combined-finale-pose-20261031.png": {
+  "size": [
+   755,
+   1314
+  ],
+  "alpha_bbox_canvas": [
+   183,
+   35,
+   898,
+   1309
+  ],
+  "cfg": {
+   "arm_upper": {
+    "L": -150,
+    "R": 150
+   },
+   "arm_lower": {
+    "L": -150,
+    "R": 150
+   },
+   "leg_upper": {
+    "L": -20,
+    "R": 10
+   },
+   "leg_lower": {
+    "L": 20,
+    "R": -10
+   }
+  },
+  "head": "normal"
+ },
+ "CJ-15-flying-forward-foreshortened-pose-20261031.png": {
+  "size": [
+   669,
+   1098
+  ],
+  "alpha_bbox_canvas": [
+   248,
+   253,
+   877,
+   1311
+  ],
+  "cfg": {
+   "arm_upper": {
+    "L": -20,
+    "R": 20
+   },
+   "arm_lower": {
+    "L": -20,
+    "R": 20
+   },
+   "leg_upper": {
+    "L": -5,
+    "R": 5
+   },
+   "leg_lower": {
+    "L": 5,
+    "R": -5
+   }
+  },
+  "head": "normal"
+ },
+ "CJ-17-arms-up-reference-pose-20261031.png": {
+  "size": [
+   937,
+   1258
+  ],
+  "alpha_bbox_canvas": [
+   93,
+   94,
+   990,
+   1312
+  ],
+  "cfg": {
+   "arm_upper": {
+    "L": -135,
+    "R": 135
+   },
+   "arm_lower": {
+    "L": -135,
+    "R": 135
+   },
+   "leg_upper": {
+    "L": -10,
+    "R": 10
+   },
+   "leg_lower": {
+    "L": 10,
+    "R": -10
+   }
+  },
+  "head": "normal"
+ },
+ "CJ-18-true-flex-double-bicep-pose-20261031.png": {
+  "size": [
+   531,
+   1090
+  ],
+  "alpha_bbox_canvas": [
+   307,
+   253,
+   798,
+   1303
+  ],
+  "cfg": {
+   "arm_upper": {
+    "L": -25,
+    "R": 25
+   },
+   "arm_lower": {
+    "L": 160,
+    "R": -160
+   },
+   "leg_upper": {
+    "L": -18,
+    "R": 18
+   },
+   "leg_lower": {
+    "L": 5,
+    "R": -5
+   }
+  },
+  "head": "normal"
+ },
+ "CJ-20-fighting-stance-arms-up-high-pose-20261031.png": {
+  "size": [
+   755,
+   1291
+  ],
+  "alpha_bbox_canvas": [
+   183,
+   35,
+   898,
+   1286
+  ],
+  "cfg": {
+   "arm_upper": {
+    "L": -150,
+    "R": 150
+   },
+   "arm_lower": {
+    "L": -150,
+    "R": 150
+   },
+   "leg_upper": {
+    "L": -30,
+    "R": 30
+   },
+   "leg_lower": {
+    "L": 10,
+    "R": -10
+   }
+  },
+  "head": "normal"
+ },
+ "CJ-27-dialogue-shout-angry-pose-20261031.png": {
+  "size": [
+   860,
+   1098
+  ],
+  "alpha_bbox_canvas": [
+   150,
+   253,
+   970,
+   1311
+  ],
+  "cfg": {
+   "arm_upper": {
+    "L": -35,
+    "R": 35
+   },
+   "arm_lower": {
+    "L": -35,
+    "R": 35
+   },
+   "leg_upper": {
+    "L": -12,
+    "R": 12
+   },
+   "leg_lower": {
+    "L": 10,
+    "R": -10
+   }
+  },
+  "head": "shout_angry"
+ }
+}

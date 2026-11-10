@@ -1,0 +1,126 @@
+{
+  "preset_name": "FIGURE-MATCHED PRESET S8 \u2014 COLOUR COOL-BLUE NIGHT",
+  "scenario_id": "S8-colour-cool-blue-night",
+  "source": "figure-matched-room-lighting-20261031, Mars saved-good 2026-10-31 23:00 CDT (saved-good, NOT upgraded to full 1/1 approval)",
+  "room": "colour-blue-night",
+  "direction": "cool_front",
+  "gain": [
+    0.85,
+    0.95,
+    1.2
+  ],
+  "rim_RGB": [
+    160,
+    200,
+    255
+  ],
+  "shadow_RGB": [
+    15,
+    25,
+    55
+  ],
+  "lit_mean_RGB_source": [
+    143.1,
+    163.2,
+    210.7
+  ],
+  "base_mean_RGB_source": [
+    134.2,
+    132.4,
+    136.8
+  ],
+  "source_canvas": [
+    1260,
+    1660
+  ],
+  "source_figure_alpha_px_source_JSON": 374127,
+  "measured_lit_transparent_alpha_px": 408573,
+  "alpha_note": "Source JSON figure_alpha_px (374127) differs from measured lit-transparent alpha (408573, S4 423488). Both recorded; source value preserved verbatim, measured value is from the lit-transparent file used here. Rim expansion in the lit file is the likely cause; not resolved by editing either number.",
+  "line_band_px_source": 49849,
+  "rim_px_source": 34446,
+  "line_band_mean_light_factor_source": 0.914,
+  "shared_method": {
+    "cel_bands": [
+      1.12,
+      0.92,
+      0.72
+    ],
+    "cel_bands_note": "3 bands by light direction, from original figure-matched report",
+    "rim_method": "dilate(figure,6) - figure, rim_px 34446 in source JSON (measured lit rim included in lit-transparent alpha)",
+    "interior_line_method": "ink band: dark pixels within 3px of non-dark, 49849 px in source JSON, recoloured 80% toward rim on light side and toward shadow on away side; pec, rib, ab, belt, gauntlet, cape-fold and cowl lines carry light, not left black under a flat tint",
+    "interior_sheen": "<=14px inside-edge band, up to 38% rim",
+    "base_art": "never recoloured; lighting on separate layers over a copy of the clean plate",
+    "no_crop_source": "source padded canvas 1260x1660, padded edge alpha max 0.0 in source JSON",
+    "ground_bounce": {
+      "S3": "45% in bottom 28% of figure",
+      "other": "not specified in source report, recorded as none specified, not invented"
+    }
+  },
+  "ground_bounce": "not specified in source report",
+  "vertical": {
+    "canvas": [
+      1080,
+      1920
+    ],
+    "fit_scale": 0.8571,
+    "fitted_size": [
+      1080,
+      1423
+    ],
+    "paste_xy": [
+      0,
+      248
+    ],
+    "figure_bbox": {
+      "x_min": 253,
+      "x_max": 827,
+      "y_min": 517,
+      "y_max": 1420,
+      "alpha_px_source_lit": 408573,
+      "margins": {
+        "left": 253,
+        "right": 252,
+        "top": 517,
+        "bottom": 499
+      }
+    },
+    "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+  },
+  "horizontal": {
+    "canvas": [
+      1920,
+      1080
+    ],
+    "fit_scale": 0.6506,
+    "fitted_size": [
+      820,
+      1080
+    ],
+    "paste_xy": [
+      550,
+      0
+    ],
+    "figure_bbox": {
+      "x_min": 742,
+      "x_max": 1177,
+      "y_min": 204,
+      "y_max": 890,
+      "alpha_px_source_lit": 408573,
+      "margins": {
+        "left": 742,
+        "right": 742,
+        "top": 204,
+        "bottom": 189
+      }
+    },
+    "no_crop": "figure fully inside canvas, all margins > 0, source fitted not cropped; backdrop is blurred cover of same room only"
+  },
+  "files": [
+    "S8-colour-cool-blue-night-horizontal-1920x1080-20261031.png",
+    "S8-colour-cool-blue-night-lit-transparent-20261031.png",
+    "S8-colour-cool-blue-night-on-grey-20261031.png",
+    "S8-colour-cool-blue-night-on-room-20261031.png",
+    "S8-colour-cool-blue-night-vertical-1080x1920-20261031.png"
+  ],
+  "approval": "0/1 preset set, 0/1 vertical set, 0/1 horizontal set separately; original set saved-good by Mars"
+}

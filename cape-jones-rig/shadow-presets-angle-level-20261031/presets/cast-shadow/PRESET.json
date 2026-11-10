@@ -1,0 +1,15 @@
+{
+  "code": "I2",
+  "slug": "cast-shadow",
+  "kind": "industry",
+  "name": "Cast / projected shadow",
+  "description": "Figure alpha squashed to 28% height, sheared by light dx, placed from ground line, recoloured to shadow tint. Ground only.",
+  "parameters": {
+    "squash": 0.28,
+    "cast_alpha": 190,
+    "blur": 12
+  },
+  "matching_rule": "One light per composite; ground + character from same light; shadow tint (46,32,14) never pure black; figure alpha never changed; ground behind figure; character darkens RGB inside figure only.",
+  "sample": "sample.png",
+  "status": "preset saved, approval 0/1"
+}

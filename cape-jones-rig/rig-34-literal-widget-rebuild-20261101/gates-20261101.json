@@ -1,0 +1,563 @@
+{
+  "centres": {
+    "cape": {
+      "saved_xy": [
+        360,
+        330
+      ],
+      "rotation": 0,
+      "size": [
+        514,
+        900
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 0,
+      "alpha_bbox": [
+        360,
+        330,
+        874,
+        1230
+      ],
+      "alpha_centre": [
+        617.0,
+        780.0
+      ],
+      "expected_pivot_xy": [
+        617.0,
+        780.0
+      ]
+    },
+    "upperArmL": {
+      "saved_xy": [
+        490,
+        390
+      ],
+      "rotation": 5,
+      "size": [
+        125,
+        237
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 1,
+      "alpha_bbox": [
+        470,
+        389,
+        612,
+        626
+      ],
+      "alpha_centre": [
+        541.0,
+        507.5
+      ],
+      "expected_pivot_xy": [
+        552.5,
+        390
+      ]
+    },
+    "thighR": {
+      "saved_xy": [
+        590,
+        750
+      ],
+      "rotation": 6,
+      "size": [
+        218,
+        299
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 2,
+      "alpha_bbox": [
+        561,
+        755,
+        803,
+        1041
+      ],
+      "alpha_centre": [
+        682.0,
+        898.0
+      ],
+      "expected_pivot_xy": [
+        699.0,
+        750
+      ]
+    },
+    "thighL": {
+      "saved_xy": [
+        400,
+        710
+      ],
+      "rotation": 2,
+      "size": [
+        230,
+        267
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 3,
+      "alpha_bbox": [
+        391,
+        711,
+        627,
+        975
+      ],
+      "alpha_centre": [
+        509.0,
+        843.0
+      ],
+      "expected_pivot_xy": [
+        515.0,
+        710
+      ]
+    },
+    "forearmL": {
+      "saved_xy": [
+        455,
+        580
+      ],
+      "rotation": -15,
+      "size": [
+        145,
+        275
+      ],
+      "pivot": [
+        0.39,
+        0.11
+      ],
+      "z": 4,
+      "alpha_bbox": [
+        470,
+        572,
+        625,
+        841
+      ],
+      "alpha_centre": [
+        547.5,
+        706.5
+      ],
+      "expected_pivot_xy": [
+        511.6,
+        610.2
+      ]
+    },
+    "pelvis": {
+      "saved_xy": [
+        565,
+        650
+      ],
+      "rotation": 0,
+      "size": [
+        218,
+        181
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 4,
+      "alpha_bbox": [
+        565,
+        650,
+        783,
+        831
+      ],
+      "alpha_centre": [
+        674.0,
+        740.5
+      ],
+      "expected_pivot_xy": [
+        674.0,
+        740.5
+      ]
+    },
+    "kneeL": {
+      "saved_xy": [
+        380,
+        885
+      ],
+      "rotation": 0,
+      "size": [
+        74,
+        94
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 4,
+      "alpha_bbox": [
+        380,
+        885,
+        454,
+        979
+      ],
+      "alpha_centre": [
+        417.0,
+        932.0
+      ],
+      "expected_pivot_xy": [
+        417.0,
+        932.0
+      ]
+    },
+    "elbowCapL": {
+      "saved_xy": [
+        465,
+        580
+      ],
+      "rotation": 0,
+      "size": [
+        63,
+        63
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 5,
+      "alpha_bbox": [
+        465,
+        580,
+        528,
+        643
+      ],
+      "alpha_centre": [
+        496.5,
+        611.5
+      ],
+      "expected_pivot_xy": [
+        496.5,
+        611.5
+      ]
+    },
+    "shinL": {
+      "saved_xy": [
+        225,
+        945
+      ],
+      "rotation": 0,
+      "size": [
+        244,
+        410
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 6,
+      "alpha_bbox": [
+        225,
+        945,
+        469,
+        1355
+      ],
+      "alpha_centre": [
+        347.0,
+        1150.0
+      ],
+      "expected_pivot_xy": [
+        347.0,
+        945
+      ]
+    },
+    "shinR": {
+      "saved_xy": [
+        395,
+        985
+      ],
+      "rotation": -10,
+      "size": [
+        256,
+        415
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 6,
+      "alpha_bbox": [
+        461,
+        975,
+        664,
+        1411
+      ],
+      "alpha_centre": [
+        562.5,
+        1193.0
+      ],
+      "expected_pivot_xy": [
+        523.0,
+        985
+      ]
+    },
+    "kneeR": {
+      "saved_xy": [
+        560,
+        950
+      ],
+      "rotation": 0,
+      "size": [
+        74,
+        94
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 7,
+      "alpha_bbox": [
+        560,
+        950,
+        634,
+        1044
+      ],
+      "alpha_centre": [
+        597.0,
+        997.0
+      ],
+      "expected_pivot_xy": [
+        597.0,
+        997.0
+      ]
+    },
+    "torso": {
+      "saved_xy": [
+        550,
+        370
+      ],
+      "rotation": 0,
+      "size": [
+        291,
+        315
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 8,
+      "alpha_bbox": [
+        550,
+        370,
+        841,
+        685
+      ],
+      "alpha_centre": [
+        695.5,
+        527.5
+      ],
+      "expected_pivot_xy": [
+        695.5,
+        370
+      ]
+    },
+    "head": {
+      "saved_xy": [
+        635,
+        195
+      ],
+      "rotation": 0,
+      "size": [
+        130,
+        196
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 9,
+      "alpha_bbox": [
+        635,
+        195,
+        765,
+        391
+      ],
+      "alpha_centre": [
+        700.0,
+        293.0
+      ],
+      "expected_pivot_xy": [
+        700.0,
+        293.0
+      ]
+    },
+    "upperArmR": {
+      "saved_xy": [
+        805,
+        420
+      ],
+      "rotation": 15,
+      "size": [
+        112,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0
+      ],
+      "z": 10,
+      "alpha_bbox": [
+        767,
+        413,
+        902,
+        672
+      ],
+      "alpha_centre": [
+        834.5,
+        542.5
+      ],
+      "expected_pivot_xy": [
+        861.0,
+        420
+      ]
+    },
+    "forearmR": {
+      "saved_xy": [
+        685,
+        650
+      ],
+      "rotation": 45,
+      "size": [
+        150,
+        274
+      ],
+      "pivot": [
+        0.63,
+        0.11
+      ],
+      "z": 11,
+      "alpha_bbox": [
+        593,
+        635,
+        825,
+        868
+      ],
+      "alpha_centre": [
+        709.0,
+        751.5
+      ],
+      "expected_pivot_xy": [
+        779.5,
+        680.1
+      ]
+    },
+    "elbowCapR": {
+      "saved_xy": [
+        775,
+        610
+      ],
+      "rotation": 0,
+      "size": [
+        63,
+        63
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 12,
+      "alpha_bbox": [
+        775,
+        610,
+        838,
+        673
+      ],
+      "alpha_centre": [
+        806.5,
+        641.5
+      ],
+      "expected_pivot_xy": [
+        806.5,
+        641.5
+      ]
+    },
+    "handL": {
+      "saved_xy": [
+        530,
+        740
+      ],
+      "rotation": -46,
+      "size": [
+        117,
+        170
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 13,
+      "alpha_bbox": [
+        519,
+        741,
+        662,
+        912
+      ],
+      "alpha_centre": [
+        590.5,
+        826.5
+      ],
+      "expected_pivot_xy": [
+        588.5,
+        825.0
+      ]
+    },
+    "handR": {
+      "saved_xy": [
+        565,
+        755
+      ],
+      "rotation": 70,
+      "size": [
+        117,
+        170
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "z": 13,
+      "alpha_bbox": [
+        546,
+        769,
+        707,
+        913
+      ],
+      "alpha_centre": [
+        626.5,
+        841.0
+      ],
+      "expected_pivot_xy": [
+        623.5,
+        840.0
+      ]
+    }
+  },
+  "gates": {
+    "canvas": [
+      1400,
+      1600
+    ],
+    "bbox": [
+      225,
+      195,
+      901,
+      1410
+    ],
+    "alpha_bottom_overall": 1410,
+    "alpha_bottom_left_band_0_700": 1410,
+    "alpha_bottom_right_band_700_1400": 1229,
+    "widget_ground_y": 1475,
+    "hands": 2,
+    "fists_drawn_full_forearm": 2,
+    "note": "Full forearm+fist drawn as in widget; separate open hands drawn over them at saved positions. Fist peek is therefore possible where hand shape is narrower than fist; see zooms/table, not hidden."
+  }
+}

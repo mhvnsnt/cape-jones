@@ -1,0 +1,209 @@
+{
+ "source": "fla-packs/jojo-packs-2/recent-UgepP.jpg",
+ "group": "fla-packs",
+ "plate": "fla-packs/recent-UgepP.png",
+ "plate_md5": "332f39eb894f4410b7db67dda15f7f3b",
+ "duplicate_of": "fla-packs/jojo-packs/recent-UgepP.jpg",
+ "grid_split": false,
+ "pieces": [
+  {
+   "name": "Row1_1",
+   "file": "Row1_1.png",
+   "size": [
+    403,
+    232
+   ],
+   "opaque_px": 35997,
+   "sheet_bbox": [
+    54,
+    488,
+    457,
+    720
+   ],
+   "area_px": 35997,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_2",
+   "file": "Row1_2.png",
+   "size": [
+    411,
+    146
+   ],
+   "opaque_px": 33245,
+   "sheet_bbox": [
+    57,
+    302,
+    468,
+    448
+   ],
+   "area_px": 33245,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_3",
+   "file": "Row1_3.png",
+   "size": [
+    418,
+    710
+   ],
+   "opaque_px": 101496,
+   "sheet_bbox": [
+    105,
+    488,
+    523,
+    1198
+   ],
+   "area_px": 101496,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_4",
+   "file": "Row1_4.png",
+   "size": [
+    300,
+    317
+   ],
+   "opaque_px": 66751,
+   "sheet_bbox": [
+    452,
+    308,
+    752,
+    625
+   ],
+   "area_px": 66751,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_5",
+   "file": "Row1_5.png",
+   "size": [
+    178,
+    82
+   ],
+   "opaque_px": 12538,
+   "sheet_bbox": [
+    533,
+    637,
+    711,
+    719
+   ],
+   "area_px": 12538,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_6",
+   "file": "Row1_6.png",
+   "size": [
+    167,
+    89
+   ],
+   "opaque_px": 9254,
+   "sheet_bbox": [
+    537,
+    732,
+    704,
+    821
+   ],
+   "area_px": 9254,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_7",
+   "file": "Row1_7.png",
+   "size": [
+    112,
+    167
+   ],
+   "opaque_px": 15771,
+   "sheet_bbox": [
+    549,
+    147,
+    661,
+    314
+   ],
+   "area_px": 15771,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_8",
+   "file": "Row1_8.png",
+   "size": [
+    431,
+    817
+   ],
+   "opaque_px": 130157,
+   "sheet_bbox": [
+    713,
+    463,
+    1144,
+    1280
+   ],
+   "area_px": 130157,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row1_9",
+   "file": "Row1_9.png",
+   "size": [
+    409,
+    139
+   ],
+   "opaque_px": 31511,
+   "sheet_bbox": [
+    747,
+    309,
+    1156,
+    448
+   ],
+   "area_px": 31511,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_1",
+   "file": "Row2_1.png",
+   "size": [
+    302,
+    714
+   ],
+   "opaque_px": 62690,
+   "sheet_bbox": [
+    293,
+    770,
+    595,
+    1484
+   ],
+   "area_px": 62690,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  },
+  {
+   "name": "Row2_2",
+   "file": "Row2_2.png",
+   "size": [
+    201,
+    590
+   ],
+   "opaque_px": 54024,
+   "sheet_bbox": [
+    661,
+    763,
+    862,
+    1353
+   ],
+   "area_px": 54024,
+   "provisional_class": "MIXED/UNCLASSIFIED",
+   "grid_split": false
+  }
+ ],
+ "duplicate_md5_of": "fla-packs/jojo-packs/recent-UgepP.jpg"
+}

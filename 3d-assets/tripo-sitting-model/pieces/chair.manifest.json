@@ -1,0 +1,1 @@
+{"bbox_max":[0.446,0.427,0.246],"bbox_min":[-0.316,-0.426,-0.49],"cut_cleanliness":"CLEAN - no triangles split; whole connected islands assigned. Lost no polys at seam.","method":"2D mask voting + spatial + smoothing (v5)","notes":"Complete throne: back, seat, arms, base. Visually verified in preview.","piece":"chair","verts":126384}

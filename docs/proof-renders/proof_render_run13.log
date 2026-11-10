@@ -1,0 +1,320 @@
+Character: STICK-UP, 266 beats, span 1.7s -> 116.0s
+  [entrance] 236 frames cached, skipping render
++ blender -b -P /home/hatch/workspace/bannon-video-pipe/repo/tools/entrance-video/render_scene.py -- --glb /home/hatch/workspace/bannon-video-pipe/repo/assets/models/STICKUP_repaired.glb --camera ...
+GHOST/Wayland: error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+blender() [0xf3a7b0]
+/lib/x86_64-linux-gnu/libwayland-client.so.0(+0x598e) [0x7ebeb9c4198e]
+/lib/x86_64-linux-gnu/libwayland-client.so.0(wl_display_connect+0x36f) [0x7ebeb9c46aef]
+blender() [0x27c5d4a]
+blender() [0x27b0d8e]
+blender() [0x27b0ebc]
+blender() [0x27af449]
+blender() [0xf792f5]
+blender() [0xf61ca5]
+blender() [0x111f935]
+blender() [0x1cf0dd9]
+blender() [0x1cf1877]
+blender() [0x1cf5b84]
+blender() [0x1cf8874]
+blender() [0x1cf9729]
+blender() [0x1b7da53]
+blender() [0xf4faaa]
+blender() [0xf50628]
+blender() [0x1543a97]
+blender() [0x83dc50]
+blender(_PyObject_MakeTpCall+0x7b) [0x81868b]
+blender(_PyEval_EvalFrameDefault+0x53cc) [0x87925c]
+blender() [0x8730a2]
+blender(_PyObject_Call_Prepend+0x1c8) [0x8192f8]
+blender() [0x850af00]
+blender(_PyObject_MakeTpCall+0x216) [0x818826]
+blender(_PyEval_EvalFrameDefault+0x5c08) [0x879a98]
+blender() [0x8730a2]
+blender(PyEval_EvalCode+0x82) [0x8519852]
+blender() [0x852d154]
+blender() [0x852d0db]
+blender() [0x6b9502]
+blender(PyRun_FileExFlags+0x50) [0x6ba7b1]
+blender() [0x152ac41]
+blender() [0x8c19c5]
+blender() [0xf41b31]
+blender() [0x72518f]
+/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7ebeb9f991ca]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7ebeb9f9928b]
+blender() [0x8c022e]
+EGL Error (0x3001): EGL_NOT_INITIALIZED: EGL is not initialized, or could not be initialized, for the specified EGL display connection.
+
+Managed to successfully fallback to surfaceless EGL rendering!
+
+EGL Error (0x3009): EGL_BAD_MATCH: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+EGL Error (0x3001): EGL_NOT_INITIALIZED: EGL is not initialized, or could not be initialized, for the specified EGL display connection.
+
+Managed to successfully fallback to surfaceless EGL rendering!
+
+Blender 4.0.2 (hash 9be62e85b727 built 2023-12-05 08:48:50)
+Fra:1 Mem:92.57M (Peak 93.65M) | Time:00:01.90 | Syncing ArenaFloor
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing Key
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing Armature
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing world
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing Rim
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing Fill
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing Front
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing SpotPool
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing ShotCam
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing chest
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing elL
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing elR
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing ftL
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing ftR
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing haL
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing haR
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing head
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing hipL
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing hipR
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing knL
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing knR
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing pelvis
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing shL
+Fra:1 Mem:92.60M (Peak 93.65M) | Time:00:02.24 | Syncing shR
+Fra:1 Mem:92.61M (Peak 93.65M) | Time:00:02.24 | Syncing BANNON_XFER_MESH
+Fra:1 Mem:106.78M (Peak 110.59M) | Time:00:04.03 | Rendering 1 / 16 samples
+Fra:1 Mem:104.93M (Peak 110.59M) | Time:01:45.14 | Rendering 16 / 16 samples
+Saved: '/home/hatch/workspace/bannon-video-pipe/out/entrance_work_v2/frames_taunts/frame_0001.png'
+Time: 01:55.10 (Saving: 00:05.29)
+
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing ArenaFloor
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing Key
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing Armature
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing world
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing Rim
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing Fill
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing Front
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing SpotPool
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing ShotCam
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing chest
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing elL
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing elR
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing ftL
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing ftR
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing haL
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing haR
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing head
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing hipL
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing hipR
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing knL
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing knR
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing pelvis
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing shL
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing shR
+Fra:2 Mem:104.72M (Peak 147.22M) | Time:00:00.12 | Syncing BANNON_XFER_MESH
+Fra:2 Mem:106.79M (Peak 147.22M) | Time:00:00.23 | Rendering 1 / 16 samples
+Fra:2 Mem:104.93M (Peak 147.22M) | Time:01:08.29 | Rendering 16 / 16 samples
+Saved: '/home/hatch/workspace/bannon-video-pipe/out/entrance_work_v2/frames_taunts/frame_0002.png'
+Time: 01:18.13 (Saving: 00:04.38)
+
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing ArenaFloor
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing Key
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing Armature
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing world
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing Rim
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing Fill
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing Front
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing SpotPool
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing ShotCam
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing chest
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing elL
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing elR
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing ftL
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing ftR
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing haL
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing haR
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing head
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing hipL
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing hipR
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing knL
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing knR
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing pelvis
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing shL
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing shR
+Fra:3 Mem:104.72M (Peak 147.22M) | Time:00:00.66 | Syncing BANNON_XFER_MESH
+Fra:3 Mem:106.79M (Peak 147.22M) | Time:00:01.30 | Rendering 1 / 16 samples
+Fra:3 Mem:104.93M (Peak 147.22M) | Time:01:13.07 | Rendering 16 / 16 samples
+Saved: '/home/hatch/workspace/bannon-video-pipe/out/entrance_work_v2/frames_taunts/frame_0003.png'
+Time: 01:22.96 (Saving: 00:03.67)
+
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.52 | Syncing ArenaFloor
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.52 | Syncing Key
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.52 | Syncing Armature
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing world
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing Rim
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing Fill
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing Front
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing SpotPool
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing ShotCam
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing chest
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing elL
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing elR
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing ftL
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing ftR
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing haL
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing haR
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing head
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing hipL
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing hipR
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing knL
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing knR
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing pelvis
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.53 | Syncing shL
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.54 | Syncing shR
+Fra:4 Mem:104.72M (Peak 147.22M) | Time:00:00.54 | Syncing BANNON_XFER_MESH
+Fra:4 Mem:106.79M (Peak 147.22M) | Time:00:01.36 | Rendering 1 / 16 samples
+Fra:4 Mem:104.93M (Peak 147.22M) | Time:01:39.56 | Rendering 16 / 16 samples
+Saved: '/home/hatch/workspace/bannon-video-pipe/out/entrance_work_v2/frames_taunts/frame_0004.png'
+Time: 01:53.83 (Saving: 00:06.29)
+
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.12 | Syncing ArenaFloor
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing Key
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing Armature
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing world
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing Rim
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing Fill
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing Front
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing SpotPool
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing ShotCam
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing chest
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing elL
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing elR
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing ftL
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing ftR
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing haL
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing haR
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing head
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing hipL
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing hipR
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing knL
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing knR
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing pelvis
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing shL
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing shR
+Fra:5 Mem:104.72M (Peak 147.22M) | Time:00:01.14 | Syncing BANNON_XFER_MESH
+Fra:5 Mem:106.79M (Peak 147.22M) | Time:00:02.04 | Rendering 1 / 16 samples
+Fra:5 Mem:104.93M (Peak 147.22M) | Time:01:31.14 | Rendering 16 / 16 samples
+Saved: '/home/hatch/workspace/bannon-video-pipe/out/entrance_work_v2/frames_taunts/frame_0005.png'
+Time: 01:42.39 (Saving: 00:05.00)
+
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.58 | Syncing ArenaFloor
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.58 | Syncing Key
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.58 | Syncing Armature
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.58 | Syncing world
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.58 | Syncing Rim
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing Fill
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing Front
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing SpotPool
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing ShotCam
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing chest
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing elL
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing elR
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing ftL
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing ftR
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing haL
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing haR
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing head
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing hipL
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing hipR
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing knL
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing knR
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing pelvis
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing shL
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing shR
+Fra:6 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing BANNON_XFER_MESH
+Fra:6 Mem:106.79M (Peak 147.22M) | Time:00:00.92 | Rendering 1 / 16 samples
+Fra:6 Mem:104.93M (Peak 147.22M) | Time:01:25.58 | Rendering 16 / 16 samples
+Saved: '/home/hatch/workspace/bannon-video-pipe/out/entrance_work_v2/frames_taunts/frame_0006.png'
+Time: 01:36.61 (Saving: 00:05.15)
+
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.43 | Syncing ArenaFloor
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.44 | Syncing Key
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.44 | Syncing Armature
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.44 | Syncing world
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.44 | Syncing Rim
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.44 | Syncing Fill
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.44 | Syncing Front
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.44 | Syncing SpotPool
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.44 | Syncing ShotCam
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.44 | Syncing chest
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.44 | Syncing elL
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.44 | Syncing elR
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.44 | Syncing ftL
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.44 | Syncing ftR
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.45 | Syncing haL
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.45 | Syncing haR
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.45 | Syncing head
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.45 | Syncing hipL
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.45 | Syncing hipR
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.45 | Syncing knL
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.45 | Syncing knR
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.45 | Syncing pelvis
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.45 | Syncing shL
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.45 | Syncing shR
+Fra:7 Mem:104.72M (Peak 147.22M) | Time:00:00.45 | Syncing BANNON_XFER_MESH
+Fra:7 Mem:106.79M (Peak 147.22M) | Time:00:00.65 | Rendering 1 / 16 samples
+Fra:7 Mem:104.93M (Peak 147.22M) | Time:01:21.63 | Rendering 16 / 16 samples
+Saved: '/home/hatch/workspace/bannon-video-pipe/out/entrance_work_v2/frames_taunts/frame_0007.png'
+Time: 01:32.51 (Saving: 00:05.50)
+
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.55 | Syncing ArenaFloor
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.58 | Syncing Key
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.58 | Syncing Armature
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.58 | Syncing world
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.58 | Syncing Rim
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.58 | Syncing Fill
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.58 | Syncing Front
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.58 | Syncing SpotPool
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.58 | Syncing ShotCam
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.58 | Syncing chest
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing elL
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing elR
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing ftL
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing ftR
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing haL
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing haR
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing head
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing hipL
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing hipR
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing knL
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing knR
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.59 | Syncing pelvis
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.60 | Syncing shL
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.60 | Syncing shR
+Fra:8 Mem:104.72M (Peak 147.22M) | Time:00:00.60 | Syncing BANNON_XFER_MESH
+Fra:8 Mem:106.79M (Peak 147.22M) | Time:00:01.17 | Rendering 1 / 16 samples
+Fra:8 Mem:104.93M (Peak 147.22M) | Time:01:16.52 | Rendering 16 / 16 samples
+Saved: '/home/hatch/workspace/bannon-video-pipe/out/entrance_work_v2/frames_taunts/frame_0008.png'
+Time: 01:28.81 (Saving: 00:04.99)
+
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.67 | Syncing ArenaFloor
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing Key
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing Armature
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing world
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing Rim
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing Fill
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing Front
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing SpotPool
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing ShotCam
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing chest
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing elL
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing elR
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing ftL
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing ftR
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing haL
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing haR
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing head
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing hipL
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing hipR
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing knL
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing knR
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing pelvis
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing shL
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing shR
+Fra:9 Mem:104.72M (Peak 147.22M) | Time:00:00.68 | Syncing BANNON_XFER_MESH
+Fra:9 Mem:106.79M (Peak 147.22M) | Time:00:01.01 | Rendering 1 / 16 samples

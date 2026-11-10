@@ -1,0 +1,207 @@
+import { deepEqual, ok, rejects, strictEqual } from 'node:assert/strict';
+import { glob, mkdir, readFile, stat, writeFile } from 'node:fs/promises';
+import { dirname, join, resolve, sep } from 'node:path';
+import { describe, test } from 'node:test';
+import { Document, NodeIO } from '@gltf-transform/core';
+import { createPlatformIO, Environment, environment, logger } from '@gltf-transform/test-utils';
+
+const MOCK_DOMAIN = 'https://mock.site';
+
+const fetch = async (input: RequestInfo, _init?: RequestInit) => {
+	if (input.toString().includes('__missing')) {
+		return {
+			arrayBuffer: () => Promise.reject(new Error('[mock] 404 Not Found')),
+			text: () => Promise.reject(new Error('[mock] 404 Not Found')),
+		};
+	}
+	const dirname = resolve(import.meta.dirname, '..', 'in');
+	const relPath = input.toString().replace(MOCK_DOMAIN, dirname).replaceAll('/', sep);
+	return {
+		arrayBuffer: () => readFile(decodeURIComponent(relPath)),
+		text: () => readFile(decodeURIComponent(relPath), 'utf8'),
+	};
+};
+
+const describeFn = () => {
+	test('read glb', async () => {
+		const io = (await createPlatformIO()) as NodeIO;
+		let count = 0;
+		for await (const inputURI of glob(resolve(import.meta.dirname, '../in/**/*.glb'))) {
+			const basepath = inputURI.replace(resolve(import.meta.dirname, '..', 'in'), '.');
+			const document = io.read(inputURI);
+
+			ok(document, `Read "${basepath}".`);
+			count++;
+		}
+		ok(count > 0, 'tests completed');
+	});
+
+	test('read gltf', async () => {
+		const io = (await createPlatformIO()) as NodeIO;
+		let count = 0;
+		for await (const inputURI of glob(resolve(import.meta.dirname, '../in/**/*.gltf'))) {
+			const basepath = inputURI.replace(resolve(import.meta.dirname, '..', 'in'), '.');
+			const document = await io.read(inputURI);
+
+			ok(document, `Read "${basepath}".`);
+			count++;
+		}
+		ok(count > 0, 'tests completed');
+	});
+
+	test('read glb http', async () => {
+		const io = new NodeIO(fetch).setLogger(logger).setAllowNetwork(true);
+		let count = 0;
+		for await (const inputURI of glob(resolve(import.meta.dirname, '../in/**/*.glb'))) {
+			const basepath = inputURI
+				.replace(resolve(import.meta.dirname, '..', 'in'), MOCK_DOMAIN)
+				.replaceAll('\\', '/');
+			const document = await io.read(basepath);
+
+			ok(document, `Read "${basepath}".`);
+			count++;
+		}
+		ok(count > 0, 'tests completed');
+	});
+
+	test('read gltf http', async () => {
+		const io = new NodeIO(fetch).setLogger(logger).setAllowNetwork(true);
+		let count = 0;
+		for await (const inputURI of glob(resolve(import.meta.dirname, '../in/**/*.gltf'))) {
+			const basepath = inputURI
+				.replace(resolve(import.meta.dirname, '..', 'in'), MOCK_DOMAIN)
+				.replaceAll('\\', '/');
+			const document = await io.read(basepath);
+
+			ok(document, `Read "${basepath}".`);
+			count++;
+		}
+		ok(count > 0, 'tests completed');
+	});
+
+	test('write glb', async () => {
+		const io = (await createPlatformIO()) as NodeIO;
+		let count = 0;
+		for await (const inputURI of glob(resolve(import.meta.dirname, '../in/**/*.gltf'))) {
+			const basepath = inputURI.replace(resolve(import.meta.dirname, '../in'), '.');
+			const outputURI = resolve(import.meta.dirname, `../out/${basepath}`);
+			const document = await io.read(inputURI);
+
+			await mkdir(dirname(outputURI), { recursive: true });
+			await io.write(outputURI.replace('.gltf', '.glb'), document);
+			ok(true, `Wrote "${basepath}".`); // TODO(cleanup): Test the output somehow.
+			count++;
+		}
+		ok(count > 0, 'tests completed');
+	});
+
+	test('write gltf', async () => {
+		const io = (await createPlatformIO()) as NodeIO;
+		let count = 0;
+		for await (const inputURI of glob(resolve(import.meta.dirname, '../in/**/*.glb'))) {
+			const basepath = inputURI.replace(resolve(import.meta.dirname, '../in'), '.');
+			const outputURI = resolve(import.meta.dirname, `../out/${basepath}`);
+			const document = await io.read(inputURI);
+
+			await mkdir(dirname(outputURI), { recursive: true });
+			await io.write(outputURI.replace('.glb', '.gltf'), document);
+			ok(true, `Wrote "${basepath}".`); // TODO(cleanup): Test the output somehow.
+			count++;
+		}
+		ok(count > 0, 'tests completed');
+	});
+
+	test('write gltf with HTTP', async () => {
+		const document = new Document();
+		document.createBuffer();
+		document
+			.createTexture('Internal Texture')
+			.setURI('internal.png')
+			.setMimeType('image/png')
+			.setImage(new Uint8Array(1024));
+		document
+			.createTexture('External Texture')
+			.setURI('https://test.example/external.png')
+			.setMimeType('image/png')
+			.setImage(new Uint8Array(1024));
+		const io = (await createPlatformIO()) as NodeIO;
+		const outputURI = resolve(import.meta.dirname, '../out/node-io-external-test');
+		await mkdir(outputURI, { recursive: true });
+		await io.write(join(outputURI, 'scene.gltf'), document);
+		ok((await stat(join(outputURI, 'internal.png'))).isFile(), 'writes internal image');
+		strictEqual(await stat(join(outputURI, 'external.png')).catch(() => false), false, 'skips external image');
+		ok(io.lastWriteBytes < 2048, 'writes < 2048 bytes');
+	});
+
+	test('resource URI encoding', async () => {
+		const io = (await createPlatformIO()) as NodeIO;
+
+		const srcDir = resolve(import.meta.dirname, '..', 'in', 'EncodingTest');
+		const dstDir = resolve(import.meta.dirname, '..', 'out', 'EncodingTest');
+		await mkdir(dstDir, { recursive: true });
+
+		const srcJSONDocument = await io.readAsJSON(resolve(srcDir, 'Unicode ❤♻ Test.gltf'));
+
+		deepEqual(
+			Object.keys(srcJSONDocument.resources).sort(),
+			['Unicode%20❤♻ Binary.bin', 'Unicode%20❤♻ Texture.png'],
+			'URIs in source JSON document',
+		);
+
+		const document = await io.readJSON(srcJSONDocument);
+		const buffer = document.getRoot().listBuffers()[0];
+		const texture = document.getRoot().listTextures()[0];
+
+		// TODO(v5): For backward-compatibility, URIs remain encoded in memory.
+		deepEqual(
+			[buffer.getURI(), texture.getURI()],
+			['Unicode%20❤♻ Binary.bin', 'Unicode%20❤♻ Texture.png'],
+			'URIs in document',
+		);
+
+		const dstJSONDocument = await io.writeJSON(document);
+
+		deepEqual(
+			Object.keys(dstJSONDocument.resources).sort(),
+			['Unicode%20❤♻ Binary.bin', 'Unicode%20❤♻ Texture.png'],
+			'URIs in source JSON document',
+		);
+
+		await io.write(resolve(dstDir, 'Unicode ❤♻ Test.gltf'), document);
+
+		// Decoded URIs match source resources, not the (encoded) URI in the source glTF JSON.
+		ok((await stat(resolve(dstDir, 'Unicode ❤♻ Binary.bin'))).isFile(), 'file path to buffer');
+		ok((await stat(resolve(dstDir, 'Unicode ❤♻ Texture.png'))).isFile(), 'file path to texture');
+	});
+
+	test('strict / non-strict resource modes', async () => {
+		const io = new NodeIO(fetch).setLogger(logger).setAllowNetwork(true);
+
+		const dstDir = resolve(import.meta.dirname, '..', 'out', 'MissingImageTest');
+		const dstPath = resolve(dstDir, 'MissingImage.gltf');
+		await mkdir(dstDir, { recursive: true });
+
+		writeFile(
+			dstPath,
+			JSON.stringify({
+				asset: { version: '2.0' },
+				images: [{ uri: '__missing.png', mimeType: 'image/png' }],
+			}),
+		);
+
+		await rejects(() => io.read(dstPath), { message: /no such file/i }, 'throws on missing image');
+
+		io.setStrictResources(false);
+
+		const document = await io.read(dstPath);
+		const textures = document.getRoot().listTextures();
+		strictEqual(textures.length, 1, 'texture != null');
+		strictEqual(textures[0].getImage(), null, 'texture.image == null');
+	});
+};
+
+if (environment === Environment.NODE) {
+	describe('core::NodeIO', describeFn);
+} else if (environment === Environment.DENO) {
+	describe('core::DenoIO', describeFn);
+}

@@ -1,0 +1,46 @@
+{
+ "segments": [
+  {
+   "segment": 1,
+   "piece": "Flex_Front",
+   "frames": "001-012"
+  },
+  {
+   "segment": 2,
+   "piece": "Flex_ThreeQuarter",
+   "frames": "013-024",
+   "facing": "right"
+  },
+  {
+   "segment": 3,
+   "piece": "Flex_ThreeQuarter_Mirrored",
+   "frames": "025-036",
+   "facing": "left, NEW insert, mirrored second frame"
+  },
+  {
+   "segment": 4,
+   "piece": "Flex_Back",
+   "frames": "037-048"
+  },
+  {
+   "segment": 5,
+   "piece": "Flex_ThreeQuarter",
+   "frames": "049-060"
+  },
+  {
+   "segment": 6,
+   "piece": "Flex_Front",
+   "frames": "061-072"
+  }
+ ],
+ "mirror_exact": true,
+ "mirrored_size": [
+  494,
+  487
+ ],
+ "mp4_md5": "705120864765db4f0f4463fb90081ca4",
+ "mp4_bytes": 281991,
+ "gif_md5": "a4b769484c3662e6d8b1542ed4bb0fa5",
+ "gif_bytes": 518082,
+ "mirrored_md5": "2c27878ff8b085a1f4765c4dfcb144c7"
+}

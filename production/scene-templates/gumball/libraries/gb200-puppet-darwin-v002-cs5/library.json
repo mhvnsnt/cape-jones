@@ -1,0 +1,81 @@
+{
+ "id": "gb200-puppet-darwin-v002-cs5",
+ "kind": "static-puppet-library",
+ "show": "The Amazing World of Gumball",
+ "collection": "GB200 original puppet block (Gumball S2 rigs folder)",
+ "characters": [
+  "Darwin"
+ ],
+ "source_file": "GB200_ORIGINAL_PUPPET_DARWIN_Version002_CS5.fla",
+ "source_archive": "CN-Leaks-001-gumball.zip",
+ "archive_location": "mhvnsnt/cn-gigaleak-gumball, draft release untagged-1676e192ae8c72e95791",
+ "size_bytes": 2116596,
+ "format": "XFL (zip-based FLA, readable)",
+ "symbol_count": 34,
+ "symbols": [
+  "GB200_ASSETT_CONTAINER",
+  "GB200_DARWIN_PUPPET_BACKVIEW_v001",
+  "GB200_DARWIN_PUPPET_FLOPPED_v001",
+  "GB200_DRW_BACKVIEW_HEAD",
+  "GB200_DRW_BACKVIEW_L_FIN",
+  "GB200_DRW_BACKVIEW_L_LEG",
+  "GB200_DRW_BACKVIEW_R_FIN",
+  "GB200_DRW_BACKVIEW_R_LEG",
+  "GB200_DRW_EYECOMP",
+  "GB200_DRW_FLOPPED_EYECOMP",
+  "GB200_DRW_FLOPPED_FINS",
+  "GB200_DRW_FLOPPED_HEAD",
+  "GB200_DRW_FLOPPED_HEADCOMP",
+  "GB200_DRW_FLOPPED_L_LEG",
+  "GB200_DRW_FLOPPED_MOUTH",
+  "GB200_DRW_FLOPPED_R_LEG",
+  "GB200_DRW_FRONTVIEW_EYECOMP",
+  "GB200_DRW_FRONTVIEW_HEAD",
+  "GB200_DRW_FRONTVIEW_HEADCOMP",
+  "GB200_DRW_FRONTVIEW_L_FIN",
+  "GB200_DRW_FRONTVIEW_L_LEG",
+  "GB200_DRW_FRONTVIEW_MOUTH",
+  "GB200_DRW_FRONTVIEW_R_FIN",
+  "GB200_DRW_FRONTVIEW_R_LEG",
+  "GB200_DRW_FRONT_VIEW_v001",
+  "GB200_DRW_HEAD",
+  "GB200_DRW_HEADCOMP",
+  "GB200_DRW_L_FIN",
+  "GB200_DRW_L_LEG",
+  "GB200_DRW_Mouth",
+  "GB200_DRW_ORIGINAL_PUPPET_v001",
+  "GB200_DRW_R_FIN",
+  "GB200_DRW_R_LEG",
+  "LINES"
+ ],
+ "recovered_names": null,
+ "parts_census": {
+  "heads": 4,
+  "head_comps": 3,
+  "eye_comps": 3,
+  "mouths": 3,
+  "bodies": 0,
+  "arms_fins_hands": 7,
+  "legs": 8,
+  "ears": 0,
+  "tails": 0,
+  "puppet_assemblies": 3
+ },
+ "views": [
+  "FRONTVIEW",
+  "BACKVIEW",
+  "FLOPPED"
+ ],
+ "presentation_frames": "150f model-sheet presentation (companion SWF, INDEX-measured)",
+ "completeness": "Complete — assembles in full (CS5 save)",
+ "notes": [
+  "CS5 save of the same 34-symbol Darwin library; census identical to v002."
+ ],
+ "media": {
+  "status": "blocked-write-guard",
+  "target_file": "sheet-gb200-puppet-darwin-v002-cs5.png",
+  "delivery_dir": "~/workspace/your_files/scene-templates/",
+  "note": "Model-sheet render staged in render_model_sheets.sh; the sandbox write guard currently refuses rendered-binary writes (EPERM/0 bytes). Census and catalog are unaffected."
+ },
+ "record_path": "production/scene-templates/gumball/libraries/gb200-puppet-darwin-v002-cs5/library.json"
+}

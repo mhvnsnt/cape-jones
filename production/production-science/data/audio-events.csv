@@ -1,0 +1,27 @@
+scene,frame,time_s,event_type,onset_strength,note
+Sc057,3.9,0.16,beat_grid_accent,0.35,First measured accent; sits on the beat grid (phase ~3.7 + n x 13.4 frames)
+Sc057,37.5,1.50,phrase_figure_hit_1,1.00,Strongest onset in the scene. Each phrase is a two-hit figure: this hit lands ~6 frames BEFORE the grid; the second hit lands on it. Pairs repeat every 54 frames (4 beats)
+Sc057,43.6,1.74,phrase_figure_hit_2_on_grid,0.75,Second hit of the phrase figure - sits on the beat grid (phase ~3.7 + n x 13.4 frames)
+Sc057,71.0,2.84,beat_grid_accent,0.20,On-grid accent
+Sc057,77.8,3.11,syncopation,0.27,Off-beat hit ~half a beat after the grid point
+Sc057,89,3.56,level_event,,Frame RMS falls to -28.0 dBFS; dip deepens at frame 90 (-33.9 dBFS) - a pull-back right before the hit
+Sc057,91.5,3.66,phrase_figure_hit_1,0.96,Phrase figure hit 1 (37.5 + 54)
+Sc057,92,3.68,level_event,,Track slams back to -10.4 dBFS frame RMS after the dip - the accent is staged by the silence before it
+Sc057,97.6,3.90,phrase_figure_hit_2_on_grid,0.84,Phrase figure hit 2 (43.6 + 54)
+Sc057,111.1,4.44,beat_grid_accent,0.27,On-grid accent
+Sc057,126,5.04,level_event,,Second sag: frame RMS slides -21.3 to -26.4 dBFS across frames 126-131
+Sc057,131.3,5.25,syncopation,0.23,Off-beat hit inside the recovery from the sag
+Sc057,132,5.28,level_event,,Level recovers to -14.5 dBFS
+Sc057,145.5,5.82,phrase_figure_hit_1,0.89,Phrase figure hit 1 (91.5 + 54)
+Sc057,146,5.84,level_event,,Loudest single frame of Sc057 by RMS: -9.9 dBFS
+Sc057,151.6,6.06,phrase_figure_hit_2_on_grid,0.74,Phrase figure hit 2 (97.6 + 54)
+Sc057,164.6,6.58,beat_grid_accent,0.30,On-grid accent
+Sc057,184.9,7.40,syncopation,0.25,Late off-beat hit; no closing phrase accent inside the shot - the track is cut mid-phrase at the out-point
+Sc059,4,0.16,level_event,,Track enters loud immediately: frame RMS -11.7 dBFS by frame 4; peak frame -6.6 dBFS at frame 19
+Sc059,19,0.76,level_event,,Loudest frame of either scene by RMS (-6.6 dBFS)
+Sc059,43.4,1.74,twist_start_accent,0.84,The twist layer's first keyframe is frame 43 - the move starts ON this accent (within 0.4 frames)
+Sc059,49,1.96,level_event,,Bed drops under the twist: frame RMS -21.8 falling to -31.5 at frame 53 - the twist plays over a pulled-back bed
+Sc059,56.9,2.28,beat_accent,0.69,One beat (13.5 frames) after the twist-start accent
+Sc059,63.7,2.55,syncopation,0.62,Half-beat syncopation between beats
+Sc059,70.2,2.81,beat_accent,1.00,Strongest onset in Sc059; one beat after 56.9 - accents land once per beat through the twist's first half
+Sc059,97,3.88,animation_event,,Twist layer's last 2-frame keyframe ends at frame 97; no matching audio accent - the twist exits on a held 11-frame keyframe while the track continues

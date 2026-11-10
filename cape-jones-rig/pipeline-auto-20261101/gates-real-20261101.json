@@ -1,0 +1,400 @@
+{
+  "layout_source": "saved-layout-20261101.json",
+  "fist": "off",
+  "real_hand": true,
+  "canvas_bbox": [
+    225,
+    195,
+    902,
+    1400
+  ],
+  "ground_gate": {
+    "ground_line_y": 1475,
+    "alpha_bottom": 1399,
+    "bottom_left_band": 1399,
+    "bottom_right_band": 1229,
+    "planted_at_1475": false
+  },
+  "piece_deltas": [
+    {
+      "id": "cape",
+      "saved_xy": [
+        360,
+        330
+      ],
+      "saved_centre": [
+        617.0,
+        780.0
+      ],
+      "rendered_alpha_centre": [
+        617.0,
+        780.0
+      ],
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "rotation": 0,
+      "z": 0
+    },
+    {
+      "id": "upperArmL",
+      "saved_xy": [
+        490,
+        390
+      ],
+      "saved_centre": [
+        552.5,
+        508.5
+      ],
+      "rendered_alpha_centre": [
+        551.0,
+        507.5
+      ],
+      "delta": [
+        -1.5,
+        -1.0
+      ],
+      "rotation": 5,
+      "z": 1
+    },
+    {
+      "id": "forearmL",
+      "saved_xy": [
+        455,
+        580
+      ],
+      "saved_centre": [
+        527.5,
+        717.5
+      ],
+      "rendered_alpha_centre": [
+        536.0,
+        682.0
+      ],
+      "delta": [
+        8.5,
+        -35.5
+      ],
+      "rotation": -15,
+      "z": 4
+    },
+    {
+      "id": "elbowCapL",
+      "saved_xy": [
+        465,
+        580
+      ],
+      "saved_centre": [
+        496.5,
+        611.5
+      ],
+      "rendered_alpha_centre": [
+        496.5,
+        611.5
+      ],
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "rotation": 0,
+      "z": 5
+    },
+    {
+      "id": "pelvis",
+      "saved_xy": [
+        565,
+        650
+      ],
+      "saved_centre": [
+        674.0,
+        740.5
+      ],
+      "rendered_alpha_centre": [
+        674.0,
+        740.5
+      ],
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "rotation": 0,
+      "z": 4
+    },
+    {
+      "id": "thighL",
+      "saved_xy": [
+        400,
+        710
+      ],
+      "saved_centre": [
+        515.0,
+        843.5
+      ],
+      "rendered_alpha_centre": [
+        513.0,
+        843.0
+      ],
+      "delta": [
+        -2.0,
+        -0.5
+      ],
+      "rotation": 2,
+      "z": 3
+    },
+    {
+      "id": "thighR",
+      "saved_xy": [
+        590,
+        750
+      ],
+      "saved_centre": [
+        699.0,
+        899.5
+      ],
+      "rendered_alpha_centre": [
+        696.5,
+        898.0
+      ],
+      "delta": [
+        -2.5,
+        -1.5
+      ],
+      "rotation": 6,
+      "z": 2
+    },
+    {
+      "id": "kneeL",
+      "saved_xy": [
+        380,
+        885
+      ],
+      "saved_centre": [
+        417.0,
+        932.0
+      ],
+      "rendered_alpha_centre": [
+        417.0,
+        932.0
+      ],
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "rotation": 0,
+      "z": 4
+    },
+    {
+      "id": "kneeR",
+      "saved_xy": [
+        560,
+        950
+      ],
+      "saved_centre": [
+        597.0,
+        997.0
+      ],
+      "rendered_alpha_centre": [
+        597.0,
+        997.0
+      ],
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "rotation": 0,
+      "z": 7
+    },
+    {
+      "id": "shinL",
+      "saved_xy": [
+        225,
+        945
+      ],
+      "saved_centre": [
+        347.0,
+        1150.0
+      ],
+      "rendered_alpha_centre": [
+        347.0,
+        1150.0
+      ],
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "rotation": 0,
+      "z": 6
+    },
+    {
+      "id": "shinR",
+      "saved_xy": [
+        395,
+        985
+      ],
+      "saved_centre": [
+        523.0,
+        1192.5
+      ],
+      "rendered_alpha_centre": [
+        556.0,
+        1192.5
+      ],
+      "delta": [
+        33.0,
+        0.0
+      ],
+      "rotation": -10,
+      "z": 6
+    },
+    {
+      "id": "torso",
+      "saved_xy": [
+        550,
+        370
+      ],
+      "saved_centre": [
+        695.5,
+        527.5
+      ],
+      "rendered_alpha_centre": [
+        695.5,
+        527.5
+      ],
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "rotation": 0,
+      "z": 8
+    },
+    {
+      "id": "head",
+      "saved_xy": [
+        635,
+        195
+      ],
+      "saved_centre": [
+        700.0,
+        293.0
+      ],
+      "rendered_alpha_centre": [
+        700.0,
+        293.0
+      ],
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "rotation": 0,
+      "z": 9
+    },
+    {
+      "id": "upperArmR",
+      "saved_xy": [
+        805,
+        420
+      ],
+      "saved_centre": [
+        861.0,
+        548.0
+      ],
+      "rendered_alpha_centre": [
+        853.5,
+        545.5
+      ],
+      "delta": [
+        -7.5,
+        -2.5
+      ],
+      "rotation": 15,
+      "z": 10
+    },
+    {
+      "id": "forearmR",
+      "saved_xy": [
+        685,
+        650
+      ],
+      "saved_centre": [
+        760.0,
+        787.0
+      ],
+      "rendered_alpha_centre": [
+        752.0,
+        735.0
+      ],
+      "delta": [
+        -8.0,
+        -52.0
+      ],
+      "rotation": 45,
+      "z": 11
+    },
+    {
+      "id": "elbowCapR",
+      "saved_xy": [
+        775,
+        610
+      ],
+      "saved_centre": [
+        806.5,
+        641.5
+      ],
+      "rendered_alpha_centre": [
+        806.5,
+        641.5
+      ],
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "rotation": 0,
+      "z": 12
+    },
+    {
+      "id": "handL",
+      "saved_xy": [
+        530,
+        740
+      ],
+      "saved_centre": [
+        588.5,
+        825.0
+      ],
+      "rendered_alpha_centre": [
+        588.5,
+        825.0
+      ],
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "rotation": -46,
+      "z": 13
+    },
+    {
+      "id": "handR",
+      "saved_xy": [
+        565,
+        755
+      ],
+      "saved_centre": [
+        623.5,
+        840.0
+      ],
+      "rendered_alpha_centre": [
+        623.5,
+        841.0
+      ],
+      "delta": [
+        0.0,
+        1.0
+      ],
+      "rotation": 70,
+      "z": 13
+    }
+  ],
+  "pieces_drawn": 18,
+  "fists_drawn": 0
+}
