@@ -1,9 +1,0 @@
-include README.md
-include LICENSE
-include requirements.txt
-recursive-include kittenml *.py
-recursive-include kittenml *.json
-recursive-include kittenml *.txt
-recursive-include kittenml *.onnx
-global-exclude __pycache__
-global-exclude *.py[co]

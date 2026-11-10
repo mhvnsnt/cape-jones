@@ -1,4 +1,0 @@
-ADD_DEFINITIONS(-DTHIS_SOURCE_DIR="${CMAKE_CURRENT_SOURCE_DIR}")
-UNIT_TEST(openMVG exif_IO "stlplus;easyexif")
-
-ADD_SUBDIRECTORY(sensor_width_database)

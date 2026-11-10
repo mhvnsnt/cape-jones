@@ -1,7 +1,0 @@
-{
-    "type": "boolean",
-    "name": "discrete_race",
-    "description": "When enabled, exactly one race is picked and set to full weight rather than randomizing the three race weights independently and normalizing them",
-    "label": "Discrete race",
-    "default": false
-}

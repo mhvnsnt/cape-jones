@@ -1,8 +1,0 @@
-{
-  "paramsTypes": {
-    "offset": "float"
-  },
-  "defaultParams": {
-    "offset": 0.05
-  }
-}

@@ -1,7 +1,0 @@
-{
-    "type": "boolean",
-    "name": "hair_randomize",
-    "description": "Attach a randomly picked hair style to the created human. When off, no hair is added",
-    "label": "Randomize hair",
-    "default": true
-}

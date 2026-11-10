@@ -1,8 +1,0 @@
-{
-  "paramsTypes": {
-    "colorSeparation": "float"
-  },
-  "defaultParams": {
-    "colorSeparation": 0.04
-  }
-}

@@ -1,7 +1,0 @@
-{
-    "type": "boolean",
-    "name": "extra_vertex_groups",
-    "description": "Assign extra vertex groups to the body, for example joint helpers and named body regions",
-    "label": "Extra vertex groups",
-    "default": true
-}

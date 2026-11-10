@@ -1,7 +1,0 @@
-{
-    "type": "string",
-    "name": "homepage",
-    "description": "URL to the asset's homepage or source page",
-    "label": "Homepage",
-    "default": ""
-}
