@@ -1,8 +1,0 @@
-{
-  "paramsTypes": {
-    "blocksize": "float"
-  },
-  "defaultParams": {
-    "blocksize": 0.02
-  }
-}
