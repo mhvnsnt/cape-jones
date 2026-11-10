@@ -7,3 +7,5 @@ Cloth: 1,464-vert proxy, top pinned via chest/spine/clavicle weights; collision 
 Grounding: pelvis shifted per frame so the lowest sole = floor z 0 (sole min after grounding 0.0000 on 14 sampled frames).
 Viewed: checkframes/v3-partial-checkframes-8-35-62-90pct.png, v2-v3/v2-vs-v3-matched-src-frames.png -> cape hangs full length behind and swings; feet on the floor; arms still forward in guard.
 LIMITS: cape silhouette narrower than the original wide cape; small shard/speck artifacts from the fused Tripo fragments; no penetration metric yet (visual only); cloth does not loop; motion is the CMU 13_17 STAND-IN, not Alisa; set NOT Jungle Outpost.
+
+SUPERSEDED 2026-11-10 ~1:54 PM CST: the full-v3 review FAILED floor contact (he reads as floating), cape collision (thigh/calf clipping) and the loop. 'Feet on the floor' above is a measured number only, NOT visible contact. See PROOF-guard-stance-v3-cloth-20261110.txt

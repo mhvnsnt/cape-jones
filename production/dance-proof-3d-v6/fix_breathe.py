@@ -27,6 +27,12 @@ from mathutils import Vector, Euler, Matrix, Quaternion
 argv = sys.argv[sys.argv.index("--") + 1:]
 INP, OUTP = argv[0], argv[1]
 sc = bpy.context.scene
+# PERMANENT ARM FIX (owner pt98u 2026-11-10): route through the shared guarded loader before any arm work.
+# Raw w5r arm chain (joints one segment out -> "H" arms) is repaired in memory; unknown chains are refused.
+import os as _os
+sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "guard-stance-v2-20261110", "tools"))
+import cj_arm_guard
+cj_arm_guard.ensure_arm_fix()
 rig = bpy.data.objects["CapeJones_Rig"]
 RPB = rig.pose.bones
 DOWN = Vector((0, 0, -1))
