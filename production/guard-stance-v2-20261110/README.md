@@ -102,3 +102,16 @@ Other known v3 defects: the cape reads narrower than the original; small shard a
   - any manual or GUI use of the repo blend, which is still the defective file.
   - Also unverified: whether `w5r.blend` / `w5r_idle*.blend` share the same signature.
 - => The permanent fix covers the guard/fight pipeline in this folder plus `fix_breathe.py`. It is **NOT global**.
+
+## UPDATE 2026-11-10 (Phase 2a landing — arms-fixed rig is now canonical repo-wide)
+- The repo blends are repaired IN PLACE (same paths, blob replacement) with this pipeline:
+  - `3d-assets/cape-jones-rig/cape_jones_rigged_w5r_clean.blend`: blob `76a25284fa56b8b2179f7f39560f60054b31f333` → `bea314086cdecf31fd06b686104484d9dfc10a2b`, 96,835,930 → 95,937,991 B
+  - `3d-assets/cape-jones-rig/cape_jones_rigged_w5r.blend`: blob `f42becbc1fd169138906124c492873afd15c765b` → `8d324ce27c545e59b2f704dc55496eb098ca0ef0`, 92,125,095 → 91,846,774 B
+  - `3d-assets/living_room.blend` (embedded rig): blob `c537475db64c33c5c36fa308ba16adb921e7df16` → `36dca7ff48815a894ccaff5c712adfa1f3cffb33`, 92,300,171 → 92,000,015 B
+  Bone heads now shoulder 0.130 / elbow 0.243 / wrist 0.376, `cj_arm_fix` mark set, defect signature gone. Gate: `tests/test_guard_arms.py` exits 1 on each raw file and 0 on each fixed file (values reproduce the v1/v2 tables above: fixed L 4.96 / R 5.41 median, lateral 0.18, max 7.34/8.97).
+- All 41 bypassing consumers are rewired through `cj_arm_guard.ensure_arm_fix()`; the full 201-consumer manifest is in `tests/CONSUMERS-FULL.json` and `tests/test_consumers.py` cross-checks it (PASS).
+- The "NOT adopted repo-wide" note above is SUPERSEDED: the repo blend is now the fixed file, and the gate must PASS on it.
+- Left as-is: `cape_jones_rigged_w5r_idle.blend` (sitting/idle line; canonical replacement `cape_jones_rigged_w5r_idle_armsdown.blend`) and `sitting_pose_library.blend` (owner-excluded; going-forward default `sitting_pose_library_armsdown.blend`).
+- The verified armsdown scene: release `scene1-armsdown-20261110` (https://github.com/mhvnsnt/cape-jones/releases/tag/scene1-armsdown-20261110, 832,628,817 B; action `mocap_sit_canon_armsdown`, rest hang 17.8–18.5°, stretch peak 42.4/38.2 vs original 105/92). The armsdown ACTION is blessed via the armsdown variants + this release pointer, not by copying the scene into the rig file.
+- Sit-pose transfer measured (same actions, raw library rig vs fixed rig): the five `pose_sit_*` poses match within ~5° hang / ~7° bend. `idle_heroic_breathe` does NOT transfer — its keys were authored for the library's quaternion rig + defective chain (reads 8.3° hang raw vs 153.5°/77.3° on the fixed rig); that action belongs to the sitting line and `fix_breathe.py` owns its fix. The `mocap_sit` action itself exists in no repo blend, so the literal 105/92 figures can't be re-measured from repo files; the gate above is the independent reproduction of the fix.
+- Open follow-ups: deform-driver expressions calibrated on the raw chain need re-derivation (`set_drivers_final.py` FIXES, `wave2_keys.json`, npz smooth weights); `solve_v4.py` BodyR identity check on the next v4 run; `production/tools/**` (3,606 scripts) never content-scanned.

@@ -32,6 +32,16 @@ import bpy
 import numpy as np
 from mathutils import Matrix
 
+# PERMANENT ARM FIX (owner pt98u 2026-11-10): route through the shared guarded loader before any arm work.
+# The raw w5r arm chain (joints one segment out -> "H" arms) is repaired in memory; unknown chains are refused.
+# SPINE-LANE NOTE (PR #401 caveat): this lane rebuilds the rig and saves it in place, so the saved file now
+# carries the fixed arm chain + cj_arm_fix mark. The guard touches ONLY arm bones + arm weights (torso
+# re-skin below is untouched); spine behaviour is unchanged. Flagged in the landing PR body for lane review.
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "../../..", "guard-stance-v2-20261110", "tools"))
+import cj_arm_guard
+cj_arm_guard.ensure_arm_fix()
+
 RIG_NAME = "CapeJones_Rig"
 BODY_NAME = "CapeJones_Body"
 CAGE_NAME = "BlenRigMdefCage"

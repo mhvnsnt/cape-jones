@@ -5,6 +5,15 @@ Usage: blender -b <in.blend> --python apply_wave2.py -- <out.blend>
 import bpy, sys, os, json
 import numpy as np
 
+# PERMANENT ARM FIX (owner pt98u 2026-11-10): route through the shared guarded loader before any arm work.
+# The raw w5r arm chain (joints one segment out -> "H" arms) is repaired in memory; unknown chains are refused.
+# NOTE: the driver expressions in wave2_keys.json and the smooth weights in the npz were calibrated on the
+# RAW (defective) chain — they need re-derivation from the fixed rig before this script is re-run (see LANDING.md).
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "../../..", "guard-stance-v2-20261110", "tools"))
+import cj_arm_guard
+cj_arm_guard.ensure_arm_fix()
+
 args = sys.argv[sys.argv.index("--") + 1:]
 OUT_BLEND = args[0]
 HERE = os.path.dirname(os.path.abspath(__file__))

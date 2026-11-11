@@ -8,6 +8,17 @@ import numpy as np
 
 blend, outpath = sys.argv[-2], sys.argv[-1]
 bpy.ops.wm.open_mainfile(filepath=blend)
+
+# PERMANENT ARM FIX (owner pt98u 2026-11-10): route through the shared guarded loader before any arm work.
+# The raw w5r arm chain (joints one segment out -> "H" arms) is repaired in memory; unknown chains are refused.
+# Presence-checked: this script picks the largest armature generically and may run on files without a CJ rig.
+# The fingertip pass below measures rest-pose bone proximity AFTER the repair, so it self-calibrates to the fixed chain.
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "../../..", "guard-stance-v2-20261110", "tools"))
+import cj_arm_guard
+if bpy.data.objects.get("CapeJones_Rig") is not None and bpy.data.objects.get("CapeJones_Body") is not None:
+    cj_arm_guard.ensure_arm_fix()
+
 arm = max((o for o in bpy.data.objects if o.type=='ARMATURE'), key=lambda o: len(o.data.bones))
 mesh = max((o for o in bpy.data.objects if o.type=='MESH'), key=lambda o: len(o.data.vertices))
 print("ARMATURE:", arm.name, len(arm.data.bones), "MESH:", mesh.name, len(mesh.data.vertices), flush=True)

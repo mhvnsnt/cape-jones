@@ -79,6 +79,17 @@ def parse_args(argv):
 def main():
     pos, kw = parse_args(sys.argv)
     model, clip, rot, out = pos[0], pos[1], float(pos[2]), pos[3]
+
+    # PERMANENT ARM FIX (owner pt98u 2026-11-10): the living room's embedded CJ rig goes through the shared
+    # guarded loader before rendering. Repair-if-signature only: this render HIDES the room rig and plays a
+    # GLB cast model, so an unknown (non-w5r) embedded chain is left alone, never a reason to refuse the render.
+    import os as _os, sys as _sys
+    _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "guard-stance-v2-20261110", "tools"))
+    import cj_arm_guard
+    _room_rig = bpy.data.objects.get("CapeJones_Rig")
+    if _room_rig is not None and bpy.data.objects.get("CapeJones_Body") is not None and cj_arm_guard.has_defect_signature(_room_rig):
+        cj_arm_guard.ensure_arm_fix()
+
     target = mathutils.Vector(json.loads(pos[4])) if len(pos) > 4 \
         else mathutils.Vector((1.2, 0.9, 0))
     preset_name = kw.get("preset", "eevee_preview")

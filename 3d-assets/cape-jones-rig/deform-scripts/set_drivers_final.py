@@ -1,6 +1,15 @@
 """Set CORRECT corrective driver expressions from measured angles. Set base values to 0."""
 import bpy
 
+# PERMANENT ARM FIX (owner pt98u 2026-11-10): route through the shared guarded loader before any arm work.
+# The raw w5r arm chain (joints one segment out -> "H" arms) is repaired in memory; unknown chains are refused.
+# NOTE: the FIXES expressions below were calibrated on the RAW (defective) chain's rest angles
+# (see LANDING.md / PR body) — they need re-derivation from the fixed rig before this script is re-run.
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "../../..", "guard-stance-v2-20261110", "tools"))
+import cj_arm_guard
+cj_arm_guard.ensure_arm_fix()
+
 body = bpy.data.objects['CapeJones_Body']
 rig = bpy.data.objects['CapeJones_Rig']
 sk = body.data.shape_keys

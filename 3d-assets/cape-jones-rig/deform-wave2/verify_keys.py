@@ -6,6 +6,17 @@ from mathutils import Quaternion, Vector
 
 fp = sys.argv[-1]
 bpy.ops.wm.open_mainfile(filepath=fp)
+
+# PERMANENT ARM FIX (owner pt98u 2026-11-10): route through the shared guarded loader before any arm work.
+# The raw w5r arm chain (joints one segment out -> "H" arms) is repaired in memory; unknown chains are refused.
+# NOTE: the wave-2 driver expressions were calibrated on the RAW chain's rest angles — after this fix the
+# rest ROTATION_DIFF values shift, so verify_keys may report non-zero rest values until the expressions
+# are re-derived from the fixed rig (see LANDING.md). That is the detector working, not a guard failure.
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "../../..", "guard-stance-v2-20261110", "tools"))
+import cj_arm_guard
+cj_arm_guard.ensure_arm_fix()
+
 rig = bpy.data.objects['CapeJones_Rig']
 body = bpy.data.objects['CapeJones_Body']
 sk = body.data.shape_keys

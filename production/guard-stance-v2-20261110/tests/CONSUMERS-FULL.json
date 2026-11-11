@@ -1,0 +1,2096 @@
+{
+ "repo": "mhvnsnt/cape-jones",
+ "ref": "a40463ec5321121f70c36615848c20f82b849f10 (main tip, PR #401 merge)",
+ "method": "GitHub git-trees recursive (53,455 entries, truncated) + raw-content fetch of 935 py/sh outside production/tools + 111 keyword-named files inside production/tools + full auto-seat dir + key .md docs; content grep for cape_jones_rigged|w5r|CapeJones_Rig|mocap_sit|sitting_pose_library|cj_arm_guard|open_mainfile|libraries.load. Code search API returned 404 for this repo, so no server-side search. production/tools vendored third-party trees (audio/comfyui/alicevision/blenrig6/cloudrig/coa_tools2/...) NOT content-scanned except keyword-named files; only auto-seat is CJ-specific there.",
+ "counts_note": "via_guard=true means the script itself calls cj_arm_guard.ensure_arm_fix() (or auto-repairs via cj_retarget.prep_target). refuses-raw/gate-conditional/pipeline/static-gate are guarded indirectly. Everything else bypasses the loader.",
+ "consumers": [
+  {
+   "path": "3d-assets/cape-jones-rig/cape_bake_light.py",
+   "group": "cape-lane",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/cape_build_sheet.py",
+   "group": "cape-lane",
+   "loads": [
+    "blend:cape_jones_rigged_w5r_idle.blend",
+    "blend:cape_jones_rigged_w5r_idle_cape_STEP1.blend"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/cape_make_light.py",
+   "group": "cape-lane",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/cape_merge_final.py",
+   "group": "cape-lane",
+   "loads": [
+    "blend:cape_jones_rigged_w5r_idle_cape.blend",
+    "blend:cape_jones_rigged_w5r_idle_cape_STEP1.blend"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "with bpy.data.libraries.load(BAKED, link=False) as (src, dst):"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/cape_pose_audit.py",
+   "group": "cape-lane",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/cape_rebuild_inspect.py",
+   "group": "cape-lane",
+   "loads": [
+    "blend:cape_jones_rigged_w5r_idle.blend"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/cape_sim_bake.py",
+   "group": "cape-lane",
+   "loads": [
+    "blend:cape_jones_rigged_w5r_idle_cape.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "production/dance-proof-3d/build_dance.py",
+   "group": "dance/v3",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "production/dance-proof-3d-v4/build_v4.py",
+   "group": "dance/v4",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC_SCENE)"
+  },
+  {
+   "path": "production/dance-proof-3d-v4/measure_v4.py",
+   "group": "dance/v4",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=os.path.join(WORK, \"scene_v4.blend\"))"
+  },
+  {
+   "path": "production/dance-proof-3d-v4/solve_v4.py",
+   "group": "dance/v4",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=os.path.join(WORK, \"rig_v4.blend\"))"
+  },
+  {
+   "path": "production/dance-proof-3d-v5/build_v5.py",
+   "group": "dance/v5",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=BASE)"
+  },
+  {
+   "path": "production/dance-proof-3d-v5/gate_v5.py",
+   "group": "dance/v5",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "production/dance-proof-3d-v5/solve_v5.py",
+   "group": "dance/v5",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "with bpy.data.libraries.load(V3_SCENE) as (data_from, data_to):; with bpy.data.libraries.load(V3_SCENE) as (data_from, data_to):"
+  },
+  {
+   "path": "production/dance-proof-3d-v6/assemble_v6.py",
+   "group": "dance/v6",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "with bpy.data.libraries.load(os.path.join(W, \"rig_lead.blend\")) as (df, dt):"
+  },
+  {
+   "path": "production/dance-proof-3d-v6/assemble_v6b.py",
+   "group": "dance/v6",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "with bpy.data.libraries.load(os.path.join(W, \"rig_lead.blend\")) as (df, dt):; with bpy.data.libraries.load(V3_SCENE) as (df, dt):"
+  },
+  {
+   "path": "production/dance-proof-3d-v6/fix_breathe.py",
+   "group": "dance/v6",
+   "loads": [
+    "blend:cape_jones_rigged_w5r_idle.blend",
+    "blend:sitting_pose_library.blend",
+    "note:also loads sitting_pose_library.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": true,
+   "landing_action": "no-op",
+   "evidence": "import cj_arm_guard; cj_arm_guard.ensure_arm_fix(); bpy.ops.wm.open_mainfile(filepath=OUTP)"
+  },
+  {
+   "path": "production/dance-proof-3d-v6/render_pose_proofs.py",
+   "group": "dance/v6",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "production/dance-proof-3d-v6/render_v6_eevee.py",
+   "group": "dance/v6",
+   "loads": [
+    "scene_v6.blend (derived)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/dance-proof-3d-v6/run_render_v6.sh",
+   "group": "dance/v6",
+   "loads": [
+    "scene_v6.blend (derived)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/dance-proof-3d-v6/solve_v6.py",
+   "group": "dance/v6",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "with bpy.data.libraries.load(V3_SCENE) as (data_from, data_to):; with bpy.data.libraries.load(V3_SCENE) as (data_from, data_to):"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-scripts/build_correctives.py",
+   "group": "deform-scripts",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-scripts/dump_pose.py",
+   "group": "deform-scripts",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-scripts/measure_angles.py",
+   "group": "deform-scripts",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-scripts/render_single.py",
+   "group": "deform-scripts",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-scripts/set_drivers_final.py",
+   "group": "deform-scripts",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/apply_wave2.py",
+   "group": "deform-wave2",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/dump_wave2.py",
+   "group": "deform-wave2",
+   "loads": [
+    "blend:cape_jones_rigged_w5r_clean.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "verify",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/measure_wave2.py",
+   "group": "deform-wave2",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/render_wave2.py",
+   "group": "deform-wave2",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/render_wave2_light.py",
+   "group": "deform-wave2",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/render_wave2_tiny.py",
+   "group": "deform-wave2",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/verify_drivers.py",
+   "group": "deform-wave2",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/verify_keys.py",
+   "group": "deform-wave2",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=fp)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/fingertip-fix/fix_fingertips.py",
+   "group": "fingertip-fix",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=blend)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/fingertip-fix/render_weightvis.py",
+   "group": "fingertip-fix",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=blend)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/fingertip-fix/reposition_and_fix.py",
+   "group": "fingertip-fix",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=blend)"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tests/test_consumers.py",
+   "group": "guard-stance",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": "static-gate",
+   "landing_action": "no-op",
+   "evidence": "\"\"\"Static gate: every MIGRATED consumer must call the shared loader (ensure_arm_fix / cj_arm_guard / cj_arm_fix check); s=open(p).read(); g=min([i for i in (s.find(\"ensure_arm_fix(\"),s.find(\"cj_arm_fix\")) if i>=0] or [-1])"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tests/test_guard_arms.py",
+   "group": "guard-stance",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": "gate-conditional",
+   "landing_action": "no-op",
+   "evidence": "import cj_arm_guard; print(\"PREGUARD\",cj_arm_guard.ensure_arm_fix())"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/bake_v3.py",
+   "group": "guard-stance",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": ""
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/build_cloth.py",
+   "group": "guard-stance",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": ""
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/build_cloth_try1.py",
+   "group": "guard-stance",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": ""
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/build_rig_v2.py",
+   "group": "guard-stance",
+   "loads": [
+    "blend:cape_jones_rigged_w5r_clean.blend"
+   ],
+   "via_guard": true,
+   "landing_action": "no-op",
+   "evidence": "\"\"\"Write a NEW arm-fixed copy of a w5r rig blend (original untouched). Logic lives in cj_arm_guard.py (shared loader).; import cj_arm_guard as G; print(\"V2STATS\", G.ensure_arm_fix())"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/cj_arm_guard.py",
+   "group": "guard-stance",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": "loader-itself",
+   "landing_action": "no-op",
+   "evidence": "Every Cape show/fight/dance consumer calls ensure_arm_fix() right after the rig blend is open.; def ensure_arm_fix(rig_name=\"CapeJones_Rig\", body_name=\"CapeJones_Body\", allow_unknown=False):; if rig is None or body is None: raise SystemExit(f\"cj_arm_guard: {rig_name}/{body_name} not in file\")"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/cj_retarget.py",
+   "group": "guard-stance",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": true,
+   "landing_action": "no-op",
+   "evidence": "import cj_arm_guard; cj_arm_guard.ensure_arm_fix(tgt.name)   # shared guarded loader: repair raw w5r in memory"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/cj_scene.py",
+   "group": "guard-stance",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": ""
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/clothdiag.py",
+   "group": "guard-stance",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": ""
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/guard_shot_pipeline.sh",
+   "group": "guard-stance",
+   "loads": [
+    "blend:RIG_W5R_CLEAN.blend"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": ""
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/render_arms_only.py",
+   "group": "guard-stance",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": ""
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/render_guard.py",
+   "group": "guard-stance",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": "refuses-raw",
+   "landing_action": "no-op",
+   "evidence": ""
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/render_pose.py",
+   "group": "guard-stance",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": ""
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/capsules.py",
+   "group": "guard-stance/pipeline",
+   "loads": [
+    "rig_v2/rig_v3 fixed rig (pipeline)"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/clothlook.py",
+   "group": "guard-stance/pipeline",
+   "loads": [
+    "rig_v3_cloth_g.blend (pipeline)"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/floorchk.py",
+   "group": "guard-stance/pipeline",
+   "loads": [
+    "rig_v2/rig_v3 fixed rig (pipeline)"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/pen_test.py",
+   "group": "guard-stance/pipeline",
+   "loads": [
+    "rig_v3_cloth_g.blend (pipeline)"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/precompute_cape_islands.py",
+   "group": "guard-stance/pipeline",
+   "loads": [
+    "cape_jones_rigged_w5r_clean.blend (body islands)"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/precompute_cape_islands_blender.py",
+   "group": "guard-stance/pipeline",
+   "loads": [
+    "cape_jones_rigged_w5r_clean.blend (body islands)"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/probe.py",
+   "group": "guard-stance/pipeline",
+   "loads": [
+    "rig_v2/rig_v3 fixed rig (pipeline)"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/pstat.py",
+   "group": "guard-stance/pipeline",
+   "loads": [
+    "rig_v2/rig_v3 fixed rig (pipeline)"
+   ],
+   "via_guard": "pipeline",
+   "landing_action": "verify",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/pipeline/ep1_render.py",
+   "group": "pipeline/ep1",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "production/pipeline/ep1_render_chunk.sh",
+   "group": "pipeline/ep1",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_audit2.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_audit3.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_audit4.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_audit5.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:w5r_clean.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=BLEND)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_audit6.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=BLEND)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_audit7.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_audit_fingers.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_coverage.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_curl_one.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_curltest.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_deaddist.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_debug2.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_debug_rest.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_diag.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_dist3d.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_fist.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_fix_fingers.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "blend:cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=BLEND)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_fix_v4.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=BLEND)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_fix_v5.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=BLEND)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_fix_v6.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=BLEND)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_fix_v7.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=BLEND)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_led.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/.scratch/led_test.blend",
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "blend:led_test.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_ledrender.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/.scratch/led_test.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/.scratch/led_test.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_locate.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_markers.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_markers2.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_markersL.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_matinfo.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_merge.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/.scratch/led_test.blend",
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/.scratch/snap_test.blend",
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=MAIN); with bpy.data.libraries.load(\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/.scratch/snap_test.blend\") as (di, do):; with bpy.data.libraries.load(\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/.scratch/led_test.blend\") as (di, do):"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_nodelinks.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_numverify.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_one.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_pinky2.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_pinky3.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_pinkytest.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_redtest.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_render_before.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_render_wide.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_snap.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/.scratch/snap_test.blend",
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "blend:snap_test.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_snaprender.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/.scratch/snap_test.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/.scratch/snap_test.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_texcheck.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:cape_jones_rigged.blend",
+    "blend:cape_jones_rigged_w5r.blend",
+    "blend:cape_jones_rigged_w5r_clean.blend",
+    "blend:cape_jones_rigged_w5r_idle.blend"
+   ],
+   "via_guard": false,
+   "landing_action": "verify",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=BASE + b); bpy.ops.wm.open_mainfile(filepath=BASE + \"cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_texdump.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_thumbtest.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/.scratch/led_test.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/.scratch/led_test.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_turnaround.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_wassign.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3_wcount.py",
+   "group": "scratch/lane3",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "frozen-historical",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/cj-hands-work/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend\")"
+  },
+  {
+   "path": "production/tools/auto-seat/autoseat.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/autoseat_v2.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/autoseat_v3.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/autoseat_v4.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "production/tools/auto-seat/proof_sitting.blend (derived)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/autoseat_v5.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "production/tools/auto-seat/proof_sitting.blend (derived)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/autoseat_v6.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "production/tools/auto-seat/proof_sitting.blend (derived)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/debug_3d.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/debug_arm.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/tools/auto-seat/debug_defbones.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/debug_deflist.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/debug_deform.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/debug_deform_pose.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/tools/auto-seat/debug_eval.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/debug_follow.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/debug_info.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/debug_mat.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/debug_mod.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/debug_par.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/debug_pelvis.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/debug_pose.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/tools/auto-seat/debug_ray.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/debug_rigloc.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/tools/auto-seat/debug_vg.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/debug_vis.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/save_idx.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "production/tools/auto-seat/tpose_test.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/tools/auto-seat/wb_check.py",
+   "group": "sitting/auto-seat",
+   "loads": [
+    "3d-assets/living_room.blend (embedded rig)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "auto-seat/guard-tools dir listing + content grep (CapeJones_Rig / living_room.blend)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/sitting-canon/drop_into_chair.py",
+   "group": "sitting/canon",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/sitcanon-work/scene_sit.blend\")"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/sitting-canon/fix_twist_fast.py",
+   "group": "sitting/canon",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/sitting-canon/sitcanon_retarget.py",
+   "group": "sitting/canon",
+   "loads": [
+    "action:mocap_sit_canon",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/living-room/fixup_frame1.py",
+   "group": "sitting/living-room",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=BLEND)"
+  },
+  {
+   "path": "3d-assets/living-room/render_sitting_preview.py",
+   "group": "sitting/living-room",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/living-room/sit-targets/place_sitter.py",
+   "group": "sitting/living-room",
+   "loads": [
+    "blend:3d-assets/cape-jones-rig/cape_jones_rigged_w5r.blend",
+    "blend:3d-assets/cape-jones-rig/sitting_pose_library.blend",
+    "blend:cape_jones_rigged_w5r.blend",
+    "blend:sitting_pose_library.blend",
+    "note:also loads sitting_pose_library.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "with bpy.data.libraries.load(lib, link=False) as (df, dt):; with bpy.data.libraries.load(POSE_BLEND, link=False) as (df, dt):"
+  },
+  {
+   "path": "3d-assets/living-room/sit-targets/verify_all_poses.py",
+   "group": "sitting/living-room",
+   "loads": [
+    "blend:cape_jones_rigged_w5r.blend",
+    "blend:sitting_pose_library.blend",
+    "note:also loads sitting_pose_library.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "with bpy.data.libraries.load(lib, link=False) as (df, dt):; with bpy.data.libraries.load(POSE_BLEND, link=False) as (df, dt):"
+  },
+  {
+   "path": "mocap_retarget.py",
+   "group": "sitting/mocap-retarget",
+   "loads": [
+    "action:mocap_sit_113_15",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/sitting-physics/scripts/phys-apply.py",
+   "group": "sitting/physics",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/sitting-physics/scripts/phys-couple2.py",
+   "group": "sitting/physics",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/blender_bake.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/build_scene.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/build_stage1.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/build_stage1a.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/build_stage1b.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/build_stage2.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/comp_analyze.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/diag_baked.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/capebake-work/scene_capebaked.blend\")"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/full_kernel/full_kernel.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/gate_render.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/capebake-work/stage1_separated.blend\")"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/kernel.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/kout/blender_bake_full.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/kout2/blender_bake_full.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/krender/render_proofs_k.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/pass2_analyze.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/probe_kernel/probe_kernel.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"SRC_PATH\")"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/render_closeup.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/capebake-work/scene_capebaked.blend\")"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/render_kernel/render_kernel.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/render_proofs.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/repair_stage1.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=PATH)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/smoke_test.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/capebake-work/test_bake.blend\")"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/capebake/weld_cape.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=SRC)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/root-probes/phys-cape3.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/root-probes/phys-cape4.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/root-probes/phys-cape6.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "with bpy.data.libraries.load(\"/tmp/cape_only.blend\", link=False) as (data_from, data_to):"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/build-final.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=BAKED); bpy.ops.wm.open_mainfile(filepath=BAKED); bpy.ops.wm.open_mainfile(filepath=MECH)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/diag-split.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/sitcanon-work/scene_recliner_mech.blend\"); bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/sitcanon-work/scene_capebaked.blend\")"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/diag2.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=path)"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/diag3.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/sitcanon-work/scene_recliner_mech.blend\")"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/inspect-scenes.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/sitcanon-work/scene_recliner_mech.blend\"); bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/sitcanon-work/scene_capebaked.blend\")"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/build_stageA.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "with bpy.data.libraries.load(SRC_BLEND, link=False) as (data_from, data_to):"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/build_stageB.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/build_stageC.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "with bpy.data.libraries.load(SRC, link=False) as (df, dt):"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/build_stageC2.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/build_stageD.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/debug1.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/debug2.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/sitcanon-work/mech-scratch/repo/3d-assets/living-room/recliner/recliner_rigged.blend\"); bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/sitcanon-work/scene_recliner_mech.blend\")"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/debug3.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/sitcanon-work/mech-scratch/repo/3d-assets/living-room/recliner/recliner_rigged.blend\"); bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/sitcanon-work/scene_recliner_mech.blend\")"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/debug4.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/sitcanon-work/scene_recliner_mech.blend\")"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/debug5.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=\"/home/hatch/workspace/sitcanon-work/scene_recliner_mech.blend\")"
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/inv_rig2.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/inv_scene.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/measure.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/measure2.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/measure3.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/measure4.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/mech-scratch/render_mech.py",
+   "group": "sitting/saga",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "production/sitting-saga-20261023/scripts/sitcanon/render-strip.py",
+   "group": "sitting/saga",
+   "loads": [
+    "(inferred: operates on open CJ rig blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=blend)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/sitting-take3/pose_take3.py",
+   "group": "sitting/take3",
+   "loads": [
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/tools/assemble_library.py",
+   "group": "sitting/tools",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-sitting-poses/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "blend:/home/hatch/workspace/cj-sitting-poses/3d-assets/cape-jones-rig/sitting_pose_library.blend",
+    "blend:sitting_pose_library.blend",
+    "note:also loads sitting_pose_library.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=RIG_BLEND); with bpy.data.libraries.load(stage) as (df, dt):"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/tools/fix_pose_library_rotation_mode.py",
+   "group": "sitting/tools",
+   "loads": [
+    "blend:sitting_pose_library.blend",
+    "note:also loads sitting_pose_library.blend"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/tools/render_sitting_redo.py",
+   "group": "sitting/tools",
+   "loads": [
+    "blend:cape_jones_rigged_w5r.blend",
+    "blend:sitting_pose_library.blend",
+    "note:also loads sitting_pose_library.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "with bpy.data.libraries.load(blend, link=False) as (dfs, dts):; with bpy.data.libraries.load(POSE_BLEND, link=False) as (dfs, dts):"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/tools/sit_pose_builder.py",
+   "group": "sitting/tools",
+   "loads": [
+    "blend:/home/hatch/workspace/cj-sitting-poses/3d-assets/cape-jones-rig/cape_jones_rigged_w5r_idle.blend",
+    "blend:/home/hatch/workspace/cj-sitting-poses/3d-assets/cape-jones-rig/sitting_pose_library.blend",
+    "blend:sitting_pose_library.blend",
+    "note:also loads sitting_pose_library.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "excluded-owner-rule",
+   "evidence": "bpy.ops.wm.open_mainfile(filepath=RIG_BLEND); with bpy.data.libraries.load(CHAIR_BLEND) as (df, dt):"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/spine-lane/spine_build.py",
+   "group": "spine-lane",
+   "loads": [
+    "blend:cape_jones_rigged_w5r.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/spine-lane/spine_proof_render.py",
+   "group": "spine-lane",
+   "loads": [
+    "blend:cape_jones_rigged_w5r.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/spine-lane/spine_stiffness.py",
+   "group": "spine-lane",
+   "loads": [
+    "blend:cape_jones_rigged_w5r.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/spine-lane/spine_verify.py",
+   "group": "spine-lane",
+   "loads": [
+    "blend:cape_jones_rigged_w5r.blend",
+    "object:CapeJones_Rig (run-inside open blend)"
+   ],
+   "via_guard": false,
+   "landing_action": "rewire",
+   "evidence": ""
+  }
+ ]
+}

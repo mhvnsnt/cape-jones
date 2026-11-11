@@ -36,6 +36,17 @@ sc.render.fps = 120  # source-native rate during solve
 rig = bpy.data.objects["CapeJones_Rigify"]
 body = bpy.data.objects["BodyR"]
 sheet_ob = bpy.data.objects["CapeSheet"]
+
+# PERMANENT ARM FIX (owner pt98u 2026-11-10): route through the shared guarded loader before any arm work.
+# The raw w5r arm chain (joints one segment out -> "H" arms) is repaired in memory; unknown chains are refused.
+# Presence-checked: this file's work rig is the Rigify rig above; the w5r rig is guarded only if still present.
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "guard-stance-v2-20261110", "tools"))
+import cj_arm_guard
+_cj_body = bpy.data.objects.get("CapeJones_Body") or body
+if bpy.data.objects.get("CapeJones_Rig") is not None and _cj_body is not None:
+    cj_arm_guard.ensure_arm_fix(body_name=_cj_body.name)
+
 body.hide_viewport = True   # skip 107k-vert eval during the solve
 sheet_ob.hide_viewport = True
 

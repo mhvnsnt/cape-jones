@@ -6,6 +6,13 @@ import bpy, math, os, sys
 import numpy as np
 from mathutils import Quaternion, Vector
 
+# PERMANENT ARM FIX (owner pt98u 2026-11-10): route through the shared guarded loader before any arm work.
+# The raw w5r arm chain (joints one segment out -> "H" arms) is repaired in memory; unknown chains are refused.
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "../../..", "guard-stance-v2-20261110", "tools"))
+import cj_arm_guard
+cj_arm_guard.ensure_arm_fix()
+
 args = sys.argv[sys.argv.index("--") + 1:]
 out = args[0]
 spec = args[1] if len(args) > 1 else ""

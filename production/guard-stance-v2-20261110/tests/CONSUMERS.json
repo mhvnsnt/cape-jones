@@ -1,21 +1,287 @@
-{"_doc":"Inventory of repo scripts that open a cape_jones_rigged_w5r* blend (scan 2026-11-10 of 802 .py/.sh outside production/tools/ via GitHub API; tree listing was TRUNCATED at 53,455 entries and production/tools/ (3,606 scripts) was NOT scanned -> inventory INCOMPLETE).",
- "migrated":[
-  {"path":"production/dance-proof-3d-v6/fix_breathe.py","kind":"dance/show idle-breathe fixer (rig COPY in, copy out)","note":"calls cj_arm_guard.ensure_arm_fix() before any arm work; NOT run end-to-end here (its w5r_idle input blend was not downloaded: disk/no-download rule) - if that blend lacks the known signature it now REFUSES loudly instead of animating H arms"},
-  {"path":"production/guard-stance-v2-20261110/tools/cj_retarget.py","kind":"guard/fight retarget (shared)","note":"prep_target() auto-repairs raw w5r via cj_arm_guard (CJ_AUTO_ARM_FIX=1 default) or refuses"},
-  {"path":"production/guard-stance-v2-20261110/tools/render_guard.py","kind":"guard render","note":"refuses rigs without cj_arm_fix"},
-  {"path":"production/guard-stance-v2-20261110/tools/build_rig_v2.py","kind":"fixed-rig writer","note":"now a thin wrapper over cj_arm_guard"}],
- "excluded_by_owner_rule_sitting_rig":["3d-assets/cape-jones-rig/tools/render_sitting_redo.py","3d-assets/cape-jones-rig/tools/sit_pose_builder.py","3d-assets/cape-jones-rig/tools/assemble_library.py","3d-assets/living-room/sit-targets/place_sitter.py","3d-assets/living-room/sit-targets/verify_all_poses.py"],
- "remaining_bypasses_not_migrated":[
-  {"path":"3d-assets/cape-jones-rig/spine-lane/spine_build.py","why":"rig-construction lane (re-skins torso of w5r); changing its input changes its product - needs its own owner/lane review"},
-  {"path":"3d-assets/cape-jones-rig/spine-lane/spine_proof_render.py","why":"proof renders of spine lane"},
-  {"path":"3d-assets/cape-jones-rig/spine-lane/spine_verify.py","why":"spine lane verification"},
-  {"path":"3d-assets/cape-jones-rig/spine-lane/spine_stiffness.py","why":"spine lane"},
-  {"path":"3d-assets/cape-jones-rig/deform-wave2/dump_wave2.py","why":"deformation AUDIT of the raw rig (diagnostic, measures the defect)"},
-  {"path":"3d-assets/cape-jones-rig/cape_build_sheet.py","why":"cape mesh build lane (no arm posing)"},
-  {"path":"3d-assets/cape-jones-rig/cape_merge_final.py","why":"cape build lane"},
-  {"path":"3d-assets/cape-jones-rig/cape_rebuild_inspect.py","why":"cape inspect"},
-  {"path":"3d-assets/cape-jones-rig/cape_sim_bake.py","why":"older cape sim on w5r_idle_cape (arms posed? not audited)"},
-  {"path":"3d-assets/cape-jones-rig/.scratch/lane3/*.py (39 files)","why":"historical scratch lane scripts"},
-  {"path":"production/tools/** (3,606 scripts)","why":"NOT SCANNED"},
-  {"path":"any GUI/manual Blender use of the repo blend","why":"repo blend on disk is still the defective file"}],
- "unverified":["w5r.blend / w5r_idle.blend / w5r_idle_cape*.blend share the same arm-chain defect signature - only w5r_clean was measured"]}
+{
+ "_doc": "Phase 2a landing 2026-11-10: the arms-fixed rig is now canonical repo-wide. The defective in-repo blends cape_jones_rigged_w5r_clean.blend + cape_jones_rigged_w5r.blend + living_room.blend (embedded rig) were repaired IN PLACE via the guard pipeline (build_rig_v2.py over cj_arm_guard.ensure_arm_fix()); w5r_idle.blend was LEFT (sitting/idle line \u2014 see LANDING.md). Full 201-consumer manifest: tests/CONSUMERS-FULL.json (landing inventory 2026-11-10).",
+ "migrated": [
+  {
+   "path": "production/dance-proof-3d-v6/fix_breathe.py",
+   "kind": "dance/show idle-breathe fixer (rig COPY in, copy out)",
+   "note": "calls cj_arm_guard.ensure_arm_fix() before any arm work; NOT run end-to-end here (its w5r_idle input was not downloaded: disk/no-download rule) - if that blend lacks the known signature it now REFUSES loudly instead of animating H arms"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/cj_retarget.py",
+   "kind": "guard/fight retarget (shared)",
+   "note": "prep_target() auto-repairs raw w5r via cj_arm_guard (CJ_AUTO_ARM_FIX=1 default) or refuses"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/render_guard.py",
+   "kind": "guard render",
+   "note": "refuses rigs without cj_arm_fix"
+  },
+  {
+   "path": "production/guard-stance-v2-20261110/tools/build_rig_v2.py",
+   "kind": "fixed-rig writer",
+   "note": "now a thin wrapper over cj_arm_guard"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/cape_bake_light.py",
+   "kind": "cape-lane cloth bake",
+   "note": "guard before rig fetch; saved baked file carries the fixed chain"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/cape_build_sheet.py",
+   "kind": "cape-lane sheet build",
+   "note": "presence-checked guard; saved STEP1 file carries the fixed chain"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/cape_make_light.py",
+   "kind": "cape-lane light sim file",
+   "note": "guard runs BEFORE the body is deleted below (loader needs the body present)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/cape_merge_final.py",
+   "kind": "cape-lane merge",
+   "note": "guard before append; FINAL output (cape_jones_rigged_w5r_idle_cape.blend) carries the fixed chain. That filename is this script's OUTPUT, not a missing input"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/cape_pose_audit.py",
+   "kind": "cape-lane pose audit",
+   "note": "guard before rig fetch; audit reads the fixed chain"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/cape_rebuild_inspect.py",
+   "kind": "cape-lane inspection",
+   "note": "presence-checked guard (inspection-only script)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/cape_sim_bake.py",
+   "kind": "cape-lane cloth sim bake",
+   "note": "guard before rig fetch; FINAL output carries the fixed chain. That filename is this script's OUTPUT, not a missing input"
+  },
+  {
+   "path": "production/dance-proof-3d/build_dance.py",
+   "kind": "dance v3 scene build",
+   "note": "guard after imports; saved scene_v3.blend carries the fixed chain"
+  },
+  {
+   "path": "production/dance-proof-3d-v4/build_v4.py",
+   "kind": "dance v4 Rigify build",
+   "note": "guard after opening scene_v3 (body=BodyR); the metarig is fitted to the rig's measured joints, so it must see FIXED joints"
+  },
+  {
+   "path": "production/dance-proof-3d-v4/measure_v4.py",
+   "kind": "dance v4 joint measurements",
+   "note": "presence-checked guard (work rig is Rigify); w5r rig guarded only if still present"
+  },
+  {
+   "path": "production/dance-proof-3d-v4/solve_v4.py",
+   "kind": "dance v4 retarget solve",
+   "note": "presence-checked guard (work rig is Rigify); w5r rig guarded only if still present in rig_v4.blend"
+  },
+  {
+   "path": "production/dance-proof-3d-v5/build_v5.py",
+   "kind": "dance v5 standing-rig build",
+   "note": "guard after base open + body resolution; shoulder weight repair below is measured from the rig's joints, so it must see FIXED joints"
+  },
+  {
+   "path": "production/dance-proof-3d-v5/gate_v5.py",
+   "kind": "dance v5 pose-test gate",
+   "note": "guard after body resolution; cross-section measurements are taken at mid-upperarm/mid-forearm from the rig's joints"
+  },
+  {
+   "path": "production/dance-proof-3d-v5/solve_v5.py",
+   "kind": "dance v5 retarget solve",
+   "note": "guard after body resolution; two-bone FK solve uses the target's segment lengths from the FIXED chain"
+  },
+  {
+   "path": "production/dance-proof-3d-v6/assemble_v6.py",
+   "kind": "dance v6 assembly",
+   "note": "guard before rig read; saved scene_v6.blend / standing rig carry the fixed chain"
+  },
+  {
+   "path": "production/dance-proof-3d-v6/assemble_v6b.py",
+   "kind": "dance v6 assembly (b variant)",
+   "note": "guard before rig read; saved scene_v6.blend / standing rig carry the fixed chain"
+  },
+  {
+   "path": "production/dance-proof-3d-v6/render_pose_proofs.py",
+   "kind": "dance v6 pose proofs",
+   "note": "guard after imports; proofs render the fixed arms"
+  },
+  {
+   "path": "production/dance-proof-3d-v6/render_v6_eevee.py",
+   "kind": "dance v6 EEVEE render",
+   "note": "presence-checked guard; renders the fixed arms when the CJ rig is present"
+  },
+  {
+   "path": "production/dance-proof-3d-v6/run_render_v6.sh",
+   "kind": "dance v6 render driver (shell)",
+   "note": "guard pre-pass: build_rig_v2.py builds an arm-fixed scene_v6_fixed.blend (original untouched) and the loop renders from it; loader refuses -> driver stops"
+  },
+  {
+   "path": "production/dance-proof-3d-v6/solve_v6.py",
+   "kind": "dance v6 retarget solve",
+   "note": "guard after body resolution; two-bone FK solve uses the target's segment lengths from the FIXED chain"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-scripts/build_correctives.py",
+   "kind": "deform correctives",
+   "note": "guard after imports; driver expressions self-calibrate from the rig's rest angles at runtime, so they follow the fixed chain"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-scripts/dump_pose.py",
+   "kind": "deform pose dump",
+   "note": "guard after imports; dumps are taken from the fixed chain"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-scripts/measure_angles.py",
+   "kind": "deform angle measurement",
+   "note": "guard after imports; rest angles are measured on the fixed chain (values shift vs the defective chain \u2014 see LANDING.md)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-scripts/render_single.py",
+   "kind": "deform before/after render",
+   "note": "guard after imports; renders the fixed chain"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-scripts/set_drivers_final.py",
+   "kind": "deform driver writer",
+   "note": "guard after imports; NOTE the hardcoded FIXES expressions were calibrated on the RAW chain's rest angles and need re-derivation from the fixed rig before re-running (see LANDING.md)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/apply_wave2.py",
+   "kind": "deform wave-2 applicator",
+   "note": "guard after imports; NOTE the wave2_keys.json expressions + npz smooth weights were calibrated on the RAW chain and need re-derivation from the fixed rig before re-running (see LANDING.md)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/measure_wave2.py",
+   "kind": "deform wave-2 measurement",
+   "note": "guard after imports; rest angles are measured on the fixed chain (values shift vs the defective chain \u2014 see LANDING.md)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/render_wave2.py",
+   "kind": "deform wave-2 proof render",
+   "note": "guard after imports; renders the fixed chain"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/render_wave2_light.py",
+   "kind": "deform wave-2 proof render (light)",
+   "note": "guard after imports; renders the fixed chain"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/render_wave2_tiny.py",
+   "kind": "deform wave-2 proof render (tiny)",
+   "note": "guard after imports; renders the fixed chain"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/verify_drivers.py",
+   "kind": "deform wave-2 driver verification",
+   "note": "guard after imports; verifies on the fixed chain"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/verify_keys.py",
+   "kind": "deform wave-2 key verification",
+   "note": "guard after opening the blend; NOTE rest ROTATION_DIFF values shift on the fixed chain, so keys may read non-zero at rest until the wave-2 expressions are re-derived (see LANDING.md)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/fingertip-fix/fix_fingertips.py",
+   "kind": "fingertip weight fix",
+   "note": "presence-checked guard after opening the blend (script picks the largest armature generically); fingertip pass measures rest-pose proximity AFTER the repair, so it self-calibrates"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/fingertip-fix/render_weightvis.py",
+   "kind": "fingertip weight visualization",
+   "note": "presence-checked guard after opening the blend; visualizes the CURRENT (repaired) weights"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/fingertip-fix/reposition_and_fix.py",
+   "kind": "fingertip bone reposition",
+   "note": "presence-checked guard after opening the blend; finger layout constants are mesh-derived, so they stay valid after the repair"
+  },
+  {
+   "path": "production/pipeline/ep1_render.py",
+   "kind": "episode-1 show-clip renderer",
+   "note": "repair-if-signature guard inside main(): the render HIDES the room rig and plays a GLB, so only the known w5r defect is repaired; an unknown embedded chain is left alone, never a refusal"
+  },
+  {
+   "path": "production/pipeline/ep1_render_chunk.sh",
+   "kind": "episode-1 chunk driver (shell)",
+   "note": "guard pre-pass: build_rig_v2.py builds an arm-fixed copy in a temp dir and the chunk renders from it; on loader refusal it falls back to the original blend with a loud warning (room rig is hidden in this render)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/spine-lane/spine_build.py",
+   "kind": "spine-lane rig build",
+   "note": "guard after imports. CAVEAT (PR #401): this lane rebuilds the rig and saves it in place, so the saved file now carries the fixed arm chain; guard touches ONLY arm bones + arm weights, spine behaviour unchanged \u2014 flagged for lane review in the landing PR body"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/spine-lane/spine_proof_render.py",
+   "kind": "spine-lane proof renders",
+   "note": "guard after imports. CAVEAT (PR #401): flagged for lane review in the landing PR body; guard touches only arm bones + arm weights"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/spine-lane/spine_stiffness.py",
+   "kind": "spine-lane IK stiffness",
+   "note": "guard after imports; saves the file in place, so it now carries the fixed arm chain. CAVEAT (PR #401): flagged for lane review in the landing PR body"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/spine-lane/spine_verify.py",
+   "kind": "spine-lane verification",
+   "note": "guard after imports. CAVEAT (PR #401): flagged for lane review in the landing PR body; guard touches only arm bones + arm weights"
+  }
+ ],
+ "excluded_by_owner_rule_sitting_rig": [
+  {
+   "path": "3d-assets/cape-jones-rig/tools/render_sitting_redo.py",
+   "why": "sitting rig (owner rule)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/tools/sit_pose_builder.py",
+   "why": "sitting rig (owner rule)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/tools/assemble_library.py",
+   "why": "sitting rig (owner rule)"
+  },
+  {
+   "path": "3d-assets/living-room/sit-targets/place_sitter.py",
+   "why": "sitting rig (owner rule)"
+  },
+  {
+   "path": "3d-assets/living-room/sit-targets/verify_all_poses.py",
+   "why": "sitting rig (owner rule)"
+  },
+  {
+   "path": "(90 files total in the sitting family \u2014 see tests/CONSUMERS-FULL.json)",
+   "why": "sitting rig (owner rule): verified against the armsdown library files instead of routing through the guard; sitting_pose_library_armsdown.blend is the going-forward default"
+  }
+ ],
+ "remaining_bypasses_not_migrated": [
+  {
+   "path": "3d-assets/cape-jones-rig/deform-wave2/dump_wave2.py",
+   "why": "deformation AUDIT of the raw rig (diagnostic, measures the defect). Intentionally NOT guarded: after the landing it measures the FIXED chain; the raw baseline is the a40463e blob (git show a40463e:3d-assets/cape-jones-rig/cape_jones_rigged_w5r_clean.blend)"
+  },
+  {
+   "path": "3d-assets/cape-jones-rig/.scratch/lane3/*.py (45 files)",
+   "why": "historical scratch lane scripts (frozen); absolute /home/hatch/workspace/cj-hands-work/... paths are already stale. Exception: lane3_texcheck.py was VERIFIED (reads materials/images only, never poses the rig)"
+  },
+  {
+   "path": "production/tools/** (3,606 scripts)",
+   "why": "NOT SCANNED (vendored third-party tools; keyword-named + non-vendored files fetched in the landing inventory showed no CJ references)"
+  },
+  {
+   "path": "sitting family (90 files)",
+   "why": "excluded by owner rule (see excluded_by_owner_rule_sitting_rig)"
+  }
+ ],
+ "unverified": [
+  "whether derived workspace scene blends (scene_v3/v4/v6, rig_v4, rig_lead \u2014 not in the repo) share the arm-chain signature; they are rebuilt from the repo rig, so they inherit the fix on next rebuild",
+  "wave-2 + deform driver expressions (set_drivers_final.py FIXES, wave2_keys.json, npz smooth weights) were calibrated on the RAW chain's rest angles and need re-derivation from the fixed rig \u2014 verify_keys.py / measure_angles.py are the detectors (see LANDING.md)",
+  "solve_v4.py guard runs only if CapeJones_Rig is still present in rig_v4.blend; verify on the next v4 run that BodyR there is the w5r body, not the Rigify body"
+ ],
+ "measured_2026-11-10": [
+  "cape_jones_rigged_w5r_clean.blend: signature TRUE (upperarm +-0.2432, forearm +-0.376), 85 bones, no cj_arm_fix mark -> repaired in place",
+  "cape_jones_rigged_w5r.blend: signature TRUE, 94 bones (spine-lane product) -> repaired in place",
+  "cape_jones_rigged_w5r_idle.blend: signature TRUE, 85 bones; idle_heroic_breathe restR 152.3 deg / peakR 152.4 deg (own measurement) -> LEFT, sitting/idle line",
+  "living_room.blend embedded rig: signature TRUE, 94 bones; pose_sit_normal rest 80.1/80.8 deg -> repaired in place",
+  "sitting_pose_library_fixed.blend blob SHA == sitting_pose_library.blend blob SHA (b97f62457d0f7458bf98efd49997f19c2ec8473c) \u2014 byte-identical duplicate",
+  "cape_jones_rigged_w5r_idle_cape.blend does NOT exist on main (API 404) \u2014 but cape_merge_final.py + cape_sim_bake.py PRODUCE that filename (their FINAL output); no re-point needed"
+ ]
+}
