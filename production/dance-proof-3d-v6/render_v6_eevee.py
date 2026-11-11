@@ -4,6 +4,15 @@ Frames already on disk with size > 20000 bytes are skipped (resume-safe).
 """
 import bpy, os, sys
 
+# PERMANENT ARM FIX (owner pt98u 2026-11-10): route through the shared guarded loader before any arm work.
+# The raw w5r arm chain (joints one segment out -> "H" arms) is repaired in memory; unknown chains are refused.
+# Presence-checked: the scene may be rendered from a file without a CJ rig (derived scenes vary).
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "guard-stance-v2-20261110", "tools"))
+import cj_arm_guard
+if bpy.data.objects.get("CapeJones_Rig") is not None and bpy.data.objects.get("CapeJones_Body") is not None:
+    cj_arm_guard.ensure_arm_fix()
+
 argv = sys.argv[sys.argv.index("--") + 1:]
 FRAMES_DIR, FS, FE = argv[0], int(argv[1]), int(argv[2])
 os.makedirs(FRAMES_DIR, exist_ok=True)

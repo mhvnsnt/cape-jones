@@ -5,6 +5,14 @@ mutes its Armature (motion is baked into shape keys — avoids double-deform),
 saves FINAL cape_jones_rigged_w5r_idle_cape.blend."""
 import bpy, os
 
+# PERMANENT ARM FIX (owner pt98u 2026-11-10): route through the shared guarded loader before any arm work.
+# The raw w5r arm chain (joints one segment out -> "H" arms) is repaired in memory; unknown chains are refused.
+# The FINAL file saved below therefore carries the fixed arm chain + cj_arm_fix mark.
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "../..", "guard-stance-v2-20261110", "tools"))
+import cj_arm_guard
+cj_arm_guard.ensure_arm_fix()
+
 STEP1 = os.path.join(os.getcwd(), 'cape_jones_rigged_w5r_idle_cape_STEP1.blend')
 BAKED = os.path.join(os.getcwd(), 'cape_sim_light_baked.blend')
 FINAL = os.path.join(os.getcwd(), 'cape_jones_rigged_w5r_idle_cape.blend')

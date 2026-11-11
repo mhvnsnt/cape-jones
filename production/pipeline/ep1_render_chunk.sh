@@ -29,7 +29,34 @@ RES="${9:-1920x1080}"
 BLENDER_BIN="${10:-${BLENDER:-$HOME/workspace/tools/blender/blender-4.2.0-linux-x64/blender}}"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-CMD=("$BLENDER_BIN" -b "$BLEND" --python "$SCRIPT_DIR/ep1_render.py" -- \
+# PERMANENT ARM FIX (owner pt98u 2026-11-10): the episode blend's embedded rig goes through the shared
+# guarded loader before rendering — build an arm-fixed copy (original untouched) and render from it.
+# The loader call (ensure_arm_fix) runs inside build_rig_v2.py, the pipeline's thin wrapper over it.
+# If the loader refuses (the embedded rig is not the known w5r chain), fall back to the original blend
+# with a loud warning: this render HIDES the room rig and plays a GLB cast model, so a non-w5r embedded
+# chain is not a reason to refuse the render. The in-memory guard in ep1_render.py still repairs the
+# known defect whenever it is present.
+GUARD_TOOLS="${CJ_TOOLS:-$SCRIPT_DIR/../guard-stance-v2-20261110/tools}"
+GUARD_TMP="$(mktemp -d)"
+trap 'rm -rf "$GUARD_TMP"' EXIT
+FIXED_BLEND="$GUARD_TMP/living_room_fixed.blend"
+RENDER_BLEND="$BLEND"
+GUARD_CMD=("$BLENDER_BIN" -b "$BLEND" --python "$GUARD_TOOLS/build_rig_v2.py" -- "$FIXED_BLEND")
+if [ "${XVFB:-0}" = "1" ]; then
+  if CJ_TOOLS="$GUARD_TOOLS" xvfb-run -a "${GUARD_CMD[@]}" >"$GUARD_TMP/guard.log" 2>&1; then
+    RENDER_BLEND="$FIXED_BLEND"; echo "guard: rendering from arm-fixed copy" >&2
+  else
+    echo "GUARD WARNING: arm fix refused on $BLEND (see $GUARD_TMP/guard.log) — rendering original blend; room rig is hidden in this render" >&2
+  fi
+else
+  if CJ_TOOLS="$GUARD_TOOLS" "${GUARD_CMD[@]}" >"$GUARD_TMP/guard.log" 2>&1; then
+    RENDER_BLEND="$FIXED_BLEND"; echo "guard: rendering from arm-fixed copy" >&2
+  else
+    echo "GUARD WARNING: arm fix refused on $BLEND (see $GUARD_TMP/guard.log) — rendering original blend; room rig is hidden in this render" >&2
+  fi
+fi
+
+CMD=("$BLENDER_BIN" -b "$RENDER_BLEND" --python "$SCRIPT_DIR/ep1_render.py" -- \
   "$MODEL" "$CLIP" "$ROT" "$OUT" '[1.2,0.9,0]' \
   --start "$START" --end "$END" --preset "$PRESET" --res "$RES")
 

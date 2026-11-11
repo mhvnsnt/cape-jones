@@ -46,6 +46,18 @@ for ob in bpy.data.objects:
     if ob.type == "MESH" and len(ob.data.vertices) > 100000:
         body = ob
         break
+
+# PERMANENT ARM FIX (owner pt98u 2026-11-10): route through the shared guarded loader before any arm work.
+# The raw w5r arm chain (joints one segment out -> "H" arms) is repaired in memory; unknown chains are refused.
+# Runs FIRST: the two-bone FK solve below aims bones at mocap joint positions using the TARGET's segment
+# lengths — those lengths must come from the FIXED chain, not the one-segment-out defect.
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "guard-stance-v2-20261110", "tools"))
+import cj_arm_guard
+_cj_body = bpy.data.objects.get("CapeJones_Body") or body
+if bpy.data.objects.get("CapeJones_Rig") is not None and _cj_body is not None:
+    cj_arm_guard.ensure_arm_fix(body_name=_cj_body.name)
+
 if body:
     body.hide_viewport = True
     body.hide_render = True

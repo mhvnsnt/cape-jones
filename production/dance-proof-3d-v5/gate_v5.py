@@ -18,6 +18,18 @@ for ob in bpy.data.objects:
     if ob.type == "MESH" and len(ob.data.vertices) > 100000:
         body = ob
         break
+
+# PERMANENT ARM FIX (owner pt98u 2026-11-10): route through the shared guarded loader before any arm work.
+# The raw w5r arm chain (joints one segment out -> "H" arms) is repaired in memory; unknown chains are refused.
+# Runs FIRST: the cross-section measurements below are taken at mid-upperarm / mid-forearm, i.e. from this
+# rig's joint positions — they must be the FIXED joints.
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "guard-stance-v2-20261110", "tools"))
+import cj_arm_guard
+_cj_body = bpy.data.objects.get("CapeJones_Body") or body
+if bpy.data.objects.get("CapeJones_Rig") is not None and _cj_body is not None:
+    cj_arm_guard.ensure_arm_fix(body_name=_cj_body.name)
+
 for _ob in bpy.data.objects:
     if _ob.name in ("BlenRigMdefCage", "CapeJones_Cape"):
         # the BlenRig cage is a deform helper, never a render object (it

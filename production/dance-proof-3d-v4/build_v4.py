@@ -58,6 +58,17 @@ old_rig = bpy.data.objects["CapeJones_Rig"]
 body = bpy.data.objects["BodyR"]
 sheet = bpy.data.objects["CapeSheet"]
 
+# PERMANENT ARM FIX (owner pt98u 2026-11-10): route through the shared guarded loader before any arm work.
+# The raw w5r arm chain (joints one segment out -> "H" arms) is repaired in memory; unknown chains are refused.
+# The metarig below is fitted to this rig's measured joint positions — they must be the FIXED joints,
+# or the Rigify build inherits the one-segment-out defect.
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "guard-stance-v2-20261110", "tools"))
+import cj_arm_guard
+_cj_body = bpy.data.objects.get("CapeJones_Body") or body
+if bpy.data.objects.get("CapeJones_Rig") is not None and _cj_body is not None:
+    cj_arm_guard.ensure_arm_fix(body_name=_cj_body.name)
+
 # old skeleton joint map (rest, armature space)
 J = {}
 for b in old_rig.data.bones:

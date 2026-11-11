@@ -17,6 +17,17 @@ LEADF, TOTAL = 24, 1824
 t00 = time.time()
 def log(*a): print("[v6asm]", *a, round(time.time() - t00, 1), "s", flush=True)
 
+# PERMANENT ARM FIX (owner pt98u 2026-11-10): route through the shared guarded loader before any arm work.
+# The raw w5r arm chain (joints one segment out -> "H" arms) is repaired in memory; unknown chains are refused.
+# Runs FIRST (before the rig is read below): the assembled scene is saved from this session, so the guard
+# repair lands in scene_v6.blend / the standing rig file.
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "guard-stance-v2-20261110", "tools"))
+import cj_arm_guard
+_cj_body = bpy.data.objects.get("CapeJones_Body") or next((o for o in bpy.data.objects if o.type == "MESH" and len(o.data.vertices) > 100000), None)
+if bpy.data.objects.get("CapeJones_Rig") is not None and _cj_body is not None:
+    cj_arm_guard.ensure_arm_fix(body_name=_cj_body.name)
+
 sc = bpy.context.scene
 rig = bpy.data.objects["CapeJones_Rig"]
 RPB = rig.pose.bones
