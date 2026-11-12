@@ -163,3 +163,8 @@ Read `docs/SHOW-PRODUCTION-STATUS.md` before claiming ANY show, episode, or Harm
 - Harmony runs on Linux but is NOT installed (`production/harmony/find_harmony.sh` → NOT_FOUND). Fallback output is "NOT Harmony." Account fmmg.mars@gmail.com only; no piracy.
 - Never synthesize Cape's voice or invent dialogue. Never claim a tool was used without its output. Study CN/Nick/Disney craft; never ingest leaked assets.
 - Commit author is always `mhvnsnt`: judge work by files, not by who claims it.
+
+## cape-jones-scene-builder (scene direction skill)
+- `skills/cape-jones-scene-builder/SKILL.md` + `skills/cape-jones-scene-builder/project-bible.md`
+- Use this skill whenever anyone asks to make a scene, build a prompt for a scene, do the next scene, or start a new episode. Trigger phrasings: "make a scene where…", "next scene:", "build the prompt for this scene", "new episode".
+- Chain: Idea → shots → timestamps → camera → actions → dialogue → references → final prompt. Principle: whatever the prompt leaves undefined, the model invents. World: the skill's project-bible.md, backed by this repo's own canon docs (see the skill for paths).
