@@ -558,18 +558,19 @@
    "id": "gumball-full-rar5",
    "show": "The Amazing World of Gumball",
    "holding": "The full Gumball leak: 86 split parts (gumball-part-aa..dh), RAR5",
-   "location": "mhvnsnt/cn-gigaleak-gumball, draft release gumball-leak-v1",
+   "location": "mhvnsnt/cape-jones, release gumball-full-leak-v1 (live) — in-repo home. Mirrored from mhvnsnt/cn-gigaleak-gumball, draft release gumball-leak-v1 (provenance; source kept).",
    "format": "Split RAR5",
    "classification": "other (full show archive, unlisted)",
-   "size_bytes": null,
-   "size_note": "≈43.5 GB in 86 parts",
+   "size_bytes": 43516516745,
+   "size_note": "43,516,516,745 B in 86 parts (gumball-part-aa..dh); all 86 SHA-256 digests verified against source, 2026-11-12",
    "characters": [
     "Full cast (expected)"
    ],
    "extraction_difficulty": "heavy-unpack",
-   "extraction_plan": "Sequential RAR5 header walk across the parts (stream part headers in order; do NOT download 43.5 GB to list). Census from headers first; extract per-show-need after. This is the archive the next Richard dance hunt points at (no Richard dance exists in CN-Leaks-001's 71 FLAs — verified in the dance-choreo lane).",
+   "extraction_plan": "Mirror complete 2026-11-12: all 86 parts live on the cape-jones release gumball-full-leak-v1, digest-verified and published. Sequential RAR5 header walk across the parts (stream part headers in order; do NOT download 43.5 GB to list). Census from headers first; extract per-show-need after. This is the archive the next Richard dance hunt points at (no Richard dance exists in CN-Leaks-001's 71 FLAs — verified in the dance-choreo lane).",
    "notes": [
-    "Owner's lead verified: the archive exists, is unlisted, and is RAR5. Nothing inside it has been censused yet."
+    "Owner's lead verified: the archive exists, is unlisted, and is RAR5. Nothing inside it has been censused yet.",
+    "Mirrored 2026-11-12 to mhvnsnt/cape-jones release gumball-full-leak-v1 (86/86 parts, SHA-256 verified against source, published); source release kept as provenance."
    ]
   },
   {

@@ -54,7 +54,7 @@ Nothing was copied into this repo's tree from the loose ready files (Smiling Fri
 
 | Show | Holding | Location | Format | Class | Characters |
 |---|---|---|---|---|---|
-| The Amazing World of Gumball | The full Gumball leak: 86 split parts (gumball-part-aa..dh), RAR5 | mhvnsnt/cn-gigaleak-gumball, draft release gumball-leak-v1 | Split RAR5 | other (full show archive, unlisted) | Full cast (expected) |
+| The Amazing World of Gumball | The full Gumball leak: 86 split parts (gumball-part-aa..dh), RAR5 — mirrored in-repo, digest-verified, published 2026-11-12 | mhvnsnt/cape-jones, release gumball-full-leak-v1 (live); source: mhvnsnt/cn-gigaleak-gumball, draft release gumball-leak-v1 (provenance) | Split RAR5 | other (full show archive, unlisted) | Full cast (expected) |
 | Regular Show | Regular Show split zip: 67 parts (part-000..066) + IA metadata files; repo tree holds only RS_SIZE4C01_CASC_CAP.pdf (2,936,905 B) in production-docs/ | mhvnsnt/cn-gigaleak-regular-show, draft release regular-show-cnleaks-v1 | Split ZIP | other (show archive, unlisted) | Mordecai, Rigby (expected — confirm on listing) |
 | Adventure Time | Two split archives (at2015 6 parts ≈2.92 GB; at-cnzip 17 parts ≈8.9 GB) + loose AT003 animatic (draft release adventure-time-loose-v1) | mhvnsnt/cn-gigaleak-adventure-time | Split ZIP / MOV | other (show archives, unlisted) + animatic (loose) | Finn, Jake (expected) |
 | OK K.O.! Let's Be Heroes | The un-extracted remainder: okko-cnleaks split set (77 parts ≈7.6 GB, draft) + okko-out/extracted tar sets (≈9.4 GB, live) + OKKO.zip 2 parts (live) | mhvnsnt/cn-gigaleak-ok-ko | Split ZIP / TAR | other (show archives) | — |
