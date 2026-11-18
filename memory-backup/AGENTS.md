@@ -740,3 +740,6 @@ Before any lane cuts a branch: `lane-ops/repo_preflight.sh` (clean tree, base br
 
 ## PRESENT-REFERENCES-EVERY-TURN RULE (owner 2026-11-16 ~09:47 EST)
 Show him the best references when found — EVERY turn we work, no exceptions. Show the references + things found so HE CAN APPROVE them. Then compare them to our work — TWO PAIRS OF EYES. Side-by-side OR one individually then the next — either way works, as long as he sees both and judges. Presenting new information every turn is not optional and not something a lane does for me — it is my job in the reply itself.
+
+## DIRECT-TO-REPO LAW (owner 2026-11-17 ~10:01 EST — "stop staging stuff on local, just put it straight into [the repos]")
+Lanes were adding files to local disk faster than staging cleared them (CEILING-completion hit 11G while the disk lane freed MBs, and the storage popup kept firing). From now on, NO local staging: work is built straight into the repo. Small files go up via the GitHub API (no local file needed). Release assets go up via streaming upload (pipe, no local file). Tools that can only write to a local file (Blender renders, model exports) write to /tmp, stream up immediately, and delete at once — never accumulate in ~/workspace. A lane that stages a multi-GB workdir on local disk to "upload later" has violated the order. The disk is a cache, not a staging area.
