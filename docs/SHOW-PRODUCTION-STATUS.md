@@ -100,3 +100,7 @@ Before claiming progress on the 2D show, Harmony, or an "episode":
 - Rhubarb is installed on the Producerbot box (`rhubarb --version` → 1.14.0) but there is no recorded dialogue to sync
 - Natron / Glaxnimate / Pencil2D are vendored but were not required for the Nov 5 timing recut
 - Owner still wants real high-dps animation (drawn changes on twos/ones), not another slideshow or a warp-smear recut sold as new animation
+
+## 9. Owner orders — 2026-11-21
+
+- **Test short BUILD ORDERED (owner 2026-11-21 ~20:53 EST):** THE PARKING LOT LED remote scene (owner's favorite) — proposed test short from the $UPEREGO feeling study. Coordinator lane running (real rig posing, dynamic lighting shift, ffmpeg edit; no fake voice — his "ah, that's better" line is a gap for his recording).
