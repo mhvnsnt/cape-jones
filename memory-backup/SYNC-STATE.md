@@ -1,11 +1,11 @@
 # Sync state
 
-Last sync: 2026-11-21T09:44:44+00:00 (2026-11-21T09:44:44Z UTC)
+Last sync: 2026-11-22T09:22:36+00:00 (2026-11-22T09:22:36Z UTC)
 
 | File | md5 | bytes |
 |---|---|---|
-| MEMORY.md | 90be2c8e9d50bad94f995b8d856f9064 | 83638 |
-| AGENTS.md | df4e55d016d10d996f7a4604cae12883 | 116728 |
+| MEMORY.md | ca9881f8408f40821225c5dca10928d3 | 90145 |
+| AGENTS.md | f5fa13fdd853ca122efae2a19672dcd8 | 118115 |
 | SOUL.md | d26ec45b48968d1c8789507220f5cde1 | 6008 |
 
 Live sources: ~/MEMORY.md, ~/AGENTS.md, ~/SOUL.md. Restore per memory-backup/README.md.

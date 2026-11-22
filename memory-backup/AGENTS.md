@@ -755,3 +755,11 @@ Stop pulling things apart and piecing them back together from scratch. For Tekke
 
 ## NEVER-BLOCKED / FIND-ANOTHER-WAY LAW (owner 2026-11-20 ~17:51 EST — "don't let anything block anything always just research and find other ways and just get it done")
 Nothing is ever reported as blocked because one path failed. When Chrome can't do it, use Blender or whatever else does the job. When a tool, service, or render path is down, research the alternatives and route the work there — Kaggle, Colab, Lightning, Oracle, Blender, GH Actions, the browser, any working route. A block is only real after every reasonable alternative has been tried and failed, with the exact errors recorded. Strengthens ROUTE-SWITCHING LAW + NO-GPU-IS-NEVER-AN-EXCUSE: check first, route there, run it, get it done.
+
+## NO-TEMP-STORAGE LAW (owner 2026-11-21 ~16:33 EST — "why are u storing things in temporary where they can get wiped anyway?")
+NEVER store work in /tmp or any temporary location that can be wiped. /tmp is a 512 MB tmpfs and a VM restart wipes it to zero — on 2026-11-21 it destroyed the Pyrite checkpoint, worktree, 8 proof shots, capture driver, suite log, and the Colosseum M2 extracts. That loss is the proof: anything stored in temp is already lost, it just doesn't know it yet.
+1. EVERYTHING goes straight into the repo or a durable workspace directory the second it exists — checkpoints, captures, scripts, extracts, logs, proofs. Finished work belongs in the repo; nothing finished ever sits only in /tmp or only on local disk.
+2. /tmp is for truly disposable scratch ONLY — something that can be regenerated in seconds and whose loss costs nothing. If losing it would cost even one minute of rework, it does not go in /tmp.
+3. Any lane caught staging work in /tmp has violated the order — same as staging on local disk. Parents verify: no checkpoint, capture, script, or extract path in any brief points at /tmp.
+4. Recovery from a wipe is re-derivation from the repo/release, never a shrug — the work survives because it was pushed, the temp copy is gone and stays gone.
+Strengthens DIRECT-TO-REPO + CHECKPOINT-AND-SAVE: the repo is the save, temp is not storage.
