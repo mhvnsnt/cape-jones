@@ -104,3 +104,11 @@ Before claiming progress on the 2D show, Harmony, or an "episode":
 ## 9. Owner orders — 2026-11-21
 
 - **Test short BUILD ORDERED (owner 2026-11-21 ~20:53 EST):** THE PARKING LOT LED remote scene (owner's favorite) — proposed test short from the $UPEREGO feeling study. Coordinator lane running (real rig posing, dynamic lighting shift, ffmpeg edit; no fake voice — his "ah, that's better" line is a gap for his recording).
+
+## 10. Method change — RIG-FIRST (owner order 2026-11-22)
+
+- **2026-11-22 ~08:29 EST — V1 REJECTED:** PURPLE LOT V1 (PR #425, 480f/20s/24fps, 17 drawings) was rejected by the owner as a "Microsoft Word slideshow" — pictures back to back, not a real cartoon, not $UPEREGO level, not Harmony/AnimLab level. V1 stays on main as a SUPERSEDED cut. Do NOT delete it, do NOT present it as the standard.
+- **2026-11-22 ~08:34 EST — RIG-FIRST (the Metalocalypse method):** the owner ordered puppet rigs, not 240 separate drawings. Build the Cape Jones cutout puppet rig FIRST (COA Tools 2 in Blender from the model sheets/poses), then animate the rig on twos at 24fps — a new rig pose every 2 frames, computer tweening between poses, Grease Pencil hand in-betweens only where the rig can't reach, Wiggle 2 RTX live sim for the cape, Tahoma2D compositing. Rig-build lane + backgrounds lane running (workdir `~/workspace/_cape-jones-parking-lot-2d/rig/`, `v2/backgrounds/`).
+- **Three-target bar (owner 2026-11-22):** Cape Jones must be at least as good as Metalocalypse + $UPEREGO + Aqua Teen Hunger Force — "real puppets, real rigs on backgrounds and real scenery doing real shit", never a slideshow.
+- **Method study + playbook (2026-11-22):** `docs/TV-SHOW-METHOD-STUDY.md` (the three shows' real production methods, side by side, with sources) + `docs/CAPE-JONES-TV-SHOW-PLAYBOOK.md` (our pipeline mapped to those methods, rig-first workflow, timing rules, the "feels like TV" pre-delivery checklist). Study lane: `~/workspace/_cape-jones-tv-show-method/CHECKPOINT.md`.
+- **Gemini Key 3 LIVE (2026-11-22 ~08:35 EST):** stored in the google-gemini connector, list-models verified (incl. gemini-2.5-flash-image). Drawing route for V2 is the free_image_gen_and_edit skill + gemini_image.py as primary; media image tool is the fallback. Do NOT use custom.legacy-gemini (revoked leaked key).
