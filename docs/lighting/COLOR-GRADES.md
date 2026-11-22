@@ -60,16 +60,16 @@ Single-frame references for each animated LED preset. Used for thumbnails, story
 
 ```bash
 # Apply a grade in the finishing stage
-python3 ~/workspace/tools/post-pipeline/finish.py input.mp4 output.mp4 --grade cj-royal
+python3 production/pipeline/finish.py input.mp4 output.mp4 --grade cj-royal
 
 # With audio
-python3 ~/workspace/tools/post-pipeline/finish.py input.mp4 output.mp4 --grade cj-ember --audio music.mp3
+python3 production/pipeline/finish.py input.mp4 output.mp4 --grade cj-ember --audio music.mp3
 
 # List all grades
-python3 ~/workspace/tools/post-pipeline/finish.py --list-grades
+python3 production/pipeline/finish.py --list-grades
 
 # Skip grading
-python3 ~/workspace/tools/post-pipeline/finish.py input.mp4 output.mp4 --grade none
+python3 production/pipeline/finish.py input.mp4 output.mp4 --grade none
 ```
 
 ## Preview Frames
@@ -78,7 +78,7 @@ Preview renders for each grade are in `lighting/previews/` — generated from a 
 
 ## Adding New Grades
 
-1. Add the filter chain to `~/workspace/tools/post-pipeline/grades.py`
+1. Add the filter chain to `production/pipeline/grades.py`
 2. Register it in `GRADES` dict and `GRADE_INFO` for docs
 3. Generate a preview: extract a frame, run through the grade
 4. Document it here
