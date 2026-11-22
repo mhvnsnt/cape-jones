@@ -65,12 +65,44 @@ Steps:
 - Nothing AnimLab produces replaces a Grease Pencil / Tahoma2D proof until the
   owner eye-judges it frame by frame.
 
-## Smoke-test status (2026-11-22)
+## Smoke-test status — PARTIAL (2026-11-22, final; kernels v4–v12)
 
-Install + launch smoke test running on a Kaggle kernel
-(`marsfmmg/animlab-smoke-test`); local install blocked by a VM disk-write wall
-(child-process file writes fail "Operation not permitted" since ~13:07 EST).
-Verdict goes here when it lands — this doc claims nothing as working until then.
+Smoke test ran on a Kaggle kernel (`marsfmmg/animlab-smoke-test-v0-2-27`,
+versions 4–12; local install blocked by a VM disk-write wall — child-process
+file writes fail "Operation not permitted"). The bar was a real Cape Jones
+board open in AnimLab, vector drawing exercised, a rig/deformer applied, and
+a PNG sequence or MP4 exported — each step own-eyes verified. Verdict:
+**PARTIAL — the bar is NOT met. Grease Pencil stays the animation core.**
+
+Proven (own-eyes, screenshots/frames in the kernel logs):
+- Install + launch: .deb sha-verified, deps install, GUI runs under
+  openbox + Xvfb (v0.2.27, 79,278,566 B).
+- First-run "Choose Workspace Folder" chooser UNSTUCK — mouse drive works
+  (8 reproductions, v5–v12); workspace `.recovery/` created.
+- Board `cj-pl-05.png` imported as a scan level (name + Black/White Point,
+  Gamma, TONE TO ALPHA controls; v7–v12).
+- Vector stroke draws (3.4%–21% screen diffs per drag).
+- Export pipeline WORKS: real h264 MP4, 2.5 s (60 frames @ 24 fps),
+  1920×1080, destination honored (v9, v10, v11, v12 — four byte-identical
+  6,869 B files, `purple-lot-test.mp4`).
+- ANIMATION menu CAN open (2 of 8 attempts; opens at x=135 with a slow
+  click) and contains Add Peg; Add Peg was CLICKED once (v11).
+
+Not proven (exact failures):
+- Board placed on canvas/timeline: NEVER. Tried — canvas double-click
+  (0.3% change), canvas drag (0.0%), timeline drag to (250,960) (moved the
+  level label only), timeline-track drag to (300,985) (3.6% view shift),
+  right-click (no context menu — 0.0% in v11, 3.6% in v12), 'insert'
+  timeline control click (0.0%). Every export's frame 1 is pure white —
+  the timeline is empty.
+- Rig/deformer (Peg): Add Peg was clicked once but no peg node/pivot was
+  ever observed after the click; creation is unconfirmed.
+- The MP4 export's CONTENT is blank white in all four runs, because nothing
+  was ever placed on the timeline.
+
+Workdir + kernel logs: `~/workspace/_animlab-wireup-20261120/`
+(CHECKPOINT.md is the authoritative record); kernel
+https://www.kaggle.com/code/marsfmmg/animlab-smoke-test-v0-2-27.
 
 ## Companion tools
 
