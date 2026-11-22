@@ -65,44 +65,60 @@ Steps:
 - Nothing AnimLab produces replaces a Grease Pencil / Tahoma2D proof until the
   owner eye-judges it frame by frame.
 
-## Smoke-test status — PARTIAL (2026-11-22, final; kernels v4–v12)
+## Smoke-test status — PROVEN (placement + export) (2026-11-22, updated; kernels v4–v15)
 
 Smoke test ran on a Kaggle kernel (`marsfmmg/animlab-smoke-test-v0-2-27`,
-versions 4–12; local install blocked by a VM disk-write wall — child-process
+versions 4–15; local install blocked by a VM disk-write wall — child-process
 file writes fail "Operation not permitted"). The bar was a real Cape Jones
 board open in AnimLab, vector drawing exercised, a rig/deformer applied, and
 a PNG sequence or MP4 exported — each step own-eyes verified. Verdict:
-**PARTIAL — the bar is NOT met. Grease Pencil stays the animation core.**
+**PROVEN for placement + export. Grease Pencil stays the animation core
+until the rig/deformer is fully proven.**
 
 Proven (own-eyes, screenshots/frames in the kernel logs):
 - Install + launch: .deb sha-verified, deps install, GUI runs under
   openbox + Xvfb (v0.2.27, 79,278,566 B).
 - First-run "Choose Workspace Folder" chooser UNSTUCK — mouse drive works
-  (8 reproductions, v5–v12); workspace `.recovery/` created.
+  (11 reproductions, v5–v15); workspace `.recovery/` created.
 - Board `cj-pl-05.png` imported as a scan level (name + Black/White Point,
-  Gamma, TONE TO ALPHA controls; v7–v12).
-- Vector stroke draws (3.4%–21% screen diffs per drag).
-- Export pipeline WORKS: real h264 MP4, 2.5 s (60 frames @ 24 fps),
-  1920×1080, destination honored (v9, v10, v11, v12 — four byte-identical
-  6,869 B files, `purple-lot-test.mp4`).
-- ANIMATION menu CAN open (2 of 8 attempts; opens at x=135 with a slow
-  click) and contains Add Peg; Add Peg was CLICKED once (v11).
+  Gamma, TONE TO ALPHA controls; v7–v15).
+- **Board PLACED on canvas + timeline (v14, reproduced v15): the placement
+  mechanism is the scan dialog's footer button "Import sequence"** — found in
+  AnimLab's own web-demo frontend bundle + in-app Help ("Place the queued
+  images on one timeline layer as consecutive exposures"). Batch Import, then
+  click "Import sequence" at (1055,920) — the button right of Cancel. The
+  board fills the canvas at 100% zoom and a "Scanned Drawings" layer appears
+  on the timeline (Frame 1, Start 1, Stop 60, Length 60). v7–v12 never clicked
+  it; v13 clicked the dialog title instead. No HTML5 drag-from-library to
+  timeline exists (explains the failed v9/v10/v12 drags); the timeline-cell
+  right-click menu ("Import Image Here") never appears on empty cells.
+- Vector stroke draws (3.4%–21% screen diffs per drag, v8–v13). In v14/v15
+  the stroke is hidden under the opaque placed board (it draws on the default
+  Drawing layer underneath) — layer order, not a brush failure.
+- Export pipeline WORKS **with board content**: real h264 MP4, 2.5 s
+  (60 frames @ 24 fps), 1920×1080, destination honored — v15
+  `purple-lot-test.mp4`, 89,712 B, sha256
+  `81b079681101c9f56ca15ba941ff65022bf6cc9587d237496866d23d7d3675d9`, frame 1
+  IS the board (1920×1080, mean (133,90,182), 1,223 colors; proof in
+  `tools/animlab/proof/`). v9–v12 exports were byte-identical 6,869 B blank
+  files because nothing was placed yet.
+- ANIMATION menu CAN open (5 of 11 attempts; opens at x=135 with a slow
+  click) and contains Add Peg; Add Peg was CLICKED four times (v11, v13,
+  v14, v15).
 
-Not proven (exact failures):
-- Board placed on canvas/timeline: NEVER. Tried — canvas double-click
-  (0.3% change), canvas drag (0.0%), timeline drag to (250,960) (moved the
-  level label only), timeline-track drag to (300,985) (3.6% view shift),
-  right-click (no context menu — 0.0% in v11, 3.6% in v12), 'insert'
-  timeline control click (0.0%). Every export's frame 1 is pure white —
-  the timeline is empty.
-- Rig/deformer (Peg): Add Peg was clicked once but no peg node/pivot was
-  ever observed after the click; creation is unconfirmed.
-- The MP4 export's CONTENT is blank white in all four runs, because nothing
-  was ever placed on the timeline.
+Not yet fully proven:
+- Rig/deformer (Peg): Add Peg now shows a first observable effect — after the
+  click the layer row renames to "Scanned Drawings-P" and gains an expand
+  chevron (v14, reproduced byte-identical in v15), which reads as a peg
+  attached to the layer. But no peg node/pivot has been seen on the canvas,
+  so creation is still only PARTIALLY evidenced, not fully proven.
+- Vector stroke ON TOP of a placed board: untested (stroke draws under the
+  opaque board layer; the active-layer behavior needs one more check).
 
 Workdir + kernel logs: `~/workspace/_animlab-wireup-20261120/`
 (CHECKPOINT.md is the authoritative record); kernel
 https://www.kaggle.com/code/marsfmmg/animlab-smoke-test-v0-2-27.
+
 
 ## Companion tools
 
