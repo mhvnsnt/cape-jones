@@ -2,7 +2,7 @@
 
 **Track: 2D** (drawn show — separate from the 3D test-short lane; no 3D files touched)
 **Short:** PURPLE LOT — the parking-lot LED remote test short (480 frames @ 24fps = 20s)
-**Status:** storyboard 4/7 keys drawn + verified (CJ-PL-01/03/07 missing — see gaps); poses DONE 8/8 + cape study sheet, all own-eyes verified (2026-11-22 ~12:19 EST); Tahoma2D re-pull VERIFIED working end-to-end (see §3); pipeline wired per this doc.
+**Status:** storyboard 7/7 keys drawn + verified (PR #424); poses DONE 8/8 + cape study sheet, all own-eyes verified; Tahoma2D re-pull VERIFIED working end-to-end (see §3); VIDEO V1 full 480f cut delivered 2026-11-22 (see §5); pipeline wired per this doc.
 **Canon:** `docs/SHOW-BIBLE.md` (palette locked: suit #FFFFFF, cowl #3E1473, skin #E5B28C, cape #000000; white eyes default, cartoony pupils sometimes; the Cape is the most competent character), `docs/SHOW-PRODUCTION-STATUS.md` (bar: drawn changes on twos at 24fps, Metalocalypse-level, NOT holds/slideshow), `docs/SUPERIOR-TURBINATE-STUDY.md` + `DEEP-STUDY` + `FEELING-STUDY` (packaging/feeling — copy packaging/writing/funnel/cadence, NOT the long holds).
 
 ## 1. The pipeline (stage map)
@@ -60,3 +60,45 @@ From `~/workspace/_free-anim-stack-20261120/PIPELINE.md` (Draw → Rig/Tween →
 
 - Stage map: `~/workspace/_free-anim-stack-20261120/PIPELINE.md` · Toolkit: `~/workspace/free-2d-animation-pipeline-toolkit.md` · COA catalog + proofs: `~/workspace/_anime-rig-pullin-20261114/PULLIN-CATALOG.md` (+ `proofs/`) · Tahoma2D wire-in: `~/workspace/_tahoma2d-wirein-20261112/CHECKPOINT.md` (+ `test-project/`, `build_scene.py`, `otmcp-tnz.py`, `otmcp-tnztree.py`) · Dream-girl Release `production-stack-free-20261120` (Rigby2D / AniCraft / Pencil2D / Kdenlive / Olive AppImages, sha-verified).
 - Lane workdir: `~/workspace/_cape-jones-parking-lot-2d/` (CHECKPOINT.md authoritative).
+
+
+## 5. Video V1 — PURPLE LOT full cut (2026-11-22)
+
+**Delivery:** `production/2d-parking-lot/video/purple-lot-v1.mp4` — 480 frames @ 24fps =
+20.0s, 1280x720, h264, SILENT (no audio stream), 2,953,857 B.
+Rendered in Tahoma2D 1.6.3 (`tcomposer`, absolute paths) from 17 unique drawings
+(7 storyboard keys + 10 new in-betweens, see `production/2d-parking-lot/inbetweens/`),
+graded per-segment with the real `production/pipeline/` chains. Scene file +
+build scripts staged alongside the video (`purple-lot.tnz`, `build_purple_lot.py`,
+`assemble_purple_lot.py` — note the .tnz references absolute workdir level paths).
+
+**Grade (eye-checked on the assembled cut, V2):** f1–205 native boards as drawn
+(the sodium-dim grade was tried and REJECTED here — on the dark wide board 01 it
+crushes the lot to a near-black red cave); f206–253 48f crossfade sodium-graded
+board 05 → purple-graded board 05 (the shift; the suit passes through yellowish
+for ~0.5s mid-blend — the light changing color); f254–312 purple-streetlight
+grade on board 05 only; f313–480 native purple boards (the purple grade overcooks
+the darker medium/close boards — board 07 goes near-black blue). The f313 cut
+masks the grade step.
+
+**Canon staged:** glove gag — bare hand ONLY f169–205 (board 04 → ib-04b click),
+gloved again at the f206 wide; pupil beats — no-pupil smug f337–427, pupil appears
+and rolls to the audience f428–451, held eye contact f452–468, hard cut to black
+f469–480. Voice "ah, that's better" stays a GAP for the owner's recording; no
+synthesized voice, no temp music.
+
+**Honest limits (V1, not hidden):** 17 drawings over 480f is limited animation
+(each drawing held 12–24f), NOT on-twos density throughout; the hero hold f254–312
+is static after the xfade ends (59f on the hero drawing — follow-up: a cape-settle
+in-between for that hold); the drawn slow hand-lift in-between (ib-04a) was
+declined by the media tool's safety check and not retried per the tool's
+instruction — the gag still stages via board 04 → ib-04b. COA Tools 2 rig /
+Grease Pencil in-betweens were not used: the pose art is flat single-image art
+(no layered sprites to rig), and 240 hand drawings is full-production scope for
+parallel drawing lanes. Wiggle 2 RTX cape proof stands (live sim per-frame);
+its bend concentrates in the cape's bottom quarter (see wiggle-cape-proof/).
+
+**Path correction (this PR):** the stale `tools/post-pipeline/` path never lived in
+this production doc — it lived in `docs/lighting/COLOR-GRADES.md` and
+`docs/lighting/LED-CONTROLLER.md`. Fixed there to `production/pipeline/` (the
+tools' real home in this repo). Storyboard is 7/7 (PR #424); poses 8/8 (PR #423).
