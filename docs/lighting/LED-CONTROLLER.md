@@ -57,13 +57,13 @@ Full research: [REAL-LIGHTING-RESEARCH.md](REAL-LIGHTING-RESEARCH.md)
 
 ```bash
 # Apply a preset to a video
-python3 ~/workspace/tools/post-pipeline/led_controller.py input.mp4 output.mp4 --preset purple-pulse
+python3 production/pipeline/led_controller.py input.mp4 output.mp4 --preset purple-pulse
 
 # Speed it up or slow it down (1.0 = default)
-python3 ~/workspace/tools/post-pipeline/led_controller.py input.mp4 output.mp4 --preset chill-blue --speed 0.5
+python3 production/pipeline/led_controller.py input.mp4 output.mp4 --preset chill-blue --speed 0.5
 
 # List all presets
-python3 ~/workspace/tools/post-pipeline/led_controller.py --list
+python3 production/pipeline/led_controller.py --list
 ```
 
 ## How It Works (Technical)
