@@ -37,6 +37,13 @@ Operating rules for every agent working in this repo.
 - **Pre-delivery check, every hand at every beat, logged before any cut is delivered:** wrist-to-wrist? fingers down / at far end? remote pointing down? hands attached to forearm cuff? thumbs medial? no white box on the remote? A cut with any "no" does not ship.
 
 
+## CLEAN ALPHA LAW (owner 2026-11-23 11:22 EST) — PERMANENT, INDUSTRY STANDARD
+
+**CLEAN ALPHA, NO RECTANGULAR EDGES — always.** Every cut, slice, prop, hand, remote, part — cut along the art's own edges with clean alpha, never a square/box crop, never a rectangular edge showing, never baked background inside a cutout. True prop separation, re-sliced cleanly from the source art. This is the industry standard, not a preference. It applies to EVERYTHING, every lane, every time — do not wait to be told, do not ship a box cut and call it layered. If a prop cannot be separated cleanly, say which one and why, and re-slice from the source art instead of faking it.
+
+- **Pre-delivery check, every part at every beat:** cut along the art's own edge? clean alpha, no rectangular edge showing? no baked background inside the cutout? A cut with any "no" does not ship.
+
+
 ## BROTHERMAN LIKENESS LOCK (owner 2026-11-23 07:15 EST) — always, unless a named exception
 
 - **Name: BROTHERMAN, all caps, ALL ONE WORD.** Locked likeness: v2 physique/face (big muscular wrestler, thick blond horseshoe mustache, Hogan face, cartoon comic-book style); Color 1 = bright seafoam blue / cyan, Color 2 = pink, a little purple — blue tank top, BROTHERMAN in pink Hulkamania-style font, long tie-dye tights pink+blue+purple, white wristbands, blue boots, pink laces. Default hair: **bald top, long blond hair at sides and back only**. Bandana sometimes blue, sometimes pink; first appearance PINK bandana; most of the time no bandana. Full doc + reference images: `docs/BROTHERMAN.md`, `production/2d-parking-lot/brotherman/`.
