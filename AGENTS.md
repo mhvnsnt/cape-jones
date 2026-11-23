@@ -27,6 +27,15 @@ Operating rules for every agent working in this repo.
 3. **Prove small, then land cleanly.** Prove the pulled-in thing with a short test (whole video, not frames) before a full cut, then land it branch → PR → merge, verified on main. No steps back: never regress a working rig, arm, or cut to add a new thing.
 4. **This applies to BROTHERMAN too.** Do not duplicate his lane's work. Do not rebuild his sheets/rig from scratch if a Cape Jones part/rig already fits — reuse Cape Jones parts, style, and pipeline.
 
+## HAND REGRESSION LOG (owner 2026-11-23 07:06 EST) — log BOTH ways, labeled, so we never regress
+
+- **V2 camera cuts are the standard to keep** — V2 had BETTER camera cuts than the phasing mixed cut. Draw Jones clips must move like Video Jones; cuts must use Rig Jones cleaned up with Clean-Up Jones so he looks clean. Use this Rig Jones for now — just do NOT flip his hands wrong.
+- **Hand attachment rule:** if you attach hands over the hands, EITHER swap the hands instead of doing the layers AND swap them with the correct orientation, OR lay them on top with the correct orientation — NEVER put them on with the wrong orientation, ever.
+- **INCORRECT (never again):** top-layer hands fingers-up, wrist at bottom, floating beside thighs, detached; remote hand upside down, remote pointing UP, fingers toward wrist, arm-wrist and hand-wrist opposite; remote white background box not cropped.
+- **CORRECT (always):** wrist-to-wrist, same direction; fingers at far end; remote in fingers pointing DOWN; hands attached to forearm cuff, thumbs medial; remote clean-cropped transparent alpha, no white box.
+- **Process:** if the owner says "you did it the incorrect way", answer "this was the incorrect way, don't do it this way" and log it as incorrect. If he says "that's good" / does not say it was incorrect, that was the RIGHT way — record it as the way to keep doing it.
+- **Pre-delivery check, every hand at every beat, logged before any cut is delivered:** wrist-to-wrist? fingers down / at far end? remote pointing down? hands attached to forearm cuff? thumbs medial? no white box on the remote? A cut with any "no" does not ship.
+
 ## VERIFY-BEFORE-CLAIMING LAW (owner 2026-10-16)
 
 **"The agent says it is done" is not evidence.**
