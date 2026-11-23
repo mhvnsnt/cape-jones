@@ -1,0 +1,1164 @@
+{
+  "GB00_Schoolexterior_BM_final.tif": {
+    "type": "TIFF",
+    "width": 7000,
+    "height": 4667,
+    "mode": "RGB",
+    "format": "TIFF",
+    "n_frames": 1,
+    "tags": {
+      "256": "7000",
+      "257": "4667",
+      "258": "(8, 8, 8)",
+      "259": "1",
+      "262": "2",
+      "271": "Canon",
+      "272": "Canon EOS 5D Mark II",
+      "273": "(37440,)",
+      "274": "1",
+      "277": "3",
+      "278": "4667",
+      "279": "(98007000,)",
+      "282": "240.0",
+      "283": "240.0",
+      "284": "1",
+      "296": "2",
+      "305": "Adobe Photoshop CS5 Windows",
+      "306": "2011:01:23 17:07:15",
+      "33723": "b'\\x1c\\x01Z\\x00\\x03\\x1b%G\\x1c\\x02\\x00\\x00\\x02\\xcc\\xe0\\x1c\\x027\\x00\\x0820090329\\x1c\\x02<\\x00\\x06160818'",
+      "700": "b'<?xpacket begin=\"\\xef\\xbb\\xbf\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?>\\n<x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP",
+      "34377": "b'8BIM\\x04%\\x00\\x00\\x00\\x00\\x00\\x102\\xde\\x9f\\xc6\\x0e\\xfd\\x0e+$\\xb9\\xf3\\xb4\\xce\\xb4\\x19\\x188BIM\\x04:\\x00\\x00\\x00\\x00\\x00\\",
+      "34665": "98044440",
+      "34675": "b'\\x00\\x00\\x020ADBE\\x02\\x10\\x00\\x00mntrRGB XYZ \\x07\\xcf\\x00\\x06\\x00\\x03\\x00\\x00\\x00\\x00\\x00\\x00acspAPPL\\x00\\x00\\x00\\x00n",
+      "254": "0"
+    },
+    "preview": "GB00_Schoolexterior_BM_final.jpg",
+    "preview_size": [
+      1920,
+      1280
+    ],
+    "bytes": 98044884,
+    "sha256": "d4e3b353b8d4d25f4896329949314d5cc95e4b3eb75a224eddb51b27b4e6cc58"
+  },
+  "GB04_sc120_School_Stadium_Final_4_upressed.psd": {
+    "type": "PSD",
+    "width": 8820,
+    "height": 4961,
+    "color_mode": "3",
+    "depth": 8,
+    "layers": [
+      {
+        "name": "bg",
+        "depth": 0,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          8826,
+          5709
+        ],
+        "is_group": false
+      },
+      {
+        "name": "penny",
+        "depth": 0,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.PASS_THROUGH",
+        "size": [
+          8820,
+          4961
+        ],
+        "is_group": true
+      },
+      {
+        "name": "penny",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          6863,
+          4234
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Relleno de color 1 copia",
+        "depth": 1,
+        "visible": true,
+        "opacity": 89,
+        "blend": "BlendMode.MULTIPLY",
+        "size": [
+          8820,
+          4961
+        ],
+        "is_group": false
+      },
+      {
+        "name": "light",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.COLOR_DODGE",
+        "size": [
+          8820,
+          4961
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 9",
+        "depth": 1,
+        "visible": true,
+        "opacity": 94,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          10411,
+          4961
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 10",
+        "depth": 1,
+        "visible": true,
+        "opacity": 148,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          9428,
+          4985
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 28",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          5767,
+          4961
+        ],
+        "is_group": false
+      },
+      {
+        "name": "post",
+        "depth": 0,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.PASS_THROUGH",
+        "size": [
+          14739,
+          8664
+        ],
+        "is_group": true
+      },
+      {
+        "name": "glare",
+        "depth": 1,
+        "visible": true,
+        "opacity": 194,
+        "blend": "BlendMode.SCREEN",
+        "size": [
+          10191,
+          6601
+        ],
+        "is_group": false
+      },
+      {
+        "name": "glare ",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.SCREEN",
+        "size": [
+          10983,
+          6809
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Layer 27",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.LINEAR_DODGE",
+        "size": [
+          5591,
+          3060
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Levels 2 copy 4",
+        "depth": 1,
+        "visible": true,
+        "opacity": 130,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          0,
+          0
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Levels 2 copy 3",
+        "depth": 1,
+        "visible": true,
+        "opacity": 130,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          0,
+          0
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Levels 2 copy 2",
+        "depth": 1,
+        "visible": true,
+        "opacity": 130,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          0,
+          0
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Levels 2 copy",
+        "depth": 1,
+        "visible": true,
+        "opacity": 130,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          0,
+          0
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Levels 2",
+        "depth": 1,
+        "visible": true,
+        "opacity": 130,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          0,
+          0
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Hue/Saturation 5",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          0,
+          0
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 12",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.SCREEN",
+        "size": [
+          8820,
+          4961
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 11",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          7635,
+          1571
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Brillo/contraste 1",
+        "depth": 1,
+        "visible": true,
+        "opacity": 130,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          0,
+          0
+        ],
+        "is_group": false
+      },
+      {
+        "name": "red glow",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.SCREEN",
+        "size": [
+          8899,
+          5827
+        ],
+        "is_group": false
+      },
+      {
+        "name": "blue flare",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.SCREEN",
+        "size": [
+          14277,
+          6904
+        ],
+        "is_group": false
+      },
+      {
+        "name": "vignette",
+        "depth": 0,
+        "visible": true,
+        "opacity": 41,
+        "blend": "BlendMode.OVERLAY",
+        "size": [
+          8899,
+          5827
+        ],
+        "is_group": false
+      }
+    ],
+    "layer_count": 24,
+    "preview": "GB04_sc120_School_Stadium_Final_4_upressed.jpg",
+    "preview_size": [
+      1920,
+      1080
+    ],
+    "bytes": 303782283,
+    "sha256": "9cd38fa45927e0c888cdf2ef82e57941926da24b09df1bdb9eed6e9ed59514ba"
+  },
+  "GB17_SchoolPlayground_sc024_FINAL.tif": {
+    "type": "TIFF",
+    "width": 7000,
+    "height": 3940,
+    "mode": "RGB",
+    "format": "TIFF",
+    "n_frames": 1,
+    "tags": {
+      "256": "7000",
+      "257": "3940",
+      "258": "(8, 8, 8)",
+      "259": "1",
+      "262": "2",
+      "34377": "b'8BIM\\x04%\\x00\\x00\\x00\\x00\\x00\\x10\\xf1\\xd9z\\xed\\xe3\\xeb\\xfc\\x9d\\xc7\\xfb8h/\\x9a\\xecg8BIM\\x04:\\x00\\x00\\x00\\x00\\x00\\xa3\\x0",
+      "273": "(38162,)",
+      "274": "1",
+      "277": "3",
+      "278": "3940",
+      "279": "(82740000,)",
+      "282": "150.0",
+      "283": "150.0",
+      "284": "1",
+      "296": "2",
+      "34665": "82778164",
+      "305": "Adobe Photoshop CS5 Windows",
+      "306": "2011:01:23 17:29:39",
+      "33723": "b'\\x1c\\x01Z\\x00\\x03\\x1b%G\\x1c\\x02\\x00\\x00\\x02\\xb3j'",
+      "700": "b'<?xpacket begin=\"\\xef\\xbb\\xbf\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?>\\n<x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP",
+      "254": "0"
+    },
+    "preview": "GB17_SchoolPlayground_sc024_FINAL.jpg",
+    "preview_size": [
+      1920,
+      1081
+    ],
+    "bytes": 82778208,
+    "sha256": "c4e57776bbb9b3a0b764acf6b08ee8e262994ad29936948aea73574d1a73bbaa"
+  },
+  "GB21_sc18_School_Corridor.tif": {
+    "type": "TIFF",
+    "width": 7000,
+    "height": 3938,
+    "mode": "RGB",
+    "format": "TIFF",
+    "n_frames": 1,
+    "tags": {
+      "256": "7000",
+      "257": "3938",
+      "258": "(16, 16, 16)",
+      "259": "1",
+      "262": "2",
+      "34377": "b'8BIM\\x04%\\x00\\x00\\x00\\x00\\x00\\x10\\x1cb\\xdb\\xc3\\x83\\xa4e\\xb9\\xecuD\\xf0uU|\\x828BIM\\x04:\\x00\\x00\\x00\\x00\\x00\\xa3\\x00\\x00\\",
+      "273": "(32094,)",
+      "274": "1",
+      "277": "3",
+      "278": "3938",
+      "279": "(165396000,)",
+      "282": "72.0",
+      "283": "72.0",
+      "284": "1",
+      "296": "2",
+      "34665": "165428096",
+      "305": "Adobe Photoshop CS5 Windows",
+      "306": "2011:01:23 18:21:25",
+      "34675": "b'\\x00\\x00\\x0cHLino\\x02\\x10\\x00\\x00mntrRGB XYZ \\x07\\xce\\x00\\x02\\x00\\t\\x00\\x06\\x001\\x00\\x00acspMSFT\\x00\\x00\\x00\\x00IEC sR",
+      "33723": "b'\\x1c\\x01Z\\x00\\x03\\x1b%G\\x1c\\x02\\x00\\x00\\x02\\xa9d'",
+      "700": "b'<?xpacket begin=\"\\xef\\xbb\\xbf\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?>\\n<x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP",
+      "254": "0"
+    },
+    "preview": "GB21_sc18_School_Corridor.jpg",
+    "preview_size": [
+      1920,
+      1080
+    ],
+    "bytes": 165428140,
+    "sha256": "23c0969543c658f2ddc8f6ad53ba5ce77d82c7be89407dda44005364c4b91c95"
+  },
+  "GB36_sc33_School_Classroom_Final_upressed_v4.psd": {
+    "type": "PSD",
+    "width": 7654,
+    "height": 4895,
+    "color_mode": "3",
+    "depth": 8,
+    "layers": [
+      {
+        "name": "bg copia",
+        "depth": 0,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          7595,
+          4594
+        ],
+        "is_group": false
+      },
+      {
+        "name": "BG_REFL copia",
+        "depth": 0,
+        "visible": true,
+        "opacity": 133,
+        "blend": "BlendMode.LINEAR_DODGE",
+        "size": [
+          7000,
+          4226
+        ],
+        "is_group": false
+      },
+      {
+        "name": "FIXED ERRORS",
+        "depth": 0,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          174,
+          300
+        ],
+        "is_group": false
+      },
+      {
+        "name": "reflection group copia",
+        "depth": 0,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.PASS_THROUGH",
+        "size": [
+          6685,
+          2452
+        ],
+        "is_group": true
+      },
+      {
+        "name": "Capa 29",
+        "depth": 1,
+        "visible": true,
+        "opacity": 41,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          2445,
+          1337
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 30",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.MULTIPLY",
+        "size": [
+          2578,
+          979
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 30 copia",
+        "depth": 1,
+        "visible": true,
+        "opacity": 77,
+        "blend": "BlendMode.MULTIPLY",
+        "size": [
+          4775,
+          1045
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 30 copia 2",
+        "depth": 1,
+        "visible": true,
+        "opacity": 38,
+        "blend": "BlendMode.COLOR",
+        "size": [
+          4602,
+          1233
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 42",
+        "depth": 1,
+        "visible": true,
+        "opacity": 115,
+        "blend": "BlendMode.MULTIPLY",
+        "size": [
+          2876,
+          1380
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 43",
+        "depth": 1,
+        "visible": true,
+        "opacity": 48,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          3057,
+          1785
+        ],
+        "is_group": false
+      },
+      {
+        "name": "posters",
+        "depth": 0,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.PASS_THROUGH",
+        "size": [
+          5512,
+          4226
+        ],
+        "is_group": true
+      },
+      {
+        "name": "LAST",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          952,
+          1158
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Relleno de color 2 copia 5",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.MULTIPLY",
+        "size": [
+          7654,
+          4895
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 15 copia 6",
+        "depth": 1,
+        "visible": true,
+        "opacity": 38,
+        "blend": "BlendMode.OVERLAY",
+        "size": [
+          7000,
+          4226
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 15 copia",
+        "depth": 1,
+        "visible": false,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          605,
+          1043
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Relleno de color 2 copia 4",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.MULTIPLY",
+        "size": [
+          7654,
+          4895
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 15 copia 5",
+        "depth": 1,
+        "visible": true,
+        "opacity": 38,
+        "blend": "BlendMode.OVERLAY",
+        "size": [
+          7000,
+          4226
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 14",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          315,
+          412
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Relleno de color 2 copia 3",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.MULTIPLY",
+        "size": [
+          7654,
+          4895
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 15 copia 4",
+        "depth": 1,
+        "visible": true,
+        "opacity": 38,
+        "blend": "BlendMode.OVERLAY",
+        "size": [
+          7000,
+          4226
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 13",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          705,
+          419
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Relleno de color 2 copia 2",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.MULTIPLY",
+        "size": [
+          7654,
+          4895
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 15 copia 3",
+        "depth": 1,
+        "visible": true,
+        "opacity": 38,
+        "blend": "BlendMode.OVERLAY",
+        "size": [
+          7000,
+          4226
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 12",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          626,
+          390
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Relleno de color 2 copia",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.MULTIPLY",
+        "size": [
+          7654,
+          4895
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 15 copia 2",
+        "depth": 1,
+        "visible": true,
+        "opacity": 38,
+        "blend": "BlendMode.OVERLAY",
+        "size": [
+          7000,
+          4226
+        ],
+        "is_group": false
+      },
+      {
+        "name": "treee",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          837,
+          554
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Relleno de color 2",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.MULTIPLY",
+        "size": [
+          7654,
+          4895
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 15",
+        "depth": 1,
+        "visible": true,
+        "opacity": 38,
+        "blend": "BlendMode.OVERLAY",
+        "size": [
+          7000,
+          4226
+        ],
+        "is_group": false
+      },
+      {
+        "name": "globall bak waal",
+        "depth": 1,
+        "visible": true,
+        "opacity": 51,
+        "blend": "BlendMode.MULTIPLY",
+        "size": [
+          5511,
+          4226
+        ],
+        "is_group": false
+      },
+      {
+        "name": "chair group",
+        "depth": 0,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.PASS_THROUGH",
+        "size": [
+          7000,
+          4388
+        ],
+        "is_group": true
+      },
+      {
+        "name": "dessk mask",
+        "depth": 1,
+        "visible": false,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          2492,
+          722
+        ],
+        "is_group": false
+      },
+      {
+        "name": "chair",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          2502,
+          1668
+        ],
+        "is_group": false
+      },
+      {
+        "name": "effects on chair",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.PASS_THROUGH",
+        "size": [
+          7000,
+          4388
+        ],
+        "is_group": true
+      },
+      {
+        "name": "ligth on chair",
+        "depth": 2,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.COLOR_DODGE",
+        "size": [
+          7000,
+          4226
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 27",
+        "depth": 2,
+        "visible": true,
+        "opacity": 122,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          7000,
+          4226
+        ],
+        "is_group": false
+      },
+      {
+        "name": "reflection group chair",
+        "depth": 2,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.PASS_THROUGH",
+        "size": [
+          6685,
+          2452
+        ],
+        "is_group": true
+      },
+      {
+        "name": "Capa 29",
+        "depth": 3,
+        "visible": true,
+        "opacity": 69,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          2445,
+          1337
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 30",
+        "depth": 3,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.MULTIPLY",
+        "size": [
+          1120,
+          979
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 30 copia",
+        "depth": 3,
+        "visible": true,
+        "opacity": 77,
+        "blend": "BlendMode.MULTIPLY",
+        "size": [
+          4775,
+          1045
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 30 copia 2",
+        "depth": 3,
+        "visible": true,
+        "opacity": 38,
+        "blend": "BlendMode.COLOR",
+        "size": [
+          4602,
+          1233
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 42",
+        "depth": 3,
+        "visible": true,
+        "opacity": 115,
+        "blend": "BlendMode.MULTIPLY",
+        "size": [
+          2876,
+          1380
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 43",
+        "depth": 3,
+        "visible": true,
+        "opacity": 48,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          3057,
+          1785
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Filtro de fotograf\u00eda 1",
+        "depth": 0,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          0,
+          0
+        ],
+        "is_group": false
+      },
+      {
+        "name": "mask chairs",
+        "depth": 0,
+        "visible": false,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          6559,
+          1483
+        ],
+        "is_group": false
+      },
+      {
+        "name": "post",
+        "depth": 0,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.PASS_THROUGH",
+        "size": [
+          7654,
+          4895
+        ],
+        "is_group": true
+      },
+      {
+        "name": "Capa 5",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.COLOR_DODGE",
+        "size": [
+          7654,
+          4646
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 6 copia",
+        "depth": 1,
+        "visible": true,
+        "opacity": 117,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          4814,
+          3735
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 9",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          0,
+          0
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 6",
+        "depth": 1,
+        "visible": true,
+        "opacity": 31,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          4478,
+          3743
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Tono/saturaci\u00f3n 1",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          0,
+          0
+        ],
+        "is_group": false
+      },
+      {
+        "name": "screen",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.SCREEN",
+        "size": [
+          7654,
+          4895
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 33",
+        "depth": 1,
+        "visible": true,
+        "opacity": 112,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          4540,
+          4566
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Intensidad 1",
+        "depth": 1,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          0,
+          0
+        ],
+        "is_group": false
+      },
+      {
+        "name": "DEFORM REF",
+        "depth": 0,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          7654,
+          4895
+        ],
+        "is_group": false
+      },
+      {
+        "name": "animatic",
+        "depth": 0,
+        "visible": false,
+        "opacity": 128,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          6793,
+          3805
+        ],
+        "is_group": false
+      },
+      {
+        "name": "Capa 45",
+        "depth": 0,
+        "visible": true,
+        "opacity": 255,
+        "blend": "BlendMode.NORMAL",
+        "size": [
+          7670,
+          5287
+        ],
+        "is_group": false
+      }
+    ],
+    "layer_count": 57,
+    "preview": "GB36_sc33_School_Classroom_Final_upressed_v4.jpg",
+    "preview_size": [
+      1920,
+      1228
+    ],
+    "bytes": 970797439,
+    "sha256": "1226f539d2e229d33b842c1aeb6e853e1d9a552a4dc11433e13fc48d646741df"
+  },
+  "GB37_sc018_SchoolGym_final.tif": {
+    "type": "TIFF",
+    "width": 7000,
+    "height": 4374,
+    "mode": "RGB",
+    "format": "TIFF",
+    "n_frames": 1,
+    "tags": {
+      "256": "7000",
+      "257": "4374",
+      "258": "(16, 16, 16)",
+      "259": "1",
+      "262": "2",
+      "34377": "b'8BIM\\x04%\\x00\\x00\\x00\\x00\\x00\\x10R\\x97\\'\\xe1\\xf9\\xf1\\x1cm8q+\\xa2\\xf4E5\\xa88BIM\\x04:\\x00\\x00\\x00\\x00\\x00\\xa3\\x00\\x00\\x0",
+      "273": "(53598, 95598, 137598, 179598, 221598, 263598, 305598, 347598, 389598, 431598, 473598, 515598, 557598, 599598, 641598, 6",
+      "274": "1",
+      "277": "3",
+      "278": "1",
+      "279": "(42000, 42000, 42000, 42000, 42000, 42000, 42000, 42000, 42000, 42000, 42000, 42000, 42000, 42000, 42000, 42000, 42000, ",
+      "282": "72.0",
+      "283": "72.0",
+      "284": "1",
+      "296": "2",
+      "34665": "53556",
+      "305": "Adobe Photoshop CS5 Windows",
+      "306": "2011:01:25 00:27:15",
+      "34675": "b'\\x00\\x00\\x0cHLino\\x02\\x10\\x00\\x00mntrRGB XYZ \\x07\\xce\\x00\\x02\\x00\\t\\x00\\x06\\x001\\x00\\x00acspMSFT\\x00\\x00\\x00\\x00IEC sR",
+      "33723": "5898524",
+      "700": "b'<?xpacket begin=\"\\xef\\xbb\\xbf\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?>\\n<x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"XMP Core "
+    },
+    "preview": "GB37_sc018_SchoolGym_final.jpg",
+    "preview_size": [
+      1920,
+      1200
+    ],
+    "bytes": 183761598,
+    "sha256": "1bbae8c4a68f88db5047bdcde7f6a0a166e30cd31224e377f2647529c2b9d1c9"
+  }
+}
