@@ -8,7 +8,7 @@
 
 ## NAMES THAT CHANGED — read this first (owner rename, 2026-11-23 06:57 EST)
 
-- **SHEET JONES (S-H-E-E-T)** = model sheets. Turnaround front/side/back, construction, proportions, expressions, hands, colors — on paper. This is what "Model Jones this nigga" meant on 2026-11-23 06:56 EST: making his sheets on paper. **Sheet Jones is the foundation: without a good Sheet Jones, Draw Jones and Rig Jones end up different and fucked up — and Model/3D Jones and Rig Jones too. Everything gets fucked up if Sheet Jones ain't good.** (owner, 2026-11-23 06:58 EST)
+- **SHEET JONES (S-H-E-E-T)** = model sheets. Turnaround front/side/back, construction, proportions, expressions, hands, colors — on paper. This is what "Model Jones this nigga" meant on 2026-11-23 06:56 EST: making his sheets on paper. **Sheet Jones is the foundation: without a good Sheet Jones, Draw Jones and Rig Jones end up different and fucked up — and Model/3D Jones and Rig Jones too. Everything gets fucked up if Sheet Jones ain't good.** (owner, 2026-11-23 06:58 EST) **Nuance (owner, 2026-11-23 06:59 EST): they are the same guy right now, just a little different physiques (slim puppet vs bulky drawn) — animation flair, human imperfection. Alignment converges version by version; by V10 all Joneses are the same guy. Sheet Jones drives that convergence — do not over-correct the flair away.**
 - **MODEL JONES = 3D JONES. 3D JONES = MODEL JONES. Same thing, interchangeable.** "Model" = the 3D model in Blender and all that. If the owner says Model Jones, that means 3D Jones. If he says 3D Jones, that means Model Jones.
 - **"Model Jones" NEVER means sheets anymore.** Any old text that used "Model Jones" to mean sheets now says **Sheet Jones**. Any old text that meant the 3D model now says **Model Jones / 3D Jones**.
 
@@ -71,13 +71,13 @@ Draw Jones is done for a shot when the keys + in-betweens for that shot exist as
 ## 2. Video Jones — Draw Jones brought to life as video
 
 ### Definition
-Video Jones is Draw Jones *moving in the actual video*. Same drawings, same proportions, same acting — but alive: breathing, drifting, raising, clicking, nodding, with the light shifting under him. He is not a slideshow (drawings held still) and he is not a puppet substitute (a different, slimmer Jones doing the moving while the drawn Jones flashes in and out). He is the drawn Jones, in motion, frame after frame.
+Video Jones is Draw Jones *moving in the actual video*. Same drawings, same proportions, same acting — but alive: breathing, drifting, raising, clicking, nodding, with the light shifting under him. He is not a slideshow (drawings held still) and he is not a puppet substitute (the rig Jones doing the moving while the drawn Jones flashes in and out). He is the drawn Jones, in motion, frame after frame.
 
 ### How Draw Jones becomes Video Jones
 1. **Keys are drawings.** The 7 boards + 8 poses are the extremes — the poses the story needs.
 2. **In-betweens are drawings.** The 10 in-betweens are the motion between the keys — breath in/out, raise-mid, raise-high, lower-mid, nod-mid, pupil-half. Where a rig cannot reach a pose, a Grease Pencil / hand in-between fills it — that is the Playbook's rule, not a fallback to be ashamed of.
 3. **On twos, at 24fps.** A new drawn change every 2 frames (12 drawings/sec); on ones only for impacts. This is the Grok-Animation-Project timing standard the repo already cites (`SHOW-PRODUCTION-STATUS.md` §4 / line 77: 24fps, twos, ones for impacts, every cut >1s needs an exposure note).
-4. **Hard cuts between beats, no dissolves between two different Joneses.** This is the lesson of the rejected mixed cut (see §4): fading a drawn Jones in over a rig Jones morphs between a bulkier drawn figure and a slimmer puppet for ~6 frames per anchor. That is phasing, not animation. Video Jones changes pose by *drawing the next pose*, or by cutting to it — never by dissolving one Jones into another.
+4. **Hard cuts between beats, no dissolves between two Joneses.** This is the lesson of the rejected mixed cut (see §4): fading a drawn Jones in over a rig Jones shifts between the bulkier drawn physique and the slimmer puppet physique for ~6 frames per anchor — same guy, a little different physiques, but the dissolve makes the shift read as phasing, not animation. Video Jones changes pose by *drawing the next pose*, or by cutting to it — never by dissolving one Jones into another.
 5. **Something is always moving on purpose.** The TV-SHOW-METHOD-STUDY's shared truth across Metalocalypse / ATHF / $UPEREGO: "the drawing count is never the aliveness… something is always moving on purpose — a rig posing, a puppet's arm chopped into a new timing, a mouth flapping on dense dialogue, a light changing colour — and the edit never lets a dead frame sit."
 
 ### What Video Jones currently is (honest)
@@ -111,7 +111,7 @@ Rig Jones is Jones as a cutout puppet in Blender: sliced part art, bound to bone
 5. **No eye/mouth libraries in the V2 rig.** Pupils are drawn overlays; no eye swaps, no mouth shapes, no lip sync (voice is owner-gated anyway).
 6. **Cycles CPU only, no EEVEE.** Renders are slow (~5.5s/frame at 32 samples; the mixed-cut Cycles render died twice on this VM and the frames had to be produced via the PIL path from Blender's own transforms — honest, documented in MIXED-REPORT.md §3).
 7. **Heads: Front + Profile only.** No invented angles, no 3/4 turn.
-8. **He does not yet look like Draw Jones when he moves.** The rig Jones is slimmer than the drawn Jones — that is why the mixed-cut dissolves read as morphing. Until the rig's proportions, line weight, and acting match the drawing, Rig Jones is a stand-in, not Jones.
+8. **Same guy, a little different physiques — animation flair, not a fatal flaw (owner nuance, 2026-11-23 06:59 EST).** The slim puppet Jones vs the bulky drawn Jones is a little bit of animation flair — just him and Muse each getting it a little wrong, that is what makes it human. They DO look like the same guy right now, just a little different physiques, which the owner understands. Do NOT over-correct the flair away. The goal is more accurate / more aligned versions as the Vs grow — by V10 of all those Joneses they will all be the same guy. Sheet Jones is the foundation that drives that convergence, version by version.
 
 ---
 
@@ -143,11 +143,11 @@ Rig Jones is Jones as a cutout puppet in Blender: sliced part art, bound to bone
 - [ ] **Peg / deformer proven.** AnimLab peg/deformer (work order step 2, PR #429): a peg node/pivot actually visible and working on canvas, deformer bending a limb without breaking the line. Grease Pencil stays animation core until this is fully proven — do not claim it before then.
 - [ ] **Proof test:** short video — arm bend at the elbow through the raise, leg bend at the knee, deformer bend holding the line — own-eyes, whole video.
 
-### V5 — Acting, cape, and look (Rig Jones starts to look like Draw Jones)
+### V5 — Acting, cape, and look (Rig Jones gets more aligned with Draw Jones — convergence, not a fix for a different guy)
 - [ ] **Wiggle 2 cape** (live sim, per Playbook §1b) replacing the 2-bone spring — cape with real follow-through, overlap, and settle, that keeps its shape and does not go flat black slab.
 - [ ] **Eye swaps + mouth library.** 11 eye swaps from sheet 05 (PR #430's set, verified against the sheet), pupil overlays replaced by real swaps; neutral + half-smile mouths from the Playbook's sprite library — so the face can act without a redraw.
 - [ ] **EEVEE rendering.** libEGL resolved, EEVEE proven on the same frames as Cycles — faster renders, no more PIL-path workaround, same grade.
-- [ ] **Proportions / line matched to Draw Jones.** Rig Jones re-proportioned and re-weighted until a side-by-side of rig frame vs drawn board reads as the *same* Jones — this is the fix for the dissolve-morph problem at its root. If they still do not match, the rig is not V5.
+- [ ] **Proportions / line more aligned with Draw Jones.** Rig Jones re-proportioned and re-weighted so a side-by-side of rig frame vs drawn board reads as the *same* guy, more closely aligned — convergence toward V10, where all Joneses are the same guy. Do not over-correct the flair away; align gradually, version by version.
 - [ ] **Proof test:** short video — hero beat f206–312 with cape sim, eye swap, and nod — own-eyes, whole video, side-by-side against board 05.
 
 ### V6 — Adventure Time / Regular Show / Gumball / Metalocalypse level (Rig Jones = Video Jones)
@@ -278,6 +278,7 @@ Each Jones below is a named stage a professional CN / $UPEREGO-level pipeline ne
 3. **V4:** elbow/knee + COA + peg/deformer proven.
 4. **V5:** Wiggle 2 cape + eye/mouth libraries + EEVEE + proportions matched to Draw Jones.
 5. **V6:** squash & stretch, secondary motion, line-boil control, eye/mouth acting, music-sync, edit-first — Rig Jones indistinguishable from Video Jones.
+6. **Beyond V6, to V10:** alignment keeps converging version by version — by V10 of all those Joneses they will all be the same guy. Do not over-correct the flair away; converge gradually.
 6. **The Other Joneses, in pipeline order (consolidated 2026-11-23):** Model → Board → Action (Animatic/Timing folded in) → Keyframe (Key + In-Between folded in) → Colour → Layout → FX → Voice → Music → Final/Broadcast. Clean-Up is not a separate step — it is the Rig Jones upgrade ladder (Rig Jones 2 = Clean-Up Jones 1, etc.). Model Jones / 3D Jones runs on its own track, on the owner's "go."
 7. **Landing:** every version lands by the owner's call only — branch → PR → merge, never direct to main. This doc is a draft until he approves it for the repo.
 
