@@ -62,6 +62,12 @@ Production look is high, but Voice 0%, Music 0%, Action 0%, Final 0% (no cut pas
 - **CORRECT (always):** wrist-to-wrist, same direction; fingers at far end; remote in fingers pointing DOWN; hands attached to forearm cuff, thumbs medial; remote clean-cropped transparent alpha, no white box.
 - **Process:** if the owner says "you did it the incorrect way", answer "this was the incorrect way, don't do it this way" and log it as incorrect. If he says "that's good" / does not say it was incorrect, that was the RIGHT way — record it as the way to keep doing it.
 - **Pre-delivery check, every hand at every beat, logged before any cut is delivered:** wrist-to-wrist? fingers down / at far end? remote pointing down? hands attached to forearm cuff? thumbs medial? no white box on the remote? A cut with any "no" does not ship.
+
+### CLEAN ALPHA LAW (owner, 2026-11-23 11:22 EST) — PERMANENT, INDUSTRY STANDARD
+
+- **CLEAN ALPHA, NO RECTANGULAR EDGES — always.** Every cut, slice, prop, hand, remote, part — cut along the art's own edges with clean alpha, never a square/box crop, never a rectangular edge showing, never baked background inside a cutout. True prop separation, re-sliced cleanly from the source art. This is the industry standard, not a preference. It applies to EVERYTHING, every lane, every time — do not wait to be told, do not ship a box cut and call it layered. If a prop cannot be separated cleanly, say which one and why, and re-slice from the source art instead of faking it.
+- **Pre-delivery check, every part at every beat:** cut along the art's own edge? clean alpha, no rectangular edge showing? no baked background inside the cutout? A cut with any "no" does not ship.
+
 - **3D parking-lot render — Colab as marquiswhitacre FAILED 2026-11-22.** Google went straight to password (no password tried, never try a password again); no Tap Yes / Google prompt was ever offered; passkey cannot complete in Muse's cloud browser (user tried twice, 'Something went wrong'). Render never started, no frames. Notebook: https://colab.research.google.com/drive/1c9izeJiUFMB4jjOb93y2jDYALr5ldTGj — on fmmg.mars@gmail.com's Drive, marquiswhitacre@gmail.com is an Editor. 3D full render is PAUSED pending the owner's go + JANCTION funding (see above).
 - **AnimLab full smoke (follow-up owed).** See Blocked.
 
