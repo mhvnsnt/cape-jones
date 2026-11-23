@@ -45,6 +45,45 @@ Operating rules for every agent working in this repo.
 - **Cape Jones likeness rule (owner 2026-11-23 07:12 EST): NEVER make Cape Jones away from his likeness** — purple cowl, white eyes, tan lower face, stern mouth, purple collar, white skin-tight suit with small purple V emblem, white belt, long black cape, white gloves/boots. NO suit jacket/lapels, NO black gloves/boots, NO purple bald head, NO black eye-mask alone.
 - **Pre-delivery check for any BROTHERMAN shot:** likeness matches the locked references? Hair state is default bald-top, bandana is the one the scene calls for, and any change from the previous shot is visible or a noticed gag? If not, the shot does not ship.
 
+## MISTAKES WE DO NOT REPEAT (owner, 2026-11-23 07:23–07:28 EST) — "10 steps forward and 30 steps back"
+
+The owner is tired of this pattern: a good process, then a remake that breaks it, then the same correction again, then another remake. Every rule below was paid for with a rejected cut. Read this before touching a rig, a hand, a pivot, or a cut. If a step below says STOP, stop.
+
+**1. Do NOT touch parenting or pivots unless that is the thing broken.**
+- The V2 rig was perfect the first time (owner, 2026-11-23). The hand/remote fix broke it by touching parenting and pivots that did not need touching: hands detached from wrists, the arm floated away from the body, the cape floated out the wrong way (V2-fixed cut, 2026-11-23 07:23 EST, REJECTED).
+- Correct ONLY what is broken, and make it identical to the working version. Do NOT delete, do NOT revert everything, do NOT start over, do NOT rebuild the rig to fix one thing. A small correction is a small correction — not a rebuild.
+- The owner said this three times in one morning (07:24, 07:25 EST): keep the fixed work, place it correctly, correct the parenting and the pivots, make it identical to the first one. That is the whole job.
+
+**2. Hand orientation already fixed = KEEP it. Do not re-fix it.**
+- The top-layer hands were fixed once (L hand vertical flip, R hand 180°, thumbs medial) and the remote was re-cropped to clean transparent alpha, remote pointing DOWN. That fix stands. Do not re-flip the hands, do not re-crop the remote, do not rebuild the rig to redo it.
+- What was wrong after that fix was PLACEMENT, not orientation: the fixed hands floated in the wrong place, detached from the wrist, not moving with the arm. Fix placement only: hands attached to the forearm cuff / wrist, moving WITH the arm, arm attached to the body, cape following correctly.
+- Hand rule, verbatim intent: if you attach hands over the hands, EITHER swap the hands instead of doing the layers AND swap them with the correct orientation, OR lay them on top with the correct orientation — NEVER put them on with the wrong orientation, ever. Full log: HAND REGRESSION LOG above, and `HAND-ATTACHMENT-LOG.md` in the workdir.
+
+**3. Prove small first. Never send a broken cut through.**
+- Short test video first (arm raise + close-up + wide), whole video, checked own-eyes at every beat — hands attached to the wrist and moving with the arm, arm attached to the body, cape following right — THEN the full cut. A cut that has not passed the short test does not go to the owner.
+- The V2-fixed cut was sent through before it was actually fixed. That is the mistake. Do not do it again.
+
+**4. Log BOTH the correct way and the incorrect way, labeled, every time.**
+- If the owner says "you did it the incorrect way", answer "this was the incorrect way, don't do it this way" and log it as incorrect. If he says "that's good" / does not say it was incorrect, that was the RIGHT way — record it as the way to keep doing it. That is how we stop regressing.
+- INCORRECT (never again, from the V2-fixed cut): hands oriented correctly but floating in the wrong place, detached from the wrist, not moving with the arm; arm floating away, not attached to the body; cape floating out weird, the wrong way.
+- CORRECT (always): V2 rig as first delivered — arm attached to the body, hands attached to the wrist and moving with the arm, cape following correctly; hands wrist-to-wrist, fingers at the far end, remote in the fingers pointing DOWN, remote clean-cropped transparent alpha.
+- Pre-delivery check at every beat: hands attached and moving with the arm? arm attached to the body? cape following? wrist-to-wrist? fingers down / at far end? remote pointing down? no white box on the remote? A cut with any "no" does not ship.
+
+**5. The waste is tokens and TIME — not limited GPU/CPU.**
+- 2D cuts run on this VM's own CPU (Blender 5.0.1, Cycles CPU, ~5.5s/frame). No GPU is burned on them. The 3D full render is the only GPU spend, and it is PAUSED (JANCTION, 0 JPY balance).
+- What gets wasted is tokens and the owner's time: remaking the cut wrong over and over, sending broken cuts, making him correct the same thing repeatedly. That is why we have not gotten far. Fix it once, correctly, prove it on a short test first.
+
+**6. Cape Jones likeness — NEVER make him away from his likeness.**
+- Purple cowl covering the top of his head, white eyes, tan skin on the lower face, stern mouth, purple collar/neck, white skin-tight muscular suit with a small purple V emblem on the chest, white belt, long black cape to his ankles, white gloves/boots. NO suit jacket, NO lapels, NO black gloves, NO black boots, NO purple bald head, NO black eye-mask alone. Reference: `rig/assembly-preview-v8.png` and the boards. Generated v2/v4 BROTHERMAN images got this wrong; the corrected version is `production/2d-parking-lot/brotherman/brotherman-v4-cape-jones-correct.webp`.
+
+**7. BROTHERMAN likeness lock + continuity — always, unless a named exception.**
+- Full lock: BROTHERMAN LIKENESS LOCK above and `docs/BROTHERMAN.md`. Default: bald top, long blond hair at the sides and back only; blue tank top, BROTHERMAN in pink Hulkamania-style font, pink+blue+purple tie-dye long tights, white wristbands, blue boots. Exceptions ONLY: (1) old him / flashback — full hair on top, the "this used to be me" gag; (2) bandana on/off ONLY when he visibly takes it off / puts it on, or as a deliberate look-away joke where people notice when they look back. Never a random scene-to-scene flip — no AI-slop inconsistency, any change must be on-purpose, visible, or a noticed gag.
+- BROTHERMAN's rig target (owner, 2026-11-23 07:19 EST): his first rig must be so advanced next to the Cape Jones rig we have now that the Cape rig is the one that needs to play catch-up. Build it Gumball-FLA level from the start, then use it as the example and starting area for Clean-Up Jones on Cape.
+
+**8. Reuse-first — do not build from scratch anything already built.**
+- Research first, pull in industry-standard / production-grade work by research, wire it up, prove small, land cleanly. That is the REUSE-FIRST LAW above. A leap with no existing thing to reuse must say so explicitly — it is the only from-scratch exception.
+- To work better (owner, 2026-11-23 07:28 EST): pull in top-level commercial-grade rigging / animation tooling whether open source or closed source, and whether it needs reverse engineering, teardowns, decrypting, or extracting to get it — wire it into the repo and merge it into main cleanly. Audit: `docs/TOOLING-AUDIT.md` (status per tool: pulled in? wired? proven? blocker? next route). Do not claim a tool is pulled in until its bytes are in the repo and a test proves it works.
+
 ## VERIFY-BEFORE-CLAIMING LAW (owner 2026-10-16)
 
 **"The agent says it is done" is not evidence.**

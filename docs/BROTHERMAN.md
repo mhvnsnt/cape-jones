@@ -16,9 +16,11 @@ a new look. Do not drift him scene to scene.
 - **Body / face (PERFECT — locked, owner 2026-11-23 07:11 EST):** big muscular
   wrestler, strong jaw, thick blond horseshoe mustache, tanned skin, cartoon
   comic-book style, bold black outlines, flat bright colors. Reference:
-  `brotherman-v2-concept-pink-blue.webp` — seafoam-blue shirt, pink
-  BROTHERMAN text, red bandana, Hogan face. That v2 physique and face is the
-  likeness to save and reuse.
+  `brotherman-v4-cape-jones-correct.webp` — seafoam-blue shirt, pink
+  BROTHERMAN text, Hogan face, correct Cape Jones beside him. That physique
+  and face is the likeness to save and reuse. (The v2 concept file with the
+  same physique is NOT in the repo: it had the incorrect Cape Jones and the
+  owner said to delete it, not save it, 2026-11-23 07:21 EST.)
 - **Outfit — Color 1 = bright seafoam blue / cyan, Color 2 = pink, a little
   purple.** Blue tank top, BROTHERMAN in big pink Hulkamania-style font.
   Long tie-dye tights, pink + blue with a little purple, like Hulk Hogan's
@@ -82,11 +84,10 @@ In `production/2d-parking-lot/brotherman/`:
 
 | File | What it is | sha256 (first 12) |
 |---|---|---|
-| `brotherman-v2-concept-pink-blue.webp` | Locked physique + face, seafoam-blue shirt, pink text, red bandana | `bb4f406675c9` |
 | `brotherman-v3-exact-bald-top.webp` | Default look: exact v3 image, just the bald top | `8879ad707b12` |
 | `brotherman-v3-pink-bandana.webp` | Pink bandana, first appearance | `c79d50e5e1e9` |
 | `brotherman-v3-no-bandana-full-hair.webp` | Full hair on top — old him / flashback ONLY | `7f33c58726ea` |
-| `brotherman-v4-cape-jones-correct.webp` | BROTHERMAN + correct Cape Jones, night lot | `1d181cfb2b03` |
+| `brotherman-v4-cape-jones-correct.webp` | BROTHERMAN + correct Cape Jones, night lot — locked physique + face reference | `1d181cfb2b03` |
 
 Rejected v1 sheets (purple cowl / white suit) are NOT in the repo as references.
 Do not reintroduce them.
