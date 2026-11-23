@@ -18,6 +18,15 @@ On 2026-10-17, commit cd3bf38 ("DXMMII limb system", PR mhvnsnt/western-heart#22
 
 Operating rules for every agent working in this repo.
 
+## REUSE-FIRST LAW (owner 2026-11-23 07:03 EST — "keep up with the Joneses": million leaps forward, no steps back)
+
+**Do NOT build from scratch anything that is already built. If it exists, pull it in and wire it up — do not rebuild it.**
+
+1. **Research first.** Before building anything, research the repo, the Cartoon Network files, the playbook, the $UPEREGO studies, game teardowns, and the existing tools / parts / rigs in the workdir and repo. Find the production-grade thing that already exists.
+2. **Pull in everything already out there that helps this show and is already industry-standard / production-grade, and wire it up.** That is the leap: reuse, not rebuild. A leap with no existing thing to reuse must say so explicitly — it is the only from-scratch exception.
+3. **Prove small, then land cleanly.** Prove the pulled-in thing with a short test (whole video, not frames) before a full cut, then land it branch → PR → merge, verified on main. No steps back: never regress a working rig, arm, or cut to add a new thing.
+4. **This applies to BROTHERMAN too.** Do not duplicate his lane's work. Do not rebuild his sheets/rig from scratch if a Cape Jones part/rig already fits — reuse Cape Jones parts, style, and pipeline.
+
 ## VERIFY-BEFORE-CLAIMING LAW (owner 2026-10-16)
 
 **"The agent says it is done" is not evidence.**
