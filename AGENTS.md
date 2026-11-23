@@ -229,3 +229,19 @@ Before any lane cuts a branch: `lane-ops/repo_preflight.sh` (clean tree, base br
 
 ## PRESENT-REFERENCES-EVERY-TURN RULE (owner 2026-11-16 ~09:47 EST)
 Show him the best references when found — EVERY turn we work, no exceptions. Show the references + things found so HE CAN APPROVE them. Then compare them to our work — TWO PAIRS OF EYES. Side-by-side OR one individually then the next — either way works, as long as he sees both and judges. Presenting new information every turn is not optional and not something a lane does for me — it is my job in the reply itself.
+
+
+## THE JONES MODEL / THE CAPE JONES MODEL (owner, 2026-11-23)
+
+This whole way of categorizing and organizing production / director / animation / development talk is **THE JONES MODEL**, for short **THE CAPE JONES MODEL**. It is **universal across all the owner's projects** — Dream Girl, Bannon, the Bastard, God Molecule, Western Heart. If he says any of these terms on any project, it means the same thing as in Cape Jones. Full doc: `docs/JONES-VERSIONS.md`.
+
+**Names that changed (owner rename, 2026-11-23 06:57 EST):**
+- **SHEET JONES (S-H-E-E-T)** = model sheets — turnaround front/side/back, construction, proportions, expressions, hands, colors, on paper. Sheet Jones is the foundation: without a good Sheet Jones, Draw Jones and Rig Jones end up different and fucked up — and Model/3D Jones and Rig Jones too.
+- **MODEL JONES = 3D JONES. 3D JONES = MODEL JONES. Same thing, interchangeable.** "Model" = the 3D model in Blender and all that.
+- **"Model Jones" NEVER means sheets anymore.** Sheets are Sheet Jones.
+
+**The Joneses:** Draw Jones (hand-drawn, really good) · Video Jones (Draw Jones brought to life as video) · Rig Jones (Blender cutout puppet, currently V2, to V6) · Sheet Jones · Model Jones / 3D Jones · Board Jones (storyboards — boards held still are the rejected slideshow, not a scene) · Action Jones (boards timed to sound; Animatic/Timing folded in) · Keyframe Jones (keys + in-betweens, one Jones) · Clean-Up Jones (folded into Rig Jones: Rig Jones 1 = current official V2 rig, Rig Jones 2 = Clean-Up Jones 1) · Color Jones (cross-Jones layer) · Layout Jones (background/scenery/setting) · Voice Jones (owner's recorded voice only — no synthesized voice ever) · Music Jones (original music) · FX Jones / Effects Jones (same thing) · Final Jones (the perfect cell, the aim).
+
+**Phrases:** "Clean Up Jones this shit" = take the current official rig/build/character (Rig Jones 1), clean it up to the next level (Rig Jones 2 / Clean-Up Jones 1) — fix the amateur stuff, industry-standard, no regressions, prove with a short test before a full render/cut. "Sheet Jones this nigga" = make his model sheets on paper. "Model Jones this nigga" / "Rig Jones this nigga, he ain't got no Rig Jones" = build his 3D model / first official rig (Rig Jones 1) — bones, moving hands/fingers, mouth, blink, proved with a movement test — then Clean-Up Jones to level it up.
+
+**Honest progress to Final Jones: ~30–35%, not 50–75%.** Voice 0%, Music 0%, Action 0%, Final 0%, Rig V2 ~30–40%, Video ~25%, Model/3D Jones ~35%. Per-Jones table: `docs/JONES-VERSIONS.md` §7.
