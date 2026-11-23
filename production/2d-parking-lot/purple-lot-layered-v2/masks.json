@@ -1,0 +1,66 @@
+{
+  "board": "plate",
+  "src": "/home/hatch/workspace/_cape-jones-parking-lot-2d/rig/plate-sodium.png",
+  "props": {
+    "cars_left_row": {
+      "method": "grabcut",
+      "pixels": 41489,
+      "bbox": [
+        0,
+        535,
+        425,
+        639
+      ]
+    },
+    "blue_car_mid": {
+      "method": "grabcut",
+      "pixels": 12859,
+      "bbox": [
+        437,
+        542,
+        667,
+        617
+      ]
+    },
+    "cars_right_row": {
+      "method": "grabcut",
+      "pixels": 57161,
+      "bbox": [
+        1222,
+        523,
+        1778,
+        639
+      ]
+    },
+    "stop_sign": {
+      "method": "traced",
+      "pixels": 2127,
+      "bbox": [
+        758,
+        474,
+        788,
+        580
+      ]
+    },
+    "street_lamp_right": {
+      "method": "traced",
+      "pixels": 11256,
+      "bbox": [
+        1620,
+        180,
+        1767,
+        662
+      ]
+    },
+    "street_lamp_far": {
+      "method": "traced",
+      "pixels": 2187,
+      "bbox": [
+        584,
+        378,
+        626,
+        540
+      ]
+    }
+  }
+}

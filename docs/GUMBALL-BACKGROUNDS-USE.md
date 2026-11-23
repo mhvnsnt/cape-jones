@@ -328,11 +328,14 @@ as a mood change. It is not a lighting system.
    makes a character feel IN a place.
 3. **Light as layers.** The sodium → purple shift becomes a light
    toggle (proven in §7), not a plate swap plus a grade.
-4. **Re-slice the source art.** The flat plate can only be split by
-   region (bands and boxes). True per-prop separation — every car, the
-   stop sign, the fence, the lamps as separate drawn pieces — needs
-   the board art re-sliced like the rig parts were. That is the next
-   job after this proof.
+4. **Re-slice the source art — DONE for the plate and board 01 (v2,
+   2026-11-23).** The flat plate can only be split by region (bands
+   and boxes). True per-prop separation — every car, the stop sign,
+   the fence, the lamps as separate drawn pieces — is now done the
+   true way: each prop cut along the art's own edges with clean alpha
+   (`docs/TRUE-PROP-SEPARATION.md`,
+   `production/2d-parking-lot/purple-lot-layered-v2/` and
+   `boards-layered/cj-pl-01/`). Boards 02–07 are the same job, next.
 5. **Same method for every other setting** (owner 2026-11-23 10:46
    EST). One flat picture at a time: keep the art, add the Gumball
    structure underneath it.
@@ -366,6 +369,14 @@ It starts from the existing V2 plate art (`rig/plate-sodium.png`),
 the exact look and atmosphere the owner already likes, and splits
 THAT art into the Gumball method. Same colours, same atmosphere,
 same plate — now layered and alive.
+
+**Superseded (2026-11-23):** this v1 PSD splits the plate by region
+(bands and box cuts) — a car moved far from its box shows a
+rectangular edge. The true-prop-separation v2 rebuild replaces it
+(`docs/TRUE-PROP-SEPARATION.md`): every prop cut along the art's own
+edges, background rebuilt prop-by-prop, moved-car proof included.
+The v1 file stays here as the proof of the structure and the light
+toggle; do not ship it as the final method.
 
 ### The layers (mirroring the living-room structure)
 
@@ -417,13 +428,15 @@ same plate — now layered and alive.
   `torbox-pulls/free-proof/purple-lot-layers/` (20 files, 16 MB
   total — the two noise layers are 6.7 MB each and can be regenerated
   by the build script instead of stored).
-- **Limit, stated plainly:** the split is by region (bands and
-  boxes) because the source is one flat plate. The cars, lamps and
+- **Limit, stated plainly (v1 only):** the split is by region (bands
+  and boxes) because the source is one flat plate. The cars, lamps and
   sign are box cuts, not cleanly re-sliced art — their edges are the
   plate's own pixels, and a car moved far from its box would show a
-  rectangular edge. True per-prop separation needs the board art
-  re-sliced (step 4 above). The rebuild proves the STRUCTURE and the
-  light toggle; it does not magically un-bake the plate.
+  rectangular edge. The v1 rebuild proves the STRUCTURE and the light
+  toggle; it does not magically un-bake the plate. True per-prop
+  separation is now done in v2 (step 4 above,
+  `docs/TRUE-PROP-SEPARATION.md`) for the plate and board 01 — the
+  box-cut limit no longer applies to those sets.
 
 ## Keep the look — the rule for every flat picture
 
@@ -504,6 +517,11 @@ browser upload, signed in as mhvnsnt — this lane cannot run it:
 2. The PURPLE LOT layered PSD (31,160,642 B) and its 20 layer PNGs
    (16 MB) into `production/2d-parking-lot/purple-lot-layered/`,
    plus the two composite previews and the side-by-side sheet.
+   (v1 — superseded by the v2 true-separation sets; the v2 layer
+   PNGs, composites and proof land under
+   `production/2d-parking-lot/purple-lot-layered-v2/` and
+   `production/2d-parking-lot/boards-layered/cj-pl-01/`, and the v2
+   PSDs go to a Release, not the tree.)
 3. Pull 2 school slices are downloading separately (browser job
    already running) — classroom, stadium, corridor, playground,
    exterior, gym. Their backgrounds get the same treatment: labelled,
