@@ -36,6 +36,15 @@ Operating rules for every agent working in this repo.
 - **Process:** if the owner says "you did it the incorrect way", answer "this was the incorrect way, don't do it this way" and log it as incorrect. If he says "that's good" / does not say it was incorrect, that was the RIGHT way — record it as the way to keep doing it.
 - **Pre-delivery check, every hand at every beat, logged before any cut is delivered:** wrist-to-wrist? fingers down / at far end? remote pointing down? hands attached to forearm cuff? thumbs medial? no white box on the remote? A cut with any "no" does not ship.
 
+
+## BROTHERMAN LIKENESS LOCK (owner 2026-11-23 07:15 EST) — always, unless a named exception
+
+- **Name: BROTHERMAN, all caps, ALL ONE WORD.** Locked likeness: v2 physique/face (big muscular wrestler, thick blond horseshoe mustache, Hogan face, cartoon comic-book style); Color 1 = bright seafoam blue / cyan, Color 2 = pink, a little purple — blue tank top, BROTHERMAN in pink Hulkamania-style font, long tie-dye tights pink+blue+purple, white wristbands, blue boots, pink laces. Default hair: **bald top, long blond hair at sides and back only**. Bandana sometimes blue, sometimes pink; first appearance PINK bandana; most of the time no bandana. Full doc + reference images: `docs/BROTHERMAN.md`, `production/2d-parking-lot/brotherman/`.
+- **REJECTED v1 (never again):** purple cowl / white suit like Cape Jones.
+- **Continuity — no AI-slop flips:** he always looks like the locked likeness, except (1) old him / flashback — full hair on top, the "this used to be me" gag (full-hair picture up, pulled down, just him bald — barely anything different), and (2) bandana on/off ONLY when he visibly takes it off / puts it on, or as a deliberate look-away joke where Cape / people notice when they look back. Never a random scene-to-scene bandana flip.
+- **Cape Jones likeness rule (owner 2026-11-23 07:12 EST): NEVER make Cape Jones away from his likeness** — purple cowl, white eyes, tan lower face, stern mouth, purple collar, white skin-tight suit with small purple V emblem, white belt, long black cape, white gloves/boots. NO suit jacket/lapels, NO black gloves/boots, NO purple bald head, NO black eye-mask alone.
+- **Pre-delivery check for any BROTHERMAN shot:** likeness matches the locked references? Hair state is default bald-top, bandana is the one the scene calls for, and any change from the previous shot is visible or a noticed gag? If not, the shot does not ship.
+
 ## VERIFY-BEFORE-CLAIMING LAW (owner 2026-10-16)
 
 **"The agent says it is done" is not evidence.**
