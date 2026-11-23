@@ -763,3 +763,7 @@ NEVER store work in /tmp or any temporary location that can be wiped. /tmp is a 
 3. Any lane caught staging work in /tmp has violated the order — same as staging on local disk. Parents verify: no checkpoint, capture, script, or extract path in any brief points at /tmp.
 4. Recovery from a wipe is re-derivation from the repo/release, never a shrug — the work survives because it was pushed, the temp copy is gone and stays gone.
 Strengthens DIRECT-TO-REPO + CHECKPOINT-AND-SAVE: the repo is the save, temp is not storage.
+
+## NO-GAPS / SOLVE-IT LAW (owner 2026-11-22 ~07:32 EST)
+His words: "draw the rest of them bro don't ever just leave gaps up... just go solve it don't just stop at telling me there was a block or a gap or a problem bro solve it and start solving it... you be hoping I miss the gap and just keep working and we never have to fill it in that's stupid as fuck."
+A gap, block, or problem is NEVER the end of the work — it is work to solve. Reporting an "honest gap" and moving on is banned: never report a gap hoping he'll miss it while the work continues unfinished — that leaves everything unfinished. When one route fails, route-switch to the next immediately (NEVER-BLOCKED law) and keep solving until it's done or every reasonable route is exhausted with the exact errors recorded. The report that reaches him shows the work done to CLOSE the gap, not the gap itself. This applies to every lane, every agent, every time.
