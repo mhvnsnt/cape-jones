@@ -8,6 +8,8 @@
 
 The Cape Jones show repo. Cape Jones is the owner's #1 show — the most built-out, the simplest, perfect it first; once it's perfected it makes Dream Girl easier to perfect. This repo is the master show and the test ground for every pipeline: one pipeline hardened here first, then reused elsewhere.
 
+**Owner, 2026-11-23 07:00 EST: Cape Jones is the pinnacle where all his projects meet and collide — the funnest one, the furthest along, doing the best, looks the best, and the one he enjoys working on the most.**
+
 Two tracks, always labeled:
 - **2D** — the drawn show. Current proof cut: **PURPLE LOT**, a 20-second LED-remote parking-lot short.
 - **3D** — rigged-model test shorts built on the Western Heart pipeline (same parking-lot scene, rendered on GPU).
