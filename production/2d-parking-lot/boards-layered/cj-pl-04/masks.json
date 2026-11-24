@@ -1,0 +1,36 @@
+{
+  "board": "cj-pl-04",
+  "src": "/home/hatch/workspace/_cape-jones-parking-lot-2d/repo/production/2d-parking-lot/boards/cj-pl-04.png",
+  "props": {
+    "cars_right_row": {
+      "method": "grabcut",
+      "pixels": 222537,
+      "bbox": [
+        1452,
+        435,
+        2047,
+        823
+      ]
+    },
+    "street_lamp_far": {
+      "method": "traced",
+      "pixels": 34175,
+      "bbox": [
+        755,
+        95,
+        1987,
+        460
+      ]
+    },
+    "jones": {
+      "method": "grabcut",
+      "pixels": 1306503,
+      "bbox": [
+        0,
+        0,
+        1453,
+        1151
+      ]
+    }
+  }
+}

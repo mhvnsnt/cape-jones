@@ -107,3 +107,24 @@ if __name__ == "__main__":
           ["cars_left_row", "blue_car_mid", "cars_right_row",
            "stop_sign", "street_lamp_right", "street_lamp_far"],
           char_name="jones")
+    # Boards 02-07 (true prop separation, 2026-11-23). Prop order:
+    # cars, dumpsters/barriers, lamps, then jones (lamps before Jones
+    # so poles go behind arms).
+    for n, props in [
+        ("cj-pl-02", ["cars_left_row", "cars_right_row",
+                      "street_lamp_right"]),
+        ("cj-pl-03", ["cars_left_row", "cars_right_row",
+                      "street_lamp_far", "street_lamp_right"]),
+        ("cj-pl-04", ["cars_right_row", "street_lamp_far"]),
+        ("cj-pl-05", ["street_lamp_broken"]),
+        ("cj-pl-06", ["cars_left_row", "cars_right_row",
+                      "street_lamp_broken"]),
+        ("cj-pl-07", ["cars_left_row", "cars_centre", "cars_right_row",
+                      "dumpsters", "dumpster_small",
+                      "barriers_left", "barriers_centre",
+                      "street_lamp_broken"]),
+    ]:
+        build(os.path.join(TS, "boards", n),
+              os.path.join(TS, "boards", n, f"{n}-layered-v2.psd"),
+              f"{WD}/repo/production/2d-parking-lot/boards/{n}.png",
+              props, char_name="jones")

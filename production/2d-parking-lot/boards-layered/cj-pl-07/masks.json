@@ -1,0 +1,96 @@
+{
+  "board": "cj-pl-07",
+  "src": "/home/hatch/workspace/_cape-jones-parking-lot-2d/repo/production/2d-parking-lot/boards/cj-pl-07.png",
+  "props": {
+    "cars_left_row": {
+      "method": "grabcut",
+      "pixels": 39960,
+      "bbox": [
+        0,
+        227,
+        383,
+        333
+      ]
+    },
+    "cars_centre": {
+      "method": "grabcut",
+      "pixels": 22636,
+      "bbox": [
+        1232,
+        276,
+        1423,
+        403
+      ]
+    },
+    "cars_right_row": {
+      "method": "grabcut",
+      "pixels": 70404,
+      "bbox": [
+        1737,
+        295,
+        2047,
+        523
+      ]
+    },
+    "dumpsters": {
+      "method": "grabcut",
+      "pixels": 19952,
+      "bbox": [
+        492,
+        208,
+        663,
+        335
+      ]
+    },
+    "dumpster_small": {
+      "method": "grabcut",
+      "pixels": 11530,
+      "bbox": [
+        227,
+        289,
+        333,
+        403
+      ]
+    },
+    "barriers_left": {
+      "method": "grabcut",
+      "pixels": 17748,
+      "bbox": [
+        0,
+        337,
+        203,
+        423
+      ]
+    },
+    "barriers_centre": {
+      "method": "grabcut",
+      "pixels": 20619,
+      "bbox": [
+        327,
+        327,
+        563,
+        413
+      ]
+    },
+    "street_lamp_broken": {
+      "method": "traced",
+      "pixels": 125121,
+      "bbox": [
+        1485,
+        35,
+        1890,
+        1151
+      ]
+    },
+    "jones": {
+      "method": "grabcut",
+      "pixels": 734720,
+      "bbox": [
+        279,
+        57,
+        1662,
+        1151
+      ]
+    }
+  }
+}
