@@ -18,7 +18,7 @@ Checks (all in rig units, tolerance 0.06 unless stated):
     LOWER piece, the upper piece ends in a concave socket of the same
     circle. The ball centre (ball_local in art-geometry.json, the same
     world point in both planes' local frames) must coincide at EVERY
-    frame. NO overlap, NO cap, NO gap — if the two pieces pivoted about
+    frame. NO overlap, NO joint cap/disc, NO gap — if the two pieces pivoted about
     different points, the ball centres would separate.
  4. Shoulder attachment: upper-arm top == the moving shoulder point
     (derived from the torso plane — the shoulder rides the torso).
