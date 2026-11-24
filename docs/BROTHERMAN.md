@@ -64,6 +64,24 @@ it is one of the named exceptions. No random scene-to-scene flips.
   one the scene calls for, and any change from the previous shot is visible
   or a noticed gag? If not, the shot does not ship.
 
+## Rig Jones — versions (owner, 2026-11-23 19:42 EST)
+
+- **Rig Jones 1 = DRAFT (saved, not deleted, not final).** The first rig
+  (`production/2d-parking-lot/brotheman/brotheman-rig.blend`, 26 bones,
+  44 planes) is "kind of a cool first rig" but does NOT look enough like
+  him: tiny head, flat-rectangle mustache, pinprick eyes, target-ring
+  tie-dye, thin-strip star belt. Preserved as draft in
+  `production/2d-parking-lot/brotheman-v2/draft/`. Do not present it as final.
+- **Rig Jones 2 = the rig from the approved art.** Built 2026-11-23 from
+  the v3 concept (`brotherman-v3-exact-bald-top.webp`, sha256 `8879ad70…`):
+  bigger head with strong jaw, BIG blue eyes, detailed horseshoe, long
+  blond hair framing the face, spiral tie-dye, championship belt with big
+  oval gold buckle, broad shoulders, socket-cut joints (NO caps/discs).
+  Sheets first (`SHEET-JONES.md` in `brotheman-v2/`), rig from the sheets.
+  26 bones, 44 planes. Movement test 96f/4s + scene test 120f/5s next to
+  Cape Jones, both own-eyes PASS, silent. Full report:
+  `production/2d-parking-lot/brotheman-v2/BROTHERMAN-RIG-JONES-2-REPORT.md`.
+
 ## Cape Jones likeness rule (owner, 2026-11-23 07:12 EST) — also locked
 
 **NEVER make Cape Jones in a way that's away from his likeness.**

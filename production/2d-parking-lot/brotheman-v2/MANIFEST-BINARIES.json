@@ -1,0 +1,277 @@
+[
+ {
+  "path": "Shin_R-check.png",
+  "bytes": 73714,
+  "sha256": "52545bc61332283c567b42b3cc163661f0baf1d38e4450e5ad844a9385524b82"
+ },
+ {
+  "path": "Thigh_R-check.png",
+  "bytes": 118548,
+  "sha256": "67c16dc4f28da82763b471907eb7d43c68444802addbc24c02014d8370c858cd"
+ },
+ {
+  "path": "brotheman-movement-test-v2.mp4",
+  "bytes": 152025,
+  "sha256": "e23aaa74afd96f41d671e9787698af9dc0b5f027d488cdd648c5416e39578b0b"
+ },
+ {
+  "path": "brotheman-rig-v2-animated.blend",
+  "bytes": 140537,
+  "sha256": "27947165a9036661f94ef46311ea31c3a9e79a1fe69e9307c8d9214e860ebf38"
+ },
+ {
+  "path": "brotheman-rig-v2-move.blend",
+  "bytes": 140988,
+  "sha256": "df1527506c6719920af162dfd04a6bdcd6332c72c2500b5af0dacff63970371a"
+ },
+ {
+  "path": "brotheman-rig-v2.blend",
+  "bytes": 135415,
+  "sha256": "147d821213808c62370d0ab27599a6845609f59ce0901d941e7d8af13c505b05"
+ },
+ {
+  "path": "brotheman-test-v2.mp4",
+  "bytes": 171735,
+  "sha256": "bbc53c9d527a656619f940140439390103507eb5914779e2b0b4baef9c973def"
+ },
+ {
+  "path": "parts-contact-v2.png",
+  "bytes": 471281,
+  "sha256": "907c766e2319a6768d75c872961e8aa6892563413bec07d2b563ade4b32dcb10"
+ },
+ {
+  "path": "parts-fix-check.png",
+  "bytes": 271461,
+  "sha256": "be66cecbda23cb267abb7bb4a68ee438bbc7e0e165bf770000ee3a12a7f0f229"
+ },
+ {
+  "path": "rest-v2-f0001.png",
+  "bytes": 492611,
+  "sha256": "e9ec6e2aebfda534ae7318b704c5862cee6e61b0f547b899945ded39f4b67bef"
+ },
+ {
+  "path": "side-by-side-v2.png",
+  "bytes": 1467773,
+  "sha256": "466effe46234897592abb9cb24aa2f407a6eb53bca2cbf20cf0c19a13408d58f"
+ },
+ {
+  "path": "speechcard.png",
+  "bytes": 22186,
+  "sha256": "513b8400048c3f6ace6f9b7c14e4c70914cb74135a289f08490f1072cfe78861"
+ },
+ {
+  "path": "parts/BandanaTails_Blue.png",
+  "bytes": 13531,
+  "sha256": "2bee655d75849672b1566dcd57f9a7df56157c1ac26d32ffd2ee218465bc7aae"
+ },
+ {
+  "path": "parts/BandanaTails_Pink.png",
+  "bytes": 13713,
+  "sha256": "c7b97b430875f26c590774f1e420c074b557a358c2c168943f5534749183c139"
+ },
+ {
+  "path": "parts/Bandana_Blue.png",
+  "bytes": 33650,
+  "sha256": "f161ba76300462fb3a37da11a077b6f41e5b077fca609ae6d468b37f6a47281d"
+ },
+ {
+  "path": "parts/Bandana_Pink.png",
+  "bytes": 34684,
+  "sha256": "4a8a8e7588ad34720d236e0322a5b7a8e3ba906d58d06a06a70510c270d448e9"
+ },
+ {
+  "path": "parts/Eye_Happy.png",
+  "bytes": 2083,
+  "sha256": "ae9efaea1cc5b78b6c25df137240555836057f7672965866e1a3d06181db6a99"
+ },
+ {
+  "path": "parts/Eye_Open.png",
+  "bytes": 10101,
+  "sha256": "b7d51b958ff2bc21437e6575339b1984e614f49308c5f2fa0fdf5f00bd575a7b"
+ },
+ {
+  "path": "parts/Finger.png",
+  "bytes": 4781,
+  "sha256": "8918be25150c4a2f0bc049c5311955ff9fdb0207f2adda235603030140f02f39"
+ },
+ {
+  "path": "parts/Forearm_L.png",
+  "bytes": 19886,
+  "sha256": "b770ced2e4ea4ea191c4fde1cb59967f0acc504cb98490ded7cd4ffb64a84f12"
+ },
+ {
+  "path": "parts/Forearm_R.png",
+  "bytes": 19948,
+  "sha256": "429da82ff4f1bac80d8d9263b4f8b12bcb906f55f6849d06e246ba8c2a1e3a64"
+ },
+ {
+  "path": "parts/Hair_Back.png",
+  "bytes": 59399,
+  "sha256": "e9a2e063588b6227fadf28d01d352beae65c6804ae4c80e67cbab7c556f324ca"
+ },
+ {
+  "path": "parts/Hand_Fist_L.png",
+  "bytes": 30347,
+  "sha256": "3464eaffebc9e000869ffcbd630a554812b1de44c5f507389b09e679a92ddb38"
+ },
+ {
+  "path": "parts/Hand_Fist_R.png",
+  "bytes": 30463,
+  "sha256": "d86f3b0c0f61f09afeb7f93733df6d7c1fed767d4fbc71966741cbf2e3085394"
+ },
+ {
+  "path": "parts/Hand_Open_L.png",
+  "bytes": 20329,
+  "sha256": "85c4cf651eae10f7a3170a4b9c2e14de89b1a529f7063a8b3634c06708133759"
+ },
+ {
+  "path": "parts/Hand_Open_R.png",
+  "bytes": 20386,
+  "sha256": "99393e58b0e8dc94e0d05d43097aaeeb8c0f727178d654ccd85cbeda93329eff"
+ },
+ {
+  "path": "parts/Hand_Point_L.png",
+  "bytes": 24840,
+  "sha256": "2050f7caa3989a04c24dd5e282e566f86bd101f529aba4090dc57ff17226b09d"
+ },
+ {
+  "path": "parts/Hand_Point_R.png",
+  "bytes": 24715,
+  "sha256": "12643263d3f4fb3d9cf5a341401ed40d2bcbec61869f285cec59c04cd24bd53f"
+ },
+ {
+  "path": "parts/Head_Front.png",
+  "bytes": 102093,
+  "sha256": "9f641419c9a3ea3b12bf2b2c110741937954bf03473bc19ad0a91df65cee125f"
+ },
+ {
+  "path": "parts/Mouth_Closed.png",
+  "bytes": 2823,
+  "sha256": "92289d69d85b9875c132d0d90e00d8368e3afcaba01dc8ec867487c990c3d9c6"
+ },
+ {
+  "path": "parts/Mouth_Frown.png",
+  "bytes": 2770,
+  "sha256": "053e95444d81a0861f73a2981c9f942a6a5f28a0e82eadf1d29a8834e721b9a1"
+ },
+ {
+  "path": "parts/Mouth_Grin.png",
+  "bytes": 7235,
+  "sha256": "1620899256ea6ad5867961a67493e1b6881f6362bc8fa556ef4b4609373a4505"
+ },
+ {
+  "path": "parts/Mouth_Open.png",
+  "bytes": 9247,
+  "sha256": "80b2cd0792a1baf0e7760c25e7bfc4fbeefc6654b4340080cb72c6442a48b108"
+ },
+ {
+  "path": "parts/Mouth_Shout.png",
+  "bytes": 12365,
+  "sha256": "08e5e6da2df6e3d5846ff299cdb03dcd2e6b870cad2f98bcf33a8a59b179b77c"
+ },
+ {
+  "path": "parts/Mouth_Smile.png",
+  "bytes": 5829,
+  "sha256": "7291109428cf1f9eab673b20798c3cee495d3948eab8dfecf71571a8c6e0c9a3"
+ },
+ {
+  "path": "parts/Neck.png",
+  "bytes": 6844,
+  "sha256": "3b2f69b981ef474d2536e282af417b68e78b18de654f555a6a07f2663ae37ba1"
+ },
+ {
+  "path": "parts/Pelvis.png",
+  "bytes": 161192,
+  "sha256": "8fd1a154c6e6b9776b345beaef98f1b84b70e7fe89e0004ac731bfa2ec628579"
+ },
+ {
+  "path": "parts/Shadow.png",
+  "bytes": 26704,
+  "sha256": "45dd247fcf49c389964964f1115e432c2b167494fa0cfa55f674253abddd6020"
+ },
+ {
+  "path": "parts/Shin_L.png",
+  "bytes": 158371,
+  "sha256": "c48cabe2ec18aa982ff8e8a4c2480192457d22189b218d18af4af5df2d12076b"
+ },
+ {
+  "path": "parts/Shin_R.png",
+  "bytes": 158086,
+  "sha256": "c350071508b4f7f84d4776124a63ec4e34e3794b923614877a8b203300e850ca"
+ },
+ {
+  "path": "parts/Thigh_L.png",
+  "bytes": 158254,
+  "sha256": "633ced37b74ffbbca1b855bc6107a8074212e82309c702916cce5b3cf8d62490"
+ },
+ {
+  "path": "parts/Thigh_R.png",
+  "bytes": 159335,
+  "sha256": "01024767a386de96f1c28eccdead37a93ffdb1591cfb265da9da8908555aa3d3"
+ },
+ {
+  "path": "parts/Thumb.png",
+  "bytes": 4681,
+  "sha256": "d63bcc5f64dc652a496fbf426145bd908ff08af2b69bcf9fdd7363748d377a38"
+ },
+ {
+  "path": "parts/Torso.png",
+  "bytes": 109593,
+  "sha256": "10464c1c4a335e2bc712258b4197fee7fbf758ce4ab8688c81e9bb743fb5b2f2"
+ },
+ {
+  "path": "parts/Torso_Back.png",
+  "bytes": 60190,
+  "sha256": "f35f76c180ffae6c835ecd252a1bcfea715739b26da42cc27eb27de3fb5d7124"
+ },
+ {
+  "path": "parts/UpperArm_L.png",
+  "bytes": 27796,
+  "sha256": "94c0aaea6f525e52bafc2f6f940800383f63336760dfca1489de12308b4dc71b"
+ },
+ {
+  "path": "parts/UpperArm_R.png",
+  "bytes": 27980,
+  "sha256": "ee7fb2145eafb4ad4ac234bc75a479fa374d371a3969bbb1aac0d4466eba46fc"
+ },
+ {
+  "path": "sheets/01-turnaround-v2.png",
+  "bytes": 1213944,
+  "sha256": "5a2c5a31502381f2fdd0af2690fa15213955b943b6171f4ef1549490d8c2d993"
+ },
+ {
+  "path": "sheets/02-construction-v2.png",
+  "bytes": 665461,
+  "sha256": "69ff251b3c5a460615952a976c45c9b060045e897c432bfc3a341c3f1cefd565"
+ },
+ {
+  "path": "sheets/03-expressions-hands-colors-v2.png",
+  "bytes": 199371,
+  "sha256": "1baa5ac6113699e9ca89d66ba6a22c163ccd2309036401d955b6cfd04955c404"
+ },
+ {
+  "path": "draft/brotheman-rig-draft-animated.blend",
+  "bytes": 140613,
+  "sha256": "2bfea968b1c8329ad0d81f8523d410b71bab5ed7d276e31baf0d29b8e16cd057"
+ },
+ {
+  "path": "draft/brotheman-rig-draft-move.blend",
+  "bytes": 141075,
+  "sha256": "bf831a17fb812091b390c276d7ce170cec5ad6f9d93fb2ecb6a6f56479d9f48b"
+ },
+ {
+  "path": "draft/brotheman-rig-draft-movement-test.mp4",
+  "bytes": 133170,
+  "sha256": "4f64a335b4a1469a1c52e8dd532c3ff9355b5205964096aa29d4bd5e93b9bd1a"
+ },
+ {
+  "path": "draft/brotheman-rig-draft-test.mp4",
+  "bytes": 169855,
+  "sha256": "b6e096fbd00c7149ce09495e69817b91a56b45ac3983eed77b7c7081bcd9d31b"
+ },
+ {
+  "path": "draft/brotheman-rig-draft.blend",
+  "bytes": 135471,
+  "sha256": "a7f4a8d3870c8b65e0e07b58bbbb0318a70d761fa29738c0b7196ea648d724d7"
+ }
+]
