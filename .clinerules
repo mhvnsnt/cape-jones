@@ -84,3 +84,5 @@ new palette colors without the owner's explicit approval.
   `node_modules/`, session junk.
 - When a plan is ambiguous, ask or leave it standing. Do exactly the asked
   job — surgical scope, no scope creep, no cheap shortcuts.
+
+Pull-in-first law (owner, Nov 27 2026): see AGENTS.md — never hand-tool or build from scratch what already exists; pull in complete existing work first.

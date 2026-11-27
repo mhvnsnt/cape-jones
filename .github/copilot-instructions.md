@@ -34,3 +34,5 @@
 - Python 3.11 (Blender-bundled) / 3.x system. Prefer stdlib + `bpy` over new dependencies.
 - Headless-first: every Blender script must run under `blender -b` with no GUI calls.
 - Commit messages: short imperative summary; PRs reference the lane doc.
+
+Pull-in-first law (owner, Nov 27 2026): see AGENTS.md — never hand-tool or build from scratch what already exists; pull in complete existing work first.
